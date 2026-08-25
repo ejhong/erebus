@@ -1,79 +1,41 @@
 #!/usr/bin/env node
 /**
- * Generate cover-art candidates for a case in the Aletheia house style
- * (see docs/IMAGE_STYLE.md) via the OpenAI Images API.
+ * Generate cover-art candidates for a case in the house style
+ * (see docs/IMAGES.md) via the OpenAI Images API.
  *
  * Usage:  IMAGE_API_KEY=... node scripts/generate-case-art.mjs <case-slug> [count]
  *
  * Writes candidates to public/images/cases/<slug>/candidates/ and prints a
  * manifest entry skeleton for the chosen one. Designed to run inside the
  * generate-case-art GitHub workflow, which opens a PR with the results —
- * a human picks the winner during PR review.
+ * the winner is picked during PR review.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { parse as parseYaml } from "yaml";
 
-const STYLE_VERSION = "style-v2";
+const STYLE_VERSION = "style-e1";
 const MODEL = "gpt-image-1";
 
 /**
- * style-v2 per-case tone assignments (see docs/IMAGE_STYLE.md, "Case tone
- * assignments" — keep the two in sync). Each case cover is full color in
- * subdued antique mineral pigments, with its own dominant tone.
+ * style-e1 per-case tone assignments (see docs/IMAGES.md, "Case tone
+ * assignments" — keep the two in sync). The house palette is cold and
+ * modern: every cover works in Prussian blue, slate, steel grey, indigo,
+ * and graphite, with at most one restrained counter-accent. Assign each
+ * new case a tone here before generating its cover.
  */
 const CASE_TONES = {
-  geopolymer:
-    "yellow ochre and raw sienna sandstone tones on the stonework, umber " +
-    "shadows, a pale grey-blue wash in the sky",
-  vasocomputation:
-    "madder red and oxblood on the vessel-like forms, faded rose flesh " +
-    "tones, ivory bone, a faint sage undertone",
-  transients:
-    "deep Prussian blue and slate blue in the night sky, silver-cream " +
-    "stars, one small warm brass accent on the instrument",
-  "orch-or":
-    "muted violet-grey and indigo forms, one antique-gold shaft of light",
-  ydih:
-    "sage and olive-green grassland, buff sky, one faded vermilion comet " +
-    "streak",
-  mpi:
-    "verdigris and muted teal, grey-green shadows, one pale sulfur-yellow " +
-    "accent on the butterfly",
-  ccc:
-    "deep charcoal-slate night sky, concentric rings in pale cream and " +
-    "faded antique gold, one small ember-red accent at the rings' center",
-  "zero-worlds":
-    "faint graphite-grey and warm dove-grey washes over generous expanses " +
-    "of bare cream paper — the sparest cover in the set — with one small " +
-    "deep-lapis accent at the observer's lantern",
+  // No cases yet. Example entry:
+  // "example-case":
+  //   "deep Prussian blue field, slate and graphite linework, one small " +
+  //   "pale-steel accent at the central mark",
 };
 
 /**
  * Optional composition overrides for cases whose canonical cover subject is
  * more specific than what the dossier fields would generate.
  */
-const CASE_SUBJECTS = {
-  geopolymer:
-    "A monumental polygonal megalithic wall of interlocking many-angled " +
-    "cyclopean stones, viewed at a slight angle with raking light — an " +
-    "allegorical, typological composition, not a depiction of any real " +
-    "site as documentation.",
-  ccc:
-    "A seated allegorical muse with a laurel wreath, a closed book on her " +
-    "knee, raising a small telescope toward an enormous disc of concentric " +
-    "engraved rings filling the night sky, a globe on a tripod stand beside " +
-    "her in a quiet rocky landscape — cycles within cycles, an allegorical " +
-    "emblem, never a depiction of any real dataset as documentation.",
-  "zero-worlds":
-    "A small cloaked observer seen from behind, standing on a tiny island " +
-    "of finely engraved ground that frays at its edges into blank paper, " +
-    "holding up a lantern whose single beam is the only place a world " +
-    "exists: within the beam, engraved hills, stars, and a thin geometric " +
-    "lattice condense out of nothing; outside it, bare cream paper — " +
-    "world as output, not backdrop. An allegorical emblem, never a " +
-    "depiction of any real experiment or dataset as documentation.",
-};
+const CASE_SUBJECTS = {};
 
 /** One reversible generation run: a single runId stamped on every record. */
 const RUN_ID = `cover-${STYLE_VERSION}-${new Date().toISOString().slice(0, 10)}`;
@@ -111,7 +73,7 @@ if (!fs.existsSync(caseFile)) {
 }
 const record = parseYaml(fs.readFileSync(caseFile, "utf8"));
 
-// The canonical style-v2 template from docs/IMAGE_STYLE.md, with a subject
+// The canonical style-e1 template from docs/IMAGES.md, with a subject
 // derived from the case's own dossier fields (ideas, never evidence scenes)
 // and the case's assigned tone.
 const subject =
@@ -124,24 +86,26 @@ const subject =
 const tone = CASE_TONES[slug];
 if (!tone) {
   console.error(
-    `No style-v2 tone assigned for "${slug}". Add it to CASE_TONES here and ` +
-      `to the tone table in docs/IMAGE_STYLE.md, then re-run.`,
+    `No style-e1 tone assigned for "${slug}". Add it to CASE_TONES here and ` +
+      `to the tone table in docs/IMAGES.md, then re-run.`,
   );
   process.exit(1);
 }
 
 const prompt =
-  `Hand-tinted 19th-century scientific expedition lithograph, ` +
-  `chromolithograph plate from a vintage natural-history atlas. ${subject} ` +
-  `Fine copperplate cross-hatching and stipple engraving beneath soft, ` +
-  `translucent hand-applied watercolor washes. Full color in subdued ` +
-  `antique mineral pigments — ${tone} — over warm-black ink linework on ` +
-  `aged warm cream paper (#f6f1e8). Colors muted and slightly faded as if ` +
-  `printed in 1870; never saturated modern digital color, no gradients, no ` +
-  `glow. Darwin-era natural-history journal plate aesthetic, generous plain ` +
-  `paper margins, quiet composition. Absolutely no text, no labels, no ` +
-  `captions, no border frame lines. Unmistakably a hand-tinted engraving — ` +
-  `stylized editorial artwork, not photorealistic, no photograph.`;
+  `Minimal modern technical editorial illustration, in the visual language ` +
+  `of a precise instrument chart or forensic diagram. ${subject} ` +
+  `Thin, exact vector-like linework: fine isolines, section lines, ` +
+  `waveform traces, small registration marks, restrained geometric ` +
+  `abstraction. Cold palette only — ${tone} — on a near-white cool ` +
+  `porcelain field (#eef1f4) or a deep blue-black field (#10151b); ` +
+  `Prussian blue, slate, steel grey, indigo, graphite throughout; no warm ` +
+  `cream, sepia, ochre, or terracotta tones anywhere. Flat, matte, ` +
+  `documentary and quiet: no glow, no lens flare, no 3D render look, no ` +
+  `gradients beyond subtle atmospheric shading. Generous negative space, ` +
+  `austere composition. Absolutely no text, no numbers, no labels, no ` +
+  `captions, no border frame lines. Stylized editorial artwork, obviously ` +
+  `an illustration — not photorealistic, no photograph.`;
 
 const outDir = path.join(
   process.cwd(),
@@ -196,7 +160,7 @@ console.log(`
   alt: "TODO: describe the artwork"
   source: generated
   license: "Project artwork (AI-generated)"
-  credit: "AI-generated editorial artwork, Aletheia house style"
+  credit: "AI-generated editorial artwork, Erebus house style"
   styleVersion: ${STYLE_VERSION}
   model: "${MODEL}"
   runId: "${RUN_ID}"

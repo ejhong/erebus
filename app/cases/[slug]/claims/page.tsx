@@ -7,12 +7,16 @@ import { ProvenanceBadge } from "@/src/components/ProvenanceBadge";
 import {
   catalogClaims,
   featuredClaims,
-  getCaseBySlug,
   loadAllCases,
 } from "@/src/domain/load";
+import { paramsOrPlaceholder } from "@/src/domain/staticExport";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
-  return loadAllCases().map((c) => ({ slug: c.record.slug }));
+  return paramsOrPlaceholder(
+    "slug",
+    loadAllCases().map((c) => c.record.slug),
+  );
 }
 
 export function generateMetadata({
@@ -20,9 +24,10 @@ export function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  return params.then(({ slug }) => ({
-    title: `Claims · ${getCaseBySlug(slug).record.title}`,
-  }));
+  return params.then(({ slug }) => {
+    const loaded = loadAllCases().find((c) => c.record.slug === slug);
+    return { title: loaded ? `Claims · ${loaded.record.title}` : "Not found" };
+  });
 }
 
 export default async function ClaimsExplorerPage({
@@ -31,7 +36,9 @@ export default async function ClaimsExplorerPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const loaded = getCaseBySlug(slug);
+  const found = loadAllCases().find((c) => c.record.slug === slug);
+  if (!found) notFound();
+  const loaded = found;
   const featured = featuredClaims(loaded);
   const catalog = catalogClaims(loaded);
   const tombstones = loaded.claims.filter((c) => c.reviewState === "rejected");

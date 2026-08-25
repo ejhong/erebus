@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { CaseCard } from "@/src/components/CaseCard";
 import { ChangeTimeline } from "@/src/components/ChangeTimeline";
-import { assetPath } from "@/src/config/assets";
 import { site } from "@/src/config/site";
 import {
   caseCover,
@@ -11,13 +10,31 @@ import {
   loadAllCases,
   recentChanges,
   reviewCoverage,
-  siteImage,
 } from "@/src/domain/load";
+
+/** Hand-built waveform divider — instrument-chart language, no raster art. */
+function WaveDivider() {
+  return (
+    <div aria-hidden className="mx-auto max-w-3xl px-5 pt-14">
+      <svg
+        viewBox="0 0 640 40"
+        className="block w-full h-10 text-line"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0 20 H240 l6 -12 6 24 6 -30 6 34 6 -24 6 14 6 -6 H400 l6 -8 6 14 6 -10 6 6 H640"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.25"
+        />
+        <circle cx="264" cy="20" r="2.5" className="text-copper" fill="currentColor" />
+      </svg>
+    </div>
+  );
+}
 
 export default function HomePage() {
   const cases = loadAllCases();
-  const divider = siteImage("IMG-SITE-DIVIDER-STRATA");
-  const tailpiece = siteImage("IMG-SITE-TAILPIECE");
   // Epistemic changes lead the homepage feed; artwork/tooling entries stay
   // on each case's own history. At least one slot per live case, so a new
   // case's launch always shows.
@@ -38,7 +55,7 @@ export default function HomePage() {
           {site.subtitle}
         </p>
         <h1 className="font-serif text-2xl sm:text-3xl tracking-tight mt-3 leading-[1.15] max-w-2xl">
-          Controversies are argued at the wrong scale. We take them apart.
+          Contested events are argued at the wrong scale. We take them apart.
         </h1>
         <p className="mt-4 text-[15px] leading-relaxed text-ink-soft max-w-2xl">
           {site.mission}
@@ -48,13 +65,13 @@ export default function HomePage() {
             href="/research/"
             className="font-mono text-[11px] uppercase tracking-[0.14em] text-copper underline underline-offset-4 hover:text-ink"
           >
-            The Price of Truth — every decisive test, priced →
+            The research agenda — every decisive test →
           </Link>
           <Link
             href="/method/"
             className="font-mono text-[11px] uppercase tracking-[0.14em] text-copper underline underline-offset-4 hover:text-ink"
           >
-            How the atlas works →
+            How the map works →
           </Link>
         </p>
       </section>
@@ -63,36 +80,56 @@ export default function HomePage() {
         <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-faint mb-4">
           cases
         </h2>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {cases.map((c) => {
-            const shown = displayAssessment(c);
-            const sum = crossModelSummary(c);
-            return (
-              <CaseCard
-                key={c.record.id}
-                record={c.record}
-                verdict={shown?.run.caseAssessment.verdict ?? null}
-                standing={shown?.ratification.status ?? null}
-                reviewCoverage={reviewCoverage(c)}
-                check={
-                  sum
-                    ? {
-                        models: sum.models.length,
-                        concur: sum.caseUnanimousWithDisplayed,
-                      }
-                    : null
-                }
-                cover={caseCover(c)}
-              />
-            );
-          })}
-        </div>
+        {cases.length === 0 ? (
+          <div className="border border-line bg-paper-deep/50 px-6 py-10 max-w-2xl">
+            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-copper">
+              no cases published yet
+            </p>
+            <p className="mt-3 text-[14.5px] leading-relaxed text-ink-soft">
+              The first case dossiers are in preparation. A case is published
+              only when its claims, evidence records, and sources meet the
+              provenance standards described on the{" "}
+              <Link
+                href="/method/"
+                className="underline underline-offset-2 decoration-copper/60 hover:text-ink"
+              >
+                method page
+              </Link>
+              — nothing ships early to fill this space.
+            </p>
+          </div>
+        ) : (
+          <div className="grid sm:grid-cols-2 gap-4">
+            {cases.map((c) => {
+              const shown = displayAssessment(c);
+              const sum = crossModelSummary(c);
+              return (
+                <CaseCard
+                  key={c.record.id}
+                  record={c.record}
+                  verdict={shown?.run.caseAssessment.verdict ?? null}
+                  standing={shown?.ratification.status ?? null}
+                  reviewCoverage={reviewCoverage(c)}
+                  check={
+                    sum
+                      ? {
+                          models: sum.models.length,
+                          concur: sum.caseUnanimousWithDisplayed,
+                        }
+                      : null
+                  }
+                  cover={caseCover(c)}
+                />
+              );
+            })}
+          </div>
+        )}
       </section>
 
       <section className="bg-dossier text-dossier-text mt-10">
         <div className="mx-auto max-w-6xl px-5 py-12">
           <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
-            how the atlas works
+            how the map works
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-dossier-line border border-dossier-line mt-5">
             {[
@@ -105,8 +142,8 @@ export default function HomePage() {
                 "Evidence for and against gets the same structure and the same seriousness. What a source states is kept separate from what we infer. Every record carries its provenance: who extracted it, who checked it, and who hasn't yet.",
               ],
               [
-                "03 · Decisive experiments",
-                "A case doesn't end in a verdict; it ends in a research agenda. Each unresolved crux is attached to the study that would move it — and the assessment says in advance what would change its mind.",
+                "03 · Decisive tests",
+                "A case doesn't end in a verdict; it ends in a research agenda. Each unresolved crux is attached to the record, release, or analysis that would move it — and the assessment says in advance what would change its mind.",
               ],
               [
                 "04 · Honest provenance",
@@ -136,22 +173,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* engraved strata divider */}
-      <div aria-hidden className="mx-auto max-w-3xl px-5 pt-14">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={assetPath(divider.file)}
-          alt=""
-          loading="lazy"
-          className="block w-full h-16 object-cover opacity-80"
-        />
-      </div>
+      <WaveDivider />
 
       <section className="mx-auto max-w-6xl px-5 py-12">
         <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-faint mb-6">
           recent changes · evidence &amp; assessments
         </h2>
-        <ChangeTimeline entries={feed} />
+        {feed.length === 0 ? (
+          <p className="text-[14px] text-ink-soft max-w-2xl">
+            No published changes yet. When cases go live, every change to a
+            claim, evidence record, or assessment appears here with its date,
+            reason, and the AI&apos;s role — the change history is part of the
+            publication.
+          </p>
+        ) : (
+          <ChangeTimeline entries={feed} />
+        )}
         {housekeepingCount > 0 ? (
           <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.14em] text-faint">
             + {housekeepingCount} housekeeping changes (artwork, tooling) —
@@ -159,17 +196,6 @@ export default function HomePage() {
           </p>
         ) : null}
       </section>
-
-      {/* tailpiece ornament */}
-      <div aria-hidden className="mx-auto max-w-xs px-5 pb-4">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={assetPath(tailpiece.file)}
-          alt=""
-          loading="lazy"
-          className="block w-full mix-blend-multiply opacity-90"
-        />
-      </div>
     </div>
   );
 }
