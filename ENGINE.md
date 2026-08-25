@@ -104,3 +104,17 @@ Current queue (2026-08-25):
 4. **Empty-state rendering for the homepage, case index, and research
    page** (lower priority; useful for bootstraps and full-archive states).
    Shipped here in the corresponding page files, listed in the allowlist.
+5. **Design objection to the contested-reconciliation mechanism (from
+   this repo's arbiter panel, 2026-08-25).** On the engine-sync PR
+   carrying `scripts/reconcile-contested.mjs`, one seat (Opus 5) filed a
+   substantiated §3.15 objection while four seats judged the mechanism
+   compliant: the reconsideration draft is written non-blind (with every
+   seat's dissent in hand) and standing then re-derives against the
+   EXISTING check runs — so a contested standing can clear by moving the
+   draft toward the judges' verdicts without any independent model
+   judging the new draft. Proposed upstream fix: a contested→ratified
+   transition after reconciliation requires at least one fresh blind
+   check of the reconciled draft (or the standing derivation should
+   treat post-reconciliation drafts as staling the panel). The dissent
+   and the four complies readings are preserved verbatim in this repo's
+   PR #8 arbiter comment.
