@@ -1402,6 +1402,93 @@
     runId: "case-kirk-intake-2026-08-25"
     date: "2026-08-25"
 
+- id: KRK-E053
+  title: "Patel's September 15 screwdriver-DNA announcement — and its absence from the next day's charging Information"
+  claimIds: [KRK-C032]
+  sourceId: SRC-ALJAZEERA-PATEL-2025
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    Patel, on Fox & Friends, September 15, 2025: "I can report today that
+    the DNA hits from the towel that was wrapped around the firearm and
+    the DNA on the screwdriver are positively processed for the suspect in
+    custody." The charging Information filed September 16 (full text
+    searched) contains zero occurrences of "screwdriver"; its DNA passages
+    cover the rifle trigger, casing, cartridges, and towel only.
+  editorInference: >-
+    The announcement/filing mismatch is real. A charging Information is
+    not an evidence inventory, so the omission alone carries little
+    weight — the question the compilation raises is whether the evidence
+    later disappeared, answered by KRK-E054.
+  exactLocator: "Al Jazeera, September 16, 2025; Information, Case No. 251403576 (full-text search)"
+  limitations:
+    - "Patel's wording is a television statement, not a laboratory document."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E054
+  title: "The screwdriver evidence was presented in full at the preliminary hearing"
+  claimIds: [KRK-C032]
+  sourceId: SRC-FOX-PRELIM-DNA-2026
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    July 2026 hearing coverage: "Faumuina testified that her team
+    recovered a screwdriver from the campus' Losee Center rooftop...
+    Faumuina testified that both the towel and the screwdriver had DNA
+    consistent with the same two males — Robinson and Twiggs." FBI analyst
+    testimony: "Robinson's DNA was found on a screwdriver recovered from
+    the rooftop... DNA of Robinson's former roommate and lover Lance
+    Twiggs was also found on both items, but Bakker said his sample was
+    used as an elimination sample. Twiggs isn't accused or charged of any
+    crime."
+  editorInference: >-
+    The "quietly abandoned" reading fails: the evidence was presented
+    under oath ten months after the announcement. What remains true is
+    that early televised statements and formal filings did not reconcile —
+    a statement-ledger entry (KRK-R010), not a vanishing act.
+  limitations:
+    - "Same-proceeding press coverage; the underlying laboratory reports are not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E055
+  title: "AES's own archived capability statements: shaped charges, the Claymore contract, precision pressing"
+  claimIds: [KRK-C025]
+  sourceId: SRC-AES-ARCHIVE-2025
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    From the company's archived pages: "AES is proud to offer the Linear
+    Shaped Charge (LSC)... Our capability goes from single-digit
+    grains/foot (gr/ft) to 10,500 gr/ft." "AES is the proud Prime
+    Contractor for the M18A1 Claymore Mine System..." "Our equipment
+    allows us to press pellets ranging in size from .050 inch up to 8
+    inches in diameter, and from milligrams up to 20 pounds in weight,"
+    across RDX and HMX formulations.
+  editorInference: >-
+    The capability premise of the compilation's argument is real, from the
+    company's own materials — and nearly non-diagnostic: these are the
+    ordinary advertised capabilities of a licensed energetics contractor,
+    shared by others in the industry. Capability plus a purchase order is
+    not a device, a delivery to anyone relevant, or a connection.
+  exactLocator: "Wayback snapshots of aesys.biz capability pages (2025-10-03 to 2025-12-25)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
 - id: KRK-E037
   title: "The reviewed official record asserts no post-shot rifle disassembly — and the times are not logically incompatible"
   claimIds: [KRK-C010]

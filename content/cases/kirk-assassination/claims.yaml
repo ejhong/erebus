@@ -974,6 +974,50 @@
   whatWouldChangeOurMind:
     - "Any communications, financial, or witness evidence of advance coordination — or a completed investigation formally closing the question."
 
+- id: KRK-C032
+  tier: featured
+  statement: >-
+    The screwdriver DNA evidence announced by the FBI director on
+    September 15, 2025 was subsequently abandoned by the prosecution.
+  plainLanguage: >-
+    Half of the underlying observation is true and half is not — which is
+    exactly why it needs its own claim. True: Patel announced screwdriver
+    DNA on national television, and the charging Information filed the
+    next day never mentions a screwdriver. False: the evidence was not
+    dropped — it was presented in full at the July 2026 preliminary
+    hearing, with testimony that DNA consistent with Robinson was on it.
+    A charging document omitting an evidence item is ordinary (it is not
+    an evidence inventory); "they quietly buried it" is contradicted by
+    the hearing record.
+  theme: institutional
+  rung: observation
+  claimType: methodological
+  importance: supporting
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — weapon cluster, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  credibility: contradicted
+  credibilitySummary: >-
+    The premise verifies (announcement verbatim; zero mentions in the
+    Information's ten pages); the abandonment claim is contradicted by
+    sworn hearing testimony presenting the screwdriver DNA (KRK-E054).
+  diagnosticity: low
+  diagnosticitySummary: >-
+    An early-announcement/charging-document mismatch is expected under
+    ordinary drafting practice; had the evidence actually vanished from
+    the case, that would have been diagnostic of narrative management.
+    It did not.
+  strongestObjection: >-
+    The compilation's underlying instinct — that early official
+    statements and formal filings should reconcile — is sound; the
+    statement-discrepancy ledger (KRK-R010) exists to track exactly such
+    gaps, including this one, without inflating them.
+  whatWouldChangeOurMind:
+    - "Evidence that the screwdriver analysis was withdrawn, impeached, or excluded at trial."
+
 # ── catalog-tier leads ───────────────────────────────────────────────────
 # Unreviewed backlog records: allegations circulating around the case,
 # anchored to their exact source with a verbatim quote, awaiting the
@@ -1193,3 +1237,120 @@
     belief, from a host with an audience incentive; a belief, even if
     accurately relayed, is a fear, not evidence about who acted. Two
     layers, graded separately if ever promoted.
+
+- id: KRK-C033
+  tier: catalog
+  statement: >-
+    Google Trends data showed searches from Israel and Washington, D.C.
+    for case-specific terms before the shooting occurred.
+  theme: timeline
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — day-of cluster, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    sourceId: SRC-GUNSAMERICA-2025
+    locator: "GunsAmerica Digest summary of the Coleman/Li presentation"
+    quote: >-
+      commentators Baron Coleman and James Li highlighted a series of
+      Google Trends data points suggesting that someone in Washington,
+      D.C. searched terms like 'Tyler James Robinson,' 'Losee Center,' and
+      'Mauser 98' before the September 10 shooting
+  plainLanguage: >-
+    Methodologically broken as circulated: the same summary records that
+    replication attempts failed ("anyone trying to replicate his searches
+    later could not"), Trends normalizes small-sample regional data in
+    ways that manufacture exactly such artifacts, and versions citing "IP
+    addresses" assert something Trends cannot show. No archived,
+    reproducible query exports exist. Promotable only if the original
+    dated exports surface.
+
+- id: KRK-C034
+  tier: catalog
+  statement: >-
+    Kirk sent messages to associates in his final days saying "they" were
+    going to kill him.
+  theme: motive-pressure
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — build-up cluster, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    sourceId: SRC-ECONTIMES-OWENS-2025
+    locator: "Owens episode, October 2025, per press transcription"
+    quote: >-
+      three people told me off record—two people who have this in a
+      written communication from Charlie... He told these people, 'I think
+      they're going to kill me.'
+  independenceGroup: "owens-final-days-accounts"
+  plainLanguage: >-
+    Owens-originated from off-record sources; no alleged recipient has
+    produced a message publicly. The one named engagement cuts both ways:
+    TPUSA's spokesman affirmed on the record that Kirk had repeatedly said
+    "leftists were going to try and kill him," while disputing Owens'
+    framing of the referent — so a version of the underlying statement has
+    on-record support, and its meaning is precisely what is contested.
+
+- id: KRK-C035
+  tier: catalog
+  statement: >-
+    Kirk rejected Netanyahu's invitation to visit Israel.
+  theme: motive-pressure
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — build-up cluster, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    sourceId: SRC-GRAYZONE-2025
+    locator: "The Grayzone, September 15, 2025"
+    quote: >-
+      Another longtime friend of Kirk has told The Grayzone that the
+      conservative activist also rejected an offer Netanyahu delivered two
+      weeks before his death to meet with him in Jerusalem.
+  independenceGroup: "grayzone-anonymous-friend-accounts"
+  plainLanguage: >-
+    A direct conflict of assertions: an anonymous friend says rejected;
+    Netanyahu's own on-record account says accepted ("he said, 'Well, I'm
+    going to, and we were going to fix a date'"). Kirk's May letter to
+    Netanyahu — public in full — mentions no invitation either way (it
+    predates the call). Unresolvable without records of the call itself.
+
+- id: KRK-C036
+  tier: catalog
+  statement: >-
+    Netanyahu offered Kirk a large infusion of funding for TPUSA, which
+    Kirk rejected.
+  theme: motive-pressure
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — build-up cluster, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    sourceId: SRC-GRAYZONE-SEPT12-2025
+    locator: "The Grayzone, September 12, 2025"
+    quote: >-
+      Charlie Kirk rejected an offer earlier this year from Israeli Prime
+      Minister Benjamin Netanyahu to arrange a massive new infusion of
+      Zionist money into his Turning Point USA (TPUSA) organization...
+      according to a longtime friend of the slain commentator speaking on
+      the condition of anonymity.
+  independenceGroup: "grayzone-anonymous-friend-accounts"
+  plainLanguage: >-
+    Anonymous-source origin with an explicit on-record denial: TPUSA's
+    spokesman in July 2026 — "Netanyahu did NOT offer TPUSA millions...
+    I NEVER told Candace any of this because it didn't happen." The
+    versions also disagree on timing (Grayzone: "earlier this year";
+    Owens: during the Hamptons meeting). No document, recording, or named
+    witness exists publicly on either side.
