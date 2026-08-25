@@ -1,0 +1,385 @@
+# KRK-001 source registry. Every source was independently verified by the
+# editorial AI against the live URL (or a dated archive snapshot, noted)
+# on 2026-08-25 before entry; verificationNote records how. Sources the
+# verification pass could NOT reach (Times of Israel ×3, Reuters, Newsmax,
+# BBB — all bot-walled) were dropped or replaced, not carried on faith.
+# Reliability notes distinguish access from inference: a source can be
+# excellent for what it directly shows and weak for its conclusions.
+
+# ── official and court records ──────────────────────────────────────────
+
+- id: SRC-FBI-UPDATES-2025
+  title: "Utah Valley Shooting Updates"
+  organization: "Federal Bureau of Investigation"
+  year: "2025"
+  sourceType: report
+  url: "https://www.fbi.gov/news/press-releases/utah-valley-shooting-updates"
+  verification: ai_verified
+  verificationNote: >-
+    Live URL bot-blocked (403); content verified via Wayback Machine
+    snapshot of 2026-08-21. Quotes taken from the archived copy.
+  reliabilityNotes:
+    - "Authoritative for what the FBI collected and asserts; not independent of the investigation whose adequacy is itself under review."
+    - "The archived page contains no pre-noon chronology (the widely-cited 8:29 a.m. arrival time is not on it)."
+
+- id: SRC-DPS-2025
+  title: "Updates on Charlie Kirk shooting at UVU"
+  organization: "Utah Department of Public Safety"
+  year: "2025"
+  sourceType: report
+  url: "https://dps.utah.gov/press-releases/updates-on-charlie-kirk-shooting-at-uvu/"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim from page."
+  reliabilityNotes:
+    - "Day-of statement; reflects initial information, some of which later changed (two detained men released without ties to the shooting)."
+
+- id: SRC-UC-INFORMATION-2025
+  title: "Information, State of Utah v. Tyler James Robinson (charging instrument)"
+  organization: "Utah County Attorney (Fourth Judicial District Court)"
+  year: "2025"
+  sourceType: report
+  identifier: "Case No. 251403576; filed September 16, 2025"
+  url: "https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    PDF downloaded and text-extracted 2026-08-25 (10 pages; file metadata
+    September 16, 2025).
+  reliabilityNotes:
+    - "A charging instrument states allegations, not adjudicated facts. The defendant is presumed innocent."
+
+- id: SRC-REV-DAY1-2026
+  title: "UT v. Tyler Robinson — Preliminary Hearing Day 1 (transcript)"
+  organization: "Rev.com"
+  year: "2026"
+  sourceType: report
+  url: "https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25 (~318 KB transcript); quotes verbatim."
+  reliabilityNotes:
+    - "A commercial transcript of the streamed proceeding, not a certified court transcript; speaker attribution and spellings are the transcriber's."
+
+# ── contemporaneous courtroom and wire reporting ────────────────────────
+
+- id: SRC-KSL-PRELIM1-2026
+  title: "Videos, autopsy report submitted at Robinson prelim despite flurry of hearsay objections"
+  authors: ["Pat Reavy"]
+  organization: "KSL.com"
+  year: "2026"
+  sourceType: webpage
+  url: "https://www.ksl.com/article/51594777/videos-medical-examiners-report-submitted-at-robinson-prelim-despite-flurry-of-hearsay-objections"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+
+- id: SRC-KUTV-PRELIM1-2026
+  title: "Tyler Robinson appears in court for pretrial hearing in Charlie Kirk's murder case (live updates, day 1)"
+  authors: ["Aubree B. Jennings"]
+  organization: "KUTV"
+  year: "2026"
+  sourceType: webpage
+  identifier: "July 6, 2026 live blog"
+  url: "https://kutv.com/news/local/preliminary-hearing-tyler-robinson-murder-case-charlie-kirk-utah"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; timestamped entries quoted verbatim."
+
+- id: SRC-EIN-PRELIM4-2026
+  title: "Live updates: Roommate interview shown on day 4 of Tyler Robinson hearing"
+  organization: "East Idaho News"
+  year: "2026"
+  sourceType: webpage
+  identifier: "July 9, 2026 live blog"
+  url: "https://www.eastidahonews.com/2026/07/live-updates-roommate-interview-expected-to-be-shown-on-day-4-of-tyler-robinson-hearing-in-charlie-kirks-murder-case/"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; timestamped entries quoted verbatim."
+  reliabilityNotes:
+    - "Renders the ATF examiner's surname 'Carner'; an AP pool-photo caption and other outlets render 'Karner'. This case file uses 'Karner' and notes the variant."
+
+- id: SRC-AP-PRELIM-2026
+  title: "Defense tries to sow doubt about evidence in Charlie Kirk's killing"
+  authors: ["Hannah Schoenbaum", "Matthew Brown"]
+  organization: "Associated Press"
+  year: "2026"
+  sourceType: webpage
+  url: "https://apnews.com/article/charlie-kirk-tyler-robinson-preliminary-hearing-79dac2f8cf63b63b435ff962b5e44001"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+
+- id: SRC-AP-ENGRAVING-2026
+  title: "Prosecutors say bullet engraving shows Charlie Kirk was targeted for his politics"
+  organization: "Associated Press"
+  year: "2026"
+  sourceType: webpage
+  url: "https://apnews.com/article/d93454f7a018005c60ac86ae30054fdc"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+
+- id: SRC-KSL-CONTEMPT-2026
+  title: "Utah County Attorney's Office found in contempt in Robinson case, but death penalty still on table"
+  authors: ["Pat Reavy"]
+  organization: "KSL.com"
+  year: "2026"
+  sourceType: webpage
+  identifier: "June 26, 2026"
+  url: "https://www.ksl.com/article/51546907/judge-in-robinson-case-expected-to-rule-on-contempt-allegation"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched directly 2026-08-25; quotes verbatim, including the ruling's
+    quoted language and Ballard's TMZ statement.
+
+- id: SRC-FOX-PRELIM-2026
+  title: "Tyler Robinson hearing ends without ruling; evidence addresses Charlie Kirk conspiracy claims"
+  organization: "Fox News"
+  year: "2026"
+  sourceType: webpage
+  url: "https://www.foxnews.com/us/tyler-robinson-hearing-ends-without-ruling-evidence-dismantles-charlie-kirk-conspiracy-claims"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+  reliabilityNotes:
+    - "Framing is explicitly debunk-oriented ('conspiracy theories debunked'); used here for its court-reported facts, with its characterizations treated as characterizations."
+
+- id: SRC-WAPO-ROOF-2025
+  title: "Video shows person running on roof immediately after Kirk shooting"
+  authors: ["Jonathan Baran", "Evan Hill"]
+  organization: "The Washington Post (Visual Forensics)"
+  year: "2025"
+  sourceType: webpage
+  identifier: "Published 2025-09-11"
+  url: "https://www.washingtonpost.com/investigations/2025/09/11/charlie-kirk-shooting/"
+  verification: ai_verified
+  verificationNote: >-
+    Live page inaccessible to the verifier; headline, subhead, byline and
+    publication metadata verified via a 2025-09-11 archive snapshot. Body
+    text could not be read — only the summary-level finding is cited.
+  reliabilityNotes:
+    - "Independent visual-forensics analysis, valuable precisely because it does not rely on police characterization."
+
+- id: SRC-ABC-KOZAK-2025
+  title: "The last person to question Charlie Kirk describes the moment as 'visceral'"
+  authors: ["Vera Drymon", "Jon Haworth"]
+  organization: "ABC News"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 12, 2025"
+  url: "https://abcnews.go.com/US/person-question-charlie-kirk-describes-moment-visceral/story?id=125505153"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+  reliabilityNotes:
+    - "First-person recollection of a sound impression; lay localization of impulse sounds is known to be unreliable."
+
+# ── motive-environment reporting ────────────────────────────────────────
+
+- id: SRC-JTA-2025
+  title: "'Jewish donors play into all the stereotypes,' Charlie Kirk wrote in leaked text messages before his murder"
+  organization: "Jewish Telegraphic Agency"
+  year: "2025"
+  sourceType: webpage
+  identifier: "October 10, 2025"
+  url: "https://www.jta.org/2025/10/10/united-states/jewish-donors-play-into-all-the-stereotypes-charlie-kirk-wrote-in-leaked-text-messages-before-his-murder"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched directly 2026-08-25; message text, Kolvet and Hammer
+    confirmations, and the NYT/Shillman attribution quoted verbatim.
+
+- id: SRC-GRAYZONE-2025
+  title: "Billionaire Bill Ackman convened stormy Israel 'intervention' with Charlie Kirk, sources say"
+  organization: "The Grayzone"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 15, 2025"
+  url: "https://thegrayzone.com/2025/09/15/bill-ackman-israel-intervention-charlie-kirk/"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim, including Ackman's denial within the piece."
+  reliabilityNotes:
+    - "Relies on anonymous sources ('five people with intimate knowledge'); outlet has a strong editorial viewpoint. Cited for what it reports and who disputes it, never as established fact."
+
+- id: SRC-NYPOST-ACKMAN-2025
+  title: "Bill Ackman denies Candace Owens' claim he staged Charlie Kirk 'intervention' over Israel"
+  organization: "New York Post"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 16, 2025"
+  url: "https://nypost.com/2025/09/16/media/bill-ackman-denies-candace-owens-claim-he-staged-charlie-kirk-intervention-over-israel/"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; Ackman and Hausdorff statements quoted verbatim."
+  reliabilityNotes:
+    - "Strong for what named people deny on the record; does not independently resolve what happened at the meeting."
+
+- id: SRC-NYPOST-SURGEON-2025
+  title: "Charlie Kirk surgeon reveals 'miracle' factor that likely prevented more from being hurt"
+  organization: "New York Post"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 21, 2025"
+  url: "https://nypost.com/2025/09/21/us-news/charlie-kirk-surgeon-reveals-miracle-factor-that-likely-prevented-more-from-being-hurt/"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; Kolvet's posts quoted verbatim."
+  reliabilityNotes:
+    - "The surgeon is unnamed and every medical statement is relayed second-hand by a TPUSA spokesman; evidence of what was RELAYED, not a medical record."
+
+# ── commentator and independent-analyst material ────────────────────────
+
+- id: SRC-OWENS-EP235-2025
+  title: "They Are Lying About Charlie Kirk (Candace, Ep 235) — transcript"
+  authors: ["Candace Owens"]
+  organization: "Happy Scribe (automated transcript)"
+  year: "2025"
+  sourceType: webpage
+  url: "https://podcasts.happyscribe.com/candace/they-are-lying-about-charlie-kirk"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim from the automated transcript."
+  reliabilityNotes:
+    - "Automated transcript; may contain transcription errors."
+    - "Primary for what Owens says and presents; her attributions and inferences are graded separately from her artifacts."
+
+- id: SRC-OWENS-EP263-2025
+  title: "Megyn Kelly Goes Scorched Earth On Those Lying About Charlie Kirk (Candace, Ep 263) — transcript"
+  authors: ["Candace Owens"]
+  organization: "Happy Scribe (automated transcript)"
+  year: "2025"
+  sourceType: webpage
+  url: "https://podcasts.happyscribe.com/candace/megyn-kelly-goes-scorched-earth-on-those-lying-about-charlie-kirk"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim from the automated transcript."
+  reliabilityNotes:
+    - "Automated transcript renders several names phonetically ('Tarroll', 'Tyler Boyer', 'Andrew Colvette')."
+    - "Source of unverified allegations recorded here as catalog-tier leads, never as findings."
+
+- id: SRC-OWENS-EP377-2026
+  title: "Liar, Liar, TPUSA On Fire? More Exclusive Footage From 9/10 (Candace, Ep 377) — transcript"
+  authors: ["Candace Owens"]
+  organization: "podProse (polished transcript)"
+  year: "2026"
+  sourceType: webpage
+  identifier: "August 18, 2026"
+  url: "https://podprose.org/post/1121/candace-owens-liar-liar-tpusa-fire-more-exclusive-footage-transcript"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+  reliabilityNotes:
+    - "Third-party transcript of Owens' program; the underlying footage and documents she presents have not been independently examined in native form."
+    - "Renders the contractor's name 'Terrell'; the court transcript renders 'Terryl'. This case file follows the court transcript."
+
+- id: SRC-OWENS-EP365-2026
+  title: "EXCLUSIVE: Ben Shapiro's 9/10 'Lunch' Date. More Text Messages From Charlie Kirk (Candace, Ep 365)"
+  authors: ["Candace Owens"]
+  organization: "YouTube (Candace Owens channel)"
+  year: "2026"
+  sourceType: webpage
+  identifier: "Streamed live July 23, 2026"
+  url: "https://www.youtube.com/watch?v=amqTMimDr0A"
+  verification: ai_verified
+  verificationNote: >-
+    Watch-page metadata and auto-generated transcript fetched 2026-08-25;
+    Owens' explicit non-confirmation quoted from the auto-transcript. Video
+    content itself not independently reviewable.
+  reliabilityNotes:
+    - "Auto-generated transcript; may contain transcription errors."
+
+- id: SRC-EPICENTER-2026
+  title: "EPICENTER — Forensic Analysis of the UVU Incident"
+  organization: "followtheepicenter.com (operator unnamed)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://followtheepicenter.com/"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; analysis claims and methodology statements quoted verbatim."
+  reliabilityNotes:
+    - "Anonymous operator (site states it is funded through the operator's family farm); no named credentials."
+    - "Unusually, publishes its source videos and analysis code for independent re-running — a transparency practice its conclusions' critics should engage."
+    - "Analyses run on cellphone video; no independent replication or peer review is known to this case file."
+
+- id: SRC-HOLON-MIC-2026
+  title: "Explosive in Mic Likely Killed Charlie (Who Assassinated Charlie Kirk)"
+  authors: ["@HolonCitizen (pseudonymous)"]
+  organization: "whoassassinatedcharliekirk.com"
+  year: "2026"
+  sourceType: webpage
+  url: "https://whoassassinatedcharliekirk.com/Tyler_Robinson_Not_Assassin/explosive-mic-killed-charlie"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; claims and its own quoted counterarguments verbatim."
+  reliabilityNotes:
+    - "Pseudonymous advocacy aggregator; useful for locating the theory's specific observations and objections, not for establishing any of them."
+
+- id: SRC-BRAY-INTERVIEW-2026
+  title: "Jon Bray: The Mic Theory, His #1 Suspect, and Why the FBI Watched His Family"
+  authors: ["Jon Aaron Bray (interviewee)"]
+  organization: "YouTube (TriggerSmart channel)"
+  year: "2026"
+  sourceType: webpage
+  identifier: "July 23, 2026"
+  url: "https://www.youtube.com/watch?v=yhyFpi5ywhM"
+  verification: ai_verified
+  verificationNote: >-
+    Watch-page metadata and auto-generated transcript fetched 2026-08-25.
+    Video content itself not independently reviewable.
+  reliabilityNotes:
+    - "Primary for what Bray himself argues; no documented forensic credentials are established for his technical conclusions."
+    - "Auto-generated transcript; may contain transcription errors."
+
+- id: SRC-SHERAFY-2026
+  title: "Why Did Utah Valley University Pave the Charlie Kirk Assassination Site?"
+  authors: ["Sherafgan Khan"]
+  organization: "sherafy.com"
+  year: "2026"
+  sourceType: webpage
+  identifier: "August 3, 2026; last updated August 24, 2026"
+  url: "https://sherafy.com/why-uvu-paved-charlie-kirk-assassination-site/"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched directly 2026-08-25 (note: URL differs from some circulating
+    links by omitting 'the-'); quotes verbatim, including the
+    Judicial-Watch-obtained records it reproduces.
+  reliabilityNotes:
+    - "Independent records synthesis built on GRAMA documents; the underlying records should be verified directly before any consequential extension."
+
+# ── methodology ─────────────────────────────────────────────────────────
+
+- id: SRC-NIST-TOOLMARKS
+  title: "Firearms and toolmarks"
+  organization: "National Institute of Standards and Technology"
+  sourceType: webpage
+  url: "https://www.nist.gov/firearms-and-toolmarks"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched directly 2026-08-25. Note: this page describes comparison
+    methodology and its limits; it does not itself display the
+    identification/inconclusive/elimination outcome vocabulary sometimes
+    attributed to it.
+
+# ── reading guide (background: carried for orientation, cited by nothing) ─
+
+- id: SRC-CHARLIEFILES-2026
+  title: "CharlieFiles.com — case timeline (living document)"
+  organization: "CharlieFiles.com"
+  year: "2026"
+  sourceType: webpage
+  url: "https://publish.obsidian.md/charliefiles/articles/Timeline"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25."
+  reliabilityNotes:
+    - "Transparent independent chronology sourced to the court file; verify decisive claims upstream."
+  background: true
+
+- id: SRC-BRAY-LIVESTREAM-2025
+  title: "The Exploding Mic Theory EXPLAINED — Jon Bray Breaks Down the Science LIVE"
+  organization: "YouTube (TriggerSmart channel)"
+  year: "2025"
+  sourceType: webpage
+  identifier: "Streamed live December 20, 2025"
+  url: "https://www.youtube.com/watch?v=uTgleb3kO3Q"
+  verification: ai_verified
+  verificationNote: "Watch-page metadata fetched 2026-08-25; video content not independently reviewable."
+  reliabilityNotes:
+    - "Long-form primary presentation of the device hypothesis by its originator."
+  background: true
+
+- id: SRC-MERRELL-2026
+  title: "I Was Hired to Pave Over Charlie Kirk's Death Scene (Dan Merrell interview)"
+  organization: "YouTube (Jimmy Rex channel)"
+  year: "2026"
+  sourceType: webpage
+  identifier: "May 18, 2026"
+  url: "https://www.youtube.com/watch?v=vPrvWY6dWIw"
+  verification: ai_verified
+  verificationNote: "Watch-page metadata fetched 2026-08-25; video content not independently reviewable."
+  reliabilityNotes:
+    - "First-person account from the paving contractor; strong for what he did and saw, weak for others' intentions."
+  background: true

@@ -1,0 +1,107 @@
+id: KRK-001
+slug: kirk-assassination
+title: "One Shot, Many Records"
+subtitle: "Does the public evidentiary record of the September 10, 2025 killing of Charlie Kirk support the official single-shooter account — and where exactly does it stop being auditable?"
+domain: "Contested public events · Active criminal proceeding"
+status: active
+summary: >-
+  Charlie Kirk was killed by a single shot during a public event at Utah
+  Valley University on September 10, 2025. The State of Utah has charged
+  Tyler Robinson — who is presumed innocent — and presented a multi-channel
+  case: surveillance chronology, a rooftop figure, a recovered rifle, DNA
+  association, and alleged admissions. Around that case has grown a
+  contested penumbra: an ATF bullet comparison that was publicly
+  inconclusive, a fragment count that does not yet reconcile, event video
+  handled by private personnel before documented law-enforcement custody,
+  a site paved over within days, a prosecutor held in contempt for
+  publicity violations, authenticated messages showing acute donor
+  pressure on Kirk in his final weeks, and an alternative "device"
+  hypothesis promoted by independent analysts. This case maps which of
+  those disputes are real, which are manufactured, and what record or test
+  would move each one. It grades evidence disputes — never anyone's guilt,
+  which only a court can adjudicate.
+whatIsClaimed: >-
+  Critics of the official account claim, in ascending order of strength:
+  that the public record is materially incomplete and unauditable (fragment
+  accounting, autopsy detail, native media); that specific evidence chains
+  were compromised or manipulated; that Robinson had assistance or the
+  event had foreknowledge; and, on the strongest versions, that the fatal
+  mechanism was not a distant rifle shot at all but a device at the
+  microphone, with institutional concealment afterwards. The featured
+  question is not "who did it" — it is which of these evidentiary
+  challenges survive contact with the primary record.
+whereDisagreementLives: >-
+  Not over whether Kirk died of neck trauma at the event, nor over whether
+  a figure fled the Losee Center roof — both are strongly documented. The
+  live disputes sit one rung up, in provenance and completeness: the ATF
+  examiner could neither match nor exclude the recovered rifle against the
+  autopsy fragments; seven photographed fragments against four examined
+  remain unreconciled publicly; the complete autopsy package has not been
+  released in auditable form; the event contractor's original camera media
+  chain is not publicly established; and the site was altered within days.
+  Whether those gaps are ordinary process or something worse is exactly
+  what the record does not yet say.
+whatWouldSettleIt: >-
+  Disclosure and independent testing, not commentary: a fragment-by-fragment
+  reconciliation of all seven documented fragments; the complete autopsy
+  and radiology package reviewed by independent forensic pathologists; a
+  blind, native-file synchronization study of every camera and audio
+  source ordering shot, wound, and clothing motion frame-accurately; a
+  blind independent re-examination of the ballistics with 3-D surface
+  metrology; and an activity-level DNA review. Each is specified in the
+  research agenda; most are desk- or lab-scale.
+bestConventionalExplanation: >-
+  The state's single-shooter model: Robinson planned the attack, fired the
+  fatal round from the Losee Center roof, and fled alone; the rifle, DNA,
+  digital messages, and alleged admissions cohere with that account, and
+  its unresolved edges are the ordinary noise of a live prosecution —
+  fragments retained at different custodians, an inconclusive comparison
+  on damaged projectile metal (the modal outcome for such evidence), a
+  contractor grabbing his own cards in a panic, a university paving a
+  courtyard to reopen a campus, and a prosecutor who talked too much. On
+  this account every "gap" has a mundane explanation, and none of the
+  alternative hypotheses has produced a single authenticated forensic
+  artifact — no residue, no device fragment, no excluded bullet — that the
+  official mechanism cannot absorb. Its main unpaid debt is auditability:
+  it asks the public to wait for trial rather than showing the complete
+  chains now, and "trust the process" is precisely the posture this case
+  exists to replace with records.
+researchPriority:
+  level: high
+  reason: >-
+    The decisive disclosures (fragment reconciliation, autopsy package,
+    native-media synchronization) are cheap relative to the public dispute
+    they would settle, and the September 1, 2026 probable-cause hearing
+    makes the record likely to move soon in one direction or the other.
+components:
+  - label: "Fatal mechanism (distant rifle shot)"
+    state: well_supported
+    note: >-
+      Medical examiner's report (gunshot wound of the neck, homicide) plus
+      recovered projectile fragments; not independently auditable yet.
+  - label: "Public bullet-to-rifle identification"
+    state: unresolved
+    note: >-
+      The public ATF comparison was inconclusive — neither identification
+      nor exclusion.
+  - label: "Public chain-of-custody completeness"
+    state: mixed
+    note: >-
+      Same-day delivery of video copies and sealed lab transfers are
+      documented; fragment accounting and original-card inventory are not.
+  - label: "Device-at-the-microphone alternative"
+    state: weakly_supported
+    note: >-
+      Rests on contested video interpretation; no authenticated residue,
+      device fragment, or pathology support has been published.
+themes:
+  timeline: "Timeline and movements"
+  scene: "The roof, the rifle, and the scene"
+  forensics: "Ballistics, medical, and DNA evidence"
+  custody: "Custody, scene alteration, and the A/V chain"
+  motive-pressure: "Motive environment and pressure"
+  institutional: "Institutional conduct and narrative management"
+  alternatives: "Alternative mechanisms"
+editors:
+  - "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+lastReviewed: "2026-08-25"

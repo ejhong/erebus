@@ -1,0 +1,171 @@
+# KRK-001 decisive tests. Each is specified so that either outcome is
+# informative; none requires trusting any party's characterization.
+
+- id: KRK-R001
+  title: "Fragment-by-fragment reconciliation of the autopsy projectile evidence"
+  summary: >-
+    Obtain (by records request or court access) the medical examiner's
+    evidence-recovery inventory and every transfer record, and produce a
+    matrix identifying each of the seven photographed fragments: recovery
+    location, initial custodian, package number, laboratory recipient,
+    tests performed, and present disposition — reconciling the four
+    examined by ATF. A complete answer eliminates the strongest legitimate
+    chain-of-custody question in the public record; an incomplete answer
+    localizes exactly what is missing.
+  claimIds: [KRK-C005, KRK-C019]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    High in both directions: a routine explanation closes the case's most
+    concrete custody question; an unexplainable gap would upgrade it from
+    anomaly to defect.
+
+- id: KRK-R002
+  title: "Independent forensic-pathology review of the complete autopsy package"
+  summary: >-
+    Seek release (court access, redacted narrative if photographs are
+    protected) of the autopsy report, wound-track measurements, fragment
+    map, radiology, and clothing examination, and commission review by an
+    independent forensic pathologist experienced in rifle wounds — blinded
+    to the competing internet theories — to state what mechanisms the
+    documented injuries do and do not permit.
+  claimIds: [KRK-C006, KRK-C007, KRK-C018]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Directly tests the device hypothesis against primary medical evidence
+    and converts the summarized gunshot classification into an auditable
+    finding — the single highest-leverage disclosure in the case.
+
+- id: KRK-R003
+  title: "Blind native-media synchronization study"
+  summary: >-
+    Ingest every available native recording (UVU surveillance, event
+    cameras, press and attendee video, audio tracks) into a qualified
+    forensic video/audio laboratory; verify clock offsets, characterize
+    dropped frames and rolling shutter; and produce a frame-accurate
+    ordering of acoustic event, clothing motion, neck motion, necklace and
+    object motion, and rooftop movement. Analysts blinded to which
+    hypothesis is under test.
+  claimIds: [KRK-C018, KRK-C001, KRK-C010]
+  track: either
+  effortTier: lab
+  informationGain: >-
+    The device hypothesis's sequencing argument lives or dies here; the
+    same study authenticates or dissolves the publicized timeline
+    anomalies. Compressed social-media copies cannot answer any of it.
+
+- id: KRK-R004
+  title: "Independent blind ballistics re-examination with 3-D metrology"
+  summary: >-
+    Provide qualified independent examiners with anonymized fragments and
+    test-fired comparison material — without identifying the prosecution
+    weapon — using comparison microscopy plus objective 3-D surface
+    topography, reporting identification, exclusion, or inconclusive
+    without forced binary outcomes, in line with the published scientific
+    framework for firearm/toolmark examination.
+  claimIds: [KRK-C003, KRK-C004]
+  track: either
+  effortTier: lab
+  informationGain: >-
+    Any non-inconclusive result moves the case's central mechanism claim;
+    a replicated inconclusive result would itself calibrate how much the
+    public should expect from damaged-fragment comparisons.
+
+- id: KRK-R005
+  title: "Activity-level DNA evaluation"
+  summary: >-
+    Independent review of the raw electropherograms, mixture
+    interpretation, and laboratory controls behind the reported DNA
+    associations, followed by an activity-level evaluation: what handling,
+    transfer, and deposition scenarios are consistent with the observed
+    profiles, and with what relative support.
+  claimIds: [KRK-C008]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Separates "whose DNA" from "deposited how and when" — the exact
+    distinction the preliminary-hearing record left open and the one that
+    matters for both the state's account and its alternatives.
+
+- id: KRK-R006
+  title: "Authentication and route reconstruction for the 8:07 video"
+  summary: >-
+    Obtain the original 8:07 a.m. recording with native metadata; verify
+    the camera's clock error; geolocate the frame; attempt identification;
+    establish the vehicle's position at that time; and drive the route to
+    the 8:29 campus observation under comparable conditions. The output is
+    binary: compatible or incompatible with the official chronology.
+  claimIds: [KRK-C010]
+  track: either
+  effortTier: field
+  informationGain: >-
+    Converts the most-circulated timeline anomaly from rhetoric into a
+    measurement, in whichever direction the measurement falls.
+
+- id: KRK-R007
+  title: "GRAMA records: scene release and paving authorization chain"
+  summary: >-
+    Utah open-records requests to UVU, UVU Police, and DPS/SBI for the
+    September 10–17, 2025 incident-command and facilities records:
+    scene-release forms, cleanup requests, work orders, contractor
+    communications, before/after photographs, and any instructions
+    restricting areas facilities staff could disturb.
+  claimIds: [KRK-C013, KRK-C017]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Replaces the paving dispute's inference-from-silence (in both
+    directions) with the actual authorization chain.
+
+- id: KRK-R008
+  title: "Event-media ledger: original cards, hashes, and acquisition logs"
+  summary: >-
+    Compile a carrier-by-carrier ledger of the event's recording media:
+    each original card's make, serial, and camera association; forensic
+    images and hashes at first law-enforcement acquisition; the flash
+    drive's filesystem timestamps; cloud-transfer audit logs; and the
+    creation metadata of the excerpt clip discussed at the preliminary
+    hearing. Sought via court access, discovery materials that become
+    public, or voluntary disclosure.
+  claimIds: [KRK-C011, KRK-C012, KRK-C019]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    A complete ledger collapses footage-manipulation variants at a stroke;
+    a demonstrably incomplete one upgrades the custody question. Either
+    way the intent question around the card removal gets its evidence.
+
+- id: KRK-R009
+  title: "Native multi-channel acoustic analysis"
+  summary: >-
+    Obtain native audio (stage PA, wireless microphone system, press and
+    attendee recordings), survey original microphone positions, and have a
+    forensic acoustician test for separable projectile-shockwave and
+    muzzle-blast signatures and time-difference-of-arrival localization of
+    the acoustic source.
+  claimIds: [KRK-C001, KRK-C018]
+  track: either
+  effortTier: lab
+  informationGain: >-
+    Independently localizes the shot's origin without trusting any party's
+    scene narrative — evidence that bears simultaneously on the rooftop
+    mechanism and on the eyewitness-proximity puzzle the device hypothesis
+    leans on.
+
+- id: KRK-R010
+  title: "Statement-discrepancy ledger for post-event public accounts"
+  summary: >-
+    Build a claim-by-claim archive of post-event public statements by event
+    personnel and officials (media transfers, first-call accounts, medical
+    relays, venue-selection accounts), each entry carrying the original
+    artifact, the contradicting record if any, and a five-way outcome:
+    accurate / mistaken / materially misleading / knowingly false /
+    unresolved. Publish the ledger as it fills.
+  claimIds: [KRK-C012, KRK-C016, KRK-C017]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Prevents both failure modes at once: discrepancies cannot be laundered
+    into a coordinated-lies narrative, and they cannot be waved away as
+    grief — each lands where its evidence puts it.
