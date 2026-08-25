@@ -992,6 +992,416 @@
     runId: "case-kirk-launch-2026-08-25"
     date: "2026-08-25"
 
+# ── wave-2 intake records (whokilledck compilation, verified 2026-08-25) ─
+
+- id: KRK-E038
+  title: "The procurement record exists, worded as claimed"
+  claimIds: [KRK-C025]
+  sourceId: SRC-USASPENDING-N0016425PJ538
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    Award N0016425PJ538: description verbatim "REQUIREMENT IS FOR
+    MINIATURIZED-XS DEMOLITION CHARGES AND DEMOLITION CHARGES, ANTI
+    PERSONNEL-XS TO SUPPORT SPM."; recipient "ACCURATE ENERGETIC SYSTEMS,
+    LLC", McEwen TN; total obligation $440,494; signed 2025-04-22; period
+    of performance 2025-05-01 to 2025-08-25; awarding office NSWC Crane
+    (Navy); NAICS 325920 (explosives manufacturing); PSC 1375 (demolition
+    materials); type "PURCHASE ORDER"; competed under SAP, one offer
+    received.
+  editorInference: >-
+    The record is real and verbatim as the compilation quotes it. It
+    establishes a purchase order's existence — not its end use, not any
+    connection to any person, place, or event in this case. Note the
+    compilation's "awarded May 1" is the performance start; the award was
+    signed April 22.
+  exactLocator: "USAspending API award record, fetched 2026-08-25"
+  limitations:
+    - "'TO SUPPORT SPM' is unexplained in the record; resolving the program office is part of KRK-R012."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, AES worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E039
+  title: "The uniqueness claim verifies within the limits of the search actually run"
+  claimIds: [KRK-C025]
+  sourceId: SRC-USASPENDING-N0016425PJ538
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Live keyword searches of the USAspending award-search API (2007-10-01
+    through 2026-08-25) for "MINIATURIZED-XS" and for "ANTI PERSONNEL-XS"
+    each returned exactly one result: N0016425PJ538. The API states its
+    earliest searchable date is 2007-10-01.
+  editorInference: >-
+    "Only such contract since 2008" replicates — with caveats that belong
+    on the record: contract types A–D only (not IDVs, grants, or
+    subawards), and keyword search would miss the same items described in
+    different words. Uniqueness of a phrase is weaker than uniqueness of a
+    capability.
+  limitations:
+    - "Hyphenated-token matching behavior of the search engine was not independently characterized."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, AES worker (direct API searches)"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E040
+  title: "The facility explosion: 16 dead, cause formally open, commercial production that day"
+  claimIds: [KRK-C025]
+  sourceId: SRC-CSB-AES-2026
+  direction: context
+  strength: strong
+  sourceStatement: >-
+    CSB Investigation Update 2025-TN-I-04: "At approximately 7:47 a.m. on
+    October 10, 2025, multiple catastrophic explosions occurred inside
+    Building 602 at the AES site. On the day of the incident, AES was
+    manufacturing commercial explosive products called cast boosters in
+    the building. The massive explosions fatally injured 16 employees...
+    In total, approximately 23,000 pounds of the explosive material
+    detonated, deflagrated, or burned." The update lists "cause or
+    probable cause of the potential initiating event(s)" as an open item
+    and notes Building 602 "was not equipped with a sprinkler or deluge
+    fire protection system."
+  editorInference: >-
+    The event is real and terrible; the federal investigation's own
+    interim record attributes the day's production to commercial cast
+    boosters and leaves the cause open. Nothing in it references the
+    contract, its items, or this case.
+  exactLocator: "CSB 2025-TN-I-04, March 16, 2026"
+  limitations:
+    - "Interim update; the final CSB report may revise the picture (tracked in KRK-R012)."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, AES worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E041
+  title: "State findings: 100 citations, record penalty, 'indifference to worker safety'"
+  claimIds: [KRK-C025]
+  sourceId: SRC-FOX17-TOSHA-2026
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "The Tennessee Occupational Safety and Health Administration has
+    issued 100 safety citations and more than $3.1 million in penalties
+    following its investigation... The agency described the case as the
+    largest investigation in its history and the highest total penalty it
+    has ever assessed."
+  editorInference: >-
+    A facility whose regulator documents systemic safety failures supplies
+    the mundane explanation the sabotage reading must beat. (WPLN's
+    historical review places the blast as the deadliest U.S. explosion of
+    the century, "the most lethal... since a petrochemical plant owned by
+    ARCO in Texas exploded in 1990" — note the compilation's "34 years /
+    above-ground" phrasing was not found in any authoritative source.)
+  limitations:
+    - "Verified via search-index excerpts of the two local reports rather than end-to-end fetches; quotes limited accordingly."
+    - "Documented negligence and deliberate causation are not mutually exclusive; only the cause finding settles it."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, AES worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E042
+  title: "Archive forensics: the device theory was public on September 20 — not October 3–8"
+  claimIds: [KRK-C025, KRK-C018]
+  sourceId: SRC-WAYBACK-BRAY-2025
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Bray's post, archived September 25, 2025, embedded creation timestamp
+    2025-09-20T14:45:57Z: "My vector flow analysis is complete and I am
+    afraid that's it's conclusive. Charlie Kirk was assassinated by a
+    hidden shape charge. The battery of his RØDE Wireless mic exploded via
+    detonation". The date is triply confirmed: snowflake-ID decoding, the
+    archive's embedded JSON, and an independent aggregator page.
+  editorInference: >-
+    Cuts both ways, and the record should say so: the compilation's
+    dramatic "public discussion October 3–8, factory explodes October 10"
+    timing is wrong — the theory had been public for nearly three weeks —
+    which deflates the reactive-destruction narrative while confirming the
+    weaker fact that the theory pre-dated the explosion.
+  exactLocator: "Wayback snapshot 20250925101336 of X status 1969412722577043694"
+  limitations:
+    - "Whether Bray also discussed the theory October 3–8 specifically is unconfirmed at the post level."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, AES worker (CDX + snowflake analysis)"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E043
+  title: "Zinn's recorded statements: diversion intent, in his own words"
+  claimIds: [KRK-C028]
+  sourceId: SRC-DESERET-ZINN-2025
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    Per the jail report: Zinn told the officer "I shot him, now shoot me"
+    twice; later said he "did it to draw attention from the real shooter,"
+    and at the hospital said he was "glad he said he shot the individual
+    so the real suspect could get away."
+  editorInference: >-
+    His own recorded framing asserts intent to aid the shooter's escape —
+    which is what makes the episode more than noise. Intent claimed after
+    the fact is not evidence of advance arrangement.
+  limitations:
+    - "Statements of a man whose subsequent case history (see KRK-E044) raises obvious reliability questions."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E044
+  title: "The investigating agency: no information of collusion; the payment element is commentary-only"
+  claimIds: [KRK-C028]
+  sourceId: SRC-UCSO-ZINN-2025
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    Utah County Sheriff's Office: "Zinn admitted that he had yelled that
+    he was the shooter to allow the actual suspect to flee and to hinder
+    Law Enforcement... At this time, there is no information that George
+    Zinn actually colluded with the shooter."
+  editorInference: >-
+    The pre-arrangement element rests, in the reviewed record, on nothing:
+    the "promised payment" detail appears only in Owens' commentary, with
+    no court record or named reporting behind it. Recorded here so the
+    absence is auditable.
+  exactLocator: "UCSO press release (GeorgeZinnPressRelease.pdf)"
+  limitations:
+    - "'No information at this time' is an investigative status, not a closure."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E051
+  title: "Zinn's subsequent case outcome: guilty pleas to obstruction and exploitation counts"
+  claimIds: [KRK-C028]
+  sourceId: SRC-KUTV-ZINN-PLEA-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    "George Hodgson Zinn, 71, pleaded guilty to third-degree felony
+    obstruction of justice and two counts of second-degree felony sexual
+    exploitation of a minor."
+  editorInference: >-
+    Completes the court record on the episode; his overall case history
+    bears on how much weight his own statements can carry in either
+    direction.
+  exactLocator: "KUTV (via Sinclair syndication), January 29, 2026"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E052
+  title: "Historical placement: deadliest U.S. explosion of the century — and the compilation's '34 years above-ground' phrasing unfound"
+  claimIds: [KRK-C025]
+  sourceId: SRC-WPLN-AES-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    "A review of historical explosions by WPLN News places the incident as
+    the deadliest explosion in the U.S. during the 21st century. It is the
+    most lethal explosion since a petrochemical plant owned by ARCO in
+    Texas exploded in 1990 and killed 17 people." WPLN also reports the
+    blast "could have ignited for a multitude of reasons due to dangerous
+    working conditions, according to a six-month investigation by state
+    officials."
+  editorInference: >-
+    The compilation's specific "deadliest above-ground industrial accident
+    in 34 years" phrasing was not found in any authoritative source; the
+    closest published comparison points to 1990 (35 years). Small
+    inaccuracies in a compilation's superlatives are recorded because they
+    calibrate how much to trust its uncited numbers.
+  limitations:
+    - "Verified via search-index excerpt rather than an end-to-end fetch."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, AES worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E045
+  title: "Records responses: surrender-area footage unpreserved past the 30-day retention period"
+  claimIds: [KRK-C026]
+  sourceId: SRC-KUTV-SURRENDER-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Washington County Sheriff's Office records responses, quoted by KUTV:
+    "We do not have any records responsive to this portion of the request,
+    as Tyler Robinson did not go to or enter the jail area." And, to a
+    broader request: "Our office does not have any applicable records
+    responsive to this request, as the surveillance footage is no longer
+    available after the 30-day retention period." On sharing: "It is my
+    understanding it was never sent out to any agency." Defense attorney
+    Bautista: "If in fact it has been destroyed and not preserved, it's
+    very concerning."
+  editorInference: >-
+    Documented non-preservation in the office's own words. What the
+    footage showed — and whether any of it depicted Robinson — is exactly
+    what can no longer be checked.
+  limitations:
+    - "The responses never explicitly confirm footage of Robinson existed; the sheriff separately described the surrender occurring at his office."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E046
+  title: "Kent, on the record: 'We were then told... you can't work on this anymore'"
+  claimIds: [KRK-C027]
+  sourceId: SRC-DCNF-KENT-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Kent: "We were then told that, 'Hey, you guys need to stop. You can't
+    work on this anymore.'" And: "There was more work for us to do on the
+    potential of a foreign nexus... and we were blocked from doing that."
+    Asked whether the order came from FBI Director Patel: "It did. Yeah,
+    it was part of a discussion that he and I had back and forth, and
+    then, ultimately, that was the decision that was made." On the FBI's
+    stated reason: "they would say, 'Hey, you can't look into the case
+    anymore because if you do, you could be called by the defense.'"
+  editorInference: >-
+    The statements' occurrence is established; their accuracy is one
+    side's account. Note the FBI's stated rationale, as relayed by Kent
+    himself, is a standard trial-protection concern.
+  exactLocator: "Daily Caller News Foundation, March 25, 2026"
+  limitations:
+    - "No FBI confirmation; contemporaneous reporting notes Kent was himself under investigation regarding leaked material."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E047
+  title: "Court-transparency record: gag order real, remote camera-off appearances real — categorical camera ban rejected"
+  claimIds: [KRK-C016]
+  sourceId: SRC-CNN-HEARINGS-2026
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Judge Graf, May 2026: "defendant has not shown that a categorical ban
+    on electronic media coverage for all proceedings in this case is
+    [warranted]." Same report: "Robinson appeared virtually from jail with
+    his camera off Friday – a common request from his attorneys for remote
+    hearings."
+  editorInference: >-
+    The compilation's "cameras banned / video-only black box" framing is
+    partly wrong: cameras have repeatedly been ALLOWED over defense
+    objection (with tightened placement rules after a pool violation), and
+    in-person appearances have occurred. The restrictive elements that ARE
+    real — the publicity order and sealed filings (KRK-E048) — are already
+    part of this case's institutional record.
+  limitations:
+    - "The camera fight is live: the defense renewed its motion for the September 1 hearing and appealed to the Utah Supreme Court."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E048
+  title: "Sealed and redacted defense filings, in the defense's own words"
+  claimIds: [KRK-C016]
+  sourceId: SRC-KSL-SEALED-2026
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    August 2026: defense attorneys "filed motions to have the full
+    unredacted content of those requests marked as 'private' and sealed,"
+    with the public filing including a redacted paragraph; their argument:
+    the case "should not be made into a reality TV show."
+  editorInference: >-
+    Sealing here is substantially DEFENSE-driven — a fact the
+    black-box framing omits. Restricted public records cut against
+    auditability regardless of which party seeks them, and the ledger
+    records them that way.
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E049
+  title: "The security director: drone deployment was denied under FAA and campus restrictions"
+  claimIds: [KRK-C019]
+  sourceId: SRC-FOX-HARPOLE-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Kirk's security director Brian Harpole, per Fox News: his team
+    "prepared to deploy drones for watch over the event but was denied
+    authorization under FAA and campus restrictions." Quote: "This is
+    Utah, not Iraq. We couldn't put snipers on roofs or launch drones. We
+    did what we could within the rules."
+  editorInference: >-
+    One half of an unreconciled statement pair (see KRK-E050); entered in
+    the statement-discrepancy ledger (KRK-R010) rather than resolved by
+    fiat.
+  limitations:
+    - "Law enforcement separately confirmed (AP/KUER) that no police drone was deployed."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E050
+  title: "Turek's eyewitness account: 'we had drone footage of the crowd building'"
+  claimIds: [KRK-C019]
+  sourceId: SRC-TUREK-2025
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    Frank Turek, in his September 2025 video account: "on our way in, we
+    had drone footage of the crowd building and um had Charlie had it on
+    his phone. I said, 'Charlie, I don't like this place. There are too
+    many buildings.'"
+  editorInference: >-
+    Unreconciled with KRK-E049: Turek does not say whose drone or when the
+    footage was shot; the tension is real but underdetermined, and no
+    reviewed source resolves it. Ledger entry, not a finding.
+  limitations:
+    - "Auto-transcribed video recollection; the two accounts may describe different times, operators, or footage provenance."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, aftermath worker"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
 - id: KRK-E037
   title: "The reviewed official record asserts no post-shot rifle disassembly — and the times are not logically incompatible"
   claimIds: [KRK-C010]
