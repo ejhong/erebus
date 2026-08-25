@@ -88,10 +88,12 @@ in place with a note in the run report.
 ## What does NOT belong here
 
 Material for a case that does not exist yet. The inbox is the intake for
-existing cases — its contents are committed to the public repository and
-swept by the maintenance pipeline. New-case source material goes in
-`casework/` (gitignored, local-only) and is worked on directly with an
-agent; it enters the repository only when the case is scaffolded, record
-by record, with provenance. Decided 2026-08-25 after a blanket `git add`
-nearly published pre-case documents — caught by the arbiter's first live
-vote.
+existing cases and is swept by the maintenance pipeline. New-case source
+material goes in `casework/` and is worked on directly with an agent; it
+enters `content/` only when the case is scaffolded, record by record,
+with provenance. Originally (2026-08-25, after a blanket `git add` nearly
+published pre-case documents — caught by the arbiter's first live vote)
+`casework/` was gitignored and local-only; later the same day the founder
+amended this: while the repository is private, `casework/` is committed so
+cloud agents can build new cases from it. See `casework/README.md` for
+what that material is and is not.
