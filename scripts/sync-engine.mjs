@@ -87,6 +87,8 @@ const ALLOWLIST = new Set([
   "scripts/generate-case-art.mjs",
   ".github/workflows/generate-case-art.yml",
   ".github/workflows/extract-claims.yml",
+  // Token needs contents:read to dispatch (candidate for upstreaming)
+  ".github/workflows/inbox-response.yml",
   // Zero-content static-export support (candidate for upstreaming)
   "src/domain/staticExport.ts",
   "app/claims/[id]/page.tsx",
