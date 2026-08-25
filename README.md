@@ -1,13 +1,23 @@
-# Aletheia
+# Erebus
 
-**Contested claims, mapped to evidence and experiments.**
+**An evidence map of contested public events.**
 
-Aletheia decomposes controversial hypotheses into atomic claims, maps the evidence for and against each one with honest provenance labels, and points at the experiment that would settle the dispute. First case: **Cast, Not Carved?** — the megalithic casting hypothesis, curated from the [geo research project](https://github.com/ejhong/geo)'s AI-extracted catalog.
+Erebus decomposes contested public events — assassinations, disasters,
+alleged cover-ups — into atomic claims, maps the evidence for and against
+each one with honest provenance labels, and points at the record, release,
+or analysis that would settle the dispute. It is operated by AI as a
+declared experiment under the constitution in `AGENTS.md`, and it is
+private: served to the founder and a few invited readers from Cloudflare
+Pages behind Cloudflare Access (`docs/HOSTING.md`).
+
+No cases are published yet; the site renders a deliberate empty state.
+Cases in development live as research briefs under `casework/`
+(never citable — see `casework/README.md`).
 
 ## Commands
 
 ```bash
-npm install        # once
+npm ci             # install (use npm install for day-to-day dev)
 npm run dev        # dev server at localhost:3000
 npm run typecheck  # tsc --noEmit
 npm run lint       # eslint
@@ -15,39 +25,54 @@ npm test           # vitest (schema/loader/parser tests)
 npm run build      # static export to out/ (fails loudly on invalid content)
 ```
 
+Deploy: Cloudflare Pages builds with `npm ci && npm run build`, output
+directory `out/`, no base path. Pushing to `main` deploys automatically
+once the Pages project is connected (`docs/HOSTING.md`).
+
 ## Architecture
 
-Three zones, one-way flow — see `docs/DATA_MODEL.md` and `docs/DECISIONS.md`:
+Three zones, one-way flow:
 
-1. **Content** (`content/cases/<case>/`) — plain YAML + markdown per case: `case.yaml`, `overview.md` (article with `[text]{claim=GEO-C001}` refs), `claims.yaml`, `evidence.yaml`, `sources.yaml`, `research.yaml`, `history.yaml`, and append-only AI assessment overlays in `assessments/<runId>.yaml`.
-2. **Domain** (`src/domain/`) — Zod schemas, the loader (fails the build on dangling IDs or unresolved claim refs), and the constrained article parser.
-3. **UI** (`src/components/`, `app/`) — pure components, one per domain concept; six routes (home, cases, case page, claim explorer, claim detail, source record, method).
+1. **Content** (`content/cases/<case>/`) — plain YAML + markdown per case:
+   `case.yaml`, `overview.md` (article with `[text]{claim=...}` refs),
+   `claims.yaml`, `evidence.yaml`, `sources.yaml`, `research.yaml`,
+   `history.yaml`, and append-only AI assessment overlays in
+   `assessments/<runId>.yaml`. See `content/cases/README.md`.
+2. **Domain** (`src/domain/`) — Zod schemas, the loader (fails the build
+   on dangling IDs or unresolved claim refs), and the constrained article
+   parser.
+3. **UI** (`src/components/`, `app/`) — pure components, one per domain
+   concept.
 
-Dependencies are deliberately minimal: Next.js (static export) + TypeScript strict + Tailwind + Zod + yaml; vitest dev-only; all visuals hand-built.
+Dependencies are deliberately minimal: Next.js (static export) +
+TypeScript strict + Tailwind + Zod + yaml; vitest dev-only; all visuals
+hand-built.
 
-## Deployment
+**The engine is not developed here.** `src/`, `app/`, `scripts/`, and the
+workflows are synced one-way from an upstream engine repository —
+referenced only via the `ENGINE_UPSTREAM` secret, never by name. See
+`ENGINE.md`. CI includes a fail-closed guard that rejects any committed
+occurrence of the upstream project's name, and a warning-only engine
+divergence check.
 
-Static export served from git: pushing to `main` runs CI and deploys to GitHub Pages (`.github/workflows/deploy.yml`). The base path is injected by the workflow; remove the `PAGES_BASE_PATH` env there when moving to a custom domain.
+## Operation
 
-## Images
-
-Two registers, never confused (full rules in `docs/IMAGE_STYLE.md`):
-
-- **Editorial artwork** — AI-generated in the house engraving style (`style-v1`), always credited, never depicting evidence. Generate candidates for a case with the **generate-case-art** workflow (Actions → Generate case art → enter the case slug); it opens a PR with candidates to pick from. Requires the `IMAGE_API_KEY` repository secret (an OpenAI API key); without it the workflow fails with instructions.
-- **Plates** — real photographs with provenance, shown as numbered museum plates with a CSS duotone (originals untouched). Add one from Wikimedia Commons with `node scripts/add-commons-image.mjs "File:..." <case-slug>` — license, credit, and provenance are auto-filled from the Commons API; you write `alt`, `depicts`, `plateNumber`, and `claimIds`.
-
-Every image needs a manifest entry with license and credit or the build fails. AI-generated images can never be plates — enforced by the schema.
-
-## Editing content
-
-Edit files under `content/`, run `npm run dev`, and reload. Malformed records, dangling IDs, or article references to unknown claims fail loudly at build time. Provenance rules — what may be labeled `verified` vs `ai_verified` vs `unverified`, tombstones for rejected claims, confidentiality constraints — are in `docs/CONTENT_POLICY.md`.
+The site maintains itself: the **Maintain** workflow runs weekly (and on
+demand), processing `inbox/` drops, refreshing assessments, watching the
+literature, and opening one digest PR — auto-merged when the diff is
+mechanically low-risk, founder-approved otherwise, with a five-vendor
+constitutional arbiter on everything needing approval. Full loop:
+`docs/MAINTENANCE.md`.
 
 ## Layout
 
 | Path | Role |
 |---|---|
-| `AGENTS.md` | Rules for coding/research agents (epistemic rules, code rules, workflow) |
+| `AGENTS.md` | The constitution: epistemic rules, living-persons rules, code rules |
 | `docs/DECISIONS.md` | Append-only decisions log — read first for current direction |
-| `docs/` | Product spec, data model, IA, content policy, roadmap |
-| `content/cases/geopolymer/` | Case GEO-001, "Cast, Not Carved?" |
-| `research/` | Source material for future cases (vasocomputation is next) |
+| `docs/` | Hosting, maintenance, content policy, image style |
+| `ENGINE.md` | Engine sync: one-way flow from the upstream engine repo |
+| `content/cases/` | Published cases (empty at bootstrap) |
+| `casework/` | Research briefs for cases in development (committed; never citable) |
+| `inbox/` | Drop zone for the maintenance pipeline |
+| `proposals/` | Machine-generated proposals awaiting review (never published) |
