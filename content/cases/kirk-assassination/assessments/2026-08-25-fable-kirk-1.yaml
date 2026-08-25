@@ -1,0 +1,167 @@
+# Launch assessment for KRK-001. AI-generated draft; humanReviewed: false;
+# unratified until independent cross-model check runs judge this case file.
+runId: "2026-08-25-fable-kirk-1"
+model: "Claude Fable 5 (Cursor cloud agent)"
+date: "2026-08-25"
+promptVersion: "erebus-launch-assessment-v1"
+humanReviewed: false
+role: draft
+caseAssessment:
+  verdict: mixed
+  loadBearing: [KRK-C019, KRK-C006, KRK-C004, KRK-C005]
+  weakestLinks: [KRK-C011, KRK-C012, KRK-C007]
+  synthesis: >-
+    The record splits cleanly into three strata, and a one-word verdict
+    would erase the split. First, the scene facts are strong: a rooftop
+    actor, a recovered rifle on the escape route, and a medical record
+    classifying the death as a gunshot homicide are supported by
+    independent channels with different failure modes. Second, the
+    prosecution's association case (DNA, attributed statements) is
+    substantial as presented but untested at the authentication level, and
+    the strongest ballistic link — fragments identified to the rifle —
+    does not publicly exist: the sworn result is inconclusive in both
+    directions, and seven photographed fragments against four examined
+    remain unreconciled. Third, the challenge claims fare unevenly: the
+    auditability critique (KRK-C019) is well founded and specific, while
+    the operational-attribution claims (donor/state involvement,
+    deliberate concealment) and the publicized timeline contradictions are
+    contradicted or unsupported by the current record, and the
+    device-mechanism hypothesis survives only as a weakly supported,
+    decisively testable proposal that must overcome the medical record it
+    currently contradicts. What would move this case most is disclosure,
+    not argument: the fragment reconciliation, the autopsy package, and
+    the native-media ledger. The proceeding is active; the defendant is
+    presumed innocent; nothing here grades guilt.
+claimAssessments:
+  - claimId: KRK-C001
+    verdict: well_supported
+    reasoning: >-
+      Independent video analysis, FBI-released footage, and sworn scene
+      testimony converge; identity and pre-shot actions remain outside the
+      public record.
+    confidence: high
+  - claimId: KRK-C002
+    verdict: well_supported
+    reasoning: >-
+      Recovery is documented by the FBI and sworn testimony and is
+      undisputed in the litigation; full recovery-to-lab custody records
+      are not public.
+    confidence: high
+  - claimId: KRK-C003
+    verdict: contradicted
+    reasoning: >-
+      The claim asserts a public conclusive identification; the sworn
+      record contains an inconclusive result instead. The rifle is not
+      excluded — the claim as stated is what fails.
+    confidence: high
+  - claimId: KRK-C004
+    verdict: established
+    reasoning: >-
+      Direct sworn testimony, contemporaneously reported by multiple
+      outlets, and consistent with how the discipline reports damaged-
+      fragment comparisons.
+    confidence: high
+  - claimId: KRK-C005
+    verdict: well_supported
+    reasoning: >-
+      The seven-versus-four discrepancy is the examiner's own sworn
+      account; no public reconciliation exists as of the review date.
+    confidence: high
+  - claimId: KRK-C006
+    verdict: well_supported
+    reasoning: >-
+      The report's admission and summarized findings are multiply
+      reported; the author did not testify and the underlying materials
+      are unreleased, which caps this short of established.
+    confidence: moderate
+  - claimId: KRK-C007
+    verdict: contradicted
+    reasoning: >-
+      No auditable autopsy package is public; the claim of availability is
+      simply false as of the review date, whatever the (routine) reasons.
+    confidence: high
+  - claimId: KRK-C008
+    verdict: well_supported
+    reasoning: >-
+      Consistent multi-outlet reporting of strong source-level statistics;
+      activity-level questions were opened, not closed, at the hearing.
+    confidence: moderate
+  - claimId: KRK-C009
+    verdict: well_supported
+    reasoning: >-
+      That the materials were presented is thoroughly documented; their
+      authentication trail remains publicly untested, which the claim
+      wording already carries.
+    confidence: high
+  - claimId: KRK-C010
+    verdict: contradicted
+    reasoning: >-
+      The 8:07 artifact is unauthenticated and not logically incompatible
+      with the 8:29 account, and the disassembly premise is absent from
+      the reviewed official record; "inconsistent" is not the current
+      state of evidence.
+    confidence: moderate
+  - claimId: KRK-C011
+    verdict: provisionally_supported
+    reasoning: >-
+      The removal appears in published footage and coheres with the sworn
+      copies-chain, but the artifact is mediated and unexamined in native
+      form; intent is not graded.
+    confidence: moderate
+  - claimId: KRK-C012
+    verdict: unresolved
+    reasoning: >-
+      Sworn testimony covers copies; the originals question is answered
+      publicly by nothing except an interested assertion. Genuinely open
+      pending an inventory.
+    confidence: high
+  - claimId: KRK-C013
+    verdict: provisionally_supported
+    reasoning: >-
+      Obtained records document the timeline and the invoice, and the
+      lead-agent testimony is reported from the hearing; the full
+      authorization chain remains unreleased and the synthesis is
+      secondary.
+    confidence: moderate
+  - claimId: KRK-C014
+    verdict: well_supported
+    reasoning: >-
+      On-the-record authentication by the organization's spokesman and a
+      thread participant; the native export with full context is
+      unpublished.
+    confidence: high
+  - claimId: KRK-C015
+    verdict: contradicted
+    reasoning: >-
+      Every reviewed affirmative account stops at motive and pressure; the
+      operational elements are absent from the public record, as even the
+      publication that broke the texts states.
+    confidence: high
+  - claimId: KRK-C016
+    verdict: established
+    reasoning: >-
+      A formal judicial finding with quoted ruling language, directly
+      verified in contemporaneous reporting.
+    confidence: high
+  - claimId: KRK-C017
+    verdict: contradicted
+    reasoning: >-
+      The premise facts are documented; the concealment inference is
+      supported by no reviewed record. The claim grades establishment, and
+      establishment is absent.
+    confidence: moderate
+  - claimId: KRK-C018
+    verdict: weakly_supported
+    reasoning: >-
+      Affirmative support is contested interpretation of compressed video
+      by analysts without established forensic credentials; the medical
+      record and recovered fragments stand against it; its decisive tests
+      are specified and unrun.
+    confidence: moderate
+  - claimId: KRK-C019
+    verdict: contradicted
+    reasoning: >-
+      Specific, enumerable, load-bearing gaps (fragments, autopsy package,
+      media inventory) are verifiable in the public record; the
+      completeness claim fails without indicting anyone.
+    confidence: high

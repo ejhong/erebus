@@ -1,0 +1,1019 @@
+# KRK-001 evidence ledger. sourceStatement = what the source states or
+# shows (grounded in text verified 2026-08-25); editorInference = what
+# this case file infers, kept strictly separate. Directions are explicit;
+# limitations are on the record, not in footnotes.
+
+# ── the rooftop actor and the scene ─────────────────────────────────────
+
+- id: KRK-E001
+  title: "Washington Post visual-forensics video shows a person running on the roof seconds after the shot"
+  claimIds: [KRK-C001]
+  sourceId: SRC-WAPO-ROOF-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Headline and subhead (published 2025-09-11): "Video shows person
+    running on roof immediately after Kirk shooting"; "A video enhanced by
+    The Washington Post shows a person running across a roof overlooking
+    the courtyard where Charlie Kirk was fatally shot seconds earlier."
+  editorInference: >-
+    Independent of law-enforcement characterization, which is what gives it
+    weight here.
+  limitations:
+    - "Only the headline, subhead, and metadata could be verified; the article body was inaccessible to this case file's verification pass."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E002
+  title: "FBI: rooftop escape video, rifle and ammunition in wooded area, trace evidence on the roof"
+  claimIds: [KRK-C001, KRK-C002]
+  sourceId: SRC-FBI-UPDATES-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The FBI is releasing a video of the shooter in the Utah Valley
+    shooting. The subject is seen jumping from the rooftop of a building
+    after the shooting." "He left a gun and ammunition in a wooded area
+    near the university." "Trace evidence collected from the rooftop scene
+    included shoe impressions, a forearm imprint, and a palm print."
+  editorInference: >-
+    The FBI's public record independently corroborates a rooftop actor and
+    places the rifle's recovery along the escape route.
+  exactLocator: "FBI 'Utah Valley Shooting Updates' page, September 10–12, 2025 entries (archived 2026-08-21)"
+  limitations:
+    - "Not independent of the investigation itself; 'the shooter' is the agency's characterization."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E003
+  title: "Officer Bagley's sworn testimony: rifle sound, line of sight, screwdriver, prone-position gravel disturbance, escape footage"
+  claimIds: [KRK-C001]
+  sourceId: SRC-KUTV-PRELIM1-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Day-1 live log: Bagley "testified to hearing a shot at 12:23 p.m.";
+    realized "the gunshot he heard was a rifle sound"; "looked across to
+    the roof of the Losee Center, noting that it had a direct line of
+    shot"; found "a red and black screwdriver" and a gravel disturbance
+    that "looked like someone had lain there in the prone position";
+    dispatch "found footage of a man running toward the edge and lying
+    down in the prone position," then "dropping off the northeast side of
+    the building, where he later found a shoe imprint."
+  editorInference: >-
+    Sworn testimony converges with the video evidence on the rooftop
+    actor's existence and position.
+  exactLocator: "KUTV live blog, July 6, 2026, entries 10:35 a.m.–11:33 a.m."
+  limitations:
+    - "On cross-examination Bagley said he could not identify the person on the roof or what he was holding from the footage; his body camera died while he was on the roof."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E004
+  title: "Utah DPS day-of statement: targeted attack, shot believed fired from a roof, six officers plus private security, ~3,000 attendees"
+  claimIds: [KRK-C001]
+  sourceId: SRC-DPS-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "The shooting is believed to be a targeted attack." "The shooter is
+    believed to have fired from the roof of a building down to the
+    location of the public event in the student courtyard." "UVU PD had
+    six officers working the event... in addition to Charlie Kirk's
+    security detail." "Approximately 3,000 people attended." The statement
+    also records that two men were detained early and released with "no
+    current ties to the shooting."
+  editorInference: >-
+    Establishes the event scale and the day-one official framing —
+    including that early official information changed (two detained men
+    released), which calibrates how much weight day-one statements carry.
+  limitations:
+    - "Initial-day statement, explicitly provisional."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── medical evidence ────────────────────────────────────────────────────
+
+- id: KRK-E005
+  title: "Hull's testimony relaying the medical examiner's report: homicide, gunshot wound to the neck"
+  claimIds: [KRK-C006]
+  sourceId: SRC-KUTV-PRELIM1-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Day-1 live log, 3:00 p.m.: "He said the Medical Examiner's Office
+    conducted an autopsy and sent a report to investigators afterward. He
+    said the report classified the manner of death as a homicide and the
+    cause as a gunshot wound to the neck."
+  editorInference: >-
+    The official medical classification, as it entered the hearing record.
+  exactLocator: "KUTV live blog, July 6, 2026, 3:00 p.m. entry"
+  limitations:
+    - "Relayed by the lead investigator, not the report's author (see KRK-E006)."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E006
+  title: "The autopsy report entered through an investigator over an 'expert report without an expert present' objection"
+  claimIds: [KRK-C006, KRK-C007]
+  sourceId: SRC-KSL-PRELIM1-2026
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Robinson filed a standing objection covering "the Utah State Medical
+    Examiner's autopsy report without the medical examiner's testimony";
+    defense counsel objected: "This is an expert report without an expert
+    present." The judge "rejected all of Robinson's objections except one"
+    (an edited video compilation, for which an unedited version was
+    required).
+  editorInference: >-
+    The medical finding is in the record but has not been examined through
+    its author — the reason KRK-C007 grades the public record as not yet
+    independently auditable.
+  limitations:
+    - "Preliminary-hearing rules permit reliable hearsay; admission over objection is routine at this stage."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── ballistics and fragments ────────────────────────────────────────────
+
+- id: KRK-E007
+  title: "ATF examiner Karner: fragments could not be conclusively identified to the rifle"
+  claimIds: [KRK-C004]
+  sourceId: SRC-EIN-PRELIM4-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Day-4 live log: "Carner says she found some inconclusive conclusions
+    in her examination of the tool marks on the bullet fragments. She says
+    she cannot conclusively say that the bullet fragments came from
+    Robinson's firearm."
+  editorInference: >-
+    The inconclusive result is the sworn public state of the bullet-to-rifle
+    question. (Surname rendered 'Carner' by this outlet; 'Karner' by AP
+    pool captioning.)
+  exactLocator: "East Idaho News live blog, July 9, 2026, 3:33–4:20 p.m. entries"
+  limitations:
+    - "The examiner's full written report is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E008
+  title: "The same record shows the rifle was not excluded either"
+  claimIds: [KRK-C003]
+  sourceId: SRC-EIN-PRELIM4-2026
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    Day-4 live log, 2:36 p.m.: "The report says the fragments cannot be
+    excluded as having been shot from the gun found in the woods."
+  editorInference: >-
+    Together with KRK-E007 this contradicts BOTH popular misreadings: no
+    public conclusive identification exists (undermining KRK-C003 as
+    stated), and no exclusion exists either.
+  exactLocator: "East Idaho News live blog, July 9, 2026, 2:36 p.m. entry"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E009
+  title: "Seven fragments photographed; four received for examination"
+  claimIds: [KRK-C005]
+  sourceId: SRC-EIN-PRELIM4-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Day-4 live log, 3:43 p.m.: "Carner says there was a discrepancy
+    between what she was examining, and how many bullet fragments were
+    actually found. There were originally 7, and she had only four. Carner
+    says a few months ago, she was told there were originally 7 in a
+    photo, but she only got 4 to examine."
+  editorInference: >-
+    A sworn, specific, unreconciled custody gap — the single most concrete
+    auditability defect in the public record.
+  exactLocator: "East Idaho News live blog, July 9, 2026, 3:43 p.m. entry"
+  limitations:
+    - "Routine explanations (retention by the medical examiner, separate packaging, consumption in testing) have not been ruled out — they have simply not been published."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E010
+  title: "Fox News court wrap: fragment caliber consistent with the spent casing in the recovered rifle"
+  claimIds: [KRK-C002]
+  sourceId: SRC-FOX-PRELIM-2026
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The forensic pathologist recovered bullet fragments from Kirk's body,
+    which were sent to the ATF for testing. Although tool marks on the
+    fragments themselves were inconclusive, the caliber was consistent
+    with a spent cartridge casing found in the suspected murder weapon —
+    which authorities allege had Robinson's DNA on it."
+  editorInference: >-
+    Class-level consistency (caliber) connects the recovered rifle to the
+    fatal projectile family without individualizing it — weaker than an
+    identification, stronger than nothing.
+  limitations:
+    - "Class consistency is compatible with a range of .30-caliber firearms."
+    - "Outlet framing is explicitly debunk-oriented; only the court-reported facts are used here."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E011
+  title: "Defense-elicited scene details: an empty pistol holster near the courtyard and an unfired .223 round on another roof"
+  claimIds: [KRK-C002]
+  sourceId: SRC-FOX-PRELIM-2026
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    "The defense noted that investigators found an empty pistol holster
+    just steps from where Kirk was killed as well as an unfired .223 round
+    on the roof of another building."
+  editorInference: >-
+    Scene complexity the single-narrative summaries omit; neither item is
+    publicly connected to the shooting, and neither undermines the rifle
+    recovery — but a complete audit must account for them.
+  limitations:
+    - "No public follow-up on either item's provenance is known to this case file."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E012
+  title: "NIST on firearm/toolmark comparison: expert judgment without numeric strength"
+  claimIds: [KRK-C004]
+  sourceId: SRC-NIST-TOOLMARKS
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "The examiner will then assess how similar the two sets of marks are
+    and determine if the bullets are likely to have been fired from the
+    same gun or different guns." "After comparing the bullets, the
+    examiner can offer an expert opinion as to whether they match but
+    cannot express the strength of the evidence numerically."
+  editorInference: >-
+    The discipline's own standards body describes comparison as expert
+    judgment without numeric strength — context for why inconclusive
+    results on damaged fragments should surprise no one and settle
+    nothing.
+  limitations:
+    - "This page does not itself use the identification/inconclusive/elimination vocabulary; that framing is the field's, not this page's."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker C"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── DNA and attributed statements ───────────────────────────────────────
+
+- id: KRK-E013
+  title: "Hearing testimony: DNA on the rifle, Dremel tool, and cartridges 'extremely likely' / 'highly likely' Robinson's"
+  claimIds: [KRK-C008]
+  sourceId: SRC-EIN-PRELIM4-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Day-4 live log: "Faumuina says the report found that it is extremely
+    likely that the DNA found on multiple parts of the rifle was
+    Robinson's." On the Dremel tool, bits container, and cartridges from
+    the bedroom: "The report says it is highly likely that the DNA found
+    on these items were from Robinson."
+  editorInference: >-
+    Strong source-level association between Robinson and the physical
+    evidence, as presented by the prosecution.
+  exactLocator: "East Idaho News live blog, July 9, 2026, 2:28–2:40 p.m. entries"
+  limitations:
+    - "Source-level statistics; activity-level questions (when, how deposited) were not resolved."
+    - "Underlying laboratory data have not been independently reviewed."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E014
+  title: "Defense cross-examination: transfer scenario acknowledged as possible by the ATF forensic biologist"
+  claimIds: [KRK-C008]
+  sourceId: SRC-AP-PRELIM-2026
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "'If you had a lot of DNA on your hand, we shook hands and I went to
+    pick up an exhibit, a gun, and I touched the trigger of it, your DNA
+    could be on that trigger, right?' Burt asked Caitlin Oliver, a
+    forensic biologist with the Bureau of Alcohol, Tobacco, Firearms and
+    Explosives... 'It is possible. Yes,' Oliver replied."
+  editorInference: >-
+    The activity-level limitation is not an internet talking point; it is
+    in the hearing record from the state's own expert.
+  limitations:
+    - "Acknowledging possibility is not evidence that transfer occurred."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E015
+  title: "The roommate interview, texts, and Discord messages as presented at the hearing"
+  claimIds: [KRK-C009]
+  sourceId: SRC-EIN-PRELIM4-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Day-4 live log: the "Lance Twiggs Meeting" video was shown ("Twiggs
+    appears on screen via a Zoom-type meeting. He is speaking with
+    Prosecutor Ryan McBride"); Discord messages "will be shown in the
+    courtroom, but not on the video livestream"; among engraved
+    ammunition: "an engraving that says 'Hey fascist' then 'catch'".
+  editorInference: >-
+    The attributed-statements cluster was presented in court in
+    substantial form; its authentication trail remains untested by
+    cross-examination of custodians.
+  exactLocator: "East Idaho News live blog, July 9, 2026, 11:14 a.m.–2:04 p.m. entries"
+  limitations:
+    - "Presentation is not authentication; native extractions and provider records have not been publicly examined."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E016
+  title: "AP: prosecution filing argues the engraved bullet shows political targeting; defense disputes the inference"
+  claimIds: [KRK-C009]
+  sourceId: SRC-AP-ENGRAVING-2026
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Prosecutors in Charlie Kirk's killing pointed Tuesday to an engraved
+    bullet, arguing that the inscription 'Hey Facist! CATCH!' demonstrates
+    that Kirk was targeted for how the defendant perceived his politics"
+    [spelling as printed by AP]. The filing also cites an alleged text:
+    "I had enough of his hatred. Some hate can't be negotiated out."
+    "Robinson's attorneys have argued that the text message is not strong
+    enough evidence to prove a political motivation."
+  editorInference: >-
+    Motive assertions by the prosecution, recorded as assertions; the
+    defense's counter-position is part of the same record.
+  limitations:
+    - "A charging-stage argument, not an adjudicated finding."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E017
+  title: "The charging instrument: aggravated murder, death-penalty notice, political-expression targeting enhancement"
+  claimIds: [KRK-C009]
+  sourceId: SRC-UC-INFORMATION-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "COUNT 1: AGGRAVATED MURDER, a Capital Felony... the defendant, Tyler
+    James Robinson, intentionally or knowingly caused the death of Charlie
+    Kirk..."; "NOTICE: Conviction of this offense may carry the death
+    penalty..."; "VICTIM TARGETING ENHANCEMENT: ...intentionally selected
+    Charlie Kirk because of Tyler James Robinson's belief or perception
+    regarding Charlie Kirk's political expression."
+  editorInference: >-
+    The formal allegations, quoted from the instrument itself. Every
+    element remains an allegation to be proved; the defendant is presumed
+    innocent.
+  exactLocator: "Information, Case No. 251403576, filed 2025-09-16, Count 1 and enhancement"
+  limitations:
+    - "A charging instrument is the state's assertion, by definition."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A (PDF text-extracted)"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── the event-media chain ───────────────────────────────────────────────
+
+- id: KRK-E018
+  title: "Hull's sworn account of the event-video chain: a flash drive, downloadable versions, and a statement collected eight months later"
+  claimIds: [KRK-C011, KRK-C012]
+  sourceId: SRC-REV-DAY1-2026
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Hull: "TPUSA had a videographer, Visual Impulse, who was taking
+    coverage of the event, and they provided video to us that they had
+    captured on September 10th of 2025." "Mr. Farnsworth originally
+    provided, I believe, a flash drive to Lieutenant O'Brien... and a
+    short time after that on September 10th, he provided downloadable
+    versions, electronic versions to Agent Mortenson, and an 1102 was
+    collected from him on May 6th of 2026."
+  editorInference: >-
+    Same-day receipt of COPIES is sworn; the testimony is silent on
+    original cards, and the contractor's formal statement was not
+    collected until May 2026 — which is why KRK-C012 stays unresolved
+    rather than supported or refuted.
+  exactLocator: "Rev transcript, UT v. Robinson Day 1, Hull testimony at 05:25:56–05:28:36"
+  limitations:
+    - "Commercial transcript of the stream, not a certified court transcript."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E019
+  title: "Defense objection: clips were made from larger videos by persons unknown; judge separately excluded an altered compilation"
+  claimIds: [KRK-C012]
+  sourceId: SRC-REV-DAY1-2026
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Defense counsel Nestor: "We also would like to cross-examine Mr.
+    Farnsworth about whether or not, and to what extent these videos may
+    have been altered in any way. It is clear that clips were being made
+    out of the larger videos... So obviously someone made clips, and we
+    don't know who, and we don't know how, we don't know what they did."
+    On a separate compilation exhibit, Judge Graf: "I'm sustaining the
+    objection. Typically, when exhibits are admitted to the court, it is
+    without alteration."
+  editorInference: >-
+    The provenance question about derivative clips is in the court record
+    from both the defense and the bench — it is not an internet invention.
+  exactLocator: "Rev transcript, Day 1, 05:28:54–05:36:00 and 06:50:26–06:53:26"
+  limitations:
+    - "A provenance question is not evidence of alteration; no altered frame has been demonstrated publicly."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E020
+  title: "Owens-published footage: the contractor removes the rear camera's SD card within about four minutes"
+  claimIds: [KRK-C011]
+  sourceId: SRC-OWENS-EP377-2026
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Owens (Ep 377 transcript): Farnsworth "was seen taking down the
+    cameras, particularly taking down one camera: the camera behind
+    Charlie's head. This turned out to be less than four minutes after
+    Charlie was hit." "He looks around again nervously and he puts the SD
+    card in his pocket and he zips up... he whips out his phone and he
+    begins texting with someone." Owens marks her reading as opinion: "It
+    looks to me like — and again, this is my opinion — it looks to me like
+    he's completing a task."
+  editorInference: >-
+    The observable act (removal, pocketing, phone use) is distinct from
+    Owens' interpretation of it, and this record carries only the former.
+    Purpose is not visible in the footage.
+  limitations:
+    - "The public artifact is an Owens-presented copy; native file, camera clock, and full surrounding sequence have not been independently examined."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E021
+  title: "Kolvet's broader assertion: the SD cards are 'in the possession of the FBI'"
+  claimIds: [KRK-C012]
+  sourceId: SRC-OWENS-EP377-2026
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Kolvet, in a clip reproduced by Owens: "he grabbed the SD cards out of
+    the camera afterwards. And there's all these conspiracy videos about
+    why did he grab the SD cards? Well, first of all, they're in the
+    possession of the FBI... I asked him personally. I said, 'Why did you
+    do that?'... He said, 'Because I know people can be evil.'"
+  editorInference: >-
+    An assertion broader than the publicly documented chain (which covers
+    copies): possibly true via a later transfer, but unverified by any
+    public inventory. Recorded as an assertion by its source.
+  limitations:
+    - "Second-hand clip within a commentary program; the original interview context was not independently reviewed."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E022
+  title: "Owens' account of the September 18 phone call versus the contractor's 1102 statement"
+  claimIds: [KRK-C012]
+  sourceId: SRC-OWENS-EP377-2026
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    Owens: on September 18 Farnsworth "said, 'I don't know how to send the
+    file'... then he admitted that he did know how to send a file, but he
+    didn't want to do it for fear that Google might hack him." She
+    contrasts this with the 1102 statement she quotes: "That day on
+    September 10th, I provided SBI with four videos through a Google
+    Drive."
+  editorInference: >-
+    If Owens' account of the call is accurate and as categorical as
+    reported, there is a candor discrepancy worth resolving; the call
+    itself is not public, and the statements could concern sending
+    material to Owens rather than to investigators. Unconfirmed either
+    way.
+  limitations:
+    - "Single-party account of a private call; no recording or contemporaneous record has been published."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── motive environment ──────────────────────────────────────────────────
+
+- id: KRK-E023
+  title: "JTA: the donor-pressure messages, authenticated on the record"
+  claimIds: [KRK-C014]
+  sourceId: SRC-JTA-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "'Just lost another huge Jewish donor. $2 million a year because we
+    won't cancel Tucker,' Kirk wrote, adding, 'I'm thinking of inviting
+    Candace.'" "'I cannot and will not be bullied like this,' Kirk wrote."
+    Donors were "leaving me no choice but to leave the pro-Israel cause."
+    "Their authenticity was later confirmed by Andrew Kolvet, a
+    spokesperson for TPUSA... At least one pro-Israel Jewish associate of
+    Kirk's, Newsweek opinion editor Josh Hammer, has confirmed he was on
+    the text thread." "The New York Times reported earlier this month that
+    Robert Shillman... canceled a $2 million donation to TPUSA over
+    Carlson's participation at a TPUSA event."
+  editorInference: >-
+    The motive-environment core, established by on-the-record confirmation
+    from the organization's own spokesman.
+  exactLocator: "JTA, October 10, 2025"
+  limitations:
+    - "The native message export with full thread context has not been published; the texts do not name the donor."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E024
+  title: "The same reporting: no evidence links the charged suspect to Israel; participants characterize the texts as venting"
+  claimIds: [KRK-C015]
+  sourceId: SRC-JTA-2025
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "No evidence has been shared linking the only suspect to be charged
+    with Kirk's murder to Israel." Hammer: Kirk "was blowing off steam in
+    a private group chat setting"; Kolvet: the texts were "consistent with
+    public frustrations he voiced many times." Kolvet also "stated that he
+    had turned over the texts about 'Jewish donors' to the FBI in the wake
+    of the shooting," saying "We wanted to leave nothing unturned."
+  editorInference: >-
+    The publication most invested in this cluster records the absence of
+    any operational bridge — and that the material was given to
+    investigators rather than suppressed.
+  limitations:
+    - "Absence of shared evidence is not proof of absence; investigative lead files are not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E025
+  title: "The Grayzone's Hamptons account: anonymous sources describe an 'intervention'; Ackman calls it 'totally false'"
+  claimIds: [KRK-C015]
+  sourceId: SRC-GRAYZONE-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "The Grayzone has spoken to five people with intimate knowledge of
+    Kirk's meeting with Ackman, which was held in early August... Kirk was
+    left upset after the gathering turned into an 'intervention' where he
+    was 'hammered' for his increasingly skeptical views..." "Kirk,
+    according to one person with inside knowledge... said he left feeling
+    as though he'd been subjected to 'blackmail.'" Within the same piece,
+    Ackman: the accounts are "totally false"; "at no time have I ever
+    threatened Charlie Kirk... I have never blackmailed anyone."
+  editorInference: >-
+    The affirmative coercion account rests on anonymous sourcing and is
+    disputed on the record by named participants; the meeting's occurrence
+    and the presence of an Israel argument are common ground. Recorded as
+    a disputed lead (catalog claim KRK-C021), not a finding.
+  limitations:
+    - "Anonymous sourcing throughout; outlet has a strong editorial viewpoint."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E026
+  title: "Named on-the-record denials: Ackman and Hausdorff"
+  claimIds: [KRK-C015]
+  sourceId: SRC-NYPOST-ACKMAN-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Ackman: "at no time have I ever threatened Charlie Kirk, Turning Point
+    or anyone associated with him. I have never blackmailed anyone, let
+    alone Charlie Kirk"; he "never offered Charlie or Turning Point any
+    money in an attempt to influence Charlie's opinion on anything."
+    Hausdorff "confirmed she was at the Hamptons meeting but she
+    categorically denied the claims": "That claim is categorically untrue,
+    and whoever has made that accusation is absolutely lying."
+  editorInference: >-
+    The named-participant side of the dispute, recorded with the same
+    seriousness as the allegations. Denials by interested parties resolve
+    nothing by themselves; they define what is contested.
+  limitations:
+    - "Participants in a disputed meeting are interested parties in both directions."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── the device hypothesis ───────────────────────────────────────────────
+
+- id: KRK-E027
+  title: "The EPICENTER site's computational claims: energy estimate, gas-first sequencing, epicenter at the transmitter, bleeding-onset delay"
+  claimIds: [KRK-C018]
+  sourceId: SRC-EPICENTER-2026
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    ">15.6 J — Minimum energy at epicenter — Computed from necklace
+    kinetics, component velocities, and shirt deformation work."
+    "(775, 562) — Epicenter pixel coordinates — Dense optical flow
+    identifies the peak motion epicenter at the precise location where the
+    RØDE Wireless PRO transmitter was clipped to the victim's shirt."
+    "Video shows gas escaping the collar one frame before mechanical
+    displacement." "429–461ms — Delay to bleeding onset... 30× to 110×
+    longer than Bernoulli–Torricelli physics predicts for an exposed
+    vascular neck wound." The site publishes "the original, unmodified
+    source video files from six cell phone cameras, plus the complete
+    Python analysis script."
+  editorInference: >-
+    The most technically specified affirmative case for the device
+    hypothesis, and unusually transparent about data and code — but built
+    on cellphone video, by an unnamed analyst, with no independent
+    replication. Weight stays weak until the blind synchronization study
+    (KRK-R003) or an independent re-run engages it.
+  limitations:
+    - "Anonymous operator; no named credentials; no peer review or independent replication known."
+    - "Compressed consumer video with unverified clock and frame-rate characteristics is the input to every computation."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker C"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E028
+  title: "The advocacy compilation's observation set — and the counterarguments it itself records"
+  claimIds: [KRK-C018]
+  sourceId: SRC-HOLON-MIC-2026
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    Claimed observations: "Shirt deformation and an outward 'puff'/blast
+    effect first"; "The necklace/chain violently displaced, flying upward
+    over the shoulder"; "A black rectangular object (described as matching
+    the mic's magnetic clasp) seen ejecting from the neck area." The page
+    also records a technical rebuttal: "@alexboge (July 9–12, 2026)...
+    A shaped charge needs standoff distance and rigid fixation; a RØDE
+    Wireless Pro (~32 g) clipped to fabric would, in that analysis, rocket
+    away rather than drive a stable jet."
+  editorInference: >-
+    A pseudonymous aggregation useful for enumerating exactly which
+    observations the theory rests on; none is authenticated at the native
+    level, and the page's own quoted counter-analysis illustrates the
+    hypothesis's unpaid physics debts.
+  limitations:
+    - "Pseudonymous advocacy source; every observation derives from re-encoded public video."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker C"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E029
+  title: "Bray's own July 2026 formulation drifts toward a bullet-into-microphone variant"
+  claimIds: [KRK-C018]
+  sourceId: SRC-BRAY-INTERVIEW-2026
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    Auto-transcript: "the necklace is the hardest... item to explain with
+    the official story"; "in my mind, the only possibility it really makes
+    sense is that the bullet struck in or around the microphone area and
+    that that kind of causes the reaction that we see and then the neck
+    wound is just being misappropriated to... being the actual impact
+    site."
+  editorInference: >-
+    The hypothesis's originator here entertains a variant in which a
+    bullet DID arrive — illustrating the variant drift that makes the
+    theory family hard to falsify as a unit, and why this case file splits
+    it into testable versions rather than grading a moving target.
+  limitations:
+    - "Auto-generated transcript of a video interview; wording may contain transcription errors."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker C"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E030
+  title: "Hearing record: autopsy testimony contains nothing inconsistent with the gunshot classification"
+  claimIds: [KRK-C018]
+  sourceId: SRC-FOX-PRELIM-2026
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "Testimony from Utah State Bureau of Investigation Agent David Hull
+    listed his death as a homicide caused by a gunshot wound to the neck.
+    The testimony included no indication that the forensic pathologist who
+    handled the autopsy found anything inconsistent with that
+    conclusion..." "...the doctor who performed the autopsy was still
+    confident it was the gunshot that killed Kirk."
+  editorInference: >-
+    The device hypothesis's central requirement — a non-gunshot mechanism
+    — currently contradicts the only medical finding in the record. The
+    finding itself is not yet independently auditable (KRK-C007), which is
+    the honest limit of this undermining evidence.
+  limitations:
+    - "Relayed testimony; the outlet's 'ruling out' framing is its own characterization and is not adopted here."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E031
+  title: "The closest eyewitness thought the shot came from feet behind his head"
+  claimIds: [KRK-C018]
+  sourceId: SRC-ABC-KOZAK-2025
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "Kozak says when he heard the shot, he thought the gun was five feet
+    behind his head..." He "estimates that he was about 5 to 10 feet away
+    from Kirk" and was "instructed not to touch" the microphone.
+  editorInference: >-
+    A proximity impression the device hypothesis leans on; impulse-sound
+    localization by untrained listeners is unreliable (reflections,
+    shockwave-versus-muzzle-blast confusion), so this carries little
+    weight in either direction until native multichannel audio is analyzed
+    (KRK-R009).
+  limitations:
+    - "Subjective sound localization; no acoustic analysis accompanies it."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E032
+  title: "Kolvet's second-hand relay of an unnamed surgeon on the absent exit wound"
+  claimIds: [KRK-C006]
+  sourceId: SRC-NYPOST-SURGEON-2025
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    Kolvet on X: "I just spoke with the surgeon who worked on Charlie in
+    the hospital... He said the bullet 'absolutely should have gone
+    through, which is very very normal for a high-powered, high-velocity
+    round'"; "His bone was so healthy and the density was so so impressive
+    that he's like the man of steel." "In the end, the coroner did find
+    the bullet just beneath the skin."
+  editorInference: >-
+    Evidence of what a spokesman RELAYED, not a medical record. Statements
+    like these — vivid, second-hand, unnamed — are exactly the material
+    the full autopsy package would replace, in whichever direction it
+    cuts.
+  limitations:
+    - "Unnamed surgeon; second-hand relay by an organizational spokesman; no medical document."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── scene alteration and institutional conduct ──────────────────────────
+
+- id: KRK-E033
+  title: "Records-based paving chronology: cleanup order September 11, pavers by September 14, lead investigator did not authorize"
+  claimIds: [KRK-C013]
+  sourceId: SRC-SHERAFY-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Internal communications show that blood remained at the scene on
+    September 12, that personnel were discussing how to alter the surface
+    by September 13, and that the first pavers were being installed on
+    September 14—four days after the killing." "A UVU emergency-payment
+    document records that an order was placed with a vendor on September
+    11. The invoice amount was $6,090.52, and the description stated:
+    'Clean up for shooting incident.' The vendor's identity was redacted."
+    "David Hull... testified under defense cross-examination that he did
+    not authorize the excavation or installation of the pavers and learned
+    that the courtyard had been paved through the news." "The documents
+    became widely known after Judicial Watch obtained them through Utah's
+    Government Records Access and Management Act."
+  editorInference: >-
+    The scene alteration and its partial authorization vacuum are
+    documented in obtained records, not rumor. The same article's own
+    caution stands: "The existing evidence does not prove deliberate
+    evidence destruction."
+  exactLocator: "sherafy.com, August 3, 2026 (updated August 24, 2026)"
+  limitations:
+    - "Secondary synthesis of GRAMA records; the underlying documents should be obtained directly (KRK-R007) before consequential extension."
+    - "Hull's testimony does not establish that no other official authorized the release."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker C"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E034
+  title: "The contempt ruling: 'ample evidence' statement crossed the line; ballistics correction did not"
+  claimIds: [KRK-C016]
+  sourceId: SRC-KSL-CONTEMPT-2026
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Judge Graf found spokesman/deputy Chris Ballard "in civil contempt" of
+    the pretrial publicity order. Ballard had told TMZ: "We have ample
+    evidence to demonstrate beyond a reasonable doubt that Tyler Robinson
+    committed this murder..." Graf ruled Ballard WAS allowed to correct
+    the ballistics misreporting (the defense motion's ATF description was
+    "technically accurate" but "highly prone to misinterpretation"), but
+    the guilt statement violated an order that "was exceptionally clear."
+    The judge quoted precedent: "a prosecutor's opinion of guilt is
+    particularly likely to create prejudice." Sanction: expanded jury
+    pool, adjusted questionnaires, defense costs — not removal of the
+    death penalty ("grossly disproportionate to the misconduct and legally
+    unavailable").
+  editorInference: >-
+    A formal judicial finding that narrative-management inside the
+    prosecution crossed a legal line — and, in the same ruling, that
+    correcting actual misinformation about the inconclusive ballistics was
+    legitimate. Both halves matter.
+  exactLocator: "KSL.com, June 26, 2026"
+  limitations:
+    - "The judge expressly did not decide the case's merits."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E035
+  title: "How the inconclusive result became public: the March 2026 defense filing and the 'tidal wave' of coverage"
+  claimIds: [KRK-C004]
+  sourceId: SRC-KSL-CONTEMPT-2026
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Robinson's March motion "noted that an initial report from the Bureau
+    of Alcohol, Tobacco, Firearms and Explosives 'indicates that the ATF
+    was unable to identify the bullet recovered at autopsy to the rifle
+    allegedly tied to Mr. Robinson.'" Prosecutors said that created a
+    "tidal wave" of media coverage and responded that the defense should
+    have said the report could not identify "or exclude" the match.
+  editorInference: >-
+    The public fight over the inconclusive result was itself a fight
+    between two selective phrasings of the same laboratory outcome —
+    the pattern this case file's claim pair (KRK-C003/KRK-C004) is built
+    to prevent.
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, direct fetch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+# ── the publicized timeline anomalies ───────────────────────────────────
+
+- id: KRK-E036
+  title: "Owens' timeline case: the 8:07 TMZ video, the 8:29 arrival, and the disassembly inference"
+  claimIds: [KRK-C010]
+  sourceId: SRC-OWENS-EP235-2025
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "According to TMZ, they have footage... which shows a man at 08:07 AM
+    ... walking outside of university grounds." Quoting Governor Cox:
+    "Investigators... identified Robinson arriving on UVU campus in a gray
+    Dodge Challenger at approximately 8:29 AM." Owens: "What's
+    interesting, already confusing to me is that TMZ shows him already
+    walking. We're supposed to believe he parked his car and then walked
+    onto campus." On the rooftop: "their narrative is that he disassembled
+    the gun and then started running. So that's a bit confusing to us of
+    how he was able to do that so quickly."
+  editorInference: >-
+    The affirmative anomaly case, recorded from its primary source. Note
+    Owens' own framing ("confusing to me") — the transcript presents
+    puzzlement, not authenticated impossibility.
+  limitations:
+    - "The 8:07 video's timestamp, location, and subject identity are unauthenticated; 'their narrative is that he disassembled' attributes to officials a claim not found in the reviewed official record."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker B"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E037
+  title: "The reviewed official record asserts no post-shot rifle disassembly — and the times are not logically incompatible"
+  claimIds: [KRK-C010]
+  sourceId: SRC-FBI-UPDATES-2025
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The FBI page states: "after he shot and killed Charlie Kirk, he jumped
+    off and ran away" and "He left a gun and ammunition in a wooded area
+    near the university." No statement about disassembling the rifle on
+    the roof appears on the page.
+  editorInference: >-
+    The "no time to disassemble" contradiction targets a claim absent from
+    the reviewed official record — a straw-man contradiction unless a
+    primary official assertion of post-shot disassembly surfaces. And a
+    person off campus at 8:07 can arrive by vehicle at 8:29; the route
+    experiment (KRK-R006) would settle feasibility, not rhetoric.
+  limitations:
+    - "Absence from this page does not prove no official ever made the claim elsewhere; KRK-R006 includes searching the full record for one."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, worker A"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-launch-2026-08-25"
+    date: "2026-08-25"

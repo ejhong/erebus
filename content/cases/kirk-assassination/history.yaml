@@ -1,0 +1,18 @@
+# Append-only change log for KRK-001. Add new entries at the end.
+
+- date: "2026-08-25"
+  change: >-
+    Case launched: 19 featured claims, evidence ledger and source registry
+    built from independently verified citations, research agenda of ten
+    decisive tests, and overview article. Constructed from the founder's
+    research brief (casework/kirk/) with every citation re-verified against
+    the live primary source before entry; the brief itself is not cited
+    anywhere, per casework policy. All records carry ai_extracted
+    provenance; nothing has been human-reviewed yet, and no assessment has
+    been ratified.
+  reason: >-
+    First case on the site; chosen by the founder as the pilot for handling
+    unofficial and contested sources under the living-persons rules.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
