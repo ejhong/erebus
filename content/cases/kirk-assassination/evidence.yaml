@@ -1403,7 +1403,7 @@
     date: "2026-08-25"
 
 - id: KRK-E053
-  title: "Patel's September 15 screwdriver-DNA announcement — and its absence from the next day's charging Information"
+  title: "Patel's September 15 screwdriver-DNA announcement"
   claimIds: [KRK-C032]
   sourceId: SRC-ALJAZEERA-PATEL-2025
   direction: supports
@@ -1412,20 +1412,46 @@
     Patel, on Fox & Friends, September 15, 2025: "I can report today that
     the DNA hits from the towel that was wrapped around the firearm and
     the DNA on the screwdriver are positively processed for the suspect in
-    custody." The charging Information filed September 16 (full text
-    searched) contains zero occurrences of "screwdriver"; its DNA passages
-    cover the rifle trigger, casing, cartridges, and towel only.
+    custody."
   editorInference: >-
-    The announcement/filing mismatch is real. A charging Information is
-    not an evidence inventory, so the omission alone carries little
-    weight — the question the compilation raises is whether the evidence
-    later disappeared, answered by KRK-E054.
-  exactLocator: "Al Jazeera, September 16, 2025; Information, Case No. 251403576 (full-text search)"
+    Establishes the announcement premise only. Whether the filing the next
+    day mentioned the item is a separate observation from a separate
+    document (KRK-E056), and whether the evidence was later abandoned is
+    answered by KRK-E054.
+  exactLocator: "Al Jazeera, September 16, 2025 (wording consistent across BBC and AP coverage)"
   limitations:
     - "Patel's wording is a television statement, not a laboratory document."
   reviewState: ai_extracted
   origin:
     ref: "verification pass, wave 3"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+
+- id: KRK-E056
+  title: "The charging Information contains no mention of the screwdriver"
+  claimIds: [KRK-C032]
+  sourceId: SRC-UC-INFORMATION-2025
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The Information (Case No. 251403576, filed September 16, 2025; ten
+    pages) contains zero occurrences of the word "screwdriver." Its DNA
+    passages state: "DNA consistent with Robinson was found on the rifle's
+    trigger" and "DNA consistent with Robinson's was found on the trigger,
+    other parts of the rifle, the fired cartridge casing, two of the three
+    unfired cartridges, and the towel."
+  editorInference: >-
+    The absence is verifiable by inspection of the primary document
+    (full-text searched 2026-08-25). A charging Information is not an
+    evidence inventory, so the omission alone carries little weight; it
+    establishes only that the announcement and the filing did not
+    reconcile.
+  exactLocator: "Information, Case No. 251403576, pp. 3 and 5 (Probable Cause Statement)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, wave 3 (primary-document full-text search)"
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-kirk-intake-2026-08-25"
     date: "2026-08-25"
@@ -1451,6 +1477,7 @@
     under oath ten months after the announcement. What remains true is
     that early televised statements and formal filings did not reconcile —
     a statement-ledger entry (KRK-R010), not a vanishing act.
+  exactLocator: "Fox News preliminary-hearing coverage, July 7–8, 2026 (Faumuina and Bakker testimony)"
   limitations:
     - "Same-proceeding press coverage; the underlying laboratory reports are not public."
   reviewState: ai_extracted

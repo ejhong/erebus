@@ -977,18 +977,17 @@
 - id: KRK-C032
   tier: featured
   statement: >-
-    The screwdriver DNA evidence announced by the FBI director on
-    September 15, 2025 was subsequently abandoned by the prosecution.
+    The prosecution abandoned the screwdriver DNA evidence.
   plainLanguage: >-
-    Half of the underlying observation is true and half is not — which is
-    exactly why it needs its own claim. True: Patel announced screwdriver
-    DNA on national television, and the charging Information filed the
-    next day never mentions a screwdriver. False: the evidence was not
-    dropped — it was presented in full at the July 2026 preliminary
-    hearing, with testimony that DNA consistent with Robinson was on it.
-    A charging document omitting an evidence item is ordinary (it is not
-    an evidence inventory); "they quietly buried it" is contradicted by
-    the hearing record.
+    The circulating version of this claim rides on a real observation: the
+    FBI director announced screwdriver DNA on national television on
+    September 15, and the charging Information filed the next day never
+    mentions a screwdriver (each documented in its own evidence record).
+    But the abandonment itself did not happen — the evidence was presented
+    in full at the July 2026 preliminary hearing, with testimony that DNA
+    consistent with Robinson was on it. A charging document omitting an
+    evidence item is ordinary (it is not an evidence inventory); "they
+    quietly buried it" is contradicted by the hearing record.
   theme: institutional
   rung: observation
   claimType: methodological
@@ -1001,9 +1000,11 @@
     date: "2026-08-25"
   credibility: contradicted
   credibilitySummary: >-
-    The premise verifies (announcement verbatim; zero mentions in the
-    Information's ten pages); the abandonment claim is contradicted by
-    sworn hearing testimony presenting the screwdriver DNA (KRK-E054).
+    The announcement premise verifies verbatim (KRK-E053) and the
+    charging-document omission verifies by inspection of the primary
+    filing (KRK-E056) — but the abandonment proposition graded here is
+    contradicted by sworn hearing testimony presenting the screwdriver
+    DNA ten months later (KRK-E054).
   diagnosticity: low
   diagnosticitySummary: >-
     An early-announcement/charging-document mismatch is expected under
