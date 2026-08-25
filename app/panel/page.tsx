@@ -234,7 +234,7 @@ export default function PanelPage() {
           on pull requests, content changes, quarantined replies. Derived
           from the repository —{" "}
           <a
-            href="https://github.com/ejhong/ebs"
+            href="https://github.com/ejhong/erebus"
             className="underline underline-offset-2 hover:text-copper"
           >
             watch it live on GitHub
