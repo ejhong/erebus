@@ -92,6 +92,7 @@ const ALLOWLIST = new Set([
   // Zero-content static-export support (candidate for upstreaming)
   "src/domain/staticExport.ts",
   "app/claims/[id]/page.tsx",
+  "app/cases/[slug]/evidence/page.tsx",
   "app/sources/[id]/page.tsx",
   "app/cases/[slug]/claims/page.tsx",
   "app/cases/[slug]/resources/page.tsx",
