@@ -18,7 +18,7 @@ const linkClass =
   "font-mono text-[0.92em] tracking-[0.04em] text-copper underline decoration-copper/40 underline-offset-2 hover:decoration-copper";
 
 /**
- * Renders prose that may cite Aletheia record ids as links to the matching
+ * Renders prose that may cite site record ids as links to the matching
  * case, claim, source, evidence anchor, or research anchor.
  */
 export function LinkedRecordText({

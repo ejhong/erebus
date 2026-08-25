@@ -9,7 +9,7 @@ export type RecordRefSegment =
   | { kind: "text"; value: string }
   | { kind: "record"; id: string };
 
-/** Matches Aletheia record ids cited in prose (order: longest prefixes first). */
+/** Matches site record ids cited in prose (order: longest prefixes first). */
 const RECORD_REF =
   /\b(SRC-[A-Z0-9-]+|[A-Z]+-C\d{3}|[A-Z]+-E\d{3}|[A-Z]+-R\d{3}|[A-Z]+-\d{3})\b/g;
 

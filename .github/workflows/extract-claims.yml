@@ -18,11 +18,11 @@ on:
         required: true
         type: string
       case_slug:
-        description: "Case slug (e.g. megalithic-casting)"
+        description: "Case slug (a directory under content/cases/)"
         required: true
         type: string
       source_id:
-        description: "Source record id (e.g. SRC-FOTI-2023)"
+        description: "Source record id (e.g. SRC-AUTHOR-2023)"
         required: true
         type: string
       only:
@@ -69,7 +69,7 @@ jobs:
         run: |
           runid=$(basename "$OUTDIR")
           branch="extract/${runid}"
-          git config user.name "aletheia-extract-bot"
+          git config user.name "erebus-extract-bot"
           git config user.email "extract-bot@users.noreply.github.com"
           git checkout -b "$branch"
           git add proposals/
