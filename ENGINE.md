@@ -58,3 +58,63 @@ The CI workflow runs `--check` as a **warning, not a hard fail** (so
 deliberate divergences under review don't block content work), and skips
 it with a notice when the `ENGINE_UPSTREAM` secret is unset. The
 forbidden-string guard, by contrast, is always a hard fail.
+
+## Upstreaming queue
+
+Code flows one way (upstream → here), but *proposals* flow back: when
+work in this repo produces something the engine should own, it is
+recorded here as a description — never pushed upstream from this repo
+directly. To flush the queue, run an agent session on the upstream
+repository and hand it the relevant entries. After an item merges
+upstream, pull it back with `sync-engine.mjs --pull` and delete the
+corresponding allowlist entries in `scripts/sync-engine.mjs` — allowlist
+entries are loans, not property. Queue descriptions must carry engine
+mechanics only: no case content, no material from this private repo's
+casework.
+
+**Multi-repo session rule.** When an agent session has both this repo and
+the upstream checked out (a multi-repo Cloud Agent environment), nothing
+from this repository may be committed to the upstream: no casework, no
+content, no docs text, no quotes — engine code and queue-entry mechanics
+only. The upstream is public; this repository is not. Treat every
+cross-repo copy as a publication decision.
+
+Current queue (2026-08-25):
+
+1. **Zero-content static export.** `output: export` fails when a dynamic
+   route generates zero params. Fix shipped here: a pure helper
+   (`src/domain/staticExport.ts`) emits one reserved placeholder param per
+   empty route, and the five dynamic-route pages render `notFound()` for
+   unknown ids (replacing thrown errors). Affected files are listed in the
+   sync allowlist under "zero-content static-export support."
+2. **Inbox-response workflow token bug (live upstream bug).** The
+   `inbox-response.yml` dispatch job grants only `actions: write`; `gh
+   workflow run` first resolves the repo's default branch and fails with
+   "Resource not accessible by integration." Fix shipped here: add
+   `contents: read` to the workflow's permissions block.
+3. **Study/workpaper domain object (feature proposal — build upstream
+   first).** Desk research produces datasets (base-rate tabulations,
+   replication tables, discrepancy ledgers) whose epistemic unit is the
+   study, not the row. Proposed: a per-case `studies/` object with frozen
+   inclusion criteria (freeze date), method, a sourced table, findings,
+   and limitations — rendered on the case page and linkable from evidence
+   records, so ledgers stay coarse (aggregate findings only) while the
+   full table remains auditable on the site. Interim convention in this
+   repo: `docs/CONTENT_POLICY.md`, "Studies and workpapers."
+4. **Empty-state rendering for the homepage, case index, and research
+   page** (lower priority; useful for bootstraps and full-archive states).
+   Shipped here in the corresponding page files, listed in the allowlist.
+5. **Design objection to the contested-reconciliation mechanism (from
+   this repo's arbiter panel, 2026-08-25).** On the engine-sync PR
+   carrying `scripts/reconcile-contested.mjs`, one seat (Opus 5) filed a
+   substantiated §3.15 objection while four seats judged the mechanism
+   compliant: the reconsideration draft is written non-blind (with every
+   seat's dissent in hand) and standing then re-derives against the
+   EXISTING check runs — so a contested standing can clear by moving the
+   draft toward the judges' verdicts without any independent model
+   judging the new draft. Proposed upstream fix: a contested→ratified
+   transition after reconciliation requires at least one fresh blind
+   check of the reconciled draft (or the standing derivation should
+   treat post-reconciliation drafts as staling the panel). The dissent
+   and the four complies readings are preserved verbatim in this repo's
+   PR #8 arbiter comment.
