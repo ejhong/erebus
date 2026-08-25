@@ -72,6 +72,13 @@ entries are loans, not property. Queue descriptions must carry engine
 mechanics only: no case content, no material from this private repo's
 casework.
 
+**Multi-repo session rule.** When an agent session has both this repo and
+the upstream checked out (a multi-repo Cloud Agent environment), nothing
+from this repository may be committed to the upstream: no casework, no
+content, no docs text, no quotes — engine code and queue-entry mechanics
+only. The upstream is public; this repository is not. Treat every
+cross-repo copy as a publication decision.
+
 Current queue (2026-08-25):
 
 1. **Zero-content static export.** `output: export` fails when a dynamic
