@@ -58,8 +58,8 @@ import {
   narrativeGuardFailure,
 } from "./lib/editorial-edits.mjs";
 
-const PROMPT_VERSION = "aletheia-assess-v1-auto";
-const EDIT_PROMPT_VERSION = "aletheia-editorial-audit-v1";
+const PROMPT_VERSION = "erebus-assess-v1-auto";
+const EDIT_PROMPT_VERSION = "erebus-editorial-audit-v1";
 /** Research fields this pass may rewrite. Ids, links and taxonomy are canon. */
 const EDITABLE_RESEARCH_FIELDS = ["title", "summary", "informationGain"];
 const VERDICTS = [
