@@ -56,10 +56,12 @@
     the Information's zero screwdriver mentions, verified against the
     primary filing), and seven sources. Independence groups mark the
     Grayzone anonymous-friend accounts and Owens final-days accounts as
-    non-independent clusters. Amended same day on arbiter panel review:
-    KRK-C032 reworded to a single proposition and the dual-document
-    evidence record split so the primary filing carries its own
-    observation (objections by two seats, implemented before merge).
+    non-independent clusters. Amended same day: KRK-C032 reworded to a
+    single proposition and the dual-document evidence record split so the
+    primary filing carries its own observation — construction defects
+    raised in pre-merge code review of this change's pull request. (This
+    describes review of the change itself; the case's ASSESSMENT remains
+    an unratified AI draft — no cross-model check runs exist yet.)
   reason: >-
     Remaining 'verify' items from the whokilledck triage ledger, each
     checked at primary or archived sources; assertion-versus-denial pairs
