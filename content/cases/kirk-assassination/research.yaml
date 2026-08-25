@@ -153,6 +153,29 @@
     mechanism and on the eyewitness-proximity puzzle the device hypothesis
     leans on.
 
+- id: KRK-R011
+  title: "Base-rate study: scene-release-to-alteration intervals in comparable cases"
+  summary: >-
+    Tabulate a dozen or more comparable cases (mass-casualty events and
+    killings of public figures at public venues) with, for each: the date
+    investigators formally released the scene, the date of first physical
+    alteration or remediation, the interval between them, the authorizing
+    party, and the sourcing for each cell. Then place the UVU courtyard
+    alteration (cleanup order September 11; pavers September 14; lead
+    investigator testifying he did not authorize) against that
+    distribution. The discriminating variables are sequence (release
+    before alteration?) and authority (who ordered it?), not speed alone.
+  claimIds: [KRK-C013, KRK-C017]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Converts the paving dispute's central intuition — "nobody alters a
+    scene that fast" — into a measured base rate. If the UVU sequence is
+    an outlier (especially if alteration preceded formal release), the
+    concealment question gains real, citable weight; if it is typical of
+    released public venues, the anomaly deflates honestly. Either outcome
+    publishes, per the negative-evidence rule.
+
 - id: KRK-R010
   title: "Statement-discrepancy ledger for post-event public accounts"
   summary: >-
