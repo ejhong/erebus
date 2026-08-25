@@ -509,6 +509,92 @@
   reliabilityNotes:
     - "An anonymous, secondhand assertion by an Infowars host; the tweet's existence is verified, the underlying claim is not."
 
+- id: SRC-ALJAZEERA-PATEL-2025
+  title: "Suspect in Charlie Kirk's murder linked to scene by DNA, FBI chief says"
+  organization: "Al Jazeera"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 16, 2025 (reporting Patel's September 15 Fox & Friends statement)"
+  url: "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says"
+  verification: ai_verified
+  verificationNote: >-
+    Retrieved and quoted 2026-08-25; Patel's quoted words consistent
+    verbatim across Al Jazeera, BBC, and AP coverage loaded the same day.
+
+- id: SRC-FOX-PRELIM-DNA-2026
+  title: "DNA allegedly found on key evidence in Charlie Kirk's assassination (preliminary hearing)"
+  organization: "Fox News"
+  year: "2026"
+  sourceType: webpage
+  identifier: "July 2026 preliminary-hearing coverage"
+  url: "https://www.foxnews.com/us/tyler-robinson-lance-twiggs-dna-allegedly-found-key-evidence-charlie-kirks-assassination"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+  reliabilityNotes:
+    - "Same-proceeding coverage; not independent of the other hearing reports (§3.10)."
+
+- id: SRC-AES-ARCHIVE-2025
+  title: "Accurate Energetic Systems capability pages (archived)"
+  organization: "AES via Internet Archive"
+  year: "2025"
+  sourceType: archive
+  identifier: >-
+    Wayback snapshots: linear-shaped-charge (2025-10-11), m18a1-claymore
+    (2025-10-03), pressing-capabilities (2025-10-11), homepage (2025-12-25)
+  url: "https://web.archive.org/web/20251011003121/https://www.aesys.biz/linear-shaped-charge"
+  verification: ai_verified
+  verificationNote: >-
+    Archived pages retrieved and quoted 2026-08-25; the cited URL is the
+    shaped-charge page, with sibling snapshots listed in the identifier.
+
+- id: SRC-GUNSAMERICA-2025
+  title: "Charlie Kirk conspiracy: 'They knew it was going down'?"
+  organization: "GunsAmerica Digest"
+  year: "2025"
+  sourceType: webpage
+  url: "https://gunsamerica.com/digest/charlie-kirk-conspiracy-they-knew-it-was-going-down/"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+  reliabilityNotes:
+    - "Commentary outlet summarizing the Trends claim; notably candid about its limits (non-replication, normalization)."
+
+- id: SRC-JPOST-NETANYAHU-2025
+  title: "Netanyahu statement on Kirk (September 11, 2025)"
+  organization: "The Jerusalem Post"
+  year: "2025"
+  sourceType: webpage
+  url: "https://www.jpost.com/international/article-867062"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+  reliabilityNotes:
+    - "Carries Netanyahu's on-record account of the invitation ('I spoke to him only two weeks ago and invited him to Israel') — the counter-assertion to catalog claim KRK-C035."
+  background: true
+
+- id: SRC-GRAYZONE-SEPT12-2025
+  title: "Charlie Kirk rejected Netanyahu cash offer before assassination, friend says"
+  organization: "The Grayzone"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 12, 2025"
+  url: "https://thegrayzone.com/2025/09/12/charlie-kirk-netanyahu-israel-assassination/"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+  reliabilityNotes:
+    - "Anonymous-source reporting ('a longtime friend... speaking on the condition of anonymity'); the central assertion carries an on-record denial from TPUSA's spokesman (July 2026)."
+
+- id: SRC-ECONTIMES-OWENS-2025
+  title: "Owens: Kirk 'predicted his own death' — episode transcription"
+  organization: "The Economic Times (transcribing the Owens episode)"
+  year: "2025"
+  sourceType: webpage
+  url: "https://economictimes.indiatimes.com/news/international/global-trends/us-news-charlie-kirk-predicted-his-own-death-24-hours-before-the-assassination-israel-lobby-stunning-bombshell-by-candace-owens/articleshow/124393390.cms"
+  verification: ai_verified
+  verificationNote: >-
+    Retrieved and quoted 2026-08-25. Secondary transcription of the
+    podcast; the primary episode was not directly fetchable.
+  reliabilityNotes:
+    - "Press transcription of commentary; two removes from any underlying message."
+
 - id: SRC-FOX-HARPOLE-2025
   title: "Charlie Kirk security chief says police promise to cover rooftops failed before assassination"
   organization: "Fox News"
