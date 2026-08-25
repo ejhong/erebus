@@ -41,6 +41,31 @@ precedence over everything here.
   duplication across outlets is ONE source with an independence group,
   not many.
 
+## Studies and workpapers
+
+Desk research (base-rate tabulations, timeline reconstructions,
+discrepancy ledgers) produces working datasets whose epistemic unit is
+the study, not the row. Rows do not enter the evidence ledger; studies
+do, at the right grain:
+
+- **The study is a document**: one workpaper per study under
+  `content/cases/<case>/studies/`, containing the inclusion criteria
+  (frozen, with the freeze date, BEFORE data collection), method, the
+  full table with per-row citations, findings, and limitations. The
+  loader ignores the directory; git versions it; the PR diff shows the
+  whole document to reviewers and the arbiter panel.
+- **The ledger cites the study, not its rows**: one Source record for
+  the workpaper (honestly labeled as AI-authored project work held in
+  the repository), plus a SMALL number of evidence records carrying the
+  aggregate findings — the level at which a reader disputes something.
+- **Decisive rows get promoted**: any single precedent or datum that
+  carries load-bearing weight on its own graduates to a full evidence
+  record with its own primary source, under the ordinary rules.
+
+The aggregation layer is where judgment hides: which rows were excluded
+matters more than any row. That is why criteria freeze first and travel
+with the workpaper.
+
 ## Research briefs are not sources
 
 Material under `casework/` is input for case construction. Nothing in a
