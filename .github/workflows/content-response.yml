@@ -12,6 +12,10 @@ on:
     paths:
       - "content/cases/**"
       - "!content/cases/*/assessments/**"
+  # Manual trigger: run the reassess/re-panel loop on demand (e.g. when a
+  # panel run's output was lost, or to panel a case without a content
+  # change).
+  workflow_dispatch:
 
 concurrency:
   group: content-response
@@ -64,11 +68,17 @@ jobs:
           git config user.name "erebus-maintenance-bot"
           git config user.email "maintenance-bot@users.noreply.github.com"
           git checkout -b "$branch"
-          git add content/cases/*/assessments content/cases/*/overview.md content/cases/*/research.yaml content/cases/*/history.yaml proposals/cross-model-failures 2>/dev/null || true
+          # Stage by directory with -A and WITHOUT suppressing errors: the
+          # glob-list + 2>/dev/null + || true form silently discarded four
+          # installed panel overlays on 2026-08-25 ("nothing stageable")
+          # when git add errored invisibly. Fail loudly instead.
+          git add -A -- content/cases proposals
+          git status --porcelain
           if git diff --cached --quiet; then
             echo "nothing stageable — the loop rests"
             exit 0
           fi
+          git diff --cached --stat
           git commit -m "Content response ${date}: reassessment and panels for the latest canon change"
           git push -u origin "$branch"
           risk=$(node scripts/classify-pr-risk.mjs "origin/${GITHUB_REF_NAME}" | tail -1)
