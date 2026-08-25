@@ -153,6 +153,50 @@
     mechanism and on the eyewitness-proximity puzzle the device hypothesis
     leans on.
 
+- id: KRK-R011
+  title: "Base-rate study: scene-release-to-alteration intervals in comparable cases"
+  summary: >-
+    Tabulate a dozen or more comparable cases (mass-casualty events and
+    killings of public figures at public venues) with, for each: the date
+    investigators formally released the scene, the date of first physical
+    alteration or remediation, the interval between them, the authorizing
+    party, and the sourcing for each cell. Then place the UVU courtyard
+    alteration (cleanup order September 11; pavers September 14; lead
+    investigator testifying he did not authorize) against that
+    distribution. The discriminating variables are sequence (release
+    before alteration?) and authority (who ordered it?), not speed alone.
+  claimIds: [KRK-C013, KRK-C017]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Converts the paving dispute's central intuition — "nobody alters a
+    scene that fast" — into a measured base rate. If the UVU sequence is
+    an outlier (especially if alteration preceded formal release), the
+    concealment question gains real, citable weight; if it is typical of
+    released public venues, the anomaly deflates honestly. Either outcome
+    publishes, per the negative-evidence rule.
+
+- id: KRK-R012
+  title: "AES-cluster verification package"
+  summary: >-
+    Complete the verification of the procurement/explosion cluster
+    (KRK-C025) at the primary level: FAA/FOIA requests or subscription
+    flight-data pulls identifying the reported August 25, 2025 Heber City
+    → John Tune aircraft, operator, and (where lawful) manifest; a
+    records request or program-office inquiry resolving what "SPM" in
+    award N0016425PJ538 denotes and the deliverables' disposition; a
+    replication of the USAspending uniqueness search including IDVs and
+    subawards; and tracking of the CSB final report and TOSHA case
+    outcomes for any cause finding.
+  claimIds: [KRK-C025]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Every element is checkable paper: either the cluster's connective
+    tissue materializes (which would transform the case) or the cluster
+    resolves into a real contract, a real disaster, and an unsourced
+    flight — closing the loudest new allegation either way.
+
 - id: KRK-R010
   title: "Statement-discrepancy ledger for post-event public accounts"
   summary: >-
