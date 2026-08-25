@@ -112,9 +112,9 @@ const featuredIds = claims
   .map((c) => c.id);
 const caseRecord = parseYaml(read("case.yaml"));
 
-const PROMPT_VERSION = "aletheia-check-v1";
+const PROMPT_VERSION = "erebus-check-v1";
 
-const instructions = `You are an independent scientific assessor for Aletheia, a public evidence ledger for contested hypotheses. You have the complete case file for "${caseRecord.title}" — dossier, overview article, atomic claims, evidence records, source records, and research agenda. You have deliberately NOT been shown any prior assessment.
+const instructions = `You are an independent scientific assessor for Erebus, an evidence ledger for contested public events. You have the complete case file for "${caseRecord.title}" — dossier, overview article, atomic claims, evidence records, source records, and research agenda. You have deliberately NOT been shown any prior assessment.
 
 Your task: produce one complete assessment run over this case, as YAML, in exactly the schema below.
 

@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { getCaseBySlug, loadAllCases } from "./load";
+import { loadAllCases } from "./load";
 import { extractArxivId, extractDoi, resourceGroups } from "./resources";
 import { CuratedResourceSchema, WatchConfigSchema } from "./schema";
+import type { LoadedCase } from "./schema";
 
 describe("identifier extraction", () => {
   it("finds DOIs in identifier prose and strips trailing punctuation", () => {
@@ -25,20 +26,56 @@ describe("identifier extraction", () => {
 });
 
 describe("resource group derivation", () => {
-  const geo = getCaseBySlug("megalithic-casting");
-  const groups = resourceGroups(geo);
+  // Synthetic case slice — resourceGroups reads only sources and evidence.
+  const src = (
+    id: string,
+    sourceType: string,
+    extra: Record<string, unknown> = {},
+  ) => ({ id, sourceType, title: id, ...extra });
+  const ev = (id: string, sourceId: string, direction: string) => ({
+    id,
+    sourceId,
+    direction,
+  });
+
+  const loaded = {
+    sources: [
+      src("SRC-SUPPORT-2021", "paper", {
+        year: "2021",
+        identifier: "DOI: 10.1234/support.2021",
+      }),
+      src("SRC-CRITIC-2023", "paper", { year: "2023" }),
+      src("SRC-BOOK-2019", "book", { year: "2019" }),
+      src("SRC-DATA-2020", "dataset", {
+        year: "2020",
+        url: "https://example.org/dataset",
+      }),
+    ],
+    evidence: [
+      ev("EX-E001", "SRC-SUPPORT-2021", "supports"),
+      ev("EX-E002", "SRC-CRITIC-2023", "undermines"),
+      ev("EX-E003", "SRC-CRITIC-2023", "undermines"),
+      ev("EX-E004", "SRC-CRITIC-2023", "supports"),
+      ev("EX-E005", "SRC-BOOK-2019", "supports"),
+      ev("EX-E006", "SRC-DATA-2020", "context"),
+    ],
+  } as unknown as LoadedCase;
+
+  const groups = resourceGroups(loaded);
 
   it("places every source exactly once and invents nothing", () => {
     const placed = groups.flatMap((g) => g.entries.map((e) => e.source.id));
-    expect(placed.sort()).toEqual(geo.sources.map((s) => s.id).sort());
+    expect(placed.sort()).toEqual(
+      loaded.sources.map((s) => s.id).sort(),
+    );
   });
 
   it("derives the critiques group from evidence direction, honestly", () => {
     const critiques = groups.find((g) => g.key === "critiques");
     expect(critiques).toBeDefined();
-    // The anti-casting petrography belongs here.
+    // The predominantly-undermining source belongs here.
     const ids = critiques!.entries.map((e) => e.source.id);
-    expect(ids).toContain("SRC-JANA-2007");
+    expect(ids).toContain("SRC-CRITIC-2023");
     // Invariant: every entry in critiques has more undermining than
     // supporting evidence records; no other group has such an entry.
     for (const g of groups) {
@@ -52,20 +89,16 @@ describe("resource group derivation", () => {
   });
 
   it("links out via explicit URL or extracted DOI, never a fabricated one", () => {
-    for (const g of groups) {
-      for (const e of g.entries) {
-        if (e.href?.startsWith("https://doi.org/")) {
-          // A DOI link exists only because the identifier field carried it.
-          expect(e.doi).not.toBeNull();
-          expect(e.source.identifier).toContain(e.doi!);
-        }
-      }
-    }
-    // A book held only in the project library has no public link.
-    const foti = groups
-      .flatMap((g) => g.entries)
-      .find((e) => e.source.id === "SRC-FOTI-2024");
-    expect(foti?.href).toBeNull();
+    const entries = groups.flatMap((g) => g.entries);
+    const support = entries.find((e) => e.source.id === "SRC-SUPPORT-2021");
+    // A DOI link exists only because the identifier field carried it.
+    expect(support?.href).toBe("https://doi.org/10.1234/support.2021");
+    expect(support?.doi).toBe("10.1234/support.2021");
+    const data = entries.find((e) => e.source.id === "SRC-DATA-2020");
+    expect(data?.href).toBe("https://example.org/dataset");
+    // A book with no URL and no DOI gets no public link — never a guess.
+    const book = entries.find((e) => e.source.id === "SRC-BOOK-2019");
+    expect(book?.href).toBeNull();
   });
 
   it("orders entries newest-first within a group", () => {
@@ -80,7 +113,7 @@ describe("resource group derivation", () => {
 describe("watch config schema", () => {
   const valid = {
     queries: [
-      { id: "trigger-point-imaging", query: "myofascial trigger point" },
+      { id: "ballistics-review", query: "ballistics gelatin replication" },
     ],
   };
 
@@ -113,14 +146,6 @@ describe("watch config schema", () => {
       }),
     ).toThrow();
   });
-
-  it("loads the seeded watch configs through the case loader", () => {
-    for (const slug of ["megalithic-casting", "vasocomputation"]) {
-      const loaded = getCaseBySlug(slug);
-      expect(loaded.watch).not.toBeNull();
-      expect(loaded.watch!.queries.length).toBeGreaterThanOrEqual(3);
-    }
-  });
 });
 
 describe("curated resources schema", () => {
@@ -144,15 +169,13 @@ describe("curated resources schema", () => {
     expect(() => CuratedResourceSchema.parse(noVerification)).toThrow();
   });
 
-  it("loads seeded curated resources for every case that ships them", () => {
+  it("every published case's curated resources carry URLs and labels", () => {
+    // Vacuous at zero cases; bites when the first case ships resources.
     for (const loaded of loadAllCases()) {
       for (const item of loaded.curatedResources) {
         expect(item.url).toMatch(/^https:\/\//);
         expect(item.verification).toBeDefined();
       }
     }
-    expect(
-      getCaseBySlug("megalithic-casting").curatedResources.length,
-    ).toBeGreaterThanOrEqual(2);
   });
 });

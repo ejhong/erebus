@@ -1,38 +1,41 @@
-# AGENTS.md — Aletheia
+# AGENTS.md — Erebus
 
 > Read `docs/DECISIONS.md` first — it records the current confirmed direction and supersedes anything here that conflicts with it.
 
 ## 1. Mission
 
-Aletheia is a versioned, public map of contested hypotheses.
+Erebus is an AI-operated, versioned evidence map of contested public events — assassinations, disasters, alleged cover-ups — mapped with serious evidential standards: atomic claims, competing hypotheses, explicit evidence direction, exact provenance, calibrated uncertainty, multi-model ratification.
 
 It connects:
 
 **overview article → competing hypotheses → atomic claims → evidence → sources → research cruxes → decisive tests → change history**
 
-The platform should allow ambitious or neglected ideas to be examined seriously without lowering evidential standards and without dismissing them in advance.
+The platform allows contested and uncomfortable questions to be examined seriously without lowering evidential standards and without dismissing them in advance.
 
 ## 2. Product identity
 
 The product is:
 
-- an editorial publication for general readers;
+- a private publication for the founder and a few invited readers;
 - a claim graph for careful researchers;
 - an evidence ledger;
 - a research-prioritization system;
 - a transparent record of how assessments change;
 - a declared experiment in AI-operated epistemics: the site is maintained,
-  corrected, and adjudicated by AI under this constitution, and says so on
-  every page.
+ corrected, and adjudicated by AI under this constitution, and says so on
+ every page.
 
 The product is not:
 
+- a debunking site;
+- a validation site;
 - an automated truth oracle;
 - a personality-centered “believer versus skeptic” arena;
 - a generic wiki;
 - a social feed;
 - an unmoderated comment forum;
 - an AI-generated content farm;
+- anonymous — it discloses that AI operates it;
 - a place where a polished summary substitutes for primary evidence.
 
 ## 3. Non-negotiable epistemic rules
@@ -79,7 +82,7 @@ An Evidence record is the specific observation, result, quotation, measurement, 
 
 ### 3.7 Primary sources first
 
-Prefer original papers, datasets, excavation reports, official artifact records, archival documents, direct measurements, and exact quotations.
+Prefer original papers, datasets, official filings and exhibits, archival documents, raw footage with provenance, direct measurements, and exact quotations.
 
 Popular summaries may help discovery but should not carry a consequential assessment when a primary source is available.
 
@@ -97,6 +100,8 @@ Preserve exact locators wherever possible:
 - dataset row;
 - code commit;
 - archival box;
+- docket number;
+- exhibit number;
 - stable identifier.
 
 If a locator is not verified, label it unverified. Never invent one.
@@ -152,9 +157,39 @@ AI must never, inside or outside that process:
 - contact people without leaving a public record;
 - weaken the checks in this section or reclassify a change to dodge them.
 
-A human (the founder) retains exactly two powers: the kill switch, and this constitution — amending this file is the one act reserved to a human. Accountability is inspectability: every change, ratification, and revert is public in git, stamped with model, runId, prompt version, and date, so any reader can reconstruct which model did what, when, and how it was checked.
+A human (the founder) retains exactly two powers: the kill switch, and this constitution — amending this file is the one act reserved to a human. Accountability is inspectability: every change, ratification, and revert is recorded in git, stamped with model, runId, prompt version, and date, so any reader with repository access can reconstruct which model did what, when, and how it was checked.
 
-## 4. Phase-1 rules (real content, static site)
+### Living persons and active proceedings
+
+Cases on this site may concern real, living, named people — accused
+persons, witnesses, investigators, victims' families. These rules are
+absolute and take precedence over completeness:
+
+- Claims about a named individual's criminal culpability are never graded
+  as verdicts. The claim ladder grades evidence disputes — timeline,
+  forensics, authenticity of audiovisual material, chain of custody,
+  documented motive — never guilt. "Who did it" is not a claim; "the
+  ballistics report states X and is disputed on grounds Y" is.
+- Prosecution, defense, and official assertions are always labeled as
+  assertions by their source, never restated as established fact.
+- Every case touching criminal charges displays the presumption of
+  innocence prominently.
+- Allegations about private individuals go no further than what court
+  records or on-the-record official statements state, with locators.
+- Journalism is discovery, not evidence: it points to primary material
+  (filings, exhibits, official records, raw footage with provenance) and
+  is superseded by it. Wire-copy duplication is one source, not many.
+- Content rides the same tiered merge policy as the engine's upstream
+  deployment: only reversible-by-runId material that never touches
+  featured content (proposals, inbox moves, new append-only assessment
+  overlays, append-only catalog/source additions) may auto-merge; anything
+  touching featured claims, article text, case records, or any statement
+  about a named person is needs-approval. (Amended at bootstrap by founder
+  instruction, 2026-08-25 — see docs/DECISIONS.md.)
+- A correction/takedown request path is displayed on every case page,
+  and such requests are processed before any other maintenance work.
+
+## 4. Phase-1 rules (bootstrap, static site)
 
 Until explicitly moved into a later phase:
 
@@ -162,9 +197,11 @@ Until explicitly moved into a later phase:
 - **real citations only, with honest verification labels** (`verified` / `ai_verified` / `unverified`) — never fabricate a citation, identifier, or locator; see `docs/CONTENT_POLICY.md`;
 - claim provenance is displayed, not hidden: `ai_extracted` claims are labeled as such; AI assessments are append-only overlay files stamped with runId/model/date/promptVersion and labeled as AI-generated drafts;
 - do not imply that AI-generated assessments are reviewed human conclusions;
-- do not build authentication, databases, or servers — the site is a Next.js static export served from git via GitHub Pages;
+- do not build authentication, databases, or servers into the site itself — it is a Next.js static export served from git via Cloudflare Pages, with access control provided by Cloudflare Access in front of it (see `docs/HOSTING.md`);
 - do not add live AI calls or autonomous web research to the site itself;
-- respect the geo-project confidentiality constraints (no `arc/` or `notes.txt` material; Hawke-derived topics framed neutrally, confidential papers never cited);
+- the engine (src/, app/, scripts/, workflows) flows ONE WAY from the upstream engine repository into this repo (see `ENGINE.md`); this repo edits only content, configuration, and this constitution — engine improvements are made upstream and synced here;
+- the upstream engine project's name must never appear in any committed file in this repository (any casing) — enforced by a CI guard; the upstream is referenced only through the `ENGINE_UPSTREAM` secret;
+- research briefs are committed under `casework/<case-slug>/` (this repo is private); briefs are inputs for case construction, never citable sources — see `casework/README.md`;
 - minimal dependencies: Next + TypeScript strict + Tailwind + Zod (+ `yaml` parser, vitest dev-only); hand-built SVG/CSS visuals; no chart or UI libraries;
 - three zones, one-way flow: content files → domain loader → pure UI components; one component per domain concept.
 
@@ -214,6 +251,7 @@ The public interface should:
 - show the last content-update date, linking to the case changelog;
 - make “what would change our mind” prominent;
 - reveal AI involvement and human review;
+- display the living-persons and corrections notice on every case page;
 - work well on mobile;
 - remain readable without graph expertise.
 
@@ -226,6 +264,8 @@ Avoid:
 - engagement bait;
 - confusing personality with hypothesis;
 - treating consensus as proof or outsider status as evidence.
+
+The visual register is cold and modern-technical (see `docs/IMAGES.md`): cool palette, instrument-chart accents, monospace record machinery — never lurid, never sensational.
 
 ## 8. Code rules
 
@@ -241,6 +281,7 @@ Avoid:
 - Preserve accessibility.
 - Add tests for important transformations and interactions.
 - Formatting, linting, type checking, tests, and production build must pass.
+- Engine code changes belong upstream; here, prefer configuration-layer changes and record any deliberate engine divergence in the allowlist in `scripts/sync-engine.mjs`.
 
 ## 9. Agent workflow
 

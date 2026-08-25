@@ -66,7 +66,7 @@ const LEDGER_FILE = path.join(WATCH_DIR, "archive-ledger.yaml");
 
 const today = new Date().toISOString().slice(0, 10);
 
-const TRIAGE_SYSTEM = `You are the literature-triage judge for Aletheia, an evidence-mapping publication for contested scientific cases. A weekly watch surfaces newly published papers matching a case's search queries; most of them do not belong on the site. Your job is to keep the evidence ledger relevant and small.
+const TRIAGE_SYSTEM = `You are the literature-triage judge for Erebus, an evidence-mapping publication for contested public events. A weekly watch surfaces newly published papers matching a case's search queries; most of them do not belong on the site. Your job is to keep the evidence ledger relevant and small.
 
 Decide exactly one outcome per item:
 

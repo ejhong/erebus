@@ -6,9 +6,6 @@ import {
   parseInlines,
 } from "./article";
 import {
-  catalogClaims,
-  featuredClaims,
-  getCaseBySlug,
   historyNewestFirst,
   lastContentUpdate,
   crossModelSummary,
@@ -16,7 +13,6 @@ import {
   ratification,
   latestCheckPerModel,
   displayAssessment,
-  latestAssessment,
   liveClaims,
   loadAllCases,
   loadSiteImages,
@@ -30,56 +26,41 @@ import {
   ImageSchema,
 } from "./schema";
 
-describe("real content", () => {
-  it("loads and passes all integrity checks", () => {
+describe("content loading", () => {
+  it("zero cases is a valid state — the loader returns an empty atlas, never throws", () => {
+    // The site bootstraps with no published cases; the UI renders a
+    // deliberate empty state. This must never be an error condition.
     const cases = loadAllCases();
-    expect(cases.length).toBeGreaterThan(0);
-    const geo = getCaseBySlug("megalithic-casting");
-    expect(geo.record.id).toBe("GEO-001");
-    expect(liveClaims(geo).length).toBeGreaterThanOrEqual(10);
-    // Tombstones are kept but excluded from live views.
-    expect(geo.claims.length).toBeGreaterThan(liveClaims(geo).length);
-    expect(latestAssessment(geo)).not.toBeNull();
-    // Every claim referenced by the article resolves.
-    for (const id of extractClaimRefs(geo.overviewMarkdown)) {
-      expect(liveClaims(geo).some((c) => c.id === id)).toBe(true);
-    }
+    expect(Array.isArray(cases)).toBe(true);
   });
 
-  it("carries the bulk-imported geo catalog with honest provenance", () => {
-    const geo = getCaseBySlug("megalithic-casting");
-    const catalog = catalogClaims(geo);
-    expect(catalog.length).toBe(80);
-    expect(featuredClaims(geo).length).toBe(14);
-    for (const c of catalog) {
-      // One reversible run: a single runId stamped on every record.
-      expect(c.origin.runId).toBe("geo-catalog-import-2026-08-22");
-      expect(c.reviewState).toBe("ai_extracted");
-      expect(c.sourceAnchor.locator.length).toBeGreaterThan(3);
-      // T-number origin, always.
-      expect(c.origin.ref).toMatch(/T-\d{3}/);
+  it("a site with no image manifest has no site images", () => {
+    expect(loadSiteImages()).toEqual([]);
+  });
+
+  it("every published case passes full integrity checks", () => {
+    // Vacuous at zero cases; bites the moment the first case ships.
+    for (const c of loadAllCases()) {
+      // Every claim referenced by the article resolves to a live claim.
+      for (const id of extractClaimRefs(c.overviewMarkdown)) {
+        expect(liveClaims(c).some((cl) => cl.id === id)).toBe(true);
+      }
+      // Every plate embedded by the article is a real, non-generated image.
+      const plates = c.images.filter((i) => i.role === "plate");
+      for (const p of plates) {
+        expect(p.source).not.toBe("generated");
+      }
+      const plateIds = new Set(plates.map((p) => p.id));
+      for (const ref of extractPlateRefs(c.overviewMarkdown)) {
+        expect(plateIds.has(ref)).toBe(true);
+      }
     }
-    // Dedupe held: no catalog claim re-imports a T-number already carried
-    // by a featured claim, the killed topic, or the tombstoned cluster.
-    const excluded = [
-      "T-001", "T-003", "T-004", "T-005", "T-012", "T-013", "T-014",
-      "T-021", "T-034", "T-060", "T-072", "T-073", "T-077", "T-078",
-      "T-087",
-    ];
-    for (const c of catalog) {
-      const t = c.origin.ref.match(/T-\d{3}/)?.[0];
-      expect(excluded).not.toContain(t);
-    }
-    // Confidentiality: neutrally-framed method topics never cite the
-    // confidential source.
-    const text = JSON.stringify(catalog);
-    expect(text).not.toMatch(/hawke/i);
-    expect(text).not.toMatch(/harmonic research/i);
   });
 
   it("every live case surfaces its latest change in the homepage feed", () => {
-    // Regression: with a date-only sort and a hard cap, a burst of same-day
-    // entries on one case evicted the vasocomputation launch entirely.
+    // Regression guard (upstream): with a date-only sort and a hard cap, a
+    // burst of same-day entries on one case could evict another case's
+    // launch entry. Vacuous at zero cases.
     const cases = loadAllCases();
     // Same sizing rule as the homepage: at least one slot per live case.
     const feed = recentChanges(cases, Math.max(4, cases.length));
@@ -95,31 +76,6 @@ describe("real content", () => {
     // Newest-first display order.
     for (let i = 1; i < feed.length; i++) {
       expect(feed[i - 1]!.date >= feed[i]!.date).toBe(true);
-    }
-  });
-
-  it("article parses into blocks with claim refs", () => {
-    const geo = getCaseBySlug("megalithic-casting");
-    const blocks = parseArticle(geo.overviewMarkdown);
-    expect(blocks.some((b) => b.kind === "heading")).toBe(true);
-    const refs = extractClaimRefs(geo.overviewMarkdown);
-    expect(refs.length).toBeGreaterThanOrEqual(8);
-  });
-
-  it("loads case and site images with valid licenses and files", () => {
-    const geo = getCaseBySlug("megalithic-casting");
-    const plates = geo.images.filter((i) => i.role === "plate");
-    expect(plates.length).toBeGreaterThanOrEqual(3);
-    // Every plate is real imagery with provenance — never generated.
-    for (const p of plates) {
-      expect(p.source).not.toBe("generated");
-      expect(p.provenance?.sourceUrl).toMatch(/^https:/);
-    }
-    expect(loadSiteImages().length).toBeGreaterThanOrEqual(2);
-    // Plate refs in the article resolve to actual plates.
-    const plateIds = new Set(plates.map((p) => p.id));
-    for (const ref of extractPlateRefs(geo.overviewMarkdown)) {
-      expect(plateIds.has(ref)).toBe(true);
     }
   });
 });
@@ -612,63 +568,113 @@ describe("ratification governance (stage 3)", () => {
 });
 
 describe("cross-model checks", () => {
+  // Synthetic case slices — the functions under test only read
+  // assessmentRuns and history.
+  const run = (
+    runId: string,
+    model: string,
+    date: string,
+    role: "draft" | "check",
+    verdict = "unresolved",
+    claimVerdicts: Record<string, string> = {},
+  ) => ({
+    runId,
+    model,
+    date,
+    promptVersion: "t",
+    humanReviewed: false,
+    role,
+    caseAssessment: {
+      verdict,
+      loadBearing: [],
+      weakestLinks: [],
+      synthesis: "x".repeat(120),
+    },
+    claimAssessments: Object.entries(claimVerdicts).map(
+      ([claimId, v]) => ({
+        claimId,
+        verdict: v,
+        reasoning: "test reasoning",
+        confidence: "moderate",
+      }),
+    ),
+  });
+  const caseWith = (runs: unknown[]) =>
+    ({ assessmentRuns: runs, history: [] }) as unknown as Parameters<
+      typeof crossModelSummary
+    >[0];
+
   it("check runs never narrate; the draft still displays", () => {
-    const orch = getCaseBySlug("orch-or");
-    const checks = orch.assessmentRuns.filter((r) => r.role === "check");
-    expect(checks.length).toBeGreaterThanOrEqual(4);
-    const shown = displayAssessment(orch);
+    const loaded = caseWith([
+      run("d1", "house/test", "2026-01-01", "draft"),
+      run("2026-02-01-check-alpha", "Alpha (Vendor) — check", "2026-02-01", "check"),
+      run("2026-02-01-check-beta", "Beta (Vendor) — check", "2026-02-01", "check"),
+    ]);
+    const shown = displayAssessment(loaded);
     // The newest draft-role run displays; checks never do, however new.
     expect(shown?.run.role).toBe("draft");
-    const newestDraft = [...orch.assessmentRuns]
-      .reverse()
-      .find((r) => r.role !== "check");
-    expect(shown?.run.runId).toBe(newestDraft?.runId);
+    expect(shown?.run.runId).toBe("d1");
   });
 
   it("concurrence summary reports agreement against the displayed run", () => {
-    const orch = getCaseBySlug("orch-or");
-    const s = crossModelSummary(orch);
+    const loaded = caseWith([
+      run("d1", "house/test", "2026-01-01", "draft", "unresolved", {
+        C1: "well_supported",
+        C2: "mixed",
+        C3: "contradicted",
+      }),
+      run("c-a", "Alpha (V)", "2026-02-01", "check", "unresolved", {
+        C1: "well_supported", // exact
+        C2: "weakly_supported", // adjacent (one step)
+        C3: "well_supported", // split (far apart)
+      }),
+    ]);
+    const s = crossModelSummary(loaded);
     expect(s).not.toBeNull();
-    expect(s!.models.length).toBeGreaterThanOrEqual(4);
-    expect(s!.claimsCompared).toBeGreaterThanOrEqual(18);
+    expect(s!.models).toEqual(["Alpha (V)"]);
+    expect(s!.claimsCompared).toBe(3);
+    expect(s!.exact).toBe(1);
+    expect(s!.adjacent).toBe(1);
+    expect(s!.split).toBe(1);
+    expect(s!.splitClaimIds).toEqual(["C3"]);
     // Every compared claim lands in exactly one bucket.
     expect(s!.exact + s!.adjacent + s!.split).toBe(s!.claimsCompared);
-    expect(s!.splitClaimIds.length).toBe(s!.split);
+    expect(s!.caseUnanimousWithDisplayed).toBe(true);
   });
 
   it("a same-day re-check wins the per-model tie, and the superseded run is not double-counted", () => {
-    // Append-only means a re-checked case carries two runs per model with the
-    // same date. The -r2 suffix convention must win the tie, and the panel
-    // must count each vendor once — "10 independent models" from 5 vendors
-    // was the original double-counting bug.
-    const trn = getCaseBySlug("transients");
-    const perModel = latestCheckPerModel(trn);
-    const opusRuns = trn.assessmentRuns.filter(
-      (r) => r.role === "check" && r.model.startsWith("Opus"),
-    );
-    if (opusRuns.length >= 2) {
-      const shownOpus = perModel.filter((r) => r.model.startsWith("Opus"));
-      expect(shownOpus).toHaveLength(1);
-      // The winner must be the newest by (date, then runId) — the -rN
-      // suffix only decides same-date ties; a later date beats any suffix.
-      const expected = [...opusRuns].sort((a, b) =>
-        a.date === b.date
-          ? a.runId.localeCompare(b.runId)
-          : a.date.localeCompare(b.date),
-      ).at(-1)!;
-      expect(shownOpus[0].runId).toBe(expected.runId);
-    }
+    // Append-only means a re-checked case carries two runs per model with
+    // the same date. The -r2 suffix convention must win the tie, and the
+    // panel must count each vendor once — "10 independent models" from 5
+    // vendors was the original double-counting bug (upstream).
+    const loaded = caseWith([
+      run("d1", "house/test", "2026-01-01", "draft"),
+      run("2026-02-01-check-alpha", "Alpha (Vendor) — check", "2026-02-01", "check", "mixed"),
+      run("2026-02-01-check-alpha-r2", "Alpha (Vendor) — re-check", "2026-02-01", "check", "unresolved"),
+      run("2026-01-15-check-beta", "Beta (Vendor) — check", "2026-01-15", "check"),
+    ]);
+    const perModel = latestCheckPerModel(loaded);
+    // One entry per vendor, and Alpha's -r2 re-run wins the same-date tie.
+    expect(perModel).toHaveLength(2);
+    const alpha = perModel.find((r) => r.model.startsWith("Alpha"));
+    expect(alpha?.runId).toBe("2026-02-01-check-alpha-r2");
     const keys = perModel.map((r) => r.model.trim().split(/[\s,(]/)[0].toLowerCase());
     expect(new Set(keys).size).toBe(keys.length);
   });
 
+  it("a later date beats any runId suffix in the per-model tie", () => {
+    const loaded = caseWith([
+      run("d1", "house/test", "2026-01-01", "draft"),
+      run("2026-02-01-check-alpha-r2", "Alpha (Vendor)", "2026-02-01", "check"),
+      run("2026-03-01-check-alpha", "Alpha (Vendor)", "2026-03-01", "check"),
+    ]);
+    const perModel = latestCheckPerModel(loaded);
+    expect(perModel).toHaveLength(1);
+    expect(perModel[0].runId).toBe("2026-03-01-check-alpha");
+  });
+
   it("cases without check runs have no summary", () => {
-    // All live cases now carry checks, so synthesize a checkless case.
-    const orch = getCaseBySlug("orch-or");
-    const checkless = {
-      ...orch,
-      assessmentRuns: orch.assessmentRuns.filter((r) => r.role !== "check"),
-    };
+    const checkless = caseWith([run("d1", "house/test", "2026-01-01", "draft")]);
     expect(crossModelSummary(checkless)).toBeNull();
   });
 });
