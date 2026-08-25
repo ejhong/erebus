@@ -92,6 +92,7 @@
   verificationNote: "Fetched directly 2026-08-25; timestamped entries quoted verbatim."
   reliabilityNotes:
     - "Renders the ATF examiner's surname 'Carner'; an AP pool-photo caption and other outlets render 'Karner'. This case file uses 'Karner' and notes the variant."
+    - "Independence note (§3.10): this outlet, AP, KSL, KUTV, and Fox News all report the SAME proceeding — they corroborate each other's transcription, not the underlying facts, and are not independent evidence channels."
 
 - id: SRC-AP-PRELIM-2026
   title: "Defense tries to sow doubt about evidence in Charlie Kirk's killing"
