@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { ArgumentLadder } from "@/src/components/ArgumentLadder";
 import { ArticleBody } from "@/src/components/ArticleBody";
 import { AssessmentPanel } from "@/src/components/AssessmentPanel";
@@ -16,15 +17,18 @@ import {
   crossModelSummary,
   displayAssessment,
   featuredClaims,
-  getCaseBySlug,
   historyNewestFirst,
   lastContentUpdate,
   latestCheckPerModel,
   loadAllCases,
 } from "@/src/domain/load";
+import { paramsOrPlaceholder } from "@/src/domain/staticExport";
 
 export function generateStaticParams() {
-  return loadAllCases().map((c) => ({ slug: c.record.slug }));
+  return paramsOrPlaceholder(
+    "slug",
+    loadAllCases().map((c) => c.record.slug),
+  );
 }
 
 export function generateMetadata({
@@ -32,9 +36,10 @@ export function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  return params.then(({ slug }) => ({
-    title: getCaseBySlug(slug).record.title,
-  }));
+  return params.then(({ slug }) => {
+    const loaded = loadAllCases().find((c) => c.record.slug === slug);
+    return { title: loaded ? loaded.record.title : "Not found" };
+  });
 }
 
 const sections = [
@@ -53,7 +58,9 @@ export default async function CasePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const loaded = getCaseBySlug(slug);
+  const found = loadAllCases().find((c) => c.record.slug === slug);
+  if (!found) notFound();
+  const loaded = found;
   const claims = featuredClaims(loaded);
   const shown = displayAssessment(loaded);
   const checks = crossModelSummary(loaded);
@@ -219,6 +226,35 @@ export default async function CasePage({
             what changed, why, and who — including the AI&apos;s role.
           </p>
           <ChangeTimeline entries={historyNewestFirst(loaded.history)} />
+        </section>
+
+        {/*
+          Constitution, "Living persons and active proceedings": displayed
+          on every case page. The claim ladder grades evidence disputes,
+          never guilt; corrections take priority over all other work.
+        */}
+        <section
+          id="living-persons"
+          className="mb-10 border border-line bg-paper-deep/50 p-6 sm:p-8"
+        >
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.18em] text-copper">
+            living persons · corrections
+          </h2>
+          <p className="mt-3 text-[14px] leading-relaxed text-ink-soft max-w-3xl">
+            Cases on this site may concern real, living, named people. Every
+            person accused in any proceeding touched by this case is presumed
+            innocent unless and until proved guilty in a court of law. This
+            site grades evidence disputes — timelines, forensics,
+            authenticity, chain of custody — never anyone&apos;s guilt, and
+            assertions by prosecution, defense, or officials are labeled as
+            assertions by their source.
+          </p>
+          <p className="mt-3 text-[14px] leading-relaxed text-ink-soft max-w-3xl">
+            To request a correction or the removal of material about you or
+            someone you represent, open an issue on this site&apos;s
+            repository or contact the founder directly. Such requests are
+            processed before any other maintenance work.
+          </p>
         </section>
       </div>
     </div>
