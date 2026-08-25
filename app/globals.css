@@ -1,45 +1,68 @@
 @import "tailwindcss";
 
+/*
+ * Erebus cool palette. Token NAMES are inherited from the engine (they are
+ * used throughout the components and stay stable across engine syncs);
+ * the VALUES here are this site's bluish cool tint, replacing the engine's
+ * warm paper-and-copper scheme. "copper" is therefore a steel blue here.
+ */
 @theme inline {
-  /* Paper register */
-  --color-paper: #f6f1e8;
-  --color-paper-deep: #ede6d8;
-  --color-ink: #201b12;
-  --color-ink-soft: #4c453a;
-  --color-faint: #877e6c;
-  --color-line: #d9d0be;
+  /* Paper register — cool porcelain with a clear blue cast */
+  --color-paper: #e9eff7;
+  --color-paper-deep: #dde6f1;
+  --color-ink: #121a24;
+  --color-ink-soft: #3b4759;
+  --color-faint: #64748b;
+  --color-line: #c2cfe0;
 
-  /* Dossier register */
-  --color-dossier: #171310;
-  --color-dossier-soft: #241f19;
-  --color-dossier-line: #3c352a;
-  --color-dossier-text: #e8e0cf;
-  --color-dossier-faint: #a1977f;
+  /* Dossier register — deep blue-black, instrument-panel dark */
+  --color-dossier: #0d141d;
+  --color-dossier-soft: #141d2a;
+  --color-dossier-line: #253247;
+  --color-dossier-text: #dbe5f1;
+  --color-dossier-faint: #8093ab;
 
   /* Accents (muted, non-moralizing) */
-  --color-copper: #9a5b33;
-  --color-ochre: #96731f;
-  --color-verdigris: #47705f;
-  --color-terracotta: #8e4a38;
+  --color-copper: #3a6ea8;
+  --color-copper-bright: #85acd8;
+  --color-ochre: #3e7d8a;
+  --color-verdigris: #43757d;
+  --color-terracotta: #5c64a0;
   --color-slate-mist: #5d6672;
 
-  --font-serif: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
-  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  /*
+   * Token names are inherited from the engine ("serif" is the display
+   * face); the values are this site's modern-technical type system.
+   */
+  --font-serif: var(--font-display), "Avenir Next", "Helvetica Neue",
+    sans-serif;
+  --font-sans: var(--font-body), system-ui, -apple-system, "Segoe UI",
+    sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
 }
 
 body {
-  background: var(--color-paper);
+  /* Blueprint ground: a barely-there technical grid on blue porcelain. */
+  background-color: var(--color-paper);
+  background-image:
+    linear-gradient(to right, rgb(194 207 224 / 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(194 207 224 / 0.28) 1px, transparent 1px);
+  background-size: 28px 28px;
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
+/* Solid surfaces sit on top of the grid so text panels stay quiet. */
+.surface {
+  background-color: var(--color-paper);
+}
+
 /* Editorial prose defaults for the article body */
 .article-prose p {
-  font-family: var(--font-serif);
-  font-size: 1.155rem;
-  line-height: 1.72;
+  font-family: var(--font-sans);
+  font-size: 1.06rem;
+  line-height: 1.75;
   color: var(--color-ink);
 }
 
@@ -74,7 +97,7 @@ body {
 
 /*
  * Museum-plate duotone: unifies heterogeneous photographs into the site
- * palette (ink shadows on paper, faint copper warmth) without editing the
+ * palette (cool blue-black shadows on porcelain paper) without editing the
  * source files. Hover gently restores the original color — the record stays
  * one gesture away.
  */
@@ -84,8 +107,8 @@ body {
 
 .plate-img {
   display: block;
-  filter: grayscale(1) sepia(0.45) saturate(1.15) contrast(1.05)
-    brightness(1.04);
+  filter: grayscale(1) sepia(0.48) hue-rotate(175deg) saturate(1.3)
+    contrast(1.05) brightness(1.04);
   transition: filter 400ms ease;
 }
 

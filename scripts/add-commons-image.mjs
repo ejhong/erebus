@@ -26,7 +26,7 @@ if (!title || !caseSlug) {
 }
 
 const API = "https://commons.wikimedia.org/w/api.php";
-const UA = "AletheiaImageBot/1.0 (static site; contact: repo issues)";
+const UA = "ErebusImageBot/1.0 (static site; contact: repo issues)";
 
 const OK_LICENSES =
   /^(pd|cc0|cc[ -]?by(?:[ -]?sa)?[ -]?\d|public domain|attribution)/i;

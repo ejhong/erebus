@@ -74,31 +74,43 @@ export default function ResearchPage() {
     <div>
       <section className="bg-dossier text-dossier-text">
         <div className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper-bright">
             the research agenda, priced
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl mt-3 tracking-tight">
             The Price of Truth
           </h1>
-          <p className="mt-4 text-[15.5px] leading-relaxed text-dossier-text/90 max-w-3xl">
-            Every case on this site ends the same way: not in a verdict, but
-            in the specific study that would move it. This page collects all
-            of them — {entries.length} decisive tests across {cases.length}{" "}
-            contested questions. Most have never been run. Many cost less
-            than the argument about them has. Each is designed so that either
-            outcome is informative: a program that funds tests in both
-            directions, not confirmations.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-px bg-dossier-line border border-dossier-line mt-8 max-w-3xl">
-            {tiers.map((t) => (
-              <div key={t.key} className="bg-dossier-soft p-5">
-                <p className="font-serif text-3xl">{counts[t.key]}</p>
-                <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-copper mt-1">
-                  {t.title} tests
-                </p>
+          {entries.length === 0 ? (
+            <p className="mt-4 text-[15.5px] leading-relaxed text-dossier-text/90 max-w-3xl">
+              Every case on this site ends the same way: not in a verdict,
+              but in the specific record, release, or analysis that would
+              move it. No cases are published yet, so the agenda is empty —
+              when the first case ships, its decisive tests are collected
+              here, each designed so that either outcome is informative.
+            </p>
+          ) : (
+            <>
+              <p className="mt-4 text-[15.5px] leading-relaxed text-dossier-text/90 max-w-3xl">
+                Every case on this site ends the same way: not in a verdict,
+                but in the specific study that would move it. This page
+                collects all of them — {entries.length} decisive tests across{" "}
+                {cases.length} contested questions. Most have never been run.
+                Many cost less than the argument about them has. Each is
+                designed so that either outcome is informative: a program
+                that funds tests in both directions, not confirmations.
+              </p>
+              <div className="grid sm:grid-cols-3 gap-px bg-dossier-line border border-dossier-line mt-8 max-w-3xl">
+                {tiers.map((t) => (
+                  <div key={t.key} className="bg-dossier-soft p-5">
+                    <p className="font-serif text-3xl">{counts[t.key]}</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-copper-bright mt-1">
+                      {t.title} tests
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>
+          )}
         </div>
       </section>
 
@@ -150,13 +162,12 @@ export default function ResearchPage() {
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-soft">
               Long-running controversies survive on ambiguity: every result
               gets absorbed, every anomaly explained away, and the argument
-              outlives everyone in it. The tests above are written to end
-              that — rules fixed before anyone looks, statistics both sides
-              endorse in advance, and outcomes that proponents and critics
-              alike have agreed would count. History&apos;s vindicated
-              heresies were not won by rhetoric; they were won by a decisive,
-              repeatable signature that forced the issue. This is the menu of
-              such signatures, waiting for someone to order.
+              outlives everyone in it. The tests collected here are written
+              to end that — rules fixed before anyone looks, criteria both
+              sides endorse in advance, and outcomes that proponents and
+              critics alike have agreed would count. Disputes are not won by
+              rhetoric; they are settled by a decisive, checkable record that
+              forces the issue. This is the menu of such records.
             </p>
           </div>
         </section>

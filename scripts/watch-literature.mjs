@@ -48,7 +48,7 @@ import { matchesKeywords, nearDuplicateOf } from "./lib/watch-matching.mjs";
 const PROMPT_VERSION = "watch-relevance-v1";
 // Crossref polite pool + arXiv contact. The repo owner's public git email.
 const MAILTO = process.env.CROSSREF_MAILTO || "ejhong@gmail.com";
-const USER_AGENT = `aletheia-literature-watch/1.0 (https://github.com/ejhong/aletheia; mailto:${MAILTO})`;
+const USER_AGENT = `erebus-literature-watch/1.0 (private research site; mailto:${MAILTO})`;
 // First-run lookback when a case has no cursor yet.
 const DEFAULT_FIRST_RUN_DAYS = 180;
 // Re-scan overlap so slow indexing does not lose items between runs; the
