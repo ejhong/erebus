@@ -176,6 +176,27 @@
     released public venues, the anomaly deflates honestly. Either outcome
     publishes, per the negative-evidence rule.
 
+- id: KRK-R012
+  title: "AES-cluster verification package"
+  summary: >-
+    Complete the verification of the procurement/explosion cluster
+    (KRK-C025) at the primary level: FAA/FOIA requests or subscription
+    flight-data pulls identifying the reported August 25, 2025 Heber City
+    → John Tune aircraft, operator, and (where lawful) manifest; a
+    records request or program-office inquiry resolving what "SPM" in
+    award N0016425PJ538 denotes and the deliverables' disposition; a
+    replication of the USAspending uniqueness search including IDVs and
+    subawards; and tracking of the CSB final report and TOSHA case
+    outcomes for any cause finding.
+  claimIds: [KRK-C025]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Every element is checkable paper: either the cluster's connective
+    tissue materializes (which would transform the case) or the cluster
+    resolves into a real contract, a real disaster, and an unsourced
+    flight — closing the loudest new allegation either way.
+
 - id: KRK-R010
   title: "Statement-discrepancy ledger for post-event public accounts"
   summary: >-

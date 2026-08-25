@@ -344,6 +344,194 @@
     identification/inconclusive/elimination outcome vocabulary sometimes
     attributed to it.
 
+# ── wave-2 intake (whokilledck compilation, verified 2026-08-25) ────────
+
+- id: SRC-USASPENDING-N0016425PJ538
+  title: "Federal award N0016425PJ538 — miniaturized / anti-personnel demolition charges (USAspending record)"
+  organization: "USAspending.gov (U.S. Treasury)"
+  year: "2025"
+  sourceType: dataset
+  identifier: "Award N0016425PJ538; signed 2025-04-22; period of performance 2025-05-01 to 2025-08-25"
+  url: "https://www.usaspending.gov/award/CONT_AWD_N0016425PJ538_9700_-NONE-_-NONE-"
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-25 by direct fetch of the USAspending API record
+    (api.usaspending.gov/api/v2/awards/CONT_AWD_N0016425PJ538_9700_-NONE-_-NONE-/);
+    all quoted fields verbatim from the API JSON. Keyword-uniqueness
+    searches run directly against the search API the same day.
+  reliabilityNotes:
+    - "A procurement record establishes that a purchase order exists — nothing about end use. The description's 'TO SUPPORT SPM' is unexplained in the record."
+
+- id: SRC-CSB-AES-2026
+  title: "CSB Investigation Update 2025-TN-I-04: Accurate Energetic Systems explosions, October 10, 2025"
+  organization: "U.S. Chemical Safety and Hazard Investigation Board"
+  year: "2026"
+  sourceType: report
+  identifier: "2025-TN-I-04, March 16, 2026"
+  url: "https://www.csb.gov/file.aspx?DocumentId=6322"
+  verification: ai_verified
+  verificationNote: "Full document text retrieved and quoted 2026-08-25."
+
+- id: SRC-AP-AES-2025
+  title: "Blast at Tennessee explosives plant killed 16, left no survivors"
+  organization: "Associated Press"
+  year: "2025"
+  sourceType: webpage
+  url: "https://apnews.com/article/tennessee-explosives-plant-blast-investigation-cb8f8621306d50d6c54b523041a21322"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-08-25; quotes verbatim."
+  background: true
+
+- id: SRC-WPLN-AES-2026
+  title: "AES fined $3M for 'indifference to worker safety' in blast that killed 16"
+  organization: "WPLN (Nashville Public Radio)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://wpln.org/post/aes-fined-3m-for-indifference-to-worker-safety-in-blast-that-killed-16/"
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-25 via search-index excerpt (not an end-to-end page
+    fetch); quotes limited to the excerpted passages.
+
+- id: SRC-FOX17-TOSHA-2026
+  title: "100 violations, $3.1M fine issued in Tennessee plant blast that killed 16"
+  organization: "WZTV Fox 17 Nashville"
+  year: "2026"
+  sourceType: webpage
+  url: "https://fox17.com/news/local/100-violations-31m-fine-issued-in-tennessee-plant-blast-that-killed-16-mcewen-aes-accurate-energetic-systems-munitions-plant-bucksnort-october-plant-explosion"
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-25 via search-index excerpt (not an end-to-end page
+    fetch); quotes limited to the excerpted passages.
+
+- id: SRC-WAYBACK-BRAY-2025
+  title: "Jon Bray X post of 2025-09-20 (Wayback Machine snapshot, archived 2025-09-25)"
+  authors: ["Jon Aaron Bray"]
+  organization: "Internet Archive (Wayback Machine)"
+  year: "2025"
+  sourceType: archive
+  identifier: "X status 1969412722577043694; created_at 2025-09-20T14:45:57Z per embedded JSON; snapshot 20250925101336"
+  url: "http://web.archive.org/web/20250925101336/https://x.com/jonaaronbray/status/1969412722577043694"
+  verification: ai_verified
+  verificationNote: >-
+    Snapshot downloaded directly 2026-08-25; post text and creation
+    timestamp extracted from the archive's embedded JSON; date
+    independently confirmed by decoding the X snowflake ID.
+
+- id: SRC-UCSO-ZINN-2025
+  title: "Utah County Sheriff's Office press release: George Zinn"
+  organization: "Utah County Sheriff's Office"
+  year: "2025"
+  sourceType: report
+  url: "https://www.utahcounty.gov/Dept/Sheriff/Data/WNData/GeorgeZinnPressRelease.pdf"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+
+- id: SRC-DESERET-ZINN-2025
+  title: "Man claimed to shoot Charlie Kirk 'to draw attention from real shooter,' police say"
+  organization: "Deseret News"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 15, 2025"
+  url: "https://www.deseret.com/utah/2025/09/15/man-claimed-to-shoot-charlie-kirk-to-draw-attention-from-real-shooter-police-sat/"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+
+- id: SRC-KUTV-ZINN-PLEA-2026
+  title: "First man arrested after Kirk assassination enters guilty plea (KUTV, Jan 29 2026)"
+  organization: "KUTV 2News (read via Sinclair syndication)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://bakersfieldnow.com/news/nation-world/first-man-arrested-after-charlie-kirk-assassination-enters-guilty-plea-on-child-sex-crimes-utah-valley-university-plea-george-hodgson-zinn-sexual-exploitation-minor-fbi-second-degree-felony-charge"
+  verification: ai_verified
+  verificationNote: >-
+    KUTV-bylined story verified 2026-08-25 via a Sinclair sister-site
+    syndication URL; the originating kutv.com URL was not loaded.
+
+- id: SRC-KUTV-SURRENDER-2025
+  title: "2News Investigates discovers possible missing evidence in Charlie Kirk murder case"
+  organization: "KUTV 2News Investigates"
+  year: "2025"
+  sourceType: webpage
+  url: "https://kutv.com/news/2news-investigates/2news-investigates-discovers-possible-missing-evidence-in-charlie-kirk-murder-case"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25, including the sheriff's office records-request responses."
+
+- id: SRC-DCNF-KENT-2026
+  title: "Joe Kent says FBI director blocked further investigation into Charlie Kirk murder case"
+  organization: "Daily Caller News Foundation"
+  year: "2026"
+  sourceType: webpage
+  identifier: "March 25, 2026"
+  url: "https://dailycallernewsfoundation.org/2026/03/25/joe-kent-says-fbi-director-kash-patel-blocked-further-investigation-into-charlie-kirk-murder-case/"
+  verification: ai_verified
+  verificationNote: >-
+    Retrieved and quoted 2026-08-25; Kent's statements corroborated the
+    same day in Washington Examiner and Newsweek coverage of the same
+    interview.
+  reliabilityNotes:
+    - "Outlet has a strong editorial viewpoint; cited for directly quoted on-the-record statements."
+
+- id: SRC-CNN-HEARINGS-2026
+  title: "Tyler Robinson hearing coverage (camera rulings; remote appearances)"
+  organization: "CNN"
+  year: "2026"
+  sourceType: webpage
+  identifier: "May 8, 2026"
+  url: "https://www.cnn.com/2026/05/08/us/tyler-robinson-charlie-kirk-hearing"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+
+- id: SRC-KSL-SEALED-2026
+  title: "Tyler Robinson's case 'should not be made into a reality TV show,' attorneys argue"
+  organization: "KSL.com"
+  year: "2026"
+  sourceType: webpage
+  identifier: "August 2026"
+  url: "https://www.ksl.com/article/51615470/tyler-roibnsons-case-should-not-be-made-into-a-reality-tv-show-attorneys-argue"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25 (misspelling in the URL slug is the publisher's)."
+
+- id: SRC-UNROLL-SMITH-2025
+  title: "Harrison Smith X post (mirror): 'Charlie thinks Israel will kill him...'"
+  authors: ["Harrison Smith"]
+  organization: "unrollnow.com (X mirror)"
+  year: "2025"
+  sourceType: webpage
+  identifier: "X status 1955705962964111425 (x.com/HarrisonHSmith); dated August 13, 2025 per Times of Israel reporting"
+  url: "https://unrollnow.com/status/1955705962964111425"
+  verification: ai_verified
+  verificationNote: >-
+    Tweet text read 2026-08-25 via the unrollnow mirror (x.com itself not
+    loaded); the August 13 date is corroborated by Times of Israel
+    reporting loaded by the verification worker.
+  reliabilityNotes:
+    - "An anonymous, secondhand assertion by an Infowars host; the tweet's existence is verified, the underlying claim is not."
+
+- id: SRC-FOX-HARPOLE-2025
+  title: "Charlie Kirk security chief says police promise to cover rooftops failed before assassination"
+  organization: "Fox News"
+  year: "2025"
+  sourceType: webpage
+  identifier: "Brian Harpole on The Shawn Ryan Show, November 2025"
+  url: "https://www.foxnews.com/us/charlie-kirk-security-chief-says-police-promise-cover-rooftops-failed-before-assassination"
+  verification: ai_verified
+  verificationNote: "Retrieved and quoted 2026-08-25."
+
+- id: SRC-TUREK-2025
+  title: "Frank Turek — Charlie Kirk: An Eyewitness Account (video)"
+  authors: ["Frank Turek"]
+  organization: "YouTube"
+  year: "2025"
+  sourceType: webpage
+  url: "https://www.youtube.com/watch?v=o0BFLs6dJXQ"
+  verification: ai_verified
+  verificationNote: >-
+    Watch-page auto-transcript quoted 2026-08-25; video content itself not
+    independently reviewable. Coverage corroborated via ChurchLeaders.
+  reliabilityNotes:
+    - "First-person recollection; auto-generated transcript may contain transcription errors."
+
 # ── reading guide (background: carried for orientation, cited by nothing) ─
 
 - id: SRC-CHARLIEFILES-2026

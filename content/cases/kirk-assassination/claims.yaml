@@ -793,6 +793,187 @@
   whatWouldChangeOurMind:
     - "Release of the enumerated packages (fragments, autopsy, media inventory) — which would flip this claim and close much of the case."
 
+# ── wave-2 featured claims (whokilledck intake, verified 2026-08-25) ─────
+
+- id: KRK-C025
+  tier: featured
+  statement: >-
+    The federal procurement of miniaturized anti-personnel charges
+    (N0016425PJ538), a reported August 25 private flight from Heber City,
+    and the October 10 destruction of the manufacturer's facility
+    establish an operational connection to the killing.
+  plainLanguage: >-
+    The compilation's most arresting cluster. The verified parts are real:
+    the contract exists, worded as claimed; the facility explosion killed
+    16. But verification also found the connective tissue missing or
+    wrong: the flight is unsourced, the "theory surfaced days before the
+    blast" timing is off by weeks, the federal investigation attributes
+    the day's production to commercial cast boosters with the cause still
+    open, and state inspectors found conditions bad enough for their
+    largest-ever penalty. Real facts; no established bridge.
+  theme: alternatives
+  rung: attribution
+  claimType: causal
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — AES cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  credibility: contradicted
+  credibilitySummary: >-
+    Grades the claim that a connection is ESTABLISHED. The premises split
+    under verification: procurement record verified verbatim (KRK-E038),
+    its uniqueness qualifiedly verified (KRK-E039), the explosion verified
+    (KRK-E040) — but the safety-record findings (KRK-E041) and the
+    corrected theory-origin timeline (KRK-E042) undercut the concealment
+    reading, and no record connects the contract's items, the unsourced
+    flight, or the facility to this case at all.
+  diagnosticity: indeterminate
+  diagnosticitySummary: >-
+    Like KRK-C015 and KRK-C017, this claim marks an inferential boundary.
+    Its premise facts are individually near-zero diagnostic (a Navy
+    purchase order and an industrial disaster are expected under mundane
+    histories); only bridge evidence — manifests, communications, physical
+    chain — would change that.
+  strongestObjection: >-
+    The strongest form of the argument is not "these facts prove a plot"
+    but "these facts have never been investigated as a cluster" — and
+    that narrower point survives verification: no public record shows the
+    flight identified or the contract's end-use examined (KRK-R012).
+  whatWouldChangeOurMind:
+    - "Flight records identifying the August 25 aircraft, operator, and passengers (KRK-R012)."
+    - "Any documented chain from the contract's deliverables to a device, the event, or any person connected to it."
+    - "A CSB final report materially revising the cause picture."
+
+- id: KRK-C026
+  tier: featured
+  statement: >-
+    Surveillance video relevant to Robinson's surrender was allowed to
+    auto-delete after its 30-day retention period, unpreserved and never
+    shared with any agency.
+  plainLanguage: >-
+    The sheriff's office's own records responses say responsive footage
+    is "no longer available" after the retention period and was never
+    sent out — in a capital case where the surrender is part of the
+    prosecution narrative. The responses stop short of confirming what
+    the footage showed, which is why this grades provisional.
+  theme: custody
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — aftermath cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  credibility: provisionally_supported
+  credibilitySummary: >-
+    Documented in the office's written responses to records requests
+    (KRK-E045); the caveat is that those responses never explicitly
+    confirm footage of Robinson existed — they confirm non-retention of
+    whatever was responsive.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Routine retention policies destroy footage constantly; the gap is
+    expected under ordinary negligence and under concealment alike. Its
+    weight is cumulative — one more entry in the auditability ledger
+    (KRK-C019) — rather than discriminating.
+  parentClaimIds: [KRK-C019]
+  strongestObjection: >-
+    A 30-day auto-purge executing as designed is the null hypothesis;
+    treating every unpreserved record as suspicious would indict every
+    police agency in the country.
+  whatWouldChangeOurMind:
+    - "Records showing a preservation request was made and ignored, or that preservation was standard practice for this office in comparable cases."
+
+- id: KRK-C027
+  tier: featured
+  statement: >-
+    The former National Counterterrorism Center director states on the
+    record that his office was ordered to stop examining a possible
+    foreign nexus to the killing, and attributes that decision to the FBI
+    director.
+  plainLanguage: >-
+    Joe Kent's statements are direct, repeated, and on the record — and
+    they are one side's account. The FBI has not publicly confirmed the
+    order or the reasoning; reporting also notes Kent himself was
+    subsequently under investigation over leaked material. This claim
+    grades what he states, which is itself a significant institutional
+    fact; it does not grade whether a foreign nexus exists.
+  theme: institutional
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — authorities cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  credibility: established
+  credibilitySummary: >-
+    His statements are quoted verbatim across multiple outlets from the
+    same interview and a follow-up (KRK-E046); their occurrence is not in
+    dispute. Their accuracy is a separate, open question.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    An order to stand down is consistent with protecting a prosecution
+    from defense-discovery exposure (the FBI's stated reason, per Kent)
+    and with suppressing a line of inquiry; the statement alone cannot
+    distinguish them.
+  strongestObjection: >-
+    The stated rationale — investigators who keep working a charged case
+    become defense witnesses — is ordinary prosecutorial hygiene, and the
+    source attributing the order is a departed official with an active
+    grievance and his own legal exposure.
+  whatWouldChangeOurMind:
+    - "FBI or DOJ records documenting the scope decision and its rationale."
+    - "Any corroborated product of the halted inquiry."
+
+- id: KRK-C028
+  tier: featured
+  statement: >-
+    George Zinn's false confession in the seconds after the shot was
+    pre-arranged with, or induced by, parties connected to the attack.
+  plainLanguage: >-
+    Zinn — who shouted "I shot him, now shoot me," was arrested within
+    minutes, and later pleaded guilty to obstruction — told officers he
+    did it so "the real suspect could get away." That stated intent is
+    court record. Whether anyone arranged it in advance is not: the
+    sheriff's office says it has no information of collusion, and the
+    "promised payment" element exists only in commentary. Genuinely open,
+    thinly evidenced in both directions.
+  theme: timeline
+  rung: attribution
+  claimType: existence
+  importance: supporting
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — day-of cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  credibility: unresolved
+  credibilitySummary: >-
+    His own recorded statements establish diversion INTENT (KRK-E043); the
+    investigating agency's statement and the absence of any sourced
+    payment evidence leave pre-arrangement unestablished (KRK-E044).
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    If pre-arrangement were ever established it would be strong evidence
+    of coordination beyond a lone actor; his unprompted post-hoc framing
+    alone is compatible with disturbed attention-seeking, which his
+    subsequent case history does nothing to dispel.
+  strongestObjection: >-
+    A 71-year-old with the documented profile the court record shows,
+    acting alone for pathological reasons, explains every verified fact
+    without a conspiracy.
+  whatWouldChangeOurMind:
+    - "Any communications, financial, or witness evidence of advance coordination — or a completed investigation formally closing the question."
+
 # ── catalog-tier leads ───────────────────────────────────────────────────
 # Unreviewed backlog records: allegations circulating around the case,
 # anchored to their exact source with a verbatim quote, awaiting the
@@ -925,3 +1106,90 @@
     living-persons rules require: a lead about a named person goes no
     further than its source's own stated confidence, and its source states
     it is unconfirmed. A person's location, without more, implies nothing.
+
+- id: KRK-C029
+  tier: catalog
+  statement: >-
+    An Egyptian military aircraft arrived in Provo on September 4, 2025
+    and departed on September 10, with passengers who did not leave on
+    the return flight.
+  theme: timeline
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — day-of cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    locator: >-
+      Candace Owens broadcasts, September–October 2025 (quote captured
+      2026-08-25 via fact-check mirrors; original broadcast URL not
+      retained — locator unverified)
+    quote: >-
+      this foreign military plane arrived on September 4th, so 6 days
+      before into Provo, Utah, and departed 6 days later on September 10th
+  plainLanguage: >-
+    Owens-originated; no raw flight logs, aviation-expert analysis, or
+    official comment exist per fact-check review, the
+    passengers-who-stayed element has no source AT ALL in the reviewed
+    material, and an independent purchased-log review found her broader
+    aircraft-tracking claims placed planes on wrong continents most of
+    the time. Kept as a lead because flight records could settle it
+    cleanly (KRK-R012).
+
+- id: KRK-C030
+  tier: catalog
+  statement: >-
+    Twelve mobile devices registered in Israel were detected at UVU on the
+    day of the killing.
+  theme: timeline
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — day-of cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    locator: >-
+      X post by @Villgecrazylady, 2025-09-17 (text captured 2026-08-25;
+      archived URL not retained — locator unverified)
+    quote: >-
+      Got a tip last night that I was able to verify with someone inside
+      the admin that the NSA detected 12 Israeli registered cellphones at
+      the site of the shooting last Wednesday.
+  plainLanguage: >-
+    A pseudonymous account citing an anonymous source; no official record,
+    no named corroboration, no provenance beyond the post — whose author
+    herself noted innocent explanations (a national-security program and
+    nearby congregations). This is the floor of the evidence ladder and is
+    labeled accordingly.
+
+- id: KRK-C031
+  tier: catalog
+  statement: >-
+    A person close to Kirk told broadcaster Harrison Smith, weeks before
+    the killing, that Kirk believed Israel would kill him if he turned
+    against it.
+  theme: motive-pressure
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "whokilledck compilation intake — build-up cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-kirk-intake-2026-08-25"
+    date: "2026-08-25"
+  sourceAnchor:
+    sourceId: SRC-UNROLL-SMITH-2025
+    locator: "X status 1955705962964111425, August 13, 2025"
+    quote: >-
+      I'm not gonna name names, but I was told by someone close to Charlie
+      Kirk that Charlie thinks Israel will kill him if he turns against
+      them.
+  plainLanguage: >-
+    The tweet is verified and pre-dates the killing — that much is real.
+    What it asserts is an anonymous, secondhand account of Kirk's private
+    belief, from a host with an audience incentive; a belief, even if
+    accurately relayed, is a fear, not evidence about who acted. Two
+    layers, graded separately if ever promoted.
