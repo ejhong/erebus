@@ -216,7 +216,7 @@ async function checkUrl(url) {
     const res = await fetch(url, {
       redirect: "follow",
       signal: AbortSignal.timeout(15000),
-      headers: { "user-agent": "aletheia-inbox-pipeline/1.0" },
+      headers: { "user-agent": "erebus-inbox-pipeline/1.0" },
     });
     const type = res.headers.get("content-type") ?? "";
     let title = null;
@@ -377,7 +377,7 @@ async function main() {
       let extractPath = item.file;
       if (item.convertedFromPdf) {
         extractPath = path.join(
-          fs.mkdtempSync(path.join(os.tmpdir(), "aletheia-inbox-")),
+          fs.mkdtempSync(path.join(os.tmpdir(), "erebus-inbox-")),
           `${path.parse(item.file).name}.txt`,
         );
         fs.writeFileSync(extractPath, item.body);
