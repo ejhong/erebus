@@ -10,6 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # HARD RULE: the upstream engine project's name must never appear in
+      # any committed file in this repository (any casing). The pattern is
+      # assembled from pieces so this guard file cannot trip itself.
+      - name: Forbidden-string guard
+        run: |
+          FORBIDDEN="$(printf 'ale%s' 'theia')"
+          if grep -rIli --exclude-dir=.git --exclude-dir=node_modules "$FORBIDDEN" .; then
+            echo "::error::The forbidden upstream project name (listed files above) must not appear in any committed file. Scrub it and push again."
+            exit 1
+          fi
+          echo "guard passed: no occurrence of the forbidden string."
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -19,3 +32,19 @@ jobs:
       - run: npx eslint .
       - run: npm test
       - run: npm run build
+
+      # Engine-path divergence check — WARNING ONLY. Engine changes flow one
+      # way, upstream → here; this repo edits only content, config, and its
+      # own constitution. Requires the ENGINE_UPSTREAM secret (a git URL);
+      # skipped with a notice when unset. See ENGINE.md.
+      - name: Engine divergence check (warning only)
+        env:
+          ENGINE_UPSTREAM: ${{ secrets.ENGINE_UPSTREAM }}
+        run: |
+          if [ -z "$ENGINE_UPSTREAM" ]; then
+            echo "::notice::ENGINE_UPSTREAM secret not set — engine divergence check skipped. See ENGINE.md."
+            exit 0
+          fi
+          if ! node scripts/sync-engine.mjs --check; then
+            echo "::warning::Engine paths have diverged from upstream (see log above). Deliberate config-layer differences belong in the allowlist in scripts/sync-engine.mjs; anything else should be synced from upstream, never edited here."
+          fi
