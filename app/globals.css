@@ -7,26 +7,27 @@
  * warm paper-and-copper scheme. "copper" is therefore a steel blue here.
  */
 @theme inline {
-  /* Paper register */
-  --color-paper: #eef1f5;
-  --color-paper-deep: #e1e6ec;
-  --color-ink: #141a21;
-  --color-ink-soft: #3e4854;
-  --color-faint: #6c7886;
-  --color-line: #c9d2db;
+  /* Paper register — cool porcelain with a clear blue cast */
+  --color-paper: #e9eff7;
+  --color-paper-deep: #dde6f1;
+  --color-ink: #121a24;
+  --color-ink-soft: #3b4759;
+  --color-faint: #64748b;
+  --color-line: #c2cfe0;
 
-  /* Dossier register */
-  --color-dossier: #10151b;
-  --color-dossier-soft: #182029;
-  --color-dossier-line: #2a3542;
-  --color-dossier-text: #dbe4ed;
-  --color-dossier-faint: #84939f;
+  /* Dossier register — deep blue-black, instrument-panel dark */
+  --color-dossier: #0d141d;
+  --color-dossier-soft: #141d2a;
+  --color-dossier-line: #253247;
+  --color-dossier-text: #dbe5f1;
+  --color-dossier-faint: #8093ab;
 
   /* Accents (muted, non-moralizing) */
-  --color-copper: #38648f;
-  --color-ochre: #3f7a83;
-  --color-verdigris: #45737b;
-  --color-terracotta: #5a5f93;
+  --color-copper: #3a6ea8;
+  --color-copper-bright: #85acd8;
+  --color-ochre: #3e7d8a;
+  --color-verdigris: #43757d;
+  --color-terracotta: #5c64a0;
   --color-slate-mist: #5d6672;
 
   /*
@@ -41,10 +42,20 @@
 }
 
 body {
-  background: var(--color-paper);
+  /* Blueprint ground: a barely-there technical grid on blue porcelain. */
+  background-color: var(--color-paper);
+  background-image:
+    linear-gradient(to right, rgb(194 207 224 / 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(194 207 224 / 0.28) 1px, transparent 1px);
+  background-size: 28px 28px;
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Solid surfaces sit on top of the grid so text panels stay quiet. */
+.surface {
+  background-color: var(--color-paper);
 }
 
 /* Editorial prose defaults for the article body */

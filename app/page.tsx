@@ -33,6 +33,33 @@ function WaveDivider() {
   );
 }
 
+/** Measurement-scale strip under the hero — a quiet instrument ruler. */
+function RulerStrip() {
+  const ticks = Array.from({ length: 61 }, (_, i) => i * 10.65);
+  return (
+    <div aria-hidden className="mt-10 border-b border-faint/50 pb-px">
+      <svg
+        viewBox="0 0 640 14"
+        className="block w-full h-4 text-faint/60"
+        preserveAspectRatio="none"
+      >
+        {ticks.map((x, i) => (
+          <line
+            key={i}
+            x1={x + 0.5}
+            y1={i % 5 === 0 ? 2 : 8}
+            x2={x + 0.5}
+            y2={14}
+            stroke="currentColor"
+            strokeWidth={i % 5 === 0 ? 1.3 : 0.9}
+            className={i === 30 ? "text-copper" : undefined}
+          />
+        ))}
+      </svg>
+    </div>
+  );
+}
+
 export default function HomePage() {
   const cases = loadAllCases();
   // Epistemic changes lead the homepage feed; artwork/tooling entries stay
@@ -50,17 +77,19 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="mx-auto max-w-6xl px-5 pt-10 sm:pt-12 pb-8">
-        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
+      <section className="mx-auto max-w-6xl px-5 pt-12 sm:pt-16 pb-8">
+        <p className="flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.22em] text-copper">
+          <span aria-hidden className="inline-block w-2 h-2 border border-copper" />
           {site.subtitle}
         </p>
-        <h1 className="font-serif text-2xl sm:text-3xl tracking-tight mt-3 leading-[1.15] max-w-2xl">
-          Contested events are argued at the wrong scale. We take them apart.
+        <h1 className="font-serif text-3xl sm:text-4xl tracking-tight mt-4 leading-[1.12] max-w-4xl">
+          Contested events are argued at the wrong scale.
+          <br className="hidden sm:block" /> We take them apart.
         </h1>
-        <p className="mt-4 text-[15px] leading-relaxed text-ink-soft max-w-2xl">
+        <p className="mt-5 text-[15.5px] leading-relaxed text-ink-soft max-w-2xl">
           {site.mission}
         </p>
-        <p className="mt-4 flex flex-wrap gap-x-8 gap-y-2">
+        <p className="mt-5 flex flex-wrap gap-x-8 gap-y-2">
           <Link
             href="/research/"
             className="font-mono text-[11px] uppercase tracking-[0.14em] text-copper underline underline-offset-4 hover:text-ink"
@@ -74,6 +103,7 @@ export default function HomePage() {
             How the map works →
           </Link>
         </p>
+        <RulerStrip />
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-8">
@@ -81,7 +111,7 @@ export default function HomePage() {
           cases
         </h2>
         {cases.length === 0 ? (
-          <div className="border border-line bg-paper-deep/50 px-6 py-10 max-w-2xl">
+          <div className="surface border border-line outline outline-1 outline-offset-4 outline-line/60 px-6 py-10 max-w-2xl">
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-copper">
               no cases published yet
             </p>
@@ -128,7 +158,7 @@ export default function HomePage() {
 
       <section className="bg-dossier text-dossier-text mt-10">
         <div className="mx-auto max-w-6xl px-5 py-12">
-          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper-bright">
             how the map works
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-dossier-line border border-dossier-line mt-5">
@@ -151,7 +181,7 @@ export default function HomePage() {
               ],
             ].map(([title, text]) => (
               <div key={title} className="bg-dossier-soft p-6">
-                <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-copper">
+                <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-copper-bright">
                   {title}
                 </h3>
                 <p className="mt-3 text-[14px] leading-relaxed text-dossier-text/85">
@@ -164,7 +194,7 @@ export default function HomePage() {
             Read the full{" "}
             <Link
               href="/method/"
-              className="underline decoration-copper/60 underline-offset-2 hover:text-dossier-text"
+              className="underline decoration-copper-bright/60 underline-offset-2 hover:text-dossier-text"
             >
               methodology
             </Link>

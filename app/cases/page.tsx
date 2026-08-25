@@ -21,7 +21,7 @@ export default function CasesPage() {
         records or tests that would settle it.
       </p>
       {cases.length === 0 ? (
-        <div className="border border-line bg-paper-deep/50 px-6 py-10 max-w-2xl mt-8">
+        <div className="surface border border-line outline outline-1 outline-offset-4 outline-line/60 px-6 py-10 max-w-2xl mt-8">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-copper">
             no cases published yet
           </p>
