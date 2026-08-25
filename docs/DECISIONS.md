@@ -85,5 +85,6 @@ disasters, alleged cover-ups). Decisions made at bootstrap:
 9. **Site name is one config value** (`src/config/site.ts`) so it can
    change cheaply. Current name: Erebus; placeholder tagline: "An evidence
    map of contested public events." No external URLs configured. The
-   GitHub repository was renamed ejhong/erebus → ejhong/ebs by the founder
-   during bootstrap (GitHub redirects cover the old name).
+   GitHub repository was briefly renamed to ejhong/ebs during bootstrap and
+   renamed back to ejhong/erebus by the founder (GitHub keeps a redirect
+   from the interim name).

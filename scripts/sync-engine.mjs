@@ -87,8 +87,6 @@ const ALLOWLIST = new Set([
   "scripts/generate-case-art.mjs",
   ".github/workflows/generate-case-art.yml",
   ".github/workflows/extract-claims.yml",
-  // Repository link points at this repo, not the upstream
-  "app/panel/page.tsx",
   // Zero-content static-export support (candidate for upstreaming)
   "src/domain/staticExport.ts",
   "app/claims/[id]/page.tsx",
