@@ -3,7 +3,7 @@
 - date: "2026-08-25"
   change: >-
     Case launched: 19 featured claims, evidence ledger and source registry
-    built from independently verified citations, research agenda of ten
+    built from independently verified citations, research agenda of eleven
     decisive tests, and overview article. Constructed from the founder's
     research brief (casework/kirk/) with every citation re-verified against
     the live primary source before entry; the brief itself is not cited
@@ -13,6 +13,32 @@
   reason: >-
     First case on the site; chosen by the founder as the pilot for handling
     unofficial and contested sources under the living-persons rules.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-25"
+  change: >-
+    Wave-2 intake from the founder-supplied whokilledck.com compilation:
+    all ~45 items triaged (ledger in casework/kirk/); four new featured
+    claims (the AES procurement/explosion connection KRK-C025, the
+    unpreserved surrender video KRK-C026, the Kent halt statement
+    KRK-C027, the Zinn pre-arrangement question KRK-C028), three new
+    catalog leads (KRK-C029–C031), thirteen evidence records
+    (KRK-E038–E050), sixteen sources, and research entry KRK-R012. Key
+    verification outcomes recorded in both directions: the federal
+    procurement record and facility explosion verified against primary
+    records; the theory-origin timeline corrected by archive forensics
+    (public September 20, not October 3–8); the camera-ban and
+    video-only-appearance assertions contradicted by the court record;
+    the aircraft-passenger and Israeli-devices assertions found to be
+    sourceless or pseudonymous-only. One compilation cluster excluded
+    under the living-persons rules (photo-interpretation insinuations
+    about a named private individual).
+  reason: >-
+    Founder directed that everything raised in the compilation be
+    addressed; each item was verified at primary sources before entry, or
+    recorded as an honestly-labeled lead where no primary source exists.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
