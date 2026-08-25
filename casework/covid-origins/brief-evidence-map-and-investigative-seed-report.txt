@@ -1,0 +1,2010 @@
+[Repo note — 2026-08-25: plain-text rendering (pdftotext) of a founder-supplied AI deep-research brief PDF. The platform's prior working name has been replaced with "Erebus" throughout, per this repository's name guard; no other content was altered. The original PDF is retained by the founder outside the repository.]
+
+COVID-19 Origins: A Balanced Evidence Map and
+Investigative Seed Report for Erebus
+Executive summary
+Scope and assumptions. This report is designed as a seed document for an Erebus case page as of
+August 25, 2026. Because no target audience or length was specified, I assume a scientifically literate
+general audience that may include researchers, journalists, policymakers, and readers approaching the
+issue from competing prior beliefs. I use “research-related origin” as the broad category encompassing
+accidental infection during field sampling, accidental exposure to a naturally occurring virus in a laboratory,
+and accidental exposure to a manipulated or laboratory-adapted virus. Deliberate release is treated
+separately. “Direct evidence” is used narrowly to mean evidence that actually connects a precursor virus,
+infected animal, laboratory sample, or exposed worker to the first human infections—not merely evidence
+of capability, opportunity, proximity, or misconduct.
+
+
+That structure fits Erebus especially well. The site describes its purpose as decomposing controversial
+hypotheses into atomic claims, mapping evidence for and against them symmetrically, preserving
+provenance, and identifying potentially decisive evidence rather than operating as a “verdict machine.”     1
+
+
+
+
+Bottom line. On the public scientific record, the strongest positive evidence currently points toward a
+zoonotic emergence associated with the live-wildlife trade at or immediately upstream of Wuhan’s
+Huanan Seafood Wholesale Market. The principal evidence is the geographic concentration of the earliest
+known cases around the market; the concentration of SARS-CoV-2-positive environmental samples in the
+market, including areas associated with live susceptible mammals; the documented sale of susceptible
+wildlife there before closure; the co-occurrence in some SARS-CoV-2-positive environmental samples of
+genetic material from animals such as raccoon dogs, civets, and bamboo rats; and phylogenetic work
+interpreting the earliest viral diversity as more consistent with multiple animal-to-human introductions than
+with a single sustained human introduction. 2
+
+
+But the decisive zoonotic evidence has never been obtained: no animal sampled before or during the
+market outbreak has been shown to carry SARS-CoV-2 or a sufficiently close progenitor whose sequence
+establishes the transmission chain into humans. The Chinese CDC’s post-closure market investigation found
+environmental contamination but did not establish an infected market animal, and the market had already
+been closed and cleared when extensive sampling began. 3 WHO’s 2025 SAGO assessment therefore
+concluded that the weight of accessible scientific evidence favors zoonotic spillover, while explicitly
+declining to establish where, when, or through which animal the spillover occurred. SAGO described the co-
+location of susceptible-animal genetic material and viral RNA as the most compelling market evidence, not
+as proof of an infected animal. 4
+
+
+At the same time, a research-related accident remains scientifically and investigatively unresolved,
+principally because information capable of testing it has not been made available. The Wuhan Institute of
+Virology conducted extensive pre-pandemic research on SARS-related bat coronaviruses, possessed
+
+
+
+
+                                                       1
+reverse-genetics and coronavirus-engineering capabilities, created chimeric SARS-like coronaviruses,
+conducted some SARS-like coronavirus experiments under BSL-2 conditions, and had documented biosafety
+concerns. Yet the U.S. Intelligence Community’s 2023 declassified report also said it had no indication that
+WIV possessed SARS-CoV-2 or a close progenitor before the pandemic and no direct evidence of a
+specific research-related incident that caused it. 5 The same report said illnesses among several WIV
+employees in fall 2019 neither supported nor refuted either origin hypothesis because the reported
+symptoms were nonspecific and some were inconsistent with COVID-19. 6
+
+
+A particularly important piece of circumstantial laboratory-origin evidence is the 2018 DEFUSE proposal, an
+EcoHealth-led application to DARPA involving WIV and other collaborators. The proposal contemplated
+analyzing SARS-related coronavirus spike cleavage sites and, where mismatches existed, introducing
+“appropriate human-specific cleavage sites” before testing growth in cell cultures. The proposal was
+rejected; its existence establishes that this class of experiment was contemplated, not that it was actually
+conducted or that it generated SARS-CoV-2. 7 In February 2026, 23 former WHO SAGO members argued
+in Nature that even if DEFUSE had been funded, the specific proposed chimeric viral backbones and spike
+components were too evolutionarily distant to be a plausible direct route to SARS-CoV-2. Their argument
+significantly weakens a simplistic “DEFUSE was the blueprint for SARS-CoV-2” claim, although it does not
+resolve the broader question of whether other, undocumented research involving a different virus could
+have occurred. 8
+
+
+The genome does not provide a presently accepted forensic signature of engineering. SARS-CoV-2’s
+furin cleavage site and other features attracted legitimate early scrutiny, and seamless reverse genetics can
+in principle leave no obvious engineering scar. Nevertheless, the 2023 coordinated ODNI report stated that
+almost all U.S. intelligence agencies assessed SARS-CoV-2 was not genetically engineered, most assessed it
+was not laboratory-adapted, and all assessed it was not developed as a biological weapon. 9 Natural
+relatives such as RaTG13 and BANAL-52 demonstrate substantial unsampled natural sarbecovirus diversity
+and show that SARS-CoV-2-like receptor-binding properties can evolve in wildlife, but neither is close
+enough to be the immediate progenitor. 10
+
+
+The strongest recent revelations concerning Anthony Fauci, NIAID, EcoHealth, and congressional
+oversight concern transparency, conflicts, records handling, grant oversight, and the integrity of the
+investigative process—not the biological origin itself. HHS OIG found serious failures by NIH and
+EcoHealth in monitoring the relevant grants and subawards. 11 Congressional records document that
+Fauci participated in early discussions in which laboratory scenarios were seriously considered, while the
+authors of the eventual Proximal Origin paper subsequently concluded that purposeful manipulation was
+implausible. Republican and Democratic congressional investigators drew sharply different conclusions
+about whether that evolution reflected improper pressure or ordinary scientific reassessment. 12
+
+
+A major development after the 2024 hearings is no longer merely an allegation: on August 18, 2026, former
+NIAID senior adviser David Morens pleaded guilty to a conspiracy involving evasion of FOIA and federal-
+records requirements in communications about coronavirus grants. DOJ states that Morens and co-
+conspirators intentionally moved relevant communications to personal email, exchanged nonpublic NIH
+information, attempted to influence restoration of a coronavirus grant, and used back channels; the plea
+also describes an illegal-gratuity arrangement associated with a scientific commentary favoring natural
+origins. This is powerful evidence of records and ethics misconduct in the NIH/EcoHealth orbit. It does not
+demonstrate that SARS-CoV-2 came from a laboratory, and it does not by itself establish that Fauci
+directed or knew of the criminal conduct. 13
+
+
+
+
+                                                      2
+Likewise, Fauci’s July 29, 2026 Senate appearance, at which he invoked the Fifth Amendment rather than
+answer substantive questions, is relevant to the completeness of the oversight record but is not
+affirmative evidence of a laboratory origin. The committee is disputing the privilege in light of Fauci’s
+January 2025 pardon and has pursued contempt proceedings; that legal dispute should be kept separate
+from the scientific question of viral origin. 14
+
+
+The U.S. intelligence picture has also been internally divided. In 2021, four Intelligence Community
+elements plus the National Intelligence Council favored natural exposure with low confidence, while one
+element favored a laboratory-associated incident with moderate confidence. 15 By the 2023 coordinated
+report, the Department of Energy and FBI favored a laboratory-associated incident, while the NIC and four
+other agencies favored natural exposure and CIA plus another agency remained unable to decide. 16 In
+June 2026, ODNI leadership released documents under the categorical heading “Fauci Funded Wuhan Lab
+Research That Sparked COVID” and alleged improper influence over intelligence assessments. Because that
+public release is not itself presented as a new coordinated Intelligence Community estimate, a neutral
+site should distinguish the current executive-branch allegation from the evidentiary status of the underlying
+documents and from earlier coordinated assessments. 17
+
+
+The current WHO position is consequently more nuanced than either “zoonosis proven” or “lab leak proven.”
+SAGO’s 2025 scientific assessment found the weight of accessible scientific evidence favors zoonosis,
+but WHO Director-General Tedros said crucial information remains unavailable—including hundreds of
+early viral sequences, more detailed market-animal information, and Wuhan laboratory work and biosafety
+information—and therefore all hypotheses must remain on the table. 18
+
+
+A defensible Erebus top-line formulation is therefore:
+
+
+                         The best-developed affirmative scientific case currently favors zoonotic emergence
+                         connected to the Huanan wildlife trade, but no infected source animal or immediate
+                         progenitor has been identified. Research-related scenarios remain plausible but lack
+                         publicly disclosed direct evidence linking a pre-pandemic Wuhan laboratory virus or
+                         infected worker to the outbreak. Recent oversight proceedings have materially
+                         strengthened the case that grant oversight and federal-records handling were
+                         deficient, but those findings should not be converted into biological-origin evidence
+                         without an additional causal link. 19
+
+
+Timeline from the first recognized outbreak to the present
+The timeline below separates outbreak evidence, scientific publications, and investigative/oversight
+developments. The distinction matters because later misconduct or institutional opacity can change how
+much confidence we place in an evidentiary record without retroactively proving one biological mechanism.
+
+
+                                                                                                                                                                                                                                                                           SARS-CoV-2 origins: outbreak, science, and investigation
+
+                                                                                  2019–2020                                                                                                                      2021                                                                                              2022–2023                                                                                                      2024                                                2025                                                                 2026
+
+
+
+
+       2019-12-31          2020-01-01          2020-01-07         2020-01-11/12                2020-01-30       2020-02-01            2020-02-03          2020-03-17         2021-03-30           2021-09                2021-10-20      2021-10-29           2022-06-09           2022-07/08         2023-01-25               2023-04             2023-06-23             2023-07             2024-05           2024-06-03                  2024-09             2024-12            2025-06-27          2026-02-24       2026-04-28       2026-05-13                2026-06-18        2026-07-29          2026-08-18
+
+
+
+
+     WHO China office    Huanan market     Chinese authorities   Genome sequence              WHO declares        Fauci and        WIV team publishes   Proximal Origin   WHO-China origins     2018 DEFUSE             NIH publishes   ODNI releases          WHO SAGO              Science         HHS OIG finds           Chinese CDC        ODNI declassifies    House scrutinizes     Daszak, Morens,   Fauci public House           Cell publishes   House majority and    WHO SAGO final       Former SAGO      David Morens    CIA officer James          ODNI releases     Fauci appears       Morens pleads
+    informed of Wuhan        closed;         identify novel      becomes publicly               PHEIC        virologists discuss         RaTG13            published       report released    proposal becomes           statement on   divided origins   preliminary report    market-epicenter     NIH/EcoHealth        market-surveillance   WIV-links report    drafting of Proximal   Tabak oversight         hearing               Huanan wildlife     minority issue     assessment favors    members publish     indicted     Erdman appears at            additional     before Senate and    guilty to federal
+     pneumonia cluster    environmental       coronavirus            available                                possible origins        relationship                                                 public               EcoHealth/WIV    assessment       calls for more work          and          grant-monitoring       study published                                 Origin            proceedings                                  metagenomic       competing final        zoonosis on        Nature origins                        Senate                COVID-origins      invokes Fifth    conspiracy charge
+                         sampling begins                                                                                                                                                                                   research                        on all hypotheses    multiple-zoonosis       failures                                                                                                                             analysis           reports         available evidence      synthesis                       whistleblower               records          Amendment
+                                                                                                                                                                                                                                                                                     papers                                                                                                                                                                                       but leaves lab                                           hearing
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    hypothesis
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   unresolved
+
+
+
+
+                                                                                                                                                                                                                                                                                                                   3
+The outbreak dates come from WHO contemporaneous records; the subsequent entries come from the
+cited papers, WHO assessments, congressional records, ODNI releases, and DOJ proceedings described
+below. 20
+
+
+ Date      Event                                                  Why it matters to origin analysis
+
+ Dec.                                                             This is the first internationally
+           WHO’s China Country Office is informed of a cluster
+ 31,                                                              documented outbreak milestone, not
+           of pneumonia of unknown cause in Wuhan. 21
+ 2019                                                             necessarily the first infection.
+
+           Huanan Seafood Wholesale Market is closed; the         Closure before systematic wildlife
+ Jan. 1,   Chinese CDC subsequently collects hundreds of          sampling severely limits the
+ 2020      environmental samples beginning after closure.         possibility of directly identifying an
+             3                                                    infected market animal.
+
+ Jan. 7,   Chinese authorities identify/isolate a novel
+                                                                  Establishes the etiologic agent.
+ 2020      coronavirus. 22
+
+ Jan.                                                             Enables genomic comparison,
+           The viral genetic sequence becomes available
+ 11–12,                                                           diagnostics, and the first origin
+           internationally. 23
+ 2020                                                             analyses.
+
+                                                                  By this point sustained human
+ Jan.                                                             transmission is evident;
+           WHO declares a Public Health Emergency of
+ 30,                                                              reconstructing the earliest
+           International Concern. 24
+ 2020                                                             transmission chain is already
+                                                                  becoming difficult.
+
+           Fauci, Francis Collins, Jeremy Farrar, Kristian
+           Andersen and other scientists participate in an        Important for understanding the
+ Feb. 1,   origins discussion in which laboratory scenarios are   provenance of later scientific
+ 2020      among the hypotheses under consideration. Later        messaging; it is not evidence that a
+           congressional testimony and documents                  lab event occurred.
+           reconstruct this discussion. 25
+
+                                                                  Establishes a bat-sarbecovirus
+           Zhou et al. of WIV publish the first major report
+ Feb. 3,                                                          relationship while simultaneously
+           describing SARS-CoV-2 and the bat virus RaTG13,
+ 2020                                                             showing that RaTG13 is too distant to
+           with roughly 96.2% whole-genome identity. 26
+                                                                  be the immediate precursor.
+
+                                                                  Influential genomic argument
+ Mar.                                                             against purposeful engineering; later
+           Andersen et al. publish The proximal origin of SARS-
+ 17,                                                              oversight focuses on how the
+           CoV-2 in Nature Medicine. 27
+ 2020                                                             authors’ views changed during
+                                                                  drafting.
+
+
+
+
+                                                     4
+Date    Event                                                    Why it matters to origin analysis
+
+                                                                 Historically important but no longer
+Mar.    WHO-China joint origins report is released, rating       a sufficient statement of WHO’s
+30,     an intermediate-host pathway “likely to very likely”     current position because later WHO
+2021    and a laboratory incident “extremely unlikely.” 28       reviews explicitly reopen the
+                                                                 laboratory question.
+
+        The previously rejected 2018 DEFUSE DARPA                Provides concrete evidence that
+        proposal becomes public. The proposal includes           experiments with features relevant to
+2021
+        experiments involving SARS-related coronaviruses         the later debate were contemplated;
+        and human-specific cleavage sites. 29                    does not show they were conducted.
+
+                                                                 Important counterpoint to claims
+        NIH states that viruses documented under its
+Oct.                                                             that a published grant virus was SARS-
+        EcoHealth-supported WIV research are too
+20,                                                              CoV-2’s precursor; it does not
+        genetically distant from SARS-CoV-2 to be its source.
+2021                                                             address hypothetical undisclosed
+         30
+                                                                 viruses.
+
+        ODNI releases its updated origins assessment. Four
+        IC elements plus NIC favor natural exposure with         Demonstrates that classified-access
+Oct.
+        low confidence; one favors a laboratory-associated       analysts did not converge on one
+2021
+        incident with moderate confidence; others remain         explanation.
+        undecided. 15
+
+June    WHO SAGO preliminary report says further                 Marks a move away from treating the
+9,      information is needed and laboratory-related             2021 “extremely unlikely” label as
+2022    scenarios remain appropriate to investigate. 31          dispositive.
+
+        Worobey et al. and Pekar et al. publish paired
+July–   Science studies arguing respectively that Huanan         Becomes the core modern
+Aug.    was the early epicenter and that early viral diversity   affirmative scientific case for market-
+2022    is consistent with at least two zoonotic                 linked zoonosis.
+        introductions. 32
+
+        HHS OIG reports NIH and EcoHealth did not
+Jan.                                                             Strong evidence of oversight failure,
+        effectively monitor relevant awards and subawards
+25,                                                              but the audit was not an origin
+        and identifies grant-compliance and reporting
+2023                                                             determination.
+        failures. 33
+
+                                                                 Confirms heavy early market
+        Chinese CDC investigators publish post-closure
+April                                                            contamination but cannot distinguish
+        surveillance of the Huanan market, documenting
+2023                                                             contamination by infected humans
+        SARS-CoV-2-positive environmental samples. 3
+                                                                 from infected animals.
+
+        ODNI issues its declassified WIV-links report. NIC
+June                                                             The most useful publicly coordinated
+        and four agencies favor natural exposure; DOE and
+23,                                                              U.S. intelligence description of what
+        FBI favor a laboratory incident; CIA and another
+2023                                                             was and was not known about WIV.
+        agency are unable to decide. 34
+
+
+
+
+                                                  5
+Date    Event                                                 Why it matters to origin analysis
+
+                                                              Raises legitimate provenance and
+July    House investigators publicly scrutinize Proximal      institutional-influence questions
+2023    Origin authors and the paper’s drafting history. 35   without establishing a biological
+                                                              origin.
+
+                                                              Produces a large primary record on
+May–    House proceedings focus on Peter Daszak, David
+                                                              grants, definitions of gain-of-
+June    Morens, NIH official Lawrence Tabak, and Anthony
+                                                              function, records practices, and early
+2024    Fauci. 36
+                                                              origins communications.
+
+        Crits-Christoph et al. publish Cell reanalysis of
+                                                              Strengthens animal-market co-
+Sept.   Huanan metagenomic samples, finding genetic
+                                                              location evidence, but still does not
+2024    material from susceptible mammals in some SARS-
+                                                              identify an infected animal.
+        CoV-2-positive samples. 37
+
+        The Republican-led House Select Subcommittee
+        concludes a laboratory incident is most likely;       Demonstrates how the same
+Dec.    Democratic members issue a separate report saying     documentary record can yield
+2024    the investigation did not establish the origin and    sharply different political
+        rejecting claims that Fauci orchestrated a            interpretations.
+        suppression campaign. 38
+
+        WHO SAGO issues its final independent assessment:
+June    the weight of accessible published evidence favors    Best current international scientific
+27,     zoonotic spillover, but key information needed to     synthesis based on publicly
+2025    evaluate both zoonotic and laboratory hypotheses      accessible evidence.
+        remains unavailable. 39
+
+        WHO Director-General Tedros says China still has
+June    not provided hundreds of early sequences, detailed    Establishes that the evidentiary
+27,     market-animal information, or Wuhan laboratory        record is incomplete in ways relevant
+2025    work/biosafety information, and says all hypotheses   to both principal hypotheses.
+        remain on the table. 40
+
+        Twenty-three former SAGO members publish a
+                                                              A significant scientific rebuttal to one
+Feb.    Nature comment explaining their reasoning,
+                                                              specific engineered-lab scenario, not
+24,     including why they regard the specific DEFUSE-
+                                                              a proof against every possible
+2026    derived SARS-CoV-2 scenario as scientifically
+                                                              research accident.
+        implausible. 8
+
+Apr.    DOJ indicts former NIAID senior adviser David         Turns earlier congressional records
+28,     Morens for alleged records-concealment and            allegations into a criminal
+2026    related conduct. 41                                   proceeding; still not origin evidence.
+
+
+
+
+                                                 6
+ Date       Event                                                    Why it matters to origin analysis
+
+            CIA senior operations officer James Erdman appears       Potentially important intelligence-
+ May        before HSGAC. Chair Rand Paul says Erdman’s              process testimony, but underlying
+ 13,        testimony describes CIA scientific analysts favoring     classified records must be examined
+ 2026       a laboratory origin and their views being softened       before treating the claim as
+            or withheld. 42                                          independently corroborated.
+
+            ODNI releases a new package of origins-related           Important new documentary archive;
+ June
+            documents and makes categorical public                   its press-release conclusion should
+ 18,
+            allegations concerning Fauci, funding, and               not be substituted for document-by-
+ 2026
+            intelligence analysis. 17                                document evidentiary analysis.
+
+ July       Fauci appears under Senate subpoena and invokes          Creates an unresolved testimonial
+ 29,        the Fifth Amendment rather than answer                   gap; invocation itself does not
+ 2026       substantive committee questions. 14                      establish the virus’s origin.
+
+            Morens pleads guilty to conspiracy involving             Now-substantiated evidence of
+ Aug.
+            concealment of federal records and FOIA evasion in       transparency misconduct; important
+ 18,
+            connection with coronavirus-research grant               for institutional credibility, not a
+ 2026
+            communications. 13                                       direct causal link to SARS-CoV-2.
+
+A useful site-design choice is to attach two dates to important pieces of evidence: the date the underlying
+event occurred and the date the evidence became publicly available. DEFUSE, Fauci-era emails, and
+intelligence records illustrate why those can differ by years.
+
+
+Zoonotic-origin evidence
+The zoonotic case is strongest when stated narrowly. It does not require claiming that scientists have found
+“the animal that gave humans COVID.” Rather, it argues that several independent observations are
+substantially more expected under a wildlife-trade-associated spillover than under many alternative
+scenarios.
+
+
+The early geographic signal. Worobey and colleagues reconstructed the locations of early known
+December 2019 COVID-19 cases and found a strong concentration around the Huanan Seafood Wholesale
+Market. Crucially, their argument was not limited to cases already known to have market exposure; cases
+without a recognized market link also clustered geographically around it. The authors further mapped early
+SARS-CoV-2-positive environmental samples inside the market and found concentrations in the part of the
+market associated with wildlife sales. 43 A 2024 erratum should be linked alongside the original paper on
+any rigorous case page rather than allowing readers to assume the initial publication is the entire record.
+ 44
+
+
+
+
+This pattern has at least three possible interpretations: the market was the location of the first animal-to-
+human spillover; spillover happened immediately upstream in the wildlife supply chain and infected animals
+arrived at Huanan; or the market was an unusually effective amplification site for a virus already
+circulating among humans. The first two are zoonotic-origin variants; the third allows an origin elsewhere.
+The spatial data distinguish these possibilities only imperfectly.
+
+
+
+
+                                                     7
+The environmental-market signal. Chinese CDC investigators collected 923 environmental samples
+beginning after market closure and detected SARS-CoV-2 in the market environment. They were unable to
+demonstrate an infected source animal from the animals sampled after closure. 3 This is important
+because environmental RNA alone cannot identify who deposited it: an infected vendor, customer, market
+animal, contaminated surface, or some combination.
+
+
+The 2024 Cell analysis materially sharpened this evidence. Crits-Christoph and colleagues reanalyzed the
+market metagenomic sequencing data and found that some samples positive for SARS-CoV-2 RNA also
+contained mitochondrial DNA from susceptible wildlife, including raccoon dogs, civets, and bamboo rats,
+with particularly relevant samples associated with wildlife-selling locations. 37 Co-location makes an
+animal source more plausible than viral RNA alone does. It still cannot tell whether viral RNA came from
+the animal whose DNA was present or from an infected human standing in the same stall.
+
+
+That distinction should be made explicit on Erebus:
+
+
+       Established: susceptible mammals were present in the relevant market environment, and
+       their genetic material occurs in some SARS-CoV-2-positive environmental samples.
+       Not established: one of those mammals was infected with SARS-CoV-2 before human market
+       transmission began. 45
+
+
+WHO SAGO’s 2025 assessment made essentially this distinction, describing the co-location as the most
+compelling evidence of possible spillover while declining to call it direct proof. 46
+
+
+Early viral diversity. Pekar and colleagues reconstructed the earliest viral phylogeny and argued that the
+two basal early lineages commonly designated A and B are most consistent with at least two zoonotic
+introductions, each associated with the Huanan market. 47 If correct, two independent introductions
+from market animals are substantially harder to reconcile with a single infected laboratory worker. But the
+evidentiary weight depends on phylogenetic reconstruction, assumptions about unsampled intermediate
+viruses, molecular timing, and which early sequences are treated as reliable. It should therefore be
+classified as model-based evidence, not as direct observation of two spillovers.
+
+
+A neutral page should resist the symmetrical overstatements:
+
+
+       “Pekar et al. proved two zoonoses” is too strong.
+
+
+       “All cases demonstrably descend from one laboratory introduction” is also too strong.
+
+
+The House majority’s 2024 conclusion that the data establish one human introduction is in tension with the
+peer-reviewed Pekar analysis and should be presented as a disputed congressional interpretation, not as an
+uncontested scientific fact. 48
+
+
+Natural evolutionary context. The initial WIV paper identified RaTG13 as a bat SARS-related coronavirus
+with approximately 96.2% whole-genome similarity to SARS-CoV-2. Later sampling in Laos identified
+BANAL viruses, including BANAL-52 at roughly 96.8% similarity, and experimentally demonstrated that
+some related bat-virus receptor-binding domains can engage human ACE2 efficiently. 49 These
+
+
+
+
+                                                        8
+discoveries are important because they show that key SARS-CoV-2-like molecular properties exist in
+naturally circulating sarbecoviruses and that the natural viral diversity is incompletely sampled.
+
+
+They do not solve the origin. A virus at 96–97% whole-genome identity is far too divergent to be the
+immediate ancestor of SARS-CoV-2. The 2023 ODNI report explicitly notes that neither RaTG13 nor
+BANAL-52 is close enough to be a direct progenitor. 50 Thus:
+
+
+       Evidence for a natural evolutionary reservoir is strong. Evidence identifying the actual
+       immediate natural precursor is absent.
+
+
+The furin cleavage site and other genomic features. SARS-CoV-2 possesses a functionally important
+cleavage site in spike that was not present in its closest known sampled sarbecovirus relatives, making it a
+legitimate feature to investigate. Early Proximal Origin analysis argued that SARS-CoV-2’s genome did not
+look like a virus deliberately designed from known backbones, and the broader subsequent natural-virus
+record has expanded the range of observed coronavirus biology. 51 WHO SAGO concluded in 2025 that
+the virus’s notable genomic features can be explained through ordinary mutation and recombination and
+do not themselves establish a man-made origin, while also recognizing that genomic data alone cannot
+logically exclude every laboratory scenario. 52
+
+
+That last clause matters. “No diagnostic engineering signature” and “therefore no research accident” are not
+equivalent statements. A naturally collected virus could leak without engineering, and some modern
+reverse-genetics methods can produce constructs without a stereotyped scar. ODNI itself reported that WIV
+scientists possessed reverse-genetics methods capable of seamless manipulation, while simultaneously
+stating that it had no information that those techniques were applied to SARS-CoV-2 or a sufficiently close
+precursor. 5
+
+
+What most weakens the zoonotic case is not a contrary positive finding but missing direct evidence.
+No pre-outbreak farm, trader, market animal, or wildlife sample has yielded SARS-CoV-2’s immediate
+progenitor. WHO says it has not received all the detailed animal-market data and early sequences it
+requested. 40 The proper evidentiary interpretation is therefore “strong circumstantial convergence
+with an unresolved transmission link,” not “proven.”
+
+
+Research-related origin hypotheses
+“Lab leak” is too imprecise for serious analysis. It merges mechanisms with very different predictions. ODNI
+itself defines laboratory-associated incidents broadly enough to include accidents during research-related
+sampling, not only incidents physically inside a laboratory. 53 For Erebus, the hypothesis should be split
+at least as follows.
+
+
+
+
+                                                      9
+ Research-related
+                       Mechanism                            What would be expected if true
+ scenario
+
+                       A researcher acquires a
+                                                            Occupational-exposure record, worker
+                       naturally circulating virus
+ Field-sampling                                             serology/medical history, field samples
+                       while collecting bats or other
+ accident                                                   containing a near-progenitor, travel
+                       wildlife and returns to Wuhan
+                                                            chronology.
+                       infected.
+
+                       A naturally collected SARS-
+ Natural-virus         related coronavirus is               Pre-outbreak inventory/raw sequence of a
+ laboratory            cultured, isolated, or handled       >99%-similar virus, culture records, exposure
+ accident              in Wuhan; a worker becomes           logs, worker infection evidence.
+                       infected.
+
+                       A natural virus changes
+ Laboratory-                                                Pre-pandemic passage records, ancestor/
+                       through serial passage or
+ adapted virus                                              intermediate sequences, animal/cell-culture
+                       other laboratory adaptation
+ accident                                                   records, characteristic evolutionary trajectory.
+                       and infects a worker.
+
+                       Reverse genetics or another
+ Engineered/                                                Construct maps, plasmids, synthesis orders,
+                       engineering method produces
+ recombinant                                                raw reads, lab notebooks or a matching
+                       a SARS-CoV-2-like construct
+ virus accident                                             precursor.
+                       that escapes accidentally.
+
+                                                            Intent, operational records, a matching
+ Deliberate                                                 engineered precursor, and other extraordinary
+                       Virus is deliberately created
+ engineering/                                               direct evidence. No such public evidence has
+                       and intentionally released.
+ release                                                    emerged; U.S. IC assessments reject the
+                                                            biological-weapon hypothesis. 16
+
+Why a research accident is biologically plausible. WIV did relevant work. The 2023 ODNI report says its
+scientists conducted extensive coronavirus sampling and genetic analysis, created chimeric SARS-like
+coronaviruses, used reverse-genetics methods, and maintained large bat-sample collections. It also says
+some researchers conducted SARS-like coronavirus experiments in BSL-2 laboratories and that biosafety
+practices were inadequate at least some of the time, increasing the risk of accidental exposure. 5 Those
+facts establish capability and opportunity. They do not establish causation.
+
+
+The same ODNI document provides some of the most important counterevidence to a strong laboratory-
+origin claim. It states that the Intelligence Community had no indication that WIV’s pre-pandemic
+holdings included SARS-CoV-2 or a close progenitor and no direct evidence of a specific research-
+related incident capable of causing the pandemic. It also says known WIV coronavirus work with military-
+associated researchers involved viruses too distant to be the SARS-CoV-2 precursor. 54 A site that cites
+ODNI for WIV biosafety concerns should cite these statements with equal prominence.
+
+
+The NIH–EcoHealth–WIV research chain is real but often described imprecisely. NIH project
+R01AI110964, led by EcoHealth Alliance, investigated bat-coronavirus emergence, including field sampling,
+receptor binding, viral characterization, humanized-mouse work, and laboratory experiments intended to
+estimate spillover risk; WIV was among the subrecipients. 55 This establishes a U.S.-funded research
+
+
+
+
+                                                       10
+relationship relevant to the subject matter of the pandemic. It does not establish that U.S. funding paid for
+creation of SARS-CoV-2.
+
+
+The “gain-of-function” dispute needs unusually careful wording. In a broad scientific sense, a manipulated
+organism that acquires greater replication, host range, or another measurable function can reasonably be
+described as having gained a function. U.S. regulatory frameworks for enhanced potential pandemic
+pathogens are narrower. Congressional investigators emphasized Lawrence Tabak’s acknowledgement that
+some WIV experiments could be called gain-of-function in the broad sense, while NIH had earlier concluded
+the proposal did not meet the regulatory threshold requiring P3CO review. 56 HHS OIG found that NIH
+and EcoHealth failed in grant monitoring and that a late progress report disclosed an experiment reaching
+a grant-specific growth threshold that NIH had required EcoHealth to report. 33
+
+
+For an evidence page, the safe formulation is:
+
+
+       Some NIH-supported WIV experiments can be described as gain-of-function in the
+       generic sense of producing increased viral function. Whether they met the narrower
+       federal ePPP/P3CO regulatory category was a separate regulatory judgment. Neither
+       semantic question establishes that the experiments produced SARS-CoV-2.
+
+
+DEFUSE is genuine circumstantial evidence, but its inferential reach should be bounded. The March
+2018 EcoHealth-led proposal to DARPA proposed extensive bat coronavirus work. One section states that
+researchers would examine proteolytic and potential furin cleavage sites and, where clear mismatches
+existed, “introduce appropriate human-specific cleavage sites” and assess viral growth. 7 That is notable
+because SARS-CoV-2 later emerged with an unusual cleavage site in spike.
+
+
+What DEFUSE establishes:
+
+
+    1. Relevant investigators had contemplated experimental alteration of cleavage sites in SARS-related
+       coronaviruses before the pandemic. 7
+    2. The proposed consortium connected EcoHealth, WIV, and U.S. coronavirus expertise. 57
+    3. The conceptual overlap makes it reasonable to investigate whether related experiments occurred
+       under other funding or before/after the rejected proposal.
+
+What it does not establish is at least as important: DARPA did not fund the proposal; there is no public
+record proving the proposed cleavage-site experiment was carried out; and there is no published precursor
+sequence connecting those proposed constructs to SARS-CoV-2. 58
+
+
+The 2026 Nature article by 23 former SAGO members adds a substantial technical counterargument. They
+state that the specific coronavirus backbones and spike components contemplated in DEFUSE belong to
+viral lineages too distant from SARS-CoV-2 for the proposed constructs to plausibly be its direct precursor
+and clarify that some claims about a self-spreading coronavirus vaccine misread the proposal. 8 A
+balanced page should therefore classify DEFUSE as medium-value circumstantial evidence of research
+intent/capability, but low-value direct evidence of SARS-CoV-2 ancestry.
+
+
+Reported WIV employee illnesses are weak evidence in their current form. ODNI confirmed several WIV
+researchers were ill in fall 2019 but said their symptoms were compatible with many conditions, some were
+not characteristic of COVID-19, there was no indication relevant researchers were hospitalized for a COVID-
+
+
+
+
+                                                      11
+like illness, and some illnesses were attributable to other conditions. The IC explicitly concluded that the
+illness information neither supports nor refutes either origin hypothesis. 6 This item becomes highly
+important only if primary medical records, stored sera, PCR material, or a documented seroconversion show
+SARS-CoV-2 or a close progenitor infection before the recognized outbreak.
+
+
+Intelligence assessments add information but not publicly auditable proof. The 2023 coordinated
+ODNI report says differences among agencies arise from how they weigh intelligence reporting, scientific
+publications, conflicting reporting, and major information gaps. NIC and four agencies favored natural
+exposure; DOE and FBI favored a laboratory-associated incident; CIA and another agency were unable to
+choose. 16 The correct inference is not that “intelligence proves lab leak,” nor that “most agencies prove
+zoonosis.” It is that analysts with access to substantial nonpublic information remained divided and that
+neither side had diagnostic evidence.
+
+
+The June 2026 ODNI document release deserves a prominent but separate evidence node. ODNI leadership
+publicly alleged that Fauci-funded research “sparked COVID” and that Fauci improperly influenced
+intelligence assessments; the released index includes items such as a 2020 Lawrence Livermore analysis,
+Fauci briefing records, interagency emails, and congressional correspondence. 17 These records warrant
+primary-document analysis. Until a new coordinated estimate, transparent analytical memorandum, or
+direct origin evidence is produced, however, the headline characterization should be labeled as the
+position of the releasing administration/ODNI leadership, not silently converted into a consensus IC
+finding.
+
+
+The laboratory-origin case is consequently strongest in this form:
+
+
+       Relevant coronavirus research occurred in Wuhan; some practices created genuine exposure
+       risks; sophisticated engineering capabilities existed; a rejected pre-pandemic proposal
+       contemplated experiments with an intriguing overlap to a SARS-CoV-2 feature; grant
+       oversight was deficient; and crucial laboratory records remain unavailable. 59
+
+
+Its central weakness is equally simple:
+
+
+       No publicly disclosed pre-pandemic WIV virus, construct, raw sequence, frozen sample,
+       infected worker, or documented laboratory incident has been shown to be the ancestor
+       or source of SARS-CoV-2. 60
+
+
+Fauci, EcoHealth, congressional and oversight record
+The most important analytical discipline here is to keep four different evidence categories separate:
+
+
+Origin evidence asks what infected the first humans.
+Research-capability evidence asks what laboratories were able or planning to do.
+Process-integrity evidence asks whether officials preserved records, disclosed conflicts, and answered
+investigators accurately.
+Assessment evidence consists of conclusions drawn by scientists, intelligence agencies, congressional
+committees, or executive officials.
+
+
+
+
+                                                     12
+Conflating them creates most of the rhetorical heat in this subject.
+
+
+                     What the primary record                What it does not
+  Oversight item                                                                        Relevance to origin
+                     supports                               establish
+
+                     A real NIH-funded bat-
+                                                                                        Medium for
+                     coronavirus project included an
+  NIH funding                                                                           opportunity/
+                     EcoHealth subaward                     That the funded work
+  of EcoHealth/                                                                         capability; low as
+                     relationship with WIV and              produced SARS-CoV-2.
+  WIV                                                                                   direct origin
+                     relevant virology experiments.
+                                                                                        evidence.
+                      61
+
+
+                     NIH and EcoHealth did not
+                                                            OIG did not
+                     effectively monitor awards/                                        High for oversight
+                                                            demonstrate that the
+  HHS OIG audit      subawards; reporting and                                           failure; low for
+                                                            pandemic resulted from
+                     compliance failures occurred.                                      origin mechanism.
+                                                            the grant.
+                      11
+
+
+                     Relevant investigators
+                     proposed coronavirus
+                                                            That the experiment
+  DEFUSE             manipulation including human-                                      Medium
+                                                            occurred or yielded
+  proposal           specific cleavage-site                                             circumstantial.
+                                                            SARS-CoV-2.
+                     experiments; proposal was
+                     rejected. 62
+
+                                                            Private consideration
+                     Laboratory scenarios were              followed by a changed       Low for biological
+  Early Fauci/
+                     privately considered before            view is not itself          origin; medium for
+  scientist calls
+                     Proximal Origin appeared. 25           evidence of suppression     provenance.
+                                                            or bribery.
+
+                                                                                        Medium genomic
+                                                            It could not exclude
+                     Published authors argued                                           evidence against
+                                                            every research accident,
+  Proximal           genomic features did not                                           deliberate
+                                                            especially one involving
+  Origin             support purposeful                                                 engineering; limited
+                                                            a naturally occurring or
+                     manipulation. 27                                                   for broader lab
+                                                            undocumented virus.
+                                                                                        accident.
+
+                                                            A congressional finding
+                     Majority investigators
+                                                            is not a newly identified
+  House              concluded a lab-related                                            Assessment/
+                                                            precursor virus or
+  majority           accident was most likely and                                       synthesis, not direct
+                                                            infected worker. Several
+  report             alleged Fauci influenced the                                       evidence.
+                                                            scientific premises are
+                     public scientific narrative. 63
+                                                            disputed.
+
+
+
+
+                                                       13
+                 What the primary record                 What it does not
+Oversight item                                                                        Relevance to origin
+                 supports                                establish
+
+                 Democratic investigators said
+                 the inquiry failed to determine
+                 the origin and found no
+House            evidence Fauci orchestrated
+                                                         It does not prove            Assessment/
+minority         Proximal Origin or bribed its
+                                                         zoonosis.                    synthesis.
+report           authors; they nevertheless
+                 acknowledged serious
+                 EcoHealth/Daszak and Morens
+                 concerns. 64
+
+                 As of Aug. 2026, Morens has
+                                                         That hidden records
+                 pleaded guilty to a federal                                          Very high process-
+                                                         contained evidence of a
+Morens           conspiracy involving intentional                                     integrity
+                                                         laboratory origin; that
+records          evasion of FOIA/Federal                                              significance; low
+                                                         Fauci participated in
+conduct          Records Act requirements in                                          direct origin
+                                                         Morens’s criminal
+                 coronavirus-grant                                                    significance.
+                                                         conduct.
+                 communications. 13
+
+                 DOJ says Morens admitted a              That the scientific
+                                                                                      High conflict/
+                 conspiracy involving a gift and         argument in the
+Morens                                                                                credibility relevance;
+                 an official act consisting of           commentary was false,
+gratuity issue                                                                        low biological-origin
+                 authoring natural-origin                or that natural origin
+                                                                                      relevance.
+                 scientific commentary. 13               itself was fabricated.
+
+                 A CIA senior operations officer
+                 testified at a Senate hearing;          Publicly available           Potentially
+                 the chairman characterizes his          committee                    medium–high if
+Erdman CIA
+                 evidence as showing CIA                 characterization alone       corroborated;
+testimony,
+                 scientific analysts repeatedly          does not permit              presently mostly
+May 2026
+                 favored a lab origin but their          independent audit of all     intelligence-process
+                 conclusions were softened or            underlying intelligence.     evidence.
+                 withheld. 42
+
+                                                                                      Potentially
+                 ODNI leadership released a              The release page itself is
+                                                                                      important
+                 large set of records and made           not a replacement for a
+ODNI June                                                                             documentary
+                 categorical allegations                 coordinated analytic
+2026 release                                                                          corpus; individual
+                 concerning Fauci and                    estimate or direct
+                                                                                      records require
+                 intelligence analysis. 17               virological evidence.
+                                                                                      separate scoring.
+
+
+
+
+                                                    14
+                     What the primary record                   What it does not
+ Oversight item                                                                             Relevance to origin
+                     supports                                  establish
+
+                     Fauci appeared pursuant to a              Invocation is not
+                     Senate subpoena and declined              evidence that Fauci
+ Fauci Fifth                                                                                High for unresolved
+                     to answer substantive                     caused, knew of, or
+ Amendment                                                                                  testimony; near-
+                     questions by asserting the Fifth          concealed a laboratory
+ invocation,                                                                                zero direct origin
+                     Amendment; the committee                  accident, and certainly is
+ July 2026                                                                                  weight.
+                     disputes the claim in light of his        not biological evidence
+                     pardon. 14                                about SARS-CoV-2.
+
+The drafting of Proximal Origin deserves scrutiny without mind-reading. The published paper appeared
+on March 17, 2020 and strongly argued that the available genomic features did not support purposeful
+manipulation. 27 Later released communications and congressional interviews establish that some
+authors initially regarded laboratory explanations as sufficiently plausible to investigate and that Fauci,
+Collins, Farrar, and others were engaged in discussions around the issue. Andersen testified extensively
+about the evolution of his thinking and maintained that the paper was an effort to test hypotheses against
+the available evidence. 35
+
+
+Two incompatible claims are often made from that record:
+
+
+       “The scientists considered lab origin privately, therefore their later natural-origin
+       conclusion was fraudulent.”
+
+
+That does not follow: changing a hypothesis after analysis is normal science.
+
+
+       “Because the paper was peer reviewed, the communications around its formation are
+       irrelevant.”
+
+
+That also goes too far: provenance, conflicts, outside input, and the relationship between private
+uncertainty and public confidence are legitimate subjects of scrutiny.
+
+
+The Erebus node should therefore ask narrower questions: Who proposed the paper? Who edited or
+commented on it? What evidence caused each author’s posterior view to change? Was any governmental
+official given approval power? Were grants promised or discussed in connection with conclusions? Is there
+documentary evidence of coercion or quid pro quo? The House majority says the record supports improper
+influence; the minority says it does not. 38 The documents should sit above both interpretations.
+
+
+The Morens plea significantly changes the status of one branch of the controversy. In 2024, House
+investigators alleged that Morens used private email, deleted or concealed federal records, and acted as a
+back channel to EcoHealth. 65 By August 2026, DOJ reported a guilty plea admitting a conspiracy to evade
+FOIA and federal-records requirements after NIH terminated the bat-coronavirus grant. The admitted
+conduct included hidden personal-email communications, nonpublic NIH information, efforts to influence
+funding, and back-channel communications to a senior NIAID official. 13
+
+
+For Erebus this should trigger an evidence-status update:
+
+
+
+
+                                                          15
+Before plea: “Congressional allegation supported by emails.”
+After plea: “Underlying records-concealment conspiracy admitted in federal court.”     13
+
+
+
+
+But the next inference still requires evidence:
+
+
+Not established: “Therefore the concealed subject was proof that SARS-CoV-2 leaked from WIV.”
+
+
+That causal bridge remains missing.
+
+
+The July 2026 Fauci hearing likewise belongs primarily in a transparency branch. The Senate resolution
+states that Fauci delivered prepared testimony and then asserted the Fifth Amendment to questions
+relevant to COVID origins, risky life-sciences research, and his federal tenure; the committee chairman
+rejected the privilege as applied to pardoned conduct and moved toward contempt. 66 Whatever the
+eventual legal resolution, a neutral evidence system should not assign the invocation a positive laboratory-
+origin score. It instead changes the status of an investigative question from “testimony available” to
+“testimony unavailable/disputed.”
+
+
+The 2026 CIA/ODNI developments could become more consequential if their underlying records establish
+one of the missing causal links. Chair Paul’s May hearing statement says CIA scientific analysts repeatedly
+found a laboratory leak most likely but that those judgments were buried or softened. 67 The June ODNI
+release similarly alleges Fauci influence on intelligence analysis. 68 The appropriate next move is not to
+decide the origin from those characterizations; it is to obtain the actual analytic drafts, sourcing, dissent
+memoranda, meeting records, reviewer comments, and final decision chain.
+
+
+Primary-source audit, evidence matrix, and relationship maps
+A primary-source hierarchy is useful because different source classes answer different questions. Peer-
+reviewed papers are strongest for reproducible scientific analyses but are limited by the data available to
+their authors. WHO/SAGO reports synthesize broad expertise but are not themselves direct source-animal
+or laboratory records; SAGO noted major data gaps. 69 Intelligence reports may incorporate unavailable
+evidence but omit sources and methods needed for outside replication. Congressional records can expose
+documents and compel testimony but frequently contain explicit majority/minority advocacy. Criminal
+admissions are highly probative of the admitted conduct, but only that conduct.
+
+
+                                                                        Main limitation / proper
+  Primary source                 Principal contribution
+                                                                        interpretation
+
+  Zhou et al., Nature — “A
+                                                                        RaTG13 is not close enough to be
+  pneumonia outbreak             Establishes SARS-CoV-2 as a
+                                                                        the immediate precursor; later
+  associated with a new          sarbecovirus and reports RaTG13
+                                                                        disclosure of sample history should
+  coronavirus of probable        at ~96.2% genome identity. 26
+                                                                        be read with the original.
+  bat origin”
+
+                                                                        Does not exclude every laboratory-
+  Andersen et al., Nature        Important early genomic case
+                                                                        associated scenario; drafting
+  Medicine — “The proximal       against purposeful design/known-
+                                                                        provenance later became
+  origin of SARS-CoV-2”          backbone engineering. 27
+                                                                        contested.
+
+
+
+
+                                                      16
+                                                                     Main limitation / proper
+Primary source                Principal contribution
+                                                                     interpretation
+
+                                                                     Laboratory access and underlying
+                              First comprehensive international      data were insufficient for the initial
+WHO-China Joint Origins
+                              field investigation; classified        “extremely unlikely” rating to close
+Study, 2021
+                              several origin pathways. 70            the issue; subsequent WHO work
+                                                                     reopened it.
+
+                              Documents EcoHealth-led bat-           Grant descriptions establish
+NIH R01AI110964 grant         coronavirus sampling,                  funded work, not execution of
+materials                     characterization, spillover studies    every conceivable experiment or
+                              and experimental aims. 61              SARS-CoV-2 ancestry.
+
+                                                                     Rejected proposal; execution is
+                              Direct primary document showing
+                                                                     unproven. Specific proposed
+                              proposed manipulation of SARS-
+DEFUSE proposal, 2018                                                backbones are argued by SAGO
+                              related coronavirus cleavage sites
+                                                                     authors to be too distant from
+                              and other experiments. 7
+                                                                     SARS-CoV-2. 8
+
+                              Documents early IC split and           Confidence levels are low/
+ODNI Updated
+                              rejection of biological-weapon         moderate and underlying
+Assessment, 2021
+                              hypothesis. 15                         intelligence is largely unavailable.
+
+                              Strong geospatial and
+                                                                     Epicenter does not logically prove
+Worobey et al., Science,      epidemiological case that Huanan
+                                                                     site of first spillover; link the later
+2022                          was the early outbreak epicenter.
+                                                                     erratum. 44
+                               71
+
+
+                              Phylogenetic modeling argues for       Model-dependent inference; no
+Pekar et al., Science, 2022   at least two zoonotic introductions    animal-to-human transmission
+                              associated with the market. 47         event directly observed.
+
+                              Establishes concrete federal grant-
+HHS OIG EcoHealth/NIH                                                Audit finding is about stewardship/
+                              monitoring and compliance
+audit, 2023                                                          oversight, not pandemic origin.
+                              failures. 11
+
+Liu et al., Nature —          Primary Chinese CDC account of         Sampling followed closure; does
+Huanan market                 market environmental sampling.         not establish an infected market
+surveillance                   3                                     animal.
+
+                              Best concise official account of WIV
+                                                                     Explicitly reports no direct evidence
+ODNI WIV-links report,        capabilities, biosafety concerns,
+                                                                     of a specific causative WIV incident
+June 2023                     worker-illness intelligence and IC
+                                                                     or pre-pandemic close progenitor.
+                              disagreements. 72
+
+                              Primary testimonial record on          Committee summaries should be
+Fauci transcribed-
+                              NIAID, origins discussions and         separated from verbatim
+interview release, 2024
+                              federal policy. 73                     testimony.
+
+
+
+
+                                                    17
+                                                                      Main limitation / proper
+Primary source                  Principal contribution
+                                                                      interpretation
+
+                                Primary source on Proximal Origin     Retrospective testimony; interpret
+Andersen congressional
+                                authors’ early hypotheses and         alongside contemporaneous
+interview transcript, 2023
+                                reasoning. 35                         emails and paper drafts.
+
+Crits-Christoph et al., Cell,
+                                Metagenomic co-location of
+2024, “Genetic tracing of                                             Co-location is not equivalent to a
+                                susceptible wildlife genetic
+market wildlife and                                                   positive diagnostic sample from an
+                                material with SARS-CoV-2-positive
+viruses at the epicenter of                                           infected animal.
+                                samples. 37
+the COVID-19 pandemic”
+
+                                                                      Legislative majority synthesis;
+House Select                    Large documentary and
+                                                                      several biological claims are
+Subcommittee majority           testimonial compilation; concludes
+                                                                      disputed by peer-reviewed
+final report, 2024              laboratory origin most likely. 63
+                                                                      literature and WHO SAGO.
+
+                                Same investigation viewed through
+                                minority analysis; rejects claims
+House Select
+                                that the inquiry established origin
+Subcommittee                                                          Also political synthesis rather than
+                                or a Fauci-orchestrated
+Democratic final report,                                              direct virological evidence.
+                                suppression campaign while
+2024
+                                acknowledging EcoHealth/Morens
+                                concerns. 64
+
+                                Most comprehensive recent             Missing raw sequences, market
+                                international synthesis; weight of    supply-chain data and lab records
+WHO SAGO Independent            accessible evidence favors            prevent a conclusive result. WHO
+Assessment, 2025                zoonosis while laboratory             says SAGO lacked access to
+                                hypothesis remains unresolved.        important underlying intelligence
+                                 39                                   and requested information. 40
+
+                                Former SAGO members explain the
+                                                                      Commentary by 23 former
+Venter et al., Nature, 2026     scientific reasoning behind the
+                                                                      members, not a new WHO
+— “COVID’s origins: what        2025 assessment and directly
+                                                                      institutional report; not all original
+we do and don’t know”           analyze DEFUSE-related claims.
+                                                                      SAGO members joined it.
+                                 8
+
+
+                                Strong primary official evidence of
+DOJ Morens guilty plea                                                Establishes concealment
+                                admitted records/FOIA misconduct
+announcement, Aug. 18,                                                conspiracy, not the concealed
+                                involving coronavirus-grant
+2026                                                                  biological origin of SARS-CoV-2.
+                                communications. 13
+
+HSGAC Fauci hearing, July       Official record of Fauci’s            Refusal to answer supplies no
+29, 2026                        subpoenaed appearance.       14       affirmative virological evidence.
+
+
+
+
+                                                     18
+                                                                           Main limitation / proper
+ Primary source                   Principal contribution
+                                                                           interpretation
+
+                                                                           Press-release framing must be
+                                  Newly declassified/document-
+                                                                           distinguished from the evidentiary
+ ODNI June 2026 COVID-            released material concerning
+                                                                           content of each released record
+ origins release                  intelligence and federal officials.
+                                                                           and from a coordinated IC
+                                   17
+                                                                           assessment.
+
+The central comparative matrix can be represented this way:
+
+
+                                         Direct         Positive            Major                Key              Current public-
+                   Biological
+ Hypothesis                              public         circumstantial      counterevidence /    witnesses or     evidence
+                   plausibility
+                                         evidence       evidence            gaps                 documents        assessment
+
+                                                                                                 Chinese CDC
+                                                        Earliest-case
+                                         Missing:                                                raw market
+                   High; wildlife                       geography;                                                Strongest
+ Animal-to-                              no                                 No immediate         data; animal
+                   trade is a                           environmental                                             positive
+ human                                   confirmed                          progenitor; post-    traders/
+                   credible                             virus;                                                    public
+ spillover at                            infected                           closure animal       farms; early
+                   pathway and                          susceptible                                               scientific
+ or                                      source                             sampling;            case
+                   natural SARS-                        wildlife; animal                                          evidence, but
+ immediately                             animal                             incomplete           records;
+                   CoV-2-like                           DNA/viral RNA                                             circumstantial
+ upstream of                             carrying                           supply-chain         Worobey/
+                   sarbecoviruses                       co-location;                                              rather than
+ Huanan                                  the                                data. 76             Pekar/Crits-
+                   exist. 74                            early lineage                                             conclusive.
+                                         precursor.                                              Christoph
+                                                        analyses. 75
+                                                                                                 papers.
+
+                                                        A
+ Natural                                                superspreading
+                                         None                               Tight geographic
+ spillover                                              market could                                              Plausible, less
+                                         identifying                        relationship of      Full early-
+ elsewhere in                                           explain heavy                                             directly
+                                         the                                early cases to       case line list
+ Wuhan/            High to                              contamination;                                            supported
+                                         original                           market weighs        and
+ region,           moderate                             some early                                                than market-
+                                         non-                               toward a more        sampling
+ followed by                                            cases lacked                                              linked
+                                         market                             direct market        frame.
+ Huanan                                                 recognized                                                zoonosis.
+                                         exposure.                          role. 43
+ amplification                                          market
+                                                        exposure.
+
+
+
+
+                                                        19
+                                Direct       Positive           Major               Key            Current public-
+                 Biological
+Hypothesis                      public       circumstantial     counterevidence /   witnesses or   evidence
+                 plausibility
+                                evidence     evidence           gaps                documents      assessment
+
+                                                                No documented
+                                             WIV/EcoHealth
+                                                                pre-outbreak        Field
+                                             conducted
+                                                                infected sampler;   itineraries;
+                                             extensive bat
+                                                                no matching field   occupational
+Researcher                                   sampling;
+                                                                virus; market       health
+infected                        None         research-                                             Limited
+                                                                clustering          records;
+during           Plausible      publicly     associated                                            circumstantial
+                                                                remains             stored
+wildlife field                  disclosed.   incident                                              support.
+                                                                unexplained         samples;
+sampling                                     definitions
+                                                                without             WIV/
+                                             include
+                                                                additional          EcoHealth
+                                             sampling
+                                                                transmission        notebooks.
+                                             exposure. 77
+                                                                chain.
+
+                                             WIV held large
+                                                                                    Freezer
+                                             bat collections,   ODNI reports no
+Accident                                                                            inventories;
+                                             cultured/          indication WIV
+involving a                                                                         raw            Meaningful
+                                             researched         held SARS-CoV-2
+naturally                       None                                                sequencing     opportunity
+                                             SARS-like CoVs;    or a close
+collected        Plausible      publicly                                            database;      evidence,
+                                             documented         progenitor and
+virus in a                      disclosed.                                          biosafety      weak causal
+                                             biosafety          no specific
+Wuhan                                                                               logs; worker   evidence.
+                                             concerns and       causative
+laboratory                                                                          sera/health
+                                             BSL-2 work.        incident. 50
+                                                                                    records.
+                                              5
+
+
+                                             Reverse-
+                                                                Almost all IC       Construct
+                                             genetics/
+                                                                agencies in 2023    maps,
+                                             chimera
+                                                                assessed virus      synthesis
+Accident                                     capabilities;                                         Non-trivial
+                                                                not genetically     orders,
+involving                                    relevant NIH-                                         circumstantial
+                                None                            engineered;         plasmids,
+laboratory-      Technically                 funded                                                case,
+                                publicly                        known WIV/          raw reads,
+adapted or       plausible                   research;                                             presently
+                                disclosed.                      DEFUSE viruses      passage
+engineered                                   DEFUSE                                                weak direct
+                                                                are too distant;    records,
+coronavirus                                  contemplated                                          case.
+                                                                no precursor        DEFUSE-
+                                             cleavage-site
+                                                                construct           related
+                                             manipulation.
+                                                                identified. 79      records.
+                                              78
+
+
+
+
+                                             20
+                                                                           Direct                        Positive                                 Major                                            Key                       Current public-
+                                 Biological
+ Hypothesis                                                                public                        circumstantial                           counterevidence /                                witnesses or              evidence
+                                 plausibility
+                                                                           evidence                      evidence                                 gaps                                             documents                 assessment
+
+                                                                                                                                                  All IC agencies in
+                                                                                                                                                  2023 assessed
+                                                                                                                                                  SARS-CoV-2 was
+                                                                                                                                                  not developed as
+                                 Technically
+ Deliberate                                                                                                                                       a biological
+                                 conceivable                                                             No persuasive
+ engineered                                                                                                                                       weapon; SAGO                                     Intelligence
+                                 but requires                                                            affirmative                                                                                                         Very poorly
+ release /                                                                 None.                                                                  found deliberate-                                and security
+                                 many                                                                    public evidence                                                                                                     supported.
+ biological                                                                                                                                       manipulation                                     records.
+                                 additional                                                              identified.
+ weapon                                                                                                                                           explanations
+                                 assumptions.
+                                                                                                                                                  unsupported
+                                                                                                                                                  relative to
+                                                                                                                                                  ordinary
+                                                                                                                                                  evolution. 80
+
+                                 Virus
+                                 transport on                              None                          Some later                                                                                Import
+                                 goods is                                  showing                       outbreaks                                SAGO did not find                                records, pre-
+                                                                                                                                                                                                                             Weakly
+                                 physically                                the                           demonstrated                             persuasive                                       Dec. 2019
+ Cold-chain                                                                                                                                                                                                                  supported as
+                                 possible, but                             ancestral                     contaminated                             evidence that this                               source-
+ introduction                                                                                                                                                                                                                the initiating
+                                 this does not                             outbreak                      cold-chain                               explains the                                     region
+ into Wuhan                                                                                                                                                                                                                  Wuhan
+                                 explain the                               was                           materials can                            Wuhan                                            infections
+                                                                                                                                                                                                                             pathway.
+                                 virus’s                                   imported                      carry viral                              emergence. 81                                    and product
+                                 evolutionary                              this way.                     material.                                                                                 samples.
+                                 origin.
+
+The institutional relationships are better visualized as a graph than as a narrative because funding
+relationships, scientific collaboration, and origin causation are not the same edge:
+
+
+
+    Susceptible wildlife
+     genetic material        SARS-CoV-2-positive
+                            environmental samples
+
+
+
+
+     Huanan Seafood
+     Wholesale Market       Early-case geographic
+                                    cluster
+
+
+
+
+                            ODNI / FBI / DOE / CIA
+
+
+                                                                           communications / back
+                                                                           channel
+                                David Morens
+                             NIAID senior adviser
+
+                                                                              Research-related
+                                                                                 hypothesis
+
+
+
+                                 WHO / SAGO
+
+                                                                            Zoonotic hypothesis                                                                          2018 DEFUSE proposal
+
+
+
+                                                                                                                                                                           Ralph Baric / UNC
+                                                                                                                                                                         and other collaborators            DARPA
+                                                                           Proximal Origin authors
+                                                      early 2020 origins
+                                                                            and other virologists
+                                                      discussions
+
+                                Anthony Fauci
+                           NIAID Director 1984–2022                                                                                                                                                    Bat sarbecovirus
+                                                                                                     Grant R01AI110964                        Subaward / collaboration     Wuhan Institute of              sampling,
+    House &amp; Senate                                                          NIH / NIAID                              EcoHealth Alliance
+                                                                                                                                                                               Virology              culture, animal work,
+        oversight                                                                                                                                                                                      reverse genetics
+
+
+
+
+                                                                                                          21
+This graph is grounded in NIH grant records, ODNI’s WIV description, congressional records, market studies
+and WHO assessments. 82
+
+
+For a visual evidence indicator, I recommend an ordinal “public affirmative-evidence density” score
+rather than probabilities. The chart below is an editorial device for case-page navigation, not a scientific
+posterior probability. A score of 4 means multiple independent affirmative lines of public evidence; 3
+substantial but predominantly circumstantial evidence; 2 meaningful opportunity/congruence evidence; 1
+sparse indirect evidence; and 0 no persuasive affirmative evidence. It deliberately does not convert secrecy
+or missing records into affirmative points.
+
+
+
+
+               Public affirmative-evidence density as of Aug. 25, 2026 — not probability
+                               4
+
+
+                              3.5
+
+
+                               3
+     Ordinal evidence score
+
+
+
+
+                              2.5
+
+
+                               2
+
+
+                              1.5
+
+
+                               1
+
+
+                              0.5
+
+
+                               0
+
+                                    Huanan zoonosisOther zoonosis Field accident Natural-virus lab
+                                                                                                 Modified-virus lab
+                                                                                                                 Deliberate release
+
+
+
+The reason Huanan-associated zoonosis receives the highest evidence-density score is the convergence of
+geospatial epidemiology, environmental sampling, susceptible-animal presence, wildlife genetic material
+and phylogenetic analyses. 75 The two laboratory-accident categories receive non-zero scores because
+relevant research, engineering capabilities, biosafety concerns, DEFUSE and incomplete records are real;
+they do not receive higher scores because no pre-pandemic close precursor or causative exposure has been
+publicly demonstrated. 83 Deliberate release receives zero because no affirmative public evidence has
+been established and coordinated intelligence assessments reject the biological-weapon claim. 16
+
+
+This scoring system should ideally be supplemented on the live site with separate indicators for direct
+evidence, circumstantial evidence, source quality, replicability, missing-data sensitivity, and
+discriminating power. That would prevent a stack of many weak facts from looking equivalent to one
+diagnostic piece of evidence.
+
+
+
+
+                                                                            22
+Unresolved questions, investigative next steps, and neutral
+Erebus framing
+The decisive questions are now unusually concrete. Many require evidence acquisition rather than
+another opinion survey.
+
+
+ Unresolved question        Highest-value evidence to seek           What result would discriminate
+
+                            Original trader records; farm
+                                                                     A pre-outbreak animal carrying
+                            locations; archived animal tissues/
+ Was an animal in the                                                SARS-CoV-2 or a near-progenitor,
+                            sera; wildlife-smuggling seizures; raw
+ Huanan supply chain                                                 especially with a phylogenetically
+                            market metagenomic reads and
+ infected before the                                                 basal sequence, would be
+                            complete stall metadata. WHO says
+ human outbreak?                                                     powerful direct zoonotic
+                            detailed market-animal information
+                                                                     evidence.
+                            remains incomplete. 40
+
+                            Complete Wuhan December case line        Robust pre-market transmission
+ Was SARS-CoV-2             list; records of unexplained             spatially disconnected from
+ already circulating        pneumonia; geocoded onset dates;         Huanan would weaken a market-
+ outside Huanan before      stored respiratory samples; hundreds     origin claim; continued
+ the market cluster?        of early sequences WHO says remain       concentration around Huanan
+                            unavailable. 40                          would strengthen it.
+
+                            Pre-pandemic virus database
+                                                                     A timestamped >99%-similar pre-
+                            backups; raw FASTQ files; freezer
+ Did WIV possess an                                                  pandemic WIV virus could
+                            inventories; sample barcodes;
+ undisclosed close                                                   transform the lab hypothesis; a
+                            laboratory notebooks; unpublished
+ progenitor before Dec.                                              complete independently verified
+                            genomes; cloud/server logs. ODNI
+ 2019?                                                               inventory lacking one would
+                            says no such holding is presently
+                                                                     substantially weaken it.
+                            known. 50
+
+                            De-identified occupational-health        Verified 2019 seroconversion or
+ Did any WIV/
+                            records, stored sera, PCR material,      sequence-positive illness
+ EcoHealth-associated
+                            absence logs, hospitalization records    involving SARS-CoV-2/a precursor
+ researcher have a pre-
+                            and exposure reports from 2019.          would be among the strongest
+ outbreak SARS-CoV-2-
+                            ODNI says currently known illness        laboratory-origin evidence
+ like infection?
+                            reports are nondiagnostic. 6             imaginable.
+
+                                                                     Actual execution involving a
+                            Institutional biosafety approvals;
+                                                                     SARS-CoV-2-like ancestor would
+ Were DEFUSE-like           unfunded/internal project records;
+                                                                     materially update the lab
+ experiments ever           other grants; subaward ledgers;
+                                                                     hypothesis; proof that only the
+ performed despite          construct maps; plasmid and
+                                                                     documented distant backbones
+ DARPA rejection?           synthesis orders; raw reads; lab-
+                                                                     were used would weaken specific
+                            animal records. 7
+                                                                     DEFUSE claims.
+
+
+
+
+                                                  23
+Unresolved question      Highest-value evidence to seek           What result would discriminate
+
+                                                                  Robust support for independent
+Can the earliest         Complete early sequences with
+                                                                  basal introductions strongly
+lineage structure        verified collection dates and
+                                                                  favors repeated zoonotic
+distinguish one versus   metadata; preregistered reanalysis
+                                                                  spillover; a single well-supported
+multiple                 under competing phylogenetic
+                                                                  ancestral chain removes that
+introductions?           models.
+                                                                  particular argument.
+
+                                                                  Would show whether
+What exactly did U.S.    Declassified source summaries,
+                                                                  disagreement reflects genuinely
+intelligence possess     analyst drafts, dissent memoranda,
+                                                                  different evidence,
+when agencies            source-reliability ratings, analytic-
+                                                                  methodological weighting, policy
+reached different        confidence rationales, meeting
+                                                                  influence, or inaccessible source
+conclusions?             minutes and change histories. 84
+                                                                  reporting.
+
+                                                                  Demonstrated suppression of
+                         Primary records behind James             well-supported analytic
+Were intelligence        Erdman’s 2026 testimony and the          judgments would change
+conclusions              June 2026 ODNI release, with draft-to-   confidence in past public
+improperly altered?      final comparison and reviewer            assessments, though still not
+                         identities. 85                           automatically prove the
+                                                                  underlying origin.
+
+                                                                  Recovered records could contain
+How much relevant
+                                                                  origin-relevant evidence—or
+federal                  Morens plea materials, personal-
+                                                                  could show misconduct
+correspondence           email recovery, preservation logs,
+                                                                  concerned only grants/public
+remains missing          corresponding recipients’ accounts
+                                                                  relations. The content, not the
+because of records       and federal backups. 13
+                                                                  concealment alone, determines
+evasion?
+                                                                  origin relevance.
+
+                                                                  Evidence of directing a scientific
+What was Fauci’s         Full contemporaneous calendars,          conclusion would affect
+actual role in           emails, notes, meeting transcripts       provenance; evidence of
+intelligence and         and declassified briefing records        consultation without editorial
+Proximal Origin          rather than retrospective                control would weaken cover-up
+discussions?             characterizations. 86                    claims. Neither outcome alone
+                                                                  establishes biological origin.
+
+                         Release all code, raw geospatial data,   A signal robust to alternate
+Can the Huanan
+                         case-definition history, ascertainment   ascertainment and spatial models
+market signal be
+                         methodology and negative sampling        materially strengthens zoonosis;
+reproduced under
+                         locations; preregister alternative       collapse under reasonable
+adversarial analysis?
+                         models. 71                               corrections would weaken it.
+
+
+
+
+                                                24
+ Unresolved question          Highest-value evidence to seek            What result would discriminate
+
+                                                                        Forces engineering claims to
+                                                                        move from “feature looks
+ Can any hypothesized
+                              Explicit construct-level mechanistic      suspicious” to a falsifiable
+ engineered route
+                              proposals using actual pre-2019           ancestral pathway. The 2026
+ generate SARS-CoV-2
+                              sequences, tested against sequence        SAGO-authors’ analysis already
+ from documented
+                              constraints and laboratory records.       argues the commonly cited
+ precursors?
+                                                                        DEFUSE backbones fail this test.
+                                                                          8
+
+
+
+The investigation should apply the same evidentiary standard symmetrically. For zoonosis, do not accept
+“markets commonly cause spillovers” as proof that this market caused this spillover. For laboratory origin,
+do not accept “WIV performed risky coronavirus research” as proof that this research produced this virus.
+The decisive question in both cases is causal linkage.
+
+
+For the Erebus case page, the most useful top-level question is not “Did COVID come from a lab?” A more
+precise title would be:
+
+
+       What event initiated sustained human transmission of SARS-CoV-2 in late 2019?
+
+
+That avoids conflating COVID-19, the disease, with SARS-CoV-2, the virus, and permits genuinely distinct
+hypotheses to be compared.
+
+
+Recommended atomic claim nodes would include:
+
+
+ Claim node        Suggested neutral wording
+
+                   “The Huanan Seafood Wholesale Market was the geographic center of the earliest
+ Z-Huanan-1
+                   documented SARS-CoV-2 outbreak.”
+
+                   “SARS-CoV-2-positive environmental samples at Huanan were spatially associated with
+ Z-Huanan-2
+                   locations where susceptible wildlife was sold.”
+
+                   “At least one susceptible animal in the Huanan supply chain was infected before
+ Z-Huanan-3
+                   widespread human market transmission.” Status: unproven.
+
+                   “The earliest SARS-CoV-2 genomic diversity is better explained by multiple animal-to-
+ Z-Lineages
+                   human introductions than by one introduction.”
+
+                   “A Wuhan laboratory possessed SARS-CoV-2 or a sufficiently close progenitor before
+ L-Holdings
+                   the recognized outbreak.” Status: no public direct evidence.
+
+                   “A Wuhan coronavirus researcher was infected with SARS-CoV-2 or its progenitor
+ L-Exposure
+                   before the recognized outbreak.” Status: no public direct evidence.
+
+ L-                “SARS-CoV-2 descends from an experimentally manipulated or laboratory-adapted
+ Engineering       virus.”
+
+
+
+
+                                                    25
+  Claim node       Suggested neutral wording
+
+                   “Experiments materially similar to relevant portions of DEFUSE were actually
+  L-DEFUSE         performed before the outbreak.” Status: proposal documented; execution
+                   unresolved.
+
+                   “SARS-CoV-2 contains genomic features diagnostic of laboratory engineering.” Current
+  G-Genome
+                   evidence: not established. 80
+
+                   “NIH/EcoHealth oversight of WIV-related coronavirus research was deficient.” Strong
+  O-NIH
+                   official support from HHS OIG. 11
+
+                   “A NIAID senior adviser intentionally concealed coronavirus-grant communications
+  O-Morens
+                   from federal records/FOIA systems.” Established by guilty plea as of Aug. 2026. 13
+
+                   “Fauci improperly directed scientists or intelligence analysts to reach a predetermined
+  O-Fauci          natural-origin conclusion.” Contested; requires document-specific adjudication.
+                     87
+
+
+
+Neutral language is especially important for this case:
+
+
+  Prefer                                    Avoid                   Why
+
+                                            “Lab leak” as if it     Field exposure, natural-virus lab
+  “Research-related incident
+                                            were one                accidents and engineered-virus
+  hypothesis” when speaking broadly
+                                            mechanism               accidents make different predictions.
+
+                                            “The wet market
+  “Zoonotic spillover associated with                               No infected source animal has been
+                                            definitely caused
+  the Huanan wildlife trade”                                        demonstrated.
+                                            COVID”
+
+  “The weight of accessible
+                                            “Science has proven     This tracks SAGO’s actual qualified
+  published scientific evidence
+                                            natural origin”         conclusion. 46
+  currently favors zoonosis”
+
+  “No publicly disclosed direct
+                                                                    There is meaningful circumstantial
+  evidence has linked a WIV                 “There is no evidence
+                                                                    evidence; the missing element is a
+  precursor or worker to the                for a lab origin”
+                                                                    causal link. 5
+  outbreak”
+
+  “Relevant coronavirus experiments         Unqualified “NIH        Separates descriptive virology from
+  increased measured functions” or          funded gain-of-         the narrower ePPP/P3CO regulatory
+  “generic gain-of-function”                function”               category. 88
+
+  “DEFUSE proposed cleavage-site
+                                            “DEFUSE proves
+  manipulation; the proposal was                                    Distinguishes documentary fact from
+                                            scientists created
+  rejected and execution has not                                    inference. 62
+                                            SARS-CoV-2”
+  been established”
+
+
+
+
+                                                       26
+  Prefer                                    Avoid                     Why
+
+                                                                      The guilty plea proves specified
+  “Morens admitted a conspiracy to
+                                            “The COVID origin         concealment conduct; what the
+  evade federal records
+                                            was covered up”           hidden records prove about origin
+  requirements”
+                                                                      remains a separate question. 13
+
+                                            “Fauci’s Fifth
+  “Fauci invoked the Fifth                                            The invocation affects testimony
+                                            Amendment
+  Amendment and declined to                                           availability, not viral phylogeny or
+                                            invocation proves
+  answer the committee’s questions”                                   causal origin. 66
+                                            guilt/lab leak”
+
+  “House majority investigators
+                                                                      Makes partisan/procedural
+  concluded…” / “House minority             “Congress proved…”
+                                                                      provenance visible. 38
+  investigators concluded…”
+
+                                            “The Intelligence         The June 2026 release is not
+  “ODNI leadership alleged in its
+                                            Community now             presented as a new coordinated IC
+  June 2026 release…”
+                                            conclusively says…”       estimate. 17
+
+                                                                      Missing data are unusually important
+  “Not yet demonstrated” / “no              Blanket “debunked”
+                                                                      in this case, as WHO itself
+  public direct evidence”                   or “proven false”
+                                                                      emphasizes. 40
+
+The page should also display provenance and epistemic status separately. A useful evidence-card
+schema would be:
+
+
+claim → evidence item → source type → primary/secondary → date created → date
+disclosed → supports/opposes → direct/circumstantial/process-integrity → source
+reliability → alternative explanations → missing discriminator → current status
+
+
+That matches Erebus’s stated design goal of showing where disagreement lives rather than compressing
+contested evidence into a verdict. 1
+
+
+Finally, the case should maintain three visually distinct conclusions rather than one global “lab vs. animal”
+meter:
+
+
+Biological-origin layer: published positive evidence currently favors Huanan-associated zoonosis, without
+direct animal proof. 89
+
+
+Research-accident layer: a laboratory or field-research accident remains plausible because relevant
+capabilities, activities and biosafety concerns existed, but no publicly disclosed pre-outbreak precursor or
+causative infection has linked WIV to SARS-CoV-2. 5
+
+
+Institutional-integrity layer: oversight failures and some records misconduct are no longer speculative;
+HHS OIG documented grant-monitoring failures, and Morens has admitted a federal records/FOIA
+conspiracy. Broader allegations that Fauci or intelligence officials deliberately suppressed the true origin
+remain contested and require document-specific proof. 90
+
+
+
+
+                                                      27
+That separation is the most important safeguard against both forms of motivated reasoning in the debate:
+institutional misconduct does not prove a laboratory origin, and strong market evidence does not
+retroactively erase legitimate questions about risky research, missing records, conflicts, or
+government transparency. WHO’s current position captures the resulting epistemic state well: the
+accessible scientific evidence points more strongly toward zoonotic spillover, but critical animal, early-
+sequence, laboratory and intelligence information is still unavailable, so the origin remains unresolved
+rather than conclusively adjudicated. 91
+
+
+
+ 1   https://ejhong.github.io/erebus/
+https://ejhong.github.io/erebus/
+
+ 2   32   43   71   75   89   https://www.science.org/doi/10.1126/science.abp8715
+https://www.science.org/doi/10.1126/science.abp8715
+
+ 3   76   https://www.nature.com/articles/s41586-023-06043-2
+https://www.nature.com/articles/s41586-023-06043-2
+
+ 4   18   19   46   https://cdn.who.int/media/docs/default-source/documents/epp/sago/independent-
+                    52   81
+
+assessment-of-the-origins-of-sars-cov-2-by-sago.pdf?download=true&sfvrsn=b0f90ad4_6
+https://cdn.who.int/media/docs/default-source/documents/epp/sago/independent-assessment-of-the-origins-of-sars-cov-2-by-
+sago.pdf?download=true&sfvrsn=b0f90ad4_6
+
+ 5  6  9  16 34 50 53 54 59 60 72 78 79 80 83 84 https://www.dni.gov/files/ODNI/documents/
+
+assessments/Report-on-Potential-Links-Between-the-Wuhan-Institute-of-Virology-and-the-Origins-of-
+COVID-19-20230623.pdf
+https://www.dni.gov/files/ODNI/documents/assessments/Report-on-Potential-Links-Between-the-Wuhan-Institute-of-Virology-
+and-the-Origins-of-COVID-19-20230623.pdf
+
+ 7    https://ia601402.us.archive.org/34/items/main-document-preempt-volume-1-no-ess-hr00118s0017-
+     62
+
+ecohealth-alliance/main-document-preempt-volume-1-no-ess-hr00118s0017-ecohealth-alliance_text.pdf
+https://ia601402.us.archive.org/34/items/main-document-preempt-volume-1-no-ess-hr00118s0017-ecohealth-alliance/main-
+document-preempt-volume-1-no-ess-hr00118s0017-ecohealth-alliance_text.pdf
+
+ 8   58   https://www.nature.com/articles/d41586-026-00530-y
+https://www.nature.com/articles/d41586-026-00530-y
+
+10   26   49   https://www.nature.com/articles/s41586-020-2012-7
+https://www.nature.com/articles/s41586-020-2012-7
+
+11   33   88   90   https://oig.hhs.gov/oas/reports/region5/52100025.pdf
+https://oig.hhs.gov/oas/reports/region5/52100025.pdf
+
+12   25   35   https://oversight.house.gov/wp-content/uploads/2023/07/2023.06.16-Andersen-Transcript.pdf
+https://oversight.house.gov/wp-content/uploads/2023/07/2023.06.16-Andersen-Transcript.pdf
+
+13 https://www.justice.gov/usao-md/pr/former-senior-niaid-official-pleads-guilty-charges-connected-
+concealing-federal-records
+https://www.justice.gov/usao-md/pr/former-senior-niaid-official-pleads-guilty-charges-connected-concealing-federal-records
+
+14   https://www.hsgac.senate.gov/hearings/testimony-of-anthony-fauci/
+https://www.hsgac.senate.gov/hearings/testimony-of-anthony-fauci/
+
+
+
+
+                                                              28
+15 https://archive.dni.gov/files/ODNI/documents/assessments/Declassified-Assessment-on-COVID-19-
+
+Origins.pdf
+https://archive.dni.gov/files/ODNI/documents/assessments/Declassified-Assessment-on-COVID-19-Origins.pdf
+
+17   68   https://www.dni.gov/13668/fauci-funded-wuhan-lab-research-that-sparked-covid/
+https://www.dni.gov/13668/fauci-funded-wuhan-lab-research-that-sparked-covid/
+
+20   21   24   https://www.who.int/news/item/27-04-2020-who-timeline---covid-19
+https://www.who.int/news/item/27-04-2020-who-timeline---covid-19
+
+22   https://www.who.int/emergencies/disease-outbreak-news/item/2020-DON233
+https://www.who.int/emergencies/disease-outbreak-news/item/2020-DON233
+
+23   https://www.who.int/news/item/29-06-2020-covidtimeline
+https://www.who.int/news/item/29-06-2020-covidtimeline
+
+27   51   https://www.nature.com/articles/s41591-020-0820-9
+https://www.nature.com/articles/s41591-020-0820-9
+
+28   70 https://www.who.int/docs/default-source/coronaviruse/final-joint-report_origins-studies-6-
+april-201.pdf
+https://www.who.int/docs/default-source/coronaviruse/final-joint-report_origins-studies-6-april-201.pdf
+
+29   https://www.researchgate.net/publication/363729325_DRASTIC_-_An_Analysis_of_Project_DEFUSE
+https://www.researchgate.net/publication/363729325_DRASTIC_-_An_Analysis_of_Project_DEFUSE
+
+30 https://stagetestdomain3.nih.gov/about-nih/who-we-are/nih-director/statements/statement-
+misinformation-about-sars-cov-2-origins
+https://stagetestdomain3.nih.gov/about-nih/who-we-are/nih-director/statements/statement-misinformation-about-sars-cov-2-
+origins
+
+31 https://cdn.who.int/media/docs/default-source/scientific-advisory-group-on-the-origins-of-novel-
+
+pathogens/sago-report-09062022.pdf
+https://cdn.who.int/media/docs/default-source/scientific-advisory-group-on-the-origins-of-novel-pathogens/sago-
+report-09062022.pdf
+
+36 https://oversight.house.gov/release/ecohealth-alliance-president-peter-daszak-to-appear-for-public-
+hearing/
+https://oversight.house.gov/release/ecohealth-alliance-president-peter-daszak-to-appear-for-public-hearing/
+
+37   45   https://www.cell.com/cell/fulltext/S0092-8674%2824%2900901-2
+https://www.cell.com/cell/fulltext/S0092-8674%2824%2900901-2
+
+38   48   63 https://oversight.house.gov/release/final-report-covid-select-concludes-2-year-investigation-
+               87
+
+issues-500-page-final-report-on-lessons-learned-and-the-path-forward/
+https://oversight.house.gov/release/final-report-covid-select-concludes-2-year-investigation-issues-500-page-final-report-on-
+lessons-learned-and-the-path-forward/
+
+39   69https://www.who.int/publications/m/item/independent-assessment-of-the-origins-of-sars-cov-2-
+from-the-scientific-advisory-group-for-the-origins-of-novel-pathogens
+https://www.who.int/publications/m/item/independent-assessment-of-the-origins-of-sars-cov-2-from-the-scientific-advisory-
+group-for-the-origins-of-novel-pathogens
+
+
+
+
+                                                               29
+40 91 https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-
+
+media-briefing---27-june-2025
+https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing---27-june-2025
+
+41 https://www.justice.gov/opa/pr/former-senior-niaid-official-indicted-concealing-federal-records-during-
+covid-19-pandemic-0
+https://www.justice.gov/opa/pr/former-senior-niaid-official-indicted-concealing-federal-records-during-covid-19-pandemic-0
+
+42   https://www.hsgac.senate.gov/hearings/whistleblower-testimony-on-the-covid-coverup/
+https://www.hsgac.senate.gov/hearings/whistleblower-testimony-on-the-covid-coverup/
+
+44   https://www.science.org/doi/10.1126/science.adp1133
+https://www.science.org/doi/10.1126/science.adp1133
+
+47   https://www.science.org/doi/10.1126/science.abp8337
+https://www.science.org/doi/10.1126/science.abp8337
+
+55   61   77   82   https://reporter.nih.gov/project-details/8674931
+https://reporter.nih.gov/project-details/8674931
+
+56  https://oversight.house.gov/release/hearing-wrap-up-nih-repeatedly-refutes-ecohealth-alliance-
+president-dr-peter-daszaks-testimony-tabak-testimony-reveals-federal-grant-procedures-in-need-of-serious-
+reform/
+https://oversight.house.gov/release/hearing-wrap-up-nih-repeatedly-refutes-ecohealth-alliance-president-dr-peter-daszaks-
+testimony-tabak-testimony-reveals-federal-grant-procedures-in-need-of-serious-reform/
+
+57  https://www.hsgac.senate.gov/media/reps/dr-paul-sends-letters-to-fifteen-federal-agencies-after-
+discovering-their-knowledge-of-risky-defuse-project/
+https://www.hsgac.senate.gov/media/reps/dr-paul-sends-letters-to-fifteen-federal-agencies-after-discovering-their-knowledge-of-
+risky-defuse-project/
+
+64 https://oversightdemocrats.house.gov/news/press-releases/ranking-member-ruiz-leads-select-
+subcommittee-democrats-releasing-final-report
+https://oversightdemocrats.house.gov/news/press-releases/ranking-member-ruiz-leads-select-subcommittee-democrats-
+releasing-final-report
+
+65   https://oversight.house.gov/release/new-covid-select-memo-details-allegations-of-wrongdoing-and-
+illegal-activity-by-dr-faucis-senior-scientific-advisor/
+https://oversight.house.gov/release/new-covid-select-memo-details-allegations-of-wrongdoing-and-illegal-activity-by-dr-faucis-
+senior-scientific-advisor/
+
+66   https://www.hsgac.senate.gov/wp-content/uploads/ROM26376.pdf
+https://www.hsgac.senate.gov/wp-content/uploads/ROM26376.pdf
+
+67   85https://www.hsgac.senate.gov/media/reps/chairman-paul-delivers-opening-remarks-during-
+whistleblower-hearing-on-the-multi-agency-cover-up-of-covid-19-and-gain-of-function-research/
+https://www.hsgac.senate.gov/media/reps/chairman-paul-delivers-opening-remarks-during-whistleblower-hearing-on-the-multi-
+agency-cover-up-of-covid-19-and-gain-of-function-research/
+
+73   86https://oversight.house.gov/release/covid-select-subcommittee-releases-dr-faucis-transcript-
+highlights-key-takeaways-in-new-memo/
+https://oversight.house.gov/release/covid-select-subcommittee-releases-dr-faucis-transcript-highlights-key-takeaways-in-new-
+memo/
+
+
+
+
+                                                               30
+74   https://www.nature.com/articles/s41586-022-04532-4
+https://www.nature.com/articles/s41586-022-04532-4
+
+
+
+
+                                                     31
+
