@@ -74,7 +74,7 @@ export default function ResearchPage() {
     <div>
       <section className="bg-dossier text-dossier-text">
         <div className="mx-auto max-w-6xl px-5 py-12 sm:py-16">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper-bright">
             the research agenda, priced
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl mt-3 tracking-tight">
@@ -103,7 +103,7 @@ export default function ResearchPage() {
                 {tiers.map((t) => (
                   <div key={t.key} className="bg-dossier-soft p-5">
                     <p className="font-serif text-3xl">{counts[t.key]}</p>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-copper mt-1">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-copper-bright mt-1">
                       {t.title} tests
                     </p>
                   </div>
