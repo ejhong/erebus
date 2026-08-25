@@ -10,6 +10,8 @@ export const site = {
     { label: "Research", href: "/research" },
     { label: "Method", href: "/method" },
   ],
+  /** Repository — the ledger every page derives from (private repo). */
+  repoUrl: "https://github.com/ejhong/erebus",
   // Set when an external research link exists; rendered only if non-null.
   researchHubRfpUrl: null as string | null,
   researchHubRfpLabel: "Request for Proposals",
