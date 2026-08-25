@@ -566,6 +566,9 @@
   url: "https://www.jpost.com/international/article-867062"
   verification: ai_verified
   verificationNote: "Retrieved and quoted 2026-08-25."
+  reliabilityNotes:
+    - "Carries Netanyahu's on-record account of the invitation ('I spoke to him only two weeks ago and invited him to Israel') — the counter-assertion to catalog claim KRK-C035."
+  background: true
 
 - id: SRC-GRAYZONE-SEPT12-2025
   title: "Charlie Kirk rejected Netanyahu cash offer before assassination, friend says"
