@@ -220,21 +220,23 @@
 - id: KRK-R013
   title: "Base-rate study: federal public-facing role in state-jurisdiction public-venue homicides"
   summary: >-
-    Over the same comparable-case population as KRK-R011 (mass-casualty
-    events and killings of public figures at public venues, US,
-    2000-2026, state-jurisdiction prosecutions), tabulate for each case:
-    whether the FBI participated in the investigation; the depth of that
-    role (laboratory/evidence-response assistance, joint task force,
-    investigative lead); the date and rank of the first federal public
-    statement (local sheriff or DA only, special agent in charge, FBI
-    director personally); and the stated legal nexus for involvement.
-    Then place this case's profile — director-level scene walkthrough and
-    evidence announcements within 48 hours, "lead out for the federal
-    government," no federal charge identified — against that
-    distribution. The discriminating variable is who fronted the case
-    publicly and how fast, NOT participation itself: the DOJ's former
-    domestic-terrorism counsel states on the record that FBI assistance
-    in state-charged cases is routine.
+    This study has now been carried out across thirteen comparable
+    state-jurisdiction cases (mass-casualty events and killings of public
+    figures at public venues, US, 2000-2026): the table records FBI
+    investigative participation in all thirteen, day-one briefings fronted
+    by local or state officials in every case, federal podium appearances
+    peaking at special-agent-in-charge rank, and no comparable case in which
+    a federal official above that rank personally fronted evidence
+    announcements — leaving this case's profile (director-level scene
+    walkthrough and evidence announcements within 48 hours, "lead out for
+    the federal government," no federal charge identified) unmatched in the
+    table on public fronting. What remains is to extend the population
+    beyond thirteen cases and to source, for each, the stated legal nexus
+    for federal involvement and the depth of the investigative role. The
+    discriminating variable is who fronted the case publicly and how fast,
+    NOT participation itself: the DOJ's former domestic-terrorism counsel
+    states on the record that FBI assistance in state-charged cases is
+    routine.
   claimIds: [KRK-C037]
   track: either
   effortTier: desk
