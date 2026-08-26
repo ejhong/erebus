@@ -2,6 +2,14 @@
 # blind to all prior assessments (scripts/cross-model-check.mjs,
 # promptVersion erebus-check-v1). role: check — never displayed as the case
 # narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+#
+# Recorded artifact: this run emitted byte-identical duplicate blocks for
+# COV-C014 and COV-C015 (20 blocks for 18 claims). The duplicates are a
+# generation repetition, not two differing judgments, and have no effect on
+# the concurrence tally, which reads the first block per claim. Left in
+# place rather than tidied: this file is a verbatim record of what the model
+# returned, and editing a run record to look cleaner is exactly the instinct
+# an append-only overlay exists to refuse. Noted by an arbiter seat.
 runId: 2026-08-26-check-kimi
 model: Kimi K3 (Moonshot, via Venice) — independent check run via kimi-k3
 date: 2026-08-26

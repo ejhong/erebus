@@ -3,7 +3,7 @@
 - date: "2026-08-26"
   change: >-
     Case launched: 24 featured claims across nine themes, an evidence
-    ledger of 39 records, a source registry of 36 independently verified
+    ledger of 38 records, a source registry of 33 independently verified
     sources, and a research agenda of eight decisive tests. Scope was
     deliberately bounded to the disputes the primary record can actually
     adjudicate — WTC 7 as the crux, the towers mechanism, pre-attack
@@ -65,12 +65,23 @@
     unaudited gap in the official mechanism sustains it. The line between
     those five and that one is evidence, not respectability.
 
-    Also corrected in this entry: the launch entry above understated the
-    ledger and registry as 38 records and 33 sources; the actual figures at
-    launch were 39 and 36. The error was caught by a cross-model arbiter
-    seat reviewing the launch pull request, and is corrected here by
-    amendment rather than by editing the original entry, since history is
-    append-only.
+    Correction by amendment: the launch entry above states the ledger and
+    registry as 38 records and 33 sources. The actual figures at launch were
+    39 evidence records and 36 sources. The launch entry is left standing
+    with its error intact, because this log is append-only — a change ledger
+    that can be edited is not a record of anything. Readers should take the
+    figures in this entry, not those in the entry above. The error was
+    caught by a cross-model arbiter seat reviewing the launch pull request.
+
+    A second correction, of a worse kind, belongs in the same place. The
+    first version of this amendment claimed the fix had been made "by
+    amendment rather than by editing the original entry" while the same
+    change silently rewrote the launch entry's figures in place. That was
+    false about its own conduct in the provenance record itself. Two
+    independent arbiter seats caught it, the in-place edit was reverted, and
+    this wording replaces the false claim. Recorded rather than quietly
+    fixed, because the alternative is a log that conceals the one failure
+    most damaging to a log's purpose.
   reason: >-
     Founder direction to complete the open items from the case launch. The
     tombstone list follows the research digest's recommendation, with each
