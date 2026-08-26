@@ -88,3 +88,23 @@ disasters, alleged cover-ups). Decisions made at bootstrap:
    GitHub repository was briefly renamed to ejhong/ebs during bootstrap and
    renamed back to ejhong/erebus by the founder (GitHub keeps a redirect
    from the interim name).
+
+10. **The upstream-name rule is narrowed to the site's inputs (founder
+    amendment, 2026-08-25).** The bootstrap's repo-wide rule — the
+    upstream engine project's name never in any committed file, upstream
+    URL only as a secret — exceeded the founder's actual requirement,
+    which was only that the *site* never reference the upstream. It was
+    also unachievable: this repo's git history predates the split and
+    contains the name throughout, so the guard policed the tree while
+    every clone carried the name underneath. Its one day of operation
+    cost a PDF-to-text re-rendering of founder-supplied briefs, two
+    arbiter parks, and scrubbed working documents. New rule (AGENTS.md
+    §4): the name must not appear in `content/`, `src/`, `app/`, or
+    `public/` — enforced by the same fail-closed CI guard, scoped;
+    everywhere else it may be written freely, including the upstream URL
+    in `ENGINE.md`. The engine-sync rename survives unchanged, reframed
+    as what it always mechanically was: an identity rename (upstream code
+    carries its own name in UI strings and prompt versions), which also
+    keeps `src/` and `app/` clean for the scoped guard. Already-scrubbed
+    casework files stay as they are; their repo notes remain accurate
+    history.

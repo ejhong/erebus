@@ -14,17 +14,26 @@ exception, and each one is listed in the allowlist in
 
 ## The upstream reference
 
-The upstream is identified ONLY by the `ENGINE_UPSTREAM` environment
-variable / GitHub Actions secret — a git URL. It is never committed as a
-literal anywhere in this repo, because the upstream project's name must
-not appear in any committed file (any casing). CI enforces that with a
-fail-closed, case-insensitive forbidden-string guard on every push and
-PR.
+The upstream is `https://github.com/ejhong/aletheia.git`, and the sync
+tooling reads it from the `ENGINE_UPSTREAM` environment variable / GitHub
+Actions secret.
 
-Because upstream files legitimately contain that name, the sync tooling
-scrubs every pulled file (case-preserving rename to this project's name)
-and compares local files against the *scrubbed* upstream — so the scrub
-itself never shows up as divergence.
+**The name rule** (AGENTS.md §4, narrowed by founder amendment
+2026-08-25): the upstream project's name must not appear in the rendered
+site's inputs — `content/`, `src/`, `app/`, `public/` — so a reader of
+this site never encounters it. CI enforces that with a fail-closed,
+case-insensitive guard scoped to those directories. Elsewhere in the
+repository (this file, docs, casework, tooling, commit history) the
+upstream may be named freely. The original repo-wide rule was dropped
+because it exceeded its purpose and was unachievable anyway: this repo's
+git history predates the split and contains the name throughout.
+
+The sync tooling still renames every pulled text file to this project's
+name (case-preserving) and compares local files against the *renamed*
+upstream — not for secrecy, but because upstream code carries its own
+project name in UI strings, prompt versions, and comments, and this site
+needs its own identity. The rename also keeps `src/` and `app/` clean for
+the scoped guard.
 
 ## Engine paths
 
