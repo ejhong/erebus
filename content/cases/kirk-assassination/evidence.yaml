@@ -1541,3 +1541,61 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-kirk-launch-2026-08-25"
     date: "2026-08-25"
+
+- id: KRK-E057
+  title: "Base rate: rapid post-release scene alteration is documented in comparable cases, always with an undisputed authorizer"
+  claimIds: [KRK-C017]
+  sourceId: SRC-KRK-S001
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "Every fast alteration in the table pairs speed with a named,
+    undisputed authorizer acting after release": Boston's pre-planned
+    city restoration began one minute after the FBI's formal handback;
+    Sutherland Springs' sanctuary was patched and repainted by its owner
+    within seven days; the Nickel Mines schoolhouse was demolished by its
+    owners on day ten.
+  editorInference: >-
+    Speed alone cannot carry a concealment inference: comparable scenes
+    were altered as fast or faster than the UVU courtyard with innocent,
+    documented authorization. The alteration-speed intuition behind the
+    concealment reading is deflated by the measured base rate.
+  exactLocator: "Study KRK-S001, findings 1 and 3 (full table on the study page)"
+  limitations:
+    - "Fifteen comparable venues; venue-based comparability does not control for victim prominence or political salience."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S001 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s001-collect"
+    date: "2026-08-26"
+
+- id: KRK-E058
+  title: "Base rate: the UVU alteration is unmatched in the table on sequence and authority, not on speed"
+  claimIds: [KRK-C013, KRK-C017]
+  sourceId: SRC-KRK-S001
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "No case in the table shows alteration proceeding over a disputed or
+    absent authorization"; where investigators or courts asserted
+    continuing interest, alteration waited — weeks (court freeze), years
+    (trial preservation), or indefinitely (a district attorney withholding
+    release four-plus years). The UVU courtyard is the only case with a
+    disputed authorization on the record and the only fast alteration
+    whose formal release date is absent from public reporting.
+  editorInference: >-
+    The base rate relocates the live question from "how fast" to "on
+    whose authority, in what sequence" — exactly what the GRAMA records
+    request (KRK-R007) targets. Missing release dates are common in
+    public reporting (seven of fifteen venues); a disputed authorization
+    is unique in this table.
+  exactLocator: "Study KRK-S001, findings 2-4 (full table on the study page)"
+  limitations:
+    - "Uniqueness within a fifteen-venue table is weak evidence of rarity in the full population of cases."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S001 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s001-collect"
+    date: "2026-08-26"

@@ -658,3 +658,18 @@
   reliabilityNotes:
     - "First-person account from the paving contractor; strong for what he did and saw, weak for others' intentions."
   background: true
+
+- id: SRC-KRK-S001
+  title: "Workpaper: scene-release-to-alteration intervals in comparable American cases (study KRK-S001)"
+  organization: "This site (AI-authored project work held in the repository)"
+  year: "2026"
+  sourceType: workpaper
+  studyId: KRK-S001
+  identifier: "Pre-registered 2026-08-26 (criteria hash 14c82614b623); collected 2026-08-26"
+  verification: ai_verified
+  verificationNote: >-
+    Every row cell carries its own citation and verification label on the
+    study page; the aggregate findings below are the only ledger-bearing
+    grain.
+  reliabilityNotes:
+    - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."

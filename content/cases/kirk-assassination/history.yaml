@@ -92,3 +92,17 @@
   aiAssisted: true
   kind: content
 
+
+- date: "2026-08-26"
+  change: >-
+    Study KRK-S001 collected: fifteen comparable venues tabulated under
+    the criteria frozen this morning (hash-verified unchanged), with two
+    aggregate findings entering the ledger (KRK-E057, KRK-E058) via the
+    study's workpaper source. On speed alone the UVU alteration is not an
+    outlier; on sequence and authority it is unmatched in the table.
+  reason: >-
+    Collection phase of the site's first pre-registered study, per the
+    two-PR discipline; executes KRK-R011.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
