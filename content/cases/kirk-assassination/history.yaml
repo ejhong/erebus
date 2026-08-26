@@ -198,3 +198,22 @@
     erebus-editorial-audit-v1); publishes only through the constitutional gate's
     multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+
+- date: 2026-08-26
+  change: >-
+    Study KRK-S004 pre-registered (freeze only, zero rows): inconclusive
+    outcomes in firearm-toolmark black-box studies, criteria hash
+    3fa1c832219a. New research item KRK-R014 added. The study reads the
+    ATF examiner's inconclusive comparison (KRK-C004) against the
+    published ground-truth performance of the method itself; collection
+    follows in a separate PR under the frozen criteria.
+  reason: >-
+    The case's central forensic dispute rests on one word —
+    "inconclusive" — that both public misreadings inflate in opposite
+    directions. The method's own black-box literature measures how often
+    that word appears when the truth is known; freezing the study
+    criteria before collection fixes what counts as evidence before
+    anyone sees which way it cuts.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content

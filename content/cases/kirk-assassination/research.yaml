@@ -250,3 +250,37 @@
     institutional-conduct questions in this case gain citable weight; if
     it tracks victim prominence, the anomaly deflates honestly. Either
     outcome publishes.
+
+- id: KRK-R014
+  title: "Base-rate study: inconclusive outcomes in firearm-toolmark black-box studies"
+  summary: >-
+    Tabulate the published ground-truth studies of firearm-toolmark
+    comparison by trained examiners (black-box and validation studies,
+    2000-2026, bullets and cartridge cases): design, response options,
+    the share of inconclusive responses on same-source and
+    different-source pairs, and — critically — each study's convention
+    for scoring inconclusives in its reported error rates. Then read the
+    ATF examiner's inconclusive comparison in this case (KRK-C004)
+    against that distribution. The discriminating question is not
+    whether inconclusives happen — they are a standard response category
+    — but what an inconclusive shifts between the two public misreadings
+    this case documents: "the bullet matched" and "the rifle was
+    cleared." An explicit applicability limit rides every row:
+    black-box materials are intact test-fires; the questioned items here
+    are fragments.
+  claimIds: [KRK-C003, KRK-C004]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Replaces dueling intuitions about the ATF result with the measured
+    behavior of the method itself. If inconclusives are common on true
+    same-source pairs, the result cannot carry "the rifle was cleared";
+    if they are common on true different-source pairs as well, it
+    cannot carry "the link survived" either — the result's diagnostic
+    weight is bounded by the method's own published performance, in
+    whichever direction the table falls. Also quantifies in advance the
+    value of the blind 3-D-metrology re-examination (KRK-R004): if
+    published designs show modern comparison resolving most
+    inconclusives, that re-examination gains priority; if not, the
+    fragments' condition, not examiner effort, is the binding
+    constraint. Either outcome publishes.
