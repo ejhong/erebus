@@ -250,3 +250,19 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  change: >-
+    The article's intelligence-divergence passage now carries study
+    COV-S001: the agency-positions table stated in the featured layer —
+    strongest-ever stated confidence is one agency's moderate,
+    everything else low confidence or abstention, the 2025 shift paired
+    with its own both-remain-plausible sentence — with the study's
+    limits (stated positions, not their merits) in the same breath.
+  reason: >-
+    The ledger carried a collected study the article never mentioned;
+    the narrative-gap rule (operator duty 4, adopted today) makes this
+    lag a detected condition, and this is its first manual instance.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
