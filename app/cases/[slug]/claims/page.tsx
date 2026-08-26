@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { CatalogExplorer } from "@/src/components/CatalogExplorer";
 import { ClaimCard } from "@/src/components/ClaimCard";
 import { LinkedRecordText } from "@/src/components/LinkedRecordText";
@@ -10,7 +11,6 @@ import {
   loadAllCases,
 } from "@/src/domain/load";
 import { paramsOrPlaceholder } from "@/src/domain/staticExport";
-import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return paramsOrPlaceholder(

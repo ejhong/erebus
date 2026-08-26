@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { EvidenceCard } from "@/src/components/EvidenceCard";
 import { LinkedRecordText } from "@/src/components/LinkedRecordText";
 import { VerificationBadge } from "@/src/components/VerificationBadge";
 import { loadAllCases } from "@/src/domain/load";
 import { paramsOrPlaceholder } from "@/src/domain/staticExport";
-import { notFound } from "next/navigation";
 import type { LoadedCase, Source } from "@/src/domain/schema";
 
 function allSources(): { source: Source; loaded: LoadedCase }[] {

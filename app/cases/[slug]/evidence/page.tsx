@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { DirectionTag } from "@/src/components/DirectionTag";
 import { EvidenceCard } from "@/src/components/EvidenceCard";
 import { groupEvidenceByDirection } from "@/src/domain/evidence";
 import { loadAllCases } from "@/src/domain/load";
 import { paramsOrPlaceholder } from "@/src/domain/staticExport";
-import { notFound } from "next/navigation";
 import { directionLabels } from "@/src/domain/schema";
 
 export function generateStaticParams() {
