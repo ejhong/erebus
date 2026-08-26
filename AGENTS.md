@@ -16,7 +16,7 @@ The platform allows contested and uncomfortable questions to be examined serious
 
 The product is:
 
-- a private publication for the founder and a few invited readers;
+- a public publication, unadvertised: open to anyone who finds it, promoted to no one (founder amendment, 2026-08-26 — see docs/DECISIONS.md);
 - a claim graph for careful researchers;
 - an evidence ledger;
 - a research-prioritization system;
@@ -197,11 +197,11 @@ Until explicitly moved into a later phase:
 - **real citations only, with honest verification labels** (`verified` / `ai_verified` / `unverified`) — never fabricate a citation, identifier, or locator; see `docs/CONTENT_POLICY.md`;
 - claim provenance is displayed, not hidden: `ai_extracted` claims are labeled as such; AI assessments are append-only overlay files stamped with runId/model/date/promptVersion and labeled as AI-generated drafts;
 - do not imply that AI-generated assessments are reviewed human conclusions;
-- do not build authentication, databases, or servers into the site itself — it is a Next.js static export served from git via Cloudflare Pages, with access control provided by Cloudflare Access in front of it (see `docs/HOSTING.md`);
+- do not build authentication, databases, or servers into the site itself — it is a Next.js static export served from git via GitHub Pages, with no access control in front of it (see `docs/HOSTING.md`). The site being public is a deliberate consequence of the method rather than a change to it: a page that grades evidence disputes without accusing anyone should be able to survive being read by both sides;
 - do not add live AI calls or autonomous web research to the site itself;
 - the engine (src/, app/, scripts/, workflows) flows ONE WAY from the upstream engine repository into this repo (see `ENGINE.md`); this repo edits only content, configuration, and this constitution — engine improvements are made upstream and synced here;
 - the upstream engine project's name must not appear in the rendered site's inputs — `content/`, `src/`, `app/`, `public/` (any casing) — so a reader of this site never encounters it; enforced by a scoped CI guard. Elsewhere (casework, docs, tooling, commit history — which predates the split and contains the name throughout) it may be named freely, and the `ENGINE_UPSTREAM` reference may be written openly. (Founder amendment, 2026-08-25: narrowed from "never in any committed file" — the original requirement was only ever that the site not reference the upstream, and the repo-wide rule was unachievable anyway given the shared history.);
-- research briefs are committed under `casework/<case-slug>/` (this repo is private); briefs are inputs for case construction, never citable sources — see `casework/README.md`;
+- research briefs are NOT committed to this repository. They are held privately outside it, because the repository is public and briefs routinely contain third-party copyrighted material kept as discovery aids, plus material about living persons that the living-persons rules deliberately keep off the site. Briefs remain what they always were — inputs for case construction, never citable sources — and the constraint on them is unchanged: every citation a brief contains must be independently verified against the primary document before any derived record enters `content/`. Records may still name a brief in `origin.ref` as the provenance of an extraction; such a reference describes where the record came from, not something a reader can open (founder amendment, 2026-08-26 — see docs/DECISIONS.md);
 - minimal dependencies: Next + TypeScript strict + Tailwind + Zod (+ `yaml` parser, vitest dev-only); hand-built SVG/CSS visuals; no chart or UI libraries;
 - three zones, one-way flow: content files → domain loader → pure UI components; one component per domain concept.
 
