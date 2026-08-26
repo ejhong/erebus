@@ -101,3 +101,25 @@
   aiAssisted: true
   kind: housekeeping
 
+- date: "2026-08-26"
+  change: >-
+    Case retitled to name its subject directly rather than its conclusion.
+    The previous titles were evocative but each asserted the case's own
+    finding in the most prominent position on the page, before a reader
+    reached any graded claim or source — a conclusion presented without the
+    evidence, label, or uncertainty that every other assertion on the site
+    has to carry. The clearest instance was this site's first case, whose
+    title asserted the single-shot mechanism that the case exists to grade
+    and does not grade as established.
+
+    Titles now name the event; subtitles continue to carry the specific
+    question, and findings stay where they belong — in claims that are
+    graded, sourced, and revisable.
+  reason: >-
+    Founder direction, 2026-08-26. Applied to all three cases together
+    rather than only the new ones, since leaving one conclusion-asserting
+    title would be incoherent.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
