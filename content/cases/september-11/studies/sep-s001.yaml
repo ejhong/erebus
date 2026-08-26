@@ -92,11 +92,113 @@ columns:
   - abnormality finding (instruments, significance)
   - authors' stated interpretation
   - engagement with the official explanation
-rows: []
-findings: []
-limitations: []
-runId: 2026-08-26-study-sep-s001-freeze
+rows:
+  - cells:
+      study: "Poteshman 2006, 'Unusual Option Market Activity and the Terrorist Attacks of September 11, 2001'"
+      year and venue: "Journal of Business 79(4):1703-1726 (2006), doi 10.1086/503645"
+      data and window: "CBOE option-market data; target window in early September 2001 judged against benchmark distributions built from 1990-2001 for the largest-capitalization firms"
+      method: "quantile placement of option-volume statistics against long-run historical distributions"
+      abnormality finding (instruments, significance): "two-sided by the paper's own accounting: the ShortLong statistic's maximum for AMR or UAL sits at the 0.80 quantile daily and the 0.49 quantile judged as a windowed maximum ('could hardly have been more ordinary'); the abnormal long-put measure (AbnLongPut) for AMR or UAL sits at the 0.99 quantile daily and 0.96 windowed"
+      authors' stated interpretation: "'there was an unusually high level of put buying. This finding is consistent with informed investors having traded options in advance of the attacks' (abstract, verbatim)"
+      engagement with the official explanation: "none — the paper measures market-level statistics and does not address the trade-level attributions in the official record"
+    citation:
+      text: "Journal of Business 79(4):1703-1726, doi 10.1086/503645 (full text read at native verification, including the quantile results on both statistics)"
+      url: "https://doi.org/10.1086/503645"
+      verification: ai_verified
+  - cells:
+      study: "Wong, Thompson & Teh 2011, 'Was there abnormal trading in the S&P 500 index options prior to the September 11 attacks?'"
+      year and venue: "Multinational Finance Journal 15(1-2):1-46 (2011); circulated earlier as SSRN working paper 1588523"
+      data and window: "CBOE SPX index options around September 2001; out-of-, at-, and in-the-money puts and in-the-money calls"
+      method: "Student's t-statistics and non-parametric tests against null hypotheses of no abnormal trading"
+      abnormality finding (instruments, significance): "rejects the no-abnormal-trading null for OTM, ATM and ITM SPX puts and ITM SPX calls before the attacks; reports patterns consistent with three bearish strategies (put purchase, put bear spread, naked ITM call write); VIX used as a cross-check"
+      authors' stated interpretation: "'consistent with insiders anticipating the 9-11 attacks' (abstract, verbatim)"
+      engagement with the official explanation: "does not engage the specific trade-tracing in the official record"
+    citation:
+      text: "SSRN abstract 1588523 (abstract read verbatim at native verification); published as Multinational Finance Journal 15(1-2):1-46 per the journal's RePEc listing (handle RePEc:mfj:journl:v:15:y:2011:i:1-2:p:1-46)"
+      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1588523"
+      verification: ai_verified
+  - cells:
+      study: "Chesney, Crameri & Mancini 2015, 'Detecting abnormal trading activities in option markets'"
+      year and venue: "Journal of Empirical Finance 33:263-275 (2015), doi 10.1016/j.jempfin.2015.03.008"
+      data and window: "9.6 million daily option prices, 31 companies mainly in airline, banking and insurance sectors, 1996-2009; intraday stock data for the hedging test"
+      method: "abnormal-trade detection via unusual open-interest and volume increments plus realized gains, with multiple-hypothesis-testing control of false discoveries and a nonparametric hedging test"
+      abnormality finding (instruments, significance): "abnormal trades cluster before 9/11 — 13 transactions identified (4 could not be identified further); named underlyings include American Airlines, United Airlines and Boeing (lesser signals for Delta and KLM); an AMR/UAL example realizes roughly $3 million within weeks; the non-hedging hypothesis is not rejected"
+      authors' stated interpretation: "an explicit joint hypothesis, verbatim: 'Without knowing trader identities, it is not possible to disentangle whether put option abnormal trades are due to informed traders or corporate insiders hedging their human capital'"
+      engagement with the official explanation: "does not adjudicate the official trade-tracing; its method addresses exactly the multiple-testing worry the older literature left open"
+    citation:
+      text: "Journal of Empirical Finance 33:263-275, doi 10.1016/j.jempfin.2015.03.008 (full published text read at native verification, including the 13-transaction 9/11 cluster and the joint-hypothesis language)"
+      url: "https://doi.org/10.1016/j.jempfin.2015.03.008"
+      verification: ai_verified
+findings:
+  - statement: >-
+      The peer-reviewed literature is three studies, and on statistics
+      it is unanimous: each finds abnormality in its instruments —
+      airline long-put volume at the 0.99 quantile (Poteshman), SPX
+      option nulls rejected across moneyness classes (Wong et al.), and
+      a false-discovery-controlled cluster of 13 unhedged abnormal
+      trades including AMR, UAL and Boeing (Chesney et al.). SEP-C015's
+      two halves — anomalous volumes, and peer-reviewed findings
+      statistically consistent with informed trading — are both the
+      literature's own language.
+    evidenceId: SEP-E040
+  - statement: >-
+      The interpretations are exactly where public quoting collapses,
+      in both directions: Poteshman's own paper shows a second statistic
+      looking 'could hardly have been more ordinary' beside the elevated
+      one; Wong et al. say 'consistent with insiders anticipating'
+      while establishing only statistical abnormality; and Chesney et
+      al. state verbatim that without trader identities the abnormal
+      puts cannot be disentangled from insiders hedging their own
+      human capital. No paper claims to establish foreknowledge; no
+      paper rules it out.
+    evidenceId: SEP-E040
+  - statement: >-
+      The statistical literature and the official attribution never
+      meet: none of the three studies engages the Commission's specific
+      trade-tracing — the note recording that a single U.S. institutional
+      investor bought 95 percent of the September 6 UAL puts as part of
+      a strategy that included 115,000 AMR shares, and that the
+      September 10 AMR activity traced substantially to an options
+      newsletter faxed September 9 (the declassified SEC interview
+      memorandum records 26 of 28 interviewed buyers of the relevant
+      series citing it). Market-level abnormality and innocuous
+      trade-level attribution are compatible claims about different
+      grains — which is why the tracing files, not more statistics, are
+      what SEP-R005 asks for.
+    evidenceId: SEP-E040
+  - statement: >-
+      Comparandum, quoted for the record (not a row): the Commission
+      Report's note states that 'some unusual trading did in fact
+      occur, but each such trade proved to have an innocuous
+      explanation,' and that investigators 'found that the apparently
+      suspicious consistently proved innocuous.' The evidence behind
+      those sentences is the unreleased working record this case's
+      research agenda targets.
+limitations:
+  - >-
+    Three studies is the whole peer-reviewed population found; the
+    conclusion 'the literature is unanimous on abnormality' is three
+    data points, and publication incentives against null results are
+    unmeasured here.
+  - >-
+    The Wong, Thompson & Teh row's venue rests on the journal's RePEc
+    listing and the SSRN record; the published PDF itself was not
+    retrieved at collection, and the row's quantitative cells rest on
+    the abstract's own statements.
+  - >-
+    Searcher coverage: GEMINI_COVERAGE. The OpenAI substitute run
+    marked its unverifiable cells NOT FOUND honestly this time but
+    supplied a fabricated Commission quotation with an invented page
+    locator (flagged NOT FOUND by the searcher itself); the comparandum
+    quoted in finding 4 is the natively verified note text instead.
+  - >-
+    Stage provenance: the freeze stamp (runId
+    2026-08-26-study-sep-s001-freeze, promptVersion
+    erebus-study-freeze-v1) is preserved in the freeze PR and the
+    header comment; criteria hash f2938e9757ab re-verifies unchanged at
+    collection.
+runId: 2026-08-26-study-sep-s001-collect
 model: Claude Fable 5 (Anthropic), via Cursor
-date: 2026-08-26
-promptVersion: erebus-study-freeze-v1
+date: "2026-08-26"
+promptVersion: erebus-study-collect-v1
 humanReviewed: false
