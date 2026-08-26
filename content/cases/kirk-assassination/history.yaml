@@ -241,3 +241,30 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  change: >-
+    Study KRK-S004 collection published: seven ground-truth studies of
+    firearm-toolmark examination verified natively against primary
+    documents under the criteria frozen earlier the same day (hash
+    3fa1c832219a). Two evidence records enter the ledger on the
+    ballistics claims — KRK-E061 (qualifies KRK-C003/C004: inconclusive
+    is a standard non-error outcome; neither public misreading
+    survives) and KRK-E062 (qualifies KRK-C004: the measured asymmetry
+    toward different-source does not transfer to fragments, bounding
+    the ATF result to little diagnostic weight in either direction).
+    Three post-freeze candidates surfaced by searchers (Guyll 2023
+    PNAS and Hicklin 2024, the only damaged-bullet study, by the
+    OpenAI run; Fadul 2011, the closed-set exemplar, by the Gemini
+    run) were natively verified and included with discovery paths on
+    the rows. Workpaper source SRC-KRK-S004 added.
+  reason: >-
+    The case's central forensic dispute turns on what "inconclusive"
+    means; the method's own black-box literature measures that when
+    ground truth is known. The frozen criteria fixed the population
+    before any rate was looked up, so the answer — common, non-error,
+    asymmetric on intact specimens, quality-dominated on damaged ones —
+    was set by the literature, not chosen after it.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content

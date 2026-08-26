@@ -715,3 +715,17 @@
     study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+
+- id: SRC-KRK-S004
+  title: "Workpaper: inconclusive outcomes in firearm-toolmark black-box studies (study KRK-S004)"
+  organization: "This site (AI-authored project work held in the repository)"
+  year: "2026"
+  sourceType: workpaper
+  studyId: KRK-S004
+  identifier: "Criteria frozen 2026-08-26 (hash 3fa1c832219a); table collected 2026-08-26"
+  verification: ai_verified
+  verificationNote: >-
+    Every row cell carries its own citation and verification label on the
+    study page; the aggregate findings are the only ledger-bearing grain.
+  reliabilityNotes:
+    - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
