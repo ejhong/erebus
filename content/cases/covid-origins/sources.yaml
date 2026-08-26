@@ -453,3 +453,17 @@
   reliabilityNotes:
     - "A state position paper from the government holding the records this case most needs; it declares China's origins investigation complete, which is itself the central obstacle the research agenda addresses."
     - "Admitted so that the custodian's stated position is on the record alongside the requests it has declined, never as evidence about the origin."
+
+- id: SRC-COV-S001
+  title: "Workpaper: the agency-positions ledger on COVID-19 origins (study COV-S001)"
+  organization: "This site (AI-authored project work held in the repository)"
+  year: "2026"
+  sourceType: workpaper
+  studyId: COV-S001
+  identifier: "Criteria frozen 2026-08-26 (hash 21be3901b25a); table collected 2026-08-26"
+  verification: ai_verified
+  verificationNote: >-
+    Every row cell carries its own citation and verification label on the
+    study page; the aggregate findings are the only ledger-bearing grain.
+  reliabilityNotes:
+    - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."

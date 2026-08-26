@@ -97,11 +97,156 @@ columns:
   - stated confidence
   - stated basis
   - change from prior stated position
-rows: []
-findings: []
-limitations: []
-runId: 2026-08-26-study-cov-s001-freeze
+rows:
+  - cells:
+      agency or component: "National Intelligence Council and four IC elements"
+      date of stated position: "2021-10-29 (declassified IC assessment, dni.gov)"
+      stated conclusion: "the initial infection 'was most likely caused by natural exposure to an animal infected with it or a close progenitor virus'"
+      stated confidence: "'assess with low confidence' (verbatim)"
+      stated basis: "'China's officials' lack of foreknowledge, the numerous vectors for natural exposure, and other factors' (verbatim)"
+      change from prior stated position: "baseline public instance"
+    citation:
+      text: "ODNI, Declassified Assessment of COVID-19 Origins, released October 29, 2021 (dni.gov PDF, full text read at native verification)"
+      url: "https://www.dni.gov/files/ODNI/documents/assessments/Unclassified-Summary-of-Assessment-on-COVID-19-Origins.pdf"
+      verification: ai_verified
+  - cells:
+      agency or component: "One IC element (identified in later official reporting as consistent with the FBI's stated position)"
+      date of stated position: "2021-10-29 (same declassified assessment)"
+      stated conclusion: "the first human infection 'most likely was the result of a laboratory-associated incident, probably involving experimentation, animal handling, or sampling by the Wuhan Institute of Virology'"
+      stated confidence: "'assesses with moderate confidence' (verbatim)"
+      stated basis: "'the inherently risky nature of work on coronaviruses' (verbatim); the fuller text adds WIV biosafety publications, genetic epidemiology, and WIV sampling as a node into Wuhan"
+      change from prior stated position: "baseline public instance"
+    citation:
+      text: "Same document; the fuller basis language from the full declassified assessment (dni.gov FOIA copy, read at native verification)"
+      url: "https://www.dni.gov/files/documents/FOIA/DF-2022-00031-Declassified_Assessment_on_COVID-19_Origins.pdf"
+      verification: ai_verified
+  - cells:
+      agency or component: "Three IC elements; and the IC as a whole"
+      date of stated position: "2021-10-29 (same declassified assessment)"
+      stated conclusion: "three elements 'remain unable to coalesce around either explanation without additional information'; IC-wide: both hypotheses plausible; 'the virus was not developed as a biological weapon' (broad agreement); most agencies assess with low confidence it 'probably was not genetically engineered' (two consider the evidence insufficient either way); China's officials had no foreknowledge"
+      stated confidence: "as quoted per finding"
+      stated basis: "insufficient diagnosticity of available reporting (per the assessment's own framing)"
+      change from prior stated position: "baseline public instance"
+    citation:
+      text: "Same declassified assessment (dni.gov, read at native verification)"
+      url: "https://www.dni.gov/files/ODNI/documents/assessments/Unclassified-Summary-of-Assessment-on-COVID-19-Origins.pdf"
+      verification: ai_verified
+  - cells:
+      agency or component: "FBI (director, on the record)"
+      date of stated position: "2023-02-28 (national television interview)"
+      stated conclusion: "'The FBI has for quite some time now assessed that the origins of the pandemic are most likely a potential lab incident in Wuhan' (verbatim)"
+      stated confidence: "not stated in the interview; moderate confidence per the official documents carrying the bureau's position"
+      stated basis: "not stated beyond classification constraints ('there are not a whole lot of details I can share that aren't classified')"
+      change from prior stated position: "no change — the first on-record, first-person confirmation of the documented position"
+    citation:
+      text: "Wray interview of February 28, 2023, quoted verbatim across contemporaneous reports (CNN, ABC, Reuters, NPR, all read at native verification)"
+      url: "https://www.reuters.com/business/healthcare-pharmaceuticals/fbi-director-says-china-lab-leak-likely-caused-covid-pandemic-2023-03-01/"
+      verification: ai_verified
+  - cells:
+      agency or component: "Department of Energy and FBI (as carried in the statutorily compelled report)"
+      date of stated position: "2023-06-23 (ODNI report under the COVID-19 Origin Act, declassified by the DNI)"
+      stated conclusion: "'The Department of Energy and the Federal Bureau of Investigation assess that a laboratory-associated incident was the most likely cause of the first human infection with SARS-CoV-2, although for different reasons' (verbatim)"
+      stated confidence: "DOE low confidence, FBI moderate confidence (per the report's account of positions)"
+      stated basis: "the report states the divergence driver for the IC generally: 'Variations in IC analytic views... largely stem from differences in how agencies weigh intelligence reporting and scientific publications and intelligence and scientific gaps' (verbatim)"
+      change from prior stated position: "DOE's position appears in the official record here for the first time (earlier February 2023 press descriptions were anonymous-sourced — excluded by the frozen rule until this carrier)"
+    citation:
+      text: "ODNI, Potential Links Between the Wuhan Institute of Virology and the Origin of the COVID-19 Pandemic, declassified June 23, 2023 (odni.gov PDF, read at native verification)"
+      url: "https://www.odni.gov/files/ODNI/documents/assessments/Report-on-Potential-Links-Between-the-Wuhan-Institute-of-Virology-and-the-Origins-of-COVID-19-20230623.pdf"
+      verification: ai_verified
+  - cells:
+      agency or component: "CIA and one other agency (as carried in the same report)"
+      date of stated position: "2023-06-23"
+      stated conclusion: "'The Central Intelligence Agency and another agency remain unable to determine the precise origin of the COVID-19 pandemic, as both (natural and lab) hypotheses rely on significant assumptions or face challenges with conflicting reporting' (verbatim, as quoted from the report in contemporaneous coverage)"
+      stated confidence: "explicit abstention"
+      stated basis: "significant assumptions on both hypotheses; conflicting reporting"
+      change from prior stated position: "continuation of the 2021 unable-to-coalesce position"
+    citation:
+      text: "Same June 2023 declassified report; abstention language as quoted in Reuters and BBC coverage of June 23-24, 2023 (read at native verification)"
+      url: "https://www.reuters.com/world/no-direct-evidence-covid-19-pandemic-started-wuhan-lab-us-intelligence-report-2023-06-24/"
+      verification: ai_verified
+  - cells:
+      agency or component: "CIA (official agency spokesperson statement)"
+      date of stated position: "2025-01-25"
+      stated conclusion: "'CIA assesses with low confidence that a research-related origin of the COVID-19 pandemic is more likely than a natural origin based on the available body of reporting. CIA continues to assess that both research-related and natural origin scenarios of the COVID-19 pandemic remain plausible' (verbatim)"
+      stated confidence: "'low confidence' (verbatim); contemporaneous coverage notes the IC definition — evidence 'deficient, inconclusive or contradictory'"
+      stated basis: "'the available body of reporting'; officials stated the review used no new intelligence, was ordered under the prior administration, and was declassified by the incoming director"
+      change from prior stated position: "the documented change: from explicit abstention (2021, 2023) to a low-confidence research-related lean"
+    citation:
+      text: "CIA spokesperson statement of January 25, 2025, quoted verbatim in AP, Reuters, CBS, NBC and BBC coverage (read at native verification)"
+      url: "https://apnews.com/article/covid-cia-trump-china-pandemic-lab-leak-9ab7e84c626fed68ca13c8d2e453dde1"
+      verification: ai_verified
+findings:
+  - statement: >-
+      The precise table refutes both popular compressions. "The agencies
+      concluded lab leak" and "the agencies concluded natural origin"
+      are each false as stated: at every documented date the positions
+      span a low-confidence natural-origin group (NIC plus four
+      elements), one moderate-confidence and later one low-confidence
+      laboratory-lean (FBI; DOE), and explicit abstentions (three
+      elements in 2021; CIA and one other in 2023) — with all agencies
+      agreeing throughout that both hypotheses are plausible, that the
+      virus was not developed as a bioweapon, and (most agencies, low
+      confidence) that it probably was not genetically engineered.
+    evidenceId: COV-E032
+  - statement: >-
+      Confidence language is the load-bearing data the public debate
+      drops: no United States agency has ever held a high-confidence
+      position on origin in the released record. The strongest stated
+      confidence anywhere in the table is the FBI's moderate; every
+      other position — natural-origin, laboratory-lean, and the CIA's
+      2025 shift — is low confidence or explicit abstention, and the
+      CIA statement itself pairs its lean with a same-sentence
+      reaffirmation that both scenarios remain plausible.
+    evidenceId: COV-E032
+  - statement: >-
+      The changes over time are few, dated, and documented: DOE's
+      laboratory-lean enters the official record in the June 2023
+      statutorily compelled report; the CIA moves from abstention to a
+      low-confidence research-related lean in January 2025, with
+      officials stating the review used no new intelligence. ODNI's own
+      stated cause of the divergence — 'differences in how agencies
+      weigh intelligence reporting and scientific publications' rather
+      than different evidence pools — is exactly the proposition the
+      declassification request this study feeds (COV-R007) would let
+      the public test.
+    evidenceId: COV-E032
+  - statement: >-
+      Reported ungraded, per the freeze: the February 2023 press
+      descriptions of DOE's position (anonymous-sourced until the June
+      2023 official carrier); a searcher-proposed July 2023
+      congressional-testimony quotation of the FBI director that could
+      not be natively verified and was excluded rather than trusted;
+      and the April 2025 White House origins webpage — an official
+      executive-communication document, but not an agency assessment,
+      and therefore outside the frozen population (noted here so its
+      absence is a decision on the record, not an oversight).
+limitations:
+  - >-
+    The table records stated positions, not their merits: it cannot say
+    which agency weighed the evidence correctly, and it inherits the
+    releases' own limits — the classified annexes and the analytic
+    record behind each confidence label remain unreleased, which is
+    COV-R007's point.
+  - >-
+    Agency attribution in the 2021 assessment is by grouped description
+    ('one IC element,' 'four elements'), not by name; the FBI row's
+    identification rests on the bureau's own later on-record statements
+    and the 2023 report's named positions, and the 'one other agency'
+    abstaining alongside the CIA in 2023 remains unnamed in the public
+    record.
+  - >-
+    Searcher coverage: GEMINI_COVERAGE. The OpenAI substitute run
+    proposed one additional position-instance (a July 2023 testimony
+    quotation) whose wording could not be natively verified and which
+    was excluded per the never-cite-briefs rule.
+  - >-
+    Stage provenance: the freeze stamp (runId
+    2026-08-26-study-cov-s001-freeze, promptVersion
+    erebus-study-freeze-v1) is preserved in the freeze PR and the header
+    comment; criteria hash 21be3901b25a re-verifies unchanged at
+    collection.
+runId: 2026-08-26-study-cov-s001-collect
 model: Claude Fable 5 (Anthropic), via Cursor
-date: 2026-08-26
-promptVersion: erebus-study-freeze-v1
+date: "2026-08-26"
+promptVersion: erebus-study-collect-v1
 humanReviewed: false

@@ -1045,3 +1045,39 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-covid-launch-2026-08-26"
     date: "2026-08-26"
+
+- id: COV-E032
+  title: "Agency-positions ledger: no high-confidence position exists; the divergence is stated, dated, and low-confidence throughout"
+  claimIds: [COV-C014]
+  sourceId: SRC-COV-S001
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Seven dated, on-record position-instances from official documents,
+    2021-2025: a natural-origin group at low confidence (NIC plus four
+    elements), laboratory-leans at moderate (FBI) and low (DOE)
+    confidence, explicit abstentions (three elements in 2021; CIA and
+    one other agency in 2023), and one documented change (CIA to a
+    low-confidence research-related lean, January 2025, with officials
+    stating no new intelligence was used). All agencies throughout:
+    both hypotheses plausible; not a bioweapon; most agencies, low
+    confidence, probably not genetically engineered. ODNI's stated
+    divergence driver: differences in weighing, not different evidence.
+  editorInference: >-
+    COV-C014's non-convergence claim is confirmed and extended through
+    January 2025 with verbatim confidence language. Both popular
+    compressions — "the agencies concluded lab leak" and "the agencies
+    concluded natural origin" — fail against the table; the strongest
+    confidence any agency has ever stated is moderate, held by exactly
+    one. Whether the divergence reflects different evidence or
+    different weighting is not answerable from the releases, which is
+    COV-R007's declassification question, not this ledger's.
+  exactLocator: "Study COV-S001, findings 1-3 (full table on the study page)"
+  limitations:
+    - "Stated positions only; the analytic record behind each confidence label remains classified."
+  reviewState: ai_extracted
+  origin:
+    ref: "study COV-S001 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-cov-s001-collect"
+    date: "2026-08-26"
