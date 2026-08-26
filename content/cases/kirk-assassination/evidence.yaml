@@ -1603,3 +1603,69 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-krk-s001-collect"
     date: "2026-08-26"
+
+- id: KRK-E059
+  title: "Base rate: no comparable case has federal fronting above special-agent-in-charge rank"
+  claimIds: [KRK-C037]
+  sourceId: SRC-KRK-S002
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    In thirteen comparable state-jurisdiction cases, day-one
+    investigative briefings were fronted by local or state officials in
+    every case; federal podium appearances peaked at
+    special-agent-in-charge rank (four cases, technical lanes beside the
+    local commander); in four cases no federal public statement was
+    found at all. The three headquarters-level items were a written
+    attorney-general support pledge deferring to the state lead
+    (Virginia Tech), a written statement about the FBI's own mishandled
+    tip (Parkland), and an attorney general announcing a non-criminal
+    review of the police response two weeks later (Uvalde). No case
+    shows a federal official above SAC rank personally fronting
+    evidence announcements, and none at any rank walking the scene or
+    framing the bureau as leading.
+  editorInference: >-
+    The FBI director's in-person, on-scene role within 48 hours in the
+    target case — announcing forensic results in a case with no federal
+    charge — is unmatched in the table on the frozen variable (rank and
+    function of federal public fronting). This supports the comparative
+    component of KRK-C037: the public-facing role exceeded the pattern
+    in comparable cases. It does not establish why.
+  exactLocator: "Study KRK-S002, findings 2-3 (full table on the study page)"
+  limitations:
+    - "Uniqueness within a thirteen-case venue-based table does not control for victim prominence or political salience; the profile-tracking explanation survives (KRK-R013)."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S002 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s002-collect"
+    date: "2026-08-26"
+
+- id: KRK-E060
+  title: "Base rate: FBI participation itself is universal in comparable cases"
+  claimIds: [KRK-C037]
+  sourceId: SRC-KRK-S002
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Thirteen of thirteen comparable state-jurisdiction cases had
+    documented FBI investigative participation — evidence response,
+    laboratory work, interviews, victim services — always framed as
+    assistance to a state or local lead, including cases where the FBI
+    deployed a hundred or more personnel (Aurora, Umpqua, Route 91).
+  editorInference: >-
+    The bare fact of immediate FBI involvement in a state crime carries
+    no information — it is the norm, not an anomaly. Any inference from
+    KRK-C037 rests entirely on the rank, function, and speed of the
+    public fronting, not on participation; readings of the claim that
+    treat FBI presence as itself suspicious are contradicted by this
+    base rate.
+  exactLocator: "Study KRK-S002, finding 1 (full table on the study page)"
+  limitations:
+    - "Role depth varies widely across the table; the study measures public-facing posture, not internal case control."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S002 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s002-collect"
+    date: "2026-08-26"

@@ -1,5 +1,13 @@
-# Study freeze — pre-registration only (two-PR discipline, see
-# docs/STUDIES_PROPOSAL.md). Zero rows by design. Executes KRK-R013.
+# Stage record (append-only; the provenance stamp below reflects the
+# latest stage, this comment preserves the earlier one in-file):
+#   frozen    2026-08-26 — runId 2026-08-26-study-krk-s002-freeze,
+#             promptVersion erebus-study-freeze-v1, zero rows by design,
+#             criteria hash 85af367d00c3 (merged as the freeze PR)
+#   collected 2026-08-26 — runId 2026-08-26-study-krk-s002-collect,
+#             promptVersion erebus-study-collect-v1, 13 rows; hash
+#             re-verified unchanged at collection
+# The criteria hash is the cross-stage invariant; any criteria edit
+# after the freeze fails the build.
 id: KRK-S002
 title: Federal public-facing role in state-jurisdiction public-venue homicides
 question: Was the FBI's first-week public role in this case — director-level
@@ -124,11 +132,354 @@ columns:
   - first federal public statement
   - statement rank
   - stated nexus
-rows: []
-findings: []
-limitations: []
-runId: 2026-08-26-study-krk-s002-freeze
+rows:
+  - cells:
+      case: Route 91 Harvest festival shooting (Las Vegas)
+      event date: 2017-10-01
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — FBI Evidence Response took over scene processing; later
+        contracted the cleanup and wrote the behavioral report
+      role depth: evidence-response lead on scene; laboratory; behavioral analysis
+      first federal public statement: "joint LVMPD press conferences in the first days
+        (photographed at the 2017-10-04 briefing; agency framing: no evidence of
+        terrorism)"
+      statement rank: special agent in charge (Aaron Rouse), beside the sheriff
+      stated nexus: assistance at local request
+    citation:
+      text: 'Two sources, each exact. Linked: Las Vegas Review-Journal, October 4,
+        2017, "Authorities still not clear on who Stephen Paddock was" — SAC
+        Aaron Rouse at the joint LVMPD briefing (statement cells).
+        Cleanup/behavioral-report cell: KNPR News, November 17, 2017, "FBI takes
+        over Las Vegas shooting scene cleanup," knpr.org/knpr/2017-11-17.'
+      url: https://www.reviewjournal.com/local/the-strip/authorities-still-not-clear-on-who-stephen-paddock-was/
+      verification: ai_verified
+  - cells:
+      case: Sandy Hook Elementary (Newtown)
+      event date: 2012-12-14
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — interviews local and national, behavioral analysis,
+        tactical clearing, victim services; US Attorney's Office at the
+        emergency operations center monitoring possible federal crimes (State's
+        Attorney report)
+      role depth: broad investigative assistance
+      first federal public statement: none found — Connecticut State Police Lt. Vance
+        was the sole public voice at the briefings
+      statement rank: none
+      stated nexus: assistance to the state investigation; USAO oversight of possible
+        federal offenses
+    citation:
+      text: "Two sources, each exact. Linked (primary): Report of the State's Attorney
+        for the Judicial District of Danbury, November 25, 2013, law-enforcement
+        participation section (participation and nexus cells). Statement cells:
+        PBS NewsHour, December 14, 2012, \"How Tragic Events Unfolded at Sandy
+        Hook Elementary,\"
+        pbs.org/newshour/show/how-tragic-events-unfolded-at-sandy-hook-in-conne\
+        cticut (Lt. Vance fronting the briefings)."
+      url: https://doi.org/10.13016/f6u6-o0p4
+      verification: ai_verified
+  - cells:
+      case: Marjory Stoneman Douglas (Parkland)
+      event date: 2018-02-14
+      prosecution: state (Broward County; no federal charges)
+      fbi participated: yes — assistance to BSO/FDLE
+      role depth: investigative assistance
+      first federal public statement: 2018-02-16 — a WRITTEN headquarters statement
+        carrying a quote from the FBI director, addressing the bureau's OWN
+        mishandled January tip; not case-evidence fronting
+      statement rank: headquarters (written), director quoted on the FBI's own conduct
+      stated nexus: assistance; the HQ statement concerned the FBI's tip-line failure
+    citation:
+      text: 'FBI national press release, "FBI Statement on the Shooting in Parkland,
+        Florida," February 16, 2018. Canonical locator:
+        fbi.gov/news/press-releases/fbi-statement-on-the-shooting-in-parkland-florida
+        (live page bot-blocks mechanical checks); linked to the Internet Archive
+        snapshot of 2026-07-07, whose full text — including the Wray quote and
+        the protocols-not-followed finding — was read and matches the cells.'
+      url: https://web.archive.org/web/20260707232542/https://www.fbi.gov/news/press-releases/fbi-statement-on-the-shooting-in-parkland-florida
+      verification: ai_verified
+  - cells:
+      case: Robb Elementary (Uvalde)
+      event date: 2022-05-24
+      prosecution: state (Uvalde County; no federal charges)
+      fbi participated: yes — federal responders on scene (a Border Patrol officer
+        killed the shooter); an FBI unit chief on the later DOJ review team
+      role depth: response and assistance; DOJ COPS-led critical incident review of
+        the police response, at the mayor's request
+      first federal public statement: day-one investigative fronting was state
+        (DPS/governor); the first senior federal appearance was 2022-06-08, the
+        attorney general in Washington announcing the NON-criminal review of the
+        law-enforcement response
+      statement rank: attorney general — two weeks later, about the police response,
+        not case evidence
+      stated nexus: assistance; explicitly not a criminal federal investigation
+    citation:
+      text: "Two sources, each exact. Linked: Texas Tribune, June 8, 2022, \"Federal
+        investigation into Uvalde shooting is underway\" (AG announcement,
+        non-criminal framing, mayor's request). Participation/review cells: DOJ
+        COPS Office, \"Critical Incident Review: Active Shooter at Robb
+        Elementary School,\" cops.usdoj.gov/uvalde (federal response and review
+        team)."
+      url: https://www.texastribune.org/2022/06/08/uvalde-shooting-doj-investigation/
+      verification: ai_verified
+  - cells:
+      case: Michigan State University
+      event date: 2023-02-13
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — witness interviews, victim services, scene assistance
+      role depth: investigative assistance ('whatever the chief and his folks need')
+      first federal public statement: special agent in charge at the first campus
+        briefings (motive unknown; support framing)
+      statement rank: special agent in charge (James Tarasca)
+      stated nexus: assistance to MSU police
+    citation:
+      text: 'Two sources, each exact. Linked: WILX Lansing, February 16, 2023, "FBI
+        joins MSU police to investigate deadly campus shooting" (Tarasca support
+        framing, role depth). Statement cells: NBC Chicago, February 14, 2023,
+        "All 8 Victims in Michigan State University Shooting Were MSU Students,"
+        nbcchicago.com/news/local/all-8-victims-in-michigan-state-university-shooting-were-students-police/3071879
+        (Tarasca at the briefing on motive).'
+      url: https://www.wilx.com/2023/02/16/fbi-joins-msu-police-investigate-deadly-campus-shooting/
+      verification: ai_verified
+  - cells:
+      case: The Covenant School (Nashville)
+      event date: 2023-03-27
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — manifesto/writings analysis with MNPD; ATF agents on scene
+      role depth: investigative assistance
+      first federal public statement: no federal official fronted the briefings (MNPD
+        chief and TBI director spoke); the ATF field office issued a same-day
+        assistance statement on social media
+      statement rank: field-office agency statement only
+      stated nexus: assistance to MNPD
+    citation:
+      text: 'Two sources, each exact. Linked: CBS News, March 28, 2023, "Nashville
+        school shooting was apparently a targeted attack" (chief: "our team and
+        the FBI"; participation cell). ATF/TBI cells: USA Today live coverage,
+        March 27, 2023, "Covenant school shooting: 3 kids, 3 adults killed in
+        Nashville,"
+        usatoday.com/story/news/nation/2023/03/27/covenant-school-shooting-nashville-live-updates/11549814002
+        (ATF field statement, TBI assisting role).'
+      url: https://www.cbsnews.com/news/nashville-school-shooting-covenant-school/
+      verification: ai_verified
+  - cells:
+      case: Astroworld crowd crush (Houston)
+      event date: 2021-11-05
+      prosecution: state grand jury (no indictments); no federal charges
+      fbi participated: offered assistance in week one; later provided a public
+        evidence-upload portal
+      role depth: technical assistance only; HPD emphatically retained the lead
+      first federal public statement: an FBI Houston public-affairs officer's written
+        statement offering assistance (~day 4); no federal official at the
+        briefings
+      statement rank: field-office public-affairs statement
+      stated nexus: standard offer of tools and techniques to a local investigation
+    citation:
+      text: 'Three sources, each exact. Linked: Billboard, November 9, 2021, "FBI
+        Offers to Join Astroworld Investigation" (public-affairs statement,
+        quoted; statement cells). HPD-lead cell: Los Angeles Times, November 10,
+        2021, "Houston police say no need for outside probe of Astroworld
+        deaths,"
+        latimes.com/world-nation/story/2021-11-10/houston-police-outside-probe-into-astroworld.
+        Portal cell: ABC13 Houston, January 2022,
+        abc13.com/post/astroworld-fest-latest-fbi-houston-police-investigation-travis-scott-portal-on/11468503.'
+      url: https://www.billboard.com/music/music-news/fbi-join-astroworld-investigation-probe-9657423/
+      verification: ai_verified
+  - cells:
+      case: Century 16 theater (Aurora)
+      event date: 2012-07-20
+      prosecution: state (Arapahoe County; no federal charges)
+      fbi participated: yes — about 100 FBI personnel on scene with Aurora PD, plus ATF
+      role depth: heavy investigative assistance (interviews, evidence, out-of-state leads)
+      first federal public statement: special agent in charge at the day-one briefings
+        ('we do not see a nexus to terrorism')
+      statement rank: special agent in charge (James Yacone), beside the police chief
+      stated nexus: assistance; terrorism publicly ruled out early
+    citation:
+      text: CBS Colorado, July 20, 2012, "Suspect Bought 4 Guns Used In Mass Shooting
+        In Last 60 Days" — SAC Yacone quoted at the briefing ("100 folks on
+        scene"; "we do not see a nexus to terrorism").
+      url: https://www.cbsnews.com/colorado/news/4-guns-used-in-aurora-theater-shooting-purchased-in-last-2-months/
+      verification: ai_verified
+  - cells:
+      case: West Nickel Mines Amish School
+      event date: 2006-10-02
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — assisted the Pennsylvania State Police
+      role depth: assistance
+      first federal public statement: none found — the state police commissioner fronted all briefings
+      statement rank: none
+      stated nexus: assistance
+    citation:
+      text: CNN, October 3, 2006, "Police detail school shooter's molestation claim" —
+        transcript highlights of Commissioner Miller's briefing, which he
+        fronted alone.
+      url: https://www.cnn.com/2006/US/10/03/miller.tues/
+      verification: ai_verified
+  - cells:
+      case: Umpqua Community College
+      event date: 2015-10-01
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — over a hundred personnel (evidence response, SWAT,
+        negotiators, victim specialists, per the Portland SAC's later account);
+        FBI tip line promoted from day one
+      role depth: substantial scene and investigative assistance
+      first federal public statement: none fronted — the county sheriff held the
+        briefings; the Portland SAC's public statement found under the protocol
+        is his first-anniversary message
+      statement rank: none at the time
+      stated nexus: assistance
+    citation:
+      text: "Two sources, each exact. Linked (contemporaneous): ABC 33/40 (AP wire),
+        October 1, 2015, \"UCC Shooting: Sheriff not naming gunman\" — sheriff
+        fronting the briefings, FBI/OSP evidence teams processing the scene,
+        1-800-CALL-FBI tip line (briefing and participation cells). Role-depth
+        cell: FBI Portland field office, October 1, 2016, \"Message of
+        Remembrance on First Anniversary of UCC Attack,\" SAC Bretzing's
+        hundred-plus-person account, flagged in-row as not contemporaneous;
+        canonical locator fbi.gov/contact-us/field-offices/portland/news/
+        message-of-remembrance-on-first-anniversary-of-ucc-attack — the live
+        page bot-blocks mechanical checks and the Internet Archive answers too
+        slowly for them; its snapshot 20260131130456 was fetched in full during
+        collection and matches the quoted account."
+      url: https://abc3340.com/news/nation-world/ucc-shooting-oregon-gunman-identified-as-chris-harper-mercer
+      verification: ai_verified
+  - cells:
+      case: Virginia Tech
+      event date: 2007-04-16
+      prosecution: none (perpetrator died); state jurisdiction
+      fbi participated: yes — 20 Richmond agents, computer forensics, behavioral
+        analysis; 12 ATF agents
+      role depth: investigative assistance
+      first federal public statement: day-one WRITTEN DOJ release — the attorney
+        general pledging assistance to 'the state and local agencies that are
+        leading the investigation'; an FBI headquarters spokesman also gave
+        day-one press quotes; briefings fronted by campus police
+      statement rank: attorney general in writing (support pledge, explicitly
+        deferring to state lead); HQ spokesman quotes
+      stated nexus: assistance
+    citation:
+      text: 'Two sources, each exact. Linked (primary): DOJ press release 07-259,
+        April 17, 2007, "Department of Justice Response to Shootings at Virginia
+        Tech" (AG written pledge; agent counts; "state and local agencies that
+        are leading"). HQ-spokesman and forensics cells: NPR, April 17, 2007,
+        "FBI Aiding Police in Sorting Va. Tech Evidence,"
+        npr.org/2007/04/17/9626770.'
+      url: https://www.justice.gov/archive/opa/pr/2007/April/07_opa_259.html
+      verification: ai_verified
+  - cells:
+      case: First Baptist Church, Sutherland Springs
+      event date: 2017-11-05
+      prosecution: none (perpetrator died); state jurisdiction (later federal civil
+        liability for Air Force records failures)
+      fbi participated: yes — suspect's phone flown to the FBI laboratory at Quantico;
+        ATF firearms examination
+      role depth: laboratory and firearms assistance
+      first federal public statement: day-two joint briefing fronted by Texas DPS,
+        with the ATF special agent in charge (firearms) and the FBI special
+        agent in charge (phone) speaking to their technical lanes
+      statement rank: special agents in charge (ATF Milanowski; FBI Combs)
+      stated nexus: assistance to DPS
+    citation:
+      text: "CNN program transcript, November 7, 2017 — the joint briefing verbatim:
+        DPS Regional Director Freeman Martin fronting, ATF SAC Milanowski on
+        firearms, FBI SAC Combs on the phone flown to Quantico. All cells rest
+        on this transcript."
+      url: https://transcripts.cnn.com/show/ip/date/2017-11-07/segment/02
+      verification: ai_verified
+  - cells:
+      case: Highland Park July 4 parade
+      event date: 2022-07-04
+      prosecution: state (Lake County, seven first-degree murder counts; no federal charges)
+      fbi participated: yes — evidence-response assistance to the Lake County Major
+        Crime Task Force
+      role depth: investigative assistance
+      first federal public statement: none fronted — the task force spokesman and
+        state's attorney held the briefings; a written federal statement of
+        collaboration was reported
+      statement rank: none at the briefings
+      stated nexus: assistance
+    citation:
+      text: 'AP, July 6, 2022, "Police: Parade shooting suspect contemplated 2nd
+        shooting" — Covelli briefing, task-force lead, state murder charges. All
+        cells rest on this report and the charging facts it states.'
+      url: https://apnews.com/article/gun-violence-chicago-shootings-lake-michigan-9fd3e23a6396aa5e008943fbb260551b
+      verification: ai_verified
+    independenceNote: post-freeze discovery by the protocol's third searcher;
+      natively verified and dispositioned against the frozen criteria at
+      collection
+findings:
+  - statement: "FBI participation is universal in the table: thirteen of thirteen
+      comparable state-jurisdiction cases had documented FBI investigative
+      involvement — typically evidence response, laboratory work, interviews,
+      and victim services — always framed as assistance to a state or local
+      lead. Participation alone carries no information; the on-record expert
+      baseline (assistance is routine) is confirmed."
+    evidenceId: KRK-E060
+  - statement: "Public fronting stayed local in every case: day-one investigative
+      briefings were led by a police chief, sheriff, state police, or campus
+      police in thirteen of thirteen. Federal officials appeared at the podium
+      at special-agent-in-charge rank in four cases (Las Vegas, Aurora, MSU,
+      Sutherland Springs), speaking to technical lanes beside the local
+      commander; in four cases no federal public statement was found at all; the
+      rest were field-office or written statements. The three headquarters-level
+      items are different in kind: a written attorney-general pledge of support
+      that explicitly named the state as leading (Virginia Tech, day one), a
+      written headquarters statement about the FBI's own mishandled tip
+      (Parkland, day two), and an attorney general announcing a non-criminal
+      review of the police response two weeks later at the mayor's request
+      (Uvalde)."
+    evidenceId: KRK-E059
+  - statement: "Placed against this table, the target case is unmatched: no
+      comparable case shows any federal official above special-agent-in-charge
+      rank personally fronting investigative evidence announcements — and none
+      at any rank walking the scene and framing the bureau as leading. The FBI
+      director's in-person, on-scene role within 48 hours, announcing forensic
+      results in a case with no federal charge identified, has no precedent in
+      thirteen comparables. On the frozen discriminating variable — who fronted
+      the case publicly, at what rank, how fast — the comparative claim in
+      KRK-C037 is supported."
+    evidenceId: KRK-E059
+  - statement: "Interpretive decisions and failed searches, reported: presidential
+      remarks (made after several of these events) were recorded but excluded
+      from the rank variable as non-investigative statements — a taxonomy
+      decision made at collection, not frozen, and flagged as such. Searches for
+      any comparable case with director-level in-person evidence fronting found
+      none; the first-federal-statement searches for the none-found cases are
+      reported per row."
+limitations:
+  - Thirteen comparable cases; the population is venue-based (inherited from the
+    KRK-S001 criteria) and does not control for victim prominence, political
+    salience, or media pressure — the deflationary hypothesis that
+    director-level attention tracks case profile rather than institutional
+    irregularity survives this study and is stated in KRK-R013.
+  - "The rank taxonomy required two interpretive calls made at collection
+    (flagged, not frozen): presidential remarks excluded as non-investigative;
+    written statements distinguished from in-person fronting. Under any
+    reasonable variant, the target case's director-in-person-on-scene profile
+    remains unmatched in the table."
+  - First-statement dates for several SAC appearances rest on day-2/3
+    contemporaneous reporting rather than agency transcripts; the cells say
+    which.
+  - "Searcher coverage: three searchers ran the frozen protocol. The OpenAI
+    substitute run (deep-research models remain unavailable to the project key)
+    matched the native union with zero new candidates but produced partially
+    generic citations, used as leads only; the Gemini deep-research run
+    corroborated the rank pattern and surfaced one candidate beyond the native
+    union (Highland Park), included after native verification. Coverage is good
+    and demonstrably not complete."
+  - "Stage provenance: this file's provenance stamp records the collection run;
+    the freeze stage carried its own stamp (runId
+    2026-08-26-study-krk-s002-freeze, same model, promptVersion
+    erebus-study-freeze-v1), preserved verbatim in the merged freeze PR and in
+    git history. The criteria hash is the cross-stage invariant: it was computed
+    at the freeze and re-verifies unchanged here."
+  - The author knew the target case's profile before the freeze;
+    pre-registration cannot prevent pre-hoc criteria tuning (see the freeze PR's
+    panel question). The population inheritance from KRK-S001 and the
+    pre-committed federal-prosecution exclusions bound but do not eliminate this
+    risk.
+runId: 2026-08-26-study-krk-s002-collect
 model: Claude Fable 5 (Anthropic), via Cursor
 date: 2026-08-26
-promptVersion: erebus-study-freeze-v1
+promptVersion: erebus-study-collect-v1
 humanReviewed: false
