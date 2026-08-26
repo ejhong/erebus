@@ -1,0 +1,110 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design: the criteria below are
+# judged before anyone knows what the data will say, and any later edit
+# to them fails the build. Collection follows in a second PR.
+id: KRK-S004
+title: Inconclusive outcomes in firearm-toolmark black-box studies
+question: How often do trained firearms examiners return "inconclusive" on
+  comparisons whose ground truth is known by design, and what does that base
+  rate let the ATF examiner's inconclusive result in this case support or rule
+  out?
+researchIds:
+  - KRK-R014
+claimIds:
+  - KRK-C003
+  - KRK-C004
+criteria:
+  frozenOn: 2026-08-26
+  inclusion:
+    - Empirical studies of firearm-toolmark comparison by trained human
+      examiners in which ground truth is known by design (black-box or
+      validation studies), published 2000-2026 as peer-reviewed articles or
+      government-commissioned technical reports.
+    - The study reports the distribution of examiner responses including an
+      inconclusive category (or data sufficient to compute it), for same-source
+      and/or different-source comparisons of fired bullets or cartridge cases.
+    - Open-set and closed-set designs are both included, recorded per row and
+      never pooled — the two designs make "inconclusive" mean different things,
+      and collapsing them would manufacture a base rate.
+  exclusion:
+    - Reviews, commentary, and advocacy without new ground-truth data (the PCAST
+      2016 review is a discovery lead and context document, never a row).
+    - Declared proficiency tests not designed for error-rate measurement —
+      incentive and difficulty structure not comparable; surfaced ones are
+      reported in the failed-search note, not silently dropped.
+    - Toolmark studies outside firearms (screwdrivers, tire marks, tools).
+    - Fully algorithmic comparison studies with no human-examiner response
+      distribution (recorded as context if surfaced, not rows).
+  searchProtocol: "Multi-searcher discovery, run only after this freeze, protocol
+    verbatim per searcher: (1) OpenAI deep research (o4-mini-deep-research,
+    background mode; if unavailable to the project key, the documented
+    substitute model, with the deviation recorded in the limitations); (2)
+    Gemini deep research (background mode, store enabled); (3) the executing
+    agent's own web search. Literal queries, each run in all three: [firearms
+    examiner \"black box\" study error rate]; [firearm toolmark validation study
+    inconclusive rate]; [Ames Laboratory firearms examiner study]; [cartridge
+    case comparison examiner accuracy ground truth]; [bullet comparison
+    black-box study inconclusive]; [firearms identification error rate
+    peer-reviewed study]. Per-candidate follow-up: the study name plus
+    \"inconclusive\", plus DOI or report-number resolution to the primary
+    document. Sources searched: Journal of Forensic Sciences, Forensic Science
+    International, AFTE Journal, PNAS, NIST and NIJ publications, Ames
+    Laboratory / DOE technical reports. Union of all three searchers' candidate
+    lists; overlap reported in the limitations as the coverage indicator.
+    Deep-research output is a brief under casework convention: it proposes
+    candidates and is never cited; every row cell is verified natively against
+    the primary document before entering the table."
+  knownCandidates:
+    - name: Baldwin, Bajic, Morris & Zamzow 2014 (Ames Laboratory / DOE technical
+        report; cartridge cases)
+      disposition: include
+      reason: the widely cited first Ames black-box study; response distribution with
+        inconclusives reported
+    - name: Monson, Smith & Bajic, "Ames II" (Journal of Forensic Sciences, 2022-2023;
+        bullets and cartridge cases, accuracy / repeatability / reproducibility
+        parts)
+      disposition: include
+      reason: the largest recent black-box program; parts reported separately enter as
+        separate rows if independently published
+    - name: Mattijssen et al. 2020 (Forensic Science International; cartridge-case
+        comparisons, examiners and algorithm)
+      disposition: include
+      reason: reports human-examiner response distributions with inconclusives
+        alongside an algorithmic comparison
+    - name: PCAST 2016 report on forensic feature-comparison methods
+      disposition: exclude
+      reason: a review, not new ground-truth data — context and discovery lead only
+    - name: UVU case ATF examination (KRK-C004)
+      disposition: exclude
+      reason: the target result — it is placed against the distribution, not inside it
+  criteriaHash: 3fa1c832219a
+method: Discovery per the frozen protocol; extraction per study of the row
+  variables, each cell citing the primary document with the standard
+  verification label; cells that cannot be sourced are marked, not estimated.
+  Same-source and different-source inconclusive shares are recorded separately,
+  as is each study's convention for scoring inconclusives in its error rates —
+  that convention, not the raw rate, is where most public misreadings start.
+  Findings state in plain language what an inconclusive outcome does and does
+  not shift between the identification and exclusion readings of KRK-C004, state
+  explicitly that black-box materials are intact test-fired bullets or cartridge
+  cases while this case's questioned items are fragments (an applicability
+  limit, stated, not smoothed over), report failed searches, and give the
+  searcher-overlap coverage indicator. Either outcome publishes.
+columns:
+  - study
+  - year
+  - materials
+  - design
+  - examiners and comparisons
+  - inconclusive share, same-source
+  - inconclusive share, different-source
+  - how inconclusives are scored
+  - applicability to fragments
+rows: []
+findings: []
+limitations: []
+runId: 2026-08-26-study-krk-s004-freeze
+model: Claude Fable 5 (Anthropic), via Cursor
+date: 2026-08-26
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false
