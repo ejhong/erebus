@@ -91,12 +91,6 @@ export default function HomePage() {
         </p>
         <p className="mt-5 flex flex-wrap gap-x-8 gap-y-2">
           <Link
-            href="/research/"
-            className="font-mono text-[11px] uppercase tracking-[0.14em] text-copper underline underline-offset-4 hover:text-ink"
-          >
-            The research agenda — every decisive test →
-          </Link>
-          <Link
             href="/method/"
             className="font-mono text-[11px] uppercase tracking-[0.14em] text-copper underline underline-offset-4 hover:text-ink"
           >

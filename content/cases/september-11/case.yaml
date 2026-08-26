@@ -1,0 +1,147 @@
+id: SEP-001
+slug: september-11
+title: "September 11"
+subtitle: "The September 11 attacks are among the best-documented events in modern history — so which specific evidentiary disputes survive contact with the primary record, and which collapse on inspection?"
+domain: "Contested public events · Historical, with active civil litigation"
+status: active
+summary: >-
+  Nineteen al-Qaeda hijackers crashed four airliners into the World Trade
+  Center, the Pentagon, and a Pennsylvania field on September 11, 2001,
+  killing 2,977 people. That much is established by mutually independent
+  evidence streams. This case does not relitigate it. What it maps is
+  narrower and more specific than "the official story": whether NIST's
+  fire-driven account of World Trade Center Building 7 — a 47-story tower
+  no aircraft struck — is correct and reproducible from the data NIST
+  released; whether the total destruction of the Twin Towers has ever been
+  modeled end to end; what the anomalous pre-attack option trading means;
+  whether a military data-mining program identified the plot's tactical
+  leader a year early; and how far up any Saudi chain the documented
+  assistance to two hijackers went. Around those live disputes sits a
+  separate, established record of official misconduct — edited EPA
+  air-safety statements, inaccurate air-defense testimony, destroyed
+  interrogation tapes — that explains why distrust persists without
+  vindicating what distrust concluded. The case grades evidence disputes,
+  never anyone's guilt.
+whatIsClaimed: >-
+  Critics of the official account claim, in ascending order of strength:
+  that the public technical record is incomplete and not independently
+  reproducible (withheld modeling files, unrecovered steel, an untested
+  sulfidation anomaly); that specific official accounts were false
+  (air-defense timelines, air-quality assurances); that some actors held
+  advance knowledge and allowed or profited from the attacks; and, on the
+  strongest versions, that the buildings were destroyed with pre-placed
+  devices, implying inside participation. The featured question is not who
+  attacked the United States — the answer to that is well established here.
+  It is which of these evidentiary challenges survives verification.
+whereDisagreementLives: >-
+  Almost none of it lives at the observation rung. Both sides accept that
+  WTC 7's north face fell at gravitational acceleration for roughly 2.25
+  seconds — the figure is in NIST's own final report, added after public
+  comment. Both accept the pre-attack option volumes. Both accept the
+  August 6, 2001 President's Daily Brief was titled "Bin Ladin Determined
+  To Strike in US." The fight is one rung up, at mechanism and attribution:
+  whether fire alone produces the WTC 7 initiation NIST modeled, a dispute
+  now narrowed to a single girder-to-column connection under thermal load
+  and argued between a federal model whose data files are largely withheld
+  and an advocacy-funded open one; whether tracing the headline trades to
+  innocuous buyers exhausts the anomaly when the underlying files stay
+  closed;   whether destroyed data-mining records covered an identification;
+  and whether documented assistance to two hijackers reflected
+  institutional intent — a question a court found legally sufficient to
+  try in August 2025, though the Kingdom appealed and proceedings are
+  stayed.
+whatWouldSettleIt: >-
+  Work nobody has done, most of it desk-scale. A blinded independent
+  re-analysis of the Floor 13 girder and Column 79 connection using both
+  the federal and the challenger datasets. Release, or bounded
+  re-derivation, of the roughly 68,500 withheld WTC 7 modeling files. A
+  chain-of-custody, blinded multi-laboratory re-test of the red/gray dust
+  chips against both thermite and primer controls. The sulfur-source study
+  the FEMA appendix's own authors called for and no one ran. Declassification
+  of the trade-tracing files behind the Commission's put-option
+  conclusions. The data-mining destruction certificates. And, self-executing,
+  the Saudi civil trial record as it develops. Each is specified in the
+  research agenda with what either outcome would prove.
+bestConventionalExplanation: >-
+  Al-Qaeda planned and executed the attacks; the buildings fell from impact,
+  fire, and gravity; and the government's failures were of competence, not
+  complicity. The authorship case rests on mutually independent streams —
+  flight and air-traffic records, passenger calls, DNA, immigration and
+  financial records, and over a thousand exhibits admitted in open court —
+  and no serious party disputes it. The towers fell because impacts severed
+  columns and stripped fireproofing while multi-floor fires weakened what
+  remained; NIST concluded neither tower would have collapsed had the
+  fireproofing stayed on, and once a dozen-plus stories dropped one floor,
+  no plausible structure arrests that. WTC 7 fell because debris-ignited
+  fires burned unfought for seven hours after the water main was cut,
+  thermally expanding long-span floor framing until a girder walked off its
+  seat — a mechanism needing no melted steel, and no longer without
+  precedent since Tehran's Plasco tower burned and fell in 2017. The free-fall
+  interval is the expected signature of a hollowed-out facade, not of
+  demolition, which would have required detonations no recording captured.
+  The warnings were real but generic, and the government's own inspectors
+  general documented the failures. The trades traced to innocuous buyers.
+  Its unpaid debt is reproducibility: the WTC 7 conclusion cannot be
+  recomputed from what was published, no WTC 7 steel was kept, and where
+  officials misled, they were caught by other organs of the same government
+  rather than by disclosure.
+researchPriority:
+  level: medium
+  reason: >-
+    The decisive tests are cheap and mostly desk-scale — a blinded
+    connection re-analysis, a custody-controlled dust re-test, a sulfur
+    source study — but twenty-five years of institutional disinterest is
+    the binding constraint, not cost. The Saudi civil litigation is the one
+    track that moves without anyone's permission, and it is currently
+    stayed on appeal.
+components:
+  - label: "Al-Qaeda authorship of the attacks"
+    state: established
+    note: >-
+      Mutually independent evidence streams — flight data, DNA,
+      immigration and financial records, admitted trial exhibits. Not a
+      live dispute on this site.
+  - label: "Twin Towers: impact, stripped fireproofing, and fire initiated collapse"
+    state: well_supported
+    note: >-
+      The best-supported technical finding in the case; the separate
+      question of whether total progression was ever modeled end to end is
+      graded on its own.
+  - label: "WTC 7 collapse mechanism (fire-driven Column 79 sequence)"
+    state: mixed
+    note: >-
+      Internally consistent and best-resourced, but never independently
+      reproduced, and resting on modeling files that were withheld and
+      whose withholding a court upheld.
+  - label: "Specific insider foreknowledge of the plot"
+    state: contradicted
+    note: >-
+      The documented failure mode at every node is bureaucratic
+      dysfunction. The underlying anomalies — trading, warnings, the
+      data-mining program — are graded individually and separately.
+  - label: "Deliberate destruction of the towers with pre-placed devices"
+    state: contradicted
+    note: >-
+      Positive disproof, not merely absence: initiation at the impact
+      floors, no pre-collapse seismic signature, no blast signature on any
+      recording, no hardware recovered.
+  - label: "Documented official misconduct in the aftermath"
+    state: established
+    note: >-
+      Edited air-quality assurances, inaccurate air-defense testimony,
+      destroyed interrogation tapes. The calibration anchor for this case,
+      and misused by both sides.
+themes:
+  wtc7: "World Trade Center 7"
+  towers: "The Twin Towers"
+  dust: "Steel, dust, and chemistry"
+  trading: "Pre-attack trading"
+  foreknowledge: "Warnings and foreknowledge"
+  air-defense: "The air-defense response"
+  saudi: "The Saudi file"
+  official-conduct: "Official conduct and candor"
+  media: "Media episodes and misreadings"
+  other-flights: "The Pentagon and Flight 93"
+editors:
+  - "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+lastReviewed: "2026-08-26"

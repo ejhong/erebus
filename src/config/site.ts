@@ -7,7 +7,6 @@ export const site = {
     "Erebus decomposes contested public events — assassinations, disasters, alleged cover-ups — into atomic claims, maps the evidence for and against each one, keeps exact provenance, and points at the record or test that would settle the dispute. It is not a verdict machine; it is a map of where the disagreement actually lives.",
   nav: [
     { label: "Cases", href: "/cases" },
-    { label: "Research", href: "/research" },
     { label: "Panel", href: "/panel" },
     { label: "Method", href: "/method" },
   ],

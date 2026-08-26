@@ -1,0 +1,45 @@
+# SEP-001 image manifest. Generated artwork may never be a plate (schema
+# hard rule): AI images are confined to editorial roles and always credited
+# as such, so nothing a reader could mistake for the record is synthetic.
+# This case has no plates — the evidentiary imagery it would want (scene
+# photographs, recovered steel, dust micrographs) is either not licensable
+# or, in the WTC 7 case, does not exist.
+
+- id: IMG-SEP-COVER
+  role: cover
+  file: /images/cases/september-11/cover.jpg
+  alt: >-
+    Abstract technical diagram on a deep Prussian-blue field: a dense
+    bundle of fine parallel measurement traces runs from the left edge and
+    meets a vertical boundary line partway across, where most of them stop
+    against small registration ticks; a few continue past it into empty
+    space, and concentric contour rings sit at the lower left.
+  source: generated
+  license: "Project artwork (AI-generated)"
+  credit: "AI-generated editorial artwork, Erebus house style"
+  styleVersion: style-e1
+  model: "gpt-image-1"
+  runId: "cover-style-e1-2026-08-26"
+  prompt: >-
+    Minimal modern technical editorial illustration, in the visual language
+    of a precise instrument chart or forensic diagram. An abstract technical
+    diagram of an audit trail that terminates: a dense bundle of fine
+    parallel measurement traces running left to right across a cold field,
+    most continuing cleanly to the right edge, but a portion of them
+    stopping abruptly at a vertical boundary line partway across, beyond
+    which the field is empty — with small registration ticks and bracket
+    marks along the boundary where the traces end, as if the instrument
+    stopped recording rather than the phenomenon stopping. Severe,
+    instrument-like, no scene of any kind. Thin, exact vector-like linework:
+    fine isolines, section lines, waveform traces, small registration marks,
+    restrained geometric abstraction. Cold palette only — cold
+    Prussian-blue field deepening toward graphite, slate linework, one thin
+    pale-steel accent where the record breaks off — on a near-white cool
+    porcelain field (#eef1f4) or a deep blue-black field (#10151b);
+    Prussian blue, slate, steel grey, indigo, graphite throughout; no warm
+    cream, sepia, ochre, or terracotta tones anywhere. Flat, matte,
+    documentary and quiet: no glow, no lens flare, no 3D render look, no
+    gradients beyond subtle atmospheric shading. Generous negative space,
+    austere composition. Absolutely no text, no numbers, no labels, no
+    captions, no border frame lines. Stylized editorial artwork, obviously
+    an illustration — not photorealistic, no photograph.

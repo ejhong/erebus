@@ -1,0 +1,156 @@
+# Append-only change log for COV-001. Add new entries at the end.
+
+- date: "2026-08-26"
+  change: >-
+    Case launched: 18 featured claims across six themes, an evidence ledger
+    of 31 records, a source registry of 24 independently verified sources,
+    and a research agenda of eight decisive tests. The case adopts a
+    three-layer separation as visible structure — the biological origin
+    question, the research-capability question, and the
+    institutional-integrity question — so that misconduct findings on the
+    third layer cannot silently feed a verdict on the first. Accordingly the
+    accountability thread around named officials (the 2024 and 2026
+    hearings, the released private communications, the contempt proceedings)
+    is deliberately out of this cut: on both research briefs' own
+    assessment it produces no origin evidence, and grading it would mean
+    grading people rather than evidence.
+
+    Every citation was verified against the primary document (or a dated
+    archive snapshot where a publisher bot-walls automated clients) before
+    entry, and the pass materially changed the content. The largest single
+    correction concerns the errata: there are two, one per paper, and public
+    argument routinely attaches the wrong characterization to each. The
+    market-epicenter paper's 2024 erratum is a null data-file correction
+    stating results were unchanged. The lineage paper's separate 2023
+    erratum is substantive — a code error had overestimated the Bayes
+    factors favoring multiple introductions, which fell from 61.6 and 60.0
+    to 4.3 and 4.2, moving the authors' own wording from strong to
+    substantial support. Both facts are recorded: the original figures
+    should no longer be cited, and the claim that the correction reduced the
+    finding to negligible is contradicted by the erratum's own text.
+
+    Two statements attributed to the WHO advisory group's 2025 assessment
+    were rejected because they are not in the document. The word
+    "surprising" appears nowhere in its 78 pages; the sentence usually
+    quoted to that effect is about the implausibility of there having been
+    no human-to-animal infections anywhere in China, not about the missing
+    intermediate host at the market. And the report contains no sentence
+    contrasting the two-lineage pattern with the single introduction a
+    laboratory leak would produce — it reports the finding and attributes
+    the judgment to the original authors, so this case records that contrast
+    as its own editorial inference rather than as WHO's.
+
+    On the research-program side, the 2018 proposal's cleavage-site passage
+    was confirmed verbatim at a specific page locator by two independent
+    optical-character passes, and the agency's non-award was confirmed three
+    ways including a negative check of federal award data. Two corrections
+    came with it. The proposition that the congressional majority report
+    concluded the furin cleavage site is "not found in nature" does not
+    exist: the phrase occurs only in the accompanying press release, where it
+    describes an unnamed "biological characteristic," and the report's own
+    argument on the point is a quotation of a newspaper columnist rather than
+    a committee finding — so the report and its press release are recorded
+    here as two distinct sources. And the frequently excerpted draft margin
+    comment is recorded in full, because the usual truncation removes the
+    sentence stating its purpose and converts a presentational judgment into
+    apparent concealment.
+
+    Further corrections: the Chinese CDC surveillance paper is a 2024
+    publication, not 2023, and its positive-sample count changed from 73 to
+    74 between versions; the Laotian bat-virus paper is 2022, resolving an
+    uncertainty in the brief; requested information was withheld by three
+    governments rather than one; the funding agency's origins statement was
+    cited to a staging host that must never be used; and the negative animal
+    results are far narrower than usually reported, because the candidate
+    intermediate-host species were never sampled or tested at all.
+
+    All records carry ai_extracted provenance. Nothing has been
+    human-reviewed, and no assessment has been ratified.
+  reason: >-
+    Founder direction to import a first cut of the COVID-origins evidence
+    disputes. Constructed from research briefs under casework/covid-origins
+    with every citation re-verified at the primary source before entry; the
+    briefs themselves, and the debate and advocacy material held alongside
+    them, are cited nowhere.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Cover artwork added: one AI-generated editorial illustration in the
+    house style (style-e1), stamped with prompt, model, style version, and
+    generation runId. Two candidates were generated and one chosen; the
+    unused candidate was deleted rather than kept. Generated imagery is
+    confined to the cover role — the schema forbids it as a plate — so
+    nothing a reader could mistake for the evidentiary record is synthetic.
+    Neither case carries plates, deliberately: the imagery each would
+    otherwise reach for either depicts contested subject matter or does not
+    exist.
+
+    The cover takes the case's own finding as its subject rather than its
+    events, which is what keeps it clear of the depiction rule. No
+    building, aircraft, pathogen, map, person, or place appears in it.
+  reason: >-
+    Founder direction to complete the open items from the case launch.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: housekeeping
+
+- date: "2026-08-26"
+  change: >-
+    Case retitled to name its subject directly rather than its conclusion.
+    The previous titles were evocative but each asserted the case's own
+    finding in the most prominent position on the page, before a reader
+    reached any graded claim or source — a conclusion presented without the
+    evidence, label, or uncertainty that every other assertion on the site
+    has to carry. The clearest instance was this site's first case, whose
+    title asserted the single-shot mechanism that the case exists to grade
+    and does not grade as established.
+
+    Titles now name the event; subtitles continue to carry the specific
+    question, and findings stay where they belong — in claims that are
+    graded, sourced, and revisable.
+  reason: >-
+    Founder direction, 2026-08-26. Applied to all three cases together
+    rather than only the new ones, since leaving one conclusion-asserting
+    title would be incoherent.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Confirmation pass on the metagenomics evidence record (COV-E005),
+    closing the weakest provenance link in this case. The version of record
+    was reached from two Internet Archive captures of the publisher's own
+    full-text page after sixteen other routes failed, and the three body-text
+    quotations were checked against it. Two are verbatim. The third carried
+    one pre-copyedit word — the record quoted "While either animal or human
+    viral shedding is consistent with these data", where the published text
+    reads "Although" — and has been corrected. The locator now names the
+    published sections rather than the manuscript, and the
+    author-manuscript caveat is removed because the pass it asked for has
+    been done.
+
+    The caveat was deliberately not lifted on its own: removing it while
+    leaving the pre-copyedit wording in place would have converted an
+    honestly flagged manuscript quotation into an unflagged misquotation of
+    the version of record, which is worse than the state it replaced.
+
+    Also established and recorded: the public repository deposit for this
+    paper is the accepted author manuscript, not the version of record, and
+    the paper is not open-access under a reuse licence. Verification stays
+    ai_verified — AI-performed citation checking is never promoted, and no
+    copy is held in a project library.
+  reason: >-
+    Founder direction to complete the open items from the case launch. The
+    remaining limitations on the record — shared data and authorship with
+    the companion papers, and the authors' own statement that their data
+    cannot identify the infected species — are untouched by this pass; the
+    second is strengthened, since it is now confirmed verbatim in the
+    published text.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+

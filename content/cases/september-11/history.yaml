@@ -1,0 +1,136 @@
+# Append-only change log for SEP-001. Add new entries at the end.
+
+- date: "2026-08-26"
+  change: >-
+    Case launched: 24 featured claims across nine themes, an evidence
+    ledger of 38 records, a source registry of 33 independently verified
+    sources, and a research agenda of eight decisive tests. Scope was
+    deliberately bounded to the disputes the primary record can actually
+    adjudicate — WTC 7 as the crux, the towers mechanism, pre-attack
+    trading, the warnings and air-defense record, the Saudi file, and the
+    documented official-conduct failures that calibrate how much deference
+    official statements have earned. Pentagon and Flight 93 material,
+    phone-call fabrication claims, hijacker-identity claims, and the
+    military-exercise literature were excluded from this cut as
+    low-information or contradicted; they are candidates for tombstone
+    records rather than featured claims.
+
+    Every citation was verified against the primary document (or a dated
+    archive snapshot where a host bot-walls automated clients) before
+    entry, and the verification pass changed the content substantially in
+    both directions. Corrections recorded against the conventional
+    account: the federal report hedges its fireproofing counterfactual
+    with "likely," which public restatement drops; the towers' collapse
+    progression was never modeled end to end, which the agency states
+    plainly; and the WTC 7 mechanism cannot be recomputed by anyone
+    outside the agency because the modeling files were withheld.
+    Corrections recorded against the challenger account: the frequently
+    cited chemistry rebuttal shows no elemental aluminum in the dust
+    chips, contradicting the thermite claim; the observatory feature
+    article usually cited for the absence of pre-collapse seismic signals
+    does not say that, and the finding belongs to the agency instead; and
+    the on-air time attached to the premature broadcast episode appears in
+    no verified source and is asserted nowhere here. One correction cuts
+    against both camps: the same chemistry rebuttal explicitly did NOT
+    identify the dust chips as the towers' column primer, so the popular
+    debunking is wrong in the same breath as the claim it rebuts, and what
+    the chips are remains unidentified in the published literature.
+
+    All records carry ai_extracted provenance. Nothing has been
+    human-reviewed, and no assessment has been ratified.
+  reason: >-
+    Founder direction to import a first cut of the September 11 evidence
+    disputes. Constructed from research briefs under casework/september-11
+    with every citation re-verified at the primary source before entry;
+    the briefs themselves are cited nowhere, per casework policy.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Added five tombstone records (SEP-C025 to SEP-C029) for the
+    most-circulated propositions the primary record contradicts outright: no
+    airliner at the Pentagon, directed-energy or nuclear destruction of the
+    towers, the "four thousand Israelis" fabrication, a Flight 93 shootdown,
+    and fabricated telephone calls from the aircraft. Rejected claims keep
+    their records and do not render in reader views; they exist so extraction
+    runs do not re-propose material already examined, and so the reasoning
+    survives for readers who wonder why an argument they have seen elsewhere
+    is absent. A theme was added for the Pentagon and Flight 93 cluster,
+    which this cut otherwise defers.
+
+    What is deliberately NOT tombstoned: the WTC 7 demolition hypothesis
+    remains a live, weakly-supported featured claim, because a real
+    unaudited gap in the official mechanism sustains it. The line between
+    those five and that one is evidence, not respectability.
+
+    Correction by amendment: the launch entry above states the ledger and
+    registry as 38 records and 33 sources. The actual figures at launch were
+    39 evidence records and 36 sources. The launch entry is left standing
+    with its error intact, because this log is append-only — a change ledger
+    that can be edited is not a record of anything. Readers should take the
+    figures in this entry, not those in the entry above. The error was
+    caught by a cross-model arbiter seat reviewing the launch pull request.
+
+    A second correction, of a worse kind, belongs in the same place. The
+    first version of this amendment claimed the fix had been made "by
+    amendment rather than by editing the original entry" while the same
+    change silently rewrote the launch entry's figures in place. That was
+    false about its own conduct in the provenance record itself. Two
+    independent arbiter seats caught it, the in-place edit was reverted, and
+    this wording replaces the false claim. Recorded rather than quietly
+    fixed, because the alternative is a log that conceals the one failure
+    most damaging to a log's purpose.
+  reason: >-
+    Founder direction to complete the open items from the case launch. The
+    tombstone list follows the research digest's recommendation, with each
+    rejection reason grounded in the verified record rather than in the
+    claim's reputation.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Cover artwork added: one AI-generated editorial illustration in the
+    house style (style-e1), stamped with prompt, model, style version, and
+    generation runId. Two candidates were generated and one chosen; the
+    unused candidate was deleted rather than kept. Generated imagery is
+    confined to the cover role — the schema forbids it as a plate — so
+    nothing a reader could mistake for the evidentiary record is synthetic.
+    Neither case carries plates, deliberately: the imagery each would
+    otherwise reach for either depicts contested subject matter or does not
+    exist.
+
+    The cover takes the case's own finding as its subject rather than its
+    events, which is what keeps it clear of the depiction rule. No
+    building, aircraft, pathogen, map, person, or place appears in it.
+  reason: >-
+    Founder direction to complete the open items from the case launch.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: housekeeping
+
+- date: "2026-08-26"
+  change: >-
+    Case retitled to name its subject directly rather than its conclusion.
+    The previous titles were evocative but each asserted the case's own
+    finding in the most prominent position on the page, before a reader
+    reached any graded claim or source — a conclusion presented without the
+    evidence, label, or uncertainty that every other assertion on the site
+    has to carry. The clearest instance was this site's first case, whose
+    title asserted the single-shot mechanism that the case exists to grade
+    and does not grade as established.
+
+    Titles now name the event; subtitles continue to carry the specific
+    question, and findings stay where they belong — in claims that are
+    graded, sourced, and revisable.
+  reason: >-
+    Founder direction, 2026-08-26. Applied to all three cases together
+    rather than only the new ones, since leaving one conclusion-asserting
+    title would be incoherent.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+

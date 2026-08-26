@@ -108,3 +108,29 @@ disasters, alleged cover-ups). Decisions made at bootstrap:
     keeps `src/` and `app/` clean for the scoped guard. Already-scrubbed
     casework files stay as they are; their repo notes remain accurate
     history.
+
+## 2026-08-26 — Global research page removed (following upstream); sync warns on upstream-deleted allowlisted files
+
+**Decided by:** founder (direct instruction); implemented by AI (Cursor
+cloud agent, Kimi K3).
+
+Upstream removed its global research page ("The Price of Truth",
+upstream PR #72: the founder judged the cross-case aggregate not useful;
+per-case research agendas remain on every case page). The removal never
+reached this repo because its entire footprint — `app/research/page.tsx`,
+the nav entry in `src/config/site.ts`, the homepage link in
+`app/page.tsx` — was allowlisted in `scripts/sync-engine.mjs`, and
+allowlisted paths are invisible to both `--check` and `--pull`.
+
+Two changes:
+
+1. **The removal is mirrored here:** `app/research/` deleted, nav and
+   homepage links removed, and the `app/research/page.tsx` allowlist
+   entry retired.
+2. **The structural blind spot is narrowed:** allowlisting covers
+   deliberate *content* divergence, but when upstream deletes an
+   allowlisted file outright, the divergence reason no longer applies
+   and the deletion was silently invisible forever. `sync-engine.mjs`
+   now warns (never fails) when an allowlisted local file no longer
+   exists upstream, so such deletions surface for review instead of
+   persisting by accident.

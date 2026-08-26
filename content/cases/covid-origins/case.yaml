@@ -1,0 +1,148 @@
+id: COV-001
+slug: covid-origins
+title: "The Origins of SARS-CoV-2"
+subtitle: "What event initiated sustained human transmission of SARS-CoV-2 in Wuhan in late 2019 — and why does the evidence that would settle it sit with a single custodian?"
+domain: "Contested public events · Scientific and intelligence dispute"
+status: active
+summary: >-
+  Two families of explanation compete for the origin of SARS-CoV-2. The
+  zoonotic family holds that the virus reached humans from wildlife at or
+  immediately upstream of the Huanan Seafood Wholesale Market. The
+  research-related family holds that it, or a close progenitor, was present
+  in a Wuhan research program and reached the city through an infected
+  person. Under both, the market matters; they disagree about whether it is
+  where the virus entered humans or where an already-human virus amplified.
+  This case separates three layers that public argument constantly merges:
+  what infected the first humans, what laboratories could do or planned to
+  do, and how institutions handled records and candor. Misconduct in the
+  third licenses re-weighting testimony; it is not origin evidence. The case
+  turns on two symmetrical absences — no infected animal has ever been
+  found, and no laboratory is known to have held the virus or a close
+  progenitor — each of which is hostage to records that have never been
+  produced.
+whatIsClaimed: >-
+  The zoonotic account claims spillover from the live-wildlife trade in
+  roughly November–December 2019, possibly more than once. The
+  research-related account claims a field, laboratory, or engineered-construct
+  exposure, in ascending order of specificity and descending order of
+  support. Two further claims sit underneath and are contested on their own
+  terms: whether the early scientific consensus for zoonosis was reached by
+  ordinary data-driven deliberation, and whether officials and funded
+  scientists steered the early narrative. This case grades the evidence
+  disputes. It does not grade anyone's culpability, honesty, or intent.
+whereDisagreementLives: >-
+  Not over whether the market was the early epicenter — the geographic
+  concentration of the earliest known cases is the sturdiest finding here,
+  and both sides largely accept it. The live disputes sit one rung up.
+  First, epicenter versus origin: the market was closed, cleared, and
+  disinfected before systematic sampling began, so environmental RNA cannot
+  say whether an infected animal, a vendor, or a customer deposited it.
+  Second, one introduction or two: the double-spillover inference is
+  model-dependent and rests on early sequence data that is partly
+  unpublished. Third, the two absences — no infected intermediate animal
+  after the largest such search on record, and no laboratory anywhere known
+  to have held a progenitor. Each side reads the other's absence as telling
+  and its own as merely hard. What makes the asymmetry decidable in
+  principle but not in practice is custodianship: the early patient
+  sequences, the wildlife supply-chain records, the laboratory inventories,
+  and the worker health files are all held in one country and have not been
+  produced.
+whatWouldSettleIt: >-
+  Specific documents and datasets, not further argument. On the zoonotic
+  side: trader and farm records for the market's wildlife vendors, archived
+  2019 animal tissues and sera, and the raw market metagenomic reads with
+  complete stall metadata — a pre-outbreak animal carrying the virus or a
+  basal near-progenitor would be direct evidence of the transmission chain.
+  On the research-related side: the laboratory sample database that went
+  offline in September 2019, with raw sequence files and freezer
+  inventories, and de-identified 2019 occupational-health records with
+  stored sera — a timestamped pre-pandemic virus above roughly 99% identity,
+  or a verified 2019 seroconversion, would transform the hypothesis, while a
+  complete independently audited inventory lacking one would substantially
+  weaken it. Common to both: the several hundred early-patient sequences
+  the WHO says remain unavailable. Most of that list is an act of political
+  will rather than a research program. The exception, and the best value for
+  money in the case, is a preregistered adversarial reanalysis of the
+  early-lineage question — proponents and critics fixing methods before
+  unblinding, on data that is already public.
+bestConventionalExplanation: >-
+  A sarbecovirus circulating in bats, plausibly via an intermediate mammal
+  host, entered the live-wildlife supply chain and reached Wuhan, where it
+  crossed into humans at or immediately upstream of the Huanan market in
+  roughly November–December 2019 — most likely more than once. This is not
+  an argument from the absence of a laboratory smoking gun; it is the only
+  hypothesis with multiple affirmative lines of public evidence, and they
+  converge on the same few hundred square metres. The earliest known cases
+  cluster around the market, and — the observation carrying the statistical
+  weight — cases with no reported market link lived closer to it than cases
+  who worked there, which is what exposure at the market predicts and what
+  contact-tracing artifact does not. Positive environmental samples
+  concentrate where live-mammal vendors operated; genetic material from
+  experimentally susceptible species co-occurs with viral RNA at a wildlife
+  stall; and those species have documented history as amplifiers in the
+  earlier SARS outbreak, in the same country, through the same trade. The
+  earliest viral diversity partitions into two lineages whose joint pattern
+  is more easily explained by repeated introduction than by a single
+  seeding event — easy under wildlife-trade spillover, awkward under one
+  infected worker. The genome carries no accepted forensic signature of
+  engineering. Its unpaid debts are real and should not be minimized: no
+  infected source animal has ever been found, the upstream farm traceback
+  was never completed, and the market's animals were gone before anyone
+  sampled them. But a missing animal is a fact about what investigators
+  were permitted to look for, not a positive case for any alternative.
+researchPriority:
+  level: high
+  reason: >-
+    Two of the highest-yield tests — an adversarial preregistered reanalysis
+    of the lineage question and an independent reproduction of the
+    geographic signal — need no one's permission and run on already-public
+    data. The rest are disclosure requests whose cost is diplomatic rather
+    than scientific.
+components:
+  - label: "Huanan market as early epicenter of the recognized outbreak"
+    state: well_supported
+    note: >-
+      Multiple channels: early-case geography, environmental positivity,
+      district-level excess pneumonia and later seroprevalence. Rests on
+      case ascertainment that has never been independently audited.
+  - label: "Market as the site of the initial animal-to-human spillover"
+    state: provisionally_supported
+    note: >-
+      The best-developed affirmative case, but the transmission link is
+      unclosed: no infected animal, and post-clearance swabs cannot say who
+      deposited the RNA.
+  - label: "Research-related incident (any variant)"
+    state: unresolved
+    note: >-
+      A real conjunction of capability, opportunity, documented
+      intent-on-paper, and opacity — with no publicly disclosed progenitor,
+      incident, or infected worker.
+  - label: "Engineered-construct origin specifically"
+    state: weakly_supported
+    note: >-
+      Almost all US intelligence elements assessed the virus was not
+      genetically engineered, and the notable genomic features have
+      published natural explanations. Not excluded — seamless methods leave
+      no required scar — but affirmatively unsupported.
+  - label: "Deliberate engineering and release as a weapon"
+    state: contradicted
+    note: >-
+      All US intelligence elements assessed the virus was not developed as a
+      biological weapon; no affirmative public evidence exists.
+  - label: "Early public scientific certainty exceeded contemporaneous private belief"
+    state: provisionally_supported
+    note: >-
+      Documentary, and orthogonal to the biological question. Rests on
+      released communications whose completeness is contested. It does not
+      cross into the origin layer.
+themes:
+  early-geography: "Early cases and geography"
+  market-animals: "The market and its animals"
+  lineages: "Early lineages and introductions"
+  genome: "The genome"
+  wiv-program: "The Wuhan research program"
+  assessments: "Official assessments"
+  narrative: "The early-consensus record"
+editors:
+  - "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+lastReviewed: "2026-08-26"

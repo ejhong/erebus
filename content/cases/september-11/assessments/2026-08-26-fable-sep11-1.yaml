@@ -1,0 +1,236 @@
+# Launch assessment for SEP-001. AI-generated draft; humanReviewed: false;
+# unratified until independent cross-model check runs judge this case file.
+runId: "2026-08-26-fable-sep11-1"
+model: "Claude Fable 5 (Cursor cloud agent)"
+date: "2026-08-26"
+promptVersion: "erebus-launch-assessment-v1"
+humanReviewed: false
+role: draft
+caseAssessment:
+  verdict: mixed
+  loadBearing: [SEP-C003, SEP-C005, SEP-C011, SEP-C018, SEP-C024]
+  weakestLinks: [SEP-C004, SEP-C010, SEP-C014, SEP-C021, SEP-C023]
+  synthesis: >-
+    A single verdict on "9/11" would be meaningless, so this one is scoped
+    to what the case actually grades: the surviving evidentiary disputes.
+    Three strata emerge, and they point in different directions.
+
+    First, the authorship and the towers are settled, and settled by
+    positive evidence rather than by absence. Adversarially tested trial
+    exhibits, convergent independent record streams, initiation at the
+    impact floors of unpredictably aimed aircraft, and a seismic record
+    with no pre-collapse signal make the demolition-of-the-towers claim
+    contradicted rather than merely unproven. Anyone treating that as an
+    open question is not reading the record.
+
+    Second, the conventional account carries two specific unpaid debts,
+    both about auditability rather than physics, and both conceded in the
+    government's own documents. The WTC 7 mechanism is precisely stated,
+    requires no melted steel, and cannot be recomputed by anyone outside
+    the agency, because roughly 68,500 modeling files were withheld under a
+    finding a court upheld — and no identified WTC 7 steel survives to
+    test against. The towers' total collapse progression was never modeled
+    end to end; the agency says so and offers a capacity argument instead.
+    Neither debt implies the account is wrong. Both mean a central claim
+    is unverifiable by design, which is why the mechanism grades mixed
+    rather than well supported.
+
+    Third, the challenge fares badly but not uniformly. The demolition
+    hypothesis for WTC 7 survives as weakly supported — living on a real
+    unaudited gap rather than on any affirmative artifact, with no device,
+    no residue finding, and a published acoustic prediction it fails. The
+    counter-model rests on an input it presents as a finding. The dust
+    chemistry contradicts the thermite claim outright, though it also
+    refutes the standard rebuttal: the chips are not the building's primer
+    either, and remain unidentified. The trading anomaly is real and its
+    exculpatory explanation is unauditable. The data-mining question cannot
+    be resolved because the data was destroyed. The Saudi question is
+    genuinely open and is the only branch with a forcing mechanism
+    attached, currently stayed on appeal.
+
+    Running underneath all of it is a proven record of official misconduct
+    — edited air-quality assurances, air-defense accounts contradicted by
+    the tapes — which is established, load-bearing for calibration, and
+    routinely misused. It justifies refusing presumptive deference to
+    official reassurance. It does not license inferring concealment of
+    authorship, and both deceptions were exposed by other organs of the
+    same government.
+
+    The honest bottom line: the conventional account is substantially
+    correct and, at two identifiable points, not independently checkable;
+    the challenge is mostly refuted and, at one identifiable point,
+    pressing on something real. Nearly every decisive test is cheap,
+    desk- or lab-scale, and unperformed.
+claimAssessments:
+  - claimId: SEP-C001
+    verdict: established
+    reasoning: >-
+      Documented in the federal final report and independently in the
+      earlier FEMA study, including the severed water main and the absence
+      of manual firefighting.
+    confidence: high
+  - claimId: SEP-C002
+    verdict: established
+    reasoning: >-
+      Stated in the investigating agency's own principal findings after a
+      re-analysis prompted by public comment; not a contested measurement.
+    confidence: high
+  - claimId: SEP-C003
+    verdict: mixed
+    reasoning: >-
+      The only comprehensive mechanism, internally coherent and requiring
+      no melted steel; never independently reproduced and not reproducible
+      from released data. Unaudited is distinct from wrong, and this
+      verdict records that rather than splitting it.
+    confidence: moderate
+  - claimId: SEP-C004
+    verdict: weakly_supported
+    reasoning: >-
+      A real modeling effort that released its data, undermined by
+      sponsor funding, absence of journal peer review, a single static
+      temperature field, and a best-fit scenario in which simultaneous
+      column failure is imposed rather than derived.
+    confidence: moderate
+  - claimId: SEP-C005
+    verdict: established
+    reasoning: >-
+      The file counts, the statutory finding, and the court's holding are
+      all in the opinion. The figures do not reconcile arithmetically and
+      are recorded as given.
+    confidence: high
+  - claimId: SEP-C006
+    verdict: established
+    reasoning: >-
+      Acknowledged by the investigating agency, which explains that WTC 7
+      steel lacked the markings that made tower steel identifiable.
+    confidence: high
+  - claimId: SEP-C007
+    verdict: established
+    reasoning: >-
+      The observation, the explicit absence of an identified sulfur source,
+      and the unperformed recommendation are verbatim in the appendix.
+      Diagnosticity is limited because the candidate explanations were
+      never tested.
+    confidence: high
+  - claimId: SEP-C008
+    verdict: established
+    reasoning: >-
+      Multiple on-record accounts, and the agency's own FAQ answers a
+      responder who reported two loud booms without disputing that he did.
+    confidence: high
+  - claimId: SEP-C009
+    verdict: contradicted
+    reasoning: >-
+      A published, falsifiable acoustic prediction — 130 to 140 decibels
+      at half a mile — that no recording or account meets.
+    confidence: high
+  - claimId: SEP-C010
+    verdict: weakly_supported
+    reasoning: >-
+      Rests on the inadequacy of the alternative rather than on affirmative
+      evidence: no device, no residue on identified steel (none survives),
+      no blast signature. The unaudited mechanism keeps it from being
+      contradicted.
+    confidence: moderate
+  - claimId: SEP-C011
+    verdict: well_supported
+    reasoning: >-
+      Impact simulations, fire reconstruction, and observed inward bowing
+      converge. The report's own hedge — "likely would not have collapsed"
+      — is retained.
+    confidence: high
+  - claimId: SEP-C012
+    verdict: contradicted
+    reasoning: >-
+      The claim asserts an end-to-end model exists; the agency states
+      propagation was explained without that modeling. The verdict grades
+      the existence of the model, not the physics.
+    confidence: high
+  - claimId: SEP-C013
+    verdict: contradicted
+    reasoning: >-
+      Positive disproof: initiation at the impact floors, no pre-collapse
+      seismic signal, no corroborating evidence found, and charges would
+      have had to survive prolonged fire at the initiation point.
+    confidence: high
+  - claimId: SEP-C014
+    verdict: contradicted
+    reasoning: >-
+      Elemental aluminum is required by the claim and was not found in an
+      independent analysis of archived dust. Note the same report did not
+      identify the chips as the towers' primer, so the material remains
+      unidentified and both camps overstate their position.
+    confidence: moderate
+  - claimId: SEP-C015
+    verdict: well_supported
+    reasoning: >-
+      Consistent volume figures plus two independent peer-reviewed
+      analyses finding abnormal pre-attack activity. The published claim is
+      consistency with informed trading, not demonstration of it.
+    confidence: high
+  - claimId: SEP-C016
+    verdict: weakly_supported
+    reasoning: >-
+      The Commission's trace-outs are specific and plausible and cannot be
+      audited: the footnote names neither investor nor newsletter and cites
+      unpublished interviews and an internal memorandum.
+    confidence: moderate
+  - claimId: SEP-C017
+    verdict: contradicted
+    reasoning: >-
+      The quotation is authentic; its immediate context is a conversation
+      about containing the fire, independently corroborated by the
+      documented decision not to fight it, and the demolition reading is
+      not feasible on that timescale.
+    confidence: high
+  - claimId: SEP-C018
+    verdict: established
+    reasoning: >-
+      The brief text and the joint inquiry's first factual finding both
+      support it, in both halves: substantial warnings, none specifying
+      time, place, and method.
+    confidence: high
+  - claimId: SEP-C019
+    verdict: contradicted
+    reasoning: >-
+      Inspector-general reviews document specific bureaucratic failure at
+      each node and find no intentional misconduct where complicity would
+      require it.
+    confidence: high
+  - claimId: SEP-C020
+    verdict: well_supported
+    reasoning: >-
+      The Commission's staff statement records that the phantom-aircraft
+      response appeared in no public official timeline, corroborated by
+      reporting built on the operations-floor recordings themselves.
+    confidence: high
+  - claimId: SEP-C021
+    verdict: weakly_supported
+    reasoning: >-
+      The inspector general did not substantiate it and identified a real
+      1999 chart lacking the name; against that stand on-record military
+      accounts, five witnesses barred from testifying, and destroyed data.
+      Unresolvable from the surviving record.
+    confidence: low
+  - claimId: SEP-C022
+    verdict: well_supported
+    reasoning: >-
+      The declassified section documents contact and assistance, with its
+      own caveat that the inquiry made no determination as to the
+      information's reliability. Confined here to the assistance itself.
+    confidence: moderate
+  - claimId: SEP-C023
+    verdict: unresolved
+    reasoning: >-
+      The Commission excluded institutional and senior-official funding
+      while expressly leaving charity diversion open; a 2025 ruling found
+      the claims triable on jurisdiction rather than merits, and the appeal
+      stayed proceedings. No merits adjudication exists.
+    confidence: moderate
+  - claimId: SEP-C024
+    verdict: established
+    reasoning: >-
+      An inspector-general finding against its own agency: insufficient
+      data for the safety assurance, and reassurances added and cautions
+      deleted at the White House council's urging.
+    confidence: high

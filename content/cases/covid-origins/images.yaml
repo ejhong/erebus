@@ -1,0 +1,45 @@
+# COV-001 image manifest. Generated artwork may never be a plate (schema
+# hard rule): AI images are confined to editorial roles and always credited
+# as such, so nothing a reader could mistake for the record is synthetic.
+# This case has no plates, and deliberately so — the imagery it would
+# otherwise reach for (market photographs, laboratory interiors, molecular
+# renderings) either depicts contested subject matter or would illustrate a
+# hypothesis rather than a record.
+
+- id: IMG-COV-COVER
+  role: cover
+  file: /images/cases/covid-origins/cover.jpg
+  alt: >-
+    Abstract technical diagram on a cool porcelain field: two dense fans of
+    fine steel-grey lines converge from opposite edges toward two small
+    empty circles they never reach, the pair mirrored across the centre and
+    joined by a single thin horizontal reference line, with graticule ticks
+    along the margins.
+  source: generated
+  license: "Project artwork (AI-generated)"
+  credit: "AI-generated editorial artwork, Erebus house style"
+  styleVersion: style-e1
+  model: "gpt-image-1"
+  runId: "cover-style-e1-2026-08-26"
+  prompt: >-
+    Minimal modern technical editorial illustration, in the visual language
+    of a precise instrument chart or forensic diagram. An abstract technical
+    diagram of two symmetrical gaps: two dense fields of fine converging
+    linework approaching from opposite sides of a cold field, each narrowing
+    toward a small empty circular void that its lines never reach, the two
+    voids mirrored across the centre and connected by a single thin
+    unbroken reference line. Fine graticule ticks along the margins. Severe,
+    instrument-like, entirely geometric — no organic forms, no scene, no
+    place. Thin, exact vector-like linework: fine isolines, section lines,
+    waveform traces, small registration marks, restrained geometric
+    abstraction. Cold palette only — indigo-into-graphite field, steel-grey
+    linework, one restrained cool-white accent held between two empty
+    spaces — on a near-white cool porcelain field (#eef1f4) or a deep
+    blue-black field (#10151b); Prussian blue, slate, steel grey, indigo,
+    graphite throughout; no warm cream, sepia, ochre, or terracotta tones
+    anywhere. Flat, matte, documentary and quiet: no glow, no lens flare, no
+    3D render look, no gradients beyond subtle atmospheric shading.
+    Generous negative space, austere composition. Absolutely no text, no
+    numbers, no labels, no captions, no border frame lines. Stylized
+    editorial artwork, obviously an illustration — not photorealistic, no
+    photograph.
