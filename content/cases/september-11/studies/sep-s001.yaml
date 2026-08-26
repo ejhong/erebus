@@ -1,0 +1,102 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design: the criteria below are
+# judged before anyone knows what the data will say, and any later edit
+# to them fails the build. Collection follows in a second PR.
+id: SEP-S001
+title: The peer-reviewed record on pre-9/11 option trading
+question: What does the peer-reviewed empirical literature actually find about
+  pre-attack option-market activity — which abnormalities, at what significance,
+  in which instruments — and how does each finding engage the Commission's
+  conclusion that the flagged trades had innocuous explanations?
+researchIds:
+  - SEP-R005
+claimIds:
+  - SEP-C015
+  - SEP-C016
+criteria:
+  frozenOn: 2026-08-26
+  inclusion:
+    - Peer-reviewed empirical analyses, 2001-2026, of securities or option
+      trading in the period before September 11, 2001, using market data with a
+      stated statistical methodology and reported results specific to the
+      pre-attack window.
+    - Each row records the authors' own interpretation verbatim alongside their
+      statistics — several papers in this literature find abnormality while
+      explicitly declining attribution, and collapsing that distinction is the
+      standard public misuse.
+    - The official record — the Commission Report's conclusion and its
+      supporting note describing the investigations — is the comparandum the
+      rows are read against, not a row itself.
+  exclusion:
+    - Books, essays, and web analyses without peer review (discovery leads only).
+    - Studies of terrorism-and-markets generally that do not analyze the
+      specific pre-9/11 trading window.
+    - Working-paper versions superseded by a peer-reviewed publication (the
+      published version is the row; the working-paper history is noted in the
+      cell where relevant).
+  searchProtocol: "Multi-searcher discovery, run only after this freeze, protocol
+    verbatim per searcher: (1) OpenAI deep research (o4-mini-deep-research,
+    background mode; documented substitute if unavailable, deviation recorded in
+    the limitations); (2) Gemini deep research (background mode, store enabled);
+    (3) the executing agent's own web search. Literal queries, each run in all
+    three: [Poteshman unusual option market activity September 11 Journal of
+    Business]; [Chesney Crameri Mancini detecting abnormal trading option
+    markets]; [abnormal trading S&P 500 index options prior September 11 attacks
+    study]; [informed trading 9/11 put options peer-reviewed]; [pre-9/11 put
+    option volume empirical analysis journal]. Per-candidate follow-up: citation
+    resolution to DOI or stable journal locator, plus the study name with
+    'informed trading' and 'September 11'. Sources searched: Journal of
+    Business, Journal of Empirical Finance, finance and economics journals via
+    DOI resolution, the 9/11 Commission Report and its notes for the
+    comparandum. Deep-research output is a brief: it proposes candidates and is
+    never cited; every cell is verified natively against the primary publication
+    before entering the table."
+  knownCandidates:
+    - name: Poteshman 2006, 'Unusual Option Market Activity and the Terrorist Attacks
+        of September 11, 2001' (Journal of Business)
+      disposition: include
+      reason: the foundational peer-reviewed analysis of AMR/UAL put activity
+    - name: Chesney, Crameri & Mancini, 'Detecting abnormal trading activities in
+        option markets' (Journal of Empirical Finance, 2015)
+      disposition: include
+      reason: the broadest peer-reviewed abnormality screen covering the pre-9/11
+        window
+    - name: Wong, Thompson & Teh, 'Was there abnormal trading in the S&P 500 index
+        options prior to the September 11 attacks?'
+      disposition: include
+      reason: index-option analysis; peer-review venue verified at collection before
+        the row enters
+    - name: 9/11 Commission Report, chapter 5 note on trading investigations
+      disposition: exclude
+      reason: the comparandum — the official conclusion the rows are read against, not
+        a row
+  criteriaHash: f2938e9757ab
+method: Discovery per the frozen protocol; one row per peer-reviewed study, each
+  cell citing the primary publication with the standard verification label. The
+  authors' statistics and the authors' stated interpretations are separate cells
+  — a finding of statistical abnormality and an attribution of foreknowledge are
+  different claims, and this literature is routinely misquoted by merging them
+  in both directions. Findings state what the literature establishes, what it
+  explicitly declines to establish, and where each paper stands relative to the
+  Commission's innocuous-explanation conclusion — including whether any paper
+  engages the specific trade-tracing the official note describes. The study
+  grades the published record; it does not re-analyze market data (that is
+  SEP-R005's paired re-analysis, separate work). Failed searches are reported,
+  and the searcher-overlap coverage indicator is given. Either outcome
+  publishes.
+columns:
+  - study
+  - year and venue
+  - data and window
+  - method
+  - abnormality finding (instruments, significance)
+  - authors' stated interpretation
+  - engagement with the official explanation
+rows: []
+findings: []
+limitations: []
+runId: 2026-08-26-study-sep-s001-freeze
+model: Claude Fable 5 (Anthropic), via Cursor
+date: 2026-08-26
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false
