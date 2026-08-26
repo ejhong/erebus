@@ -97,15 +97,14 @@ Current queue (2026-08-25):
 2. ~~Inbox-response workflow token bug.~~ **Merged upstream 2026-08-26**
    (aletheia PR #77) and pulled back the same day; the allowlist entry for
    `inbox-response.yml` is retired with it.
-3. **Study/workpaper domain object (feature proposal — build upstream
-   first).** Desk research produces datasets (base-rate tabulations,
-   replication tables, discrepancy ledgers) whose epistemic unit is the
-   study, not the row. Proposed: a per-case `studies/` object with frozen
-   inclusion criteria (freeze date), method, a sourced table, findings,
-   and limitations — rendered on the case page and linkable from evidence
-   records, so ledgers stay coarse (aggregate findings only) while the
-   full table remains auditable on the site. Interim convention in this
-   repo: `docs/CONTENT_POLICY.md`, "Studies and workpapers."
+3. ~~Study/workpaper domain object.~~ **Merged upstream 2026-08-26**
+   (aletheia PR #85, arbiter 5/5; design ratified here as
+   `docs/STUDIES_PROPOSAL.md`, PRs #32/#33) and pulled back the same
+   day: per-case `studies/` with tamper-evident frozen criteria
+   (criteriaHash + knownCandidates), sourced rows in the source-anchor
+   citation shape, aggregate-grain ledger entry via `workpaper` sources,
+   render-from-freeze, supersession wired to CI. The interim convention
+   in `docs/CONTENT_POLICY.md` now points at the real feature.
 4. ~~Empty-state rendering for the homepage and case index.~~ **Merged
    upstream 2026-08-26** (aletheia PR #81, in the upstream's own design
    idiom). This repo's page files stay allowlisted — they diverge for
