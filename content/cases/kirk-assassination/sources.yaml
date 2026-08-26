@@ -672,13 +672,13 @@
     2026-06-29 (fbi.gov live page sits behind a bot wall).
   reliabilityNotes:
     - "The director's own words about the bureau's role; authoritative for what the FBI publicly claimed, not for whether that role was typical."
-- id: SRC-KRK-S001
-  title: "Workpaper: scene-release-to-alteration intervals in comparable American cases (study KRK-S001)"
+- id: SRC-KRK-S003
+  title: "Workpaper: scene-release-to-alteration intervals in comparable American cases (study KRK-S003, superseding KRK-S001)"
   organization: "This site (AI-authored project work held in the repository)"
   year: "2026"
   sourceType: workpaper
-  studyId: KRK-S001
-  identifier: "Pre-registered 2026-08-26 (criteria hash 14c82614b623); collected 2026-08-26"
+  studyId: KRK-S003
+  identifier: "Pre-registered 2026-08-26 (criteria hash 14c82614b623); collected 2026-08-26; superseded same day by KRK-S003 after the third searcher surfaced one missed row"
   verification: ai_verified
   verificationNote: >-
     Every row cell carries its own citation and verification label on the
