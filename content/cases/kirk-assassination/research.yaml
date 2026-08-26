@@ -259,20 +259,25 @@
 - id: KRK-R014
   title: "Base-rate study: inconclusive outcomes in firearm-toolmark black-box studies"
   summary: >-
-    Tabulate the published ground-truth studies of firearm-toolmark
-    comparison by trained examiners (black-box and validation studies,
-    2000-2026, bullets and cartridge cases): design, response options,
-    the share of inconclusive responses on same-source and
-    different-source pairs, and — critically — each study's convention
-    for scoring inconclusives in its reported error rates. Then read the
-    ATF examiner's inconclusive comparison in this case (KRK-C004)
-    against that distribution. The discriminating question is not
-    whether inconclusives happen — they are a standard response category
-    — but what an inconclusive shifts between the two public misreadings
-    this case documents: "the bullet matched" and "the rifle was
-    cleared." An explicit applicability limit rides every row:
-    black-box materials are intact test-fires; the questioned items here
-    are fragments.
+    This study has now been carried out across six ground-truth studies of
+    firearm-toolmark comparison (2014-2024, 49-228 examiners each):
+    inconclusive is a standard response category scored as a non-error,
+    observed at rates from a few percent up to the modal response on true
+    different-source bullet comparisons, and widely quoted sub-1% error
+    rates are conclusives-only figures — incorporating inconclusives drops
+    true-negative performance to 63.5% in the one study reporting both.
+    Every study reporting both shares finds inconclusives far more common on
+    true different-source than true same-source pairs, but the single study
+    including damaged bullets finds specimen quality drives inconclusive
+    rates by itself, so that asymmetry does not transfer to the fragments at
+    issue here (KRK-C004). What remains is to extend the tabulation beyond
+    six studies and to source additional damaged-specimen designs. The
+    discriminating question is not whether inconclusives happen — they are a
+    standard response category — but what an inconclusive shifts between the
+    two public misreadings this case documents: "the bullet matched" and
+    "the rifle was cleared." An explicit applicability limit rides every
+    row: black-box materials are intact test-fires; the questioned items
+    here are fragments.
   claimIds: [KRK-C003, KRK-C004]
   track: either
   effortTier: desk
