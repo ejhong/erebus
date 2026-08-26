@@ -1,0 +1,246 @@
+# Cross-model check run — an independent judge (Gemini 3.1 Pro (Google)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-gemini
+model: Gemini 3.1 Pro (Google) — independent check run via gemini-3.1-pro-preview
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: unresolved
+  loadBearing:
+    - COV-C002
+    - COV-C006
+    - COV-C010
+    - COV-C016
+    - COV-C018
+  weakestLinks:
+    - COV-C008
+    - COV-C017
+  synthesis: >-
+    This case evaluates the competing zoonotic and research-related origin
+    hypotheses for SARS-CoV-2. A rigorous assessment of the provided evidence
+    reveals that both families of explanation possess substantive circumstantial
+    foundations but critically lack the definitive evidence required to close
+    their respective transmission chains. 
+
+    The strongest affirmative case for a zoonotic origin relies heavily on
+    spatial and metagenomic data clustering at the Huanan Seafood Wholesale
+    Market. Early case geography, including patients with no explicit market
+    linkage, centers tightly on the market. Furthermore, positive environmental
+    sampling within the market concentrates overwhelmingly in the western
+    section where live mammals were sold. Metagenomic sequencing confirms the
+    co-presence of the virus and the mitochondrial DNA of susceptible
+    intermediate hosts, such as raccoon dogs, exactly in these stalls.
+    Phylogenetic modeling also suggests that the earliest genomic diversity is
+    best explained by multiple independent viral introductions, a pattern
+    readily accommodated by the wildlife trade but awkward for a single
+    laboratory index case.
+
+    Conversely, the research-related hypothesis is fortified by a profound lack
+    of direct zoonotic evidence and documented pre-pandemic laboratory intent.
+    Despite the largest such search on record, no infected intermediate animal
+    has ever been found in the market or the upstream supply chain. The
+    co-location of viral RNA and animal DNA in a market stall merely establishes
+    shared space, not infection, and is equally explained by an infected human
+    shedding virus onto animal products. Furthermore, the 2018 DEFUSE proposal
+    proves that EcoHealth Alliance and the Wuhan Institute of Virology
+    explicitly planned to insert human-specific furin cleavage sites into bat
+    coronaviruses—the precise biological feature that differentiates SARS-CoV-2
+    from its closest known relatives. Compounded by confirmed BSL-2 work on
+    SARS-like coronaviruses at the Wuhan Institute of Virology and systematic
+    opacity regarding laboratory inventories and early patient data, a
+    laboratory-acquired infection remains deeply plausible.
+
+    Ultimately, the case turns on two symmetrical absences: the zoonotic missing
+    animal and the research-related missing laboratory inventory. Because the
+    evidence required to conclusively settle the dispute—upstream wildlife
+    traceback and raw, audited laboratory and health records—is held by a single
+    custodian who has declared the investigation complete, neither hypothesis
+    can currently achieve evidentiary supremacy. The available scientific
+    consensus therefore appropriately favors zoonosis based on what can be
+    publicly observed, while explicitly acknowledging that a laboratory origin
+    cannot be empirically refuted.
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: Convergence of spatial case data, environmental positives, and
+      internal CDC data firmly establishes the market as the geographic
+      epicenter of early cases. The WHO SAGO report concurs on this geographic
+      centrality based on accessible data. The strongest opposing consideration
+      is that this spatial conclusion rests entirely on early Chinese case
+      ascertainment methodology and line lists that have never been
+      independently audited or fully released.
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: The peer-reviewed spatial analysis demonstrates that early unlinked
+      cases resided significantly closer to the market than market workers did.
+      This is highly diagnostic because it is difficult for standard
+      ascertainment bias to explain. The strongest opposing consideration is
+      that the finding relies on a modest p-value (0.029), rests on unaudited
+      case definitions, and the underlying geospatial data remains unreleased
+      for independent reproduction.
+  - claimId: COV-C003
+    verdict: well_supported
+    confidence: high
+    reasoning: The earliest published clinical series by Huang et al. explicitly
+      reports that the earliest identified patient had a December 1 onset date
+      and no epidemiological link to the market. This observation provides
+      plausible evidence for an upstream spillover or non-market index event.
+      The strongest opposing consideration is that a single patient's exposure
+      history is weak evidence, and the identification of this specific patient
+      as the true earliest case has been heavily disputed.
+  - claimId: COV-C004
+    verdict: well_supported
+    confidence: high
+    reasoning: The Chinese CDC's surveillance paper directly reports the collection
+      of 923 environmental samples and the detection of 74 positives following
+      the market's closure. This robustly establishes the presence of the virus
+      throughout the market environment. The strongest opposing consideration is
+      that sampling only commenced after the market was cleared of goods and
+      disinfected, severely bounding the diagnostic value of the results.
+  - claimId: COV-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: Independent spatial models and the Chinese CDC's own internal data
+      mutually confirm that 87.5 percent of positive interior samples came from
+      the market's western zone. This successfully narrows the physical
+      clustering to the exact area where live mammals were sold. The strongest
+      opposing consideration is that unverified advocacy analyses suggest this
+      section was poorly ventilated, meaning human shedding could independently
+      explain the dense viral concentration.
+  - claimId: COV-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: "Metagenomic reanalysis of the Chinese CDC data confirms the presence
+      of mitochondrial DNA from susceptible wildlife species within the exact
+      same viral-positive environmental swabs. This directly proves the virus
+      and candidate hosts were in the exact same location. The strongest
+      opposing consideration is stated by the authors themselves: co-location
+      cannot establish if the animals were infected, as an unreported human case
+      shedding in the stall would leave identical evidence."
+  - claimId: COV-C007
+    verdict: well_supported
+    confidence: high
+    reasoning: Extensive testing of 457 animals by the Chinese CDC yielded zero
+      positive results for SARS-CoV-2, a negative finding echoed by WHO
+      assessments of Chinese testing efforts. This represents a massive
+      empirical deficit for the zoonotic hypothesis. The strongest opposing
+      consideration is that the candidate intermediate host species (like civets
+      and raccoon dogs) were never actually sampled before the market was
+      cleared, making the negative results largely uninformative.
+  - claimId: COV-C008
+    verdict: unresolved
+    confidence: high
+    reasoning: "While spatial clustering and metagenomic co-location are highly
+      consistent with an infected supply-chain animal, no affirmative biological
+      proof has ever been produced. The physical opportunity to locate an
+      infected animal in the 2019 stock has functionally expired. The strongest
+      opposing consideration is simply the absolute absence of evidence: without
+      archived positive tissues or complete traceback data, the zoonotic
+      transmission chain remains unclosed."
+  - claimId: COV-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: Published phylogenetic analyses universally agree that the
+      pre-February 2020 viral genomes partition cleanly into two distinct
+      lineages, A and B. It is undisputed that these lineages are separated by
+      two nucleotide differences. The strongest opposing consideration is that
+      several hundred early Chinese genomic sequences remain deliberately
+      withheld, meaning the observed lineage structure is incomplete by design.
+  - claimId: COV-C010
+    verdict: mixed
+    confidence: moderate
+    reasoning: Model-based statistical inferences favor the conclusion that lineages
+      A and B represent at least two separate zoonotic introductions, a scenario
+      highly awkward for a single laboratory incident. However, a major coding
+      error heavily overestimated the Bayes factors, forcing a fourteenfold
+      downward correction in the published support. The strongest opposing
+      consideration is this massive statistical demotion, coupled with the
+      models' extreme sensitivity to molecular clock assumptions and unpublished
+      early sequences.
+  - claimId: COV-C011
+    verdict: well_supported
+    confidence: high
+    reasoning: The biological presence of the polybasic furin cleavage site in
+      SARS-CoV-2 is undisputed, and field virology confirms its absence in the
+      closest known sampled bat sarbecovirus relatives. It serves as a highly
+      credible genomic observation. The strongest opposing consideration is that
+      natural sarbecovirus diversity is heavily undersampled, and furin motifs
+      are routinely found in other natural coronavirus lineages, providing no
+      direct proof of artificial insertion.
+  - claimId: COV-C012
+    verdict: well_supported
+    confidence: high
+    reasoning: The US intelligence community and WHO genomic analyses concur that
+      the virus carries no feature currently accepted as a diagnostic
+      fingerprint of genetic engineering. The notable genomic features are
+      readily explained by natural evolution. The strongest opposing
+      consideration is that seamless reverse genetic techniques leave no
+      required forensic scar, meaning the absence of a signature cannot exclude
+      a sophisticated laboratory origin.
+  - claimId: COV-C013
+    verdict: well_supported
+    confidence: high
+    reasoning: Sequencing data confirms that the closest known bat relatives, such
+      as RaTG13, share roughly 96 percent identity with SARS-CoV-2. This
+      percentage represents decades of evolutionary distance, definitively
+      proving these specific sampled viruses could not be immediate progenitors.
+      The strongest opposing consideration is that this only reflects sampled
+      diversity; unsampled, closer relatives are highly plausible and strictly
+      required by both origin hypotheses.
+  - claimId: COV-C016
+    verdict: well_supported
+    confidence: high
+    reasoning: The March 2018 DEFUSE proposal text explicitly details plans to
+      evaluate and introduce human-specific cleavage sites into SARS-related
+      coronaviruses in collaboration with Wuhan partners. This provides verified
+      documentary evidence of intent and capability twenty months before the
+      outbreak. The strongest opposing consideration is that the proposal was
+      ultimately rejected and never funded by DARPA, and contemplating an
+      experiment on paper is not proof of its execution.
+  - claimId: COV-C017
+    verdict: unresolved
+    confidence: high
+    reasoning: There is zero public record or intelligence confirming that the
+      cleavage-site insertion experiments detailed in the DEFUSE proposal were
+      actually performed. At the same time, the necessary biosafety approvals,
+      lab notebooks, and synthesis orders that could clear the institute have
+      never been produced. The strongest opposing consideration is that an
+      unfunded proposal is exceptionally weak grounds for inferring action,
+      especially when six years of probing have failed to uncover a precursor
+      sequence.
+  - claimId: COV-C018
+    verdict: well_supported
+    confidence: high
+    reasoning: Declassified ODNI reports confirm that Wuhan Institute of Virology
+      researchers worked with SARS-like coronaviruses in BSL-2 containment and
+      likely utilized inadequate biosafety precautions. This establishes
+      undeniable geographic opportunity and degraded practice. The strongest
+      opposing consideration is that the same intelligence report explicitly
+      states it has no indication the institute held a progenitor virus and
+      knows of no specific biosafety incident causing the pandemic.
+  - claimId: COV-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: Declassified intelligence summaries explicitly document a lack of
+      consensus, with most agencies favoring natural exposure at low confidence,
+      one favoring a lab incident at moderate confidence, and others undecided.
+      This sustained split strongly indicates that no agency possesses decisive
+      material. The strongest opposing consideration is that these summaries are
+      heavily redacted and their underlying classified intelligence reports
+      cannot be audited by the public.
+  - claimId: COV-C015
+    verdict: well_supported
+    confidence: high
+    reasoning: The WHO SAGO report concludes that the weight of accessible evidence
+      suggests zoonotic spillover, while explicitly stating it lacked the
+      necessary information to evaluate a laboratory origin. This represents the
+      most authoritative scientific synthesis of the available data. The
+      strongest opposing consideration is that the synthesis is fundamentally
+      limited by a deeply restricted evidence base, with raw data and laboratory
+      records having been withheld by multiple governments.
