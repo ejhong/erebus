@@ -122,3 +122,20 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  kind: content
+  change: Updated the research agenda item proposing a base-rate study of
+    scene-release-to-alteration intervals (KRK-R011) to record that the study
+    has since been carried out across fifteen comparable venues, with the UVU
+    courtyard found unremarkable on speed but unmatched on authorization
+    sequence. The item now describes the remaining work — extending the
+    population and sourcing the rows whose formal scene-release dates public
+    reporting does not record. No changes were needed to the overview article.
+  reason: The agenda proposed as future work a study the evidence records now
+    report as completed, which would have misled readers about what this case
+    still needs.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true

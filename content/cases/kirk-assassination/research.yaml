@@ -156,15 +156,18 @@
 - id: KRK-R011
   title: "Base-rate study: scene-release-to-alteration intervals in comparable cases"
   summary: >-
-    Tabulate a dozen or more comparable cases (mass-casualty events and
-    killings of public figures at public venues) with, for each: the date
-    investigators formally released the scene, the date of first physical
-    alteration or remediation, the interval between them, the authorizing
-    party, and the sourcing for each cell. Then place the UVU courtyard
-    alteration (cleanup order September 11; pavers September 14; lead
-    investigator testifying he did not authorize) against that
-    distribution. The discriminating variables are sequence (release
-    before alteration?) and authority (who ordered it?), not speed alone.
+    This study has now been carried out at fifteen venues: the resulting
+    table places the UVU courtyard alteration (cleanup order September 11;
+    pavers September 14; lead investigator testifying he did not authorize)
+    as unremarkable on speed — comparable scenes were altered as fast or
+    faster under owner authorization no investigator disputed — but
+    unmatched in the table on sequence and authority, being the only case
+    with a disputed authorization on the record and the only fast alteration
+    whose formal release date is absent from public reporting. What remains
+    is to extend the population beyond fifteen venues and to source the
+    seven rows whose formal release dates public reporting does not record.
+    The discriminating variables are sequence (release before alteration?)
+    and authority (who ordered it?), not speed alone.
   claimIds: [KRK-C013, KRK-C017]
   track: either
   effortTier: desk
