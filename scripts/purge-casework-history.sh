@@ -25,7 +25,28 @@
 #   git branch -r --sort=-committerdate | head -20
 #
 # Coordinate with any other agent sessions working in the repo. This is the
-# one operation here that cannot be done concurrently.
+# one operation here that cannot be done concurrently. See
+# docs/MIGRATION-PUBLIC.md, which is the brief written for them.
+#
+# SCOPE: EVERY REF, NOT JUST MAIN
+#
+# At last count 44 of 47 branches carried casework/, and 22 carried all four
+# copyrighted documents. Purging main alone achieves nothing — each surviving
+# ref keeps the blobs reachable, and on a public repo all of them are
+# browsable. So delete the stale branches FIRST (most are squash-merged
+# leftovers), then rewrite what remains:
+#
+#   # inspect what still holds casework, and how much of it is copyrighted
+#   for b in $(git branch -r --format='%(refname:short)' | grep -v HEAD); do
+#     n=$(git ls-tree -r "$b" --name-only 2>/dev/null | grep -c '^casework' || true)
+#     [ "${n:-0}" -gt 0 ] && echo "$b  files=$n"
+#   done
+#
+#   # delete a stale remote branch once you are sure it is not needed
+#   git push origin --delete <branch>
+#
+# The verification below checks every ref, so it will fail loudly if a
+# branch was missed rather than letting a contaminated ref survive.
 #
 # WHAT IT DOES NOT DO
 #
