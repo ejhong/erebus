@@ -126,11 +126,338 @@ columns:
   - interval (days)
   - authorized by
   - sequence
-rows: []
-findings: []
-limitations: []
-runId: 2026-08-26-study-krk-s001-freeze
+rows:
+  - cells:
+      case: "Boston Marathon finish line (Boylston Street)"
+      venue type: public street
+      event date: "2013-04-15"
+      scene released: "2013-04-22 17:02 (FBI returned the street to the City of Boston)"
+      first alteration: "2013-04-22 from 17:03 (city restoration: cleaning, debris removal); street public 2013-04-24"
+      alteration type: cleanup and restoration, pre-planned
+      interval (days): "0 from release (7 event-to-release)"
+      authorized by: "City of Boston (Mayor/OEM restoration plan, prepared in advance)"
+      sequence: alteration after formal release, same day
+    citation:
+      text: "City of Boston after-action report; ASIS minute-level timeline; CBS Boston, April 22, 2013"
+      url: "https://www.policinginstitute.org/wp-content/uploads/2015/05/after-action-report-for-the-response-to-the-2013-boston-marathon-bombings_0.pdf"
+      verification: ai_verified
+  - cells:
+      case: "West Nickel Mines Amish School"
+      venue type: one-room school
+      event date: "2006-10-02"
+      scene released: "not separately documented (perpetrator died at scene; building boarded up in the interim)"
+      first alteration: "2006-10-12, pre-dawn demolition; debris removed by 07:30"
+      alteration type: complete demolition, site returned to pasture
+      interval (days): "10 from event"
+      authorized by: "the Amish community (property owner), private contractors, state police escort"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "Lancaster Online / CBS News / AP, October 12, 2006; NYT, January 31, 2007"
+      url: "https://www.cbsnews.com/news/amish-schoolhouse-demolished-before-dawn/"
+      verification: ai_verified
+  - cells:
+      case: "First Baptist Church, Sutherland Springs"
+      venue type: church
+      event date: "2017-11-05"
+      scene released: "not separately documented"
+      first alteration: "by 2017-11-12: interior restored by volunteers (bullet holes patched, painted white), opened as memorial; building later demolished 2024-08-12 after congregation vote and litigation"
+      alteration type: interior restoration to memorial (first); demolition (later)
+      interval (days): "7 from event"
+      authorized by: "the church (property owner); 2024 demolition cleared by court after congregation vote"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "Houston Public Media / NBC News, November 12-13, 2017; AP / Texas Tribune, August 12, 2024"
+      url: "https://www.houstonpublicmedia.org/articles/news/2017/11/13/250174/a-week-after-mass-shooting-texas-church-to-open-as-a-memorial/"
+      verification: ai_verified
+  - cells:
+      case: "Tops Friendly Market, Buffalo"
+      venue type: supermarket
+      event date: "2022-05-14"
+      scene released: "not found under the frozen protocol"
+      first alteration: "renovation; store reopened 2022-07-15"
+      alteration type: full interior and exterior renovation
+      interval (days): "62 from event"
+      authorized by: "Tops (property owner)"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "AP News, July 14-15, 2022"
+      url: "https://apnews.com/article/buffalo-supermarket-shooting-reopening-6c3e4fb6238209fed4bde4d463729776"
+      verification: ai_verified
+  - cells:
+      case: "Cielo Vista Walmart, El Paso"
+      venue type: big-box store
+      event date: "2019-08-03"
+      scene released: "not found under the frozen protocol"
+      first alteration: "complete interior renovation; reopened 2019-11-14"
+      alteration type: full renovation (new flooring, ceiling, layout)
+      interval (days): "103 from event"
+      authorized by: "Walmart (property owner)"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "NPR / AP / CNN, November 14, 2019"
+      url: "https://www.npr.org/2019/11/14/779208289/el-paso-walmart-reopens-after-shooting"
+      verification: ai_verified
+  - cells:
+      case: "Century 16 theater, Aurora"
+      venue type: cinema
+      event date: "2012-07-20"
+      scene released: "not found under the frozen protocol"
+      first alteration: "remodel (bloodstained aisles, seats and hallways replaced); reopened 2013-01-17"
+      alteration type: interior remodel, >$1M
+      interval (days): "181 from event"
+      authorized by: "Cinemark (property owner), after a city survey favored reopening"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "AP / USA Today, January 17, 2013"
+      url: "https://apnews.com/article/entertainment-shootings-movies-colorado-de6bfdc4106f408e8714e27f95ba8419"
+      verification: ai_verified
+  - cells:
+      case: "Sandy Hook Elementary, Newtown"
+      venue type: school
+      event date: "2012-12-14"
+      scene released: "scene processing took seven days per the State's Attorney report (~2012-12-21)"
+      first alteration: "demolition began 2013-10-25, completed December 2013"
+      alteration type: complete demolition and rebuild
+      interval (days): "~308 from release (315 from event)"
+      authorized by: "Newtown referendum of 2013-10-05 (4504-558), $50M state funds"
+      sequence: alteration ten months after release, by public vote
+    citation:
+      text: "State's Attorney report (primary); NPR, October 6, 2013"
+      url: "https://www.npr.org/sections/thetwo-way/2013/10/06/229797855/the-votes-are-in-sandy-hook-elementary-will-be-torn-down"
+      verification: ai_verified
+  - cells:
+      case: "Norris Hall, Virginia Tech"
+      venue type: campus building
+      event date: "2007-04-16"
+      scene released: "building closed for the rest of spring 2007; reopened to limited university use June 2007 (campus building history; date not confirmed in NPR/AP)"
+      first alteration: "renovation of the affected wing, announced 2007-12-20, completed March 2009, reopened 2009-04-10"
+      alteration type: renovation (classrooms converted to labs and a peace-studies center)
+      interval (days): "~430 from release to renovation start (fall 2008)"
+      authorized by: "the university"
+      sequence: alteration long after release; undisputed
+    citation:
+      text: "NPR / AP, April 10, 2009 (renovation and reopening); closure period per campus building history"
+      url: "https://www.npr.org/2009/04/10/102950727/two-years-after-massacre-va-tech-reopens-hall"
+      verification: ai_verified
+  - cells:
+      case: "Berkey Hall, Michigan State University"
+      venue type: campus building
+      event date: "2023-02-13"
+      scene released: "not found under the frozen protocol (offices reopened fall 2023)"
+      first alteration: "renovation of the impacted wing began 2024-04-01"
+      alteration type: trauma-informed renovation (classrooms to commons)
+      interval (days): "413 from event"
+      authorized by: "the university, with input from impacted families"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "MSU Spartans Together / IPF notices; AP, January 8, 2024"
+      url: "https://spartanstogether.msu.edu/messages/2024-03-21-update-renovations-berkey-union"
+      verification: ai_verified
+  - cells:
+      case: "The Covenant School, Nashville"
+      venue type: school
+      event date: "2023-03-27"
+      scene released: "not found under the frozen protocol"
+      first alteration: "building renovation during the ~15 months students were housed at a church; students returned April 2024"
+      alteration type: full interior renovation
+      interval (days): "~380 from event (renovation start not separately dated)"
+      authorized by: "the school and Covenant Presbyterian Church (owners)"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "AP News, June 2024 (tour of the completed renovation); NewsChannel5, April 2023 (relocation)"
+      url: "https://apnews.com/article/nashville-covenant-school-shooting-rainbow-f1a913ea678bed9ff98fdd59304c81d9"
+      verification: ai_verified
+  - cells:
+      case: "Snyder Hall, Umpqua Community College"
+      venue type: campus building
+      event date: "2015-10-01"
+      scene released: "not found under the frozen protocol"
+      first alteration: "demolition scheduled to begin the week of 2016-10-17; underway that month"
+      alteration type: demolition and replacement
+      interval (days): "~382 from event"
+      authorized by: "the college, after a 16-member campus committee voted unanimously to rebuild"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
+    citation:
+      text: "The Oregonian, September 30, 2016; AP, October 2016; Herald and News, October 2016"
+      url: "https://www.oregonlive.com/roseburg-oregon-school-shooting/2016/09/demolition_of_snyder_hall_--_s.html"
+      verification: ai_verified
+  - cells:
+      case: "Astroworld festival grounds, NRG Park"
+      venue type: festival grounds
+      event date: "2021-11-05"
+      scene released: "court freeze: a Harris County judge halted cleanup to preserve evidence"
+      first alteration: "stage structure removed ~2021-12-08, after the freeze lifted"
+      alteration type: stage removal and site cleanup
+      interval (days): "~33 from event"
+      authorized by: "court-supervised; venue owned by Harris County"
+      sequence: alteration blocked until judicial release, then proceeded
+    citation:
+      text: "Houston Chronicle, December 8, 2021"
+      url: "https://www.houstonchronicle.com/news/houston-texas/astroworld-fest-tragedy/article/Astroworld-festival-set-at-NRG-taken-down-16705200.php"
+      verification: ai_verified
+  - cells:
+      case: "Route 91 Harvest festival lot (Las Vegas Village)"
+      venue type: festival grounds
+      event date: "2017-10-01"
+      scene released: "2017-11-17: FBI completed cleanup contract and returned the property to MGM"
+      first alteration: "none — lot fenced and dormant for 5+ years (2 acres donated for a memorial 2021; remainder sold 2022, still undeveloped)"
+      alteration type: none (censored row)
+      interval (days): "censored — no structural alteration after release"
+      authorized by: "owner (MGM) chose non-alteration"
+      sequence: released, then preserved by owner choice
+    citation:
+      text: "KNPR, November 17, 2017; NBC News, December 2022; Las Vegas Review-Journal"
+      url: "https://knpr.org/knpr/2017-11-17/clean-up-of-route-91-festival-grounds-completed"
+      verification: ai_verified
+  - cells:
+      case: "1200 building, Marjory Stoneman Douglas High School"
+      venue type: school building
+      event date: "2018-02-14"
+      scene released: "preserved as evidence for two criminal trials; released after proceedings concluded (2023)"
+      first alteration: "hazmat abatement April 2024; demolition began 2024-06-14"
+      alteration type: complete demolition
+      interval (days): "~2312 from event; under a year from effective release"
+      authorized by: "Broward County Public Schools, after the courts finished with the building"
+      sequence: court-driven preservation, then owner demolition
+    citation:
+      text: "AP / CNN / Reuters, June 14, 2024"
+      url: "https://apnews.com/article/school-shooting-parkland-florida-2084c00ad62a93bee257da06f1b907cc"
+      verification: ai_verified
+  - cells:
+      case: "Robb Elementary, Uvalde"
+      venue type: school
+      event date: "2022-05-24"
+      scene released: "NOT RELEASED — the campus was still held as evidence in an active investigation per district statements in late 2025 (Uvalde Leader News), with no demolition plans at the replacement school's October 2025 opening (ABC News); related records were still being withheld by the district attorney in August 2026 (Uvalde Hesperian, 2026-08-19)"
+      first alteration: "none — demolition authorized by the district in June 2022 but blocked pending release"
+      alteration type: none (censored row; release itself pending)
+      interval (days): "censored — no release through at least late 2025 (1,200+ days), records still withheld August 2026"
+      authorized by: "district authorized demolition; DA controls release"
+      sequence: alteration awaiting release; the inverse of rapid alteration
+    citation:
+      text: "BBC, June 22, 2022 (demolition announced); Uvalde Leader News (campus still evidence, late 2025); ABC News, October 2025; Uvalde Hesperian, August 19, 2026 (records still withheld)"
+      url: "https://uvaldehesperian.com/one-year-later-the-38th-judicial-district-attorney-has-not-released-requested-robb-school-public-records/"
+      verification: ai_verified
+  - cells:
+      case: "Tree of Life synagogue, Pittsburgh"
+      venue type: synagogue
+      event date: "2018-10-27"
+      scene released: "building vacant and preserved through the federal trial (sentence August 2023)"
+      first alteration: "demolition began 2024-01-17"
+      alteration type: demolition (portions of sanctuary walls preserved)
+      interval (days): "~1908 from event; months from effective release"
+      authorized by: "the congregation / Tree of Life organization, post-trial"
+      sequence: trial-driven preservation, then owner demolition
+    citation:
+      text: "AP / NPR / CBS Pittsburgh, January 17, 2024"
+      url: "https://www.npr.org/2024/01/17/1225239748/pittsburgh-synagogue-tree-of-life-demolition"
+      verification: ai_verified
+  - cells:
+      case: "Pulse nightclub, Orlando"
+      venue type: nightclub
+      event date: "2016-06-12"
+      scene released: "FBI release date not found under the frozen protocol"
+      first alteration: "preserved ~9.75 years as an interim memorial; demolished 2026-03-18"
+      alteration type: demolition for a permanent memorial
+      interval (days): "~3566 from event"
+      authorized by: "City of Orlando (owner since October 2023)"
+      sequence: long preservation, then owner demolition
+    citation:
+      text: "AP / NBC News / ClickOrlando, March 18-19, 2026"
+      url: "https://apnews.com/article/pulse-nightclub-demolition-76d3ca26a6eda488bef53b1d8f0aa046"
+      verification: ai_verified
+findings:
+  - statement: >-
+      Rapid physical alteration after a scene is released is documented
+      and unremarkable in comparable cases when the property owner or a
+      municipality orders it: Boston's pre-planned city restoration began
+      one minute after the FBI's formal handback; Sutherland Springs'
+      sanctuary was patched and repainted by the owner within seven days;
+      the Nickel Mines schoolhouse was demolished by its owners on day
+      ten. Every fast alteration in the table pairs speed with a named,
+      undisputed authorizer: where a formal release is documented,
+      alteration followed it; where no release record was found, the
+      owner acted openly with no investigative objection anywhere on the
+      record — the post-release reading there is inference, labeled as
+      such in each row.
+    evidenceId: KRK-E057
+  - statement: >-
+      Where investigators or courts asserted continuing interest,
+      alteration waited: weeks under Astroworld's court freeze, years for
+      Parkland and Tree of Life under trial preservation, and
+      indefinitely at Uvalde, where the district attorney has withheld
+      release for over four years despite the owner's 2022 demolition
+      decision. No case in the table shows alteration proceeding over a
+      disputed or absent authorization.
+    evidenceId: KRK-E058
+  - statement: >-
+      Placed against this table, the UVU courtyard's four-day
+      event-to-pavers interval sits inside the observed fast tail (zero
+      to ten days) — on speed alone it is not an outlier. What no
+      comparable case shares is its profile on the two frozen
+      discriminating variables: it is the only case in the table where
+      the authorization is disputed on the record (the lead investigator
+      testifying he did not authorize the work) and the only fast
+      alteration whose formal release date is absent from the public
+      record.
+  - statement: >-
+      Direction of failed searches: formal scene-release dates could not
+      be found under the protocol for seven of fifteen venues — release
+      dates are routinely unrecorded in public reporting, so the absence
+      of a published UVU release date is itself common; a disputed
+      authorization is not. A specific search for comparable cases where
+      alteration preceded formal release found none.
+  - statement: >-
+      Release latency, where documented, runs from seven days (Boston —
+      after the manhunt had concluded; Sandy Hook's seven days of
+      processing had the perpetrator dead at the scene) through 33 days
+      (court-frozen Astroworld) and 47 days (Route 91, perpetrator dead
+      on the first night), to years or never where courts or prosecutors
+      held an interest. This places the target case's unknown release
+      date at one of two extremes: if the courtyard was formally released
+      before the September 14 paving, that release — within four days of
+      the event, during an active prosecution with the case's central
+      physical-evidence disputes unresolved — would be the fastest in the
+      table, where every release inside a week followed a closed
+      perpetrator question; if it was not, the alteration preceded
+      release, for which the table contains no precedent at all. The
+      undocumented release date determines which extreme, and nothing in
+      between; the GRAMA record (KRK-R007) decides it.
+limitations:
+  - >-
+    Coverage: two of three searchers completed (the executing agent's
+    own search and an OpenAI web-search run; the OpenAI run found no
+    candidates beyond the agent's union, the intended overlap signal).
+    The OpenAI deep-research models were unavailable to the project's
+    API key, so an o4-mini web-search run substituted (a protocol
+    deviation); it failed twice on organization rate limits before
+    completing. The Gemini deep-research run's outcome is recorded in
+    the collection PR; the union above does not depend on it.
+  - >-
+    Seven of fifteen release-date cells could not be filled from public
+    reporting; intervals for those rows are measured from the event, not
+    the release, and are marked as such.
+  - >-
+    Release-before-alteration is directly documented in six rows
+    (Boston, Sandy Hook, Route 91, Astroworld, Parkland, Tree of Life);
+    in the remaining fast-alteration rows it is an inference from open
+    owner action and the absence of any investigative objection on the
+    record, and each such sequence cell says so. Observation and
+    inference are not pooled.
+  - >-
+    Interval figures are day-precision from published dates; "~" marks
+    cells where a month but not a day is documented.
+  - >-
+    Comparability is venue-based per the frozen criteria; it does not
+    control for victim prominence, political salience, or media
+    pressure, all of which plausibly affect alteration timing.
+  - >-
+    The author knew the target case's values before the freeze
+    (pre-registration cannot prevent pre-hoc criteria tuning; see the
+    freeze PR's panel question). The known-candidates declaration and
+    post-freeze discoveries — seven of fifteen rows were discovered
+    after the freeze — bound but do not eliminate this risk.
+runId: 2026-08-26-study-krk-s001-collect
 model: Claude Fable 5 (Anthropic), via Cursor
 date: 2026-08-26
-promptVersion: erebus-study-freeze-v1
+promptVersion: erebus-study-collect-v1
 humanReviewed: false
