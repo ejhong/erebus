@@ -40,6 +40,7 @@ jobs:
       - run: npx eslint .
       - run: npm test
       - run: npm run build
+      - run: npm run check:links
 
       # Engine-path divergence check — WARNING ONLY. Engine changes flow one
       # way, upstream → here; this repo edits only content, config, and its
