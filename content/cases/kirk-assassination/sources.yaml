@@ -672,17 +672,32 @@
     2026-06-29 (fbi.gov live page sits behind a bot wall).
   reliabilityNotes:
     - "The director's own words about the bureau's role; authoritative for what the FBI publicly claimed, not for whether that role was typical."
+- id: SRC-KRK-S001
+  title: "Workpaper: scene-release-to-alteration intervals in comparable American cases (study KRK-S001, superseded)"
+  organization: "This site (AI-authored project work held in the repository)"
+  year: "2026"
+  sourceType: workpaper
+  studyId: KRK-S001
+  identifier: "Pre-registered 2026-08-26 (criteria hash 14c82614b623); collected 2026-08-26; superseded the same day by KRK-S003 after the protocol's third searcher surfaced one missed row"
+  verification: ai_verified
+  verificationNote: >-
+    Preserved as the container of the published, superseded workpaper
+    (append-only); it carries no ledger weight — the evidence records
+    cite the successor.
+  reliabilityNotes:
+    - "Superseded by SRC-KRK-S003; retained so the published record keeps its source container."
+  background: true
+
 - id: SRC-KRK-S003
   title: "Workpaper: scene-release-to-alteration intervals in comparable American cases (study KRK-S003, superseding KRK-S001)"
   organization: "This site (AI-authored project work held in the repository)"
   year: "2026"
   sourceType: workpaper
   studyId: KRK-S003
-  identifier: "Pre-registered 2026-08-26 (criteria hash 14c82614b623); collected 2026-08-26; superseded same day by KRK-S003 after the third searcher surfaced one missed row"
+  identifier: "Criteria inherited from the KRK-S001 freeze of 2026-08-26 (hash 14c82614b623); superseding table collected 2026-08-26"
   verification: ai_verified
   verificationNote: >-
     Every row cell carries its own citation and verification label on the
-    study page; the aggregate findings below are the only ledger-bearing
-    grain.
+    study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."

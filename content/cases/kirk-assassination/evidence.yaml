@@ -1565,7 +1565,7 @@
     base rate.
   exactLocator: "Study KRK-S003 (superseding KRK-S001), findings 1 and 3 (full table on the study page)"
   limitations:
-    - "Fifteen comparable venues; venue-based comparability does not control for victim prominence or political salience."
+    - "Eighteen comparable venues; venue-based comparability does not control for victim prominence or political salience."
     - "Release-before-alteration is directly documented in six rows and is a labeled inference (open owner action, no objection on record) in the fast rows — observation and inference are not pooled (see the study's limitations)."
   reviewState: ai_extracted
   origin:
@@ -1596,7 +1596,7 @@
     is unique in this table.
   exactLocator: "Study KRK-S003 (superseding KRK-S001), findings 2-4 (full table on the study page)"
   limitations:
-    - "Uniqueness within a fifteen-venue table is weak evidence of rarity in the full population of cases."
+    - "Uniqueness within an eighteen-venue table is weak evidence of rarity in the full population of cases."
   reviewState: ai_extracted
   origin:
     ref: "study KRK-S001 collection"
