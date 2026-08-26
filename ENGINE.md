@@ -127,3 +127,16 @@ Current queue (2026-08-25):
    treat post-reconciliation drafts as staling the panel). The dissent
    and the four complies readings are preserved verbatim in this repo's
    PR #8 arbiter comment.
+6. **Arbiter seats cannot verify citations (design observation, from this
+   repo's PR #10 panel, 2026-08-25).** Panel seats judge a diff against
+   the constitution but have no way to check that a cited source,
+   locator, or quotation is real — so an honest seat facing
+   citation-heavy content must vote "unsure", which parks the PR
+   regardless of its quality. Proposed upstream direction: separate
+   mechanical citation verification (resolvable identifiers, reachable
+   URLs, checked quotations) from editorial judgment, feed the
+   verification result to the seats as an input, and instruct seats to
+   judge the editorial layer conditional on it — so "unsure because
+   unverifiable" stops masquerading as editorial doubt. (Recovered from
+   closed PR #11, whose body described it but whose diff never carried
+   it.)
