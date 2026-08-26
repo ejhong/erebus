@@ -1,0 +1,145 @@
+# COV-001 decisive tests. Ordered by information gain per unit of
+# feasibility. Note the uncomfortable pattern this ordering exposes: the
+# highest-yield items are acts of political will rather than research
+# programs, and the two that are genuinely fundable are both reanalyses of
+# data that is already public.
+
+- id: COV-R001
+  title: "Preregistered adversarial reanalysis of the one-versus-two-introductions question"
+  summary: >-
+    Convene proponents and critics of the multiple-introduction inference to
+    fix methods, rooting choices, molecular-clock assumptions, and
+    sequence-inclusion criteria in a public protocol BEFORE unblinding, then
+    run the analysis once and publish whatever it returns. The dispute is
+    currently conducted by each side selecting defensible analytic choices
+    that favor its conclusion; a preregistered protocol removes that degree
+    of freedom.
+  claimIds: [COV-C010, COV-C009]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The best value for money in the case, and it needs nobody's permission:
+    the data is already public. It would remove method-shopping suspicion
+    from the zoonotic case's strongest quantitative pillar — a pillar whose
+    published support was already cut roughly fourteenfold by one code
+    correction, which is precisely why an adversarial protocol is warranted.
+
+- id: COV-R002
+  title: "Independent reproduction of the early-case geographic signal"
+  summary: >-
+    Obtain release of the analysis code, raw geospatial inputs,
+    case-definition history, ascertainment methodology, and negative
+    sampling locations behind the early-case spatial result, and reproduce it
+    under preregistered alternative spatial models and ascertainment
+    corrections — including the specific critique published as an eLetter and
+    the authors' reply.
+  claimIds: [COV-C002, COV-C001]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    High in both directions and the case's load-bearing observation. A
+    signal robust to alternative models materially strengthens market
+    spillover; collapse under reasonable corrections would remove the
+    strongest thing the zoonotic case has. The margin on the key comparison
+    is modest enough that this is a live question rather than a formality.
+
+- id: COV-R003
+  title: "Release of the unpublished early-patient sequences and the December 2019 line list"
+  summary: >-
+    Publication of the more than 500 early sequences WHO has formally
+    requested, with verified collection dates and metadata, together with the
+    complete December 2019 Wuhan case line list and its case-definition
+    history.
+  claimIds: [COV-C009, COV-C010, COV-C001, COV-C003]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Directly tests one-versus-two introductions and pre-December
+    circulation, and supplies the input the adversarial reanalysis most
+    needs. WHO has requested it publicly and not received it, which makes
+    this a question of political will rather than research capacity.
+
+- id: COV-R004
+  title: "Release of the Wuhan Institute of Virology sample database and inventories"
+  summary: >-
+    Disclosure of the offline sample database with raw sequence files,
+    freezer inventories, sample barcodes, and server logs, subject to
+    independent audit rather than summary description.
+  claimIds: [COV-C013, COV-C012]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    High and genuinely bidirectional — the rare test that could substantially
+    settle the question either way. A timestamped pre-pandemic virus above
+    roughly 99 percent identity would transform the research-related
+    hypothesis; a complete, independently audited inventory containing no
+    such virus would substantially weaken it. At present the intelligence
+    community reports no indication either way, which is not the same as an
+    audit.
+
+- id: COV-R005
+  title: "Wildlife supply-chain traceback with serology on 2019 stock"
+  summary: >-
+    Obtain farm and trader records for the market's wildlife vendors, test
+    archived animal tissues and sera from 2019 where any survive, and take
+    serology from supply-chain workers — the traceback WHO's advisory group
+    has repeatedly named as a priority and which was never completed.
+  claimIds: [COV-C008, COV-C007]
+  track: either
+  effortTier: field
+  informationGain: >-
+    Decisive if an infected animal is found and largely inconclusive
+    otherwise, since the relevant stock is mostly gone. Time has degraded
+    this test badly, which is itself part of the record: the window was open
+    in 2020 and the sampling that occurred did not cover the candidate
+    species.
+
+- id: COV-R006
+  title: "Independent audit of laboratory records and 2019 occupational-health files"
+  summary: >-
+    Independent examination of experiment logs, sample inventories,
+    biosafety and biosecurity protocols, and de-identified 2019 staff health
+    records with any stored sera — the three categories WHO requested and
+    did not receive.
+  claimIds: [COV-C012, COV-C015]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The only route to confirming or excluding a laboratory-acquired
+    infection. A verified 2019 seroconversion would be among the strongest
+    possible research-origin evidence; a clean audited record would be the
+    strongest exculpatory evidence available, and the institute has an
+    interest in producing it that this case notes rather than assumes.
+
+- id: COV-R007
+  title: "Declassification of the analytic record behind the divergent agency conclusions"
+  summary: >-
+    Release of source summaries, analyst drafts, dissent memoranda,
+    source-reliability ratings, confidence rationales, and draft-to-final
+    change histories behind the intelligence assessments — enough to
+    determine whether the divergence reflects different evidence, different
+    weighting, or process problems.
+  claimIds: [COV-C014]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Moderate on the origin and high on the meta-question of why analysts
+    with privileged access split. It is also the only way to evaluate
+    allegations that analytic judgments were altered, which currently rest
+    on characterizations rather than on documents any reader can inspect.
+
+- id: COV-R008
+  title: "Broadened sarbecovirus sampling targeting furin-cleavage-site-bearing relatives"
+  summary: >-
+    Sustained field sampling in bats and candidate intermediate hosts across
+    Southeast Asia and southern China, with sequencing aimed specifically at
+    relatives carrying a polybasic furin cleavage site.
+  claimIds: [COV-C011, COV-C013]
+  track: either
+  effortTier: field
+  informationGain: >-
+    A natural sarbecovirus carrying a furin cleavage site would neutralize
+    the feature's uniqueness argument outright — the single cleanest
+    resolution available to that dispute. Continued absence slowly
+    strengthens it. Genuinely fundable, and it accrues value regardless of
+    the origin question.

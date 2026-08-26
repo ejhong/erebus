@@ -1,0 +1,62 @@
+# Append-only change log for COV-001. Add new entries at the end.
+
+- date: "2026-08-26"
+  change: >-
+    Case launched: 15 featured claims across six themes, an evidence ledger
+    of 26 records, a source registry of 19 independently verified sources,
+    and a research agenda of eight decisive tests. The case adopts a
+    three-layer separation as visible structure — the biological origin
+    question, the research-capability question, and the
+    institutional-integrity question — so that misconduct findings on the
+    third layer cannot silently feed a verdict on the first. Accordingly the
+    accountability thread around named officials (the 2024 and 2026
+    hearings, the released private communications, the contempt proceedings)
+    is deliberately out of this cut: on both research briefs' own
+    assessment it produces no origin evidence, and grading it would mean
+    grading people rather than evidence.
+
+    Every citation was verified against the primary document (or a dated
+    archive snapshot where a publisher bot-walls automated clients) before
+    entry, and the pass materially changed the content. The largest single
+    correction concerns the errata: there are two, one per paper, and public
+    argument routinely attaches the wrong characterization to each. The
+    market-epicenter paper's 2024 erratum is a null data-file correction
+    stating results were unchanged. The lineage paper's separate 2023
+    erratum is substantive — a code error had overestimated the Bayes
+    factors favoring multiple introductions, which fell from 61.6 and 60.0
+    to 4.3 and 4.2, moving the authors' own wording from strong to
+    substantial support. Both facts are recorded: the original figures
+    should no longer be cited, and the claim that the correction reduced the
+    finding to negligible is contradicted by the erratum's own text.
+
+    Two statements attributed to the WHO advisory group's 2025 assessment
+    were rejected because they are not in the document. The word
+    "surprising" appears nowhere in its 78 pages; the sentence usually
+    quoted to that effect is about the implausibility of there having been
+    no human-to-animal infections anywhere in China, not about the missing
+    intermediate host at the market. And the report contains no sentence
+    contrasting the two-lineage pattern with the single introduction a
+    laboratory leak would produce — it reports the finding and attributes
+    the judgment to the original authors, so this case records that contrast
+    as its own editorial inference rather than as WHO's.
+
+    Further corrections: the Chinese CDC surveillance paper is a 2024
+    publication, not 2023, and its positive-sample count changed from 73 to
+    74 between versions; the Laotian bat-virus paper is 2022, resolving an
+    uncertainty in the brief; requested information was withheld by three
+    governments rather than one; the funding agency's origins statement was
+    cited to a staging host that must never be used; and the negative animal
+    results are far narrower than usually reported, because the candidate
+    intermediate-host species were never sampled or tested at all.
+
+    All records carry ai_extracted provenance. Nothing has been
+    human-reviewed, and no assessment has been ratified.
+  reason: >-
+    Founder direction to import a first cut of the COVID-origins evidence
+    disputes. Constructed from research briefs under casework/covid-origins
+    with every citation re-verified at the primary source before entry; the
+    briefs themselves, and the debate and advocacy material held alongside
+    them, are cited nowhere.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content

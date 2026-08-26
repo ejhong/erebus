@@ -1,0 +1,163 @@
+# Launch assessment for COV-001. AI-generated draft; humanReviewed: false;
+# unratified until independent cross-model check runs judge this case file.
+runId: "2026-08-26-fable-covid-1"
+model: "Claude Fable 5 (Cursor cloud agent)"
+date: "2026-08-26"
+promptVersion: "erebus-launch-assessment-v1"
+humanReviewed: false
+role: draft
+caseAssessment:
+  verdict: unresolved
+  loadBearing: [COV-C002, COV-C006, COV-C010, COV-C007, COV-C015]
+  weakestLinks: [COV-C008, COV-C010, COV-C002]
+  synthesis: >-
+    The case resolves into an asymmetry that neither camp describes
+    accurately. Zoonotic spillover at or near the Huanan market is the only
+    hypothesis with multiple affirmative lines of public evidence, and they
+    converge on the same few hundred square metres: early-case geography
+    including the unlinked-cases-closer result, environmental positivity
+    concentrated where live mammals were sold, susceptible-wildlife DNA
+    co-occurring with viral RNA at a wildlife stall, and an early-diversity
+    pattern better explained by more than one introduction. That is a real
+    affirmative case and it is not matched on the other side.
+
+    But every one of those pillars carries a qualification that public
+    argument strips off. The geography rests on unaudited case
+    ascertainment and a single unreproduced spatial result at a modest
+    margin. The co-location evidence establishes co-presence, not
+    infection, by its own authors' explicit statement. The
+    multiple-introductions inference had its support cut roughly
+    fourteenfold by a code correction, from strong to substantial. And the
+    market, environmental, and lineage analyses are one Chinese CDC dataset
+    in three analytic layers with overlapping authors — not three
+    independent confirmations.
+
+    Against that, the research-related family has capability, opportunity,
+    documented intent-on-paper, and opacity, and no disclosed progenitor,
+    no documented incident, and no infected worker. It is sustained by the
+    inadequacy of what has been produced rather than by anything
+    affirmative. Its strongest structural point is not evidential but
+    epistemic: the body best placed to evaluate it says it could not,
+    because the records were not provided.
+
+    Hence the verdict. Not "mixed," which would imply the two families are
+    comparably supported — they are not, on public evidence. Unresolved,
+    because the question the case asks has an answer that the available
+    record cannot determine, and because the two symmetrical absences at
+    its center — no infected animal, no known laboratory holding — are both
+    hostage to material that has never been produced. Six years of argument
+    has not closed either gap, and two of the tests that could move the
+    question need nobody's permission and remain undone.
+
+    Kept deliberately off this verdict: the institutional-integrity record.
+    Grant-oversight failures and records-handling misconduct are real and
+    primary-sourced, and they carry no diagnosticity for what infected the
+    first humans. They sit on their own layer, and this assessment does not
+    let them touch the origin judgment in either direction.
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    reasoning: >-
+      Multiple channels converge, including the custodian's own
+      surveillance data. Rests on case ascertainment that has never been
+      independently audited.
+    confidence: high
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    reasoning: >-
+      The single hardest observation for ascertainment bias to explain, and
+      a modest margin on an unreproduced analysis with an unresolved
+      published challenge. Load-bearing and not yet load-tested.
+    confidence: moderate
+  - claimId: COV-C003
+    verdict: well_supported
+    reasoning: >-
+      Verified verbatim as a statement of what the clinical series reports.
+      Framed as the publication's statement because the case's date and
+      status are disputed elsewhere.
+    confidence: high
+  - claimId: COV-C004
+    verdict: well_supported
+    reasoning: >-
+      Reported in the custodian's own peer-reviewed paper with the sampling
+      chronology and disinfection regime stated; cite the 2024 version of
+      record, where the count is 74.
+    confidence: high
+  - claimId: COV-C005
+    verdict: well_supported
+    reasoning: >-
+      Two analytic layers agree, including the Chinese CDC's own figure of
+      87.5 percent of interior positives in the west zone.
+    confidence: high
+  - claimId: COV-C006
+    verdict: well_supported
+    reasoning: >-
+      The detection is established and uneven across species. Its meaning
+      is bounded by the authors' own statement that the data cannot
+      identify which species was infected.
+    confidence: high
+  - claimId: COV-C007
+    verdict: well_supported
+    reasoning: >-
+      The negative results are real and narrow: the candidate
+      intermediate-host species were never sampled or tested, which the
+      reanalysis of that dataset states directly.
+    confidence: moderate
+  - claimId: COV-C008
+    verdict: unresolved
+    reasoning: >-
+      The zoonotic family's missing keystone. Consistent with the
+      co-location evidence, unestablished by it, and the physical
+      opportunity to establish it has largely expired.
+    confidence: moderate
+  - claimId: COV-C009
+    verdict: well_supported
+    reasoning: >-
+      Unchanged by the paper's erratum; not in dispute. Several hundred
+      early sequences remain unpublished, so the picture is incomplete by
+      construction.
+    confidence: high
+  - claimId: COV-C010
+    verdict: mixed
+    reasoning: >-
+      Still favored after correction, on support reduced roughly
+      fourteenfold from strong to substantial, and sensitive to rooting and
+      clock assumptions. Both the demotion and the fact that it survived
+      are recorded.
+    confidence: moderate
+  - claimId: COV-C011
+    verdict: well_supported
+    reasoning: >-
+      The observation is not in dispute; the stronger "not found in nature"
+      formulation is contradicted. High credibility, near-zero
+      diagnosticity.
+    confidence: high
+  - claimId: COV-C012
+    verdict: well_supported
+    reasoning: >-
+      Supported by the intelligence assessments and the WHO review — whose
+      same passage states a man-made origin is not refuted by biological
+      data. Weighs against an engineered construct, barely against a
+      laboratory incident with a natural virus.
+    confidence: high
+  - claimId: COV-C013
+    verdict: well_supported
+    reasoning: >-
+      Published identity figures around 96 percent imply decades of
+      independent evolution. A statement about sampled diversity, not
+      existing diversity.
+    confidence: high
+  - claimId: COV-C014
+    verdict: well_supported
+    reasoning: >-
+      The split and its confidence language are stated in both declassified
+      assessments. Sustained disagreement among analysts with privileged
+      access indicates no side held diagnostic evidence.
+    confidence: high
+  - claimId: COV-C015
+    verdict: well_supported
+    reasoning: >-
+      Both halves verbatim in the conclusion, including the qualification
+      that the weight of evidence is the evidence SAGO was able to review,
+      and its statement that it had no access to raw data from any source.
+    confidence: high

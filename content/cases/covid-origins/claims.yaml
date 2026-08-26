@@ -1,0 +1,648 @@
+# COV-001 featured claims. Wording was frozen against the verified primary
+# text before the evidence pass (AGENTS.md §3.12). Several claims read more
+# narrowly than their popular versions because verification found the
+# popular version misquoted: the WHO report contains no statement calling
+# the missing intermediate host "surprising," and it draws no contrast
+# between the two-lineage pattern and a laboratory introduction. Claims
+# grade evidence disputes only — never any person's conduct, honesty, or
+# intent.
+
+# ── early cases and geography ───────────────────────────────────────────
+
+- id: COV-C001
+  tier: featured
+  statement: >-
+    The Huanan Seafood Wholesale Market was the geographic center of the
+    earliest documented cluster of SARS-CoV-2 infections in Wuhan in
+    December 2019.
+  plainLanguage: >-
+    The earliest known cases cluster tightly around one market. This is the
+    sturdiest finding in the case, and both sides now largely accept it —
+    what they dispute is what it means.
+  theme: early-geography
+  rung: observation
+  claimType: statistical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C001"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Multiple channels converge: the spatial analysis of December 2019 cases,
+    the concentration of positive environmental samples inside the market,
+    and the Chinese CDC's own surveillance data placing 87.5 percent of
+    interior positives in the market's west zone. The WHO scientific
+    advisory group calls a zoonotic origin the best supported hypothesis on
+    accessible evidence while declining to conclude the market was the first
+    spillover site rather than a site of amplification.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    An epicenter is predicted by market spillover, by upstream spillover
+    with subsequent market arrival, and by amplification of a virus already
+    circulating in humans. It discriminates against non-market origins
+    collectively, not among the hypotheses that matter most here.
+  strongestObjection: >-
+    The finding rests entirely on Chinese case ascertainment that has never
+    been independently audited, and the complete December 2019 line list has
+    never been released. Cases were identified by clinical review, but the
+    review itself is not inspectable.
+  whatWouldChangeOurMind:
+    - "Release of the complete December 2019 case line list showing a materially different geographic distribution."
+    - "Evidence that early case-finding was concentrated around the market for administrative reasons."
+
+- id: COV-C002
+  tier: featured
+  statement: >-
+    Among the earliest documented cases, those with no reported Huanan
+    market exposure resided significantly closer to the market than cases
+    who worked there.
+  plainLanguage: >-
+    The single most load-bearing observation in the zoonotic case. People
+    with no known market connection lived nearer the market than market
+    workers did — which is what exposure at the market predicts and what a
+    contact-tracing artifact does not.
+  theme: early-geography
+  rung: observation
+  claimType: statistical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C002"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: provisionally_supported
+  credibilitySummary: >-
+    Stated directly in the published paper, which reports the unlinked cases
+    resided significantly closer to the market than those with a direct link
+    and infers exposure at or near the market. The comparison is a
+    spatial-statistical result on a case set of disputed completeness, at
+    p = 0.029 — a margin one published critic characterizes as borderline.
+    It has not been independently reproduced.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    The observation hardest for ascertainment-bias explanations to absorb,
+    and therefore the load-bearing item distinguishing spillover at the
+    market from amplification of a virus that arrived from elsewhere.
+  dependsOnClaimIds: [COV-C001]
+  strongestObjection: >-
+    A published eLetter argues the early lineage cases were not closer to
+    the market than statistically expected and challenges the analysis's
+    distributional assumptions; the authors replied identifying flaws in
+    that critique. The exchange is unresolved, and the underlying case data
+    remains unreleased, so no third party has reproduced either side.
+  whatWouldChangeOurMind:
+    - "Independent reproduction from released code, raw geospatial data, and case-definition history."
+    - "A preregistered alternative spatial model that dissolves the relationship under reasonable ascertainment corrections."
+
+- id: COV-C003
+  tier: featured
+  statement: >-
+    The earliest identified case by symptom onset, reported with an onset
+    date of December 1, 2019, had no epidemiological link to the Huanan
+    market, and no link was found between that patient and later cases.
+  plainLanguage: >-
+    The first known patient had no market connection. This claim records
+    what the published clinical study states — not a settled fact about the
+    outbreak, because the case's date and status have been disputed
+    elsewhere.
+  theme: early-geography
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C003"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Verified verbatim in the clinical study of the first 41 confirmed
+    patients, which states the onset date and, in the next sentence, that no
+    epidemiological link was found between the first patient and later
+    cases. The claim is framed as what the publication states, which is the
+    honest form: the identification of this patient as the earliest case has
+    been contested in later reporting that this case has not adjudicated.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Compatible with upstream spillover, with a research-related index
+    infection, and with an unascertained earlier market chain. It weighs
+    against the strictest version of market-only spillover without favoring
+    any specific alternative.
+  strongestObjection: >-
+    A single case's reported exposure history in an early clinical series is
+    weak evidence about the outbreak's origin, and the same paper reports
+    that two-thirds of the series had direct market exposure.
+  whatWouldChangeOurMind:
+    - "Release of the underlying case investigation records establishing this patient's actual exposures and onset date."
+
+# ── the market and its animals ──────────────────────────────────────────
+
+- id: COV-C004
+  tier: featured
+  statement: >-
+    Chinese CDC investigators collected 923 environmental samples at the
+    Huanan market beginning after its closure on January 1, 2020, and
+    detected SARS-CoV-2 in 74 of them.
+  plainLanguage: >-
+    The virus was found on surfaces throughout the market — but only after
+    the market had been emptied and was being disinfected, which is the
+    whole problem with interpreting it.
+  theme: market-animals
+  rung: observation
+  claimType: measurement
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C005"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Reported in the Chinese CDC's own peer-reviewed surveillance paper, with
+    the sampling chronology stated explicitly: the market closed in the
+    early morning of January 1, 2020, and sampling began the same day. Cite
+    the 2024 version of record — the positive count was 73 in the 2023
+    accelerated preview and 74 after a note added in proof.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Environmental RNA cannot identify who deposited it. An infected vendor,
+    a customer, or an animal all produce the same swab result, so this
+    observation is compatible with every hypothesis in the case.
+  strongestObjection: >-
+    Sampling began only after the market was cleared, and the paper records
+    that stall surfaces and goods were disinfected through January and
+    February 2020 — so what the sampling could still detect was bounded
+    before it started.
+  whatWouldChangeOurMind:
+    - "Nothing material on the observation; it is the interpretation that is contested."
+
+- id: COV-C005
+  tier: featured
+  statement: >-
+    Positive environmental samples inside the Huanan market were spatially
+    concentrated in the western section, where live-mammal vendors operated.
+  plainLanguage: >-
+    The virus was not spread evenly across the market. It clustered where
+    live wild mammals were sold.
+  theme: market-animals
+  rung: observation
+  claimType: statistical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C006"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Two independent analytic layers agree, including the Chinese CDC's own
+    data: of 64 positive samples collected inside the market, 87.5 percent
+    came from the west zone. The spatial analysis separately found distance
+    to the nearest live-mammal vendor predictive of sample positivity.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Consistent with animals as the source, and also with a poorly
+    ventilated enclosed section concentrating human contamination. It
+    narrows where to look without establishing what was there.
+  dependsOnClaimIds: [COV-C004]
+  strongestObjection: >-
+    Advocacy analysis asserts the same section was the market's least
+    ventilated area with no outside connection, which would concentrate
+    positivity from human shedding alone. This case has not verified that
+    characterization, and records it as an unverified stated objection.
+  whatWouldChangeOurMind:
+    - "Ventilation and layout documentation showing the section's physical characteristics explain the clustering independently of what was sold there."
+
+- id: COV-C006
+  tier: featured
+  statement: >-
+    Mitochondrial DNA from mammals susceptible to SARS-CoV-2 — including
+    raccoon dog, hoary bamboo rat, Malayan porcupine, and masked palm civet
+    — occurs in SARS-CoV-2-positive environmental samples from a wildlife
+    stall at the Huanan market.
+  plainLanguage: >-
+    Genetic traces of exactly the animals that could have carried the virus
+    were found in the same positive samples. Critically, this shows the
+    animals and the virus were in the same place — not that any animal was
+    infected. The authors say so themselves.
+  theme: market-animals
+  rung: observation
+  claimType: measurement
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C007"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The metagenomic reanalysis found wildlife DNA in all five
+    SARS-CoV-2-positive samples from the wildlife stall, with raccoon dog
+    the most abundantly detected species. Detection is uneven rather than
+    uniform: raccoon dog and hoary bamboo rat in all five samples, Malayan
+    porcupine in four, masked palm civet in one. The WHO group calls this
+    the most compelling evidence of a possible spillover.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Only a zoonotic origin directly predicts co-detection of the virus and
+    wildlife genetic material, which is the authors' own point and gives
+    this real weight. But co-presence is not infection, and human shedding
+    after a zoonotic event would produce the same pattern.
+  dependsOnClaimIds: [COV-C005]
+  strongestObjection: >-
+    The authors state that their data cannot establish which species shed
+    the virus, that early unreported human cases shedding in the same
+    location would explain the observation equally, and that a
+    correlational analysis of this data cannot reliably show whether any
+    species was infected.
+  whatWouldChangeOurMind:
+    - "Archived tissue or serum from these animals testing positive, or a documented negative result on the actual stock."
+    - "Evidence that the co-detection pattern arises routinely where infected humans and animal products share a space."
+
+- id: COV-C007
+  tier: featured
+  statement: >-
+    No animal sampled at the Huanan market, in its supply chain, or in
+    China's subsequent wildlife testing has been shown to carry SARS-CoV-2
+    or a sufficiently close progenitor.
+  plainLanguage: >-
+    The zoonotic case's missing keystone. After the largest search of its
+    kind ever conducted, no infected animal has ever been found.
+  theme: market-animals
+  rung: observation
+  claimType: observation
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C008"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    All 457 animal samples in the Chinese CDC survey tested negative, and
+    the joint WHO study records China's account of tens of thousands of
+    animals tested with no positives. Two qualifications matter enormously
+    and are recorded rather than buried: the sampled animals were largely
+    unsold stock, strays, and freezer contents rather than the candidate
+    intermediate hosts — which the later reanalysis states were never
+    sampled or tested — and the aggregate testing figure is the custodian's
+    own unaudited account.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    The zoonotic case's principal empirical deficit, and weaker than it
+    looks: an absence produced by not sampling the relevant species is
+    largely uninformative. Its mirror image is the absence of any known
+    laboratory holding of the virus, and this case treats the two alike.
+  strongestObjection: >-
+    The market was cleared and disinfected before sampling began, the
+    upstream farm traceback was never completed, and the candidate host
+    species were never tested — so this is substantially a fact about what
+    investigators were permitted and able to look for.
+  whatWouldChangeOurMind:
+    - "A pre-outbreak animal or archived sample carrying the virus or a basal near-progenitor."
+    - "A complete, independently audited account of what species were actually tested and when."
+
+- id: COV-C008
+  tier: featured
+  statement: >-
+    At least one animal in the Huanan market supply chain was infected with
+    SARS-CoV-2 before sustained human transmission began at the market.
+  plainLanguage: >-
+    Stated explicitly because it is what the co-location evidence is
+    constantly read as having established, and has not. Naming it as
+    unresolved is the point.
+  theme: market-animals
+  rung: attribution
+  claimType: causal
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C009"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: unresolved
+  credibilitySummary: >-
+    The zoonotic family's missing keystone. The co-location evidence is
+    consistent with it and, by the analysing authors' own statement, cannot
+    establish it; no infected animal has ever been identified; and the
+    animals that would have been tested were gone before sampling began.
+    Unresolved here means genuinely open, not disfavored.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Resolving it either way would largely settle the case. Confirmation
+    would establish the transmission chain; a thorough negative on the
+    actual stock would remove the market-spillover hypothesis's foundation.
+  dependsOnClaimIds: [COV-C006, COV-C007]
+  strongestObjection: >-
+    Nothing affirmative has ever been produced, and the physical
+    opportunity to produce it has largely expired with the 2019 stock.
+  whatWouldChangeOurMind:
+    - "Archived 2019 animal tissues or sera from the market's wildlife vendors testing positive."
+    - "Farm and trader records enabling a completed supply-chain traceback."
+
+# ── early lineages ─────────────────────────────────────────────────────
+
+- id: COV-C009
+  tier: featured
+  statement: >-
+    Pre-February-2020 SARS-CoV-2 genomes comprise two distinct lineages,
+    designated A and B, separated by two nucleotide differences.
+  plainLanguage: >-
+    The earliest genomes come in two slightly different versions. Nobody
+    disputes this. What it implies is disputed, and that is a separate claim.
+  theme: lineages
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C010"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Stated in the published analysis and unchanged by the paper's later
+    erratum: the two lineages differ at two nucleotide sites, both of which
+    are also found in related bat coronaviruses.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    The observation alone is compatible with every hypothesis; the inference
+    from it carries all the weight and is graded separately.
+  strongestObjection: >-
+    Several hundred early Chinese sequences remain unpublished, so the
+    early-diversity picture is incomplete by construction.
+  whatWouldChangeOurMind:
+    - "Release of the withheld early sequences revealing intermediate genomes that change the lineage structure."
+
+- id: COV-C010
+  tier: featured
+  statement: >-
+    The earliest SARS-CoV-2 genomic diversity is better explained by at
+    least two separate introductions into humans than by a single
+    introduction followed by early diversification.
+  plainLanguage: >-
+    If the virus jumped to humans more than once, that is easy under
+    wildlife-trade spillover and awkward under a single infected worker.
+    The published support for it was reduced fourteenfold by a correction —
+    but not eliminated.
+  theme: lineages
+  rung: mechanism
+  claimType: statistical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C011, corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: mixed
+  credibilitySummary: >-
+    A model-based inference whose published support was materially
+    corrected. A code error had overestimated the Bayes factors: they fell
+    from 61.6 and 60.0 to 4.3 and 4.2, and the authors' own wording moved
+    from strong to substantial support. The corrected analysis still favors
+    multiple introductions, so characterizations that the correction reduced
+    the finding to negligible are not supported by the erratum. The
+    inference remains sensitive to rooting choices, clock assumptions,
+    unsampled intermediates, and which early sequences are trusted.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    One of only two or three genuine discriminators in the whole case. Two
+    independent introductions are readily produced by wildlife-trade
+    spillover and awkward for any single-index-infection account. If it
+    fails, the zoonotic case retreats to market amplification plus an
+    unknown upstream event.
+  dependsOnClaimIds: [COV-C009]
+  strongestObjection: >-
+    A fourteenfold reduction in the support statistic on correction is a
+    substantial demotion, and the remaining value sits in the lower band of
+    positive evidence. The WHO group reports the finding and attributes the
+    judgment to the original authors rather than adopting it as its own;
+    a congressional majority report asserts a single introduction instead.
+  whatWouldChangeOurMind:
+    - "A preregistered adversarial reanalysis with methods and sequence-inclusion criteria fixed before unblinding."
+    - "Release of the unpublished early sequences, which could add intermediate genomes."
+
+# ── the genome ─────────────────────────────────────────────────────────
+
+- id: COV-C011
+  tier: featured
+  statement: >-
+    SARS-CoV-2 carries an insertion at the spike S1/S2 junction encoding a
+    polybasic furin cleavage motif that is absent from its closest sampled
+    sarbecovirus relatives.
+  plainLanguage: >-
+    The genome feature that launched a thousand arguments. It is real, and
+    it is read as suspicious by one side and as ordinary natural variation
+    by the other — which is why it is the best calibration point in the case.
+  theme: genome
+  rung: observation
+  claimType: observation
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C012"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The feature's presence and its absence from close relatives are not in
+    dispute; the field-virology paper describing the closest Laotian
+    relatives states directly that none of those bat viruses contains a
+    furin cleavage site. Note that the widely circulated stronger
+    formulation — that such a site is "not found in nature" — is
+    contradicted: furin motifs occur across other coronavirus lineages, and
+    the WHO group states the feature had been previously identified in
+    nature, for example in animal-associated merbecoviruses.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    The clearest illustration in the case of why credibility and
+    diagnosticity are separate axes: a highly credible observation with
+    near-zero discriminating power, because both hypothesis families
+    accommodate it comfortably.
+  strongestObjection: >-
+    Natural sarbecovirus diversity is badly undersampled, so absence from
+    known relatives is weak evidence about what exists in nature; and the
+    site is suboptimal, which is not what deliberate design from known
+    motifs would predict.
+  whatWouldChangeOurMind:
+    - "Discovery of a natural sarbecovirus carrying a furin cleavage site, which would end the uniqueness argument outright."
+
+- id: COV-C012
+  tier: featured
+  statement: >-
+    SARS-CoV-2's genome contains no feature presently accepted as
+    diagnostic of laboratory engineering.
+  plainLanguage: >-
+    No engineering fingerprint has been found. This weighs against the
+    deliberate-construct hypothesis specifically — and barely at all
+    against a natural virus escaping a lab, which needs no fingerprint.
+  theme: genome
+  rung: mechanism
+  claimType: methodological
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C013"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Almost all US intelligence elements assessed the virus was not
+    genetically engineered, and all assessed it was not developed as a
+    biological weapon. The WHO group concluded the notable genomic features
+    are readily explained by natural evolution and provide no support for a
+    man-made origin — and in the very next sentence, that a man-made origin
+    "is also not refuted by biological data." Both halves belong together.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Weighs specifically against an engineered-construct origin. It has
+    almost no force against a field-collection or laboratory incident
+    involving an unmodified natural virus, and the intelligence reporting
+    itself notes the institute possessed methods that leave no trace of
+    modification.
+  strongestObjection: >-
+    "No diagnostic signature" and "no research accident" are different
+    statements. Seamless reverse genetics leaves no required scar, so the
+    absence of a signature cannot exclude a laboratory origin — only a
+    detectably engineered one.
+  whatWouldChangeOurMind:
+    - "Identification of a construct map, plasmid or synthesis order, or passage record connecting a precursor to the virus."
+    - "Development of a forensic method able to distinguish seamless engineering from natural recombination."
+
+- id: COV-C013
+  tier: featured
+  statement: >-
+    The closest known sampled relatives of SARS-CoV-2 are too genetically
+    distant to be its immediate progenitor.
+  plainLanguage: >-
+    The nearest known relatives are decades of evolution away. This
+    single fact defeats popular arguments on both sides at once.
+  theme: genome
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C014"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The identity figures are published and consistent: roughly 96 percent
+    whole-genome identity for the closest bat relatives, which the
+    intelligence assessment states are not close enough to be direct
+    progenitors. Note that the sources differ slightly on the figure — 96.2
+    percent in the original description, 96.1 percent in two later papers —
+    so this case attributes a number to the source stating it rather than
+    asserting one canonical value.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Earns its place by defeating two popular arguments simultaneously: that
+    a specific NIH-funded virus was the precursor, and that a named archived
+    sequence was the leaked virus. Neither is possible at this genetic
+    distance.
+  strongestObjection: >-
+    It is a statement about sampled diversity, not about existing
+    diversity: an unsampled closer relative is entirely plausible, which is
+    exactly what both hypothesis families require.
+  whatWouldChangeOurMind:
+    - "Discovery or disclosure of a substantially closer relative, whether from field sampling or from a laboratory inventory."
+
+# ── official assessments ───────────────────────────────────────────────
+
+- id: COV-C014
+  tier: featured
+  statement: >-
+    United States intelligence elements did not converge on an origin: as of
+    the June 2023 declassified reporting, several favored natural exposure,
+    two favored a laboratory-associated incident, and others were unable to
+    decide — all at low confidence except one at moderate.
+  plainLanguage: >-
+    Analysts with access to classified reporting split, and stayed split.
+    The correct reading is neither camp's: it means nobody held decisive
+    evidence.
+  theme: assessments
+  rung: observation
+  claimType: observation
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C024"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The agency split and its confidence levels are stated in both
+    declassified assessments. The confidence language is the part that
+    matters and the part routinely dropped: every position is low
+    confidence except one at moderate, and a later agency change of
+    position was reported as resting on a review of existing information
+    rather than new intelligence.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Nearly uninformative about the origin and highly informative about the
+    evidence: sustained disagreement among analysts with privileged access
+    indicates that no side held diagnostic material.
+  strongestObjection: >-
+    These are declassified summaries whose underlying reporting cannot be
+    audited by any reader, and the successive assessments are products of
+    the same community rather than independent checks on each other.
+  whatWouldChangeOurMind:
+    - "Declassification of the analytic record — source summaries, dissents, and confidence rationales — behind the divergent conclusions."
+
+- id: COV-C015
+  tier: featured
+  statement: >-
+    The WHO Scientific Advisory Group concluded in June 2025 that the weight
+    of the evidence it reviewed suggests zoonotic spillover, while stating
+    that it could not assess a laboratory origin because the necessary
+    information had not been provided.
+  plainLanguage: >-
+    The most authoritative current scientific synthesis says two things at
+    once, and they must be read together: zoonosis is best supported by what
+    could be seen, and a key alternative could not be examined at all.
+  theme: assessments
+  rung: observation
+  claimType: observation
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C025, corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Both halves are verbatim in the report's conclusion, including the
+    qualification "reviewed by SAGO" that ellipsis often removes. The group
+    states it had no access to original raw data from any source, and that
+    requested information was not provided by three governments — China,
+    Germany, and the United States — not by China alone.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Carries real weight as an expert synthesis and inherits its dependence
+    on a partly withheld evidence base. A page treating it as settling the
+    question would silently inherit that dependence.
+  strongestObjection: >-
+    A synthesis of accessible evidence is only as good as the access, and
+    this one says plainly that it had none to raw data. Its 2021
+    predecessor's rating of a laboratory incident as extremely unlikely has
+    been superseded, which shows how much these judgments can move.
+  whatWouldChangeOurMind:
+    - "Provision of the requested information, allowing the laboratory hypothesis to be assessed rather than set aside."
