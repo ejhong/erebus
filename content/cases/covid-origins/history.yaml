@@ -181,3 +181,48 @@
   aiAssisted: true
   kind: content
 
+- date: "2026-08-26"
+  change: >-
+    Reconsideration draft: the case verdict moves from unresolved to
+    provisionally_supported, and COV-C010 from mixed to weakly_supported.
+
+    Two independent blind panels had disputed the unresolved roll-up — three
+    of five, then four of five — while splitting on none of the eighteen
+    claims. A panel that accepts the whole ladder and rejects only its
+    summation is pointing at an internal inconsistency, and on engaging the
+    dissents the house agreed: the draft had conceded a real evidential
+    asymmetry between the hypothesis families and then labelled it
+    "unresolved," a term this vocabulary reserves for a record that cannot
+    order the alternatives. Market-associated zoonosis is now graded
+    provisionally_supported; the research-related family remains unresolved
+    rather than excluded. On COV-C010, "mixed" implied opposing evidence of
+    comparable method, which does not exist — after the erratum the
+    corrected analysis still points one way, weakly.
+
+    Two dissents did NOT move the house, and both are recorded because
+    refusing an argument is as much a judgment as accepting one. The
+    well_supported reading was declined: the affirmative lines are three
+    analytic layers over one Chinese CDC dataset with overlapping authors,
+    and the two most discriminating items are the two least load-tested. The
+    hold-at-unresolved reading was declined at the family level, but its
+    core point is preserved where it belongs — at the keystone claims
+    COV-C008 and COV-C017, in the COV-C015 grading, and in the record that
+    three governments withheld requested material, not one.
+
+    Standing after the change is CONTESTED, not ratified, and this is the
+    mechanism working rather than failing. A reconsideration is the one
+    deliberately non-blind draft in the pipeline, so the checks whose
+    dissents it answered can never ratify it; a fresh blind panel was run,
+    and it now splits three to two with the two dissenters disagreeing in
+    OPPOSITE directions — one holding the case weaker than the draft, one
+    stronger. The draft sits at the panel's median with objection on both
+    flanks, which is the honest resting place for a genuine standoff and is
+    displayed as such rather than re-litigated toward a clean badge.
+  reason: >-
+    Founder direction to run the reconciliation after two panels disputed
+    the roll-up. The house engaged every dissent on the record and moved
+    only where the argument compelled.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
