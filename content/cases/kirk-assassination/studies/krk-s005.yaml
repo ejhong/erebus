@@ -115,11 +115,229 @@ columns:
   - contemporaneous record (with locator)
   - outcome
   - basis for outcome
-rows: []
-findings: []
-limitations: []
-runId: 2026-08-26-study-krk-s005-freeze
+rows:
+  - cells:
+      speaker and role: "Kash Patel, FBI director (X post, as raised on the record at the same-day briefing)"
+      statement date and venue: "2025-09-10, X; quoted back to officials at the joint press conference the same afternoon"
+      statement (verbatim, with locator): "A reporter, on the record: 'The FBI director is posting that a suspect is in custody.' Governor Cox, in response: 'We have a person of interest in custody that is being interviewed right now.' (Rev transcript, 10:35-10:44)"
+      topic: "announced evidence / custody status"
+      contemporaneous record (with locator): "The same transcript (custody exchanges); the charging Information and its supporting narrative — the person then held was released, and the charged suspect surrendered the following night"
+      outcome: "contradicted by the record"
+      basis for outcome: "no shooting suspect was in custody when the post was made; the person referred to was released and the charged suspect surrendered roughly a day later. The comparison is between the post's asserted custody status and the custody record — nothing about anyone's state of mind"
+    citation:
+      text: "Rev.com, 'Press Conference on Charlie Kirk Shooting' (day-of joint briefing, full transcript fetched and read); custody sequence per the charging instrument in the ledger (SRC-UC-INFORMATION-2025)"
+      url: "https://www.rev.com/transcripts/press-conference-on-charlie-kirk-shooting"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Beau Mason, commissioner, Utah Department of Public Safety"
+      statement date and venue: "2025-09-10, joint press conference, UVU"
+      statement (verbatim, with locator): "'He was taken by private vehicle to Timpanogos Hospital, where he later passed'; 'we believe this was a targeted attack towards one individual'; the shot came 'potentially from a roof, yes. A longer distance shot from a roof' (Rev transcript, 00:45-12:12)"
+      topic: "medical relay / first-response account / scene account"
+      contemporaneous record (with locator): "The security lead's detailed first-person account of the private-vehicle extraction (SRC-FOX-HARPOLE-2025); the Washington Post visual-forensics rooftop analysis (SRC-WAPO-ROOF-2025); the single-victim record"
+      outcome: "corroborated"
+      basis for outcome: "private-vehicle transport, single targeted victim, and rooftop origin each align with independent records that entered the ledger separately"
+    citation:
+      text: "Rev.com day-of transcript (primary, fetched and read); corroborating records are ledger sources SRC-FOX-HARPOLE-2025 and SRC-WAPO-ROOF-2025"
+      url: "https://www.rev.com/transcripts/press-conference-on-charlie-kirk-shooting"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Robert Bohls, FBI special agent in charge, Salt Lake City"
+      statement date and venue: "2025-09-10, joint press conference, UVU"
+      statement (verbatim, with locator): "'The FBI will fully support and co-lead this investigation alongside with our partners' (Rev transcript, 03:02)"
+      topic: "stated federal role"
+      contemporaneous record (with locator): "DPS commissioner's same-podium framing ('co-leading this criminal investigation... along with the Federal Bureau of Investigation'); the state charging instrument (state prosecution, no federal charges)"
+      outcome: "corroborated"
+      basis for outcome: "the stated co-lead role matches the state agency's framing and the jurisdictional record; the rank-and-function anomaly this feeds is graded separately by study KRK-S002, not here"
+    citation:
+      text: "Rev.com day-of transcript (primary, fetched and read); jurisdictional record per SRC-UC-INFORMATION-2025"
+      url: "https://www.rev.com/transcripts/press-conference-on-charlie-kirk-shooting"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Jeff Long, chief, UVU Police Department"
+      statement date and venue: "2025-09-10, joint press conference, UVU"
+      statement (verbatim, with locator): "'This is a police chief's nightmare'; six officers, ~3,000 attendees, 'a lower area surrounded by buildings'; 'You try to get your bases covered and unfortunately today we didn't'; 'I was coordinating with his lead security guy. So yeah, we were working together' (Rev transcript, 12:52-15:06)"
+      topic: "venue-security account"
+      contemporaneous record (with locator): "The rooftop shooting position established in the record (SRC-WAPO-ROOF-2025); the security lead's on-record account that police assurances about rooftop coverage failed (SRC-FOX-HARPOLE-2025)"
+      outcome: "partially corroborated"
+      basis for outcome: "the chief's concession that coverage failed is consistent with the established rooftop origin; the security lead's more specific claim — that rooftop coverage was affirmatively promised — is his account of a private coordination conversation the chief's public statement neither confirms nor denies"
+    citation:
+      text: "Rev.com day-of transcript (primary, fetched and read); bearing records are ledger sources SRC-WAPO-ROOF-2025 and SRC-FOX-HARPOLE-2025"
+      url: "https://www.rev.com/transcripts/press-conference-on-charlie-kirk-shooting"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Kash Patel, FBI director"
+      statement date and venue: "2025-09-12, joint press conference, Utah (FBI-published remarks)"
+      statement (verbatim, with locator): "Announced forensic evidence undergoing evaluation at FBI laboratories at Quantico, with continuing processing (FBI speeches page, ledger source SRC-PATEL-0912-2025)"
+      topic: "announced evidence"
+      contemporaneous record (with locator): "The March 2026 disclosure, via defense filing and the deputy prosecutor's public explanation, that the ATF fragment-to-rifle comparison returned inconclusive (SRC-KSL-CONTEMPT-2026 carries the quoted TMZ language; SRC-AP-PRELIM-2026 the litigation posture)"
+      outcome: "partially corroborated"
+      basis for outcome: "forensic evaluation was in fact under way and much of it later entered the record under oath; the specific fragment-to-rifle comparison the announcements implied would resolve returned inconclusive — the record qualifies the announcement's implication without contradicting its literal content"
+    citation:
+      text: "Ledger source SRC-PATEL-0912-2025 (fbi.gov remarks, verified 2026-08-26); bearing records SRC-KSL-CONTEMPT-2026 and SRC-AP-PRELIM-2026"
+      url: "https://www.fbi.gov/news/speeches-and-testimony/director-patel-remarks-september-12-press-conference-utah-valley-university-shooting"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Kash Patel, FBI director"
+      statement date and venue: "2025-09-15, national television interview (as reported with quoted language)"
+      statement (verbatim, with locator): "Announced DNA linking the suspect to a screwdriver and towel recovered in the case (SRC-ALJAZEERA-PATEL-2025, quoting the interview)"
+      topic: "announced evidence"
+      contemporaneous record (with locator): "The charging Information filed the following day, which contains no screwdriver-DNA allegation (SRC-UC-INFORMATION-2025); preliminary-hearing testimony ten months later presenting the DNA evidence under oath (SRC-FOX-PRELIM-DNA-2026)"
+      outcome: "corroborated"
+      basis for outcome: "the announced evidence was ultimately presented under oath — but only ten months later, and it was absent from the charging document filed the next day; the announcement-versus-charging-document gap is real and already graded on the ledger (KRK-C032), and this row carries both halves"
+    citation:
+      text: "Ledger sources SRC-ALJAZEERA-PATEL-2025 (statement), SRC-UC-INFORMATION-2025 and SRC-FOX-PRELIM-DNA-2026 (bearing records), each previously verified"
+      url: "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Christopher Ballard, deputy Utah County attorney"
+      statement date and venue: "2026-03-31, TMZ interview"
+      statement (verbatim, with locator): "Explained the inconclusive ballistics result ('the fragment did not contain enough detail') and asserted the state has 'ample evidence to demonstrate beyond a reasonable doubt that Tyler Robinson committed this murder' (quoted in SRC-KSL-CONTEMPT-2026)"
+      topic: "announced evidence / pretrial publicity"
+      contemporaneous record (with locator): "The June 26, 2026 ruling of the Fourth District Court holding the deputy prosecutor in civil contempt for the 'ample evidence' statement while finding the ballistics correction legitimate (SRC-KSL-CONTEMPT-2026)"
+      outcome: "adjudicated by a court — carried as the court's finding"
+      basis for outcome: "a court has itself characterized this statement, so the row reports the adjudication rather than grading: the publicity assertion violated the pretrial orders; the technical explanation of 'inconclusive' did not. This site adds no characterization of its own"
+    citation:
+      text: "Ledger source SRC-KSL-CONTEMPT-2026 (ruling coverage with quoted language, previously verified)"
+      url: "https://www.ksl.com/article/51546907/judge-in-robinson-case-expected-to-rule-on-contempt-allegation"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Turning Point USA staff (spokesman and producer statements on the event videography)"
+      statement date and venue: "September 2025 onward, public statements addressing the card-removal footage"
+      statement (verbatim, with locator): "The organization's account: its technical staff removed the camera media protectively so footage 'wouldn't be stolen,' and the footage was turned over to the FBI (as documented and quoted in the commentary record carrying the footage, SRC-OWENS-EP377-2026)"
+      topic: "media custody and transfers"
+      contemporaneous record (with locator): "Sworn preliminary-hearing testimony on the transfer mechanics: the videographer supplied a flash drive the same day and downloadable files thereafter — copies, with the fate of every original storage card not established on the record (SRC-REV-DAY1-2026)"
+      outcome: "partially corroborated"
+      basis for outcome: "the removal happened and supplied footage reached investigators the same day, corroborating the account's core; whether every original card reached law-enforcement custody is exactly what the sworn record leaves open (KRK-C012), so the 'turned over' half remains partially corroborated, not established"
+    citation:
+      text: "Ledger sources SRC-OWENS-EP377-2026 (footage and quoted organizational statements) and SRC-REV-DAY1-2026 (sworn transfer testimony), each previously verified"
+      url: "https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1"
+      verification: ai_verified
+  - cells:
+      speaker and role: "David Hull, lead investigator, Utah State Bureau of Investigation (sworn testimony)"
+      statement date and venue: "2026-07-06, preliminary hearing day 1, Fourth District Court"
+      statement (verbatim, with locator): "Testified the medical examiner's report gave the manner of death as 'murder'; after a sustained defense objection and re-reading the document: 'Yes, I misspoke. It does say homicide' (SRC-REV-DAY1-2026; contemporaneous coverage SRC-KSL-PRELIM1-2026)"
+      topic: "medical relay"
+      contemporaneous record (with locator): "The medical examiner's report as read into the record moments later: homicide, gunshot wound to the neck (same transcript)"
+      outcome: "superseded by a fuller account"
+      basis for outcome: "the witness corrected himself on the record against the document he was summarizing; the row exists because the correction is part of the record, not because a mistake corrected in real time carries any further weight"
+    citation:
+      text: "Ledger sources SRC-REV-DAY1-2026 (transcript) and SRC-KSL-PRELIM1-2026 (coverage), each previously verified"
+      url: "https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1"
+      verification: ai_verified
+  - cells:
+      speaker and role: "David Hull, lead investigator, Utah State Bureau of Investigation (sworn testimony)"
+      statement date and venue: "July 2026, preliminary hearing, under defense cross-examination"
+      statement (verbatim, with locator): "Testified he did not authorize the courtyard excavation and paving and learned of it through the news (as carried in the GRAMA-records synthesis the ledger verified, SRC-SHERAFY-2026, and the hearing record SRC-REV-DAY1-2026)"
+      topic: "scene handling and release"
+      contemporaneous record (with locator): "The GRAMA-obtained facilities records: an emergency cleanup order placed 2025-09-11 ($6,090.52, 'Clean up for shooting incident'), surface-alteration discussion by 09-13, pavers by 09-14 — a facilities-driven process with no investigator authorization appearing anywhere in the released records (SRC-SHERAFY-2026)"
+      outcome: "corroborated"
+      basis for outcome: "the released records show a university-facilities process consistent with the lead investigator's stated non-involvement; nothing in them contradicts his account"
+    citation:
+      text: "Ledger sources SRC-SHERAFY-2026 (GRAMA records reproduced verbatim, verified 2026-08-25) and SRC-REV-DAY1-2026"
+      url: "https://sherafy.com/why-uvu-paved-charlie-kirk-assassination-site/"
+      verification: ai_verified
+  - cells:
+      speaker and role: "Dan Merrell, paving contractor (private individual; on-record interview statement)"
+      statement date and venue: "2026, recorded interview about the courtyard work"
+      statement (verbatim, with locator): "Stated he understood the emergency paving directive to come from the Utah governor and the FBI director (SRC-MERRELL-2026)"
+      topic: "scene handling and release"
+      contemporaneous record (with locator): "The released GRAMA corpus: university facilities personnel coordinate the cleanup and paving; no directive from the governor's office or the FBI appears in any released record (SRC-SHERAFY-2026)"
+      outcome: "unresolved"
+      basis for outcome: "the released records neither corroborate nor contradict a verbal directive the contractor says he was given; no authorization chain to either office appears, and an absence in a partial records release is not proof of absence. The row grades the document comparison only — the contractor's understanding of who ordered his job is his statement, and this site does not characterize it further (KRK-R007 targets the record that would resolve this)"
+    citation:
+      text: "Ledger sources SRC-MERRELL-2026 (interview, previously verified) and SRC-SHERAFY-2026 (GRAMA corpus)"
+      url: "https://sherafy.com/why-uvu-paved-charlie-kirk-assassination-site/"
+      verification: ai_verified
+findings:
+  - statement: >-
+      Of eleven graded statements, the record corroborates four and
+      partially corroborates three; a court adjudicated one (carrying the court's
+      finding, not this site's), one was self-corrected on the record
+      within moments, and one is unresolved pending the records request
+      that would decide it. The single outright contradiction is the FBI
+      director's day-one custody post, walked back the same afternoon at
+      the podium by the governor's careful 'person of interest' framing.
+      Officials' first-day factual accounts — transport, single victim,
+      rooftop origin, security posture — have held up against records
+      that entered the ledger independently.
+    evidenceId: KRK-E064
+  - statement: >-
+      The media-custody cluster grades exactly where the case has always
+      placed it: the protective-removal account's core is corroborated
+      (removal documented, footage supplied same day) while its
+      'turned over to the FBI' half stays partially corroborated,
+      because the sworn record establishes copies — a flash drive and
+      downloadable files — and leaves the fate of every original card
+      open. The statement ledger and KRK-C012 point at the same gap,
+      and the media ledger (KRK-R008) remains the instrument that would
+      close it.
+    evidenceId: KRK-E063
+  - statement: >-
+      The announced-evidence cluster shows one repeating shape:
+      announcements that outran their paper. The screwdriver-DNA
+      announcement was absent from the next day's charging document and
+      then presented under oath ten months later; the Quantico
+      processing announcement was true as stated while the comparison
+      it implied would resolve came back inconclusive; the 'ample
+      evidence' assertion earned a civil-contempt finding even as its
+      technical half was ruled legitimate. In each case the eventual
+      record partially vindicated the statement while the interval —
+      not the content — is where the transparency cost lived.
+    evidenceId: KRK-E064
+  - statement: >-
+      A count of qualified or contradicted statements is not evidence of
+      coordination, and this table declines that aggregate move in both
+      directions: the distribution here — mostly corroborated, one
+      adjudicated violation, one real-time self-correction — supports
+      neither a coordinated-lies narrative nor a nothing-to-see-here
+      one. Statement by statement is the only grain at which this
+      ledger speaks.
+  - statement: >-
+      Reported ungraded, per the freeze: the hospital-clearing claim
+      (no hospital record or administrative statement bearing on it was
+      found by any searcher; the claim's only source remains commentary);
+      the university's formal GRAMA response letter (reported by a
+      searcher, but its primary page would not render for native
+      verification, so it is left ungraded rather than cited on a
+      searcher's word); and the venue-selection approver (redacted in
+      the released records, leaving no attributable statement to grade
+      beyond the police chief's, which is row 4).
+limitations:
+  - >-
+    Searcher coverage, reported bluntly: the OpenAI substitute run
+    produced a table of fabricated rows — invented speaker names,
+    invented exhibits with page-and-line locators, and one row asserting
+    a ballistic match where the verified record says inconclusive — and
+    was discarded entirely, contributing nothing, not even leads. The
+    Gemini deep-research run was directionally accurate and proposed
+    most of the clusters collected here, but cited aggregator wikis
+    whose claims were re-anchored to primary or previously verified
+    ledger sources before any cell entered the table. Native
+    verification is the only reason the fabricated table is a
+    limitations entry rather than published content.
+  - >-
+    Ten of eleven rows anchor to sources the ledger had already verified
+    for other claims; one new primary (the day-of joint-briefing
+    transcript) was fetched in full. Reusing verified sources means row
+    quality inherits those sources' stated reliability notes, including
+    that the GRAMA corpus is carried through an independent synthesis
+    pending direct records (KRK-R007).
+  - >-
+    The population is bounded by the freeze date; statements after
+    2026-08-26 (including anything said at the September 1 hearing) are
+    out of scope and would enter through a superseding study.
+  - >-
+    Sworn-testimony rows summarize live transcripts; exact wording is
+    quoted where short, paraphrased with locators where long, and every
+    paraphrase can be checked against the cited transcript.
+  - >-
+    Stage provenance: the freeze stamp (runId
+    2026-08-26-study-krk-s005-freeze, promptVersion
+    erebus-study-freeze-v1) is preserved in the merged freeze PR and in
+    the header comment; criteria hash 85874a57b2bf re-verifies unchanged
+    at collection.
+runId: 2026-08-26-study-krk-s005-collect
 model: Claude Fable 5 (Anthropic), via Cursor
-date: 2026-08-26
-promptVersion: erebus-study-freeze-v1
+date: "2026-08-26"
+promptVersion: erebus-study-collect-v1
 humanReviewed: false

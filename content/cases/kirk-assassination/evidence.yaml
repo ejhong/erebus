@@ -1669,3 +1669,69 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-krk-s002-collect"
     date: "2026-08-26"
+
+- id: KRK-E063
+  title: "Statement ledger: the media-custody account is partially corroborated, with the original-cards gap intact"
+  claimIds: [KRK-C011, KRK-C012]
+  sourceId: SRC-KRK-S005
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Graded against the sworn record, the organization's
+    protective-removal account holds at its core — the removal is
+    documented and supplied footage reached investigators the same day —
+    while its "turned over to the FBI" half stays partially
+    corroborated: testimony establishes a flash drive and downloadable
+    files, copies, with the fate of every original storage card not
+    established on the record.
+  editorInference: >-
+    The statement ledger lands exactly on KRK-C012's existing gap
+    without moving it in either direction: nothing graded suggests
+    concealment, and nothing graded establishes complete custody. The
+    media ledger (KRK-R008) remains the closing instrument.
+  exactLocator: "Study KRK-S005, finding 2 (row-level artifacts on the study page)"
+  limitations:
+    - "Rows inherit the reliability notes of the ledger sources they anchor to."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S005 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s005-collect"
+    date: "2026-08-26"
+
+- id: KRK-E064
+  title: "Statement ledger: eleven statements graded against records — no aggregate pattern in either direction"
+  claimIds: [KRK-C016, KRK-C017]
+  sourceId: SRC-KRK-S005
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Eleven checkable public statements by event personnel and officials,
+    graded as document comparisons under pre-registered criteria: four
+    corroborated, three partially corroborated, one adjudicated by a
+    court (the contempt ruling, carried as the court's finding), one
+    self-corrected on the record within moments, one unresolved pending
+    the GRAMA record that would decide it, and one contradicted by the
+    record — the FBI director's day-one custody post, corrected from the
+    same podium the same afternoon. The announced-evidence cluster shows
+    one repeating shape: announcements that outran their paper, later
+    partially vindicated, with the interval rather than the content
+    carrying the transparency cost.
+  editorInference: >-
+    The distribution supports neither reading that circulates: it is not
+    a record of coordinated falsehood, and it is not a clean sheet — one
+    court-adjudicated violation and one contradicted custody
+    announcement are real, and so is the fact that most first-day
+    factual accounts held up. A count of qualified statements is not
+    evidence of coordination; this table declines that move in both
+    directions, statement by statement.
+  exactLocator: "Study KRK-S005, findings 1, 3, and 4 (row-level artifacts on the study page)"
+  limitations:
+    - "The population is bounded at the freeze date; the September 1 hearing and anything after enters only through a superseding study."
+    - "No row grades intent or culpability; adjudications are carried as their adjudicator's findings."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S005 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s005-collect"
+    date: "2026-08-26"

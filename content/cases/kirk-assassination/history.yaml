@@ -241,3 +241,34 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  change: >-
+    Study KRK-S005 collection published: eleven checkable public
+    statements by event personnel and officials, graded as document
+    comparisons under the criteria frozen earlier the same day (hash
+    85874a57b2bf), each row anchored to a primary or previously verified
+    ledger source. Two evidence records enter the ledger — KRK-E063
+    (qualifies KRK-C011/C012: the media-custody account partially
+    corroborated, the original-cards gap intact) and KRK-E064 (qualifies
+    KRK-C016/C017: no aggregate pattern in either direction; one
+    court-adjudicated violation, one contradicted custody announcement,
+    most first-day factual accounts corroborated). One new primary
+    source added (the day-of joint-briefing transcript,
+    SRC-REV-PRESSER-0910-2025) and the workpaper source SRC-KRK-S005.
+    The OpenAI searcher's brief was discarded in full as fabricated —
+    invented speakers, invented exhibits, one row inverting the verified
+    inconclusive ballistics result — and is documented in the study's
+    limitations; native verification against primary documents is why it
+    reached the limitations section instead of the site.
+  reason: >-
+    The pre-registered discipline did its job twice in one study: the
+    frozen population stopped statement cherry-picking, and the
+    never-cite-briefs rule stopped a fabricated searcher table at the
+    door. What publishes is the boring, load-bearing truth the case
+    needed on the record: graded statement by statement, officials'
+    accounts mostly held, the exceptions are exactly documented, and no
+    pile-up narrative survives in either direction.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
