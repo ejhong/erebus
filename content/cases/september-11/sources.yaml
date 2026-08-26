@@ -10,6 +10,191 @@
 # Advocacy material on both sides is admitted only as claim-origin
 # documentation and labeled as such.
 
+# ── the federal investigation ───────────────────────────────────────────
+
+- id: SRC-NIST-NCSTAR1A-2008
+  title: "Final Report on the Collapse of World Trade Center Building 7 (NIST NCSTAR 1A)"
+  authors: ["S. Shyam-Sunder", "R. Gann", "W. Grosshandler"]
+  organization: "National Institute of Standards and Technology"
+  year: "2008"
+  sourceType: report
+  identifier: "NIST NCSTAR 1A; DOI 10.6028/NIST.NCSTAR.1a; published November 2008"
+  url: "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1a.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Official NIST PDF downloaded and read 2026-08-26; the collapse
+    sequence (§2.4), three-stage descent analysis (§3.6 and Chapter 4),
+    column temperatures (Ch. 2), first-known-instance statement (§ES.1),
+    and blast findings (Ch. 4) all quoted verbatim with printed page
+    numbers.
+  reliabilityNotes:
+    - "The most thorough engineering study of this collapse, and the only one with subpoena power and full site access; it is also the investigation whose adequacy is under dispute, so it is not independent of the question."
+    - "The report's central initiation mechanism cannot be recomputed from the data NIST released — the modeling files were withheld, a withholding a court upheld."
+    - "NIST's own pages give the final report's date variously as November 20 and November 23, 2008; neither is relied on as exact here."
+    - "The girder designation widely used in public argument does not appear in this report, which refers only to the girder spanning between Columns 79 and 44; the lettered designation belongs to NCSTAR 1-9, which this case has not obtained."
+
+- id: SRC-NIST-WTC7-FAQ
+  title: "FAQs — NIST WTC 7 Investigation"
+  organization: "National Institute of Standards and Technology"
+  year: "2021"
+  sourceType: webpage
+  identifier: "Created September 2011; question set reordered September 2021; page updated April 5, 2022"
+  url: "https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-7-investigation"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-26; the free-fall staging (Q32), blast-sound
+    analysis (Q33), witness-boom answer (Q36), data-withholding
+    explanation (Q7), and steel-identification answer (Q21) quoted
+    verbatim by question number.
+  reliabilityNotes:
+    - "An agency explaining and defending its own report; authoritative for NIST's position, not independent of it."
+    - "Question numbers shifted in the September 2021 reordering, so any citation must record the number and the date together."
+    - "Notable for what it concedes: that WTC 7 steel could not be identified after removal, and that the late-stage simulated deformation differs from the video record."
+
+- id: SRC-NIST-NCSTAR1-2005
+  title: "Final Report of the National Construction Safety Team on the Collapses of the World Trade Center Towers (NIST NCSTAR 1)"
+  authors: ["S. Shyam-Sunder"]
+  organization: "National Institute of Standards and Technology"
+  year: "2005"
+  sourceType: report
+  identifier: "NIST NCSTAR 1; DOI 10.6028/NIST.ncstar.1; final report issued October 2005 (landing page dated December 1, 2005)"
+  url: "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Official NIST PDF downloaded and read 2026-08-26; the fireproofing
+    counterfactual quoted verbatim from both the Executive Summary
+    (p. xxxviii) and §6.14.5 (p. 149), with the impact-damage summaries
+    from Ch. 2. The PDF carries an OCR text layer with visible artifacts,
+    noted where quoted.
+  reliabilityNotes:
+    - "NIST's conclusion is hedged in its own text — the towers 'likely would not have collapsed' absent dislodged insulation — and public restatements on both sides routinely drop that hedge."
+    - "The investigation modeled collapse initiation, not the full progression to ground; NIST says propagation was 'readily explained without the same complexity of modeling,' which is a stated judgment rather than a simulation result."
+
+- id: SRC-NIST-TOWERS-FAQ
+  title: "FAQs — NIST WTC Towers Investigation"
+  organization: "National Institute of Standards and Technology"
+  year: "2021"
+  sourceType: webpage
+  identifier: "Created September 2011; updated September 10, 2021; page updated April 5, 2022"
+  url: "https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-towers-investigation"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-26; the residue-testing answer (Q29), floor-capacity
+    figures (Q18), piston/dust answer (Q32), core-standing observation (Q31),
+    propagation statement (Q10), and the seismic-record answer (Q30) quoted
+    verbatim by question number.
+  reliabilityNotes:
+    - "Agency self-explanation; authoritative for NIST's position only."
+    - "Carries the explicit statement that NIST did not test the steel for explosive or thermite residues, together with NIST's reasoning — a passage both sides of the public argument misdescribe in opposite directions."
+
+- id: SRC-NIST-NEWS-2008
+  title: "NIST WTC 7 Investigation Finds Building Fires Caused Collapse"
+  organization: "National Institute of Standards and Technology"
+  year: "2008"
+  sourceType: webpage
+  identifier: "News release, August 21, 2008 (announcing the DRAFT report for public comment)"
+  url: "https://www.nist.gov/news-events/news/2008/08/nist-wtc-7-investigation-finds-building-fires-caused-collapse"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-26; lead investigator quotations and the
+    blast-sound statement verified verbatim.
+  reliabilityNotes:
+    - "This release announced the draft report for comment, not the November 2008 final report — a distinction lost in most citation of it."
+    - "Its phrasing of the 'first known instance' finding differs slightly from the final report's; the report wording is preferred wherever the two diverge."
+
+- id: SRC-QUICK-V-NIST-2011
+  title: "Michael Quick v. United States Department of Commerce, National Institute of Standards and Technology — Memorandum Opinion"
+  organization: "U.S. District Court for the District of Columbia"
+  year: "2011"
+  sourceType: report
+  identifier: "Civil Action No. 09-02064 (CKK); opinion filed April 7, 2011; 22 pp."
+  url: "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_09-cv-02064/pdf/USCOURTS-dcd-1_09-cv-02064-0.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Opinion PDF downloaded from govinfo.gov 2026-08-26; the file counts,
+    the Director's July 9, 2009 finding, the statutory basis at 15 U.S.C.
+    § 7306(d), and the holding quoted verbatim with printed page numbers.
+  reliabilityNotes:
+    - "A court record, authoritative for what was withheld and on what legal basis; it decides the lawfulness of the withholding, not whether the underlying model is correct."
+    - "The opinion's own figures do not reconcile arithmetically — 25,644 released and 68,500 withheld against 91,114 described as potentially responsive — so this case quotes the three numbers as given rather than presenting a fraction."
+
+- id: SRC-FEMA403-APPC-2002
+  title: "World Trade Center Building Performance Study, Appendix C: Limited Metallurgical Examination (FEMA 403)"
+  authors: ["Jonathan Barnett", "Ronald R. Biederman", "R. D. Sisson, Jr."]
+  organization: "Federal Emergency Management Agency"
+  year: "2002"
+  sourceType: report
+  identifier: "FEMA 403 Appendix C, May 2002; 7 pp."
+  url: "https://www.fema.gov/pdf/library/fema403_apc.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    FEMA's own hosting rejects non-browser clients; verified against a
+    Wayback snapshot of the fema.gov URL dated 2026-08-16. The
+    sulfidation and eutectic-melting observations, the sulfur-source
+    sentence, and the further-study recommendation quoted verbatim from
+    printed pages C-1, C-5, and C-13.
+  reliabilityNotes:
+    - "A limited examination of two members recovered opportunistically, with hedged identifications ('appeared to be', 'thought to be') — not a systematic metallurgical survey."
+    - "The appendix does not propose any source for the sulfur; its stated alternatives concern WHEN the corrosion occurred, not where the sulfur came from. Attributions of a gypsum explanation to these authors are mistaken — that argument is NIST's, made elsewhere."
+    - "The recommended follow-up study has never been performed, which is why the anomaly remains open rather than resolved in either direction."
+
+- id: SRC-FEMA403-CH5-2002
+  title: "World Trade Center Building Performance Study, Chapter 5: WTC 7 (FEMA 403)"
+  organization: "Federal Emergency Management Agency"
+  year: "2002"
+  sourceType: report
+  identifier: "FEMA 403 Chapter 5, May 2002; 25 pp."
+  url: "https://www.fema.gov/pdf/library/fema403_ch5.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Verified against a Wayback snapshot of the fema.gov URL dated
+    2026-04-20; the broken water main, the absence of manual firefighting,
+    and FEMA's own statement of uncertainty quoted verbatim from printed
+    pages 5-21, 5-24, and 5-31.
+  reliabilityNotes:
+    - "An early study, explicitly preliminary, conducted without the site access or resources of the later federal investigation."
+    - "Valuable precisely because it records how little was settled in 2002: FEMA called its own best hypothesis one with 'only a low probability of occurrence' and asked for further work."
+
+- id: SRC-AHMADI-PLASCO-2020
+  title: "Collapse of the 16-Story Plasco Building in Tehran due to Fire"
+  authors:
+    - "M. T. Ahmadi"
+    - "A. A. Aghakouchak"
+    - "R. Mirghaderi"
+    - "S. Tahouni"
+    - "S. Garivani"
+    - "A. Shahmari"
+    - "S. Epackachi"
+  organization: "Fire Technology"
+  year: "2020"
+  sourceType: paper
+  identifier: "Fire Technology 56:769–799; DOI 10.1007/s10694-019-00903-y"
+  url: "https://doi.org/10.1007/s10694-019-00903-y"
+  verification: ai_verified
+  verificationNote: >-
+    Springer article page fetched 2026-08-26; the date, the complete
+    collapse, and the casualty figure quoted verbatim from the abstract.
+    Full text not obtained.
+  reliabilityNotes:
+    - "Peer-reviewed, authored by the Iranian investigation team; the relevant point is narrow — a steel-framed high-rise suffered fire-induced total collapse — and this case does not extend it to structural similarity with any WTC building."
+    - "Cited here because it dates from after the 2015 and 2018 proponent literature that built its argument on fire never having caused such a collapse; that premise requires updating, which is a different thing from being refuted."
+
+- id: SRC-KHAN-PLASCO-2021
+  title: "Modeling the Collapse of the Plasco Building Part I: Reconstruction of Fire"
+  authors: ["A. Khan", "R. Domada", "X. Huang", "M. Khan", "A. Usmani"]
+  organization: "Building Simulation"
+  year: "2021"
+  sourceType: paper
+  identifier: "DOI 10.1007/s12273-021-0825-4 (accepted manuscript via PolyU repository)"
+  url: "https://doi.org/10.1007/s12273-021-0825-4"
+  verification: ai_verified
+  verificationNote: >-
+    Accepted-manuscript PDF downloaded from the PolyU institutional
+    repository 2026-08-26; the fire origin, unprotected steel, absent
+    sprinklers, and total collapse quoted verbatim.
+  reliabilityNotes:
+    - "Peer-reviewed modeling companion; carries no casualty figures, so the factual anchor for those is the investigation-team paper instead."
+
 # ── WTC 7: the challenger study ─────────────────────────────────────────
 
 - id: SRC-UAF-WTC7-2020
