@@ -226,3 +226,27 @@
   aiAssisted: true
   kind: content
 
+
+- date: 2026-08-26
+  change: >-
+    Study COV-S001 collection published: seven dated agency-position
+    instances from officially released or declassified documents,
+    2021-2025, every cell quoting confidence language verbatim.
+    Evidence COV-E032 enters the ledger (supports COV-C014): no United
+    States agency has ever held a high-confidence origin position in
+    the released record; the strongest is one agency's moderate; the
+    only documented change is the CIA's January 2025 move from
+    abstention to a low-confidence research-related lean. Workpaper
+    source SRC-COV-S001 added. A searcher-proposed testimony quotation
+    that could not be natively verified was excluded and is noted in
+    the findings.
+  reason: >-
+    "The agencies disagree" circulated for years without a precise
+    public table of who concluded what, at what confidence, on what
+    stated basis. The frozen population (official carriers only,
+    verbatim confidence, anonymous-source positions excluded) makes the
+    ledger assembly-proof in both directions, and the table now gives
+    COV-C014 its exact, dated content.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
