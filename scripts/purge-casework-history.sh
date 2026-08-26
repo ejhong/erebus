@@ -114,8 +114,14 @@ cat <<'NEXT'
   6. Bring GitHub Pages up, confirm the site serves, and only then remove
      the Cloudflare Pages project and its Access policy.
 
-Note: GitHub may retain unreachable objects server-side for a period and
-can serve them via direct SHA links. If that matters, contact GitHub
-Support to request garbage collection after the force-push, or create a
-fresh repository and push the rewritten history into it.
+Note: GitHub may retain unreachable objects server-side for a period and can
+serve them via direct commit SHA. A garbage-collection request to GitHub
+Support after the force-push is cheap and worth making, but is NOT a
+precondition for flipping visibility.
+
+The fresh-repository alternative (push the rewritten history into a new repo,
+delete the old one) is airtight against that retention and was REJECTED by
+founder decision on 2026-08-26: it would discard every arbiter verdict comment
+on every PR, which is the seat-by-seat record of the governance. See
+docs/DECISIONS.md. Do not revive it as an option without a new decision.
 NEXT

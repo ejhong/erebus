@@ -231,3 +231,43 @@ audit trail is a weaker version of that claim.
 8. **Teardown order.** Bring Pages up and confirm the site serves before
    removing the Cloudflare Pages project and its Access policy, so there
    is never a window with no live site.
+
+## 2026-08-26 — Purge method settled: rewrite in place, keep the PR history
+
+**Decided by:** founder (direct instruction); recorded by AI.
+
+The going-public entry above left one question open: whether to rewrite
+history in place and force-push, or push the rewritten history into a fresh
+repository and delete the old one. The second is airtight against GitHub
+retaining unreachable objects server-side; the first preserves the issue and
+pull-request history.
+
+**Decision: rewrite in place. The PR history is not to be lost.**
+
+The founder's reasoning: the residual exposure is negligible, so the
+airtight option is not worth its cost. Recorded with one correction to the
+mechanism, because the reasoning should be right on the record even when the
+conclusion is: the residual risk is not a function of site traffic, since it
+does not run through the site at all. It is that GitHub may keep purged
+blobs fetchable by direct commit SHA for a period after a force-push. What
+makes it negligible is the conjunction of everything having to go right for
+an adversary — the repository being unadvertised, the SHAs being unpublished
+and unguessable, and the material being discovery-aid copies of already
+published documents rather than distribution of anything unavailable
+elsewhere. On that reasoning the conclusion holds.
+
+What the decision buys, and why it is the right trade for this project
+specifically: the pull-request history contains every arbiter verdict
+comment — the panel's seat-by-seat reasoning on every consequential change,
+including the parks and the reversals. The constitution stakes accountability
+on inspectability. Discarding the record of the governance in order to
+perfect the removal of four copyright-encumbered PDFs would trade the
+project's central claim for a marginal gain against a threat nobody is
+mounting.
+
+Consequence for the runbook: `scripts/purge-casework-history.sh` rewrites in
+place; the fresh-repository alternative is retained in the documentation as a
+rejected option with its reason, not as a pending choice. A garbage-collection
+request to GitHub Support after the force-push is cheap and worth making, but
+is not a precondition for flipping visibility.
+

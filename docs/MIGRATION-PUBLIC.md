@@ -123,16 +123,25 @@ check that cannot be bypassed by not reading a document.
 9. ⬜ Cloudflare Pages project and Access policy removed — **last**, so there
    is never a window with no live site.
 
-## One residual risk, stated plainly
+## One residual risk, and the decision taken on it
 
 GitHub can retain unreachable objects server-side after a force-push and may
-serve them via direct SHA links for a period. For a copyright question the
-airtight remedy is to push the rewritten history into a **fresh empty
-repository** and delete the old one — at the cost of the issue and PR history,
-which includes every arbiter verdict comment and is itself part of the audit
-trail this project stakes its accountability on.
+serve them by direct commit SHA for a period.
 
-Rewriting in place and asking GitHub Support to garbage-collect is the lighter
-option, and is probably proportionate given these were discovery-aid copies
-rather than distribution. That trade-off is the founder's call and is not
-settled by this document.
+**Decision (founder, 2026-08-26): rewrite in place and keep the pull-request
+history.** The fresh-repository alternative — push the rewritten history into
+a new repo, delete the old one — is airtight against this, and is rejected
+because it would discard every arbiter verdict comment on every PR. That is
+the seat-by-seat record of the governance, including the parks and the
+reversals, and this project stakes its accountability on inspectability.
+Trading it away to perfect the removal of four copyright-encumbered PDFs
+would sacrifice the central claim for a marginal gain.
+
+Why the residual exposure is acceptable, stated precisely: it does not run
+through the site, so site traffic is irrelevant to it. It requires an
+adversary to know an unpublished, unguessable commit SHA in an unadvertised
+repository, in order to obtain a discovery-aid copy of an already published
+document they could find elsewhere. Every one of those has to hold at once.
+
+A garbage-collection request to GitHub Support after the force-push is cheap
+and worth making. It is not a precondition for flipping visibility.
