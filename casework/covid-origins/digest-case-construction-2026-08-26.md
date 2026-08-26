@@ -677,7 +677,7 @@ reported to hold records of roughly 22,000 samples and more than 100 unpublished
 — became unreachable from outside the institute on 12 September 2019 and has not since been
 shared."
 - **Rung:** observation · *Credibility:* `provisionally_supported` · *Diagnosticity:* `low`
-*Split the fact from the motive.* The takedown as an event is the firmer half; the inference
+- *Split the fact from the motive.* The takedown as an event is the firmer half; the inference
 from its timing is the softer one. The offered explanation — security measures following
 hacking attempts — is unverifiable from outside, and unverifiability is not evidence of
 concealment. Brief 1 calls the takedown "the case's most concrete unexplained act" while
@@ -705,7 +705,7 @@ the lab case. Include it precisely *because* it is popular and weak.
 Wuhan Institute of Virology at the Tongguan mineshaft in Mojiang, Yunnan, where six miners
 clearing bat guano developed severe pneumonia in April 2012 and three died."
 - **Rung:** observation · *Credibility:* `provisionally_supported` · *Diagnosticity:* `low`
-*Reads both ways, and the case page should say so plainly.* For the research-related family:
+- *Reads both ways, and the case page should say so plainly.* For the research-related family:
 the WIV surveilled a site where a SARS-like virus plausibly sickened humans, held
 unpublished sequences from it, and did not disclose the mine–RaTG13 connection in print
 until July 2020. For the zoonotic family: the miners are a demonstration that
@@ -721,7 +721,7 @@ reporting; the Kunming master's thesis (secondary description only — locate th
 - **Wording:** "A Wuhan coronavirus researcher was infected with SARS-CoV-2 or a close
 progenitor before the recognized outbreak."
 - **Rung:** attribution · *Credibility:* `unresolved` · *Diagnosticity:* `high` if resolved
-*The research-related family's missing keystone*, and the exact counterpart of COV-C009.
+- *The research-related family's missing keystone*, and the exact counterpart of COV-C009.
 Brief 2 proposes it with "Status: no public direct evidence." Brief 1 records that China's
 National Security Commission investigated the WIV in early 2020, drew blood from staff, and
 per WIV officials found no SARS-CoV-2 antibodies — an assertion that is itself unverified
@@ -753,7 +753,7 @@ June 2025 that the weight of accessible scientific evidence suggests zoonotic sp
 while stating that it could not evaluate the laboratory hypothesis because requested
 information had not been provided."
 - **Rung:** observation · *Credibility:* `well_supported` · *Diagnosticity:* `moderate`
-*Both halves, always together.* The report is simultaneously the best current international
+- *Both halves, always together.* The report is simultaneously the best current international
 scientific synthesis and an indictment of the data environment: per the accompanying
 Director-General remarks, hundreds of early sequences, detailed market-animal information,
 and Wuhan laboratory and biosafety information had not been provided, and all hypotheses
