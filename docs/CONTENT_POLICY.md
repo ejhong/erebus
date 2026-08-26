@@ -45,26 +45,34 @@ precedence over everything here.
 
 Desk research (base-rate tabulations, timeline reconstructions,
 discrepancy ledgers) produces working datasets whose epistemic unit is
-the study, not the row. Rows do not enter the evidence ledger; studies
-do, at the right grain:
+the study, not the row. Studies are now a first-class, loader-validated,
+site-rendered domain object — the full design and its ratified review
+history are in `docs/STUDIES_PROPOSAL.md`; this section is the short
+operating rule:
 
-- **The study is a document**: one workpaper per study under
-  `content/cases/<case>/studies/`, containing the inclusion criteria
-  (frozen, with the freeze date, BEFORE data collection), method, the
-  full table with per-row citations, findings, and limitations. The
-  loader ignores the directory; git versions it; the PR diff shows the
-  whole document to reviewers and the arbiter panel.
-- **The ledger cites the study, not its rows**: one Source record for
-  the workpaper (honestly labeled as AI-authored project work held in
-  the repository), plus a SMALL number of evidence records carrying the
-  aggregate findings — the level at which a reader disputes something.
-- **Decisive rows get promoted**: any single precedent or datum that
-  carries load-bearing weight on its own graduates to a full evidence
-  record with its own primary source, under the ordinary rules.
+- **One YAML per study** under `content/cases/<case>/studies/<id>.yaml`
+  (schema-validated, fail-closed): frozen criteria with `criteriaHash`
+  (stamped via `node scripts/stamp-study.mjs <case> <id>`; any
+  post-freeze edit fails the build) and pre-committed `knownCandidates`,
+  method, the sourced table, findings, limitations, provenance stamps.
+- **Two PRs, freeze first**: the freeze PR carries criteria only (the
+  schema forbids findings before rows); the page renders publicly from
+  the freeze onward as "pre-registered — collection pending" — a
+  pre-registration that never collects is visible, and the weekly digest
+  lists any pending more than 30 days.
+- **The ledger cites the study, not its rows**: one `workpaper` Source
+  record (honestly labeled, `studyId` wired both ways) plus a SMALL
+  number of evidence records carrying aggregate findings — the level at
+  which a reader disputes something. Superseded studies cannot keep
+  ledger weight: evidence citing their workpaper fails the build.
+- **Decisive rows get promoted**: any single datum that carries
+  load-bearing weight graduates to a full evidence record with its own
+  primary source, under the ordinary rules — the row-citation shape is
+  the source-anchor shape, so promotion is a copy.
 
 The aggregation layer is where judgment hides: which rows were excluded
-matters more than any row. That is why criteria freeze first and travel
-with the workpaper.
+matters more than any row. That is why criteria freeze first, travel
+with the workpaper, and are tamper-evident.
 
 ## Research briefs are not sources
 
