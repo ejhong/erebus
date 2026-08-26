@@ -182,6 +182,24 @@
   kind: content
 
 - date: 2026-08-26
+  kind: content
+  change: "Research item KRK-R013 was rewritten to record that its base-rate
+    tabulation of federal public-facing roles has now been carried out across
+    thirteen comparable state-jurisdiction cases, with FBI participation
+    universal, day-one briefings fronted by local or state officials in every
+    case, and federal podium appearances peaking at special-agent-in-charge rank
+    — leaving this case's director-level fronting unmatched in the table. The
+    item now proposes only the remaining work: extending the population and
+    sourcing the stated legal nexus and role depth for each case. No changes
+    were required to the overview article."
+  reason: The item proposed as future work a study the evidence records now report
+    as completed, which would mislead readers about what the case still lacks.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
+
+- date: 2026-08-26
   change: >-
     Study KRK-S004 pre-registered (freeze only, zero rows): inconclusive
     outcomes in firearm-toolmark black-box studies, criteria hash
