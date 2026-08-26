@@ -72,7 +72,6 @@ const ALLOWLIST = new Set([
   // Zero-case empty states + living-persons notice (bootstrap §3, §4)
   "app/page.tsx",
   "app/cases/page.tsx",
-  "app/research/page.tsx",
   "app/method/page.tsx",
   "app/cases/[slug]/page.tsx",
   // Tests rewritten without upstream content fixtures
@@ -93,6 +92,14 @@ const ALLOWLIST = new Set([
   // Exists only in this repo
   "scripts/sync-engine.mjs",
 ]);
+
+/**
+ * Allowlisted files that never existed upstream (as opposed to deliberate
+ * content divergence from an upstream file). Excluded from the
+ * deleted-upstream warning below, which would otherwise misread them as
+ * upstream deletions.
+ */
+const LOCAL_ONLY = new Set(["scripts/sync-engine.mjs"]);
 
 const mode = process.argv.includes("--pull")
   ? "pull"
@@ -160,8 +167,23 @@ const upstreamFiles = new Set(
 const localFiles = new Set(ENGINE_PATHS.flatMap((p) => listFiles(ROOT, p)));
 
 const divergent = []; // { file, kind }
+// Allowlisting covers deliberate CONTENT divergence. When upstream deletes
+// an allowlisted file outright, that reason no longer applies and the
+// deletion would otherwise be silently invisible here forever (this is how
+// upstream's removal of the global research page failed to propagate).
+// Warn — never fail — so a human reviews whether the divergence still holds.
+const allowlistedDeletedUpstream = [];
 for (const file of [...new Set([...upstreamFiles, ...localFiles])].sort()) {
-  if (ALLOWLIST.has(file)) continue;
+  if (ALLOWLIST.has(file)) {
+    if (
+      localFiles.has(file) &&
+      !upstreamFiles.has(file) &&
+      !LOCAL_ONLY.has(file)
+    ) {
+      allowlistedDeletedUpstream.push(file);
+    }
+    continue;
+  }
   if (!upstreamFiles.has(file)) {
     divergent.push({ file, kind: "local-only (not in upstream engine)" });
     continue;
@@ -179,6 +201,15 @@ for (const file of [...new Set([...upstreamFiles, ...localFiles])].sort()) {
   if (scrub(up.toString("utf8")) !== loc.toString("utf8")) {
     divergent.push({ file, kind: "content differs from scrubbed upstream" });
   }
+}
+
+if (allowlistedDeletedUpstream.length > 0) {
+  console.log(
+    `warning: ${allowlistedDeletedUpstream.length} allowlisted file(s) no ` +
+      "longer exist upstream — review whether the divergence reason still " +
+      "applies (delete the file and its allowlist entry to follow upstream):",
+  );
+  for (const f of allowlistedDeletedUpstream) console.log(`  - ${f}`);
 }
 
 if (mode === "check") {
