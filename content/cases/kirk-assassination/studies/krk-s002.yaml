@@ -136,8 +136,11 @@ rows:
       statement rank: special agent in charge (Aaron Rouse), beside the sheriff
       stated nexus: assistance at local request
     citation:
-      text: Las Vegas Review-Journal, October 4, 2017 (Rouse at LVMPD presser); KNPR,
-        November 17, 2017 (FBI cleanup contract and property handback)
+      text: 'Two sources, each exact. Linked: Las Vegas Review-Journal, October 4,
+        2017, "Authorities still not clear on who Stephen Paddock was" — SAC
+        Aaron Rouse at the joint LVMPD briefing (statement cells).
+        Cleanup/behavioral-report cell: KNPR News, November 17, 2017, "FBI takes
+        over Las Vegas shooting scene cleanup," knpr.org/knpr/2017-11-17.'
       url: https://www.reviewjournal.com/local/the-strip/authorities-still-not-clear-on-who-stephen-paddock-was/
       verification: ai_verified
   - cells:
@@ -155,8 +158,13 @@ rows:
       stated nexus: assistance to the state investigation; USAO oversight of possible
         federal offenses
     citation:
-      text: State's Attorney report for the Judicial District of Danbury (primary,
-        law-enforcement participation appendix); PBS NewsHour, December 14, 2012
+      text: "Two sources, each exact. Linked (primary): Report of the State's Attorney
+        for the Judicial District of Danbury, November 25, 2013, law-enforcement
+        participation section (participation and nexus cells). Statement cells:
+        PBS NewsHour, December 14, 2012, \"How Tragic Events Unfolded at Sandy
+        Hook Elementary,\"
+        pbs.org/newshour/show/how-tragic-events-unfolded-at-sandy-hook-in-conne\
+        cticut (Lt. Vance fronting the briefings)."
       url: https://doi.org/10.13016/f6u6-o0p4
       verification: ai_verified
   - cells:
@@ -190,7 +198,12 @@ rows:
         not case evidence
       stated nexus: assistance; explicitly not a criminal federal investigation
     citation:
-      text: Texas Tribune, June 8, 2022; DOJ COPS Office CIR page; AP, June 8, 2022
+      text: "Two sources, each exact. Linked: Texas Tribune, June 8, 2022, \"Federal
+        investigation into Uvalde shooting is underway\" (AG announcement,
+        non-criminal framing, mayor's request). Participation/review cells: DOJ
+        COPS Office, \"Critical Incident Review: Active Shooter at Robb
+        Elementary School,\" cops.usdoj.gov/uvalde (federal response and review
+        team)."
       url: https://www.texastribune.org/2022/06/08/uvalde-shooting-doj-investigation/
       verification: ai_verified
   - cells:
@@ -204,8 +217,12 @@ rows:
       statement rank: special agent in charge (James Tarasca)
       stated nexus: assistance to MSU police
     citation:
-      text: NBC Chicago, February 14, 2023 (Tarasca at briefing); WILX, February 16,
-        2023
+      text: 'Two sources, each exact. Linked: WILX Lansing, February 16, 2023, "FBI
+        joins MSU police to investigate deadly campus shooting" (Tarasca support
+        framing, role depth). Statement cells: NBC Chicago, February 14, 2023,
+        "All 8 Victims in Michigan State University Shooting Were MSU Students,"
+        nbcchicago.com/news/local/all-8-victims-in-michigan-state-university-shooting-were-students-police/3071879
+        (Tarasca at the briefing on motive).'
       url: https://www.wilx.com/2023/02/16/fbi-joins-msu-police-investigate-deadly-campus-shooting/
       verification: ai_verified
   - cells:
@@ -220,8 +237,13 @@ rows:
       statement rank: field-office agency statement only
       stated nexus: assistance to MNPD
     citation:
-      text: "CBS News, March 28, 2023 (chief: 'our team and the FBI'); Fox 17 / USA
-        Today, March 27, 2023 (ATF field statement, TBI role)"
+      text: 'Two sources, each exact. Linked: CBS News, March 28, 2023, "Nashville
+        school shooting was apparently a targeted attack" (chief: "our team and
+        the FBI"; participation cell). ATF/TBI cells: USA Today live coverage,
+        March 27, 2023, "Covenant school shooting: 3 kids, 3 adults killed in
+        Nashville,"
+        usatoday.com/story/news/nation/2023/03/27/covenant-school-shooting-nashville-live-updates/11549814002
+        (ATF field statement, TBI assisting role).'
       url: https://www.cbsnews.com/news/nashville-school-shooting-covenant-school/
       verification: ai_verified
   - cells:
@@ -237,8 +259,14 @@ rows:
       statement rank: field-office public-affairs statement
       stated nexus: standard offer of tools and techniques to a local investigation
     citation:
-      text: Billboard, November 9, 2021 (FBI Houston statement); LA Times / Reuters,
-        November 10, 2021 (HPD lead); ABC13, January 2022 (portal)
+      text: 'Three sources, each exact. Linked: Billboard, November 9, 2021, "FBI
+        Offers to Join Astroworld Investigation" (public-affairs statement,
+        quoted; statement cells). HPD-lead cell: Los Angeles Times, November 10,
+        2021, "Houston police say no need for outside probe of Astroworld
+        deaths,"
+        latimes.com/world-nation/story/2021-11-10/houston-police-outside-probe-into-astroworld.
+        Portal cell: ABC13 Houston, January 2022,
+        abc13.com/post/astroworld-fest-latest-fbi-houston-police-investigation-travis-scott-portal-on/11468503.'
       url: https://www.billboard.com/music/music-news/fbi-join-astroworld-investigation-probe-9657423/
       verification: ai_verified
   - cells:
@@ -252,8 +280,9 @@ rows:
       statement rank: special agent in charge (James Yacone), beside the police chief
       stated nexus: assistance; terrorism publicly ruled out early
     citation:
-      text: CBS Colorado / NPR live coverage, July 20, 2012 (Yacone quotes at
-        briefing)
+      text: CBS Colorado, July 20, 2012, "Suspect Bought 4 Guns Used In Mass Shooting
+        In Last 60 Days" — SAC Yacone quoted at the briefing ("100 folks on
+        scene"; "we do not see a nexus to terrorism").
       url: https://www.cbsnews.com/colorado/news/4-guns-used-in-aurora-theater-shooting-purchased-in-last-2-months/
       verification: ai_verified
   - cells:
@@ -266,7 +295,9 @@ rows:
       statement rank: none
       stated nexus: assistance
     citation:
-      text: CNN / CBS / NBC, October 3, 2006 (Commissioner Miller briefings)
+      text: CNN, October 3, 2006, "Police detail school shooter's molestation claim" —
+        transcript highlights of Commissioner Miller's briefing, which he
+        fronted alone.
       url: https://www.cnn.com/2006/US/10/03/miller.tues/
       verification: ai_verified
   - cells:
@@ -283,8 +314,14 @@ rows:
       statement rank: none at the time
       stated nexus: assistance
     citation:
-      text: ABC/AP, October 1, 2015 (sheriff's briefings, FBI/OSP evidence teams); FBI
-        Portland, October 2016 (SAC Bretzing account of the response)
+      text: "Two sources, each exact. Linked: FBI Portland field office, October 1,
+        2016, \"Message of Remembrance on First Anniversary of UCC Attack\" —
+        SAC Bretzing's account of the hundred-plus-person response (role-depth
+        cell; flagged in-row as not contemporaneous). Briefing cells: ABC 33/40
+        (AP wire), October 1, 2015, \"UCC Shooting: Sheriff not naming gunman,\"
+        abc3340.com/news/nation-world/ucc-shooting-oregon-gunman-identified-as-\
+        chris-harper-mercer (sheriff fronting; FBI/OSP evidence teams; CALL-FBI
+        tip line)."
       url: https://www.fbi.gov/contact-us/field-offices/portland/news/message-of-remembrance-on-first-anniversary-of-ucc-attack
       verification: ai_verified
   - cells:
@@ -302,8 +339,12 @@ rows:
         deferring to state lead); HQ spokesman quotes
       stated nexus: assistance
     citation:
-      text: DOJ press release 07-259, April 17, 2007 (justice.gov, primary); NPR,
-        April 17, 2007
+      text: 'Two sources, each exact. Linked (primary): DOJ press release 07-259,
+        April 17, 2007, "Department of Justice Response to Shootings at Virginia
+        Tech" (AG written pledge; agent counts; "state and local agencies that
+        are leading"). HQ-spokesman and forensics cells: NPR, April 17, 2007,
+        "FBI Aiding Police in Sorting Va. Tech Evidence,"
+        npr.org/2007/04/17/9626770.'
       url: https://www.justice.gov/archive/opa/pr/2007/April/07_opa_259.html
       verification: ai_verified
   - cells:
@@ -320,8 +361,10 @@ rows:
       statement rank: special agents in charge (ATF Milanowski; FBI Combs)
       stated nexus: assistance to DPS
     citation:
-      text: CNN transcript, November 7, 2017 (Martin, Milanowski, Combs); CBS Texas,
-        November 6, 2017
+      text: "CNN program transcript, November 7, 2017 — the joint briefing verbatim:
+        DPS Regional Director Freeman Martin fronting, ATF SAC Milanowski on
+        firearms, FBI SAC Combs on the phone flown to Quantico. All cells rest
+        on this transcript."
       url: https://transcripts.cnn.com/show/ip/date/2017-11-07/segment/02
       verification: ai_verified
   - cells:
@@ -337,8 +380,9 @@ rows:
       statement rank: none at the briefings
       stated nexus: assistance
     citation:
-      text: AP / CNN / CBS Chicago, July 5-6, 2022 (Covelli and Rinehart briefings;
-        federal resources in supporting role)
+      text: 'AP, July 6, 2022, "Police: Parade shooting suspect contemplated 2nd
+        shooting" — Covelli briefing, task-force lead, state murder charges. All
+        cells rest on this report and the charging facts it states.'
       url: https://apnews.com/article/gun-violence-chicago-shootings-lake-michigan-9fd3e23a6396aa5e008943fbb260551b
       verification: ai_verified
     independenceNote: post-freeze discovery by the protocol's third searcher;
@@ -404,6 +448,12 @@ limitations:
     corroborated the rank pattern and surfaced one candidate beyond the native
     union (Highland Park), included after native verification. Coverage is good
     and demonstrably not complete."
+  - "Stage provenance: this file's provenance stamp records the collection run;
+    the freeze stage carried its own stamp (runId
+    2026-08-26-study-krk-s002-freeze, same model, promptVersion
+    erebus-study-freeze-v1), preserved verbatim in the merged freeze PR and in
+    git history. The criteria hash is the cross-stage invariant: it was computed
+    at the freeze and re-verifies unchanged here."
   - The author knew the target case's profile before the freeze;
     pre-registration cannot prevent pre-hoc criteria tuning (see the freeze PR's
     panel question). The population inheritance from KRK-S001 and the
