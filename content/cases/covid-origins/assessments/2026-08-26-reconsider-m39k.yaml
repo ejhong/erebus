@@ -1,0 +1,215 @@
+# Reconsideration draft — the one deliberately NON-BLIND draft in the
+# pipeline: written with the panel's dissents in hand, required to engage
+# each one (scripts/reconcile-contested.mjs). Append-only; not reviewed.
+runId: 2026-08-26-reconsider-m39k
+model: "anthropic/claude-opus-5 (reconsideration — deliberately non-blind:
+  engages the panel's dissents)"
+date: 2026-08-26
+promptVersion: erebus-reconsider-v1
+humanReviewed: false
+role: draft
+reconciles:
+  - 2026-08-26-check-gemini-r2
+  - 2026-08-26-check-gpt-r2
+  - 2026-08-26-check-grok-r2
+  - 2026-08-26-check-kimi-r2
+  - 2026-08-26-check-opus-r2
+caseAssessment:
+  verdict: provisionally_supported
+  loadBearing:
+    - COV-C001
+    - COV-C002
+    - COV-C005
+    - COV-C006
+    - COV-C010
+  weakestLinks:
+    - COV-C002
+    - COV-C010
+    - COV-C008
+    - COV-C017
+  synthesis: >-
+    Three seats (Grok, Kimi, Opus) argue that the house verdict is internally
+    inconsistent, and they are right. The draft concedes that market-associated
+    zoonosis is the only hypothesis family with affirmative public evidence and
+    that this is "not matched on the other side," then labels the case
+    unresolved — a word that in this vocabulary means the record cannot order
+    the alternatives at all. It can order them, weakly. COV-C001, COV-C005 and
+    COV-C006 place the earliest recognised cluster, 87.5% of interior
+    environmental positives, and mitochondrial DNA of susceptible mammals in the
+    same few hundred square metres; COV-C002 supplies the one observation
+    ascertainment bias does not naturally generate; COV-C010, even after its
+    fourteenfold demotion, still leans toward more than one introduction. That
+    is limited, largely unreplicated, single-custodian-dataset support for one
+    explanation and nothing affirmative for the other — the textbook shape of
+    provisionally_supported. I therefore move.
+
+
+    Gemini holds with the house at unresolved on the ground of two symmetrical
+    absences hostage to non-disclosure. That is correct about the keystone
+    claims and I preserve it there: COV-C008 (an infected supply-chain animal)
+    and COV-C017 (DEFUSE-like work actually performed) both stay unresolved, and
+    COV-C015 records that SAGO could not assess the laboratory route at all. But
+    unresolved-at-the-keystone does not force unresolved-at-the-family. The
+    absence of an infected animal is substantially manufactured by not sampling
+    the candidate species before clearance and disinfection (COV-E006, COV-E007,
+    COV-C004); the absence of a laboratory holding sits beside no progenitor, no
+    incident, no seroconversion (COV-E019). Both are non-diagnostic; only one
+    sits inside a convergent affirmative pattern.
+
+
+    GPT-5.1's well_supported does not compel. Well_supported implies replication
+    and independent lines. Here the geography, environmental, metagenomic and
+    lineage analyses run on one Chinese CDC dataset through overlapping author
+    teams (COV-E004, COV-E005, COV-E010) — three analytic layers, not three
+    confirmations. COV-C002 is a single p = 0.029 result on an unaudited line
+    list with an unresolved published exchange; COV-C010 lost most of its
+    support to a code error (COV-E011). Two of the three genuinely
+    discriminating items are the two least load-tested. Strip them and the
+    record supports only "the market amplified an outbreak," which both families
+    accommodate. Institutional-integrity findings (COV-E026) remain off the
+    origin verdict entirely.
+  synthesisNote: ""
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    reasoning: Multiple channels converge, including the custodian's own
+      surveillance data and SAGO's reading (COV-E021). Held against no dissent;
+      the unaudited ascertainment caveat is retained but does not reach the
+      geographic centring itself, which COV-E003's single unlinked earliest case
+      does not overturn.
+    confidence: high
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    reasoning: GPT-5.1 calls this the most diagnostic point and still grades it
+      provisionally; Kimi, Grok and Opus all flag it as load-bearing and
+      load-untested. No dissent argues for promotion. One spatial statistic at p
+      = 0.029, on an unaudited line list, never independently reproduced, with
+      an unresolved eLetter exchange. The 2024 erratum (COV-E002) shows care but
+      is not reproduction.
+    confidence: moderate
+  - claimId: COV-C003
+    verdict: well_supported
+    reasoning: Verified verbatim as a statement of what the first clinical series
+      reports (COV-E003). Its date and index status are disputed elsewhere,
+      which is why the claim is framed as the publication's statement. No seat
+      contests this.
+    confidence: high
+  - claimId: COV-C004
+    verdict: well_supported
+    reasoning: Reported in the custodian's own peer-reviewed paper with the sampling
+      chronology and disinfection regime stated (COV-E004); the 2024 version of
+      record gives 74. Grok correctly stresses that the post-closure timing is
+      itself a limitation on COV-C007, not on this count.
+    confidence: high
+  - claimId: COV-C005
+    verdict: well_supported
+    reasoning: Two analytic layers agree, including the Chinese CDC's own 87.5%
+      figure for interior positives in the west zone (COV-E004). Cited
+      approvingly by every dissenting seat. The non-independence caveat applies
+      to how much this adds beyond COV-C006, not to the observation.
+    confidence: high
+  - claimId: COV-C006
+    verdict: well_supported
+    reasoning: "The detection is established and WHO reads it as the most compelling
+      spillover evidence available (COV-E007). Held at well_supported for the
+      co-detection itself, with the authors' own boundary retained: these data
+      cannot say which species, if any, was infected, and human shedding
+      produces the same pattern (COV-E005). Opus and Kimi press exactly this
+      bound and I record it rather than upgrading."
+    confidence: high
+  - claimId: COV-C007
+    verdict: well_supported
+    reasoning: "The negatives are real (COV-E006) and narrow: candidate intermediate
+      hosts were never sampled and the stock was largely cleared first, as SAGO
+      states (COV-E007). Gemini and Grok both note the absence is partly
+      manufactured by sampling design; that is why it does not function as a
+      diagnostic negative against zoonosis."
+    confidence: moderate
+  - claimId: COV-C008
+    verdict: unresolved
+    reasoning: The zoonotic family's missing keystone, and the point where Gemini's
+      dissent has full force. Consistent with COV-C006, unestablished by it by
+      the analysing authors' own statement, and the physical window for
+      establishing it has largely closed. Unchanged.
+    confidence: moderate
+  - claimId: COV-C009
+    verdict: well_supported
+    reasoning: Unchanged by the erratum and not disputed by any seat (COV-E010).
+      Several hundred early Chinese sequences remain unpublished (COV-E022), so
+      the diversity picture is incomplete by construction.
+    confidence: high
+  - claimId: COV-C010
+    verdict: weakly_supported
+    reasoning: "Conceded to Opus. 'Mixed' is the wrong label: mixed denotes evidence
+      pointing in opposing directions, and nothing of comparable method points
+      the other way. After the code correction (COV-E011) the analysis still
+      favours multiple introductions at BF ~4.2-4.3 — low-positive,
+      model-dependent on rooting and clock assumptions, hostage to unsampled
+      early genomes, and never independently reanalysed. That is a claim
+      supported weakly, not a claim in conflict. Regraded weakly_supported; the
+      demotion and the survival are both recorded."
+    confidence: moderate
+  - claimId: COV-C011
+    verdict: well_supported
+    reasoning: The insertion and its absence from closest sampled relatives are not
+      in dispute (COV-E013). The stronger 'not found in nature' formulation is a
+      press release's, not the congressional report's (COV-E030). High
+      credibility, near-zero diagnosticity — no seat disputes either half.
+    confidence: high
+  - claimId: COV-C012
+    verdict: well_supported
+    reasoning: "Supported by both declassified assessments and by WHO, whose same
+      passage states a man-made origin is not refuted by biological data
+      (COV-E014, COV-E019). GPT-5.1 and Grok read it identically: it weighs
+      against a detectably engineered construct and barely against escape of an
+      unmodified or seamlessly cloned natural virus, given the no-trace cloning
+      method recorded in COV-E029."
+    confidence: high
+  - claimId: COV-C013
+    verdict: well_supported
+    reasoning: ~96% whole-genome identity implies decades of independent evolution
+      (COV-E016, COV-E013). A statement about sampled diversity, not existing
+      diversity — which is why it defeats named-virus stories on both sides
+      equally, as Grok notes.
+    confidence: high
+  - claimId: COV-C014
+    verdict: well_supported
+    reasoning: The split and its confidence language are stated in both declassified
+      assessments (COV-E018, COV-E019); the 2025 CIA restatement rests on no new
+      intelligence (COV-E020). Sustained disagreement among analysts with
+      privileged access indicates no element held diagnostic material — an
+      epistemic reading all seats share.
+    confidence: high
+  - claimId: COV-C015
+    verdict: well_supported
+    reasoning: Both halves verbatim in COV-E021, including that the weight of
+      evidence is the evidence SAGO could review and that it had no access to
+      original raw data from any source. COV-E022 records that three
+      governments, not one, withheld requested material — a correction to the
+      single-custodian framing used by several seats, and one reason the
+      laboratory route is unassessed rather than assessed-and-rejected.
+    confidence: high
+  - claimId: COV-C016
+    verdict: well_supported
+    reasoning: The cleavage-site passage is verbatim at a confirmed locator and the
+      non-award is confirmed three ways (COV-E027, COV-E028). Short of
+      established only because the available copy is a third-party archive
+      upload of an OCR-derived scan. Every seat treats it as documented
+      intent-on-paper; none claims it evidences performance.
+    confidence: high
+  - claimId: COV-C017
+    verdict: unresolved
+    reasoning: The step from document to deed. Not funded, no public record of
+      performance after FOIA productions, congressional inquiry and ODNI review,
+      no published precursor — against an institute with no-trace cloning
+      capability (COV-E029) and records never produced. Genuinely open in both
+      directions; no seat argues otherwise.
+    confidence: moderate
+  - claimId: COV-C018
+    verdict: well_supported
+    reasoning: "Stated in the declassified report with its own caveats: no specific
+      incident known, the November 2019 training appeared routine (COV-E029),
+      and no indication the institute held SARS-CoV-2 or a close progenitor
+      (COV-E019). Establishes opportunity, not occurrence — feasibility is not
+      evidence of the event."
+    confidence: high

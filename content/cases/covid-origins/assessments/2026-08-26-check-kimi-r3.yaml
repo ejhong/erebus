@@ -1,0 +1,332 @@
+# Cross-model check run — an independent judge (Kimi K3 (Moonshot, via Venice)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-kimi-r3
+model: Kimi K3 (Moonshot, via Venice) — independent check run via kimi-k3
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: provisionally_supported
+  loadBearing:
+    - COV-C001
+    - COV-C002
+    - COV-C006
+    - COV-C010
+    - COV-C016
+    - COV-C017
+  weakestLinks:
+    - COV-C002
+    - COV-C008
+    - COV-C010
+    - COV-C017
+  synthesis: "The case reduces to one asymmetric convergence and two symmetric
+    absences. The asymmetry: every affirmative line of public evidence about
+    where sustained transmission began — early-case geography (C001, C002),
+    environmental positivity concentrated where live mammals were sold (C005),
+    and co-detection of susceptible-wildlife DNA with viral RNA at a wildlife
+    stall (C006) — converges on a few hundred square metres of Wuhan, and the
+    custodian's own surveillance data corroborate the spatial pattern. That is
+    why the zoonotic-family answer earns provisionally_supported rather than
+    unresolved: it is the only hypothesis with multiple affirmative, mutually
+    reinforcing lines. The symmetry: neither family has produced its keystone.
+    No infected animal or near-progenitor has been found in the trade (C007,
+    C008), and no laboratory is known to have held one (C013, with the 2023
+    intelligence report recording no indication either way); each absence is
+    hostage to records a single custodian has not produced, and each camp's
+    habit of reading the other's absence as damning and its own as merely hard
+    is a prior commitment, not a measurement. The steelman for the
+    research-related family is genuinely documentary, not vaporous: a 2018
+    proposal contemplating insertion of exactly the feature class that later
+    emerged, with a Wuhan partner (C016); SARS-like coronavirus work at BSL-2
+    with assessed precaution lapses (C018); and an unbridged document-to-deed
+    gap (C017) that six years of subpoenas and declassification have not closed.
+    But the same record contains no execution evidence, no precursor sequence,
+    no incident, and no infected worker, and the genomic findings (C011, C012)
+    plus the too-distant-relatives result (C013) defeat the popular strong
+    variants outright — what remains live is a natural-virus research incident,
+    which needs no engineering scar. The zoonotic case's weaknesses are equally
+    concrete: it is one evidence stream (a single Chinese CDC dataset under
+    three analytic layers with overlapping authors) resting on unaudited case
+    ascertainment; its keystone C008 is absent and its testing window has
+    largely closed; its load-bearing spatial statistic (C002) sits at p = 0.029,
+    unreproduced, in an unresolved published exchange; and its most diagnostic
+    inference (C010) was demoted roughly fourteenfold by its own authors' code
+    correction to modest positive support that a withheld sequence set could
+    still overturn. The persistent low-confidence split among analysts with
+    privileged access (C014) is itself evidence that no side holds decisive
+    material, and WHO's two-part conclusion (C015) — zoonosis best supported on
+    reviewed evidence, the laboratory route unassessable — is the correct shape
+    of the answer and inherits the withheld-evidence problem it names. Where
+    this verdict leans on priors rather than evidence records, I flag it: the
+    SARS-1 trade precedent and the base-rate intuition that unfunded proposals
+    stay unexecuted are background calibration, not ledger items. Verdict:
+    provisionally_supported for zoonotic spillover at or immediately upstream of
+    the market, with the transmission chain unclosed and the research-related
+    family unresolved; the two desk tests in the research agenda (adversarial
+    reanalysis of C010, independent reproduction of C002) are the cheapest
+    places this verdict could move."
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: "Three channels converge: the published spatial analysis of December
+      2019 cases, the Chinese CDC's own environmental data placing 87.5 percent
+      of interior positives in the west zone, and WHO SAGO's synthesis — and the
+      claim is carefully scoped to the earliest *documented* cluster, which both
+      camps largely accept. No competing geographic account exists anywhere in
+      the record. The strongest opposing consideration is that the entire case
+      set rests on Chinese ascertainment that has never been independently
+      audited, with the December line list unreleased, so \"documented\" could
+      in principle encode a search pattern; that possibility caps the grade at
+      well_supported rather than established."
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: The comparison is stated directly in the published paper (unlinked
+      cases resided significantly closer than market-linked cases, p = 0.029)
+      and survived its own 2024 erratum unchanged. It is the observation
+      ascertainment bias should find hardest to produce, which is why it carries
+      the zoonotic case's statistical weight. The strongest opposing
+      consideration is the published eLetter challenging the distributional
+      assumptions, rebutted by the authors but never adjudicated by any third
+      party, on underlying case data that remain unreleased. A single
+      unreproduced spatial-statistical result at a borderline margin, on a case
+      set of disputed completeness, is provisional by construction; the
+      independent reproduction named in the research agenda is the test that
+      would move it.
+  - claimId: COV-C003
+    verdict: well_supported
+    confidence: high
+    reasoning: Both load-bearing sentences — the December 1, 2019 onset date and the
+      absence of any epidemiological link to later cases — are verified verbatim
+      in the first clinical series, and the claim is honestly framed as what
+      that publication states. The strongest opposing consideration is that
+      later reporting has disputed whether this patient was genuinely the
+      earliest case and whether the onset date is correct, a dispute this record
+      does not adjudicate; a single case's recalled exposure history is also
+      weak evidence about an outbreak's origin. As a claim about the published
+      record it is solid; its diagnostic weight is modest, since the same paper
+      reports two-thirds of the series had direct market exposure.
+  - claimId: COV-C004
+    verdict: established
+    confidence: high
+    reasoning: "The counts and chronology are verified verbatim from the 2024
+      version of record: 923 environmental samples collected from January 1,
+      2020, 74 positive, with the 73-to-74 change between preview and version of
+      record explained by a note in proof. No party in the record contests the
+      numbers, and an overlapping team reanalyzed the underlying raw reads
+      without disputing them. The strongest opposing consideration is that the
+      data are custodian-produced and the market was cleared and disinfected
+      during collection — but that bounds interpretation, which the claim
+      deliberately does not assert. This is the least interpretive item in the
+      theme and earns the strongest grade."
+  - claimId: COV-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: "Two analytic layers agree: the Chinese CDC's own figure (56 of 64
+      interior positives in the west zone) and the published spatial analysis
+      finding distance to the nearest live-mammal vendor predictive of sample
+      positivity. The spatial fact itself is uncontested in the record. The
+      strongest opposing consideration is the assertion that the west section
+      was the market's least ventilated area, which could concentrate
+      human-deposited RNA — but that characterization is unverified, goes to
+      interpretation rather than the observation, and is recorded here as an
+      objection rather than a finding. Provenance in a single underlying dataset
+      keeps this at well_supported rather than established."
+  - claimId: COV-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: "The co-occurrence is verified verbatim at sample level: raccoon dog
+      and hoary bamboo rat mtDNA in all five virus-positive samples from the
+      wildlife stall, Malayan porcupine in four, masked palm civet in one — a
+      granularity flat species lists obscure. As a measurement it is
+      uncontested; WHO calls it the most compelling spillover evidence
+      available. The strongest opposing consideration comes from the authors
+      themselves: co-presence is not infection, human shedding after a zoonotic
+      event would produce the identical pattern, and correlational analysis
+      cannot show which species, if any, was infected. Those limits bear on the
+      claim's implication for C008, not on its truth as stated; the reanalysis's
+      shared authorship and single underlying dataset are why this is
+      well_supported rather than established."
+  - claimId: COV-C007
+    verdict: well_supported
+    confidence: high
+    reasoning: "All 457 animal samples tested negative, verbatim in the custodian's
+      peer-reviewed report, and the larger national testing figure exists only
+      as China's unaudited account — which the claim's careful wording (\"has
+      been shown to carry\") does not require. The strongest opposing
+      consideration is that this absence was substantially manufactured: the
+      sampled animals were unsold stock, freezer contents, and strays, the
+      candidate intermediate-host species were never tested, no serology was
+      taken, and WHO itself finds the reported completeness of post-pandemic
+      animal results implausible. That hollows out the absence's diagnosticity
+      but not its accuracy as a statement about the record, which is what the
+      claim asserts; this case correctly treats it as the mirror of the
+      laboratory side's unproduced inventories."
+  - claimId: COV-C008
+    verdict: unresolved
+    confidence: high
+    reasoning: "This is the zoonotic family's missing keystone, stated as its own
+      claim precisely because the co-location evidence is constantly misread as
+      having established it. The indirect case is real: susceptible species are
+      confirmed present at the market before closure, viral RNA and wildlife DNA
+      coincide at a wildlife stall, and the same trade amplified the earlier
+      SARS outbreak (a background prior, not an evidence record). Against that
+      stands a total absence of direct evidence — no infected animal, no
+      archived tissue, no completed traceback — and the authors of the key
+      analysis state their data cannot establish infection. Unresolved here is
+      substantive, not a default: the claim is confirmable in principle via
+      archived 2019 samples and farm records, and the physical window has
+      largely closed, which is itself part of the record."
+  - claimId: COV-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: "The two-lineage structure separated by two nucleotide differences is
+      stated in the published analysis, unchanged by the erratum, uncontested by
+      any party in the record, and both substitutions occur in related bat
+      coronaviruses. The strongest opposing consideration is structural: several
+      hundred early Chinese sequences remain unpublished, so the observed
+      lineage picture is incomplete by construction, and withheld intermediate
+      genomes could restructure it. That caveat keeps a directly observed but
+      potentially unrepresentative pattern at well_supported rather than
+      established; everything inferential is correctly quarantined in C010."
+  - claimId: COV-C010
+    verdict: mixed
+    confidence: moderate
+    reasoning: "The corrected Bayes factors of 4.3 and 4.2 remain positive evidence
+      for multiple introductions — the erratum's own sentence says the corrected
+      analysis still favors that scenario, so the \"reduced to negligible\"
+      reading fails — but a fourteenfold demotion of the case's most diagnostic
+      statistic, with the authors' own wording moving from strong to
+      substantial, is a material correction. The inference remains sensitive to
+      rooting choices, clock assumptions, and which early sequences are trusted,
+      it rests on an incomplete sequence set, WHO attributes the judgment to the
+      original authors rather than adopting it, and a congressional majority
+      report asserts a single introduction on the same public record. Mixed is
+      the substantive finding: the surviving evidence tilts toward two
+      introductions but can no longer carry the discriminative weight originally
+      assigned, and the preregistered adversarial reanalysis is the right and
+      cheap resolution. The strongest opposing consideration is that even BF ≈ 4
+      is not negligible and the lineage structure itself is undisputed — which
+      is why this is mixed rather than weakly_supported."
+  - claimId: COV-C011
+    verdict: established
+    confidence: high
+    reasoning: The insertion's presence and its absence from the closest sampled
+      sarbecovirus relatives are verified verbatim in the field-virology
+      literature and contested by no camp — this is the case's best calibration
+      point. The widely circulated stronger formulation ("not found in nature")
+      is contradicted by furin motifs in other coronavirus lineages, but that
+      claim is not this claim, and the record's correction of it is properly
+      documented. The strongest opposing consideration — that natural
+      sarbecovirus diversity is badly undersampled, so absence from known
+      relatives says little about nature — limits the observation's
+      diagnosticity to near zero, not its truth. As stated, scoped to sampled
+      relatives, it is established.
+  - claimId: COV-C012
+    verdict: well_supported
+    confidence: high
+    reasoning: "Almost all US intelligence elements assessed the virus was not
+      genetically engineered, WHO found the notable features readily explained
+      by natural evolution, and no feature accepted as diagnostic of engineering
+      appears anywhere in this record. The strongest opposing consideration is
+      built into the claim's own wording: \"presently accepted\" is a
+      state-of-knowledge claim, and WHO's immediately following sentence — that
+      a man-made origin is not refuted by biological data — plus the documented
+      existence of seamless reverse-genetic methods mean the absence of a scar
+      cannot exclude a laboratory origin, only a detectably engineered one. The
+      claim therefore weighs against the construct hypothesis specifically and
+      barely at all against the live research-related variants, and it is graded
+      as the methodological state-of-knowledge statement it is."
+  - claimId: COV-C013
+    verdict: established
+    confidence: high
+    reasoning: "The roughly 96 percent whole-genome identity of the closest bat
+      relatives is verified in two independent published records (96.2 in the
+      original description, 96.1 in later papers — correctly attributed per
+      source rather than canonized), and the judgment that this distance
+      precludes direct progenitorship is shared by the intelligence community,
+      the funding agency, and effectively all serious variants on both sides,
+      including research-related accounts that posit an undisclosed virus rather
+      than RaTG13. The strongest opposing consideration — that this describes
+      sampled rather than existing diversity — is conceded inside the claim's
+      own wording. Its value is defensive but real: it defeats the two most
+      popular specific precursor arguments in public debate simultaneously."
+  - claimId: COV-C016
+    verdict: well_supported
+    confidence: high
+    reasoning: "The cleavage-site passage is verified verbatim at a confirmed
+      locator by two independent OCR passes agreeing on every substantive word,
+      and the non-award is confirmed three separate ways including a negative
+      check of federal award records. The strongest opposing consideration is
+      chain of custody: the available copy is a third-party archive upload,
+      OCR-derived from an image-only scan, rather than an authenticated official
+      release — which is precisely what holds this at well_supported rather than
+      established, though the FOIA-produced drafts corroborate authenticity.
+      Objections that the proposal was unfunded or that its backbones were too
+      distant bear on the claim's implication, which the claim explicitly does
+      not assert; as a claim about what a document says, it is on firm ground."
+  - claimId: COV-C017
+    verdict: unresolved
+    confidence: moderate
+    reasoning: "The strongest opposing consideration is real: an unfunded proposal
+      is weak grounds for inferring execution, and six years of congressional
+      subpoenas and declassification review have produced no document showing
+      the work was performed, no biosafety approval, no construct map, and no
+      precursor sequence. Against that stand documented intent, an institute
+      possessing methods that leave no trace of modification, and the wholesale
+      non-production of exactly the records — project files, synthesis orders,
+      raw reads — that would settle the question either way. Unresolved is
+      substantive here and symmetric with C008: the absence of evidence is
+      genuine, but the evidence-of-absence test was never permitted, and grading
+      this weakly_supported while grading the animal-infection claim unresolved
+      would break the symmetry the two absences demand. The claim is
+      specifically testable and the test is a disclosure request, not a research
+      program."
+  - claimId: COV-C018
+    verdict: well_supported
+    confidence: high
+    reasoning: "Both components — SARS-like coronavirus experiments at biosafety
+      level 2 as of January 2019, and the intelligence assessment that some
+      researchers probably did not use adequate precautions at least some of the
+      time — are verified verbatim at confirmed locators in the 2023
+      declassified report. The strongest opposing consideration is in the same
+      document: no known specific incident, a November 2019 training course
+      characterized as routine, and the fact that sub-BSL-3 coronavirus work was
+      common global practice in that period. Opportunity is established;
+      occurrence is not, and the claim correctly asserts only the former. Its
+      basis is an unauditable declassified summary, which is why well_supported
+      rather than established."
+  - claimId: COV-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: "The agency split and its confidence language — four elements and the
+      NIC at low confidence for natural exposure, one at moderate for a
+      laboratory incident, others undecided — are verified verbatim across two
+      declassified assessments. The 2025 CIA shift does not disturb the
+      time-scoped claim and actually extends its substance: a low-confidence
+      change resting on a review of existing information, with both scenarios
+      still assessed plausible, is continued non-convergence. The strongest
+      opposing consideration is that these are unverifiable summaries from a
+      single community whose successive products are not independent of each
+      other; the claim asserts only the reported posture, which is exactly what
+      the documents establish. Its real diagnosticity is meta-level: analysts
+      with privileged access held nothing decisive."
+  - claimId: COV-C015
+    verdict: established
+    confidence: high
+    reasoning: "Both halves of the conclusion are verified verbatim from the report,
+      including the \"reviewed by SAGO\" qualifier that ellipsis usually
+      removes, the statement that the laboratory route could not be assessed for
+      lack of provided information, and the admission of no access to original
+      raw data from any source — with requested information withheld by three
+      governments, not one. No party contests that the report says this; the
+      verdict grades the documentary claim, not the origin. The strongest
+      opposing consideration bears only on downstream weight: a synthesis built
+      on partly withheld evidence, whose own 2021 predecessor's \"extremely
+      unlikely\" rating has been superseded, cannot settle the question — and
+      the report's Director-General said all hypotheses remain on the table the
+      day it was published."

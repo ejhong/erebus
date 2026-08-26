@@ -1,0 +1,353 @@
+# Cross-model check run — an independent judge (Grok 4.6 (xAI)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-grok-r3
+model: Grok 4.6 (xAI) — independent check run via grok-4.6
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: provisionally_supported
+  loadBearing:
+    - COV-C001
+    - COV-C002
+    - COV-C006
+    - COV-C008
+    - COV-C010
+  weakestLinks:
+    - COV-C002
+    - COV-C008
+    - COV-C010
+  synthesis: The accessible public record provisionally supports a wildlife-trade
+    spillover at or immediately upstream of the Huanan market as the event that
+    initiated sustained human transmission in Wuhan in late 2019, while leaving
+    a research-related origin neither demonstrated nor excludable. That is not a
+    hedged default and does not rest on paper counts or institutional prestige.
+    It follows from an asymmetry in affirmative public evidence, together with
+    two holes the same record cannot close. Steelman the zoonotic family. The
+    earliest documented cases concentrate on the market, and the comparison
+    ascertainment bias has the most trouble absorbing is that people with no
+    reported market link lived closer to it than the people who worked there.
+    Interior environmental positives concentrate in the western section where
+    live-mammal vendors operated, a pattern the Chinese CDC's own figures
+    independently show. Mitochondrial DNA from raccoon dog, hoary bamboo rat,
+    Malayan porcupine, and masked palm civet occurs in the virus-positive swabs
+    from a wildlife stall. Only a zoonotic pathway directly predicts that
+    co-detection, as the analysing authors themselves state, even though they
+    also state that the data cannot identify which species, if any, was
+    infected. Early genomes form two lineages separated by two nucleotides; the
+    model-based inference that this pattern favors at least two introductions
+    survives a fourteenfold correction of the Bayes factors, albeit demoted from
+    strong to substantial support. Two jumps are easy under wildlife-trade
+    spillover and awkward under a single infected worker. The genome carries no
+    feature presently accepted as diagnostic of engineering. These lines point
+    at the same few hundred square metres. Steelman the research-related family.
+    A Wuhan laboratory was performing experiments with SARS-like coronaviruses
+    at biosafety level 2, and the intelligence community assessed that some
+    researchers probably did not use adequate precautions. Twenty months before
+    the outbreak, a proposal led by EcoHealth Alliance with that institute among
+    its partners offered to introduce human-specific furin cleavage sites into
+    SARS-related spikes where mismatches occurred. The virus that emerged
+    carries exactly that class of motif, and the motif is absent from its
+    closest sampled sarbecovirus relatives. No animal sampled at the market, in
+    its supply chain, or in China's subsequent testing has been shown to carry
+    the virus or a close progenitor. The market was emptied and disinfected
+    before systematic sampling, so environmental RNA cannot name its depositor.
+    The first published case had no market link. Intelligence elements with
+    classified access never converged. WHO's 2025 advisory group said the weight
+    of evidence it reviewed suggests zoonosis and, in the same breath, that it
+    could not assess a laboratory origin because the necessary information had
+    not been provided. Seamless reverse genetics leaves no required scar.
+    Opportunity, documented intent-on-paper, location, and opacity form a
+    genuine conjunction. The conjunction is not a mechanism. No public record
+    shows the contemplated cleavage-site work was performed; the intelligence
+    reporting records no indication that the institute held this virus or a
+    close progenitor; there is no documented incident. Symmetrically, the
+    zoonotic keystone — at least one infected supply-chain animal before
+    sustained human transmission — has never been shown, and the candidate stock
+    was gone before anyone sampled it. Those two absences are both hostage to
+    records that have not been produced, which is why support for
+    market-associated spillover remains provisional rather than well supported.
+    Layer-three opacity licenses caution about unproduced files; it is not
+    itself evidence of what infected the first humans. Anyone claiming the
+    initiating event is settled is describing a record that does not exist.
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: "Worobey et al. report that all three early-case categories,
+      including cases with no market link, resided significantly closer to the
+      Huanan market than expected, and Huang et al. report that 27 of 41 of the
+      first confirmed patients had been exposed there. Liu et al. separately
+      place 87.5 percent of interior environmental positives in the west zone,
+      so geography, clinical exposure fractions, and environmental RNA all point
+      at the same site. The claim as stated is about the center of the earliest
+      documented cluster, not about the first spillover, and on that narrower
+      wording the record is consistent. Strongest opposing consideration: the
+      finding rests entirely on Chinese case ascertainment that has never been
+      independently audited, and the complete December 2019 line list has never
+      been released."
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: "Worobey et al. state directly that unlinked early cases resided
+      significantly closer to the market than cases who worked there and infer
+      exposure at or near the market; the 2024 erratum regenerated files and
+      reports that all results remained the same. The comparison is a single
+      spatial-statistical result at p = 0.029 on a case set of disputed
+      completeness, and it has not been independently reproduced from released
+      code and raw geospatial inputs. Strongest opposing consideration: a
+      published eLetter challenges the distributional assumptions and argues the
+      early-lineage cases were not closer than statistically expected; the
+      authors replied, but the exchange is unresolved and the underlying case
+      data remain unreleased, so no third party has reproduced either side."
+  - claimId: COV-C003
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Huang et al. state verbatim that the symptom onset date of the first
+      identified patient was 1 December 2019, that none of his family developed
+      symptoms, and that no epidemiological link was found between that patient
+      and later cases. The claim is graded as a report of that published series,
+      including the paper's own onset date, not as a settled reconstruction of
+      the index infection. The same paper reports that two-thirds of the 41
+      patients had direct market exposure, so the unlinked earliest case sits
+      inside a market-centered cluster rather than replacing it. Strongest
+      opposing consideration: later reporting not adjudicated in this file
+      disputes whether this patient was in fact the earliest case and whether
+      the December 1 onset date is correct, and a single early clinical history
+      is weak evidence about the outbreak's origin."
+  - claimId: COV-C004
+    verdict: established
+    confidence: high
+    reasoning: "Liu et al., the Chinese CDC surveillance paper, report that 923
+      environmental samples were collected from 1 January 2020 after the market
+      closed that morning and that SARS-CoV-2 was detected in 74 of them (70 by
+      RT-qPCR and 4 by Bowtie2). The 2024 version of record is the figure to
+      use; the accelerated preview had 73 before a note added in proof. Sampling
+      after clearance and ongoing disinfection bounds what the swabs can mean,
+      but that is interpretation, not a dispute about the counts. Strongest
+      opposing consideration: the paper is produced by the custodian whose
+      data-sharing is itself in dispute, and a dating inconsistency between
+      abstract and Results on when animal sampling began is noted rather than
+      resolved."
+  - claimId: COV-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: "Liu et al. report that of 64 interior positives, 87.5 percent (56 of
+      64) came from the west zone, and the Worobey spatial analysis separately
+      found distance to the nearest live-mammal vendor predictive of sample
+      positivity. Two analytic layers on the same underlying environmental
+      dataset therefore agree on concentration where live mammals were sold. The
+      observation narrows where to look without establishing what deposited the
+      RNA. Strongest opposing consideration: an unverified advocacy
+      characterization holds that the same section was the market's least
+      ventilated enclosed area and would concentrate human shedding
+      independently of what was sold there; this file does not confirm that
+      layout claim."
+  - claimId: COV-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: "Crits-Christoph et al. identify wildlife mitochondrial DNA in all
+      five SARS-CoV-2-positive samples from wildlife stall A, with raccoon dog
+      and hoary bamboo rat in all five, Malayan porcupine in four, and masked
+      palm civet in one. WHO/SAGO calls this the most compelling evidence of a
+      possible spillover and notes that the animals were present before closure.
+      The claim as stated is co-occurrence, not infection, and that is what the
+      reads show. Strongest opposing consideration: the authors state that their
+      data cannot conclude which species was infected, that early unreported
+      human shedding in the same stall would look identical, and that a
+      correlational analysis cannot reliably show infection; the result is also
+      a reanalysis of the same Chinese CDC environmental data, not an
+      independent stream."
+  - claimId: COV-C007
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Liu et al. report that all 457 animal samples — unsold stock,
+      freezer contents, and strays from 18 species — tested negative, and the
+      2021 joint study plus SAGO record China's account of much broader
+      subsequent testing with no positives. The claim is that no sampled animal
+      has been shown to carry the virus or a close progenitor, which matches the
+      published record. SAGO adds that this China-wide negative account has not
+      been independently verified and that the limited range of species tested
+      limits definitive conclusions. Strongest opposing consideration: the
+      candidate intermediate hosts on sale were never sampled, the market was
+      cleared before testing, the upstream traceback was never completed, and an
+      absence produced by not testing the relevant animals is largely
+      uninformative either way."
+  - claimId: COV-C008
+    verdict: unresolved
+    confidence: high
+    reasoning: "This is the causal keystone the co-location evidence is constantly
+      read as having established, and it has not been established. Crits-
+      Christoph et al. say only a zoonotic origin directly predicts
+      virus-plus-wildlife co-detection and, in the same papers, that the data
+      cannot identify an infected species; Liu et al. found every animal sample
+      negative; SAGO treats the animals as a possible source, not a demonstrated
+      one. No archived 2019 tissue or serum from the market's wildlife stock has
+      been reported positive, and the physical opportunity to test that stock
+      has largely expired. Strongest opposing consideration against leaving it
+      open: the geographic, environmental, and metagenomic pattern is exactly
+      what an infected supply-chain animal would leave behind, so some readers
+      treat C006 as sufficient; that reads a consistent circumstantial pattern
+      as a closed transmission chain, which the authors of the pattern
+      themselves refuse to do."
+  - claimId: COV-C009
+    verdict: established
+    confidence: high
+    reasoning: "Pekar et al. state that lineage A differs from lineage B by two
+      nucleotide substitutions, C8782T and T28144C, both also found in related
+      Rhinolophus bat coronaviruses, and the later erratum does not touch that
+      observation. Nobody in the record disputes the two-lineage structure of
+      the available early genomes. The inference from that structure is a
+      separate claim. Strongest opposing consideration: several hundred early
+      Chinese sequences remain unpublished, so intermediate genomes that would
+      change the apparent lineage partition could still exist in withheld data."
+  - claimId: COV-C010
+    verdict: mixed
+    confidence: moderate
+    reasoning: 'Pekar et al., after correction, still report Bayes factors of 4.3
+      and 4.2 favoring separate introductions and describe that as substantial
+      support; the erratum itself says the corrected analysis still favors the
+      multiple-introduction scenario. A code error had overestimated those
+      factors from 61.6 and 60.0 — a roughly fourteenfold demotion from "strong"
+      to "substantial" — and the inference remains sensitive to rooting, clock
+      assumptions, unsampled intermediates, and which early sequences are
+      trusted. WHO/SAGO reports the finding and attributes the "highly unlikely"
+      single- introduction judgment to the original authors rather than adopting
+      it; a congressional majority report asserts a single introduction instead.
+      Strongest opposing consideration: after correction the remaining value
+      sits in the lower band of positive evidence, the companion market paper
+      shares authors and inputs so agreement is not independent corroboration,
+      and the withheld early sequences could add intermediates that dissolve the
+      two-introduction reading.'
+  - claimId: COV-C011
+    verdict: established
+    confidence: high
+    reasoning: 'The insertion encoding a polybasic furin motif at the spike S1/S2
+      junction is not in dispute, and Temmam et al. state directly that none of
+      the closest sampled Laotian bat sarbecoviruses contains a furin cleavage
+      site. WHO/SAGO notes that furin motifs occur in other coronavirus lineages
+      and had been identified in nature before, which contradicts the stronger
+      circulating formulation that such a site is "not found in nature" but does
+      not touch this narrower claim. Strongest opposing consideration: natural
+      sarbecovirus diversity is badly undersampled, so absence from known
+      relatives is weak evidence about what exists in nature, and the site is
+      suboptimal relative to what deliberate design from known motifs would
+      predict — both points go to diagnosticity, not to whether the observation
+      is true.'
+  - claimId: COV-C012
+    verdict: well_supported
+    confidence: high
+    reasoning: "Almost all US intelligence elements assessed the virus was not
+      genetically engineered, and WHO/SAGO concluded the notable genomic
+      features are readily explained by natural evolution and provide no support
+      for a man-made origin. Andersen et al. stated that their analyses show the
+      virus is not a laboratory construct or purposefully manipulated virus,
+      while also conceding that other origin theories can be neither proved nor
+      disproved. The claim is about the absence of a presently accepted
+      diagnostic feature, which is what this record shows. Strongest opposing
+      consideration: WHO's next sentence, almost always dropped, is that a
+      man-made origin is also not refuted by biological data, and the same
+      intelligence reporting notes the institute possessed seamless
+      reverse-genetic methods that leave no required scar, so this finding
+      weighs against a detectably engineered construct and barely at all against
+      a natural virus leaving a laboratory."
+  - claimId: COV-C013
+    verdict: well_supported
+    confidence: high
+    reasoning: 'Zhou et al. report 96.2 percent whole-genome identity to RaTG13;
+      Temmam et al. report 96.8 percent for BANAL-52 and 96.1 percent for
+      RaTG13; the intelligence assessment and the NIH statement both treat
+      viruses at this distance as too far away to be direct progenitors. Roughly
+      four percent divergence is not an immediate precursor on any standard
+      sarbecovirus clock, and this single fact defeats popular claims that a
+      named NIH-funded isolate or a named archived sequence was the leaked
+      virus. Strongest opposing consideration: this is a statement about sampled
+      diversity, not existing diversity — an unsampled closer relative is
+      entirely plausible and is exactly what both hypothesis families require —
+      and the "decades of evolution" calibration is a general molecular-clock
+      prior sitting on top of the published identity figures.'
+  - claimId: COV-C016
+    verdict: well_supported
+    confidence: high
+    reasoning: "The DEFUSE proposal at a confirmed locator states that the team
+      would analyse SARSr-CoV spike sequences for furin cleavage sites and,
+      where clear mismatches occur, introduce appropriate human- specific
+      cleavage sites and evaluate growth potential; two independent OCR passes
+      agree on every substantive word. Non-award is confirmed by the
+      congressional record, contemporaneous reporting, and a negative check of
+      federal award data. The full draft margin comment, often truncated, is a
+      presentational judgment about how to pitch a US-weighted team plus an
+      intention to allocate assays to Wuhan after an award, not concealment of a
+      settled plan. Strongest opposing consideration: the available copy is a
+      third-party archive upload rather than an official release, the text is
+      OCR-derived, the proposal was rejected, and a document describing intended
+      work is not evidence the work occurred — which is why performance is
+      graded separately as C017."
+  - claimId: COV-C017
+    verdict: unresolved
+    confidence: moderate
+    reasoning: "No public record shows that experiments materially similar to the
+      DEFUSE cleavage-site work were performed on SARS-related coronaviruses
+      before the outbreak: the proposal was not funded, no published precursor
+      sequence connects the contemplated constructs to SARS-CoV-2, and six years
+      of investigation including congressional process and a declassification
+      review have produced no biosafety approval, project file, synthesis order,
+      or raw read showing the work. Against that, the intelligence reporting
+      records that the institute possessed reverse-genetic methods leaving no
+      trace, and the institutional files that would settle the question have
+      never been produced. Strongest opposing consideration: treating an
+      unfunded proposal plus capability as grounds to infer the deed smuggles
+      the argument from document to mechanism; treating the silence of
+      unproduced files as evidence the work was not done smuggles the other
+      way."
+  - claimId: COV-C018
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "The June 2023 ODNI report states that as of January 2019 institute
+      researchers performed experiments with SARS-like coronaviruses in BSL-2
+      laboratories and that some researchers probably did not use adequate
+      biosafety precautions at least some of the time. The same document records
+      that the community knows of no specific biosafety incident that caused the
+      pandemic and characterizes a November 2019 training course as appearing
+      routine rather than an emergency response. Opportunity and degraded
+      practice are established; occurrence is not. Strongest opposing
+      consideration: the finding is a declassified summary whose underlying
+      reporting cannot be audited, inadequate coronavirus biosafety was not
+      unique to this institute, and the same report that finds the practice
+      inadequate also reports no indication the institute held this virus or a
+      close progenitor."
+  - claimId: COV-C014
+    verdict: established
+    confidence: high
+    reasoning: "The October 2021 declassified assessment records that several
+      elements favored natural exposure at low confidence, one favored a
+      laboratory incident at moderate confidence, and others could not decide;
+      the June 2023 report restates the non-convergence and adds that almost all
+      elements assessed the virus was not engineered. The claim is expressly
+      limited to that June 2023 reporting, so the later CIA low-confidence shift
+      on a review of existing information does not amend it. Sustained
+      disagreement among analysts with privileged access is informative about
+      the evidence — nobody held decisive material — and nearly uninformative
+      about the origin. Strongest opposing consideration: these are declassified
+      summaries whose underlying reporting cannot be audited, and the successive
+      assessments are products of the same community rather than independent
+      checks on each other."
+  - claimId: COV-C015
+    verdict: established
+    confidence: high
+    reasoning: "SAGO's June 2025 conclusion states both halves verbatim: the weight
+      of available evidence reviewed by SAGO suggests zoonotic spillover, and
+      SAGO has been unable to adequately assess a laboratory origin because the
+      necessary information was not available or not provided. The group states
+      it had no access to original raw data from any source, and it names three
+      governments — China, Germany, and the United States — as not having
+      provided requested information. The Director-General's accompanying
+      remarks said all hypotheses remain on the table. Strongest opposing
+      consideration: a synthesis of accessible evidence is only as good as the
+      access, the 2021 joint study's \"extremely unlikely\" laboratory rating
+      has already been superseded, and treating this report as settling the
+      origin would silently inherit its dependence on a partly withheld evidence
+      base."
