@@ -217,3 +217,27 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  change: >-
+    Study KRK-S005 pre-registered (freeze only, zero rows): the
+    statement-discrepancy ledger of KRK-R010 brought under the two-PR
+    freeze discipline. The frozen criteria fix which statements enter
+    (attributable, checkable, factual, public) and a pure
+    record-comparison outcome scale with no intent grades of any kind —
+    the panel's review of the first draft flagged that an intent grade
+    on sworn testimony would be a perjury verdict on a named living
+    person, and the scale was corrected before the freeze merged.
+    KRK-R010's rubric was aligned in the same change. Collection
+    follows in a separate PR.
+  reason: >-
+    Statement selection is where a discrepancy ledger goes wrong —
+    curated pickings can manufacture either a coordinated-lies narrative
+    or an everything-is-fine one. Freezing the population and the
+    grading scale before collection, with the panel judging the criteria
+    blind to the outcomes, is the same protection the base-rate studies
+    already carry, applied to the most sensitive record this case keeps
+    about named living people.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
