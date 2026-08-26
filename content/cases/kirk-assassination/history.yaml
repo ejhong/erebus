@@ -343,3 +343,17 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  kind: content
+  change: Corrected the count of ground-truth firearm-toolmark studies behind the
+    inconclusive base rate from seven to six, matching the evidence record,
+    which tabulates six such studies from 2014-2024. No other editorial changes
+    were required.
+  reason: The article stated a study count the evidence record contradicts, and a
+    reader checking the base-rate figure against the ledger would have found a
+    discrepancy.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
