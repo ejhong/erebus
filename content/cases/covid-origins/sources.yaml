@@ -1,0 +1,451 @@
+# COV-001 source registry. Every entry was independently verified by the
+# editorial AI against the primary document on 2026-08-26 (or a dated
+# archive snapshot where a publisher bot-walls automated clients);
+# verificationNote records how. Casework briefs are cited nowhere, and no
+# citation was inherited from them unchecked — the pass found a wrong
+# publication year on a load-bearing paper, an erratum attributed to the
+# wrong article, and two quotations attributed to a WHO report that do not
+# appear in it.
+#
+# Independence is the hard problem in this case: the market evidence is one
+# Chinese CDC dataset in three analytic layers with overlapping authors, and
+# the whole record depends on a single custodian. Reliability notes say so.
+
+# ── the market and early cases ──────────────────────────────────────────
+
+- id: SRC-WOROBEY-2022
+  title: "The Huanan Seafood Wholesale Market in Wuhan was the early epicenter of the COVID-19 pandemic"
+  authors: ["Michael Worobey", "Joshua I. Levy", "Lorena Malpica Serrano", "Alexander Crits-Christoph", "Jonathan E. Pekar", "and 13 others"]
+  organization: "Science"
+  year: "2022"
+  sourceType: paper
+  identifier: "Science 377(6609):951–959; DOI 10.1126/science.abp8715; corrected by DOI 10.1126/science.adp1133"
+  url: "https://doi.org/10.1126/science.abp8715"
+  verification: ai_verified
+  verificationNote: >-
+    Version of record read via a Wayback snapshot dated 2025-07-07 (the
+    publisher bot-walls automated clients), cross-checked against the
+    open-access First Release deposit; quotations taken from the version of
+    record with section locators.
+  reliabilityNotes:
+    - "Peer-reviewed, and not independent of the other market analyses: it shares authors and underlying Chinese CDC case and environmental data with the companion lineage paper and the 2024 metagenomic reanalysis. Treat all three as one evidence stream with three analytic layers."
+    - "Rests entirely on Chinese case ascertainment that has never been independently audited; the complete December 2019 line list has never been released."
+    - "Its excess-pneumonia and seroprevalence points are citations to other work, not findings of this paper, and are not attributed to it here."
+    - "Corrected in March 2024 by an erratum that fixed duplicated data files and a pseudoreplicate count and states all results remained the same."
+    - "A published eLetter disputes the spatial result and the authors replied identifying flaws in the critique; the exchange is recorded as the symmetric undermining material rather than suppressed."
+
+- id: SRC-WOROBEY-ERRATUM-2024
+  title: "Erratum for the Research Article 'The Huanan Seafood Wholesale Market in Wuhan was the early epicenter of the COVID-19 pandemic'"
+  organization: "Science"
+  year: "2024"
+  sourceType: paper
+  identifier: "Science 383(6688):eadp1133; DOI 10.1126/science.adp1133; indexed 15 March 2024"
+  url: "https://doi.org/10.1126/science.adp1133"
+  verification: ai_verified
+  verificationNote: >-
+    Full erratum text read via a Wayback snapshot dated 2025-04-27; the
+    Crossref update-to record independently confirms it corrects the market
+    epicenter paper and not the lineage paper.
+  reliabilityNotes:
+    - "A null correction: it fixes duplicated data files and a pseudoreplicate count and states the results were unchanged. Linking it must not imply it weakened the paper's findings."
+    - "Records a real process-integrity detail: an informal supplementary correction of May 2023 that the journal concedes should have been indexed as a formal erratum, and was not indexed until March 2024."
+
+- id: SRC-LIU-2024
+  title: "Surveillance of SARS-CoV-2 at the Huanan Seafood Market"
+  authors: ["William J. Liu", "Ping Liu", "Wenwen Lei", "and 33 others", "George F. Gao"]
+  organization: "Nature"
+  year: "2024"
+  sourceType: paper
+  identifier: "Nature 631(8020):402–408; DOI 10.1038/s41586-023-06043-2; print issue 11 July 2024"
+  url: "https://doi.org/10.1038/s41586-023-06043-2"
+  verification: ai_verified
+  verificationNote: >-
+    Full text fetched directly from the publisher 2026-08-26 (openly
+    available); the sample counts, sampling chronology, and negative animal
+    results quoted verbatim from the abstract, Results, and Methods.
+  reliabilityNotes:
+    - "The Chinese CDC reporting on its own investigation — the primary market dataset, and produced by the custodian whose data-sharing is itself disputed."
+    - "Cite the 2024 version of record, not the April 2023 accelerated preview: the positive-sample count changed from 73 to 74 between them, and a note added in proof explains why."
+    - "The 457 animal samples that tested negative were largely unsold stock, stray animals, and freezer contents — not the candidate intermediate-host species, which the later reanalysis states were never sampled or tested. The negative result is therefore narrow in scope."
+    - "The paper records that stall surfaces and goods were disinfected through January and February 2020, which bounds what environmental sampling could still detect."
+
+- id: SRC-CRITS-CHRISTOPH-2024
+  title: "Genetic tracing of market wildlife and viruses at the epicenter of the COVID-19 pandemic"
+  authors: ["Alexander Crits-Christoph", "Joshua I. Levy", "Jonathan E. Pekar", "and 19 others", "Florence Débarre"]
+  organization: "Cell"
+  year: "2024"
+  sourceType: paper
+  identifier: "Cell 187(19):5468–5482.e11; DOI 10.1016/j.cell.2024.08.010; 19 September 2024"
+  url: "https://doi.org/10.1016/j.cell.2024.08.010"
+  verification: ai_verified
+  verificationNote: >-
+    The published abstract was verified against the version-of-record
+    bibliographic record. The publisher bot-walls automated clients and
+    archive playback of the full text failed, so body-text quotations were
+    taken from the accepted author manuscript deposit (snapshot dated
+    2026-08-20) and are labeled as such wherever used.
+  reliabilityNotes:
+    - "A reanalysis of the environmental data underlying the Chinese CDC surveillance paper, sharing authors with the market epicenter paper — one evidence stream, not an independent confirmation."
+    - "Body-text wording is from the accepted manuscript rather than the published version and requires one confirmation pass before any quotation from it is promoted."
+    - "The authors state plainly that their data cannot establish which species was infected, and that human shedding after a zoonotic event could equally explain the co-detection. Any use of the co-location finding must carry that statement."
+
+- id: SRC-HUANG-2020
+  title: "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China"
+  authors: ["Chaolin Huang", "Yeming Wang", "Xingwang Li", "and 26 others", "Bin Cao"]
+  organization: "The Lancet"
+  year: "2020"
+  sourceType: paper
+  identifier: "The Lancet 395(10223):497–506; PMID 31986264; PMC7159299; online 24 January 2020"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7159299/"
+  verification: ai_verified
+  verificationNote: >-
+    Open-access full text fetched 2026-08-26 from the repository deposit; the
+    patient counts, the market exposure proportion, the first onset date, and
+    the no-epidemiological-link sentence all quoted verbatim. No erratum
+    attaches to the record. The publisher DOI is 10.1016/S0140-6736(20)30183-5
+    and resolves; it is recorded here in prose rather than as the primary
+    locator because its embedded parentheses are truncated by automated
+    identifier checkers, and the open repository copy is both stable and
+    readable.
+  reliabilityNotes:
+    - "The earliest published clinical series, and correspondingly early: it describes 41 confirmed patients identified by 2 January 2020, not a complete outbreak reconstruction."
+    - "Carries evidence in both directions — two-thirds of patients had direct market exposure, and the earliest case by onset had none."
+    - "Whether the patient it identifies as earliest really was, and whether the reported onset date is right, have been disputed in later reporting this case has not adjudicated; the claim built on it is framed as what the publication states."
+
+# ── early lineages ─────────────────────────────────────────────────────
+
+- id: SRC-PEKAR-2022
+  title: "The molecular epidemiology of multiple zoonotic origins of SARS-CoV-2"
+  authors: ["Jonathan E. Pekar", "Andrew Magee", "Edyth Parker", "and 26 others", "Joel O. Wertheim"]
+  organization: "Science"
+  year: "2022"
+  sourceType: paper
+  identifier: "Science 377(6609):960–966; DOI 10.1126/science.abp8337; corrected by DOI 10.1126/science.adl0585"
+  url: "https://doi.org/10.1126/science.abp8337"
+  verification: ai_verified
+  verificationNote: >-
+    Both the pre-correction open-access deposit and the corrected version of
+    record (Wayback snapshot dated 2025-07-04) were read, so that corrected
+    and superseded values could be distinguished; only corrected values are
+    cited in this case.
+  reliabilityNotes:
+    - "Peer-reviewed, and model-based: its conclusion depends on rooting choices, molecular-clock assumptions, epidemic simulation parameters, and which early sequences are trusted."
+    - "Companion paper to the market epicenter study with overlapping authors and inputs; their agreement is not independent corroboration."
+    - "Materially corrected in October 2023 — the Bayes factors favoring two introductions fell roughly fourteenfold and the authors' own wording moved from strong to substantial support. Only the corrected figures are usable."
+    - "Several hundred early Chinese sequences remain unpublished, so the analysis rests on an incomplete early-sequence set by construction."
+
+- id: SRC-PEKAR-ERRATUM-2023
+  title: "Erratum for the Research Article 'The molecular epidemiology of multiple zoonotic origins of SARS-CoV-2'"
+  organization: "Science"
+  year: "2023"
+  sourceType: paper
+  identifier: "Science 382(6667):eadl0585; DOI 10.1126/science.adl0585; 13 October 2023"
+  url: "https://doi.org/10.1126/science.adl0585"
+  verification: ai_verified
+  verificationNote: >-
+    Full erratum text read via a Wayback snapshot dated 2025-05-12; the
+    Crossref update-to record confirms it corrects the lineage paper. The
+    magnitude of the change was established by comparing the pre-correction
+    deposit against the corrected version of record, since the erratum text
+    itself gives no numbers.
+  reliabilityNotes:
+    - "A substantive correction, not a formatting one: a code error had overestimated the Bayes factors favoring multiple introductions."
+    - "It states the corrected analysis still favors multiple introductions, so characterizations that it reduced the finding to negligible are not supported by the document. Both the original and corrected values are recorded in this case so readers can judge the size of the change."
+
+# ── the genome ─────────────────────────────────────────────────────────
+
+- id: SRC-ZHOU-2020
+  title: "A pneumonia outbreak associated with a new coronavirus of probable bat origin"
+  authors: ["Peng Zhou", "Xing-Lou Yang", "Xian-Guang Wang", "and 26 others", "Zheng-Li Shi"]
+  organization: "Nature"
+  year: "2020"
+  sourceType: paper
+  identifier: "Nature 579(7798):270–273; DOI 10.1038/s41586-020-2012-7"
+  url: "https://doi.org/10.1038/s41586-020-2012-7"
+  verification: ai_verified
+  verificationNote: >-
+    Open-access full text fetched 2026-08-26; the whole-genome identity
+    figure quoted verbatim from the Results.
+  reliabilityNotes:
+    - "The paper that established the closest known bat relative; authored by the institute whose research is itself under scrutiny, which is a conflict to note rather than a reason to discount the sequencing."
+    - "Reports identity figures and concludes probable bat origin; it does not itself argue that the relative is too distant to be a progenitor, and that inference is not attributed to it here."
+    - "Later peer-reviewed papers give the same relative's identity as 96.1 percent rather than 96.2, so this case attributes any figure to the source stating it rather than asserting one canonical value."
+
+- id: SRC-TEMMAM-2022
+  title: "Bat coronaviruses related to SARS-CoV-2 and infectious for human cells"
+  authors: ["Sarah Temmam", "Khamsing Vongphayloth", "Eduard Baquero", "and others"]
+  organization: "Nature"
+  year: "2022"
+  sourceType: paper
+  identifier: "Nature 604(7905):330–336; DOI 10.1038/s41586-022-04532-4; online 16 February 2022"
+  url: "https://doi.org/10.1038/s41586-022-04532-4"
+  verification: ai_verified
+  verificationNote: >-
+    Full text fetched directly from the publisher 2026-08-26; the identity
+    figures and the furin-cleavage-site finding quoted verbatim. The
+    publication year is 2022, resolving an uncertainty carried in the
+    casework digest.
+  reliabilityNotes:
+    - "Peer-reviewed field virology; establishes that bat sarbecoviruses with efficient human receptor binding circulate outside China, which bears on how undersampled natural diversity is."
+    - "Carries negative evidence for the natural-cleavage-site argument as well: none of the viruses it describes contains a furin cleavage site in the spike protein."
+
+- id: SRC-ANDERSEN-2020
+  title: "The proximal origin of SARS-CoV-2"
+  authors: ["Kristian G. Andersen", "Andrew Rambaut", "W. Ian Lipkin", "Edward C. Holmes", "Robert F. Garry"]
+  organization: "Nature Medicine"
+  year: "2020"
+  sourceType: paper
+  identifier: "Nature Medicine 26(4):450–452; DOI 10.1038/s41591-020-0820-9; published as a Letter"
+  url: "https://doi.org/10.1038/s41591-020-0820-9"
+  verification: ai_verified
+  verificationNote: >-
+    Open-access full text fetched 2026-08-26; both of its most-quoted
+    sentences verified verbatim with section locators (the unheaded
+    introduction, and the Conclusions).
+  reliabilityNotes:
+    - "A three-page commentary-style Letter, not a research article — a distinction that matters given how heavily both camps invoke it as though it were a study."
+    - "Its central sentence is 'Our analyses clearly show that SARS-CoV-2 is not a laboratory construct or a purposefully manipulated virus'; the subject clause is exactly what was later contested and is retained wherever this case quotes it."
+    - "The authors' contemporaneous private deliberations were later released by congressional committees; this case treats the paper's status as a consensus marker as a separate question from its scientific content."
+
+# ── the research program ───────────────────────────────────────────────
+
+- id: SRC-DEFUSE-2018
+  title: "Project DEFUSE: Defusing the Threat of Bat-borne Coronaviruses (proposal to DARPA PREEMPT)"
+  authors: ["Peter Daszak"]
+  organization: "EcoHealth Alliance (with UNC Chapel Hill, Wuhan Institute of Virology, Duke-NUS, USGS National Wildlife Health Center, Palo Alto Research Center)"
+  year: "2018"
+  sourceType: report
+  identifier: "Solicitation HR001118S0017-PREEMPT-PA-001; submitted March 27, 2018; 75-page scan; not funded"
+  url: "https://archive.org/details/main-document-preempt-volume-1-no-ess-hr00118s0017-ecohealth-alliance"
+  verification: ai_verified
+  verificationNote: >-
+    Scanned proposal downloaded from the Internet Archive 2026-08-26 and read;
+    the requested amount, partner list, and the S2 proteolytic-cleavage
+    passage confirmed at PDF p. 13 (printed p. 11) by two independent OCR
+    passes that agree on every substantive word. The document has no
+    born-digital text layer, so all quotations from it are OCR-derived and
+    footnote superscripts were dropped rather than guessed.
+  reliabilityNotes:
+    - "Chain of custody is weak: this is a third-party user upload to a public archive in December 2023, not an official government release or an authenticated FOIA production. Its authenticity is corroborated independently — draft versions appear in a federal FOIA release and a congressional committee treats it as genuine — but this specific file has no official provenance."
+    - "The document establishes only what a funding application proposed. It does not establish that any proposed work was performed, funded, or attempted, and DARPA did not fund it — confirmed by the congressional record, contemporaneous reporting, and a negative check of federal award data."
+    - "Names living individuals. Any claim built on it takes the form 'the proposal states the team would do X', never 'the team did X'."
+
+- id: SRC-USRTK-DEFUSE-DRAFTS
+  title: "DEFUSE draft records and correspondence (FOIA production, combined and redacted, 235 pp.)"
+  organization: "U.S. Geological Survey / Department of the Interior (production); republished by U.S. Right to Know"
+  year: "2023"
+  sourceType: archive
+  identifier: "FOIA tracking number 2021-006245"
+  url: "https://usrtk.org/wp-content/uploads/2023/12/2021-006245-Combined-Records_Redacted-1-235.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Downloaded and read 2026-08-26 (235 content pages); the quoted margin
+    comment verified verbatim at five separate draft locations, and the
+    mapping from Word comment initials to named authors verified from email
+    headers contained within the same release rather than inferred.
+  reliabilityNotes:
+    - "A federal FOIA production republished by an advocacy organization: the underlying documents are authentic government records, and the compilation and framing are the publisher's."
+    - "Margin comments identify authors only by Word initials; the linkage to named individuals rests on email headers inside the same release."
+    - "Successive drafts of an unfunded proposal. They evidence what was drafted and discussed, not what was done."
+
+- id: SRC-HOUSE-MAJORITY-2024
+  title: "After Action Review of the COVID-19 Pandemic: The Lessons Learned and a Path Forward (majority final report)"
+  organization: "U.S. House Select Subcommittee on the Coronavirus Pandemic"
+  year: "2024"
+  sourceType: report
+  identifier: "520 pages; submitted to the congressional record December 4, 2024"
+  url: "https://oversight.house.gov/wp-content/uploads/2024/12/2024.12.04-SSCP-FINAL-REPORT-ANS.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Report PDF downloaded and searched in full 2026-08-26 (558 PDF pages).
+    A critical finding: the phrase "not found in nature" appears NOWHERE in
+    the report. It occurs only in the accompanying press release, where it
+    describes "a biological characteristic" and does not name the furin
+    cleavage site. The report's parallel five points are expressly attributed
+    to an outside newspaper opinion piece, and its furin-cleavage argument is
+    a quotation of a journalist's claim.
+  reliabilityNotes:
+    - "A majority-party congressional report. Its conclusions are assertions by their authors, recorded as such, and its companion minority report reaches opposite conclusions on the same record."
+    - "The report and its press release must not be conflated: the press release's stronger formulations do not appear in the report, and this case treats them as two distinct sources with distinct locators."
+    - "Several of its origin arguments are attributed in the report itself to third-party op-eds rather than developed from the committee's own record."
+
+- id: SRC-HOUSE-MINORITY-2024
+  title: "Final report of the Select Subcommittee Democratic members"
+  organization: "U.S. House Select Subcommittee on the Coronavirus Pandemic (minority)"
+  year: "2024"
+  sourceType: report
+  identifier: "Minority final report, December 2024"
+  url: "https://oversightdemocrats.house.gov/news/press-releases/ranking-member-ruiz-leads-select-subcommittee-democrats-releasing-final-report"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-26; the stated conclusion that both a zoonotic origin
+    and a laboratory accident remain plausible verified verbatim.
+  reliabilityNotes:
+    - "A minority-party congressional report, and the direct counterpart to the majority report on the same evidentiary record — which is why this case carries both or neither."
+    - "Assertions by their authors, not findings of fact."
+
+# ── official assessments ───────────────────────────────────────────────
+
+- id: SRC-ODNI-WIV-2023
+  title: "Potential Links Between the Wuhan Institute of Virology and the Origins of COVID-19"
+  organization: "Office of the Director of National Intelligence"
+  year: "2023"
+  sourceType: report
+  identifier: "Declassified report, 23 June 2023"
+  url: "https://www.dni.gov/files/ODNI/documents/assessments/Report-on-Potential-Links-Between-the-Wuhan-Institute-of-Virology-and-the-Origins-of-COVID-19-20230623.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Official PDF downloaded and read page by page 2026-08-26; the biosafety
+    findings, the absence-of-indication statements, the autumn-2019 illness
+    passage, the engineering and bioweapon judgments, and the agency split
+    all quoted verbatim with printed page numbers.
+  reliabilityNotes:
+    - "The single most load-bearing document in this case, and it is cited by both camps for different passages. This case cites its exculpatory statements with the same prominence as its incriminating ones."
+    - "A declassified summary of classified reporting: readers cannot audit the underlying intelligence, and the report places its own scope caveats on what it assessed."
+    - "One source doing a great deal of work — evidence records drawn from it share an independence group and must not be counted as multiple confirmations."
+
+- id: SRC-ODNI-2021
+  title: "Updated Assessment on COVID-19 Origins"
+  organization: "Office of the Director of National Intelligence"
+  year: "2021"
+  sourceType: report
+  identifier: "Declassified assessment, October 2021"
+  url: "https://archive.dni.gov/files/ODNI/documents/assessments/Declassified-Assessment-on-COVID-19-Origins.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Official PDF fetched 2026-08-26; the agency split with confidence
+    levels and the engineering and bioweapon judgments quoted verbatim from
+    the Key Takeaways.
+  reliabilityNotes:
+    - "Same independence group as the 2023 report; the two are successive products of the same community, not independent assessments."
+    - "Carries the confidence language that public restatement routinely drops — every element's judgment here is low confidence except one at moderate."
+
+- id: SRC-SAGO-2025
+  title: "Independent assessment of the origins of SARS-CoV-2 by the Scientific Advisory Group for the Origins of Novel Pathogens"
+  organization: "World Health Organization"
+  year: "2025"
+  sourceType: report
+  identifier: "78-page report, June 2025; the served file is WHO's post-publication corrected version"
+  url: "https://www.who.int/publications/m/item/independent-assessment-of-the-origins-of-sars-cov-2-from-the-scientific-advisory-group-for-the-origins-of-novel-pathogens"
+  verification: ai_verified
+  verificationNote: >-
+    Full PDF fetched from WHO and verified page by page 2026-08-26. Two
+    statements attributed to this report in the casework digest are NOT in
+    it and were rejected: the word "surprising" appears nowhere in the
+    document, and it contains no sentence contrasting the two-lineage
+    pattern with a single introduction expected from a laboratory leak.
+  reliabilityNotes:
+    - "The best current international scientific synthesis and simultaneously an indictment of the data environment: it states it had no access to original raw data from any source."
+    - "Requested information was not provided by three governments — China, Germany, and the United States — not by China alone."
+    - "Its summaries of the intelligence assessments are accurate but not independent of them; the underlying reports are cited directly here."
+    - "The file WHO now serves is a corrected version, so page locators can differ from the June 2025 original; the version read is recorded."
+
+- id: SRC-WHO-DG-2025
+  title: "WHO Director-General's opening remarks at the media briefing — 27 June 2025"
+  organization: "World Health Organization"
+  year: "2025"
+  sourceType: webpage
+  url: "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing---27-june-2025"
+  verification: ai_verified
+  verificationNote: "Fetched live from WHO 2026-08-26; quotations verbatim."
+  reliabilityNotes:
+    - "An official statement accompanying the report's release; authoritative for WHO's position and for what it says was withheld."
+
+- id: SRC-WHO-CHINA-2021
+  title: "WHO-convened Global Study of Origins of SARS-CoV-2: China Part — Joint Report"
+  organization: "World Health Organization"
+  year: "2021"
+  sourceType: report
+  identifier: "Joint report, March 2021 (the served PDF is the 6 April 2021 corrected version)"
+  url: "https://www.who.int/publications/i/item/who-convened-global-study-of-origins-of-sars-cov-2-china-part"
+  verification: ai_verified
+  verificationNote: >-
+    PDF fetched and read 2026-08-26; the four pathway likelihood ratings and
+    the animal-testing figure quoted verbatim with printed page numbers.
+  reliabilityNotes:
+    - "A joint study conducted with the government whose data access was in question, on terms that study itself records; its laboratory-incident rating is superseded by the 2022 and 2025 WHO reviews and must not be cited as WHO's current position."
+    - "The animal-testing figure is China's own account to the mission and has never been independently audited."
+
+- id: SRC-SAGO-2022
+  title: "Preliminary report of the Scientific Advisory Group for the Origins of Novel Pathogens"
+  organization: "World Health Organization"
+  year: "2022"
+  sourceType: report
+  identifier: "Preliminary report, 9 June 2022"
+  url: "https://cdn.who.int/media/docs/default-source/scientific-advisory-group-on-the-origins-of-novel-pathogens/sago-report-09062022.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    PDF fetched 2026-08-26; the statement that laboratory-related
+    hypotheses remain appropriate to investigate verified verbatim, together
+    with a three-member dissent recorded in a footnote.
+  reliabilityNotes:
+    - "The document that formally reopened the laboratory hypothesis after the 2021 joint study; it carries a recorded dissent from three members, which this case notes rather than smoothing over."
+
+- id: SRC-CIA-2025
+  title: "CIA statement on the origins of the COVID-19 pandemic (January 2025)"
+  organization: "Central Intelligence Agency (spokesperson statement, as reported)"
+  year: "2025"
+  sourceType: other
+  identifier: "Spokesperson statement, 25 January 2025; no agency publication exists"
+  url: "https://www.bbc.com/news/articles/cd9qjjj4zy5o"
+  verification: ai_verified
+  verificationNote: >-
+    No agency-published document exists for this assessment; the wording was
+    verified as consistent across multiple outlets on 2026-08-26 and is
+    quoted from that reporting rather than from a primary agency document.
+    A reachable carrier is cited because several outlets that ran the
+    statement are paywalled to automated clients; the choice of carrier
+    carries no evidential weight, since all of them trace to the same
+    spokesperson statement.
+  reliabilityNotes:
+    - "This is a press statement, not a published assessment: there is no report to read, no stated evidentiary basis, and no confidence rationale beyond the two sentences released."
+    - "Outlet duplication is ONE source, not many — every account traces to the same spokesperson statement."
+    - "Reported as not based on new intelligence but on a review of existing information, which bears directly on how much the change of position can carry."
+
+- id: SRC-NIH-2021
+  title: "Statement on Misinformation about SARS-CoV-2 Origins"
+  authors: ["Francis S. Collins"]
+  organization: "National Institutes of Health"
+  year: "2021"
+  sourceType: webpage
+  identifier: "Statement of the NIH Director, 20 October 2021"
+  url: "https://www.nih.gov/about-nih/who-we-are/nih-director/statements/statement-misinformation-about-sars-cov-2-origins"
+  verification: ai_verified
+  verificationNote: >-
+    Canonical URL identified and its content verified 2026-08-26; the quoted
+    passages are verbatim. The casework digest carried a staging-host URL for
+    this statement, which is not a citable location and is not used. The
+    canonical host rejects some automated clients, so an audit from this
+    environment returned an error status while the page itself is live and
+    was read — the failure is a bot-wall, not a dead link.
+  reliabilityNotes:
+    - "The funding agency's own statement about research it funded — authoritative for its position and directly interested in the question."
+
+- id: SRC-HHS-OIG-2023
+  title: "NIH and EcoHealth Alliance Did Not Effectively Monitor Awards and Subawards, Resulting in Missed Opportunities for Oversight"
+  organization: "U.S. Department of Health and Human Services, Office of Inspector General"
+  year: "2023"
+  sourceType: report
+  identifier: "Report A-05-21-00025, January 2023"
+  url: "https://oig.hhs.gov/oas/reports/region5/52100025.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Official PDF fetched 2026-08-26; report number, date, and central
+    findings quoted verbatim.
+  reliabilityNotes:
+    - "An inspector-general audit of grant administration. It establishes oversight failures and has no diagnosticity for the origin question; this case files it on the institutional-integrity layer and keeps it off the origin ladder."
+
+- id: SRC-CHINA-SCIO-2025
+  title: "COVID-19 Prevention, Control and Origins Tracing: China's Actions and Stance (white paper)"
+  organization: "State Council Information Office of the People's Republic of China"
+  year: "2025"
+  sourceType: report
+  identifier: "White paper, 30 April 2025"
+  url: "http://english.scio.gov.cn/whitepapers/2025-04/30/content_117854036_5.html"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-26; the stated positions verified. Recorded as a
+    government position statement, not as evidence.
+  reliabilityNotes:
+    - "A state position paper from the government holding the records this case most needs; it declares China's origins investigation complete, which is itself the central obstacle the research agenda addresses."
+    - "Admitted so that the custodian's stated position is on the record alongside the requests it has declined, never as evidence about the origin."
