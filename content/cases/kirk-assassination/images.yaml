@@ -1,0 +1,138 @@
+# Images for KRK-001 — cover artwork (AI-generated, abstract only) and
+# numbered plates (real imagery with verified licenses). Living-persons
+# discipline applies throughout: no injury imagery, no imagery of the
+# accused, FBI identification language attributed rather than adopted.
+
+- id: IMG-KRK-COVER
+  role: cover
+  file: /images/cases/kirk-assassination/cover.jpg
+  alt: >-
+    Abstract technical diagram on a deep blue-black field: a single sharp
+    vertical impulse resolving into one unbroken pale trace, surrounded by
+    many fainter parallel traces that step, break, and fade into dotted
+    gaps marked with small crosses.
+  source: generated
+  license: "Project artwork (AI-generated)"
+  credit: "AI-generated editorial artwork, Erebus house style"
+  styleVersion: style-e1
+  model: "gpt-image-1"
+  runId: "cover-style-e1-2026-08-26"
+  prompt: >-
+    Minimal modern technical editorial illustration, in the visual language
+    of a precise instrument chart or forensic diagram. An abstract diagram
+    of a single sharp impulse recorded by many instruments: one clean
+    vertical pulse at the left edge fanning out rightward into many
+    parallel horizontal traces, some continuing unbroken, others fading
+    into dotted gaps or stopping mid-line, with small registration marks
+    where the traces disagree — the idea of one event producing many
+    incomplete, imperfectly reconciled records. Thin, exact vector-like
+    linework: fine isolines, section lines, waveform traces, small
+    registration marks, restrained geometric abstraction. Cold palette only
+    — deep blue-black field, graphite and slate linework, one thin
+    pale-steel accent tracing the single unbroken line — on a near-white
+    cool porcelain field (#eef1f4) or a deep blue-black field (#10151b);
+    Prussian blue, slate, steel grey, indigo, graphite throughout; no warm
+    cream, sepia, ochre, or terracotta tones anywhere. Flat, matte,
+    documentary and quiet: no glow, no lens flare, no 3D render look, no
+    gradients beyond subtle atmospheric shading. Generous negative space,
+    austere composition. Absolutely no text, no numbers, no labels, no
+    captions, no border frame lines. Stylized editorial artwork, obviously
+    an illustration — not photorealistic, no photograph.
+
+- id: IMG-KRK-P01
+  role: plate
+  file: /images/cases/kirk-assassination/plates/charlie-kirk-in-tampa-july-2025-cropped.jpg
+  alt: >-
+    Charlie Kirk, in a dark checked blazer and open-collared shirt, looking
+    off-camera against a red backdrop at a public event.
+  source: commons
+  license: "CC BY-SA 4.0"
+  licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  credit: "Gage Skidmore, via Wikimedia Commons"
+  plateNumber: 1
+  depicts: >-
+    Charlie Kirk at a Turning Point USA event in Tampa, Florida, in July
+    2025 — two months before the Utah Valley University event at which he
+    was killed.
+  provenance:
+    photographer: "Gage Skidmore"
+    date: "2025-07-13"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Charlie_Kirk_in_Tampa_July_2025_(cropped).jpg"
+    originalTitle: "File:Charlie Kirk in Tampa July 2025 (cropped).jpg"
+  claimIds: []
+
+- id: IMG-KRK-P02
+  role: plate
+  file: /images/cases/kirk-assassination/plates/person-of-interest-sought-in-connection-with-the-killing-of-.png
+  alt: >-
+    Grainy elevated surveillance frame: a distant, unidentifiable figure
+    runs along a curved path across a campus lawn beside a glass-walled
+    building, with parked cars in the foreground.
+  source: commons
+  license: "Public domain"
+  credit: "Campus surveillance video released by the FBI, via Wikimedia Commons"
+  plateNumber: 2
+  mediaType: "surveillance video frame"
+  depicts: >-
+    Frame from campus surveillance video released by the FBI on September
+    11, 2025: a figure runs across a lawn beside a campus building. The
+    FBI describes the subject as the person of interest who descended from
+    the Losee Center roof after the shot; the figure in the frame is not
+    identifiable from the image itself.
+  provenance:
+    photographer: "CCTV (FBI release)"
+    date: "2025-09-12"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Person_of_interest_sought_in_connection_with_the_killing_of_Charlie_Kirk_leaving_a_rooftop.png"
+    originalTitle: "File:Person of interest sought in connection with the killing of Charlie Kirk leaving a rooftop.png"
+  claimIds: [KRK-C001]
+
+- id: IMG-KRK-P03
+  role: plate
+  file: /images/cases/kirk-assassination/plates/charlie-kirk-shooting-scene-aerial-view-with-losee-centre-vi.png
+  alt: >-
+    Aerial view of a university campus: a terraced courtyard with white
+    event canopies, lawns, and walkways between large flat-roofed
+    buildings.
+  source: commons
+  license: "CC BY 3.0"
+  licenseUrl: "https://creativecommons.org/licenses/by/3.0"
+  credit: "KSL News Utah, via Wikimedia Commons"
+  plateNumber: 3
+  mediaType: "aerial news video frame"
+  depicts: >-
+    Aerial view of the Utah Valley University courtyard and surrounding
+    buildings on September 11, 2025, the day after the shooting, from KSL
+    News helicopter footage; event canopies still stand in the courtyard
+    that records show was excavated and paved within days.
+  provenance:
+    photographer: "KSL News Utah"
+    date: "2025-09-11"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Charlie_Kirk_shooting_scene_aerial_view_with_Losee_Centre_visible.png"
+    originalTitle: "File:Charlie Kirk shooting scene aerial view with Losee Centre visible.png"
+  claimIds: [KRK-C001, KRK-C013]
+
+- id: IMG-KRK-P04
+  role: plate
+  file: /images/cases/kirk-assassination/plates/killing-of-charlie-kirk-map-of-suspect-movements-openstreetm.jpg
+  alt: >-
+    Campus map with building footprints and street names, the Losee Center
+    and UVU Quad labeled, and eight numbered markers placed at points
+    across the campus.
+  source: commons
+  license: "CC BY-SA 2.0"
+  licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0"
+  credit: "OpenStreetMap contributors; markers by Robert.Allen, via Wikimedia Commons"
+  plateNumber: 4
+  mediaType: "annotated map"
+  depicts: >-
+    OpenStreetMap rendering of the Utah Valley University campus with the
+    Losee Center and UVU Quad labeled. The eight numbered markers were
+    added by a Wikimedia contributor to trace locations from the publicly
+    reported movement chronology; they are an orientation aid, not an
+    official exhibit.
+  provenance:
+    photographer: "OpenStreetMap contributors; markers added by Robert.Allen"
+    date: "2025-09-16"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Killing_of_Charlie_Kirk,_map_of_suspect_movements_%E2%80%93_OpenStreetMap_v2.jpg"
+    originalTitle: "File:Killing of Charlie Kirk, map of suspect movements – OpenStreetMap v2.jpg"
+  claimIds: [KRK-C010]

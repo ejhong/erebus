@@ -25,17 +25,27 @@ const MODEL = "gpt-image-1";
  * new case a tone here before generating its cover.
  */
 const CASE_TONES = {
-  // No cases yet. Example entry:
-  // "example-case":
-  //   "deep Prussian blue field, slate and graphite linework, one small " +
-  //   "pale-steel accent at the central mark",
+  "kirk-assassination":
+    "deep blue-black field, graphite and slate linework, one thin " +
+    "pale-steel accent tracing the single unbroken line",
 };
 
 /**
  * Optional composition overrides for cases whose canonical cover subject is
  * more specific than what the dossier fields would generate.
  */
-const CASE_SUBJECTS = {};
+const CASE_SUBJECTS = {
+  // "One Shot, Many Records": one event, many instruments, records that do
+  // not fully reconcile. Pure diagram language — no scene, no place, no
+  // person, nothing readable as documentation of the event itself.
+  "kirk-assassination":
+    "An abstract diagram of a single sharp impulse recorded by many " +
+    "instruments: one clean vertical pulse at the left edge fanning out " +
+    "rightward into many parallel horizontal traces, some continuing " +
+    "unbroken, others fading into dotted gaps or stopping mid-line, with " +
+    "small registration marks where the traces disagree — the idea of one " +
+    "event producing many incomplete, imperfectly reconciled records.",
+};
 
 /** One reversible generation run: a single runId stamped on every record. */
 const RUN_ID = `cover-${STYLE_VERSION}-${new Date().toISOString().slice(0, 10)}`;

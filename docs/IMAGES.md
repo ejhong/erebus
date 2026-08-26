@@ -54,6 +54,12 @@ The canonical prompt template lives in `scripts/generate-case-art.mjs`;
 per-case tone assignments live in `CASE_TONES` there. Keep this document
 and that script in sync.
 
+### Case tone assignments
+
+| Case | Tone |
+| --- | --- |
+| `kirk-assassination` | deep blue-black field, graphite and slate linework, one thin pale-steel accent tracing the single unbroken line |
+
 Rules of thumb:
 
 - One dominant tone per piece, one small counter-accent at most. If a
