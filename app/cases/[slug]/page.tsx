@@ -42,13 +42,15 @@ export function generateMetadata({
   });
 }
 
+/* Labels stay one word each: the navigator now carries up to eleven
+   entries and must survive a phone viewport without wrapping. */
 const sections = [
   ["assessment", "Assessment"],
   ["article", "Article"],
-  ["ladder", "Claim ladder"],
+  ["ladder", "Ladder"],
   ["evidence", "Evidence"],
-  ["conventional", "Conventional view"],
-  ["research", "Research agenda"],
+  ["conventional", "Conventional"],
+  ["research", "Research"],
   ["history", "History"],
 ] as const;
 
@@ -78,7 +80,11 @@ export default async function CasePage({
 
   return (
     <div>
-      <SectionNav sections={sections} slug={slug} />
+      <SectionNav
+        sections={sections}
+        slug={slug}
+        hasStudies={loaded.studies.length > 0}
+      />
 
       <DossierHeader
         record={loaded.record}
@@ -212,7 +218,12 @@ export default async function CasePage({
           ) : null}
           <div className="grid sm:grid-cols-2 gap-4 mt-6">
             {loaded.research.map((r) => (
-              <ResearchCard key={r.id} item={r} />
+              <ResearchCard
+                key={r.id}
+                item={r}
+                study={loaded.studies.find((s) => s.researchIds.includes(r.id))}
+                caseSlug={loaded.record.slug}
+              />
             ))}
           </div>
         </section>
