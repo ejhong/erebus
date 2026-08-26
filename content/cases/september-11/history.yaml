@@ -1,0 +1,48 @@
+# Append-only change log for SEP-001. Add new entries at the end.
+
+- date: "2026-08-26"
+  change: >-
+    Case launched: 24 featured claims across nine themes, an evidence
+    ledger of 38 records, a source registry of 33 independently verified
+    sources, and a research agenda of eight decisive tests. Scope was
+    deliberately bounded to the disputes the primary record can actually
+    adjudicate — WTC 7 as the crux, the towers mechanism, pre-attack
+    trading, the warnings and air-defense record, the Saudi file, and the
+    documented official-conduct failures that calibrate how much deference
+    official statements have earned. Pentagon and Flight 93 material,
+    phone-call fabrication claims, hijacker-identity claims, and the
+    military-exercise literature were excluded from this cut as
+    low-information or contradicted; they are candidates for tombstone
+    records rather than featured claims.
+
+    Every citation was verified against the primary document (or a dated
+    archive snapshot where a host bot-walls automated clients) before
+    entry, and the verification pass changed the content substantially in
+    both directions. Corrections recorded against the conventional
+    account: the federal report hedges its fireproofing counterfactual
+    with "likely," which public restatement drops; the towers' collapse
+    progression was never modeled end to end, which the agency states
+    plainly; and the WTC 7 mechanism cannot be recomputed by anyone
+    outside the agency because the modeling files were withheld.
+    Corrections recorded against the challenger account: the frequently
+    cited chemistry rebuttal shows no elemental aluminum in the dust
+    chips, contradicting the thermite claim; the observatory feature
+    article usually cited for the absence of pre-collapse seismic signals
+    does not say that, and the finding belongs to the agency instead; and
+    the on-air time attached to the premature broadcast episode appears in
+    no verified source and is asserted nowhere here. One correction cuts
+    against both camps: the same chemistry rebuttal explicitly did NOT
+    identify the dust chips as the towers' column primer, so the popular
+    debunking is wrong in the same breath as the claim it rebuts, and what
+    the chips are remains unidentified in the published literature.
+
+    All records carry ai_extracted provenance. Nothing has been
+    human-reviewed, and no assessment has been ratified.
+  reason: >-
+    Founder direction to import a first cut of the September 11 evidence
+    disputes. Constructed from research briefs under casework/september-11
+    with every citation re-verified at the primary source before entry;
+    the briefs themselves are cited nowhere, per casework policy.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
