@@ -2,6 +2,14 @@
 #
 # ONE-TIME, DESTRUCTIVE: purge casework/ from the whole git history.
 #
+# ==> EXECUTED 2026-08-26, with a scope widened during execution to also
+# ==> cover research/ and the private-correspondence and brief files in
+# ==> inbox/ found in the shared pre-split history. See docs/DECISIONS.md
+# ==> ("The purge ran") and docs/MIGRATION-PUBLIC.md for the verified
+# ==> result. Retained because the upstream engine repository carries the
+# ==> same exposure in its public history and its pending rewrite will
+# ==> want this runbook. Do NOT run this again here.
+#
 # WHY THIS EXISTS
 #
 # casework/ held ~27 MB of third-party copyrighted material as discovery

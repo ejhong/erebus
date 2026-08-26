@@ -271,3 +271,45 @@ rejected option with its reason, not as a pending choice. A garbage-collection
 request to GitHub Support after the force-push is cheap and worth making, but
 is not a precondition for flipping visibility.
 
+## 2026-08-26 — The purge ran: wider than planned, verified, and one premise corrected
+
+Executed on the founder's go-ahead, in this order: preconditions verified
+(zero open PRs, every recently-touched branch matched to its merged PR, no
+other agent session running); full mirror backup taken off-repo; all 39
+stale branches deleted; history rewritten with `git filter-repo`; `main`
+force-pushed; the result verified from a fresh clone.
+
+Three things worth the record beyond "it ran":
+
+**1. The scope had to widen during execution.** The plan said `casework/`;
+the post-rewrite audit of what remained found the shared pre-split history
+also carried `research/` (third-party copyrighted page captures and PDFs
+kept as discovery aids), the supplied research briefs loose in `inbox/`
+(the Kirk adversarial audit in three formats, the Immortality Key brief),
+and — worst — **a private email from a living researcher to the founder**
+under `inbox/processed/`, with personal addresses and a reference to an
+unpublished manuscript: material supplied in confidence, whose presence
+contradicted the upstream case history's own claim that the correspondence
+"is not published." All of it went into the same rewrite. Final state,
+verified from a fresh clone across all refs: zero sensitive paths, zero
+document-format blobs, and a rewritten HEAD tree byte-identical to the
+pre-rewrite `main` tree — the rewrite touched history only, never content.
+
+**2. The same exposure is live in the upstream engine repository, which is
+already public.** The correspondence and the copyrighted captures sit in
+its HEAD today, downloadable by anyone. Reported upstream the same day with
+an urgent removal PR (tombstone, append-only case-history correction,
+decision-log entry); the upstream history rewrite is that repo's own
+decision and is recorded there as pending the founder's authorization.
+
+**3. A premise of the accepted-risk decision was tested and failed.** The
+in-place-rewrite decision reasoned that residual exposure requires an
+unguessable commit SHA. Tested after the force-push: `git fetch origin
+refs/pull/12/head` returns the full casework tree — pull-request refs
+survive the rewrite and are enumerable, and merged PRs' "Files changed"
+views render the content. The decision itself stands (its inspectability
+rationale is untouched), but its consequence changes: the GitHub Support
+sensitive-data request is now a **precondition** for flipping visibility,
+not an optional courtesy. `docs/MIGRATION-PUBLIC.md` carries the corrected
+risk statement, with the original preserved and marked superseded.
+
