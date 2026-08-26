@@ -8,6 +8,7 @@ export const site = {
   nav: [
     { label: "Cases", href: "/cases" },
     { label: "Research", href: "/research" },
+    { label: "Panel", href: "/panel" },
     { label: "Method", href: "/method" },
   ],
   /** Repository — the ledger every page derives from (private repo). */
