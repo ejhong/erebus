@@ -31,6 +31,41 @@ jobs:
           fi
           echo "guard passed: no occurrence in the site's inputs."
 
+      # Re-publication guard. The repository is public, so material kept as
+      # a discovery aid is no longer safe to commit: research briefs and the
+      # third-party copyrighted documents they cite were purged from history
+      # on 2026-08-26 (docs/DECISIONS.md, docs/MIGRATION-PUBLIC.md).
+      #
+      # This guard exists because .gitignore is advisory — `git add -f`, a
+      # merge from a stale branch, or an agent working from a pre-rewrite
+      # clone can all reintroduce the files. Failing the build is the only
+      # check that cannot be bypassed by not reading a document.
+      - name: Re-publication guard
+        run: |
+          set -euo pipefail
+          fail=0
+          if git ls-files 'casework/*' | grep -q .; then
+            echo "::error::Tracked files under casework/ (listed below). Research briefs are held privately OUTSIDE this public repository — see docs/HOSTING.md. If you are merging a pre-rewrite branch, rebase onto current main instead."
+            git ls-files 'casework/*'
+            fail=1
+          fi
+          # The site needs no document formats: covers and plates are jpg/png.
+          # A tracked pdf/mhtml/epub/doc is therefore either a saved source
+          # document or a mistake, and both are re-publication risks.
+          if git ls-files | grep -Ei '\.(pdf|mhtml|epub|docx?)$'; then
+            echo "::error::Tracked document files (listed above). Saved source documents must not be committed to a public repository; cite the original instead."
+            fail=1
+          fi
+          # Belt and braces on size: the largest legitimate asset is a plate
+          # under 2 MB, so anything past 4 MB is a saved artifact, not a plate.
+          big="$(git ls-files -s | awk '{print $4}' | while read -r f; do [ -f "$f" ] && [ "$(wc -c <"$f")" -gt 4194304 ] && echo "$f"; done || true)"
+          if [ -n "$big" ]; then
+            echo "::error::Tracked files over 4 MB (listed below). Plates are under 2 MB; anything larger is a saved artifact."
+            echo "$big"
+            fail=1
+          fi
+          [ "$fail" -eq 0 ] && echo "guard passed: no re-publication risk in the tree."
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
