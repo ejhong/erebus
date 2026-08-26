@@ -1,0 +1,1066 @@
+# SEP-001 featured claims. Wording was frozen against the verified primary
+# text before the evidence pass (AGENTS.md §3.12), which is why several
+# claims here read more narrowly than their popular versions: the
+# verification pass found that the federal report hedges ("likely would not
+# have collapsed"), that the agency denies blast-LEVEL noise rather than
+# denying booms, and that a widely cited chemistry rebuttal says the
+# opposite of what it is usually cited for. Each claim grades an evidence
+# dispute, never any person's conduct or guilt.
+
+# ── World Trade Center 7 ────────────────────────────────────────────────
+
+- id: SEP-C001
+  tier: featured
+  statement: >-
+    World Trade Center 7, a 47-story steel-framed building that no aircraft
+    struck, collapsed completely on September 11, 2001 after fires burned on
+    multiple floors for about seven hours with no water available to fight
+    them.
+  plainLanguage: >-
+    A third skyscraper fell that day. Nothing hit it; it burned all
+    afternoon while firefighters, who had no water, decided not to fight the
+    fire. Every hypothesis on this page accepts this much.
+  theme: wtc7
+  rung: observation
+  claimType: observation
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — WTC 7 cluster"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    Documented by the federal investigation and, independently and earlier,
+    by the 2002 FEMA study, which recorded the broken 20-inch water main in
+    Vesey Street and that no manual firefighting was attempted. Timing
+    differs slightly by measurement chain — 5:20:52 p.m. from video
+    analysis, 5:20:33 p.m. from seismic records — which is why this claim
+    says "about."
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Accepted by every hypothesis here, including the official account. It
+    establishes what has to be explained, and by itself favors no
+    explanation over another.
+  strongestObjection: >-
+    None to the observation. The contested question is entirely about
+    mechanism, graded separately below.
+  whatWouldChangeOurMind:
+    - "Nothing realistic; this is among the most thoroughly documented events of the day."
+
+- id: SEP-C002
+  tier: featured
+  statement: >-
+    During the collapse, WTC 7's north face descended at gravitational
+    acceleration — free fall — for approximately 2.25 seconds over about
+    32 metres, as stated in the federal investigation's own final report
+    after a re-analysis prompted by public comment.
+  plainLanguage: >-
+    For roughly two and a quarter seconds, part of the building fell as
+    fast as a dropped stone, meaning the structure below offered essentially
+    no resistance during that interval. This is not a challenger's
+    calculation — it is in the government's final report, added after
+    critics pressed the point.
+  theme: wtc7
+  rung: observation
+  claimType: measurement
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — WTC 7 free fall"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    Stated verbatim in the final report's principal findings: a three-stage
+    descent whose second stage is "a freefall descent over approximately
+    eight stories at gravitational acceleration for approximately 2.25 s."
+    The agency's public FAQ gives the same staging by time interval.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Frequently oversold in both directions. Free fall requires that the
+    supporting structure was already gone in that interval, which is a real
+    constraint on any mechanism — but the official account accommodates it
+    explicitly, attributing it to exterior columns that had already buckled.
+    It narrows the field without selecting a hypothesis.
+  strongestObjection: >-
+    That the interval was conceded and modeled by the investigation itself
+    rather than discovered against it, so it cannot function as evidence the
+    investigation suppressed something.
+  whatWouldChangeOurMind:
+    - "A demonstration that the video measurement of the roofline descent is wrong."
+    - "A published re-analysis showing the free-fall stage is an artifact of the frame-rate or reference-point choice."
+
+- id: SEP-C003
+  tier: featured
+  statement: >-
+    The federal investigation's probable collapse sequence for WTC 7 —
+    fire-driven thermal expansion pushing the girder spanning Columns 79
+    and 44 off its seat, cascading floor failures, and the buckling of
+    Column 79 — is correct.
+  plainLanguage: >-
+    The official explanation says heat made steel beams expand, shoving a
+    girder off its support until a key column lost its bracing and buckled.
+    No steel had to melt. Whether this specific sequence is what happened is
+    the central technical dispute of the case.
+  theme: wtc7
+  rung: mechanism
+  claimType: mechanistic
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C04, the case crux"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: mixed
+  credibilitySummary: >-
+    The best-resourced and only comprehensive account, internally coherent
+    and requiring no melted steel — the report puts the highest column
+    temperatures near 300 °C and the initiating process at or below about
+    400 °C. But it has never been independently reproduced, and it cannot
+    be: the modeling files needed to recompute it were withheld
+    (SEP-C005). A mechanism that only its author can evaluate is not
+    thereby wrong; it is thereby unaudited, and this grade records exactly
+    that distinction.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    The load-bearing question for the whole WTC 7 dispute. If the sequence
+    holds, the demolition hypotheses lose their principal motivation; if it
+    fails, the collapse has no published explanation and everything reopens.
+  dependsOnClaimIds: [SEP-C001]
+  strongestObjection: >-
+    The challenger study reports that its simulations could not reproduce
+    the observed collapse from this mechanism, and that only near-simultaneous
+    failure of every column over about eight stories matched the video —
+    though that study has its own serious defects, graded at SEP-C004.
+  whatWouldChangeOurMind:
+    - "A blinded independent re-analysis of the Column 79 connection, built from the shop drawings under documented fire curves by a team with no prior public position."
+    - "Release of the withheld modeling files, allowing the published sequence to be recomputed by anyone."
+    - "A demonstration that the connection as actually built differs materially from the connection as modeled."
+
+- id: SEP-C004
+  tier: featured
+  statement: >-
+    The University of Alaska Fairbanks reevaluation correctly concluded that
+    fire did not cause WTC 7's collapse and that only the near-simultaneous
+    failure of every column over about eight stories reproduces the observed
+    behavior.
+  plainLanguage: >-
+    The main published challenge to the official account. It is a real
+    engineering study that released all its data — and it was paid for by
+    the advocacy group whose position it confirms, was not peer-reviewed in
+    a journal, and leaves several observed features of the collapse
+    unexplained.
+  theme: wtc7
+  rung: mechanism
+  claimType: mechanistic
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C05"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: weakly_supported
+  credibilitySummary: >-
+    A genuine finite-element effort that published its full dataset, which
+    is more openness than the investigation it disputes has offered. Against
+    it: funding from the organization campaigning for its conclusion; no
+    journal peer review; a single static temperature distribution rather
+    than a modeled fire progression; and a best-fit scenario that reproduces
+    the fall itself while leaving the debris distribution and other observed
+    features unaddressed. Its own text is more cautious than its reception,
+    conceding it cannot rule out an alternative scenario it did not identify.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    If sustained, it would refute the official mechanism and force the
+    question open — but "every column failed at once" does not by itself
+    establish what made them fail, so it supports the demolition family
+    only by elimination.
+  dependsOnClaimIds: [SEP-C001]
+  strongestObjection: >-
+    Simultaneous column removal is an input to the simulation, not a finding
+    from it: critics note the columns are made to disappear and the building
+    then falls at free fall, which demonstrates that the input produces the
+    output rather than that the input occurred.
+  whatWouldChangeOurMind:
+    - "Independent replication by a team with no funding relationship to either side."
+    - "An extension of the model that reproduces the observed debris distribution as well as the descent."
+    - "Peer review in a structural or fire engineering journal."
+
+- id: SEP-C005
+  tier: featured
+  statement: >-
+    The federal investigation withheld tens of thousands of WTC 7 modeling
+    data files under a July 2009 statutory finding that their release might
+    jeopardize public safety, a withholding a federal court upheld in April
+    2011; the initiating mechanism therefore cannot be independently
+    reproduced from the published materials.
+  plainLanguage: >-
+    Anyone wanting to check the official collapse model cannot: most of the
+    computer files were kept back on the grounds that they could teach
+    someone how to destroy a building, and a judge agreed the law allowed
+    that.
+  theme: wtc7
+  rung: observation
+  claimType: methodological
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C06"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    Documented in the court's own opinion: 25,644 files released, 68,500
+    withheld, against 91,114 described as potentially responsive — figures
+    that do not reconcile arithmetically and are quoted here as the opinion
+    gives them. The statutory basis and the "might jeopardize public safety"
+    finding are quoted verbatim in the opinion and restated on the agency's
+    public FAQ.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    A fact about auditability, not about physics, and it cuts both ways: the
+    stated rationale is coherent on its own terms, and withholding is not
+    evidence of error. What it does establish is that the central mechanism
+    claim cannot be checked by anyone outside the agency, which is why
+    SEP-C003 is graded mixed rather than well supported.
+  dependsOnClaimIds: [SEP-C003]
+  strongestObjection: >-
+    The rationale is not obviously pretextual — detailed validated
+    connection models genuinely would be a blueprint of general
+    applicability — and the released subset is substantial.
+  whatWouldChangeOurMind:
+    - "Release of the withheld files, or a bounded re-derivation sufficient for independent recomputation."
+    - "Evidence that the withheld files contain nothing that would permit reproduction anyway."
+
+- id: SEP-C006
+  tier: featured
+  statement: >-
+    No identified structural steel from WTC 7 was preserved for forensic
+    examination, because the debris could not be distinguished after removal
+    from the site.
+  plainLanguage: >-
+    The physical evidence from the third building is simply gone. Tower
+    steel carried paint and markings that allowed pieces to be traced;
+    WTC 7's did not, and it was recycled before anyone catalogued it.
+  theme: wtc7
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C07"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    Stated openly by the investigating agency itself, which explains that
+    WTC 7 steel lacked the paint and distinguishing markings that made tower
+    steel identifiable.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    The largest physical-evidence gap in the case, and permanent. It does
+    not favor a hypothesis; it removes the class of test — direct
+    metallurgical examination — that could have discriminated between
+    several of them.
+  strongestObjection: >-
+    Rapid debris removal during a recovery operation, before any
+    investigation was chartered, is an ordinary consequence of the emergency
+    rather than a decision about evidence.
+  whatWouldChangeOurMind:
+    - "Discovery of documented, provenance-tracked WTC 7 steel in a museum, laboratory, or private collection."
+
+- id: SEP-C007
+  tier: featured
+  statement: >-
+    A limited federal metallurgical examination documented severe
+    high-temperature sulfidation with intergranular eutectic melting on two
+    recovered steel members, and its authors stated that no clear
+    explanation for the source of the sulfur had been identified and
+    recommended a follow-up study that has never been performed.
+  plainLanguage: >-
+    Two pieces of steel were found corroded and partly liquefied in a way
+    the examining metallurgists could not explain. They asked for a proper
+    study. Twenty-four years later, nobody has done it.
+  theme: dust
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C08, corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    The observation, the explicit statement that the sulfur source was
+    unidentified, and the recommendation for further work are all verbatim
+    in the appendix. Note a correction this case had to make: the appendix
+    proposes no source for the sulfur at all — the frequently repeated claim
+    that its authors suggested gypsum is mistaken, and that argument belongs
+    to a different agency in a different document.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    A real and uncontested anomaly with mundane candidate explanations that
+    were never tested. Untested candidates mean it currently discriminates
+    weakly, and its diagnosticity would rise sharply in either direction if
+    the recommended study were run.
+  strongestObjection: >-
+    The examination covered two opportunistically recovered members with
+    hedged identifications, and the appendix itself raises the possibility
+    that the corrosion occurred during long-term heating in the debris pile
+    after the collapse rather than before it.
+  whatWouldChangeOurMind:
+    - "An isotope-based source-apportionment study identifying where the sulfur came from."
+    - "Documentation that comparable sulfidation occurs routinely in long-burning building debris."
+
+- id: SEP-C008
+  tier: featured
+  statement: >-
+    Witnesses at WTC 7 reported loud explosion-like sounds associated with
+    the building on September 11, 2001.
+  plainLanguage: >-
+    People there heard bangs and booms and said so on the record. That much
+    is not in dispute — including by the investigating agency, which
+    acknowledges a responder who reported two loud booms.
+  theme: wtc7
+  rung: observation
+  claimType: observation
+  importance: supporting
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C09, narrowed at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    Multiple on-record accounts exist, and the agency's own FAQ answers a
+    question about a responder who "heard two loud booms" without disputing
+    that he did. This claim is deliberately narrower than the version in
+    circulation: the agency does not deny that booms were reported, it
+    denies that any reported sound matches the level a column-severing
+    blast would produce.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Collapsing structures, failing transformers, and falling debris all
+    produce loud reports. The testimony establishes that loud sounds
+    occurred, which nearly every hypothesis predicts.
+  strongestObjection: >-
+    Lay descriptions of loudness cannot distinguish a detonation from
+    structural failure, and the accounts do not describe a blast-wave
+    signature.
+  whatWouldChangeOurMind:
+    - "Calibrated audio from a known distance establishing the actual sound pressure levels."
+
+- id: SEP-C009
+  tier: featured
+  statement: >-
+    The explosion-like sounds reported around WTC 7 were produced by
+    demolition charges.
+  plainLanguage: >-
+    The inference drawn from the booms. It does not survive the acoustics:
+    a charge big enough to cut the critical column would have been heard for
+    half a mile at jet-engine volume, and no recording contains it.
+  theme: wtc7
+  rung: mechanism
+  claimType: causal
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C10"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    The investigation calculated that the smallest blast capable of failing
+    Column 79 would register 130 to 140 decibels at half a mile if
+    unobstructed, and reported that no such sound appears on any audio track
+    or in any witness account. That is a falsifiable published prediction
+    that the recorded evidence does not meet.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Were it true it would establish demolition directly. Its failure is
+    correspondingly costly to the demolition family, which is why proponents
+    have largely moved to incendiary rather than explosive mechanisms.
+  dependsOnClaimIds: [SEP-C008]
+  strongestObjection: >-
+    The acoustic calculation is the investigation's own modeling, not an
+    independent measurement, and it assumes an unobstructed path in a dense
+    urban environment full of obstructions.
+  whatWouldChangeOurMind:
+    - "Recovery of a recording containing a blast signature at the predicted level, authenticated and located."
+    - "An independent acoustic analysis showing the modeled threshold is substantially too high."
+
+- id: SEP-C010
+  tier: featured
+  statement: >-
+    WTC 7 was deliberately demolished.
+  plainLanguage: >-
+    The strongest challenger claim about this building. Everything above
+    feeds into it, and on the current record it does not carry: the
+    supporting arguments are either contradicted, unaudited, or
+    unexplained-but-untested.
+  theme: wtc7
+  rung: attribution
+  claimType: causal
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C11"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: weakly_supported
+  credibilitySummary: >-
+    Rests on a genuine unaudited gap in the official mechanism (SEP-C003,
+    SEP-C005), an unreproduced advocacy-funded counter-model (SEP-C004),
+    and an untested corrosion anomaly (SEP-C007). Against it: the acoustic
+    evidence (SEP-C009), the absence of any recovered device or residue
+    finding, and the practical difficulty of pre-rigging an occupied
+    building without disclosure. Weakly supported is not the same as
+    refuted, and this case does not expect the grade to be permanent — the
+    decisive tests are cheap and unperformed.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Decisive for the whole case if established, since deliberate demolition
+    of this building could not have been arranged without advance
+    coordination.
+  dependsOnClaimIds: [SEP-C003, SEP-C004, SEP-C005, SEP-C007, SEP-C009]
+  strongestObjection: >-
+    No physical artifact of a demolition has ever been produced — no device,
+    no residue finding on identified WTC 7 steel (none of which was kept),
+    no blast signature — so the claim rests entirely on the inadequacy of
+    the alternative rather than on affirmative evidence of itself.
+  whatWouldChangeOurMind:
+    - "A blinded independent re-analysis vindicating the challenger model."
+    - "A custody-controlled physical finding of incendiary or explosive residue on provenanced WTC 7 material."
+    - "Conversely: independent reproduction of the official mechanism from released data would move this to contradicted."
+
+# ── the Twin Towers ─────────────────────────────────────────────────────
+
+- id: SEP-C011
+  tier: featured
+  statement: >-
+    Aircraft impact damage, widely dislodged fireproofing, and multi-floor
+    fires initiated the collapses of WTC 1 and WTC 2; the federal
+    investigation concluded the towers "likely would not have collapsed" had
+    the thermal insulation not been widely dislodged.
+  plainLanguage: >-
+    The planes severed columns and knocked the fireproofing off the steel;
+    the fires then did what fires cannot normally do to protected steel. The
+    official report words this carefully, and so does this claim: "likely."
+  theme: towers
+  rung: mechanism
+  claimType: mechanistic
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C12, hedge restored at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Supported by impact simulations reporting dozens of severed columns and
+    insulation stripped from tens of thousands of square feet of truss area
+    in each tower, by the fire reconstruction, and by the observed inward
+    bowing that preceded each collapse. The counterfactual is stated twice
+    in the report, both times hedged with "likely" — a hedge public
+    restatement on both sides routinely drops, and which this claim keeps.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Initiation at precisely the impact floors is very hard for any
+    pre-placed-device account to accommodate, since the aircraft's aim
+    could not be arranged in advance.
+  strongestObjection: >-
+    The simulations required tuning to reproduce the observed damage, and
+    the "widely dislodged" insulation is an inference from modeling rather
+    than a direct measurement of the buildings as they stood.
+  whatWouldChangeOurMind:
+    - "An independent impact-and-fire model with published inputs producing materially different initiation conditions."
+
+- id: SEP-C012
+  tier: featured
+  statement: >-
+    Once collapse had initiated, the total top-to-bottom progression of each
+    tower has been demonstrated by end-to-end structural modeling.
+  plainLanguage: >-
+    Not the question of what started the collapses — the question of whether
+    anyone has actually simulated them all the way down. Nobody has,
+    including the federal investigation, which said the progression was
+    "readily explained" without that modeling.
+  theme: towers
+  rung: mechanism
+  claimType: methodological
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C13, restated as an auditability claim"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    The investigation modeled collapse initiation and stated that
+    propagation "was readily explained without the same complexity of
+    modeling," supporting that judgment with a floor-capacity argument
+    rather than a simulation. That is a considered engineering position, not
+    an end-to-end model — so the claim as worded is contradicted by the
+    record, which is a statement about what exists, not about whether
+    gravity suffices.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    The honest weak point of the conventional account's completeness, and
+    the most legitimate opening the challenger literature has on the towers.
+    It does not by itself imply any added energy source was present.
+  dependsOnClaimIds: [SEP-C011]
+  strongestObjection: >-
+    Order-of-magnitude analyses in the peer-reviewed mechanics literature
+    argue the energy balance is not close — once a dozen-plus stories drop
+    one storey, arrest is not plausible — so full simulation may be
+    unnecessary to answer the physical question even though it would answer
+    the auditability one.
+  whatWouldChangeOurMind:
+    - "Publication of a high-fidelity progressive-collapse model of a tube-frame tower validated against the video and seismic record, with full inputs released."
+
+- id: SEP-C013
+  tier: featured
+  statement: >-
+    The Twin Towers were destroyed with pre-planted explosive devices.
+  plainLanguage: >-
+    This one is not merely unproven; the record actively contradicts it.
+    Collapse began exactly where unpredictably aimed aircraft happened to
+    hit, no seismic trace precedes either collapse, and eight months of
+    debris removal produced no device.
+  theme: towers
+  rung: attribution
+  claimType: causal
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C14"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    Positive disproof rather than mere absence. Initiation coincided with
+    the impact floors, which no one could have designated in advance; the
+    seismic record contains no signal before either collapse; the
+    investigation reported finding no corroborating evidence for
+    demolition; and any charges would have had to survive nearly an hour of
+    approximately 1,000 °C fire at exactly the location where the collapse
+    began.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Would be decisive if true. Its failure is what separates the towers
+    dispute — effectively closed — from the WTC 7 dispute, which is not.
+  dependsOnClaimIds: [SEP-C011]
+  strongestObjection: >-
+    Arguments from the absence of recovered devices depend on a debris
+    operation that was not conducted as a forensic search, and the seismic
+    argument depends on instruments at some distance from the site.
+  whatWouldChangeOurMind:
+    - "A recovered, provenanced device component or an authenticated pre-collapse seismic or acoustic signature."
+
+- id: SEP-C014
+  tier: featured
+  statement: >-
+    The red/gray chips found in World Trade Center dust are unreacted
+    nanothermite.
+  plainLanguage: >-
+    The best-known physical-evidence claim on the challenger side. An
+    independent analysis found no elemental aluminum in the chips, which
+    the claim requires — but that same analysis also refutes the popular
+    debunking, because it found the chips were not the building's primer
+    paint either.
+  theme: dust
+  rung: mechanism
+  claimType: measurement
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C15, corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    The independent 2012 analysis of archived dust from four Manhattan
+    locations found "no evidence of individual elemental aluminum particles
+    of any size," and concluded on that basis that the red layer "is not
+    thermite or nano thermite." Elemental aluminum is not optional for the
+    claim. Two honest caveats travel with this grade: the rebuttal was never
+    published in a peer-reviewed journal, exactly the objection made against
+    the paper it rebuts; and it explicitly did NOT identify the chips as the
+    towers' column primer, finding the composition "does not match" that
+    primer and that none of 177 candidate products matched.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    A confirmed thermitic material in custody-controlled dust would be
+    strong evidence for the incendiary-demolition family. Its absence
+    removes the challenger side's only affirmative physical-evidence claim
+    about the dust, without establishing what the chips actually are.
+  strongestObjection: >-
+    Neither analysis was conducted under a documented chain of custody from
+    the site, and neither was peer-reviewed in a normal venue — so the
+    dispute is between two irregular analyses, and the unresolved
+    composition question is a real loose end rather than a settled one.
+  whatWouldChangeOurMind:
+    - "A blinded multi-laboratory re-test of custody-controlled dust against both thermite and primer controls."
+    - "Identification of the coating the chips actually are, which no published analysis has yet achieved."
+
+# ── pre-attack trading ──────────────────────────────────────────────────
+
+- id: SEP-C015
+  tier: featured
+  statement: >-
+    Put-option volumes on United Airlines and American Airlines in the days
+    before September 11, 2001 were anomalously high relative to baseline,
+    and peer-reviewed analyses found the pattern statistically consistent
+    with informed trading.
+  plainLanguage: >-
+    Somebody made unusually large bets that these two airlines' shares would
+    fall, days before the attacks. The anomaly is real and was published in
+    respectable finance journals.
+  theme: trading
+  rung: observation
+  claimType: statistical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C18"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The exchange volume ratios are consistently reported, and two
+    independent peer-reviewed analyses in finance journals found abnormal
+    pre-attack option activity. The published conclusion is stated as
+    consistency with informed trading, not as demonstration of it.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    An anomaly at the observation rung whose interpretation carries the
+    weight; the discrimination happens at SEP-C016, not here.
+  strongestObjection: >-
+    Statistical abnormality identifies neither a trader nor a motive, and
+    the specific volume figures descend from September 2001 press reporting
+    of exchange data rather than from an exchange record this case has
+    obtained.
+  whatWouldChangeOurMind:
+    - "Primary exchange data contradicting the reported volumes."
+    - "A modern re-analysis with false-discovery-rate control showing the anomaly is within expected noise."
+
+- id: SEP-C016
+  tier: featured
+  statement: >-
+    The anomalous pre-attack option trading reflected advance knowledge of
+    the attacks.
+  plainLanguage: >-
+    The inference from the trades. The official investigation says it traced
+    the headline trades to buyers with no plausible connection to the
+    plotters — but the files behind that tracing have never been released,
+    so nobody outside can check it.
+  theme: trading
+  rung: attribution
+  claimType: causal
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C19"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: weakly_supported
+  credibilitySummary: >-
+    The investigation reported that the largest single block of the airline
+    puts was bought by a United States institutional investor with no
+    conceivable ties to the plotters as part of a broader strategy, and that
+    the apparently suspicious consistently proved innocuous. Those
+    trace-outs are specific and plausible; they are also unverifiable from
+    outside, because the underlying trade-tracing files remain non-public.
+    The statistical findings survive in aggregate without identifying anyone.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Establishing informed trading would establish foreknowledge somewhere,
+    which is why this claim, not the volume anomaly, is where the dispute
+    actually lives.
+  dependsOnClaimIds: [SEP-C015]
+  strongestObjection: >-
+    Every specific trade that investigators examined and published a
+    conclusion about had an innocuous explanation, and no alternative
+    explanation for the aggregate anomaly has produced an identified
+    informed trader in twenty-five years.
+  whatWouldChangeOurMind:
+    - "Declassification of the trade-tracing files, allowing the trace-outs to be audited."
+    - "Identification of any trader with a demonstrable connection to the plot."
+
+# ── media episodes: established observations, contradicted inferences ────
+
+- id: SEP-C018
+  tier: featured
+  statement: >-
+    United States agencies held substantial but fragmentary pre-attack
+    warnings — including an August 6, 2001 presidential brief item titled
+    "Bin Ladin Determined To Strike in US," a July 2001 field-office
+    communication about flight training, the August 2001 detention of a
+    flight-school student, and un-watchlisted travel by two future
+    hijackers — none of which identified the time, place, and specific
+    nature of the attacks.
+  plainLanguage: >-
+    The warnings were real, numerous, and never assembled into a picture of
+    what was coming. Both halves of that sentence are findings, and this
+    case keeps them together.
+  theme: foreknowledge
+  rung: observation
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C20"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    The brief item's title and text are reproduced in the Commission's own
+    report, and the congressional joint inquiry's first factual finding
+    states that while a great deal of intelligence had been amassed, "none
+    of it identified the time, place, and specific nature of the attacks" —
+    while adding, in the same finding, that the community did hold
+    information clearly relevant when considered for its collective
+    significance. Note a correction: the brief says preparations for
+    "hijackings or other types of attacks," not for a hijacking.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Highly diagnostic between the two hypotheses most often confused: it
+    strongly supports institutional failure and it undercuts specific
+    foreknowledge, because what the record shows at every node is
+    information not being connected rather than information being buried.
+  strongestObjection: >-
+    A record assembled by bodies with an institutional interest in
+    characterizing their own failures as analytical rather than culpable.
+  whatWouldChangeOurMind:
+    - "Declassification showing a warning that did specify timing, target, and method."
+    - "Evidence that relevant reporting was deliberately withheld from the inquiries rather than mishandled before them."
+
+- id: SEP-C019
+  tier: featured
+  statement: >-
+    United States officials had specific advance knowledge of the September
+    11 plot — its timing, targets, and method — and allowed it to proceed.
+  plainLanguage: >-
+    The central claim of the "let it happen" family. The documented failure
+    mode at every point in the record is dysfunction, not concealment.
+  theme: foreknowledge
+  rung: attribution
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C21"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    Contradicted by the joint inquiry's central factual finding and by the
+    inspector-general reviews, which document specific, traceable
+    bureaucratic failures — information not shared between field offices and
+    headquarters, watchlisting not performed, analysis not done — at each
+    node where foreknowledge would have had to be exercised. Concealment of
+    a known plot would predict a different evidentiary signature than the
+    one the record shows.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Decisive between the negligence and complicity families, which is
+    exactly why this case grades it separately from the anomalies people
+    cite in its support.
+  dependsOnClaimIds: [SEP-C018]
+  strongestObjection: >-
+    Absence of documentation is weak evidence about deliberate concealment,
+    since concealment would predict the absence; and destroyed records —
+    including intelligence interrogation recordings and the data-mining
+    material at SEP-C021 — mean the documentary record is genuinely
+    incomplete.
+  whatWouldChangeOurMind:
+    - "A surviving document, communication, or credible first-hand account showing a specific warning was received and suppressed."
+
+- id: SEP-C020
+  tier: featured
+  statement: >-
+    Aviation and air-defense officials gave the 9/11 Commission accounts of
+    the air-defense response that the Commission's staff found were
+    contradicted by recorded evidence, including a fighter scramble made in
+    response to a phantom report of an already-crashed aircraft.
+  plainLanguage: >-
+    The official story of the military response that day was wrong, and it
+    took subpoenaed tapes to establish that. This is documented official
+    misstatement — and it also demolishes the shootdown theories, because
+    the tapes show the military never had a hijacked plane in its sights.
+  theme: air-defense
+  rung: observation
+  claimType: historical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C22"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The Commission's Staff Statement 17 records that the response to a
+    phantom aircraft "is not recounted in a single public timeline or
+    statement issued by FAA or DOD," and that the same scramble had been
+    publicly attributed to other flights instead. Journalism working
+    directly from roughly thirty hours of air-defense operations recordings
+    obtained from the Pentagon documents the same material.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Cuts sharply in both directions, which is why it belongs in the case.
+    It is documented evidence that official accounts were unreliable — and
+    the same record is the strongest evidence against the claim that a
+    hijacked airliner was shot down.
+  strongestObjection: >-
+    Confusion and error during an unprecedented event are not the same as
+    misrepresentation, and the corrected record emerged from the
+    government's own commission using the government's own recordings.
+  whatWouldChangeOurMind:
+    - "Evidence that the earlier accounts were knowing falsehoods rather than institutional error, or conversely that the recordings support the original timelines."
+
+- id: SEP-C021
+  tier: featured
+  statement: >-
+    A military data-mining program identified Mohamed Atta as a member of an
+    al-Qaeda cell before September 11, 2001.
+  plainLanguage: >-
+    Several officers said under oath they saw a chart naming Atta a year
+    early. The Pentagon's inspector general concluded their recollections
+    were mistaken — and the underlying data had been destroyed, so the
+    dispute cannot be settled from records.
+  theme: foreknowledge
+  rung: observation
+  claimType: historical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C23, counts corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: weakly_supported
+  credibilitySummary: >-
+    The defense inspector general did not substantiate the allegation,
+    concluding that program members did not identify Atta or any other
+    hijacker before the attacks, that four interviewed witnesses who
+    recalled seeing such a chart were mistaken, and that the chart in
+    question was a 1999 product naming 53 already-identified terrorists
+    including a Brooklyn cell but not Atta. Against that finding stand
+    on-record accounts by military witnesses, the department's decision to
+    bar five of them from testifying at a Senate hearing — which the
+    committee chairman said might be obstruction — and the destruction of
+    the underlying data.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    A verified pre-attack identification of the operational leader would be
+    among the most consequential findings available in this case. That the
+    question turns on destroyed records and contested recollection is why
+    it stays open rather than resolving in either direction.
+  strongestObjection: >-
+    Human memory of a chart seen years earlier is exactly the evidence type
+    that degrades and converges on later-learned names, which is what the
+    inspector general concluded happened; and no documentary artifact
+    supporting the recollections has ever surfaced.
+  whatWouldChangeOurMind:
+    - "Surviving contractor data or destruction certificates establishing what the program's holdings contained."
+    - "A contemporaneous copy of a chart naming Atta before September 2001."
+
+# ── the Saudi file (strict living-persons handling) ─────────────────────
+
+- id: SEP-C022
+  tier: featured
+  statement: >-
+    Two men connected to Saudi governmental institutions provided practical
+    assistance to hijackers Nawaf al-Hazmi and Khalid al-Mihdhar after their
+    January 2000 arrival in Southern California.
+  plainLanguage: >-
+    That the two hijackers received help settling in California is
+    documented. What that help meant — and whether the helpers knew what
+    they were helping with — is a separate question, graded separately.
+  theme: saudi
+  rung: observation
+  claimType: historical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C24"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The declassified congressional section records that some hijackers in
+    the United States "were in contact with, and received support or
+    assistance from, individuals who may be connected to the Saudi
+    Government," and a federal court found related claims legally
+    sufficient to proceed. The assistance is the documented part; this claim
+    is deliberately confined to it.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Consistent both with witting facilitation and with ordinary community
+    assistance to new arrivals, so it establishes the relationship without
+    establishing its character.
+  strongestObjection: >-
+    The declassified section states in its own text that the inquiry made
+    no final determinations as to the reliability or sufficiency of the
+    information it reports, and it was assembled from raw agency files
+    rather than adjudicated findings.
+  whatWouldChangeOurMind:
+    - "Release of the underlying investigative subfile in unredacted form."
+    - "Testimony or documents establishing what the individuals knew."
+
+- id: SEP-C023
+  tier: featured
+  statement: >-
+    A Saudi state institution knowingly supported the September 11 plot.
+  plainLanguage: >-
+    The strongest version of the Saudi claim. It is unresolved — and it is
+    the one dispute in this case with a court attached, currently stayed
+    while the Kingdom appeals.
+  theme: saudi
+  rung: attribution
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C26, posture corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: unresolved
+  credibilitySummary: >-
+    The Commission found no evidence that the Saudi government as an
+    institution or senior Saudi officials individually funded al-Qaeda,
+    while noting in the same passage the likelihood that charities with
+    significant Saudi government sponsorship diverted funds to it — a
+    formulation that leaves the mid-level question open rather than closing
+    it. In August 2025 a federal judge denied the Kingdom's renewed motion
+    to dismiss, expressly deciding jurisdiction rather than the merits and
+    finding the claims legally sufficient to proceed to trial; the Kingdom
+    filed a notice of appeal in September 2025 and proceedings were stayed.
+    No merits adjudication exists.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Would establish state facilitation of the attacks — a conclusion of a
+    different order from anything else contested here, and one that
+    remains compatible with the established account of who conducted them.
+  dependsOnClaimIds: [SEP-C022]
+  strongestObjection: >-
+    Twenty-five years of investigation, including a declassification review
+    ordered by executive order, has produced documented individual
+    assistance and no established institutional direction; and a
+    jurisdictional ruling is not a finding of responsibility.
+  whatWouldChangeOurMind:
+    - "A merits judgment in the litigation, whichever way it goes."
+    - "Unredacted release of the investigative subfile on the two individuals."
+
+# ── official conduct: the calibration anchor ───────────────────────────
+
+- id: SEP-C024
+  tier: featured
+  statement: >-
+    The Environmental Protection Agency's September 2001 assurances that the
+    air near Ground Zero was safe to breathe were made without sufficient
+    supporting data, and the White House Council on Environmental Quality
+    influenced the agency's early press releases by adding reassuring
+    statements and deleting cautionary ones.
+  plainLanguage: >-
+    Proven official deception about a health matter, established by the
+    agency's own inspector general. It is the anchor for calibrating how
+    much deference official statements in this case have earned.
+  theme: official-conduct
+  rung: observation
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C27"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    The inspector general's report states that when the agency announced
+    the air was safe to breathe it "did not have sufficient data and
+    analyses to make such a blanket statement," and that the White House
+    council "influenced, through the collaboration process, the information
+    that EPA communicated to the public through its early press releases
+    when it convinced EPA to add reassuring statements and delete
+    cautionary ones."
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Cuts precisely two ways, and this case displays both. It is documented
+    proof that health-relevant public statements were centrally managed,
+    which is why generalized official reassurance in this case does not
+    carry presumptive weight. It is also proof that the deception was
+    caught and published by the government's own inspector general, and
+    that its object was reassurance about air quality rather than
+    concealment of the attacks' authorship.
+  strongestObjection: >-
+    Editing for reassurance during an ongoing emergency, while indefensible
+    on the health merits, is a categorically different act from concealing
+    what caused the event.
+  whatWouldChangeOurMind:
+    - "Nothing on the finding itself; it is established. What remains open is only how far it licenses distrust of unrelated official statements."
+
+- id: SEP-C017
+  tier: featured
+  statement: >-
+    A remark by WTC 7's leaseholder in a 2002 documentary — that the
+    "smartest thing to do is pull it" — was an admission that the building
+    was deliberately demolished.
+  plainLanguage: >-
+    A famous soundbite, and a misreading. The speaker was describing a
+    conversation with the fire department about withdrawing firefighters,
+    and no building can be rigged for demolition in an afternoon.
+  theme: media
+  rung: attribution
+  claimType: interpretive
+  importance: supporting
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C29"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    The quotation is authentic and the context defeats the reading: the
+    remark is embedded in an account of a call from a fire department
+    commander about whether the fire could be contained, and the
+    contemporaneous record independently documents a decision not to fight
+    the fire. Rigging a 47-story occupied building during an ongoing
+    emergency is not feasible on that timescale.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Included because it is among the most-circulated items in the public
+    argument, and because it demonstrates the observation-versus-inference
+    split this case exists to enforce: the quotation is real, the inference
+    from it is not supported.
+  strongestObjection: >-
+    The speaker's own spokesperson supplied the exculpatory reading, which
+    is an interested party's account rather than independent evidence of
+    what was meant.
+  whatWouldChangeOurMind:
+    - "Documentary evidence of demolition preparation at the building before September 11, 2001."
