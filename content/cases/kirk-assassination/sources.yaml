@@ -729,3 +729,36 @@
     study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+
+- id: SRC-REV-PRESSER-0910-2025
+  title: "Press Conference on Charlie Kirk Shooting (day-of joint briefing — Mason, Bohls, Peterson, Cox, Long) — transcript"
+  organization: "Rev.com"
+  year: "2025"
+  sourceType: webpage
+  identifier: "September 10, 2025 briefing; transcript page dated September 11, 2025"
+  url: "https://www.rev.com/transcripts/press-conference-on-charlie-kirk-shooting"
+  verification: ai_verified
+  background: true
+  verificationNote: >-
+    Fetched in full 2026-08-26; all quotes verbatim with in-transcript
+    timestamps, including the custody exchange, Mason's transport and
+    rooftop statements, Bohls' co-lead statement, and Long's venue
+    account. Anchors rows of study KRK-S005 (statement ledger); held as
+    a background record because the study's aggregate findings, not the
+    transcript itself, are the ledger-bearing grain.
+  reliabilityNotes:
+    - "Third-party transcription of the live briefing; speaker names as rendered by the transcriber."
+
+- id: SRC-KRK-S005
+  title: "Workpaper: statement-discrepancy ledger for post-event public accounts (study KRK-S005)"
+  organization: "This site (AI-authored project work held in the repository)"
+  year: "2026"
+  sourceType: workpaper
+  studyId: KRK-S005
+  identifier: "Criteria frozen 2026-08-26 (hash 85874a57b2bf); table collected 2026-08-26"
+  verification: ai_verified
+  verificationNote: >-
+    Every row cell carries its own citation and verification label on the
+    study page; the aggregate findings are the only ledger-bearing grain.
+  reliabilityNotes:
+    - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
