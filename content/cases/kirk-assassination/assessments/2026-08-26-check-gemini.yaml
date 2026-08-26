@@ -1,0 +1,272 @@
+# Cross-model check run — an independent judge (Gemini 3.1 Pro (Google)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-gemini
+model: Gemini 3.1 Pro (Google) — independent check run via gemini-3.1-pro-preview
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: mixed
+  loadBearing:
+    - KRK-C001
+    - KRK-C006
+    - KRK-C008
+    - KRK-C019
+    - KRK-C005
+  weakestLinks:
+    - KRK-C015
+    - KRK-C017
+    - KRK-C025
+    - KRK-C018
+  synthesis: >-
+    The evidentiary record surrounding the killing of Charlie Kirk is
+    characterized by formidable, multi-channel support for the state's official
+    framework, paired with a severe and genuine deficit in independent
+    auditability. The state's single-shooter account rests on a robust baseline
+    of physical and observational evidence: independent visual forensics
+    alongside sworn officer testimony clearly place a fleeing actor on the
+    rooftop seconds after the shot (KRK-C001); source-level DNA statistics
+    strongly link the suspect to the recovered rifle (KRK-C008); and the medical
+    examiner’s official report classifies the death as a homicide resulting from
+    a gunshot wound to the neck (KRK-C006). Taken together, the state has
+    assembled an affirmative case that coherently accounts for the primary
+    physical artifacts left at the scene.
+
+
+    However, the central skeptical premise—that the public record remains
+    materially incomplete and cannot yet be independently audited (KRK-C019)—is
+    entirely vindicated by the evidence ledger. The most critical mechanical
+    linkage remains severed in the public view: the ATF examiner explicitly
+    testified that she could neither definitively match nor exclude the
+    recovered rifle against the fatal fragments, a result compounded by an
+    unreconciled chain-of-custody discrepancy involving three missing projectile
+    fragments (KRK-C005). Furthermore, the complete autopsy package has not been
+    subjected to independent pathology review, and the documented instance of an
+    event videographer removing an SD card minutes after the shooting underlines
+    the urgent need for a cryptographic media ledger. 
+
+
+    While these procedural and transparency defects are real, they do not
+    validate the expansive alternative architectures proposed by commentators.
+    The "device-at-the-microphone" hypothesis (KRK-C018) is currently built on
+    contested physics derived from compressed social media files and is directly
+    contradicted by the autopsy's gunshot classification. Similarly, theories
+    attempting to map authenticated donor pressure (KRK-C014) or tragic federal
+    explosives-manufacturing accidents (KRK-C025) onto the assassination
+    entirely lack the operational bridge evidence—communications, funding, or
+    forensic links—required for attribution. The evidence warrants deep
+    skepticism of the record's current completeness, but rejects the leap from
+    pre-trial opacity to proven conspiracy.
+claimAssessments:
+  - claimId: KRK-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: Multiple independent channels—geolocated social media video analyzed
+      by the Washington Post, FBI-released escape footage, and sworn preliminary
+      hearing testimony detailing a gravel disturbance in a prone
+      position—converge to verify a person fled the roof immediately after the
+      shot. The strongest opposing consideration is that the public currently
+      relies on excerpts and sworn descriptions rather than raw, native files
+      detailing the exact pre-shot movements.
+  - claimId: KRK-C002
+    verdict: well_supported
+    confidence: high
+    reasoning: FBI public statements and preliminary hearing testimony establish the
+      recovery of a towel-wrapped .30-06 rifle along the apparent escape route.
+      While the defense highlighted other scene complexities like an empty
+      holster, no party to the litigation has disputed the physical recovery of
+      the rifle itself. A full, unbroken chain-of-custody log remains absent
+      from the public view.
+  - claimId: KRK-C003
+    verdict: contradicted
+    confidence: high
+    reasoning: The claim that a public, conclusive identification exists is
+      objectively false. The ATF examiner explicitly testified under oath that
+      the toolmarks on the damaged fragments were inconclusive regarding the
+      recovered rifle. A finding of class-level consistency does not equal a
+      conclusive identification.
+  - claimId: KRK-C004
+    verdict: established
+    confidence: high
+    reasoning: Sworn preliminary hearing testimony directly confirms the ATF
+      examination ended with an inconclusive result, explicitly noting the
+      fragments could neither be identified to nor excluded from the suspect
+      rifle. This conforms to standard forensic outcomes for damaged fragments,
+      though the complete ATF lab report has not been published.
+  - claimId: KRK-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: The ATF examiner testified under oath to receiving only four
+      fragments after being informed that seven were originally documented in a
+      photograph. No public accounting currently reconciles this discrepancy.
+      While multi-custodian fragmentation (e.g., retention by the medical
+      examiner) frequently explains such gaps without malice, the gap remains an
+      objective transparency failure.
+  - claimId: KRK-C006
+    verdict: well_supported
+    confidence: moderate
+    reasoning: Contemporaneous courtroom reporting confirms the medical examiner's
+      report was admitted at the hearing and classified the death as a homicide
+      by gunshot wound to the neck. Confidence is capped at moderate because the
+      report was entered through an investigator over a hearsay objection,
+      rather than via the authoring pathologist.
+  - claimId: KRK-C007
+    verdict: contradicted
+    confidence: high
+    reasoning: The complete autopsy package—including scaled wound photographs,
+      internal trajectory mapping, and radiology—has not been released to the
+      public. As a result, independent forensic pathologists cannot yet audit
+      the state's medical findings or conclusively test alternative
+      trajectory/device claims.
+  - claimId: KRK-C008
+    verdict: well_supported
+    confidence: high
+    reasoning: The prosecution presented testimony that DNA highly consistent with
+      the suspect was found on the rifle, Dremel tool, and cartridges. This
+      claim strictly grades the presentation of this evidence, which is heavily
+      documented. The strongest opposing consideration is the state expert's
+      acknowledgment that source-level DNA does not inherently answer
+      activity-level questions (such as touch transfer).
+  - claimId: KRK-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: The public record demonstrates that prosecutors presented exhibits
+      and testimony attributing incriminating statements to the suspect,
+      including a roommate interview and digital messages. This establishes the
+      presentation of the state's narrative, though the underlying digital
+      extractions and provider records have not yet been rigorously
+      authenticated via cross-examination at trial.
+  - claimId: KRK-C010
+    verdict: contradicted
+    confidence: moderate
+    reasoning: "The publicized anomalies target a straw-man version of the official
+      timeline. An unauthenticated 8:07 a.m. off-campus video is not logically
+      incompatible with an 8:29 a.m. campus arrival, and no primary official
+      document actually asserts the shooter disassembled the rifle on the roof
+      post-shot. "
+  - claimId: KRK-C011
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: Footage appears to show the event videographer pocketing a rear
+      camera SD card approximately four minutes after the shot, which aligns
+      with sworn testimony that investigators initially received digital copies
+      rather than original cards. Provisionality stems from the reliance on a
+      mediated video clip with an unverified clock; furthermore, the observable
+      act perfectly aligns with a contractor innocently securing his own gear
+      during a crisis.
+  - claimId: KRK-C012
+    verdict: unresolved
+    confidence: moderate
+    reasoning: Sworn testimony documents the same-day transfer of copies (a flash
+      drive and downloads), not original SD cards. While a TPUSA spokesman
+      asserted the FBI holds the originals, there is no public law enforcement
+      evidence inventory corroborating that assertion. The chain of custody for
+      the original media remains an open question pending a full hash ledger.
+  - claimId: KRK-C013
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: Independent records reviews cite a cleanup invoice from September 11
+      and paving by September 14, and hearing testimony confirms the lead
+      investigator did not personally authorize the alteration. The grade
+      remains provisional because the full scene-release and authorization
+      chain, which could routinely route through other campus or state
+      officials, is not public.
+  - claimId: KRK-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: The authenticity of the private messages describing extreme donor
+      pressure and the loss of $2 million in funding over Tucker Carlson was
+      confirmed on the record by TPUSA's spokesman and another participant. The
+      texts establish a highly pressurized motive environment in the final
+      weeks, even though the native device export has not been released.
+  - claimId: KRK-C015
+    verdict: contradicted
+    confidence: high
+    reasoning: There is absolutely zero public operational evidence bridging the
+      documented donor pressure or the disputed Hamptons intervention to the
+      actual assassination. Treating an angry motive environment as proof of
+      operational coordination—absent any communications, financial trails, or
+      forensic links—is a massive inferential leap the record currently flatly
+      rejects.
+  - claimId: KRK-C016
+    verdict: established
+    confidence: high
+    reasoning: A formal judicial ruling held a deputy prosecutor in civil contempt
+      for violating a pretrial publicity order by publicly claiming the state
+      had "ample evidence" of guilt. The judge noted the violation while
+      explicitly upholding the prosecutor's right to correct actual
+      misinformation regarding the inconclusive ballistics result.
+  - claimId: KRK-C017
+    verdict: contradicted
+    confidence: high
+    reasoning: While transparency failures like rapid scene paving and publicity
+      violations are heavily documented, inferring deliberate evidence
+      destruction requires affirmative proof of intent that does not exist in
+      the public record. Every cited anomaly possesses a mundane explanation
+      (biohazard cleanup, PR missteps) that completely absorbs the observed
+      facts.
+  - claimId: KRK-C018
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The "exploding microphone" theory relies entirely on contested
+      computational analysis of compressed social media video and subjective
+      eyewitness acoustics. It is strongly contradicted by the medical
+      examiner's gunshot classification, recovered fragments, and a lack of
+      verified explosive residue. However, because its physical claims are
+      uniquely testable (via blind synchronization and full autopsy), it earns a
+      weak support grade pending those decisive checks.
+  - claimId: KRK-C019
+    verdict: contradicted
+    confidence: high
+    reasoning: The public record is objectively missing the key documents required
+      to independently audit the official account from end to end. An
+      unreconciled fragment count, an inconclusive ballistic match, reliance on
+      video copies rather than original SD cards, and a withheld primary autopsy
+      package firmly contradict the claim that the current record is fully
+      auditable.
+  - claimId: KRK-C025
+    verdict: contradicted
+    confidence: high
+    reasoning: "Verification isolates the cluster into disparate facts: the AES
+      federal contract is real, and the fatal factory explosion occurred.
+      However, state investigators found massive safety violations explaining
+      the blast, archive forensics proves the device theory predated the
+      explosion, and no evidence bridges the contract or the unsourced flight to
+      the suspect or the assassination scene."
+  - claimId: KRK-C026
+    verdict: provisionally_supported
+    confidence: high
+    reasoning: The sheriff's office confirmed in a written response that responsive
+      surrender-area surveillance footage is no longer available due to standard
+      30-day auto-deletion policies. The claim is provisional only because the
+      official response does not explicitly confirm that the suspect was
+      captured on the purged footage, only that responsive records were
+      destroyed.
+  - claimId: KRK-C027
+    verdict: established
+    confidence: high
+    reasoning: It is thoroughly documented across multiple outlets that the former
+      NCTC director went on the record to claim the FBI director halted his
+      foreign nexus inquiry. This establishes that the official made the
+      assertion, including the FBI's stated trial-protection rationale; it does
+      not grade whether a foreign nexus actually exists.
+  - claimId: KRK-C028
+    verdict: unresolved
+    confidence: moderate
+    reasoning: George Zinn's stated intent to divert police to aid the "real
+      shooter" is logged in the court record, making his false confession more
+      than standard noise. However, the investigating agency reports no evidence
+      of actual collusion, and claims of financial compensation exist only in
+      punditry. The episode is genuinely open due to the thinness of the
+      evidence in both directions.
+  - claimId: KRK-C032
+    verdict: contradicted
+    confidence: high
+    reasoning: While the screwdriver DNA was absent from the initial charging
+      document (which is ordinary for high-level pleadings), it was explicitly
+      presented under oath by forensic analysts ten months later at the
+      preliminary hearing. Therefore, the assertion that the prosecution quietly
+      abandoned or buried the evidence is factually false.
