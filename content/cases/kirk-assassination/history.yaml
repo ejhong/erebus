@@ -139,3 +139,21 @@
     erebus-editorial-audit-v1); publishes only through the constitutional gate's
     multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+
+- date: "2026-08-26"
+  change: >-
+    Study KRK-S003 supersedes KRK-S001: the frozen protocol's third
+    searcher completed after publication and surfaced one candidate the
+    published table had missed — Emanuel AME Church (bullet-scarred wall
+    panels cut out by day three, services on day four,
+    church-authorized). Per the append-only rule the published rows were
+    never edited; the successor carries the full table plus the new row,
+    the findings are refined accordingly, and the ledger's two evidence
+    records re-point to the superseding workpaper.
+  reason: >-
+    Coverage correction under the supersession mechanism; the discovery
+    and its native verification are recorded on the KRK-S001 collection
+    PR.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
