@@ -1,8 +1,10 @@
 # Going public: what every agent session needs to do
 
-**Status:** pending. The history rewrite has **not** run yet.
+**Status: the history rewrite RAN on 2026-08-26.** `main` was force-pushed
+with rewritten history and all other branches were deleted. If your clone
+predates it, it is stale — see "after the rewrite" below.
 **Audience:** every agent session and automation that works in this repository.
-**Short version:** land your work, then expect to re-clone. Nothing is lost. Never force-push a branch created before the rewrite.
+**Short version:** re-clone before doing anything. Nothing is lost. Never force-push a branch created before the rewrite.
 
 ---
 
@@ -29,6 +31,29 @@ last count **44 of 47 branches carried `casework/`, and 22 carried all four
 copyrighted files.**
 
 Publishing before the purge would republish a complete copyrighted book.
+
+## What the executed purge actually removed (wider than planned)
+
+The pre-purge audit found the plan's `casework/`-only scope too narrow. This
+repository shares pre-split history with the upstream engine repository, and
+that history carried material with exactly the same problems:
+
+- `research/` — third-party copyrighted PDFs kept as discovery aids (saved
+  web pages, a PubPeer thread capture, Substack article captures) alongside
+  the founder's own working documents;
+- `inbox/processed/trn-villarroel-2026-08-24/` — **a private email from a
+  living researcher to the founder**, with personal email addresses and a
+  reference to an unpublished manuscript. Material supplied in confidence;
+  its presence contradicted the upstream case history's own statement that
+  the correspondence "is not published";
+- the supplied research briefs committed loose in `inbox/` (the Kirk
+  adversarial audit in PDF, JSON and Markdown forms; the Immortality Key
+  brief; one stray attachment image).
+
+All of those paths were purged along with `casework/`, from every ref. The
+same exposure exists in the upstream engine repository — which is **already
+public** — and was reported there the same day with an urgent removal PR;
+its own history rewrite is pending the founder's authorization there.
 
 ## Does this hurt your session? What you must do
 
@@ -110,20 +135,54 @@ check that cannot be bypassed by not reading a document.
 1. ✅ Constitution amended; `casework/` removed from `main`; base path and
    Pages deploy workflow ready (PR #41).
 2. ✅ Re-publication guard in CI; this document.
-3. ⬜ **All in-flight work lands.** ← *currently waiting here*
-4. ⬜ Stale branches deleted — most of the 47 are squash-merged leftovers;
-   keep `main`.
-5. ⬜ Purge runs across all remaining refs; force-push
-   (`scripts/purge-casework-history.sh`, which refuses to run without explicit
-   confirmation and verifies afterwards that no casework path and no
-   third-party blob is reachable).
-6. ⬜ Every session re-clones.
-7. ⬜ Repository visibility flips to public.
-8. ⬜ Pages comes up; confirm the site serves.
-9. ⬜ Cloudflare Pages project and Access policy removed — **last**, so there
-   is never a window with no live site.
+3. ✅ All in-flight work landed (last: PR #45, 2026-08-26).
+4. ✅ Stale branches deleted — 39 in total, every one a squash-merged
+   leftover verified against its merged PR; only `main` remains.
+5. ✅ Purge ran across all remaining refs (widened scope above); `main`
+   force-pushed 2026-08-26. Verified from a fresh clone: **zero** casework,
+   research or private-inbox paths reachable from any ref; **zero** tracked
+   or historical `.pdf`/`.mhtml`/`.epub`/`.docx` blobs; the rewritten HEAD
+   tree is byte-identical to the pre-rewrite `main` tree (the rewrite
+   changed history only, never content). Pre-rewrite mirror backup retained
+   off-repo by the operating session.
+6. ✅ This session re-cloned and verified. **Other sessions: re-clone.**
+7. ⬜ **GitHub Support sensitive-data request** ← *the flip waits here; see
+   the corrected risk section below*
+8. ⬜ Repository visibility flips to public (founder's act).
+9. ⬜ Pages enabled (Settings → Pages → Source: GitHub Actions); confirm the
+   site serves.
+10. ⬜ Cloudflare Pages project and Access policy removed — **last**, so
+    there is never a window with no live site.
 
-## One residual risk, and the decision taken on it
+## The residual risk, corrected after testing (supersedes the paragraph below)
+
+The original risk statement — preserved below for the record — held that
+post-purge exposure requires an adversary to know an *unpublished,
+unguessable commit SHA*. **Testing after the force-push shows that is
+wrong.** GitHub retains every pull request's head as a fetchable ref, and
+those refs are not unguessable — they are enumerable:
+
+    git fetch origin refs/pull/12/head   # returns the full casework/ tree
+                                         # today, after the purge
+
+The same content renders in each merged PR's "Files changed" view. So on
+flip day, the purged material would be one enumerable fetch away for
+anyone, and browsable in the PR UI — a categorically weaker barrier than
+the one the accepted-risk decision was reasoned on.
+
+**Consequence:** the founder's decision to rewrite in place and keep the PR
+record stands — it was made for inspectability reasons that still hold —
+but the GitHub Support request is upgraded from "cheap and worth making" to
+**a precondition for flipping visibility**. GitHub's documented
+[sensitive-data removal process](https://docs.github.com/en/site-policy/content-removal-policies/github-sensitive-data-removal-policy)
+covers exactly this: ask Support to clear cached PR views and run a
+garbage collection so the rewritten history is the only one served. The
+alternative that avoids the wait — pushing the clean history to a fresh
+repository and keeping this one private as the governance archive — remains
+available if Support is slow, at the documented cost of splitting the PR
+record from the public repo.
+
+### The original risk statement (superseded 2026-08-26, kept for the record)
 
 GitHub can retain unreachable objects server-side after a force-push and may
 serve them by direct commit SHA for a period.
