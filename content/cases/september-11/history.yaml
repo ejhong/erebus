@@ -218,3 +218,28 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  change: >-
+    Study SEP-S001 collection published: the three peer-reviewed
+    empirical studies of pre-attack option trading, statistics and
+    interpretations in separate cells per the frozen rule, with the
+    Commission's note quoted verbatim as the comparandum. Evidence
+    SEP-E040 enters the ledger (qualifies SEP-C015/C016): abnormality
+    is unanimous in the literature, attribution is nowhere claimed, and
+    the statistical and attributional records have never met — the
+    tracing files SEP-R005 requests are where they would. Workpaper
+    source SRC-SEP-S001 added. The OpenAI searcher honestly marked its
+    unverified cells but supplied a fabricated Commission quotation
+    with an invented page locator; the natively verified note text is
+    used instead, and the incident is recorded in the limitations.
+  reason: >-
+    The put-options dispute is argued from summaries of summaries in
+    both directions; the actual peer-reviewed record is three checkable
+    papers whose statistics and interpretations are routinely merged.
+    Freezing the separation before collection makes the table useless
+    to either side's compression and precise about what only a records
+    release can resolve.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content

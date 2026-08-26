@@ -668,3 +668,17 @@
     - "Peer-reviewed and directly addressed to the demolition hypotheses; not an end-to-end simulation of either tower's total progression, which no published work has produced."
     - "No content quotation is authorized from this record until the text is obtained."
   background: true
+
+- id: SRC-SEP-S001
+  title: "Workpaper: the peer-reviewed record on pre-9/11 option trading (study SEP-S001)"
+  organization: "This site (AI-authored project work held in the repository)"
+  year: "2026"
+  sourceType: workpaper
+  studyId: SEP-S001
+  identifier: "Criteria frozen 2026-08-26 (hash f2938e9757ab); table collected 2026-08-26"
+  verification: ai_verified
+  verificationNote: >-
+    Every row cell carries its own citation and verification label on the
+    study page; the aggregate findings are the only ledger-bearing grain.
+  reliabilityNotes:
+    - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
