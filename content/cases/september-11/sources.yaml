@@ -1,0 +1,238 @@
+# SEP-001 source registry. Every entry was independently verified by the
+# editorial AI against the live primary document (or a dated archive
+# snapshot, noted) on 2026-08-26 before entry; verificationNote records how.
+# Casework briefs are never cited here, and no citation was inherited from
+# them unchecked — several brief-supplied URLs proved truncated, mirrored, or
+# attached to the wrong claim, and were corrected or dropped.
+#
+# Reliability notes distinguish access from inference: a source can be
+# authoritative for what it directly shows and weak for its conclusions.
+# Advocacy material on both sides is admitted only as claim-origin
+# documentation and labeled as such.
+
+# ── WTC 7: the challenger study ─────────────────────────────────────────
+
+- id: SRC-UAF-WTC7-2020
+  title: "A Structural Reevaluation of the Collapse of World Trade Center 7 — Final Report"
+  authors: ["J. Leroy Hulsey", "Zhili Quan", "Feng Xiao"]
+  organization: "Institute of Northern Engineering, University of Alaska Fairbanks"
+  year: "2020"
+  sourceType: report
+  identifier: "INE Report 18.17; March 2020; 112 pp."
+  url: "https://ine.uaf.edu/wtc7"
+  verification: ai_verified
+  verificationNote: >-
+    Final report PDF downloaded and text-extracted 2026-08-26 (126 PDF
+    pages); conclusions quoted from report pp. ii, 3, and 7. Project page
+    live at the URL given.
+  reliabilityNotes:
+    - "Funded by Architects & Engineers for 9/11 Truth, an advocacy organization campaigning for the conclusion the study reached; the report names the funder without an amount, and the $316,153 figure appears on the funder's own project page."
+    - "Not published in a peer-reviewed engineering journal; reviewers included academics associated with the funder."
+    - "Full input and results data were released, which is more than the federal investigation it disputes has done — the openness is real and independent of whether the modeling is right."
+    - "The report's own conclusion is hedged more carefully than its public reception: it states it cannot completely rule out an alternative scenario, only that it identified none capable of producing the observed behavior."
+
+# ── WTC 7 and towers: technical criticism of the challenger study ────────
+
+- id: SRC-METABUNK-UAF-2017
+  title: "Debunked: UAF study shows WTC7 could not have collapsed from fire"
+  authors: ["Mick West"]
+  organization: "Metabunk"
+  year: "2017"
+  sourceType: webpage
+  identifier: "Thread 9056, started September 13, 2017"
+  url: "https://www.metabunk.org/threads/debunked-uaf-study-shows-wtc7-could-not-have-collapsed-from-fire.9056/"
+  verification: ai_verified
+  verificationNote: >-
+    Thread fetched live 2026-08-26; the criticisms quoted in this case's
+    evidence records are verbatim from the opening post.
+  reliabilityNotes:
+    - "A moderated discussion forum, not a peer-reviewed venue; admitted here as documentation of specific technical criticisms, whose force rests on the arguments themselves rather than on the venue."
+    - "The site is openly adversarial to the hypothesis it examines, as its thread titles show; the mirror caution applies that this case applies to advocacy material on the other side."
+    - "The opening post concerns the 2017 presentation and states it was superseded by the draft report discussed in a separate thread."
+
+- id: SRC-METABUNK-UAF-DRAFT-2019
+  title: "Sept 3 2019 release of Hulsey's WTC7 draft report — analysis"
+  authors: ["Mick West"]
+  organization: "Metabunk"
+  year: "2019"
+  sourceType: webpage
+  identifier: "Thread 10890, started September 3, 2019"
+  url: "https://www.metabunk.org/threads/sept-3-2019-release-of-hulseys-wtc7-draft-report-analysis.10890/"
+  verification: ai_verified
+  verificationNote: >-
+    Thread fetched live 2026-08-26; quoted criticisms are verbatim from
+    identified member posts.
+  reliabilityNotes:
+    - "Forum material; individual posts are attributed to pseudonymous participants and carry no institutional authority."
+    - "Quoted here for two specific technical objections — the debris-distribution gap and the single static temperature input — that the challenger study's own text does not answer."
+
+# ── WTC dust chemistry: both keystones sit outside normal peer review ───
+
+- id: SRC-HARRIT-2009
+  title: "Active Thermitic Material Discovered in Dust from the 9/11 World Trade Center Catastrophe"
+  authors:
+    - "Niels H. Harrit"
+    - "Jeffrey Farrer"
+    - "Steven E. Jones"
+    - "Kevin R. Ryan"
+    - "Frank M. Legge"
+    - "Daniel Farnsworth"
+    - "Gregg Roberts"
+    - "James R. Gourley"
+    - "Bradley R. Larsen"
+  organization: "The Open Chemical Physics Journal"
+  year: "2009"
+  sourceType: paper
+  identifier: "Open Chem. Phys. J. 2:7–31; DOI 10.2174/1874412500902010007"
+  url: "https://benthamopenarchives.com/abstract.php?ArticleCode=TOCPJ-2-7"
+  verification: ai_verified
+  verificationNote: >-
+    Abstract page fetched live 2026-08-26 with DOI; quoted findings are
+    verbatim from the published abstract. Full text not obtained this pass.
+  reliabilityNotes:
+    - "The journal's editor-in-chief resigned over its publication, telling a Danish science news service that the article was printed without her permission and should never have appeared in that journal; she also noted the subject lay outside her expertise, so her objection was to process, not to the chemistry."
+    - "No independent laboratory has reproduced the paper's central finding on custody-controlled samples."
+    - "Samples were collected privately by correspondents of the authors, not under a documented chain of custody."
+
+- id: SRC-MILLETTE-2012
+  title: "Revised Report of Results: MVA9119 — Progress Report on the Analysis of Red/Gray Chips in WTC Dust"
+  authors: ["James R. Millette"]
+  organization: "MVA Scientific Consultants"
+  year: "2012"
+  sourceType: report
+  identifier: "Dated March 1, 2012 (supersedes February 29, 2012); 21 pp.; prepared for Classical Guide, Denver, CO"
+  url: "https://www.metabunk.org/sk/9119ProgressReport022912_rev1_030112webHiRes.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Full report text obtained and read 2026-08-26 from a third-party mirror
+    (the original hosting is gone; identical text served by two further
+    mirrors); conclusions quoted verbatim from p. 6 of 21.
+  reliabilityNotes:
+    - "A consulting progress report prepared for a private client, never published in a peer-reviewed journal — the same venue objection that applies to the paper it rebuts, and this case applies it symmetrically."
+    - "No authoritative host: the document survives only on third-party mirrors, one of them a site adversarial to the hypothesis under test."
+    - "Analyzed the analyst's own archived dust samples from four Manhattan locations, not the samples used in the paper it rebuts — so it is an independent test of the claim, not a re-examination of the same material."
+
+# ── pre-attack option trading ───────────────────────────────────────────
+
+- id: SRC-POTESHMAN-2006
+  title: "Unusual Option Market Activity and the Terrorist Attacks of September 11, 2001"
+  authors: ["Allen M. Poteshman"]
+  organization: "The Journal of Business (University of Chicago Press)"
+  year: "2006"
+  sourceType: paper
+  identifier: "J. Bus. 79(4):1703–1726; DOI 10.1086/503645"
+  url: "https://doi.org/10.1086/503645"
+  verification: ai_verified
+  verificationNote: >-
+    DOI and full bibliographic record confirmed via CrossRef 2026-08-26;
+    complete abstract fetched and quoted verbatim from the RePEc/IDEAS
+    record. Publisher full text is paywalled and was not obtained.
+  reliabilityNotes:
+    - "Peer-reviewed and methodologically explicit; its finding is a statistical characterization of order flow, which cannot identify a trader or a motive."
+    - "The paper's own conclusion is stated as consistency with informed trading, not as a demonstration of it — a distinction both sides of the public argument routinely drop."
+
+- id: SRC-CHESNEY-2015
+  title: "Detecting abnormal trading activities in option markets"
+  authors: ["Marc Chesney", "Remo Crameri", "Loriano Mancini"]
+  organization: "Journal of Empirical Finance"
+  year: "2015"
+  sourceType: paper
+  identifier: "J. Empir. Finance 33:263–275; DOI 10.1016/j.jempfin.2015.03.008"
+  url: "https://doi.org/10.1016/j.jempfin.2015.03.008"
+  verification: ai_verified
+  verificationNote: >-
+    DOI and metadata confirmed via CrossRef; full published text read
+    2026-08-26 from an openly hosted copy of the published version. The
+    paper's body treats the September 11 trades only summarily, deferring
+    detail to a separate appendix.
+  reliabilityNotes:
+    - "Peer-reviewed for the method; the granular September 11 figures widely attributed to this paper are not in its body but in the working-paper version and separate appendix, and this case cites them to that record instead."
+    - "Like Poteshman, it detects statistical abnormality, not identity or intent."
+
+- id: SRC-SNOPES-PUTS-2001
+  title: "Were Stocks of Airlines Suspiciously Shorted Just Before 9/11?"
+  authors: ["David Mikkelson"]
+  organization: "Snopes.com"
+  year: "2001"
+  sourceType: webpage
+  identifier: "Published October 3, 2001; rating: False"
+  url: "https://www.snopes.com/fact-check/put-paid/"
+  verification: ai_verified
+  verificationNote: >-
+    Page fetched live 2026-08-26; carries the exchange volume figures and
+    the 9/11 Commission trace-out passage verbatim as quoted in this case's
+    evidence records.
+  reliabilityNotes:
+    - "A secondary carrier: the option-volume figures derive from September 2001 wire and newspaper reporting of exchange data, and no primary exchange document was located — so these figures and that press coverage are ONE source, not two."
+    - "Admitted because it preserves the specific numbers in stable, quotable form; superseded by the exchange record or the Commission's own text where those can be obtained."
+
+# ── media episodes: established observations, contradicted inferences ────
+
+- id: SRC-BBC-PORTER-2007
+  title: "Part of the conspiracy?"
+  authors: ["Richard Porter"]
+  organization: "BBC (The Editors blog)"
+  year: "2007"
+  sourceType: webpage
+  identifier: "Posted February 27, 2007; author then head of news, BBC World"
+  url: "https://www.bbc.co.uk/blogs/theeditors/2007/02/part_of_the_conspiracy.html"
+  verification: ai_verified
+  verificationNote: >-
+    Live archived BBC page fetched 2026-08-26; byline and date confirmed
+    against a Wayback snapshot of 2007-03-03. Quotes verbatim.
+  reliabilityNotes:
+    - "A first-person institutional account of the broadcaster's own error, which is what makes it useful and also what limits it: it is the interested party explaining itself."
+    - "Contains no timestamps — the frequently cited on-air time for the premature report is not in this source and is not asserted anywhere in this case file."
+
+- id: SRC-USATODAY-PULLIT-2022
+  title: "Fact check: World Trade Center Building 7 collapsed due to fire on 9/11, not pre-rigged explosives"
+  authors: ["Sudiksha Kochi"]
+  organization: "USA TODAY"
+  year: "2022"
+  sourceType: webpage
+  identifier: "Updated September 23, 2022; rating: False"
+  url: "https://www.usatoday.com/story/news/factcheck/2022/09/23/fact-check-world-trade-center-building-7-collapsed-due-fire/10428919002/"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-26; carries the disputed remark verbatim as
+    transcribed from the 2002 PBS documentary, plus the 2022 clarification
+    from Larry Silverstein's spokesperson.
+  reliabilityNotes:
+    - "Journalism, admitted as the stable carrier of a quotation whose primary source is a 2002 PBS documentary this case has not viewed first-hand; no in-film timestamp locator exists here."
+    - "The spokesperson's explanation of the remark is an assertion by an interested party, recorded as such — it is not independent confirmation of what the speaker meant."
+
+# ── towers progression: the conventional mechanics literature ────────────
+
+- id: SRC-BAZANT-2002
+  title: "Why Did the World Trade Center Collapse? — Simple Analysis"
+  authors: ["Zdeněk P. Bažant", "Yong Zhou"]
+  organization: "Journal of Engineering Mechanics (ASCE)"
+  year: "2002"
+  sourceType: paper
+  identifier: "J. Eng. Mech. 128(1):2–6; DOI 10.1061/(ASCE)0733-9399(2002)128:1(2)"
+  url: "https://doi.org/10.1061/(ASCE)0733-9399(2002)128:1(2)"
+  verification: ai_verified
+  verificationNote: >-
+    DOI and full bibliographic record confirmed via CrossRef 2026-08-26.
+    Publisher text is paywalled and was not obtained, so this case quotes
+    no passage from it and cites it only for what it is and when it appeared.
+  reliabilityNotes:
+    - "Published within weeks of the event on deliberately simplified assumptions; its value is order-of-magnitude, and its author's later papers supersede its detail."
+    - "No content quotation is authorized from this record until the text is obtained."
+
+- id: SRC-BAZANT-2008
+  title: "What Did and Did Not Cause Collapse of World Trade Center Twin Towers in New York?"
+  authors: ["Zdeněk P. Bažant", "Jia-Liang Le", "Frank R. Greening", "David B. Benson"]
+  organization: "Journal of Engineering Mechanics (ASCE)"
+  year: "2008"
+  sourceType: paper
+  identifier: "J. Eng. Mech. 134(10):892–906; DOI 10.1061/(ASCE)0733-9399(2008)134:10(892)"
+  url: "https://doi.org/10.1061/(ASCE)0733-9399(2008)134:10(892)"
+  verification: ai_verified
+  verificationNote: >-
+    DOI and full bibliographic record confirmed via CrossRef 2026-08-26;
+    publisher text paywalled and not obtained, so no passage is quoted from
+    it here.
+  reliabilityNotes:
+    - "Peer-reviewed and directly addressed to the demolition hypotheses; not an end-to-end simulation of either tower's total progression, which no published work has produced."
+    - "No content quotation is authorized from this record until the text is obtained."
