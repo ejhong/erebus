@@ -8,7 +8,11 @@ Start with the sturdiest finding in the case. [The Huanan market was the geograp
 
 The observation that carries the statistical weight is subtler. [Among the earliest cases, those with no reported market exposure lived closer to the market than the people who worked there]{claim=COV-C002}. That is the finding hardest for ascertainment bias to explain: if early cases were found because investigators looked around the market, the *unlinked* cases should not be the ones living nearest it. It is also a single spatial-statistical result at p = 0.029, on a case set whose completeness is disputed, never independently reproduced, and contested in a published exchange that remains unresolved. Load-bearing and not yet load-tested.
 
+{plate:IMG-COV-P01}
+
 Then the finding both sides invoke: [genetic material from susceptible mammals — raccoon dog, hoary bamboo rat, Malayan porcupine, masked palm civet — occurs in the virus-positive samples from a wildlife stall]{claim=COV-C006}. The authors' own framing is the honest one and deserves quoting rather than paraphrasing: only a zoonotic origin *directly predicts* co-detection of the virus and wildlife DNA — and their data "cannot conclude which of these species may have been infected." Co-presence, not infection. An early unreported human case shedding in the same stall would look identical.
+
+{plate:IMG-COV-P02}
 
 ## The two absences
 
@@ -35,6 +39,8 @@ One further correction matters here. This site's own research brief attributed t
 [The furin cleavage site is absent from SARS-CoV-2's closest sampled relatives]{claim=COV-C011}. True, and the best calibration point in the case: a highly credible observation with almost no discriminating power, because both hypothesis families accommodate it. The stronger formulation in circulation — that such a site is "not found in nature" — is contradicted; furin motifs occur across other coronavirus lineages, and WHO notes the feature had been identified in nature before.
 
 [No feature accepted as diagnostic of engineering has been found]{claim=COV-C012}, and almost all intelligence elements assessed the virus was not engineered, all that it was not a bioweapon. But WHO's sentence on this deserves to be read whole, because its second half is almost always dropped: the genomic features "are readily explained by natural evolution and provide no support to theories of a man-made origin. However, the latter is also not refuted by biological data." No support, and no refutation. Seamless methods leave no required scar, and the intelligence reporting itself notes the institute possessed such methods — so this finding weighs against a *deliberately engineered construct*, and barely at all against a natural virus escaping a laboratory.
+
+{plate:IMG-COV-P03}
 
 ## The document, and the deed
 

@@ -1,0 +1,319 @@
+# Cross-model check run — an independent judge (Kimi K3 (Moonshot, via Venice)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-kimi-r2
+model: Kimi K3 (Moonshot, via Venice) — independent check run via kimi-k3
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: mixed
+  loadBearing:
+    - SEP-C003
+    - SEP-C005
+    - SEP-C010
+    - SEP-C011
+    - SEP-C013
+    - SEP-C019
+    - SEP-C023
+    - SEP-C024
+  weakestLinks:
+    - SEP-C004
+    - SEP-C014
+    - SEP-C017
+    - SEP-C021
+  synthesis: >-
+    The case file is unusually disciplined about the distinction between
+    observation and inference, and this assessment largely ratifies its
+    structure. The conventional account of September 11 — al-Qaeda authorship,
+    fire-and-impact collapse of the towers, bureaucratic failure rather than
+    complicity — is the only account the evidence records support at scale. What
+    the dossier correctly refuses to do is convert that broad correctness into a
+    blanket certification of every specific official claim.
+
+    The Twin Towers branch is effectively closed: initiation at the impact
+    floors, the seismic silence before collapse, and the absence of any
+    recovered device are positive disproofs, not mere absences. The fireproofing
+    counterfactual (SEP-C011) is well supported by the agency's own hedged text.
+    The WTC 7 branch is genuinely mixed: the federal mechanism (SEP-C003) is
+    specific and internally coherent but cannot be recomputed from the released
+    record (SEP-C005), and the challenger study (SEP-C004) that would replace it
+    is methodologically compromised — funded by the advocacy group whose
+    position it confirms, driven by a static temperature field, and apparently
+    deriving its key conclusion (simultaneous column failure) as an input rather
+    than a finding. The demolition hypothesis for WTC 7 (SEP-C010) is weakly
+    supported not because the official model is proven but because it is
+    unaudited, and because no affirmative physical artifact — device, residue,
+    or blast signature — has ever been produced. The acoustic prediction of
+    130–140 dB at half a mile (SEP-C009) is falsifiable and unmet.
+
+    The dust chemistry is the cleanest example of symmetric failure: the
+    nanothermite claim (SEP-C014) is contradicted by the absence of elemental
+    aluminum, yet the same independent analysis refutes the popular debunking by
+    failing to match the chips to the building's primer. Both camps are wrong at
+    once, and the material remains unidentified. The trading anomaly (SEP-C015)
+    is real at the observation level; the inference to foreknowledge (SEP-C016)
+    is weakly supported because the Commission's trace-outs are specific,
+    plausible, and unverifiable from outside. The Saudi file is the only branch
+    with an active forcing mechanism: the assistance to two hijackers is
+    documented (SEP-C022), the institutional-attribution question (SEP-C023) is
+    unresolved and now stayed on appeal after a 2025 jurisdictional ruling.
+
+    The strongest steelman for the challenger position is that two central
+    technical claims — WTC 7 initiation and total tower progression — rest on
+    modeling that has never been independently reproduced, and that the
+    government's own record includes proven deception on air quality (SEP-C024)
+    and admitted inaccuracy on air defense (SEP-C020). The strongest steelman
+    for the conventional position is that every specific alternative mechanism
+    tested in the evidence record fails on physics or provenance: no blast
+    signature, no thermitic material, no pre-collapse seismic signal, no
+    identified informed trader, and no documented warning that specified time,
+    place, and method. The case verdict is mixed because the official account is
+    substantially correct but not fully checkable at its two most consequential
+    engineering points, and because the established record of official
+    misconduct explains distrust without vindicating the conclusions distrust
+    reached.
+claimAssessments:
+  - claimId: SEP-C001
+    verdict: established
+    confidence: high
+    reasoning: Documented by the federal investigation and, independently and
+      earlier, by the 2002 FEMA study, which recorded the broken water main and
+      the absence of manual firefighting. The observation is accepted by every
+      hypothesis in the case. The strongest opposing consideration is the
+      twenty-second discrepancy between video-derived and seismic collapse
+      times, which is why the claim says "about."
+  - claimId: SEP-C002
+    verdict: established
+    confidence: high
+    reasoning: Stated verbatim in the final report's principal findings after public
+      comment, with the three-stage descent described in the agency's own FAQ.
+      The measurement is one visible face from video, but it is the government's
+      own published figure, not a challenger's calculation. The strongest
+      opposing consideration is that the interval was conceded and modeled by
+      the investigation itself, so it cannot function as evidence of
+      suppression.
+  - claimId: SEP-C003
+    verdict: mixed
+    confidence: moderate
+    reasoning: "The mechanism is specific, falsifiable, and requires no melted
+      steel, but it has never been independently reproduced and cannot be: the
+      modeling files needed to recompute it were withheld and the withholding
+      upheld in court. The strongest opposing consideration is the challenger
+      study's report that its simulations could not reproduce the observed
+      collapse from this mechanism — though that study is itself seriously
+      defective (SEP-C004)."
+  - claimId: SEP-C004
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: "A genuine finite-element effort that released all its data, which is
+      more openness than the investigation it disputes has offered. Against it:
+      advocacy funding, no journal peer review, a single static temperature
+      field rather than a modeled fire progression, and the critical objection
+      that simultaneous column failure appears to be an input rather than a
+      finding. Its own text concedes it cannot rule out an alternative scenario
+      it did not identify."
+  - claimId: SEP-C005
+    verdict: established
+    confidence: high
+    reasoning: "Documented in the court's own opinion: 25,644 files released, 68,500
+      withheld, under a statutory finding that release might jeopardize public
+      safety. The figures do not reconcile arithmetically, but the fact of
+      withholding and the court's upholding of it are not in dispute. The
+      strongest opposing consideration is that the rationale — validated
+      connection models as a general-purpose blueprint — is coherent on its own
+      terms."
+  - claimId: SEP-C006
+    verdict: established
+    confidence: high
+    reasoning: Stated openly by the investigating agency itself, which explains that
+      WTC 7 steel lacked the distinguishing markings that made tower steel
+      identifiable. The gap is permanent and removes the class of test that
+      could have discriminated between mechanisms. The strongest opposing
+      consideration is that rapid debris removal during a recovery operation is
+      an ordinary emergency consequence, not necessarily an evidence decision.
+  - claimId: SEP-C007
+    verdict: established
+    confidence: high
+    reasoning: The severe sulfidation with intergranular eutectic melting, the
+      explicit statement that no clear sulfur source was identified, and the
+      recommendation for further study are all verbatim in the FEMA appendix.
+      The recommended study has never been performed. The strongest opposing
+      consideration is that the examination covered two opportunistically
+      recovered members with hedged identifications, and the appendix itself
+      raises post-collapse debris-pile heating as a possibility.
+  - claimId: SEP-C008
+    verdict: established
+    confidence: high
+    reasoning: "Multiple on-record accounts exist, and the agency's own FAQ answers
+      a responder who reported two loud booms without disputing that he did. The
+      claim is deliberately narrower than the popular version: the agency denies
+      blast-level noise, not booms. The strongest opposing consideration is that
+      lay descriptions of loudness cannot distinguish detonation from structural
+      failure."
+  - claimId: SEP-C009
+    verdict: contradicted
+    confidence: moderate
+    reasoning: The investigation calculated that the smallest column-severing charge
+      would register 130–140 dB at half a mile if unobstructed, and reported no
+      such sound on any recording or in any witness account. That is a
+      falsifiable published prediction the recorded evidence does not meet. The
+      strongest opposing consideration is that the acoustic threshold is the
+      investigation's own modeling, not an independent measurement, and assumes
+      an unobstructed path in a dense urban environment.
+  - claimId: SEP-C010
+    verdict: weakly_supported
+    confidence: low
+    reasoning: "Rests on a genuine unaudited gap in the official mechanism, an
+      unreproduced advocacy-funded counter-model, and an untested corrosion
+      anomaly. Against it: the failed acoustic prediction, the absence of any
+      recovered device or residue, and the practical difficulty of pre-rigging
+      an occupied building. The strongest opposing consideration is that the
+      claim rests entirely on the inadequacy of the alternative rather than on
+      affirmative evidence of itself."
+  - claimId: SEP-C011
+    verdict: well_supported
+    confidence: high
+    reasoning: Supported by impact simulations reporting dozens of severed columns
+      and insulation stripped from tens of thousands of square feet, by the fire
+      reconstruction, and by the observed inward bowing. The report's own hedge
+      — "likely would not have collapsed" — is restored in the claim. The
+      strongest opposing consideration is that the simulations required tuning
+      and the insulation dislodgment is an inference from modeling, not a direct
+      measurement.
+  - claimId: SEP-C012
+    verdict: contradicted
+    confidence: high
+    reasoning: The agency itself states that propagation "was readily explained
+      without the same complexity of modeling," supporting that with a capacity
+      argument rather than a simulation. The claim as worded — that end-to-end
+      modeling exists — is contradicted by the record. The strongest opposing
+      consideration is that order-of-magnitude analyses in the mechanics
+      literature argue the energy balance is not close, so full simulation may
+      be physically unnecessary even though it would answer the auditability
+      question.
+  - claimId: SEP-C013
+    verdict: contradicted
+    confidence: high
+    reasoning: "Positive disproof: initiation coincided with the impact floors,
+      which no one could have designated in advance; the seismic record contains
+      no pre-collapse signal; and any charges would have had to survive nearly
+      an hour of approximately 1,000 °C fire at exactly the location where
+      collapse began. The strongest opposing consideration is that arguments
+      from absence of recovered devices depend on a debris operation not
+      conducted as a forensic search."
+  - claimId: SEP-C014
+    verdict: contradicted
+    confidence: moderate
+    reasoning: The independent analysis of archived dust from four Manhattan
+      locations found no elemental aluminum particles of any size, which the
+      thermite claim requires. The same report explicitly found the chips do not
+      match the towers' column primer, so the standard debunking is also
+      unsupported. The strongest opposing consideration is that neither analysis
+      was conducted under documented chain of custody or normal peer review,
+      leaving the dispute between two irregular analyses.
+  - claimId: SEP-C015
+    verdict: well_supported
+    confidence: high
+    reasoning: The exchange volume ratios are consistently reported, and two
+      independent peer-reviewed analyses in finance journals found abnormal
+      pre-attack option activity statistically consistent with informed trading.
+      The published conclusion is consistency, not demonstration. The strongest
+      opposing consideration is that the specific volume figures descend from
+      September 2001 press reporting rather than from a primary exchange record
+      obtained for this case.
+  - claimId: SEP-C016
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The Commission's trace-out is specific and plausible — 95 percent of
+      the airline puts to one institutional investor with no conceivable ties,
+      much of the rest to a newsletter recommendation — but it is unverifiable
+      from outside because the underlying files remain non-public. The strongest
+      opposing consideration is that every specific trade investigators examined
+      and published a conclusion about had an innocuous explanation, and no
+      alternative informed trader has been identified in twenty-five years.
+  - claimId: SEP-C018
+    verdict: established
+    confidence: high
+    reasoning: The August 6 brief's title and text are reproduced in the
+      Commission's report, and the joint inquiry's first factual finding states
+      both that no intelligence identified time, place, and specific nature and
+      that the community held clearly relevant information when considered
+      collectively. The strongest opposing consideration is that the record was
+      assembled by bodies with an institutional interest in characterizing their
+      own failures as analytical rather than culpable.
+  - claimId: SEP-C019
+    verdict: contradicted
+    confidence: moderate
+    reasoning: Contradicted by the joint inquiry's central finding and by
+      inspector-general reviews documenting specific, traceable bureaucratic
+      failures — information not shared, watchlisting not performed, analysis
+      not done — at each node where foreknowledge would have had to be
+      exercised. The strongest opposing consideration is that absence of
+      documentation is weak evidence about deliberate concealment, and destroyed
+      records mean the documentary record is genuinely incomplete.
+  - claimId: SEP-C020
+    verdict: well_supported
+    confidence: high
+    reasoning: The Commission's staff statement records that the phantom-aircraft
+      scramble "is not recounted in a single public timeline or statement issued
+      by FAA or DOD," and journalism built on roughly thirty hours of
+      operations-floor recordings corroborates the corrected chronology. The
+      strongest opposing consideration is that confusion during an unprecedented
+      event is not the same as misrepresentation, and the corrected record
+      emerged from the government's own commission using the government's own
+      recordings.
+  - claimId: SEP-C021
+    verdict: weakly_supported
+    confidence: low
+    reasoning: The defense inspector general did not substantiate the allegation,
+      concluding that four witnesses who recalled a chart were mistaken and
+      identifying a real 1999 chart naming 53 terrorists including a Brooklyn
+      cell but not Atta. Against that stand the department's barring of five
+      witnesses from Senate testimony and the destruction of the underlying
+      data. The strongest opposing consideration is that human memory of a chart
+      seen years earlier is exactly the evidence type that converges on
+      later-learned names.
+  - claimId: SEP-C022
+    verdict: well_supported
+    confidence: high
+    reasoning: The declassified congressional section records that some hijackers
+      "were in contact with, and received support or assistance from,
+      individuals who may be connected to the Saudi Government," and a federal
+      court found related claims legally sufficient to proceed. The claim is
+      deliberately confined to the assistance. The strongest opposing
+      consideration is the section's own statement that the inquiry made no
+      final determinations as to the reliability or sufficiency of the
+      information.
+  - claimId: SEP-C023
+    verdict: unresolved
+    confidence: moderate
+    reasoning: The Commission found no evidence of institutional or senior-official
+      funding while expressly leaving open diversion through state-sponsored
+      charities; a 2025 federal ruling found the civil claims legally sufficient
+      to proceed to trial on jurisdiction, not merits; the Kingdom appealed and
+      proceedings are stayed. No merits adjudication exists. The strongest
+      opposing consideration is that twenty-five years of investigation has
+      produced documented individual assistance and no established institutional
+      direction.
+  - claimId: SEP-C024
+    verdict: established
+    confidence: high
+    reasoning: The agency's own inspector general states that the September 18 "safe
+      to breathe" announcement was made without sufficient data and that the
+      White House Council on Environmental Quality convinced the agency to add
+      reassuring statements and delete cautionary ones. The strongest opposing
+      consideration is that editing for reassurance during an emergency is
+      categorically different from concealing what caused the event.
+  - claimId: SEP-C017
+    verdict: contradicted
+    confidence: high
+    reasoning: "The quotation is authentic but its context defeats the demolition
+      reading: it is embedded in an account of a fire-department call about
+      containing the fire, and the contemporaneous record independently
+      documents a decision not to fight the fire. Rigging a 47-story occupied
+      building during an ongoing emergency is not feasible on that timescale.
+      The strongest opposing consideration is that the exculpatory reading comes
+      from the speaker's own spokesperson, an interested party."

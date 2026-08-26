@@ -1,10 +1,14 @@
 # COV-001 image manifest. Generated artwork may never be a plate (schema
 # hard rule): AI images are confined to editorial roles and always credited
 # as such, so nothing a reader could mistake for the record is synthetic.
-# This case has no plates, and deliberately so — the imagery it would
-# otherwise reach for (market photographs, laboratory interiors, molecular
-# renderings) either depicts contested subject matter or would illustrate a
-# hypothesis rather than a record.
+# The plates here show places and things whose existence is not in dispute
+# — the market, the animals documented on sale there before the pandemic,
+# the institute — never a hypothesis. Each is real imagery under a reusable
+# licence with its provenance recorded. What none of them shows, because no
+# such image exists, is the thing the case actually turns on: an infected
+# animal, or a laboratory holding of the virus. The plates illustrate the
+# setting; the two absences at the centre of the case remain unillustrated
+# because they are absences.
 
 - id: IMG-COV-COVER
   role: cover
@@ -43,3 +47,90 @@
     numbers, no labels, no captions, no border frame lines. Stylized
     editorial artwork, obviously an illustration — not photorealistic, no
     photograph.
+
+- id: IMG-COV-P01
+  role: plate
+  file: /images/cases/covid-origins/plates/live-animals-on-sale-at-the-huanan-seafood-market.png
+  alt: >-
+    Six photographs in a labelled grid, each showing live animals confined
+    in wire or barred cages at a market stall: coiled snakes, a bamboo rat,
+    a hedgehog with a finger indicating a tick, a dark-furred animal behind
+    bars, marmots stacked above a further cage, and a badger.
+  source: commons
+  license: "CC BY 4.0"
+  licenseUrl: "https://creativecommons.org/licenses/by/4.0"
+  credit: "Xiao, Newman, Buesching, Macdonald and Zhou, Scientific Reports 11:11898 (2021), via Wikimedia Commons"
+  plateNumber: 1
+  mediaType: "figure from a peer-reviewed survey"
+  depicts: >-
+    Live mammals and reptiles photographed on sale at the Huanan market
+    before the pandemic, from a peer-reviewed survey of Wuhan wet markets
+    whose fieldwork ran from May 2017 to November 2019. The panels are
+    labelled by the authors as (a) king rat snake, (b) Chinese bamboo rat,
+    (c) Amur hedgehog with a tick indicated, (d) raccoon dog, (e) marmot
+    above a cage of hedgehogs, and (f) hog badger. Four of these species —
+    raccoon dog, bamboo rat, hedgehog and marmot — are among those whose
+    genetic material was later recovered from virus-positive samples at the
+    market. What the photographs establish is presence and confinement of
+    susceptible species at that site, and nothing about infection.
+  provenance:
+    photographer: "Xiao Xiao, Chris Newman, Christina D. Buesching, David W. Macdonald and Zhao-Min Zhou"
+    date: "Between May 2017 and November 2019; published 7 June 2021"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Live_animals_on_sale_at_the_Huanan_seafood_market.png"
+    originalTitle: "Animal sales from Wuhan wet markets immediately prior to the COVID-19 pandemic, Scientific Reports 11:11898, figure"
+  claimIds: [COV-C006, COV-C005]
+
+- id: IMG-COV-P02
+  role: plate
+  file: /images/cases/covid-origins/plates/huanan-seafood-wholesale-market.png
+  alt: >-
+    Elevated view of a city street junction: a market frontage under striped
+    tarpaulins is sealed behind red barriers, a lorry stands at the kerb, and
+    several figures in white protective suits work near a marked crossing.
+  source: commons
+  license: "CC BY 3.0"
+  licenseUrl: "https://creativecommons.org/licenses/by/3.0"
+  credit: "Chinanews.com / China News Service, via Wikimedia Commons"
+  plateNumber: 2
+  depicts: >-
+    The Huanan market frontage sealed behind barriers, with personnel in
+    protective suits present, in footage published in early March 2020 —
+    after the market's closure on 1 January and during the disinfection
+    period. This is the condition under which the environmental sampling
+    that produced the case's market evidence was carried out: the animals
+    gone, the stalls cleared, surfaces repeatedly disinfected. It is the
+    single most useful thing to hold in mind when weighing what a positive
+    surface swab can and cannot establish.
+  provenance:
+    photographer: "Chinanews.com / China News Service"
+    date: "2020-03-04"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Huanan_Seafood_Wholesale_Market.png"
+    originalTitle: "File:Huanan Seafood Wholesale Market.png"
+  claimIds: [COV-C004]
+
+- id: IMG-COV-P03
+  role: plate
+  file: /images/cases/covid-origins/plates/wuhan-institute-of-virology-main-entrance.jpg
+  alt: >-
+    A low modern gatehouse and boundary wall at a research campus entrance,
+    with lettering on the wall, a barrier across the drive, and trees behind.
+  source: commons
+  license: "CC BY-SA 4.0"
+  licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0"
+  credit: "Ureem2805, via Wikimedia Commons"
+  plateNumber: 3
+  depicts: >-
+    The main entrance of the Wuhan Institute of Virology, photographed in
+    December 2016 — three years before the outbreak and unconnected to it.
+    The institute is where the research-capability layer of this case sits:
+    the coronavirus collection, the biosafety practice the intelligence
+    reporting describes, and the sample database that went offline in
+    September 2019. A photograph of a gate establishes none of that; it is
+    included so the reader can place the institution, not as evidence about
+    what happened inside it.
+  provenance:
+    photographer: "Ureem2805"
+    date: "2016-12-12"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Wuhan_Institute_of_Virology_main_entrance.jpg"
+    originalTitle: "File:Wuhan Institute of Virology main entrance.jpg"
+  claimIds: [COV-C018]

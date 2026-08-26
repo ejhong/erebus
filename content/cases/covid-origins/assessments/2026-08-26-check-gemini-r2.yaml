@@ -1,0 +1,255 @@
+# Cross-model check run — an independent judge (Gemini 3.1 Pro (Google)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-gemini-r2
+model: Gemini 3.1 Pro (Google) — independent check run via gemini-3.1-pro-preview
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: unresolved
+  loadBearing:
+    - COV-C002
+    - COV-C006
+    - COV-C016
+    - COV-C018
+  weakestLinks:
+    - COV-C008
+    - COV-C010
+    - COV-C017
+  synthesis: >-
+    The case for the origin of SARS-CoV-2 currently rests on an evidentiary
+    record characterized by two profound and symmetrical absences, making a
+    definitive scientific resolution impossible at this time. 
+
+    A strong, evidence-based steelman of the zoonotic hypothesis relies on the
+    striking geographical concentration of the earliest known cases around the
+    Huanan Seafood Wholesale Market. The statistical observation that early
+    cases without reported market links lived closer to the market than those
+    who worked there is difficult for pure ascertainment bias to explain.
+    Environmental sampling tightly clusters SARS-CoV-2 positivity in the
+    market's western section where live mammals were sold, and metagenomic
+    analysis confirms the presence of susceptible wildlife DNA in the exact
+    stalls where the virus was found. Zoonotic spillover is the only hypothesis
+    that directly predicts this specific convergence of geography, environmental
+    positivity, and wildlife co-detection. Furthermore, multiple independent
+    introductions (lineages A and B) fit cleanly within a scenario of repeated
+    wildlife trade spillovers but map awkwardly onto a singular laboratory
+    accident.
+
+    Conversely, the research-related hypothesis is grounded in a highly specific
+    alignment of documented intent, capability, and opportunity. The 2018 DEFUSE
+    proposal outlines a clear, pre-pandemic intention by EcoHealth Alliance and
+    its Wuhan partners to identify and insert human-specific cleavage sites—the
+    exact class of feature that distinguishes SARS-CoV-2 from its closest known
+    relatives—into SARS-related coronaviruses. The Wuhan Institute of Virology
+    possessed seamless reverse-genetics technology that leaves no diagnostic
+    scar, routinely conducted coronavirus research at BSL-2 containment levels,
+    and suffered from documented biosafety inadequacies. The intelligence
+    community also explicitly notes that biological data cannot refute a
+    laboratory origin.
+
+    The deadlock persists because the records that could elevate either
+    hypothesis from plausible to established are actively withheld. The zoonotic
+    keystone—an infected animal or upstream traceback—was never secured because
+    candidate species were largely not tested before the market was cleared. The
+    research keystone—a laboratory inventory, biosafety log, or occupational
+    health record—has never been independently audited because the custodian
+    state has declared the investigation closed. Consequently, neither the
+    absence of an infected animal nor the absence of a laboratory progenitor is
+    highly diagnostic; both are downstream artifacts of non-disclosure and
+    expired testing windows. Without adversarial reanalysis of public genomic
+    data and the release of withheld primary datasets, the origin of SARS-CoV-2
+    remains objectively unresolved.
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: The Huanan market's status as the early geographic epicenter is
+      corroborated by independent spatial analysis, environmental sampling, and
+      the Chinese CDC's surveillance data. Both major origin hypotheses now
+      largely accept this premise. The strongest opposing consideration is that
+      the underlying December 2019 clinical case list relies entirely on Chinese
+      ascertainment data that has never been independently audited or fully
+      released.
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: Published spatial statistics demonstrate that early cases without
+      reported market links lived closer to the market than market workers did,
+      effectively countering simple ascertainment bias. This is the most
+      load-bearing observation distinguishing market spillover from mere viral
+      amplification of a pre-circulating strain. The strongest opposing
+      consideration is that the underlying p-value is modest (p=0.029), the
+      underlying data remains unreleased for independent reproduction, and a
+      published critique of its distributional assumptions remains unresolved.
+  - claimId: COV-C003
+    verdict: well_supported
+    confidence: high
+    reasoning: The first published clinical series (Huang 2020) explicitly documents
+      a December 1, 2019, index case with no epidemiological link to the Huanan
+      market. This observation aligns cleanly with models requiring either
+      upstream spillover or an earlier unlinked research infection. The
+      strongest opposing consideration is that early exposure histories in
+      clinical series are frequently incomplete, and later reporting has heavily
+      contested this specific patient's status and onset date as the true
+      earliest case.
+  - claimId: COV-C004
+    verdict: well_supported
+    confidence: high
+    reasoning: The Chinese CDC's own peer-reviewed surveillance documented 74
+      SARS-CoV-2 positive results out of 923 environmental samples taken from
+      the market. This firmly establishes the widespread presence of the virus
+      on market surfaces. The strongest opposing consideration is that sampling
+      commenced only after the market had been cleared and heavily disinfected,
+      bounding what the sampling could detect and preventing determination of
+      who or what originally deposited the RNA.
+  - claimId: COV-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: Independent analysis and the Chinese CDC's primary dataset both
+      confirm that 87.5 percent of interior positive samples concentrated in the
+      market's western zone, where live wild mammals were sold. This severely
+      restricts where the primary viral amplification occurred. The strongest
+      opposing consideration is the unverified assertion that this specific
+      section was uniquely poorly ventilated, which could theoretically
+      concentrate human viral shedding regardless of the animals sold there.
+  - claimId: COV-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: Metagenomic reanalysis confirmed the co-detection of mitochondrial
+      DNA from highly susceptible species, including raccoon dogs, alongside
+      SARS-CoV-2 in specific wildlife stalls. Zoonotic spillover directly
+      predicts this exact biological co-location. The strongest opposing
+      consideration, explicitly noted by the authors themselves, is that
+      co-presence does not equal infection; shedding from an infected human
+      vendor or customer would produce an identical metagenomic signature.
+  - claimId: COV-C007
+    verdict: well_supported
+    confidence: high
+    reasoning: It is universally acknowledged by the Chinese CDC and WHO that no
+      animal sampled in the market, the supply chain, or subsequent testing has
+      tested positive for the virus or a direct progenitor. This constitutes the
+      most glaring empirical deficit for the zoonotic hypothesis. The strongest
+      opposing consideration is that this absence is largely uninformative
+      because the animals actually tested were strays and frozen stock, whereas
+      the highly susceptible candidate species were largely removed before
+      sampling occurred.
+  - claimId: COV-C008
+    verdict: unresolved
+    confidence: moderate
+    reasoning: Confirming that a supply-chain animal was infected prior to the
+      market outbreak would definitively settle the transmission chain, but no
+      such evidence currently exists. The claim remains entirely open because
+      physical evidence has degraded and the candidate species were not properly
+      tested. The strongest opposing consideration is that the physical
+      opportunity to secure this proof likely expired when the 2019 live stock
+      was eliminated and the upstream farm traceback was never completed.
+  - claimId: COV-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: Pre-February 2020 genome sequences exhibit a clear division into two
+      distinct lineages (A and B) separated by only two nucleotide differences.
+      This fundamental genomic observation is unchallenged by either side and
+      serves as the baseline for modeling viral introduction. The strongest
+      opposing consideration is that the dataset is incomplete by construction,
+      as several hundred early Chinese sequences remain withheld, potentially
+      concealing intermediate genomes.
+  - claimId: COV-C010
+    verdict: mixed
+    confidence: moderate
+    reasoning: Modeling suggests the two early lineages are better explained by
+      separate zoonotic introductions rather than a single jump, which sits
+      awkwardly with a single laboratory index infection. However, a major code
+      error heavily inflated the original Bayes factors, forcing a fourteenfold
+      downward correction that demoted the statistical support from strong to
+      substantial. The strongest opposing consideration is this massive
+      statistical demotion, alongside the inference's extreme sensitivity to
+      rooting choices, clock assumptions, and withheld early sequences.
+  - claimId: COV-C011
+    verdict: well_supported
+    confidence: high
+    reasoning: SARS-CoV-2 features a polybasic furin cleavage site at the S1/S2
+      junction that is demonstrably absent from its closest known sarbecovirus
+      relatives in nature. This structural anomaly is the central genomic
+      calibration point debated by both sides. The strongest opposing
+      consideration is that natural sarbecoviruses are profoundly undersampled,
+      meaning absence from the limited pool of currently known relatives is
+      exceptionally weak evidence of true absence in nature.
+  - claimId: COV-C012
+    verdict: well_supported
+    confidence: high
+    reasoning: The US intelligence community and WHO agree that the SARS-CoV-2
+      genome lacks any established diagnostic signature of laboratory
+      manipulation or bioweapon design. The notable genomic features are readily
+      explainable by natural evolution. The strongest opposing consideration is
+      that modern, seamless reverse-genetics techniques leave no required
+      genomic scar, meaning the absence of a forensic signature cannot
+      affirmatively exclude a laboratory origin.
+  - claimId: COV-C013
+    verdict: well_supported
+    confidence: high
+    reasoning: The closest sampled viral relatives possess roughly 96 percent
+      whole-genome identity to SARS-CoV-2, representing decades of evolutionary
+      divergence. This firmly eliminates known, published NIH-funded bat viruses
+      from being the immediate progenitor. The strongest opposing consideration
+      is that this only describes currently sampled diversity; unsampled, closer
+      natural or laboratory-held relatives are entirely plausible and indeed
+      required by both hypothesis families.
+  - claimId: COV-C016
+    verdict: well_supported
+    confidence: moderate
+    reasoning: The 2018 DEFUSE proposal documents a clear, pre-pandemic intention by
+      EcoHealth Alliance and its Wuhan partners to introduce human-specific
+      cleavage sites into SARS-related coronaviruses. The textual evidence
+      firmly establishes that the exact technique yielding SARS-CoV-2's defining
+      feature was actively contemplated by the relevant actors. The strongest
+      opposing consideration is that DARPA rejected the proposal, and a document
+      outlining intended research is circumstantial evidence of capability, not
+      proof of execution.
+  - claimId: COV-C017
+    verdict: unresolved
+    confidence: moderate
+    reasoning: The leap from the DEFUSE proposal's documentary intent to the actual
+      execution of those experiments remains completely unverified by any public
+      record. Resolving this claim would directly convert a suspicious
+      documentary coincidence into a confirmed mechanism. The strongest opposing
+      consideration is that six years of intensive global investigation,
+      declassification reviews, and congressional subpoenas have failed to
+      produce a single construct map, synthesis order, or biosafety approval
+      indicating the work took place.
+  - claimId: COV-C018
+    verdict: well_supported
+    confidence: high
+    reasoning: Declassified intelligence confirms that Wuhan researchers routinely
+      performed SARS-like coronavirus experiments at BSL-2 containment and that
+      biosafety precautions were sometimes inadequate. This definitively
+      establishes the physical opportunity for a laboratory-acquired infection.
+      The strongest opposing consideration is that such biosafety practices were
+      globally standard for coronavirus research at the time, and opportunity
+      does not equate to occurrence, especially since the same intelligence
+      report notes no evidence of a specific incident.
+  - claimId: COV-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: The June 2023 US intelligence declassification reveals a sustained
+      analytical split, with most elements favoring natural exposure at low
+      confidence, one favoring a lab incident at moderate confidence, and others
+      undecided. This conclusively demonstrates that analysts with privileged
+      access to classified material did not possess determinative evidence. The
+      strongest opposing consideration is that the underlying intelligence and
+      source-reliability ratings are fully classified, preventing any
+      independent civilian audit of why the agencies failed to converge.
+  - claimId: COV-C015
+    verdict: well_supported
+    confidence: high
+    reasoning: The 2025 WHO Scientific Advisory Group concluded that the weight of
+      available evidence suggests zoonosis, while explicitly stating it could
+      not evaluate a laboratory origin because necessary data was withheld.
+      These two statements are structurally tethered and must be read together
+      to understand the report's true epistemological limits. The strongest
+      opposing consideration is that a scientific synthesis is only as reliable
+      as its data access; because three governments withheld requested raw
+      information, the report inherits a fundamentally broken evidence base.

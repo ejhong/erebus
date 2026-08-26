@@ -1,0 +1,318 @@
+# Cross-model check run — an independent judge (GPT-5.1 (OpenAI)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-gpt-r2
+model: GPT-5.1 (OpenAI) — independent check run via gpt-5.1
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: well_supported
+  loadBearing:
+    - COV-C001
+    - COV-C002
+    - COV-C005
+    - COV-C006
+    - COV-C010
+    - COV-C007
+    - COV-C013
+    - COV-C016
+    - COV-C017
+    - COV-C018
+    - COV-C015
+    - COV-C014
+  weakestLinks:
+    - COV-C002
+    - COV-C010
+    - COV-C008
+    - COV-C017
+  synthesis: >-
+    On the evidence in this dossier, a zoonotic spillover associated with the
+    Huanan Seafood Wholesale Market remains the best-supported origin for the
+    outbreak, but with a crucial qualifier: the transmission chain is unclosed,
+    and a research-related origin (field, lab, or construct) is neither
+    established nor excluded. The global origin question is broader than any one
+    claim here; the right reading is that the *market-centered zoonotic family
+    of hypotheses* is well_supported relative to the alternatives on currently
+    accessible evidence, while research-related explanations stay unresolved
+    because the key records are withheld.
+
+    The early-geography and market-animals blocks provide the strongest
+    affirmative support for zoonosis. COV-C001 and COV-C004/COV-C005 are robust:
+    multiple lines of evidence, including the Chinese CDC’s own surveillance,
+    put the earliest recognized cluster and 87.5% of interior environmental
+    positives in the western section where live mammals were sold. COV-C002 is
+    the most diagnostic point: unlinked early cases lived closer to the market
+    than market workers, which is precisely what a focal exposure at or near the
+    market predicts and what simple contact-tracing bias does not. This result
+    is only provisionally_supported: it rests on unaudited Chinese case
+    ascertainment, modest p = 0.029 support, and has not been independently
+    reproduced. Nonetheless, nothing in the evidence decisively undercuts it,
+    and it is consistent with the broader spatial signal.
+
+    The metagenomic co-location evidence in COV-C006, supported by COV-E005 and
+    WHO’s reading in COV-E007, shows that mitochondrial DNA from raccoon dogs
+    and other susceptible mammals occurs in every viral-positive sample from a
+    wildlife stall. Combined with COV-C005, this strongly situates susceptible
+    live mammals at the spatial focus of viral contamination. Critically, as the
+    authors and WHO emphasize, this is *co-presence*, not proof of infected
+    animals: it powerfully supports the plausibility of market zoonosis without
+    closing the loop. COV-C007 documents the mirror deficit: no infected animal
+    or progenitor has ever been found, and the species that most matter were
+    never sampled. This absence weakens the strength of the zoonotic case but is
+    clearly tied to how, when, and what was sampled, as SAGO notes, not to a
+    definitive negative.
+
+    The early-lineage block adds moderate but structurally important support for
+    multiple introductions. COV-C009 is uncontroversial: two early lineages
+    differ by two nucleotides. COV-C010, after the erratum in COV-E011, is
+    graded mixed but still leans toward multiple introductions with Bayes
+    factors around 4.2–4.3. That is “substantial” but not overwhelming support,
+    and the inference remains model-dependent and sensitive to unsampled early
+    genomes. If it ultimately fails, zoonosis-at-market retreats to an upstream
+    spillover with market amplification; if it holds up under adversarial
+    reanalysis (COV-R001), it is hard to reconcile with a single infected lab
+    worker but compatible with multiple wildlife-trade introductions or a more
+    complex research-related scenario.
+
+    The genome block is a wash for discriminating power. COV-C011 and COV-C013
+    are firmly established: SARS-CoV-2 has a furin cleavage site absent from its
+    closest sampled sarbecovirus relatives, and those relatives are ∼96%
+    identical—decades of evolution away. COV-C012 is also well_supported: no
+    accepted signature of engineering has been found, and almost all
+    intelligence elements assessed the virus is not engineered or a bioweapon.
+    WHO’s careful phrasing (COV-E014) is decisive here: the features are readily
+    explained by natural evolution and give *no support* to a man-made origin,
+    but a man-made origin is also “not refuted by biological data.” Taken
+    together, the genome evidence weighs against a **detectably engineered
+    construct**, but leaves both natural spillover and a lab escape of a natural
+    or seamlessly modified virus on the table.
+
+    The Wuhan research-program block establishes opportunity and intent on
+    paper, not a mechanism. COV-C018 is well_supported: SARS-like CoV work at
+    BSL-2 with imperfect biosafety is documented, showing a realistic path for a
+    research-related accident, but ODNI finds no evidence of an actual incident
+    or of WIV holding SARS-CoV-2 or a close progenitor (COV-E019). COV-C016 is
+    also well_supported: DEFUSE proposed inserting human-specific cleavage sites
+    in CoV spikes, with WIV as a partner, and this was not funded. This is
+    genuinely more than the zoonotic story predicts in terms of *capability and
+    contemplated work*. Yet COV-C017 is properly unresolved: no evidence has
+    surfaced that DEFUSE-like cleavage experiments were ever performed on
+    SARS-related viruses, despite FOIA productions, congressional inquiries, and
+    ODNI review. ODNI simultaneously notes that WIV had reverse-genetics methods
+    leaving no scar. The net effect is a live but unproven capability-based
+    research-origin possibility.
+
+    Official assessments (COV-C014, COV-C015) reinforce that nobody with
+    privileged access holds decisive material. US intelligence elements are
+    explicitly split at low confidence; WHO’s SAGO concludes zoonosis is best
+    supported by *reviewed* evidence, while stating that a laboratory origin
+    could not be assessed at all because critical data from China, Germany, and
+    the US were not provided. These syntheses lend professional weight to a
+    zoonotic explanation but simultaneously document structural opacity that
+    prevents exclusion of research-related scenarios.
+
+    Weighing only the evidence provided, the structural picture is therefore:
+    (1) multiple convergent public lines place the outbreak’s early center and
+    key environmental contamination in the live-mammal section of the Huanan
+    market; (2) susceptible wildlife co-occur with virus RNA exactly there; (3)
+    early genomic diversity modestly favors more than one introduction; (4) no
+    infected animal or lab progenitor has been found, and both absences map onto
+    unsampled or undisclosed domains; (5) the genome lacks any accepted
+    engineering signature; and (6) WIV had both the technical capacity and
+    sometimes-lax biosafety but is not known to have held an adequate progenitor
+    or to have suffered a specific incident. Under ordinary priors from zoonotic
+    disease ecology, those affirmative converging signals justify a
+    **well_supported** verdict for a market-centered zoonotic origin, with the
+    caveat that this conclusion still rests on incomplete data and could be
+    reversed or strongly qualified by the kinds of disclosures the research
+    agenda identifies.
+claimAssessments:
+  - claimId: COV-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: Multiple independent evidence records (COV-E001, COV-E003, COV-E004,
+      COV-E021) consistently show that the earliest recognized December 2019
+      cases and the bulk of positive environmental samples center on the Huanan
+      market, particularly its west section. The strongest opposing
+      consideration is that all of this rests on Chinese case ascertainment and
+      line lists that have not been independently audited, so systematic biases
+      in early case-finding cannot be entirely excluded.
+  - claimId: COV-C002
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: COV-E001 directly states that early unlinked cases lived
+      significantly closer to the market than workers, with p = 0.029, and the
+      authors interpret this as exposure at or near the market; COV-E002
+      confirms that a coding correction did not alter this result. However, the
+      underlying case data are not public, no independent reproduction has
+      occurred, and an unresolved published critique challenges the statistical
+      assumptions, so the finding remains more fragile than its central role in
+      argument would suggest.
+  - claimId: COV-C003
+    verdict: well_supported
+    confidence: high
+    reasoning: "COV-E003 quotes the Lancet clinical series verbatim: the first
+      identified patient had onset on 1 December 2019, lacked a market link, and
+      no epidemiological link to later cases was found; the claim is explicitly
+      framed as “what the study reports,” which the evidence clearly supports.
+      The main opposing consideration is that later reporting has questioned
+      whether this was truly the earliest case and whether the onset date is
+      accurate, matters this dossier does not independently resolve."
+  - claimId: COV-C004
+    verdict: well_supported
+    confidence: high
+    reasoning: COV-E004, from the Chinese CDC Nature paper, reports 923 post-closure
+      environmental samples with 74 positives and describes the sampling
+      timeline starting 1 January 2020; this directly supports the claim. The
+      strongest limitation is that sampling began only after the market was
+      closed, cleared, and under disinfection, which constrains what those 74
+      positives can tell us about pre-closure contamination.
+  - claimId: COV-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: "COV-E004 documents that 87.5% of positive interior samples came from
+      the west zone, and the associated analyses show distance to live-mammal
+      vendors predicts positivity, so spatial concentration in that section is
+      well established. The main objection is interpretive: some critics argue
+      that poor ventilation and layout alone could concentrate human-derived
+      contamination there, though this dossier does not independently verify
+      those physical-plant claims."
+  - claimId: COV-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: "COV-E005 shows that all five viral-positive samples from a wildlife
+      stall contained mtDNA from raccoon dogs and other susceptible mammals,
+      with detailed species counts per sample; WHO’s SAGO concurs that this
+      co-detection is the most compelling available spillover evidence
+      (COV-E007). The strongest opposing consideration comes from the same
+      authors: these data cannot establish which species were infected and are
+      equally consistent with human shedding in a stall that held those animals,
+      so the finding is about co-location, not infection."
+  - claimId: COV-C007
+    verdict: well_supported
+    confidence: high
+    reasoning: COV-E004 and COV-E006 document 457 negative animal PCRs from the
+      market and China’s report of large-scale negative testing, and COV-E008
+      notes WHO’s skepticism about the completeness of those results—together,
+      they support the factual statement that no infected animal or close
+      progenitor has been shown. The key caveat is that the most relevant
+      live-wildlife species were never sampled, many animals were removed
+      pre-sampling, and post-pandemic testing is unaudited, so this absence is
+      weak as negative evidence about zoonosis.
+  - claimId: COV-C008
+    verdict: unresolved
+    confidence: moderate
+    reasoning: Co-location evidence (COV-E005, COV-E007) makes an infected supply
+      animal plausibly and even intuitively likely, but COV-E006 and COV-E008
+      demonstrate that the animals that mattered most were never tested and that
+      all reported testing is negative and partly non-credible. With no direct
+      detection in animals or archived material, and with physical access to the
+      2019 stock largely lost, there is simply no way on the present record to
+      move beyond plausibility in either direction.
+  - claimId: COV-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: COV-E010 from Pekar et al. clearly describes two early lineages, A
+      and B, separated by two specific nucleotide substitutions that also appear
+      in related bat coronaviruses, and no evidence in the dossier disputes this
+      basic structure. The only limitation is that additional early genomes from
+      unpublished Chinese sequences could later refine this picture, but that
+      does not undercut the observation as currently defined.
+  - claimId: COV-C010
+    verdict: mixed
+    confidence: moderate
+    reasoning: The corrected Pekar analysis (COV-E010) still yields Bayes factors of
+      about 4.2–4.3 favoring multiple introductions, and WHO reports that the
+      analysis suggests two separate introductions (COV-E012), so there is
+      genuine residual support for the claim. Against that, the 2023 erratum
+      (COV-E011) cut the support roughly fourteenfold and moved the authors’
+      language from “strong” to “substantial,” while the inference remains
+      sensitive to model choices and incomplete early sampling, and a
+      congressional majority report instead argues for a single introduction,
+      leaving the overall evidential state mixed.
+  - claimId: COV-C011
+    verdict: well_supported
+    confidence: high
+    reasoning: COV-E013 and COV-E016 jointly establish that SARS-CoV-2 has an
+      insertion encoding a polybasic furin cleavage motif absent from its
+      closest sampled sarbecovirus relatives, which is all this claim asserts.
+      The strongest opposing point is that natural sarbecovirus diversity is
+      undersampled and that furin motifs occur in other coronavirus lineages
+      (COV-E014), so the feature’s *uniqueness* in nature is not supported and
+      must not be overstated.
+  - claimId: COV-C012
+    verdict: well_supported
+    confidence: high
+    reasoning: "ODNI assessments in 2021 and 2023 (COV-E018, COV-E019) say almost
+      all US intelligence elements judge the virus not genetically engineered
+      and not a bioweapon, and WHO’s SAGO states that genomic features are
+      readily explained by natural evolution and give no support to a man-made
+      origin (COV-E014). The primary objection is conceptual: seamless
+      reverse-genetics leaves no required “fingerprint,” so the absence of
+      recognized diagnostic features cannot definitively exclude a carefully
+      engineered virus, only one that would leave current forensic signatures."
+  - claimId: COV-C013
+    verdict: well_supported
+    confidence: high
+    reasoning: "COV-E016 reports ∼96.2% whole-genome identity between SARS-CoV-2 and
+      RaTG13, and COV-E013 gives similar figures for BANAL-52, with both
+      identified by ODNI and NIH (COV-E017, COV-E019) as too distant to be
+      direct progenitors. The limitation is that this speaks only to sampled
+      diversity: undisclosed or unsampled closer relatives are entirely
+      plausible and in fact required by both origin families."
+  - claimId: COV-C016
+    verdict: well_supported
+    confidence: high
+    reasoning: "The DEFUSE proposal text in COV-E027 unambiguously describes
+      analyzing CoV spikes for furin sites and, where mismatches occur,
+      introducing human-specific cleavage sites, with WIV as a partner, and
+      multiple records confirm the proposal was not funded. The main opposing
+      consideration is provenance: the available copy is a third-party archive
+      scan rather than an official release, though its authenticity is
+      indirectly corroborated by FOIA drafts and congressional usage."
+  - claimId: COV-C017
+    verdict: unresolved
+    confidence: moderate
+    reasoning: We know from COV-E027 and COV-E028 that DEFUSE contemplated cleavage
+      insertions and that authors intended some assays to occur in Wuhan, and
+      from COV-E029 and COV-E019 that WIV had capable reverse-genetic methods,
+      so performance of such experiments is plausible. However, despite FOIA
+      productions, ODNI review, and congressional investigations, there is no
+      public record—biosafety approvals, project logs, construct maps, or
+      sequence data—showing these experiments were actually carried out, leaving
+      the claim genuinely open.
+  - claimId: COV-C018
+    verdict: well_supported
+    confidence: high
+    reasoning: "COV-E029, quoting the 2023 ODNI report, clearly states that as of
+      January 2019 WIV researchers conducted experiments with SARS-like CoVs at
+      BSL-2 and that some probably did not use adequate biosafety precautions at
+      least some of the time, while noting no known specific incident. The main
+      counterpoint is contextual: suboptimal biosafety and BSL-2 work with such
+      viruses were not unique to WIV globally, and opportunity for an accident
+      is not itself evidence that one occurred."
+  - claimId: COV-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: COV-E018 lays out the 2021 intelligence community split with
+      associated low and moderate confidence levels, and COV-E019 plus COV-E020
+      show that later assessments did not collapse this disagreement but merely
+      shifted one agency at low confidence. The strongest opposing consideration
+      is that these are high-level declassified summaries whose underlying
+      intelligence is not accessible, so one cannot confirm how completely they
+      represent internal views, but the split itself is clearly attested.
+  - claimId: COV-C015
+    verdict: well_supported
+    confidence: high
+    reasoning: COV-E021 and COV-E022 demonstrate that SAGO concluded zoonotic
+      spillover is best supported by the evidence it reviewed, explicitly
+      qualified by limited access, and that it could not adequately assess a
+      laboratory origin because critical information and raw data from China,
+      Germany, and the US were not provided. The principal objection is that
+      this synthesis is constrained by those access limitations and supersedes
+      an earlier WHO–China joint report that rated a lab incident extremely
+      unlikely, underscoring how contingent such judgments are on what can be
+      seen.
