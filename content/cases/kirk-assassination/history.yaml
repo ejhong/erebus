@@ -357,3 +357,21 @@
     erebus-editorial-audit-v1); publishes only through the constitutional gate's
     multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+
+- date: 2026-08-26
+  kind: content
+  change: Corrected the venue-count in the scene-alteration base-rate research
+    item (KRK-R011), which still described the study as carried out at fifteen
+    venues and proposed extending it beyond that. The current evidence records
+    for the study report an eighteen-venue table, so both mentions now read
+    eighteen; the outstanding work — sourcing the rows whose formal release
+    dates public reporting does not record — is unchanged. No changes were
+    required to the overview article, which already reflects the eighteen-venue
+    figure.
+  reason: The research agenda proposed as future work an extension of the venue
+    table that the evidence records show has already been completed, which would
+    have misdirected a reader about what remains to be done.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
