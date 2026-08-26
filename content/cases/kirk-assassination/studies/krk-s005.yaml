@@ -1,0 +1,120 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design: the criteria below are
+# judged before anyone knows what the data will say, and any later edit
+# to them fails the build. Collection follows in a second PR.
+id: KRK-S005
+title: Statement-discrepancy ledger for post-event public accounts
+question: Which checkable public statements by event personnel and officials
+  about this case's disputed factual matters are corroborated, contradicted, or
+  unresolved when placed against the contemporaneous record — graded statement
+  by statement, never as a pile?
+researchIds:
+  - KRK-R010
+claimIds:
+  - KRK-C012
+  - KRK-C016
+  - KRK-C017
+criteria:
+  frozenOn: 2026-08-26
+  inclusion:
+    - Public statements made between 2025-09-10 and this freeze date by event
+      personnel (videographer and media contractors, TPUSA and venue staff in
+      their event roles) or officials (UVU and UVU Police, Utah County agencies
+      and prosecutors, Utah DPS/SBI, FBI and DOJ personnel) concerning the
+      case's factual disputes — media custody and transfers, first-call and
+      first-aid accounts, medical relays, venue-selection accounts, scene
+      handling and release, or announced evidence.
+    - The statement is attributable on the record to a named person or an agency
+      speaking officially, with a checkable artifact (transcript, recording,
+      court filing, sworn testimony, records response, or official release)
+      carrying an exact locator.
+    - A contemporaneous record exists that bears on the statement's factual
+      content — corroborating, contradicting, or partially qualifying it.
+      Statements nothing can check are reported in the failed-search note, not
+      graded.
+  exclusion:
+    - Statements of opinion, prediction, or legal argument — the ledger grades
+      factual accounts against records, not advocacy.
+    - Claims sourced only to anonymous or pseudonymous accounts; they remain
+      catalog leads under the case's existing discipline and never enter this
+      table.
+    - Any statement offered as evidence of criminal culpability — the ledger
+      grades accounts of media custody, timelines, and scene handling, never
+      guilt (living-persons rules).
+    - Private or supplied-in-confidence statements without recorded permission;
+      only the public record enters.
+  searchProtocol: "Multi-searcher discovery, run only after this freeze, protocol
+    verbatim per searcher: (1) OpenAI deep research (o4-mini-deep-research,
+    background mode; documented substitute if unavailable, with the deviation
+    recorded in the limitations); (2) Gemini deep research (background mode,
+    store enabled); (3) the executing agent's own web search. Literal queries,
+    each run in all three: [Kirk shooting videographer statement camera cards];
+    [UVU police press conference transcript September 2025]; [Utah DPS briefing
+    Kirk statements transcript]; [FBI press conference Kirk evidence
+    announcement transcript]; [Kirk preliminary hearing testimony videographer
+    OR investigator]; [Kirk venue selection account statement courtyard]; [Kirk
+    scene release cleanup statement official]. Per-person follow-up: the
+    speaker's name or role paired with each disputed topic and with
+    \"testified\", \"told\", \"said\", \"statement\". Sources searched:
+    press-conference transcripts and recordings, court transcripts and filings
+    from the preliminary proceedings, GRAMA records responses already in this
+    case's source ledger, sworn testimony, and papers of record. Deep-research
+    output is a brief under casework convention: it proposes candidate
+    statements and is never cited; every row cell is verified natively against
+    the primary artifact before entering the table."
+  knownCandidates:
+    - name: Videographer media-transfer accounts (same-day flash drive and
+        downloadable files; sworn testimony versus the card-removal footage
+        record, KRK-C011/C012)
+      disposition: include
+      reason: the custody dispute's core statements, already partly in sworn testimony
+    - name: FBI director's September 2025 evidence announcements versus the later
+        charging documents and preliminary-hearing exhibits (KRK-C032 territory)
+      disposition: include
+      reason: the announcement-versus-record mismatch is already documented as real in
+        the case file; the ledger grades each statement individually
+    - name: Deputy prosecutor's pretrial-publicity statements adjudicated in the June
+        2026 contempt ruling (KRK-C016)
+      disposition: include
+      reason: a court has already graded part of this record; the ruling supplies the
+        contemporaneous benchmark
+    - name: Lead investigator's testimony on paving authorization versus the
+        GRAMA-obtained facilities records (KRK-C013)
+      disposition: include
+      reason: statement-versus-record pair already in the source ledger
+    - name: Venue-selection accounts (who moved the event to the courtyard, catalog
+        lead)
+      disposition: include
+      reason: multiple attributed public accounts exist and are disputed; gradable
+        only where a checkable record bears on them
+  criteriaHash: 85874a57b2bf
+method: Discovery per the frozen protocol; one row per statement, each cell
+  citing the primary artifact with the standard verification label. The five-way
+  outcome scale is frozen with hard bars — accurate, mistaken, materially
+  misleading, knowingly false, unresolved — where "knowingly false" requires
+  documentary evidence that the speaker's own contemporaneous records
+  contradicted the statement when made; discrepancy alone never licenses an
+  intent grade, and the ceiling absent such documents is "materially misleading"
+  or "unresolved". Officials' assertions are graded as assertions against
+  records, never restated as established fact; no row grades anyone's
+  culpability. Findings state the distribution statement by statement and
+  explicitly decline the aggregate move — a count of discrepancies is not
+  evidence of coordination (KRK-C015 discipline applies to institutions as much
+  as donors). Failed searches and ungradable statements are reported, and the
+  searcher-overlap coverage indicator is given. Either outcome publishes.
+columns:
+  - speaker and role
+  - statement date and venue
+  - statement (verbatim, with locator)
+  - topic
+  - contemporaneous record (with locator)
+  - outcome
+  - basis for outcome
+rows: []
+findings: []
+limitations: []
+runId: 2026-08-26-study-krk-s005-freeze
+model: Claude Fable 5 (Anthropic), via Cursor
+date: 2026-08-26
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false
