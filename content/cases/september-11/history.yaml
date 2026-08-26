@@ -161,3 +161,21 @@
   aiAssisted: true
   kind: content
 
+
+- date: 2026-08-26
+  kind: content
+  change: Corrected the stated payoff of the blinded WTC 7 re-analysis proposal
+    (SEP-R001), which described WTC 7 as the only total collapse of a tall
+    building attributed primarily to fire. The record of the 2017 Plasco
+    Building collapse in Tehran, a complete fire-induced collapse of a 16-storey
+    steel-framed high-rise, no longer supports that uniqueness claim. The item
+    now refers simply to the collapse of WTC 7 lacking a published, checkable
+    explanation. No change was made to the overview article, which does not
+    assert uniqueness.
+  reason: A research item may not rest on a factual premise the evidence records
+    contradict; the Tehran record removes the categorical uniqueness the item
+    asserted.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
