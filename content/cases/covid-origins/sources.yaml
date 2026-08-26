@@ -79,14 +79,18 @@
   url: "https://doi.org/10.1016/j.cell.2024.08.010"
   verification: ai_verified
   verificationNote: >-
-    The published abstract was verified against the version-of-record
-    bibliographic record. The publisher bot-walls automated clients and
-    archive playback of the full text failed, so body-text quotations were
-    taken from the accepted author manuscript deposit (snapshot dated
-    2026-08-20) and are labeled as such wherever used.
+    Version of record confirmed 2026-08-26 from two Internet Archive
+    captures of the publisher's own full-text page (2024-09-23 and
+    2024-10-04), with the abstract independently corroborated by the
+    publisher-deposited bibliographic record; every quotation used in this
+    case is verbatim from that version. Live publisher routes return HTTP
+    403 bot challenges. Recorded for provenance: an earlier pass had to
+    quote from the repository deposit, which is the NIHMS accepted author
+    manuscript (NIHMSID NIHMS2024276) and not the version of record — that
+    pass carried one pre-copyedit word ("While" where the published text
+    reads "Although"), found by this confirmation pass and corrected.
   reliabilityNotes:
     - "A reanalysis of the environmental data underlying the Chinese CDC surveillance paper, sharing authors with the market epicenter paper — one evidence stream, not an independent confirmation."
-    - "Body-text wording is from the accepted manuscript rather than the published version and requires one confirmation pass before any quotation from it is promoted."
     - "The authors state plainly that their data cannot establish which species was infected, and that human shedding after a zoonotic event could equally explain the co-detection. Any use of the co-location finding must carry that statement."
 
 - id: SRC-HUANG-2020

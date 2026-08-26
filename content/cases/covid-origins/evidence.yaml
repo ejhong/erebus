@@ -158,13 +158,13 @@
     positivity near and within a wildlife stall. We identify wildlife DNA in
     all SARS-CoV-2-positive samples from this stall, including species such
     as civets, bamboo rats, and raccoon dogs, previously identified as
-    possible intermediate hosts." From the accepted manuscript: "The five
+    possible intermediate hosts." From the Results: "The five
     SARS-CoV-2-positive samples from wildlife stall A contained mtDNA from
     raccoon dogs, hoary bamboo rats, dogs … and European rabbits. Amur
     hedgehog and Malayan porcupine mtDNA was present in four samples … and
     one sample contained masked palm civet mtDNA." The authors then state
-    the limitation directly: "While either animal or human viral shedding is
-    consistent with these data, only a zoonotic origin of SARS-CoV-2
+    the limitation directly: "Although either animal or human viral shedding
+    is consistent with these data, only a zoonotic origin of SARS-CoV-2
     directly predicts co-detection of SARS-CoV-2 and wildlife genetic
     material." And: "It is not possible to conclude which of these species
     may have been infected and/or introduced the virus to the market from
@@ -176,9 +176,8 @@
     zoonosis specifically predicts, even though human shedding after a
     zoonotic event would produce the same pattern. Detection is uneven
     across species, which the flat species lists in circulation obscure.
-  exactLocator: "Cell 187(19):5468–5482.e11, abstract; Results and Discussion quoted from the accepted author manuscript"
+  exactLocator: "Cell 187(19):5468–5482.e11 — Summary; Results, 'Mammalian wildlife species detected in five SARS-CoV-2-positive samples from a wildlife stall'; Discussion, first paragraph"
   limitations:
-    - "Body-text wording is from the accepted author manuscript, not the published version — the publisher bot-walls automated clients and archive playback failed — and requires one confirmation pass before promotion."
     - "A reanalysis of the same Chinese CDC environmental data underlying the surveillance paper, sharing authors with the market epicenter paper: one evidence stream, not an independent confirmation."
     - "The authors note that a correlational analysis of this data cannot reliably show whether any particular species was infected."
   reviewState: ai_extracted
