@@ -1,0 +1,134 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design. Executes KRK-R013.
+id: KRK-S002
+title: Federal public-facing role in state-jurisdiction public-venue homicides
+question: Was the FBI's first-week public role in this case — director-level
+  scene walkthrough and evidence announcements, with no federal charge
+  identified — typical or atypical of comparable state-jurisdiction cases?
+researchIds:
+  - KRK-R013
+claimIds:
+  - KRK-C037
+criteria:
+  frozenOn: 2026-08-26
+  inclusion:
+    - United States events, 2000–2026, in which one or more people were killed
+      at a public or semi-public venue and law enforcement processed the
+      location as a crime or mass-casualty scene (the KRK-S001 population).
+    - The criminal matter, if prosecuted, proceeded under state law with no
+      federal charges filed within the first year — or no prosecution occurred
+      (perpetrator dead). The question is federal conduct where federal
+      jurisdiction was NOT asserted.
+    - "The federal role is documentable from the public record on at least two
+      of four variables: (a) whether the FBI participated in the investigation;
+      (b) the depth of that role (laboratory or evidence-response assistance,
+      joint task force, investigative lead); (c) the date and RANK of the first
+      federal public statement on the case (none / special agent in charge /
+      headquarters official / director personally); (d) the stated legal basis
+      or nexus for involvement."
+  exclusion:
+    - Cases where federal charges were filed within the first year or a federal
+      nexus (terrorism, federal hate crime) was asserted by federal authorities
+      in the first week — federal fronting of a federal case is not the
+      comparandum.
+    - Events before 2000.
+    - Non-US events.
+  searchProtocol: "Multi-searcher discovery per the ratified practice, run only
+    after this freeze, protocol verbatim per searcher: the deep-research APIs
+    available to the project plus the executing agent's own search.
+    Per-candidate queries pairing the case name with: \"FBI\", \"press
+    conference\", \"special agent in charge\", \"FBI assisted\", \"FBI evidence
+    response\", \"federal charges\". Generic queries: [FBI role state murder
+    investigation assistance]; [FBI director press conference shooting];
+    [special agent in charge briefing shooting]. Sources searched: FBI and DOJ
+    press-release archives, contemporaneous AP/Reuters and papers of record,
+    official after-action reports. Union of searcher candidate lists; overlap
+    reported in limitations. Deep-research output is a brief under casework
+    convention — never cited; every cell verified natively before entering the
+    table."
+  knownCandidates:
+    - name: UVU courtyard shooting (Orem, 2025)
+      disposition: exclude
+      reason: the target case — placed against the distribution, not inside it
+    - name: Route 91 Harvest festival shooting (Las Vegas, 2017)
+      disposition: include
+      reason: state crime, perpetrator dead, no federal charges; FBI role extensively
+        documented
+    - name: Sandy Hook Elementary (Newtown, 2012)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead; FBI assistance documented in
+        State's Attorney report
+    - name: Marjory Stoneman Douglas (Parkland, 2018)
+      disposition: include
+      reason: state prosecution, no federal charges
+    - name: Robb Elementary (Uvalde, 2022)
+      disposition: include
+      reason: state jurisdiction; federal role documented in the DOJ CRI review
+    - name: Michigan State University (2023)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead
+    - name: Covenant School (Nashville, 2023)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead; FBI assistance reported
+    - name: Astroworld crowd crush (Houston, 2021)
+      disposition: include
+      reason: state grand jury, no federal charges
+    - name: Aurora Century 16 (2012)
+      disposition: include
+      reason: state prosecution, no federal charges
+    - name: West Nickel Mines Amish school (2006)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead
+    - name: Umpqua Community College (2015)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead
+    - name: Virginia Tech (2007)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead
+    - name: Sutherland Springs First Baptist (2017)
+      disposition: include
+      reason: state jurisdiction, perpetrator dead; federal civil liability (Air Force
+        records failure) noted but no federal prosecution
+    - name: Boston Marathon bombing (2013)
+      disposition: exclude
+      reason: federal terrorism prosecution — federal fronting of a federal case
+    - name: Pulse nightclub (Orlando, 2016)
+      disposition: exclude
+      reason: federal terrorism nexus asserted immediately; FBI led as terrorism
+        investigation
+    - name: Tops supermarket (Buffalo, 2022)
+      disposition: exclude
+      reason: federal hate-crime charges filed
+    - name: Cielo Vista Walmart (El Paso, 2019)
+      disposition: exclude
+      reason: federal hate-crime charges filed
+    - name: Tree of Life synagogue (Pittsburgh, 2018)
+      disposition: exclude
+      reason: federal hate-crime prosecution
+  criteriaHash: 85af367d00c3
+method: Discovery per the frozen protocol; extraction per case of the four
+  variables, each cell citing its own source with the standard verification
+  label; cells that cannot be sourced are marked, not estimated. Cases where the
+  FBI made no public statement are rows, not gaps — absence of federal fronting
+  is the base-rate signal. Findings state the distribution in plain language,
+  place this case's profile against it on rank-of-first-statement and stated
+  nexus ahead of participation itself, report the direction of failed searches,
+  and give the searcher-overlap coverage indicator. The deflationary and
+  inflationary hypotheses are stated in KRK-R013; either outcome publishes.
+columns:
+  - case
+  - event date
+  - prosecution
+  - fbi participated
+  - role depth
+  - first federal public statement
+  - statement rank
+  - stated nexus
+rows: []
+findings: []
+limitations: []
+runId: 2026-08-26-study-krk-s002-freeze
+model: Claude Fable 5 (Anthropic), via Cursor
+date: 2026-08-26
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false
