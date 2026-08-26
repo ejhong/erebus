@@ -213,3 +213,35 @@
     Prevents both failure modes at once: discrepancies cannot be laundered
     into a coordinated-lies narrative, and they cannot be waved away as
     grief — each lands where its evidence puts it.
+
+- id: KRK-R013
+  title: "Base-rate study: federal public-facing role in state-jurisdiction public-venue homicides"
+  summary: >-
+    Over the same comparable-case population as KRK-R011 (mass-casualty
+    events and killings of public figures at public venues, US,
+    2000-2026, state-jurisdiction prosecutions), tabulate for each case:
+    whether the FBI participated in the investigation; the depth of that
+    role (laboratory/evidence-response assistance, joint task force,
+    investigative lead); the date and rank of the first federal public
+    statement (local sheriff or DA only, special agent in charge, FBI
+    director personally); and the stated legal nexus for involvement.
+    Then place this case's profile — director-level scene walkthrough and
+    evidence announcements within 48 hours, "lead out for the federal
+    government," no federal charge identified — against that
+    distribution. The discriminating variable is who fronted the case
+    publicly and how fast, NOT participation itself: the DOJ's former
+    domestic-terrorism counsel states on the record that FBI assistance
+    in state-charged cases is routine.
+  claimIds: [KRK-C037]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Converts a circulating "the federal presence was unusual" intuition
+    into a measured base rate, with the deflationary hypothesis (routine
+    assistance, unusual only in visibility because the victim was
+    prominent) and the inflationary one (public fronting without
+    jurisdiction is rare) both testable on the same table. If
+    director-level fronting is unprecedented among comparables, the
+    institutional-conduct questions in this case gain citable weight; if
+    it tracks victim prominence, the anomaly deflates honestly. Either
+    outcome publishes.
