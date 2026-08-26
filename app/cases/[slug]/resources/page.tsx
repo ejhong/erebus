@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { CuratedResourceCard } from "@/src/components/CuratedResourceCard";
 import { ResourceGroupSection } from "@/src/components/ResourceGroupSection";
 import { loadAllCases } from "@/src/domain/load";
-import { resourceGroups } from "@/src/domain/resources";
 import { paramsOrPlaceholder } from "@/src/domain/staticExport";
-import { notFound } from "next/navigation";
+import { resourceGroups } from "@/src/domain/resources";
 
 export function generateStaticParams() {
   return paramsOrPlaceholder(
