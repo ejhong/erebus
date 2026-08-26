@@ -96,11 +96,9 @@ Current queue (2026-08-25):
    empty route, and the five dynamic-route pages render `notFound()` for
    unknown ids (replacing thrown errors). Affected files are listed in the
    sync allowlist under "zero-content static-export support."
-2. **Inbox-response workflow token bug (live upstream bug).** The
-   `inbox-response.yml` dispatch job grants only `actions: write`; `gh
-   workflow run` first resolves the repo's default branch and fails with
-   "Resource not accessible by integration." Fix shipped here: add
-   `contents: read` to the workflow's permissions block.
+2. ~~Inbox-response workflow token bug.~~ **Merged upstream 2026-08-26**
+   (aletheia PR #77) and pulled back the same day; the allowlist entry for
+   `inbox-response.yml` is retired with it.
 3. **Study/workpaper domain object (feature proposal — build upstream
    first).** Desk research produces datasets (base-rate tabulations,
    replication tables, discrepancy ledgers) whose epistemic unit is the
@@ -121,16 +119,11 @@ Current queue (2026-08-25):
    it, and stale-checks re-panels such cases automatically. The original
    dissent and the four complies readings remain preserved verbatim in
    this repo's PR #8 arbiter comment.
-6. **Arbiter seats cannot verify citations (design observation, from this
-   repo's PR #10 panel, 2026-08-25).** Panel seats judge a diff against
-   the constitution but have no way to check that a cited source,
-   locator, or quotation is real — so an honest seat facing
-   citation-heavy content must vote "unsure", which parks the PR
-   regardless of its quality. Proposed upstream direction: separate
-   mechanical citation verification (resolvable identifiers, reachable
-   URLs, checked quotations) from editorial judgment, feed the
-   verification result to the seats as an input, and instruct seats to
-   judge the editorial layer conditional on it — so "unsure because
-   unverifiable" stops masquerading as editorial doubt. (Recovered from
-   closed PR #11, whose body described it but whose diff never carried
-   it.)
+6. ~~Arbiter seats cannot verify citations.~~ **Merged upstream 2026-08-26**
+   (aletheia PR #80, arbiter 5/5 — judged by the very mechanism it ships)
+   and pulled back the same day: the arbiter now resolves every DOI,
+   arXiv id, and URL a diff adds under `content/` (Crossref + doi.org
+   fallback, arXiv API, HTTP) and feeds the results to the seats as tool
+   output (prompt v3) — RESOLVES means judge honest use, FAILS is
+   positive evidence, UNCHECKED never gates. Quotations and page-level
+   locators remain seat judgment.

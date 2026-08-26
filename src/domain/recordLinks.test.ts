@@ -57,8 +57,11 @@ describe("buildRecordLinkRegistry", () => {
       kind: "source",
       href: "/sources/SRC-MULLER-2020/",
     });
+    // Evidence links point at the full ledger page: the case page renders
+    // only the top highlights, so its #evidence-{id} anchors are not
+    // guaranteed to exist (the TRN-E012 dead-link regression, upstream #79).
     expect(registry.get("EX-E001")?.href).toBe(
-      "/cases/example-case/#evidence-EX-E001",
+      "/cases/example-case/evidence/#evidence-EX-E001",
     );
     expect(registry.get("EX-R001")?.href).toBe(
       "/cases/example-case/#research-EX-R001",
