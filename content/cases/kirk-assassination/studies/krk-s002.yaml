@@ -1,3 +1,13 @@
+# Stage record (append-only; the provenance stamp below reflects the
+# latest stage, this comment preserves the earlier one in-file):
+#   frozen    2026-08-26 — runId 2026-08-26-study-krk-s002-freeze,
+#             promptVersion erebus-study-freeze-v1, zero rows by design,
+#             criteria hash 85af367d00c3 (merged as the freeze PR)
+#   collected 2026-08-26 — runId 2026-08-26-study-krk-s002-collect,
+#             promptVersion erebus-study-collect-v1, 13 rows; hash
+#             re-verified unchanged at collection
+# The criteria hash is the cross-stage invariant; any criteria edit
+# after the freeze fails the build.
 id: KRK-S002
 title: Federal public-facing role in state-jurisdiction public-venue homicides
 question: Was the FBI's first-week public role in this case — director-level
@@ -319,20 +329,19 @@ rows:
       statement rank: none at the time
       stated nexus: assistance
     citation:
-      text: "Two sources, each exact. Linked: FBI Portland field office, October 1,
-        2016, \"Message of Remembrance on First Anniversary of UCC Attack\" —
-        SAC Bretzing's account of the hundred-plus-person response (role-depth
-        cell; flagged in-row as not contemporaneous). Canonical locator:
-        fbi.gov/contact-us/field-offices/portland/
-        news/message-of-remembrance-on-first-anniversary-of-ucc-attack (live
-        page bot-blocks mechanical checks); linked to the Internet Archive
-        snapshot of 2026-01-31, whose full text was read and matches the cells.
-        Briefing cells: ABC 33/40 (AP wire), October 1, 2015, \"UCC Shooting:
-        Sheriff not naming gunman,\"
-        abc3340.com/news/nation-world/ucc-shooting-oregon-gunman-identified-as-\
-        chris-harper-mercer (sheriff fronting; FBI/OSP evidence teams; CALL-FBI
-        tip line)."
-      url: https://web.archive.org/web/20260131130456/https://www.fbi.gov/contact-us/field-offices/portland/news/message-of-remembrance-on-first-anniversary-of-ucc-attack
+      text: "Two sources, each exact. Linked (contemporaneous): ABC 33/40 (AP wire),
+        October 1, 2015, \"UCC Shooting: Sheriff not naming gunman\" — sheriff
+        fronting the briefings, FBI/OSP evidence teams processing the scene,
+        1-800-CALL-FBI tip line (briefing and participation cells). Role-depth
+        cell: FBI Portland field office, October 1, 2016, \"Message of
+        Remembrance on First Anniversary of UCC Attack,\" SAC Bretzing's
+        hundred-plus-person account, flagged in-row as not contemporaneous;
+        canonical locator fbi.gov/contact-us/field-offices/portland/news/
+        message-of-remembrance-on-first-anniversary-of-ucc-attack — the live
+        page bot-blocks mechanical checks and the Internet Archive answers too
+        slowly for them; its snapshot 20260131130456 was fetched in full during
+        collection and matches the quoted account."
+      url: https://abc3340.com/news/nation-world/ucc-shooting-oregon-gunman-identified-as-chris-harper-mercer
       verification: ai_verified
   - cells:
       case: Virginia Tech
