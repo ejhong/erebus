@@ -659,6 +659,19 @@
     - "First-person account from the paving contractor; strong for what he did and saw, weak for others' intentions."
   background: true
 
+- id: SRC-PATEL-0912-2025
+  title: "Director Patel's Remarks at the September 12, 2025, Press Conference on the Utah Valley University Shooting"
+  organization: "Federal Bureau of Investigation"
+  year: "2025"
+  sourceType: webpage
+  identifier: "FBI speeches and testimony page, September 12, 2025"
+  url: "https://www.fbi.gov/news/speeches-and-testimony/director-patel-remarks-september-12-press-conference-utah-valley-university-shooting"
+  verification: ai_verified
+  verificationNote: >-
+    Quotes verified 2026-08-26 against the Internet Archive capture of
+    2026-06-29 (fbi.gov live page sits behind a bot wall).
+  reliabilityNotes:
+    - "The director's own words about the bureau's role; authoritative for what the FBI publicly claimed, not for whether that role was typical."
 - id: SRC-KRK-S001
   title: "Workpaper: scene-release-to-alteration intervals in comparable American cases (study KRK-S001)"
   organization: "This site (AI-authored project work held in the repository)"

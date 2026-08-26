@@ -91,6 +91,15 @@ const ALLOWLIST = new Set([
   ".github/workflows/extract-claims.yml",
   // Exists only in this repo
   "scripts/sync-engine.mjs",
+  // Hosting is this deployment's own: GitHub Pages at a repo subpath,
+  // public and unadvertised (docs/HOSTING.md). The upstream engine makes no
+  // assumption about a host, so this workflow has no upstream counterpart.
+  ".github/workflows/deploy-pages.yml",
+  // One-time migration tool for this repo's 2026-08-26 going-public change
+  // (docs/DECISIONS.md). Purges the private research-brief tree from
+  // history before visibility flips; meaningless upstream, which never
+  // committed briefs in the first place.
+  "scripts/purge-casework-history.sh",
 ]);
 
 /**

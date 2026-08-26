@@ -1,69 +1,107 @@
-# Hosting — Cloudflare Pages behind Cloudflare Access
+# Hosting — GitHub Pages, public
 
-Erebus is a private site: a Next.js static export served by Cloudflare
-Pages, with Cloudflare Access (email allowlist + one-time PIN) in front of
-it. Authentication is never built into the site itself (AGENTS.md §4).
+The site is a Next.js static export served from git by GitHub Pages, with
+**no access control in front of it**. It is public and unadvertised: open
+to anyone who finds it, promoted to no one.
 
-## Build facts
+This replaced a Cloudflare Pages deployment behind Cloudflare Access
+(email allowlist, one-time PIN) on 2026-08-26. The reasoning is in
+`docs/DECISIONS.md`; the short version is that a site which grades
+evidence disputes without accusing anyone should be able to survive being
+read by both sides, and gating it was doing more to signal secrecy than to
+protect anything.
 
-- Build command: `npm ci && npm run build`
-- Output directory: `out/`
-- No base path: the export is served at the domain root.
-- The build fails loudly on invalid content — that is intended.
+## What is public, and what is deliberately not
 
-## Founder setup steps (once)
+Public: the whole repository. Content records, the engine, the
+constitution, the decision log, every assessment overlay and arbiter
+verdict, and the full commit history. That is the point — the
+constitution stakes its accountability on inspectability, so the audit
+trail has to be readable by the people it is meant to reassure.
 
-### 1. Connect Cloudflare Pages to this repository
+Not public, and not in the repository at all: **research briefs**. They
+are held privately outside it. Two reasons, both load-bearing:
 
-1. Cloudflare dashboard → **Workers & Pages → Create → Pages →
-   Connect to Git**.
-2. Authorize the GitHub account and select this repository (`ejhong/ebs`).
-3. Project name: your choice (it becomes `<project>.pages.dev`).
-4. Build settings:
-   - Framework preset: **Next.js (Static HTML Export)** — or None;
-   - Build command: `npm ci && npm run build`
-   - Build output directory: `out`
-5. Save and deploy. Every push to `main` now deploys automatically;
-   PR branches get preview deployments.
+1. Briefs routinely contain third-party copyrighted material kept as
+   discovery aids — saved papers, books, blog archives. Committing that to
+   a private repo was defensible as working material; publishing it would
+   be republication.
+2. Briefs contain material about living persons that the living-persons
+   rules deliberately keep off the site. Publishing the briefs would
+   publish exactly what the constitution excluded from `content/`.
 
-### 2. Put Cloudflare Access in front of it
+Records may still name a brief in `origin.ref` as the provenance of an
+extraction. Such a reference records where a record came from; it is not
+something a reader can open, and it never was a citation — briefs have
+never been citable, and every citation a brief contains must be verified
+against the primary document before any derived record enters `content/`.
 
-1. Cloudflare dashboard → **Zero Trust** (one-time Zero Trust org setup if
-   new; the Free plan covers up to 50 users).
-2. **Access → Applications → Add an application → Self-hosted.**
-3. Application domain: the `<project>.pages.dev` domain (add both the apex
-   and `*.<project>.pages.dev` so preview deployments are covered too).
-4. Add a policy, action **Allow**, include → **Emails**: list the founder
-   and invited readers' email addresses.
-5. Authentication method: **One-time PIN** (no identity provider needed —
-   readers receive a code by email).
-6. Save. Unauthenticated visitors now hit the Access login instead of the
-   site.
+## Deployment
 
-Note: Access in front of `pages.dev` protects the web viewership path.
-Repository access (the content itself) is governed by GitHub private-repo
-permissions.
+`.github/workflows/deploy-pages.yml` builds and deploys on every push to
+`main`. Nothing else needs doing per-release.
 
-## Actions secrets the pipeline will eventually need
+The site is a **project site**, served from `/<repo>/`, so the export
+needs a matching base path or every absolute asset URL 404s. One
+environment variable drives it:
 
-Configured under **Settings → Secrets and variables → Actions**. None are
-set at bootstrap; each workflow fails early with instructions when a
-secret it needs is missing.
+| Where | Value |
+| --- | --- |
+| Deploy workflow | `BASE_PATH: /erebus` (edit here if the repo is renamed) |
+| `next.config.ts` | reads `NEXT_PUBLIC_BASE_PATH` → `basePath` + `assetPrefix` |
+| `src/config/assets.ts` | reads the same variable for content-record asset paths |
+| Local `next dev` | unset, so the site serves at the root |
+
+Content records store raw paths like `/images/cases/x/cover.jpg` that
+reach the DOM through plain `src` attributes, which Next does not rewrite.
+`assetPath()` is what those call sites use, which is why both files read
+the same variable — they cannot disagree.
+
+The workflow asserts the prefix is present in the built output before
+deploying, because a project site with unprefixed asset URLs produces a
+*visually broken page rather than a failed build* — exactly the failure
+that silently ships.
+
+### One-time repository setup
+
+1. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
+2. Ensure Actions has `pages: write` and `id-token: write` (already
+   declared in the workflow's `permissions` block).
+3. Push to `main`. The first run creates the `github-pages` environment
+   and publishes to `https://<owner>.github.io/<repo>/`.
+
+### Moving to a custom domain later
+
+Set `BASE_PATH` to an empty string in the deploy workflow and add the
+domain under Settings → Pages. Nothing else changes: both config files
+already treat an empty value as "serve at the root," and the workflow
+skips its prefix assertion when the value is empty.
+
+## Actions secrets
+
+The autonomous workflows need model-vendor credentials. These are
+repository secrets, never committed:
 
 | Secret | Used by |
 | --- | --- |
 | `ANTHROPIC_API_KEY` | maintain, extract-claims, arbiter, cross-model checks |
-| `OPENAI_API_KEY` | same (alternative/additional vendor seat) |
+| `OPENAI_API_KEY` | same (additional vendor seat) |
 | `GEMINI_API_KEY` | arbiter and cross-model checks (vendor seat) |
 | `XAI_API_KEY` | arbiter and cross-model checks (vendor seat) |
-| `VENICE_API_KEY` | arbiter (vendor seat), where applicable |
+| `VENICE_API_KEY` | arbiter (vendor seat) |
 | `IMAGE_API_KEY` | generate-case-art (OpenAI Images API) |
-| `ENGINE_UPSTREAM` | engine sync + CI divergence check — a git URL for the upstream engine repository; never committed as a literal |
-| `MAINTENANCE_PAT` (optional) | fine-grained PAT (contents + pull-requests write) so maintenance PRs trigger CI; without it, auto-merge waits forever |
+| `ENGINE_UPSTREAM` | sync-engine (upstream engine git URL) |
 
-Repository Actions **variable** (not secret): `EXTRACT_MODEL` pins the
-extraction/assessment model id.
+A public repository changes one thing about secrets that matters: **secrets
+are not available to workflows triggered by pull requests from forks.** The
+arbiter and the cross-model checks therefore cannot run on a fork PR. That
+is the correct behaviour rather than a defect — an outside contributor
+cannot summon the panel, and a maintainer must bring the branch into the
+repository for it to be judged — but it means a fork PR's checks will show
+as failed for want of credentials, not for want of merit.
 
-Also required for the auto-merge lane: repo **Settings → General → Allow
-auto-merge**, and a branch ruleset on `main` requiring the CI and PR risk
-checks so auto-merge only completes when they are green.
+## What was torn down
+
+The Cloudflare Pages project and its Access policy. Order matters: bring
+Pages up and confirm the site serves before removing the Cloudflare
+deployment, so there is never a window with no live site.

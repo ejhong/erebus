@@ -1355,3 +1355,40 @@
     versions also disagree on timing (Grayzone: "earlier this year";
     Owens: during the Hamptons meeting). No document, recording, or named
     witness exists publicly on either side.
+
+- id: KRK-C037
+  tier: catalog
+  statement: >-
+    The FBI's public-facing role in the first week — director-level
+    crime-scene walkthrough and evidence announcements in a
+    state-jurisdiction homicide — exceeded the bureau's typical public
+    role in comparable cases.
+  theme: institutional
+  rung: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder commentary, 2026-08-26 session (circulating claim); public record verified same day"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "krk-fbi-role-2026-08-26"
+    date: "2026-08-26"
+  sourceAnchor:
+    sourceId: SRC-PATEL-0912-2025
+    locator: "FBI.gov speeches page, September 12, 2025 remarks (archived 2026-06-29)"
+    quote: >-
+      The FBI has a certain role to play, and we will play that role. And
+      we will lead out for the federal government.
+  plainLanguage: >-
+    The observable half is documented: the FBI director personally walked
+    the crime scene, announced forensic results within days, and framed
+    the bureau as "leading out for the federal government" — in a case
+    prosecuted under Utah law, where reporting indicates federal
+    prosecutors struggled to identify any applicable statute (NBC News,
+    September and December 2025). The comparative half is unmeasured, and
+    the deflationary reading is on the record: the DOJ's former domestic
+    terrorism counsel notes the FBI is "frequently involved in domestic
+    terrorism investigations that ultimately result in only state-level
+    charges," acting "in an assistance to state authorities' capacity"
+    (NBC News, September 2025). Whether director-level public fronting is
+    typical for cases of this profile is exactly what the pre-registered
+    base-rate study named in KRK-R013 measures; this claim is graded
+    against that distribution when it collects, and not before.
