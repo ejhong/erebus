@@ -1,0 +1,1048 @@
+# COV-001 evidence ledger. sourceStatement = what the source itself states,
+# quoted from text verified against the primary document on 2026-08-26;
+# editorInference = what this case concludes from it, kept strictly separate
+# (AGENTS.md §3.9). Where an author states a limitation on their own
+# finding, that statement sits in sourceStatement rather than being demoted
+# to a footnote — in this case those self-limitations are among the most
+# important things in the record.
+
+# ── early cases and geography ───────────────────────────────────────────
+
+- id: COV-E001
+  title: "Early cases clustered around the market, including cases with no market link"
+  claimIds: [COV-C001, COV-C002]
+  sourceId: SRC-WOROBEY-2022
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "We considered three categories of cases, which were all significantly
+    closer to the Huanan market than expected: (i) all cases (median
+    distance 4.28 km; P < 0.001), (ii) cases linked directly to the Huanan
+    market (median distance 5.74 km; P < 0.001), and (iii) cases with no
+    evidence of a direct link to the Huanan market (median distance 4.00
+    km; P < 0.001)." And, from the Discussion: "this group of cases resided
+    significantly closer to the market than those who worked there,
+    indicating that they had been exposed to the virus at or near the
+    Huanan market. For market workers, the exposure risk was their place of
+    work, not their residential locations, which were significantly farther
+    afield than those cases not formally linked to the market."
+  editorInference: >-
+    This is the observation that ascertainment bias has the hardest time
+    explaining. If early cases were found because investigators looked
+    around the market, the unlinked cases should not be the ones living
+    nearest it. The comparison is significant at p = 0.029, which is a
+    modest margin for a load-bearing result.
+  exactLocator: "Science 377(6609):951–959, Results ('Early cases lived near to and centered on the Huanan market') and Discussion, opening paragraph"
+  limitations:
+    - "Rests on Chinese case ascertainment that has never been independently audited; the complete December 2019 line list has not been released."
+    - "Not independently reproduced; the code and raw geospatial data have not been re-run by a third party."
+    - "A published eLetter disputes the spatial result on distributional grounds and the authors replied identifying flaws in that critique; the exchange is unresolved."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E002
+  title: "The 2024 erratum: data files corrected, results unchanged"
+  claimIds: [COV-C002]
+  sourceId: SRC-WOROBEY-ERRATUM-2024
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    The authors identified duplicated data files and a pseudoreplicate
+    count of 10,000 "rather than the n = 1000 used for all related
+    analyses," regenerated the files and re-ran every affected test:
+    "All results remained the same as previously reported: p < 0.001 and
+    p-Adjusted (BH) = 0.003." The notice also records that a correction was
+    posted to the supplementary material on May 8, 2023, and that "Science
+    should have indexed it as a formal Erratum," which occurred on March 15,
+    2024.
+  editorInference: >-
+    Recorded because corrections must be as visible as findings, and
+    because this one is routinely conflated with the separate and
+    substantive correction to the companion lineage paper. This erratum
+    changed no result. Its only substantive content is a ten-month
+    indexing delay, which is a small process-integrity observation about
+    the publication record and not evidence about origins.
+  exactLocator: "Science 383(6688):eadp1133"
+  limitations:
+    - "Read via a dated archive snapshot because the publisher bot-walls automated clients and the repository deposit carries metadata only."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E003
+  title: "The earliest reported case had no market link, per the first clinical series"
+  claimIds: [COV-C003, COV-C001]
+  sourceId: SRC-HUANG-2020
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "By Jan 2, 2020, 41 admitted hospital patients had been identified as
+    having laboratory-confirmed 2019-nCoV infection. … 27 (66%) of 41
+    patients had been exposed to Huanan seafood market." And: "The symptom
+    onset date of the first patient identified was Dec 1, 2019. None of his
+    family members developed fever or any respiratory symptoms. No
+    epidemiological link was found between the first patient and later
+    cases."
+  editorInference: >-
+    The same paper carries evidence in both directions, which is why it is
+    recorded once rather than split into a favorable half. Two-thirds of
+    the earliest confirmed patients had direct market exposure — strong for
+    the market's centrality — while the earliest case by onset had none,
+    which is what an upstream or non-market index event predicts.
+  exactLocator: "The Lancet 395(10223):497–506, Findings and Results"
+  limitations:
+    - "A single case's reported exposure history in an early clinical series is weak evidence about the outbreak's origin."
+    - "The identification of this patient as the earliest case, and the December 1 onset date, have been disputed in later reporting this case has not adjudicated."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+# ── the market and its animals ──────────────────────────────────────────
+
+- id: COV-E004
+  title: "Chinese CDC surveillance: 923 environmental samples, 74 positive, 87.5 percent of interior positives in the west zone"
+  claimIds: [COV-C004, COV-C005]
+  sourceId: SRC-LIU-2024
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "From 1 January 2020, after closure of the market, 923 samples were
+    collected from the environment. From 18 January, 457 samples were
+    collected from 18 species of animal … SARS-CoV-2 was detected in 74 (70
+    RT-qPCR and 4 Bowtie2) environmental samples, but none of the animal
+    samples." On distribution: "Of the 64 SARS-CoV-2-positive samples
+    collected inside the HSM, 87.5% (56/64) were collected in the West Zone
+    of the market." On the sampling window: "The market was closed in the
+    morning of 1 January 2020 … On the same day, in the early morning, the
+    Chinese Center for Disease Control and Prevention … dispatched an
+    epidemiological team." And on what was done to the site: "the outside
+    surface of the rolling shutter doors of the stalls and the corridors
+    were disinfected … throughout January and February 2020. The goods
+    inside the stalls were completely cleared and disinfected until early
+    March 2020."
+  editorInference: >-
+    The custodian's own data independently corroborates the western-section
+    concentration found by outside analysis, which is the strongest form of
+    that finding. The same paper bounds what the sampling could show: the
+    market was empty and being disinfected throughout the collection period.
+  exactLocator: "Nature 631(8020):402–408, Abstract, Results, and Methods"
+  limitations:
+    - "Cite the 2024 version of record: the positive count was 73 in the 2023 accelerated preview and 74 after a note added in proof explaining the difference."
+    - "The paper's abstract dates animal sampling from 18 January while its Results describe both sample sets as collected from 1 January; the discrepancy is noted rather than resolved."
+    - "Produced by the custodian whose data-sharing is itself in dispute."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E005
+  title: "Susceptible-wildlife DNA in the positive samples — and the authors' own limitation"
+  claimIds: [COV-C006, COV-C008]
+  sourceId: SRC-CRITS-CHRISTOPH-2024
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    From the published abstract: investigators "find increased SARS-CoV-2
+    positivity near and within a wildlife stall. We identify wildlife DNA in
+    all SARS-CoV-2-positive samples from this stall, including species such
+    as civets, bamboo rats, and raccoon dogs, previously identified as
+    possible intermediate hosts." From the accepted manuscript: "The five
+    SARS-CoV-2-positive samples from wildlife stall A contained mtDNA from
+    raccoon dogs, hoary bamboo rats, dogs … and European rabbits. Amur
+    hedgehog and Malayan porcupine mtDNA was present in four samples … and
+    one sample contained masked palm civet mtDNA." The authors then state
+    the limitation directly: "While either animal or human viral shedding is
+    consistent with these data, only a zoonotic origin of SARS-CoV-2
+    directly predicts co-detection of SARS-CoV-2 and wildlife genetic
+    material." And: "It is not possible to conclude which of these species
+    may have been infected and/or introduced the virus to the market from
+    these data alone."
+  editorInference: >-
+    The strongest affirmative market evidence, and its limits are stated by
+    the people who produced it rather than by critics. The asymmetry the
+    authors identify is genuine and easy to miss: co-detection is what
+    zoonosis specifically predicts, even though human shedding after a
+    zoonotic event would produce the same pattern. Detection is uneven
+    across species, which the flat species lists in circulation obscure.
+  exactLocator: "Cell 187(19):5468–5482.e11, abstract; Results and Discussion quoted from the accepted author manuscript"
+  limitations:
+    - "Body-text wording is from the accepted author manuscript, not the published version — the publisher bot-walls automated clients and archive playback failed — and requires one confirmation pass before promotion."
+    - "A reanalysis of the same Chinese CDC environmental data underlying the surveillance paper, sharing authors with the market epicenter paper: one evidence stream, not an independent confirmation."
+    - "The authors note that a correlational analysis of this data cannot reliably show whether any particular species was infected."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E006
+  title: "All 457 animal samples negative — and the species that were never sampled"
+  claimIds: [COV-C007, COV-C008]
+  sourceId: SRC-LIU-2024
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "The 457 animal samples included 188 individuals belonging to 18
+    species … The sources of the samples included unsold goods kept in
+    refrigerators and freezers in the stalls … Samples from stray animals in
+    the market were also collected, comprising swab samples from 10 cats, 27
+    samples of cat faeces, 1 dog, 1 weasel and 10 rats. All of the 457
+    animal samples tested negative for SARS-CoV-2 nucleic acid."
+  editorInference: >-
+    Read carefully, this is much weaker negative evidence than it appears.
+    The sampled animals were unsold stock, freezer contents, and strays —
+    not the live wild mammals the zoonotic hypothesis implicates. The
+    reanalysis of this very dataset states that no raccoon dogs or civets on
+    sale at the market were ever sampled or tested, and no serology was
+    taken from animals or handlers. An absence produced by not testing the
+    relevant species carries little weight either way.
+  exactLocator: "Nature 631(8020):402–408, Results"
+  limitations:
+    - "Sampling began only after the market was cleared, so the animals of interest had largely been removed."
+    - "The candidate intermediate-host species were not among those tested."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E007
+  title: "WHO's assessment of the co-location evidence, and of the testing that was not done"
+  claimIds: [COV-C006, COV-C007]
+  sourceId: SRC-SAGO-2025
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Currently, the most compelling evidence of a possible spillover from
+    animals to humans comes from the independent metagenomic data analysis,
+    which confirmed the presence of mitochondrial DNA of animals known to be
+    susceptible in stalls at the HSM, and SARS-CoV-2 positive environmental
+    swabs from the same stalls. The data confirms that these animals were
+    present before the market was closed on 1 January 2020 and may have been
+    a source for human infection." On the limits of the animal testing:
+    "Despite some testing of the environment and animals sampled from the
+    HSM, there was a limited number of susceptible species included in this
+    testing, thus limiting the ability to make definitive conclusions. It is
+    likely that many animals had already been removed due to public health
+    measures imposed on 1 January 2020, when the market was shut down and
+    disinfected; therefore, they were not traced for sampling."
+  editorInference: >-
+    An independent expert body reaching the same two-sided reading this case
+    reaches: the co-location is the strongest market evidence available and
+    it establishes possibility rather than fact. The second passage is the
+    authoritative statement of why the negative animal results are weak.
+  exactLocator: "SAGO independent assessment (June 2025, corrected version), printed pp. 56–57"
+  limitations:
+    - "A synthesis of accessible evidence by a body that states it had no access to original raw data from any source."
+    - "Not independent of the underlying papers it reviews."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E008
+  title: "WHO's scepticism about China's reported animal-testing results"
+  claimIds: [COV-C007]
+  sourceId: SRC-SAGO-2025
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "It has been reported to SAGO and WHO that no stored samples from
+    animals in China taken before the first identified human cases of
+    COVID-19 (January 2020) were SARS-CoV-2-positive. This has not been
+    independently verified by SAGO. However, it seems unlikely that there
+    have been no animal SARS-CoV-2 reverse zoonotic infections in China
+    since the onset of the COVID-19 pandemic (aside from Syrian hamsters in
+    Hong Kong Special Administrative Region), considering the many
+    susceptible species present there, the reverse zoonoses events reported
+    in various susceptible species around the world, and the possibility of
+    exposure to potentially infected animals at source farms and the HSM."
+  editorInference: >-
+    Quoted at length because it is widely misreported, including in this
+    case's own research brief, as WHO calling the missing intermediate host
+    "surprising." It says something different and narrower: that the
+    reported absence of ANY human-to-animal infections in China since the
+    pandemic began is implausible. That is scepticism about the
+    completeness of China's post-pandemic animal testing, which cuts
+    against the reliability of the same negative results the zoonotic case
+    is often criticized with.
+  exactLocator: "SAGO independent assessment (June 2025, corrected version), printed p. 56, discussion point 5"
+  limitations:
+    - "An expert body's expression of doubt about another party's reported results, not an independent test of them."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E009
+  title: "The 2021 joint study's pathway ratings, and China's unaudited animal-testing account"
+  claimIds: [COV-C007, COV-C015]
+  sourceId: SRC-WHO-CHINA-2021
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The joint study rated an intermediate-host pathway "likely to very
+    likely" and a laboratory incident "extremely unlikely," and recorded
+    China's account of extensive animal testing with no positive results.
+  editorInference: >-
+    Included for provenance rather than for its ratings, which later WHO
+    reviews superseded: the 2022 preliminary report reopened the laboratory
+    hypothesis and the 2025 assessment states it could not be evaluated at
+    all. Citing the 2021 rating as WHO's current position is an error both
+    of this case's research briefs specifically warn against, and it remains
+    common in public argument.
+  exactLocator: "WHO-convened Global Study of Origins of SARS-CoV-2: China Part, joint report, executive summary"
+  limitations:
+    - "Conducted jointly with the government whose data access was in question, on terms the study itself records."
+    - "Its animal-testing figures are the custodian's own account and have never been independently audited."
+    - "Superseded on the laboratory question by the 2022 and 2025 reviews."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+# ── early lineages ─────────────────────────────────────────────────────
+
+- id: COV-E010
+  title: "Two lineages, two nucleotides, and the introduction-date estimates"
+  claimIds: [COV-C009, COV-C010]
+  sourceId: SRC-PEKAR-2022
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Lineage A differs from lineage B by two nucleotide substitutions,
+    C8782T and T28144C, which are also found in related coronaviruses from
+    Rhinolophus bats." On timing: "we inferred the infection date of the
+    lineage B primary case to be 18 November (95% HPD, 23 October to 8
+    December) and the infection date of the primary case of lineage A to be
+    25 November (95% HPD, 29 October to 14 December). The lineage B primary
+    case predated that of lineage A in 64.6% of the posterior sample, by a
+    median of 7 days." The corrected conclusion: "we inferred substantial
+    support favoring separate introductions of lineages A and B (BF = 4.3
+    and BF = 4.2 by using the recCA and unconstrained rooting,
+    respectively)."
+  editorInference: >-
+    The Bayes factors quoted here are the corrected values. The originally
+    published figures were 61.6 and 4.2 — a distinction that matters
+    because the pre-correction numbers still circulate widely, including in
+    material that cites this paper approvingly.
+  exactLocator: "Science 377(6609):960–966, Introduction and Results (corrected version of record)"
+  limitations:
+    - "Model-based inference sensitive to rooting choices, molecular-clock assumptions, unsampled intermediates, and which early sequences are trusted."
+    - "Companion paper to the market epicenter study with overlapping authors and inputs; their agreement is not independent corroboration."
+    - "Several hundred early Chinese sequences remain unpublished."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E011
+  title: "The 2023 erratum: support for multiple introductions cut roughly fourteenfold"
+  claimIds: [COV-C010]
+  sourceId: SRC-PEKAR-ERRATUM-2023
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    "the frequency of simulated topologies matching phylogenetic structures
+    arising from a single introduction was incorrectly reported because of
+    an error in the code, which has been corrected. Correspondingly, the
+    Bayes factors in favor of multiple introductions of severe acute
+    respiratory syndrome coronavirus 2 (SARS-CoV-2) into the human
+    population relative to a single introduction were overestimated. The
+    text now represents the corrected Bayes factors and topology frequency
+    (Fig. 2C), which still favors the multiple introduction scenario."
+  editorInference: >-
+    A substantive correction to the case's most diagnostic quantitative
+    claim, recorded as prominently as the finding it corrects. Comparing
+    the two published versions gives the magnitude the erratum text omits:
+    Bayes factors fell from 61.6 and 60.0 to 4.3 and 4.2, the authors' own
+    wording moved from "strong" to "substantial" support, and the
+    simulation frequency of the single-introduction topology rose from 0.5
+    to 3.1 percent. Both directions of overstatement are worth naming: the
+    original figures should no longer be cited, and the characterization
+    that the correction reduced the finding to negligible is contradicted
+    by the erratum's own sentence that the corrected analysis still favors
+    multiple introductions.
+  exactLocator: "Science 382(6667):eadl0585; magnitudes derived by comparing the pre-correction deposit with the corrected version of record"
+  limitations:
+    - "The erratum states no numbers; the magnitudes here come from comparing the two published versions of the parent paper."
+    - "Read via a dated archive snapshot because the repository deposit carries metadata only."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E012
+  title: "WHO reports the two-introduction finding without drawing the lab-leak contrast"
+  claimIds: [COV-C010]
+  sourceId: SRC-SAGO-2025
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "Based on phylogeny and empirical mutation frequencies, initial and
+    updated analyses considering all currently available sequence data,
+    Pekar et al. proposed that a single introduction of SARS-CoV-2 into the
+    human population is 'highly unlikely'. These findings suggest two
+    slightly different but distinct genetic virus variants: lineage A and
+    lineage B." And, separately: "Analysis of available genomes provides
+    evidence of two separate introductions of SARS-CoV-2 virus lineages …
+    These findings and evolutionary analyses suggest that these
+    introductions occurred after November 2019."
+  editorInference: >-
+    Recorded to correct a misattribution this case had to catch. The WHO
+    report is widely cited — including in this case's research brief — as
+    contrasting the two-lineage pattern with the single introduction a
+    laboratory leak would produce. It contains no such sentence. It reports
+    the finding and attributes the "highly unlikely" judgment to the
+    original authors. The inference that two introductions disfavor a
+    single laboratory index infection is a reasonable one, but it is this
+    case's inference, not WHO's, and it is recorded here as such.
+  exactLocator: "SAGO independent assessment (June 2025, corrected version), printed pp. 22 and 55"
+  limitations:
+    - "A secondary characterization of the underlying analysis, not an independent evaluation of it."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+# ── the genome ─────────────────────────────────────────────────────────
+
+- id: COV-E013
+  title: "The closest Laotian relatives bind human receptors efficiently — and carry no furin cleavage site"
+  claimIds: [COV-C011, COV-C013]
+  sourceId: SRC-TEMMAM-2022
+  direction: qualifies
+  strength: strong
+  sourceStatement: >-
+    "We found that the receptor-binding domains of these viruses differ from
+    that of SARS-CoV-2 by only one or two residues at the interface with
+    ACE2, bind more efficiently to the hACE2 protein than that of the
+    SARS-CoV-2 strain isolated in Wuhan from early human cases, and mediate
+    hACE2-dependent entry and replication in human cells … None of these bat
+    viruses contains a furin cleavage site in the spike protein." On genome
+    identity: "RaTG13 and BANAL-52 bat coronaviruses exhibit high nucleotide
+    identity with SARS-CoV-2 throughout the length of the genome (96.8% for
+    BANAL-52 and 96.1% for RaTG13)."
+  editorInference: >-
+    A single paper carrying evidence in both directions, which is why it is
+    recorded whole. It demonstrates that efficient human-receptor binding
+    evolves in wild bat sarbecoviruses with no laboratory involved, which
+    weakens one engineering argument — and it confirms that none of these
+    natural relatives has the cleavage site, which is the observation the
+    other engineering argument rests on.
+  exactLocator: "Nature 604(7905):330–336, abstract and Results"
+  limitations:
+    - "A survey of one geographic region; absence of a feature among sampled viruses is weak evidence about its natural distribution."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E014
+  title: "WHO: genomic features explained by natural evolution — and not refuted as man-made either"
+  claimIds: [COV-C011, COV-C012]
+  sourceId: SRC-SAGO-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "evidence around the evolution of the virus suggests that these features
+    likely developed through natural evolution in susceptible animals and
+    humans due to a propensity for recombination and accumulation of
+    mutations associated with coronaviruses … Furin cleavage sites occur in
+    other human coronaviruses and had been previously identified in nature,
+    for example in animal-associated merbecoviruses. This suggests that it
+    could also be acquired in sarbecoviruses through natural recombination
+    events … Based on our knowledge on coronavirus evolution and biology,
+    this and other features of SARS-CoV-2 are readily explained by natural
+    evolution and provide no support to theories of a man-made origin.
+    However, the latter is also not refuted by biological data."
+  editorInference: >-
+    The final sentence is the one that must never be dropped, and it is
+    absent from most citation of this passage including this case's own
+    research brief. WHO says the genomic features give no support to a
+    man-made origin and, immediately, that biological data does not refute
+    one. That is the precise epistemic position: the genome is not evidence
+    for engineering, and it cannot exclude it either.
+  exactLocator: "SAGO independent assessment (June 2025, corrected version), printed p. 56, discussion point 4"
+  limitations:
+    - "An expert synthesis rather than new analysis; it reviews published work rather than testing it."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E015
+  title: "The Proximal Origin letter's two most-quoted sentences, in full"
+  claimIds: [COV-C012]
+  sourceId: SRC-ANDERSEN-2020
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    From the introduction: "Our analyses clearly show that SARS-CoV-2 is not
+    a laboratory construct or a purposefully manipulated virus." From the
+    Conclusions: "Although the evidence shows that SARS-CoV-2 is not a
+    purposefully manipulated virus, it is currently impossible to prove or
+    disprove the other theories of its origin described here. However, since
+    we observed all notable SARS-CoV-2 features, including the optimized RBD
+    and polybasic cleavage site, in related coronaviruses in nature, we do
+    not believe that any type of laboratory-based scenario is plausible."
+  editorInference: >-
+    Quoted with their subject clauses intact, because those clauses are
+    exactly what was later contested: "Our analyses clearly show" and "we do
+    not believe" are claims of a different strength from the bare
+    assertions usually excerpted. The second passage also concedes, in its
+    own first clause, that other origin theories can be neither proved nor
+    disproved — a concession rarely quoted alongside the conclusion.
+  exactLocator: "Nature Medicine 26(4):450–452, unheaded introduction and Conclusions"
+  limitations:
+    - "A three-page commentary-style Letter, not a research article, despite being invoked as a study by both camps."
+    - "Its authors' contemporaneous private deliberations were later released by congressional committees; whether the published certainty exceeded private belief is a separate question this case does not grade here."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E016
+  title: "The closest known relative, at roughly 96 percent whole-genome identity"
+  claimIds: [COV-C013]
+  sourceId: SRC-ZHOU-2020
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Simplot analysis showed that 2019-nCoV was highly similar throughout
+    the genome to RaTG13, with an overall genome sequence identity of
+    96.2%." On the spike: "The receptor-binding spike protein encoded by the
+    S gene was highly divergent from other CoVs … with less than 75%
+    nucleotide sequence identity to all previously described SARSr-CoVs,
+    except for a 93.1% nucleotide identity to RaTG13."
+  editorInference: >-
+    Roughly four percent whole-genome divergence represents decades of
+    independent evolution, which is why no sampled relative can be the
+    immediate progenitor. Note that the paper reports identity figures and
+    concludes probable bat origin; the "too distant to be a progenitor"
+    inference is drawn elsewhere, and is not attributed to these authors.
+    Later peer-reviewed papers give this same figure as 96.1 percent.
+  exactLocator: "Nature 579(7798):270–273, Results"
+  limitations:
+    - "Authored by the institute whose research is itself under scrutiny in this case — a conflict to record, not a reason to discount the sequencing."
+    - "A statement about sampled diversity, not existing diversity."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, science batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E017
+  title: "The funder's position: the supported viruses are too distant to be the source"
+  claimIds: [COV-C013]
+  sourceId: SRC-NIH-2021
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "NIH wants to set the record straight on NIH-supported research to
+    understand naturally occurring bat coronaviruses at the Wuhan Institute
+    of Virology, funded through a subaward from NIH grantee EcoHealth
+    Alliance. Analysis of published genomic data and other documents from the
+    grantee demonstrate that the naturally occurring bat coronaviruses
+    studied under the NIH grant are genetically far distant from SARS-CoV-2
+    and could not possibly have caused the COVID-19 pandemic. Any claims to
+    the contrary are demonstrably false." The same statement concedes: "To
+    date, the origin of the SARS-CoV-2 virus that caused the COVID-19
+    pandemic has not been identified, despite intensive efforts to do so."
+  editorInference: >-
+    Recorded with its interest declared: this is the funding agency's
+    statement about research it funded. The underlying genetic-distance
+    point does not depend on the agency's credibility — it follows from the
+    published sequences — which is why the claim it supports is graded on
+    the sequence data rather than on this statement.
+  exactLocator: "NIH statement on misinformation about SARS-CoV-2 origins, 20 October 2021"
+  limitations:
+    - "An interested party's statement about its own conduct."
+    - "This case's research brief carried a staging-host URL for this statement; the canonical location is used here instead."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+# ── the research program ───────────────────────────────────────────────
+
+- id: COV-E027
+  title: "The proposal's cleavage-site passage, at a confirmed locator"
+  claimIds: [COV-C016, COV-C017]
+  sourceId: SRC-DEFUSE-2018
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Under the run-in heading "S2 Proteolytic Cleavage and Glycosylation
+    Sites": "We will analyze all SARSr-CoV S gene sequences for
+    appropriately conserved proteolytic cleavage sites in S2 and for the
+    presence of potential furin cleavage sites. SARSr-CoV S with mismatches
+    in proteolytic cleavage sites can be activated by exogenous trypsin or
+    cathepsin L. Where clear mismatches occur, we will introduce appropriate
+    human-specific cleavage sites and evaluate growth potential in Vero cells
+    and HAE cultures." The proposal requested $14,209,245 across 3.5 project
+    years, with performance sites including Kunming and Wuhan, China; Chapel
+    Hill; New York; Singapore; Palo Alto; and Madison.
+  editorInference: >-
+    A documented pre-pandemic intention, in a program with a Wuhan partner,
+    to insert precisely the class of feature the pandemic virus carries. That
+    is a real and uncomfortable coincidence of technique and timing, and it
+    is evidence about what was proposed — not about what was done, which is
+    graded separately. The non-award belongs beside the quotation wherever
+    the quotation appears.
+  exactLocator: "DEFUSE proposal, PDF p. 13 / printed p. 11 (cleavage-site passage); PDF pp. 1–3 (amount, partners, performance sites)"
+  limitations:
+    - "The text is OCR-derived from an image-only scan; two independent passes agree on every substantive word, and footnote superscripts were dropped rather than guessed."
+    - "The available copy is a third-party archive upload, not an official release or authenticated FOIA production."
+    - "The proposal was not funded, confirmed by the congressional record, contemporaneous reporting, and a negative check of federal award data."
+    - "A phrase widely attributed to this document — about a cleavage site 'able to interact with furin' — is not proposal text but a journalist's wording, and is not quoted here."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E028
+  title: "The draft margin comment, quoted whole rather than in its usual truncated form"
+  claimIds: [COV-C016, COV-C017]
+  sourceId: SRC-USRTK-DEFUSE-DRAFTS
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    A margin comment appearing five times across successive drafts, attributed
+    within the release to the proposal's lead author: "Ralph, Zhengli. If we
+    win this contract, I do not propose that all of this work will necessarily
+    be conducted by Ralph, but I do want to stress the US side of this
+    proposal so that DARPA are comfortable with our team. Once we get the
+    funds, we can then allocate who does what exact work, and I believe that
+    a lot of these assays can be done in Wuhan as well…"
+  editorInference: >-
+    Recorded in full deliberately. The comment is usually quoted from "Once
+    we get the funds" onward, which removes the sentence stating its purpose
+    — presenting a US-weighted team so the funder would be comfortable. Read
+    whole, it evidences an intention to allocate assay work to Wuhan after an
+    award, and an awareness that saying so up front would be unhelpful. Read
+    truncated, it reads as concealment of a settled plan. The document
+    supports the first reading and not the second, and the difference is one
+    sentence.
+  exactLocator: "FOIA production 2021-006245, margin comment at PDF pp. 129, 147, 166, 205, and 226"
+  limitations:
+    - "Margin comments identify authors by Word initials only; the mapping to named individuals rests on email headers within the same release."
+    - "Drafts of a proposal that was never funded — they evidence what was drafted and discussed, not what was done."
+    - "The compilation is republished by an advocacy organization, though the underlying records are an authentic federal FOIA production."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E029
+  title: "The biosafety findings, with the same report's countervailing statements"
+  claimIds: [COV-C018, COV-C017]
+  sourceId: SRC-ODNI-WIV-2023
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The report states that as of January 2019 institute researchers
+    performed experiments with SARS-like coronaviruses in biosafety level 2
+    laboratories, and that some researchers probably did not use adequate
+    biosafety precautions at least some of the time. The same document
+    records that the intelligence community knows of no specific biosafety
+    incident that caused the pandemic, characterizes a November 2019
+    biosafety training course at the institute as appearing routine rather
+    than an emergency response, and describes a 2017 dissertation
+    demonstrating reverse-genetic cloning that leaves no trace of
+    modification.
+  editorInference: >-
+    Opportunity is established; occurrence is not. This single document
+    contains the strongest official support for the research-related family
+    and the strongest official statements against it, which is why this case
+    quotes both halves from it rather than mining one side.
+  exactLocator: "ODNI report of 23 June 2023, printed pp. 4–6"
+  limitations:
+    - "A declassified summary whose underlying reporting cannot be audited."
+    - "Records drawn from this document share an independence group and must not be counted as separate confirmations."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official and DEFUSE batches"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E030
+  title: "The 'not found in nature' formulation is a press release's, not the report's"
+  claimIds: [COV-C011, COV-C016]
+  sourceId: SRC-HOUSE-MAJORITY-2024
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The committee's press release lists as the first of five strongest
+    arguments: "The virus possesses a biological characteristic that is not
+    found in nature." The phrase does not appear anywhere in the 520-page
+    report. The report's own formal finding reads: "SARS-CoV-2, the Virus
+    that Causes COVID-19, Likely Emerged Because of a Laboratory or Research
+    Related Accident," and its parallel five points are introduced as points
+    a named outside author "explained" in a newspaper opinion piece. Its
+    nearest furin-cleavage statement is a quotation of a journalist's claim
+    that the site is "found in none of the other 871 known members of its
+    viral family."
+  editorInference: >-
+    A correction with two parts, both of which matter. First, the widely
+    graded proposition — that a congressional report concluded the furin
+    cleavage site is not found in nature — does not exist: the phrase is
+    press-release language describing an unnamed "biological characteristic,"
+    and the report's own argument on the point is a quotation of an op-ed
+    rather than a committee finding. Second, the underlying claim is
+    contradicted regardless of who made it, since furin motifs occur across
+    other coronavirus lineages. The defensible version is narrower: the site
+    is absent from SARS-CoV-2's closest sampled sarbecovirus relatives.
+  exactLocator: "Press release of 2 December 2024 (five arguments); report PDF p. 38 / printed p. 1 (finding) and PDF p. 40 / printed p. 3 (attributed points and quotation)"
+  limitations:
+    - "A majority-party report and its press release are assertions by their authors; the companion minority report reaches opposite conclusions on the same record."
+    - "The report and the press release are treated here as two distinct sources, because their formulations differ materially."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E031
+  title: "The minority report: both hypotheses remain plausible"
+  claimIds: [COV-C014, COV-C015]
+  sourceId: SRC-HOUSE-MINORITY-2024
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The minority members' final report concludes that a zoonotic origin and
+    a laboratory accident are both plausible, as is a hybrid scenario, and
+    that the viruses funded through the relevant grant are too distantly
+    related to SARS-CoV-2 to be its progenitor.
+  editorInference: >-
+    Recorded alongside the majority report because the two reached opposite
+    conclusions on the same evidentiary record within days of each other.
+    That divergence is itself informative: where a shared record supports
+    opposite confident conclusions, the record is not determinative, and this
+    case grades it accordingly rather than adopting either.
+  exactLocator: "Select Subcommittee minority final report, December 2024"
+  limitations:
+    - "Assertions by their authors, not findings of fact."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+# ── official assessments ───────────────────────────────────────────────
+
+- id: COV-E018
+  title: "The intelligence split, with its confidence language intact"
+  claimIds: [COV-C014, COV-C012]
+  sourceId: SRC-ODNI-2021
+  direction: context
+  strength: strong
+  sourceStatement: >-
+    The 2021 declassified assessment records that four intelligence
+    elements and the National Intelligence Council assessed with low
+    confidence that the first infection was most likely caused by natural
+    exposure to an infected animal, that one element assessed with moderate
+    confidence that it was most likely the result of a laboratory incident,
+    and that others could not reach a judgment — together with the
+    judgments that the virus was not genetically engineered and not
+    developed as a biological weapon.
+  editorInference: >-
+    The confidence language is the substance. Every position here is low
+    confidence except one at moderate, which is the community's own
+    statement that its evidence is deficient, inconclusive, or
+    contradictory. Public claims that intelligence has confirmed either
+    origin misstate this record in both directions.
+  exactLocator: "ODNI Updated Assessment on COVID-19 Origins (October 2021), Key Takeaways"
+  limitations:
+    - "A declassified summary of classified reporting that no reader can audit."
+    - "Same independence group as the 2023 report — successive products of one community, not independent assessments."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E019
+  title: "The 2023 assessment: no indication of a progenitor holding, and no engineering"
+  claimIds: [COV-C014, COV-C012]
+  sourceId: SRC-ODNI-WIV-2023
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    The 2023 declassified report states that the intelligence community has
+    no indication that the institute's pre-pandemic research involved
+    SARS-CoV-2 or a close progenitor virus, and no direct evidence of a
+    specific research-related incident capable of causing the pandemic. It
+    also records that almost all elements assess the virus was not
+    genetically engineered and all assess it was not developed as a
+    biological weapon.
+  editorInference: >-
+    The single most load-bearing document in the case, and it is cited by
+    both camps for different passages. Its exculpatory statements are
+    recorded here with the same prominence as the biosafety findings it also
+    contains, per the fairness rule. What it establishes is an absence of
+    indication in the reporting available to the community — which is not
+    the same as evidence of absence, and not the same as an audit.
+  exactLocator: "ODNI report on potential links between the Wuhan Institute of Virology and the origins of COVID-19 (23 June 2023), printed pp. 3–4"
+  limitations:
+    - "A declassified summary whose underlying intelligence cannot be audited by any reader; the report places its own scope caveats on what it assessed."
+    - "One source doing a great deal of work in this case; records drawn from it share an independence group and must not be counted as separate confirmations."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E020
+  title: "A later agency change of position, reported as resting on no new intelligence"
+  claimIds: [COV-C014]
+  sourceId: SRC-CIA-2025
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    A spokesperson statement in January 2025: "CIA assesses with low
+    confidence that a research-related origin of the COVID-19 pandemic is
+    more likely than a natural origin based on the available body of
+    reporting. CIA continues to assess that both research-related and
+    natural origin scenarios of the COVID-19 pandemic remain plausible."
+    Reporting at the time stated the assessment was not based on new
+    intelligence but on a review of existing information.
+  editorInference: >-
+    A change of position at low confidence, on a review of material already
+    held, with no published assessment behind it. It is a real datum about
+    where an agency stands and close to no evidence about the origin. The
+    statement's second sentence — that both scenarios remain plausible — is
+    routinely dropped when the first is quoted.
+  exactLocator: "Spokesperson statement of 25 January 2025, as reported"
+  limitations:
+    - "No agency publication exists: there is no report, no stated evidentiary basis, and no confidence rationale beyond these two sentences."
+    - "Every account traces to the same spokesperson statement — outlet duplication is one source, not many."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E021
+  title: "WHO's conclusion, and its statement that the laboratory hypothesis could not be assessed"
+  claimIds: [COV-C015, COV-C001]
+  sourceId: SRC-SAGO-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The weight of available evidence reviewed by SAGO suggests zoonotic
+    spillover of SARS-CoV-2 into the human population, either directly from
+    bats or through an intermediate host. However, SAGO cannot conclude with
+    certainty where and when this occurred, nor if the HSM was indeed the
+    first instance of spillover into the human population, or the site of
+    further spillover and amplification." And: "Information and evidence is
+    also lacking to assess the possibility of a laboratory origin - either
+    the evidence is not available or has not been provided to the scientific
+    community. As a result, SAGO has been unable to adequately assess this
+    route for human infection and therefore is not in a position to rule
+    this out as a possibility." On its own access: "It is important to note
+    that SAGO did not have access to original raw data from any source in
+    preparing this report."
+  editorInference: >-
+    The two halves must always travel together. Note also the qualification
+    "reviewed by SAGO," which ellipsis usually removes and which is the
+    whole point: the weight of the evidence that could be seen. The
+    report's own statement that it had no access to raw data from any
+    source is the most important sentence in it for calibrating everything
+    else.
+  exactLocator: "SAGO independent assessment (June 2025, corrected version), printed pp. 9 and 58–59, Conclusion"
+  limitations:
+    - "The file WHO now serves is a post-publication corrected version, so page locators can differ from the June 2025 original; the version read is recorded in the source."
+    - "Not independent of the papers and assessments it reviews."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E022
+  title: "Three governments, not one, withheld requested information"
+  claimIds: [COV-C015]
+  sourceId: SRC-SAGO-2025
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "SAGO and WHO have requested further information from Member States, -
+    including the Governments of China, Germany and the United States of
+    America. … However, at the time of writing, all of the required
+    information had not been provided to WHO." The three categories named
+    are more than 500 early sequences; detailed information on the sources,
+    locations, sampling and testing of animals sold at the market and other
+    Wuhan markets including upstream farming or illegal trade; and
+    information on research and field activities in Wuhan laboratories,
+    including staff health records and biosafety information.
+  editorInference: >-
+    Recorded because the standard framing — that China alone withheld —
+    appears in this case's own research brief and is incomplete. Germany
+    and the United States were also asked and did not fully comply. The
+    three named categories are effectively WHO's own research agenda, and
+    they map directly onto this case's decisive tests.
+  exactLocator: "SAGO independent assessment (June 2025, corrected version), printed pp. 9 and 58"
+  limitations:
+    - "A statement of what was requested and not received; it does not establish why, or what the withheld material contains."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E023
+  title: "WHO's public statement on what was not provided"
+  claimIds: [COV-C015]
+  sourceId: SRC-WHO-DG-2025
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The Director-General's remarks accompanying the report's release stated
+    that hundreds of early sequences, detailed market-animal information,
+    and Wuhan laboratory and biosafety information had not been provided,
+    and that all hypotheses remain on the table.
+  editorInference: >-
+    The organization's own public framing of its report, which matters
+    because the report is frequently cited as having settled the question
+    in favor of zoonosis. Its head said the opposite about the hypotheses'
+    standing on the day it was published.
+  exactLocator: "WHO Director-General's opening remarks, media briefing of 27 June 2025"
+  limitations:
+    - "A statement of position, not new evidence."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E024
+  title: "The 2022 preliminary report reopened the laboratory question, over a recorded dissent"
+  claimIds: [COV-C015]
+  sourceId: SRC-SAGO-2022
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The preliminary report states that laboratory-related hypotheses remain
+    appropriate to investigate and that further information is needed; a
+    footnote records that three members dissented from evaluating the
+    laboratory hypothesis.
+  editorInference: >-
+    The document that formally reopened a question the 2021 joint study had
+    rated extremely unlikely, which is the clearest demonstration in the
+    case that these expert judgments move. The recorded dissent is included
+    rather than smoothed over: disagreement within the body is part of what
+    its conclusions are worth.
+  exactLocator: "SAGO preliminary report, 9 June 2022, including the dissent recorded at footnote 5, printed p. 27"
+  limitations:
+    - "A preliminary document superseded by the 2025 assessment."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E025
+  title: "The custodian's position: origins tracing declared complete"
+  claimIds: [COV-C015, COV-C008]
+  sourceId: SRC-CHINA-SCIO-2025
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The April 2025 white paper states that a laboratory leak is extremely
+    unlikely, directs attention toward the United States, and declares
+    China's origins investigation complete.
+  editorInference: >-
+    Recorded as a position statement, never as evidence. Its significance
+    for this case is structural rather than evidential: the government
+    holding the early sequences, the market-animal records, and the
+    laboratory documentation has declared the matter closed, which is the
+    binding constraint on nearly every decisive test in the research agenda.
+  exactLocator: "State Council Information Office white paper, 30 April 2025"
+  limitations:
+    - "A government position paper from an interested party; it presents no new primary data."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+# ── institutional integrity, kept off the origin ladder ────────────────
+
+- id: COV-E026
+  title: "Grant oversight failures, with no bearing on the origin question"
+  claimIds: [COV-C014]
+  sourceId: SRC-HHS-OIG-2023
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The inspector-general audit found that the funding agency and its
+    grantee did not effectively monitor the relevant awards and subawards,
+    identifying compliance and reporting failures including a materially
+    late progress report.
+  editorInference: >-
+    Included so the institutional-integrity layer is visible and explicitly
+    walled off. These are real, primary-sourced findings about grant
+    administration with zero diagnosticity for what infected the first
+    humans. Recording them here, attached to the assessments theme rather
+    than to any origin claim, is how this case keeps layer-three misconduct
+    from silently feeding a layer-one verdict.
+  exactLocator: "HHS OIG report A-05-21-00025, January 2023"
+  limitations:
+    - "An audit of grant administration; it makes no finding about the origin of the virus and none is inferred from it."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
