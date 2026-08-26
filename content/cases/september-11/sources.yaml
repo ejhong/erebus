@@ -245,7 +245,9 @@
     sequence (§2.4), three-stage descent analysis (§3.6 and Chapter 4),
     column temperatures (Ch. 2), first-known-instance statement (§ES.1),
     and blast findings (Ch. 4) all quoted verbatim with printed page
-    numbers.
+    numbers. Re-confirmed reachable 2026-08-26 after an automated checker
+    reported a transient 404; the DOI in the identifier field resolves to
+    the same file and is the stable fallback.
   reliabilityNotes:
     - "The most thorough engineering study of this collapse, and the only one with subpoena power and full site access; it is also the investigation whose adequacy is under dispute, so it is not independent of the question."
     - "The report's central initiation mechanism cannot be recomputed from the data NIST released — the modeling files were withheld, a withholding a court upheld."
@@ -638,6 +640,10 @@
     DOI and full bibliographic record confirmed via CrossRef 2026-08-26.
     Publisher text is paywalled and was not obtained, so this case quotes
     no passage from it and cites it only for what it is and when it appeared.
+    Note for reviewers: this DOI embeds parentheses, which automated
+    identifier checkers truncate — a tooling artifact, not a malformed
+    citation. The DOI resolves at CrossRef and doi.org serves it behind the
+    publisher's paywall.
   reliabilityNotes:
     - "Published within weeks of the event on deliberately simplified assumptions; its value is order-of-magnitude, and its author's later papers supersede its detail."
     - "No content quotation is authorized from this record until the text is obtained."
@@ -655,7 +661,9 @@
   verificationNote: >-
     DOI and full bibliographic record confirmed via CrossRef 2026-08-26;
     publisher text paywalled and not obtained, so no passage is quoted from
-    it here.
+    it here. Note for reviewers: this DOI embeds parentheses, which automated
+    identifier checkers truncate — a tooling artifact, not a malformed
+    citation.
   reliabilityNotes:
     - "Peer-reviewed and directly addressed to the demolition hypotheses; not an end-to-end simulation of either tower's total progression, which no published work has produced."
     - "No content quotation is authorized from this record until the text is obtained."

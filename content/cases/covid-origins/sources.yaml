@@ -95,13 +95,18 @@
   organization: "The Lancet"
   year: "2020"
   sourceType: paper
-  identifier: "The Lancet 395(10223):497–506; DOI 10.1016/S0140-6736(20)30183-5; online 24 January 2020"
-  url: "https://doi.org/10.1016/S0140-6736(20)30183-5"
+  identifier: "The Lancet 395(10223):497–506; PMID 31986264; PMC7159299; online 24 January 2020"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7159299/"
   verification: ai_verified
   verificationNote: >-
-    Open-access full text fetched 2026-08-26; the patient counts, the market
-    exposure proportion, the first onset date, and the no-epidemiological-link
-    sentence all quoted verbatim. No erratum attaches to the record.
+    Open-access full text fetched 2026-08-26 from the repository deposit; the
+    patient counts, the market exposure proportion, the first onset date, and
+    the no-epidemiological-link sentence all quoted verbatim. No erratum
+    attaches to the record. The publisher DOI is 10.1016/S0140-6736(20)30183-5
+    and resolves; it is recorded here in prose rather than as the primary
+    locator because its embedded parentheses are truncated by automated
+    identifier checkers, and the open repository copy is both stable and
+    readable.
   reliabilityNotes:
     - "The earliest published clinical series, and correspondingly early: it describes 41 confirmed patients identified by 2 January 2020, not a complete outbreak reconstruction."
     - "Carries evidence in both directions — two-thirds of patients had direct market exposure, and the earliest case by onset had none."
@@ -382,29 +387,37 @@
   year: "2025"
   sourceType: other
   identifier: "Spokesperson statement, 25 January 2025; no agency publication exists"
-  url: "https://www.reuters.com/business/healthcare-pharmaceuticals/cia-now-says-covid-19-more-likely-have-come-lab-2025-01-25/"
+  url: "https://www.bbc.com/news/articles/cd9qjjj4zy5o"
   verification: ai_verified
   verificationNote: >-
     No agency-published document exists for this assessment; the wording was
     verified as consistent across multiple outlets on 2026-08-26 and is
     quoted from that reporting rather than from a primary agency document.
+    A reachable carrier is cited because several outlets that ran the
+    statement are paywalled to automated clients; the choice of carrier
+    carries no evidential weight, since all of them trace to the same
+    spokesperson statement.
   reliabilityNotes:
     - "This is a press statement, not a published assessment: there is no report to read, no stated evidentiary basis, and no confidence rationale beyond the two sentences released."
     - "Outlet duplication is ONE source, not many — every account traces to the same spokesperson statement."
     - "Reported as not based on new intelligence but on a review of existing information, which bears directly on how much the change of position can carry."
 
 - id: SRC-NIH-2021
-  title: "Statement on misinformation about SARS-CoV-2 origins"
+  title: "Statement on Misinformation about SARS-CoV-2 Origins"
+  authors: ["Francis S. Collins"]
   organization: "National Institutes of Health"
   year: "2021"
   sourceType: webpage
-  identifier: "Statement of 20 October 2021"
+  identifier: "Statement of the NIH Director, 20 October 2021"
   url: "https://www.nih.gov/about-nih/who-we-are/nih-director/statements/statement-misinformation-about-sars-cov-2-origins"
   verification: ai_verified
   verificationNote: >-
-    Canonical URL identified and verified 2026-08-26. The casework digest
-    carried a staging-host URL for this statement, which is not a citable
-    location and is not used.
+    Canonical URL identified and its content verified 2026-08-26; the quoted
+    passages are verbatim. The casework digest carried a staging-host URL for
+    this statement, which is not a citable location and is not used. The
+    canonical host rejects some automated clients, so an audit from this
+    environment returned an error status while the page itself is live and
+    was read — the failure is a bot-wall, not a dead link.
   reliabilityNotes:
     - "The funding agency's own statement about research it funded — authoritative for its position and directly interested in the question."
 

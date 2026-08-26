@@ -128,3 +128,26 @@ Current queue (2026-08-25):
    output (prompt v3) — RESOLVES means judge honest use, FAILS is
    positive evidence, UNCHECKED never gates. Quotations and page-level
    locators remain seat judgment.
+7. **Citation checker truncates DOIs containing parentheses (bug — fix
+   upstream).** In `scripts/lib/citation-check.mjs`, both the URL pattern
+   and the bare-DOI pattern exclude `)` from the identifier character
+   class, so any DOI with embedded parentheses is cut at the first one:
+   `10.1016/S0140-6736(20)30183-5` is extracted as
+   `10.1016/S0140-6736(20`, and `10.1061/(ASCE)0733-9399(2002)128:1(2)`
+   as `10.1061/(ASCE`. The truncated string then fails to resolve, and
+   because prompt v3 tells seats that FAILS is "positive evidence for
+   violates," a correct citation is reported to the panel as a malformed
+   identifier. This is not hypothetical: it produced a `violates` vote and
+   a park on this repo's PR #27, where the seat's stated ground was a
+   "malformed, truncated DOI" that the diff never contained. The affected
+   families are large — every Elsevier `S`-prefix DOI (Lancet, Cell,
+   ScienceDirect) and every ASCE DOI. All four DOIs involved resolve
+   correctly at Crossref when passed whole, so the registry side is fine.
+   Suggested fix: stop treating `)` as a terminator and instead balance
+   parentheses when trimming, or strip only unmatched trailing delimiters
+   — `trimTrailing` already exists for sentence punctuation and could
+   take a paren-aware form. A regression test with those two real DOIs
+   would pin it. Until it lands, content records here note the artifact in
+   `verificationNote` where a parenthetical DOI is unavoidable, and prefer
+   a paren-free open-repository locator (e.g. a PMC deposit) as the
+   primary `url` where one exists.
