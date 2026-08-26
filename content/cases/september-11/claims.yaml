@@ -707,6 +707,323 @@
 
 # ── media episodes: established observations, contradicted inferences ────
 
+- id: SEP-C018
+  tier: featured
+  statement: >-
+    United States agencies held substantial but fragmentary pre-attack
+    warnings — including an August 6, 2001 presidential brief item titled
+    "Bin Ladin Determined To Strike in US," a July 2001 field-office
+    communication about flight training, the August 2001 detention of a
+    flight-school student, and un-watchlisted travel by two future
+    hijackers — none of which identified the time, place, and specific
+    nature of the attacks.
+  plainLanguage: >-
+    The warnings were real, numerous, and never assembled into a picture of
+    what was coming. Both halves of that sentence are findings, and this
+    case keeps them together.
+  theme: foreknowledge
+  rung: observation
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C20"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    The brief item's title and text are reproduced in the Commission's own
+    report, and the congressional joint inquiry's first factual finding
+    states that while a great deal of intelligence had been amassed, "none
+    of it identified the time, place, and specific nature of the attacks" —
+    while adding, in the same finding, that the community did hold
+    information clearly relevant when considered for its collective
+    significance. Note a correction: the brief says preparations for
+    "hijackings or other types of attacks," not for a hijacking.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Highly diagnostic between the two hypotheses most often confused: it
+    strongly supports institutional failure and it undercuts specific
+    foreknowledge, because what the record shows at every node is
+    information not being connected rather than information being buried.
+  strongestObjection: >-
+    A record assembled by bodies with an institutional interest in
+    characterizing their own failures as analytical rather than culpable.
+  whatWouldChangeOurMind:
+    - "Declassification showing a warning that did specify timing, target, and method."
+    - "Evidence that relevant reporting was deliberately withheld from the inquiries rather than mishandled before them."
+
+- id: SEP-C019
+  tier: featured
+  statement: >-
+    United States officials had specific advance knowledge of the September
+    11 plot — its timing, targets, and method — and allowed it to proceed.
+  plainLanguage: >-
+    The central claim of the "let it happen" family. The documented failure
+    mode at every point in the record is dysfunction, not concealment.
+  theme: foreknowledge
+  rung: attribution
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C21"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: contradicted
+  credibilitySummary: >-
+    Contradicted by the joint inquiry's central factual finding and by the
+    inspector-general reviews, which document specific, traceable
+    bureaucratic failures — information not shared between field offices and
+    headquarters, watchlisting not performed, analysis not done — at each
+    node where foreknowledge would have had to be exercised. Concealment of
+    a known plot would predict a different evidentiary signature than the
+    one the record shows.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Decisive between the negligence and complicity families, which is
+    exactly why this case grades it separately from the anomalies people
+    cite in its support.
+  dependsOnClaimIds: [SEP-C018]
+  strongestObjection: >-
+    Absence of documentation is weak evidence about deliberate concealment,
+    since concealment would predict the absence; and destroyed records —
+    including intelligence interrogation recordings and the data-mining
+    material at SEP-C021 — mean the documentary record is genuinely
+    incomplete.
+  whatWouldChangeOurMind:
+    - "A surviving document, communication, or credible first-hand account showing a specific warning was received and suppressed."
+
+- id: SEP-C020
+  tier: featured
+  statement: >-
+    Aviation and air-defense officials gave the 9/11 Commission accounts of
+    the air-defense response that the Commission's staff found were
+    contradicted by recorded evidence, including a fighter scramble made in
+    response to a phantom report of an already-crashed aircraft.
+  plainLanguage: >-
+    The official story of the military response that day was wrong, and it
+    took subpoenaed tapes to establish that. This is documented official
+    misstatement — and it also demolishes the shootdown theories, because
+    the tapes show the military never had a hijacked plane in its sights.
+  theme: air-defense
+  rung: observation
+  claimType: historical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C22"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The Commission's Staff Statement 17 records that the response to a
+    phantom aircraft "is not recounted in a single public timeline or
+    statement issued by FAA or DOD," and that the same scramble had been
+    publicly attributed to other flights instead. Journalism working
+    directly from roughly thirty hours of air-defense operations recordings
+    obtained from the Pentagon documents the same material.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Cuts sharply in both directions, which is why it belongs in the case.
+    It is documented evidence that official accounts were unreliable — and
+    the same record is the strongest evidence against the claim that a
+    hijacked airliner was shot down.
+  strongestObjection: >-
+    Confusion and error during an unprecedented event are not the same as
+    misrepresentation, and the corrected record emerged from the
+    government's own commission using the government's own recordings.
+  whatWouldChangeOurMind:
+    - "Evidence that the earlier accounts were knowing falsehoods rather than institutional error, or conversely that the recordings support the original timelines."
+
+- id: SEP-C021
+  tier: featured
+  statement: >-
+    A military data-mining program identified Mohamed Atta as a member of an
+    al-Qaeda cell before September 11, 2001.
+  plainLanguage: >-
+    Several officers said under oath they saw a chart naming Atta a year
+    early. The Pentagon's inspector general concluded their recollections
+    were mistaken — and the underlying data had been destroyed, so the
+    dispute cannot be settled from records.
+  theme: foreknowledge
+  rung: observation
+  claimType: historical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C23, counts corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: weakly_supported
+  credibilitySummary: >-
+    The defense inspector general did not substantiate the allegation,
+    concluding that program members did not identify Atta or any other
+    hijacker before the attacks, that four interviewed witnesses who
+    recalled seeing such a chart were mistaken, and that the chart in
+    question was a 1999 product naming 53 already-identified terrorists
+    including a Brooklyn cell but not Atta. Against that finding stand
+    on-record accounts by military witnesses, the department's decision to
+    bar five of them from testifying at a Senate hearing — which the
+    committee chairman said might be obstruction — and the destruction of
+    the underlying data.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    A verified pre-attack identification of the operational leader would be
+    among the most consequential findings available in this case. That the
+    question turns on destroyed records and contested recollection is why
+    it stays open rather than resolving in either direction.
+  strongestObjection: >-
+    Human memory of a chart seen years earlier is exactly the evidence type
+    that degrades and converges on later-learned names, which is what the
+    inspector general concluded happened; and no documentary artifact
+    supporting the recollections has ever surfaced.
+  whatWouldChangeOurMind:
+    - "Surviving contractor data or destruction certificates establishing what the program's holdings contained."
+    - "A contemporaneous copy of a chart naming Atta before September 2001."
+
+# ── the Saudi file (strict living-persons handling) ─────────────────────
+
+- id: SEP-C022
+  tier: featured
+  statement: >-
+    Two men connected to Saudi governmental institutions provided practical
+    assistance to hijackers Nawaf al-Hazmi and Khalid al-Mihdhar after their
+    January 2000 arrival in Southern California.
+  plainLanguage: >-
+    That the two hijackers received help settling in California is
+    documented. What that help meant — and whether the helpers knew what
+    they were helping with — is a separate question, graded separately.
+  theme: saudi
+  rung: observation
+  claimType: historical
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C24"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The declassified congressional section records that some hijackers in
+    the United States "were in contact with, and received support or
+    assistance from, individuals who may be connected to the Saudi
+    Government," and a federal court found related claims legally
+    sufficient to proceed. The assistance is the documented part; this claim
+    is deliberately confined to it.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Consistent both with witting facilitation and with ordinary community
+    assistance to new arrivals, so it establishes the relationship without
+    establishing its character.
+  strongestObjection: >-
+    The declassified section states in its own text that the inquiry made
+    no final determinations as to the reliability or sufficiency of the
+    information it reports, and it was assembled from raw agency files
+    rather than adjudicated findings.
+  whatWouldChangeOurMind:
+    - "Release of the underlying investigative subfile in unredacted form."
+    - "Testimony or documents establishing what the individuals knew."
+
+- id: SEP-C023
+  tier: featured
+  statement: >-
+    A Saudi state institution knowingly supported the September 11 plot.
+  plainLanguage: >-
+    The strongest version of the Saudi claim. It is unresolved — and it is
+    the one dispute in this case with a court attached, currently stayed
+    while the Kingdom appeals.
+  theme: saudi
+  rung: attribution
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C26, posture corrected at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: unresolved
+  credibilitySummary: >-
+    The Commission found no evidence that the Saudi government as an
+    institution or senior Saudi officials individually funded al-Qaeda,
+    while noting in the same passage the likelihood that charities with
+    significant Saudi government sponsorship diverted funds to it — a
+    formulation that leaves the mid-level question open rather than closing
+    it. In August 2025 a federal judge denied the Kingdom's renewed motion
+    to dismiss, expressly deciding jurisdiction rather than the merits and
+    finding the claims legally sufficient to proceed to trial; the Kingdom
+    filed a notice of appeal in September 2025 and proceedings were stayed.
+    No merits adjudication exists.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Would establish state facilitation of the attacks — a conclusion of a
+    different order from anything else contested here, and one that
+    remains compatible with the established account of who conducted them.
+  dependsOnClaimIds: [SEP-C022]
+  strongestObjection: >-
+    Twenty-five years of investigation, including a declassification review
+    ordered by executive order, has produced documented individual
+    assistance and no established institutional direction; and a
+    jurisdictional ruling is not a finding of responsibility.
+  whatWouldChangeOurMind:
+    - "A merits judgment in the litigation, whichever way it goes."
+    - "Unredacted release of the investigative subfile on the two individuals."
+
+# ── official conduct: the calibration anchor ───────────────────────────
+
+- id: SEP-C024
+  tier: featured
+  statement: >-
+    The Environmental Protection Agency's September 2001 assurances that the
+    air near Ground Zero was safe to breathe were made without sufficient
+    supporting data, and the White House Council on Environmental Quality
+    influenced the agency's early press releases by adding reassuring
+    statements and deleting cautionary ones.
+  plainLanguage: >-
+    Proven official deception about a health matter, established by the
+    agency's own inspector general. It is the anchor for calibrating how
+    much deference official statements in this case have earned.
+  theme: official-conduct
+  rung: observation
+  claimType: historical
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/september-11 digest — C27"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: established
+  credibilitySummary: >-
+    The inspector general's report states that when the agency announced
+    the air was safe to breathe it "did not have sufficient data and
+    analyses to make such a blanket statement," and that the White House
+    council "influenced, through the collaboration process, the information
+    that EPA communicated to the public through its early press releases
+    when it convinced EPA to add reassuring statements and delete
+    cautionary ones."
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Cuts precisely two ways, and this case displays both. It is documented
+    proof that health-relevant public statements were centrally managed,
+    which is why generalized official reassurance in this case does not
+    carry presumptive weight. It is also proof that the deception was
+    caught and published by the government's own inspector general, and
+    that its object was reassurance about air quality rather than
+    concealment of the attacks' authorship.
+  strongestObjection: >-
+    Editing for reassurance during an ongoing emergency, while indefensible
+    on the health merits, is a categorically different act from concealing
+    what caused the event.
+  whatWouldChangeOurMind:
+    - "Nothing on the finding itself; it is established. What remains open is only how far it licenses distrust of unrelated official statements."
+
 - id: SEP-C017
   tier: featured
   statement: >-

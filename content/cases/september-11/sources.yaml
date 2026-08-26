@@ -10,6 +10,225 @@
 # Advocacy material on both sides is admitted only as claim-origin
 # documentation and labeled as such.
 
+# ── the official investigative record ───────────────────────────────────
+
+- id: SRC-911COMMISSION-2004
+  title: "The 9/11 Commission Report: Final Report of the National Commission on Terrorist Attacks Upon the United States"
+  organization: "National Commission on Terrorist Attacks Upon the United States"
+  year: "2004"
+  sourceType: report
+  identifier: "Released July 22, 2004; 585 pp."
+  url: "https://www.9-11commission.gov/report/911Report.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Official PDF downloaded from 9-11commission.gov 2026-08-26 and read
+    with text extraction; the put-options passage (Ch. 5 body p. 172,
+    footnote 130 at p. 499), the Chapter 8 title (p. 254), the reproduced
+    August 6 brief text (pp. 261–262), and the Saudi-funding sentence
+    (p. 171) all quoted verbatim with page numbers.
+  reliabilityNotes:
+    - "The most comprehensive official narrative, and not independent of the institutions whose performance it assessed."
+    - "Its account depends at several nodes on detainee interrogations conducted under conditions the government later acknowledged, and the recordings of some of those interrogations were destroyed — so 'the Commission says X citing an interrogation' and 'the detainee said X' are one source, not two."
+    - "The put-options footnote states conclusions without naming the investor, the newsletter, or the underlying agency files, so its trace-outs cannot be audited from the public record."
+    - "The Saudi-funding sentence carries a parenthetical caveat about charities with significant Saudi government sponsorship diverting funds; quoting the first clause alone misstates the source."
+
+- id: SRC-JOINT-INQUIRY-2002
+  title: "Joint Inquiry into Intelligence Community Activities before and after the Terrorist Attacks of September 11, 2001"
+  organization: "Senate Select Committee on Intelligence and House Permanent Select Committee on Intelligence"
+  year: "2002"
+  sourceType: report
+  identifier: "S. Rept. 107-351 / H. Rept. 107-792, December 20, 2002; released July 2003"
+  url: "https://www.govinfo.gov/content/pkg/GPO-CRPT-107hrpt792/pdf/GPO-CRPT-107hrpt792.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    GPO PDF downloaded from govinfo 2026-08-26 (858 pages); Factual
+    Finding 1 quoted verbatim from printed p. 7, with the abridged
+    restatement at p. xi.
+  reliabilityNotes:
+    - "A congressional inquiry conducted while much of the underlying material remained classified; its own Part Four was withheld entirely until 2016."
+    - "Finding 1 is frequently quoted in truncated form; the finding's second sentence — that the community did hold information clearly relevant when considered collectively — is part of the same finding and travels with it here."
+
+- id: SRC-28PAGES-2016
+  title: "Joint Inquiry Part Four: Finding, Discussion and Narrative Regarding Certain Sensitive National Security Matters (the '28 pages')"
+  organization: "U.S. House Permanent Select Committee on Intelligence"
+  year: "2016"
+  sourceType: report
+  identifier: "Declassified with redactions and published July 15, 2016; printed pp. 415–443 of the 2002 report; 34-page scan"
+  url: "https://intelligence.house.gov/uploadedfiles/declasspart4.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Government-hosted scan fetched 2026-08-26. The document has no text
+    layer, so Finding 20 (printed p. 415) and the no-final-determinations
+    caveat (printed p. 421) were read by OCR at 300 dpi; quotes are
+    OCR-derived and a human re-read of those two pages is recommended
+    before any of this material is promoted.
+  reliabilityNotes:
+    - "Reports raw investigative leads from agency files, not adjudicated findings — the section says so itself, stating the inquiry made no final determinations as to the reliability or sufficiency of the information."
+    - "Redacted at publication to protect sources and methods, so the released text is incomplete by construction."
+    - "Concerns living, named private individuals; nothing here goes beyond what the document states, and the document's own caveat is displayed with every use."
+
+- id: SRC-DOJ-OIG-2004
+  title: "A Review of the FBI's Handling of Intelligence Information Related to the September 11 Attacks"
+  organization: "U.S. Department of Justice, Office of the Inspector General"
+  year: "2004"
+  sourceType: report
+  identifier: "Special Report, November 2004; released publicly June 2006 (HTML chapters, no print pagination)"
+  url: "https://oig.justice.gov/sites/default/files/archive/special/s0606/chapter3.htm"
+  verification: ai_verified
+  verificationNote: >-
+    Chapters 3, 4, and 5 fetched live from oig.justice.gov 2026-08-26; key
+    judgments quoted verbatim. The HTML edition carries no page numbers, so
+    locators here are chapter and section only.
+  reliabilityNotes:
+    - "An internal inspector-general review — the government auditing itself, which is both its authority and its limit."
+    - "The 'significant intelligence failure' judgment in Chapter 3 refers to the FBI's analytical practice generally, not solely to the handling of the Phoenix communication; it is frequently narrowed in quotation."
+
+- id: SRC-EPA-OIG-2003
+  title: "EPA's Response to the World Trade Center Collapse: Challenges, Successes, and Areas for Improvement"
+  organization: "U.S. Environmental Protection Agency, Office of Inspector General"
+  year: "2003"
+  sourceType: report
+  identifier: "Report No. 2003-P-00012, August 21, 2003"
+  url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004EJZ.txt"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-26; the Council on Environmental Quality finding quoted
+    verbatim from Executive Summary p. i and Chapter 2 pp. 14–15. Note that
+    the copy hosted on epa.gov is a 32-page excerpt ending mid-chapter; the
+    complete report is the NEPIS document cited here.
+  reliabilityNotes:
+    - "An inspector-general finding against the inspectors' own agency, which is what makes it the strongest single piece of documented official misconduct in this case."
+    - "It establishes that health-relevant public statements were centrally edited; it establishes nothing about the attacks themselves, and both sides of the public argument stretch it in opposite directions."
+
+- id: SRC-DOD-IG-ABLEDANGER-2006
+  title: "Report of Investigation: Alleged Misconduct by Senior DoD Officials Concerning the Able Danger Program and Lieutenant Colonel Anthony A. Shaffer, U.S. Army Reserve"
+  organization: "U.S. Department of Defense, Office of the Inspector General"
+  year: "2006"
+  sourceType: report
+  identifier: "Case No. H05L97905217, September 18, 2006; 71-page scan"
+  url: "https://irp.fas.org/agency/dod/ig-abledanger.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    The official host returns 403 to automated fetchers and the live mirror
+    returned an empty document; the report was obtained 2026-08-26 from an
+    archive.org capture of the mirrored official scan. The document has no
+    text layer, so the conclusions were read by OCR from the transmittal
+    memorandum and printed p. 3.
+  reliabilityNotes:
+    - "Provenance is a mirror of a mirror: an archived capture of a non-government host's copy of the official scan. Recorded openly because the finding matters and no reachable government copy was found."
+    - "A department investigating allegations against its own senior officials."
+    - "Counts must not be conflated: this report describes four witnesses who recalled a chart, while the separate Senate hearing record concerns five witnesses the department barred from testifying."
+
+- id: SRC-SENATE-ABLEDANGER-2005
+  title: "Able Danger and Intelligence Information Sharing — Hearing before the Committee on the Judiciary, United States Senate"
+  organization: "U.S. Senate Committee on the Judiciary"
+  year: "2005"
+  sourceType: report
+  identifier: "S. Hrg. 109-311, Serial No. J-109-39; September 21, 2005"
+  url: "https://www.govinfo.gov/content/pkg/CHRG-109shrg25409/html/CHRG-109shrg25409.htm"
+  verification: ai_verified
+  verificationNote: >-
+    GPO HTML transcript fetched live 2026-08-26; the chairman's statement
+    about barred witnesses quoted verbatim from his opening remarks.
+  reliabilityNotes:
+    - "A hearing record: authoritative for what was said on the record, not for whether what was said is true."
+    - "The chairman's characterization of possible obstruction is his own assertion at the time, recorded as such."
+
+- id: SRC-COMMISSION-HEARING12-2004
+  title: "Twelfth Public Hearing of the National Commission on Terrorist Attacks Upon the United States (transcript)"
+  organization: "National Commission on Terrorist Attacks Upon the United States"
+  year: "2004"
+  sourceType: report
+  identifier: "June 17, 2004; includes Staff Statement No. 17, 'Improvising a Homeland Defense'"
+  url: "https://www.9-11commission.gov/archive/hearing12/9-11Commission_Hearing_2004-06-17.htm"
+  verification: ai_verified
+  verificationNote: >-
+    Commission-archived transcript fetched live 2026-08-26; the staff
+    statement's findings on notice times and the phantom-aircraft scramble,
+    and the ensuing exchange with the air-defense commander, quoted verbatim.
+  reliabilityNotes:
+    - "A primary record of sworn public testimony and of the staff's own findings, published by the body that made them."
+    - "Staff Statement 17 is where the corrected air-defense chronology was first laid out publicly against the earlier official accounts, which is why it functions here as evidence about official candor rather than only about the timeline."
+
+- id: SRC-EO-14040-2021
+  title: "Executive Order 14040 — Declassification Reviews of Certain Documents Concerning the Terrorist Attacks of September 11, 2001"
+  organization: "Executive Office of the President (Joseph R. Biden, Jr.)"
+  year: "2021"
+  sourceType: report
+  identifier: "Signed September 3, 2021; DCPD-202100713"
+  url: "https://www.govinfo.gov/content/pkg/DCPD-202100713/pdf/DCPD-202100713.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    GPO PDF fetched live 2026-08-26; the order's title, date, and its
+    reference to records withheld in discovery in the consolidated
+    litigation confirmed verbatim.
+  reliabilityNotes:
+    - "The order directing the declassification reviews; it establishes what was to be reviewed and by when, not what the released records contain."
+
+- id: SRC-FBI-VAULT-911
+  title: "9/11 Attacks Investigation and Related Materials (FBI Records: The Vault)"
+  organization: "Federal Bureau of Investigation"
+  year: "2022"
+  sourceType: archive
+  identifier: "Collection including the Executive Order 14040 release series, March–April 2022"
+  url: "https://vault.fbi.gov/9-11-attacks-investigation-and-related-materials"
+  verification: ai_verified
+  verificationNote: >-
+    The live collection page is bot-walled to automated fetchers; existence
+    and the listing of the Executive Order 14040 release series were
+    verified against an archive.org snapshot dated 2026-02-26.
+  reliabilityNotes:
+    - "A release collection, not an analysis: the documents are heavily redacted investigative records, and characterizations of what any of them establishes are made by the parties who read them, not by the Bureau."
+
+- id: SRC-AP-SAUDI-RULING-2025
+  title: "Judge rejects Saudi Arabia's bid to dismiss claims it supported 9/11 hijackers"
+  organization: "The Associated Press"
+  year: "2025"
+  sourceType: webpage
+  identifier: "Reporting the August 28, 2025 opinion in In re Terrorist Attacks on September 11, 2001, No. 1:03-md-01570-GBD-SN (S.D.N.Y.)"
+  url: "https://apnews.com/article/911-attacks-lawsuits-saudi-arabia-51f3692499ade7b1e320bc54b8d218eb"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-26; the ruling's scope — jurisdiction rather than
+    the merits — quoted verbatim. The docket and caption were confirmed
+    independently of this article, and the article contains no explicit
+    statement of the Kingdom's denial, so none is attributed to it here.
+  reliabilityNotes:
+    - "Journalism is discovery, not evidence: this record points at the court's order, which supersedes it and should be obtained."
+    - "Superseded in part by later docket activity — the Kingdom filed a notice of appeal in September 2025 and proceedings were stayed, so this article no longer describes the case's current posture on its own."
+
+- id: SRC-BRONNER-VF-2006
+  title: "9/11 Live: The NORAD Tapes"
+  authors: ["Michael Bronner"]
+  organization: "Vanity Fair"
+  year: "2006"
+  sourceType: webpage
+  identifier: "September 2006 issue"
+  url: "https://www.vanityfair.com/news/2006/09/norad200609"
+  verification: ai_verified
+  verificationNote: >-
+    Full text fetched live 2026-08-26; the recordings' provenance and the
+    phantom-aircraft material confirmed in the article text. The summary
+    phrase often attributed to this piece — that the military never had a
+    hijacked airliner in its sights — does not appear verbatim in it and is
+    not quoted as the author's words anywhere in this case.
+  reliabilityNotes:
+    - "Journalism built directly on primary material: roughly thirty hours of air-defense operations-floor recordings obtained from the Pentagon. The recordings are the primary source and this article is the route to them."
+
+- id: SRC-MOUSSAOUI-EXHIBITS
+  title: "United States v. Zacarias Moussaoui — trial exhibits"
+  organization: "U.S. District Court for the Eastern District of Virginia"
+  year: "2006"
+  sourceType: archive
+  identifier: "Criminal No. 01-455-A; 1,202 admitted exhibits posted July 31, 2006 (all but seven, which remain sealed)"
+  url: "https://www.vaed.uscourts.gov/101cr00455-trial-exhibits"
+  verification: ai_verified
+  verificationNote: >-
+    Court page fetched live 2026-08-26; the exhibit count and posting
+    statement quoted verbatim.
+  reliabilityNotes:
+    - "Evidence admitted in an adversarial criminal proceeding with defense counsel and a judge — among the highest-quality provenance available for this case's baseline facts."
+
 # ── the federal investigation ───────────────────────────────────────────
 
 - id: SRC-NIST-NCSTAR1A-2008
@@ -101,6 +320,7 @@
   reliabilityNotes:
     - "This release announced the draft report for comment, not the November 2008 final report — a distinction lost in most citation of it."
     - "Its phrasing of the 'first known instance' finding differs slightly from the final report's; the report wording is preferred wherever the two diverge."
+  background: true
 
 - id: SRC-QUICK-V-NIST-2011
   title: "Michael Quick v. United States Department of Commerce, National Institute of Standards and Technology — Memorandum Opinion"
@@ -194,6 +414,7 @@
     sprinklers, and total collapse quoted verbatim.
   reliabilityNotes:
     - "Peer-reviewed modeling companion; carries no casualty figures, so the factual anchor for those is the investigation-team paper instead."
+  background: true
 
 # ── WTC 7: the challenger study ─────────────────────────────────────────
 
@@ -215,6 +436,22 @@
     - "Not published in a peer-reviewed engineering journal; reviewers included academics associated with the funder."
     - "Full input and results data were released, which is more than the federal investigation it disputes has done — the openness is real and independent of whether the modeling is right."
     - "The report's own conclusion is hedged more carefully than its public reception: it states it cannot completely rule out an alternative scenario, only that it identified none capable of producing the observed behavior."
+
+- id: SRC-AE911TRUTH-WITNESS
+  title: "Newly Discovered Eyewitness Account Puts NIST in a Corner on WTC 7 Explosions"
+  organization: "Architects & Engineers for 9/11 Truth"
+  year: "2021"
+  sourceType: webpage
+  url: "https://www.ae911truth.org/news/747-newly-discovered-eyewitness-account-puts-nist-in-a-corner-on-wtc-7-explosions"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-26; the broadcast-clip caption, the January 4,
+    2021 email confirmation it reports, and the police officer's account
+    all present verbatim as quoted in this case's evidence records.
+  reliabilityNotes:
+    - "Advocacy material, admitted only as documentation that these witness accounts exist and were given — not as evidence of what caused the sounds."
+    - "The page's characterization of what the investigating agency claimed about witness reports is the organization's own and is not adopted here; the agency's actual statements are cited directly from its report and FAQ."
+    - "The broadcast clip is the primary provenance for the reporter's remark; this page is a secondary carrier plus the later email confirmation it reports obtaining."
 
 # ── WTC 7 and towers: technical criticism of the challenger study ────────
 
@@ -404,6 +641,7 @@
   reliabilityNotes:
     - "Published within weeks of the event on deliberately simplified assumptions; its value is order-of-magnitude, and its author's later papers supersede its detail."
     - "No content quotation is authorized from this record until the text is obtained."
+  background: true
 
 - id: SRC-BAZANT-2008
   title: "What Did and Did Not Cause Collapse of World Trade Center Twin Towers in New York?"
@@ -421,3 +659,4 @@
   reliabilityNotes:
     - "Peer-reviewed and directly addressed to the demolition hypotheses; not an end-to-end simulation of either tower's total progression, which no published work has produced."
     - "No content quotation is authorized from this record until the text is obtained."
+  background: true

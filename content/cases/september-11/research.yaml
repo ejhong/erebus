@@ -1,0 +1,149 @@
+# SEP-001 decisive tests. Each is specified so that either outcome is
+# informative, and none requires trusting any party's characterization.
+# The striking feature of this list is how cheap most of it is: the
+# binding constraint on this case is institutional disinterest, not cost.
+
+- id: SEP-R001
+  title: "Blinded independent re-analysis of the WTC 7 collapse initiation"
+  summary: >-
+    Commission a structural engineering team with no prior public position
+    on the case to rebuild the Floor 13 girder-to-Column-79 connection from
+    the original shop drawings and analyze it under documented fire curves,
+    with both the federal and the challenger datasets available and the
+    analysts blinded to which hypothesis each input supports. Publish the
+    inputs, the model, and the result whichever way it falls.
+  claimIds: [SEP-C003, SEP-C004, SEP-C010]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Decisive in both directions and the single highest-value item in the
+    case. Reproduction of the official sequence would move it from mixed to
+    well supported and reduce the demolition hypothesis to a claim without a
+    motivating gap; failure to reproduce it would leave the only total
+    collapse of a tall building attributed primarily to fire without a
+    published, checkable explanation.
+
+- id: SEP-R002
+  title: "Release or bounded re-derivation of the withheld WTC 7 modeling files"
+  summary: >-
+    Seek release of the roughly 68,500 withheld modeling files — by
+    renewed request, litigation, or legislative direction — or, failing
+    that, fund an independent re-derivation of the connection models from
+    the published report and the original drawings, sufficient for outside
+    recomputation. If the safety rationale is sound, test whether a
+    redacted or supervised-access release satisfies it.
+  claimIds: [SEP-C005, SEP-C003]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The precondition for SEP-R001 and the direct remedy for the case's
+    central auditability defect. Either the files come out and the
+    mechanism becomes checkable, or the refusal is retested against a
+    concrete alternative and the record shows which.
+
+- id: SEP-R003
+  title: "Chain-of-custody dust re-test against both thermite and primer controls"
+  summary: >-
+    Obtain World Trade Center dust from a custodial holder with documented
+    provenance — a museum or archival collection — and commission blinded
+    analysis by multiple independent laboratories, with positive controls
+    for both thermitic material and candidate paint and primer coatings.
+    Specify the protocol and the controls before unblinding.
+  claimIds: [SEP-C014]
+  track: either
+  effortTier: lab
+  informationGain: >-
+    Settles a twenty-five-year dispute cheaply, and settles more than
+    either camp expects: the two existing analyses disagree about whether
+    the chips are thermitic, and the one that rules out thermite also rules
+    out the building's own primer, leaving the material unidentified. A
+    controlled test answers both questions at once.
+
+- id: SEP-R004
+  title: "The sulfur-source study the FEMA metallurgists asked for"
+  summary: >-
+    Perform the follow-up investigation the 2002 appendix recommended and
+    nobody ran: isotope-based source apportionment of the sulfur in the
+    eutectic-corroded steel samples, if the samples survive, against
+    candidate sources including wallboard, atmospheric deposition, and
+    debris-pile chemistry — together with a determination of whether the
+    corrosion preceded or followed the collapse.
+  claimIds: [SEP-C007]
+  track: either
+  effortTier: lab
+  informationGain: >-
+    Closes the most-cited unexplained anomaly in the case in whichever
+    direction the chemistry points. A mundane source retires it; an
+    anomalous one raises a question the record has never had to answer.
+    The examining metallurgists requested exactly this in 2002.
+
+- id: SEP-R005
+  title: "Declassification of the trade-tracing files behind the Commission's put-option conclusions"
+  summary: >-
+    Seek release of the securities-regulator and bureau working files
+    underlying the Commission's footnote — the trade reconstructions, the
+    investor identification, and the newsletter tracing — with personal
+    identifiers protected as necessary, so that the trace-outs can be
+    independently audited rather than accepted on assertion. Pair with a
+    modern re-analysis of the option data applying false-discovery-rate
+    control.
+  claimIds: [SEP-C016, SEP-C015]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The Commission's explanation is specific and probably right, and no
+    one outside the government can check it. Release converts a plausible
+    assertion into a verified finding, or reveals that it should not have
+    been stated as flatly as it was.
+
+- id: SEP-R006
+  title: "Archival resolution of the data-mining dispute"
+  summary: >-
+    Pursue declassification review of the destruction certificates for the
+    program's holdings, any surviving contractor-held data, and the
+    contemporaneous chart products, to determine what the program's
+    materials actually contained before they were destroyed — the one
+    avenue that could move the question off contested recollection.
+  claimIds: [SEP-C021]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    High in both directions and currently the only path: surviving data
+    naming the operational leader before September 2001 would be among the
+    most consequential findings available here, and documented confirmation
+    that the holdings never contained it would close the dispute for good.
+
+- id: SEP-R007
+  title: "Unredacted release of the investigative subfile on the Saudi-support question"
+  summary: >-
+    Seek full release of the bureau subfile on the two individuals who
+    assisted the hijackers in California, the associated foreign
+    police-service exhibits, and the joint inquiry's underlying working
+    papers — much of which is already subject to the 2021 declassification
+    order — keyed to the civil litigation record as the appeal resolves.
+  claimIds: [SEP-C022, SEP-C023]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The only branch of this case with an independent forcing mechanism
+    attached, and the only one where new primary evidence has entered the
+    public record in the last five years. Partly self-executing as the
+    litigation proceeds.
+
+- id: SEP-R008
+  title: "Open high-fidelity progressive-collapse model of a tube-frame tower"
+  summary: >-
+    Build and publish a validated end-to-end simulation of the total
+    collapse of a WTC-scale tube-frame structure from initiation to
+    ground, checked against the video and seismic record, with all inputs
+    and code released. Contemporary computing can attempt what 2005
+    computing could not.
+  claimIds: [SEP-C012, SEP-C013]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Removes the conventional account's last significant completeness gap,
+    or identifies where the gravitational account genuinely fails. Either
+    result is publishable and permanent, and the absence of such a model is
+    currently the most legitimate technical opening the challenger
+    literature has on the towers.
