@@ -1,0 +1,80 @@
+name: Deploy to GitHub Pages
+
+# Publishes the static export to GitHub Pages on every push to main.
+#
+# The site is a project site, served from /<repo>/, so the build needs a
+# matching basePath — set here as NEXT_PUBLIC_BASE_PATH and consumed by
+# both next.config.ts and src/config/assets.ts. If a custom domain is
+# added later (serving at the root), set BASE_PATH to an empty string in
+# the env block below and nothing else changes.
+#
+# Content validity is NOT re-checked here: the CI workflow already fails
+# the build on a malformed record, a dangling ID, or a missing image, and
+# this workflow runs the same `next build`. A broken content record cannot
+# reach Pages without failing this job too.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; queue rather than cancel, so a merge train
+# does not leave the site built from an older commit than the newest run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  BASE_PATH: /erebus
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build static export
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ env.BASE_PATH }}
+        run: npx next build
+
+      - name: Verify the export carries the base path
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ env.BASE_PATH }}
+        run: |
+          set -euo pipefail
+          test -f out/index.html || { echo "::error::no out/index.html — export did not run"; exit 1; }
+          # A project site with an unprefixed asset URL renders as a broken
+          # page rather than a failed build, so assert the prefix is present.
+          if [ -n "${BASE_PATH}" ]; then
+            grep -q "${BASE_PATH}/_next/" out/index.html \
+              || { echo "::error::built pages do not carry ${BASE_PATH} — basePath not applied"; exit 1; }
+          fi
+          # Jekyll would strip _next/ on Pages; nojekyll prevents that.
+          touch out/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

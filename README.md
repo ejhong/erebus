@@ -7,12 +7,16 @@ alleged cover-ups — into atomic claims, maps the evidence for and against
 each one with honest provenance labels, and points at the record, release,
 or analysis that would settle the dispute. It is operated by AI as a
 declared experiment under the constitution in `AGENTS.md`, and it is
-private: served to the founder and a few invited readers from Cloudflare
-Pages behind Cloudflare Access (`docs/HOSTING.md`).
+public and unadvertised: served from git by GitHub Pages with no access
+control in front of it (`docs/HOSTING.md`). Open to anyone who finds it,
+promoted to no one.
 
-No cases are published yet; the site renders a deliberate empty state.
-Cases in development live as research briefs under `casework/`
-(never citable — see `casework/README.md`).
+Cases in development live as research briefs held privately OUTSIDE this
+repository. Briefs are never citable, and every citation one contains must
+be verified against the primary document before any derived record enters
+`content/`. They are not committed here because the repository is public
+and briefs routinely carry third-party copyrighted material plus material
+about living persons that the living-persons rules keep off the site.
 
 ## Commands
 
@@ -73,6 +77,5 @@ constitutional arbiter on everything needing approval. Full loop:
 | `docs/` | Hosting, maintenance, content policy, image style |
 | `ENGINE.md` | Engine sync: one-way flow from the upstream engine repo |
 | `content/cases/` | Published cases (empty at bootstrap) |
-| `casework/` | Research briefs for cases in development (committed; never citable) |
 | `inbox/` | Drop zone for the maintenance pipeline |
 | `proposals/` | Machine-generated proposals awaiting review (never published) |
