@@ -168,8 +168,16 @@
     and photographs chosen for impact would sit badly with a page arguing
     that impact is not evidence.
   reason: >-
-    Founder direction to make the articles more readable.
+    Founder direction to make the articles more readable. Classified as
+    content, not housekeeping, on an arbiter seat's objection. The engine's
+    own display heuristic would treat an images.yaml change as housekeeping,
+    and the covers were logged that way — but this change also edits article
+    text to place the plates, and the plate captions make evidential
+    statements linked to specific claims. Where the classification is
+    genuinely arguable, AGENTS.md §3.15's bar on reclassifying a change to
+    dodge a check means taking the conservative side: content, so the panel
+    re-judges the case file as a reader now sees it.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
-  kind: housekeeping
+  kind: content
 

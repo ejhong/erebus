@@ -1,0 +1,257 @@
+# Cross-model check run — an independent judge (Gemini 3.1 Pro (Google)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-26-check-gemini-r2
+model: Gemini 3.1 Pro (Google) — independent check run via gemini-3.1-pro-preview
+date: 2026-08-26
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: mixed
+  loadBearing:
+    - SEP-C001
+    - SEP-C005
+    - SEP-C011
+    - SEP-C018
+    - SEP-C020
+    - SEP-C024
+  weakestLinks:
+    - SEP-C009
+    - SEP-C010
+    - SEP-C013
+    - SEP-C014
+    - SEP-C019
+  synthesis: >-
+    The September 11 case file presents a complex evidentiary landscape where
+    the broad factual contours of the conventional account are decisively
+    confirmed, while specific technical and official narratives suffer from
+    permanent, proven gaps in reproducibility and candor. Steelmanning the
+    conventional account: The attacks' authorship, funding, and initiation
+    mechanics are established by mutually independent, overwhelming evidence
+    streams, including adversarial criminal trial exhibits, DNA, and flight
+    data. The total collapse of the Twin Towers is well-supported
+    mechanistically as a direct result of localized aircraft impact, broadly
+    stripped fireproofing, and multi-floor high-temperature fires, without which
+    the towers likely would have stood. Demolition theories fail on positive
+    disproofs: collapse initiated precisely at the unpredictably aimed aircraft
+    impact zones, seismographs detected no pre-collapse blast signatures, and
+    acoustic modeling confirms that column-severing explosive charges would have
+    registered at jet-engine decibel levels—sounds entirely absent from all
+    audio and witness records. 
+
+    Steelmanning the challenger position: The technical record is genuinely
+    marred by severe auditability defects that prevent independent verification
+    of the government's central models. Crucially, the investigating agency
+    withheld roughly 68,500 WTC 7 modeling files under a public safety
+    rationale, rendering the complex, fire-driven thermal expansion sequence
+    permanently unauditable by outside engineers. Compounding this, no
+    identified structural steel from WTC 7 was preserved, and a documented
+    extreme high-temperature sulfidation anomaly on two recovered steel members
+    was never subjected to the follow-up study requested by its own discoverers.
+    Furthermore, no end-to-end simulation of the Twin Towers' complete downward
+    collapse progression has ever been published, resting instead on defensible
+    but ultimately static engineering capacity judgments rather than verified
+    dynamic models. 
+
+    Structurally, the grand conspiracy hypotheses—inside complicity, deliberate
+    controlled demolition, and specific "let it happen" foreknowledge—collapse
+    upon contact with the primary record. The record routinely documents
+    systemic bureaucratic dysfunction and inter-agency blindness rather than
+    intentional suppression. However, the presence of documented official
+    deceptions—most notably the White House editing EPA air-quality statements
+    to falsely reassure the public without sufficient data, and military
+    officials misrepresenting their chaotic air-defense timeline to
+    investigators—rightly revokes any presumptive deference to government
+    narrative authority. The result is a historical event predominantly solved
+    in its physics and basic attributions, but encumbered by unforced
+    institutional opacity and unauditable scientific claims that legitimately
+    sustain enduring skepticism.
+claimAssessments:
+  - claimId: SEP-C001
+    verdict: established
+    confidence: high
+    reasoning: Supported by both the final NIST report and earlier FEMA
+      investigations, which detail the 7-hour fire duration and lack of manual
+      firefighting due to severed water mains. No hypothesis in the case file
+      disputes this baseline observation, though mechanisms are fiercely
+      contested.
+  - claimId: SEP-C002
+    verdict: established
+    confidence: high
+    reasoning: The free-fall interval is explicitly stated in the official federal
+      investigation's principal findings after public comment forced its
+      measurement. It is an accepted metric constraint for the event, though its
+      implications for the mechanism remain heavily disputed.
+  - claimId: SEP-C003
+    verdict: mixed
+    confidence: moderate
+    reasoning: The fire-driven thermal expansion mechanism is internally consistent
+      and requires no unevidenced melted steel. However, it cannot be
+      independently reproduced because the underlying modeling files were
+      withheld, rendering it permanently unaudited. The strongest opposing
+      consideration is that a mechanism requiring 68,500 hidden files cannot be
+      scientifically validated by outside observers.
+  - claimId: SEP-C004
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The UAF study provides an open finite-element model that successfully
+      reproduces the descent interval. However, its simultaneous column failure
+      is an input rather than a derived finding, it relies on a single static
+      temperature field rather than a moving fire, and it fails to reproduce the
+      observed debris distribution.
+  - claimId: SEP-C005
+    verdict: established
+    confidence: high
+    reasoning: Documented directly in a federal court opinion acknowledging roughly
+      68,500 files were withheld because validated connection models could be
+      used as blueprints for destroying large buildings. The court upheld the
+      statutory public safety rationale.
+  - claimId: SEP-C006
+    verdict: established
+    confidence: high
+    reasoning: The investigating agency explicitly acknowledges that unlike marked
+      tower steel, WTC 7 debris lacked distinguishing characteristics and was
+      recycled before being forensically identified or cataloged. This permanent
+      loss of evidence forecloses direct physical testing.
+  - claimId: SEP-C007
+    verdict: established
+    confidence: high
+    reasoning: The FEMA appendix explicitly notes severe high-temperature corrosion
+      and intergranular melting, stating no clear explanation was identified.
+      The authors recommended follow-up studies to determine the sulfur source,
+      which were never conducted. The strongest counter-consideration is that
+      this sulfidation may have occurred during long-term heating in the debris
+      pile.
+  - claimId: SEP-C008
+    verdict: established
+    confidence: high
+    reasoning: Multiple on-the-record accounts describe loud reports, which the
+      official investigation formally acknowledges. The strongest opposing
+      consideration is that lay perception easily confuses collapsing structural
+      elements, falling debris, or failing transformers with explosive
+      detonations.
+  - claimId: SEP-C009
+    verdict: contradicted
+    confidence: high
+    reasoning: The investigating agency calculated that a column-severing blast
+      would register 130-140 decibels at a half-mile, equivalent to a jet
+      engine. No acoustic record or witness testimony captures a sound matching
+      this specific, falsifiable threshold.
+  - claimId: SEP-C010
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The claim derives its entire support from the unaudited gaps in the
+      official WTC 7 mechanism and the untested sulfidation anomaly. It is
+      directly contradicted by the lack of physical explosive devices, the
+      absence of corresponding acoustic blast signatures, and the severe
+      logistical difficulty of undetected rigging.
+  - claimId: SEP-C011
+    verdict: well_supported
+    confidence: high
+    reasoning: Extensively supported by structural impact models, fire
+      reconstructions, and visual evidence of inward bowing columns prior to
+      collapse. The claim accurately retains the investigation's own vital
+      caveat that the towers likely would not have fallen had the thermal
+      insulation remained intact.
+  - claimId: SEP-C012
+    verdict: contradicted
+    confidence: high
+    reasoning: The investigating agency explicitly acknowledges that once collapse
+      initiated, the downward propagation was explained using a static
+      floor-capacity argument. No full-scale dynamic structural modeling of the
+      complete top-to-bottom progression has ever been published.
+  - claimId: SEP-C013
+    verdict: contradicted
+    confidence: high
+    reasoning: Collapse initiation coincided exactly with the unplannable aircraft
+      impact zones, and seismographs captured no pre-collapse blast signatures.
+      The strongest opposing argument is the lack of forensic search protocols
+      during debris removal, but any explosive charges would have had to
+      inexplicably survive an hour of ~1,000°C fires.
+  - claimId: SEP-C014
+    verdict: contradicted
+    confidence: high
+    reasoning: Independent analysis of custody-archived dust found no elemental
+      aluminum, a strict chemical necessity for the thermite claim. While this
+      analysis also refuted the debunking theory that the chips were simply
+      building primer, the absence of elemental aluminum definitively breaks the
+      nanothermite hypothesis.
+  - claimId: SEP-C015
+    verdict: well_supported
+    confidence: high
+    reasoning: Two peer-reviewed finance journals confirm statistically abnormal
+      pre-attack option activity. However, statistical deviation flags
+      consistency with informed trading without identifying a specific trader,
+      motive, or direct link to the attackers.
+  - claimId: SEP-C016
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The 9/11 Commission attributes the headline trades to innocuous
+      institutional buyers and a newsletter recommendation. Because the
+      underlying investigative files remain classified and inaccessible to the
+      public, this specific and highly plausible trace-out is impossible for
+      independent researchers to audit.
+  - claimId: SEP-C018
+    verdict: established
+    confidence: high
+    reasoning: The August 6 Presidential Daily Brief explicitly warned of attack
+      preparations, and the joint inquiry found the intelligence community held
+      highly relevant collective information. Yet, these warnings lacked the
+      specific time, place, and nature of the 9/11 attacks required to execute
+      actionable defense.
+  - claimId: SEP-C019
+    verdict: contradicted
+    confidence: high
+    reasoning: Inspector general reviews exhaustively document repeated bureaucratic
+      dysfunctions, failed information sharing across nodes, and analytical
+      incompetence. A failure mode composed of fragmented intelligence and
+      unconnected dots heavily contradicts the evidentiary signature of a
+      coordinated suppression effort.
+  - claimId: SEP-C020
+    verdict: well_supported
+    confidence: high
+    reasoning: The 9/11 Commission staff and subpoenaed military recordings confirm
+      that fighters were scrambled after a phantom (already-crashed) aircraft, a
+      reality omitted from all initial public DOD timelines. This confirms
+      official misstatement while simultaneously disproving shootdown theories,
+      as fighters were not actively tracking hijacked targets.
+  - claimId: SEP-C021
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: Several military witnesses recall seeing a chart identifying Atta,
+      but a DOD inspector general concluded their memories degraded over time,
+      pointing instead to a real 1999 chart lacking Atta. The dispute cannot be
+      definitively closed because the underlying Able Danger data was destroyed.
+  - claimId: SEP-C022
+    verdict: well_supported
+    confidence: high
+    reasoning: A declassified congressional inquiry section confirms the hijackers
+      received practical assistance from individuals who may have been connected
+      to the Saudi government. The underlying reports, however, consist of raw,
+      unadjudicated intelligence leads rather than final determinations of
+      witting facilitation.
+  - claimId: SEP-C023
+    verdict: unresolved
+    confidence: moderate
+    reasoning: The 9/11 Commission found no evidence of direct institutional funding
+      but expressly left open the possibility of diversion via state-sponsored
+      charities. The matter remains entirely open pending the ultimate
+      resolution of an appealed civil litigation ruling currently stayed in
+      federal court.
+  - claimId: SEP-C024
+    verdict: established
+    confidence: high
+    reasoning: The EPA's own Inspector General verified that early air-quality
+      statements lacked sufficient data and that the White House Council on
+      Environmental Quality explicitly instructed the addition of reassuring
+      statements and the removal of cautionary language.
+  - claimId: SEP-C017
+    verdict: contradicted
+    confidence: high
+    reasoning: In the context of the documentary and corroborating contemporaneous
+      records, the leaseholder was discussing the withdrawal of firefighting
+      personnel due to severed water mains and the inability to fight the fire.
+      Rigging an occupied 47-story skyscraper for demolition during an active
+      emergency is physically impossible.
