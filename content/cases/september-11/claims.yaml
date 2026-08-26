@@ -1064,3 +1064,154 @@
     what was meant.
   whatWouldChangeOurMind:
     - "Documentary evidence of demolition preparation at the building before September 11, 2001."
+
+# ── tombstones ──────────────────────────────────────────────────────────
+#
+# Rejected claims keep their records (docs/CONTENT_POLICY.md, "Rejected
+# claims are tombstones"). They do not render in reader views; they exist so
+# that future extraction runs do not re-propose material this case has
+# already examined and rejected, and so the reasoning survives for anyone
+# who wonders why an argument they have seen elsewhere is absent here.
+#
+# These five are the most-circulated 9/11 propositions that the primary
+# record contradicts outright. Rejecting them is not a judgment that the
+# official account is complete — this case grades two of its central claims
+# as mixed and contradicted precisely because it is not. It is a judgment
+# that these five specific propositions fail on evidence.
+#
+# Note what is NOT tombstoned: the WTC 7 demolition hypothesis remains a
+# live, weakly-supported featured claim (SEP-C010), because a real unaudited
+# gap sustains it. The line between these five and that one is evidence, not
+# respectability.
+
+- id: SEP-C025
+  tier: catalog
+  statement: >-
+    No commercial airliner struck the Pentagon on September 11, 2001; the
+    damage was caused by a missile, a drone, or a smaller aircraft.
+  theme: other-flights
+  rung: observation
+  reviewState: rejected
+  rejectionReason: >-
+    Contradicted by mutually independent evidence streams: the flight data
+    recorder recovered at the site, 184 victims identified at the Pentagon
+    including five hijackers identified by DNA elimination, the physical
+    damage chain of light poles and a generator on the approach path,
+    eyewitness accounts including a military aircrew that observed the
+    approach, and photographed airframe debris. The claim's most-circulated
+    exhibit — a television correspondent's remark that no evidence of a
+    plane was visible — is a deceptively edited clip whose full broadcast
+    says the opposite. Rejected rather than graded because there is no
+    surviving evidential dispute here, only a manufactured one.
+  sourceAnchor:
+    locator: "Circulating claim family (missile / Global Hawk / small-aircraft variants); no primary source supports it"
+  origin:
+    ref: "casework/september-11 digest — tombstone list"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-tombstones-2026-08-26"
+    date: "2026-08-26"
+
+- id: SEP-C026
+  tier: catalog
+  statement: >-
+    Directed-energy weapons or nuclear devices destroyed the World Trade
+    Center towers.
+  theme: towers
+  rung: mechanism
+  reviewState: rejected
+  rejectionReason: >-
+    Contradicted on every measurable prediction it makes. A nuclear device
+    would leave a radiation signature and a thermal-blast pattern; neither
+    appears in any dust study, medical surveillance record, or environmental
+    survey of the site, including the extensive dust characterization work
+    done for public-health purposes. Directed-energy variants predict
+    effects — vehicle damage patterns, selective material transmutation —
+    that no instrumented measurement supports, and they require an
+    unevidenced capability. The seismic record contains no pre-collapse
+    signal of any kind. Rejected as physically unsupported rather than
+    merely unproven.
+  sourceAnchor:
+    locator: "Circulating claim family (directed-energy and mini-nuke variants); no primary source supports it"
+  origin:
+    ref: "casework/september-11 digest — tombstone list"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-tombstones-2026-08-26"
+    date: "2026-08-26"
+
+- id: SEP-C027
+  tier: catalog
+  statement: >-
+    Some four thousand Israeli nationals were warned in advance and stayed
+    away from the World Trade Center on September 11, 2001.
+  theme: foreknowledge
+  rung: attribution
+  reviewState: rejected
+  rejectionReason: >-
+    A fabrication with a traceable origin in a September 2001 broadcast
+    item, and antisemitic in construction: it invents a warned population by
+    misreading a figure for Israeli citizens thought to be in the New York
+    metropolitan area as a headcount of people expected at the towers.
+    Contradicted by the victim record, which includes Israeli nationals
+    among the dead. This case rejects it rather than grading it because
+    grading would imply the proposition is the kind of thing evidence could
+    support, and because AGENTS.md §7 forbids treating group identity as
+    evidence. Recorded here so extraction runs do not re-propose it.
+  sourceAnchor:
+    locator: "Circulating fabrication traced to a September 2001 broadcast item; no primary source supports it"
+  origin:
+    ref: "casework/september-11 digest — tombstone list"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-tombstones-2026-08-26"
+    date: "2026-08-26"
+
+- id: SEP-C028
+  tier: catalog
+  statement: >-
+    United Airlines Flight 93 was shot down by a military aircraft.
+  theme: other-flights
+  rung: mechanism
+  reviewState: rejected
+  rejectionReason: >-
+    Contradicted by the same air-defense record this case relies on to
+    establish that officials misdescribed their own response. The subpoenaed
+    operations recordings show the military never had any hijacked airliner
+    in its sights, was pursuing an aircraft that had already crashed, and
+    had no shootdown authority reach any pilot; the sector learned of the
+    reported bomb aboard the flight after everyone on board was already
+    dead. The radar track and flight data recorder are consistent with the
+    documented cockpit struggle. Note the direction of this evidence: it
+    indicts official candor (SEP-C020) and simultaneously refutes this
+    claim, which is exactly why the case keeps both findings.
+  sourceAnchor:
+    locator: "Circulating claim family (shootdown variants); contradicted by the air-defense recordings and the flight data record"
+  origin:
+    ref: "casework/september-11 digest — tombstone list"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-tombstones-2026-08-26"
+    date: "2026-08-26"
+
+- id: SEP-C029
+  tier: catalog
+  statement: >-
+    The telephone calls reported from the hijacked aircraft were fabricated,
+    using voice-morphing technology or otherwise.
+  theme: other-flights
+  rung: observation
+  reviewState: rejected
+  rejectionReason: >-
+    Contradicted by the trial record: call detail records and recipient
+    testimony were admitted and tested in adversarial criminal proceedings,
+    among the 1,202 exhibits published by the court. The claim requires that
+    dozens of recipients — spouses, parents, colleagues, emergency
+    operators — either failed to recognize impersonation of people they knew
+    intimately, or participated in a deception, and it requires a
+    capability whose existence is asserted rather than demonstrated. Neither
+    research brief for this case supports it. Rejected on the strength of
+    the adversarial record.
+  sourceAnchor:
+    locator: "Circulating claim family (voice-morphing and fabricated-call variants); contradicted by admitted trial exhibits"
+  origin:
+    ref: "casework/september-11 digest — tombstone list"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-sep11-tombstones-2026-08-26"
+    date: "2026-08-26"

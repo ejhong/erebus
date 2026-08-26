@@ -29,6 +29,12 @@ const CASE_TONES = {
   "kirk-assassination":
     "deep blue-black field, graphite and slate linework, one thin " +
     "pale-steel accent tracing the single unbroken line",
+  "september-11":
+    "cold Prussian-blue field deepening toward graphite, slate linework, " +
+    "one thin pale-steel accent where the record breaks off",
+  "covid-origins":
+    "indigo-into-graphite field, steel-grey linework, one restrained " +
+    "cool-white accent held between two empty spaces",
 };
 
 /**
@@ -46,6 +52,30 @@ const CASE_SUBJECTS = {
     "unbroken, others fading into dotted gaps or stopping mid-line, with " +
     "small registration marks where the traces disagree — the idea of one " +
     "event producing many incomplete, imperfectly reconciled records.",
+  // "Where the Record Stops": the case is about auditability, not about the
+  // event. Pure diagram language — no buildings, no skyline, no aircraft,
+  // no smoke, nothing a reader could mistake for documentation of the day.
+  "september-11":
+    "An abstract technical diagram of an audit trail that terminates: a " +
+    "dense bundle of fine parallel measurement traces running left to " +
+    "right across a cold field, most continuing cleanly to the right edge, " +
+    "but a portion of them stopping abruptly at a vertical boundary line " +
+    "partway across, beyond which the field is empty — with small " +
+    "registration ticks and bracket marks along the boundary where the " +
+    "traces end, as if the instrument stopped recording rather than the " +
+    "phenomenon stopping. Severe, instrument-like, no scene of any kind.",
+  // "Two Absences": two symmetrical gaps, each side reading the other's as
+  // decisive. No virus imagery, no molecular renderings, no maps, no
+  // laboratory or market scenery — the subject is the shape of the
+  // evidence, not the pathogen.
+  "covid-origins":
+    "An abstract technical diagram of two symmetrical gaps: two dense " +
+    "fields of fine converging linework approaching from opposite sides " +
+    "of a cold field, each narrowing toward a small empty circular void " +
+    "that its lines never reach, the two voids mirrored across the centre " +
+    "and connected by a single thin unbroken reference line. Fine " +
+    "graticule ticks along the margins. Severe, instrument-like, entirely " +
+    "geometric — no organic forms, no scene, no place.",
 };
 
 /** One reversible generation run: a single runId stamped on every record. */

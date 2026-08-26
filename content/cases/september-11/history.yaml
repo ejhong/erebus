@@ -3,7 +3,7 @@
 - date: "2026-08-26"
   change: >-
     Case launched: 24 featured claims across nine themes, an evidence
-    ledger of 38 records, a source registry of 33 independently verified
+    ledger of 39 records, a source registry of 36 independently verified
     sources, and a research agenda of eight decisive tests. Scope was
     deliberately bounded to the disputes the primary record can actually
     adjudicate — WTC 7 as the crux, the towers mechanism, pre-attack
@@ -46,3 +46,58 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Added five tombstone records (SEP-C025 to SEP-C029) for the
+    most-circulated propositions the primary record contradicts outright: no
+    airliner at the Pentagon, directed-energy or nuclear destruction of the
+    towers, the "four thousand Israelis" fabrication, a Flight 93 shootdown,
+    and fabricated telephone calls from the aircraft. Rejected claims keep
+    their records and do not render in reader views; they exist so extraction
+    runs do not re-propose material already examined, and so the reasoning
+    survives for readers who wonder why an argument they have seen elsewhere
+    is absent. A theme was added for the Pentagon and Flight 93 cluster,
+    which this cut otherwise defers.
+
+    What is deliberately NOT tombstoned: the WTC 7 demolition hypothesis
+    remains a live, weakly-supported featured claim, because a real
+    unaudited gap in the official mechanism sustains it. The line between
+    those five and that one is evidence, not respectability.
+
+    Also corrected in this entry: the launch entry above understated the
+    ledger and registry as 38 records and 33 sources; the actual figures at
+    launch were 39 and 36. The error was caught by a cross-model arbiter
+    seat reviewing the launch pull request, and is corrected here by
+    amendment rather than by editing the original entry, since history is
+    append-only.
+  reason: >-
+    Founder direction to complete the open items from the case launch. The
+    tombstone list follows the research digest's recommendation, with each
+    rejection reason grounded in the verified record rather than in the
+    claim's reputation.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Cover artwork added: one AI-generated editorial illustration in the
+    house style (style-e1), stamped with prompt, model, style version, and
+    generation runId. Two candidates were generated and one chosen; the
+    unused candidate was deleted rather than kept. Generated imagery is
+    confined to the cover role — the schema forbids it as a plate — so
+    nothing a reader could mistake for the evidentiary record is synthetic.
+    Neither case carries plates, deliberately: the imagery each would
+    otherwise reach for either depicts contested subject matter or does not
+    exist.
+
+    The cover takes the case's own finding as its subject rather than its
+    events, which is what keeps it clear of the depiction rule. No
+    building, aircraft, pathogen, map, person, or place appears in it.
+  reason: >-
+    Founder direction to complete the open items from the case launch.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: housekeeping
+

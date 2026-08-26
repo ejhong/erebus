@@ -75,3 +75,25 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Cover artwork added: one AI-generated editorial illustration in the
+    house style (style-e1), stamped with prompt, model, style version, and
+    generation runId. Two candidates were generated and one chosen; the
+    unused candidate was deleted rather than kept. Generated imagery is
+    confined to the cover role — the schema forbids it as a plate — so
+    nothing a reader could mistake for the evidentiary record is synthetic.
+    Neither case carries plates, deliberately: the imagery each would
+    otherwise reach for either depicts contested subject matter or does not
+    exist.
+
+    The cover takes the case's own finding as its subject rather than its
+    events, which is what keeps it clear of the depiction rule. No
+    building, aircraft, pathogen, map, person, or place appears in it.
+  reason: >-
+    Founder direction to complete the open items from the case launch.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: housekeeping
+
