@@ -90,12 +90,10 @@ cross-repo copy as a publication decision.
 
 Current queue (2026-08-25):
 
-1. **Zero-content static export.** `output: export` fails when a dynamic
-   route generates zero params. Fix shipped here: a pure helper
-   (`src/domain/staticExport.ts`) emits one reserved placeholder param per
-   empty route, and the five dynamic-route pages render `notFound()` for
-   unknown ids (replacing thrown errors). Affected files are listed in the
-   sync allowlist under "zero-content static-export support."
+1. ~~Zero-content static export.~~ **Merged upstream 2026-08-26**
+   (aletheia PR #81) and pulled back the same day; the six allowlist
+   entries under "zero-content static-export support" are retired with it
+   (the upstream port left only import-order differences here).
 2. ~~Inbox-response workflow token bug.~~ **Merged upstream 2026-08-26**
    (aletheia PR #77) and pulled back the same day; the allowlist entry for
    `inbox-response.yml` is retired with it.
@@ -108,9 +106,12 @@ Current queue (2026-08-25):
    records, so ledgers stay coarse (aggregate findings only) while the
    full table remains auditable on the site. Interim convention in this
    repo: `docs/CONTENT_POLICY.md`, "Studies and workpapers."
-4. **Empty-state rendering for the homepage, case index, and research
-   page** (lower priority; useful for bootstraps and full-archive states).
-   Shipped here in the corresponding page files, listed in the allowlist.
+4. ~~Empty-state rendering for the homepage and case index.~~ **Merged
+   upstream 2026-08-26** (aletheia PR #81, in the upstream's own design
+   idiom). This repo's page files stay allowlisted — they diverge for
+   design register and the living-persons notice, not for the empty
+   states — and the upstream research page no longer exists, so its empty
+   state is moot.
 5. ~~Design objection to the contested-reconciliation mechanism.~~
    **Merged upstream 2026-08-26** (aletheia PR #75, arbiter 5/5) and
    pulled back the same day: reconsideration overlays now stamp

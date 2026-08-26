@@ -90,13 +90,6 @@ const ALLOWLIST = new Set([
   "scripts/generate-case-art.mjs",
   ".github/workflows/generate-case-art.yml",
   ".github/workflows/extract-claims.yml",
-  // Zero-content static-export support (candidate for upstreaming)
-  "src/domain/staticExport.ts",
-  "app/claims/[id]/page.tsx",
-  "app/cases/[slug]/evidence/page.tsx",
-  "app/sources/[id]/page.tsx",
-  "app/cases/[slug]/claims/page.tsx",
-  "app/cases/[slug]/resources/page.tsx",
   // Exists only in this repo
   "scripts/sync-engine.mjs",
 ]);
