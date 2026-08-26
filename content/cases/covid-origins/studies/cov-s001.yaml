@@ -139,8 +139,8 @@ rows:
       stated basis: "not stated beyond classification constraints ('there are not a whole lot of details I can share that aren't classified')"
       change from prior stated position: "no change — the first on-record, first-person confirmation of the documented position"
     citation:
-      text: "Wray interview of February 28, 2023, quoted verbatim across contemporaneous reports (CNN, ABC, Reuters, NPR, all read at native verification)"
-      url: "https://www.reuters.com/business/healthcare-pharmaceuticals/fbi-director-says-china-lab-leak-likely-caused-covid-pandemic-2023-03-01/"
+      text: "Wray interview of February 28, 2023; the sentence is quoted identically verbatim across CNN, ABC, NPR and Reuters (all read at native verification; NPR linked as the resolving carrier). The bureau's documented position is also carried in the June 2023 declassified report (previous row's primary)"
+      url: "https://www.npr.org/2023/02/28/1160214557/fbi-covid-origins-investigation-wray"
       verification: ai_verified
   - cells:
       agency or component: "Department of Energy and FBI (as carried in the statutorily compelled report)"
@@ -156,13 +156,13 @@ rows:
   - cells:
       agency or component: "CIA and one other agency (as carried in the same report)"
       date of stated position: "2023-06-23"
-      stated conclusion: "'The Central Intelligence Agency and another agency remain unable to determine the precise origin of the COVID-19 pandemic, as both (natural and lab) hypotheses rely on significant assumptions or face challenges with conflicting reporting' (verbatim, as quoted from the report in contemporaneous coverage)"
+      stated conclusion: "'The Central Intelligence Agency and another agency remain unable to determine the precise origin of the COVID-19 pandemic, as both hypotheses rely on significant assumptions or face challenges with conflicting reporting' (verbatim from the declassified report itself; press quotations insert a '(natural and lab)' parenthetical that is not in the primary text)"
       stated confidence: "explicit abstention"
       stated basis: "significant assumptions on both hypotheses; conflicting reporting"
       change from prior stated position: "continuation of the 2021 unable-to-coalesce position"
     citation:
-      text: "Same June 2023 declassified report; abstention language as quoted in Reuters and BBC coverage of June 23-24, 2023 (read at native verification)"
-      url: "https://www.reuters.com/world/no-direct-evidence-covid-19-pandemic-started-wuhan-lab-us-intelligence-report-2023-06-24/"
+      text: "ODNI, Potential Links Between the Wuhan Institute of Virology and the Origin of the COVID-19 Pandemic, declassified June 23, 2023, page 3 (odni.gov PDF downloaded and read in full at native verification; the abstention sentence quoted verbatim from the primary)"
+      url: "https://www.odni.gov/files/ODNI/documents/assessments/Report-on-Potential-Links-Between-the-Wuhan-Institute-of-Virology-and-the-Origins-of-COVID-19-20230623.pdf"
       verification: ai_verified
   - cells:
       agency or component: "CIA (official agency spokesperson statement)"
