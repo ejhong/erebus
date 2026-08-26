@@ -179,8 +179,13 @@ rows:
       statement rank: headquarters (written), director quoted on the FBI's own conduct
       stated nexus: assistance; the HQ statement concerned the FBI's tip-line failure
     citation:
-      text: FBI national press release, February 16, 2018 (fbi.gov)
-      url: https://www.fbi.gov/news/press-releases/fbi-statement-on-the-shooting-in-parkland-florida
+      text: 'FBI national press release, "FBI Statement on the Shooting in Parkland,
+        Florida," February 16, 2018. Canonical locator:
+        fbi.gov/news/press-releases/fbi-statement-on-the-shooting-in-parkland-florida
+        (live page bot-blocks mechanical checks); linked to the Internet Archive
+        snapshot of 2026-07-07, whose full text — including the Wray quote and
+        the protocols-not-followed finding — was read and matches the cells.'
+      url: https://web.archive.org/web/20260707232542/https://www.fbi.gov/news/press-releases/fbi-statement-on-the-shooting-in-parkland-florida
       verification: ai_verified
   - cells:
       case: Robb Elementary (Uvalde)
@@ -317,12 +322,17 @@ rows:
       text: "Two sources, each exact. Linked: FBI Portland field office, October 1,
         2016, \"Message of Remembrance on First Anniversary of UCC Attack\" —
         SAC Bretzing's account of the hundred-plus-person response (role-depth
-        cell; flagged in-row as not contemporaneous). Briefing cells: ABC 33/40
-        (AP wire), October 1, 2015, \"UCC Shooting: Sheriff not naming gunman,\"
+        cell; flagged in-row as not contemporaneous). Canonical locator:
+        fbi.gov/contact-us/field-offices/portland/
+        news/message-of-remembrance-on-first-anniversary-of-ucc-attack (live
+        page bot-blocks mechanical checks); linked to the Internet Archive
+        snapshot of 2026-01-31, whose full text was read and matches the cells.
+        Briefing cells: ABC 33/40 (AP wire), October 1, 2015, \"UCC Shooting:
+        Sheriff not naming gunman,\"
         abc3340.com/news/nation-world/ucc-shooting-oregon-gunman-identified-as-\
         chris-harper-mercer (sheriff fronting; FBI/OSP evidence teams; CALL-FBI
         tip line)."
-      url: https://www.fbi.gov/contact-us/field-offices/portland/news/message-of-remembrance-on-first-anniversary-of-ucc-attack
+      url: https://web.archive.org/web/20260131130456/https://www.fbi.gov/contact-us/field-offices/portland/news/message-of-remembrance-on-first-anniversary-of-ucc-attack
       verification: ai_verified
   - cells:
       case: Virginia Tech
