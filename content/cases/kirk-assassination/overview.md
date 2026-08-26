@@ -1,10 +1,14 @@
 On September 10, 2025, at 12:23 in the afternoon, Charlie Kirk was answering a student's question in a courtyard at Utah Valley University when a single shot killed him in front of roughly three thousand people and a half-dozen cameras. The State of Utah has charged Tyler Robinson, then twenty-two, with aggravated murder and says it will seek the death penalty. He has not entered a plea, no jury has heard the case, and he is presumed innocent — a sentence that belongs in the second paragraph of this article and not the footnotes, because everything else on this page must be read through it.
 
+{plate:IMG-KRK-P01}
+
 This case does not ask who killed Charlie Kirk. That is a question for a courtroom, and no claim on this page grades it. What this case maps is the *record*: what the public evidence actually contains, where it is strong, where it stops, and which of the disputes swirling around it are real, manufactured, or simply unresolved. The killing of a political figure, on camera, during an active culture war, has produced an evidentiary argument conducted almost entirely in summaries of summaries. The method here is the opposite: every consequential sentence below is pinned to a claim you can open, every claim to evidence, every record to a source that was independently verified before it entered this file.
 
 ## What is actually established
 
 Begin with what no serious party disputes. [A person was on the Losee Center roof and fled across it within seconds of the shot]{claim=KRK-C001} — captured in social-media video independently analyzed by the Washington Post's visual-forensics team, in footage the FBI released of the figure jumping from the roof, and in the sworn testimony of the first officer up there, who found a red-and-black screwdriver and a disturbance in the gravel "like someone had lain there in the prone position." [A towel-wrapped .30-06 bolt-action rifle was recovered in a wooded area along the apparent escape route]{claim=KRK-C002}, where the FBI says the fleeing figure went.
+
+{plate:IMG-KRK-P02}
 
 The medical record, as far as it goes, is equally direct: [the medical examiner's report classifies the death as a homicide caused by a gunshot wound to the neck, with projectile fragments recovered at autopsy]{claim=KRK-C006}. And the prosecution's association case is substantial: [DNA evidence presented at the preliminary hearing links Robinson to the rifle and related items]{claim=KRK-C008}, with statistics the state's witnesses described as "extremely likely," and [testimony and exhibits attribute incriminating statements to him]{claim=KRK-C009} — a roommate's recorded account, extracted texts, a Discord message before surrender. Anyone telling you this is a house of cards has not read the record.
 
@@ -24,6 +28,8 @@ The event's own cameras are a study in how provenance problems are born. Sworn t
 
 The physical scene has its own version. [The courtyard was excavated and paved within days, and the lead investigator testified he did not personally authorize it]{claim=KRK-C013} — documented in records obtained under Utah's open-records law, down to a $6,090.52 emergency invoice reading "Clean up for shooting incident." Whether that mattered forensically depends entirely on which mechanism hypothesis you hold, which is why this case records the paving as a real transparency failure while declining the leap to [the claim that documented institutional conduct establishes deliberate evidence concealment]{claim=KRK-C017} — a leap the current record does not license.
 
+{plate:IMG-KRK-P03}
+
 ## The pressure file
 
 Some of the most consequential material has nothing to do with forensics. [In messages authenticated by TPUSA's own spokesman, Kirk described losing a two-million-dollar-a-year donor over his refusal to cancel Tucker Carlson, and wrote that donor pressure was leaving him "no choice but to leave the pro-Israel cause"]{claim=KRK-C014}. That is an extraordinary window into his final weeks, and it is real — confirmed on the record, not alleged. Reporting of a contentious Hamptons gathering the month before adds a disputed chapter: anonymous sources describe an "intervention"; the named participants categorically deny coercion.
@@ -41,6 +47,8 @@ This site grades the hypothesis weakly supported and does not expect that grade 
 Officials have not earned unlimited deference here, and that is now a matter of record rather than suspicion: [a judge held a deputy prosecutor in civil contempt in June 2026 for violating pretrial-publicity restrictions]{claim=KRK-C016} after he told a tabloid the state had "ample evidence" of guilt — even as the same ruling found his correction of ballistics misreporting legitimate. Narrative management inside the prosecution was real. So was actual misinformation for it to manage. Both facts are in the file.
 
 The popular counter-narratives fare no better under inspection. The widely circulated timeline case — an unauthenticated 8:07 a.m. video supposedly at odds with an 8:29 arrival, a rooftop flight supposedly too fast for rifle disassembly — collapses on contact with its own premises: [the anomalies are not, on current evidence, inconsistent with the official chronology]{claim=KRK-C010}, and the disassembly claim appears nowhere in the reviewed official record. The related charge that [the FBI director's announced screwdriver-DNA evidence was quietly abandoned]{claim=KRK-C032} splits cleanly under verification: the announcement-versus-charging-document mismatch is real, and the abandonment is false — the evidence was presented under oath ten months later. This case keeps such material where it belongs: as leads in the catalog — the venue-selection allegation, the disputed accounts of who ordered cameras removed, an assertion that the FBI holds the original cards, a lead about a commentator's whereabouts that its own source says is unconfirmed — each anchored to its exact quote, each awaiting the specific verification it names, none promoted to fact.
+
+{plate:IMG-KRK-P04}
 
 ## The organized-operation file
 
