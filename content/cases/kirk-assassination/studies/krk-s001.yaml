@@ -1,0 +1,136 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design: the criteria below are
+# judged before anyone knows what the data will say, and any later edit
+# to them fails the build. Collection follows in a second PR.
+id: KRK-S001
+title: Scene-release-to-alteration intervals in comparable American cases
+question: Is the UVU courtyard's release-to-alteration sequence and interval
+  anomalous among comparable cases, or typical of released public venues?
+researchIds:
+  - KRK-R011
+claimIds:
+  - KRK-C013
+  - KRK-C017
+criteria:
+  frozenOn: 2026-08-26
+  inclusion:
+    - United States events, 2000–2026, in which one or more people were killed
+      at a public or semi-public venue (school, campus, concert/festival
+      grounds, nightclub, public street or plaza) and law enforcement processed
+      the location as a crime or mass-casualty scene.
+    - "The scene's later handling is documentable from public records or news of
+      record on at least two of three variables: (a) the date investigators
+      formally released the scene, (b) the date and nature of the first physical
+      alteration beyond standard biohazard remediation (cleanup construction,
+      excavation, renovation, demolition), (c) the party who authorized that
+      alteration."
+    - Venues with a documented decision to PRESERVE the scene (no structural
+      alteration for 24 months or more, e.g. preservation for trial) are
+      included as censored rows — excluding them would build survivorship bias
+      into the base rate.
+  exclusion:
+    - Scenes still under active investigative hold with no release date on the
+      public record at collection time (reported in the failed-search note,
+      never silently dropped).
+    - "Non-criminal disaster scenes (structural collapses, transport accidents):
+      the release-and-remediation authorization regime is not comparable."
+    - Events before 2000 - investigative and records practice too remote.
+    - Private interior scenes not generally accessible to the public (the
+      comparandum is a public campus courtyard).
+  searchProtocol: "Multi-searcher discovery, run only after this freeze, protocol
+    verbatim per searcher: (1) OpenAI deep research (o4-mini-deep-research,
+    background mode); (2) Gemini deep research (deep-research-preview,
+    background mode); (3) the executing agent's own web search. Literal queries,
+    each run in all three: [\"scene released\" OR \"released the scene\"
+    shooting investigation]; [shooting site demolished OR razed OR \"torn
+    down\"]; [shooting site repaved OR renovated OR reopened days]; [school
+    shooting building demolished decision]; [festival OR concert shooting
+    grounds reopened cleanup]; [nightclub shooting building demolished OR
+    memorial]; [crime scene released cleanup authorized university OR city
+    council]. Per-candidate follow-up queries pairing the venue name with:
+    \"released the scene\", \"cleanup\", \"demolition\", \"repaved\",
+    \"reopened\", \"preserved for trial\". Sources searched: AP and Reuters
+    archives, papers of record local to each candidate, municipal/university
+    press releases and council minutes, court records where preservation or
+    spoliation was litigated. Union of all three searchers' candidate lists;
+    overlap between searchers reported in the limitations as the coverage
+    indicator. Deep-research output is a brief under casework convention: it
+    proposes candidates and is never cited; every row cell is verified natively
+    against its own source before entering the table."
+  knownCandidates:
+    - name: UVU courtyard (Orem, 2025)
+      disposition: exclude
+      reason: the target case — it is placed against the distribution, not inside it
+    - name: Route 91 Harvest festival grounds / Las Vegas Village lot (2017)
+      disposition: include
+      reason: outdoor festival mass shooting; venue fate publicly documented
+    - name: Pulse nightclub (Orlando, 2016)
+      disposition: include
+      reason: semi-public venue; building fate publicly litigated and documented
+    - name: Sandy Hook Elementary (Newtown, 2012)
+      disposition: include
+      reason: school scene later demolished by documented public decision
+    - name: Marjory Stoneman Douglas 1200 building (Parkland, 2018)
+      disposition: include
+      reason: scene preserved for trial then demolished — the clearest
+        censored-then-altered sequence known at freeze
+    - name: Robb Elementary (Uvalde, 2022)
+      disposition: include
+      reason: school scene with documented demolition decision
+    - name: Covenant School (Nashville, 2023)
+      disposition: include
+      reason: school shooting; reopening/renovation publicly reported
+    - name: Michigan State University, Berkey Hall and MSU Union (2023)
+      disposition: include
+      reason: campus buildings reopened after documented remediation — closest venue
+        type to the comparandum
+    - name: Boston Marathon finish line, Boylston Street (2013)
+      disposition: include
+      reason: public street scene with documented release and rapid reopening
+    - name: Astroworld festival grounds (Houston, 2021)
+      disposition: include
+      reason: mass-casualty crowd event processed as a criminal investigation scene
+    - name: Dealey Plaza (Dallas, 1963)
+      disposition: exclude
+      reason: pre-2000; investigative and records practice too remote for base-rate
+        comparability
+    - name: Champlain Towers South (Surfside, 2021)
+      disposition: exclude
+      reason: non-criminal disaster scene; authorization regime not comparable
+    - name: Mandalay Bay room 32-135 (Las Vegas, 2017)
+      disposition: exclude
+      reason: private hotel interior; the included scene from that event is the
+        festival lot
+  criteriaHash: 14c82614b623
+method: "Two-phase, per the frozen protocol. Discovery: the three searchers run
+  the protocol independently; their candidate lists are unioned with the
+  pre-committed dispositions above applied first, and newly discovered
+  candidates dispositioned against the frozen criteria with reasons recorded.
+  Extraction: for each included case, the three variables (release date,
+  first-alteration date and nature, authorizing party) are filled cell by cell,
+  each cell citing its own source with the standard verification label; a cell
+  that cannot be sourced is marked, not estimated. Preserved scenes enter as
+  censored rows. Findings state the distribution in plain language (no
+  percentiles at this sample size), place the UVU sequence against it on the two
+  discriminating variables — sequence (did alteration precede formal release?)
+  and authority (who ordered it?) — ahead of raw speed, state the direction of
+  failed searches, and report the searcher-overlap coverage indicator. Either
+  outcome publishes."
+columns:
+  - case
+  - venue type
+  - event date
+  - scene released
+  - first alteration
+  - alteration type
+  - interval (days)
+  - authorized by
+  - sequence
+rows: []
+findings: []
+limitations: []
+runId: 2026-08-26-study-krk-s001-freeze
+model: Claude Fable 5 (Anthropic), via Cursor
+date: 2026-08-26
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false
