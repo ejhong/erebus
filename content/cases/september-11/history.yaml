@@ -195,3 +195,26 @@
     erebus-editorial-audit-v1); publishes only through the constitutional gate's
     multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+
+- date: 2026-08-26
+  change: >-
+    Study SEP-S001 pre-registered (freeze only, zero rows): the
+    peer-reviewed record on pre-9/11 option trading. The frozen
+    criteria fix the population — peer-reviewed empirical analyses of
+    the pre-attack trading window only — and force the load-bearing
+    separation the public fight always collapses, in both directions:
+    the authors' statistics and the authors' stated interpretations
+    are separate cells. The Commission's innocuous-explanation
+    conclusion is the comparandum, not a row. Collection follows in a
+    separate PR.
+  reason: >-
+    The put-options dispute is among the most-circulated claims about
+    this case and is argued almost entirely from summaries of
+    summaries; the peer-reviewed record is small, checkable, and
+    routinely misquoted by merging abnormality findings with
+    foreknowledge attributions. Freezing the population and the
+    statistics-versus-interpretation separation before collection
+    prevents assembling the table to serve either reading.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
