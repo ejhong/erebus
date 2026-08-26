@@ -1,0 +1,107 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design: the criteria below are
+# judged before anyone knows what the data will say, and any later edit
+# to them fails the build. Collection follows in a second PR.
+id: COV-S001
+title: The agency-positions ledger on COVID-19 origins
+question: What exactly has each United States intelligence component concluded
+  about the origin of COVID-19 — at what stated confidence, on what stated basis
+  — and how have those positions changed across the official record?
+researchIds:
+  - COV-R007
+claimIds:
+  - COV-C014
+criteria:
+  frozenOn: 2026-08-26
+  inclusion:
+    - Position statements attributable on the record to a named United States
+      government agency or intelligence component, 2020-2026, stating a
+      conclusion (or explicit inability to conclude) on COVID-19 origins,
+      carried in an officially released or officially declassified document, or
+      an official on-record agency statement.
+    - One row per agency-position-instance — an agency that changed or restated
+      its position gets one row per dated statement, so the trajectory is data,
+      not narrative.
+    - The stated confidence level and stated basis are recorded verbatim where
+      given; where a document states a position without a basis, the absence is
+      the cell.
+  exclusion:
+    - Anonymous-source press descriptions of classified positions without
+      official confirmation — reported in the failed-search note, never rows.
+    - Foreign-government and international-body assessments (WHO, SAGO, foreign
+      services) — a different institutional regime; recorded as context, not
+      rows.
+    - Statements by individual officials speaking personally rather than for
+      their agency, unless the agency adopted them on the record.
+    - Commentary, congressional-member characterizations, and litigation filings
+      that describe rather than carry agency positions.
+  searchProtocol: "Multi-searcher discovery, run only after this freeze, protocol
+    verbatim per searcher: (1) OpenAI deep research (o4-mini-deep-research,
+    background mode; documented substitute if unavailable, deviation recorded in
+    the limitations); (2) Gemini deep research (background mode, store enabled);
+    (3) the executing agent's own web search. Literal queries, each run in all
+    three: [ODNI declassified assessment COVID-19 origins 2021]; [ODNI report
+    potential links Wuhan Institute of Virology declassified 2023]; [CIA
+    statement COVID origin assessment]; [FBI director COVID origins lab
+    statement on record]; [Department of Energy COVID origin assessment
+    confidence]; [intelligence community COVID origins updated assessment].
+    Per-agency follow-up: the agency name paired with 'COVID-19 origins',
+    'assessment', 'confidence', 'statement'. Sources searched: dni.gov, cia.gov,
+    fbi.gov and agency press offices, the declassified documents themselves,
+    oversight-committee official releases carrying agency responses.
+    Deep-research output is a brief: it proposes candidate position-instances
+    and is never cited; every cell is verified natively against the official
+    document before entering the table."
+  knownCandidates:
+    - name: ODNI, 'Declassified Assessment of COVID-19 Origins' (2021 Intelligence
+        Community assessment, key takeaways)
+      disposition: include
+      reason: the baseline document recording the split positions at moderate/low
+        confidence
+    - name: ODNI, 'Potential Links Between the Wuhan Institute of Virology and the
+        Origin of the COVID-19 Pandemic' (June 2023, declassified under the
+        COVID-19 Origin Act)
+      disposition: include
+      reason: the statutorily compelled declassification carrying per-agency positions
+        including the Department of Energy shift
+    - name: FBI position as stated on the record (2021/2023 documents and the
+        director's on-record public statements)
+      disposition: include
+      reason: the moderate-confidence laboratory-origin position, stated both in
+        documents and on the record
+    - name: CIA agency statement of January 2025 (low-confidence research-related
+        assessment)
+      disposition: include
+      reason: the most recent documented position change; official agency statement
+    - name: WHO / SAGO assessments
+      disposition: exclude
+      reason: non-US institutional regime — context, not rows
+  criteriaHash: 21be3901b25a
+method: "Discovery per the frozen protocol; one row per dated
+  agency-position-instance, each cell citing the official document or on-record
+  statement with the standard verification label. Positions are recorded as the
+  agency's assertions, never restated as established fact; confidence language
+  is quoted, not paraphrased, because low/moderate confidence is itself
+  load-bearing data the public debate routinely drops. Findings state the
+  distribution — who concluded what, at what confidence, on what stated basis,
+  and what changed when — and explicitly decline to grade which conclusion is
+  right: this ledger measures the institutional record, and the divergence's
+  cause (different evidence, different weighting, process) is exactly what
+  COV-R007's declassification request would resolve. Failed searches and
+  unconfirmable reported positions are listed, and the searcher-overlap coverage
+  indicator is given. Either outcome publishes."
+columns:
+  - agency or component
+  - date of stated position
+  - stated conclusion
+  - stated confidence
+  - stated basis
+  - change from prior stated position
+rows: []
+findings: []
+limitations: []
+runId: 2026-08-26-study-cov-s001-freeze
+model: Claude Fable 5 (Anthropic), via Cursor
+date: 2026-08-26
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false

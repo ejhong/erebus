@@ -218,6 +218,7 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+<<<<<<< HEAD
 
 - date: 2026-08-26
   change: >-
@@ -243,3 +244,5 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+=======
+>>>>>>> origin/main
