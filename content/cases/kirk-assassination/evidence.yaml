@@ -1543,26 +1543,30 @@
     date: "2026-08-25"
 
 - id: KRK-E057
-  title: "Base rate: rapid post-release scene alteration is documented in comparable cases, always with an undisputed authorizer"
+  title: "Base rate: rapid scene alteration is documented in comparable cases, always with an undisputed authorizer"
   claimIds: [KRK-C017]
   sourceId: SRC-KRK-S001
   direction: undermines
   strength: moderate
   sourceStatement: >-
     "Every fast alteration in the table pairs speed with a named,
-    undisputed authorizer acting after release": Boston's pre-planned
-    city restoration began one minute after the FBI's formal handback;
-    Sutherland Springs' sanctuary was patched and repainted by its owner
-    within seven days; the Nickel Mines schoolhouse was demolished by its
-    owners on day ten.
+    undisputed authorizer": Boston's pre-planned city restoration began
+    one minute after the FBI's formal handback; Sutherland Springs'
+    sanctuary was patched and repainted by its owner within seven days;
+    the Nickel Mines schoolhouse was demolished by its owners on day ten.
+    Where a formal release is documented, alteration followed it; where
+    no release record was found, the owner acted openly with no
+    investigative objection anywhere on the record.
   editorInference: >-
     Speed alone cannot carry a concealment inference: comparable scenes
-    were altered as fast or faster than the UVU courtyard with innocent,
-    documented authorization. The alteration-speed intuition behind the
-    concealment reading is deflated by the measured base rate.
+    were altered as fast or faster than the UVU courtyard under owner
+    authorization that no investigator disputed. The alteration-speed
+    intuition behind the concealment reading is deflated by the measured
+    base rate.
   exactLocator: "Study KRK-S001, findings 1 and 3 (full table on the study page)"
   limitations:
     - "Fifteen comparable venues; venue-based comparability does not control for victim prominence or political salience."
+    - "Release-before-alteration is directly documented in six rows and is a labeled inference (open owner action, no objection on record) in the fast rows — observation and inference are not pooled (see the study's limitations)."
   reviewState: ai_extracted
   origin:
     ref: "study KRK-S001 collection"

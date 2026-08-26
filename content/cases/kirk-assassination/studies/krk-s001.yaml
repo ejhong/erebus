@@ -150,7 +150,7 @@ rows:
       alteration type: complete demolition, site returned to pasture
       interval (days): "10 from event"
       authorized by: "the Amish community (property owner), private contractors, state police escort"
-      sequence: owner-ordered after scene processing; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
       text: "Lancaster Online / CBS News / AP, October 12, 2006; NYT, January 31, 2007"
       url: "https://www.cbsnews.com/news/amish-schoolhouse-demolished-before-dawn/"
@@ -164,7 +164,7 @@ rows:
       alteration type: interior restoration to memorial (first); demolition (later)
       interval (days): "7 from event"
       authorized by: "the church (property owner); 2024 demolition cleared by court after congregation vote"
-      sequence: owner-ordered restoration days after the event; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
       text: "Houston Public Media / NBC News, November 12-13, 2017; AP / Texas Tribune, August 12, 2024"
       url: "https://www.houstonpublicmedia.org/articles/news/2017/11/13/250174/a-week-after-mass-shooting-texas-church-to-open-as-a-memorial/"
@@ -178,7 +178,7 @@ rows:
       alteration type: full interior and exterior renovation
       interval (days): "62 from event"
       authorized by: "Tops (property owner)"
-      sequence: owner-ordered after release; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
       text: "AP News, July 14-15, 2022"
       url: "https://apnews.com/article/buffalo-supermarket-shooting-reopening-6c3e4fb6238209fed4bde4d463729776"
@@ -192,7 +192,7 @@ rows:
       alteration type: full renovation (new flooring, ceiling, layout)
       interval (days): "103 from event"
       authorized by: "Walmart (property owner)"
-      sequence: owner-ordered after release; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
       text: "NPR / AP / CNN, November 14, 2019"
       url: "https://www.npr.org/2019/11/14/779208289/el-paso-walmart-reopens-after-shooting"
@@ -206,7 +206,7 @@ rows:
       alteration type: interior remodel, >$1M
       interval (days): "181 from event"
       authorized by: "Cinemark (property owner), after a city survey favored reopening"
-      sequence: owner-ordered after release; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
       text: "AP / USA Today, January 17, 2013"
       url: "https://apnews.com/article/entertainment-shootings-movies-colorado-de6bfdc4106f408e8714e27f95ba8419"
@@ -229,14 +229,14 @@ rows:
       case: "Norris Hall, Virginia Tech"
       venue type: campus building
       event date: "2007-04-16"
-      scene released: "reopened to limited university use 2007-06-18"
+      scene released: "building closed for the rest of spring 2007; reopened to limited university use June 2007 (campus building history; date not confirmed in NPR/AP)"
       first alteration: "renovation of the affected wing, announced 2007-12-20, completed March 2009, reopened 2009-04-10"
       alteration type: renovation (classrooms converted to labs and a peace-studies center)
       interval (days): "~430 from release to renovation start (fall 2008)"
       authorized by: "the university"
       sequence: alteration long after release; undisputed
     citation:
-      text: "Virginia Tech campus records (Wikipedia, Norris Hall); NPR / AP, April 10, 2009"
+      text: "NPR / AP, April 10, 2009 (renovation and reopening); closure period per campus building history"
       url: "https://www.npr.org/2009/04/10/102950727/two-years-after-massacre-va-tech-reopens-hall"
       verification: ai_verified
   - cells:
@@ -248,7 +248,7 @@ rows:
       alteration type: trauma-informed renovation (classrooms to commons)
       interval (days): "413 from event"
       authorized by: "the university, with input from impacted families"
-      sequence: owner-ordered long after release; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
       text: "MSU Spartans Together / IPF notices; AP, January 8, 2024"
       url: "https://spartanstogether.msu.edu/messages/2024-03-21-update-renovations-berkey-union"
@@ -262,9 +262,9 @@ rows:
       alteration type: full interior renovation
       interval (days): "~380 from event (renovation start not separately dated)"
       authorized by: "the school and Covenant Presbyterian Church (owners)"
-      sequence: owner-ordered after release; undisputed
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
-      text: "AP News, June 2024; NewsChannel5, April 2023"
+      text: "AP News, June 2024 (tour of the completed renovation); NewsChannel5, April 2023 (relocation)"
       url: "https://apnews.com/article/nashville-covenant-school-shooting-rainbow-f1a913ea678bed9ff98fdd59304c81d9"
       verification: ai_verified
   - cells:
@@ -272,14 +272,14 @@ rows:
       venue type: campus building
       event date: "2015-10-01"
       scene released: "not found under the frozen protocol"
-      first alteration: "demolition began October 2016"
+      first alteration: "demolition scheduled to begin the week of 2016-10-17; underway that month"
       alteration type: demolition and replacement
-      interval (days): "~380 from event"
-      authorized by: "the college"
-      sequence: owner-ordered after release; undisputed
+      interval (days): "~382 from event"
+      authorized by: "the college, after a 16-member campus committee voted unanimously to rebuild"
+      sequence: "owner-ordered; release not separately documented — post-release inferred from open owner action, no investigative objection on the record"
     citation:
-      text: "Herald and News, October 2016"
-      url: "https://www.heraldandnews.com/news/northwest/demolition-underway-at-uccs-snyder-hall/article_c7f561c5-f30f-5300-97d0-6bd2410339e3.html"
+      text: "The Oregonian, September 30, 2016; AP, October 2016; Herald and News, October 2016"
+      url: "https://www.oregonlive.com/roseburg-oregon-school-shooting/2016/09/demolition_of_snyder_hall_--_s.html"
       verification: ai_verified
   - cells:
       case: "Astroworld festival grounds, NRG Park"
@@ -320,22 +320,22 @@ rows:
       authorized by: "Broward County Public Schools, after the courts finished with the building"
       sequence: court-driven preservation, then owner demolition
     citation:
-      text: "Reuters / AP / CNN, June 14, 2024"
-      url: "https://www.reuters.com/world/us/six-years-after-us-mass-shooting-demolition-starts-parkland-school-building-2024-06-14/"
+      text: "AP / CNN / Reuters, June 14, 2024"
+      url: "https://apnews.com/article/school-shooting-parkland-florida-2084c00ad62a93bee257da06f1b907cc"
       verification: ai_verified
   - cells:
       case: "Robb Elementary, Uvalde"
       venue type: school
       event date: "2022-05-24"
-      scene released: "NOT RELEASED as of August 2026 — the district attorney has withheld release for over four years"
+      scene released: "NOT RELEASED — the campus was still held as evidence in an active investigation per district statements in late 2025 (Uvalde Leader News), with no demolition plans at the replacement school's October 2025 opening (ABC News); related records were still being withheld by the district attorney in August 2026 (Uvalde Hesperian, 2026-08-19)"
       first alteration: "none — demolition authorized by the district in June 2022 but blocked pending release"
       alteration type: none (censored row; release itself pending)
-      interval (days): "censored — 1,500+ days and counting with no release"
+      interval (days): "censored — no release through at least late 2025 (1,200+ days), records still withheld August 2026"
       authorized by: "district authorized demolition; DA controls release"
       sequence: alteration awaiting release; the inverse of rapid alteration
     citation:
-      text: "BBC, June 22, 2022; KSAT, May 2024; ABC News, May 2023"
-      url: "https://www.ksat.com/news/local/2024/05/24/construction-continues-on-a-new-uvalde-elementary-school-as-2-year-robb-elementary-mark-arrives/"
+      text: "BBC, June 22, 2022 (demolition announced); Uvalde Leader News (campus still evidence, late 2025); ABC News, October 2025; Uvalde Hesperian, August 19, 2026 (records still withheld)"
+      url: "https://uvaldehesperian.com/one-year-later-the-38th-judicial-district-attorney-has-not-released-requested-robb-school-public-records/"
       verification: ai_verified
   - cells:
       case: "Tree of Life synagogue, Pittsburgh"
@@ -374,7 +374,11 @@ findings:
       sanctuary was patched and repainted by the owner within seven days;
       the Nickel Mines schoolhouse was demolished by its owners on day
       ten. Every fast alteration in the table pairs speed with a named,
-      undisputed authorizer acting after release.
+      undisputed authorizer: where a formal release is documented,
+      alteration followed it; where no release record was found, the
+      owner acted openly with no investigative objection anywhere on the
+      record — the post-release reading there is inference, labeled as
+      such in each row.
     evidenceId: KRK-E057
   - statement: >-
       Where investigators or courts asserted continuing interest,
@@ -416,6 +420,13 @@ limitations:
     Seven of fifteen release-date cells could not be filled from public
     reporting; intervals for those rows are measured from the event, not
     the release, and are marked as such.
+  - >-
+    Release-before-alteration is directly documented in six rows
+    (Boston, Sandy Hook, Route 91, Astroworld, Parkland, Tree of Life);
+    in the remaining fast-alteration rows it is an inference from open
+    owner action and the absence of any investigative objection on the
+    record, and each such sequence cell says so. Observation and
+    inference are not pooled.
   - >-
     Interval figures are day-precision from published dates; "~" marks
     cells where a month but not a day is documented.
