@@ -34,6 +34,11 @@ coverage/
 # Engine-sync scratch (scripts/sync-engine.mjs clones upstream here)
 .engine-sync/
 
-# NOTE: casework/ is deliberately COMMITTED in this private repo (research
-# briefs live under casework/<case-slug>/ — see casework/README.md). Do not
-# re-add a casework/ ignore rule copied from a public-repo setup.
+# Research briefs are held privately OUTSIDE this repository and must never
+# be committed to it: the repo is public, and briefs routinely carry
+# third-party copyrighted material kept as discovery aids plus material
+# about living persons that the living-persons rules deliberately keep off
+# the site. This rule replaced the opposite instruction on 2026-08-26, when
+# the repo went public and casework/ was purged from history — see
+# docs/DECISIONS.md and scripts/purge-casework-history.sh.
+casework/

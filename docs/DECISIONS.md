@@ -134,3 +134,100 @@ Two changes:
    now warns (never fails) when an allowlisted local file no longer
    exists upstream, so such deletions surface for review instead of
    persisting by accident.
+
+## 2026-08-26 — Erebus goes public: GitHub Pages, no access control, casework removed
+
+**Decided by:** founder (direct instruction); implemented by AI (Cursor
+cloud agent, Claude Fable 5). The constitutional amendments below are the
+founder's reserved act (AGENTS.md §3.15); the AI drafted the wording.
+
+Erebus moves from Cloudflare Pages behind Cloudflare Access (email
+allowlist, one-time PIN) to **GitHub Pages with no access control**. The
+site becomes public and unadvertised: open to anyone who finds it,
+promoted to no one.
+
+The founder's reasoning: the site is neutral, data-driven and
+non-accusatory, and grades evidence disputes rather than anyone's guilt —
+so neither side of any of its cases is likely to enjoy it, and gating it
+was doing more to signal secrecy than to protect anything. The
+constitution already stakes accountability on inspectability; a private
+audit trail is a weaker version of that claim.
+
+1. **Three constitutional clauses amended** (AGENTS.md):
+   - §2 product identity: "a private publication for the founder and a few
+     invited readers" becomes "a public publication, unadvertised."
+   - §4 hosting: Cloudflare Pages behind Cloudflare Access becomes GitHub
+     Pages with no access control.
+   - §4 casework: research briefs are **no longer committed to this
+     repository**. See item 2.
+
+2. **casework/ is removed entirely, and this is the blocking condition for
+   going public.** Two independent reasons, either sufficient:
+   - **Copyright.** The tree held ~27 MB of third-party material kept as
+     discovery aids: two Rootclaim debate documents, the full text of a
+     book on the September 11 attacks, and an advocacy booklet.
+     `casework/README.md` permitted this expressly "while the repository is
+     private" and forbade republication. Making the repository public
+     republishes all four, including a complete book.
+   - **Living persons.** Briefs contain material the living-persons rules
+     deliberately kept out of `content/` — the Kirk change log records one
+     cluster dropped for photo-interpretation insinuations about a named
+     private individual. Publishing the briefs would publish precisely what
+     the constitution excluded from the site.
+
+   Briefs are now held privately outside the repository. They remain what
+   they always were: inputs for case construction, never citable, with
+   every citation in them verified against the primary document before any
+   derived record enters `content/`.
+
+3. **Dangling `origin.ref` breadcrumbs are accepted deliberately.** 71
+   claims across three cases name a brief in `origin.ref` (for example
+   "casework/covid-origins digest — C001"). Those strings are left
+   untouched. They record where an extraction came from, which remains
+   true; they were never citations, and briefs were never openable by a
+   reader even when the repository was private. Rewriting 71 provenance
+   fields to tidy the appearance would be a mass edit of provenance
+   records — exactly the kind of change the arbiter should question — to
+   fix a cosmetic problem. The amended §4 states plainly that such a
+   reference is not something a reader can open.
+
+4. **History must be purged before visibility flips.** Removing the files
+   from HEAD is insufficient: they exist in six commits, and GitHub serves
+   full history on public repositories. The purge is a separate,
+   coordinated operation (`git filter-repo --path casework --invert-paths`,
+   then a force push), and it must run when no branches are in flight,
+   because rewriting main orphans every branch based on the old history.
+   At the time of writing another agent has five active branches, so the
+   purge is deferred rather than run.
+
+   **Publishing before the purge would republish a copyrighted book.** The
+   order is not optional.
+
+5. **A fresh root commit was considered and rejected.** It would solve
+   copyright and hide the upstream lineage in one step, but it would
+   destroy the commit history the constitution stakes its accountability
+   on. Purging one path preserves every date, message, assessment overlay
+   and arbiter verdict. The lineage question is moot in any case: the
+   2026-08-25 amendment already narrowed the upstream-name rule to the
+   site's own inputs and permits the name freely elsewhere, including the
+   upstream URL in ENGINE.md.
+
+6. **Base path, because Pages serves a project site from a subpath.** One
+   environment variable (`NEXT_PUBLIC_BASE_PATH`) drives both
+   `next.config.ts` and `src/config/assets.ts`, so they cannot disagree;
+   the deploy workflow sets it, a custom domain would set it empty, and
+   local development leaves it unset. The workflow asserts the prefix is
+   present in the built output before deploying, because a project site
+   with unprefixed asset URLs yields a visually broken page rather than a
+   failed build — the failure mode that ships silently.
+
+7. **One consequence of a public repository worth stating:** Actions
+   secrets are unavailable to workflows triggered from forks, so the
+   arbiter and the cross-model checks cannot run on a fork pull request.
+   That is correct behaviour rather than a defect — an outside contributor
+   cannot summon the panel — but a fork PR's checks will fail for want of
+   credentials, not for want of merit.
+
+8. **Teardown order.** Bring Pages up and confirm the site serves before
+   removing the Cloudflare Pages project and its Access policy, so there
+   is never a window with no live site.
