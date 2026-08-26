@@ -235,7 +235,12 @@ limitations:
     abstaining alongside the CIA in 2023 remains unnamed in the public
     record.
   - >-
-    Searcher coverage: GEMINI_COVERAGE. The OpenAI substitute run
+    Searcher coverage: the Gemini deep-research run corroborated all
+    seven position-instances with per-cell citations and proposed no
+    additional official instance; it offered widely-reported (but
+    unofficial) agency attributions for the grouped 2021 blocs, which
+    the frozen rule keeps out of the cells and which appear only in
+    the attribution limitation above. The OpenAI substitute run
     proposed one additional position-instance (a July 2023 testimony
     quotation) whose wording could not be natively verified and which
     was excluded per the never-cite-briefs rule.
