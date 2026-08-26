@@ -59,6 +59,17 @@ and that script in sync.
 | Case | Tone |
 | --- | --- |
 | `kirk-assassination` | deep blue-black field, graphite and slate linework, one thin pale-steel accent tracing the single unbroken line |
+| `september-11` | cold Prussian-blue field deepening toward graphite, slate linework, one thin pale-steel accent where the record breaks off |
+| `covid-origins` | indigo-into-graphite field, steel-grey linework, one restrained cool-white accent held between two empty spaces |
+
+Both 2026-08-26 additions take the case's own finding as the subject
+rather than its event, which is what keeps generated art clear of the
+hard rule below: `september-11` renders an audit trail that terminates
+(the case's central finding is unauditability, not collapse), and
+`covid-origins` renders two symmetrical voids that converging evidence
+never reaches. Neither depicts a building, an aircraft, a pathogen, a
+map, or a place — there is nothing in either image a reader could
+mistake for documentation of the events themselves.
 
 Rules of thumb:
 
