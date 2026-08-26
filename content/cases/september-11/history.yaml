@@ -179,3 +179,19 @@
     erebus-editorial-audit-v1); publishes only through the constitutional gate's
     multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+
+- date: 2026-08-26
+  kind: content
+  change: Corrected the dust-chemistry paragraph, which described the nanothermite
+    claim as simply contradicted by the independent analysis. The records now
+    carry the affirmative paper itself, which reports elemental aluminum in the
+    red layer, against the independent analysis of custody-archived dust that
+    found none; no third laboratory has adjudicated between them. The paragraph
+    now states that conflict rather than treating the question as closed.
+  reason: The article asserted as settled a point the evidence records now show to
+    be a direct, unresolved conflict between two analyses, which would have
+    misled a reader about the standing of the claim.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
