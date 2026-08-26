@@ -268,3 +268,21 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-26
+  kind: content
+  change: "Updated the ballistics base-rate research item (KRK-R014) from a
+    proposal to a report of completed work: the tabulation of ground-truth
+    firearm-toolmark studies has been carried out across six studies, finding
+    inconclusive to be a standard non-error response category and finding that
+    the different-source asymmetry does not transfer to damaged fragments. The
+    remaining work is now stated as extending the tabulation and sourcing
+    additional damaged-specimen designs. The overview article required no
+    changes."
+  reason: The item proposed a study that the newly entered evidence records report
+    as already executed, which would have misled readers about what this case
+    still lacks.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
