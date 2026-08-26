@@ -563,6 +563,148 @@
   whatWouldChangeOurMind:
     - "Discovery or disclosure of a substantially closer relative, whether from field sampling or from a laboratory inventory."
 
+# ── the Wuhan research program ─────────────────────────────────────────
+
+- id: COV-C016
+  tier: featured
+  statement: >-
+    A March 2018 proposal to a United States defense research agency, led by
+    EcoHealth Alliance with the Wuhan Institute of Virology among its
+    partners, proposed to analyse coronavirus spike sequences for furin
+    cleavage sites and, where clear mismatches occurred, to introduce
+    human-specific cleavage sites and evaluate the resulting growth
+    potential; the agency did not fund it.
+  plainLanguage: >-
+    The strongest documentary point on the research-related side. A funding
+    application twenty months before the outbreak proposed inserting exactly
+    the kind of feature the pandemic virus turned out to have, with a Wuhan
+    partner — and it was rejected. This claim is about what a document says,
+    and it claims nothing more.
+  theme: wiv-program
+  rung: observation
+  claimType: existence
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C015, locator confirmed at verification"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    The passage is verbatim in the proposal at a confirmed locator, read by
+    two independent optical-character passes that agree on every substantive
+    word. The non-award is confirmed three ways: the congressional record,
+    contemporaneous reporting, and a negative check of federal award data
+    showing no defense award to the applicant in the relevant years. Graded
+    well supported rather than established only because the copy available
+    is a third-party archive upload rather than an official release, and
+    because the text is OCR-derived.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Circumstantial evidence of research intent and capability, and weak
+    direct evidence about this virus's ancestry. It establishes that
+    inserting such a site was a contemplated technique in a program with a
+    Wuhan partner — which is genuinely more than the zoonotic account
+    predicts, and considerably less than execution.
+  strongestObjection: >-
+    The proposal was rejected and never funded; the specific viral backbones
+    it contemplated are argued to be too distant from SARS-CoV-2 to be a
+    plausible precursor; and a document describing intended work is not
+    evidence that the work occurred.
+  whatWouldChangeOurMind:
+    - "An authenticated official copy of the proposal, which would raise this to established."
+    - "Evidence that the cleavage-site passage was removed before submission or never part of the submitted version."
+
+- id: COV-C017
+  tier: featured
+  statement: >-
+    Experiments materially similar to the cleavage-site work described in the
+    2018 proposal were performed on SARS-related coronaviruses before the
+    outbreak.
+  plainLanguage: >-
+    The step from document to deed, stated explicitly because this is where
+    the argument is usually smuggled across. There is no public record that
+    the work was done.
+  theme: wiv-program
+  rung: attribution
+  claimType: existence
+  importance: headline
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C016"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: unresolved
+  credibilitySummary: >-
+    The proposal was not funded, no public record shows the experiment was
+    carried out, and no published precursor sequence connects the
+    contemplated constructs to SARS-CoV-2. Against that: the intelligence
+    reporting records that the institute possessed reverse-genetic methods
+    leaving no trace of modification, and the records that would settle the
+    question — institutional biosafety approvals, internal project records,
+    construct maps, synthesis orders, raw reads — have never been produced.
+    Unresolved here means genuinely open in both directions.
+  diagnosticity: high
+  diagnosticitySummary: >-
+    Resolving it either way would move the case substantially. Documented
+    performance of such work would convert a documentary coincidence into a
+    mechanism; documented absence would reduce the proposal to what it
+    appears to be on its face.
+  dependsOnClaimIds: [COV-C016]
+  strongestObjection: >-
+    An unfunded proposal is weak grounds for inferring the work happened
+    anyway, and six years of investigation — including congressional
+    subpoenas and a declassification review — has produced no document
+    showing it did.
+  whatWouldChangeOurMind:
+    - "Institutional biosafety approvals, internal project records, plasmid or synthesis orders, or raw sequencing reads bearing on whether the work was performed."
+
+- id: COV-C018
+  tier: featured
+  statement: >-
+    As of January 2019, Wuhan Institute of Virology researchers performed
+    experiments with SARS-like coronaviruses in biosafety level 2
+    laboratories, and the intelligence community assessed that some
+    researchers probably did not use adequate biosafety precautions at least
+    some of the time.
+  plainLanguage: >-
+    Work with viruses capable of infecting humans was being done at a
+    containment level below what many Western labs would use. This
+    establishes opportunity — which every research-related scenario shares,
+    and which is also compatible with no incident at all.
+  theme: wiv-program
+  rung: observation
+  claimType: observation
+  importance: major
+  reviewState: ai_extracted
+  origin:
+    ref: "casework/covid-origins digest — C018"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+  credibility: well_supported
+  credibilitySummary: >-
+    Stated in the 2023 declassified report at a confirmed locator, together
+    with its own caveats. The same document records that the community knows
+    of no specific biosafety incident that caused the pandemic, and
+    characterizes a November 2019 biosafety training course at the institute
+    as appearing routine rather than an emergency response.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Establishes opportunity and degraded practice, which the field,
+    laboratory, and engineered scenarios all share equally, and which is
+    also consistent with nothing having happened. Opportunity is not
+    evidence of occurrence.
+  strongestObjection: >-
+    Inadequate biosafety practice was common in coronavirus research
+    globally in that period; the same report finding the practice inadequate
+    also reports no indication that the institute held this virus or a close
+    progenitor, and no evidence of a specific incident.
+  whatWouldChangeOurMind:
+    - "An independent audit of the institute's experiment logs, containment records, and 2019 occupational-health files."
+
 # ── official assessments ───────────────────────────────────────────────
 
 - id: COV-C014

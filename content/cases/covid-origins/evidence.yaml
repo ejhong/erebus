@@ -592,6 +592,178 @@
     runId: "case-covid-launch-2026-08-26"
     date: "2026-08-26"
 
+# ── the research program ───────────────────────────────────────────────
+
+- id: COV-E027
+  title: "The proposal's cleavage-site passage, at a confirmed locator"
+  claimIds: [COV-C016, COV-C017]
+  sourceId: SRC-DEFUSE-2018
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Under the run-in heading "S2 Proteolytic Cleavage and Glycosylation
+    Sites": "We will analyze all SARSr-CoV S gene sequences for
+    appropriately conserved proteolytic cleavage sites in S2 and for the
+    presence of potential furin cleavage sites. SARSr-CoV S with mismatches
+    in proteolytic cleavage sites can be activated by exogenous trypsin or
+    cathepsin L. Where clear mismatches occur, we will introduce appropriate
+    human-specific cleavage sites and evaluate growth potential in Vero cells
+    and HAE cultures." The proposal requested $14,209,245 across 3.5 project
+    years, with performance sites including Kunming and Wuhan, China; Chapel
+    Hill; New York; Singapore; Palo Alto; and Madison.
+  editorInference: >-
+    A documented pre-pandemic intention, in a program with a Wuhan partner,
+    to insert precisely the class of feature the pandemic virus carries. That
+    is a real and uncomfortable coincidence of technique and timing, and it
+    is evidence about what was proposed — not about what was done, which is
+    graded separately. The non-award belongs beside the quotation wherever
+    the quotation appears.
+  exactLocator: "DEFUSE proposal, PDF p. 13 / printed p. 11 (cleavage-site passage); PDF pp. 1–3 (amount, partners, performance sites)"
+  limitations:
+    - "The text is OCR-derived from an image-only scan; two independent passes agree on every substantive word, and footnote superscripts were dropped rather than guessed."
+    - "The available copy is a third-party archive upload, not an official release or authenticated FOIA production."
+    - "The proposal was not funded, confirmed by the congressional record, contemporaneous reporting, and a negative check of federal award data."
+    - "A phrase widely attributed to this document — about a cleavage site 'able to interact with furin' — is not proposal text but a journalist's wording, and is not quoted here."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E028
+  title: "The draft margin comment, quoted whole rather than in its usual truncated form"
+  claimIds: [COV-C016, COV-C017]
+  sourceId: SRC-USRTK-DEFUSE-DRAFTS
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    A margin comment appearing five times across successive drafts, attributed
+    within the release to the proposal's lead author: "Ralph, Zhengli. If we
+    win this contract, I do not propose that all of this work will necessarily
+    be conducted by Ralph, but I do want to stress the US side of this
+    proposal so that DARPA are comfortable with our team. Once we get the
+    funds, we can then allocate who does what exact work, and I believe that
+    a lot of these assays can be done in Wuhan as well…"
+  editorInference: >-
+    Recorded in full deliberately. The comment is usually quoted from "Once
+    we get the funds" onward, which removes the sentence stating its purpose
+    — presenting a US-weighted team so the funder would be comfortable. Read
+    whole, it evidences an intention to allocate assay work to Wuhan after an
+    award, and an awareness that saying so up front would be unhelpful. Read
+    truncated, it reads as concealment of a settled plan. The document
+    supports the first reading and not the second, and the difference is one
+    sentence.
+  exactLocator: "FOIA production 2021-006245, margin comment at PDF pp. 129, 147, 166, 205, and 226"
+  limitations:
+    - "Margin comments identify authors by Word initials only; the mapping to named individuals rests on email headers within the same release."
+    - "Drafts of a proposal that was never funded — they evidence what was drafted and discussed, not what was done."
+    - "The compilation is republished by an advocacy organization, though the underlying records are an authentic federal FOIA production."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E029
+  title: "The biosafety findings, with the same report's countervailing statements"
+  claimIds: [COV-C018, COV-C017]
+  sourceId: SRC-ODNI-WIV-2023
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The report states that as of January 2019 institute researchers
+    performed experiments with SARS-like coronaviruses in biosafety level 2
+    laboratories, and that some researchers probably did not use adequate
+    biosafety precautions at least some of the time. The same document
+    records that the intelligence community knows of no specific biosafety
+    incident that caused the pandemic, characterizes a November 2019
+    biosafety training course at the institute as appearing routine rather
+    than an emergency response, and describes a 2017 dissertation
+    demonstrating reverse-genetic cloning that leaves no trace of
+    modification.
+  editorInference: >-
+    Opportunity is established; occurrence is not. This single document
+    contains the strongest official support for the research-related family
+    and the strongest official statements against it, which is why this case
+    quotes both halves from it rather than mining one side.
+  exactLocator: "ODNI report of 23 June 2023, printed pp. 4–6"
+  limitations:
+    - "A declassified summary whose underlying reporting cannot be audited."
+    - "Records drawn from this document share an independence group and must not be counted as separate confirmations."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, official and DEFUSE batches"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E030
+  title: "The 'not found in nature' formulation is a press release's, not the report's"
+  claimIds: [COV-C011, COV-C016]
+  sourceId: SRC-HOUSE-MAJORITY-2024
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The committee's press release lists as the first of five strongest
+    arguments: "The virus possesses a biological characteristic that is not
+    found in nature." The phrase does not appear anywhere in the 520-page
+    report. The report's own formal finding reads: "SARS-CoV-2, the Virus
+    that Causes COVID-19, Likely Emerged Because of a Laboratory or Research
+    Related Accident," and its parallel five points are introduced as points
+    a named outside author "explained" in a newspaper opinion piece. Its
+    nearest furin-cleavage statement is a quotation of a journalist's claim
+    that the site is "found in none of the other 871 known members of its
+    viral family."
+  editorInference: >-
+    A correction with two parts, both of which matter. First, the widely
+    graded proposition — that a congressional report concluded the furin
+    cleavage site is not found in nature — does not exist: the phrase is
+    press-release language describing an unnamed "biological characteristic,"
+    and the report's own argument on the point is a quotation of an op-ed
+    rather than a committee finding. Second, the underlying claim is
+    contradicted regardless of who made it, since furin motifs occur across
+    other coronavirus lineages. The defensible version is narrower: the site
+    is absent from SARS-CoV-2's closest sampled sarbecovirus relatives.
+  exactLocator: "Press release of 2 December 2024 (five arguments); report PDF p. 38 / printed p. 1 (finding) and PDF p. 40 / printed p. 3 (attributed points and quotation)"
+  limitations:
+    - "A majority-party report and its press release are assertions by their authors; the companion minority report reaches opposite conclusions on the same record."
+    - "The report and the press release are treated here as two distinct sources, because their formulations differ materially."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
+- id: COV-E031
+  title: "The minority report: both hypotheses remain plausible"
+  claimIds: [COV-C014, COV-C015]
+  sourceId: SRC-HOUSE-MINORITY-2024
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The minority members' final report concludes that a zoonotic origin and
+    a laboratory accident are both plausible, as is a hybrid scenario, and
+    that the viruses funded through the relevant grant are too distantly
+    related to SARS-CoV-2 to be its progenitor.
+  editorInference: >-
+    Recorded alongside the majority report because the two reached opposite
+    conclusions on the same evidentiary record within days of each other.
+    That divergence is itself informative: where a shared record supports
+    opposite confident conclusions, the record is not determinative, and this
+    case grades it accordingly rather than adopting either.
+  exactLocator: "Select Subcommittee minority final report, December 2024"
+  limitations:
+    - "Assertions by their authors, not findings of fact."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification pass, DEFUSE batch"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "case-covid-launch-2026-08-26"
+    date: "2026-08-26"
+
 # ── official assessments ───────────────────────────────────────────────
 
 - id: COV-E018

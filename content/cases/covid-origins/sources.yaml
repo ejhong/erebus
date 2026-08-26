@@ -202,6 +202,83 @@
     - "Its central sentence is 'Our analyses clearly show that SARS-CoV-2 is not a laboratory construct or a purposefully manipulated virus'; the subject clause is exactly what was later contested and is retained wherever this case quotes it."
     - "The authors' contemporaneous private deliberations were later released by congressional committees; this case treats the paper's status as a consensus marker as a separate question from its scientific content."
 
+# ── the research program ───────────────────────────────────────────────
+
+- id: SRC-DEFUSE-2018
+  title: "Project DEFUSE: Defusing the Threat of Bat-borne Coronaviruses (proposal to DARPA PREEMPT)"
+  authors: ["Peter Daszak"]
+  organization: "EcoHealth Alliance (with UNC Chapel Hill, Wuhan Institute of Virology, Duke-NUS, USGS National Wildlife Health Center, Palo Alto Research Center)"
+  year: "2018"
+  sourceType: report
+  identifier: "Solicitation HR001118S0017-PREEMPT-PA-001; submitted March 27, 2018; 75-page scan; not funded"
+  url: "https://archive.org/details/main-document-preempt-volume-1-no-ess-hr00118s0017-ecohealth-alliance"
+  verification: ai_verified
+  verificationNote: >-
+    Scanned proposal downloaded from the Internet Archive 2026-08-26 and read;
+    the requested amount, partner list, and the S2 proteolytic-cleavage
+    passage confirmed at PDF p. 13 (printed p. 11) by two independent OCR
+    passes that agree on every substantive word. The document has no
+    born-digital text layer, so all quotations from it are OCR-derived and
+    footnote superscripts were dropped rather than guessed.
+  reliabilityNotes:
+    - "Chain of custody is weak: this is a third-party user upload to a public archive in December 2023, not an official government release or an authenticated FOIA production. Its authenticity is corroborated independently — draft versions appear in a federal FOIA release and a congressional committee treats it as genuine — but this specific file has no official provenance."
+    - "The document establishes only what a funding application proposed. It does not establish that any proposed work was performed, funded, or attempted, and DARPA did not fund it — confirmed by the congressional record, contemporaneous reporting, and a negative check of federal award data."
+    - "Names living individuals. Any claim built on it takes the form 'the proposal states the team would do X', never 'the team did X'."
+
+- id: SRC-USRTK-DEFUSE-DRAFTS
+  title: "DEFUSE draft records and correspondence (FOIA production, combined and redacted, 235 pp.)"
+  organization: "U.S. Geological Survey / Department of the Interior (production); republished by U.S. Right to Know"
+  year: "2023"
+  sourceType: archive
+  identifier: "FOIA tracking number 2021-006245"
+  url: "https://usrtk.org/wp-content/uploads/2023/12/2021-006245-Combined-Records_Redacted-1-235.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Downloaded and read 2026-08-26 (235 content pages); the quoted margin
+    comment verified verbatim at five separate draft locations, and the
+    mapping from Word comment initials to named authors verified from email
+    headers contained within the same release rather than inferred.
+  reliabilityNotes:
+    - "A federal FOIA production republished by an advocacy organization: the underlying documents are authentic government records, and the compilation and framing are the publisher's."
+    - "Margin comments identify authors only by Word initials; the linkage to named individuals rests on email headers inside the same release."
+    - "Successive drafts of an unfunded proposal. They evidence what was drafted and discussed, not what was done."
+
+- id: SRC-HOUSE-MAJORITY-2024
+  title: "After Action Review of the COVID-19 Pandemic: The Lessons Learned and a Path Forward (majority final report)"
+  organization: "U.S. House Select Subcommittee on the Coronavirus Pandemic"
+  year: "2024"
+  sourceType: report
+  identifier: "520 pages; submitted to the congressional record December 4, 2024"
+  url: "https://oversight.house.gov/wp-content/uploads/2024/12/2024.12.04-SSCP-FINAL-REPORT-ANS.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Report PDF downloaded and searched in full 2026-08-26 (558 PDF pages).
+    A critical finding: the phrase "not found in nature" appears NOWHERE in
+    the report. It occurs only in the accompanying press release, where it
+    describes "a biological characteristic" and does not name the furin
+    cleavage site. The report's parallel five points are expressly attributed
+    to an outside newspaper opinion piece, and its furin-cleavage argument is
+    a quotation of a journalist's claim.
+  reliabilityNotes:
+    - "A majority-party congressional report. Its conclusions are assertions by their authors, recorded as such, and its companion minority report reaches opposite conclusions on the same record."
+    - "The report and its press release must not be conflated: the press release's stronger formulations do not appear in the report, and this case treats them as two distinct sources with distinct locators."
+    - "Several of its origin arguments are attributed in the report itself to third-party op-eds rather than developed from the committee's own record."
+
+- id: SRC-HOUSE-MINORITY-2024
+  title: "Final report of the Select Subcommittee Democratic members"
+  organization: "U.S. House Select Subcommittee on the Coronavirus Pandemic (minority)"
+  year: "2024"
+  sourceType: report
+  identifier: "Minority final report, December 2024"
+  url: "https://oversightdemocrats.house.gov/news/press-releases/ranking-member-ruiz-leads-select-subcommittee-democrats-releasing-final-report"
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-26; the stated conclusion that both a zoonotic origin
+    and a laboratory accident remain plausible verified verbatim.
+  reliabilityNotes:
+    - "A minority-party congressional report, and the direct counterpart to the majority report on the same evidentiary record — which is why this case carries both or neither."
+    - "Assertions by their authors, not findings of fact."
+
 # ── official assessments ───────────────────────────────────────────────
 
 - id: SRC-ODNI-WIV-2023

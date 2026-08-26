@@ -9,7 +9,7 @@ role: draft
 caseAssessment:
   verdict: unresolved
   loadBearing: [COV-C002, COV-C006, COV-C010, COV-C007, COV-C015]
-  weakestLinks: [COV-C008, COV-C010, COV-C002]
+  weakestLinks: [COV-C008, COV-C010, COV-C002, COV-C017]
   synthesis: >-
     The case resolves into an asymmetry that neither camp describes
     accurately. Zoonotic spillover at or near the Huanan market is the only
@@ -33,8 +33,12 @@ caseAssessment:
     independent confirmations.
 
     Against that, the research-related family has capability, opportunity,
-    documented intent-on-paper, and opacity, and no disclosed progenitor,
-    no documented incident, and no infected worker. It is sustained by the
+    documented intent-on-paper — a 2018 proposal, with a Wuhan partner, to
+    insert human-specific cleavage sites into SARS-related spikes — and
+    opacity, and no disclosed progenitor, no documented incident, and no
+    infected worker. The proposal was rejected and no public record shows
+    the work was done, which is exactly the gap between document and deed
+    that its advocates elide and its critics treat as closing the question. It is sustained by the
     inadequacy of what has been produced rather than by anything
     affirmative. Its strongest structural point is not evidential but
     epistemic: the body best placed to evaluate it says it could not,
@@ -160,4 +164,27 @@ claimAssessments:
       Both halves verbatim in the conclusion, including the qualification
       that the weight of evidence is the evidence SAGO was able to review,
       and its statement that it had no access to raw data from any source.
+    confidence: high
+  - claimId: COV-C016
+    verdict: well_supported
+    reasoning: >-
+      The cleavage-site passage is verbatim at a confirmed locator and the
+      non-award is confirmed three independent ways. Short of established
+      only because the available copy is a third-party archive upload and
+      the text is OCR-derived.
+    confidence: high
+  - claimId: COV-C017
+    verdict: unresolved
+    reasoning: >-
+      Not funded, no public record of performance, and no published
+      precursor sequence — against an institute reported to hold trace-free
+      cloning methods and records that have never been produced. Genuinely
+      open in both directions.
+    confidence: moderate
+  - claimId: COV-C018
+    verdict: well_supported
+    reasoning: >-
+      Stated in the declassified report with its own caveats, including that
+      no specific biosafety incident is known and that the November 2019
+      training appeared routine. Establishes opportunity, not occurrence.
     confidence: high
