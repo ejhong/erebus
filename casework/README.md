@@ -29,6 +29,11 @@ active proceedings"):
   "verdicts."
 - Material supplied in confidence does not go in a brief committed here
   unless its provenance terms allow it.
+- **Third-party published material** (saved articles, blog posts, papers,
+  e.g. as PDFs) may be kept here as discovery aids while the repository
+  is private. It is copyrighted working material: never republish it,
+  never move it into `content/` or `public/`, and cite the original
+  publication — verified against it — not the saved copy.
 
 ## Layout
 
