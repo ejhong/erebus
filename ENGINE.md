@@ -151,3 +151,28 @@ Current queue (2026-08-25):
    `verificationNote` where a parenthetical DOI is unavoidable, and prefer
    a paren-free open-repository locator (e.g. a PMC deposit) as the
    primary `url` where one exists.
+8. **Unclassified directories are tier 0, so a large working-paper drop
+   starves the content tier (design gap — decide upstream).**
+   `diffTier` in `scripts/lib/arbiter-core.mjs` returns tier 0 — filled
+   first, before `content/` — for any path it does not recognize, which is
+   correct for `AGENTS.md`, `scripts/`, and workflows, where the strongest
+   scrutiny belongs. But it means an unrecognized directory can crowd the
+   payload out of the 400,000-character budget entirely. On this repo's
+   PR #27 the private `casework/` tree (digests plus six verification
+   reports, ~620 KB) filled the budget on its own, and all sixteen
+   substantive files — both cases' `claims.yaml`, `evidence.yaml`,
+   `sources.yaml`, `overview.md`, and the assessment overlays — landed in
+   the OMITTED list. Every seat then correctly voted "unsure" on the
+   omitted-files rule, so the panel returned "we could not see it" rather
+   than an editorial judgment, twice. The irony is exact: the material
+   that starved the panel was the verification work done to satisfy it.
+   Note this is a *this-repo* shape — `casework/` is committed here
+   because the repository is private, and the upstream gitignores its
+   equivalent — so the fix may be a config-layer classifier rather than a
+   hardcoded path. Options worth weighing upstream: let the tier function
+   consult a repo-level config listing low-priority paths; or tier
+   explicitly non-citable working material below `content/`; or budget per
+   tier so the payload always gets a reserved share. Interim practice
+   here: keep large casework drops in their own pull request, separate
+   from the content they support, so the panel sees the records that
+   actually publish.
