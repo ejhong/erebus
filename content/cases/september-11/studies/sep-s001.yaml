@@ -114,8 +114,8 @@ rows:
       authors' stated interpretation: "'consistent with insiders anticipating the 9-11 attacks' (abstract, verbatim)"
       engagement with the official explanation: "does not engage the specific trade-tracing in the official record"
     citation:
-      text: "SSRN abstract 1588523 (abstract read verbatim at native verification); published as Multinational Finance Journal 15(1-2):1-46 per the journal's RePEc listing (handle RePEc:mfj:journl:v:15:y:2011:i:1-2:p:1-46)"
-      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1588523"
+      text: "Multinational Finance Journal 15(1-2):1-46 (2011), doi 10.17578/15-1/2-1 (resolves; surfaced by a searcher and confirmed natively); abstract read verbatim via SSRN 1588523"
+      url: "https://doi.org/10.17578/15-1/2-1"
       verification: ai_verified
   - cells:
       study: "Chesney, Crameri & Mancini 2015, 'Detecting abnormal trading activities in option markets'"
@@ -123,7 +123,7 @@ rows:
       data and window: "9.6 million daily option prices, 31 companies mainly in airline, banking and insurance sectors, 1996-2009; intraday stock data for the hedging test"
       method: "abnormal-trade detection via unusual open-interest and volume increments plus realized gains, with multiple-hypothesis-testing control of false discoveries and a nonparametric hedging test"
       abnormality finding (instruments, significance): "abnormal trades cluster before 9/11 — 13 transactions identified (4 could not be identified further); named underlyings include American Airlines, United Airlines and Boeing (lesser signals for Delta and KLM); an AMR/UAL example realizes roughly $3 million within weeks; the non-hedging hypothesis is not rejected"
-      authors' stated interpretation: "an explicit joint hypothesis, verbatim: 'Without knowing trader identities, it is not possible to disentangle whether put option abnormal trades are due to informed traders or corporate insiders hedging their human capital'"
+      authors' stated interpretation: "two-part, both verbatim: generally, 'Without knowing trader identities, it is not possible to disentangle whether put option abnormal trades are due to informed traders or corporate insiders hedging their human capital' — but for 9/11 specifically the paper sets that aside: the abnormal trades are 'consistent with informed investors having traded in the options market in advance of the attack,' since corporate insiders 'of the involved companies were unaware of the pending terrorist attacks, and therefore the joint hypothesis does not apply in this case'"
       engagement with the official explanation: "does not adjudicate the official trade-tracing; its method addresses exactly the multiple-testing worry the older literature left open"
     citation:
       text: "Journal of Empirical Finance 33:263-275, doi 10.1016/j.jempfin.2015.03.008 (full published text read at native verification, including the 13-transaction 9/11 cluster and the joint-hypothesis language)"
@@ -142,15 +142,17 @@ findings:
       literature's own language.
     evidenceId: SEP-E040
   - statement: >-
-      The interpretations are exactly where public quoting collapses,
-      in both directions: Poteshman's own paper shows a second statistic
-      looking 'could hardly have been more ordinary' beside the elevated
-      one; Wong et al. say 'consistent with insiders anticipating'
-      while establishing only statistical abnormality; and Chesney et
-      al. state verbatim that without trader identities the abnormal
-      puts cannot be disentangled from insiders hedging their own
-      human capital. No paper claims to establish foreknowledge; no
-      paper rules it out.
+      The interpretations are stronger than either popular compression
+      admits, and more careful: Poteshman's own paper shows a second
+      statistic looking 'could hardly have been more ordinary' beside
+      the elevated one; Wong et al. write 'consistent with insiders
+      anticipating the 9-11 attacks'; and Chesney et al., after stating
+      their general joint hypothesis, set it aside for 9/11 on the
+      stated ground that corporate insiders were unaware of the pending
+      attacks — reading the cluster as 'consistent with informed
+      investors having traded... in advance of the attack.' All three
+      stop at consistency language; none claims to identify who traded,
+      and none rules innocuous explanations out trade by trade.
     evidenceId: SEP-E040
   - statement: >-
       The statistical literature and the official attribution never
@@ -186,7 +188,12 @@ limitations:
     retrieved at collection, and the row's quantitative cells rest on
     the abstract's own statements.
   - >-
-    Searcher coverage: GEMINI_COVERAGE. The OpenAI substitute run
+    Searcher coverage: the Gemini deep-research run corroborated all
+    three rows, supplied the row-level gains detail, surfaced the
+    journal DOI for the Wong row, and caught a real understatement in
+    the draft Chesney interpretation cell (the paper's 9/11-specific
+    setting-aside of its joint hypothesis), corrected after native
+    verification against the published text. The OpenAI substitute run
     marked its unverifiable cells NOT FOUND honestly this time but
     supplied a fabricated Commission quotation with an invented page
     locator (flagged NOT FOUND by the searcher itself); the comparandum
