@@ -11,17 +11,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # HARD RULE: the upstream engine project's name must never appear in
-      # any committed file in this repository (any casing). The pattern is
-      # assembled from pieces so this guard file cannot trip itself.
-      - name: Forbidden-string guard
+      # RULE (AGENTS.md §4, narrowed by founder amendment 2026-08-25): the
+      # upstream engine project's name must not appear in the rendered
+      # site's inputs — content/, src/, app/, public/ (any casing) — so a
+      # reader of this site never encounters it. Elsewhere in the repo it
+      # may be named freely. The pattern is assembled from pieces so this
+      # guard file cannot trip itself.
+      - name: Site name guard
         run: |
           FORBIDDEN="$(printf 'ale%s' 'theia')"
-          if grep -rIli --exclude-dir=.git --exclude-dir=node_modules "$FORBIDDEN" .; then
-            echo "::error::The forbidden upstream project name (listed files above) must not appear in any committed file. Scrub it and push again."
+          # Grep only the site-input directories that exist (e.g. public/
+          # arrives with the first images). A missing directory must not be
+          # passed to grep: it makes grep exit 2 even when matches ARE found,
+          # which would silently defeat this guard.
+          SITE_DIRS="$(ls -d content src app public 2>/dev/null || true)"
+          if [ -n "$SITE_DIRS" ] && grep -rIli "$FORBIDDEN" $SITE_DIRS; then
+            echo "::error::The upstream project name (listed files above) must not appear in the rendered site's inputs (content/, src/, app/, public/). Rename it and push again."
             exit 1
           fi
-          echo "guard passed: no occurrence of the forbidden string."
+          echo "guard passed: no occurrence in the site's inputs."
 
       - uses: actions/setup-node@v4
         with:

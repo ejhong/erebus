@@ -10,15 +10,18 @@
  *   node scripts/sync-engine.mjs --pull    # overwrite local engine files
  *                                          # with (scrubbed) upstream ones
  *
- * The upstream location comes ONLY from the ENGINE_UPSTREAM environment
- * variable / Actions secret (a git URL) — never a committed literal,
- * because the upstream project's name must not appear in any committed
- * file (enforced by the CI forbidden-string guard).
+ * The upstream location comes from the ENGINE_UPSTREAM environment
+ * variable / Actions secret (a git URL). Since the founder's 2026-08-25
+ * amendment narrowed the name rule to the rendered site's inputs, the
+ * URL may also be written openly in docs (see ENGINE.md).
  *
- * Upstream files may legitimately contain that name; the sync therefore
- * SCRUBS every pulled file (case-preserving rename to this project's
- * name) and compares local files against the SCRUBBED upstream, so a
- * scrub-only difference never counts as divergence.
+ * The scrub is an IDENTITY RENAME, not secrecy: upstream files carry the
+ * upstream project's own name in UI strings, prompt versions, and
+ * comments, and this site needs its own. The sync therefore renames
+ * (case-preserving) every pulled text file to this project's name and
+ * compares local files against the RENAMED upstream, so a rename-only
+ * difference never counts as divergence. This also keeps src/ and app/
+ * clean for the scoped CI name guard on the site's inputs.
  *
  * ALLOWLIST: paths where this repo deliberately diverges (site identity,
  * design tokens, empty-state pages, hosting). Allowlisted paths are never
