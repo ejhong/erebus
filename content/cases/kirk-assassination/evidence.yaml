@@ -1670,6 +1670,75 @@
     runId: "2026-08-26-study-krk-s002-collect"
     date: "2026-08-26"
 
+- id: KRK-E061
+  title: "Base rate: inconclusive is a standard, non-error outcome of the method"
+  claimIds: [KRK-C003, KRK-C004]
+  sourceId: SRC-KRK-S004
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    In six ground-truth studies of firearm-toolmark comparison
+    (2014-2024, 49-228 examiners each), inconclusive is a standard
+    response category scored as a non-error, observed at rates from a
+    few percent to the modal response (65.4% of true different-source
+    bullet comparisons in Ames II). Widely quoted sub-1% error rates
+    are conclusives-only figures; incorporating inconclusives drops
+    true-negative performance to 63.5% in the study that reports both
+    (Guyll 2023).
+  editorInference: >-
+    The ATF's inconclusive result is what the method's own literature
+    frequently produces and licenses neither public misreading: it is
+    not an identification and not an elimination. Both the "bullet
+    matched" and "rifle was cleared" glosses attribute to the examiner
+    a definitive call the record shows was declined. Error-rate claims
+    quoted around this case are under-specified unless they state
+    their inconclusive-scoring convention.
+  exactLocator: "Study KRK-S004, findings 1 and 3 (full table on the study page)"
+  limitations:
+    - "Inconclusive rates vary by tens of percentage points with study difficulty and response scale; no summary rate transfers to any single case."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S004 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s004-collect"
+    date: "2026-08-26"
+
+- id: KRK-E062
+  title: "Base rate: the inconclusive-asymmetry toward different-source does not transfer to fragments"
+  claimIds: [KRK-C004]
+  sourceId: SRC-KRK-S004
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Every study reporting both shares finds inconclusives far more
+    common on true different-source than true same-source pairs (Ames I
+    33.7% versus 1.0%; Ames II bullets 65.4% versus 20.5%; Mattijssen
+    48.1% versus 16.6%; Guyll 35.9% versus 6.5%, with a likelihood
+    ratio giving inconclusives probative value toward
+    different-source). The one study including damaged bullets (Hicklin
+    2024) finds specimen quality drives inconclusive rates by itself
+    and recommends against overall rates; its working group states it
+    lacked enough very poor-quality bullets to measure the quality
+    effect with precision.
+  editorInference: >-
+    On intact test-fires an inconclusive would lean weakly toward the
+    rifle not being the source; on fragments that lean mostly
+    evaporates, because damage predicts an inconclusive regardless of
+    ground truth. The published performance data therefore bound the
+    ATF result to little diagnostic weight in either direction — and
+    identify the fragments' condition, not examiner effort, as the
+    binding constraint, which is directly relevant to how much the
+    blind re-examination (KRK-R004) can resolve.
+  exactLocator: "Study KRK-S004, finding 2 (full table on the study page)"
+  limitations:
+    - "The transfer bound rests on one damaged-bullet study whose own authors caution against precise quality-effect estimates."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S004 collection"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    runId: "2026-08-26-study-krk-s004-collect"
+    date: "2026-08-26"
+
 - id: KRK-E063
   title: "Statement ledger: the media-custody account is partially corroborated, with the original-cards gap intact"
   claimIds: [KRK-C011, KRK-C012]

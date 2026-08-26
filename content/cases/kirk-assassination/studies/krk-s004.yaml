@@ -100,11 +100,206 @@ columns:
   - inconclusive share, different-source
   - how inconclusives are scored
   - applicability to fragments
-rows: []
-findings: []
-limitations: []
-runId: 2026-08-26-study-krk-s004-freeze
+rows:
+  - cells:
+      study: "Ames I — Baldwin, Bajic, Morris & Zamzow, Ames Laboratory / DOE technical report IS-5207 (NCJ 249874)"
+      year: "2014"
+      materials: "cartridge cases (25 new Ruger SR9 pistols, Remington 9mm)"
+      design: "open-set; one questioned versus three knowns, 15 sets per examiner; AFTE Range of Conclusions"
+      examiners and comparisons: "218 examiners; 1,090 true same-source and 2,178 true different-source comparisons analyzed"
+      inconclusive share, same-source: "11 of 1,090 — 1.0% (4 false eliminations, 0.367%)"
+      inconclusive share, different-source: "735 of 2,178 — 33.7% (1,421 eliminations; false identifications 1.01%)"
+      how inconclusives are scored: "explicitly not recorded as errors; error rates computed from definitive calls"
+      applicability to fragments: "none — intact cartridge cases only"
+    citation:
+      text: "Primary report, NIJ document 249874 (ojp.gov PDF, full text read); the same data later peer-reviewed as Forensic Science International 348:111733 (2023), doi 10.1016/j.forsciint.2023.111733"
+      url: "https://www.ojp.gov/pdffiles1/nij/249874.pdf"
+      verification: ai_verified
+  - cells:
+      study: "Ames II, accuracy part — Monson, Smith & Peters, Journal of Forensic Sciences 68(1):86-100"
+      year: "2023"
+      materials: "bullets and cartridge cases; three firearm types and steel-cased ammunition deliberately chosen to be challenging (subclass characteristics, no aperture drag)"
+      design: "open-set, double-blind; AFTE range with Inconclusive-A/B/C; unsuitable category available"
+      examiners and comparisons: "173 examiners; 8,640 comparisons"
+      inconclusive share, same-source: "bullets 20.5% of 1,405 (identifications 76.6%); cartridge cases 23.9% of 1,420 (identifications 74.4%)"
+      inconclusive share, different-source: "bullets 65.4% of 2,842 — the modal response (eliminations 33.8%); cartridge cases 50.6% of 2,835 (eliminations 48.5%)"
+      how inconclusives are scored: "explicitly not errors, with a stated decision-theoretic rationale; the paper reviews and rejects the 'incorrect inconclusive' scoring advocated in commentary"
+      applicability to fragments: "none — intact test-fires; difficulty came from firearm and ammunition choice, not damage. The paper frames its error rates as an upper bound relative to typical casework"
+    citation:
+      text: "Journal of Forensic Sciences 68(1):86-100 (2023), doi 10.1111/1556-4029.15152 (open access at PMC10092368; Table 3 percentages read from full text)"
+      url: "https://doi.org/10.1111/1556-4029.15152"
+      verification: ai_verified
+  - cells:
+      study: "Ames II, repeatability and reproducibility part — Monson, Smith & Peters, Journal of Forensic Sciences 68(5):1721-1740"
+      year: "2023"
+      materials: "same specimen pool as the accuracy part, blindly resubmitted"
+      design: "repeatability: same examiner re-judges (105 examiners, 5,700 comparisons); reproducibility: different examiner judges (191/193 examiners, 5,790 comparisons); AFTE range"
+      examiners and comparisons: "105 (repeatability) and 191-193 (reproducibility) examiners"
+      inconclusive share, same-source: "not a per-round rate: agreement across rounds was 78.3% (repeatability) and 67.3% (reproducibility) on known matches; most disagreements were definitive-versus-inconclusive"
+      inconclusive share, different-source: "agreement 64.5% (repeatability) and 36.5% (reproducibility) on known nonmatches — the same comparison frequently moves between elimination and inconclusive depending on the examiner"
+      how inconclusives are scored: "same convention as the accuracy part; agreement computed over all five AFTE levels"
+      applicability to fragments: "none — intact test-fires"
+    citation:
+      text: "Journal of Forensic Sciences 68(5):1721-1740 (2023), doi 10.1111/1556-4029.15318 (abstract and results read; note: the FBI Laboratory's own statement page cites this part with incorrect page numbers, caught at native verification)"
+      url: "https://doi.org/10.1111/1556-4029.15318"
+      verification: ai_verified
+  - cells:
+      study: "Mattijssen, Witteman, Berger, Brand & Stoel — Forensic Science International 307:110112"
+      year: "2020"
+      materials: "firing-pin aperture shear marks; 400 test shots from 200 Glock pistols; 60 deliberately difficult comparisons selected from 79,800"
+      design: "forced same/different-source choice plus degree of support, with a recorded would-you-report-inconclusive-in-casework flag; 77 examiners"
+      examiners and comparisons: "77 examiners; 60 comparisons each (4,620 judgments)"
+      inconclusive share, same-source: "487 of 2,926 — 16.6% flagged as would-be-inconclusive"
+      inconclusive share, different-source: "815 of 1,694 — 48.1% flagged as would-be-inconclusive"
+      how inconclusives are scored: "validity reported both including and excluding the inconclusive-flagged judgments (true-positive 97.0% and true-negative 98.2% excluding them)"
+      applicability to fragments: "none — test shots; difficulty came from comparison selection. Also reports examiner overconfidence in degree-of-support judgments"
+    citation:
+      text: "Forensic Science International 307:110112 (2020), doi 10.1016/j.forsciint.2019.110112 (full manuscript read; shares computed from the Table 2 confusion-matrix counts)"
+      url: "https://repository.ubn.ru.nl/handle/2066/218946"
+      verification: ai_verified
+  - cells:
+      study: "Guyll et al. — Proceedings of the National Academy of Sciences 120(20):e2210428120"
+      year: "2023"
+      materials: "cartridge cases; two firearm models chosen to differ in difficulty"
+      design: "field-based, open-set; identification / inconclusive / elimination"
+      examiners and comparisons: "228 examiners; 1,811 comparisons"
+      inconclusive share, same-source: "6.5%"
+      inconclusive share, different-source: "35.9% — six times the same-source rate; inconclusives were 21.1% of all decisions"
+      how inconclusives are scored: "both ways reported: conclusives-only true-positive/true-negative rates exceed 99%, incorporating inconclusives drops them to 93.4% and 63.5%; the paper computes likelihood ratios and finds an inconclusive itself has probative value toward different-source"
+      applicability to fragments: "none — intact cartridge cases; the harder firearm model drew more same-source inconclusives, showing difficulty alone moves the rate"
+    citation:
+      text: "PNAS 120(20):e2210428120 (2023), doi 10.1073/pnas.2210428120 (open access at PMC10193974; abstract and results read)"
+      url: "https://doi.org/10.1073/pnas.2210428120"
+      verification: ai_verified
+    independenceNote: "post-freeze discovery by the OpenAI searcher; natively verified and dispositioned against the frozen criteria at collection"
+  - cells:
+      study: "Bullet Black Box — Hicklin, Parks, Dunagan, Emerick, Richetelli, Chapman, Taylor & Thompson (Noblis/NIST), Forensic Science International 365:112287"
+      year: "2024"
+      materials: "bullets spanning a quality range from complete bullets to FRAGMENTS — the only study in this table that includes damaged material; multiple firearm models and jacket types"
+      design: "open-set; known-questioned and questioned-questioned scenarios; OSAC scale (NoValue; LeanID / Insufficient / LeanExclusion inconclusives; identification; exclusion)"
+      examiners and comparisons: "49 examiners; 3,156 comparisons of 1,240 bullets"
+      inconclusive share, same-source: "no single rate published by design — the authors recommend against overall rates because inconclusive shares vary dramatically by bullet quality, firearm model, and ammunition"
+      inconclusive share, different-source: "same — but the direction of the quality effect is explicit: lower-quality (more damaged) bullets drew higher inconclusive rates, and polygonal rifling drew more inconclusive or unsuitable responses"
+      how inconclusives are scored: "three published rate bases (all presentations; excluding no-value; conclusive calls only), with the choice required to be stated — formalizing exactly the ambiguity that public error-rate claims elide"
+      applicability to fragments: "the direct evidence: damage drives inconclusives regardless of source. The working group's own caveat, quoted: the study 'did not include enough very poor-quality questioned bullets to measure the effects of varying quality on decision rates with precision'"
+    citation:
+      text: "Forensic Science International 365:112287 (2024), doi 10.1016/j.forsciint.2024.112287; NIST/Noblis working-group implications report (tsapps.nist.gov publication 960209, full text read)"
+      url: "https://doi.org/10.1016/j.forsciint.2024.112287"
+      verification: ai_verified
+    independenceNote: "post-freeze discovery by the OpenAI searcher; natively verified and dispositioned against the frozen criteria at collection"
+  - cells:
+      study: "Fadul, Hernandez, Stoiloff & Gulati — Miami-Dade / NIJ grant report 237960"
+      year: "2011"
+      materials: "cartridge cases from 10 consecutively manufactured Ruger P95 slides"
+      design: "effectively closed-set — participants were not told, but the answer format let them infer every questioned casing matched one of the ten slides (the design PCAST later criticized); tabulated responses: correct / not correct / inconclusive"
+      examiners and comparisons: "158 test sets distributed; 3,255 answers returned"
+      inconclusive share, same-source: "14 inconclusives of 3,255 answers overall (~0.4%); the closed-set format makes per-ground-truth shares not comparable to the open-set rows"
+      inconclusive share, different-source: "no eliminations were reported in either phase — in an inferable closed set the category collapses"
+      how inconclusives are scored: "excluded from error rates as neither correct nor incorrect (citing Peterson & Markham 1995)"
+      applicability to fragments: "none — and the row's real lesson is the design effect: PCAST found closed-set studies understate false-positive and inconclusive rates by orders of magnitude versus open-set designs, which is exactly why this table never pools designs"
+    citation:
+      text: "NIJ grant report 237960 (ojp.gov PDF, full text read); response tally as summarized in the PCAST 2016 report and the DOJ response, both read; PCAST closed-set critique at theiai.org PCAST final report"
+      url: "https://www.ojp.gov/pdffiles1/nij/grants/237960.pdf"
+      verification: ai_verified
+    independenceNote: "post-freeze discovery by the Gemini searcher (as a study courts historically cited); natively verified and dispositioned against the frozen criteria at collection"
+findings:
+  - statement: >-
+      An inconclusive is a standard, high-frequency outcome of
+      firearm-toolmark examination, not an anomaly: every ground-truth
+      study in the table offers it as a response category, scores it as
+      a non-error, and observes it at rates from a few percent to the
+      modal response (65.4% of true different-source bullet comparisons
+      in Ames II). The ATF result in this case (KRK-C004) is exactly
+      what the method's own literature says it frequently produces.
+      Neither public misreading survives the table: an inconclusive is
+      not an identification, and it is not an elimination — the studies
+      reserve those words for definitive calls the examiner declined to
+      make.
+    evidenceId: KRK-E061
+  - statement: >-
+      Measured against ground truth, inconclusives are asymmetric: every
+      study reporting both shares finds them far more common on true
+      different-source pairs (Ames I 33.7% versus 1.0%; Ames II bullets
+      65.4% versus 20.5%; Mattijssen 48.1% versus 16.6%; Guyll 35.9%
+      versus 6.5%, with an explicit likelihood ratio giving an
+      inconclusive probative value toward different-source). Read
+      naively, that asymmetry would make the ATF result weak evidence
+      against the rifle being the source. The naive reading does not
+      transfer to this case: the asymmetry is measured on intact
+      test-fires, and the one study that includes damaged bullets
+      (Hicklin 2024) shows specimen quality drives inconclusive rates by
+      itself, in whichever direction — a fragment-based inconclusive is
+      dominated by the quality mechanism, not the source mechanism. The
+      honest bound: on published performance data, the inconclusive in
+      this case carries little diagnostic weight in either direction,
+      and the fragments' condition, not examiner effort, is the binding
+      constraint.
+    evidenceId: KRK-E062
+  - statement: >-
+      Scoring conventions are where public error-rate claims go wrong:
+      all six rows decline to count inconclusives as errors, so widely
+      quoted sub-1% error rates are conclusives-only figures. Guyll 2023
+      makes the sensitivity of this choice explicit — true-negative
+      performance drops from over 99% to 63.5% when inconclusives are
+      incorporated — and Hicklin 2024 formalizes three rate bases and
+      requires the choice to be stated. Any courtroom or public claim
+      citing a firearms-identification error rate without stating its
+      inconclusive convention is under-specified.
+    evidenceId: KRK-E061
+  - statement: >-
+      The pre-committed candidates survived: Ames I, both published Ames
+      II parts, and Mattijssen 2020 met the frozen criteria on native
+      verification (Mattijssen's inconclusive measure is a
+      would-you-report flag rather than an AFTE category, recorded on
+      the row). Three studies the author's union missed were surfaced by
+      searchers and included after verification: Guyll 2023 (PNAS) and
+      Hicklin 2024 (the only damaged-bullet study) by the OpenAI run,
+      and Fadul 2011 (the closed-set exemplar courts historically cited)
+      by the Gemini run. Two lead errors were
+      caught at native verification: the freeze named Bajic on the Ames
+      II papers (the accuracy and repeatability parts are Monson, Smith
+      & Peters), and the FBI Laboratory's statement page mis-cites the
+      repeatability paper's page numbers.
+limitations:
+  - >-
+    The table measures the method's behavior on materials mostly unlike
+    this case's questioned items: five of six rows use intact
+    test-fires, and the one damaged-bullet study declined to publish
+    overall rates and warns it lacked enough very poor-quality bullets
+    for precision. Every transfer from this table to the ATF result
+    inherits that gap, which is why finding 2 bounds rather than
+    estimates.
+  - >-
+    Study difficulty is a design choice that moves inconclusive rates
+    by tens of percentage points (Ames II chose challenging specimens
+    deliberately; Mattijssen selected hard comparisons from 79,800;
+    Guyll manipulated difficulty across firearm models). The frozen
+    never-pool rule is why no summary rate is offered across rows.
+  - >-
+    Response scales differ across rows (AFTE three-level inconclusive;
+    OSAC lean categories; a would-report flag). Shares are comparable
+    in direction but not in exact magnitude across scales.
+  - >-
+    Searcher coverage: three searchers ran the frozen protocol. The
+    OpenAI substitute run (deep-research models remain unavailable to
+    the project key) surfaced both post-freeze candidates (Guyll 2023,
+    Hicklin 2024) though with partly garbled author lists and counts,
+    used as leads only; the Gemini deep-research run corroborated every
+    natively verified rate in the table (including the Ames II 65.4%/20.5%
+    split and Guyll's 63.5% incorporated true-negative rate) and surfaced
+    one further candidate beyond the union (Fadul 2011, included after
+    native verification as the closed-set design exemplar). Commentary
+    literature on inconclusive scoring (surfaced repeatedly) is
+    excluded from rows per the frozen criteria and enters only as the
+    debate finding 3 describes.
+  - >-
+    Stage provenance: the freeze stamp (runId
+    2026-08-26-study-krk-s004-freeze, promptVersion
+    erebus-study-freeze-v1) is preserved in the merged freeze PR and in
+    the header comment; criteria hash 3fa1c832219a re-verifies
+    unchanged at collection.
+runId: 2026-08-26-study-krk-s004-collect
 model: Claude Fable 5 (Anthropic), via Cursor
-date: 2026-08-26
-promptVersion: erebus-study-freeze-v1
+date: "2026-08-26"
+promptVersion: erebus-study-collect-v1
 humanReviewed: false
