@@ -1,9 +1,15 @@
 # SEP-001 image manifest. Generated artwork may never be a plate (schema
 # hard rule): AI images are confined to editorial roles and always credited
 # as such, so nothing a reader could mistake for the record is synthetic.
-# This case has no plates — the evidentiary imagery it would want (scene
-# photographs, recovered steel, dust micrographs) is either not licensable
-# or, in the WTC 7 case, does not exist.
+#
+# The plates here are deliberately documents rather than scenes. This case
+# is about what the record contains and where it stops, so the imagery that
+# actually bears on it is the federal investigation's own figures — which
+# are US government work in the public domain, are the measurements the
+# claims dispute, and carry none of the sensational charge that photographs
+# of the day would. What this case cannot show, and says so: no identified
+# WTC 7 steel was preserved, so the metallurgical imagery a reader might
+# most want does not exist.
 
 - id: IMG-SEP-COVER
   role: cover
@@ -43,3 +49,63 @@
     austere composition. Absolutely no text, no numbers, no labels, no
     captions, no border frame lines. Stylized editorial artwork, obviously
     an illustration — not photorealistic, no photograph.
+
+- id: IMG-SEP-P02
+  role: plate
+  file: /images/cases/september-11/plates/wtc7-nist1a-fig3-15.jpg
+  alt: >-
+    Line graph titled with downward velocity against time: plotted points
+    rise from zero and are divided by dotted verticals into three labelled
+    stages, with a straight red regression line fitted through the middle
+    stage's points and a curved fit through all of them.
+  source: commons
+  license: "Public domain"
+  credit: "National Institute of Standards and Technology, via Wikimedia Commons"
+  plateNumber: 2
+  mediaType: "figure from a federal investigation report"
+  depicts: >-
+    The descent measurement at the centre of this case's most-quoted
+    observation. NIST plotted the downward velocity of WTC 7's north-face
+    roofline against time from video analysis and divided it into three
+    stages; the straight-line regression through Stage 2 is the interval the
+    report describes as free fall, approximately 2.25 seconds. The figure is
+    the investigation's own, published in its final report — the free-fall
+    interval is not a challenger's calculation but a government measurement,
+    added after public comment pressed the point.
+  provenance:
+    photographer: "National Institute of Standards and Technology"
+    date: "2008-11-20"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Wtc7-nist1a-fig3-15.jpg"
+    originalTitle: "NIST NCSTAR 1A, Figure 3-15"
+  claimIds: [SEP-C002]
+
+- id: IMG-SEP-P01
+  role: plate
+  file: /images/cases/september-11/plates/wtc7-collapse-progression.png
+  alt: >-
+    Engineering plan view of a trapezoidal building footprint, with numbered
+    hexagonal column markers in rows, colour-shaded regions keyed to a
+    legend of collapse timings, and annotations locating penthouses,
+    transfer girders, trusses, and areas of debris damage.
+  source: commons
+  license: "Public domain"
+  credit: "NIST, via Wikimedia Commons"
+  plateNumber: 1
+  mediaType: "figure from a federal interim report"
+  depicts: >-
+    A plan view of WTC 7 showing the numbered column grid, the east and west
+    penthouses, and shaded regions keyed to the sequence in which parts of
+    the building were observed to come down. Column 79 — the column whose
+    buckling the later final report identifies as the initiating local
+    failure — is the numbered marker at the upper right of the shaded
+    eastern region. Recorded precisely: this is the June 2004 interim
+    report, whose collapse hypothesis the 2008 final report superseded in
+    substance. It is shown here because it locates the column numbering and
+    the east penthouse that the final mechanism turns on, not as a statement
+    of that mechanism.
+  provenance:
+    photographer: "NIST"
+    date: "2004-06"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Wtc7_collapse_progression.png"
+    originalTitle: "NIST, Interim report on 7 World Trade Center, Appendix L"
+  claimIds: [SEP-C003]

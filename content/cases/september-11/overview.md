@@ -8,7 +8,11 @@ What it maps instead is narrower and more specific: which particular evidentiary
 
 [World Trade Center 7, a 47-story tower no aircraft struck, collapsed completely after burning unfought for about seven hours]{claim=SEP-C001}. The water main was severed; the fire department, per the 2002 federal study, took no manual firefighting action. That study's own conclusion is worth remembering before anyone claims the question was ever easy: it called its best hypothesis one with "only a low probability of occurrence" and asked for more work.
 
+{plate:IMG-SEP-P01}
+
 The later federal investigation supplied a specific answer. [Heat expanded the floor beams until a girder walked off its seat at Column 79, floors cascaded, and the column buckled]{claim=SEP-C003} — a mechanism requiring no melted steel, with modeled column temperatures near 300 °C. And the report contains something else its critics rarely credit it for: [the north face fell at gravitational acceleration for approximately 2.25 seconds]{claim=SEP-C002}, stated in the government's own principal findings, added after public comment pressed the point.
+
+{plate:IMG-SEP-P02}
 
 Here is where this case parts company with both camps. The mechanism is graded **mixed** — not because a better explanation exists, but because nobody outside the agency can check this one. [Roughly 68,500 modeling files were withheld under a finding that their release might jeopardize public safety, and a federal court upheld it]{claim=SEP-C005}. The stated rationale is coherent: validated connection models really would be a general-purpose blueprint. The consequence is also real: the most consequential engineering claim in the case is one that only its author can evaluate. Unaudited is not the same as wrong, and this page will not let either side collapse that distinction. Compounding it permanently, [no identified WTC 7 steel was preserved]{claim=SEP-C006} — the agency says so itself, explaining that unlike tower steel, WTC 7's carried no distinguishing markings and could not be identified once removed.
 

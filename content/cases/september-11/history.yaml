@@ -134,3 +134,22 @@
   aiAssisted: true
   kind: content
 
+- date: "2026-08-26"
+  change: >-
+    Added two plates to the overview article: two figures from the federal investigation's own reports — the three-stage descent measurement behind the free-fall claim, and a plan view locating the column grid and east penthouse that the collapse mechanism turns on. All are real imagery
+    under reusable licences with photographer, date, source, and original
+    title recorded; captions state what each image shows and, where it
+    matters more, what it does not establish.
+
+    Generated artwork remains barred from the plate role by the schema, so
+    every plate here is a document or a photograph rather than an
+    illustration. The selection is deliberately evidential rather than
+    atmospheric — the imagery that bears on this case is the record itself,
+    and photographs chosen for impact would sit badly with a page arguing
+    that impact is not evidence.
+  reason: >-
+    Founder direction to make the articles more readable.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: housekeeping
+
