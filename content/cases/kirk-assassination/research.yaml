@@ -206,9 +206,14 @@
     Build a claim-by-claim archive of post-event public statements by event
     personnel and officials (media transfers, first-call accounts, medical
     relays, venue-selection accounts), each entry carrying the original
-    artifact, the contradicting record if any, and a five-way outcome:
-    accurate / mistaken / materially misleading / knowingly false /
-    unresolved. Publish the ledger as it fills.
+    artifact, the record bearing on it, and a record-comparison outcome
+    with no intent grades: corroborated / contradicted by the record /
+    partially corroborated / superseded by a fuller account / unresolved.
+    This site never grades a speaker's state of mind — that would be a
+    culpability verdict on a named living person; where a court has
+    itself characterized a statement, the entry carries the court's
+    finding as the court's. Executed under freeze discipline as study
+    KRK-S005.
   claimIds: [KRK-C012, KRK-C016, KRK-C017]
   track: either
   effortTier: desk

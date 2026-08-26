@@ -89,18 +89,23 @@ criteria:
         only where a checkable record bears on them
   criteriaHash: 85874a57b2bf
 method: Discovery per the frozen protocol; one row per statement, each cell
-  citing the primary artifact with the standard verification label. The five-way
-  outcome scale is frozen with hard bars — accurate, mistaken, materially
-  misleading, knowingly false, unresolved — where "knowingly false" requires
-  documentary evidence that the speaker's own contemporaneous records
-  contradicted the statement when made; discrepancy alone never licenses an
-  intent grade, and the ceiling absent such documents is "materially misleading"
-  or "unresolved". Officials' assertions are graded as assertions against
-  records, never restated as established fact; no row grades anyone's
-  culpability. Findings state the distribution statement by statement and
-  explicitly decline the aggregate move — a count of discrepancies is not
-  evidence of coordination (KRK-C015 discipline applies to institutions as much
-  as donors). Failed searches and ungradable statements are reported, and the
+  citing the primary artifact with the standard verification label. The outcome
+  scale is frozen as pure record-comparison, with no intent grades of any kind —
+  corroborated, contradicted by the record, partially corroborated, superseded
+  by a fuller account, unresolved. This site never grades a speaker's state of
+  mind; characterizing sworn testimony as knowingly false would be a perjury
+  verdict on a named living person, which the living-persons rules prohibit
+  absolutely. Where a court or the speaker's own on-record statement has itself
+  characterized an account (as the June 2026 contempt ruling did), the row
+  carries that adjudication as the adjudicator's finding, with locator, never
+  restated as this site's conclusion. Officials' assertions are graded as
+  assertions against records, never restated as established fact; no row grades
+  anyone's culpability, and rows about private individuals go no further than
+  court records and on-the-record statements. Findings state the distribution
+  statement by statement and explicitly decline the aggregate move — a count of
+  contradicted statements is not evidence of coordination or of lying (KRK-C015
+  discipline applies to institutions as much as donors, and record-conflict is
+  not intent). Failed searches and ungradable statements are reported, and the
   searcher-overlap coverage indicator is given. Either outcome publishes.
 columns:
   - speaker and role
