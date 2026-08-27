@@ -9,6 +9,7 @@ export const site = {
     { label: "Cases", href: "/cases" },
     { label: "Panel", href: "/panel" },
     { label: "Method", href: "/method" },
+    { label: "Proposals", href: "/proposals" },
   ],
   /** Repository — the ledger every page derives from (private repo). */
   repoUrl: "https://github.com/ejhong/erebus",
