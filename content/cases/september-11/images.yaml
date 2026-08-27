@@ -15,40 +15,33 @@
   role: cover
   file: /images/cases/september-11/cover.jpg
   alt: >-
-    Abstract technical diagram on a deep Prussian-blue field: a dense
-    bundle of fine parallel measurement traces runs from the left edge and
-    meets a vertical boundary line partway across, where most of them stop
-    against small registration ticks; a few continue past it into empty
-    space, and concentric contour rings sit at the lower left.
+    Gouache painting of Lower Manhattan seen from the harbor on a clear
+    morning, the twin towers standing intact among the skyline under a deep
+    cerulean sky; toward the bottom the painted water dissolves into a
+    faint hand-drawn street-grid plat with two rectangular building
+    footprints picked out in slate-blue ink.
   source: generated
   license: "Project artwork (AI-generated)"
   credit: "AI-generated editorial artwork, Erebus house style"
-  styleVersion: style-e1
-  model: "gpt-image-1"
-  runId: "cover-style-e1-2026-08-26"
+  styleVersion: style-e2
+  model: "image model via Cursor GenerateImage (upstream model not disclosed by the tool)"
+  runId: "cover-style-e2-2026-08-27"
   prompt: >-
-    Minimal modern technical editorial illustration, in the visual language
-    of a precise instrument chart or forensic diagram. An abstract technical
-    diagram of an audit trail that terminates: a dense bundle of fine
-    parallel measurement traces running left to right across a cold field,
-    most continuing cleanly to the right edge, but a portion of them
-    stopping abruptly at a vertical boundary line partway across, beyond
-    which the field is empty — with small registration ticks and bracket
-    marks along the boundary where the traces end, as if the instrument
-    stopped recording rather than the phenomenon stopping. Severe,
-    instrument-like, no scene of any kind. Thin, exact vector-like linework:
-    fine isolines, section lines, waveform traces, small registration marks,
-    restrained geometric abstraction. Cold palette only — cold
-    Prussian-blue field deepening toward graphite, slate linework, one thin
-    pale-steel accent where the record breaks off — on a near-white cool
-    porcelain field (#eef1f4) or a deep blue-black field (#10151b);
-    Prussian blue, slate, steel grey, indigo, graphite throughout; no warm
-    cream, sepia, ochre, or terracotta tones anywhere. Flat, matte,
-    documentary and quiet: no glow, no lens flare, no 3D render look, no
-    gradients beyond subtle atmospheric shading. Generous negative space,
-    austere composition. Absolutely no text, no numbers, no labels, no
-    captions, no border frame lines. Stylized editorial artwork, obviously
-    an illustration — not photorealistic, no photograph.
+    Editorial cover artwork, unmistakably a gouache painting — visible
+    brushstrokes, matte pigment, soft paper-textured edges, nothing
+    photographic. Upper two-thirds: Lower Manhattan seen from the harbor on
+    a crystal-clear early September morning in 2001, the twin towers
+    standing intact and quiet among the skyline, rendered in loose
+    confident brushwork — buildings as simplified planes of pale steel and
+    silver-blue, a deep cloudless cerulean sky painted in broad flat washes
+    with dry-brush texture, the water in horizontal silver-blue strokes.
+    Palette: cerulean, cobalt, silver, pale steel grey; no golds, no sepia.
+    Lower third: the painting dissolves downward into a ghosted hand-drawn
+    surveyor's plat of the Lower Manhattan street grid with two rectangular
+    footprints subtly emphasized, thin slate-blue ink on cool white paper,
+    faint as a watermark. Gradual atmospheric transition where paint
+    strokes break apart into ink lines. Elegiac, dignified, painterly
+    throughout; no people, no smoke, no aircraft, no text, no logos.
 
 - id: IMG-SEP-P02
   role: plate

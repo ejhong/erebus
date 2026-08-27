@@ -15,67 +15,65 @@ import fs from "node:fs";
 import path from "node:path";
 import { parse as parseYaml } from "yaml";
 
-const STYLE_VERSION = "style-e1";
+const STYLE_VERSION = "style-e2";
 const MODEL = "gpt-image-1";
 
 /**
- * style-e1 per-case tone assignments (see docs/IMAGES.md, "Case tone
- * assignments" — keep the two in sync). The house palette is cold and
- * modern: every cover works in Prussian blue, slate, steel grey, indigo,
- * and graphite, with at most one restrained counter-accent. Assign each
- * new case a tone here before generating its cover.
+ * style-e2 per-case palette assignments (see docs/IMAGES.md, "Case palette
+ * assignments" — keep the two in sync). The structure is the house
+ * signature and never varies: the case's place, painted, dissolving into
+ * its ghosted survey record. The palette is the case's own — drawn from
+ * its place and hour — and varies deliberately from case to case, so no
+ * two covers share a wash. Assign each new case a palette here before
+ * generating its cover.
  */
 const CASE_TONES = {
   "kirk-assassination":
-    "deep blue-black field, graphite and slate linework, one thin " +
-    "pale-steel accent tracing the single unbroken line",
+    "violet and rose alpenglow on snow-dusted peaks, deep russet and " +
+    "burnt-orange autumn aspens, long twilight-blue shadows; the ghosted " +
+    "plat in deep umber ink on cool grey-violet paper",
   "september-11":
-    "cold Prussian-blue field deepening toward graphite, slate linework, " +
-    "one thin pale-steel accent where the record breaks off",
+    "deep cloudless cerulean and cobalt sky, silver-blue water, buildings " +
+    "in pale steel and silver planes; the ghosted plat in slate-blue ink " +
+    "on cool white paper",
   "covid-origins":
-    "indigo-into-graphite field, steel-grey linework, one restrained " +
-    "cool-white accent held between two empty spaces",
+    "humid jade green, celadon, porcelain white and cool grey rain tones, " +
+    "wet asphalt with green-grey reflections; the ghosted plat in " +
+    "green-grey ink on cool pale paper",
 };
 
 /**
- * Optional composition overrides for cases whose canonical cover subject is
- * more specific than what the dossier fields would generate.
+ * Per-case place-and-hour subjects. Required for style-e2: the place must
+ * be chosen deliberately (a quiet hour, a respectful distance, never the
+ * event), so there is no generic fallback. Each entry has the painted
+ * scene and the archival drawing it dissolves into.
  */
 const CASE_SUBJECTS = {
-  // "One Shot, Many Records": one event, many instruments, records that do
-  // not fully reconcile. Pure diagram language — no scene, no place, no
-  // person, nothing readable as documentation of the event itself.
+  // The valley, not the courtyard: the campus at a respectful landscape
+  // distance under the Wasatch wall. No people, no memorials, no flags.
   "kirk-assassination":
-    "An abstract diagram of a single sharp impulse recorded by many " +
-    "instruments: one clean vertical pulse at the left edge fanning out " +
-    "rightward into many parallel horizontal traces, some continuing " +
-    "unbroken, others fading into dotted gaps or stopping mid-line, with " +
-    "small registration marks where the traces disagree — the idea of one " +
-    "event producing many incomplete, imperfectly reconciled records.",
-  // "Where the Record Stops": the case is about auditability, not about the
-  // event. Pure diagram language — no buildings, no skyline, no aircraft,
-  // no smoke, nothing a reader could mistake for documentation of the day.
+    "a university campus in a broad Utah valley at dusk — low campus " +
+    "buildings and autumn trees seen from a respectful distance, the " +
+    "Wasatch mountain wall rising behind with early snow — dissolving " +
+    "into a ghosted hand-drawn surveyor's plat of a campus courtyard and " +
+    "its building footprints with dashed sightline measurements.",
+  // The towers standing quiet on a clear September morning, seen from the
+  // harbor. Explicitly: intact, before — no smoke, no aircraft, no
+  // violence of any kind.
   "september-11":
-    "An abstract technical diagram of an audit trail that terminates: a " +
-    "dense bundle of fine parallel measurement traces running left to " +
-    "right across a cold field, most continuing cleanly to the right edge, " +
-    "but a portion of them stopping abruptly at a vertical boundary line " +
-    "partway across, beyond which the field is empty — with small " +
-    "registration ticks and bracket marks along the boundary where the " +
-    "traces end, as if the instrument stopped recording rather than the " +
-    "phenomenon stopping. Severe, instrument-like, no scene of any kind.",
-  // "Two Absences": two symmetrical gaps, each side reading the other's as
-  // decisive. No virus imagery, no molecular renderings, no maps, no
-  // laboratory or market scenery — the subject is the shape of the
-  // evidence, not the pathogen.
+    "Lower Manhattan seen from the harbor on a crystal-clear early " +
+    "September morning in 2001, the twin towers of the World Trade Center " +
+    "standing intact and quiet among the skyline, still water — no smoke, " +
+    "no aircraft, nothing of the event — dissolving into a ghosted " +
+    "hand-drawn surveyor's plat of the Lower Manhattan street grid with " +
+    "two rectangular building footprints subtly emphasized.",
+  // The market empty in morning rain — the place, not the pathogen. No
+  // animals, no signage, no people.
   "covid-origins":
-    "An abstract technical diagram of two symmetrical gaps: two dense " +
-    "fields of fine converging linework approaching from opposite sides " +
-    "of a cold field, each narrowing toward a small empty circular void " +
-    "that its lines never reach, the two voids mirrored across the centre " +
-    "and connected by a single thin unbroken reference line. Fine " +
-    "graticule ticks along the margins. Severe, instrument-like, entirely " +
-    "geometric — no organic forms, no scene, no place.",
+    "an empty wholesale market street in Wuhan on a humid rainy morning — " +
+    "long rows of shuttered vendor stalls under corrugated awnings, mist " +
+    "between the rows — dissolving into a ghosted hand-drawn surveyor's " +
+    "plat of the market's numbered stall grid.",
 };
 
 /** One reversible generation run: a single runId stamped on every record. */
@@ -115,39 +113,45 @@ if (!fs.existsSync(caseFile)) {
 }
 const record = parseYaml(fs.readFileSync(caseFile, "utf8"));
 
-// The canonical style-e1 template from docs/IMAGES.md, with a subject
-// derived from the case's own dossier fields (ideas, never evidence scenes)
-// and the case's assigned tone.
-const subject =
-  CASE_SUBJECTS[slug] ??
-  `An allegorical emblem for a case titled "${record.title}" in the domain of ` +
-    `${record.domain}: a symbolic, typological composition suggesting the ` +
-    `question — ${record.subtitle} — without depicting any real site, artifact, ` +
-    `or dataset as documentation.`;
+// The canonical style-e2 template from docs/IMAGES.md: the case's place,
+// painted, dissolving into its ghosted survey record, in the case's own
+// palette. Subject and palette are both required per case — the place and
+// its hour are editorial choices, never derived mechanically.
+const subject = CASE_SUBJECTS[slug];
+if (!subject) {
+  console.error(
+    `No style-e2 place-and-plat subject for "${slug}". Choose the case's ` +
+      `place, hour, and archival drawing deliberately (a quiet hour, a ` +
+      `respectful distance, never the event), add it to CASE_SUBJECTS here ` +
+      `and to docs/IMAGES.md, then re-run.`,
+  );
+  process.exit(1);
+}
 
 const tone = CASE_TONES[slug];
 if (!tone) {
   console.error(
-    `No style-e1 tone assigned for "${slug}". Add it to CASE_TONES here and ` +
-      `to the tone table in docs/IMAGES.md, then re-run.`,
+    `No style-e2 palette assigned for "${slug}". Add it to CASE_TONES here ` +
+      `and to the palette table in docs/IMAGES.md, then re-run.`,
   );
   process.exit(1);
 }
 
 const prompt =
-  `Minimal modern technical editorial illustration, in the visual language ` +
-  `of a precise instrument chart or forensic diagram. ${subject} ` +
-  `Thin, exact vector-like linework: fine isolines, section lines, ` +
-  `waveform traces, small registration marks, restrained geometric ` +
-  `abstraction. Cold palette only — ${tone} — on a near-white cool ` +
-  `porcelain field (#eef1f4) or a deep blue-black field (#10151b); ` +
-  `Prussian blue, slate, steel grey, indigo, graphite throughout; no warm ` +
-  `cream, sepia, ochre, or terracotta tones anywhere. Flat, matte, ` +
-  `documentary and quiet: no glow, no lens flare, no 3D render look, no ` +
-  `gradients beyond subtle atmospheric shading. Generous negative space, ` +
-  `austere composition. Absolutely no text, no numbers, no labels, no ` +
-  `captions, no border frame lines. Stylized editorial artwork, obviously ` +
-  `an illustration — not photorealistic, no photograph.`;
+  `Editorial cover artwork, unmistakably a gouache painting — visible ` +
+  `brushstrokes, matte pigment, soft paper-textured edges, nothing ` +
+  `photographic. Upper two-thirds: ${subject.split(" — dissolving into")[0]}, ` +
+  `rendered in loose confident brushwork with buildings and land as ` +
+  `simplified planes of pigment. Lower third: the painting dissolves ` +
+  `downward into ${subject.includes("dissolving into") ? subject.split("dissolving into ")[1] : "a ghosted hand-drawn surveyor's plat of the place"} ` +
+  `— thin ink linework, faint as a watermark, as if the painted scene ` +
+  `rests on an archival record of itself. The transition is gradual and ` +
+  `atmospheric, paint strokes breaking apart into ink lines. Palette: ` +
+  `${tone}. Quiet, elegiac, dignified; completely empty of people; no ` +
+  `violence, no memorials, no flags. Absolutely no text, no numbers, no ` +
+  `labels, no logos, no border frame lines. Painterly throughout — ` +
+  `obviously a painting, never photorealistic, never mistakable for a ` +
+  `photograph.`;
 
 const outDir = path.join(
   process.cwd(),
