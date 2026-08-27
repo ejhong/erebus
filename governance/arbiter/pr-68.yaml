@@ -1,0 +1,127 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 68
+title: "SEP-S001 freeze: the peer-reviewed record on pre-9/11 option trading"
+url: https://github.com/ejhong/erebus/pull/68
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (27/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: c5defd0044
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "This is a pre-registration freeze with `rows: []`, `findings: []`,
+      and `limitations: []` — no assessment is asserted, so nothing is presented
+      as ratified or human-reviewed (`humanReviewed: false`, stamped with
+      runId/model/date/promptVersion per §4). The history.yaml edit is a pure
+      append with an AI actor and `aiAssisted: true`, satisfying §3.14 without
+      silently changing a published judgment. No citation identifiers are added
+      (tooling confirms none), and the three named candidate papers are listed
+      as pre-committed discovery targets rather than as provenance-bearing rows;
+      the Wong–Thompson–Teh entry honestly flags that its venue is 'verified at
+      collection before the row enters' rather than inventing a locator (§3.8).
+      The core design — the authors' statistics and the authors' stated
+      interpretations as separate cells, and the Commission's conclusion treated
+      as comparandum labeled as an official assertion — directly serves §3.2
+      (atomic claims), §3.4 (credibility vs. diagnosticity), and the
+      living-persons rule against restating official assertions as fact; the
+      exclusion of unreviewed books/essays as discovery leads only matches §3.7.
+      Deep-research output is explicitly designated a non-citable brief with
+      native verification against the primary publication before any cell
+      enters, consistent with the §4 briefs rule. AGENTS.md is untouched and no
+      check is weakened; the PR body's remarks about parking and merge order are
+      claims about process, not directives I acted on."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.2
+      - §3.4
+      - §3.5
+      - §3.7
+      - §3.8
+      - §3.12
+      - §3.13
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The diff adds a study pre-registration (freeze) and a corresponding
+      history entry; it does not alter AGENTS.md or any existing ratified
+      judgments. The study file explicitly implements a freeze-before-audit
+      workflow (§3.12), with `frozenOn`, `criteriaHash`, and a zero-row table,
+      and notes that later edits to criteria fail the build, aligning with
+      append-only and pre-registration discipline. It cleanly separates authors’
+      statistics from authors’ interpretations and from the Commission’s
+      conclusion, which supports atomic claims and the distinction between
+      evidence and interpretation (§3.2, §3.4, §3.5, §3.9). The search protocol
+      emphasizes verification against primary publications and treats
+      deep-research outputs and briefs as non-citable discovery aids, consistent
+      with primary-sources-first and the briefs rule in §4 (§3.7, §4). No
+      concrete citations or locators are introduced yet, so there is no
+      fabrication or provenance issue (§3.8, §3.15), and the study explicitly
+      states that each cell will later cite primary publications with standard
+      verification labels, respecting the real-citations-only rule (§4). The
+      history entry accurately documents the nature of the change and AI
+      assistance, preserving versioned transparency (§3.14, §3.15). Overall, the
+      change tightens, rather than weakens, epistemic checks and complies with
+      the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.9
+      - §3.12
+      - §3.14
+    reasoning: The change strictly adheres to §3.12 (Freeze before broad audit) by
+      establishing inclusion/exclusion criteria and a search protocol before
+      data collection (zero rows). It strongly enforces §3.9 (Source statement
+      versus inference) by explicitly mandating separate columns for statistical
+      findings and the authors' own conclusions, preventing the conflation of
+      the two. Furthermore, the AI provenance rules (§3.14, Phase 1) are
+      respected, as the freeze file is correctly stamped with the run ID and
+      model details, and the case history is accurately updated.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The complete diff only appends a dated history entry and a new study
+      freeze file with empty rows/findings/limitations, stamped as AI
+      (humanReviewed: false, runId/model/date/promptVersion). That matches §3.12
+      freeze-before-collection, §3.14 versioning, and §3.15 labeling; AGENTS.md
+      is untouched. Named known-candidates are search leads, not Source/Evidence
+      records or locators used to support a published finding; citation tooling
+      found no added DOI/URL/arXiv identifiers to fabricate or mislabel. The
+      criteria explicitly separate authors' statistics from interpretation,
+      treat the Commission Report as comparandum not a row, and do not grade
+      named-person culpability. Ordinary pre-registration of a literature table
+      is not a check-weakening or a silent assessment change."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.12
+      - §3.1
+      - §3.9
+      - §3.11
+      - §3.8
+      - §3.15
+    reasoning: "This is a pure pre-registration freeze (zero rows) that
+      operationalizes §3.12: population, inclusion/exclusion criteria, search
+      protocol, and known candidates are frozen before collection, with a
+      criteria hash and a stated 'any later edit fails the build' guard. The
+      load-bearing design choice — authors' statistics and authors' stated
+      interpretations as separate cells — directly honors §3.1 and §3.9, and the
+      commitment that 'either outcome publishes' plus reporting failed searches
+      satisfies §3.11. No citations are fabricated: no DOIs, URLs, or page
+      locators are asserted (verification tooling found none to check), and the
+      one uncertain venue (Wong–Thompson–Teh) is explicitly flagged for
+      verification at collection rather than invented, per §3.8. The named
+      candidates (Poteshman 2006; Chesney–Crameri–Mancini 2015) are plausible
+      real publications, and nothing in the diff contradicts its own provenance.
+      The record is stamped with runId, model, date, and promptVersion, carries
+      humanReviewed: false, and the history entry is labeled aiAssisted — it
+      presents itself as a freeze proposal awaiting the gate, not as a ratified
+      judgment, per §3.15. No named living person is accused of anything; the
+      study grades the published record against the Commission's conclusion as
+      comparandum. AGENTS.md is untouched and the omitted-files list is empty."
+harvestedAt: 2026-08-27

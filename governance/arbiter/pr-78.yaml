@@ -1,0 +1,95 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 78
+title: "Engine follow-up: promptVersion stamped on agenda proposal files"
+url: https://github.com/ejhong/erebus/pull/78
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 230c2c669c
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is purely mechanical engine plumbing: `renderProposalFile`
+      now takes a `promptVersion` and emits it alongside model and runId in the
+      proposal-file header, the caller passes `agenda-propose-v1`, and the test
+      asserts the string is present. This strengthens rather than weakens the
+      §3.15 stamping requirement (model, runId, promptVersion, date) and touches
+      no content/, no citations, no assessments, no published judgments — the
+      CITATION VERIFICATION section correctly reports no identifiers added. The
+      preserved 'PROPOSALS ONLY … becomes real only if adopted through the
+      normal gates' banner means nothing here presents an unratified draft as
+      ratified. AGENTS.md is untouched, and the upstream project's name appears
+      only in the PR body, not in content/, src/, app/, or public/, so the §4
+      naming guard is not tripped. The one caveat is the §4 one-way engine rule
+      (src/, scripts/ are supposed to arrive via upstream sync); the PR frames
+      this as mirroring upstream aletheia #102, i.e. fixed upstream then brought
+      down, which is the prescribed order, and no divergence-allowlist entry
+      appears needed for a hand-mirrored sync of the same change. On the
+      epistemic rules I was asked to judge, nothing is fabricated, removed, or
+      loosened."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.15
+      - §3.14
+    reasoning: The change only touches scripting and tests for agenda proposal-file
+      generation, adding an explicit `promptVersion` field alongside model and
+      runId. This strengthens compliance with §3.15’s requirement that AI
+      actions be inspectable and stamped with model/runId/prompt context,
+      improving provenance and auditability rather than weakening checks. The
+      rendered proposal header continues to state that proposals are not yet
+      claims or agenda items, so there is no risk of presenting unratified
+      drafts as ratified judgments. No citations, sources, or provenance details
+      are fabricated or altered; no content under `content/` or featured case
+      material is touched. The tests are updated to assert the presence of the
+      new stamp, supporting §3.14’s versioning and change-traceability goals. No
+      constitutional powers (like AGENTS.md edits) are modified, and no
+      safeguards are bypassed or reclassified.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+    reasoning: The change directly enforces §3.15 ('Accountability is
+      inspectability') by adding the required 'promptVersion' stamp to generated
+      agenda proposal files. It modifies the generation script, the rendering
+      template, and the tests to successfully surface this data point alongside
+      the existing model, runId, and date, strengthening the audit trail without
+      fabricating data or weakening checks.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The complete three-file diff only adds the missing promptVersion
+      stamp to agenda proposal-file rendering, the CLI writer, and the
+      fail-closed test. That implements §3.15 inspectability (model, runId,
+      prompt version, and date) rather than weakening it; the files still label
+      themselves as unratified proposals. No AGENTS.md, content/, citations,
+      provenance, or published assessments are touched, so §§3.7–3.8, 3.14, and
+      the living-persons rules are not in play. Hardcoding promptVersion
+      "agenda-propose-v1" is an honest stamp, not a fabricated locator.
+      Engine-path edits in scripts/ and src/ are a §4 process preference, not a
+      check-dodge, and ordinary incompleteness of that kind is not a violation.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+    reasoning: "The diff does exactly one thing: it adds the missing `promptVersion`
+      stamp to generated agenda-proposal files, which §3.15 explicitly requires
+      ('stamped with model, runId, prompt version, and date'). The change is
+      confined to tooling (scripts/lib/agenda-propose.mjs,
+      scripts/propose-agenda.mjs) plus its test; it touches no content/, no
+      citations (verification section is empty), no published judgments, and
+      does not edit AGENTS.md. The generated file header retains the 'PROPOSALS
+      ONLY' disclaimer, so unratified drafts are still not presented as
+      ratified. Stamping is strengthened, not weakened — this closes an
+      accountability gap rather than creating one. Per the PR body it mirrors an
+      upstream engine fix, consistent with the one-way engine flow, and the
+      upstream project name appears only in the (untrusted) PR body, not in any
+      committed file, so the narrowed naming rule is not implicated. The
+      hardcoded version label 'agenda-propose-v1' is a prompt identifier, not a
+      fabricated locator. Nothing here fabricates, removes provenance, or dodges
+      the gates."
+harvestedAt: 2026-08-27

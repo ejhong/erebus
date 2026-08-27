@@ -1,0 +1,100 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 73
+title: "Engine sync: operator duty 4 — needs-approval article drafts when the
+  ledger outruns the narrative"
+url: https://github.com/ejhong/erebus/pull/73
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 8320024a3b
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a single 20-line addition to
+      `.github/workflows/operator.yml` inserting a new operator duty (NARRATIVE
+      GAP) and renumbering REPORT from 4 to 5; no content records, citations,
+      locators, or assessments are touched, and the citation tooling found no
+      identifiers to check. The added instruction strengthens rather than
+      weakens the §3.15 gating: it explicitly forbids labeling article prose
+      `auto:low-risk`, forbids enabling auto-merge on it, and requires the PR be
+      opened needs-approval — which is exactly what the living-persons tiered
+      merge clause demands for anything touching featured article text or
+      statements about named persons. Its drafting constraints also track the
+      epistemic rules: no new claims, no grades the ledger does not already
+      carry, and the deflationary/qualifying half of a finding stated alongside
+      the finding (§3.5, §3.11), plus an appended history entry (§3.14).
+      Per-case PR limits and skip-if-open-article-PR are collision hygiene, not
+      check evasion. AGENTS.md is untouched, so §3.15's human-only amendment
+      reservation is not implicated. The only nit is the §4 one-way engine flow
+      rule for `workflows`, but the change is presented and framed as the
+      downstream counterpart of an upstream engine PR, i.e. the sanctioned sync
+      path, so I do not treat it as a violation."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only amends the operator workflow documentation, adding a
+      new "NARRATIVE GAP" duty that is explicitly conservative and requires
+      needs-approval PRs for any article text changes. It does not alter any
+      content files, assessments, citations, or provenance, so there is no risk
+      of fabricated sources, silent edits, or mislabelled verification. The
+      instructions emphasize not adding new claims or new grades beyond what the
+      ledger already carries, and they preserve the multi-model/human gate on
+      featured text, so checks in §3.15 are not weakened. No amendments to
+      AGENTS.md are involved, and no confidential material is authorized for
+      publication. Since there are no citations in the diff, the real-citations
+      and provenance rules are untouched. Overall, it tightens operational
+      discipline around keeping narrative summaries aligned with the underlying
+      ledger without bypassing constitutional safeguards.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+    reasoning: The change adds a new automated drafting duty to the operator
+      workflow but correctly respects the constitution's tiered merge policy and
+      ratification requirements. By explicitly mandating that any draft touching
+      featured article prose must be labeled `needs-approval` and must never be
+      auto-merged, it ensures that consequential featured content changes
+      continue to require multi-model panel or human review, avoiding any
+      check-weakening.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The complete one-file diff only inserts operator duty 4 (NARRATIVE
+      GAP) into .github/workflows/operator.yml and renumbers REPORT. It does not
+      edit AGENTS.md, content records, citations, assessments, or featured
+      article text. The new duty tells the operator to draft the smallest
+      overview.md addition for ledger findings missing from the article and to
+      open it as needs-approval, with an explicit ban on auto:low-risk labels
+      and auto-merge, which matches §3.15 and the living-persons tiered merge
+      rule rather than weakening those checks. Drafting under that gate is the
+      constitutionally allowed AI role; no unratified draft is presented as
+      ratified, and no confidential material is published. Omitted-files is
+      empty and citation verification found nothing added, so nothing in the
+      visible change breaks §3.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §3.14
+      - §3.5
+      - §3.11
+    reasoning: "The diff adds an operator duty that drafts featured-article updates
+      but routes them strictly through the needs-approval gate: it explicitly
+      forbids auto:low-risk labeling and auto-merge on article prose, which is
+      exactly the tiered merge policy §3.15 demands for anything touching
+      featured content or named persons. Drafting itself is a permitted AI
+      function under §3.15; publication still requires multi-model ratification
+      or founder approval ('the panel and the founder hold the pen on featured
+      text'), so no check is weakened — the instruction actually reinforces the
+      gate. The drafting constraints serve the epistemic rules: no new claims or
+      grades beyond what the ledger already carries (anti-fabrication), the
+      qualifying/deflationary half stated alongside each finding (§3.5, §3.11),
+      and a mandatory history entry (§3.14). The upstream name appears only in
+      the PR body, which the founder's 2026-08-25 amendment expressly permits
+      outside rendered site inputs; the workflow text itself is clean. No
+      citations are added, and AGENTS.md is untouched."
+harvestedAt: 2026-08-27

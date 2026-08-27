@@ -1,0 +1,113 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 77
+title: "Engine sync: parked-PR exclusion in supersede-close; operator
+  narrative-gap duty"
+url: https://github.com/ejhong/erebus/pull/77
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 8320024a3b
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only two workflow files and adds no content
+      records, so no citations, locators, or assessments are at stake
+      (verification tooling found no identifiers). The content-response.yml
+      change strengthens rather than weakens a check: the supersede-close loop
+      now skips `respond/*` PRs whose arbiter verdict is FAILURE, so a parked
+      disagreement stays open and visible, which is exactly what §3.15 requires
+      ('disagreement does not publish silently'); its failure mode (a mismatched
+      check name) is fail-open only in the direction of leaving more PRs open,
+      never of auto-closing a park. The operator.yml addition inserts a
+      narrative-gap duty that explicitly forbids labeling article prose
+      auto:low-risk and forbids auto-merge, keeping featured text in the
+      needs-approval tier mandated by the living-persons/tiered-merge clause; it
+      also forbids adding new claims or grades the ledger does not carry and
+      requires the deflationary/qualifying half in the same paragraph,
+      consistent with §3.5, §3.11 and §7's symmetry rule. AGENTS.md is untouched
+      and no provenance or published judgment is altered. The PR body's claims
+      about upstream PR numbers and a prior panel park are untrusted assertions,
+      but nothing in the visible diff depends on them, and the change is
+      check-strengthening either way; workflow edits arriving as an engine sync
+      are contemplated by §4."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.11
+      - §3.14
+      - §3.15
+    reasoning: The content-response workflow change adds an explicit check to skip
+      closing `respond/*` PRs whose `arbiter` check concluded in FAILURE,
+      treating them as parked disagreements that must remain visible. This
+      directly enforces §3.15’s requirement that disagreement not vanish
+      silently and that checks not be weakened; it preserves contested material
+      rather than auto-closing it. The operator workflow change adds a
+      ‘narrative gap’ duty that ensures merged ledger findings (including
+      deflationary/qualifying evidence) are reflected in featured articles via
+      small, needs-approval PRs, with auto-merge explicitly forbidden. This
+      supports §3.11 and §3.14 by preventing omission of unfavorable or new
+      evidence from the narrative while keeping article changes under
+      multi-party approval. No citations, locators, or provenance are added or
+      altered, so rules about fabrication and exact provenance are untouched.
+      The workflows do not bypass CI, downgrade checks, or alter AGENTS.md, and
+      they strengthen rather than weaken governance around featured text and
+      parked disputes.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+      - §3.Living persons and active proceedings
+    reasoning: The diff correctly implements two constitutional protections. First,
+      it prevents the supersede-close loop in content-response.yml from closing
+      parked PRs (where the arbiter check failed), enforcing §3.15's rule that
+      disagreements must remain visible rather than being silently erased.
+      Second, the new operator narrative-gap duty in operator.yml explicitly
+      requires that drafted article text additions be opened as needs-approval
+      PRs without auto-merge enabled, perfectly aligning with the tiered merge
+      policy for featured text under the living-persons rules.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The complete two-file workflow diff does not touch AGENTS.md,
+      content/, featured records, or citations. The content-response.yml change
+      adds an explicit skip when a prior respond/* PR’s arbiter check concluded
+      FAILURE, so a park stays open and visible instead of being closed as
+      superseded; that implements §3.15’s rule that disagreement must not
+      publish or vanish silently, rather than weakening it. The operator.yml
+      insertion adds a NARRATIVE GAP duty that drafts the smallest article
+      addition as a needs-approval PR, forbids auto:low-risk labels and
+      auto-merge, adds no new claims or grades, and keeps featured prose under
+      panel/founder ratification—matching the living-persons tiered merge policy
+      and §3.15’s ban on unilateral publication of featured text. Workflows are
+      in the engine one-way sync path under §4; nothing here fabricates
+      provenance, reclassifies a change to dodge checks, or presents an
+      unratified draft as ratified.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §3.14
+      - §3
+    reasoning: "Both hunks strengthen the constitution's checks rather than weaken
+      them. The content-response.yml change adds a parked-PR exclusion to the
+      supersede-close loop: any respond/* PR whose arbiter verdict is FAILURE is
+      left open 'until settled deliberately,' which directly implements §3.15's
+      requirement that disagreement not vanish silently — auto-closing a parked
+      PR would have erased a contested record, so this closes a real gap in the
+      checks. The operator.yml narrative-gap duty instructs the operator only to
+      draft needs-approval PRs for article prose, explicitly forbidding
+      auto-merge and auto:low-risk labels on featured text ('the panel and the
+      founder hold the pen on featured text'), matching the tiered merge policy
+      that anything touching article text is needs-approval. It also constrains
+      drafts to add no new claims and no grades absent from the ledger, requires
+      the deflationary/qualifying half of each finding in the same paragraph
+      (§3.11/§3.4 spirit), and requires a history entry per §3.14. No AGENTS.md
+      edit, no content/ citations to verify (tooling found none), no provenance
+      or published judgment is altered, and the sync direction (upstream → this
+      repo) is the sanctioned one. The PR body's self-descriptions are
+      untrusted, but the diff itself matches what it claims."
+harvestedAt: 2026-08-27

@@ -1,0 +1,98 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 69
+title: "Engine sync: content response batches hourly instead of per canon push"
+url: https://github.com/ejhong/erebus/pull/69
+verdict: park
+reason: "4 seat(s) find a violation: Opus 5 (Anthropic) (§3.15); Gemini 3.1 Pro
+  (Google) (§3.15); Grok 4.6 (xAI) (§3.15); Kimi K3 (Moonshot, via Venice)
+  (§3.15); only 1 of 5 seats affirm compliance (4 required)"
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 5da30b1c2c
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "The PR body asserts that the new supersede-close loop closes older
+      `respond/*` PRs 'except a PR the arbiter has parked, which is a live
+      disagreement and stays visible (§3.15)', but the diff contains no such
+      exclusion: the `gh pr list --jq` filter selects every open PR whose head
+      branch starts with `respond/` other than the current one, and closes it
+      with `--delete-branch`. As written, a parked/contested judgment PR — the
+      exact artifact §3.15 requires to be displayed as contested rather than
+      resolved silently — would be auto-closed and its branch deleted by the
+      next hourly run, which both weakens the disagreement check and destroys
+      the visible record of it (§3.14/§3.15). The body's own history ('the
+      upstream panel parked the first version of this change and was right')
+      shows the author knew this exclusion was required, so the mismatch between
+      claimed and actual behavior is positive evidence rather than a style
+      quibble. The other elements — hourly cron, `cancel-in-progress: false`,
+      unchanged risk labeling that still routes non-low-risk output to
+      needs-approval — are fine on their own. Secondarily, the new header
+      comment cites 'docs/DECISIONS.md' for the 2026-08-26 trigger change while
+      no DECISIONS.md entry is added in this single-file diff. Fixing the filter
+      to skip parked/contested PRs (and landing the decisions note) would make
+      this compliant."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only adjusts CI workflow behavior (trigger timing,
+      concurrency policy, and automatic superseding of older response PRs) and
+      does not touch content, citations, or epistemic assessments. No sources,
+      locators, or provenance details are added or altered, so rules about
+      fabrication, exact provenance, and verification labels are unaffected. The
+      scheduled hourly batching and non-cancellation of in-flight runs do not
+      weaken the constitutional checks in §3.15; they just change when and how
+      often the judgment layer runs. Auto-closing older respond PRs explicitly
+      treats newer runs as superseding predecessors, avoiding conflicting
+      merges, and does not silently overwrite published assessments (since
+      overlays are regenerated append-only and merged via normal gates). No
+      edits are made to AGENTS.md or other constitutional text. Given the
+      absence of omitted files and the purely mechanical nature of this workflow
+      change, it complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The PR body claims the code excludes parked PRs to ensure live
+      disagreements remain visible, but the implementation fails to do this. The
+      `gh pr close` loop in the diff unconditionally selects all open PRs with a
+      head branch starting with `respond/` and deletes their branches, without
+      filtering for parked labels or statuses. This would silently erase parked,
+      contested changes, violating the requirement that they remain 'parked and
+      displayed as contested' and weakening the ratification checks.
+  - seat: Grok 4.6 (xAI)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "The cron batching and cancel-in-progress: false are operational and
+      do not by themselves weaken ratification or CI. The added loop, however,
+      runs `gh pr list` for every still-open `respond/*` PR other than the
+      branch just created and closes it with `--delete-branch`, with no filter
+      for a parked or contested PR. §3.15 requires that disagreement not
+      disappear: contested changes stay parked and displayed as contested; this
+      unconditionally supersedes those PRs so a later hourly batch can replace a
+      live parked panel. The PR body’s claim that arbiter-parked PRs are
+      excluded is not in the workflow text. No AGENTS.md edit and no citation or
+      content-record fabrication appear in this one-file diff."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "The new supersede-close loop closes every open respond/* PR except
+      the current run's branch — the jq filter selects only on headRefName
+      prefix and contains no carve-out of any kind. §3.15 requires that
+      disagreement not publish silently: contested changes are parked and
+      displayed as contested. The PR body itself acknowledges this, asserting an
+      exclusion for arbiter-parked PRs ('a live disagreement... stays visible'),
+      but that exclusion does not exist in the code shown. As written, a parked
+      contested PR would be auto-closed as 'superseded' with its branch deleted
+      within one hourly cycle, reclassifying a live disagreement as stale
+      cleanup — a weakening of the §3.15 contested-visibility check, which the
+      same section forbids. The trigger batching and cancel-in-progress changes
+      leave the ratification gates intact and are unproblematic in themselves.
+      Citation verification is empty and no other rule is implicated."
+harvestedAt: 2026-08-27

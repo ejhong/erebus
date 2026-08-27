@@ -1,0 +1,83 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 22
+title: Add Panel to site nav
+url: https://github.com/ejhong/erebus/pull/22
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: c830e7b94d
+promptVersion: erebus-arbiter-v2
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The entire diff is a single nav entry adding {label: \"Panel\",
+      href: \"/panel\"} to `site.nav` in `src/config/site.ts`. It touches no
+      content records, no citations, locators, assessments, or provenance, and
+      it neither weakens nor reclassifies any check — if anything it exposes the
+      governance/panel/dissent records to readers, which serves §3.15's
+      inspectability and §7's 'reveal AI involvement and human review'. The file
+      is configuration, which §4 and §8 permit this repo to edit (the PR body
+      notes it is an allowlisted divergent file, consistent with the sync-engine
+      allowlist rule in §8). No fabricated record risk exists here: if `/panel/`
+      did not build, CI/build would fail closed rather than publish a broken
+      link, so I need not verify the PR author's local-build claim to judge the
+      change. The OMITTED FILES list is empty, so nothing is hidden from me."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: 'The change only adds a navigation entry pointing to an
+      already-existing route (`/panel`) by inserting `{ label: "Panel", href:
+      "/panel" }` into the site navigation config. It does not touch any content
+      records, evidence, sources, provenance, or assessments, so there is no
+      risk of fabricated citations, altered uncertainty, or silent changes to
+      existing judgments. No constitutional files (including AGENTS.md) or
+      epistemic safeguards are modified. Linking to an existing
+      governance/operations page is consistent with the transparency and
+      inspectability goals in §3.15. As a pure UI/navigation configuration
+      tweak, it does not implicate any of the non-negotiable epistemic rules and
+      therefore complies with the constitution.'
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §8
+    reasoning: The diff contains a single-line configuration change adding a
+      navigation link for an existing page. It does not touch AGENTS.md,
+      fabricate any citations, alter featured content, or violate any epistemic
+      rules. This complies with Section 8 which explicitly prefers
+      'configuration-layer changes' in this repository.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: 'The diff is a single insertion in src/config/site.ts adding a nav
+      item { label: "Panel", href: "/panel" }. That is a configuration-layer
+      edit this repo is allowed to make; it does not amend AGENTS.md (§3.15),
+      fabricate citations or locators, alter assessments, expose confidential
+      material, or weaken CI/ratification checks. Linking an already-exported
+      governance route in the site nav does not touch featured claims, article
+      text, case records, or named-person statements. Ordinary nav completeness
+      is not a constitutional defect.'
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a single nav entry in src/config/site.ts pointing to
+      /panel, a governance page the PR body says the engine already builds.
+      Config files are squarely within what this repo may edit (§4: 'this repo
+      edits only content, configuration, and this constitution'), and §8 permits
+      configuration-layer divergence recorded via the sync allowlist, which the
+      body asserts covers this file. The change fabricates no citation, locator,
+      or provenance; it alters no claim, evidence, assessment, or published
+      judgment, so §3.8/§3.14 and the append-only overlay rules are untouched.
+      Surfacing the Panel page — panel standings, dissent gallery, seat records,
+      operations log — affirmatively serves §3.15's
+      accountability-through-inspectability and §7's 'reveal AI involvement and
+      human review.' It does not touch featured claims, article text, case
+      records, or any named person, so it does not fall into the needs-approval
+      tier of the living-persons merge-policy amendment, and it weakens no
+      check. The body's verification claim (out/panel/index.html built with
+      KRK-001 data) cannot be confirmed from the diff, but nothing in the
+      material contradicts it, and unfamiliarity with that page or case slug is
+      not evidence of falsehood."
+harvestedAt: 2026-08-27

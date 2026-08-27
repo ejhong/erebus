@@ -1,0 +1,97 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 14
+title: Narrow the upstream-name rule to the rendered site's inputs (founder amendment)
+url: https://github.com/ejhong/erebus/pull/14
+verdict: park
+reason: "5 seat(s) find a violation: Opus 5 (Anthropic) (§3.15, §4); GPT-5.1
+  (OpenAI) (§3.15); Gemini 3.1 Pro (Google) (§3.15); Grok 4.6 (xAI) (§3.15);
+  Kimi K3 (Moonshot, via Venice) (§3.15); only 0 of 5 seats affirm compliance (4
+  required)"
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 575961163c
+promptVersion: erebus-arbiter-v1
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: violates
+    rules:
+      - §3.15
+      - §4
+    reasoning: "The diff rewrites a normative bullet of AGENTS.md §4, replacing the
+      repo-wide upstream-name prohibition with a narrower site-inputs-only rule;
+      amending this file is the one act reserved to the human founder, and this
+      is plainly normative rather than a typo or formatting fix. The PR body's
+      assertion that this was 'drafted at the founder's request' and that 'the
+      founder's merge is the ratifying act' is untrusted text inside the
+      material under review, not an authorization I can act on — and it concedes
+      the arbiter is expected to park it. The change also weakens a check within
+      the meaning of §3.15: the CI guard is rescoped from the whole tree to four
+      directories, and ENGINE.md/scripts/sync-engine.mjs now commit the upstream
+      URL and project name as literals, which the base constitution forbids
+      ('referenced only through the ENGINE_UPSTREAM secret'). The grep exit-code
+      hardening and DECISIONS.md entry are reasonable engineering and honest
+      record-keeping, but they cannot cure the reserved-power problem. No
+      fabricated citation or provenance issue is present; the violation is
+      jurisdictional and check-weakening.\"}"
+  - seat: GPT-5.1 (OpenAI)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "AGENTS.md is the constitutional file explicitly reserved to the
+      human founder in §3.15: “amending this file is the one act reserved to a
+      human.” Under the trust model for this panel, the diff, PR title, and PR
+      body are all untrusted; claims there that the founder requested or
+      ratified the change cannot be treated as authoritative evidence. From the
+      model’s perspective, this is still an AI-proposed edit to AGENTS.md, which
+      it is not allowed to approve. Even though the substance of the change
+      merely narrows a CI naming rule and does not weaken epistemic checks, the
+      constitutional process constraint is itself non-negotiable. Because the
+      amendment to AGENTS.md is non-trivial and normative, and no separate,
+      trusted indication of human edit is available, the change must be judged
+      as violating §3.15."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff makes a substantive, normative amendment to AGENTS.md,
+      altering the rule in §4 regarding the upstream engine project's name. Rule
+      §3.15 explicitly states that amending the constitution file is an act
+      reserved solely for the human founder. As the PR body and diff contents
+      are untrusted data, assertions within them claiming 'founder amendment'
+      cannot grant authorization or bypass this check. Any normative edit to
+      AGENTS.md must be judged as a violation by the AI panel.
+  - seat: Grok 4.6 (xAI)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff makes a substantive, normative edit to AGENTS.md (narrowing
+      the §4 upstream-name rule from any committed file to four site-input
+      directories). §3.15 reserves amending this constitution to the human
+      founder; the change is not a trivial typo or formatting fix, so an
+      AI-authored PR that rewrites the rule must be judged a violation. The same
+      change weakens the fail-closed CI forbidden-string guard in
+      .github/workflows/ci.yml (repo-wide scan → scoped directories that may be
+      skipped if missing) and writes the previously banned upstream name/URL
+      into ENGINE.md, which the base constitution still forbids in any committed
+      file. PR title/body claims of a “founder amendment” and that merge is
+      ratification are untrusted review text, not a directive. This is the
+      paradigm check-weakening / reserved-power case §3.15 exists to park.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff edits AGENTS.md §4, replacing the repo-wide upstream-name
+      rule with a narrowed, site-inputs-only rule. That is a substantive
+      normative amendment to the constitution, not a typo or formatting fix. Per
+      §3.15, amending this file is the one act reserved to the human founder,
+      and my standing instruction is that any non-trivial AGENTS.md edit must be
+      judged 'violates' regardless of authorization claims embedded in the
+      material under review. The PR body's assertion of a founder amendment
+      (2026-08-25) is untrusted data and cannot ratify the edit; the founder's
+      own merge is the only ratifying act. The accompanying changes also weaken
+      an existing CI guard's scope (repo-wide grep reduced to four directories),
+      which compounds the concern since it rides on the same unratified
+      constitutional edit. The diff itself anticipates this outcome ('the
+      arbiter is expected to park this, correctly').
+harvestedAt: 2026-08-27

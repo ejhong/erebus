@@ -1,0 +1,156 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 30
+title: "content(covid-origins): first cut — 18 claims, 31 evidence records, 24
+  sources"
+url: https://github.com/ejhong/erebus/pull/30
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 43d5e89937
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "Every DOI/URL the diff adds resolves except two, and both failures
+      are self-explained in the diff in a way consistent with the tool output:
+      the Lancet DOI 'failure' is the checker truncating at the embedded
+      parenthesis (the record says so explicitly and uses the resolving PMC
+      deposit as the primary locator), and the NIH statement returned 403, a
+      bot-wall rather than a dead link, which the source note discloses.
+      Resolved titles match what each record claims they support
+      (abp8715/adp1133 erratum pair to the market-epicenter paper;
+      abp8337/adl0585 pair to the lineage paper), so the PR's central 'two
+      errata, one per paper' correction is corroborated by the verification
+      output rather than contradicted. Claims are atomic and the document/deed
+      split (COV-C016 well_supported vs COV-C017 unresolved) is exactly the
+      anti-smuggling structure §3.2 asks for; evidence direction is explicit;
+      sourceStatement is kept separate from editorInference throughout (§3.9);
+      independence is handled seriously (the Worobey/Pekar/Crits-Christoph
+      papers are flagged as one Chinese CDC dataset in three analytic layers,
+      ODNI 2021/2023 as one independence group, the CIA statement as one
+      spokesperson statement not many outlets). The assessment overlay is
+      append-only, stamped with runId/model/date/promptVersion,
+      humanReviewed:false, role:draft, and all records are ai_extracted — no
+      unratified draft is presented as ratified. AGENTS.md is untouched. Two
+      defects worth fixing but not rule-breaking: COV-E010's editorInference
+      states the originally published Bayes factors as '61.6 and 4.2' where
+      every other record (COV-E011, COV-C010, history.yaml) correctly gives 61.6
+      and 60.0 → 4.3 and 4.2, and the overview links 'no laboratory is publicly
+      known to have held the virus or a sufficiently close progenitor' to
+      COV-C013, which is actually about sampled relatives being too distant."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.2
+      - §3.5
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.10
+      - §3.11
+      - §3.13
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The PR only adds new content files under content/cases/covid-origins
+      plus an AI draft assessment, with no edits to AGENTS.md or any existing
+      records, so the append-only and history requirements are respected (§3.14,
+      §3.15). Claims are single propositions with clear truth conditions and
+      explicit separation between observations and higher-level inferences,
+      satisfying atomicity and observation-before-interpretation (§3.1, §3.2,
+      §3.9). Evidence entries clearly distinguish sourceStatement from
+      editorInference and assign an explicit direction
+      (supports/undermines/qualifies/context) and strength, in line with
+      evidence-direction and source-vs-evidence rules (§3.5, §3.6). All cited
+      DOIs/URLs are real per the verification tooling, and the one problematic
+      DOI is explicitly handled via the PMC URL, with no fabricated locators;
+      exact locators and verification notes are provided or, where limited
+      (bot-walls, OCR, spokesperson statements), candidly described as such
+      (§3.7, §3.8, §4 real-citations-only). Independence concerns are surfaced
+      in reliabilityNotes (e.g., shared Chinese CDC dataset, ODNI reports
+      reused), and overlapping evidence streams are explicitly flagged, honoring
+      the independence rule (§3.10). The AI assessment file is labeled as draft,
+      unratified, AI-generated, with runId/model/date, and does not present
+      itself as human-reviewed or final, matching the phase-1 AI-operation
+      constraints (§3.13, §3.15, §4). No confidential material is introduced and
+      there is no weakening of checks or misrepresentation of WHO or
+      intelligence conclusions; where prior misquotations existed in casework
+      they are corrected with transparent provenance. Overall the change appears
+      to strengthen epistemic rigor rather than violate it.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.2
+      - §3.5
+      - §3.8
+      - §3.10
+      - §3.15
+    reasoning: "The change rigorously enforces the constitution's epistemic
+      standards. The assessment explicitly carries `humanReviewed: false` and
+      `role: draft`, complying with the rule against presenting unratified
+      drafts as ratified (§3.15). Exact provenance is meticulously documented,
+      down to noting the divergence between PDF and printed page numbers (§3.8).
+      Independence boundaries are explicitly managed in the `reliabilityNotes`,
+      strictly warning against double-counting the ODNI reports and the shared
+      market datasets (§3.10). The two mechanical verification failures are
+      honestly and accurately accounted for in the source notes—an HTTP 403
+      bot-wall on the NIH statement and a parenthesis-truncation issue on the
+      Lancet DOI. Evidence direction and atomic claim separation are perfectly
+      maintained throughout."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "This is a content-only first cut: no AGENTS.md or check-weakening
+      edits, omitted-files list empty, and every added DOI/URL either resolves
+      to a title that matches the record or fails for a documented,
+      non-fabricating reason (Lancet DOI truncated by parentheses while the PMC
+      URL returns 200; NIH URL 403, labeled as a bot-wall, with ai_verified and
+      a canonical locator). Claims are atomic, sourceStatement is split from
+      editorInference, evidence carries explicit direction and locators,
+      independence of the market/ODNI streams is flagged, the assessment overlay
+      is stamped draft/unratified/humanReviewed:false, and living-person
+      material is kept to what documents state rather than culpability verdicts.
+      Residual slips (COV-E010’s wrong original Bayes-factor pair, overview
+      prose hanging the lab-holding absence on COV-C013, press-release text
+      filed under the majority-report source, 30 evidence records vs a claimed
+      31) are ordinary first-cut error, not fabrication, provenance stripping,
+      or silent ratification."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.10
+      - §3.11
+      - §3.15
+      - §4
+    reasoning: "This is a content-only launch of a new case and it hews closely to
+      the epistemic rules: primary sources throughout (§3.7), source statements
+      kept strictly separate from editor inference (§3.9), explicit evidence
+      directions, negative evidence recorded prominently (errata,
+      non-independent analytic layers, narrow animal-testing scope — §3.10,
+      §3.11), scrupulous provenance with weaknesses self-declared (OCR-derived
+      DEFUSE text, accepted-manuscript quotes for the Cell paper, third-party
+      archive custody), and the assessment is stamped runId/model/date,
+      humanReviewed: false, role: draft — nothing unratified is presented as
+      ratified (§3.15, §4). The two citation-verification FAILS are adequately
+      explained inside the records themselves: the Lancet 'failure' is the
+      checker truncating a parenthesized DOI (10.1016/S0140-6736(20)30183-5, the
+      well-known Huang et al. DOI) that the record deliberately relegates to
+      prose beneath a resolving PMC locator, and the NIH URL returns 403 — a
+      bot-wall, not a 404 — with the failure honestly disclosed in the
+      verificationNote rather than hidden. Living-persons rules are respected:
+      no named individual is graded, the accountability thread is deliberately
+      excluded from content, and document-authorship mentions carry the
+      prescribed caveats. AGENTS.md is untouched, no checks are weakened, and
+      history.yaml is append-only. One flaw worth a follow-up fix, not a
+      violation: COV-E010's editorInference states the pre-correction Bayes
+      factors as '61.6 and 4.2', contradicting the '61.6 and 60.0' stated
+      consistently in COV-E011, the assessment, history.yaml, and overview.md —
+      an ordinary internal inconsistency in a gloss, against four mutually
+      consistent records, with the underlying sources real and resolving."
+harvestedAt: 2026-08-27

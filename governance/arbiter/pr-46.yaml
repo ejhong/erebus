@@ -1,0 +1,121 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 46
+title: "Record the executed history purge: widened scope, verification,
+  corrected risk premise"
+url: https://github.com/ejhong/erebus/pull/46
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: dfea70514d
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "This is a docs-only diff (DECISIONS.md, MIGRATION-PUBLIC.md, a
+      comment header in a shell script) with no changes under content/, no
+      citations added (verification section confirms none), and no edit to
+      AGENTS.md — so §3.15's reservation of constitutional amendment to the
+      founder is not touched. The change strengthens rather than weakens checks:
+      the residual-risk premise is corrected against a concrete test (`git fetch
+      origin refs/pull/12/head` still returning the purged tree), and the GitHub
+      Support sensitive-data request is upgraded from optional courtesy to a
+      precondition for flipping visibility. Provenance is preserved append-only
+      in spirit: the superseded risk paragraph is explicitly retained and
+      labeled 'superseded 2026-08-26' rather than silently rewritten, and the
+      checklist is updated with dated, verifiable outcomes rather than vague
+      assertions. The confidentiality rule (§3.15, no publishing material
+      supplied in confidence) is served, not breached — the diff records the
+      removal of a private email and unpublished-manuscript reference and does
+      not reproduce their contents or addresses; the only residual exposure is
+      the path fragment naming a researcher, which is minimal, necessary
+      provenance for the removal record and stays in docs/, not in the rendered
+      site. Nothing here presents an unratified draft as ratified or an AI
+      record as human: the entry attributes the operation to the operating
+      session acting on the founder's stated go-ahead. Claims about what was
+      verified (fresh clone, byte-identical HEAD tree, zero document blobs) are
+      internally consistent and I see no positive evidence of fabrication in the
+      material shown."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.8
+      - §3.11
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The diff is purely in docs and a shell script comment; it does not
+      alter content under `content/` or any assessments, and adds no citations,
+      so there is no risk of fabricated sources (§4, real citations only). It
+      explicitly records that private email from a living researcher and
+      third-party copyrighted captures were present and have been purged,
+      aligning with the prohibition on publishing material supplied in
+      confidence (§3.15) and with negative evidence / correction-style
+      transparency (§3.11). The change carefully distinguishes what was actually
+      executed, preserves the superseded risk assessment while clearly labeling
+      the corrected one, and documents that HEAD content is unchanged, which
+      respects versioning and append-only assessment of decisions (§3.14). Exact
+      provenance of the purge and its consequences (paths, dates, commands like
+      `git fetch origin refs/pull/12/head`) is spelled out honestly (§3.8). The
+      script header now marks the destructive operation as already executed and
+      warns not to run it again here, which avoids weakening safeguards and
+      instead clarifies operational boundaries (§3.15). No constitutional checks
+      are removed or relaxed; if anything, the precondition for flipping
+      visibility is strengthened, so the change complies.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: The diff solely updates documentation and a script header to record a
+      history rewrite that purged copyrighted material and private
+      correspondence. It does not edit AGENTS.md. It avoids publishing the
+      private material, instead documenting its removal and using the directory
+      name solely as provenance, aligning with §3.15's ban on publishing
+      material supplied in confidence. Furthermore, the PR strengthens rather
+      than weakens the repository's checks by mandating a GitHub Support
+      sensitive-data request as a precondition for public visibility after
+      correctly identifying that git pull-request refs survive a standard
+      rewrite.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff is documentation of an already-executed history purge plus a
+      comment on the local runbook script; it does not edit AGENTS.md, featured
+      case/claim/article records, or any content/ sources. DECISIONS.md is
+      append-only with a dated execution entry; MIGRATION-PUBLIC.md preserves
+      the original residual-risk paragraph and marks it superseded, which
+      matches §3.14 rather than silently rewriting a published judgment.
+      Confidential material is described only as having been found and removed
+      (paths and categories, no email body, addresses, or manuscript text), so
+      this is an inspectability record of a purge, not publication of the
+      correspondence itself. No citation identifiers were added; the GitHub
+      sensitive-data policy link is not internally inconsistent. Omitted-files
+      is empty, so the visible change does not break §3.7–§3.15 or the
+      living-persons content rules.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: This docs-only PR records an executed history purge and, on
+      everything visible, improves constitutional hygiene rather than weakening
+      it. It documents the removal of material §3.15 flatly forbids publishing —
+      a private email from a living researcher with personal addresses, an
+      unpublished-manuscript reference, and third-party copyrighted captures —
+      and notes the removal makes the record honest where the case history
+      claimed the correspondence 'is not published.' The corrected risk analysis
+      preserves the original paragraph verbatim, explicitly marked superseded,
+      which is exactly the visible revision practice §3.14 requires, and the
+      decision to flip visibility is made *more* gated (GitHub Support
+      sensitive-data request upgraded to precondition), not less — no check is
+      weakened (§3.15). No content/ files, no AGENTS.md, no CI guards are
+      touched; no citations are added so there is nothing to fabricate; the
+      engine-direction rule is untouched since only docs and an already-executed
+      runbook script change. The claims about what the purge did cannot be
+      independently re-verified from the diff, but they are operational records
+      consistent with the founder amendments of 2026-08-26 (briefs held
+      off-repo), and there is no positive evidence of violation in the material
+      shown.
+harvestedAt: 2026-08-27

@@ -1,0 +1,132 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 79
+title: "Content response: 2026-08-27"
+url: https://github.com/ejhong/erebus/pull/79
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (34/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-27
+judgedAgainst: c4920942e9
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "AGENTS.md is untouched, and the eight new assessment files are
+      additive overlays that carry runId, model, date, promptVersion and an
+      explicit `humanReviewed: false` plus a header stating they are unreviewed
+      AI drafts — exactly the append-only, honestly-labeled form §4 and §3.15
+      require; the five `role: check` files are independent judges from five
+      different vendors feeding the concurrence panel rather than being
+      presented as ratified narrative. The one change to featured prose
+      (overview.md) softens 'impossible to audit' to 'only partly auditable' and
+      adds the declassified securities-regulator memorandum detail, and it is
+      accompanied by a history.yaml entry recording what changed, why, and the
+      acting model — satisfying §3.14 rather than a silent revision of a
+      published judgment; it also arrives as a needs-approval PR before this
+      panel, which is the correct tier. The research.yaml edit narrows an open
+      request because part of it has been performed, which is a factual update,
+      not a weakening of any check. No new DOIs/URLs were introduced
+      (verification tooling found none), and all cited record IDs (SEP-E040,
+      KRK-E063, etc.) are references into existing content that fail-closed CI
+      would catch if dangling. The Kirk overlay stays on evidence disputes,
+      labels prosecution/defense assertions as such, and explicitly states the
+      defendant is presumed innocent and that no claim grades guilt, satisfying
+      the living-persons rules. Remaining imperfections (a stray empty
+      `claimAssessments: []` nested under caseAssessment in the 8i11 file,
+      `weakestLinks_note: null`) are schema-level noise, not constitutional
+      violations."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.5
+      - §3.8
+      - §3.11
+      - §3.13
+      - §3.14
+      - §3.15
+    reasoning: "The diff only adds new AI assessment overlays and cross-model check
+      files, and makes small edits to an existing case overview, history, and
+      research agenda. All assessment YAMLs are clearly labeled as AI-generated
+      drafts, append-only overlays, with `humanReviewed: false` and do not
+      mutate canonical claim records, respecting the append-only and
+      ratification structure in §3.14 and §3.15. Verdicts, confidence levels,
+      and reasoning are consistently separated per claim, with explicit
+      evidential direction and calibrated uncertainty (§3.5, §3.13) and no
+      attempt to alter base claim wordings or existing source records. Where the
+      overview and research text are corrected regarding the put-option tracing,
+      the change increases accuracy and transparency by noting that a
+      declassified securities-regulator memorandum now partially corroborates
+      the newsletter explanation and clarifies exactly which parts remain
+      unauditable, preserving exact provenance at the narrative level (§3.8) and
+      strengthening, not weakening, checks. No citations, DOIs, or URLs are
+      introduced, so there is no risk of fabricated identifiers, and the history
+      entry documents what changed, why, and by which AI run, in line with
+      §3.14. There is no modification to AGENTS.md or to any
+      constitutional/check-enforcing mechanism, and no confidential materials
+      are exposed, so the change set fits within the constitution’s epistemic
+      and process constraints."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: The PR correctly utilizes append-only assessment files for new
+      evaluations, preserving the revision history as required by §3.14. Changes
+      to the 'september-11' overview, research agenda, and changelog correctly
+      integrate a newly available declassified memorandum without falsely
+      presenting the draft as human-reviewed, properly invoking the multi-model
+      concurrence gate (§3.15). All AI-generated files are stamped with the
+      required runId, model, date, and prompt version metadata. The
+      living-persons rules are explicitly adhered to in the 'kirk-assassination'
+      assessment, noting the presumption of innocence and refusing to grade
+      guilt. No citations are fabricated and no constitutional checks are
+      weakened.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a complete content batch: three append-only AI
+      assessment overlays and five labeled role:check panels, all stamped with
+      runId/model/date/promptVersion and humanReviewed:false, plus a documented
+      september-11 editorial correction. Nothing edits AGENTS.md or weakens
+      §3.15 checks; no new DOI/URL identifiers were added (verification found
+      none); overlays do not mutate canon claims. The overview.md/research.yaml
+      edits only walk back an overstated “impossible to audit / never published”
+      line to match what the case’s own evidence IDs (SEP-E022/SEP-E040) and the
+      independent check syntheses already describe, with a history.yaml entry
+      stating what changed, why, and that it publishes only through multi-model
+      concurrence. The kirk overlay explicitly does not grade guilt and records
+      presumption of innocence. Nested empty claimAssessments in the 9/11 auto
+      file is ordinary YAML messiness, not an epistemic-rule break."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §3.14
+      - §3.8
+      - §3.9
+      - §4
+    reasoning: "The batch is exactly the material the constitution permits: the
+      three auto-*.yaml overlays are append-only, stamped with
+      runId/model/date/promptVersion, and explicitly labeled unreviewed AI
+      drafts, satisfying the Phase-1 overlay rules and §3.15's ban on presenting
+      unratified drafts as ratified. The five check-*.yaml runs are blind,
+      multi-vendor (Google, OpenAI, xAI, Moonshot, Anthropic), labeled role:
+      check and NOT human reviewed, and they independently corroborate the
+      factual basis of the one featured-content edit — the declassified
+      securities-regulator memorandum (26 of 28 September 10 put buyers citing
+      the newsletter) appears consistently across the opus auto-draft and the
+      grok/kimi/gpt checks. The overview.md and research.yaml edits are a
+      documented correction (from 'impossible to audit' to 'partly auditable'),
+      with a history.yaml entry recording what changed, why, and the actor,
+      satisfying §3.14's visible-revision requirement; the memorandum claim is
+      phrased as a source statement ('a ... memorandum now reports'), respecting
+      §3.9. The Kirk overlay keeps the proceeding framed as evidence disputes,
+      attributes statements to their sources, and states the presumption of
+      innocence, per the living-persons rules. No citations were added for
+      mechanical verification to flag, no AGENTS.md or engine file is touched,
+      and no check is weakened. One wart: the september-11 auto overlay contains
+      a stray nested 'claimAssessments: []' under caseAssessment alongside the
+      top-level list — a malformed-record matter for the fail-closed Zod/build
+      gate, not an epistemic violation in the content itself."
+harvestedAt: 2026-08-27

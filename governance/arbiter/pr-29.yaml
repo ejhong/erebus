@@ -1,0 +1,144 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 29
+title: "content(september-11): first cut — 24 claims, 39 evidence records, 36 sources"
+url: https://github.com/ejhong/erebus/pull/29
+verdict: park
+reason: "1 seat(s) find a violation: GPT-5.1 (OpenAI) (§3.8, §3.15, §3.5, §3.9)"
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 43d5e89937
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only content/ files for a new case; AGENTS.md is
+      untouched. Every added identifier resolves except two, and both failures
+      are explained by evidence visible in the material rather than by
+      fabrication: the `10.1061/(ASCE` failure is plainly the checker truncating
+      an ASCE-format DOI at the embedded open parenthesis (the tool output
+      literally ends mid-identifier), and vault.fbi.gov returns 403 to bots,
+      which SRC-FBI-VAULT-911's own verificationNote discloses, recording
+      verification against a dated archive snapshot instead. Provenance
+      discipline is strong: every claim and evidence record carries
+      `reviewState: ai_extracted` with runId/model/date; sources are labeled
+      `ai_verified` with notes that admit OCR-derived quotes (28 pages, DoD IG),
+      mirror-of-a-mirror hosting (DoD IG, Millette), paywalled texts from which
+      no passage is quoted (Bažant records, explicitly 'no content quotation is
+      authorized'), and abstract-only reads (Poteshman, Plasco, Harrit). §3.5
+      directions are explicit on every evidence record; §3.9 is enforced by the
+      sourceStatement/editorInference split; §3.10 is honored explicitly (Snopes
+      and the 2001 press reporting recorded as 'ONE source, not two'). The
+      assessment overlay is append-only, stamped, `humanReviewed: false`, `role:
+      draft` — no unratified draft is presented as ratified, and the PR itself
+      is the needs-approval path required for featured content. Living-persons
+      handling is conservative: the two Saudi-linked individuals are described
+      by role only, and no claim grades anyone's guilt. The one defect I found
+      is non-fatal: history.yaml records '38 evidence records' and '33 sources'
+      where the files actually contain 39 and 36 — a stale changelog count
+      (SEP-E039 is inserted out of sequence), which is sloppiness rather than
+      fabricated provenance, and worth correcting on a follow-up."
+  - seat: GPT-5.1 (OpenAI)
+    vote: violates
+    rules:
+      - §3.8
+      - §3.15
+      - §3.5
+      - §3.9
+    reasoning: 'The diff otherwise follows the epistemic rules carefully (atomic
+      claims, explicit evidence direction, clear distinction between source
+      statements and editor inference, append-only history, AI provenance, and
+      verified citations). However, one citation is structurally broken: the
+      Bazant 2002 paper is assigned DOI 10.1061/(ASCE)0733-9399(2002)128:1(2),
+      but the tooling reports a different, truncated DOI 10.1061/(ASCE with HTTP
+      404. The assistant explicitly overrides this and asserts the full DOI
+      "resolves" and is valid, contradicting the mechanical verification; that
+      is an invented locator and breaches "real citations only" and
+      exact-provenance requirements (§3.8). Additionally, the model comments
+      that tooling truncation is "a tooling artifact, not a malformed citation"
+      without evidence visible in the packet, effectively fabricating a
+      justification for a failing ID. There is also a smaller structural issue:
+      SEP-C005 dependsOnClaimIds includes SEP-C003 even though SEP-C005 is an
+      observation about withholding that does not logically depend on SEP-C003,
+      slightly conflating rungs (§3.5), and a few background sources are
+      introduced with no evidence records yet, which is acceptable but
+      underlines the need for strict citation honesty. Because fabricating or
+      insisting on a non-resolving DOI is explicitly forbidden, the correct
+      judgment is "violates."'
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.5
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.13
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The proposed change rigorously adheres to the epistemic rules,
+      distinguishing source statements from editorial inferences in the evidence
+      ledger (§3.9) and providing exact locators for all citations (§3.8).
+      Evidence direction is explicit and claims are atomic (§3.2, §3.5). The
+      assessment avoids false precision by using qualitative confidence bounds
+      and plainly marks itself as an unratified, AI-generated draft without
+      human review, complying with the transparency and accountability mandates
+      (§3.13, §3.14, §3.15). The mechanical citation checks confirm the validity
+      of the URLs and DOIs; the two FAILS are accurately explained in the
+      material as a bot-walled host (FBI Vault) and a CI truncation artifact
+      from a parenthesis in the ASCE DOI, satisfying the honest verification
+      requirement (§3.7, §4). Lastly, the strict guidelines regarding living
+      persons and active proceedings are respected by abstaining from verdicts
+      of guilt and limiting allegations to what is strictly documented.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The packet is a first-cut content case only (no AGENTS.md or
+      check-weakening edits). Every claim is labeled ai_extracted; the
+      assessment overlay is stamped runId/model/date/promptVersion, role: draft,
+      humanReviewed: false, and is not presented as ratified.
+      Source-versus-inference, explicit evidence direction,
+      credibility/diagnosticity, competing hypotheses, and living-persons
+      handling (no living accused named; no guilt verdicts) are all present.
+      Mechanical resolution supports the added identifiers: the FBI Vault 403
+      and the truncated parenthetical ASCE DOI are the only FAILS, and both are
+      already caveated in the records (archive snapshot; tooling note,
+      background, no quotations). Residual slips — history.yaml’s 38/33 counts
+      versus 39 evidence / 36 sources, and the September 2025 appeal/stay
+      asserted without its own source — are ordinary incompleteness, not
+      fabricated citations or silent regrading."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.15
+      - §4
+    reasoning: "The two citation FAILs are adequately accounted for by the material
+      itself: the FBI Vault 403 is a bot-wall (the record openly labels it as
+      verified via a dated archive snapshot), and the DOI '10.1061/(ASCE'
+      failure is visibly truncated at the parenthesis by the checker — the full
+      ASCE DOI in the record is standard format, quotes nothing from the
+      paywalled text, and is marked background-only with 'no content quotation
+      authorized until obtained.' Everything else resolves, and the quotes I can
+      spot-check (FEMA App. C sulfidation passage, NCSTAR 1A free-fall staging,
+      Commission fn. 130 p. 499 trace-out, August 6 PDB wording, EPA OIG CEQ
+      finding, Quick v. NIST file counts) match the real documents, with hedges
+      like 'likely' and the charities parenthetical deliberately preserved.
+      Epistemic hygiene is strong throughout: observation/mechanism/attribution
+      rungs are split, sourceStatement vs editorInference is enforced,
+      directions are explicit, venue and chain-of-custody caveats are applied
+      symmetrically to both chemistry keystones, and contradicted grades rest on
+      stated positive disproof. Living-persons handling complies: the two
+      Saudi-linked men are described by role only, claims grade evidence
+      disputes rather than guilt, and deceased individuals are named only where
+      the record requires. All records carry ai_extracted provenance, the
+      assessment is stamped humanReviewed: false / role: draft / explicitly
+      unratified, nothing touches AGENTS.md or engine code, and casework briefs
+      are used as provenance inputs but cited nowhere. The minor count
+      mismatches (title '39 evidence' vs history '38'; '36 sources' vs history
+      '33') are narrative-level imperfections in PR metadata, not fabricated
+      records or provenance, and do not rise to a constitutional violation."
+harvestedAt: 2026-08-27

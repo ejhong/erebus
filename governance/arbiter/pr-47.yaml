@@ -1,0 +1,144 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 47
+title: "KRK-S003 supersedes KRK-S001: the third searcher's post-publication
+  discovery joins the table"
+url: https://github.com/ejhong/erebus/pull/47
+verdict: park
+reason: "3 seat(s) find a violation: Opus 5 (Anthropic) (§3.8, §3.13, §3.14);
+  GPT-5.1 (OpenAI) (§3.8, §3.11, §3.15); Gemini 3.1 Pro (Google) (§3.8, §3.15,
+  §4); only 2 of 5 seats affirm compliance (4 required)"
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 48d9564d22
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: violates
+    rules:
+      - §3.8
+      - §3.13
+      - §3.14
+    reasoning: "Adding the Emanuel AME row changes the study's denominator, but the
+      numeric claims that depend on it were not updated, and the diff therefore
+      publishes records that misdescribe their own source. The new krk-s003.yaml
+      carries eighteen rows (sixteen non-censored, matching S001's 'fifteen
+      comparable venues' + Emanuel), yet finding 4 still asserts 'formal
+      scene-release dates could not be found ... for seven of fifteen venues'
+      and limitation 2 repeats 'Seven of fifteen release-date cells' and 'seven
+      of fifteen rows were discovered after the freeze' — while finding 3 in the
+      same file concedes 'Emanuel AME lacks a published release date too', a
+      direct self-contradiction created by this change. The re-pointed evidence
+      records compound it: KRK-E057 and KRK-E058 now cite KRK-S003 while their
+      limitations still read 'Fifteen comparable venues' and 'Uniqueness within
+      a fifteen-venue table', so a published base-rate assessment misstates the
+      size of the base it rests on (§3.8, §3.13). Provenance is also internally
+      inconsistent in sources.yaml: rather than adding a source, the diff
+      renames SRC-KRK-S001 in place (deleting the container for the published
+      S001 workpaper, §3.14) and leaves the old identifier text, so the record
+      now titled 'study KRK-S003, superseding KRK-S001' states that it was
+      'superseded same day by KRK-S003' — a source that claims to be superseded
+      by itself. Secondary, hedged concern: the Uvalde row's locator slug
+      ('one-year-later-...') is dated in the citation text as 'Uvalde Hesperian,
+      August 19, 2026', which I cannot reconcile from the material shown. The
+      Emanuel AME substance and the resolved URLs look fine; the problem is
+      arithmetic and provenance hygiene that must be corrected before this
+      publishes."
+  - seat: GPT-5.1 (OpenAI)
+    vote: violates
+    rules:
+      - §3.8
+      - §3.11
+      - §3.15
+    reasoning: The change adds many new factual claims about dates, actions, and
+      sequences in 2000–2026 events, including living-person and
+      ongoing-proceeding contexts (e.g., Robb Elementary, Uvalde DA, 2026
+      records) but backs them with only very high-level, non-located citations
+      (single URLs or outlet bundles without page, section, or timestamp). For a
+      tabular study whose core purpose is precise timing, this falls short of
+      the constitution’s requirement for exact provenance and explicit locators
+      or an explicit ‘unverified’ label when locators cannot be checked (§3.8).
+      The Robb Elementary row presents detailed assertions about non-release, DA
+      decisions, and timing (‘1,200+ days’, ‘still withheld August 2026’) as
+      established facts based on a single local news URL, instead of clearly
+      framing them as source assertions with tight locators and carefully
+      separated inference, which risks overstepping the heightened care mandated
+      for living persons and active proceedings (§ living-persons rules, via
+      §3.11’s negative-evidence recording standard). Finally, the `sources.yaml`
+      entry silently reassigns the existing source ID from KRK-S001 to KRK-S003
+      and overwrites its metadata, effectively erasing the original workpaper as
+      a distinct source rather than adding a new source record and marking
+      supersession; this alters previously published provenance instead of
+      treating assessments and studies as append-only (§3.15’s ban on weakening
+      or dodging checks and the append-only ethos in §3.14/Phase-1 rules).
+      Because these issues are intrinsic to the new study and source mutation,
+      they constitute constitutional violations rather than minor stylistic
+      imperfections.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §3.8
+      - §3.15
+      - §4
+    reasoning: "The change contains multiple violations of provenance and
+      append-only rules. First, it introduces internally inconsistent provenance
+      (§3.8, §3.15): the new study row for Emanuel AME explicitly states it is a
+      'post-freeze discovery by the protocol's third searcher' (Gemini), but the
+      study's limitations explicitly claim 'The Gemini deep-research run's
+      outcome is recorded in the collection PR; the union above does not depend
+      on it.' Second, replacing `SRC-KRK-S001` with `SRC-KRK-S003` in
+      `sources.yaml` destructively deletes a published source record, violating
+      the 'append-only catalog/source additions' rule (§4, §3.15). Finally, by
+      updating the evidence records (`KRK-E057`) to point to the new `KRK-S003`
+      study without updating the `sourceStatement` or limitations, the agent
+      created a quote that no longer matches its stated source (e.g., the
+      evidence limitation still reads 'Fifteen comparable venues', failing to
+      account for the newly added row)."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds an append-only successor workpaper (KRK-S003) with
+      humanReviewed: false, stamps runId/model/date/promptVersion, records the
+      change in history.yaml, and retargets KRK-E057/E058 plus the workpaper
+      source to the new study rather than editing published S001 rows or
+      AGENTS.md. Newly added DOIs/URLs that the repo tooling could reach
+      resolve; the single FAILS hit is an Oregonian URL returning HTTP 403,
+      which is access denial on a real news host, not a fabricated locator. The
+      new Emanuel AME row cites a resolving AP URL, carries an independence
+      note, keeps the frozen criteria hash, and does not add the post-freeze
+      find to knownCandidates. Stale inherited counts (“fifteen venues”, “two of
+      three searchers”) and an in-place source-id rename are ordinary editorial
+      messiness, not fabricated provenance, silent judgment changes,
+      confidence-material exposure, or check-weakening."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.8
+      - §3.12
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: "The change is a transparent supersession: KRK-S003 is a new
+      append-only file (the S001 study file is not deleted or edited), the
+      criteria freeze is inherited unchanged (same hash 14c82614b623), and the
+      post-freeze discovery of the Emanuel AME row is honestly disclosed via its
+      independenceNote rather than backfilled into knownCandidates — exactly
+      what §3.12 and §3.8 demand. The re-pointing of KRK-E057/E058 and the
+      SRC-KRK-S001→S003 source swap are not silent edits: history.yaml records
+      what changed, why, and the actor, satisfying §3.14's visible-revision
+      requirement, and the new study carries runId/model/date/promptVersion with
+      humanReviewed: false, so nothing unratified is presented as ratified or
+      human (§3.15, §4). Of the 18 added citations, 17 resolve; the single FAILS
+      is an HTTP 403 (bot-wall, not 404) on a major news outlet whose URL slug
+      matches the row's described event, which is context for blocking rather
+      than fabrication. The Emanuel row's core facts (2015-06-17 event, day-3
+      readmission, day-4 services, perpetrator in custody from day 1) are
+      internally consistent and plausible. One imperfection: the inherited
+      coverage limitation still reads 'two of three searchers completed' and
+      'the union above does not depend on [Gemini]' while the table now includes
+      the Gemini-surfaced row — stale inherited text, but the final limitation
+      states the actual supersession plainly, so it misleads no one who reads
+      the record. No AGENTS.md edit, no engine or CI changes, no named-person
+      guilt grading; the odd '#issuecomment-new' link appears only in the
+      untrusted PR body, not in any published record."
+harvestedAt: 2026-08-27

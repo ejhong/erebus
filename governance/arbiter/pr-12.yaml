@@ -1,0 +1,114 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 12
+title: "KRK-001 artwork: style-e1 cover and four provenance-verified plates"
+url: https://github.com/ejhong/erebus/pull/12
+verdict: pass
+reason: 4 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 0f85a698d0
+promptVersion: erebus-arbiter-v2
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds a new images manifest, four Commons plates with
+      license, credit, licenseUrl, photographer, date, sourceUrl and original
+      file title, plus an AI-generated cover that is explicitly labeled `source:
+      generated`, `license: Project artwork (AI-generated)`, with model, runId,
+      styleVersion and the full prompt recorded — honest provenance rather than
+      a fabricated one (§3.8, §4 real-citations rule). Living-persons discipline
+      is respected: no injury imagery, no imagery of the accused, the FBI's
+      person-of-interest identification in P02 is attributed to the FBI and the
+      caption explicitly states the figure is not identifiable from the image
+      itself, and P04's numbered markers are labeled as a contributor-added
+      orientation aid rather than an official exhibit — assertions labeled as
+      assertions, not restated as fact. Plate `depicts` text is written in
+      observation language and the one inferential element (P03's reference to
+      the courtyard being excavated and paved) is attributed to records and
+      anchored to KRK-C013, satisfying §3.9. No assessment is altered, no check
+      is weakened, AGENTS.md is untouched, and the article-text change correctly
+      rides the needs-approval path (this review) rather than auto-merge. The
+      only blemish I can see is P02's `date: 2025-09-12` against a `depicts`
+      line saying the FBI released the video on September 11, 2025 — plausibly
+      the Commons upload date versus the release date, a one-day ambiguity worth
+      tightening but not fabrication; the underlying files and Commons pages
+      postdate my knowledge and I decline to infer fabrication from
+      unfamiliarity."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: 'The change introduces image metadata, plate insertions in the
+      overview, documentation of tone, static assets, and minor script
+      configuration without touching AGENTS.md or any ratified assessments. The
+      Commons-sourced plates include explicit provenance fields (photographer,
+      date, sourceUrl, originalTitle) and clear license declarations, consistent
+      with §3.8 on exact provenance and the "real citations only" requirement in
+      §4. The captions and `depicts` fields are written in observation language
+      and, where interpretive (e.g., FBI identifying a person of interest, or
+      stating the figure is not identifiable from the image itself), they
+      clearly attribute interpretation to the FBI or to public records rather
+      than asserting it as fact, aligning with §3.1 and §3.9. The living-persons
+      constraints are respected: no gore, no accused-person imagery, and the
+      overview still foregrounds presumption of innocence. The AI-generated
+      cover is clearly labeled as such with model and runId, and is abstract
+      rather than depicting the event, so it does not fabricate documentary
+      evidence or provenance. No checks are weakened, no citations are
+      fabricated, and no append-only assessment history is altered, so the
+      proposal complies with the constitution.'
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules:
+      - §3.8
+      - §4
+    reasoning: The PR adds four imagery plates sourced from Wikimedia Commons with
+      URLs, metadata, and timestamps from July and September 2025. Because these
+      events and files postdate my training data, I cannot independently verify
+      whether these specific Wikimedia Commons URLs and their contents are
+      authentic or if they are fabricated locators. The constitution strictly
+      prohibits fabricated citations and demands exact, verified provenance
+      (§3.8, §4). Since the question of fabrication turns on facts newer than my
+      knowledge that cannot be verified solely from the provided diff, I must
+      vote unsure.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff adds case artwork records, plate shortcodes, matching
+      tone/subject configuration, and image binaries; it does not edit AGENTS.md
+      or weaken §3.15 checks. Cover metadata labels the work as generated
+      (model, runId, styleVersion, full prompt) rather than as a documentary
+      source. Plate records carry Commons locators, licenses, credits, and
+      claimIds, and the depicts/alt text attributes FBI identification,
+      contributor map markers, and journalism rather than restating them as
+      established fact or grading culpability. No assessment overlays are
+      rewritten, no confidential material is introduced, and nothing in the
+      shown locators is internally self-contradictory in a way that would count
+      as fabrication. Ordinary wording mix in a couple of depicts fields is not
+      a constitutional break.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The diff does not touch AGENTS.md, and its text-level content tracks
+      the epistemic rules closely: the AI-generated cover is honestly labeled
+      with model, runId, styleVersion, and full prompt (§4 provenance display),
+      and each Commons plate carries a license, licenseUrl, credit,
+      photographer, date, and exact sourceUrl rather than an invented locator
+      (§3.8). Source statement versus inference is handled well — P02 attributes
+      the person-of-interest identification to the FBI and states the figure is
+      not identifiable from the image itself, and P04 is captioned as a
+      contributor-annotated orientation aid, not an official exhibit (§3.9,
+      §3.1). Living-persons discipline is respected: no imagery of the accused,
+      FBI language attributed rather than adopted, and the overview retains the
+      prominent presumption-of-innocence sentence. The plate claimIds (KRK-C001,
+      C013, C010) match the narrative anchors where each plate is embedded, and
+      the overview edits only insert plate shortcodes without altering any
+      published judgment. The generate-case-art.mjs change adds per-case entries
+      to CASE_TONES/CASE_SUBJECTS, which the script's own comments and
+      docs/IMAGES.md designate as the per-case configuration point, so it is not
+      an engine-logic change dodging the one-way sync rule. I cannot view the
+      binary images or re-run the Commons API license check, but nothing in the
+      visible material contradicts the stated provenance, and the build is
+      described as validating the manifest fail-closed; post-2025 event details
+      are treated per temporal humility rather than as fabrication evidence."
+harvestedAt: 2026-08-27

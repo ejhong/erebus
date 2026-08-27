@@ -1,0 +1,118 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 76
+title: "Engine sync: weekly agenda generation (upstream #102)"
+url: https://github.com/ejhong/erebus/pull/76
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 8320024a3b
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only engine machinery (a workflow step, two
+      scripts, one test) and creates no records under content/ — no citations,
+      locators, or assessments are added, so the citation and provenance rules
+      are not engaged (verification tooling found no identifiers). The new step
+      writes only to proposals/agenda/<runId>/, which the living-persons
+      merge-tier clause explicitly names as reversible, auto-mergeable material
+      that never touches featured content; the rendered file is stamped with
+      model, runId, and date and opens with 'PROPOSALS ONLY ... becomes real
+      only if adopted through the normal gates', so nothing is presented as a
+      ratified judgment (§3.15, §4). The system prompt forbids proposing grades
+      of guilt or state of mind, consistent with the living-persons rules, and
+      the validator is fail-closed: malformed kinds, short questions, missing
+      gap/wouldSettle, dangling anchor IDs, and duplicates are all dropped with
+      reasons, with a hard cap of three. No existing check is weakened or
+      reclassified — the digest and PR path are unchanged apart from appending
+      one digest file. Two minor blemishes, not violations: the PR body claims
+      validation enforces 'no culpability proposals' when the code only enforces
+      well-formedness and real ID anchors (the constraint lives in the prompt,
+      and adoption is founder-gated), and the no-key branch exits without
+      printing the outdir line the workflow expects (harmless, guarded by the -f
+      test). Adding scripts/ and workflow files is permitted here only as a
+      downstream engine sync, which is what the change is presented as; I see no
+      engine divergence introduced outside that framing."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The change adds a weekly maintenance step that calls an LLM to
+      generate *proposals* for new claims/research items/studies and writes them
+      under `proposals/agenda/`, plus a digest surfaced in the maintenance PR
+      body. These outputs never touch `content/` or any published records; they
+      only become real content if later adopted through the existing gated
+      workflow (founder judgment, freeze discipline, classifier, arbiter), which
+      is explicitly reaffirmed in comments and in the rendered file header. The
+      proposal prompt forbids culpability/guilt or state-of-mind grading,
+      aligning with the living-persons rules and §3.15’s ban on verdict-like
+      claims. Validation is fail-closed: proposals must have allowed kinds,
+      non-empty explanatory fields, and `closestExisting` IDs that exist in the
+      current ledger, with malformed or dangling-anchored items rejected and
+      reported, not auto-published. The agenda files clearly label themselves as
+      “PROPOSALS ONLY” and as AI-generated with model and runId under AGENTS.md
+      §3.15, avoiding any implication they are ratified judgments or human
+      conclusions. No citations, sources, or provenance are fabricated or
+      altered, and no epistemic safeguards are weakened; instead, this is an
+      append-only, reversible planning aid outside the published evidence
+      ledger. Therefore, the change complies with the constitution."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+    reasoning: The PR introduces an AI-driven agenda proposal step that strictly
+      complies with the constitution's guardrails. It avoids presenting
+      unratified drafts as ratified by writing exclusively to the `proposals/`
+      directory and explicitly stamping the output with an AI-generation warning
+      and runId (§3.15, §4). It enforces the ban on fabricated records by
+      mechanically verifying that all referenced `closestExisting` IDs are
+      genuine known IDs from the case data before accepting the proposal.
+      Furthermore, the prompt explicitly forbids grading guilt or state of mind
+      (adhering to living-persons constraints), and the upstream engine name is
+      kept out of the forbidden client-facing directories.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only adds a weekly maintenance step and helpers that write
+      labeled files under proposals/agenda/; it does not edit AGENTS.md,
+      featured claims, case records, or citation-bearing content/. Output is
+      stamped with model/runId/date and headed “PROPOSALS ONLY,” with adoption
+      still routed through founder judgment, freeze, classifier, and arbiter,
+      matching §3.15’s ban on unilateral publication and the living-persons
+      merge carve-out for reversible proposal material. validateProposals is
+      fail-closed on kind, required fields, a three-item cap, and real existing
+      IDs, and it drops malformed replies rather than inventing locators. The
+      LLM call lives in scripts/ plus maintain.yml, not in the static site, so
+      it does not add live AI to the rendered app. No citation identifiers were
+      added; the prompt forbids guilt-grading even though that check is not
+      mechanical—ordinary gap, not a published verdict or a weakened gate.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+      - §3.2
+      - living-persons
+    reasoning: "The diff adds a weekly maintenance step that generates agenda
+      PROPOSALS only, written to proposals/agenda/<date>-<runId>/ and stamped
+      with model/runId/date under an explicit 'PROPOSALS ONLY' header — nothing
+      touches content/, featured claims, or published judgments, so the §3.15
+      gates are preserved rather than weakened, and 'proposals' are exactly the
+      category the living-persons amendment classifies as low-risk. The
+      PROPOSAL_SYSTEM hard rules forbid guilt/state-of-mind items, matching the
+      living-persons bar on culpability grading, and require atomic
+      one-proposition claims with truth conditions (§3.2). Validation is
+      fail-closed: malformed kinds, dangling anchor IDs, and duplicates are
+      dropped with reasons, and the model call happens in CI, not on the static
+      site, consistent with §4's ban on live AI in the site itself and with the
+      existing triage/reassess maintenance steps. The change touches only engine
+      files (workflow, scripts, one test) and presents itself as the downstream
+      sync of upstream PR #102, which is the sanctioned one-way engine path; the
+      upstream project name appears only in the PR body, which the narrowed
+      founder amendment expressly permits, and not in any committed file. No
+      citations are added (verification section empty), no AGENTS.md edit, no
+      omitted files, so there is nothing hidden to judge."
+harvestedAt: 2026-08-27

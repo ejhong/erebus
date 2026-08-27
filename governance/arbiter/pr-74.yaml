@@ -1,0 +1,104 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 74
+title: "Article: the agency-positions study enters the featured layer"
+url: https://github.com/ejhong/erebus/pull/74
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (32/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 8320024a3b
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is two additive changes: an appended history.yaml entry
+      (append-only, dated, stamped with actor and aiAssisted:true, kind:content)
+      and one new paragraph in the featured overview. No claims, grades, or
+      assessments are altered or removed, and no provenance is deleted — §3.14's
+      append-only record is respected. The new prose introduces no citations
+      (verification tooling found no identifiers), instead routing the reader to
+      an existing case study record (COV-S001) whose locators live in the
+      ledger; the reference to an existing ID is CI-checked for dangling
+      references under §4, so its absence from the diff is not a hidden
+      violation. Epistemically the paragraph behaves well: agency positions are
+      labeled as stated positions rather than restated as fact, the ODNI
+      divergence explanation is explicitly attributed to ODNI, the 2025 shift is
+      paired with its own 'both scenarios remain plausible' caveat (§3.11
+      negative/qualifying evidence), and the study's limit ('The table cannot
+      say who weighed the evidence correctly') is stated in the same paragraph
+      rather than buried (§3.4, §3.13). No named living person is discussed,
+      AGENTS.md is untouched, and the PR itself acknowledges the needs-approval
+      tier rather than trying to auto-merge featured text (§3.15). Remaining
+      imperfections — the new paragraph carries no inline claim link and names
+      COV-R007's substance without its ID — are stylistic, not rule breaches."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only adds a history entry and expands narrative text in
+      the covid-origins overview; no schemas, checks, or governance mechanisms
+      are altered. No new sources, DOIs, or URLs are introduced, so the
+      real-citations and verification-label rules are not engaged, and there is
+      no evidence of fabricated provenance or locators. The added paragraph
+      explicitly frames COV-S001 as a table of stated agency positions and notes
+      its limits, which respects the distinction between source content and
+      inference and keeps the focus on documented statements. It preserves the
+      existing characterization of intelligence-community divergence and does
+      not silently revise any prior graded claims or evidence records. The
+      history.yaml entry accurately logs the content change with date, actor,
+      and reason, consistent with the append-only change-history requirement.
+      There are no edits to AGENTS.md or other constitutionally protected files,
+      and no signs of publishing confidential material or weakening multi-model
+      checks.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: The diff correctly versions the change by updating `history.yaml`
+      with the modification, reason, and AI actor, complying with §3.14 (Version
+      everything important). The addition to `overview.md` summarizes an
+      internal study (COV-S001) while explicitly noting its epistemic limits
+      ('The table cannot say who weighed the evidence correctly'), which aligns
+      with §3.1 (Observation before interpretation). There is no positive
+      evidence of fabricated citations or locators, the text does not make
+      unfounded accusations, and the references to 2025 events fall safely under
+      the temporal humility guidelines.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The patch only appends a dated history.yaml entry and one overview
+      paragraph that points the already-published COV-C014 intelligence-split
+      passage at existing study COV-S001. It does not edit AGENTS.md, add
+      Claim/Evidence/Source records, invent citation identifiers or locators,
+      change grades, or state anyone’s guilt. The new sentences treat agency
+      views as stated positions, keep the study’s limit (positions, not merits)
+      and the both-remain-plausible qualifier in-frame, and the changelog is
+      append-only with an explicit AI actor stamp. Citation verification found
+      no new DOI/arXiv/URL lines; nothing in the diff is positive evidence of
+      fabrication, a silently rewritten assessment, confidence-material
+      exposure, or a weakened check. Featured-article wording is in this
+      ratification path rather than presented as already ratified.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The change does two things: appends a dated, AI-labeled changelog
+      entry to history.yaml (§3.14, §3.15 — actor and aiAssisted honestly
+      marked) and adds one paragraph to the covid-origins overview summarizing
+      an already-existing internal study record (COV-S001), which the history
+      entry confirms was previously collected but never surfaced in the article.
+      No new claims, evidence records, grades, or external citations are added —
+      the citation tooling found nothing to resolve, and COV-S001 is an internal
+      record reference consistent across both files. The added prose maintains
+      §3.9 discipline: it attributes the divergence-cause statement to ODNI as
+      ODNI's own stated position, keeps the 2025 shift paired with its
+      both-scenarios-plausible sentence, and explicitly states the table's limit
+      ('cannot say who weighed the evidence correctly'), matching §3.4's
+      credibility/diagnosticity split. No named individual's culpability is
+      touched — this is an evidence-dispute passage about agency confidence
+      language, squarely within the living-persons rules. There is no internal
+      contradiction, no provenance removal, no check-weakening, and no AGENTS.md
+      edit; the PR body itself acknowledges the needs-approval tier rather than
+      claiming ratification. Ordinary featured-layer editorial work, honestly
+      labeled."
+harvestedAt: 2026-08-27

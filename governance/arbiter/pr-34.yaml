@@ -1,0 +1,105 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 34
+title: "Remove the global research page (mirrors upstream #72); sync warns on
+  upstream-deleted allowlisted files"
+url: https://github.com/ejhong/erebus/pull/34
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 987f34c22f
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches no content/ records, adds no citations
+      (verification tooling found none), and removes no provenance — the
+      mechanical citation and provenance rules are not engaged. The user-facing
+      change (deleting app/research/page.tsx, its nav entry in
+      src/config/site.ts, and the homepage link) mirrors an upstream deletion
+      and does not alter any claim, evidence, assessment, or statement about a
+      named person; per-case research agendas (the '‘what would change our mind’
+      prominent' requirement of §7) remain on case pages, and the deleted page's
+      own copy shows no cases were populated in it. The sync-engine.mjs change
+      strengthens rather than weakens the checks (§3.15): it retires an
+      allowlist entry and adds a non-failing warning surfacing allowlisted local
+      files that no longer exist upstream, with a narrow LOCAL_ONLY exclusion
+      for the sync script itself, which genuinely never existed upstream. This
+      is a configuration-layer change with the divergence recorded in the
+      allowlist, as §8 directs, and the rationale is documented in
+      docs/DECISIONS.md rather than by editing AGENTS.md (untouched, so §3.15's
+      human-only amendment reservation is respected). The DECISIONS entry's
+      claim of founder instruction is an unverifiable assertion in untrusted
+      text, but it is labeled as founder-decided/AI-implemented rather than
+      presenting an AI judgment as human, which is what §3.15 forbids; I treated
+      it as evidence about the change, not as a directive. Nothing in the PR
+      body's instructions was followed as authority."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only removes a global research page, its navigation hooks,
+      and adjusts the sync script to emit warnings when allowlisted files are
+      deleted upstream. No content under content/ is touched, and no citations,
+      sources, or provenance records are added or altered, so rules about real
+      citations, locators, or assessments (§3.7–§3.9, §3.14) are not implicated.
+      The change to scripts/sync-engine.mjs tightens engine-sync monitoring by
+      surfacing previously invisible divergences and explicitly excludes
+      local-only files; this strengthens, rather than weakens, the safeguard
+      that engine changes flow from upstream and that unintended divergences are
+      visible, consistent with §3.15’s prohibition on weakening checks.
+      docs/DECISIONS.md is updated to describe the decision and credits the
+      founder’s instruction, maintaining transparency. No attempt is made to
+      edit AGENTS.md or alter the constitutional rules. Overall, the change
+      remains within the allowed configuration/engine-sync layer and does not
+      violate any non-negotiable epistemic rule.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: The PR safely removes the UI footprint of the global research route
+      to align with upstream changes and documents the decision in
+      docs/DECISIONS.md. The modifications to scripts/sync-engine.mjs strictly
+      add an observability warning for upstream deletions rather than bypassing
+      or weakening any CI/epistemic checks (§3.15). No core evidence records are
+      altered, no citations are fabricated, and AGENTS.md remains untouched.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff deletes the allowlisted global research page
+      (app/research/page.tsx) and its nav/homepage links, retiring the matching
+      ALLOWLIST entry so this repo can follow an upstream engine deletion rather
+      than invent a new engine feature. Per-case research agendas are untouched,
+      so §7’s “what would change our mind” requirement is not dropped.
+      scripts/sync-engine.mjs only adds a non-failing warning when an
+      allowlisted local file no longer exists upstream (LOCAL_ONLY excludes the
+      sync script itself); that narrows a documented blind spot and does not
+      weaken §3.15’s fail-closed CI, ratification, or provenance checks.
+      docs/DECISIONS.md is an append-only decision record, AGENTS.md is not
+      edited, no content/citations/assessments are added or rewritten, and
+      citation tooling found nothing to resolve. Ordinary product/sync work, not
+      an epistemic or check-dodging change.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The change removes a UI aggregation page (the global research page,
+      its nav entry, and homepage link) and adds a non-failing warning to
+      scripts/sync-engine.mjs when an allowlisted file disappears upstream. No
+      content under content/ is touched: no claims, evidence, sources,
+      assessments, provenance locators, or citations are added, altered, or
+      deleted, and the citation-verification section confirms no new identifiers
+      exist to check. AGENTS.md is untouched, so §3.15's human-only amendment
+      reservation is respected. The sync-script change is additive surfacing,
+      not check-weakening — nothing that previously failed now passes; a
+      condition that was previously silently invisible now emits a warning,
+      which strengthens inspectability per §3.15. Removing a cross-case
+      aggregate page while per-case research agendas remain does not reduce
+      competing hypotheses, evidence symmetry, or negative-evidence display
+      (§3.3, §3.11); git preserves the full history per §3.14. The decision is
+      recorded in docs/DECISIONS.md with date, decider, and implementing model,
+      matching the constitution's accountability-by-inspectability model. The
+      claimed founder instruction and upstream PR #72 are unverifiable from the
+      diff alone, but the change is reversible, touches no featured content or
+      named-person statements, and is exactly the kind of engine/config plumbing
+      this panel's ratification gate covers."
+harvestedAt: 2026-08-27

@@ -1,0 +1,119 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 60
+title: "Content response: 2026-08-26"
+url: https://github.com/ejhong/erebus/pull/60
+verdict: park
+reason: 4 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (23/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: db16940faf
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The three new files are append-only AI assessment overlays in
+      per-case `assessments/` directories, each stamped with runId, model, date
+      and promptVersion, carrying `humanReviewed: false` and an explicit header
+      that they are unreviewed AI drafts that do not mutate canon — exactly what
+      §4 and §3.15 require, with no attempt to present a draft as ratified or an
+      AI record as human. The one canon edit (KRK-R014 in research.yaml) is
+      paired with a same-PR history.yaml append that records what changed, why,
+      the AI actor, and that publication runs through the multi-model gate,
+      satisfying §3.14; no published judgment was silently altered and no
+      provenance was removed. The revised research item retains its
+      applicability limit (black-box materials are intact test-fires; the
+      questioned items are fragments) and honestly downgrades the diagnosticity
+      of the different-source asymmetry, which is calibrated rather than
+      over-claimed (§3.13); its supporting evidence records (KRK-E061/E062) were
+      added in the prior canon change and are referenced by the assessments, not
+      fabricated here. The Kirk assessments grade evidence disputes (fragment
+      reconciliation, media chain, authentication) and explicitly state the
+      proceeding is active, the defendant presumed innocent, and that nothing
+      grades guilt, consistent with the living-persons rules. The mechanical
+      check found no new citation identifiers, and I see no internal
+      inconsistency in the locators or figures cited (e.g., the Pekar
+      code-correction BF ~4.2–4.3 and the '2024 version of record gives 74'
+      distinction are the kind of careful hedging that argues against
+      fabrication). AGENTS.md is untouched and no check is weakened; the PR is
+      itself submitted to the ratification panel rather than routing around it."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change adds only assessment overlays and a small research/history
+      edit; no core canon claim, hypothesis, or source files are silently
+      mutated. The new assessment YAMLs are clearly labeled as AI-generated,
+      unreviewed drafts, append-only, with runId/model/date/promptVersion,
+      satisfying the append-only and transparency requirements of §3.14 and
+      §3.15 and avoiding any implication of human review. No citations, DOIs, or
+      URLs are introduced, so there is no risk of fabricated or unverifiable
+      citations under §3.7–§3.8, and the mechanical checker reports none. The
+      assessments consistently distinguish between what sources state and what
+      is inferred, explicitly discuss diagnosticity versus credibility, and note
+      independence and non-independence of evidence, which aligns with §3.4,
+      §3.6, §3.9, and §3.10. The history entry for the Kirk case truthfully
+      records that a research item’s status description was updated, preserving
+      provenance and not misrepresenting any unratified draft as ratified. No
+      confidential material is introduced, no checks are weakened, and AGENTS.md
+      is untouched, so there is no violation of §3.15 or other constitutional
+      constraints.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: >-
+      seat failed: Error: gemini HTTP 429: {
+        "error": {
+          "code": 429,
+          "message": "Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spe
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The three new YAML files are append-only AI assessment overlays
+      stamped with runId, model, date, and promptVersion, labeled humanReviewed:
+      false and explicitly drafted, so they do not present unratified work as
+      ratified (§3.14, §3.15, phase-1 labeling). They add no DOIs, URLs, or
+      locators (verification found none), only references to existing
+      claim/evidence IDs, with calibrated plain-language verdicts, sensitivity
+      notes, and independence caveats rather than fabricated provenance. The
+      Kirk overlay states the proceeding is active, the defendant is presumed
+      innocent, and nothing grades guilt, and the claim-level verdicts stay on
+      evidence disputes (ballistics, custody, footage), matching the
+      living-persons rules. The research.yaml edit converts KRK-R014 from a
+      still-open proposal into a report of completed desk work, and history.yaml
+      records what changed, why, and which AI run authored it, so a published
+      research item is not silently rewritten. AGENTS.md and the check machinery
+      are untouched; ordinary editorial wording in the research summary is not a
+      constitutional break."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.5
+      - §3.8
+      - §3.13
+      - §3.14
+      - §3.15
+    reasoning: "The diff adds three append-only AI assessment overlays, each stamped
+      with runId, model, date, promptVersion, humanReviewed: false, and an
+      explicit unreviewed-draft header — exactly the provenance and labeling
+      §3.15 and the phase-1 rules require, and nothing is presented as a
+      ratified or human judgment. The Kirk research.yaml edit corrects a stale
+      research item (a proposed study now reported as completed by entered
+      evidence), with a matching history.yaml entry recording what changed, why,
+      and by which actor, satisfying §3.14's visible-revision requirement; it
+      shrinks rather than inflates what the case claims to lack. Assessments
+      preserve claim-versus-diagnosticity distinctions (e.g., COV-C007
+      'near-zero diagnosticity', KRK-C013 'opportunity, not occurrence'), carry
+      calibrated confidence levels, and reference existing claim/evidence IDs
+      rather than introducing new citations — the citation verifier found no new
+      identifiers to check. The living-persons rules are respected: the Kirk
+      case synthesis closes with 'the proceeding is active, the defendant is
+      presumed innocent, and nothing here grades guilt,' and assessments grade
+      evidence disputes (ballistics outcome, media custody) rather than
+      culpability. No AGENTS.md edit, no check-weakening, and no omitted files.
+      I cannot verify that every referenced COV/KRK/SEP-E* record exists in
+      canon, but no evidence in the diff contradicts them and the overlays are
+      reversible-by-runId drafts that must pass the fail-closed ID validation at
+      build."
+harvestedAt: 2026-08-27

@@ -1,0 +1,33 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 1
+title: "Bootstrap: Erebus engine, constitution, and hosting scaffold"
+url: https://github.com/ejhong/erebus/pull/1
+verdict: park
+reason: only 0 of 5 seats affirm compliance (4 required)
+outcome: merged
+outcomeAt: 2026-08-25
+judgedAgainst: edf61477fe
+promptVersion: erebus-arbiter-v1
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: unsure
+    rules: []
+    reasoning: "seat failed: Error: anthropic: no API key configured"
+  - seat: GPT-5.1 (OpenAI)
+    vote: unsure
+    rules: []
+    reasoning: "seat failed: Error: openai: no API key configured"
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: "seat failed: Error: gemini: no API key configured"
+  - seat: Grok 4.6 (xAI)
+    vote: unsure
+    rules: []
+    reasoning: "seat failed: Error: xai: no API key configured"
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: unsure
+    rules: []
+    reasoning: "seat failed: Error: venice: no API key configured"
+harvestedAt: 2026-08-27

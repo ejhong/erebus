@@ -1,0 +1,103 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 21
+title: Add Rootclaim lab-leak debate PDFs to covid-origins casework
+url: https://github.com/ejhong/erebus/pull/21
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 007dc298fa
+promptVersion: erebus-arbiter-v2
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The change adds two PDFs under `casework/covid-origins/` and five
+      lines to `casework/README.md`. It touches no `content/`, `src/`, `app/`,
+      or `public/` inputs, creates no Claim, Evidence, Source, or Assessment
+      record, and therefore fabricates no citation, locator, or provenance
+      (§3.8, §4). The material is third-party *published* writing (an Astral
+      Codex Ten post and a Rootclaim rebuttal), not material supplied in
+      confidence, so §3.15's confidentiality bar is not engaged; the repo is
+      private and the new README rule explicitly forbids republication and
+      forbids moving the files into `content/` or `public/`. The README addition
+      strengthens rather than weakens the checks: it requires any derived
+      citation to point to, and be verified against, the original publication
+      rather than the saved copy, which is consistent with §3.7 (primary sources
+      / journalism as discovery) and casework's non-citable status. AGENTS.md is
+      untouched, so §3.15's amendment reservation is not implicated. I cannot
+      inspect the binary PDF contents, but since casework is never citable and
+      never rendered, nothing in them can become a published claim or provenance
+      detail without a separate reviewable change; the merge-tier note in the PR
+      body is consistent with the constitution's needs-approval rule and in any
+      case is not a directive to me."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: 'The change only amends casework guidance and adds two binary PDFs
+      under `casework/`, which is explicitly a non-citable, private working area
+      per the existing constitution and README. The new README text strengthens
+      epistemic hygiene: it clarifies that saved third-party articles are
+      copyrighted working material, must never be republished or moved into
+      `content/` or `public/`, and that any citation must reference and be
+      verified against the original publication. This is aligned with §3.6–§3.8
+      and §4’s "real citations only" rule rather than weakening them. No claims,
+      evidence records, sources, assessments, or provenance fields are altered,
+      and no ratified content is silently changed, so §3.14–§3.15 are respected.
+      There is no modification to AGENTS.md or to any checks or workflows. Given
+      the repository is described as private and the PDFs are used only as
+      discovery aids, there is no indication of publishing confidential material
+      or violating copyright constraints as framed in the constitution.'
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §4
+      - §3.15
+    reasoning: The change correctly places research discovery aids in the
+      `casework/` directory, which the constitution explicitly reserves for
+      non-citable working documents (§4). The added README rule enforcing that
+      citations must point to the original publication (not the saved copy) and
+      that these files never move to rendered inputs (`content/`, `public/`)
+      upholds the epistemic and site-input constraints. Furthermore, the PDFs
+      are publicly published materials, not materials supplied in confidence
+      (§3.15). No normative rules or trust boundaries are violated.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only adds two binary PDFs under casework/covid-origins/ and
+      a five-line policy in casework/README.md. That path is the constitution’s
+      designated private, never-citable working area; AGENTS.md is untouched, so
+      §3.15’s founder-only amendment rule is not in play. The README line
+      forbids republishing, forbids moving the files into content/ or public/,
+      and requires any later citation to be verified against the original
+      publication rather than the saved copy—consistent with real-citations and
+      non-publication of casework, not a weakening of §3 checks. No Claim,
+      Evidence, Source, Assessment, or featured article records are added or
+      rewritten, so provenance, ratification, and living-persons grading rules
+      are not engaged. Binary PDF bodies are unreadable here, but there is no
+      positive internal contradiction or fake locator, and unfamiliarity with
+      the named posts is not fabrication evidence.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The change adds two third-party published PDFs (a Scott
+      Alexander/Astral Codex Ten review of the Rootclaim lab-leak debate and
+      Rootclaim's response — both real, publicly published works) to
+      casework/covid-origins/, which the constitution reserves for private,
+      non-citable research inputs (§4: 'briefs are inputs for case construction,
+      never citable sources'). No citations, claims, locators, or assessments
+      are added, so §3.8 and the real-citations rule are not implicated; the
+      README addition actually strengthens provenance discipline by requiring
+      that any derived citation point to and be verified against the original
+      publication, not the saved copy. §3.15's ban on publishing material
+      supplied in confidence does not apply: these are published blog posts, not
+      unpublished manuscripts or private correspondence, and the repo is private
+      with an explicit never-republish rule. The PR touches no featured content,
+      so the living-persons needs-approval tier is not triggered. Even if the
+      PDFs contained the upstream engine project's name, the founder's
+      2026-08-25 amendment explicitly permits it in casework. The PDFs are
+      binary and unreadable in the diff, but their constitutional classification
+      as discovery-only working material is what governs, and nothing visible
+      suggests misclassification or fabrication."
+harvestedAt: 2026-08-27

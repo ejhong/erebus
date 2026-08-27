@@ -1,0 +1,110 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 55
+title: "KRK-S005 freeze: statement-discrepancy ledger under pre-registration
+  discipline"
+url: https://github.com/ejhong/erebus/pull/55
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (20/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: d9e80884d8
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds only a zero-row pre-registration file (KRK-S005), an
+      aligned rubric edit in research.yaml, and an appended history entry; no
+      citations are introduced (verification tooling found none), so there is no
+      fabrication surface. The substantive change moves in the direction the
+      living-persons rules require: the previously proposed five-way scale
+      containing the intent grade 'knowingly false' is replaced with a pure
+      record-comparison scale, with an explicit prohibition on grading state of
+      mind, an explicit statement that officials' assertions are graded as
+      assertions and never restated as fact, and an explicit refusal of the
+      aggregate 'pile-up' inference (§3.2/§3.10 discipline). The rubric change
+      to KRK-R010 is not silent: history.yaml carries an appended entry
+      recording what changed, why, actor, aiAssisted, and the file is stamped
+      runId/model/date/promptVersion with humanReviewed: false (§3.14, §4). The
+      PR body's description of an 'intent bar' with a 'knowingly false' ceiling
+      contradicts the diff, but the history note explains the scale was
+      corrected after panel feedback, so the stale body reads as an un-updated
+      description rather than a misrepresentation of what merges. The freeze
+      protocol also keeps deep-research output as an uncitable brief with native
+      verification against primary artifacts before any row enters, consistent
+      with §3.7/§4. No AGENTS.md edit, no check-weakening, and no
+      confidence-supplied material — the exclusion list expressly bars it."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The diff adds a pre-registration freeze record for study KRK-S005,
+      updates the associated research item, and logs the change in the case
+      history. It does not alter AGENTS.md or any constitutional text, and no
+      citations or locators are fabricated or modified; in fact, there are no
+      new external identifiers under content/, as confirmed by the citation
+      tooling. The study file is explicitly a zero-row freeze with criteria,
+      search protocol, and outcome scale only, fitting the append-only,
+      pre-registration discipline described in the constitution and not silently
+      changing any existing assessments. The methodology and notes carefully
+      respect the living-persons rules by forbidding intent/culpability grading
+      and treating courts’ characterizations as their own assertions rather than
+      Erebus verdicts. Provenance for the freeze itself (runId, model, date,
+      promptVersion, humanReviewed) is recorded, preserving transparency and
+      versioning. I see no weakening of checks, exposure of confidential
+      material, or falsification of provenance, so the change complies with the
+      constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.12
+      - Living persons and active proceedings
+    reasoning: "The change perfectly adheres to the constitution's requirement to
+      freeze operational definitions and criteria before open-ended evidence
+      gathering (§3.12), executing the study with zero rows as a
+      pre-registration step. Most importantly, it actively corrects an existing
+      flaw in the research plan (KRK-R010) that would have violated the
+      living-persons rules: by removing the 'knowingly false' intent grade and
+      replacing it with a pure record-comparison scale, it ensures the site does
+      not publish culpability/perjury verdicts on named living individuals. The
+      defined search protocol also correctly honors the requirement that AI
+      research briefs remain outside the repository and must be natively
+      verified before entry."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The complete diff is a freeze-only study (empty rows/findings), a
+      matching KRK-R010 rubric edit, and an append-only history line. It does
+      not touch AGENTS.md, assessments, or featured claim/article text, and it
+      adds no citation identifiers. The frozen scale is explicit
+      record-comparison (corroborated / contradicted / partial / superseded /
+      unresolved) with no intent or culpability grades, court characterizations
+      attributed as the court's, and confidential material excluded — aligning
+      with living-persons and §3.15 rather than weakening them. AI authorship is
+      labeled (humanReviewed: false, runId/model/date/promptVersion). Mentions
+      of existing case IDs and a June 2026 ruling are not positive evidence of
+      fabrication under temporal humility; the PR-body intent-bar language is
+      untrusted and is not what the files publish."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: This is a pre-registration freeze (zero rows) for a
+      statement-discrepancy ledger, directly implementing §3.12 (freeze before
+      broad audit) and improving research.yaml by removing intent grades like
+      "knowingly false" in favor of pure record-comparison outcomes —
+      strengthening compliance with the living-persons rules (no perjury
+      verdicts on named individuals, court findings carried only as the
+      adjudicator's, no culpability grading). The exclusion of
+      supplied-in-confidence material aligns with §3.15, and the explicit
+      refusal of the aggregate pile-up move aligns with §3.10/§3.13. No
+      citations are added, so the empty verification output is unproblematic;
+      events referenced (e.g., a June 2026 contempt ruling) postdate my training
+      data, but unfamiliarity is not evidence of fabrication and the frozen
+      criteria commit only to primary artifacts with locators. The history.yaml
+      entry satisfies §3.14's change-recording requirement, and only content
+      files are touched — AGENTS.md is untouched and no checks are weakened. The
+      PR body's talk of an "intent bar" is untrusted narration; the committed
+      criteria themselves contain no intent grading, and the history entry
+      explains the scale was corrected before freeze.
+harvestedAt: 2026-08-27
