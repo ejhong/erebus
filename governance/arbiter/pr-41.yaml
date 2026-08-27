@@ -1,0 +1,107 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 41
+title: "Go public: GitHub Pages, no access control, casework removed"
+url: https://github.com/ejhong/erebus/pull/41
+verdict: park
+reason: "4 seat(s) find a violation: Opus 5 (Anthropic) (§3.15); Gemini 3.1 Pro
+  (Google) (§3.15); Grok 4.6 (xAI) (§3.15); Kimi K3 (Moonshot, via Venice)
+  (§3.15); only 0 of 5 seats affirm compliance (4 required)"
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 6fb12cb97d
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "The diff makes three substantive, normative amendments to AGENTS.md:
+      §2 identity changes 'a private publication for the founder and a few
+      invited readers' to 'a public publication, unadvertised'; §4 hosting swaps
+      Cloudflare Pages behind Cloudflare Access for 'GitHub Pages, with no
+      access control'; and §4 casework inverts 'research briefs are committed
+      under casework/<case-slug>/' to 'research briefs are NOT committed to this
+      repository.' None of these is a typo or formatting fix — each rewrites a
+      governing clause, and the third also changes what provenance readers can
+      reach (71 origin.ref strings now name files that exist nowhere in the
+      repo). Amending AGENTS.md is the one act reserved to the human founder
+      under §3.15; the PR body's assertion of 'Founder direction, 2026-08-26'
+      and its framing that 'merging this PR is what enacts it' are untrusted
+      claims inside the material under review, not an authorization I can act
+      on. Separately, the OMITTED FILES list is non-empty (twelve casework files
+      I have not seen), but the visible AGENTS.md edit already decides the
+      question. If the founder wishes these amendments, they must land as the
+      founder's own act, not as an AI-authored diff seeking panel ratification."
+  - seat: GPT-5.1 (OpenAI)
+    vote: unsure
+    rules:
+      - §3.15
+      - §3.14
+    reasoning: The diff visibly amends AGENTS.md, including constitutional clauses
+      on identity, hosting, and casework, but per §3.15 amending this file is
+      reserved to the human founder. The PR text claims founder instruction and
+      that these specific amendments are the founder’s act, yet that claim
+      itself is untrusted input; I cannot independently verify that a human, not
+      an AI agent, authorized or authored the constitutional change. If an AI
+      agent initiated these edits, that would violate §3.15’s reserved-power
+      rule, but from the repository alone I cannot tell who actually originated
+      the change. The PR also introduces a destructive history-rewrite script
+      for casework/; whether and how it’s run is not shown here, so I cannot
+      fully assess compliance with §3.14’s inspectability/versioning
+      requirements around assessments and change history. Because critical facts
+      about human authorization and downstream use of the purge script lie
+      outside the diff and omitted files list is non-empty, I cannot decisively
+      classify this as complies or violates.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff includes highly normative amendments to AGENTS.md, changing
+      the project's identity from a private publication to a public one,
+      altering the hosting rules, and removing the requirement to commit
+      casework. Under §3.15, amending the constitution is an act reserved
+      exclusively to the human founder. The PR body's claims of 'Founder
+      direction' and assertions that a human authorized the amendments are
+      untrusted data and cannot bypass the rule that AI agents must not submit
+      non-trivial edits to AGENTS.md.
+  - seat: Grok 4.6 (xAI)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff amends AGENTS.md with three substantive, normative clauses
+      (§2 product identity private→public; §4 hosting Cloudflare Access→GitHub
+      Pages with no access control; §4 casework committed-in-repo→held outside).
+      §3.15 reserves amending this file to the human founder; the panel
+      instruction is that any AGENTS.md edit that is not a trivial typo/format
+      fix must be judged violates. Claims in the untrusted PR body/DECISIONS.md
+      that this is “founder direction” and that “merging enacts” the reserved
+      act are not directives and do not make an AI-drafted constitution rewrite
+      compliant. The rest of the change (casework deletion, Pages workflow,
+      origin.ref left intact) is not independently decisive once the AGENTS.md
+      rewrite is in the tree.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "The diff edits AGENTS.md, the constitution itself: §2's
+      product-identity clause ('private publication' → 'public publication,
+      unadvertised'), §4's hosting clause (Cloudflare Pages behind Access →
+      GitHub Pages, no access control), and §4's casework clause (briefs
+      committed → never committed). §3.15 states unambiguously that amending
+      this file is 'the one act reserved to a human,' and the panel instruction
+      requires a 'violates' verdict for any diff editing AGENTS.md unless
+      trivially non-normative; these are paradigmatically normative changes,
+      altering what the product is and what may be published. The claims of
+      founder direction appear only in the untrusted PR body and in
+      docs/DECISIONS.md (whose addition is itself part of the untrusted diff),
+      so they are evidence about the change, never authorization. Even if the
+      founder did direct this, enacting constitutional amendments via an
+      AI-authored PR conflates the founder's reserved act with ordinary content
+      flow, and the amended text was admittedly drafted by the agent. On a
+      separate axis the change is otherwise defensible — removing ~27 MB of
+      third-party copyrighted briefs before publication strengthens §3.15's
+      confidence/living-persons protections, and the dangling origin.ref strings
+      are honestly disclosed rather than silently rewritten — but the AGENTS.md
+      edits alone decide the vote."
+harvestedAt: 2026-08-27

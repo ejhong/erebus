@@ -1,0 +1,98 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 75
+title: "Article: the put-options study enters the featured layer"
+url: https://github.com/ejhong/erebus/pull/75
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (32/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 8320024a3b
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is two additions only: an append-only entry at the end of
+      content/cases/september-11/history.yaml, stamped with date, actor,
+      aiAssisted and kind, and one new paragraph in the case overview. Nothing
+      is deleted, no published assessment or grade is silently altered, and
+      AGENTS.md is untouched. No new DOIs/URLs/identifiers are introduced
+      (verification tooling found none), so there is no fabrication surface
+      here; the new prose routes the reader to an existing ledger record
+      (SEP-S001, 'on the studies shelf') rather than inventing locators, and any
+      dangling-ID risk is caught fail-closed by the build. Epistemically the
+      paragraph does the right things: it separates each paper's statistics from
+      its authors' interpretation (§3.9, §3.4), states the negative/empty
+      finding that no study engages the Commission's trade-tracing (§3.11), and
+      explicitly notes that market-level abnormality and innocuous trade-level
+      explanations can both be true (§3.13) rather than collapsing to a verdict.
+      It touches featured article text, which is needs-approval rather than
+      auto-merge — which is precisely what this panel review is, and the PR body
+      concedes the tier rather than trying to reclassify it (§3.15). Minor
+      stylistic softness ('the most rigorous of the three') is an editorial
+      judgment presented as such, not a check-weakening or provenance defect."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only adds a history entry and a short descriptive paragraph
+      to the September 11 overview, explaining how an already-ledgered study
+      bundle (SEP-S001) relates to the narrative. No existing claims, evidence
+      records, or assessments are altered or silently re-graded, so the
+      append-only spirit of §3.14 is respected. The new prose clearly
+      distinguishes observation (statistical abnormality) from interpretation
+      (informed trading attribution), aligning with §3.1 and §3.9. It does not
+      introduce any new citations or locators, so there is no risk of fabricated
+      or unverifiable references under §3.7–§3.8, and the citation checker
+      reports none added. The added description of SEP-S001 is high-level and
+      does not misrepresent any specific external source metadata. No
+      confidential material is exposed, no AI/human boundary is blurred, and no
+      checks or constitutional safeguards are weakened (§3.15).
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: The diff updates the overview article and history log for the
+      September 11 case to summarize existing evidence regarding put-option
+      studies (SEP-S001). The added content strictly maintains the distinction
+      between statistical observation and author inference (§3.9), preserves
+      epistemic humility regarding the missing trade-tracing data (§3.11), and
+      appropriately logs the change with AI attribution (§3.14, §3.15). No
+      citations are fabricated, and the change respects the living persons
+      rules.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only appends an AI-labeled history row and one overview
+      paragraph that points at an already-ledgered study (SEP-S001). No
+      AGENTS.md edit, no new Claim/Evidence/Source objects, no new citation
+      identifiers, and the verification tooling found none that could fail
+      §3.7/§3.8. The added prose keeps statistics, authors' interpretation, and
+      the Commission's unpublished tracing in separate buckets, does not invent
+      locators, and does not grade a named person's guilt. History is
+      append-only with actor/aiAssisted stamped; nothing shown presents an
+      unratified grade as ratified, exposes confidence material, or weakens the
+      §3.15 checks.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds one overview paragraph mirroring an already-ledgered
+      study record (SEP-S001) into the article, plus an append-only history.yaml
+      entry stamped with date, actor, and aiAssisted:true, matching the format
+      of prior entries (§3.14). No citation identifiers are added, so the empty
+      verification output is expected, and the claim that the ledger already
+      carried SEP-S001 is consistent with the change stat touching only these
+      two files. The added prose is epistemically careful in the way the
+      constitution demands: it separates the papers' statistics from their
+      authors' interpretations ('separate cells'), states the unanimous
+      abnormality finding as observation and the informed-trading reading as the
+      authors' inference (§3.1, §3.9), and notes that market-level abnormality
+      and innocuous trade-level explanations 'can both be true,' which is
+      exactly the credibility-vs-diagnosticity distinction (§3.4). Its
+      characterization of the three-paper put-options literature is broadly
+      consistent with the known studies, and nothing in the material contradicts
+      itself. The change touches featured article text and is correctly routed
+      through the needs-approval gate rather than auto-merged, per the
+      living-persons/tiered-merge rules. No named individual is accused, no
+      verdict is graded, no check is weakened, and no locator is invented."
+harvestedAt: 2026-08-27

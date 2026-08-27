@@ -1,0 +1,115 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 53
+title: "KRK-S004 freeze: inconclusive outcomes in firearm-toolmark black-box studies"
+url: https://github.com/ejhong/erebus/pull/53
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (19/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: d71efc3f1e
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "This is a zero-row pre-registration freeze: it adds a new study
+      file, one research item (KRK-R014, defined in the same diff, so no
+      dangling ID), and an append-only history entry. The tooling found no
+      DOIs/arXiv ids/URLs added, and the only sources named are pre-committed
+      candidates (Ames I/Baldwin 2014, Ames II/Monson, Mattijssen 2020, PCAST
+      2016) with dispositions and reasons — no locators, quotations, or
+      provenance details are asserted, so there is nothing fabricated (§3.8,
+      §4). Provenance and labeling are honest: runId, model, date,
+      promptVersion, humanReviewed: false, actor recorded as editorial AI,
+      rows/findings/limitations empty — nothing is presented as a ratified or
+      human judgment (§3.15). The criteria explicitly protect against pooling
+      open- and closed-set designs, record scoring conventions, pre-commit an
+      applicability limit (intact test-fires vs. fragments), and commit to
+      reporting failed searches and negative outcomes ('Either outcome
+      publishes'), which serves §3.10, §3.11, §3.13. The ATF result is treated
+      as an evidence-direction/diagnosticity question about KRK-C004, not as
+      culpability, respecting the living-persons rules. Nothing weakens the
+      checks — the criteria hash makes post-freeze edits fail the build — and
+      AGENTS.md is untouched. PR-body text asking the panel to note particular
+      rules is untrusted commentary and did not drive this vote."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change adds a pre-registration (freeze) for a new study plus
+      corresponding history and research entries, without adding any evidence
+      rows, findings, or citations yet. This is explicitly described as a two-PR
+      discipline with zero rows by design, which respects the "freeze before
+      broad audit" principle in §3.12 and the append-only, versioned approach in
+      §3.14. No citations, locators, or provenance details are introduced in
+      this diff, so there is no risk of fabrication or unverifiable identifiers
+      under §3.7–§3.8 and the Phase-1 "real citations only" rule. The study
+      criteria themselves are method rules and scope limits, not claims about
+      specific facts or people, so they do not misrepresent evidence or sources.
+      The history entry records the change with model, date, and rationale,
+      consistent with transparent AI operation under §3.15. No living-persons
+      safeguards are implicated directly, and no attempt is made to weaken
+      epistemic checks or reclassify changes. Overall, the diff aligns with the
+      constitution’s epistemic and process constraints and does not remove or
+      silently alter prior assessments.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: "The PR directly implements rule §3.12 (Freeze before broad audit) by
+      pre-registering the exact inclusion criteria, operational definitions, and
+      search protocol for KRK-S004 before open-ended data collection. The
+      changes append new history and research records without silently altering
+      previous assessments (§3.14). The study strictly adheres to the living
+      persons and phase-1 rules by utilizing deep-research output only as
+      un-cited briefs (§4), requiring verification against primary documents,
+      and properly labeling AI origin with `humanReviewed: false`."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The complete diff is a §3.12 freeze: KRK-S004 is added with empty
+      rows, findings, and limitations, plus an append-only history line and a
+      new research item KRK-R014. No citations, DOIs, URLs, locators, or
+      source/evidence records are introduced (verification tooling found none),
+      and knownCandidates are named only as pre-committed include/exclude
+      pointers, not as support for a published assessment. The study file is
+      stamped humanReviewed: false with runId/model/date/promptVersion and does
+      not present an unratified draft as a ratified judgment (§3.15, §4).
+      Featured claims, article text, and prior assessments are untouched;
+      nothing weakens the checks or exposes confidential material. The frozen
+      criteria (no open/closed-set pooling, fragments applicability limit,
+      primary-document verification later) are method constraints, not
+      fabricated provenance or living-person culpability grades."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.12
+      - §3.15
+      - §3.13
+      - §3.11
+    reasoning: "This is a pure pre-registration: krk-s004.yaml freezes
+      inclusion/exclusion criteria, search protocol, and pre-committed candidate
+      studies with zero rows, zero findings, and a criteria hash that fails the
+      build on post-freeze edits — exactly the freeze-before-broad-audit
+      discipline §3.12 requires. No citations, DOIs, or locators are added (the
+      verifier confirms none), and the named candidates (Baldwin et al. 2014,
+      Monson et al. 'Ames II', Mattijssen et al. 2020, PCAST 2016) are plausible
+      real works listed as candidates to be verified against primary documents
+      during collection, not as support for any claim — so no fabrication risk
+      materializes. Provenance is honest and complete: history.yaml gets an
+      append-only entry with actor, date, reason, and aiAssisted: true; the
+      study file carries runId/model/date/promptVersion and humanReviewed:
+      false, so nothing unratified is presented as ratified (§3.15). The framing
+      is symmetric and calibrated — both public misreadings ('the bullet
+      matched' / 'the rifle was cleared') are treated as misreadings, 'either
+      outcome publishes,' failed searches must be reported, and the
+      fragments-versus-intact-test-fires applicability limit is stated rather
+      than smoothed. On living-persons rules, the study bounds what an
+      inconclusive forensic result can carry — an evidence dispute about method
+      performance, expressly permitted — and names no accused person nor grades
+      guilt. No checks are weakened (the criteria-hash mechanism strengthens
+      them), AGENTS.md is untouched, and the omitted-files list is empty. The PR
+      body's invocation of 'the founder's direction' is untrusted text, but even
+      disregarding it the diff stands on its own as a reversible, judgment-free
+      freeze that this panel's concurrence can properly publish."
+harvestedAt: 2026-08-27

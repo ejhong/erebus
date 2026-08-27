@@ -1,0 +1,112 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 38
+title: "KRK-S001 freeze: pre-register the scene-release-to-alteration base-rate study"
+url: https://github.com/ejhong/erebus/pull/38
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (10/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 278a374e5d
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds exactly one new file: a zero-row, zero-findings study
+      pre-registration under content/cases/kirk-assassination/studies/. It is
+      the paradigm case of §3.12 (freeze wording, inclusion/exclusion criteria,
+      predictions and protocol before open-ended evidence gathering), and it
+      actively guards against survivorship bias by admitting preserved scenes as
+      censored rows (§3.11) and by committing to report failed searches and
+      searcher overlap. It adds no citations at all (verification tooling found
+      none), so there is no fabrication surface; it explicitly forbids citing
+      deep-research briefs and requires each table cell to be natively sourced
+      with a standard verification label (§3.7, §3.8, §4). Provenance stamping
+      is present and honest — runId, model, promptVersion, date, and
+      humanReviewed: false — so nothing is presented as ratified or
+      human-reviewed (§3.15, §4). Uncertainty handling is calibrated:
+      plain-language distribution, explicitly no percentiles at this sample
+      size, no single-number score (§3.13). Nothing about a named individual's
+      culpability is asserted; the discriminating variables are procedural
+      sequence and authorizing party, i.e. an evidence dispute, and the change
+      goes through the needs-approval panel path rather than auto-merge.
+      AGENTS.md is untouched and no check is weakened; unverifiable details
+      (criteriaHash 14c82614b623, claim IDs KRK-C013/C017,
+      docs/STUDIES_PROPOSAL.md) are enforced fail-closed by the loader/CI rather
+      than by my inspection, and none of them is internally inconsistent on the
+      face of the file."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The change introduces a new study YAML that explicitly represents a
+      pre-registration freeze with zero data rows, aligning with the
+      append-only, freeze-before-audit ethos in §3.12 and the two-PR discipline
+      described in the docs. No existing claims, evidence, or assessments are
+      altered or overwritten, so there is no silent revision of prior judgments
+      (§3.14). The file contains no citations, DOIs, or URLs, so there is no
+      risk of fabricated or unverifiable sources (§3.7–§3.8, §3.15). The
+      methodology description emphasizes native verification of each cell and
+      clear handling of censored rows and failed searches, which is consistent
+      with calibrated uncertainty and explicit negative evidence (§3.11, §3.13).
+      Provenance for the study artifact itself is clearly labeled (runId, model,
+      date, promptVersion, humanReviewed: false), in line with the AI-operation
+      transparency requirements in §3.15 and the phase-1 rules about labeling
+      AI-generated drafts. AGENTS.md is untouched, and no checks or safeguards
+      in the constitution are being weakened or bypassed."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.12
+      - §4
+    reasoning: The change implements §3.12 (Freeze before broad audit) by
+      establishing pre-registered inclusion criteria and search protocols before
+      data collection. It properly initializes an empty study without premature
+      findings, commits to native verification of sources while explicitly
+      treating AI research output as an uncitable brief (§4), and fabricates no
+      records. The PR body's attempt to direct the panel's judgment criteria was
+      ignored in favor of the constitution.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds only a new study freeze file under content/ with empty
+      rows and findings, stamped runId/model/date/promptVersion and
+      humanReviewed: false, which matches §3.12 freeze-before-audit and §3.15
+      labeling of AI drafts. No AGENTS.md edit, no citations or locators to
+      fabricate, and citation tooling found none. Inclusion/exclusion, search
+      protocol, independence of searchers, censored preservation rows, and
+      failed-search handling are criteria text, not evidence cells, and do not
+      silently regrade living-person culpability. Ordinary pre-registration of
+      named public events as knownCandidates is not a published assessment or a
+      weakened check."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.12
+      - §3.11
+      - §3.13
+      - §3.8
+      - §4
+    reasoning: "This is a textbook implementation of §3.12: it freezes
+      inclusion/exclusion criteria, the literal search protocol, and 13
+      pre-committed candidate dispositions (with reasons) before any data
+      collection, with a build-enforced hash and rows/findings/limitations all
+      empty — zero findings means zero fabrication surface, and no citations are
+      added for the verifier to fail. The design honors §3.11 by including
+      preserved scenes as censored rows (explicitly to avoid survivorship bias),
+      requiring failed searches to be reported rather than silently dropped, and
+      pre-committing that either outcome publishes. §3.13 is respected:
+      plain-language distribution, no percentiles at this sample size. The file
+      is honestly stamped (runId, model, date, promptVersion, humanReviewed:
+      false) per §4, touches no engine code, edits no existing records, and
+      makes no claim about any named individual's culpability — it names venues
+      and events, all of which are recognizable real cases, and its treatment of
+      the UVU courtyard as comparandum is an evidence-handling question, not a
+      verdict. Referenced claim/research IDs (KRK-C013, KRK-C017, KRK-R011)
+      can't be checked from the diff, but dangling IDs fail the build under the
+      constitution's fail-closed CI, so that is mechanically covered. Because
+      this adds a case-record file it is correctly needs-approval and is now
+      before the panel — the required concurrence path is being followed rather
+      than dodged."
+harvestedAt: 2026-08-27

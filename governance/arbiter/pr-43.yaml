@@ -1,0 +1,99 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 43
+title: "Settle the purge method: rewrite in place, keep the PR history"
+url: https://github.com/ejhong/erebus/pull/43
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: c88a3c64bc
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only three non-content files (docs/DECISIONS.md,
+      docs/MIGRATION-PUBLIC.md, scripts/purge-casework-history.sh); it does not
+      edit AGENTS.md, does not touch anything under content/, and adds no
+      citations, locators, or assessments (verification tooling found no
+      identifiers). The DECISIONS.md change is a new entry appended at the end
+      of the file, leaving prior entries intact, and it is explicitly labeled
+      'Decided by: founder (direct instruction); recorded by AI' — an honest
+      human/AI provenance distinction rather than an AI record dressed as a
+      human one (§3.15). Substantively the change strengthens rather than
+      weakens the checks: it preserves the PR history containing every arbiter
+      verdict comment (the inspectability §3.15 relies on) and records the
+      fresh-repo route as rejected-with-reason; the purge script still refuses
+      to run without explicit confirmation, and no CI guard, ratification gate,
+      or provenance requirement is loosened. The entry is also candid about
+      correcting the stated mechanism of the residual risk rather than silently
+      restating it, which is consistent with §3.14's requirement that changed
+      judgments record what changed and why. I see no positive evidence of
+      fabrication: the founder-instruction attribution is uncheckable from the
+      packet, but nothing in the material contradicts it, and unverifiability
+      alone is not grounds for a 'violates' vote here."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The changes are purely procedural and documentary: they add a
+      founder-recorded decision to DECISIONS.md, update the migration runbook to
+      reflect that settled decision, and align the purge script’s guidance and
+      warnings with that decision. No content under content/ is touched, no
+      citations or provenance records are added or altered, and there is no
+      modification of AGENTS.md or any weakening of the multi-model /
+      real-citation checks. The script still refuses to run without explicit
+      human confirmation and now more clearly documents that the
+      fresh-repository option is a rejected alternative tied to a dated founder
+      decision, which supports transparency rather than undermining it. The
+      description of GitHub’s potential retention of unreachable objects is
+      explicitly framed as risk reasoning, not as evidential claims about a
+      public case. As a result there is no fabrication, no silent alteration of
+      assessments, and no breach of confidentiality or other epistemic rules;
+      the diff strengthens the audit trail and governance documentation in line
+      with §3.14 and §3.15."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+    reasoning: The proposed change accurately records a founder decision in
+      `docs/DECISIONS.md` and related documentation without modifying
+      `AGENTS.md` (which is properly reserved for the human founder). By
+      deciding to rewrite history in place to preserve pull-request logs, the
+      change actively upholds the principle in §3.15 that 'Accountability is
+      inspectability', ensuring the seat-by-seat arbiter verdicts remain
+      available. The diff does not weaken any verification checks, fabricate any
+      records, or expose confidential material; rather, it solidifies the
+      project's commitment to transparent governance.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff is a complete, append-only documentation of an operational
+      founder decision (purge in place vs. fresh repo) plus matching runbook and
+      script-note updates. It does not edit AGENTS.md, featured claims,
+      assessments, or sources; it adds no citations or locators; and it does not
+      weaken §3.15 checks, CI, or ratification. The DECISIONS.md entry is
+      labeled as founder-decided and AI-recorded, consistent with the existing
+      decision log rather than presenting an unratified draft as a ratified
+      content judgment. The script still only prints post-run guidance and marks
+      the fresh-repo path as rejected rather than enabling a silent or
+      check-dodging path. Ordinary migration-doc work of this kind is not a
+      constitutional violation.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The change is confined to docs and an operational runbook script: it
+      records a founder decision (rewrite history in place, keep PR history) in
+      docs/DECISIONS.md, updates docs/MIGRATION-PUBLIC.md to reflect the settled
+      decision, and annotates scripts/purge-casework-history.sh to mark the
+      fresh-repo route as rejected. No content/ records, citations, assessments,
+      or provenance are touched, so the epistemic rules in §3 are not
+      implicated; the citation verification section found no identifiers to
+      check. The script still refuses to run without explicit confirmation, so
+      no check is weakened — if anything the change strengthens the audit trail
+      by recording the decision's grounds and rejecting silent reopening,
+      consistent with §3.14's record-what-changed-and-why spirit. AGENTS.md is
+      not edited. The PR body's claims about panel verdicts are untrusted
+      narrative but the diff itself only documents an operational decision,
+      which is ordinary repository maintenance."
+harvestedAt: 2026-08-27

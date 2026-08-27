@@ -1,0 +1,104 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 13
+title: "Engine sync: arbiter temporal humility (v2), honest maintenance-edit
+  actor label"
+url: https://github.com/ejhong/erebus/pull/13
+verdict: pass
+reason: 4 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 575961163c
+promptVersion: erebus-arbiter-v2
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "Both hunks touch scripts/ only and arrive via the declared one-way
+      engine-sync path (§4), which is the sanctioned route for engine code into
+      this repo; no AGENTS.md edit is present. The arbiter change adds a
+      temporal-humility section and bumps PROMPT_VERSION v1→v2, which
+      strengthens rather than weakens the check in §3.15: it does not lower the
+      bar for parking (the 'unsure' fallback explicitly keeps unresolvable
+      questions from passing), it only stops seats from voting fabrication on
+      mere unfamiliarity — consistent with §3.13 calibrated uncertainty and the
+      §3.8 'never invent' rule, which targets actual invention, not
+      unrecognized-but-real locators. The version bump also preserves stamped
+      provenance so runs remain reconstructable (§3.15 inspectability). The
+      second hunk edits only the descriptive actor label on future
+      maintenance-edit history entries: the old text promised 'pending human
+      approval', a mechanism the constitution does not provide (the founder
+      retains only kill switch and amendment power), and which risks implying
+      human review of AI output contrary to §4; the new label names the actual
+      multi-model concurrence gate. No published assessment is retroactively
+      altered, no provenance is removed, no citation is introduced, and nothing
+      in the PR body's claims about PRs #12/#66 was treated as a directive."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The change only affects arbiter instructions and the human-readable
+      actor label for automated maintenance edits; it does not alter any
+      content, assessments, or provenance records. The added temporal-humility
+      block in scripts/arbiter.mjs tightens epistemic discipline by explicitly
+      preventing models from treating unfamiliarity with post-training data as
+      evidence of fabrication and by encouraging an 'unsure' vote when facts
+      cannot be checked, which is aligned with §3.8 and the general
+      non-fabrication principles. Updating the PROMPT_VERSION is purely
+      bookkeeping. In scripts/reassess-changed.mjs, the actor string is
+      corrected from 'pending human approval' to a description of the actual
+      publication gate: multi-model concurrence under AGENTS.md §3.15; this
+      removes a misleading implication of human review and better reflects the
+      constitution without weakening checks. No rules about append-only
+      assessments, real citations, provenance, or gatekeeping are relaxed or
+      bypassed, and no reserved files (like AGENTS.md) are edited. Therefore the
+      diff strengthens, rather than violates, the constitutional safeguards."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: >-
+      seat failed: Error: gemini HTTP 403: <!DOCTYPE html>
+
+      <html lang=en>
+        <meta charset=utf-8>
+        <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+        <title>Error 403 (Forbidden)!!1</t
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff does not touch AGENTS.md, content records, citations, or
+      provenance. scripts/arbiter.mjs only bumps PROMPT_VERSION to
+      erebus-arbiter-v2 and inserts a temporal-humility block that forbids
+      treating unfamiliarity as fabrication and requires positive in-diff
+      evidence for a fabrication vote—this tightens, rather than weakens,
+      §3.15’s fabrication and uncertainty standards.
+      scripts/reassess-changed.mjs only rewrites the maintenance-edit history
+      actor string so it no longer promises “pending human approval” (a
+      human-review implication §3.15 and §4 forbid) and instead names the actual
+      multi-model concurrence gate in §3.15; that is an honesty/labeling fix,
+      not a silent reclassification or check bypass. No featured judgments are
+      rewritten, no confidential material is exposed, and omitted-files is
+      empty.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+    reasoning: "Both changes are engine-side script edits (synced per the one-way
+      engine flow in §4) that improve honesty rather than weaken checks. The
+      arbiter.mjs change bumps the prompt version and adds a temporal-humility
+      block requiring positive evidence before a fabrication vote — this narrows
+      false 'violates' votes but leaves every mechanical and procedural check
+      (fail-closed CI, multi-model concurrence, parking on disagreement) intact,
+      so it is not check-weakening under §3.15. The reassess-changed.mjs change
+      corrects a history-entry actor label from 'pending human approval' — which
+      per the founder-amended §3.15/DECISIONS.md pivot no longer describes a
+      real mechanism and risked implying human review that does not occur (§4
+      forbids implying AI assessments are human-reviewed) — to one naming the
+      actual multi-model concurrence gate. The entry remains append-only,
+      aiAssisted: true, and stamped with provider/model/prompt version; no
+      provenance is removed and no published judgment is silently altered. No
+      AGENTS.md edit, no citations or locators introduced, no upstream project
+      name appears in the diff. The PR body's claims about PR #12/#66 validation
+      are untrusted process assertions but the diff itself stands on its own and
+      complies."
+harvestedAt: 2026-08-27

@@ -1,0 +1,122 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 58
+title: "KRK-S004 collection: inconclusive base rates in seven ground-truth studies"
+url: https://github.com/ejhong/erebus/pull/58
+verdict: park
+reason: 4 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (22/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 78e21d86b5
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "All nine added identifiers under content/ resolve, and the resolved
+      titles/venues match what each row claims they support (Ames I NIJ 249874
+      and its FSI 2023 publication, the two Ames II JFS parts, Mattijssen FSI
+      307:110112, Guyll PNAS, Hicklin FSI 365:112287, Fadul NIJ 237960).
+      Internal arithmetic is self-consistent where checkable (Ames I
+      11/1090=1.0%, 735/2178=33.7%, 1421+735+22=2178; Mattijssen 487/2926=16.6%,
+      815/1694=48.1%, 4,620=77x60), and the figures quoted in KRK-E061/E062
+      match the row cells they summarize, which is positive evidence against
+      fabrication rather than for it. Verification labels are uniformly
+      ai_verified (not the stronger 'verified'), both evidence records are
+      reviewState ai_extracted with humanReviewed:false and a stamped runId,
+      direction is 'qualifies' with explicit limitations, and the
+      editorInference fields are cleanly separated from sourceStatement (§3.9).
+      The living-persons rules are respected: the records grade what an
+      inconclusive means as a base-rate matter and explicitly refuse both the
+      'matched' and 'cleared' glosses rather than adjudicating culpability;
+      history.yaml is appended, not rewritten, and AGENTS.md is untouched.
+      Post-freeze additions carry independenceNote discovery paths, the
+      never-pool rule is stated as the reason no summary rate is offered (§3.10,
+      §3.13), and the freeze-stamp overwrite is disclosed in limitations with
+      the prior stamp preserved in the merged freeze PR. Minor blemishes — the
+      six-vs-seven row/study counting slip in finding 3 and limitation 1, the
+      un-paginated Hicklin working-group quote, and the loose 'theiai.org PCAST
+      final report' pointer — are ordinary imperfection, not provenance
+      fabrication or check-weakening. The PR body's self-praise and its claims
+      about test counts carry no weight in my vote; I judged only the diff."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds a study table, a workpaper source entry, two evidence
+      records, and a history entry, all within the content layer; no code,
+      engine, or constitutional files are modified. Citations for all external
+      studies are backed by resolvable DOIs or URLs per the tooling, and the
+      text does not misrepresent venues or obvious subject matter, so §3.7–§3.8
+      (real, primary citations; exact provenance) appear respected. The
+      workpaper source SRC-KRK-S004 is clearly labeled as AI-authored secondary
+      synthesis with `ai_verified` and reliability notes, and the evidence
+      records are marked `ai_extracted` and `humanReviewed: false`, so AI
+      involvement and non-human review status are disclosed as required by §3.6,
+      §3.9, and the phase-1 rules. Evidence records only reference a single
+      study workpaper as their source and link to specific findings, keeping
+      them effectively atomic and with explicit evidence direction `qualifies`,
+      consistent with §3.2 and §3.5. The history entry documents what changed
+      and why, preserving version history and reasoning per §3.14. No citations
+      are fabricated or unverifiable in the mechanical report, no confidential
+      material is indicated, and there is no weakening of checks or any edit to
+      AGENTS.md, so the change complies with the constitution."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: >-
+      seat failed: Error: gemini HTTP 429: {
+        "error": {
+          "code": 429,
+          "message": "Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spe
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff only fills the already-frozen KRK-S004 study (empty
+      rows/findings) plus two new ledger evidence records, a workpaper source,
+      and a changelog line; AGENTS.md and the check machinery are untouched.
+      Every DOI and URL added under content/ resolves, and the Crossref titles
+      that were returned (Ames I peer-review, Ames II repeatability, Mattijssen,
+      Guyll, Hicklin) match the papers the rows claim to extract. Evidence
+      KRK-E061/E062 keep sourceStatement vs editorInference, direction
+      qualifies, ai_extracted / humanReviewed: false, runId stamps, and explicit
+      limitations (no transfer of intact-fire rates onto fragments; no pooled
+      summary rate), which is the constitution’s required grain rather than a
+      verdict on a named person. Post-freeze additions are labeled, Ames II
+      parts share a disclosed specimen pool, and the Gemini brief’s stronger
+      gloss is stated as not adopted. Six-versus-seven row-counting slips are
+      ordinary imperfection, not a §3 break."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.10
+      - §3.11
+      - §3.12
+      - §3.14
+      - §4
+    reasoning: "All nine added identifiers RESOLVE, and each resolved title
+      plausibly matches the study it is attached to (Guyll = 'Validity of
+      forensic cartridge-case comparisons' PNAS 2023; Hicklin = 'Accuracy and
+      reproducibility of bullet comparison decisions' FSI 2024; Monson
+      repeatability part matches the Crossref title exactly). Verification
+      labels are honest throughout: citations are ai_verified, both evidence
+      records are ai_extracted with humanReviewed: false, stamped with
+      runId/model/date, and enter as append-only additions alongside a
+      history.yaml entry recording what changed and why (§3.14). The
+      freeze-before-audit rule (§3.12) is visibly honored: the freeze runId and
+      promptVersion are preserved, the criteria hash is re-verified, and the
+      collection stamp is new. Records cleanly separate sourceStatement from
+      editorInference (§3.9), use explicit 'qualifies' direction with both
+      misreadings rejected rather than a verdict, and carry internal arithmetic
+      that checks out (487/2926=16.6%, 815/1694=48.1%, 2926+1694=4620=77×60;
+      735/2178=33.7%). Independence and non-pooling are explicit (§3.10): the
+      Fadul closed-set row is flagged as non-comparable, post-freeze discoveries
+      carry independenceNotes naming the searcher, and limitations explain why
+      no summary rate transfers. The one unverifiable quoted caveat (NIST
+      working-group language in the Hicklin row) shows no internal
+      inconsistency, so per temporal humility there is no positive evidence of
+      fabrication; nothing touches AGENTS.md or weakens any check."
+harvestedAt: 2026-08-27

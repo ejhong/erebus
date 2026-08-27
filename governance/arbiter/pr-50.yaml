@@ -1,0 +1,107 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 50
+title: "Engine sync: studies index page, tighter nav labels, study links on
+  research cards"
+url: https://github.com/ejhong/erebus/pull/50
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: ea70e61f6d
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is entirely presentational engine/UI work: a new read-only
+      studies index page, a one-word-label change in the case section navigator,
+      and wiring the existing ResearchCard study/caseSlug props on the case
+      page. No content/ files are touched, no citations, locators, or provenance
+      are added or removed (the verification tool found no identifiers), and no
+      assessment text or judgment is altered. The studies page renders data
+      already in the domain layer (id, frozenOn, criteriaHash, question,
+      supersedes) and deliberately keeps superseded studies visible with a
+      supersession pointer, which is consistent with §3.12/§3.14 rather than in
+      tension with them; it invents no status text beyond 'pending',
+      'superseded', or a row count derived from the record. Nothing weakens a
+      check: the SectionNav edit only shortens link labels ('all evidence →' →
+      'evidence →', 'Claim ladder' → 'Ladder') and adds a conditional studies
+      link, and the living-persons notice and corrections path on the case page
+      are untouched. AGENTS.md is not edited. The one real tension is §4/§8's
+      one-way engine flow — src/ and app/ are edited downstream — but the PR
+      frames it as the downstream counterpart of an upstream PR plus a hand-port
+      into a file the sync allowlist already marks as divergent, which is the
+      mechanism the constitution itself provides; and it self-classifies as
+      needs-approval per the tiered merge policy rather than trying to
+      auto-merge. That is process friction, not a broken epistemic rule."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only touches Next.js page components and a navigation
+      component; no content under `content/` and no citations, sources, or
+      provenance records are added or modified. The new `/cases/[slug]/studies/`
+      page lists studies already present in the domain layer (`loaded.studies`)
+      and does not introduce any fabricated or unverifiable references. UI copy
+      about pre-registration, pending studies, and supersession is generic
+      description of the site’s methodology, not a claim about specific external
+      evidence or persons, so it does not implicate the citation or
+      living-persons rules. The research cards are now wired to pass through
+      related study and caseSlug, but this only exposes existing relationships
+      in the data model and does not alter assessments or histories. No
+      append-only assessments, judgments, or provenance records are silently
+      changed or removed, and no safeguards or constitutional checks are
+      weakened. Therefore, the change complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.12
+      - §3.14
+      - §4
+      - §8
+    reasoning: The PR introduces UI updates for a pre-registered studies index,
+      successfully syncing engine improvements from the upstream repository
+      while preserving downstream divergence, in accordance with the Phase-1
+      engine flow rules (§4). The new studies page directly enforces the
+      constitution's epistemic standards by surfacing frozen criteria hashes
+      (§3.12 Freeze before broad audit) and maintaining visibility of superseded
+      studies as part of the correction trail (§3.14 Version everything
+      important). The code additions adhere to TypeScript strict mode and avoid
+      unnecessary dependencies (§8), and the upstream project name is safely
+      restricted to the PR body, avoiding site inputs.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The complete diff is three UI files (case page, new studies index,
+      SectionNav): shorter nav labels, a studies shelf that lists existing
+      loaded.studies with freeze date/hash/status/supersession, and ResearchCard
+      study-link wiring. No AGENTS.md edit, no content/ records, no citations,
+      no assessment overlays, and no living-persons notice or other page.tsx
+      divergence is removed. That does not fabricate provenance, present
+      unratified judgments as ratified, expose briefs, or weaken §3 checks.
+      Rendering already-loaded study metadata and keeping superseded rows
+      visible is consistent with §3.12/§3.14 rather than a silent rewrite of
+      published claims."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The diff is pure engine/UI plumbing: a new studies index page,
+      one-word nav labels, and wiring an existing study prop into ResearchCard.
+      No content/ records, citations, assessments, or statements about named
+      persons are added or altered, so the epistemic rules in §3 are not engaged
+      and the citation check is vacuously clean. The studies page actually
+      reinforces the constitution: it keeps superseded studies listed with
+      supersession pointers and displays freeze date plus criteria hash, which
+      serves §3.12 (freeze before audit) and §3.14 (visible correction trail).
+      The conditional 'studies →' link renders only when loaded.studies is
+      non-empty, so no dangling route is exposed for the two cases without
+      studies. The change to the allowlisted app/cases/[slug]/page.tsx touches
+      only section labels, the SectionNav props, and the ResearchCard wiring;
+      the living-persons notice is outside the hunks and therefore untouched,
+      and the hand-port is transparently documented in the PR body. The upstream
+      name 'aletheia' appears only in the PR body, which the founder-narrowed
+      rule permits — it never enters content/, src/, or app/. AGENTS.md is not
+      edited, no checks are weakened, and the PR self-classifies as
+      needs-approval, which matches the tiered merge policy rather than dodging
+      it."
+harvestedAt: 2026-08-27

@@ -1,0 +1,119 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 4
+title: "Research briefs for three cases in development: covid-origins,
+  september-11, kirk"
+url: https://github.com/ejhong/erebus/pull/4
+verdict: park
+reason: "1 seat(s) find a violation: Gemini 3.1 Pro (Google) (§3.15, §4); only 0
+  of 5 seats affirm compliance (4 required)"
+outcome: merged
+outcomeAt: 2026-08-25
+judgedAgainst: 9135ae0b09
+promptVersion: erebus-arbiter-v1
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: unsure
+    rules: []
+    reasoning: "What I can see is compliant on its face: §4 expressly permits
+      research briefs to be committed under `casework/<case-slug>/` as
+      non-citable inputs, and the two covid-origins renderings carry an honest
+      repo note disclosing that the only alteration was substitution of the
+      upstream project name (required by the name guard), with the original PDF
+      retained outside the repo — that is disclosure of provenance, not
+      fabrication. The briefs' opaque `citeturn...` markers and AI-generated
+      framing are tolerable because briefs are explicitly never citable and
+      nothing here enters `content/`; no assessment, claim, or published
+      judgment is touched, and no check is weakened. However, three of the six
+      added files are omitted from the diff, including the ~1,985-line
+      kirk/brief-adversarial-evidence-audit.txt, which concerns a living,
+      charged individual and per the PR body was handled differently from the
+      scrubbed markdown ('brief PDFs committed as supplied' vs. 'filenames
+      scrubbed'), leaving open whether the omitted renderings still contain the
+      forbidden upstream name (§4 CI guard) or confidence-supplied material
+      (§3.15). The PR body's assertion that CI passed is untrusted data, not
+      verification. Since the unseen files could hide exactly that violation and
+      the visible material does not decide it, I cannot vote either way."
+  - seat: GPT-5.1 (OpenAI)
+    vote: unsure
+    rules: []
+    reasoning: This PR adds only new research-brief files under casework/ and does
+      not touch content/, schemas, UI, assessments, or AGENTS.md, so there is no
+      apparent attempt to alter published claims, weaken checks, or fabricate
+      citations. The briefs themselves are heavily sourced, clearly framed as
+      seed/investigative documents, and include many real, checkable references,
+      which is consistent with the epistemic rules. However, three large files
+      are omitted from the diff (the Kirk adversarial brief .txt and two
+      September-11 briefs), and these could in principle contain constitutional
+      violations such as fabricated or unverifiable citations, confidential
+      material, or misleading provenance. Because I cannot inspect those omitted
+      files, I cannot confidently assert full compliance with rules like §3.8
+      (exact provenance), §3.15 (no fabricated citations/locators, no
+      confidential material), or the general "real citations only" requirement
+      in §4. I therefore have to vote "unsure" based on incomplete visibility,
+      despite what I can see looking constitutionally sound.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §3.15
+      - §4
+    reasoning: The visible diff for
+      `casework/kirk/brief-adversarial-evidence-audit-revised-2026-08-25.md`
+      contains extensive fabricated citations and URLs for a fictional event (a
+      supposed 2025 assassination of Charlie Kirk). Examples of fabricated
+      locators include fake URLs to the FBI
+      (`https://www.fbi.gov/news/press-releases/utah-valley-shooting-updates`),
+      the Washington Post
+      (`https://www.washingtonpost.com/investigations/2025/09/11/charlie-kirk-shooting/`),
+      and Reuters. This directly violates the absolute prohibitions in §3.15 and
+      §4 against fabricating citations, sources, or locators. Although the PR
+      body claims these are 'founder-supplied' working documents, the untrusted
+      PR text cannot override the constitution, which explicitly states AI must
+      never fabricate a citation 'inside or outside that process' (§3.15).
+  - seat: Grok 4.6 (xAI)
+    vote: unsure
+    rules:
+      - §3.8
+      - §3.15
+      - §4
+    reasoning: The visible change is the constitutionally contemplated act of
+      committing founder-supplied research briefs under casework/<case-slug>/,
+      with no AGENTS.md edit, no content/ featured records, no check-weakening,
+      and explicit seed/brief framing rather than ratified judgments. The three
+      inspected briefs (two covid-origins texts and the revised Kirk markdown)
+      read as working inputs and, in the Kirk file, repeatedly refuse
+      verdict-grading and third-party attribution. Three large files are omitted
+      from the diff—casework/kirk/brief-adversarial-evidence-audit.txt and both
+      september-11 briefs—so their citations, locators, confidential material,
+      and any living-persons overreach cannot be checked. Because §3.8/§3.15
+      fabrication and confidence-material rules apply inside or outside
+      publication, unseen briefs could hide a violation the inspected files do
+      not already settle.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: unsure
+    rules:
+      - §4 (casework convention)
+      - §3.8
+      - §3.15 (no fabricated citations)
+      - §3 living-persons rules
+    reasoning: "What is visible complies: committing founder-supplied AI research
+      briefs under casework/<case-slug>/ is expressly sanctioned by §4, the
+      briefs carry honest repo notes declaring the upstream-name scrub
+      (satisfying the name guard transparently rather than by silent edit), AI
+      authorship is disclosed ('Generated by Kimi'), and no AGENTS.md or engine
+      files are touched. The visible Kirk brief is notably disciplined about
+      living persons — it labels Owens/Shapiro/TPUSA material as unverified
+      leads, explicitly refuses attribution to named individuals, and notes
+      Robinson's unadjudicated status — and the COVID briefs' checkable
+      citations (Worobey, Pekar, Crits-Christoph, DEFUSE, ODNI 2023) are real,
+      though several 2026 events (Morens plea, Fauci contempt vote, ODNI 'Fauci
+      Files') are past my ability to verify and are tolerable only because
+      briefs are non-citable inputs. However, three of six files — over half the
+      change by lines, including both September 11 briefs and the unrevised Kirk
+      audit — were omitted from the diff. AI-generated research briefs are
+      exactly where fabricated or mislabeled citations (§3.8/§3.15) and
+      over-reaching claims about named living individuals would hide, and the
+      visible sample cannot certify the unseen majority. Since nothing visible
+      independently proves a violation, but the unseen files could contain one,
+      the honest vote is unsure."
+harvestedAt: 2026-08-27

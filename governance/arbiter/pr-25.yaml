@@ -1,0 +1,95 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 25
+title: Add two 9/11 discovery aids to september-11 casework
+url: https://github.com/ejhong/erebus/pull/25
+verdict: park
+reason: only 0 of 5 seats affirm compliance (4 required)
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: faa4b0c315
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: unsure
+    rules: []
+    reasoning: "The only file I can actually see is the binary PDF addition at
+      casework/september-11/Beyond-Misinformation-2015.pdf; the substantive
+      32,340-line addition (the Griffin MHTML page capture) is on the OMITTED
+      FILES list, so I have not reviewed a single line of it. Nothing visible
+      decides the question: the paths are confined to casework/, which §4
+      explicitly designates as private, non-citable case-construction input, and
+      the tooling found no citation identifiers to check, so on its face this
+      touches no featured content, no assessments, and no provenance. But an
+      unseen 32k-line MHTML capture could carry embedded material beyond what
+      the PR body claims — e.g. confidential correspondence, or text that would
+      breach the upstream-name guard if it were ever moved — and I cannot verify
+      the body's assertions that both items are third-party published works
+      handled per casework/README.md, since that README is not in the diff
+      either. The PR body's claims of founder supply and policy compliance are
+      untrusted data, not evidence I can act on. I would flip to 'complies' if
+      the MHTML were shown and is what it is described to be."
+  - seat: GPT-5.1 (OpenAI)
+    vote: unsure
+    rules:
+      - §3.8
+      - §3.15
+    reasoning: The visible diff only shows the addition of a single binary PDF under
+      casework/, which is allowed as private discovery material per the
+      constitution and casework rules, and it introduces no citations, claims,
+      or provenance changes. However, the CHANGE STAT and OMITTED FILES sections
+      indicate that there is at least one large MHTML file and an additional
+      path (`casework/september-11/Full`) whose contents are not shown. Those
+      omitted files could in principle contain normative text, invented
+      citations, or other changes that might violate the epistemic rules (e.g.,
+      exact provenance, real citations only) or touch restricted files. Because
+      I cannot inspect those omitted contents, I cannot confidently determine
+      compliance and must vote "unsure" based on incomplete information.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: The OMITTED FILES list is non-empty (omitting the 32,340-line MHTML
+      file), meaning I have not seen the bulk of the proposed changes. Because I
+      cannot see the contents of that file to verify it complies with the
+      constitution, and nothing in the visible diff or PR metadata definitively
+      decides the question on its own, I must vote unsure.
+  - seat: Grok 4.6 (xAI)
+    vote: unsure
+    rules:
+      - §3.15
+      - §4
+    reasoning: The omitted-files list is non-empty (`casework/september-11/Full…`,
+      the 32k-line MHTML), and the only visible hunk is a binary PDF whose bytes
+      I cannot inspect. I therefore cannot confirm what was actually added,
+      whether it is only the two published discovery copies the PR describes, or
+      whether the dump includes unpublished/confidential material forbidden by
+      §3.15. Casework under §4 is a legitimate private-input zone and nothing
+      shown edits `content/`, assessments, AGENTS.md, or the ratification
+      checks, so the visible slice does not already decide compliance either
+      way. Citation tooling also did not resolve the omitted payload. Unsure
+      because the bulk of the change was not shown.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: unsure
+    rules:
+      - §4
+      - §3.15
+      - §3.8
+    reasoning: "The visible portion of the change is consistent with the
+      constitution: both files land under casework/september-11/, which §4
+      designates for research inputs that are never citable sources, and nothing
+      touches content/, featured claims, article text, AGENTS.md, or the checks
+      themselves. The two works described (AE911Truth's 2015 booklet and
+      Griffin's 2018 book) are published third-party material, not material
+      'supplied in confidence' under §3.15, and the PR body explicitly commits
+      to never moving them into content/ or public/ and to citing original
+      publications for any derived record — matching the casework posture. The
+      citation verifier found no added identifiers, so there is nothing to check
+      on the real-citations front. However, the OMITTED FILES list is non-empty:
+      the 32,340-line MHTML capture — the substantive text portion of this
+      change — was not shown to me, and I cannot exclude from what is visible
+      that it contains mislabeled provenance, non-public material, or content
+      that contradicts how it is described. Per the panel's omitted-files rule I
+      vote 'unsure', since the visible material alone (a binary PDF stub and a
+      stat line) does not by itself decide the question. Nothing seen rises to
+      positive evidence of fabrication, so 'violates' is not warranted either."
+harvestedAt: 2026-08-27

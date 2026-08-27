@@ -1,0 +1,121 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 63
+title: "Article: the four studies enter the featured layer"
+url: https://github.com/ejhong/erebus/pull/63
+verdict: park
+reason: 4 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (25/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 7b24830a26
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only two content files: an append-only history.yaml
+      entry (new record appended at the end, no prior entries edited, stamped
+      with date, actor/model, aiAssisted, kind, and both what changed and why
+      per §3.14) and four prose insertions plus one sentence edit in
+      overview.md. No citations, DOIs, or URLs are added (verification tooling
+      confirms none), so there is no fabrication surface; the new prose routes
+      to existing ledger artifacts by ID (KRK-C037 bracketed as a claim link,
+      KRK-S001/S002/S003/S004/S005 named as studies), and dangling-ID resolution
+      is enforced fail-closed by CI. The epistemic tone is calibrated rather
+      than conclusory: the scene-release paragraph states both branches
+      conditionally, explicitly preserves the mundane explanation ('a suspect
+      already in custody, a campus under enormous pressure'), and flags that
+      eighteen venues are only moderate evidence; the federal-role paragraph
+      states the deflationary half ('participation was universal... involvement
+      itself proves nothing', 'the table does not control for victim
+      prominence'); the inconclusive paragraph corrects both misreadings rather
+      than favoring one (§3.4, §3.11, §3.13). Statements about named people stay
+      at the level of documented public assertions graded against
+      contemporaneous records (the director's day-one custody post 'corrected
+      from the same podium that afternoon'), with no culpability grading and an
+      explicit refusal of the pile-up inference in both directions, satisfying
+      the living-persons rules. AGENTS.md is untouched, no checks are weakened,
+      and the change is correctly routed as needs-approval featured content to
+      this panel rather than auto-merged. The precise figures (65.4%, 63.5%) are
+      attributed to a named pre-registered study whose records are not in this
+      diff — I cannot audit their locators here, but nothing in the visible
+      material contradicts itself, so that is ordinary reliance on
+      already-reviewed ledger records rather than positive evidence of
+      fabrication."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only updates the case history note and the
+      kirk-assassination overview article; no schemas, checks, or constitutional
+      rules are altered. The new overview text summarizes four pre-registered
+      studies and explicitly ties them to existing study IDs and claims (e.g.,
+      KRK-S001/S003/S004/S005, KRK-C037), but does not introduce any new
+      citations, identifiers, or provenance fields, so §3.7–§3.8 (real
+      citations, exact provenance) are not implicated by fabrication or locator
+      invention. The statements are clearly framed as results of prior,
+      panel-reviewed studies and as calibrated summaries (e.g., emphasizing base
+      rates, bounds, and the limited diagnosticity of the inconclusive finding),
+      which aligns with §3.4 and §3.13 rather than overstating precision. The
+      change log entry in history.yaml accurately and transparently describes
+      the editorial update and why it was made, preserving version history in
+      line with §3.14. No AI judgment is misrepresented as human, and no
+      confidential material or weakening of multi-model checks is attempted
+      under §3.15. Given there are no omitted files and no mechanical citation
+      failures, the change appears to comply with the constitution’s epistemic
+      and process rules.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: >-
+      seat failed: Error: gemini HTTP 429: {
+        "error": {
+          "code": 429,
+          "message": "Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spe
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The packet is a complete two-file content change: an append-only
+      history.yaml entry and featured-overview insertions. It does not edit
+      AGENTS.md, weaken §3.15 checks, add external identifiers, or expose
+      confidence material. The new paragraphs state both scene-release branches,
+      the mundane custody/campus explanation the table cannot exclude, and the
+      deflationary halves of the federal-role and statement studies in the same
+      breath as the anomalies; the ATF inconclusive is bounded as
+      low-diagnosticity rather than treated as a verdict. Consequential
+      sentences are attributed to existing ledger IDs
+      (KRK-S001/S003/S004/S002/S005, KRK-C037) rather than new citations—tooling
+      found none—and living-persons rules are respected (no culpability grade;
+      official statements remain source-labeled). History records what changed,
+      why, and an AI actor. No positive evidence in the material of fabricated
+      locators, silently rewritten judgments, or an unratified draft presented
+      as already ratified."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.4
+      - §3.11
+      - §3.12
+      - §3.13
+      - §3.14
+      - §3.15
+    reasoning: "The change appends an honest, dated, aiAssisted history entry and
+      folds four already-ledgered internal studies (KRK-S001/S003, S004, S002,
+      S005) into the overview article; no new external citations are added, and
+      the mechanical verifier found none to check. The added prose satisfies the
+      epistemic rules rather than straining them: the inconclusive paragraph
+      explicitly separates credibility from diagnosticity ('little diagnostic
+      weight in either direction'), the venue-table paragraph states the mundane
+      counter-explanation (suspect in custody, campus pressure) alongside the
+      anomaly, and the federal-role paragraph leads with the deflationary half
+      ('involvement itself proves nothing... Unmatched is not explained').
+      Calibration is plain-language and bounded ('eighteen venues are moderate
+      evidence'), and the modification of the published closing section is
+      disclosed in the history entry rather than silent, per §3.14.
+      Living-persons constraints hold: official statements are graded against
+      records as source-labeled assertions (e.g., the director's custody post
+      'corrected from the same podium that afternoon'), and no guilt verdict is
+      graded. This touches featured content and is correctly routed to the panel
+      as needs-approval rather than auto-merged, and the article presents the
+      studies as this case's own AI-run records, not human conclusions."
+harvestedAt: 2026-08-27

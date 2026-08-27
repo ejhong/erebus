@@ -1,0 +1,132 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 56
+title: "Content response: 2026-08-26"
+url: https://github.com/ejhong/erebus/pull/56
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (20/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: d9e80884d8
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The three added files are new append-only assessment overlays in
+      per-case assessments/ directories, each stamped with runId, model, date,
+      promptVersion and explicitly flagged humanReviewed: false with a header
+      stating they are unreviewed AI drafts that never mutate canon claim files
+      — exactly what §4 and §3.15 require, with no claim of ratified or human
+      status. No new citations, DOIs or URLs are introduced (tooling confirms
+      none), and all locators are internal evidence IDs (SEP-E###, KRK-E###,
+      COV-E###) whose dangling references would fail the build, so there is no
+      visible fabrication signal. The one featured-content edit (overview.md
+      dust-chemistry paragraph) is a softening from 'is contradicted' to a
+      stated two-laboratory conflict, and it is paired with an append-only
+      history.yaml entry recording what changed, why, actor, and aiAssisted —
+      satisfying §3.14 — and it is being run through the multi-model gate rather
+      than auto-merged, as the needs-approval tier demands. The revised
+      paragraph is more, not less, epistemically honest: it records the
+      affirmative paper and the null result side by side and notes no third lab
+      has adjudicated (§3.11, §3.13); the mild tension with the overlay's
+      retained 'contradicted' verdict for SEP-C014 is explained in that
+      overlay's own reasoning and is ordinary editorial nuance, not a silent
+      judgment change. The Kirk overlay grades evidence disputes only, labels
+      assertions to their sources, and states the presumption of innocence,
+      satisfying the living-persons rules. AGENTS.md is untouched and no check
+      is weakened."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The change adds three new AI assessment overlay files under
+      content/cases/*/assessments with clear append-only semantics, explicit
+      runId/model/date/promptVersion, and humanReviewed: false, which conforms
+      to §3.14 and §4 about AI assessments being overlays rather than edits to
+      canon. None of the added text fabricates citations or locators; it only
+      references existing claim and evidence IDs (e.g., COV-E005, KRK-E009,
+      SEP-E039), and the repository’s citation check reports no new identifiers,
+      so §3.7–§3.8 and the “real citations only” rule in §4 are not implicated
+      by new external references. The assessments consistently distinguish
+      source statements from inferences and often note when something is
+      unaudited or non-diagnostic, aligning with §3.4, §3.6, and §3.9, and they
+      explicitly describe sensitivity and limitations, supporting §3.13. The
+      september-11/history.yaml entry is an append-only log update with clear
+      provenance and justification for the editorial change, in line with
+      §3.14’s versioning and change-history requirements. The overview.md
+      modification makes the dust-chemistry paragraph more epistemically
+      accurate by acknowledging a direct conflict between two lab results
+      instead of overstating closure, which strengthens rather than weakens
+      evidential standards. AGENTS.md is untouched, no checks are removed or
+      reclassified, and there is no indication of publishing confidential
+      material or silently altering prior ratified judgments, so no
+      constitutional rule appears to be violated."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.11
+      - §3.14
+      - §3.15
+      - Living persons
+    reasoning: The proposed changes add properly formatted, append-only AI
+      assessment overlays that include the required metadata (runId, model,
+      date, promptVersion) and explicit disclaimers of human review, satisfying
+      §3.14 and §3.15. The assessment for the active Kirk case explicitly
+      affirms the presumption of innocence and confines itself strictly to
+      evidence and documentation disputes rather than guilt, complying with the
+      living-persons rules. Furthermore, the editorial update to the September
+      11 overview text properly symmetricizes conflicting laboratory findings,
+      advancing §3.11 and calibrated uncertainty without introducing any
+      unverified citations.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The complete diff adds three stamped, humanReviewed: false
+      assessment overlays and does not mutate canon claim files, matching the
+      append-only AI-draft rule in §3.14–§3.15 and Phase-1. The only
+      featured-text edit is the September 11 dust-chemistry paragraph, which is
+      logged in history.yaml with date, reason, and actor and is more cautious
+      than the prior wording (two-lab conflict, no third-lab adjudication)
+      rather than a silent judgment rewrite. No AGENTS.md edit, no new citation
+      identifiers (verification found none), no confidential material, and no
+      check-weakening. The Kirk overlay explicitly declines to grade guilt and
+      records the presumption of innocence. This PR is the multi-model gate for
+      featured article text; the overlays remain labeled drafts."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.11
+      - §3.13
+      - §3.14
+      - §3.15
+      - §3.5
+    reasoning: "The three new files are exactly the artifact the constitution
+      prescribes: append-only assessment overlays stamped with
+      runId/model/date/promptVersion, labeled humanReviewed: false and as
+      unreviewed AI drafts, mutating no canon claim files (§3.15, phase-1
+      rules). The citation tool found no added DOIs/URLs/identifiers to check,
+      and every reference is to internal evidence IDs (SEP-E039, KRK-E059,
+      COV-E029, etc.) that fail-closed CI validates, so no fabrication risk is
+      visible in the material. The overview.md edit is a logged correction, not
+      a silent one: history.yaml appends a dated entry with change text, reason,
+      and AI actor, satisfying §3.14, and the substance moves the dust-chemistry
+      paragraph from a one-sided 'contradicted' framing to recording the
+      affirmative paper alongside the independent analysis that found no
+      elemental aluminum — which §3.11 (record contradictory cases) and §7
+      (symmetric presentation) affirmatively require once SEP-E039 exists in the
+      records; the retained sentence that both analyses sit outside normal peer
+      review keeps the anti-diagnosticity weight. The September-11 overlay holds
+      SEP-C014 at 'contradicted' with explicit credibility reasoning
+      (venue/provenance/non-reproduction), a §3.4 credibility-vs-diagnosticity
+      distinction rather than an inconsistency. The Kirk overlay repeatedly
+      honors the living-persons rules: presumption of innocence stated, 'nothing
+      here grades guilt,' and verdicts confined to documentation disputes ('This
+      indicts documentation, not persons'). Uncertainty is calibrated throughout
+      (plain-language verdicts, sensitivity analysis naming the single
+      load-bearing record per case, §3.13), and limitations are honestly flagged
+      (e.g., SEP-E033/E034 'have not been read,' OCR-derived copy downgrading
+      COV-C016). No AGENTS.md, CI, workflow, or engine files are touched, so no
+      check-weakening; the featured-text edit arrives through this multi-model
+      gate as §3.15 requires."
+harvestedAt: 2026-08-27

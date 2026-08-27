@@ -1,0 +1,119 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 61
+title: "KRK-S005 collection: eleven statements graded against records"
+url: https://github.com/ejhong/erebus/pull/61
+verdict: park
+reason: 4 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (24/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: 5b87e58009
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is content-only (evidence, sources, history, one study
+      file); AGENTS.md is untouched and the OMITTED FILES list is empty. Both
+      new evidence records carry explicit direction (`qualifies`), claim IDs,
+      exactLocator, limitations, `reviewState: ai_extracted`, and
+      runId/model/date origin stamps, and the study file keeps `humanReviewed:
+      false` with `promptVersion: erebus-study-collect-v1` while the earlier
+      freeze stamp (runId 2026-08-26-study-krk-s005-freeze,
+      erebus-study-freeze-v1) is expressly preserved in the limitations — so no
+      draft is passed off as ratified and no provenance is erased (§3.14,
+      §3.15). Rows are internally consistent (11 rows; 4 corroborated / 3
+      partial / 1 court-adjudicated / 1 self-corrected / 1 unresolved / 1
+      contradicted matches the findings and PR body), each cell names its
+      bearing record with locators, and source statement is kept separate from
+      editor inference (§3.9). Living-persons handling is careful: the contempt
+      row is carried strictly as the court's finding, the Merrell row declines
+      characterization and cites his own on-record interview, and the Patel
+      custody row explicitly grades custody status rather than intent. The
+      discarded fabricated searcher table is reported in limitations without
+      importing any of its invented names or exhibits into content — the
+      fabricated speaker names appear only in the untrusted PR body, not in the
+      diff (§3.15, §3.11). Of the added URLs, five RESOLVE and one (fbi.gov
+      speeches page) returns 403 — a server refusal to an automated fetcher
+      rather than a 404 — and it re-cites an already-existing ledger source
+      (SRC-PATEL-0912-2025) with a plausible self-consistent path, so I do not
+      read it as positive evidence of fabrication; I flag it for the record."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds a collected study, two evidence records, a new
+      transcript source, and a history entry; all are append-only and do not
+      alter prior published judgments, satisfying §3.14. Every new evidence item
+      clearly distinguishes sourceStatement from editorInference and correctly
+      sets direction as qualifies, respecting §3.5, §3.6, and §3.9. Provenance
+      is explicit: each row and evidence record cites concrete sources with URLs
+      or existing source IDs, and locators are either transcript timestamps or
+      high-level descriptions of the study table; nothing suggests invented
+      page/line details, satisfying §3.8. Mechanical verification shows all
+      added URLs resolve or are 403-protected on a first-party domain; there is
+      no indication of fabricated identifiers, and the FBI URL is still only
+      used as a generic reference with ai_verified, which is acceptable under
+      the tooling’s constraints (§3.7, §3.15). The study explicitly documents
+      limitations, including discarding a fabricated OpenAI brief and
+      re-anchoring Gemini leads to primaries, which is consistent with the “real
+      citations only” rule and the prohibition on publishing fabricated material
+      (§3.15, §4). No confidential material, changes to AGENTS.md, or weakening
+      of checks is attempted, and all AI involvement and lack of human review
+      are clearly labeled, matching §3.15 and the phase-1 rules."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: unsure
+    rules: []
+    reasoning: >-
+      seat failed: Error: gemini HTTP 429: {
+        "error": {
+          "code": 429,
+          "message": "Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spe
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a post-freeze collection: empty KRK-S005 rows/findings
+      are filled, two append-only evidence records (KRK-E063/E064) qualify
+      existing claims, a history line is added, and two sources are introduced.
+      Records are stamped ai_extracted / humanReviewed: false, sourceStatement
+      is split from editorInference, directions are explicit, and no intent or
+      culpability grades appear; living-person rows stay on public or sworn
+      statements and carry the contempt item as the court's finding. Five of six
+      newly added URLs resolve; the fbi.gov remarks URL returns HTTP 403, which
+      is an access denial rather than a self-contradictory locator, and the row
+      treats it as already-ledgered SRC-PATEL-0912-2025 rather than a new
+      identifier. A discarded searcher brief is confined to limitations and is
+      not published. AGENTS.md and the §3.15 checks are untouched. Residual
+      quote-to-transcript checks are not possible from the packet and are not a
+      visible fabrication."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.5
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.11
+      - §3.15
+    reasoning: "The PR appends two evidence records with explicit 'qualifies'
+      directions and separated sourceStatement/editorInference fields, appends a
+      history entry stamped aiAssisted, and fills in the pre-registered study
+      table with per-row citations, locators (transcript timestamps), and honest
+      ai_verified labels; nothing is presented as human-reviewed or ratified.
+      Five of six new URLs resolve; the lone FAIL is the fbi.gov remarks page
+      returning HTTP 403, which is an access-denied (bot block), not a 404 — the
+      URL path structure matches FBI's real speeches-and-testimony convention
+      and the row itself notes it reuses an already-ledgered source
+      (SRC-PATEL-0912-2025), so this weighs as unchecked, not fabricated.
+      Living-persons handling is careful: the deputy prosecutor's statement is
+      carried strictly as the court's contempt finding, the private contractor's
+      statement is reported as his own on-record understanding and left
+      unresolved with an explicit refusal to characterize further, and no row
+      grades intent or culpability. Negative and unresolved outcomes are
+      recorded (one contradicted, one unresolved, three ungraded with reasons),
+      and the discarded fabricated searcher brief is disclosed in limitations
+      rather than cited — exactly what the never-cite-briefs rule requires. The
+      runId/promptVersion change from freeze to collect reflects the documented
+      two-stage study workflow, with the prior freeze state preserved in git
+      history and the changelog."
+harvestedAt: 2026-08-27

@@ -1,0 +1,130 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 71
+title: "COV-S001 collection: the agency-positions ledger, 2021-2025, verbatim
+  confidence"
+url: https://github.com/ejhong/erebus/pull/71
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (30/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: b6b8a9289a
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "All five added URLs resolve, and each is used for what it plausibly
+      says: the 2021 ODNI declassified assessment (summary and FOIA full text),
+      the June 2023 statutorily compelled ODNI report, the NPR carrier for the
+      Wray interview quotation, and AP for the January 2025 CIA spokesperson
+      statement. Verification labels are uniformly `ai_verified` rather than
+      `verified`, which is honest for AI-native reading, and the evidence record
+      carries reviewState `ai_extracted`, runId/model/date stamps, and
+      `humanReviewed: false` — no unratified draft is dressed as ratified.
+      COV-E032 cleanly separates `sourceStatement` (verbatim confidence
+      language) from `editorInference` (what the table refutes), satisfying
+      §3.9, and its direction/strength fields are explicit per §3.5. Provenance
+      is preserved rather than removed: the freeze runId/promptVersion is
+      superseded by the collect stamp but is explicitly noted as retained in the
+      freeze PR and header, and the history.yaml entry is appended, not
+      rewritten. Honest negatives are recorded per §3.11 and §3.8: an
+      unverifiable searcher-proposed testimony quote was excluded rather than
+      cited, anonymous-sourced February 2023 DOE descriptions were held out
+      until the official carrier, grouped 2021 agency attributions are flagged
+      as unnamed in the public record, and the wire duplication of the Wray
+      quote is treated as one carrier, not many. Minor imperfections (most rows
+      lack page-level locators; COV-E032's sourceId points at the site's own
+      workpaper rather than directly at the primaries) are mitigated by per-cell
+      primary citations on the study page and the workpaper's self-labelling as
+      secondary synthesis — ordinary imperfection, not violation. No AGENTS.md
+      edit, no confidential material, no weakening of checks; the PR's own note
+      that parking is expected is consistent with §3.15."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds one new Evidence record (COV-E032), a study workpaper
+      Source (SRC-COV-S001), and fills in the COV-S001 study table, findings,
+      and limitations, plus a corresponding history entry. All added citations
+      are official documents or major-news carriers, and every URL in content
+      resolves per the tooling, satisfying the real-citations rule (§3.7, §3.8,
+      Phase-1 real-citations-only). The study clearly distinguishes source
+      statements from editor inference (separate `sourceStatement` vs
+      `editorInference` in COV-E032, and quotations marked as verbatim vs
+      interpretive summaries), in line with §3.1 and §3.9. Provenance is
+      explicit: each row has its own citation with verification label
+      `ai_verified`, and the evidence record’s `exactLocator` points to the
+      study findings rather than inventing page-level locators, which is
+      acceptable under §3.8 since it does not fabricate more granular locators.
+      The workpaper source is correctly marked as secondary synthesis with
+      limitations; no primary source is misrepresented as something it is not,
+      and no fabricated identifiers or locators are introduced. The history
+      entry documents the change and explicitly notes exclusions and limits,
+      preserving append-only assessment behavior and honest uncertainty. There
+      is no change to AGENTS.md or to the constitutional checks themselves, and
+      no indication of publishing confidential material, so the proposal adheres
+      to the constitution’s epistemic and workflow constraints."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.8
+      - §3.1
+      - §3.14
+      - §4
+    reasoning: The change correctly advances the case by filling out a frozen study
+      template with exact provenance and correctly labeled verification states.
+      All added URLs mechanically resolve, and their slugs plausibly match the
+      claimed 2021-2025 agency statements. The model properly documents its
+      omissions (e.g., an unverified brief, a White House page outside the
+      frozen population) and accurately maintains its AI-operated disclosure in
+      history logs and AI-extraction tags.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff only fills the already-frozen COV-S001 table, adds
+      workpaper SRC-COV-S001, evidence COV-E032, and an append-only history
+      line; AGENTS.md and the checks are untouched. All five newly added URLs
+      mechanically RESOLVE, and each venue (ODNI/DNI PDFs, the NPR Wray
+      interview path, the AP CIA-origins article) plausibly matches the cell it
+      is asked to support; unverified testimony was excluded and labeled.
+      Source-statement vs editorInference, ai_extracted / humanReviewed: false /
+      ai_verified labels, verbatim confidence language, and explicit limitations
+      keep §3.8–3.9, §3.13, and §3.15 honest. Official assertions stay
+      attributed as agency positions, not origin verdicts or guilt claims, so
+      the living-persons rules are respected. No omitted files and no positive
+      internal contradiction that would mark a locator or quote as fabricated."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.12
+      - §3.15
+    reasoning: "All five URLs added under content/ RESOLVE per the mechanical
+      verification, and they are the right carriers: the two dni.gov/odni.gov
+      PDFs are the primary 2021 IC assessment and June 2023 statutorily
+      compelled report, with press (NPR, AP) used only where the statement
+      exists solely as a media-carried utterance (Wray interview, CIA
+      spokesperson statement) — and those rows openly say so rather than
+      dressing journalism up as a document. The verbatim confidence language
+      matches the actual texts I can check ('assess with low
+      confidence'/'moderate confidence' in 2021; 'although for different
+      reasons' and the weighing-not-evidence divergence sentence in 2023), and
+      the post-training CIA January 2025 quote is carried by a resolved AP
+      article, so temporal humility applies. Epistemic hygiene is strong:
+      freeze-before-collect honored with re-verified criteria hash (§3.12),
+      cells separated from findings and sourceStatement from editorInference
+      (§3.9), grouped-attribution limits and the unnamed 'one other agency'
+      disclosed in limitations, multiple wire outlets used to corroborate one
+      quotation rather than counted as independent evidence (§3.10 respected),
+      and an unverifiable searcher-proposed quotation excluded on the record
+      rather than cited. The evidence record has explicit direction (supports
+      COV-C014), an honest ai_verified/ai_extracted label set, humanReviewed:
+      false, and a history.yaml append — nothing is presented as ratified
+      judgment, and the PR body anticipates parking pending the §3.15 gate,
+      which is the process working as designed rather than being dodged. No
+      AGENTS.md edit, no engine/CI changes, no named-person culpability grading.
+      Ordinary imperfection at most; no rule broken."
+harvestedAt: 2026-08-27

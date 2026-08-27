@@ -1,0 +1,114 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 7
+title: Upstreaming queue and the studies/workpapers convention
+url: https://github.com/ejhong/erebus/pull/7
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-25
+judgedAgainst: 4b2b3bebe7
+promptVersion: erebus-arbiter-v1
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only ENGINE.md and docs/CONTENT_POLICY.md —
+      AGENTS.md is untouched, so §3.15's founder-reserved amendment power is not
+      implicated. The upstreaming-queue section adds process documentation that
+      tightens rather than loosens confidentiality (\"nothing from this
+      repository may be committed to the upstream: no casework, no content, no
+      docs text, no quotes\"), consistent with the ban on publishing
+      confidential material and with the one-way engine rule; engine divergences
+      already shipped are recorded via the sync allowlist as §8 requires. Queue
+      entry #5 records a panel dissent and proposes a STRONGER gate (a fresh
+      blind check of a reconciled draft before contested→ratified), which is
+      check-strengthening, not check-weakening; it changes no mechanism by
+      itself and preserves the dissent verbatim. The studies/workpapers
+      convention is compatible with §3.12 (inclusion criteria frozen with a
+      freeze date before data collection), §3.8 (full table with per-row
+      citations, versioned in git), §3.7 (load-bearing rows promoted to full
+      evidence records with their own primary sources), and §4's honest-labeling
+      rule (the workpaper Source is explicitly labeled AI-authored project
+      work). Nothing here fabricates a citation, removes provenance, silently
+      changes a published assessment, or reclassifies a change to dodge review.
+      The only soft point is the unverifiable pointer to \"PR #8 arbiter
+      comment,\" but that is an internal governance reference, not an
+      evidence-ledger citation, and does not rise to a violation."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change adds an "Upstreaming queue" section to ENGINE.md that
+      governs how engine-related ideas are documented and then re-implemented
+      upstream. This reinforces the existing one-way engine-flow rule and adds a
+      multi-repo safeguard against leaking private case content into the public
+      upstream, which is consistent with §3.15’s prohibition on weakening
+      checks. It does not alter any epistemic guarantees, versioning, or
+      verification semantics, and it preserves the separation between engine
+      mechanics and case content. The new queue entries are descriptive of
+      already-shipped mechanics and proposed features; they do not fabricate
+      citations or provenance and do not silently revise prior published
+      assessments. The docs/CONTENT_POLICY.md "Studies and workpapers"
+      convention clarifies how AI desk-research outputs are versioned and cited
+      at the correct aggregate grain, which is aligned with §3.1–3.2, §3.6–3.7,
+      §3.11–3.13, and emphasizes criteria-freeze before data collection,
+      matching §3.12. No confidential external material is being published, no
+      human-only file (AGENTS.md) is touched, and the added rules generally
+      strengthen epistemic discipline rather than relax it.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.12
+      - §3.15
+      - §4
+    reasoning: The changes establish operational guidelines that strictly align with
+      the constitution. The new studies convention enforces §3.12 by requiring
+      inclusion criteria to be frozen before data collection, and complies with
+      §3.7 by ensuring aggregate dataset findings are cited to the workpaper
+      while load-bearing precedents graduate to primary sources. The multi-repo
+      session rule explicitly prevents the leakage of private casework to the
+      public upstream, reinforcing §3.15's confidentiality rule. The diff
+      respects the Phase-1 one-way engine flow by explicitly queueing proposals
+      for the upstream repository rather than modifying engine code locally.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only appends documentation to ENGINE.md and
+      docs/CONTENT_POLICY.md; it does not edit AGENTS.md, engine code, schemas,
+      CI gates, or any published claim/evidence/assessment records. The
+      upstreaming-queue text restates the existing one-way engine rule
+      (proposals described here, code built upstream, allowlist entries treated
+      as loans) and adds a confidentiality rule against copying private casework
+      into the public upstream, which does not weaken §3.15. Queue item 5
+      records a design objection that would tighten contested→ratified
+      transitions (fresh blind check), the opposite of check-dodging. The
+      studies/workpapers convention matches §3.12 (criteria freeze before
+      collection), requires honest AI-authored labeling of the workpaper Source,
+      keeps the loader ignoring the new directory so it is not featured content,
+      and still sends load-bearing rows through ordinary primary-source Evidence
+      records. No citations, locators, or ratification stamps are invented, and
+      omitted-files is empty.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only ENGINE.md and docs/CONTENT_POLICY.md — not
+      AGENTS.md — so §3.15's human-only amendment rule is not triggered. The
+      upstreaming queue preserves the constitution's one-way engine flow (code
+      upstream→here, only proposals flowing back) and adds a privacy guard
+      forbidding any content from this private repo being committed to the
+      public upstream, which strengthens rather than weakens the checks. Queue
+      item 5 documents a §3.15 objection to the contested-reconciliation
+      mechanism and proposes a strengthening fix (fresh blind check after
+      reconciliation); recording a dissent and proposing a tighter gate is not
+      check-weakening. The studies/workpapers convention aligns with the
+      epistemic rules: inclusion criteria frozen before data collection (§3.12),
+      workpapers honestly labeled as AI-authored project work (Phase-1 honest
+      labeling), the Source/Evidence split maintained at aggregate-finding grain
+      (§3.6), and load-bearing rows promoted to full records with primary
+      sources (§3.7). No citations, locators, or provenance are fabricated — the
+      only internal references (PR #8, a named seat's dissent) point to in-repo
+      git history, which is inspectable per the accountability model. No
+      unratified draft is presented as ratified, and no featured content or
+      named-person statements are touched."
+harvestedAt: 2026-08-27

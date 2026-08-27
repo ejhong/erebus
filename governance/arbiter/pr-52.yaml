@@ -1,0 +1,128 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 52
+title: "Content response: 2026-08-26"
+url: https://github.com/ejhong/erebus/pull/52
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (18/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: f0fca831f8
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The two new files are new append-only assessment overlays under
+      content/cases/*/assessments/, each stamped with runId, model, date,
+      promptVersion and explicitly marked humanReviewed: false with a header
+      stating they are unreviewed AI drafts that never mutate canon — exactly
+      what §4 requires, and no unratified draft is dressed up as ratified. No
+      AGENTS.md edit; no citations, DOIs or URLs added (verification tooling
+      found none), so there is no fabricated-locator surface here, and the
+      internal references are to existing COV-E***/KRK-E*** and claim IDs that
+      CI's dangling-ID check governs. The Kirk overlay respects the
+      living-persons rules: verdicts grade evidentiary propositions (fragment
+      reconciliation, media chain, DNA activity-level),
+      prosecution/defense/agency statements are attributed to their sources, and
+      the synthesis explicitly states the proceeding is active, the defendant
+      presumed innocent, and that nothing grades guilt. The research.yaml
+      rewrite of KRK-R013 changes case-record text, but it is accompanied by a
+      history.yaml entry recording what changed, why, and the acting model
+      (§3.14), and it is riding the needs-approval ratification path rather than
+      auto-merge, as the tiered policy requires. The 'thirteen comparable cases'
+      figures derive from KRK-E059/KRK-E060, evidence records in the base
+      revision rather than added here, so I cannot audit their locators from
+      this diff; that is ordinary reliance on prior canon, not visible
+      fabrication. Uncertainty language is calibrated (BF ~4.2-4.3, p = 0.029,
+      'non-diagnostic', explicit sensitivity analysis) rather than
+      false-precision scoring."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.11
+      - §3.13
+      - §3.14
+      - §3.15
+    reasoning: The new files under covid-origins and kirk-assassination are clearly
+      labeled AI assessment overlays, append-only, stamped with
+      runId/model/date/promptVersion, and explicitly marked as not
+      human-reviewed, respecting §3.14 and §3.15’s requirements about AI
+      operation, append-only assessments, and not presenting drafts as ratified
+      human judgments. They do not alter any canon claim files and instead
+      provide calibrated, qualitative verdicts and confidences (well_supported,
+      provisionally_supported, unresolved, contradicted, etc.) with explicit
+      uncertainty and sensitivity discussion, consistent with §3.4 and §3.13.
+      The assessments explicitly distinguish source statements from inferences
+      (e.g., noting when WHO or declassified reports say something versus the
+      case’s own synthesis) and treat journalism and congressional material as
+      discovery or assertions rather than primary proof, in line with §3.6,
+      §3.7, and the living-persons addendum. Negative and undermining evidence
+      is recorded (numerous claims are marked contradicted or weakly_supported,
+      and non-diagnostic/limitation language is used), satisfying §3.5 and
+      §3.11. The kirk-assassination research item update and history entry
+      accurately describe that a base-rate study has been partially completed
+      and confine what remains to future work, improving transparency about the
+      research state without fabricating sources or weakening checks. No
+      citations, locators, or provenance are invented, and there is no
+      modification of AGENTS.md or any rule that would weaken the constitutional
+      safeguards, so the change complies overall.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.13
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The diff correctly introduces append-only assessment overlays
+      explicitly labeled as unreviewed AI-generated drafts stamped with runId
+      and model details, perfectly adhering to §4 Phase-1 rules. The assessments
+      avoid numerical truth scores in favor of plain-language verdicts and
+      rigorous sensitivity analysis, complying with §3.13 (Calibrated
+      uncertainty). The Kirk case assessment explicitly states the presumption
+      of innocence and only grades evidence disputes rather than criminal guilt,
+      fulfilling §3.15 (Living persons and active proceedings). Furthermore, the
+      update to the research item is properly logged in the case history with
+      its AI author declared, complying with §3.14 (Version everything
+      important).
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The two new YAML files are append-only assessment overlays, stamped
+      with runId/model/date/promptVersion, labeled as unreviewed AI drafts
+      (humanReviewed: false), and they do not mutate canon claim files —
+      matching §3.14–§3.15 and the phase-1 overlay rule. They add no
+      DOI/arXiv/URL identifiers (verification found none) and only cite existing
+      case IDs; nothing in the text is internally inconsistent provenance or an
+      invented locator. The kirk overlay states the proceeding is active, the
+      defendant is presumed innocent, and nothing grades guilt, which fits the
+      living-persons ladder. The research.yaml edit rewrites KRK-R013 from a
+      proposed study to remaining work after a stated completed tabulation, and
+      history.yaml records what changed, why, and which model — an honest
+      changelog, not a silent judgment swap or check-weakening. AGENTS.md is
+      untouched; omitted-files is empty."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The two new assessment files are exactly the append-only,
+      runId/model/date/promptVersion-stamped, humanReviewed:false AI drafts
+      §3.15 and the phase-1 rules require, with calibrated verdict vocabulary
+      and sensitivity analysis per §3.13, explicit independence caveats (Chinese
+      CDC dataset non-independence) per §3.10, and negative evidence retained
+      (unreplicated Bayes factor, unaudited line list) per §3.11. The
+      research.yaml rewrite of KRK-R013 is not an append-only violation: the
+      append-only constraint applies to assessments, and this research-item
+      update is logged in history.yaml with date, actor, and reason, satisfying
+      §3.14's visible-revision requirement; its new 'carried out' status is
+      internally consistent with the overlays' references to newly added canon
+      records KRK-E059/KRK-E060, and dangling-ID validity is fail-closed in CI.
+      No external citations were added, so the empty mechanical verification is
+      neutral. The Kirk material honors the living-persons rules: it grades
+      evidence disputes (fragment counts, media chains, statement attribution),
+      explicitly states the defendant is presumed innocent and that nothing
+      grades guilt, and labels prosecution assertions as such. Nothing edits
+      AGENTS.md, weakens checks, removes provenance, or presents the drafts as
+      ratified — the history entry itself acknowledges publication only through
+      the multi-model gate, which this review is."
+harvestedAt: 2026-08-27

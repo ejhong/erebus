@@ -1,0 +1,130 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 72
+title: "SEP-S001 collection: three peer-reviewed studies, statistics and
+  interpretations separated"
+url: https://github.com/ejhong/erebus/pull/72
+verdict: park
+reason: 5 of 5 seats affirm compliance; no seat finds a violation — but the
+  weekly content-merge budget is spent (30/10); parked until the window rolls
+outcome: merged
+outcomeAt: 2026-08-26
+judgedAgainst: b6b8a9289a
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "All three DOIs added under content/ resolve, and the resolved
+      Crossref titles (Poteshman 2006 'Unusual Option Market Activity and the
+      Terrorist Attacks of September 11, 2001'; Chesney et al. 'Detecting
+      abnormal trading activities in option markets') match exactly what the
+      rows claim they support; the Wong DOI 10.17578/15-1/2-1 resolves and its
+      structure (vol 15, issue 1/2, art 1) is internally consistent with the
+      stated 15(1-2):1-46 pagination. The change is additive: new evidence
+      record, new source record, new history entry, and the previously frozen
+      study table filled in — no published assessment is silently rewritten and
+      no ratification is claimed (humanReviewed: false, 'parking expected').
+      Verification labels are honest and calibrated: the Wong row is explicitly
+      limited to abstract/RePEc-level support in both the evidence limitations
+      and the study limitations, and the study records that a searcher's
+      fabricated Commission quotation with an invented page locator was rejected
+      rather than used — the constitution's response to an unverified locator
+      (never invent one) is exactly what happened. §3.9 separation is respected
+      (sourceStatement vs editorInference), direction is explicit ('qualifies',
+      moderate), and the editorInference is careful to keep market-level
+      abnormality distinct from trade-level attribution rather than inflating
+      SEP-C016. No named individual is accused, AGENTS.md is untouched, and
+      provenance stamps (runId/model/date/promptVersion) are present. My only
+      reservation is soft: finding 4 quotes the Commission note verbatim without
+      a note-number locator in the content itself (§3.8 prefers exact locators),
+      but omitting an unverified locator is better than inventing one and does
+      not rise to a violation."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds one new Evidence record, a workpaper Source, a study
+      table, and a history entry; all are append-only and do not silently revise
+      prior published assessments or claims, satisfying §3.14. The new evidence
+      SEP-E040 is clearly marked as `qualifies` with `moderate` strength, and
+      its `sourceStatement` versus `editorInference` are cleanly separated, in
+      line with §3.5 and §3.9. Provenance is explicit: each study row carries a
+      DOI and URL that the mechanical checker confirms as resolving, and
+      verification labels are `ai_verified` with notes about exactly what was
+      and was not read, respecting §3.7, §3.8, and the “real citations only”
+      rule in §4. The Chesney and Poteshman quotations and paraphrases are
+      presented as coming from the papers, and any uncertainty (e.g., Wong PDF
+      not retrieved) is disclosed in `limitations`, consistent with calibrated
+      uncertainty and honest verification. The workpaper source SRC-SEP-S001 is
+      correctly framed as secondary synthesis with its own limitations, and no
+      confidential or unpublished third-party material is introduced,
+      maintaining §3.15 and the briefs rule in §4. The incident of a fabricated
+      Commission quotation by an upstream AI searcher is recorded transparently
+      in the limitations, and the fabricated content itself is not used, so
+      there is no fabrication in the published ledger and no weakening of
+      checks."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.5
+      - §3.8
+      - §3.9
+      - §4
+    reasoning: The change rigorously separates statistical findings from author
+      interpretations, complying with §3.9. It assigns an explicit evidence
+      direction ('qualifies') per §3.5 and accurately records limitations and
+      uncertainties, including reliance on an abstract for one study. All added
+      DOIs mechanically resolve, and the documentation transparently records the
+      rejection of a searcher's fabricated quote in favor of natively verified
+      text, strictly upholding the anti-fabrication and honest-verification
+      mandates of §3.8 and §4.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff only fills the already-frozen SEP-S001 table, adds
+      workpaper SRC-SEP-S001, evidence SEP-E040, and a changelog stamp; it does
+      not touch AGENTS.md or weaken checks. All three added DOIs resolve, and
+      the two Crossref titles match the records (Poteshman 2006; Chesney,
+      Crameri & Mancini 2015); Wong’s DOI exists and the missing-PDF /
+      abstract-only limit is stated, with verification labeled ai_verified
+      rather than verified. Source-statement vs editorInference, direction
+      qualifies, humanReviewed: false / reviewState: ai_extracted, and the
+      OpenAI-fabricated Commission quote are all handled honestly; no invented
+      locators appear. Living-persons rules are respected: no named-person guilt
+      grade, official tracing kept as Commission/SEC assertions. Ordinary
+      missing page numbers are imperfection, not a §3.8 fabrication."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.5
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.12
+      - §3.15
+    reasoning: "All three added DOIs resolve to exactly the works claimed (Crossref
+      titles match Poteshman 2006 and Chesney et al. 2015 verbatim; the Wong et
+      al. DOI 10.17578/15-1/2-1 is registered and its pattern matches the
+      claimed Multinational Finance Journal 15(1-2) venue), and all rows carry
+      honest `ai_verified` labels with an explicit limitation that the Wong row
+      rests on the abstract/RePEc listing rather than a retrieved PDF. The
+      sourceStatement/editorInference split, the explicit `qualifies`/`moderate`
+      direction, and the careful separation of statistical abnormality
+      (SEP-C015) from trade-level attribution (SEP-C016) are textbook
+      §3.9/§3.5/§3.4 discipline. The verbatim quotes I can check against known
+      text — the Poteshman abstract line and the Commission note 130 sentences —
+      match the real documents, and no invented locators appear; the fabricated
+      searcher quotation was rejected and the incident is itself recorded in
+      limitations, which is the anti-fabrication hygiene §3.8/§3.15 demand.
+      Freeze-before-collection is honored: criteria columns are untouched, the
+      hash is re-verified, and the runId/promptVersion advance from freeze to
+      collect stage with the freeze stamp preserved per the limitations note.
+      Rows, findings, evidence, and history entries are pure appends — no
+      published judgment is silently altered, no named living person is accused
+      (only an unnamed institutional investor and newsletter, per the public
+      Commission record), and `reviewState: ai_extracted` / `humanReviewed:
+      false` avoid presenting draft as ratified. No engine, CI, or AGENTS.md
+      changes are present, so no check-weakening. Ordinary residual risk on
+      unverifiable page-level quotes does not rise to a violation given the
+      documented verification trail."
+harvestedAt: 2026-08-27
