@@ -83,9 +83,13 @@
     underlying the Commission's footnote — the trade reconstructions, the
     investor identification, and the newsletter tracing — with personal
     identifiers protected as necessary, so that the trace-outs can be
-    independently audited rather than accepted on assertion. Pair with a
-    modern re-analysis of the option data applying false-discovery-rate
-    control.
+    independently audited rather than accepted on assertion. The newsletter
+    tracing is now partly corroborated by a declassified
+    securities-regulator memorandum reporting that 26 of 28 interviewed
+    buyers cited it, and the published literature already includes a
+    false-discovery-rate-controlled re-analysis of the option data; what
+    remains unaudited is the investor identification and the trade
+    reconstructions.
   claimIds: [SEP-C016, SEP-C015]
   track: either
   effortTier: desk

@@ -1,0 +1,385 @@
+# Cross-model check run — an independent judge (Kimi K3 (Moonshot, via Venice)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-27-check-kimi
+model: Kimi K3 (Moonshot, via Venice) — independent check run via kimi-k3
+date: 2026-08-27
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: mixed
+  loadBearing:
+    - SEP-C003
+    - SEP-C005
+    - SEP-C010
+    - SEP-C011
+    - SEP-C013
+    - SEP-C019
+  weakestLinks:
+    - SEP-C004
+    - SEP-C014
+    - SEP-C016
+    - SEP-C021
+  synthesis: "This case grades 24 disputes and the grades split by claim, not by
+    camp — that split is the finding. The observation rung is almost entirely
+    uncontested, and several observations cut against the side that cites them:
+    the 2.25-second free-fall interval is in NIST's own principal findings; the
+    phantom-scramble record that documents official misstatement about the
+    air-defense timeline is simultaneously the strongest evidence against the
+    shootdown theories; the EPA finding that proves centrally edited health
+    reassurances was produced by the government's own inspector general. The
+    conventional core survives contact with the record: tower initiation is well
+    supported and tower demolition is positively disproved — initiation at
+    unpredictably aimed impact floors plus a seismically silent run-up is
+    disproof, not absence. \"Let it happen\" is contradicted by node-by-node
+    inspector-general documentation of dysfunction rather than concealment. The
+    strongest steelman for the challenger is procedural, not physical, and it is
+    real: the single load-bearing engineering claim (SEP-C003) cannot be
+    recomputed because 68,500 modeling files were withheld under a court-upheld
+    safety finding; no identified WTC 7 steel survives; the sulfidation
+    follow-up the FEMA metallurgists requested was never run; the dust
+    literature is a two-laboratory standoff in which the anti-thermite analysis
+    also excludes the building's primer, leaving both camps' settled answers
+    unsupported; the trade-tracing files behind the Commission's footnote remain
+    closed; and the data-mining records that could settle SEP-C021 were
+    destroyed. Documented misconduct — edited air-quality statements, inaccurate
+    air-defense accounts, destroyed interrogation tapes — makes reflexive
+    deference irrational, while the fact that each was exposed by the
+    government's own organs makes reflexive complicity inferences equally
+    irrational. The counter-steelman holds too: unaudited is not wrong, no
+    affirmative demolition artifact exists anywhere in the record, and the
+    loudest anomalies have mundane candidate readings. Verdict: mixed, with high
+    confidence — settled in the conventional direction at the observation and
+    authorship rungs, genuinely open at exactly the WTC 7 initiation audit, the
+    chemistry loose ends, the trading attribution, and the Saudi institutional
+    question, with the decisive tests cheap, specified, and unperformed for
+    twenty-five years."
+claimAssessments:
+  - claimId: SEP-C001
+    verdict: established
+    confidence: high
+    reasoning: NIST's final report records seven hours of fire and total collapse
+      verbatim (SEP-E001), and the earlier, independent FEMA study records the
+      broken 20-inch Vesey Street water main and that no manual firefighting was
+      attempted (SEP-E002). The roughly twenty-second collapse-time difference
+      between video and seismic measurement chains is real and is why the claim
+      says "about." Every hypothesis in the case accepts the observation, so
+      there is no opposing consideration of substance — the strongest one
+      available is that FEMA's study was preliminary and superseded, which bears
+      on mechanism, not on this event record.
+  - claimId: SEP-C002
+    verdict: established
+    confidence: high
+    reasoning: The three-stage descent, including "a freefall descent over
+      approximately eight stories at gravitational acceleration for
+      approximately 2.25 s," is quoted verbatim from NIST's own principal
+      findings (SEP-E003), added after public comment pressed the point. The
+      claim as stated is about the measurement and its provenance, and both are
+      documented. The strongest opposing consideration is that the measurement
+      is of one visible face from video, not of the structure as a whole — a
+      real limitation on diagnosticity, but not on whether the report states
+      what this claim says it states.
+  - claimId: SEP-C003
+    verdict: mixed
+    confidence: high
+    reasoning: The NIST sequence is specific, internally coherent, and
+      low-temperature — initiation at or below ~400 °C, peak column temperatures
+      near 300 °C, no melted steel required (SEP-E004) — and Plasco 2017 removes
+      any impossibility prior for the mechanism class (SEP-E018). But it has
+      never been independently reproduced and cannot be, because the files
+      needed to recompute it were withheld under a court-upheld finding
+      (SEP-E008); a mechanism only its author can evaluate is unaudited, and
+      unaudited is the ceiling this record supports. The only published
+      challenge (SEP-E005) is seriously defective but exists. The strongest
+      opposing consideration is that nothing in the record positively
+      contradicts the mechanism and it is by far the best-resourced account —
+      which is why the grade is mixed rather than anything weaker, and why it
+      cannot be higher than mixed while SEP-C005 stands.
+  - claimId: SEP-C004
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: "The UAF study is a genuine finite-element effort that released its
+      full dataset — more openness than the investigation it disputes — and its
+      own text hedges more carefully than its reception (SEP-E005). Against it:
+      advocacy funding, no journal peer review, and a single static temperature
+      field rather than a modeled fire progression (SEP-E006). The strongest
+      objection is that near-simultaneous column removal is an input to the
+      simulation rather than a finding from it — the building is made to fall
+      and then falls (SEP-E007) — and the record contains no published answer to
+      that objection from the authors. That leaves the study demonstrating that
+      its input produces the observed descent, not that the input occurred."
+  - claimId: SEP-C005
+    verdict: established
+    confidence: high
+    reasoning: "The court opinion is quoted verbatim: 25,644 files released, 68,500
+      withheld, under the Director's July 9, 2009 finding that release \"might
+      jeopardize public safety,\" upheld in April 2011 (SEP-E008). The
+      non-reproducibility clause follows directly from the withholding of the
+      modeling files. The strongest opposing considerations — that the opinion's
+      figures do not reconcile arithmetically against 91,114 potentially
+      responsive files, and that the blueprint rationale is coherent on its own
+      terms — bear on the withholding's justification and bookkeeping, not on
+      its fact or its consequence for auditability."
+  - claimId: SEP-C006
+    verdict: established
+    confidence: high
+    reasoning: NIST's own FAQ states that WTC 7 steel, unlike tower steel, carried
+      no paint or distinguishing markings and "could not be clearly identified"
+      once removed (SEP-E009) — an against-interest admission of a permanent
+      evidentiary loss. The strongest opposing consideration is that rapid
+      debris removal during a recovery operation is an ordinary emergency
+      consequence rather than a decision about evidence; that explains the loss
+      but does not undo it, and it forecloses the direct-metallurgy test class
+      permanently.
+  - claimId: SEP-C007
+    verdict: established
+    confidence: high
+    reasoning: "Appendix C's text is quoted verbatim: severe sulfidation with
+      intergranular eutectic melting, \"No clear explanation for the source of
+      the sulfur has been identified,\" and an explicit call for a detailed
+      study (SEP-E010) — which the record shows was never performed. The claim
+      is worded as a documentation claim and the documentation fully supports
+      it, including the correction that the appendix proposes no sulfur source
+      at all. The strongest opposing consideration is that the two members were
+      opportunistically recovered with hedged identifications and the appendix's
+      own leading candidate is post-collapse debris-pile heating — which limits
+      diagnosticity, not the documentation."
+  - claimId: SEP-C008
+    verdict: established
+    confidence: high
+    reasoning: Multiple on-record accounts of explosion-like sounds exist
+      (SEP-E011), and decisively, the investigating agency does not deny them —
+      its FAQ answers a responder who reported two loud booms without disputing
+      that he heard them (SEP-E012). The claim is deliberately confined to the
+      existence of such reports. The strongest opposing consideration is that
+      the accounts were compiled by an advocacy organization and lay loudness
+      descriptions cannot identify a cause — which is exactly why the claim
+      stays at the observation rung and carries low diagnosticity.
+  - claimId: SEP-C009
+    verdict: contradicted
+    confidence: moderate
+    reasoning: NIST published a falsifiable threshold — the smallest
+      Column-79-severing charge would register 130–140 dB at half a mile
+      unobstructed — and reported that no recording and no witness account meets
+      it (SEP-E012). That is a published prediction the recorded evidence fails
+      to meet, which contradicts the charge attribution for the reported sounds.
+      The strongest opposing consideration is that the threshold is the agency's
+      own model assuming unobstructed sightlines in a dense urban environment;
+      but attenuation would have to erase a jet-engine-level signal from every
+      recording simultaneously, and this verdict leans partly on general
+      acoustics background in so reasoning, which is flagged per the rules.
+      Confidence is moderate because the threshold itself was never
+      independently derived.
+  - claimId: SEP-C010
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: "There is no affirmative artifact: no device, no residue finding on
+      identified steel (none was kept, SEP-E009), and no blast-level acoustic
+      signature (SEP-E012). What sustains the claim is purely eliminative — a
+      genuine unaudited gap in the official mechanism (SEP-E008) plus a
+      challenger model too defective to perform the elimination (SEP-E005,
+      SEP-E007) — and the free-fall interval is mechanism-neutral because NIST's
+      own account accommodates it (SEP-E003). The strongest opposing
+      consideration runs both ways here: the towers show what positive disproof
+      looks like (SEP-E015), and WTC 7 lacks precisely the physical tests that
+      could deliver it, so the claim is weak rather than refuted. The
+      practical-infeasibility point about pre-rigging leans on priors and is
+      flagged as such."
+  - claimId: SEP-C011
+    verdict: well_supported
+    confidence: high
+    reasoning: The fireproofing counterfactual is quoted verbatim with its "likely"
+      hedge from both the executive summary and the conclusions chapter
+      (SEP-E013), and the conjunction — impact damage, dislodged insulation,
+      multi-floor fire — is corroborated by the observed initiation at the
+      impact floors. The strongest opposing consideration is that the
+      simulations were tuned and the "widely dislodged" insulation is a modeling
+      inference rather than a measurement of the buildings as they stood; that,
+      plus the report's own hedge, is exactly why the grade is well_supported
+      rather than established.
+  - claimId: SEP-C012
+    verdict: contradicted
+    confidence: high
+    reasoning: NIST's own FAQ states that once collapse began, propagation "was
+      readily explained without the same complexity of modeling," supported by a
+      floor-capacity argument (11 floors gradual, 6 sudden) rather than a
+      simulation (SEP-E014). The mechanics literature in the source registry is
+      order-of-magnitude analysis, not end-to-end simulation. The claim asserts
+      that an end-to-end demonstration exists; the record affirmatively shows
+      none does, which contradicts the claim as worded — a statement about the
+      state of the literature, not about whether gravity suffices. The strongest
+      opposing consideration is that the capacity and energy-balance arguments
+      may make full simulation physically unnecessary, but that is a judgment,
+      not the demonstration the claim asserts.
+  - claimId: SEP-C013
+    verdict: contradicted
+    confidence: high
+    reasoning: "This is positive disproof rather than absence of evidence:
+      initiation coincided with impact floors no one could have designated in
+      advance, the seismic record contains no pre-collapse signal for either
+      tower (SEP-E015), and charges would have had to survive nearly an hour of
+      approximately 1,000 °C fire precisely where each collapse began — the last
+      point leaning on general engineering priors, flagged as such. The
+      strongest opposing consideration is that the debris operation was not
+      conducted as a forensic search and the seismographs sat at some distance,
+      so the absence-of-device argument alone would be weak; the impact-floor
+      initiation and seismic silence are what carry the grade."
+  - claimId: SEP-C014
+    verdict: contradicted
+    confidence: moderate
+    reasoning: Elemental aluminum is not optional for the claim, and the independent
+      analysis of custody-archived dust from four Manhattan sites found "no
+      evidence of individual elemental aluminum particles of any size" and
+      concluded the red layer is not thermite (SEP-E017) — a direct factual
+      conflict with the originating paper's MEK-separation claim (SEP-E039),
+      which is unreproduced, custody-weak, and whose venue disintegrated. The
+      strongest opposing consideration is that the two analyses tested different
+      samples and the rebuttal is itself un-peer-reviewed and mirror-hosted, so
+      this is a standoff between two irregular analyses; accordingly,
+      "contradicted" attaches to the nanothermite identification specifically,
+      while what the chips actually are remains genuinely unidentified — the
+      same report excluded all 177 candidate coatings, including the towers'
+      primer.
+  - claimId: SEP-C015
+    verdict: well_supported
+    confidence: high
+    reasoning: The volume ratios are consistently reported (SEP-E019) and two
+      independent peer-reviewed methods found abnormal pre-attack option
+      activity (SEP-E020, SEP-E021), with the frozen-criteria study table
+      confirming unanimous abnormality findings across all three studies
+      (SEP-E040). The published language is consistency with informed trading,
+      and the claim keeps that wording. The strongest opposing consideration is
+      that the specific volume figures descend from September 2001 press
+      reporting of exchange data rather than a primary exchange record — one
+      source, not two — and that the statistics identify neither trader nor
+      motive; both caveats cap the grade below established without undermining
+      it.
+  - claimId: SEP-C016
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: "The statistical record leans toward the claim — the strongest of the
+      three studies reads the thirteen-trade cluster as informed trading
+      specifically, on the stated ground that ordinary insiders could not have
+      known (SEP-E040). But the Commission's trace-outs are specific, plausible,
+      and partly corroborated: 95 percent of the September 6 UAL puts to one
+      investor \"with no conceivable ties to al Qaeda,\" and 26 of 28
+      interviewed September 10 buyers citing the newsletter per a declassified
+      securities-regulator memorandum (SEP-E022, SEP-E040). The two records have
+      never met at the same table, and the tracing files remain closed. The
+      strongest opposing consideration is that every published trace-out proved
+      innocuous and no informed trader has been identified in twenty-five years
+      — the claim may well be false, but this ledger cannot show it."
+  - claimId: SEP-C018
+    verdict: established
+    confidence: high
+    reasoning: "The August 6 brief's text is reproduced in the Commission report —
+      \"hijackings or other types of attacks,\" no date, target, or method
+      (SEP-E023) — and the Joint Inquiry's Factual Finding 1 states both halves
+      verbatim: nothing identified time, place, and specific nature, while the
+      community held clearly relevant information collectively (SEP-E024). The
+      DOJ inspector general documents the constituent node failures, including
+      five missed opportunities on Hazmi and Mihdhar (SEP-E025). The strongest
+      opposing consideration is that the record was assembled by bodies
+      characterizing their own failures — noted, but the underlying documents
+      here are primary and quoted verbatim."
+  - claimId: SEP-C019
+    verdict: contradicted
+    confidence: moderate
+    reasoning: "The record actively contradicts specific
+      foreknowledge-and-permission: the joint finding that no intelligence
+      identified time, place, and specific nature (SEP-E024), the inspector
+      general's documentation of traceable bureaucratic failure at each node
+      with an express finding of no intentional misconduct at the Moussaoui node
+      (SEP-E025), and the overall signature of unconnected rather than buried
+      information. The strongest opposing consideration is principled:
+      concealment would itself predict documentary absence, and the record is
+      genuinely incomplete — interrogation recordings destroyed, the SEP-C021
+      data destroyed — so absence-based reasoning is weak here. What carries the
+      verdict is the affirmative dysfunction signature, not the absence; the
+      incompleteness caveat is why confidence is moderate."
+  - claimId: SEP-C020
+    verdict: established
+    confidence: high
+    reasoning: Staff Statement 17 states verbatim that the response to phantom
+      American 11 "is not recounted in a single public timeline or statement
+      issued by FAA or DOD," with the scramble publicly attributed to other
+      flights instead (SEP-E026), and journalism built directly on roughly
+      thirty hours of operations-floor recordings corroborates that the phantom
+      pursuit pervaded the floor (SEP-E027). The claim is a narrow documentation
+      claim and the primary record meets it. The strongest opposing
+      consideration is that confusion during an unprecedented event is not
+      intent — correctly, since the claim asserts inaccuracy against recorded
+      evidence, not motive, and the correction emerged from the government's own
+      commission.
+  - claimId: SEP-C021
+    verdict: weakly_supported
+    confidence: low
+    reasoning: Sworn recollections exist, but the only documentary reconstruction
+      anyone has published found a real May 1999 chart naming 53 terrorists
+      including a Brooklyn cell — and not Atta — and concluded the four
+      witnesses who recalled an Atta chart were mistaken (SEP-E028); memory
+      converging on later-famous names is exactly the failure mode that finding
+      describes. The destruction of the underlying data forecloses settlement
+      from records, and the barring of five witnesses (SEP-E029) is a real
+      transparency failure that is not evidence about content. The strongest
+      opposing consideration is that a department investigating its own
+      officials produced the reconstruction, obtained via a mirror of a mirror.
+      Weakly_supported rather than presently_untestable because evidence exists
+      on both sides and can be weighed; low confidence because the decisive
+      records are gone.
+  - claimId: SEP-C022
+    verdict: well_supported
+    confidence: moderate
+    reasoning: Finding 20 of the declassified section records that hijackers
+      "received support or assistance from, individuals who may be connected to
+      the Saudi Government" (SEP-E030), and a federal judge in 2025 found the
+      employment-connection claims legally sufficient to proceed (SEP-E032). The
+      claim is deliberately confined to the assistance, which is the documented
+      part. The strongest opposing consideration is that the same section
+      disclaims any final determination on reliability or sufficiency, was
+      redacted at publication, and the quotes here are OCR-derived from an
+      image-only scan — hence well_supported with moderate confidence rather
+      than established.
+  - claimId: SEP-C023
+    verdict: unresolved
+    confidence: moderate
+    reasoning: Unresolved is a substantive finding here, not a default. The
+      Commission found no evidence of institutional or senior-official funding
+      while expressly carving out diversion through charities with significant
+      Saudi government sponsorship (SEP-E031) — a formulation that leaves the
+      mid-level question open by its own terms. Documented individual assistance
+      exists without adjudicated character (SEP-E030), and the August 2025
+      ruling decided jurisdiction only, expressly not the merits, and is now
+      stayed on appeal (SEP-E032). The strongest opposing consideration is that
+      twenty-five years of investigation including executive-order
+      declassification has produced no established institutional direction — the
+      ledger leans against, but no merits adjudication exists to close it.
+  - claimId: SEP-C024
+    verdict: established
+    confidence: high
+    reasoning: "The agency's own inspector general states verbatim that the
+      September 18 \"safe to breathe\" announcement was made without sufficient
+      data and analyses, and that the White House Council on Environmental
+      Quality \"convinced EPA to add reassuring statements and delete cautionary
+      ones\" (SEP-E035). Against-interest, internal-oversight provenance makes
+      this the strongest documented misconduct finding in the case. The
+      strongest opposing consideration concerns not the finding but its use:
+      editing for reassurance during an emergency is categorically different
+      from concealing the attacks' authorship, and the same report is evidence
+      that internal oversight functioned."
+  - claimId: SEP-C017
+    verdict: contradicted
+    confidence: moderate
+    reasoning: The quotation is authentic, but its embedded context is a call from a
+      fire department commander about whether the fire could be contained
+      (SEP-E036), and the contemporaneous record independently documents the
+      decision not to fight the fire for lack of water (SEP-E002).
+      Same-afternoon rigging of a 47-story occupied tower is not feasible — that
+      step leans on general engineering background rather than the evidence
+      records and is flagged as such. The strongest opposing consideration is
+      that the exculpatory reading comes from the speaker's own spokesperson and
+      the documentary was not viewed first-hand for this case; the embedded
+      conversational context and the independent no-firefighting record, not the
+      spokesperson, carry the grade.
