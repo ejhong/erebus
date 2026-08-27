@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Inter, Space_Grotesk } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Newsreader } from "next/font/google";
 import Link from "next/link";
 import { site } from "@/src/config/site";
 import "./globals.css";
 
-// Cold modern-technical type system: Space Grotesk carries display duty
-// (headings, wordmark), Inter carries body prose, IBM Plex Mono carries
-// record IDs, section labels, and data callouts.
-const spaceGrotesk = Space_Grotesk({
+// Editorial type system (style-e2 chrome): Newsreader, an editorial serif,
+// carries display duty (headings, wordmark) — the publication's voice.
+// Inter carries body prose; IBM Plex Mono carries record IDs, section
+// labels, and data callouts — the record machinery stays instrument-quiet.
+const newsreader = Newsreader({
   subsets: ["latin"],
+  style: ["normal", "italic"],
   variable: "--font-display",
 });
 
@@ -34,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} ${plexMono.variable}`}
+      className={`${newsreader.variable} ${inter.variable} ${plexMono.variable}`}
     >
       <body className="min-h-screen flex flex-col">
         <header className="sticky top-0 z-20 border-b border-line bg-paper/85 backdrop-blur-md">
