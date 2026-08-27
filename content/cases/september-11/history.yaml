@@ -259,3 +259,24 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: 2026-08-27
+  kind: content
+  change: "Corrected the put-option paragraph, which described the Commission's
+    trade-tracing as impossible to audit and its underlying internal memorandum
+    as never published; the records now report a declassified
+    securities-regulator memorandum stating that 26 of 28 interviewed buyers of
+    the September 10 puts cited the options newsletter, so the explanation is
+    now partly checkable while the investor identification and interviews remain
+    unpublished. Research item SEP-R005 was amended for the same reason: its
+    proposed pairing with a false-discovery-rate-controlled re-analysis of the
+    option data has since been done in the peer-reviewed literature, and the
+    newsletter tracing it sought is partly on the record."
+  reason: The article and the research agenda both asserted that no part of the
+    official trade-tracing was publicly available, which the current evidence
+    records contradict; leaving it would have overstated the opacity of the
+    record and proposed work already performed.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
