@@ -313,3 +313,13 @@ sensitive-data request is now a **precondition** for flipping visibility,
 not an optional courtesy. `docs/MIGRATION-PUBLIC.md` carries the corrected
 risk statement, with the original preserved and marked superseded.
 
+
+## 2026-08-27 — Budget epoch 2 (synced from upstream)
+
+GATE_EPOCH advances to 2026-08-27T10:00Z: the founder-supervised
+studies sprint of 2026-08-26/27 (~30 founder-tapped canon landings on
+this site) stops counting against the autonomous weekly budget, which
+restarts at zero from the sprint's end. Limit unchanged at 10/week.
+Same rationale as the original epoch: the throttle bounds the
+machine's pace, not the founder's. (AI record of a founder
+instruction, 2026-08-27 session.)
