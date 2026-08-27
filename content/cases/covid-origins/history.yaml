@@ -266,3 +266,24 @@
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
+
+- date: "2026-08-27"
+  kind: housekeeping
+  change: >-
+    Cover art replaced under style-e2, "the place and its record": the
+    case's place painted at a quiet hour, dissolving into a ghosted
+    hand-drawn survey plat of itself, in a palette drawn from the place
+    and hour rather than a shared house wash. The image depicts the place
+    only — never the event, never a person — is unmistakably a painting,
+    and is credited as AI-generated editorial artwork with its full
+    generation prompt recorded in images.yaml. The superseded style-e1
+    cover (abstract instrument-chart diagram) and its provenance remain in
+    this repository's history.
+  reason: >-
+    Founder direction, 2026-08-27: the style-e1 covers were beautiful but
+    anonymous — the same cold abstraction on every case, illustrating the
+    site's method rather than any case. See docs/DECISIONS.md and
+    docs/IMAGES.md (style-e2) for the register change, which ships with a
+    founder amendment to AGENTS.md §7.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent), directed by the founder"
+  aiAssisted: true

@@ -265,7 +265,7 @@ Avoid:
 - confusing personality with hypothesis;
 - treating consensus as proof or outsider status as evidence.
 
-The visual register is cold and modern-technical (see `docs/IMAGES.md`): cool palette, instrument-chart accents, monospace record machinery — never lurid, never sensational.
+The visual register is the place and its record (see `docs/IMAGES.md`): each case's cover is its place, painted at a quiet hour, dissolving into a ghosted survey record of itself — structure constant across cases, palette the case's own, drawn from its place and hour. The record machinery stays monospace and instrument-quiet. Never lurid, never sensational, never the event itself, and never anything a reader could mistake for a photograph. (Founder amendment, 2026-08-27, superseding the cold modern-technical register of 2026-08-25 — see docs/DECISIONS.md.)
 
 ## 8. Code rules
 

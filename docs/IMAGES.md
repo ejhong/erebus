@@ -1,9 +1,13 @@
 # Erebus Image Style Guide
 
-Current style version: **style-e1** (2026-08-25, cold modern-technical).
+Current style version: **style-e2** (2026-08-27, the place and its record).
 Bump the version when the canonical prompt changes, so regenerated art
 stays consistent within a version and diffs between versions are
-deliberate.
+deliberate. style-e1 (cold modern-technical, 2026-08-25) is superseded:
+its covers were beautiful but anonymous — abstract instrument charts that
+illustrated the site's method rather than any case, indistinguishable
+from one another at a glance (founder direction, 2026-08-27; see
+docs/DECISIONS.md).
 
 ## The two image registers — never confused
 
@@ -30,57 +34,72 @@ weaken these checks.
 
 Corollaries:
 
-- Generated covers depict *ideas* — abstract, diagrammatic, typological
-  compositions — never reconstructable scenes presented as documentation.
-- If a generated image accidentally reads as a photograph, regenerate it
-  with stronger diagram cues or discard it.
+- Generated covers may depict the case's *place* — painted, at a quiet
+  hour, from a respectful distance — but never the *event*: no violence,
+  no smoke, no aircraft, no weapons, no injuries, no memorials, and never
+  a person. The place before or after, never the day itself.
+- The rendering must be unmistakably a painting. If a generated image
+  drifts toward photorealism — crisp edges, lens-like light — regenerate
+  it with stronger painterly cues or discard it. Nothing a reader could
+  mistake for a photograph ships.
 - Diagrams (ladder, timelines, dividers) stay hand-built SVG/CSS — never
   raster, never generated.
 
-## House style: cold technical diagram (style-e1)
+## House style: the place and its record (style-e2)
 
-The signature is the visual language of a precise instrument chart or
-forensic diagram: thin exact linework, isolines, waveform traces, small
-registration marks, restrained geometric abstraction, generous negative
-space. Documentary and quiet — it says "we measured carefully," never
-"look at this." Nothing lurid, nothing sensational.
+Every cover is the same sentence said about a different case: **the
+case's place, painted at a quiet hour, dissolving downward into a ghosted
+hand-drawn survey record of itself.** The upper two-thirds is a gouache
+painting of the place — visible brushwork, matte pigment, elegiac and
+dignified, empty of people. The lower third dissolves into a faint
+surveyor's plat — the stall grid, the street grid, the courtyard
+footprints — thin ink on paper, watermark-faint. A beautiful place, and
+beneath it, a file: the site's whole thesis in one frame.
 
-Palette is locked cold: Prussian blue, slate, steel grey, indigo,
-graphite, on a near-white porcelain field (`#eef1f4`) or a deep
-blue-black field (`#10151b`). No warm cream, sepia, ochre, or terracotta
-anywhere. At most one restrained counter-accent per piece.
+The **structure is constant; the palette is the case's own.** Each case
+takes its colors from its place and hour — no shared house wash, no
+default sepia, no default cold navy. Two covers on the shelf should
+plainly belong to the same publication and plainly be different places.
+(This replaces style-e1's locked cold palette, whose uniformity made the
+covers indistinguishable; the same uniformity problem was observed on the
+upstream site's single-register art.)
+
+Still absolute: nothing lurid, nothing sensational — the register says
+"this place carries a history we recorded carefully," never "look at
+this."
 
 The canonical prompt template lives in `scripts/generate-case-art.mjs`;
-per-case tone assignments live in `CASE_TONES` there. Keep this document
-and that script in sync.
+per-case palettes live in `CASE_TONES` and per-case place-and-plat
+subjects in `CASE_SUBJECTS` there. Both are required — the place, its
+hour, and its archival drawing are editorial choices, made deliberately
+per case. Keep this document and that script in sync.
 
-### Case tone assignments
+### Case palette assignments
 
-| Case | Tone |
-| --- | --- |
-| `kirk-assassination` | deep blue-black field, graphite and slate linework, one thin pale-steel accent tracing the single unbroken line |
-| `september-11` | cold Prussian-blue field deepening toward graphite, slate linework, one thin pale-steel accent where the record breaks off |
-| `covid-origins` | indigo-into-graphite field, steel-grey linework, one restrained cool-white accent held between two empty spaces |
+| Case | Place and hour | Palette |
+| --- | --- | --- |
+| `kirk-assassination` | the campus valley under the Wasatch wall, dusk alpenglow | violet and rose alpenglow, russet and burnt-orange aspens, twilight blue; plat in deep umber on grey-violet paper |
+| `september-11` | Lower Manhattan from the harbor, the clear September morning, towers intact | cerulean and cobalt sky, silver-blue water, pale steel planes; plat in slate-blue on cool white paper |
+| `covid-origins` | the market street empty in morning rain | jade, celadon, porcelain white, cool grey; plat in green-grey on cool pale paper |
 
-Both 2026-08-26 additions take the case's own finding as the subject
-rather than its event, which is what keeps generated art clear of the
-hard rule below: `september-11` renders an audit trail that terminates
-(the case's central finding is unauditability, not collapse), and
-`covid-origins` renders two symmetrical voids that converging evidence
-never reaches. Neither depicts a building, an aircraft, a pathogen, a
-map, or a place — there is nothing in either image a reader could
-mistake for documentation of the events themselves.
+Each subject is the place at a chosen hour, never the event: the towers
+stand intact on a clear morning with nothing of the day in frame; the
+market is shuttered and empty; the campus is seen at landscape distance
+with no courtyard detail beyond the ghosted plat. The plats beneath are
+generic archival drawings of the place's geometry — not reproductions of
+any actual evidentiary exhibit, which is what keeps them clear of the
+hard rule above.
 
 Rules of thumb:
 
-- One dominant tone per piece, one small counter-accent at most. If a
-  candidate looks like modern hype art — saturated, glowing, 3D-rendered —
-  reject it and regenerate.
+- If a candidate looks like modern hype art — saturated, glowing,
+  3D-rendered — or like a photograph, reject it and regenerate.
 - Ban text and numbers in the image (models garble them; labels belong in
-  HTML).
+  HTML). Suggestive, illegible plat lettering is rejected too: this site
+  does not print invented text, even decoratively.
 - Covers ship at exactly 16:9 — the case-grid card renders
   `aspect-[16/9]`, so what you crop is what readers see.
-- Post-process: crop, resize to ≤1600 px wide, JPEG quality ~75.
+- Post-process: crop, resize to ≤1600 px wide, JPEG quality ~75–90.
 
 ## Plates: sourcing and treatment
 

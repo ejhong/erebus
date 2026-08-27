@@ -271,6 +271,40 @@ rejected option with its reason, not as a pending choice. A garbage-collection
 request to GitHub Support after the force-push is cheap and worth making, but
 is not a precondition for flipping visibility.
 
+## 2026-08-27 — style-e2: the place and its record (founder amendment to §7)
+
+The founder's judgment on the style-e1 covers, looking at the live site:
+too cold, too technical, unrelated to their cases — three abstract
+instrument charts distinguishable only by label. The critique is correct
+in a specific way: style-e1 illustrated the site's *method* on every
+cover, so every cover converged on the same dark nothing, and a register
+chosen to avoid sensationalism had drifted into avoiding meaning.
+
+The replacement keeps what the coldness was protecting and discards the
+rest. Every cover is now the same sentence said about a different case —
+**the case's place, painted at a quiet hour, dissolving downward into a
+ghosted hand-drawn survey plat of itself** — with the palette belonging
+to the case rather than the house: jade rain for the market, the clear
+September cerulean for the harbor skyline, Wasatch alpenglow for the
+valley. Structure constant, palette per-case; the founder explicitly
+rejected a uniform wash after seeing three same-toned sepia drafts
+("I saw that detracting in Aletheia"). What does not move: never the
+event, never a person, never a memorial, nothing photoreal, nothing a
+reader could mistake for documentation — the place before or after,
+never the day. The plats are generic geometry, not reproductions of
+evidentiary exhibits.
+
+Shipped as: §7 register amendment in AGENTS.md (the founder's reserved
+act; the arbiter auto-parks constitution diffs and the founder's merge is
+the ratification, per upstream precedent), style-e2 spec in
+docs/IMAGES.md, updated prompt machinery in generate-case-art.mjs
+(place-and-plat subjects and palettes now both required per case, no
+generic fallback), three replaced covers with full generation provenance
+in each images.yaml, and housekeeping history entries per case. The
+generation model is recorded honestly as undisclosed-by-tool: these
+drafts came through the operating session's image tool rather than the
+generate-case-art workflow, whose canonical template now matches them.
+
 ## 2026-08-26 — The purge ran: wider than planned, verified, and one premise corrected
 
 Executed on the founder's go-ahead, in this order: preconditions verified

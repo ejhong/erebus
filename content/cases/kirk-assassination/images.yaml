@@ -7,37 +7,31 @@
   role: cover
   file: /images/cases/kirk-assassination/cover.jpg
   alt: >-
-    Abstract technical diagram on a deep blue-black field: a single sharp
-    vertical impulse resolving into one unbroken pale trace, surrounded by
-    many fainter parallel traces that step, break, and fade into dotted
-    gaps marked with small crosses.
+    Gouache painting of a university campus in a broad Utah valley at dusk,
+    autumn trees in russet and orange around low buildings, the Wasatch
+    mountains glowing violet-rose with early snow behind; toward the bottom
+    the painting dissolves into a faint hand-drawn plat of courtyard and
+    building footprints in umber ink.
   source: generated
   license: "Project artwork (AI-generated)"
   credit: "AI-generated editorial artwork, Erebus house style"
-  styleVersion: style-e1
-  model: "gpt-image-1"
-  runId: "cover-style-e1-2026-08-26"
+  styleVersion: style-e2
+  model: "image model via Cursor GenerateImage (upstream model not disclosed by the tool)"
+  runId: "cover-style-e2-2026-08-27"
   prompt: >-
-    Minimal modern technical editorial illustration, in the visual language
-    of a precise instrument chart or forensic diagram. An abstract diagram
-    of a single sharp impulse recorded by many instruments: one clean
-    vertical pulse at the left edge fanning out rightward into many
-    parallel horizontal traces, some continuing unbroken, others fading
-    into dotted gaps or stopping mid-line, with small registration marks
-    where the traces disagree — the idea of one event producing many
-    incomplete, imperfectly reconciled records. Thin, exact vector-like
-    linework: fine isolines, section lines, waveform traces, small
-    registration marks, restrained geometric abstraction. Cold palette only
-    — deep blue-black field, graphite and slate linework, one thin
-    pale-steel accent tracing the single unbroken line — on a near-white
-    cool porcelain field (#eef1f4) or a deep blue-black field (#10151b);
-    Prussian blue, slate, steel grey, indigo, graphite throughout; no warm
-    cream, sepia, ochre, or terracotta tones anywhere. Flat, matte,
-    documentary and quiet: no glow, no lens flare, no 3D render look, no
-    gradients beyond subtle atmospheric shading. Generous negative space,
-    austere composition. Absolutely no text, no numbers, no labels, no
-    captions, no border frame lines. Stylized editorial artwork, obviously
-    an illustration — not photorealistic, no photograph.
+    Editorial cover artwork, gouache painting dissolving into an archival
+    drawing. Upper two-thirds: a university campus in a broad Utah valley
+    at dusk under alpenglow — the Wasatch mountain wall glowing violet-rose
+    with early snow, autumn aspens in deep russet and burnt orange around
+    low campus buildings, long blue evening shadows across a lawn. Palette:
+    violet, rose-alpenglow, deep russet, burnt orange, twilight blue — a
+    saturated mountain-west evening palette, no sepia wash. Lower third:
+    the painting dissolves downward into a ghosted hand-drawn surveyor's
+    plat of a campus courtyard and building footprints with dashed
+    sightline measurements, drawn in deep umber ink on cool grey-violet
+    paper, faint as a watermark. Gradual atmospheric transition. Elegiac
+    and dignified; empty of people, no memorials, no flags, no text, no
+    logos.
 
 - id: IMG-KRK-P01
   role: plate
