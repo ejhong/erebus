@@ -305,24 +305,6 @@ generation model is recorded honestly as undisclosed-by-tool: these
 drafts came through the operating session's image tool rather than the
 generate-case-art workflow, whose canonical template now matches them.
 
-## 2026-08-27 — style-e2 chrome: serif voice, quiet paper, the accent follows the cover
-
-The covers changed what the chrome is for. Three coordinated adjustments,
-all in the site-owned theme layer (globals.css, layout.tsx — already
-allowlisted divergences), founder-directed the same day as the register
-amendment: (1) the display face becomes a real editorial serif
-(Newsreader) — the "serif" token had been holding a technical sans, so
-the whole site spoke instrument even where it meant to speak publication;
-body stays Inter, the record machinery stays IBM Plex Mono. (2) The paper
-register goes from blue-cast porcelain with a site-wide blueprint grid to
-quiet warm-neutral with no grid — the grid tiled behind every page as
-low-level noise, and the painted covers now carry the color the chrome
-used to. (3) The accent token is overridden per case page
-(data-case-accent attribute, one CSS block per case) so each page carries
-its cover's palette: jade for the market, cerulean for the harbor,
-alpenglow violet for the valley. The dossier dark register is untouched —
-the record still reads like an instrument where it is one.
-
 ## 2026-08-26 — The purge ran: wider than planned, verified, and one premise corrected
 
 Executed on the founder's go-ahead, in this order: preconditions verified

@@ -79,10 +79,7 @@ export default async function CasePage({
       .slice(0, 3);
 
   return (
-    // The case's accent: per-case overrides of the accent tokens live in
-    // globals.css, keyed on this attribute, so each page carries its
-    // cover's palette (style-e2, docs/IMAGES.md).
-    <div data-case-accent={loaded.record.slug}>
+    <div>
       <SectionNav
         sections={sections}
         slug={slug}

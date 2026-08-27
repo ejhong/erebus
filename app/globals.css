@@ -1,23 +1,19 @@
 @import "tailwindcss";
 
 /*
- * Erebus palette, style-e2 chrome. Token NAMES are inherited from the
- * engine (they are used throughout the components and stay stable across
- * engine syncs); the VALUES are this site's own. The paper register is a
- * quiet warm-neutral — the painted covers carry the color, the page does
- * not compete — while the dossier register and the record machinery keep
- * their instrument coolness. "copper" is the accent token: steel blue by
- * default, overridden per case below so each page carries its cover's
- * palette.
+ * Erebus cool palette. Token NAMES are inherited from the engine (they are
+ * used throughout the components and stay stable across engine syncs);
+ * the VALUES here are this site's bluish cool tint, replacing the engine's
+ * warm paper-and-copper scheme. "copper" is therefore a steel blue here.
  */
 @theme inline {
-  /* Paper register — quiet warm-neutral; the covers carry the color */
-  --color-paper: #f5f4f0;
-  --color-paper-deep: #ebe9e2;
-  --color-ink: #1b1b19;
-  --color-ink-soft: #4b4a43;
-  --color-faint: #7d7b70;
-  --color-line: #d8d5ca;
+  /* Paper register — cool porcelain with a clear blue cast */
+  --color-paper: #e9eff7;
+  --color-paper-deep: #dde6f1;
+  --color-ink: #121a24;
+  --color-ink-soft: #3b4759;
+  --color-faint: #64748b;
+  --color-line: #c2cfe0;
 
   /* Dossier register — deep blue-black, instrument-panel dark */
   --color-dossier: #0d141d;
@@ -46,34 +42,15 @@
 }
 
 body {
-  /* Quiet paper. The blueprint grid of the style-e1 chrome is retired:
-   * it tiled behind every page as low-level noise, and the interface
-   * rules war against clutter. The page is calm; the covers carry the
-   * color. */
+  /* Blueprint ground: a barely-there technical grid on blue porcelain. */
   background-color: var(--color-paper);
+  background-image:
+    linear-gradient(to right, rgb(194 207 224 / 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(194 207 224 / 0.28) 1px, transparent 1px);
+  background-size: 28px 28px;
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-}
-
-/*
- * Per-case accent: each case page carries its cover's palette (style-e2,
- * docs/IMAGES.md). The accent tokens are overridden under the
- * data-case-accent attribute set by the case page — links, rules, and
- * chips inside the page pick the case's color up automatically. Keyed by
- * slug; add a block here when a new case's cover palette is assigned.
- */
-[data-case-accent="covid-origins"] {
-  --color-copper: #2e7566; /* jade — the market in morning rain */
-  --color-copper-bright: #7ab5a4;
-}
-[data-case-accent="september-11"] {
-  --color-copper: #2f64ab; /* cerulean — the clear September morning */
-  --color-copper-bright: #84aedd;
-}
-[data-case-accent="kirk-assassination"] {
-  --color-copper: #77598c; /* alpenglow violet — the valley at dusk */
-  --color-copper-bright: #b29cc7;
 }
 
 /* Solid surfaces sit on top of the grid so text panels stay quiet. */
