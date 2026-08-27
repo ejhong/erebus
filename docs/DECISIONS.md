@@ -357,3 +357,35 @@ restarts at zero from the sprint's end. Limit unchanged at 10/week.
 Same rationale as the original epoch: the throttle bounds the
 machine's pace, not the founder's. (AI record of a founder
 instruction, 2026-08-27 session.)
+## 2026-08-27 — style-e2 chrome: serif voice, quiet paper, the accent follows the cover
+
+The covers changed what the chrome is for. Three coordinated adjustments,
+all in the site-owned theme layer (globals.css, layout.tsx — already
+allowlisted divergences), founder-directed the same day as the register
+amendment: (1) the display face becomes a real editorial serif
+(Newsreader) — the "serif" token had been holding a technical sans, so
+the whole site spoke instrument even where it meant to speak publication;
+body stays Inter, the record machinery stays IBM Plex Mono. (2) The paper
+register goes from blue-cast porcelain with a site-wide blueprint grid to
+quiet warm-neutral with no grid — the grid tiled behind every page as
+low-level noise, and the painted covers now carry the color the chrome
+used to. (3) The accent token is overridden per case page
+(data-case-accent attribute, one CSS block per case) so each page carries
+its cover's palette: jade for the market, cerulean for the harbor,
+alpenglow violet for the valley. The dossier dark register is untouched —
+the record still reads like an instrument where it is one.
+
+## 2026-08-27 — Chrome reverted the same day; the grid stays, one shade quieter
+
+The founder looked at the serif/warm-paper/per-case-accent chrome live and
+reverted it: the cool porcelain, the blueprint grid, the Space Grotesk
+display voice, and the single steel-blue accent stay. One refinement
+survives the experiment — the blueprint grid drops from 0.28 to 0.16
+alpha: present on a careful look, silent while reading. The style-e2
+covers are untouched by the revert. The lesson, recorded so the next
+redesign starts from it: the cold chrome and the warm covers are a
+deliberate contrast, not a mismatch — the frame stays an instrument, and
+the pictures carry the humanity. (The entry above records the reverted
+experiment; the git revert of its code also removed that entry from this
+log, which was wrong under this file's append-only rule — it is restored
+above, and this entry is the correction.)

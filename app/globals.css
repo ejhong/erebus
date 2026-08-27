@@ -42,11 +42,13 @@
 }
 
 body {
-  /* Blueprint ground: a barely-there technical grid on blue porcelain. */
+  /* Blueprint ground: a barely-there technical grid on blue porcelain.
+   * Softened from 0.28 on founder direction, 2026-08-27 — present on a
+   * careful look, silent while reading. */
   background-color: var(--color-paper);
   background-image:
-    linear-gradient(to right, rgb(194 207 224 / 0.28) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(194 207 224 / 0.28) 1px, transparent 1px);
+    linear-gradient(to right, rgb(194 207 224 / 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(194 207 224 / 0.16) 1px, transparent 1px);
   background-size: 28px 28px;
   color: var(--color-ink);
   font-family: var(--font-sans);
