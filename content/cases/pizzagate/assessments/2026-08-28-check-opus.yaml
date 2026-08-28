@@ -1,0 +1,471 @@
+# Cross-model check run — an independent judge (Opus 5 (Anthropic)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-28-check-opus
+model: Opus 5 (Anthropic) — independent check run via claude-opus-5
+date: 2026-08-28
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: well_supported
+  loadBearing:
+    - PZG-C001
+    - PZG-C010
+    - PZG-C020
+    - PZG-C002
+    - PZG-C008
+    - PZG-C014
+    - PZG-C016
+    - PZG-C012
+    - PZG-C025
+  weakestLinks:
+    - PZG-C024
+    - PZG-C015
+    - PZG-C028
+    - PZG-C031
+    - PZG-C030
+    - PZG-C009
+  synthesis: "The case's structural thesis has two halves, and the evidence
+    records support both, though unevenly. Half one — the raw material was
+    authentic — is carried by document-level exhibits that are about as strong
+    as documentary evidence gets: emails quoted verbatim with headers (PZG-E001,
+    E002, E016), FEC Schedule B images and API records with an internally
+    corrected dollar figure (PZG-E009), DOJ press releases (PZG-E010),
+    pre-controversy society and food journalism (C011, C013, C014), and archived
+    web captures diffed across the critical dates (C022, C023). Half two — the
+    incriminating interpretive layer does not survive source recovery — rests on
+    a small number of genuinely decisive items. The strongest is PZG-E008: the
+    genuine 2007 FBI bulletin, checksummed and text-searched, contains zero food
+    terms. Since every \"decoded\" email reading ran through the food
+    dictionary, and the dictionary's earliest attestation is anonymous November
+    2016 forum material, the interpretive engine has no provenance and the
+    structure above it inherits that failure. The second strongest is the
+    chronology argument: the hotdog joke in print in 2000 (C002), the tomatoes
+    in Buck's basement in 2013 (C014), the keyboardist named in DCist in 2012
+    (C016). Documents that predate any motive to fabricate a defense are the
+    right kind of evidence here, and the case uses them correctly. Steelmanning
+    the allegation: three things survive. The network was real and dense, and
+    the case concedes it (C011, C012, C027) — early researchers were right about
+    the map even where wrong about what it meant. \"Cheese pizza\" really is
+    documented CSAM slang in a 2023 federal affidavit (C031), so the dictionary
+    was not invented from pure nothing. And the residue is real: an unrecovered
+    handkerchief described as pizza-map-related (C003), a referent-free
+    \"torture chamber\" line (C005), a threadless \"wet works\" email (C006).
+    The case's own handling of these — authentic, unexplained, weightless in
+    every direction — is the epistemically correct move, but it is a move a
+    determined proponent will read as evasion. Steelmanning the debunk: C020 is
+    the pivot. A negative existence claim is bounded by search space, and this
+    search space is entirely public — no subpoena, no sealed files, no private
+    records. But an alleged operating trafficking network subjected to nine
+    years of maximally motivated adversarial search, plus a physical armed
+    intrusion (C019), plus a hostile subsequent federal administration, has
+    produced not one instance of five conventional evidence classes. That
+    sustained emptiness is genuinely probative, and it is the case's most
+    load-bearing fact. Two structural cautions. First, every evidence record in
+    this file was fetched and checked by a single AI editorial pipeline against
+    its own verification ledger; nothing here has been independently replicated,
+    and my verdicts inherit that single-chain dependency. Second, C001's own
+    stated objection is real and underweighted: the pattern is assembled from
+    claims that were checkable, and checkability may correlate with mundanity.
+    The case would be strengthened by PZG-R001's frozen-criteria study, which
+    would convert an argument from examples into a measured distribution.
+    Neither caution changes the direction of the finding; both bound its
+    strength."
+claimAssessments:
+  - claimId: PZG-C001
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "The pattern is instantiated repeatedly and with independent exhibits
+      — a 2000 profile predating the hotdog email by fifteen years, a hedged \"I
+      think\" behind a hard dollar figure, a 2013 food story locating the
+      basement, a 2012 press review naming the masked performer, a mechanically
+      searched bulletin with zero food words. That is more than anecdote; it is
+      a convergent set with different source types and different failure modes.
+      The strongest opposing consideration is selection: the claims that got
+      checked are the ones with recoverable primary sources, and the residue
+      items (C003, C005, C006) resist recovery precisely because context is
+      missing — so the pattern's extension to the unchecked population is
+      inference, not measurement. It is also worth stating that the pattern was
+      assembled by the same editorial process that selected the exhibits;
+      PZG-R001 is the right remedy."
+  - claimId: PZG-C002
+    verdict: established
+    confidence: high
+    reasoning: 'Both documents are quoted verbatim: the 2015 email in its
+      climate-negotiation work-banter context (PZG-E001) and the July 2000 Post
+      profile recording the hot-dog-stand ambition as a standing half-joke. This
+      is the cleanest chronological refutation in the file, because the mundane
+      referent is in print fifteen years before the artifact being "decoded."
+      The strongest opposing consideration — that a long-running joke could in
+      principle coexist with coded usage — is logically true but converts the
+      code reading into a claim requiring positive evidence it has never had.'
+  - claimId: PZG-C003
+    verdict: established
+    confidence: high
+    reasoning: "The claim is narrowly about attribution layers, and all three layers
+      were fetched: the realtor's cloth description, Sandler's own parenthetical
+      guess, and Podesta's dismissive reply (PZG-E002). As stated it is
+      established; what it explicitly does not do is resolve what the object
+      was. The strongest opposing consideration is that the owner's shrug is
+      consistent with an unremarkable object but does not demonstrate one, so
+      the anomaly remains genuinely open — which is exactly the size the claim
+      assigns it."
+  - claimId: PZG-C004
+    verdict: established
+    confidence: moderate
+    reasoning: The sourceAnchor quotes the passage verbatim with sender
+      identification and domestic logistics context, and the claim's checkable
+      corrective element — that Podesta appears in the wishes-you-could-come
+      line rather than the guest list — is a falsifiable statement about a
+      public document. Confidence is moderate rather than high only because no
+      dedicated evidence record accompanies it; I am relying on the case's
+      verification note. The strongest opposing consideration is that
+      surrounding normalcy cannot logically exclude a hidden referent — but it
+      removes every positive reason the incriminating reading offered.
+  - claimId: PZG-C005
+    verdict: established
+    confidence: high
+    reasoning: "The claim asserts only that a three-line email with that text exists
+      and contains no referent, and the full body is quoted with headers
+      verified. Its own diagnosticity rating of \"low\" is correct: a
+      referent-free fragment is equally consistent with every hypothesis,
+      including banal ones like dental work or a workout. The strongest opposing
+      consideration is that \"no in-message referent\" is a fact about the
+      record, not about the world — the correspondents knew what was meant, and
+      recovery of the sender's calendar could move it in either direction."
+  - claimId: PZG-C006
+    verdict: established
+    confidence: moderate
+    reasoning: The email body, the absence of any quoted prior message, the date,
+      and the reply were all fetched, and the primary-night timing is externally
+      checkable background. The claim is framed as a bound on interpretation
+      rather than an interpretation, which is the right shape. The strongest
+      opposing consideration is that the "no thread behind it" finding is a
+      negative over a hacked archive that may be incomplete, so the absence of a
+      preceding message in WikiLeaks' corpus is weaker than the absence of a
+      preceding conversation.
+  - claimId: PZG-C007
+    verdict: established
+    confidence: high
+    reasoning: "The complete invitation — sender, residential venue, menu, parking,
+      family-friendly framing, and Podesta's decline — was fetched and quoted;
+      the document is self-explaining and the cropped version is demonstrably a
+      subset of it. This is the file's clearest context-stripping exhibit. The
+      only opposing consideration is editorial rather than evidentiary:
+      featuring an easy target risks the appearance of stacking the deck, which
+      the case partially offsets by also preserving the unresolved residue."
+  - claimId: PZG-C008
+    verdict: established
+    confidence: high
+    reasoning: The Stratfor email was fetched in thread context and the hedge "I
+      think" is verbatim inside a joking office chain; the transmission chain
+      from hedged speculation to asserted transaction is fully recoverable. This
+      is the strongest single demonstration of paraphrase inflation in the file.
+      The strongest opposing consideration — Burton's professional background
+      might make his guess informed — does not survive the fact that no
+      procurement or expense record matching the figure has ever surfaced, and
+      the email itself names no event.
+  - claimId: PZG-C009
+    verdict: well_supported
+    confidence: moderate
+    reasoning: The email and attachment were fetched natively, so the authenticity
+      half is solid; the second half — that no reliable source identifies the
+      child flatly — is a bounded negative over circulation that I cannot audit
+      from the records provided. The case notes it corrected its own earlier
+      overstatement here, which is a point in favor of the pipeline's
+      reliability. The strongest opposing consideration is that the claim's
+      evidentiary payload is near zero either way, and its inclusion mainly
+      serves to pin limits rather than to establish anything.
+  - claimId: PZG-C010
+    verdict: established
+    confidence: high
+    reasoning: 'PZG-E008 is the most decisive record in the file: the bulletin was
+      fetched, checksummed, text-extracted, and mechanically searched, returning
+      zero occurrences of pizza, pasta, hotdog, or cheese, while its genuine
+      graphical-symbol contents were confirmed verbatim. Because the food
+      dictionary was the interpretive engine for every "decoded" email, its
+      provenance failure is load-bearing for the entire structure above it. The
+      strongest opposing consideration is twofold: the PDF is a mirror rather
+      than an FBI-hosted FOIA copy, and criminal slang can exist without
+      appearing in official documents — but a dictionary claiming
+      law-enforcement provenance that law enforcement never documented, first
+      attested in anonymous 2016 forums, carries a burden it has not met in nine
+      years.'
+  - claimId: PZG-C011
+    verdict: established
+    confidence: high
+    reasoning: The June 2015 Washington Life profile was fetched live and via
+      Wayback with the pizza-party and artist passages checked verbatim,
+      seventeen months before the controversy. The claim asserts only that the
+      ties were publicly documented pre-controversy, which the artifact settles.
+      The strongest opposing consideration is that public sociability and
+      concealed conduct are not mutually exclusive; the claim's evidentiary
+      force is therefore modest and lies in undercutting the "hidden network
+      discovered" framing rather than in exoneration.
+  - claimId: PZG-C012
+    verdict: established
+    confidence: high
+    reasoning: PZG-E009 records specific amounts, dates, transaction IDs, purpose
+      codes, and recipient address, recovered from legacy filing images and
+      confirmed through the official FEC API — including the self-correction
+      from the widely copied $11,500 to the filing's $11,600, which is itself a
+      good indicator of native verification rather than reproduction of
+      secondary compilations. The measurement claim is as solid as public
+      disbursement data gets. The strongest opposing consideration, correctly
+      flagged in the record, is that disclosed filings say nothing about
+      undisclosed flows; but the allegation concerned these payments, and these
+      payments are itemized vendor spending.
+  - claimId: PZG-C013
+    verdict: established
+    confidence: high
+    reasoning: The 2004 Post profile was verified via Wayback with both the Grannan
+      and Soliloquy VII passages checked verbatim, and PZG-E022 independently
+      confirms National Gallery provenance for at least one Grannan work in the
+      Podesta gift while explicitly correcting a loose attribution ("Sing Sing"
+      is not Podesta-provenance). The claim asserts documentation, not
+      inference. The strongest opposing consideration is that including private
+      aesthetics at all invites the taste-as-evidence fallacy; the claim's own
+      diagnosticity rating of "low" is the correct answer to that.
+  - claimId: PZG-C014
+    verdict: established
+    confidence: high
+    reasoning: Both prongs were verified verbatim, and the decisive one — the 2013
+      Post food article locating the canned tomatoes in the basement of Buck's
+      Fishing & Camping — predates the dispute by three years, which is what
+      gives the resolution its force. The 2015 wording is genuinely ambiguous
+      and the case preserves that ambiguity rather than pretending the dispute
+      was baseless. The strongest opposing consideration is that a 2013 storage
+      practice does not strictly entail the 2015 referent, so a residual gap
+      remains; it is small, and no contrary documentation has surfaced.
+  - claimId: PZG-C015
+    verdict: well_supported
+    confidence: moderate
+    reasoning: 'Three contemporaneous November 2016 captures were verified through
+      Wayback mirrors, and the self-correcting comment ("we meeting at core
+      offices not #centrolina") is quoted verbatim, which is a genuinely elegant
+      finding: the primary artifact defuses its own myth. The stated limitation
+      is real and material — text-mode fetches establish captions and comments
+      but not the visual content of the photographs, so image-level claims
+      remain unaudited. The strongest opposing consideration is that one
+      corrected caption does not generalize to the wider archived corpus, and
+      the identification of the BRC09 code as a Pastebin snapshot shows how
+      easily this material is miscategorized in both directions.'
+  - claimId: PZG-C016
+    verdict: established
+    confidence: high
+    reasoning: The identity refutation rests on pre-controversy print — DCist 2012
+      naming the lineup and the character-and-banter act at Comet — which cannot
+      have been constructed as a defense, and is reinforced by PZG-E006's
+      interview-based scholarly account and PZG-E007's booking roster showing an
+      unremarkable venue relationship. This is the file's cleanest
+      identity-conflation resolution. The strongest opposing consideration is
+      that the 2019 article is post-controversy testimony from interested
+      parties, and PZG-E020 shows one clip's provenance was flagged as unclear
+      even by contemporaneous reporting; native footage recovery (PZG-R005)
+      remains the open item, though it bears on performance content, not on who
+      was wearing the mask.
+  - claimId: PZG-C017
+    verdict: established
+    confidence: high
+    reasoning: "The IRS Form 990 was fetched and text-extracted with the officer row
+      quoted verbatim (\"MAX MACCOBY — 2.00 — DIRECTOR\") and the filer
+      identified as the U.S. fundraising entity by EIN. The claim's structure is
+      right: it affirms the association and corrects its magnitude, rather than
+      erasing it. The strongest opposing consideration is that a single filing
+      year documents a single year's role, so a broader operational involvement
+      in other years is not excluded by this record alone — though nothing
+      recovered suggests one."
+  - claimId: PZG-C021
+    verdict: established
+    confidence: high
+    reasoning: "Two independent primary sources agree: the 1998 Post profile's
+      verbatim \"an old college pal of Podesta's brother Tony\" (PZG-E005) and
+      Hastert's own oral history placing the 1960s Japan trip with Tony and
+      describing John only as someone he \"got along\" with (PZG-E004). The case
+      also records that its own draft overstated the 1998 wording and was
+      corrected, which is evidence about pipeline reliability. The strongest
+      opposing consideration is that cordial professional relations with John
+      are documented in the same sources, so the correction concerns degree and
+      which brother rather than the existence of acquaintance."
+  - claimId: PZG-C019
+    verdict: established
+    confidence: high
+    reasoning: "Both USAO-DC press releases were fetched live and the specific facts
+      — armed entry, over twenty minutes inside, rounds into a locked door,
+      surrender, plea date, four-year sentence, sentencing judge — are
+      government-record statements. The claim's most valuable feature is the
+      attribution split it enforces: \"searched and found no evidence\" is press
+      summary, not DOJ language, and conflating them would be the same
+      paraphrase inflation the case documents elsewhere. The strongest opposing
+      consideration is that the incident's evidentiary value for the underlying
+      allegation is narrow in both directions — an armed amateur's twenty
+      minutes neither clears nor implicates anything beyond that day and that
+      room."
+  - claimId: PZG-C020
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "This is a bounded negative existence claim, and its strength comes
+      from the search conditions rather than from any single record: nine years
+      of maximally adversarial public scrutiny, an armed intrusion, sustained
+      partisan incentive to substantiate, and a 32-item native verification
+      ledger have yielded no identified victim, firsthand witness, forensic
+      finding, criminal financial trail, or law-enforcement case record. For an
+      allegation of an *operating* network — which would necessarily generate
+      victims, transactions, and participants — that emptiness is genuinely
+      probative rather than merely unproven. The strongest opposing
+      consideration is the one the claim names honestly: the searched space is
+      public only, with no subpoena power, no sealed files, and no private
+      records, so this is a statement about the examined record and not a
+      universal negative. I hold confidence at moderate rather than high because
+      the assessment necessarily leans partly on background knowledge that no
+      prosecution or substantiating investigative record has emerged, rather
+      than solely on the evidence records here."
+  - claimId: PZG-C022
+    verdict: established
+    confidence: high
+    reasoning: "Both Wayback captures were fetched, the logo assets diffed, and both
+      archived PNGs rendered and described, with the owner's \"It's a slice of
+      pizza\" quotation and the removal confirmed in contemporaneous reporting
+      (PZG-E011). The claim asserts the artifact and the timing, not an
+      inference, and the case explicitly records that the \"compared to an FBI
+      symbol\" framing is absent from the Post articles — a self-caught
+      inflation. The strongest opposing consideration is interpretive rather
+      than factual: removal under a harassment wave is what both a guilty and an
+      innocent small business would do, so the change carries essentially no
+      discriminating power."
+  - claimId: PZG-C023
+    verdict: established
+    confidence: moderate
+    reasoning: The CDX diff showing exactly one image disappearing across November
+      2016 and the rendered archived PNG establish the artifact and its removal;
+      the St. Jude fundraiser connection is carefully attributed to the Post's
+      reporting of the owners' account rather than asserted, which is the
+      correct handling since the page carries no caption. Confidence is moderate
+      rather than high because that attributed element rests on a single outlet
+      relaying an interested party's explanation. The strongest opposing
+      consideration is that nested hearts are ubiquitous in commercial art,
+      which cuts against the original accusation far more than against the claim
+      as stated.
+  - claimId: PZG-C024
+    verdict: mixed
+    confidence: moderate
+    reasoning: "The three components carry different evidentiary weights, and the
+      claim's honesty about that is why \"mixed\" rather than a directional
+      token fits: the camera's existence is documented in an official DDOT list,
+      TrafficLand's movability and non-recording statements are verified, but
+      the claim that the view turned away survives only as a December 2016
+      quotation carrying a Voat thread identifier — the original post has not
+      been recovered, and neither frames nor operator logs exist. The strongest
+      opposing consideration is that keeping an unrecoverable claim formally
+      open grants it unearned life; the countervailing point is that even a
+      confirmed view change would be near-worthless evidence given routine
+      operator repositioning and no recording, so nothing rides on it either
+      way. The paywalled 2003 report (PZG-R003) is the relevant closure item."
+  - claimId: PZG-C025
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Both Andrew Klines are independently documented — the DOJ Special
+      Litigation Counsel in a 2007 justice.gov release (PZG-E013) and the
+      Veritas restaurant-industry attorney at the matching address (PZG-E014) —
+      and the mirrored 2016 thread contains the correction verbatim alongside
+      its rejection, which is a rare and valuable capture of a debunk failing to
+      propagate. The material weakness is that the LLC paperwork itself was not
+      independently recovered: the address match runs through the 2016 forum
+      thread rather than through a fetched corporate filing, so the
+      identification of which Kline appears on the restaurant's papers is one
+      inferential step short of direct. The strongest opposing consideration is
+      that a same-name coincidence on trafficking-adjacent paperwork was a
+      legitimate thing to check; the documented failure was refusing the answer,
+      not asking the question."
+  - claimId: PZG-C026
+    verdict: established
+    confidence: high
+    reasoning: "The claim is scoped precisely to what is verifiable: the email
+      forward exists (fetched, email 15893), and Abramović stated in a
+      contemporaneous November 2016 ARTnews interview that Tony attended, John
+      did not, and she had never met John (PZG-E015). Both propositions are
+      established as stated. The strongest opposing consideration is that her
+      account is participant testimony rather than an attendance log, and it was
+      given after the story broke — though it is the only direct account on
+      record and nothing recovered contradicts it. The broader
+      art-provocation-as-evidence inference is a separate matter the claim
+      correctly declines to make."
+  - claimId: PZG-C027
+    verdict: established
+    confidence: high
+    reasoning: Both emails were fetched and quoted, including the expected
+      headcount, the target range, the "Raised over 40 grand" follow-up, and the
+      much-circulated closing line (PZG-E016). The claim is notable for
+      conceding a real network fact the allegation got right — the restaurant
+      genuinely functioned as a political venue — while showing that the
+      documents read as ordinary campaign activity. There is no substantive
+      opposing consideration to the facts; the only contestable territory is
+      what a fundraiser at a pizza restaurant implies, which is nothing beyond
+      itself.
+  - claimId: PZG-C028
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: "The primary documents are clear for the events they cover: the
+      October 2015 briefing gives Belmont Road as the venue with Alefantis as
+      participating chef, and the 2016 emails place that event at Belmont too.
+      But the claim is partly a negative about where other events did not occur,
+      and it is bounded by an archive ending mid-March 2016 and by the record's
+      own acknowledgment that contemporaneous Post coverage reports a Clinton
+      fundraiser physically at the restaurant, for which no primary event record
+      has been recovered. The strongest opposing consideration is exactly that
+      unresolved Post line: the venue-transposition finding holds for the two
+      documented events, but a general \"the retellings moved the venue\"
+      conclusion is not yet closed."
+  - claimId: PZG-C029
+    verdict: established
+    confidence: high
+    reasoning: "TIME's April 2016 profile — six months pre-controversy — was fetched
+      and the fork quip verified verbatim, with PZG-E023 supplying a 2009
+      Politico instance of the same public macabre-humor register seven years
+      earlier. The chronology is what does the work: a documented joke published
+      before there was anything to joke away is the structural opposite of a
+      concealed signal. The strongest opposing consideration is that featuring
+      private aesthetics at all risks legitimizing taste-as-evidence reasoning;
+      the claim's zero diagnosticity rating is the right correction, and the
+      artifact belongs in the record because readers keep encountering it."
+  - claimId: PZG-C030
+    verdict: well_supported
+    confidence: moderate
+    reasoning: The court outcomes (kidnapping and criminal-association charges
+      dropped, conviction for arranging illegal travel, time served) and the
+      AP's tracing of all 33 children to living parents (PZG-E018) are both
+      documented, and the orphanage link is correctly attributed to a
+      spokesman's assertion (PZG-E017) rather than to any record. Confidence is
+      moderate because the court outcomes rest on a single secondary outlet with
+      no visible dateline and no primary Haitian or U.S. court file was
+      recovered. The strongest opposing consideration is that reduced charges
+      are a legal outcome and not a factual finding about intent — a point the
+      claim does not overreach on, since it asserts only what the record states.
+  - claimId: PZG-C031
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "The quoted affidavit language is specific and the claim is carefully
+      scoped to what the document states plus two accurate negatives (it does
+      not source the 2016 dictionary and does not connect to any email here).
+      The provenance is the weak point: the PDF was fetched from a partisan
+      outlet's file endpoint rather than from PACER or a court server, with only
+      KBTX reporting as corroboration, so the strongest label awaits a
+      court-hosted copy. The strongest opposing consideration cuts in the
+      pro-allegation direction and the claim honors it: this shows the food-code
+      idea was not conjured from nothing, which is a real concession that the
+      case makes explicitly rather than burying."
+  - claimId: PZG-C032
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "The filmmaker credit is confirmed through Vimeo's own oEmbed
+      metadata and her portfolio, and the September 15, 2016 all-ages show is
+      documented in Comet's archived newsletter with price, door time, and
+      supporting acts. The claim's own bounding is correct and important: one
+      documented appearance does not prove \"only ever,\" so the negative
+      against a residency or house-band relationship is an inference from
+      absence over a single recovered page. The strongest opposing consideration
+      is that the video's triangle motif and its design intent remain genuinely
+      unresolved — this claim caps the venue link, not the symbol question, and
+      should not be read as settling the latter."

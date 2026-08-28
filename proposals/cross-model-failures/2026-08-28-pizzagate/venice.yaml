@@ -1,0 +1,76 @@
+runId: "2026-08-28-check-kimi"
+model: "Kimi K3 (Moonshot, via Venice), independent check run"
+date: "2026-08-28"
+promptVersion: "erebus-check-v1"
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: well_supported
+  loadBearing: [PZG-C010, PZG-C020, PZG-C001, PZG-C002, PZG-C025]
+  weakestLinks: [PZG-C005, PZG-C003, PZG-C006, PZG-C024, PZG-C015]
+  synthesis: >-
+    The case's structural claim is not that Pizzagate's materials were fabricated — the ledger establishes the opposite, repeatedly and verbatim — but that the incriminating interpretation layered over authentic artifacts was an assembly product with a documented provenance failure at its core. The load-bearing claim is PZG-C010: the claimed law-enforcement "food dictionary," the interpretive engine for every email decoding, has no attestation in the genuine 2007 FBI bulletin (mechanically searched, zero food terms) or anywhere else pre-dating anonymous November 2016 forum posts. Every marquee decoding tested in the file then fails the same test — a documented mundane referent predating the alleged code (the 2000 hot-dog-stand profile for C002; the taco-cookout context for C007; the "I think" hedge for C008; the pre-controversy tomato-storage print for C014; the 2012 press identification of the masked performer for C016). C001's pattern — source recovery strengthens the artifact and weakens the accusation — is demonstrated across a dozen exhibits and never inverted in the file. On the central allegation, the strongest statement the record supports is C020: nine years of maximal adversarial scrutiny have produced no victim, witness, forensic, financial, or law-enforcement substantiation. That is a bounded negative existence finding, and the file bounds it honestly; it is not a universal proof, and the residue (C003's handkerchief design, C005's "torture chamber," C006's "wet works") is preserved as unexplained rather than explained away — correctly, since referent-free fragments carry no evidential weight in either direction. The steelman for the allegation side: code systems need not appear in official documents; public sociability does not logically exclude concealed conduct; reduced charges in the Silsby episode are legal outcomes, not factual exonerations; and the 2023 "cheese pizza" slang affidavit (C031) shows one dictionary fragment existed in the world. The steelman for the case's verdict: every one of those objections grants only possibility, never positive evidence, while each checkable claim resolved toward the mundane, and the assembly mechanisms (identity conflation in C025, paraphrase inflation in C008 and C004, source fusion in C030) are documented in the allegation's own original threads, including corrections posted and refused. The central trafficking allegation is therefore contradicted by the total absence of every evidence class crimes of that kind generate — but per the case's own living-persons discipline, the verdict attaches to the evidentiary structure, not to any person's culpability: the allegation as an evidentiary proposition is unsupported and its interpretive machinery is contradicted by the primary record. Hence well_supported for the case as a whole rather than established: the negative existence claim is inherently bounded by searchable space, and the residue items remain genuinely unresolved at exactly their small size.
+claimAssessments:
+  - claimId: PZG-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      The pattern is demonstrated across at least a dozen independently checked exhibits — C002, C007, C008, C010, C012, C014, C016, C025, C030 — and no checked marquee claim in the file inverts it. It is an interpretive claim over a selected population, so the strongest opposing consideration is selection: the pattern is proven over the checkable claims and may not extend to the uncheckable residue. The claim's own text anticipates this by preserving C003/C005 as anomalies, so it is not overclaimed.
+  - claimId: PZG-C002
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Both documents were fetched and checked verbatim: the 2015 email with full headers and the July 2000 Washington Post profile quoting the same hot-dog-stand phrase fifteen years earlier. The mundane referent predates the alleged code, which is the cleanest possible refutation of the code reading. The strongest opposing consideration — that a private joke could coexist with coded usage — requires positive evidence that has never surfaced and shifts the burden without meeting it.
+  - claimId: PZG-C003
+    verdict: established
+    confidence: high
+    reasoning: >-
+      As a claim about the thread's three layers — realtor's cloth description, Sandler's parenthetical guess, Podesta's "It's mine, but not worth worrying about" — it is verbatim-verified at two emailids. The object itself is unrecovered, so the design remains genuinely unexplained, but the claim as stated is about attribution, and the attribution is exact. The strongest opposing consideration is that the claim's evidentiary ceiling is set by an unrecovered object — which the claim itself concedes; it does not overreach.
+  - claimId: PZG-C004
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The email was fetched verbatim: grandmother sender, farm-weekend logistics, the children's ages, and John Podesta appearing only in the "wishes-you-could-come" line. Retellings that put him at the event contradict the document's own text — a checkable alteration, checked. The strongest opposing consideration is that contextual normalcy cannot logically exclude hidden meaning; but it removes every positive reason for that reading, and the burden does not invert.
+  - claimId: PZG-C005
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The three-line body, date, recipients, and subject were verified verbatim with raw headers; the absence of any referent is itself the verified fact. The claim asserts only authenticity plus unexplainedness, both of which are exactly what the record shows. The strongest opposing consideration is that preserving it as an anomaly risks lending it suggestive weight; the claim's own diagnosticity note (zero in every direction until the referent is recovered) handles this correctly. This is one of the weakest links for the case only because it is unresolvable, not because it is misstated.
+  - claimId: PZG-C006
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Verified verbatim: the "wet works" line is the entire body of a fresh email with no quoted prior message, sent the evening of the New Hampshire primary, with only Elmendorf's reply in-thread. The claim correctly bounds every interpretation as unsupported by the source text. The strongest opposing consideration — the correspondents knew the referent even if the record doesn't — is conceded and is precisely why the claim asserts no reading at all.
+  - claimId: PZG-C007
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The full invitation was fetched verbatim: third-annual taco cookout, suckling pig, parking directions, "family friendly event," and Podesta's decline. It is a complete, self-explaining document and the clearest context-stripping exhibit in the file. No opposing consideration of evidentiary substance exists; the claim's own strongestObjection field says as much.
+  - claimId: PZG-C008
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The Stratfor email was fetched in thread context: Fred Burton's "I think Obama spent about $65,000…" is a hedged guess in a joking office thread, and the viral version is the guess with the hedge stripped. The full transmission chain is recoverable, making this the model organism for paraphrase inflation. The strongest opposing consideration — Burton was a former security professional whose guesses might track something real — fails because no expense record has ever surfaced and a hedge remains a hedge.
+  - claimId: PZG-C009
+  - claimId: PZG-C010
+  - claimId: PZG-C011
+  - claimId: PZG-C012
+  - claimId: PZG-C013
+  - claimId: PZG-C014
+  - claimId: PZG-C015
+  - claimId: PZG-C016
+  - claimId: PZG-C017
+  - claimId: PZG-C021
+  - claimId: PZG-C019
+  - claimId: PZG-C020
+  - claimId: PZG-C022
+  - claimId: PZG-C023
+  - claimId: PZG-C024
+  - claimId: PZG-C025
+  - claimId: PZG-C026
+  - claimId: PZG-C027
+  - claimId: PZG-C028
+  - claimId: PZG-C029
+  - claimId: PZG-C030
+  - claimId: PZG-C031
+  - claimId: PZG-C032
