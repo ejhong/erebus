@@ -30,7 +30,7 @@ The allegation's map of relationships was substantially accurate, which is the s
 
 The money was real too. [Federal filings show Brock-committee payments to the restaurant across 2012–2017 — catering and facility rental, disclosed by name and address]{claim=PZG-C012}. Two things about those filings are instructive. The circulation called them "donations," which the forms themselves refute. And the most-quoted figure, $11,500, is wrong: the filing on the plate above reads $11,600 — a decade-old copy error that survived because nobody went back to the page.
 
-Where the record shrank connections, this case shrinks with it. [The nonprofit "orphanage" connection is a volunteer board seat — "MAX MACCOBY, 2.00 hours, DIRECTOR" of the U.S. fundraising charity — and the Hastert friendship the theory needed belonged to the other brother, per the 1998 profile that got retold bigger]{claim=PZG-C017}. [The 2011 lawsuit was real, with a disputed $850,000 that one side's pleadings — and only the pleadings — called blackmail]{claim=PZG-C018}.
+Where the record shrank connections, this case shrinks with it. [The nonprofit "orphanage" connection is a volunteer board seat — "MAX MACCOBY, 2.00 hours, DIRECTOR" of the U.S. fundraising charity]{claim=PZG-C017}. [And the Hastert friendship the theory needed belonged to the other brother, per the 1998 profile that got retold bigger]{claim=PZG-C021}. A 2011 civil lawsuit that later narratives built towers on appears in this case only as a research item: under this site's living-persons rules, nothing about it may be said beyond what the court records themselves state — and those records have not yet been recovered, so nothing is.
 
 ## The venue and its people
 

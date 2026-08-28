@@ -79,5 +79,5 @@
     photographer: "Federal Election Commission (filing by American Bridge 21st Century)"
     date: "2014"
     sourceUrl: https://docquery.fec.gov/pdf/831/14960793831/14960793831_000057.pdf
-    originalTitle: "FEC Form 3X Schedule B, Image# 14960793887, page 57 of 388"
+    originalTitle: "FEC Form 3X Schedule B, printed Image# 14960793887, page 57 of 388 — the filing's PDF series starts at image 14960793831, so page 57 of that series IS image 14960793887 (the number printed on the page itself, visible in the plate)"
   claimIds: [PZG-C012]

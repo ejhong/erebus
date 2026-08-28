@@ -106,12 +106,12 @@ claimAssessments:
     confidence: high
   - claimId: PZG-C017
     verdict: established
-    reasoning: "Form 990 officer row and both profiles verified verbatim; the claim grades documented scale."
+    reasoning: "Form 990 officer row verified verbatim from the text-extracted filing; the claim grades documented scale."
     confidence: high
-  - claimId: PZG-C018
-    verdict: well_supported
-    reasoning: "Verified against document-based 2012 reporting; the docket itself remains a recovery target and the claim says so."
-    confidence: moderate
+  - claimId: PZG-C021
+    verdict: established
+    reasoning: "Both the 1998 profile and the oral history verified verbatim; the claim's own correction history is recorded."
+    confidence: high
   - claimId: PZG-C019
     verdict: established
     reasoning: "Both DOJ releases fetched live; the attribution split is part of the verified finding."

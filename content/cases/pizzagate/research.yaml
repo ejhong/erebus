@@ -52,14 +52,17 @@
     this case until these texts are read; small effort, clean closure.
 
 - id: PZG-R004
-  title: "Grey v. Brock docket recovery"
+  title: "2011 D.C. Superior Court docket recovery"
   summary: >-
-    Recover the D.C. Superior Court docket and pleadings for the
-    2011 Grey/Brock litigation (circulated as 2011 CA 000695 B):
-    settles counsel-of-record and judge-assignment questions on which
-    later protection narratives were built, and which remain
-    primary-unverified and excluded here.
-  claimIds: [PZG-C018]
+    Recover the docket and pleadings for the 2011 civil litigation
+    circulated as 2011 CA 000695 B. Under the living-persons rules,
+    nothing about that dispute may enter this case beyond what the court
+    records themselves state, with locators — which is why the case
+    currently carries NO claim about it (a journalism-only version was
+    removed at panel review): the docket comes first, any record second.
+    Recovery would also settle the counsel-of-record and judge-assignment
+    questions on which later protection narratives were built.
+  claimIds: [PZG-C001]
   track: small_grant
   effortTier: desk
   informationGain: >-

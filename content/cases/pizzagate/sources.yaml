@@ -172,18 +172,6 @@
   verification: ai_verified
   verificationNote: "Live URL unreachable; verified 2026-08-28 via Wayback (2016-12-05); Hastert quote checked verbatim — he is described as 'an old college pal of Podesta's brother Tony', not as a friend of both brothers."
 
-- id: SRC-FOX-2012-GREY
-  title: "Fox News report on the Grey v. Brock litigation (Jana Winter, 2012-02-27)"
-  organization: "Fox News"
-  year: "2012"
-  sourceType: webpage
-  url: https://www.foxnews.com/politics/media-matters-boss-paid-former-partner-850g-blackmail-settlement
-  verification: ai_verified
-  verificationNote: >-
-    Verified 2026-08-28; confirms the 2011-01-28 Grey suit (DC Superior
-    Court), Alefantis as a named defendant, the $850,000 payment that
-    Brock's own pleadings characterized as blackmail (a litigant's
-    assertion, cited as such), and Brock's 2011-03-08 counter-suit.
 
 - id: SRC-METROWEEKLY-2015
   title: "From Scratch: James Alefantis"

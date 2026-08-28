@@ -772,97 +772,92 @@
 - id: PZG-C017
   tier: featured
   statement: >-
-    Public records document the Maccoby and Hastert connections at
-    materially smaller scale than circulated versions: Friends of the
-    Orphans' 2012 IRS Form 990 lists Max Maccoby as a DIRECTOR at 2.00
-    average hours per week of the U.S. fundraising nonprofit (not
-    operator of any orphanage), and the 1998 Washington Post describes
-    Dennis Hastert as "an old college pal of Podesta's brother Tony" —
-    not, as retold, a close friend of both brothers.
+    Friends of the Orphans' 2012 IRS Form 990 lists Max Maccoby as a
+    DIRECTOR at 2.00 average hours per week of the U.S. fundraising
+    nonprofit — a volunteer board seat, not operation of any orphanage,
+    which is how circulated versions enlarged it.
   plainLanguage: >-
-    Two famous "connections" shrink when you read the actual documents: a
-    volunteer board seat measured in two hours a week, and a college
-    friendship with the other brother. Real links — at a fraction of the
-    circulated size.
+    The "ran the orphanage" connection is, in the actual IRS filing, a
+    volunteer board seat measured at two hours a week of the American
+    fundraising charity. A real link — at a fraction of the circulated
+    size.
   theme: network
   rung: observation
   claimType: historical
   importance: supporting
   credibility: established
   credibilitySummary: >-
-    The Form 990 fetched and text-extracted (officer table row verbatim);
-    the 1998 profile verified verbatim via Wayback; the Miller Center
-    oral history verified verbatim ("his brother, Tony [Podesta], and I
-    went to Japan together in the 1960s"; of John: "We got along").
+    The 39-page Form 990 was fetched and text-extracted; the officer
+    table row reads verbatim "(7) MAX MACCOBY — 2.00 — DIRECTOR", and
+    the filer is the U.S. nonprofit (EIN 65-1229309).
   diagnosticity: moderate
   diagnosticitySummary: >-
-    Documents the magnification mechanism on the network side: each link
-    real, each link enlarged in retelling — and the corrected sizes are
-    what any chain built on them must carry.
+    Documents the magnification mechanism on the network side: the link
+    is real, the circulated size was not — and any chain built on it
+    must carry the filing's version.
   sourceAnchor:
-    locator: "Friends of the Orphans Form 990 (2012), officer table; WaPo 1998-09-30 D01; Miller Center Hastert oral history"
+    locator: "Friends of the Orphans Form 990 (2012), officer/director table"
     quote: "(7) MAX MACCOBY — 2.00 — DIRECTOR"
     sourceId: SRC-PROPUBLICA-990-2012
   parentClaimIds: []
   dependsOnClaimIds: []
   strongestObjection: >-
-    Board service and old friendships are real associations; the
-    correction is of magnitude and role, not existence — both halves
-    belong in the record.
+    Board service is a real association; the correction is of magnitude
+    and role, not existence — both halves belong in the record.
   whatWouldChangeOurMind:
     - "Primary documents showing operational (not board) involvement, which none of the recovered filings indicate."
   reviewState: ai_extracted
   origin:
-    ref: "verification ledger V03, V18, V25"
+    ref: "verification ledger V18"
     extractedBy: "claude-fable-5 (cursor session)"
     runId: "pzg-case-build-2026-08-28"
     date: "2026-08-28"
 
-- id: PZG-C018
+- id: PZG-C021
   tier: featured
   statement: >-
-    Court reporting based on the legal filings documents that William
-    Grey sued David Brock in D.C. Superior Court on 2011-01-28 naming
-    James Alefantis among the defendants; that the dispute involved an
-    $850,000 payment which Brock's own pleadings characterized as
-    obtained by blackmail (a litigant's assertion, never adjudicated);
-    and that Brock counter-sued on 2011-03-08 seeking its return.
+    The 1998 Washington Post profile describes Dennis Hastert as "an old
+    college pal of Podesta's brother Tony" and quotes him praising John
+    Podesta — it does not describe a friendship with both brothers, as
+    later retellings had it; Hastert's own oral history likewise places
+    the 1960s Japan trip with Tony, and says of John only that they "got
+    along."
   plainLanguage: >-
-    There really was a lawsuit, with real names and a real $850,000 in
-    dispute. "Blackmail" was one side's word in its court papers — an
-    accusation, not a finding. The case ended without any court ruling it
-    true.
+    The friendship the theory needed — between Hastert and John Podesta —
+    is, in the primary record, a college friendship with the other
+    brother plus cordial professional relations. The retelling moved it
+    one brother over.
   theme: network
   rung: observation
   claimType: historical
   importance: supporting
   credibility: established
   credibilitySummary: >-
-    All four elements verified against the 2012 Fox News report based on
-    the legal documents (Jana Winter, 2012-02-27). The characterization
-    is attributed to the pleadings that made it, per this site's
-    assertion-labeling rule.
-  diagnosticity: low
+    The 1998 profile verified verbatim via Wayback ("an old college pal
+    of Podesta's brother Tony"); the Miller Center oral history verified
+    verbatim ("his brother, Tony [Podesta], and I went to Japan together
+    in the 1960s"; of John: "We got along"). This case's own draft brief
+    initially overstated the 1998 wording and was corrected — the
+    correction is part of the record.
+  diagnosticity: moderate
   diagnosticitySummary: >-
-    A civil money dispute among the same social circle: it establishes
-    that the network had ordinary litigable conflicts, and nothing about
-    any Pizzagate proposition — the later attempt to build a
-    same-lawyer/same-judge protection chain on top of it remains
-    primary-unverified and is excluded from this case.
+    A second clean instance of magnification-in-retelling, resolved
+    entirely by pre-controversy documents.
   sourceAnchor:
-    locator: "Fox News, 2012-02-27 (Jana Winter), reporting the Grey and Brock filings"
-    sourceId: SRC-FOX-2012-GREY
+    locator: "WaPo 1998-09-30 D01 (Lloyd Grove); Miller Center, J. Dennis Hastert Oral History"
+    quote: "an old college pal of Podesta's brother Tony"
+    sourceId: SRC-WAPO-1998-PODESTA
   parentClaimIds: []
   dependsOnClaimIds: []
   strongestObjection: >-
-    Reporting on filings is one step from the docket; the docket itself
-    (2011 CA 000695 B as circulated) remains a recovery target before any
-    further structure is hung on this episode.
+    Cordial relations with John are documented in the same sources; the
+    correction concerns degree and which brother, not the existence of
+    acquaintance.
   whatWouldChangeOurMind:
-    - "Recovery of the actual Superior Court docket and pleadings."
+    - "Primary documentation of a close John Podesta–Hastert friendship, which none of the recovered records show."
   reviewState: ai_extracted
   origin:
-    ref: "verification ledger V27"
+    ref: "verification ledger V03, V25 (split from PZG-C017 at panel review, §3.2)"
     extractedBy: "claude-fable-5 (cursor session)"
     runId: "pzg-case-build-2026-08-28"
     date: "2026-08-28"

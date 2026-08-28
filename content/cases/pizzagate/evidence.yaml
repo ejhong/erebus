@@ -74,7 +74,7 @@
 
 - id: PZG-E004
   title: "Hastert's own oral history: Japan with Tony; 'got along' with John"
-  claimIds: [PZG-C017]
+  claimIds: [PZG-C021]
   sourceId: SRC-MILLER-HASTERT
   direction: supports
   strength: strong
@@ -95,7 +95,7 @@
 
 - id: PZG-E005
   title: "The 1998 profile: 'an old college pal of Podesta's brother Tony'"
-  claimIds: [PZG-C017]
+  claimIds: [PZG-C021]
   sourceId: SRC-WAPO-1998-PODESTA
   direction: supports
   strength: strong
@@ -200,7 +200,7 @@
     Disclosed event-vendor spending, mischaracterized in circulation as
     "donations" — and mis-copied: the widely repeated $11,500 does not
     match the filing's $11,600.
-  exactLocator: "docquery.fec.gov filing images 13940775420, 13941306270, 14960793887 (p. 57 reproduced as Plate 2); api.open.fec.gov schedule_b"
+  exactLocator: "docquery.fec.gov filing images 13940775420, 13941306270, 14960793887; the filing's PDF series starts at image 14960793831, so page 57 (14960793831_000057.pdf) carries printed Image# 14960793887 — reproduced as Plate 2; api.open.fec.gov schedule_b"
   limitations:
     - "Disclosed filings cannot speak to undisclosed flows; no anomaly in these records has been identified."
   reviewState: ai_extracted
