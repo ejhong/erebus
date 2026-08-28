@@ -1,0 +1,267 @@
+# Catalog-tier claims for PZG-001 — the expansion wave (2026-08-28).
+# Every record verified before entry (ledger V33–V55); catalog tier means
+# no editorial workup yet, NOT unverified sourcing. Living-persons tier
+# rule: no catalog statement names a living person — claims that must
+# name people are featured (claims.yaml) so they carry the protective
+# framing fields.
+
+- id: PZG-C033
+  tier: catalog
+  statement: >-
+    The "walnut sauce" emails carry explicit culinary context: a
+    dinner-guest inquiry about whether the pasta sauce "was actually
+    very tasty" and a separate thank-you praising "that pasta and
+    walnut sauce dish!!" from a dinner at the recipient's home.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/30145 (2015-04-11) and emailid/53381 (2015-04-10)"
+    quote: "was the sauce actually very tasty?"
+    sourceId: SRC-WL-PODESTA-30145
+  origin:
+    ref: "verification ledger V33"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C034
+  tier: catalog
+  statement: >-
+    The "ice cream" email was a reply to a Georgetown Law frozen-dessert
+    survey (Cold Stone among the options), was not written by the
+    account's owner, and its actual wording is "a rather serious
+    business" — the circulated "very serious business" is itself a
+    misquote.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/19018 (from kac316@law.georgetown.edu)"
+    quote: "a rather serious business"
+    sourceId: SRC-WL-PODESTA-19018
+  origin:
+    ref: "verification ledger V34"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C035
+  tier: catalog
+  statement: >-
+    The "cheese/pasta/dominoes" email sits in a documented gift
+    tradition: the sender describes a long-standing Christmas pattern of
+    pasta-and-sauce boxes, notes cheeses arrived instead that year, and
+    jokes "playing dominos on cheese than on pasta?" — while a separate
+    email that July records the same circle literally playing Dominos
+    ("Using the Podesta method, she made up the rules as we played").
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/50332 (2015-12-24) and emailid/37971 (2015-07-11)"
+    quote: "playing dominos on cheese than on pasta?"
+    sourceId: SRC-WL-PODESTA-50332
+  origin:
+    ref: "verification ledger V35"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C036
+  tier: catalog
+  statement: >-
+    The "Moloch" line lives in the Clinton archive, not the Podesta
+    emails: written by a State Department representative to the OAS as
+    the joking close of a Honduras diplomacy readout ("I will be
+    sacrificing a chicken in the backyard to Moloch . . ."), and
+    forwarded twice before reaching the famous inbox.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Clinton emailid/14333 ('Attached is from Lew Amselem, our rep to OAS')"
+    quote: "I will be sacrificing a chicken in the backyard to Moloch . . ."
+    sourceId: SRC-WL-CLINTON-14333
+  origin:
+    ref: "verification ledger V36"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C037
+  tier: catalog
+  statement: >-
+    "Would love to get a pizza for an hour?" occurs inside a thread
+    titled "You two free for dinner on 12 or 13 January?" — ordinary
+    scheduling between siblings that ends "3:00 at our house work?" /
+    "Sure."
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/13265 (thread; reply at 52778)"
+    quote: "3:00 at our house work?"
+    sourceId: SRC-WL-PODESTA-13265
+  origin:
+    ref: "verification ledger V37"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C038
+  tier: catalog
+  statement: >-
+    "Always happy to babysit" appears in a dinner-cancellation thread
+    ("Re: Our drive" — a guest stuck in icy traffic), with no other
+    referent in the exchange.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/44232"
+    sourceId: SRC-WL-PODESTA-44232
+  origin:
+    ref: "verification ledger V47"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C039
+  tier: catalog
+  statement: >-
+    "I'm seated with the kids so little wired" is an authentic reply to
+    "How is the trip?" whose referent the exchange never states — it
+    remains unresolved and carries no weight in any direction.
+  theme: residue
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/49348"
+    sourceId: SRC-WL-PODESTA-49348
+  independenceGroup: "podesta-small-emails"
+  origin:
+    ref: "verification ledger V47"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C040
+  tier: catalog
+  statement: >-
+    The scholarly origin reconstruction traces the food-code branch to a
+    November 3, 2016 Reddit post ("Someone tell me I'm wrong!"), with
+    the restaurant-specific component layered in around November 7 —
+    the theory assembled over days from separable strands rather than
+    arriving whole.
+  theme: mechanisms
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "Benkler, Faris & Roberts, Network Propaganda (OUP 2018), Pizzagate case study chapter"
+    sourceId: SRC-BENKLER-2018
+  origin:
+    ref: "verification ledger V55"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C041
+  tier: catalog
+  statement: >-
+    The earliest-hashtag sources disagree by a day and both scopes are
+    preserved: Wellesley's TwitterTrails dataset records the first
+    #pizzagate at 8:34 AM GMT on November 6, 2016, while the Washington
+    Post's reconstruction says the hashtag first appeared November 7.
+  theme: mechanisms
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "TwitterTrails blog (Wellesley); WaPo 2016-12-06"
+    quote: "the first mention of #pizzagate was at 8:34 AM GMT on Nov. 6, 2016"
+    sourceId: SRC-TWITTERTRAILS
+  origin:
+    ref: "verification ledger V40"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C042
+  tier: catalog
+  statement: >-
+    Reddit's November 2016 ban of the r/pizzagate community was publicly
+    attributed to its personal-information (doxxing) policy — a conduct
+    enforcement, not an evidentiary adjudication of the theory in either
+    direction.
+  theme: aftermath
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WaPo 2016-12-06 reconstruction (lede attribution)"
+    sourceId: SRC-WAPO-2016-HASHTAG
+  origin:
+    ref: "verification ledger V53"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C043
+  tier: catalog
+  statement: >-
+    D.C. police stated on November 23, 2016 that they were not
+    investigating the restaurant and were monitoring threats against it
+    and its employees — the contemporaneous official posture, two weeks
+    before the armed incident.
+  theme: aftermath
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "FOX 5 DC, 2016-11-23 (MPD statement quoted)"
+    sourceId: SRC-FOX5-2016-MPD
+  origin:
+    ref: "verification ledger V54"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C044
+  tier: catalog
+  statement: >-
+    Three further contemporaneously archived posts from the restaurant
+    owner's Instagram resolve with verbatim captions ("Marina and
+    Faggot", "Pizza is life.", "Nothing spruces up a rustic old
+    restaurant…") — the corpus is authentic and post-by-post
+    recoverable, whatever any caption is later claimed to mean.
+  theme: venue
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "Wayback mirrors of archive.is captures C2Vgn, Ru2gz, tW1SB"
+    sourceId: SRC-ARCHIVE-JIMMYCOMET
+  independenceGroup: "jimmycomet-captures"
+  origin:
+    ref: "verification ledger V52"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C045
+  tier: catalog
+  statement: >-
+    The widely circulated sli.mg "Instagram album" is not a primary
+    archive: the recovered archived image from it is a derivative
+    conspiracy collage, so the album must never be cited as raw capture
+    material — individual posts must be authenticated against their own
+    archive records instead.
+  theme: mechanisms
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "Archived sli.mg album image (batch 5 report); contrast the per-post captures in SRC-ARCHIVE-JIMMYCOMET"
+    sourceId: SRC-ARCHIVE-JIMMYCOMET
+  independenceGroup: "jimmycomet-captures"
+  origin:
+    ref: "verification ledger V52"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"

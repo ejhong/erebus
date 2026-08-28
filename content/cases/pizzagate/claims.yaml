@@ -957,3 +957,550 @@
     extractedBy: "claude-fable-5 (cursor session)"
     runId: "pzg-case-build-2026-08-28"
     date: "2026-08-28"
+
+# ---- Expansion wave (2026-08-28): full brief coverage under the
+# ---- disposition policy. Ledger entries V33–V55.
+
+- id: PZG-C022
+  tier: featured
+  statement: >-
+    The Besta Pizza website logo changed between November 9 and 11, 2016:
+    archived captures show the earlier logo as a slice drawn in nested
+    concentric triangular lines, replaced within two days of the
+    accusations by a plain slice; the owner told the Washington Post
+    "It's a slice of pizza" and removed the image.
+  plainLanguage: >-
+    The logo was real, it did look like nested triangles, and it really
+    was changed within days of the accusations — all confirmed from the
+    archived website itself. What that proves is a separate question: a
+    small business scrubbing a suddenly notorious graphic is exactly what
+    innocence would also do.
+  theme: symbols
+  rung: observation
+  claimType: observation
+  importance: major
+  credibility: established
+  credibilitySummary: >-
+    Both Wayback captures fetched and diffed (every logo filename
+    replaced between the dates; both archived PNGs rendered and
+    described); the owner's explanation and the removal verified in
+    contemporaneous WaPo reporting. Precision note: the WaPo articles
+    never mention an FBI symbol — the comparison came from an online
+    reviewer alleging "a symbol of child pornography"; the FBI framing
+    was added in circulation.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Visual resemblance between a pizza-slice logo and a bulletin symbol
+    is abundant by chance in commercial graphics, and removal under
+    harassment is evidence of harassment. The artifact is preserved
+    because erasing it would be the debunker's version of
+    context-stripping.
+  sourceAnchor:
+    locator: "Wayback captures 20161109221742 and 20161111004014 of mybestapizza.com; WaPo 2016-12-05"
+    sourceId: SRC-WAYBACK-BESTA
+  parentClaimIds: [PZG-C010]
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    None to the facts; the objection is to inference in either direction
+    — the change proves neither signaling nor its absence.
+  whatWouldChangeOurMind:
+    - "Pre-2016 design records showing the logo's commissioned origin would close even the residual question."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V41, V42"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C023
+  tier: featured
+  statement: >-
+    The Terasol café website carried a heart-within-heart graphic — the
+    archived image shows an adult hand and a child's hand — which
+    disappeared from the site in November 2016; contemporaneous reporting
+    tied the graphic to a St. Jude Children's Research Hospital
+    fundraiser and said the family removed it.
+  plainLanguage: >-
+    The hearts graphic was real (a children's-charity image, per the
+    contemporaneous reporting), and it was taken down during the
+    harassment wave. Same shape as the Besta story: authentic artifact,
+    frightened removal, no evidentiary bridge to anything.
+  theme: symbols
+  rung: observation
+  claimType: observation
+  importance: supporting
+  credibility: established
+  credibilitySummary: >-
+    Wayback CDX diff shows exactly one image disappearing between
+    captures either side of November 2016; the archived PNG was rendered
+    and described. The St. Jude connection rests on WaPo's reporting of
+    the owners' account — attributed as such, since the page itself
+    carries no caption.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Nested hearts are among the most common motifs in commercial art; a
+    family café's charity graphic resembling a bulletin symbol carries
+    essentially no discriminating power.
+  sourceAnchor:
+    locator: "terasolartisans.com Wayback captures either side of Nov 2016; WaPo 2016-12-05"
+    sourceId: SRC-WAYBACK-TERASOL
+  parentClaimIds: [PZG-C010]
+  dependsOnClaimIds: []
+  strongestObjection: "As with PZG-C022 — the facts are settled; only over-inference in either direction is contestable."
+  whatWouldChangeOurMind:
+    - "Recovery of the graphic's design provenance (the fundraiser materials)."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V42, V43"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C024
+  tier: featured
+  statement: >-
+    A DDOT traffic camera stood at Connecticut and Nebraska Avenues NW
+    (on the official list by January 2014); a contemporaneous December
+    2016 claim that its view turned away from the restaurant survives
+    with its original forum identifier; and TrafficLand states cameras
+    are agency-operated, may be actively moved, and that it records no
+    video. Whether the view changed remains unresolved — no frames,
+    operator log, or original post has been recovered.
+  plainLanguage: >-
+    The camera was real. The claim that it turned away is genuinely from
+    the time, not a later invention. And it has never been either proven
+    or disproven — while the system's cameras were routinely movable and
+    nothing was recorded, so even a confirmed turn would prove little.
+    That triple state — real, contemporaneous, unresolved-and-weak — is
+    the honest entry.
+  theme: residue
+  rung: observation
+  claimType: observation
+  importance: supporting
+  credibility: established
+  credibilitySummary: >-
+    The camera's existence (official DDOT list, "As of 01/31/2014") and
+    TrafficLand's operational statements verified from the documents;
+    the contemporaneous claim's existence is preserved via a December
+    2016 forum quotation carrying the original Voat thread identifier
+    (v/pizzagate/1459306). The 2003 report on the system's pan-tilt-zoom
+    details remains paywalled and is excluded until read.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    A movable camera may have moved: with routine operator repositioning
+    and no recording, a confirmed view change would be weak evidence of
+    anything, and its absence proves nothing either.
+  sourceAnchor:
+    locator: "DDOT camera list PDF (goc.dc.gov, as of 2014-01-31); TrafficLand help page (Wayback)"
+    sourceId: SRC-DDOT-CAMERA-LIST
+  parentClaimIds: []
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    Treating an unresolvable claim as forever-pending grants it unearned
+    life; but closing it without the primary artifact would be the
+    opposite error. It stays exactly this size.
+  whatWouldChangeOurMind:
+    - "The original Voat post, camera frames, or a DDOT operator log for 2016-12-04."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V44; brief §2.3"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C025
+  tier: featured
+  statement: >-
+    The "DOJ trafficking prosecutor connected to Besta Pizza" claim
+    rests on an identity conflation between two men named Andrew Kline:
+    the restaurant's LLC paperwork matches the Veritas Law Firm
+    restaurant-industry attorney (1225 19th St NW), while a different
+    Andrew Kline served in DOJ's Human Trafficking Prosecution Unit —
+    and participants in the original November 2016 forum thread posted
+    this correction themselves, though the thread records the original
+    poster rejecting it.
+  plainLanguage: >-
+    Two lawyers, same name. The one on the pizza paperwork practices
+    restaurant law; the one at DOJ prosecuted traffickers. The original
+    investigators' own thread contains the correction — and also shows
+    it being refused. Both facts are part of how this allegation
+    survived its own debunking.
+  theme: mechanisms
+  rung: observation
+  claimType: historical
+  importance: major
+  credibility: established
+  credibilitySummary: >-
+    Both Klines verified independently (2007 justice.gov release naming
+    "Special Litigation Counsels Hilary Axam and Andrew Kline"; Veritas
+    Law's live team page (theveritaslawfirm.com/our-team/) at the matching address), and the mirrored
+    thread 5e3scw (2016-11-21) contains the correction verbatim: "That
+    Andrew Kline is not the one that worked for the Department of
+    Justice."
+  diagnosticity: high
+  diagnosticitySummary: >-
+    The cleanest documented instance of identity conflation — one of the
+    three assembly mechanisms this case names — including the community
+    catching it in real time and the correction failing to propagate.
+  sourceAnchor:
+    locator: "r/pizzagate mirror (hackliberty.org), thread 5e3scw (2016-11-21); justice.gov 2007 release 07_crt_060; theveritaslawfirm.com/our-team/"
+    sourceId: SRC-RPIZZAGATE-KLINE
+  parentClaimIds: [PZG-C001]
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    A same-name coincidence on trafficking-adjacent paperwork was worth
+    checking — the failure was not the question but the refusal of the
+    answer.
+  whatWouldChangeOurMind:
+    - "Corporate records tying the DOJ attorney (rather than the Veritas attorney) to the LLC, which nothing recovered indicates."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V45"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C026
+  tier: featured
+  statement: >-
+    The "Spirit Cooking" email is authentic — a 2015 forward of Marina
+    Abramović's dinner invitation from Tony to John Podesta — and
+    Abramović stated in a contemporaneous ARTnews interview that Tony
+    Podesta attended such dinners, John Podesta did not attend, and she
+    had never met John.
+  plainLanguage: >-
+    The invitation was real; the artist is famous for macabre-titled
+    performance work; and by her own contemporaneous account the man the
+    story was told about never came and she'd never met him. The
+    artifact survives; the version with John Podesta at the table does
+    not.
+  theme: network
+  rung: observation
+  claimType: historical
+  importance: major
+  credibility: established
+  credibilitySummary: >-
+    Email fetched live (emailid 15893, 2015-06-28); the
+    attendance/never-met detail verified in the ARTnews interview
+    (Russeth, 2016-11-04) — attributed to ARTnews, not the Guardian
+    piece that merely links it.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Another instance of the person-swap mechanism: the authentic
+    artifact concerns one brother; the circulated story required the
+    other. Art-world provocation as evidence of crime is the aesthetics
+    fallacy this case caps throughout.
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/15893; ARTnews 2016-11-04 (Russeth)"
+    sourceId: SRC-WL-PODESTA-15893
+  parentClaimIds: []
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    An artist's own account of who attended is testimony, not a guest
+    log; it is also the only direct account on record, and nothing
+    contradicts it.
+  whatWouldChangeOurMind:
+    - "A contemporaneous attendee record contradicting the ARTnews account."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V46"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C027
+  tier: featured
+  statement: >-
+    A 2008 Obama fundraiser was genuinely held at Comet Ping Pong:
+    Alefantis invited Podesta to speak (expecting ~150 people and
+    "between 25 and 35 thousand dollars"), Podesta spoke, and the
+    follow-up reports "Raised over 40 grand" — with the much-circulated
+    "regret is I did not make you a nice pizza" line closing the thread.
+  plainLanguage: >-
+    The restaurant really was a political venue — a documented fundraiser
+    with a named speaker and a dollar figure. That's a real network fact,
+    openly recorded at the time. The "nice pizza" line the internet found
+    sinister is the host of a pizza restaurant apologizing for not
+    feeding his speaker.
+  theme: network
+  rung: observation
+  claimType: historical
+  importance: major
+  credibility: established
+  credibilitySummary: >-
+    Both emails fetched and quoted (emailid 19742, 2008-09-27; emailid
+    48531, 2008-10-04).
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Confirms genuine political embedding — the allegation's network map
+    was often right — while the documents themselves read as ordinary
+    campaign activity: invitations, a speech, a total, an apology about
+    catering.
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/19742 and emailid/48531"
+    quote: "Raised over 40 grand"
+    sourceId: SRC-WL-PODESTA-19742
+  parentClaimIds: [PZG-C011]
+  dependsOnClaimIds: []
+  strongestObjection: "None of substance; the record is complete and self-describing."
+  whatWouldChangeOurMind:
+    - "Nothing plausible; fixed documents."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V38"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C028
+  tier: featured
+  statement: >-
+    The Clinton-campaign pizza fundraisers that later retellings placed
+    at Comet were, per the campaign's own briefing emails, at Tony
+    Podesta's home at 2438 Belmont Rd. NW — the October 2015 "Cooking
+    with Fratelli Podesta" event names Alefantis as a participating chef
+    and "personal friend" — and the April 2016 pizza party emails
+    likewise place it at Belmont, with Alefantis supplying "Our pizza
+    logo."
+  plainLanguage: >-
+    Two famous "fundraisers at the pizza place" were actually at a
+    private home across town, with the restaurateur as a guest chef.
+    The relationships are real; the venue in the retelling moved.
+  theme: network
+  rung: observation
+  claimType: historical
+  importance: supporting
+  credibility: established
+  credibilitySummary: >-
+    The 2015 briefing verified verbatim (emailid 21136: "The Home of
+    Tony Podesta / 2438 Belmont Rd., NW"); the 2016 event verified as at
+    Belmont with Alefantis involvement via emailids 27029/53745/37543.
+    Precision cap: the label "Pizza for Hillary" and the phrase "special
+    guest chef" do not appear in the archive (which ends mid-March
+    2016) and are not used here.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    A documented venue transposition — the magnification mechanism
+    working on geography: each retelling moved the event to the more
+    incriminating address.
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/21136 (2015-10-06); 27029/53745/37543 (2016)"
+    quote: "The Home of Tony Podesta / 2438 Belmont Rd., NW"
+    sourceId: SRC-WL-PODESTA-21136
+  parentClaimIds: [PZG-C011]
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    A WaPo line reporting a Clinton fundraiser physically at Comet
+    exists in contemporaneous coverage; no primary event record matching
+    it has been recovered, so that possibility stays open as exactly
+    that.
+  whatWouldChangeOurMind:
+    - "A primary invitation or FEC event record for a Clinton fundraiser physically at the restaurant."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V39"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C029
+  tier: featured
+  statement: >-
+    The "cannibalism painting" in John Podesta's campaign office was
+    real, on loan from his brother, and profiled in TIME in April 2016 —
+    six months before Pizzagate — complete with his standing joke,
+    "It's better to be the guy with the fork than the guy on the table";
+    the same documented humor register includes his 2009 Politico quip
+    about vacationing "50 feet from where the Donner Party ate each
+    other."
+  plainLanguage: >-
+    Yes, the weird painting existed, in a national magazine, with the
+    owner joking about it on the record — months before anyone was
+    looking. Documented macabre humor in plain sight is the opposite of
+    a hidden confession, and taste in dark art is evidence of taste.
+  theme: network
+  rung: observation
+  claimType: historical
+  importance: supporting
+  credibility: established
+  credibilitySummary: >-
+    TIME (2016-04-28) verified verbatim including the fork quip and a
+    second instance ("I don't want to be the meal"); the Politico office
+    photo gallery and the 2009 Donner quote verified live. All
+    pre-controversy.
+  diagnosticity: low
+  diagnosticitySummary: >-
+    Zero discriminating power by design: openly published dark humor is
+    equally expected under every hypothesis. Included because readers
+    keep encountering the artifact and deserve its documentation — and
+    its date.
+  sourceAnchor:
+    locator: "TIME, 2016-04-28 (Newton-Small); Politico gallery 2015; Politico 2009-06-01"
+    quote: "It's better to be the guy with the fork… than the guy on the table"
+    sourceId: SRC-TIME-2016-PODESTA
+  parentClaimIds: []
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    Featuring private aesthetics at all risks the taste-as-evidence
+    fallacy; the claim exists to pin the artifact's reality and its
+    pre-controversy publication, and to cap what it can imply.
+  whatWouldChangeOurMind:
+    - "Nothing plausible; fixed publications."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V01, V02"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C030
+  tier: featured
+  statement: >-
+    The court outcomes in the 2010 Silsby episode are narrower than
+    circulated versions: the kidnapping and criminal-association charges
+    were dropped; the conviction was for arranging illegal travel, with
+    a time-served sentence; AP traced all 33 children to living parents;
+    and the "taken from the Maccoby-connected orphanage" framing rests
+    on a spokesman's assertion that the recovered record does not
+    corroborate.
+  plainLanguage: >-
+    A serious episode with a much smaller legal ending than the story
+    that circulated: charges dropped except arranging illegal travel,
+    time served, and children who — per the AP — had living parents. The
+    orphanage link that connected it to this case's network was one
+    man's claim, not a record.
+  theme: mechanisms
+  rung: observation
+  claimType: historical
+  importance: supporting
+  credibility: well_supported
+  credibilitySummary: >-
+    Court outcomes verified via CBS (charges dropped; illegal-travel
+    conviction; time served — page carries no visible dateline, noted);
+    the parent-tracing verified via the AP story (Vindicator archive,
+    2010-02-21: "Callabas" and the Citron slum); Puello's
+    "friends of the orphans of Haiti" line verified in the Fox
+    transcript and attributed to him as the group's then-spokesman.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    The source-fusion exhibit: real episode + real NPH board fact
+    (PZG-C017) + a spokesman's unsupported orphanage claim were welded
+    into a chain none of the parts supports. Under the living-persons
+    rules this claim states court outcomes and attributions only.
+  sourceAnchor:
+    locator: "CBS News (Silsby outcomes); AP via vindyarchives.com 2010-02-21; Fox transcript 2010-02-01"
+    sourceId: SRC-CBS-SILSBY
+  parentClaimIds: [PZG-C001, PZG-C017]
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    Reduced charges are a legal outcome, not a factual exoneration of
+    worse intent — and the claim asserts neither; it pins what the
+    record states.
+  whatWouldChangeOurMind:
+    - "Haitian or U.S. court records beyond the reported outcomes."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V51"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C031
+  tier: featured
+  statement: >-
+    The narrow real fact behind the food-code claims: a 2023 FBI
+    affidavit (Case 4:23-mj-02048, S.D. Tex.) states that "'pizza'
+    and/or 'cheese pizza' is a known slang/code-word used by individuals
+    to discuss CSAM in public forums without detection" — which
+    documents that specific slang in offender contexts, and neither
+    sources the expansive 2016 dictionary nor connects to any email or
+    person in this case.
+  plainLanguage: >-
+    One piece of the code story is real: "cheese pizza" genuinely
+    appears as criminal slang in an FBI affidavit — from 2023, in an
+    unrelated case. That makes the narrow fact true and the leap
+    (therefore the 2016 dictionary was real, therefore the emails were
+    code) exactly as unsupported as before.
+  theme: symbols
+  rung: observation
+  claimType: historical
+  importance: supporting
+  credibility: established
+  credibilitySummary: >-
+    The affidavit PDF itself was fetched (p. 7 quoted verbatim) via the
+    reporting outlet's exposed file endpoint, corroborated by KBTX's
+    reporting; a court/PACER copy remains the recovery target for the
+    stronger label.
+    Living-persons note: cited only for the FBI's slang statement; the
+    defendant in that case is presumed innocent and this case asserts
+    nothing about him.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Sharpens the codebook analysis (PZG-C010) in both directions: the
+    slang's reality shows the dictionary wasn't built from nothing; its
+    2023 unrelated-case provenance shows it never sourced the 2016
+    claims. The evidentiary test for any alleged code remains
+    contextual, not lexical.
+  sourceAnchor:
+    locator: "FBI affidavit, Case 4:23-mj-02048 (S.D. Tex., filed 2023-11-13), p. 7"
+    quote: "'pizza' and/or 'cheese pizza' is a known slang/code-word used by individuals to discuss CSAM in public forums without detection"
+    sourceId: SRC-HARNDEN-AFFIDAVIT
+  parentClaimIds: [PZG-C010]
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    A 2023 affidavit cannot speak to 2016 usage either way; the claim
+    is scoped to exactly what the document states.
+  whatWouldChangeOurMind:
+    - "Pre-2016 law-enforcement documentation of the broader dictionary (none has surfaced in nine years)."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V48"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C032
+  tier: featured
+  statement: >-
+    The Sex Stains music video containing the triangle motif is credited
+    to filmmaker Cassandra Lee Hamilton, and the band's documented Comet
+    Ping Pong appearance is a single all-ages show on September 15, 2016
+    — not a residency or house-band relationship as later tellings
+    implied.
+  plainLanguage: >-
+    The video with the triangle was an L.A. filmmaker's work for a
+    touring band that played the restaurant once, for twelve dollars at
+    the door. "Frequent Comet band" was another magnification.
+  theme: venue
+  rung: observation
+  claimType: historical
+  importance: supporting
+  credibility: well_supported
+  credibilitySummary: >-
+    The credit verified via Vimeo's own metadata and the filmmaker's
+    portfolio; the show verified from Comet's archived newsletter
+    (2016-09-15, $12, doors 9, all ages, with Coup Sauvage & The Snips
+    and Governess). Bounded honestly: one documented appearance — a
+    universal "only ever" is not provable from one page.
+  diagnosticity: moderate
+  diagnosticitySummary: >-
+    Caps the venue-association chain: the visual-resemblance claim about
+    the video (real motif, denied intent, design records unrecovered)
+    hangs from a one-show booking, not a relationship.
+  sourceAnchor:
+    locator: "Vimeo 188241841 oEmbed metadata; Comet newsletter capture, 2016-09-15"
+    sourceId: SRC-COMET-NEWSLETTER-2016
+  parentClaimIds: [PZG-C016]
+  dependsOnClaimIds: []
+  strongestObjection: >-
+    The motif's design intent remains genuinely unresolved (the decisive
+    records would be the production files) — this claim scopes the
+    venue link, not the symbol question.
+  whatWouldChangeOurMind:
+    - "Production/design records for the video; documentation of additional Comet appearances."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V50"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"

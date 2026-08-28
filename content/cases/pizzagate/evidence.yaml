@@ -234,3 +234,285 @@
     extractedBy: "claude-fable-5 (cursor session)"
     runId: "pzg-case-build-2026-08-28"
     date: "2026-08-28"
+
+# ---- Expansion wave (2026-08-28). Ledger V33–V55.
+
+- id: PZG-E011
+  title: "The contemporaneous signage reporting, with its own attribution"
+  claimIds: [PZG-C022, PZG-C023]
+  sourceId: SRC-WAPO-2016-THREATS
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    WaPo (2016-12-05): the Besta owner is quoted "It's a slice of pizza"
+    and described removing the image; Terasol's heart graphic is
+    described as part of a St. Jude Children's Research Hospital
+    fundraiser, removed by the family. The accusation the article
+    reports came from an online reviewer alleging "a symbol of child
+    pornography."
+  editorInference: >-
+    The "compared to an FBI symbol" framing that circulates (and that
+    this case's own draft brief carried) is not in the article — the
+    comparison grew in retelling, a small instance of the same
+    inflation mechanism the case documents.
+  exactLocator: "WaPo 2016-12-05 (via Wayback)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V42"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E012
+  title: "TrafficLand: agency-operated, movable, unrecorded"
+  claimIds: [PZG-C024]
+  sourceId: SRC-TRAFFICLAND
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    TrafficLand's help page states cameras are owned and operated by
+    transportation agencies, may be actively moved by them, and
+    "TrafficLand … is not authorized to record any of the video."
+  editorInference: >-
+    Routine operator movement plus no recording caps the camera claim's
+    diagnosticity from both sides.
+  exactLocator: "TrafficLand help page (Wayback capture)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V44"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E013
+  title: "The DOJ Andrew Kline, in DOJ's own release"
+  claimIds: [PZG-C025]
+  sourceId: SRC-DOJ-2007-KLINE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The 2007 justice.gov press release names "Special Litigation
+    Counsels Hilary Axam and Andrew Kline" of the Human Trafficking
+    Prosecution Unit.
+  exactLocator: "justice.gov archive, 2007 release 07_crt_060"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V45"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E014
+  title: "The Veritas Andrew Kline, at the matching address"
+  claimIds: [PZG-C025]
+  sourceId: SRC-VERITAS-KLINE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Veritas Law Firm's team page lists co-founder Andrew J. Kline,
+    restaurant-industry practice, at 1225 19th St NW Suite 320 — the
+    address on the LLC paperwork in the 2016 thread.
+  exactLocator: "theveritaslawfirm.com/our-team/ (live, 2026-08-28)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V45"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E015
+  title: "The artist's contemporaneous account of who attended"
+  claimIds: [PZG-C026]
+  sourceId: SRC-ARTNEWS-2016
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    In the ARTnews interview (2016-11-04), Abramović states Tony Podesta
+    attended, John Podesta did not, and she has never met John.
+  exactLocator: "ARTnews, Andrew Russeth, 2016-11-04"
+  limitations:
+    - "Participant testimony, the only direct account on record; nothing recovered contradicts it."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V46"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E016
+  title: "The fundraiser follow-up: the total and the 'nice pizza' line"
+  claimIds: [PZG-C027]
+  sourceId: SRC-WL-PODESTA-48531
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    emailid 48531 (2008-10-04): "Raised over 40 grand … regret is I did
+    not make you a nice pizza."
+  exactLocator: "WikiLeaks Podesta emailid/48531"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V38"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E017
+  title: "The orphanage assertion, attributed to its asserter"
+  claimIds: [PZG-C030]
+  sourceId: SRC-FOX-2010-PUELLO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Fox transcript (2010-02-01): the group's then-spokesman Jorge Puello
+    said the 33 children came from a collapsed orphanage he called
+    "friends of the orphans of Haiti."
+  editorInference: >-
+    The sole recovered basis for the "taken from the NPH-connected
+    orphanage" chain is this spokesman's statement — an assertion, never
+    corroborated by the parent-tracing record (PZG-E018).
+  exactLocator: "Fox News story transcript, 2010-02-01 (Wayback)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V51"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E018
+  title: "AP: all 33 children had living parents"
+  claimIds: [PZG-C030]
+  sourceId: SRC-AP-2010-VINDICATOR
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    AP (2010-02-21, via the Vindicator archive): all 33 children were
+    traced to living parents, in "Callabas" and the Citron slum.
+  exactLocator: "vindyarchives.com, 2010-02-21"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V51"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E019
+  title: "Pre-controversy music criticism of the band"
+  claimIds: [PZG-C016]
+  sourceId: SRC-WAPO-2016-HB-REVIEW
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    WaPo (2016-01-15, Mark Jenkins): an ordinary live-music review of
+    Heavy Breathing, ten months before the controversy.
+  editorInference: >-
+    The band was ordinary local-press material before it was a
+    conspiracy exhibit — context for how much the lens, not the subject,
+    changed.
+  exactLocator: "WaPo 2016-01-15 (via Wayback)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V49"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E020
+  title: "The 'preferences' clip, with its provenance caveat"
+  claimIds: [PZG-C016]
+  sourceId: SRC-DCIST-2016-EXPLAINER
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    DCist (2016-12-05) reports the clip in which, after an audience
+    reference to liking "little boys," the performer replies "We all
+    have preferences" — and notes in the same passage that the clip's
+    provenance was unclear.
+  editorInference: >-
+    Both halves travel together here: the clip is contemporaneously
+    reported, and its provenance caveat is part of the report — the
+    circulating versions kept the quote and dropped the caveat.
+  exactLocator: "DCist explainer, 2016-12-05"
+  limitations:
+    - "Native footage remains unrecovered (PZG-R005); transcripts of this scene have already been shown to grow words in circulation."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V49"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E021
+  title: "The video's credit, from the platform's own metadata"
+  claimIds: [PZG-C032]
+  sourceId: SRC-VIMEO-HAMILTON
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Vimeo's oEmbed metadata credits "Sex Stains - Land of La La" to
+    "cassandra lee hamilton," and the video is embedded on her
+    portfolio site.
+  exactLocator: "Vimeo 188241841 oEmbed record"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V50"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E022
+  title: "Museum provenance for the collection (partial enumeration)"
+  claimIds: [PZG-C013]
+  sourceId: SRC-NGA-GRANNAN
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    NGA object records confirm a Grannan work — "Untitled (from the
+    Poughkeepsie Journal)", accession 2009.131.30 — with credit line
+    "Gift of the Heather and Tony Podesta Collection", plus two Casebere
+    works in the same gift.
+  editorInference: >-
+    The collection documented in the 2004 profile carries national-museum
+    provenance — donated art, not hidden art. Full enumeration remains
+    blocked by JS-rendered pages; "Sing Sing" (129659) is NOT
+    Podesta-provenance, correcting a loose association in circulation.
+  exactLocator: "nga.gov legacy object pages (accession 2009.131.30)"
+  limitations:
+    - "Partial: complete Podesta-gift enumeration is blocked; only the verified objects are asserted."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V55"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E023
+  title: "The 2009 Donner quip — the humor register, on the record years earlier"
+  claimIds: [PZG-C029]
+  sourceId: SRC-POLITICO-2009
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Politico (2009-06-01): "I am going to my condo in Truckee [Calif.],
+    like I do every year — will sit on my porch and do conference calls
+    50 feet from where the Donner Party ate each other."
+  editorInference: >-
+    The same documented public macabre-humor register as the office
+    painting, seven years earlier — context that the register predates
+    anything there was to joke away.
+  exactLocator: "Politico, 2009-06-01 (Anne Schroeder Mullins), live"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V01"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"

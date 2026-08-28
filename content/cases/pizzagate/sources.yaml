@@ -262,8 +262,7 @@
   identifier: "2009-06-01"
   url: https://www.politico.com/story/2009/06/where-dcs-a-listers-go-for-vacation-023151
   verification: ai_verified
-  verificationNote: "Fetched live 2026-08-28; Donner Party quip checked verbatim. Kept as context for the case's humor-vs-code discussion."
-  background: true
+  verificationNote: "Fetched live 2026-08-28; Donner Party quip checked verbatim."
 
 - id: SRC-TIME-2016-PODESTA
   title: "Meet the Man Behind Hillary Clinton's Campaign (Jay Newton-Small)"
@@ -274,4 +273,389 @@
   url: https://time.com/4308369/hillary-clinton-john-podesta/
   verification: ai_verified
   verificationNote: "Fetched live 2026-08-28; fork-painting passage and quip checked verbatim (painting on loan from his brother; 'better to be the guy with the fork… than the guy on the table'). Pre-controversy profile."
-  background: true
+
+# ---- Expansion wave (2026-08-28): full brief coverage. Verification
+# ---- ledger entries V33–V55; batch reports 3–5 in the agent store.
+
+- id: SRC-WAYBACK-BESTA
+  title: "Wayback captures of mybestapizza.com, 2016-11-09 and 2016-11-11 (before/after the logo change)"
+  organization: "Internet Archive"
+  year: "2016"
+  sourceType: archive
+  identifier: "Captures 20161109221742 and 20161111004014; logo assets diffed and rendered"
+  url: https://web.archive.org/web/20161109221742/http://mybestapizza.com/
+  verification: ai_verified
+  verificationNote: >-
+    Both captures fetched and diffed 2026-08-28: every logo filename was
+    replaced between the two dates; the Nov 9 logo renders as a gold
+    slice drawn in nested concentric triangular lines inside a red
+    diamond; the Nov 11 version is a plain slice with topping dots. The
+    logos are the restaurant's marks — described, not reproduced.
+
+- id: SRC-WAYBACK-TERASOL
+  title: "Wayback captures of terasolartisans.com around November 2016 (heart graphic present/absent)"
+  organization: "Internet Archive"
+  year: "2016"
+  sourceType: archive
+  identifier: "CDX-diffed captures either side of Nov 2016; exactly one image disappears"
+  url: https://web.archive.org/web/2016/http://terasolartisans.com/
+  verification: ai_verified
+  verificationNote: >-
+    Diffed 2026-08-28: one image disappears between captures; the
+    archived PNG renders as a heart-within-heart containing an adult
+    hand and a child's hand. The St. Jude fundraiser connection is
+    WaPo's reporting (SRC-WAPO-2016-THREATS), not the page's own text.
+
+- id: SRC-WAPO-2016-HASHTAG
+  title: "Pizzagate: From rumor, to hashtag, to gunfire in D.C."
+  organization: "The Washington Post"
+  year: "2016"
+  sourceType: webpage
+  identifier: "2016-12-06"
+  url: https://www.washingtonpost.com/local/pizzagate-from-rumor-to-hashtag-to-gunfire-in-dc/2016/12/06/4c7def50-bbd4-11e6-94ac-3d324840106c_story.html
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via Wayback (live page and archive.today were
+    blocked). Verbatim: "On Nov. 7, the hashtag #pizzagate first
+    appeared on Twitter." Also attributes the r/pizzagate ban to
+    Reddit's personal-information policy.
+
+- id: SRC-WAPO-2016-THREATS
+  title: "'We're going to put a bullet in your head': Pizzagate threats terrorize D.C. shop owners"
+  organization: "The Washington Post"
+  year: "2016"
+  sourceType: webpage
+  identifier: "2016-12-05"
+  url: https://www.washingtonpost.com/local/were-going-to-put-a-bullet-in-your-head-pizzagate-threats-terrorize-dc-shop-owners/2016/12/05/39469a82-bb2e-11e6-94ac-3d324840106c_story.html
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via Wayback. Hammad quoted "It's a slice of
+    pizza" and described removing the image; Terasol's heart graphic
+    tied to a St. Jude Children's Research Hospital fundraiser and
+    removed by the family. NOTE: the article does not mention an FBI
+    symbol — the accusation it reports came from an online reviewer
+    alleging "a symbol of child pornography."
+
+- id: SRC-DDOT-CAMERA-LIST
+  title: "DDOT traffic camera list (official, 'As of 01/31/2014')"
+  organization: "District of Columbia (goc.dc.gov / HSEMA publication)"
+  year: "2014"
+  sourceType: report
+  url: https://goc.dc.gov/sites/default/files/dc/sites/hsema/publication/attachments/DDOT%20Traffic%20Cameras.pdf
+  verification: ai_verified
+  verificationNote: >-
+    The PDF ("As of 01/31/2014") was fetched 2026-08-28 from this
+    goc.dc.gov URL by the verification agent; lists
+    "Connecticut-Nebraska Ave NW". If the live URL rots, recover via
+    Wayback. An earlier draft of this record carried a constructed
+    filename, corrected at panel review — this URL is the fetched one.
+
+- id: SRC-TRAFFICLAND
+  title: "TrafficLand help page: camera ownership, movement, and non-recording"
+  organization: "TrafficLand"
+  sourceType: webpage
+  url: https://www.trafficland.com/
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via Wayback (live site hung). Verbatim: cameras
+    are owned/operated by transportation agencies, may be actively moved
+    by them, and "TrafficLand … is not authorized to record any of the
+    video."
+
+- id: SRC-RPIZZAGATE-KLINE
+  title: "Mirrored r/pizzagate thread 5e3scw (2016-11-21) — the Andrew Kline identity dispute"
+  organization: "r/pizzagate archive mirror"
+  year: "2016"
+  sourceType: archive
+  identifier: "thread 5e3scw"
+  url: https://reddit.pizzagate.hackliberty.org/r/pizzagate/5e3scw.html
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-28 at the hackliberty.org r/pizzagate mirror (an
+    earlier draft carried a constructed Wayback-style URL, corrected at
+    panel review). Contains verbatim the
+    correction that the Andrew Kline on the LLC paperwork "is that of
+    the Veritas Law Firm… That Andrew Kline is not the one that worked
+    for the Department of Justice." NOTE: the thread records a dispute —
+    the original poster rejected the correction.
+
+- id: SRC-DOJ-2007-KLINE
+  title: "DOJ press release (2007) naming Special Litigation Counsel Andrew Kline, Human Trafficking Prosecution Unit"
+  organization: "U.S. Department of Justice"
+  year: "2007"
+  sourceType: report
+  url: https://www.justice.gov/archive/opa/pr/2007/January/07_crt_060.html
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-28 from the justice.gov archive at this URL (release
+    07_crt_060): names "Special Litigation Counsels Hilary Axam and
+    Andrew Kline" of the Human Trafficking Prosecution Unit. An earlier
+    draft carried a constructed release number, corrected at panel
+    review.
+
+- id: SRC-VERITAS-KLINE
+  title: "Veritas Law Firm team page — Andrew J. Kline (restaurant-industry attorney, 1225 19th St NW Suite 320)"
+  organization: "Veritas Law Firm"
+  sourceType: webpage
+  url: https://theveritaslawfirm.com/our-team/
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-28 at theveritaslawfirm.com/our-team/ —
+    co-founder Andrew J. Kline listed, address matching the LLC
+    paperwork (1225 19th St NW Suite 320). An earlier draft carried a
+    constructed domain, corrected at panel review.
+
+- id: SRC-WL-PODESTA-15893
+  title: "Podesta emails 15893 — the 'Spirit Cooking dinner' forward (2015-06-28)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2015"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/15893
+  verification: ai_verified
+  verificationNote: "Fetched live 2026-08-28: Tony Podesta forwards Marina Abramović's dinner invitation to John Podesta."
+
+- id: SRC-ARTNEWS-2016
+  title: "ARTnews interview with Marina Abramović (Andrew Russeth, 2016-11-04)"
+  organization: "ARTnews"
+  year: "2016"
+  sourceType: webpage
+  url: https://www.artnews.com/art-news/news/marina-abramovic-on-right-wing-attacks-its-absolutely-outrageous-and-ridiculous-7255/
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-28: Abramović states Tony Podesta attended, John
+    Podesta did not, and she has never met John. (The Guardian's piece
+    links here; the detail belongs to ARTnews.)
+
+- id: SRC-WL-PODESTA-19742
+  title: "Podesta emails 19742 — Alefantis proposes the Comet Obama fundraiser (2008-09-27)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2008"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/19742
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: ~150 people expected, 'between 25 and 35 thousand dollars', request that Podesta speak."
+
+- id: SRC-WL-PODESTA-48531
+  title: "Podesta emails 48531 — the fundraiser follow-up ('Raised over 40 grand', 2008-10-04)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2008"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/48531
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28; includes the 'regret is I did not make you a nice pizza' line."
+
+- id: SRC-WL-PODESTA-21136
+  title: "Podesta emails 21136 — 'Cooking with Fratelli Podesta' campaign briefing (2015-10-06)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2015"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/21136
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: 'The Home of Tony Podesta / 2438 Belmont Rd., NW'; Alefantis a participating chef and 'personal friend'. Related 2016 event emails: 27029, 53745, 37543 (Belmont; 'Our pizza logo'; archive ends mid-March 2016)."
+
+- id: SRC-WL-PODESTA-30145
+  title: "Podesta emails 30145 — Steyer's walnut-sauce inquiry (2015-04-11)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2015"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/30145
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: 'true master of cuisine … was the sauce actually very tasty?' Companion: emailid 53381 (Clift, 'that pasta and walnut sauce dish!!')."
+
+- id: SRC-WL-PODESTA-19018
+  title: "Podesta emails 19018 — the Georgetown Law frozen-dessert survey reply"
+  organization: "WikiLeaks (Podesta emails)"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/19018
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: from kac316@law.georgetown.edu, not Podesta; actual wording 'a rather serious business' (the circulated 'very serious' is itself a misquote); mentions Cold Stone."
+
+- id: SRC-WL-PODESTA-50332
+  title: "Podesta emails 50332 — Sandler's cheeses-and-dominoes email (2015-12-24), with 37971 (the literal Dominos game)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2015"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/50332
+  verification: ai_verified
+  verificationNote: "Both fetched 2026-08-28: the Christmas pasta-gift tradition, the cheese substitution, 'playing dominos on cheese than on pasta?'; 37971 (2015-07-11): 'Using the Podesta method, she made up the rules as we played.'"
+
+- id: SRC-WL-CLINTON-14333
+  title: "Clinton emails 14333 — the 'Moloch' message (W. Lewis Amselem, via Kelly and Mills)"
+  organization: "WikiLeaks (Clinton email archive)"
+  sourceType: archive
+  url: https://wikileaks.org/clinton-emails/emailid/14333
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: 'Attached is from Lew Amselem, our rep to OAS' (Craig Kelly); the joking close of a Honduras/Arias Accord readout: 'I will be sacrificing a chicken in the backyard to Moloch . . .'"
+
+- id: SRC-WL-PODESTA-13265
+  title: "Podesta emails 13265 — 'You two free for dinner on 12 or 13 January?' (the 'pizza for an hour' thread)"
+  organization: "WikiLeaks (Podesta emails)"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/13265
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: sibling scheduling ending '3:00 at our house work?' / 'Sure' (52778)."
+
+- id: SRC-WL-PODESTA-44232
+  title: "Podesta emails 44232 — 'Always happy to babysit' (the icy-traffic dinner thread)"
+  organization: "WikiLeaks (Podesta emails)"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/44232
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: 'Re: Our drive' — Palmieri cancels in icy traffic; companion 49348 ('I'm seated with the kids so little wired', Tony replying to 'How is the trip?', referent unstated)."
+
+- id: SRC-HARNDEN-AFFIDAVIT
+  title: "FBI affidavit, Case 4:23-mj-02048 (S.D. Tex., filed 2023-11-13) — 'pizza'/'cheese pizza' as CSAM slang"
+  organization: "U.S. District Court, Southern District of Texas"
+  year: "2023"
+  sourceType: report
+  identifier: "Case 4:23-mj-02048, affidavit p. 7 — PDF as exposed by the reporting outlet's file endpoint; corroborated by KBTX reporting (2023-12-28)"
+  url: https://www.currentrevolt.com/api/v1/file/7a97451a-e084-45ab-900e-f2794804bd15.pdf
+  verification: ai_verified
+  verificationNote: >-
+    The affidavit PDF itself was fetched 2026-08-28 from the reporting
+    outlet's exposed file endpoint (NOT court-hosted; a court/PACER copy
+    remains the recovery target for the `verified` label); p. 7
+    verbatim: "'pizza' and/or 'cheese pizza' is a known slang/code-word
+    used by individuals to discuss CSAM in public forums without
+    detection." Living-persons note: cited only for the FBI's slang
+    statement; the defendant is presumed innocent and this case asserts
+    nothing about him.
+
+- id: SRC-FOX-2010-PUELLO
+  title: "Fox News transcript (2010-02-01) — Jorge Puello's 'friends of the orphans of Haiti' statement"
+  organization: "Fox News"
+  year: "2010"
+  sourceType: webpage
+  url: https://www.foxnews.com/story/alleged-haitian-orphans-case-attempted-child-trafficking-or-a-big-misunderstanding
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-28 at this foxnews.com transcript URL ("Alleged
+    Haitian Orphans Case…"): Puello's quote verbatim — an assertion by
+    the group's then-spokesman, cited as such. An earlier draft carried
+    a constructed slug, corrected at panel review.
+
+- id: SRC-CBS-SILSBY
+  title: "CBS News report — Silsby charges dropped; conviction for arranging illegal travel, time served"
+  organization: "CBS News"
+  year: "2010"
+  sourceType: webpage
+  url: https://www.cbsnews.com/news/us-baptist-convicted-in-haiti-but-free-to-go/
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-28 at this cbsnews.com URL ("US Baptist Convicted in
+    Haiti, But Free to Go"): kidnapping/criminal-association charges
+    dropped; convicted of arranging illegal travel; time served. Page
+    shows no visible dateline (noted). An earlier draft carried a
+    constructed slug, corrected at panel review.
+
+- id: SRC-AP-2010-VINDICATOR
+  title: "AP report (via Vindicator archive, 2010-02-21) — the 33 children had living parents"
+  organization: "Associated Press / The Vindicator archive"
+  year: "2010"
+  sourceType: archive
+  url: https://vindyarchives.com/news/2010/feb/21/no-orphans-among-kids-baptists-tried-to-/
+  verification: ai_verified
+  verificationNote: >-
+    Fetched 2026-08-28 at this vindyarchives.com URL ("No orphans among
+    kids Baptists tried to…", AP, 2010-02-21): all 33 children traced to
+    living parents in "Callabas" and the Citron slum. An earlier draft
+    carried a constructed slug, corrected at panel review.
+
+- id: SRC-BENKLER-2018
+  title: "Network Propaganda (Benkler, Faris & Roberts), Oxford — the Pizzagate origin reconstruction"
+  authors: ["Yochai Benkler", "Robert Faris", "Hal Roberts"]
+  organization: "Oxford University Press"
+  year: "2018"
+  sourceType: book
+  identifier: "Chapter at academic.oup.com/book/26406/chapter/194773842"
+  url: https://academic.oup.com/book/26406/chapter/194773842
+  verification: ai_verified
+  verificationNote: "Chapter fetched 2026-08-28 (Wayback for the bot-wall): traces the food-code branch to a 2016-11-03 Reddit post ('Someone tell me I'm wrong!'), with the Comet-specific layer around 2016-11-07 (footnoted to the dcpizzagate primer and a 'Jimmy Comet' Reddit post)."
+
+- id: SRC-TWITTERTRAILS
+  title: "Wellesley TwitterTrails — first #pizzagate occurrence in their dataset"
+  organization: "Wellesley College (TwitterTrails)"
+  year: "2016"
+  sourceType: webpage
+  url: https://blogs.wellesley.edu/twittertrails/2017/05/
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: 'the first mention of #pizzagate was at 8:34 AM GMT on Nov. 6, 2016' — scoped to their dataset; preserves a 1-day disagreement with WaPo's Nov 7."
+
+- id: SRC-DCIST-2016-EXPLAINER
+  title: "What on Earth is Pizzagate…? (DCist explainer, 2016-12-05)"
+  organization: "DCist"
+  year: "2016"
+  sourceType: webpage
+  url: https://dcist.com/story/16/12/05/what-on-earth-is-pizzagate-why-did/
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: contains the 'We all have preferences' passage WITH the article's own caveat that the clip's provenance was unclear — both preserved."
+
+- id: SRC-WAPO-2016-HB-REVIEW
+  title: "Heavy Breathing packs arena-rock wallop into a tiny space (Mark Jenkins)"
+  organization: "The Washington Post"
+  year: "2016"
+  sourceType: webpage
+  identifier: "2016-01-15 — pre-controversy"
+  url: https://www.washingtonpost.com/entertainment/music/heavy-breathing-packs-arena-rock-wallop-into-a-tiny-space/2016/01/15/bb823e8e-bb9d-11e5-99f3-184bc379b12d_story.html
+  verification: ai_verified
+  verificationNote: "Verified 2026-08-28 via Wayback; ordinary music criticism of the band ten months before the controversy."
+
+- id: SRC-VIMEO-HAMILTON
+  title: "Vimeo oEmbed metadata — 'Sex Stains - Land of La La' credited to Cassandra Lee Hamilton"
+  organization: "Vimeo / cassandra lee hamilton portfolio"
+  sourceType: webpage
+  url: https://vimeo.com/188241841
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via Vimeo's oEmbed API
+    (vimeo.com/api/oembed.json?url=https://vimeo.com/188241841) and the
+    filmmaker's portfolio (vimeo.com/cassielee). The video page itself
+    may 404 for unauthenticated checkers. An earlier draft carried a
+    constructed video ID, corrected at panel review.
+
+- id: SRC-COMET-NEWSLETTER-2016
+  title: "Comet Ping Pong events newsletter capture — the 2016-09-15 Sex Stains show"
+  organization: "Constant Contact (Comet Ping Pong newsletter), via archive"
+  year: "2016"
+  sourceType: archive
+  url: http://web.archive.org/web/20190719214335/https://myemail.constantcontact.com/This-week-at-Comet-Ping-Pong----SEX-STAINS--COUP-SAUVAGE---THE-SNIPS--GOVERNESS----MYKKI-BLANCO--OLIVIA-NEUTRON-JOHN.html?soid=1103508274147&aid=6ByNyKcRcoA
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via the Wayback capture at this URL (the live
+    Constant Contact link has rotted): 2016-09-15, $12, doors 9 p.m.,
+    all ages, with Coup Sauvage & The Snips and Governess — the single
+    documented Comet appearance.
+
+- id: SRC-NGA-GRANNAN
+  title: "National Gallery of Art object record — Grannan, 'Untitled (from the Poughkeepsie Journal)', Gift of the Heather and Tony Podesta Collection"
+  organization: "National Gallery of Art"
+  sourceType: artifact_record
+  identifier: "Accession 2009.131.30; credit line 'Gift of the Heather and Tony Podesta Collection'"
+  url: https://www.nga.gov/artworks/150561-untitled-poughkeepsie-journal
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via legacy object pages (the modern pages are
+    JS-rendered/bot-walled): one Grannan work plus two Casebere works
+    confirmed in the same Podesta gift. Full enumeration remains blocked.
+    NOTE: 'Sing Sing' (129659) is Casebere with NON-Podesta provenance.
+
+- id: SRC-FOX5-2016-MPD
+  title: "FOX 5 DC (2016-11-23) — MPD statement: not investigating Comet; monitoring threats"
+  organization: "FOX 5 DC"
+  year: "2016"
+  sourceType: webpage
+  url: http://web.archive.org/web/20250710144212/https://www.fox5dc.com/news/dc-pizza-shop-harassed-threatened-online-after-being-victim-of-fake-news-stories
+  verification: ai_verified
+  verificationNote: >-
+    Verified 2026-08-28 via the Wayback capture at this URL: MPD's exact
+    statement — not investigating the restaurant; monitoring threats
+    against it and its employees. An earlier draft carried a constructed
+    live-site slug, corrected at panel review.
+
+- id: SRC-WL-PODESTA-49348
+  title: "Podesta emails 49348 — 'I'm seated with the kids so little wired'"
+  organization: "WikiLeaks (Podesta emails)"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/49348
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: a reply to 'How is the trip?' whose referent the exchange never states."

@@ -18,3 +18,26 @@
   actor: "editorial AI (claude-fable-5, cursor session pzg-case-build-2026-08-28)"
   aiAssisted: true
   kind: content
+
+- date: "2026-08-28"
+  change: >-
+    Expansion wave to full brief coverage under the founder's disposition
+    policy: 12 new featured claims (signage, camera, Kline conflation,
+    Spirit Cooking, the 2008 fundraiser and Belmont venue corrections,
+    the office painting, Silsby court outcomes, the 2023 slang affidavit,
+    Sex Stains), 13 catalog-tier claims (the remaining email contexts,
+    origin dates, Reddit ban attribution, MPD posture, further Instagram
+    captures), 13 evidence records, and 32 sources — every family in the
+    source brief now carries an explicit disposition.
+  reason: >-
+    Founder policy (2026-08-28): verified brief items default to IN even
+    at zero diagnosticity, with weightlessness stated; catalog tier keeps
+    the page manageable; no catalog statement names a living person.
+    Three verification batches (ledger V33–V55) preceded every record and
+    corrected the brief again en route — the WaPo signage articles never
+    mention an FBI symbol, the "very serious business" wording is itself
+    a misquote of "rather serious," and the origin-date sources disagree
+    by a day (both preserved).
+  actor: "editorial AI (claude-fable-5, cursor session pzg-expansion-2026-08-28)"
+  aiAssisted: true
+  kind: content
