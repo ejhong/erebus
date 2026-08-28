@@ -16,7 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { parse as parseYaml } from "yaml";
-import { pickProvider, parseJsonReply } from "./lib/llm.mjs";
+import { callWithRefusalFallback, parseJsonReply, pickProvider } from "./lib/llm.mjs";
 import {
   PROPOSAL_SYSTEM,
   buildCasePacket,
@@ -42,6 +42,22 @@ function loadYamlList(dir, file) {
   return Array.isArray(parsed) ? parsed : [];
 }
 
+/** Titles already proposed for a case in ANY prior run: proposing is
+ * once-only, and founder silence retires an idea (see the dedupe rule
+ * in the system prompt and the validator backstop). */
+function priorTitlesFor(slug) {
+  const base = path.join(ROOT, "proposals", "agenda");
+  const titles = new Set();
+  if (!fs.existsSync(base)) return titles;
+  for (const run of fs.readdirSync(base)) {
+    const f = path.join(base, run, `${slug}.md`);
+    if (!fs.existsSync(f)) continue;
+    for (const m of fs.readFileSync(f, "utf8").matchAll(/^## \d+\. \[[a-z-]+\] (.+)$/gm))
+      titles.add(m[1].trim());
+  }
+  return titles;
+}
+
 const report = [`## Agenda proposals (${date})`, ""];
 
 if (!provider) {
@@ -56,8 +72,15 @@ const slugs = fs
   .map((e) => e.name);
 
 let wrote = 0;
-for (const slug of slugs) {
-  const dir = path.join(CASES, slug);
+for (const dirName of slugs) {
+  const dir = path.join(CASES, dirName);
+  // Directories can predate a case rename (geopolymer -> the
+  // megalithic-casting slug); the published slug lives in case.yaml and
+  // is what pages, links, and proposal filenames must key on.
+  const caseFile = path.join(dir, "case.yaml");
+  const slug = fs.existsSync(caseFile)
+    ? (parseYaml(fs.readFileSync(caseFile, "utf8"))?.slug ?? dirName)
+    : dirName;
   const claims = loadYamlList(dir, "claims.yaml");
   const research = loadYamlList(dir, "research.yaml");
   const evidence = loadYamlList(dir, "evidence.yaml");
@@ -73,16 +96,26 @@ for (const slug of slugs) {
   const knownIds = new Set(
     [...claims, ...research, ...evidence, ...studies].map((x) => x?.id).filter(Boolean),
   );
-  const packet = buildCasePacket({ claims, research, studies, evidence });
+  const priorTitles = priorTitlesFor(slug);
+  let packet = buildCasePacket({ claims, research, studies, evidence });
+  if (priorTitles.size > 0) {
+    packet += "\n\nPREVIOUSLY PROPOSED (retired by editorial silence; do not re-propose):\n";
+    packet += [...priorTitles].map((t) => `- ${t}`).join("\n");
+  }
 
   let parsed;
+  let modelUsed = provider.model;
   try {
-    parsed = parseJsonReply(await provider.call(PROPOSAL_SYSTEM, packet));
+    const reply = await callWithRefusalFallback(provider, PROPOSAL_SYSTEM, packet);
+    modelUsed = reply.model;
+    if (reply.refused)
+      report.push(`- ${slug}: primary model refused; proposals below are from ${reply.model}.`);
+    parsed = parseJsonReply(reply.text);
   } catch (e) {
     report.push(`- ${slug}: model call failed (${String(e).slice(0, 120)}) — skipped, fail-closed.`);
     continue;
   }
-  const { ok, rejected } = validateProposals(parsed, knownIds);
+  const { ok, rejected } = validateProposals(parsed, knownIds, priorTitles);
   for (const r of rejected)
     report.push(`- ${slug}: rejected malformed proposal (${r.reason}).`);
   if (ok.length === 0) {
@@ -95,7 +128,7 @@ for (const slug of slugs) {
     renderProposalFile(slug, ok, {
       date,
       runId,
-      model: provider.model,
+      model: modelUsed,
       promptVersion: "agenda-propose-v1",
     }),
   );
