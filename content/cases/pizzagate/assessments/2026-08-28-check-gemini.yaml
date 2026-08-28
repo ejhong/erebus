@@ -1,0 +1,381 @@
+# Cross-model check run — an independent judge (Gemini 3.1 Pro (Google)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-28-check-gemini
+model: Gemini 3.1 Pro (Google) — independent check run via gemini-3.1-pro-preview
+date: 2026-08-28
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: weakly_supported
+  loadBearing:
+    - PZG-C001
+    - PZG-C010
+    - PZG-C020
+    - PZG-C008
+    - PZG-C002
+  weakestLinks:
+    - PZG-C003
+    - PZG-C005
+    - PZG-C006
+    - PZG-C024
+  synthesis: >-
+    The evidentiary record for Pizzagate presents a textbook study in the
+    mechanics of allegation assembly, demonstrating how authentic primary
+    materials can be systematically miscontextualized to manufacture the
+    appearance of an extensive criminal conspiracy. To steelman the
+    pro-allegation perspective: the foundational artifacts are undeniably real.
+    Highly connected political figures indeed exchanged terse, seemingly bizarre
+    emails referencing "wet works," a "torture chamber," and a "pizza-related"
+    map on a handkerchief. The social and financial networks connecting these
+    political operatives to an avant-garde, deliberately transgressive art scene
+    and a local pizzeria were genuine and documented. To a distributed network
+    of internet researchers combing through a massive hacked email corpus weeks
+    before a presidential election, these real financial ties, open public
+    sociability, and aesthetic provocations legitimately triggered
+    pattern-matching alarms. The presence of undeniably unexplained residue in
+    the communications prevents a completely frictionless dismissal of every
+    single anomaly in the archive. 
+
+
+    However, steelmanning the evidence against the central trafficking
+    hypothesis reveals that proximity, dark humor, and terse communication do
+    not mathematically equate to a concealed child exploitation network. When
+    subjected to rigorous primary-source recovery, the incriminating
+    interpretations collapse. The allegation relies fundamentally on an
+    interpretive "codebook" that lacks any law-enforcement provenance, falsely
+    attributed to a 2007 FBI bulletin that actually contains zero food
+    terminology. Furthermore, the case file meticulously documents a recurring
+    mechanism of "paraphrase inflation" and "identity conflation." Marquee
+    exhibits are neutralized by pre-existing mundane referents: the "hotdog
+    stand" was a documented family joke 15 years prior, the "$65,000" was a
+    private employee's explicitly hedged guess, and the sinister masked owner
+    was a band's keyboardist doing a birthday roast. Crucially, after nine years
+    of motivated adversarial scrutiny, the central allegation lacks any
+    independent evidentiary bridge. There is no identified victim, no firsthand
+    witness, no criminal financial trail, no forensic finding, and no
+    law-enforcement record substantiating the existence of a trafficking
+    operation. The case file establishes that the allegation was built by
+    applying a fabricated cipher to authentic, everyday documents, proving the
+    existence of the artifacts while firmly contradicting the monumental crimes
+    inferred from them.
+claimAssessments:
+  - claimId: PZG-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: The verification ledger consistently demonstrates this pattern across
+      the marquee claims. Fetching the primary sources—such as the 2000
+      Washington Post profile, the original Stratfor email, and the genuine FBI
+      bulletin—reliably confirmed the existence of the underlying artifacts
+      while simultaneously supplying the mundane context that the incriminating
+      interpretations relied on suppressing. The strongest opposing
+      consideration is that this pattern of clean resolution may not perfectly
+      extrapolate to the small residue of emails where the context genuinely
+      remains missing.
+  - claimId: PZG-C002
+    verdict: established
+    confidence: high
+    reasoning: Both the 2015 State Department email and the 2000 Washington Post
+      profile were verified verbatim from their primary sources. The phrase
+      "hot-dog stand in Hawaii" is explicitly documented as a long-running
+      family joke about retirement 15 years before the email existed to be
+      "decoded." The strongest opposing consideration is the theoretical
+      possibility of a dual meaning, but assigning a coded meaning now requires
+      positive evidence against a documented innocent referent.
+  - claimId: PZG-C003
+    verdict: established
+    confidence: high
+    reasoning: "The native email thread confirms the precise layering of the
+      statements: the realtor described only a black and white cloth, the
+      \"pizza-related map\" was the forwarder's tentative parenthetical guess,
+      and the owner dismissed the item as not worth worrying about. The
+      strongest opposing consideration is that the design remains fundamentally
+      unexplained since the physical object has never surfaced to explain
+      itself."
+  - claimId: PZG-C004
+    verdict: established
+    confidence: high
+    reasoning: The source email (emailid/46736) confirms the text was written by the
+      children's grandmother discussing the logistics of a farm visit and a
+      heated pool. John Podesta is listed in the "wishes-you-could-come" line,
+      directly contradicting retellings that placed him at the event. The
+      strongest opposing consideration is that contextual normalcy in a thread
+      cannot definitively exclude hidden meanings, though it removes the
+      positive basis for the incriminating reading.
+  - claimId: PZG-C005
+    verdict: established
+    confidence: high
+    reasoning: The 2014-01-31 email from Tony Podesta was verified verbatim,
+      confirming its extreme terseness and the genuine absence of any referent
+      for the phrase "Still in torture chamber." The historical claim that the
+      email contains no referent is fully established. The strongest opposing
+      consideration is that unexplained fragments are often mistakenly treated
+      as significant, when scientifically they hold zero evidentiary value
+      without their referents.
+  - claimId: PZG-C006
+    verdict: established
+    confidence: high
+    reasoning: The source text confirms that the "wet works" message is a fresh
+      email with no quoted prior thread, sent the evening of the New Hampshire
+      primary. With no in-thread referent, both the assassination interpretation
+      and the campaign-gallows-humor interpretation remain unsupported by the
+      text itself. The strongest opposing consideration is that the
+      correspondents understood the referent, even if the public record does not
+      currently document it.
+  - claimId: PZG-C007
+    verdict: established
+    confidence: high
+    reasoning: The full invitation was verified verbatim, showing the "bring all
+      children" line in the context of an annual office-colleague taco cookout
+      at a residential address. The document explicitly establishes a
+      family-friendly framing and confirms Podesta declined to attend. The
+      strongest opposing consideration is merely editorial reluctance to feature
+      an obvious context-stripping exhibit, rather than any evidentiary gap.
+  - claimId: PZG-C008
+    verdict: established
+    confidence: high
+    reasoning: The Stratfor GiFiles document was checked verbatim, confirming the
+      source is a private analyst's explicitly hedged speculation ("I think
+      Obama spent about $65,000...") within a joking office thread. Stripping
+      the hedge to present a documented transaction perfectly illustrates the
+      paraphrase inflation mechanism. The strongest opposing consideration is
+      that a private security analyst might have been tracking a real rumor,
+      though no expense record has ever materialized.
+  - claimId: PZG-C009
+    verdict: established
+    confidence: high
+    reasoning: The email and attached photo of two women and a child were fetched
+      natively. The context of the North Korean journalist homecoming is
+      verified, and the identification of the child as Euna Lee's daughter
+      remains a hedged "possibly," precisely matching the claim's boundary. The
+      strongest opposing consideration is that an unidentified child provides no
+      evidentiary weight in either direction, serving only to pin the limits of
+      the record.
+  - claimId: PZG-C010
+    verdict: established
+    confidence: high
+    reasoning: The genuine 2007 FBI intelligence bulletin was fetched and
+      mechanically searched, yielding zero occurrences of the words pizza,
+      pasta, hotdog, or cheese. The claim that the food-word dictionary
+      possesses official law-enforcement provenance via this document is
+      demonstrably false. The strongest opposing consideration is that criminal
+      codes exist even if unrecorded officially, but the specific FBI provenance
+      claimed in 2016 is a complete fabrication.
+  - claimId: PZG-C011
+    verdict: established
+    confidence: high
+    reasoning: The glossy 2015 Washington Life profile was verified verbatim,
+      confirming that the friendship between Tony Podesta and James Alefantis,
+      the pizza parties, and the artist's name were all openly published 17
+      months before the controversy. The strongest opposing consideration is
+      that public sociability does not logically preclude concealed conduct,
+      though treating openly published society profiles as evidence of a hidden
+      ring is an association fallacy.
+  - claimId: PZG-C012
+    verdict: established
+    confidence: high
+    reasoning: Federal filings from Brock-founded committees were recovered,
+      confirming precise vendor payments for catering and facility rental
+      (including the $11,600 line, correcting the circulated $11,500 figure).
+      Characterizing disclosed, itemized event-vendor invoices as generic
+      "donations" is factually inaccurate. The strongest opposing consideration
+      is that disclosed payments cannot inherently rule out undisclosed
+      financial flows, though the allegation rested specifically on these public
+      records.
+  - claimId: PZG-C013
+    verdict: established
+    confidence: high
+    reasoning: The 2004 Washington Post profile was verified, confirming the open
+      display and explicit description of provocative Katy Grannan and Sam
+      Taylor-Wood artworks in the Podesta residence a dozen years before the
+      controversy. National Gallery of Art provenance for parts of the
+      collection is also documented. The strongest opposing consideration is
+      that highlighting private art risks the aesthetics-as-evidence fallacy,
+      but documenting its pre-controversy open publication caps what the record
+      can imply.
+  - claimId: PZG-C014
+    verdict: established
+    confidence: high
+    reasoning: The 2015 interview's ambiguous "basement" phrasing and the 2013
+      article explicitly locating the tomato storage in the basement of Buck's
+      Fishing & Camping were both verified verbatim. The perceived contradiction
+      resolves completely on pre-controversy print. The strongest opposing
+      consideration is that the 2015 wording was genuinely ambiguous in
+      isolation, naturally generating the initial dispute before historical
+      context resolved it.
+  - claimId: PZG-C015
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Contemporaneous Wayback captures verify the authenticity of the
+      jimmycomet Instagram posts. The crucial capture explicitly contains the
+      account's own comment correcting the location to \"core offices not
+      #centrolina\", undermining the sinister underground facility captioning.
+      The strongest opposing consideration is that text-mode archives establish
+      captions and comments but cannot provide native-resolution visual audits
+      of the photographs themselves."
+  - claimId: PZG-C016
+    verdict: established
+    confidence: high
+    reasoning: Multiple pre-controversy sources (2012 DCist review, 2016 WaPo
+      review) and a 2019 scholarly article verify that the masked performer was
+      Heavy Breathing keyboardist Amanda Kleinman doing a regular comedy bit and
+      birthday roast. This cleanly refutes the conflation identifying the
+      performer as the restaurant owner. The strongest opposing consideration is
+      that native performance videos remain unrecovered, though the documented
+      identity completely breaks the allegation's required person-swap.
+  - claimId: PZG-C017
+    verdict: established
+    confidence: high
+    reasoning: The 2012 IRS Form 990 confirms Max Maccoby's role verbatim as a
+      volunteer "DIRECTOR" at "2.00" hours per week for the U.S. fundraising
+      nonprofit. This corrects the inflated "ran the orphanage" circulation down
+      to its factual board-seat reality. The strongest opposing consideration is
+      that board service remains a real association, meaning the correction
+      addresses magnitude rather than existence.
+  - claimId: PZG-C021
+    verdict: established
+    confidence: high
+    reasoning: The 1998 Washington Post profile and Hastert's own oral history were
+      verified verbatim, establishing that Hastert was a college friend of Tony
+      Podesta and had only cordial professional relations with John Podesta.
+      Retellings that forged a close friendship between Hastert and John
+      inflated and displaced the primary record. The strongest opposing
+      consideration is that cordial relations with John did exist, but the
+      specific, required close friendship is absent from the sources.
+  - claimId: PZG-C019
+    verdict: established
+    confidence: high
+    reasoning: The USAO-DC press releases for Edgar Welch's plea and sentencing were
+      checked verbatim, detailing his armed entry and the rounds fired. The
+      phrase "searched and found no evidence" is confirmed to stem from
+      contemporaneous press characterizations, not the DOJ record itself. The
+      strongest opposing consideration is that a lone amateur's 20-minute search
+      carries extremely narrow evidentiary weight regarding the presence or
+      absence of a broader concealed operation.
+  - claimId: PZG-C020
+    verdict: well_supported
+    confidence: high
+    reasoning: After nine years of intense adversarial public scrutiny, no
+      verifiable instance of an identified victim, firsthand witness, forensic
+      finding, criminal financial trail, or law-enforcement record
+      substantiating the trafficking network has emerged in the public record.
+      This bounded negative existence claim is the central evidentiary reality
+      of the case. The strongest opposing consideration is that absence of
+      evidence in the public record cannot completely rule out evidence in
+      sealed or private files, which is why the claim specifically names its
+      bounds.
+  - claimId: PZG-C022
+    verdict: established
+    confidence: high
+    reasoning: Wayback captures confirm the logo was changed from a nested
+      triangular design to a plain slice within two days of the accusations.
+      Contemporaneous reporting verifies the owner's explanation and the
+      frightened removal. The strongest opposing consideration is that scrubbing
+      a notorious graphic during a harassment wave is exactly what an innocent
+      business owner would do, meaning the change proves nothing about
+      underlying intent.
+  - claimId: PZG-C023
+    verdict: established
+    confidence: high
+    reasoning: Wayback diffs confirm the disappearance of the heart-within-heart
+      graphic from the café's website around November 2016. Contemporaneous
+      reporting ties the graphic to a St. Jude Children's hospital fundraiser
+      and documents its removal by the family. The strongest opposing
+      consideration is that nested hearts are a ubiquitous commercial motif,
+      yielding near-zero diagnostic power for signaling illicit preferences.
+  - claimId: PZG-C024
+    verdict: established
+    confidence: high
+    reasoning: The camera's existence is confirmed by the 2014 DDOT list, and the
+      claim of its movement is genuinely contemporaneous. However, TrafficLand's
+      documentation states the cameras are actively movable by operators and
+      record no video, rendering the claim permanently unresolvable and weak in
+      either direction. The strongest opposing consideration is that leaving an
+      unresolvable claim perpetually open grants it unearned life, though
+      declaring it debunked without primary records would be factually
+      incorrect.
+  - claimId: PZG-C025
+    verdict: established
+    confidence: high
+    reasoning: "DOJ records and Veritas Law Firm pages independently verify the
+      existence of two separate Andrew Klines: one a DOJ prosecutor, the other a
+      restaurant-industry attorney at the exact address listed on the venue's
+      LLC paperwork. The original forum archive proves the community surfaced
+      this correction themselves but rejected it. The strongest opposing
+      consideration is that the initial name match was a legitimate coincidence
+      worth checking, making the failure one of correction-refusal rather than
+      initial fabrication."
+  - claimId: PZG-C026
+    verdict: established
+    confidence: high
+    reasoning: The 2015 email from Tony Podesta forwarding the invitation is
+      verified. Abramović's contemporaneous ARTnews interview confirms Tony
+      attended, while explicitly stating she had never even met John Podesta,
+      refuting the circulated version that placed John at the dinner. The
+      strongest opposing consideration is that the artist's own account is
+      testimony rather than a guest log, though it remains the only direct,
+      uncontradicted account on the record.
+  - claimId: PZG-C027
+    verdict: established
+    confidence: high
+    reasoning: Podesta emails confirm Alefantis hosted a 2008 Obama fundraiser at
+      Comet Ping Pong, raised over $40,000, and apologized to Podesta for not
+      making him "a nice pizza." This verifies the venue's genuine political
+      embedding while restoring the ordinary campaign context of the "nice
+      pizza" line. The strongest opposing consideration is none of substance, as
+      the complete, self-describing record simply confirms documented political
+      fundraising.
+  - claimId: PZG-C028
+    verdict: established
+    confidence: high
+    reasoning: Campaign briefing emails explicitly state the October 2015 and April
+      2016 pizza events were held at "The Home of Tony Podesta / 2438 Belmont
+      Rd., NW", with Alefantis participating as a guest chef. The retellings
+      transposed the events to the restaurant's address. The strongest opposing
+      consideration is a contemporaneous WaPo line suggesting a Clinton
+      fundraiser physically at Comet, which leaves the possibility narrowly
+      open, though no primary event record supports it.
+  - claimId: PZG-C029
+    verdict: established
+    confidence: high
+    reasoning: The painting's existence in the campaign office, on loan from Tony
+      Podesta, and the owner's standing "guy with the fork" joke, were verified
+      verbatim in a pre-controversy April 2016 TIME profile. The 2009 Politico
+      "Donner Party" quip confirms the same openly published macabre humor
+      register years earlier. The strongest opposing consideration is that
+      evaluating private aesthetics risks the taste-as-evidence fallacy, but
+      documenting its pre-controversy public nature caps its implication of a
+      hidden confession.
+  - claimId: PZG-C030
+    verdict: well_supported
+    confidence: high
+    reasoning: CBS and AP reporting confirms the kidnapping charges were dropped,
+      the conviction was for arranging illegal travel with time served, and all
+      33 children were traced to living parents. The "Maccoby-connected
+      orphanage" framing rests entirely on an uncorroborated assertion by
+      spokesman Jorge Puello. The strongest opposing consideration is that
+      reduced charges represent a legal outcome rather than a factual
+      exoneration of original intent, bounding the claim to stated court
+      outcomes only.
+  - claimId: PZG-C031
+    verdict: established
+    confidence: high
+    reasoning: The 2023 FBI affidavit was verified to state that "cheese pizza" is
+      known slang for CSAM in public forums. This confirms the narrow reality of
+      the term in offender contexts, but its 2023 unrelated-case provenance
+      provides zero support for the expansive 2016 food-word dictionary or any
+      connection to the emails. The strongest opposing consideration is that a
+      2023 affidavit cannot definitively speak to 2016 usage, restricting the
+      claim strictly to what the document states.
+  - claimId: PZG-C032
+    verdict: well_supported
+    confidence: high
+    reasoning: Vimeo metadata credits the triangle-motif video to filmmaker
+      Cassandra Lee Hamilton. Archived Comet newsletters document only a single
+      $12 all-ages appearance by the band on 2016-09-15, contradicting the
+      narrative of a deep house-band relationship. The strongest opposing
+      consideration is that the visual design intent of the triangle motif
+      remains unresolved without the production files, but the claim
+      successfully scopes the venue link to a one-off booking.

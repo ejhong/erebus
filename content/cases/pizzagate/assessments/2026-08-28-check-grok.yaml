@@ -1,0 +1,452 @@
+# Cross-model check run — an independent judge (Grok 4.6 (xAI)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-08-28-check-grok
+model: Grok 4.6 (xAI) — independent check run via grok-4.6
+date: 2026-08-28
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: contradicted
+  loadBearing:
+    - PZG-C001
+    - PZG-C002
+    - PZG-C008
+    - PZG-C010
+    - PZG-C016
+    - PZG-C020
+    - PZG-C025
+  weakestLinks:
+    - PZG-C003
+    - PZG-C005
+    - PZG-C006
+    - PZG-C015
+    - PZG-C024
+  synthesis: >-
+    The featured hypothesis is not that emails, logos, payments, friendships,
+    and odd artifacts existed — they did — but that those authentic materials
+    were coded language for child abuse, that Comet Ping Pong hosted that abuse,
+    and that a trafficking network linking named people was then shielded from
+    investigation. Assessed as that chain, the hypothesis is contradicted. The
+    contradiction does not rest on a claim that the internet invented documents;
+    it rests on what happens when the documents are read whole, and on what nine
+    years of motivated search then failed to produce.
+
+    Steelman in its favor. Almost none of the raw fuel was fabricated. The
+    Podesta corpus is authentic down to headers and typos. A realtor found a
+    handkerchief; a forwarder guessed it showed a pizza-related map; the object
+    has never been produced to close the guess. "Still in torture chamber" is
+    three lines with no in-message referent. "Wet works" is an entire email body
+    sent on a primary-election night. Nested-triangle and nested-heart
+    storefront graphics existed and were taken down within days of the
+    accusations. A 2023 FBI affidavit in an unrelated Texas case states that
+    "cheese pizza" is known CSAM slang, so one lexical fragment of the story
+    exists in the world. FEC filings show years of committee payments to the
+    restaurant. A 2015 home-tour magazine describes two-hundred-pie parties
+    co-hosted by the restaurateur. A Spirit Cooking invitation was forwarded
+    between brothers. A cannibalism-themed painting hung in a campaign office
+    and was joked about in TIME six months before the controversy. A 2008 Obama
+    fundraiser did happen at Comet. A traffic camera stood at the intersection,
+    and a contemporaneous claim that it turned away has never been framed-out.
+    If one arrived already sure that pizza-language is code and that unusual art
+    plus political density equals concealment, this is a lot of smoke.
+
+    Steelman against. Smoke is not a codebook, and the codebook was the engine.
+    The genuine 2007 FBI bulletin describes graphical logos — spiral triangles,
+    nested hearts, a butterfly — and a mechanical search of its full text finds
+    zero occurrences of pizza, pasta, hotdog, or cheese. The food dictionary's
+    earliest known appearances are anonymous forum posts from the same week the
+    theory formed. Once that engine is removed, the marquee "decoded" emails
+    collapse into recovered mundane referents: a July 2000 Washington Post
+    profile documenting the hot-dog-stand joke fifteen years early; a Stratfor
+    employee's hedged "I think" about a hot-dog party; a declined family taco
+    cookout; a grandmother's farm-weekend pool note that does not even list the
+    alleged principal as a guest. Parallel recoveries dissolve the venue and
+    identity exhibits: tomato storage in the basement of Buck's, in print in
+    2013; a masked performer identified in 2012 local press as the band's
+    keyboardist doing a regular bit; two different men named Andrew Kline, with
+    the original 2016 thread containing the correction and recording its
+    refusal. Disclosed catering invoices were retold as "donations," and the
+    viral $11,500 was $11,600 on the filing page. After nine years of maximally
+    motivated public search, no identified victim, firsthand witness, forensic
+    or property finding, criminal financial trail, or law-enforcement record
+    substantiating a trafficking operation has been located in the examined
+    public record. That bounded absence, stacked on failed testable predictions,
+    is the record speaking. The inference that an operating network at a named
+    public restaurant would have left at least one of those five classes is a
+    prior, not a document; it is the prior the allegation itself invited by
+    naming a storefront.
+
+    What remains is residue without weight — a lost handkerchief described
+    secondhand, a three-line metaphor, an unlogged camera — and a documented
+    assembly process of source fusion, identity conflation, and paraphrase
+    inflation. Real artifacts plus a dictionary nobody could source manufactured
+    the appearance of corroboration. Unexplained is not incriminating. This
+    assessment grades the chain, never persons; every person named is presumed
+    innocent. The chain does not survive contact with the primary record.
+claimAssessments:
+  - claimId: PZG-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: "The checkable marquee items in this ledger move in one direction:
+      the underlying artifact becomes more certain and the incriminating gloss
+      shrinks, independently, across the hotdog email, the $65,000 hedge, the
+      cookout invitation, the FBI bulletin text, the FEC purpose lines, the
+      Buck's basement, and the Kleinman identification. That is a replicated
+      pattern over recovered sources, not a single anecdote or an appeal to
+      consensus. Strongest opposing consideration: the residue items were not
+      recovered to mundanity, so the pattern is demonstrated on the checkable
+      subset rather than proven universal; a single marquee claim whose
+      primary-source recovery strengthened the incriminating reading would break
+      it."
+  - claimId: PZG-C002
+    verdict: established
+    confidence: high
+    reasoning: "WikiLeaks emailid/30231 is authentic climate-negotiation banter
+      (\"I'm dreaming about your hotdog stand in Hawaii\"), and the July 2000
+      Babington profile already quotes Tony Podesta on John's half-joking
+      post-White-House ambition to run a hot-dog stand in Hawaii. A code reading
+      that required the mundane referent not to exist fails that requirement on
+      a document fifteen years older than the email. Strongest opposing
+      consideration: a standing family joke could in principle coexist with
+      later coded reuse, but that reading now needs positive evidence of coded
+      use, which this file does not contain."
+  - claimId: PZG-C003
+    verdict: established
+    confidence: high
+    reasoning: "Emailids 32795 and 23561 confirm the three-layer attribution as
+      stated: the realtor reported a square cloth handkerchief, white with
+      black; \"I think it has a map that seems pizza-related\" is Susan
+      Sandler's parenthetical; John Podesta replied that it was his and not
+      worth worrying about. The object itself has not been recovered, so the
+      design stays unexplained at exactly the size of a forwarder's hedge.
+      Strongest opposing consideration: unexplained is not incriminating, and a
+      lost novelty handkerchief described secondhand cannot carry weight in any
+      direction without the object or its product line."
+  - claimId: PZG-C004
+    verdict: established
+    confidence: high
+    reasoning: "Emailid/46736 is a grandmother's farm-weekend logistics note naming
+      Ruby, Emerson, and Maeve Luzzatto by age in a heated-pool and
+      Uber-transport context; John Podesta appears in the wishes-you-could-come
+      line, not as an expected attendee. Retellings that place him at the event
+      contradict the email's own text. Strongest opposing consideration:
+      domestic context cannot logically exclude a hidden meaning, but it removes
+      every positive reason the isolated-sentence reading had, and the burden
+      does not invert."
+  - claimId: PZG-C005
+    verdict: established
+    confidence: high
+    reasoning: 'Emailid/56492 was fetched with headers; the entire body is the three
+      lines quoted, with no referent for "Still in torture chamber" anywhere in
+      the message. The claim as stated is about what the email contains, and
+      that is settled. Strongest opposing consideration: treating a
+      referent-free fragment as suggestive is the mechanism this case documents;
+      until a calendar or correspondence for 2014-01-30/31 is recovered, the
+      phrase is established as text and presently untestable as meaning, with
+      evidentiary value of zero in every direction.'
+  - claimId: PZG-C006
+    verdict: established
+    confidence: high
+    reasoning: "Emailid/56753 is a fresh email whose entire body is the \"wet
+      works\" line; it was sent the evening of the New Hampshire primary, and
+      the only reply (emailid/6008) is Elmendorf's \"bad nite\" commiseration.
+      Absence of in-thread context is itself the verified fact. Strongest
+      opposing consideration: the correspondents knew what they meant, so \"no
+      referent in-thread\" is not \"no referent in the world\"; every specific
+      reading, assassination or gallows humor, remains unsupported by the
+      source's own text."
+  - claimId: PZG-C007
+    verdict: established
+    confidence: high
+    reasoning: 'Emailid/26903 is a complete third-annual taco-cookout invitation
+      from a CAP colleague, with suckling pig, salsas, parking, tortillas, and
+      an explicit "family friendly event" line; Podesta declined because he
+      would be in California. Isolated scary phrases were cropped from a party
+      email for an event the supposed principal did not attend. Strongest
+      opposing consideration is editorial rather than evidentiary: featuring a
+      self-explaining document can look like piling on, which does not disturb
+      the text.'
+  - claimId: PZG-C008
+    verdict: established
+    confidence: high
+    reasoning: "WikiLeaks GiFiles doc 1223066 places Fred Burton's \"I think Obama
+      spent about $65,000…\" inside a joking Stratfor \"Chicago Hot Dog Friday\"
+      thread; it is hedged private-analyst speculation, not a White House
+      expense record. The hedge died in transmission and the number thrived,
+      which is paraphrase inflation with a recoverable chain. Strongest opposing
+      consideration: Burton was a former security professional whose guess might
+      track something real, but no matching procurement record has surfaced, and
+      a hedged guess about an unnamed event remains a guess."
+  - claimId: PZG-C009
+    verdict: established
+    confidence: high
+    reasoning: 'Emailid/10037 and its pizza.jpg attachment are authentic; the
+      homecoming-week context of two journalists freed from North Korea is the
+      verified setting, and no reliable source identifies the child beyond
+      "possibly." The claim correctly caps the identification at that hedge.
+      Strongest opposing consideration: an unidentified child in a circulated
+      photo is emotionally salient material; salience is not an identification,
+      and the artifact carries no weight for any trafficking proposition once
+      the hedge and context are kept.'
+  - claimId: PZG-C010
+    verdict: established
+    confidence: high
+    reasoning: "The 2007-01-31 bulletin was fetched, checksummed, text-extracted,
+      and mechanically searched: it describes BLogo, LBLogo, GLogo, CLogo, and a
+      butterfly, and contains zero occurrences of pizza, pasta, hotdog, or
+      cheese. No law-enforcement, scholarly, or documentary attestation of the
+      expansive food dictionary has been located before anonymous November 2016
+      forum posts. Strongest opposing consideration: code systems need not
+      appear in official documents to exist, but a claimed FBI dictionary that
+      the FBI document does not contain, first attested in the same week the
+      theory formed, has not met its burden."
+  - claimId: PZG-C011
+    verdict: established
+    confidence: high
+    reasoning: "The June 2015 Washington Life home-tour profile, live and on
+      Wayback, describes Tony Podesta's Kalorama house hosting casual pizza
+      parties co-hosted by James Alefantis with over 200 pies, and names Biljana
+      Djurdjevic among the artists. The ties the allegation treated as
+      discoveries were in glossy print seventeen months earlier. Strongest
+      opposing consideration: public sociability and concealed conduct are not
+      mutually exclusive, but openly published friendship is weak evidence of
+      concealment, and the inference from documented association to hidden crime
+      is the association fallacy later mechanism claims name."
+  - claimId: PZG-C012
+    verdict: established
+    confidence: high
+    reasoning: "Legacy FEC Schedule B images and the official API confirm disclosed
+      vendor payments to Comet Ping Pong for catering and facility rental at the
+      amounts stated, including the 2014 D468951 line of $11,600.00 rather than
+      the circulated $11,500, plus Correct the Record's $3,584.64. The forms
+      refute the word \"donations.\" Strongest opposing consideration: disclosed
+      invoices cannot exclude undisclosed flows, but the allegation was about
+      these payments, and these payments are ordinary disclosed event spending
+      with no false-invoice or concealed-recipient anomaly identified."
+  - claimId: PZG-C013
+    verdict: established
+    confidence: high
+    reasoning: "The 2004 Washington Post \"Married, With Art\" profile, verified via
+      Wayback, documents Katy Grannan photographs in a bedroom and Sam
+      Taylor-Wood's Soliloquy VII in the living room, including the \"naked
+      teenagers in their parents' suburban homes\" characterization. Partial NGA
+      object records confirm Podesta-collection provenance for at least one
+      Grannan and two Casebere works. Strongest opposing consideration:
+      featuring private art tastes at all risks the aesthetics-as-evidence
+      fallacy; museum-donated work is the opposite of hidden work, and the claim
+      exists to pin the document and cap what it can imply."
+  - claimId: PZG-C014
+    verdict: established
+    confidence: high
+    reasoning: "Metro Weekly in April 2015 has Alefantis saying tomatoes were stored
+      \"in the basement\"; the August 2013 Washington Post food article, three
+      years pre-controversy, locates that storage in the basement of Buck's
+      Fishing & Camping down the block. Ambiguous 2015 wording generated a
+      dispute; it was not a contradiction. Strongest opposing consideration: the
+      2015 wording really was ambiguous, and an honest account keeps that
+      ambiguity visible while recording the 2013 resolution."
+  - claimId: PZG-C015
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Three Wayback mirrors of contemporaneous November 2016 archive.is
+      captures confirm authentic jimmycomet Instagram posts, and the vipXE
+      thread contains the account's own \"we meeting at core offices not
+      #centrolina\" correction. A circulated BRC09 code is a Pastebin snapshot,
+      not an Instagram post. Strongest opposing consideration: text-mode fetches
+      establish existence, captions, and comments, not full visual content of
+      the photographs, so a native-resolution visual audit remains open."
+  - claimId: PZG-C016
+    verdict: established
+    confidence: high
+    reasoning: "DCist on 2012-12-20 documents Amanda Kleinman as Heavy Breathing's
+      keyboardist, the comedy character, and a Comet booking, four years before
+      the allegation; Harbert 2019, from interviews with Kleinman and Sasha
+      Lord, identifies the notorious masked performance as a birthday roast
+      within the band's regular act. Lord's roster lists the band as one act
+      among many. Strongest opposing consideration: the band's transgressive
+      material is real and was contemporaneously disturbing to some viewers;
+      correcting the owner-identification neither sanitizes the aesthetic nor
+      needs to, and native performance video remains unrecovered."
+  - claimId: PZG-C017
+    verdict: established
+    confidence: high
+    reasoning: "Friends of the Orphans' 2012 Form 990, fetched and text-extracted,
+      lists \"MAX MACCOBY — 2.00 — DIRECTOR\" of the U.S. fundraising nonprofit
+      (EIN 65-1229309), a volunteer board seat rather than operation of an
+      orphanage. The link is real at a fraction of the circulated size.
+      Strongest opposing consideration: board service is a genuine association;
+      the correction is of magnitude and role, not existence, and any chain
+      built on it must carry the filing's version."
+  - claimId: PZG-C021
+    verdict: established
+    confidence: high
+    reasoning: "The 1998 Washington Post profile describes Hastert as \"an old
+      college pal of Podesta's brother Tony,\" and Hastert's Miller Center oral
+      history places the 1960s Japan trip with Tony and says of John only that
+      they \"got along.\" Retellings that moved the friendship one brother over
+      overstate these sources. Strongest opposing consideration: cordial
+      professional relations with John are documented in the same materials; the
+      correction concerns degree and which brother, not the existence of
+      acquaintance."
+  - claimId: PZG-C019
+    verdict: established
+    confidence: high
+    reasoning: "USAO-DC plea and sentencing releases document that Welch entered
+      armed on 2016-12-04, spent over twenty minutes inside, fired multiple
+      rounds into a locked door, surrendered, pleaded guilty, and was sentenced
+      to four years by Judge Ketanji Brown Jackson. \"Searched and found no
+      evidence\" is contemporaneous press phrasing, not DOJ language, and the
+      attribution split is itself verified. Strongest opposing consideration: an
+      armed amateur's twenty minutes settle very little about a concealed
+      operation in either direction; the incident's chief evidentiary product is
+      the danger the allegation created, and the negative is narrow — against an
+      obvious on-site operation that day."
+  - claimId: PZG-C020
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Within the bounded public record assembled for this case — the
+      verification ledger, prior saturation-level discovery, and nine years of
+      adversarial scrutiny — none of the five named evidence classes has been
+      located. For an allegation of an operating network at a named storefront,
+      that sustained absence is probative, while remaining a statement about the
+      examined record rather than a proof of universal absence. Strongest
+      opposing consideration: private records, sealed files, and unindexed
+      archives lie outside the searched space, so the claim would fall
+      immediately if any authenticated instance of those five classes surfaced;
+      the further inference that absence contradicts the hypothesis leans partly
+      on a prior about what such a network would leave."
+  - claimId: PZG-C022
+    verdict: established
+    confidence: high
+    reasoning: "Wayback captures 20161109221742 and 20161111004014 show every logo
+      filename replaced; the earlier mark is a slice in nested concentric
+      triangular lines, the later a plain slice, and the owner told the Post
+      \"It's a slice of pizza.\" The Post articles never mention an FBI symbol;
+      that comparison entered in retelling. Strongest opposing consideration:
+      none to the facts; visual resemblance to bulletin symbols is abundant by
+      chance in commercial graphics, and scrubbing a notorious graphic under a
+      harassment wave is exactly what innocence would also do, so the change
+      proves neither signaling nor its absence."
+  - claimId: PZG-C023
+    verdict: established
+    confidence: high
+    reasoning: "Wayback CDX diffs show exactly one image disappearing from the
+      Terasol site around November 2016; the archived PNG renders as a
+      heart-within-heart with an adult hand and a child's hand. Contemporaneous
+      Post reporting tied the graphic to a St. Jude fundraiser and said the
+      family removed it, attributed as the owners' account because the page
+      itself carries no caption. Strongest opposing consideration: nested hearts
+      are among the most common commercial motifs, so resemblance to a bulletin
+      symbol has essentially no discriminating power; frightened removal during
+      a harassment wave is not an evidentiary bridge."
+  - claimId: PZG-C024
+    verdict: established
+    confidence: high
+    reasoning: "The official DDOT list as of 2014-01-31 includes
+      Connecticut-Nebraska Ave NW; TrafficLand states cameras are
+      agency-operated, may be actively moved, and that it records no video; a
+      December 2016 forum quotation preserves the contemporaneous turn-away
+      claim with its Voat identifier. No frames, operator log, or original post
+      have been recovered, so whether the view changed remains unresolved, and
+      even a confirmed turn would be weak given routine repositioning and
+      non-recording. Strongest opposing consideration: treating an unresolvable
+      claim as forever-pending grants it unearned life, but closing it without
+      the primary artifact would be the opposite error; the claim as stated
+      correctly holds that triple size."
+  - claimId: PZG-C025
+    verdict: established
+    confidence: high
+    reasoning: "The 2007 justice.gov release names Andrew Kline of DOJ's Human
+      Trafficking Prosecution Unit; Veritas Law's team page lists
+      restaurant-industry attorney Andrew J. Kline at 1225 19th St NW, matching
+      the LLC paperwork; mirrored thread 5e3scw contains the correction that
+      those are different men, and records the original poster rejecting it.
+      Identity conflation is documented, including the community catching it in
+      real time and the correction failing to propagate. Strongest opposing
+      consideration: a same-name coincidence on trafficking-adjacent paperwork
+      was worth checking; the failure was not the question but the refusal of
+      the answer, and nothing recovered ties the DOJ attorney to the LLC."
+  - claimId: PZG-C026
+    verdict: established
+    confidence: high
+    reasoning: "Emailid/15893 is an authentic 2015 forward of Marina Abramović's
+      dinner invitation from Tony to John Podesta; the contemporaneous ARTnews
+      interview has Abramović stating that Tony attended, John did not, and she
+      had never met John. The artifact survives; the version with John Podesta
+      at the table does not. Strongest opposing consideration: an artist's own
+      account of attendance is testimony, not a guest log, though it is the only
+      direct account on record and nothing recovered contradicts it."
+  - claimId: PZG-C027
+    verdict: established
+    confidence: high
+    reasoning: "Emailid/19742 invites Podesta to speak at a Comet Obama fundraiser
+      expecting about 150 people and $25–35 thousand; emailid/48531 reports
+      \"Raised over 40 grand\" and closes with the host's regret that he \"did
+      not make you a nice pizza.\" The restaurant was a real political venue,
+      openly recorded as ordinary campaign activity. Strongest opposing
+      consideration: none of evidentiary substance; the documents are complete
+      and self-describing, and the \"nice pizza\" line is a pizza restaurateur
+      apologizing for not feeding his speaker."
+  - claimId: PZG-C028
+    verdict: established
+    confidence: high
+    reasoning: "Emailid/21136 places the October 2015 \"Cooking with Fratelli
+      Podesta\" event at Tony Podesta's home, 2438 Belmont Rd. NW, with
+      Alefantis as a participating chef and \"personal friend\"; 2016
+      pizza-party emails likewise place the event at Belmont, with Alefantis
+      supplying \"Our pizza logo.\" The relationships are real; the venue moved
+      to Comet in retelling. Strongest opposing consideration: contemporaneous
+      Post coverage of a Clinton fundraiser physically at Comet exists, and no
+      primary event record matching that line has been recovered, so that
+      possibility stays open at exactly that size."
+  - claimId: PZG-C029
+    verdict: established
+    confidence: high
+    reasoning: "TIME on 2016-04-28, six months before Pizzagate, profiles the
+      painting on loan from the collector brother and quotes the standing joke
+      about being the guy with the fork rather than the guy on the table;
+      Politico in 2009 already has the Donner Party vacation quip. Openly
+      published macabre humor predates any motive to joke something away.
+      Strongest opposing consideration: featuring aesthetics at all risks the
+      taste-as-evidence fallacy; documented dark humor in plain sight has
+      near-zero discriminating power and is equally expected under every
+      hypothesis."
+  - claimId: PZG-C030
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "CBS reporting states kidnapping and criminal-association charges
+      were dropped and the remaining conviction was for arranging illegal travel
+      with a time-served sentence; AP on 2010-02-21 traced all 33 children to
+      living parents; the orphanage link rests on spokesman Jorge Puello's
+      uncorroborated assertion. Real episode plus real NPH board fact plus an
+      unsupported orphanage claim were welded into a chain none of the parts
+      supports. Strongest opposing consideration: reduced charges are a legal
+      outcome, not a factual exoneration of worse intent, and the outcomes rest
+      on news accounts rather than recovered Haitian or U.S. court files —
+      native dockets would strengthen or revise the label."
+  - claimId: PZG-C031
+    verdict: established
+    confidence: high
+    reasoning: "The 2023 S.D. Tex. FBI affidavit, fetched as PDF and quoted at page
+      7, states that \"pizza\" and/or \"cheese pizza\" is known slang for
+      discussing CSAM in public forums. That documents one lexical fragment in
+      offender contexts in 2023; it neither sources the expansive 2016
+      dictionary nor connects to any email or person in this case. Strongest
+      opposing consideration: a 2023 affidavit cannot speak to 2016 usage either
+      way, and the leap from this slang's reality to \"therefore the emails were
+      code\" remains exactly as unsupported as before; a PACER-hosted copy would
+      only confirm the same scoped statement."
+  - claimId: PZG-C032
+    verdict: well_supported
+    confidence: moderate
+    reasoning: "Vimeo oEmbed metadata credits the triangle-motif Sex Stains video to
+      Cassandra Lee Hamilton, and Comet's archived newsletter documents a single
+      all-ages $12 show on 2016-09-15 with Coup Sauvage & The Snips and
+      Governess. \"Frequent Comet band\" is a magnification beyond that page.
+      Strongest opposing consideration: a universal \"only ever\" is not
+      provable from one newsletter, and the motif's design intent remains
+      unresolved pending production files; the claim correctly scopes the venue
+      link, not the symbol question."
