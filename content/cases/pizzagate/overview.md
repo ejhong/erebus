@@ -2,7 +2,17 @@ Every person named in this article is presumed innocent. No court has ever charg
 
 In the first week of November 2016, WikiLeaks was publishing the hacked emails of a presidential campaign chairman, and thousands of strangers were reading them together, live, looking for the worst thing they could imagine. Within days a theory had assembled itself: that ordinary words in the emails were code, that a Washington pizzeria was a hub, and that a circle of powerful people was hiding a child-trafficking network in plain sight. A month later a young father drove up from North Carolina with a rifle to rescue the children himself. [He spent over twenty minutes inside, fired into a locked door, surrendered, and got four years — that much is the government's own record; "he searched and found nothing" is the newspapers' summary, and this case keeps the two sources distinct]{claim=PZG-C019}.
 
-Pizzagate is now shorthand for "fake news," and that shorthand hides the thing about it most worth understanding. Very little of its raw material was fake. The emails were authentic. The friendships were real. The payments were in federal filings. The FBI document its adherents waved was genuine. What this case documents, exhibit by exhibit, is [a single pattern repeating across the most-circulated claims: recovering the primary source made the artifact more certain — and the incriminating interpretation less]{claim=PZG-C001}.
+Pizzagate is now shorthand for "fake news," and that shorthand hides the thing about it most worth understanding. Very little of its raw material was fake. What this case documents, exhibit by exhibit, is [a single pattern repeating across the most-circulated claims: recovering the primary source made the artifact more certain — and the incriminating interpretation less]{claim=PZG-C001}.
+
+## What was real — and what never appeared
+
+State it plainly, because both halves are the finding.
+
+**The artifacts were real, and some of them were genuinely strange.** The emails were authentic, down to their typos. [A handkerchief with "a map that seems pizza-related" really was discussed, and the object has never surfaced to explain itself]{claim=PZG-C003}. ["Still in torture chamber" really was sent, three lines, no referent]{claim=PZG-C005}. [The pizza shop's logo really was a nested-triangle design, really changed within two days of the accusations]{claim=PZG-C022}. [A macabre painting of a man on a dinner table really hung in the campaign office]{claim=PZG-C029}. [A "Spirit Cooking dinner" invitation from a famous performance artist really was forwarded between the brothers]{claim=PZG-C026}. [The lobbyist really hosted two-hundred-pizza parties with the restaurateur]{claim=PZG-C011}, and [political committees really paid the restaurant, in federal filings anyone can read]{claim=PZG-C012}. None of this was invented by the internet. Anyone who tells you it was all fabricated is doing to the debunking what the theory did to the evidence.
+
+**And the conclusion built on those artifacts never acquired the evidence that establishes crimes.** [No identified victim. No firsthand witness. No forensic finding. No criminal financial trail. No law-enforcement record substantiating a trafficking operation — after nine years of the most motivated searching the internet has ever aimed at a restaurant]{claim=PZG-C020}. Strange artifacts plus real relationships were assembled — by [source fusion, identity conflation, and paraphrase inflation, each documented in this case with its own exhibits]{claim=PZG-C025} — into a certainty the underlying record never contained.
+
+Real and strange is not the same as guilty. Unexplained is not the same as incriminating. That distinction is this entire case.
 
 ## The dictionary that wasn't
 

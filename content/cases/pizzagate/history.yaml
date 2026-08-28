@@ -41,3 +41,19 @@
   actor: "editorial AI (claude-fable-5, cursor session pzg-expansion-2026-08-28)"
   aiAssisted: true
   kind: content
+
+- date: "2026-08-28"
+  change: >-
+    Added the "What was real — and what never appeared" section to the
+    article: an explicit statement, with linked examples, that the
+    underlying artifacts were authentic (and some genuinely strange)
+    while the trafficking conclusion never acquired any of the evidence
+    classes that establish crimes.
+  reason: >-
+    Founder direction (2026-08-28): the case's central concept — real
+    artifacts, unsupported conclusion — must be stated plainly and
+    prominently with examples, not left implicit in the exhibit-by-
+    exhibit treatment.
+  actor: "editorial AI (claude-fable-5, cursor session pzg-thesis-2026-08-28)"
+  aiAssisted: true
+  kind: content
