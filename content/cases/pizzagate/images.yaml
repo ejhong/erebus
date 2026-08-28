@@ -1,0 +1,83 @@
+# Case imagery. Two kinds, never confused:
+#   cover — AI-generated editorial artwork (style-e2: the place, painted,
+#           dissolving into its ghosted survey record), honestly credited;
+#           may never depict evidence or the event.
+#   plate — real imagery with provenance and license, presented as
+#           numbered record plates.
+
+- id: IMG-PZG-COVER
+  role: cover
+  file: /images/cases/pizzagate/cover.jpg
+  alt: >-
+    Gouache painting of a quiet row of two-story brick storefronts with
+    awnings under bare winter trees, empty sidewalk in long morning
+    shadow, the scene dissolving downward into a ghosted sepia surveyor's
+    plat of numbered storefront footprints.
+  source: generated
+  license: "Project artwork (AI-generated)"
+  credit: "AI-generated editorial artwork, Erebus house style (style-e2)"
+  styleVersion: style-e2
+  model: "gpt-image-1"
+  runId: "cover-style-e2-2026-08-28"
+  prompt: >-
+    Editorial cover artwork, unmistakably a gouache painting. Upper
+    two-thirds: a quiet Washington, D.C. neighborhood commercial block on
+    an early winter morning — a row of low brick storefronts with awnings
+    under bare street trees, empty sidewalk, long morning shadows, no
+    people and no legible signage. Lower third: the painting dissolves
+    downward into a ghosted hand-drawn surveyor's plat of the avenue
+    block with numbered storefront footprints and lot lines. Palette:
+    warm brick red and cream storefronts under a pale grey-gold winter
+    morning, long cool blue-grey sidewalk shadows; the ghosted plat in
+    warm sepia ink on cool ivory paper. Quiet, elegiac, dignified;
+    completely empty of people; no violence, no memorials, no flags.
+
+- id: IMG-PZG-P01
+  role: plate
+  file: /images/cases/pizzagate/plates/fbi-2007-bulletin-p1.png
+  plateNumber: 1
+  alt: >-
+    First page of a 2007 FBI intelligence bulletin titled "Symbols and
+    Logos Used by Pedophiles to Identify Sexual Preferences," showing the
+    FBI seal, classification markings, and images of triangular spiral
+    logos and marked coins and jewelry.
+  depicts: >-
+    Page 1 of the genuine FBI Cyber Division intelligence bulletin of
+    2007-01-31 — the document the codebook claims cited. It describes
+    graphical symbols only; a mechanical search of its full text finds
+    zero food terms (PZG-C010).
+  mediaType: "document page (rendered from the mirror PDF)"
+  source: commons
+  license: "Public domain (U.S. federal government work)"
+  credit: "Federal Bureau of Investigation, Cyber Division — mirror copy via file.wikileaks.org"
+  provenance:
+    photographer: "FBI Cyber Division, Innocent Images National Initiative"
+    date: "2007-01-31"
+    sourceUrl: https://file.wikileaks.org/file/FBI-pedophile-symbols.pdf
+    originalTitle: "(U) Symbols and Logos Used by Pedophiles to Identify Sexual Preferences"
+  claimIds: [PZG-C010]
+
+- id: IMG-PZG-P02
+  role: plate
+  file: /images/cases/pizzagate/plates/fec-2014-schedule-b-p57.png
+  plateNumber: 2
+  alt: >-
+    An FEC Schedule B itemized-disbursements form page for American
+    Bridge 21st Century listing a payment to Comet Ping Pong, 5037
+    Connecticut Avenue NW, dated March 21 2014, purpose "Catering &
+    Facility Rental," amount 11600.00, transaction D468951.
+  depicts: >-
+    Page 57 of American Bridge 21st Century's 2014 FEC filing (image
+    14960793887) — the primary record behind the "payments to Comet"
+    claim, showing the actual amount ($11,600.00, not the widely copied
+    $11,500) and the disclosed vendor purpose (PZG-C012).
+  mediaType: "document page (rendered from the FEC docquery PDF)"
+  source: commons
+  license: "Public domain (U.S. federal government record)"
+  credit: "Federal Election Commission, docquery filing image 14960793887"
+  provenance:
+    photographer: "Federal Election Commission (filing by American Bridge 21st Century)"
+    date: "2014"
+    sourceUrl: https://docquery.fec.gov/pdf/831/14960793831/14960793831_000057.pdf
+    originalTitle: "FEC Form 3X Schedule B, Image# 14960793887, page 57 of 388"
+  claimIds: [PZG-C012]
