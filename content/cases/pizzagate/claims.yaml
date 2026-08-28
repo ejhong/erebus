@@ -1133,7 +1133,7 @@
   credibilitySummary: >-
     Both Klines verified independently (2007 justice.gov release naming
     "Special Litigation Counsels Hilary Axam and Andrew Kline"; Veritas
-    Law's live team page at the matching address), and the mirrored
+    Law's live team page (theveritaslawfirm.com/our-team/) at the matching address), and the mirrored
     thread 5e3scw (2016-11-21) contains the correction verbatim: "That
     Andrew Kline is not the one that worked for the Department of
     Justice."
@@ -1143,7 +1143,7 @@
     three assembly mechanisms this case names — including the community
     catching it in real time and the correction failing to propagate.
   sourceAnchor:
-    locator: "r/pizzagate mirror, thread 5e3scw (2016-11-21); justice.gov 2007 release; veritaslawdc.com team page"
+    locator: "r/pizzagate mirror (hackliberty.org), thread 5e3scw (2016-11-21); justice.gov 2007 release 07_crt_060; theveritaslawfirm.com/our-team/"
     sourceId: SRC-RPIZZAGATE-KLINE
   parentClaimIds: [PZG-C001]
   dependsOnClaimIds: []
