@@ -138,7 +138,7 @@
   reviewState: ai_extracted
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/49348"
-    sourceId: SRC-WL-PODESTA-44232
+    sourceId: SRC-WL-PODESTA-49348
   independenceGroup: "podesta-small-emails"
   origin:
     ref: "verification ledger V47"

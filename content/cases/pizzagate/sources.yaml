@@ -341,9 +341,14 @@
   organization: "District of Columbia (goc.dc.gov / HSEMA publication)"
   year: "2014"
   sourceType: report
-  url: https://goc.dc.gov/sites/default/files/dc/sites/hsema/publication/attachments/DDOT%20Camera%20List.pdf
+  url: https://goc.dc.gov/sites/default/files/dc/sites/hsema/publication/attachments/DDOT%20Traffic%20Cameras.pdf
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28; lists 'Connecticut-Nebraska Ave NW' among camera locations."
+  verificationNote: >-
+    The PDF ("As of 01/31/2014") was fetched 2026-08-28 from this
+    goc.dc.gov URL by the verification agent; lists
+    "Connecticut-Nebraska Ave NW". If the live URL rots, recover via
+    Wayback. An earlier draft of this record carried a constructed
+    filename, corrected at panel review — this URL is the fetched one.
 
 - id: SRC-TRAFFICLAND
   title: "TrafficLand help page: camera ownership, movement, and non-recording"
@@ -377,17 +382,26 @@
   organization: "U.S. Department of Justice"
   year: "2007"
   sourceType: report
-  url: https://www.justice.gov/archive/opa/pr/2007/January/07_crt_053.html
+  url: https://www.justice.gov/archive/opa/pr/2007/January/07_crt_060.html
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28: names 'Special Litigation Counsels Hilary Axam and Andrew Kline' in the Human Trafficking Prosecution Unit."
+  verificationNote: >-
+    Fetched 2026-08-28 from the justice.gov archive at this URL (release
+    07_crt_060): names "Special Litigation Counsels Hilary Axam and
+    Andrew Kline" of the Human Trafficking Prosecution Unit. An earlier
+    draft carried a constructed release number, corrected at panel
+    review.
 
 - id: SRC-VERITAS-KLINE
   title: "Veritas Law Firm team page — Andrew J. Kline (restaurant-industry attorney, 1225 19th St NW Suite 320)"
   organization: "Veritas Law Firm"
   sourceType: webpage
-  url: https://www.veritaslawdc.com/
+  url: https://theveritaslawfirm.com/our-team/
   verification: ai_verified
-  verificationNote: "Fetched live 2026-08-28; co-founder Andrew J. Kline listed at the address matching the LLC paperwork in the 2016 dispute."
+  verificationNote: >-
+    Fetched live 2026-08-28 at theveritaslawfirm.com/our-team/ —
+    co-founder Andrew J. Kline listed, address matching the LLC
+    paperwork (1225 19th St NW Suite 320). An earlier draft carried a
+    constructed domain, corrected at panel review.
 
 - id: SRC-WL-PODESTA-15893
   title: "Podesta emails 15893 — the 'Spirit Cooking dinner' forward (2015-06-28)"
@@ -492,43 +506,58 @@
   organization: "U.S. District Court, Southern District of Texas"
   year: "2023"
   sourceType: report
-  identifier: "Case 4:23-mj-02048, affidavit p. 7"
-  url: https://www.courtlistener.com/docket/67966078/united-states-v-harnden/
+  identifier: "Case 4:23-mj-02048, affidavit p. 7 — PDF as exposed by the reporting outlet's file endpoint; corroborated by KBTX reporting (2023-12-28)"
+  url: https://www.currentrevolt.com/api/v1/file/7a97451a-e084-45ab-900e-f2794804bd15.pdf
   verification: ai_verified
   verificationNote: >-
-    The affidavit PDF itself was fetched 2026-08-28; p. 7 verbatim:
-    "'pizza' and/or 'cheese pizza' is a known slang/code-word used by
-    individuals to discuss CSAM in public forums without detection."
-    Living-persons note: cited only for the FBI's slang statement; the
-    defendant is presumed innocent and this case asserts nothing about
-    him.
+    The affidavit PDF itself was fetched 2026-08-28 from the reporting
+    outlet's exposed file endpoint (NOT court-hosted; a court/PACER copy
+    remains the recovery target for the `verified` label); p. 7
+    verbatim: "'pizza' and/or 'cheese pizza' is a known slang/code-word
+    used by individuals to discuss CSAM in public forums without
+    detection." Living-persons note: cited only for the FBI's slang
+    statement; the defendant is presumed innocent and this case asserts
+    nothing about him.
 
 - id: SRC-FOX-2010-PUELLO
   title: "Fox News transcript (2010-02-01) — Jorge Puello's 'friends of the orphans of Haiti' statement"
   organization: "Fox News"
   year: "2010"
   sourceType: webpage
-  url: https://www.foxnews.com/story/lawyer-for-detained-american-missionaries-defends-groups-actions
+  url: https://www.foxnews.com/story/alleged-haitian-orphans-case-attempted-child-trafficking-or-a-big-misunderstanding
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28 (Wayback); Puello's quote verbatim — an assertion by the group's then-spokesman, cited as such."
+  verificationNote: >-
+    Fetched 2026-08-28 at this foxnews.com transcript URL ("Alleged
+    Haitian Orphans Case…"): Puello's quote verbatim — an assertion by
+    the group's then-spokesman, cited as such. An earlier draft carried
+    a constructed slug, corrected at panel review.
 
 - id: SRC-CBS-SILSBY
   title: "CBS News report — Silsby charges dropped; conviction for arranging illegal travel, time served"
   organization: "CBS News"
   year: "2010"
   sourceType: webpage
-  url: https://www.cbsnews.com/news/us-missionary-laura-silsby-freed-in-haiti/
+  url: https://www.cbsnews.com/news/us-baptist-convicted-in-haiti-but-free-to-go/
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28: kidnapping/criminal-association charges dropped; convicted only of arranging illegal travel; sentenced to time served. Page shows no visible dateline (noted)."
+  verificationNote: >-
+    Fetched 2026-08-28 at this cbsnews.com URL ("US Baptist Convicted in
+    Haiti, But Free to Go"): kidnapping/criminal-association charges
+    dropped; convicted of arranging illegal travel; time served. Page
+    shows no visible dateline (noted). An earlier draft carried a
+    constructed slug, corrected at panel review.
 
 - id: SRC-AP-2010-VINDICATOR
   title: "AP report (via Vindicator archive, 2010-02-21) — the 33 children had living parents"
   organization: "Associated Press / The Vindicator archive"
   year: "2010"
   sourceType: archive
-  url: http://vindyarchives.com/news/2010/feb/21/all-33-haitian-8216orphans8217-have-parents/
+  url: https://vindyarchives.com/news/2010/feb/21/no-orphans-among-kids-baptists-tried-to-/
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28: all 33 children traced to living parents in 'Callabas' and the Citron slum."
+  verificationNote: >-
+    Fetched 2026-08-28 at this vindyarchives.com URL ("No orphans among
+    kids Baptists tried to…", AP, 2010-02-21): all 33 children traced to
+    living parents in "Callabas" and the Citron slum. An earlier draft
+    carried a constructed slug, corrected at panel review.
 
 - id: SRC-BENKLER-2018
   title: "Network Propaganda (Benkler, Faris & Roberts), Oxford — the Pizzagate origin reconstruction"
@@ -573,18 +602,27 @@
   title: "Vimeo oEmbed metadata — 'Sex Stains - Land of La La' credited to Cassandra Lee Hamilton"
   organization: "Vimeo / cassandra lee hamilton portfolio"
   sourceType: webpage
-  url: https://vimeo.com/178812643
+  url: https://vimeo.com/188241841
   verification: ai_verified
-  verificationNote: "Verified 2026-08-28 via Vimeo's own oEmbed metadata and the filmmaker's portfolio embed."
+  verificationNote: >-
+    Verified 2026-08-28 via Vimeo's oEmbed API
+    (vimeo.com/api/oembed.json?url=https://vimeo.com/188241841) and the
+    filmmaker's portfolio (vimeo.com/cassielee). The video page itself
+    may 404 for unauthenticated checkers. An earlier draft carried a
+    constructed video ID, corrected at panel review.
 
 - id: SRC-COMET-NEWSLETTER-2016
   title: "Comet Ping Pong events newsletter capture — the 2016-09-15 Sex Stains show"
   organization: "Constant Contact (Comet Ping Pong newsletter), via archive"
   year: "2016"
   sourceType: archive
-  url: https://myemail.constantcontact.com/COMET-TONIGHT.html?soid=1102924057067&aid=azH2EsdCkSY
+  url: http://web.archive.org/web/20190719214335/https://myemail.constantcontact.com/This-week-at-Comet-Ping-Pong----SEX-STAINS--COUP-SAUVAGE---THE-SNIPS--GOVERNESS----MYKKI-BLANCO--OLIVIA-NEUTRON-JOHN.html?soid=1103508274147&aid=6ByNyKcRcoA
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28: 2016-09-15, $12, doors 9 p.m., all ages, with Coup Sauvage & The Snips and Governess — the single documented Comet appearance."
+  verificationNote: >-
+    Verified 2026-08-28 via the Wayback capture at this URL (the live
+    Constant Contact link has rotted): 2016-09-15, $12, doors 9 p.m.,
+    all ages, with Coup Sauvage & The Snips and Governess — the single
+    documented Comet appearance.
 
 - id: SRC-NGA-GRANNAN
   title: "National Gallery of Art object record — Grannan, 'Untitled (from the Poughkeepsie Journal)', Gift of the Heather and Tony Podesta Collection"
@@ -604,6 +642,18 @@
   organization: "FOX 5 DC"
   year: "2016"
   sourceType: webpage
-  url: https://www.fox5dc.com/news/pizzagate-conspiracy-theory-prompts-death-threats-against-dc-restaurant-owner
+  url: http://web.archive.org/web/20250710144212/https://www.fox5dc.com/news/dc-pizza-shop-harassed-threatened-online-after-being-victim-of-fake-news-stories
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28 (Wayback): MPD's exact statement — not investigating the restaurant; monitoring threats against it and its employees."
+  verificationNote: >-
+    Verified 2026-08-28 via the Wayback capture at this URL: MPD's exact
+    statement — not investigating the restaurant; monitoring threats
+    against it and its employees. An earlier draft carried a constructed
+    live-site slug, corrected at panel review.
+
+- id: SRC-WL-PODESTA-49348
+  title: "Podesta emails 49348 — 'I'm seated with the kids so little wired'"
+  organization: "WikiLeaks (Podesta emails)"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/49348
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28: a reply to 'How is the trip?' whose referent the exchange never states."

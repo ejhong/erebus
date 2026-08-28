@@ -1427,8 +1427,10 @@
   importance: supporting
   credibility: established
   credibilitySummary: >-
-    The affidavit PDF itself was fetched (p. 7 quoted verbatim) — a
-    court-hosted primary source, closing the brief's reopen-queue item.
+    The affidavit PDF itself was fetched (p. 7 quoted verbatim) via the
+    reporting outlet's exposed file endpoint, corroborated by KBTX's
+    reporting; a court/PACER copy remains the recovery target for the
+    stronger label.
     Living-persons note: cited only for the FBI's slang statement; the
     defendant in that case is presumed innocent and this case asserts
     nothing about him.
@@ -1486,7 +1488,7 @@
     the video (real motif, denied intent, design records unrecovered)
     hangs from a one-show booking, not a relationship.
   sourceAnchor:
-    locator: "Vimeo 178812643 oEmbed metadata; Comet newsletter capture, 2016-09-15"
+    locator: "Vimeo 188241841 oEmbed metadata; Comet newsletter capture, 2016-09-15"
     sourceId: SRC-COMET-NEWSLETTER-2016
   parentClaimIds: [PZG-C016]
   dependsOnClaimIds: []
