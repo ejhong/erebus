@@ -1,0 +1,87 @@
+# Research agenda for PZG-001 — desk-scale, record-recovery work.
+# Nothing here investigates any person; every item recovers documents.
+
+- id: PZG-R001
+  title: "Claim-genealogy study: first appearances and assembly mechanisms, under frozen criteria"
+  summary: >-
+    A frozen-criteria study tracing each major Pizzagate claim family to
+    its earliest recoverable appearance (the archived November 2016
+    forums and their archive.today capture trail), classifying each
+    subsequent restatement as faithful, source-fused, identity-conflated,
+    or paraphrase-inflated against the recovered primary record. The
+    dictionary's missing provenance (PZG-C010) and the "$65,000" hedge
+    (PZG-C008) are the pilot exhibits; the study generalizes them.
+  claimIds: [PZG-C001, PZG-C010]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Converts this case's central finding from a pattern over examples
+    into a measured distribution over the full claim population — and
+    builds the site's reusable method for allegation anatomy.
+
+- id: PZG-R002
+  title: "Residue recovery: the handkerchief object and the 'torture chamber' referent"
+  summary: >-
+    Two bounded recovery attempts: (a) the handkerchief — product
+    provenance or photographs from the 2014 Martha's Vineyard rental
+    context; (b) Tony Podesta's January 30–31, 2014 calendar or
+    correspondence, which would supply or exclude candidate referents
+    for the "Still in torture chamber" line.
+  claimIds: [PZG-C003, PZG-C005]
+  track: small_grant
+  effortTier: desk
+  informationGain: >-
+    The two most durable anomalies in the corpus close (in either
+    direction) only through these records; everything else written about
+    them is interpretation.
+
+- id: PZG-R003
+  title: "Blocked-source completion: the 2002 doll-shop and 2003 traffic-camera articles"
+  summary: >-
+    The full bodies of two Washington Post pieces (2002-12-23 "Dec. 26?
+    Never Heard of It"; 2003-12-24 on DDOT web cameras) remain paywalled
+    beyond their openers; library/ProQuest access would verify or refute
+    the German-doll price context and the pan-tilt-zoom/police-barred
+    details this case currently excludes as unverified.
+  claimIds: [PZG-C001]
+  track: small_grant
+  effortTier: desk
+  informationGain: >-
+    Two circulated claim families (the "$1,200 baby" post's retail
+    context; the camera-movement story's mundane base rate) stay out of
+    this case until these texts are read; small effort, clean closure.
+
+- id: PZG-R004
+  title: "2011 D.C. Superior Court docket recovery"
+  summary: >-
+    Recover the docket and pleadings for the 2011 civil litigation
+    circulated as 2011 CA 000695 B. Under the living-persons rules,
+    nothing about that dispute may enter this case beyond what the court
+    records themselves state, with locators — which is why the case
+    currently carries NO claim about it (a journalism-only version was
+    removed at panel review): the docket comes first, any record second.
+    Recovery would also settle the counsel-of-record and judge-assignment
+    questions on which later protection narratives were built.
+  claimIds: [PZG-C001]
+  track: small_grant
+  effortTier: desk
+  informationGain: >-
+    One court file resolves an entire family of derivative claims that
+    currently live on secondary assertions.
+
+- id: PZG-R005
+  title: "Native media recovery for the venue-performance corpus"
+  summary: >-
+    Recover first-generation copies of the contemporaneously identified
+    performance videos (the November 2016 primer's exact YouTube IDs, the
+    Vimeo mirror, the LiveLeak alternate) so content claims about them
+    can be graded from the media rather than from transcripts one step
+    removed — protecting performers from paraphrase inflation as much as
+    testing the material.
+  claimIds: [PZG-C016]
+  track: small_grant
+  effortTier: desk
+  informationGain: >-
+    The remaining venue-scene questions are exactly as answerable as the
+    native files are recoverable; transcripts have already been shown to
+    grow words in circulation.

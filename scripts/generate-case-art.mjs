@@ -40,6 +40,10 @@ const CASE_TONES = {
     "humid jade green, celadon, porcelain white and cool grey rain tones, " +
     "wet asphalt with green-grey reflections; the ghosted plat in " +
     "green-grey ink on cool pale paper",
+  pizzagate:
+    "warm brick red and cream storefronts under a pale grey-gold winter " +
+    "morning, bare street trees, long cool blue-grey sidewalk shadows; " +
+    "the ghosted plat in warm sepia ink on cool ivory paper",
 };
 
 /**
@@ -74,6 +78,16 @@ const CASE_SUBJECTS = {
     "long rows of shuttered vendor stalls under corrugated awnings, mist " +
     "between the rows — dissolving into a ghosted hand-drawn surveyor's " +
     "plat of the market's numbered stall grid.",
+  // The avenue, not the accusation: a quiet Washington neighborhood
+  // commercial block on an early winter morning, respectful distance —
+  // no people, no legible signage, nothing of the event.
+  pizzagate:
+    "a quiet Washington, D.C. neighborhood commercial block on an early " +
+    "winter morning — a row of low brick storefronts with awnings under " +
+    "bare street trees, empty sidewalk, long morning shadows, no people " +
+    "and no legible signage — dissolving into a ghosted hand-drawn " +
+    "surveyor's plat of the avenue block with numbered storefront " +
+    "footprints and lot lines.",
 };
 
 /** One reversible generation run: a single runId stamped on every record. */

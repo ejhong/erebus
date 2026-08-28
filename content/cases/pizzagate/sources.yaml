@@ -1,0 +1,277 @@
+# Sources for PZG-001. ai_verified = an AI editor natively fetched the
+# source and checked every cited statement against it (verification
+# ledger: agent store, pizzagate VERIFICATION.md, 2026-08-28, 32 items).
+# Living-persons note: several sources contain assertions by litigants or
+# officials about named people; those are always cited as assertions.
+
+- id: SRC-WL-PODESTA-30231
+  title: "Podesta emails 30231 — 'man, I miss you' (Todd Stern to John Podesta, 2015-09-03)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2015"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/30231
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28 with full mail headers (SternTD@state.gov, S/SECC); body checked verbatim."
+
+- id: SRC-WAPO-2000-PODESTA
+  title: "For the President's 4th Chief of Staff, a Measure of Success (Charles Babington)"
+  organization: "The Washington Post"
+  year: "2000"
+  sourceType: webpage
+  identifier: "2000-07-03"
+  url: https://www.washingtonpost.com/archive/politics/2000/07/03/for-the-presidents-4th-chief-of-staff-a-measure-of-success/4f7a333b-0e12-4815-a749-fa7ff35c82f1/
+  verification: ai_verified
+  verificationNote: "Paywalled live; verified 2026-08-28 via Wayback capture (2022-12-16); hot-dog-stand passage checked verbatim."
+
+- id: SRC-WL-PODESTA-32795
+  title: "Podesta emails 32795 — 'Did you leave a handkerchief' (Susan Sandler, 2014-09-02, quoting realtor Kathryn Tate)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2014"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/32795
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; both layers (Tate's report; Sandler's parenthetical) checked verbatim."
+
+- id: SRC-WL-PODESTA-23561
+  title: "Podesta emails 23561 — Podesta's reply: 'It's mine, but not worth worrying about' (2014-09-04)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2014"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/23561
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; checked verbatim."
+
+- id: SRC-WL-PODESTA-46736
+  title: "Podesta emails 46736 — 'Farmers L Update and Welcome Mat' (Tamera Luzzatto, 2015-10-08)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2015"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/46736
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; 'further entertainment' passage and the wishes-you-could-come list checked verbatim."
+
+- id: SRC-WL-PODESTA-56492
+  title: "Podesta emails 56492 — 'Last night was fun' (Tony Podesta, 2014-01-31)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2014"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/56492
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; full three-line body checked verbatim."
+
+- id: SRC-WL-PODESTA-56753
+  title: "Podesta emails 56753 — 'Thanks' (John Podesta to Steve Elmendorf, 2016-02-09)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2016"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/56753
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; the 'wet works' line is the entire body of a fresh email; reply at emailid/6008 also fetched."
+
+- id: SRC-WL-PODESTA-26903
+  title: "Podesta emails 26903 — 'Invitation: Taco and Tequila cookout' (Michael Werz, 2014-12-05)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2014"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/26903
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; full invitation and Podesta's decline checked verbatim."
+
+- id: SRC-WL-PODESTA-10037
+  title: "Podesta emails 10037 — 'pizza.jpg' (Doug Band, 2009-08)"
+  organization: "WikiLeaks (Podesta emails)"
+  year: "2009"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/10037
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28, including the image attachment (two women eating pizza with a young girl between them)."
+
+- id: SRC-WL-GIFILES-1223066
+  title: "Stratfor GiFiles 1223066 — 'RE: Get ready for Chicago Hot Dog Friday' (2009-05-14)"
+  organization: "WikiLeaks (Global Intelligence Files)"
+  year: "2009"
+  sourceType: archive
+  url: https://wikileaks.org/gifiles/docs/12/1223066_re-get-ready-for-chicago-hot-dog-friday-.html
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; Burton's 'I think Obama spent about $65,000…' checked verbatim in thread context."
+
+- id: SRC-FBI-2007-BULLETIN
+  title: "(U) Symbols and Logos Used by Pedophiles to Identify Sexual Preferences"
+  organization: "FBI Cyber Division, Innocent Images National Initiative"
+  year: "2007"
+  sourceType: report
+  identifier: "Intelligence Bulletin, 31 January 2007, UNCLASSIFIED//LES; surviving mirror copy"
+  url: https://file.wikileaks.org/file/FBI-pedophile-symbols.pdf
+  verification: ai_verified
+  verificationNote: >-
+    PDF fetched natively 2026-08-28 (md5 2e8148e084930b96a459e3aa42a96df5)
+    and text-extracted: title, date, issuing unit, and symbol descriptions
+    (BLogo, LBLogo, GLogo, CLogo, butterfly) confirmed; mechanically
+    verified to contain zero occurrences of pizza/pasta/hotdog/cheese.
+    Mirror provenance; an FBI-hosted FOIA copy remains a recovery target.
+
+- id: SRC-WASHLIFE-2015
+  title: "Inside Homes: Private Viewing (Laura Wainman)"
+  organization: "Washington Life Magazine"
+  year: "2015"
+  sourceType: webpage
+  identifier: "2015-06-05"
+  url: https://washingtonlife.com/inside-homes-private-viewing/
+  verification: ai_verified
+  verificationNote: "Fetched 2026-08-28 (live and via Wayback); pizza-parties and Djurdjevic passages checked verbatim. Pre-controversy source."
+
+- id: SRC-WAPO-2004-ART
+  title: "Married, With Art"
+  organization: "The Washington Post"
+  year: "2004"
+  sourceType: webpage
+  identifier: "2004-09-23"
+  url: https://www.washingtonpost.com/archive/lifestyle/2004/09/23/married-with-art/dee9a0d0-0f0d-4505-b0ef-2f0e1bd1e0e0/
+  verification: ai_verified
+  verificationNote: "Paywalled live; verified 2026-08-28 via Wayback capture (2024-03-10); Grannan and Soliloquy VII passages checked verbatim. Pre-controversy source."
+
+- id: SRC-FEC-SCHEDULE-B
+  title: "FEC Schedule B itemized disbursements to Comet Ping Pong (American Bridge 21st Century; Correct the Record), 2012–2017"
+  organization: "Federal Election Commission"
+  year: "2012–2017"
+  sourceType: dataset
+  identifier: "Legacy filing images 13940775420, 13941306270, 14960793887 (docquery PDFs) + api.open.fec.gov schedule_b query"
+  url: https://www.fec.gov/data/disbursements/?recipient_name=comet+ping+pong
+  verification: ai_verified
+  verificationNote: >-
+    All three legacy filing pages recovered 2026-08-28 (Wayback viewer +
+    live docquery PDFs) and the modern records confirmed via the official
+    FEC API. Note: the actual 2014 filing reads $11,600.00 (D468951) —
+    2016-era compilations circulated $11,500.
+
+- id: SRC-PROPUBLICA-990-2012
+  title: "Friends of the Orphans, IRS Form 990 (2012) — officer and director list"
+  organization: "IRS filing via NPH USA's own upload (Wayback) / ProPublica Nonprofit Explorer (EIN 65-1229309)"
+  year: "2013"
+  sourceType: report
+  identifier: "39-page Form 990; local copy archived with md5 df171972fd713d96f7e596d6f8945ac6"
+  url: https://web.archive.org/web/20230617154556/https://nphusa.org/wp-content/uploads/2015/06/2012_Form-990.pdf
+  verification: ai_verified
+  verificationNote: "Fetched and text-extracted 2026-08-28; officer table row checked: 'MAX MACCOBY — 2.00 [avg hrs/week] — DIRECTOR'."
+
+- id: SRC-MILLER-HASTERT
+  title: "J. Dennis Hastert Oral History"
+  organization: "Miller Center, University of Virginia"
+  sourceType: webpage
+  url: https://millercenter.org/the-presidency/presidential-oral-histories/j-dennis-hastert-oral-history
+  verification: ai_verified
+  verificationNote: "Fetched natively 2026-08-28; Japan and 'got along' passages checked verbatim."
+
+- id: SRC-WAPO-1998-PODESTA
+  title: "John Podesta: Clinton's Mr. Fix-It (Lloyd Grove)"
+  organization: "The Washington Post"
+  year: "1998"
+  sourceType: webpage
+  identifier: "1998-09-30, p. D01"
+  url: https://www.washingtonpost.com/wp-srv/politics/special/clinton/stories/podesta093098.htm
+  verification: ai_verified
+  verificationNote: "Live URL unreachable; verified 2026-08-28 via Wayback (2016-12-05); Hastert quote checked verbatim — he is described as 'an old college pal of Podesta's brother Tony', not as a friend of both brothers."
+
+
+- id: SRC-METROWEEKLY-2015
+  title: "From Scratch: James Alefantis"
+  organization: "Metro Weekly"
+  year: "2015"
+  sourceType: webpage
+  identifier: "April 2015"
+  url: https://www.metroweekly.com/2015/04/from-scratch-james-alefantis/
+  verification: ai_verified
+  verificationNote: "Fetched live 2026-08-28; tomato/basement quote checked verbatim."
+
+- id: SRC-WAPO-2013-TOMATOES
+  title: "San Marzanos, 'the Bible of tomatoes'"
+  organization: "The Washington Post"
+  year: "2013"
+  sourceType: webpage
+  identifier: "2013-08-12"
+  url: https://www.washingtonpost.com/lifestyle/food/san-marzanos-the-bible-of-tomatoes/2013/08/12/85485c1a-fa32-11e2-9bde-7ddaa186b751_story.html
+  verification: ai_verified
+  verificationNote: "Hard-paywalled live; verified 2026-08-28 via pre-paywall Wayback capture (2014-09-03); Buck's-basement passage checked verbatim. Pre-controversy source."
+
+- id: SRC-DCIST-2012-HB
+  title: "Three Stars: Heavy Breathing"
+  organization: "DCist"
+  year: "2012"
+  sourceType: webpage
+  identifier: "2012-12-20"
+  url: https://dcist.com/story/12/12/20/three-stars-heavy-breathing/
+  verification: ai_verified
+  verificationNote: "Fetched live 2026-08-28; band lineup, Comet booking, and character/banter passages checked verbatim. Pre-controversy source."
+
+- id: SRC-HARBERT-2019
+  title: "The Long Weekend: Exclusion, Intrusion, Trolls, and Punks"
+  authors: ["Benjamin Harbert"]
+  organization: "Music and Politics (Michigan Publishing)"
+  year: "2019"
+  sourceType: paper
+  identifier: "Music and Politics 13(1), Winter 2019, doi:10.3998/mp.9460447.0013.104; interviews list includes Sasha Lord (2018-05-08) and Amanda Kleinman (2018-05-15)"
+  url: https://quod.lib.umich.edu/m/mp/9460447.0013.104?view=text;rgn=main
+  verification: ai_verified
+  verificationNote: >-
+    Live site bot-walled; verified 2026-08-28 via Wayback (2020-02-08
+    full-text capture); roast-for-Lord and regular-act passages checked
+    verbatim. Title/DOI taken from the article record, not paraphrased.
+
+- id: SRC-LORD-ROSTER
+  title: "Sasha Lord Presents — production résumé (Comet Ping Pong roster)"
+  organization: "sashalordpresents.com"
+  sourceType: webpage
+  url: https://www.sashalordpresents.com/resume
+  verification: ai_verified
+  verificationNote: "Fetched live 2026-08-28; Heavy Breathing listed mid-roster under 'Produced the following at Comet Ping Pong'; co-founded Comet Ping Pong Live Music (2007)."
+
+- id: SRC-ARCHIVE-JIMMYCOMET
+  title: "Contemporaneously archived jimmycomet Instagram posts (archive.is captures vipXE, TS5mj, aSoBL via Wayback mirrors)"
+  organization: "archive.today / Internet Archive"
+  year: "2016"
+  sourceType: archive
+  identifier: "Wayback mirrors incl. web.archive.org/web/20161110071323/https://archive.is/vipXE"
+  url: https://web.archive.org/web/20161110071323/https://archive.is/vipXE
+  verification: ai_verified
+  verificationNote: >-
+    archive.is itself is captcha-walled; three captures verified
+    2026-08-28 via the Wayback Machine's mirrors of the contemporaneous
+    (Nov 2016) captures. A fourth circulated code (BRC09) is NOT an
+    Instagram capture — it is a snapshot of a Pastebin link compilation.
+
+- id: SRC-DOJ-WELCH
+  title: "USAO-DC press releases: guilty plea and sentencing of Edgar Maddison Welch (2017)"
+  organization: "U.S. Department of Justice, U.S. Attorney's Office for the District of Columbia"
+  year: "2017"
+  sourceType: report
+  identifier: "Plea 2017-03-24; sentencing 2017-06-22 (four years, Judge Ketanji Brown Jackson)"
+  url: https://www.justice.gov/usao-dc/pr/north-carolina-man-sentenced-four-year-prison-term-armed-assault-northwest-washington
+  verification: ai_verified
+  verificationNote: >-
+    Fetched live 2026-08-28. NOTE: DOJ describes the entry, the rounds
+    fired into a locked door, the surrender, plea, and sentence — it does
+    NOT say he "searched and found no evidence"; that phrasing is
+    contemporaneous press reporting and is attributed separately wherever
+    this case uses it.
+
+- id: SRC-POLITICO-2009
+  title: "Where D.C.'s A-listers go for vacation (Anne Schroeder Mullins)"
+  organization: "Politico"
+  year: "2009"
+  sourceType: webpage
+  identifier: "2009-06-01"
+  url: https://www.politico.com/story/2009/06/where-dcs-a-listers-go-for-vacation-023151
+  verification: ai_verified
+  verificationNote: "Fetched live 2026-08-28; Donner Party quip checked verbatim. Kept as context for the case's humor-vs-code discussion."
+  background: true
+
+- id: SRC-TIME-2016-PODESTA
+  title: "Meet the Man Behind Hillary Clinton's Campaign (Jay Newton-Small)"
+  organization: "TIME"
+  year: "2016"
+  sourceType: webpage
+  identifier: "2016-04-28"
+  url: https://time.com/4308369/hillary-clinton-john-podesta/
+  verification: ai_verified
+  verificationNote: "Fetched live 2026-08-28; fork-painting passage and quip checked verbatim (painting on loan from his brother; 'better to be the guy with the fork… than the guy on the table'). Pre-controversy profile."
+  background: true

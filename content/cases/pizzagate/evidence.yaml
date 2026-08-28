@@ -1,0 +1,236 @@
+# Evidence ledger for PZG-001. Every sourceStatement was checked verbatim
+# against a natively fetched copy (verification ledger, 2026-08-28).
+
+- id: PZG-E001
+  title: "The hotdog email itself, with full State Department headers"
+  claimIds: [PZG-C002]
+  sourceId: SRC-WL-PODESTA-30231
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    From SternTD@state.gov (Todd Stern, S/SECC) to john.podesta@gmail.com,
+    2015-09-03, subject "man, I miss you": "The next three months are
+    going to be rougher internally than in Beijing. Between 7th and 1600,
+    no fun. Hope you're doing ok. I'm dreaming about your hotdog stand in
+    Hawaii…"
+  editorInference: >-
+    The full text is climate-negotiation work banter from the U.S. climate
+    envoy; combined with the 2000 profile, the code reading has a
+    documented mundane referent 15 years older than the email.
+  exactLocator: "WikiLeaks Podesta emailid/30231, raw headers included"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V10"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E002
+  title: "Podesta's reply in the handkerchief thread"
+  claimIds: [PZG-C003]
+  sourceId: SRC-WL-PODESTA-23561
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    From john.podesta@gmail.com, 2014-09-04, subject "Re: Did you leave a
+    handkerchief": "It's mine, but not worth worrying about."
+  editorInference: >-
+    A detail the original 2016 research never surfaced: the owner claimed
+    the object and dismissed it. Consistent with an unremarkable referent;
+    not proof of one.
+  exactLocator: "WikiLeaks Podesta emailid/23561"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V19"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E003
+  title: "The 2015 interview wording that seeded the basement dispute"
+  claimIds: [PZG-C014]
+  sourceId: SRC-METROWEEKLY-2015
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Alefantis, Metro Weekly, April 2015: "we harvest a whole crop of
+    organic tomatoes — 10 tons of tomatoes every year. Can them all,
+    store them in the basement, have like a harvest party when it gets
+    loaded in."
+  editorInference: >-
+    The wording is genuinely ambiguous about which property's basement —
+    that ambiguity, not any contradiction, is what the 2013 article
+    resolves. Preserved so the dispute's origin stays visible.
+  exactLocator: "Metro Weekly, 'From Scratch: James Alefantis', April 2015"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V15"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E004
+  title: "Hastert's own oral history: Japan with Tony; 'got along' with John"
+  claimIds: [PZG-C021]
+  sourceId: SRC-MILLER-HASTERT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "…I knew their Chief of Staff, John Podesta. He was a roommate of the
+    guy who helped me write the Public Utility Act in Illinois. So there
+    was an Illinois connection, and his brother, Tony [Podesta], and I
+    went to Japan together in the 1960s." And: "I could call John up and
+    talk to him and he would call me up. We got along."
+  exactLocator: "Miller Center, J. Dennis Hastert Oral History"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V03"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E005
+  title: "The 1998 profile: 'an old college pal of Podesta's brother Tony'"
+  claimIds: [PZG-C021]
+  sourceId: SRC-WAPO-1998-PODESTA
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Lloyd Grove, The Washington Post, 1998-09-30, D01: "says Rep. Denny
+    Hastert (R-Ill.), the chief deputy Republican whip and an old college
+    pal of Podesta's brother Tony (the Podestas grew up in Chicago)."
+  editorInference: >-
+    The circulated "friends with both brothers" version overstates this
+    source — a correction this case's own draft brief needed and took.
+  exactLocator: "Verified via Wayback capture (2016-12-05) of the 1998 page"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V25"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E006
+  title: "Scholarly interviews identify the masked act and the roast"
+  claimIds: [PZG-C016]
+  sourceId: SRC-HARBERT-2019
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Benjamin Harbert, Music and Politics 13.1 (2019), from interviews with
+    Sasha Lord (2018-05-08) and Amanda Kleinman (2018-05-15): the
+    notorious masked performance was a roast "given by Kleinman to Sasha
+    Lord," and the ski-mask/pitch-shifter "Majestic Ape" character was
+    "part of Heavy Breathing's regular act."
+  exactLocator: "Music and Politics 13.1 (Winter 2019), via Wayback"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V29"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E007
+  title: "The booking roster that lowers the venue relationship's diagnosticity"
+  claimIds: [PZG-C016]
+  sourceId: SRC-LORD-ROSTER
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Sasha Lord's production résumé lists Heavy Breathing mid-roster under
+    "Produced the following at Comet Ping Pong," within a long list of
+    acts, and records that she co-founded Comet Ping Pong Live Music
+    (2007).
+  editorInference: >-
+    One band among a large ordinary booking program — the relationship is
+    real and unremarkable, which is what the conflation needed it not to
+    be.
+  exactLocator: "sashalordpresents.com (live, 2026-08-28)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V28"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E008
+  title: "Mechanical search of the genuine bulletin: zero food terms"
+  claimIds: [PZG-C010]
+  sourceId: SRC-FBI-2007-BULLETIN
+  direction: supports
+  strength: decisive
+  sourceStatement: >-
+    The 2007-01-31 bulletin (fetched, checksummed, text-extracted)
+    describes the BLogo ("a small blue spiral-shaped triangle surrounded
+    by a larger triangle"), LBLogo, GLogo, CLogo, and butterfly symbols,
+    their use on rings, pendants, and coins — and contains zero
+    occurrences of the words pizza, pasta, hotdog, or cheese.
+  exactLocator: "FBI Intelligence Bulletin, 2007-01-31, pp. 1–2 (mirror PDF, md5 2e8148e084930b96a459e3aa42a96df5)"
+  limitations:
+    - "Mirror provenance (file.wikileaks.org); an FBI-hosted FOIA copy remains a recovery target for the verified label."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V05"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E009
+  title: "The federal filings: the vendor ledger, including the corrected 2014 amount"
+  claimIds: [PZG-C012]
+  sourceId: SRC-FEC-SCHEDULE-B
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    FEC Schedule B pages (American Bridge 21st Century, Form 3X) list
+    "Comet Ping Pong, 5037 Connecticut Avenue, NW" with purpose "Catering
+    & Facility Rental": $5,500.00 (2012-01-05, D367394); $4,764.25
+    (2013-01-09, D430075); $11,600.00 (2014-03-21, D468951). The official
+    FEC API confirms $6,960.00 (2015-01-15) and $6,422.48 (2016-03-22),
+    the 2017 $14,129.46 memo item, and Correct the Record's $3,584.64
+    (2016-01-06, "CATERING: NON-CONTRIBUTION ACCOUNT").
+  editorInference: >-
+    Disclosed event-vendor spending, mischaracterized in circulation as
+    "donations" — and mis-copied: the widely repeated $11,500 does not
+    match the filing's $11,600.
+  exactLocator: "docquery.fec.gov filing images 13940775420, 13941306270, 14960793887; the filing's PDF series starts at image 14960793831, so page 57 (14960793831_000057.pdf) carries printed Image# 14960793887 — reproduced as Plate 2; api.open.fec.gov schedule_b"
+  limitations:
+    - "Disclosed filings cannot speak to undisclosed flows; no anomaly in these records has been identified."
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V23, V24"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-E010
+  title: "The DOJ record of the Welch attack, with the attribution split"
+  claimIds: [PZG-C019]
+  sourceId: SRC-DOJ-WELCH
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    USAO-DC press releases document that Welch entered the restaurant
+    armed on 2016-12-04 motivated by unfounded rumors, spent over twenty
+    minutes inside, fired multiple rounds into a locked door (after
+    trying to open it with a butter knife), exited unarmed and was
+    arrested; pleaded guilty 2017-03-24; sentenced to four years
+    2017-06-22 by Judge Ketanji Brown Jackson.
+  editorInference: >-
+    The oft-quoted "searched and found no evidence" is press phrasing,
+    not DOJ language — the two are cited separately throughout this case.
+  exactLocator: "justice.gov USAO-DC press releases (plea and sentencing, 2017)"
+  limitations: []
+  reviewState: ai_extracted
+  origin:
+    ref: "verification ledger V26"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-case-build-2026-08-28"
+    date: "2026-08-28"

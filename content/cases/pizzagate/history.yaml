@@ -1,0 +1,20 @@
+- date: "2026-08-28"
+  change: >-
+    Case created: dossier framing, 20 claims (three carrying claim
+    genealogy), 10 evidence records, 26 sources, 5 research items,
+    overview article, style-e2 cover, and two public-record plates (the
+    2007 FBI bulletin's first page; the 2014 FEC Schedule B page showing
+    the $11,600 Comet Ping Pong line).
+  reason: >-
+    Founder-directed case construction from a chat-derived research
+    brief under the verify-before-use discipline: a 32-item native
+    verification ledger preceded every record, and its corrections are
+    built in — the DOJ/press attribution split on the Welch record, the
+    hedged pizza.jpg identification, the $11,600 (not $11,500) filing
+    amount, and the 1998 profile's actual Hastert wording. Living-persons
+    rules apply throughout: the case grades documents and their
+    interpretations, never any person's conduct; every person named is
+    presumed innocent.
+  actor: "editorial AI (claude-fable-5, cursor session pzg-case-build-2026-08-28)"
+  aiAssisted: true
+  kind: content

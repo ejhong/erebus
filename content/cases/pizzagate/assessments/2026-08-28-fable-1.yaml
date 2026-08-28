@@ -1,0 +1,122 @@
+runId: "pzg-case-build-2026-08-28"
+model: "claude-fable-5"
+date: "2026-08-28"
+promptVersion: "erebus-case-build-v1 (cursor session, founder-directed)"
+humanReviewed: false
+role: draft
+caseAssessment:
+  verdict: well_supported
+  loadBearing:
+    - PZG-C010
+    - PZG-C002
+    - PZG-C012
+    - PZG-C016
+    - PZG-C020
+  weakestLinks:
+    - PZG-C003
+    - PZG-C005
+  synthesis: >-
+    The case's central finding — that primary-source recovery repeatedly
+    strengthened the artifacts while weakening the incriminating
+    interpretations (PZG-C001) — is carried by independently verified
+    exhibits of each assembly mechanism: a code reading refuted by a
+    fifteen-years-earlier documented referent (PZG-C002), a hedged
+    speculation inflated into a transaction (PZG-C008), context-stripped
+    invitations restored to their complete texts (PZG-C004, PZG-C007), an
+    identity conflation resolved by pre-controversy print (PZG-C016), a
+    flagship "contradiction" dissolved by a 2013 article (PZG-C014), and
+    an interpretive dictionary whose claimed law-enforcement source
+    verifiably contains no food terms (PZG-C010). The network and
+    financial layers are graded as what the documents show: real,
+    pre-publicized relationships (PZG-C011, PZG-C013) and disclosed
+    vendor payments with a corrected amount (PZG-C012) — association and
+    commerce, not concealment. The residue (PZG-C003, PZG-C005,
+    PZG-C006) is preserved as authentically unexplained and explicitly
+    weightless, which is both the honest grade and the discipline the
+    original episode lacked. The negative-existence claim (PZG-C020) is
+    the record's most probative element and is bounded to the examined
+    public record. Under this site's living-persons rules nothing here
+    grades any person's conduct: the case verdict concerns the
+    documentary anatomy of the allegation, on which the verified record
+    is unusually decisive.
+claimAssessments:
+  - claimId: PZG-C001
+    verdict: well_supported
+    reasoning: "Pattern demonstrated across seven independently verified exhibit families; bounded by the checkable-claims caveat it states."
+    confidence: high
+  - claimId: PZG-C002
+    verdict: established
+    reasoning: "Both documents verified verbatim; the 2000 profile predates the code reading by sixteen years."
+    confidence: high
+  - claimId: PZG-C003
+    verdict: established
+    reasoning: "All three layers verified verbatim; the claim grades authorship and record state, leaving the design unresolved."
+    confidence: high
+  - claimId: PZG-C004
+    verdict: established
+    reasoning: "Full text verified verbatim including sender identity and the wishes-you-could-come list."
+    confidence: high
+  - claimId: PZG-C005
+    verdict: established
+    reasoning: "Verified verbatim with headers; the claim asserts terseness and absence of referent, which is the verified state."
+    confidence: high
+  - claimId: PZG-C006
+    verdict: established
+    reasoning: "Verified with raw headers; the absence of thread context is itself the checked fact."
+    confidence: high
+  - claimId: PZG-C007
+    verdict: established
+    reasoning: "Complete invitation and the decline verified verbatim."
+    confidence: high
+  - claimId: PZG-C008
+    verdict: established
+    reasoning: "The hedge, sender, and joking thread context verified verbatim in the GiFiles record."
+    confidence: high
+  - claimId: PZG-C009
+    verdict: established
+    reasoning: "Email and attachment fetched; the hedged identification is deliberately preserved as the record's limit."
+    confidence: high
+  - claimId: PZG-C010
+    verdict: established
+    reasoning: "Bulletin fetched, checksummed, and mechanically searched; the dictionary's provenance absence is a documented negative over the claimed source."
+    confidence: high
+  - claimId: PZG-C011
+    verdict: established
+    reasoning: "Pre-controversy society-page documentation verified verbatim."
+    confidence: high
+  - claimId: PZG-C012
+    verdict: established
+    reasoning: "Three legacy filing pages recovered and the API records confirmed; the $11,600 correction is read directly off the filing."
+    confidence: high
+  - claimId: PZG-C013
+    verdict: established
+    reasoning: "2004 passages verified verbatim; the claim caps its own implicative reach."
+    confidence: high
+  - claimId: PZG-C014
+    verdict: established
+    reasoning: "Both prongs verified verbatim; the resolving document predates the dispute by three years."
+    confidence: high
+  - claimId: PZG-C015
+    verdict: well_supported
+    reasoning: "Three captures verified via Wayback mirrors; visual content of the photographs remains beyond text-mode verification."
+    confidence: moderate
+  - claimId: PZG-C016
+    verdict: established
+    reasoning: "2012 press, 2019 scholarly interviews, and the booking roster converge; all verified."
+    confidence: high
+  - claimId: PZG-C017
+    verdict: established
+    reasoning: "Form 990 officer row verified verbatim from the text-extracted filing; the claim grades documented scale."
+    confidence: high
+  - claimId: PZG-C021
+    verdict: established
+    reasoning: "Both the 1998 profile and the oral history verified verbatim; the claim's own correction history is recorded."
+    confidence: high
+  - claimId: PZG-C019
+    verdict: established
+    reasoning: "Both DOJ releases fetched live; the attribution split is part of the verified finding."
+    confidence: high
+  - claimId: PZG-C020
+    verdict: well_supported
+    reasoning: "A bounded negative over the examined record, stated with its bounds; nine years of adversarial scrutiny is a real search."
+    confidence: moderate
