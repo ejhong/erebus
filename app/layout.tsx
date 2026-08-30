@@ -24,8 +24,26 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  // Hand-ported from upstream #116 (app/layout.tsx is an allowlisted
+  // divergence): metadataBase makes the og-card path absolute in the
+  // rendered tags — link-preview crawlers (iMessage, Slack, social
+  // cards) require absolute image URLs.
+  ...(site.url ? { metadataBase: new URL(site.url) } : {}),
   title: { default: site.name, template: `%s · ${site.name}` },
   description: site.subtitle,
+  openGraph: {
+    siteName: site.name,
+    title: site.name,
+    description: site.subtitle,
+    type: "website",
+    images: [site.ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.name,
+    description: site.subtitle,
+    images: [site.ogImage],
+  },
 };
 
 export default function RootLayout({
