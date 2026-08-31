@@ -1,0 +1,109 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 93
+title: "Link-preview cards: OG/Twitter metadata with erebus's live origin and a
+  Kirk-cover card"
+url: https://github.com/ejhong/erebus/pull/93
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-30
+judgedAgainst: 3d5a45aba8
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only presentation/configuration plumbing:
+      OG/Twitter metadata in app/layout.tsx, a `url`/`ogImage` pair in
+      src/config/site.ts, and a new static image asset. No content/ records,
+      claims, evidence, sources, assessments, or citations are added or altered,
+      so none of the §3 epistemic rules (real citations, provenance,
+      verification labels, append-only assessments) are engaged — the
+      verification tool likewise found no identifiers. AGENTS.md is untouched,
+      so §3.15's founder-reservation is not triggered, and nothing weakens CI,
+      ratification, or the living-persons gates; this PR is itself going through
+      the ratification path, which is where a change touching a named-person
+      case's cover artwork belongs. The OG image is described as a crop of
+      existing house cover art (place-at-a-quiet-hour register), not a
+      photograph or sensational depiction, so §7's visual rules are respected.
+      Two flags I judged as non-violations: (a) §2's 'unadvertised, promoted to
+      no one' — link-preview metadata only affects rendering when someone
+      already shares a link, it does not push the site to anyone; (b)
+      app/layout.tsx is engine code under §4's one-way flow, but the change
+      asserts it is an existing allowlisted divergence and adds no new allowlist
+      entry, and even if that claim is wrong the consequence is an engine-sync
+      revert, not an epistemic breach. The upstream engine's name appears only
+      in the untrusted PR body, not in content/, src/, app/, or public/, so the
+      scoped CI name guard is not breached."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only adjusts site-wide metadata and adds a static image
+      asset for link previews. No content under `content/` is touched, and there
+      are no citations, claims, evidence records, or provenance changes
+      involved, so the phase-1 epistemic rules about sources, locators, and
+      assessments are not implicated. `app/layout.tsx` and `src/config/site.ts`
+      changes are configuration/UI-layer work and remain consistent with the
+      static-site and engine-divergence guidelines in §4 and §8 (layout is
+      already described as an allowlisted divergence). The new `og-card.png` is
+      a local public image and does not raise any issues about confidential
+      material or living-person accusations. Since there are no omitted files
+      and no checks are being weakened, the diff appears to comply with the
+      constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: "The change implements standard OpenGraph and Twitter metadata tags
+      to format link previews when users share the site's URL. This does not
+      violate the 'promoted to no one' rule (§2), as it simply ensures the link
+      unfurls cleanly in standard messaging platforms rather than actively
+      pushing the content. The diff cleanly references 'upstream #116' without
+      leaking the upstream engine's name into the source files (§4), and
+      correctly restricts the mention of the upstream project's name and the
+      founder's technical prompt to the untrusted PR body. The image is
+      described as artwork in accordance with the visual register (§7). No rules
+      are violated."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only adds site-identity configuration (canonical origin and
+      ogImage path in src/config/site.ts), wires OpenGraph/Twitter metadata in
+      app/layout.tsx from that config, and introduces a static
+      public/images/og-card.png. No content/ records, claims, citations,
+      locators, assessments, or AGENTS.md are touched, so §3.7–§3.15
+      fabrication, provenance, ratification, confidence, and check-weakening
+      rules are not implicated. Link-preview tags are not advertising; they do
+      not contradict the unadvertised-publication identity. The layout edit is
+      documented as an existing allowlisted site-identity divergence rather than
+      a silent engine-check dodge, and the complete diff shows no weakening of
+      CI or ratification. Binary image bytes cannot be visually inspected here,
+      but nothing in the change supplies positive evidence of a
+      lurid/photographic cover or confidential material.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §4
+      - §7
+      - §3.15
+    reasoning: "The change adds OG/Twitter link-preview metadata (app/layout.tsx), a
+      canonical site.url and ogImage path (src/config/site.ts), and a binary
+      social-card image — no content records, no claims, no citations (the
+      verification section found none), and no AGENTS.md edit. The upstream-name
+      guard (§4) is satisfied: 'Aletheia' appears only in the untrusted PR body,
+      which is not a committed file; the added code comments say only 'upstream
+      #116', which is a generic reference, not the project's name. The one-way
+      engine flow is respected in spirit: this is a hand-port of an upstream
+      change (#116) into a file that already carries site-identity config
+      (site.name, site.subtitle), corroborating the claim that layout.tsx is an
+      already-allowlisted divergence; nothing in scripts/sync-engine.mjs needed
+      to change for that claim to hold. The og-card is described as a crop of
+      the Kirk case's existing style-e2 cover (a landscape of the place),
+      consistent with the §7 visual register — never the event itself — and no
+      statement about any named person is added, so the living-persons merge
+      tier is not implicated. No checks are weakened, no dependencies added, and
+      the conditional metadataBase spread degrades gracefully if site.url is
+      null. The binary image cannot be visually inspected, but its description
+      ties it to already-reviewed house artwork and nothing visible contradicts
+      that."
+harvestedAt: 2026-08-31

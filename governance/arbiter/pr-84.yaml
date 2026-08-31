@@ -1,0 +1,106 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 84
+title: "style-e2 chrome: serif display voice, quiet warm paper, per-case accent"
+url: https://github.com/ejhong/erebus/pull/84
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-27
+judgedAgainst: ee8071962a
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "This is a pure presentation-layer change: font token swap (Space
+      Grotesk → Newsreader), paper palette values, removal of the tiled
+      blueprint background, and per-case accent overrides keyed on a new
+      `data-case-accent` attribute. No content/ files are touched, no citations,
+      locators, provenance, verification labels, or assessments are added,
+      changed, or removed, and the CITATION VERIFICATION section confirms no
+      identifiers were added. AGENTS.md is untouched, so §3.15's reservation is
+      not engaged, and none of the §3 epistemic checks are weakened — claim
+      provenance labeling, append-only overlays, and CI schema enforcement are
+      all unaffected. The DECISIONS.md entry is an accurate, non-normative log
+      of the visual change and is consistent with the §7 register amendment of
+      the same date; it makes no claim about ratified judgments or human review
+      of AI output. My one reservation is §4/§8 hygiene: three files under app/
+      (engine territory) are edited and the diff does not update the allowlist
+      in scripts/sync-engine.mjs, though the PR and prior DECISIONS entries
+      assert globals.css/layout.tsx are already recorded divergences and I
+      cannot see the current allowlist to check whether
+      app/cases/[slug]/page.tsx is covered. That is a sync-hygiene matter rather
+      than a breach of the epistemic checks, and does not rise to a violation
+      vote."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change is confined to styling, typography, and documented design
+      decisions; it does not touch content under `content/`, epistemic records,
+      or any assessment logic. No citations, locators, or provenance fields are
+      added or altered, so rules about real citations, exact provenance, and
+      calibrated uncertainty are unaffected. The new `data-case-accent`
+      attribute and CSS blocks are purely presentational and do not introduce or
+      obscure any evidence relationships or assessments. `docs/DECISIONS.md` is
+      updated to record the design shift, which is consistent with the
+      requirement to document material decisions and preserves transparency.
+      There is no modification of AGENTS.md or any weakening of the
+      multi-model/CI checks described in §3.15. Given the full diff is visible
+      and contains no epistemically consequential changes, the PR complies with
+      the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §7
+      - §8
+    reasoning: The change correctly executes the visual register updates defined in
+      the 2026-08-27 founder amendment (§7). It cleanly replaces the technical
+      sans display font with an editorial serif (Newsreader), transitions the
+      background to a quiet warm-neutral by removing the blueprint grid, and
+      introduces per-case accents through CSS in allowlisted configuration/UI
+      files. No changes are made to AGENTS.md, and all epistemic rules (§3)
+      remain untouched.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff is chrome-only: Newsreader for display, warm-neutral paper
+      with the blueprint grid removed, a data-case-accent attribute on the case
+      page, and per-slug accent token overrides in globals.css, plus an
+      append-only DECISIONS.md note. That tracks §7’s 2026-08-27 visual register
+      (covers carry color; record machinery stays mono/instrument-quiet) and
+      does not touch claims, evidence, sources, assessments, or AGENTS.md. No
+      citations or locators are added; living-persons rules are not implicated
+      by CSS accents. Site-owned theme files are the intended configuration
+      layer, not a check-weakening or unratified-as-ratified presentation."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §7
+      - §4
+      - §8
+    reasoning: "This is a pure chrome/theming change — a serif display font
+      (Newsreader replacing Space Grotesk), a warm-neutral paper palette,
+      retirement of the site-wide blueprint grid, and per-case accent colors
+      keyed to a data-case-accent attribute on the case page. It touches no
+      content/, no citations (the verification section is empty), no claims,
+      evidence, assessments, or provenance, and it does not edit AGENTS.md, so
+      §3 is not engaged. The change implements the founder's 2026-08-27
+      visual-register amendment quoted in §7 ('the place and its record...
+      record machinery stays monospace and instrument-quiet'): body stays Inter,
+      record machinery stays IBM Plex Mono, the accent comments reference place
+      and hour ('the market in morning rain', 'the valley at dusk') rather than
+      the events, and nothing is lurid, red/green moral-coded, or
+      engagement-bait. Removing the tiled grid serves §7's 'avoid visual
+      clutter'; no new dependencies are added (next/font/google was already the
+      mechanism). The app/ edits ride the sanctioned divergence path:
+      DECISIONS.md records the decision as founder-directed and describes
+      globals.css/layout.tsx as already allowlisted; the only new engine-layer
+      touch is a single data attribute on the case page, plausibly covered by
+      the same style-e2 divergence that already rendered painted covers there —
+      at worst a housekeeping gap in the allowlist note, not an epistemic
+      violation, and the PR's own claims (162 tests green) are backed by
+      fail-closed CI. Nothing weakens checks, exposes confidence material, or
+      restates assertions as fact; the kirk-assassination slug acquires only a
+      color, no statement about the named person."
+harvestedAt: 2026-08-31
