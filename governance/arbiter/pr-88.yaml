@@ -1,0 +1,95 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 88
+title: "Engine sync: the citation pre-flight check (upstream #115)"
+url: https://github.com/ejhong/erebus/pull/88
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-28
+judgedAgainst: 12b3d0a0e7
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a single new engine-path file,
+      scripts/preflight-citations.mjs, arriving through the sanctioned one-way
+      sync mechanism (§4's engine-flow rule: engine improvements are made
+      upstream and synced here), with no edits to content/, AGENTS.md, or the
+      sync allowlist. Substantively it strengthens rather than weakens the §3.15
+      checks: it runs the arbiter's existing citation-check library locally over
+      content lines a branch adds, prints resolved registry titles for
+      word-by-word comparison, and exits 1 on FAILS as a desk reminder while
+      explicitly leaving the arbiter's own verification ungated and unchanged.
+      No CI gate, schema, provenance requirement, or ratification path is
+      loosened or bypassed. The change adds no citations at all (verification
+      section confirms zero identifiers), so §3.7/§3.8 exposure is nil, and it
+      touches no featured content or statements about named persons. The PR
+      body's note about two allowlisted files missing upstream is disclosed and
+      explicitly 'no action taken', so nothing is silently reclassified."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change adds a standalone helper script that runs the existing
+      mechanical citation checker locally against content diffs. It does not
+      alter any content under `content/`, any assessments, provenance, or
+      citations themselves, and it does not touch AGENTS.md or other
+      constitutional files. The script simply shells out to git, extracts
+      citations from added content lines, runs `verifyCitations`, and prints the
+      same style of verification section the arbiter uses, exiting non‑zero when
+      there are FAILS as a reminder. This strengthens rather than weakens the
+      real‑citations and honest‑verification norms in §3 and the phase‑1 rule
+      about real citations only. No publication checks are removed or
+      downgraded, and no mechanism here fabricates or edits citations; it only
+      reports on them. Therefore, the diff complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §4
+      - §3.15
+    reasoning: The change is a one-way sync of an upstream engine file into the
+      `scripts/` directory, adhering strictly to the §4 requirement that engine
+      improvements flow downstream from the engine repository. The newly added
+      script is a local developer tool that surfaces the project's existing
+      mechanical citation checks earlier in the workflow without modifying or
+      weakening the actual CI or panel checks (§3.15).
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds only scripts/preflight-citations.mjs, a local wrapper
+      that diffs content/ against a base ref and runs the existing
+      citation-check library so authors can see RESOLVES/FAILS/UNCHECKED before
+      a PR. That is an engine-path sync consistent with §4’s one-way engine
+      flow; AGENTS.md is untouched (§3.15 founder reservation), no content/
+      records or locators are added, and the allowlist is not edited. The script
+      does not weaken fail-closed CI or multi-model ratification: it exits 1 as
+      a desk reminder and explicitly does not replace the arbiter’s mechanical
+      check. No confidential material, fabricated provenance, or silent
+      reclassification of featured judgments is present. Omitted-files is empty,
+      so the single-file change is the whole question."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+      - §8
+    reasoning: "The diff adds a single local tooling script,
+      scripts/preflight-citations.mjs, that runs the arbiter's existing
+      mechanical citation check (scripts/lib/citation-check.mjs, imported not
+      added) over a branch's added content lines before a PR is opened. This
+      strengthens rather than weakens the §3.15 checks: it surfaces FAILS and
+      registry titles at the author's desk, explicitly instructs that FAILS must
+      be fixed or explained by an honest verificationNote, and changes nothing
+      about the arbiter or CI gating — its own comments merely describe the
+      existing non-gating behavior. The one-way engine flow in §4 is respected:
+      this is a pull from upstream #115 into the engine path scripts/, the
+      allowlist is untouched, and the script contains no upstream project name
+      (and scripts/ is not a rendered site input in any case). No citations are
+      added (the verification section confirms none), no content, featured
+      records, or named persons are touched, and no new dependencies are
+      introduced — only node builtins plus the existing lib. The untrusted PR
+      body's claims (tests pass, sync warnings about two erebus-only allowlisted
+      files) are consistent with what the diff shows and contain no instructions
+      directed at the panel."
+harvestedAt: 2026-08-31

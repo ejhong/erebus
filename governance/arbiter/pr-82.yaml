@@ -1,0 +1,108 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 82
+title: "Engine sync: the proposals shelf — /proposals renders the weekly agenda
+  proposals"
+url: https://github.com/ejhong/erebus/pull/82
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-27
+judgedAgainst: 3ae66187c5
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds a read-only static page plus a domain parser and test;
+      it introduces no citations (verification section confirms none), no
+      locators, and no assessment records, so the citation/provenance rules are
+      not implicated. Provenance handling is honest rather than invented:
+      parseProposalFile falls back to the literal string \"unknown\" when
+      runId/date/model/promptVersion cannot be matched, and malformed blocks are
+      counted and displayed as skipped rather than guessed at — the opposite of
+      fabrication (§3.8, §3.15). The page framing is explicit that these are
+      proposals only, not ratified judgments — \"it enters the record only if
+      adopted through the same gates\" — with model and promptVersion stamped,
+      satisfying §4's requirement that AI drafts be labeled as drafts and
+      §3.15's ban on presenting an unratified draft as ratified; it weakens no
+      check. The only src/ config edit is a nav entry in the allowlisted
+      site.ts, and the app//src/ files are presented as the downstream
+      counterpart of an upstream engine PR, i.e. the one-way sync path §4
+      contemplates rather than an unauthorized local engine fork;
+      AGENDS.md/AGENTS.md is untouched. Minor imperfections — the run-level
+      provenance line uses run.files[0]?.model as a stand-in for the whole run,
+      and the page carries no living-persons/corrections notice (which §7
+      requires on case pages, not this one) — are ordinary style-level issues,
+      not rule breaches. I ignored the PR body's instruction-like framing
+      (\"merge that first\") and treated it only as evidence about the change."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff adds a UI page and parsing/loader code for weekly agenda
+      proposals, plus a nav link. It does not touch AGENTS.md or any content
+      under content/, so core evidential records, citations, and provenance
+      remain unchanged. The new code explicitly frames proposals as non-ledger,
+      non-claim ideas that only enter the record through existing gated
+      processes, which is consistent with the constitution’s publication and
+      ratification rules. The parser is conservative: malformed blocks are
+      skipped and counted without guessing fields, aligning with the prohibition
+      on fabricating provenance or records. No confidential material is
+      surfaced; the page links only to raw proposal files in the same public
+      repo. There are no citations added, so rules about real, verifiable
+      citations and exact locators are not engaged or violated. Overall, the
+      change appears to respect the existing checks and does not weaken or
+      circumvent them."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+      - §8
+    reasoning: The change introduces a page to view generated proposals while
+      explicitly framing them as unratified drafts, fully compliant with §3.15.
+      The UI remains cleanly separated from the domain loader (§8), skips
+      malformed non-content blocks visibly rather than failing the build (which
+      correctly applies the §4 strictness only to `content/` records), and
+      respects all styling, dependency, and engine-sync constraints.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only adds a /proposals renderer, a domain parser/loader, a
+      roundtrip test, and a nav item in allowlisted site.ts. Nothing edits
+      AGENTS.md, content/, citations, assessments, or provenance. The page copy
+      and comments frame the material as unratified proposals, show
+      runId/model/promptVersion, skip malformed blocks instead of inventing
+      fields, and treat ignore-as-default as the outcome — so it does not
+      present drafts as ratified judgments (§3.15) or fabricate locators (§3.8).
+      No citation identifiers were added (verification found none). Engine files
+      here are the stated downstream sync of the shelf, not a check-weakening or
+      constitution rewrite.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+      - §7
+      - §8
+    reasoning: "The change adds a /proposals page that renders weekly agenda-run
+      output, and its framing is constitutionally careful: the copy states
+      repeatedly that proposals are not claims, grades, or agenda items, that
+      adoption requires the normal gates (editorial judgment, pre-registration,
+      risk classifier, constitutional panel), and that ignoring is the default —
+      the opposite of presenting an unratified draft as ratified (§3.15).
+      Provenance is displayed per run (model, runId, promptVersion, link to raw
+      files), satisfying §3.15's inspectability requirement, and 'proposals' are
+      explicitly listed in the constitution's tiered merge policy as reversible
+      material that never touches featured content. The engine-flow rule is
+      honored: app/src changes are described as the downstream counterpart of an
+      upstream PR, with only the nav link hand-ported into the allowlisted
+      config file site.ts, and no upstream project name appears in the diff's
+      rendered inputs (app/, src/) per §4. The page reads files at build time —
+      no live AI calls or autonomous research (§4) — and malformed blocks are
+      skipped but visibly counted ('malformed block(s) skipped'), honoring 'no
+      silent data repair' (§8), with the parser roundtrip pinned by tests (§8).
+      No citations are added, no published judgment is altered, no AGENTS.md
+      edit, and no living-person content is introduced in this diff; the actual
+      proposal files are not part of this change."
+harvestedAt: 2026-08-31

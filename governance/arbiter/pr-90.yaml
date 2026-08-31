@@ -1,0 +1,115 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 90
+title: "Pizzagate article: state the central finding plainly — the artifacts
+  were real; the ring never was"
+url: https://github.com/ejhong/erebus/pull/90
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-28
+judgedAgainst: e0dcdbb73c
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: 'The diff touches only two content files: an append-only history
+      entry and article prose in overview.md. Every factual assertion in the new
+      section is wrapped in a claim link (PZG-C003, C005, C022, C029, C026,
+      C011, C012, C020, C025), so the overview routes to the underlying claims
+      rather than asserting free-floating facts (§3.9, §7), and the
+      negative-evidence paragraph explicitly records the absent evidence classes
+      (§3.11). No citations, identifiers, or locators are added or removed — the
+      verification tool found none, and the sentences dropped from the lede
+      ("The emails were authentic… the FBI document was genuine") were unlinked
+      summary prose whose substance is restated in claim-linked form, so nothing
+      with provenance was stripped (§3.8). The presumption-of-innocence line
+      remains first in the file; the text speaks in role terms ("the lobbyist,"
+      "the restaurateur," "the brothers") about artifact authenticity and email
+      content, not culpability, and explicitly refuses a guilt verdict ("Real
+      and strange is not the same as guilty") — consistent with the
+      living-persons rules. The history entry appends rather than rewrites,
+      stamps actor/model/session and aiAssisted: true, and does not present the
+      draft as a human conclusion (§3.14, §3.15). The rhetorical flourish
+      ("doing to the debunking what the theory did to the evidence") and the
+      round "nine years" are stylistic, not false precision or fabrication; the
+      founder-direction note in the reason field is an unverifiable
+      authorization claim but is recorded as an AI-actor entry and the change is
+      riding the needs-approval lane, i.e. this panel, rather than dodging it.'
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only updates the pizzagate overview narrative and appends
+      a corresponding history entry; no schemas, checks, or constitution text
+      are modified. The new section makes an explicit thematic summary but
+      grounds each substantive assertion in existing claim IDs (PZG-C001, C003,
+      C005, C011, C012, C019, C020, C022, C025, C026, C029), preserving the
+      claim/evidence structure and not bypassing the ledger. No new sources,
+      citations, or locators are introduced, so there is no risk of fabricated
+      provenance or dishonest verification labels under §3.7–§3.8. The
+      history.yaml addition accurately describes the content change and
+      attributes it as AI-edited with founder direction, consistent with
+      §3.14–§3.15 about transparent revision and AI operation. The narrative
+      emphasizes the presumption of innocence and explicitly states that strange
+      artifacts do not establish guilt, which aligns with the living-persons and
+      criminal-culpability constraints. Since there are no omitted files and no
+      weakening of safety checks, the change complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.4
+      - §3.14
+      - §3.15
+    reasoning: The changes correctly log the update in `history.yaml` (§3.14) and
+      strictly adhere to the project's epistemic framework, particularly §3.4
+      (Claim credibility is not diagnosticity). The new section explicitly
+      separates the factual existence of the artifacts from the diagnostic
+      weight of the conclusions, emphasizing the absence of evidence for
+      criminal culpability. No external citations are added, no living-persons
+      rules are violated, and the presumption of innocence is robustly supported
+      by the text.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only appends an overview section and a matching history.yaml
+      entry; it does not edit AGENTS.md, assessments, sources, or claim/evidence
+      ledgers. New prose is wired to existing claim IDs (C003, C005, C011, C012,
+      C020, C022, C025, C026, C029) rather than inventing citations or locators,
+      and citation tooling found none to check. The section states absent
+      crime-evidence classes and explicitly refuses a guilt verdict (“real and
+      strange is not the same as guilty”), which fits the living-persons ladder
+      and the existing innocence lede. History records date, reason, AI actor,
+      and aiAssisted, satisfying versioning without presenting an unratified
+      overlay as a human judgment. Stronger editorial voice in the overview is
+      not a named §3 break given that competing-hypothesis ledgers are untouched
+      and ordinary style is not a parking offense.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.4
+      - §3.11
+      - §3.14
+      - §3.15
+    reasoning: "The diff adds one narrative section to the Pizzagate overview plus
+      an append-only history entry; it touches no constitution text, no engine
+      code, and adds no new citations (verification confirms none to resolve),
+      with every assertion routed to an existing claim ID
+      ({claim=PZG-C003…C025}) as §7 requires. Substantively the section is a
+      model of §3.4 and §3.11: it records negative evidence prominently ('No
+      identified victim. No firsthand witness. No forensic finding…') and states
+      the credibility/diagnosticity distinction verbatim ('Real and strange is
+      not the same as guilty'), while the symmetric framing ('anyone who tells
+      you it was all fabricated…' paired against the absent evidence classes)
+      refuses both the debunking-site and validation-site failure modes §2
+      excludes. On living-persons rules, the new text names no individuals,
+      grades no one's culpability, and explicitly states the criminal conclusion
+      was never evidenced — the opposite of a verdict — and the page's
+      presumption-of-innocence notice is untouched. The PR declares itself
+      needs-approval, so featured-content ratification is being sought rather
+      than asserted; nothing presents an unratified draft as ratified. The
+      history.yaml entry satisfies §3.14 with date, reason, actor, and
+      aiAssisted: true. Rhetorical flourishes ('the most motivated searching the
+      internet has ever aimed at a restaurant') are overview voice, not graded
+      claims, and fall within ordinary imperfection."
+harvestedAt: 2026-08-31

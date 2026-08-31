@@ -1,0 +1,99 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 83
+title: "style-e2: the place and its record — new covers and the §7 register amendment"
+url: https://github.com/ejhong/erebus/pull/83
+verdict: park
+reason: "5 seat(s) find a violation: Opus 5 (Anthropic) (§3.15); GPT-5.1
+  (OpenAI) (§3.15); Gemini 3.1 Pro (Google) (§3.15); Grok 4.6 (xAI) (§3.15);
+  Kimi K3 (Moonshot, via Venice) (§3.15); only 0 of 5 seats affirm compliance (4
+  required)"
+outcome: merged
+outcomeAt: 2026-08-27
+judgedAgainst: 2a040b241a
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff rewrites the normative §7 visual-register sentence in
+      AGENTS.md, replacing the 'cold and modern-technical' register with the
+      'place and its record' register and appending a self-declared '(Founder
+      amendment, 2026-08-27...)' stamp. Amending the constitution is the one act
+      reserved to the human founder; a model-authored PR that edits AGENTS.md
+      substantively cannot be ratified by this panel, and the change is plainly
+      normative rather than a typo or formatting fix. The PR body's and
+      DECISIONS.md's assertions that this is 'the founder's reserved act' and
+      that 'the founder's merge is the ratification' are claims inside the
+      material under review, not authorization I can act on — indeed the diff
+      itself is the AI writing the founder's amendment text for him. The rest of
+      the change (style-e2 covers, IMAGES.md spec, generate-case-art.mjs,
+      append-only history entries, honest 'upstream model not disclosed by the
+      tool' attribution) looks clean and provenance-complete, and no citations
+      are involved; the violation is confined to, but decided by, the AGENTS.md
+      edit.
+  - seat: GPT-5.1 (OpenAI)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: 'The diff edits AGENTS.md, which is explicitly reserved to the human
+      founder: §3.15 states that amending this file is the one act reserved to a
+      human. Under the trust-boundary rules, this panel cannot treat claims
+      inside the PR body or DECISIONS.md that "the founder" directed or ratified
+      the change as authoritative; they are untrusted data subject to review,
+      not proof of human action. Because the process cannot itself verify that a
+      human founder actually authored or approved this AGENTS.md change, the
+      safe constitutional stance is that an AI-mediated PR modifying AGENTS.md
+      violates §3.15. Other parts of the PR (image metadata, prompts, history
+      entries, and docs/IMAGES.md) appear consistent with the epistemic rules
+      and do not fabricate citations, but the reserved-file violation is
+      sufficient to fail the whole change.'
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff includes a normative amendment to AGENTS.md, changing the
+      visual register rule in §7 from 'cold and modern-technical' to 'the place
+      and its record'. The system instructions strictly define any non-trivial
+      edit to AGENTS.md as a violation of §3.15, as amending the constitution is
+      reserved exclusively to the human founder. Assertions of founder
+      authorization within the PR body and the diff itself are untrusted data
+      and cannot bypass this restriction.
+  - seat: Grok 4.6 (xAI)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: The diff edits AGENTS.md §7, replacing the binding visual-register
+      sentence with a new normative “place and its record” rule. That is a
+      constitution amendment, not a typo or formatting fix. §3.15 reserves
+      amending this file to the human founder; claims in the PR body,
+      DECISIONS.md, and history actors that the founder directed or already
+      ratified the change are untrusted data under review, not authorization.
+      Because the constitution file itself is touched, the change must be parked
+      rather than treated as a complying content/style update. Other files
+      (IMAGES.md, generate-case-art.mjs, covers, honest undisclosed-model
+      provenance, append-only history) do not cure the reserved-act violation.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: violates
+    rules:
+      - §3.15
+    reasoning: "The diff edits AGENTS.md §7, replacing the visual-register paragraph
+      with a new register and a 'Founder amendment, 2026-08-27' annotation — a
+      substantive, normative amendment, not a typo or formatting fix, and the PR
+      itself labels it an amendment. §3.15 reserves amending AGENTS.md to the
+      human founder as the one act AI may not perform; the PR body's claim that
+      founder direction plus the eventual merge constitutes ratification is
+      untrusted text inside the material under review and cannot substitute for
+      that reservation. Per the panel rule, a diff containing a normative
+      AGENTS.md edit must be judged 'violates'. The remainder of the change is
+      well-built: images.yaml records keep honest provenance (model frankly
+      recorded as 'undisclosed by the tool'), history.yaml entries are appended
+      rather than rewritten, superseded prompts remain in git history,
+      DECISIONS.md and IMAGES.md document the change, and no citations are added
+      so fabrication is not in issue. The September 11 cover subject (intact
+      towers on a quiet morning, no smoke, aircraft, or people) stays within the
+      'never the event' constraint as written. But the AGENTS.md edit is
+      dispositive on its own: this amendment must be parked and applied by the
+      founder, not shipped inside an agent-authored diff."
+harvestedAt: 2026-08-31

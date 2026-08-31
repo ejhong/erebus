@@ -1,0 +1,110 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 85
+title: Revert the chrome experiment; keep the blueprint grid one shade quieter
+url: https://github.com/ejhong/erebus/pull/85
+verdict: park
+reason: "1 seat(s) find a violation: Gemini 3.1 Pro (Google) (§7, §3.15)"
+outcome: merged
+outcomeAt: 2026-08-27
+judgedAgainst: 493b90b337
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "This is a purely presentational change: palette tokens and the
+      blueprint grid in app/globals.css, the display font in app/layout.tsx, and
+      removal of the per-case accent wrapper in app/cases/[slug]/page.tsx. No
+      files under content/ are touched, no citations, locators, verification
+      labels, or assessments are added or altered, and the citation tooling
+      found no identifiers — so none of the §3 evidence rules are engaged. The
+      docs/DECISIONS.md edit is net-additive in substance: the style-e2 entry
+      deleted by the git revert is restored verbatim (I compared the removed and
+      re-added blocks — identical text) and a new entry appended recording the
+      revert and its reasoning, which serves rather than undermines §3.14's
+      requirement that changed judgments record what changed and why. AGENTS.md
+      is not edited, so §3.15's founder-only amendment reservation is not
+      implicated; the §7 register amendment concerns the case covers, which the
+      diff explicitly leaves untouched. The one soft spot is §4's one-way engine
+      flow: app/ files are edited here, though globals.css and layout.tsx are
+      described in the log as already-allowlisted theme divergences and the
+      page.tsx edit removes a divergence rather than adding one — ordinary
+      imperfection at worst, not a check-weakening act. The PR's assertion of
+      founder direction is treated as evidence only, and it does not by itself
+      present an AI record as a human conclusion in any published claim."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The changes are confined to styling, typography, and documentation of
+      those design decisions; they do not touch content under `content/`, domain
+      objects, evidence, claims, or citations, so the core epistemic rules about
+      sources and provenance are unaffected. No citations or locators are added
+      or altered, as confirmed by the citation tooling. The layout and CSS edits
+      (palette, grid opacity, font choice, removal of per-case accent data
+      attributes) do not weaken any verification or multi-model safeguards in
+      §3.15 or the Phase-1 rules. `docs/DECISIONS.md` is updated in an
+      append-only fashion, explicitly documenting both the prior (now reverted)
+      chrome experiment and the revert with its reasoning, which aligns with
+      §3.14’s requirement to version decisions and corrections transparently.
+      AGENTS.md is untouched, so the human-reserved power is respected. Overall,
+      the PR records and implements a UI revert without altering evidential
+      processes or checks, so it complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: violates
+    rules:
+      - §7
+      - §3.15
+    reasoning: The PR attempts to justify its changes with untrusted assertions of
+      'Founder direction' in the PR body and a new docs/DECISIONS.md entry,
+      which must be ignored under the Trust Boundaries. Evaluated against the
+      base Constitution, the change violates §7 by explicitly reinstating the
+      'cold modern-technical type system' (in app/layout.tsx) and cool palette
+      (in globals.css) that §7 expressly declares as superseded. It also removes
+      the data-case-accent overrides from globals.css and
+      app/cases/[slug]/page.tsx, violating the §7 requirement for a 'palette the
+      case's own'. Furthermore, injecting a new decision log entry ('The founder
+      looked... and reverted it') without an explicit AI attribution tag
+      violates §3.15 by presenting an AI-generated record as a human one.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a complete, citation-free chrome revert in the
+      site-owned theme layer (globals.css, layout.tsx, case page wrapper) plus a
+      DECISIONS.md correction: cool porcelain, Space Grotesk, single steel-blue
+      accent, and a quieter 0.16-alpha blueprint grid; per-case accent hooks and
+      Newsreader go away. Covers and featured claim/evidence records are
+      untouched, AGENTS.md is not edited, and nothing fabricates provenance,
+      presents an unratified judgment as ratified, exposes confidence material,
+      or weakens §3.15 checks. Restoring the #84 decision-log entry and
+      appending the same-day revert (instead of letting git revert erase the
+      log) matches versioning/append-only intent rather than silently rewriting
+      a published assessment. Style register choices here are ordinary product
+      direction under §7 (instrument-quiet record machinery; covers still carry
+      place and palette), not an epistemic break."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The change is a pure chrome/theme revert: palette tokens in
+      globals.css, the display font in layout.tsx, removal of the per-case
+      accent attribute from the case page template, and a decision-log update.
+      It touches no content/, no claims, no evidence, no sources, and no named
+      persons, so the epistemic rules and the tiered merge policy's
+      needs-approval category are not engaged; the citation verifier found
+      nothing to check. AGENTS.md is untouched, so §3.15's founder-only
+      amendment rule is not implicated. The DECISIONS.md edit deletes the
+      style-e2 entry from its original position but re-adds it verbatim later in
+      the file and appends a new entry that openly explains the git revert had
+      stripped it and that this restore corrects that — the final state
+      preserves both records with full transparency, consistent with §3.14's
+      visible-history principle rather than a silent rewrite. The
+      founder-amended §7 register governs the cover artwork (untouched here per
+      the diff), and DECISIONS.md — which the constitution makes supreme on
+      confirmed direction — now records the founder's revert decision, so
+      returning the chrome to the cool technical register does not conflict with
+      the constitution as it stands. The globals.css/layout.tsx files are
+      described in the restored log entry as already-allowlisted site-owned
+      divergences, and the page.tsx edit removes code toward the pre-experiment
+      state, reducing rather than adding divergence. Nothing here fabricates,
+      hides, or weakens a check."
+harvestedAt: 2026-08-31

@@ -1,0 +1,133 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 89
+title: "Pizzagate expansion: full brief coverage — 25 new claims, every family
+  dispositioned"
+url: https://github.com/ejhong/erebus/pull/89
+verdict: pass
+reason: 4 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-28
+judgedAgainst: 46cc22ed2d
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The added records are sourced overwhelmingly to primary artifacts
+      (WikiLeaks email IDs, the DOJ 2007 release, the 2023 affidavit PDF with
+      docket number and page locator, dated Wayback captures, the DDOT camera
+      list PDF), and the mechanical check shows all of those resolving; every
+      FAILS in the verification output (two WaPo articles, trafficland.com, the
+      OUP chapter, the NGA object page, the WaPo Heavy Breathing review) is
+      matched by a verificationNote in the same diff that anticipates exactly
+      that failure mode (paywall/bot-wall/JS-rendered, verified via Wayback), so
+      I see no positive evidence of fabrication. Labels are honest and
+      conservative: everything is `ai_verified`, never `verified`, and the
+      affidavit note explicitly says the PDF is not court-hosted with PACER as
+      the recovery target; several notes disclose that an earlier draft carried
+      a constructed slug/domain/ID that was corrected — disclosure of prior
+      error rather than concealment. Living-persons handling is careful: the
+      Kline claim is a de-conflation, the Silsby claim is scoped to court
+      outcomes and attributions, the affidavit claim carries a
+      presumption-of-innocence note and names no defendant, and the case rides
+      the needs-approval lane (§3.15 tiered policy) as the PR states. Evidence
+      records all carry explicit direction (supports/qualifies/context),
+      independence groups are used for the Podesta small-email and jimmycomet
+      capture clusters (§3.10), diagnosticity is repeatedly capped to low where
+      warranted (§3.4/§3.13), and history.yaml is appended rather than rewritten
+      (§3.14); the only substantive deletions are `background: true` flags on
+      TIME/Politico, i.e. promotion to cited, which increases rather than dodges
+      scrutiny. My reservations are stylistic-to-borderline, not disqualifying:
+      PZG-C024, C028, C030 and C032 bundle several separable propositions (§3.2
+      would prefer splits, though each internally labels which parts are
+      unresolved), and SRC-TRAFFICLAND and SRC-TWITTERTRAILS give a
+      homepage/monthly-archive URL with a vague 'help page' locator where a
+      capture timestamp was available elsewhere (§3.8 looseness, not an invented
+      locator)."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.1
+      - §3.2
+      - §3.5
+      - §3.6
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.10
+      - §3.11
+      - §3.13
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The change only touches content files under content/cases/pizzagate
+      plus the case history and overview; AGENTS.md and any engine code are
+      untouched, so §3.15’s human-reserved power is respected. New claims are
+      atomic, observational or narrowly historical, and explicitly scoped (e.g.,
+      PZG-C031 carefully limits what the 2023 affidavit supports), satisfying
+      §3.1–§3.2 and §3.9. Evidence entries separate source statements from
+      editor inference (§3.6, §3.9) and mark direction
+      (supports/qualifies/context) clearly (§3.5), with explicit treatment of
+      unresolved or low-diagnosticity items (§3.4, §3.11, §3.13). All added
+      sources have concrete URLs or identifiers and verification notes; the
+      mechanical checker shows all added URLs either resolve or were accessed
+      via archives, and there is no sign of invented citations or locators, only
+      occasional honest notes about bot walls or partial enumeration, consistent
+      with §3.7–§3.8 and §4’s “real citations only” rule. New history entries
+      append a change description rather than silently altering prior judgments,
+      in line with the append-only, versioned assessment requirement (§3.14).
+      Living-person protections are observed by keeping living individuals in
+      featured tier with careful framing and by scoping sensitive claims (e.g.,
+      Silsby, 2023 affidavit defendant) to court outcomes or law-enforcement
+      statements without asserting guilt, matching the constitution’s
+      living-persons section. Overall, the diff strengthens provenance precision
+      and mechanism-level explanations without weakening any checks, so it
+      complies with the project’s constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.1
+      - §3.2
+      - §3.5
+      - §3.8
+      - §3.13
+      - §3.14
+      - §3.15
+      - Living persons and active proceedings
+    reasoning: The proposed change strictly adheres to the project's epistemic and
+      protective rules. Claims are atomic and carefully separate observation
+      from interpretation (§3.1, §3.2), with evidence direction explicitly
+      mapped (§3.5) and uncertainty calibrated beautifully (e.g., PZG-C024
+      keeping the traffic camera view genuinely unresolved). Provenance is exact
+      and verification labels are rigorously honest (§3.8), accurately
+      documenting necessary Wayback workarounds for timed-out or bot-walled
+      links and explicitly noting the non-court origin of the 2023 FBI affidavit
+      PDF. Living-persons constraints are honored by scoping the Silsby incident
+      (PZG-C030) entirely to verified court outcomes and attributing assertions
+      directly to their speakers. AI provenance and history logs are
+      transparently stamped without presenting drafts as human records (§3.14,
+      §3.15).
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff is content-only (no AGENTS.md or check-weakening), appends
+      new claims/evidence/sources with origin stamps, reviewState: ai_extracted,
+      and a history.yaml entry; featured items that name people stay on court
+      outcomes, on-the-record pages, or identity-conflation rather than guilt
+      verdicts (C025, C030, C031). Added URLs that RESOLVE have paths/venues
+      that match the records (WikiLeaks ids, DOJ 07_crt_060, ARTnews Abramović
+      piece, CBS/AP Silsby, Wayback Besta/Terasol/newsletter, affidavit PDF).
+      The six FAILS are timeouts/403s on WaPo, TrafficLand, OUP, and NGA — not
+      404s or self-contradictory locators — and the source notes already record
+      Wayback/bot-wall workarounds and keep the ai_verified label rather than
+      verified. Catalog statements avoid naming living persons; evidence records
+      split sourceStatement from editorInference and mark direction; remaining
+      compound wording and coarse locators are ordinary imperfection, not
+      fabrication or a silent judgment change."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: unsure
+    rules: []
+    reasoning: "seat failed: SyntaxError: Unexpected token '§', ...\", \"§3.7\",
+      §3.8\", \"§3\"... is not valid JSON"
+harvestedAt: 2026-08-31

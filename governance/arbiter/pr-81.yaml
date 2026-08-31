@@ -1,0 +1,108 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 81
+title: "Engine sync: budget epoch 2 — the supervised sprint stops spending the
+  autonomous budget"
+url: https://github.com/ejhong/erebus/pull/81
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-27
+judgedAgainst: 2a040b241a
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only scripts/arbiter.mjs (a synced engine file,
+      explicitly presented as the downstream counterpart of upstream PR #106,
+      which is the sanctioned one-way sync mechanism of §4/§8) and appends a new
+      dated entry to docs/DECISIONS.md; AGENTS.md is untouched. No content/
+      records, citations, locators, or assessments are added or altered, and the
+      citation tooling found no identifiers, so §3.7/§3.8/§3.14 are not
+      implicated. The DECISIONS entry is explicitly labeled '(AI record of a
+      founder instruction, 2026-08-27 session)', which satisfies the §3.15
+      prohibition on presenting an AI record as a human one rather than
+      violating it. The GATE_EPOCH bump relaxes a rate-limit budget on
+      autonomous landings, not any of the checks §3.15 actually names —
+      fail-closed CI, multi-model ratification, and parking of contested changes
+      are all left intact — and the rewritten comment preserves the epoch-1
+      history rather than erasing it, so this reads as documented pace-window
+      bookkeeping, not check-weakening or reclassification to dodge review. My
+      one reservation is structural: a throttle whose epoch is advanced each
+      time it binds (39 supervised landings at epoch 1, ~30 at epoch 2, budget
+      at 34/10) risks becoming decorative, and the assertion that the sprint was
+      founder-supervised is not verifiable from the diff — but it is
+      transparently recorded and routed through this panel, which is the
+      disclosure the constitution asks for."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only updates the arbiter script’s gating epoch and records
+      the rationale in docs/DECISIONS.md. It adjusts internal process throttling
+      (what counts against the autonomous weekly landing budget) and clearly
+      labels the DECISIONS entry as an AI record of a founder instruction,
+      maintaining transparency about AI versus human roles. No citations,
+      sources, locators, or provenance details are introduced, so there is no
+      risk of fabricated references or mislabeling under §3.7–§3.9. The arbiter
+      comment explicitly states that each epoch bump is founder-directed and
+      panel-reviewed, which preserves rather than weakens the multi-model and
+      founder oversight checks in §3.15. The budget change narrows which past
+      landings are counted but does not remove or silently alter existing
+      content, assessments, or their histories, so append-only and versioning
+      principles remain intact. No files governing agents or the constitution
+      are modified, and no material is published that would breach
+      confidentiality or living-person protections. Accordingly, the
+      modification stays within the constitution’s procedural and epistemic
+      constraints.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: The diff edits docs/DECISIONS.md and scripts/arbiter.mjs to reset a
+      rate-limiting budget epoch following a burst of supervised merges.
+      Modifying the GATE_EPOCH in the arbiter script does not weaken any
+      constitutionally mandated checks (§3.15), such as fail-closed CI or
+      multi-model concurrence. The decision log honestly labels itself as an AI
+      record of a founder instruction, avoiding presenting an AI record as a
+      human one. The constitution (AGENTS.md) is not modified, and the upstream
+      project name is kept out of restricted directories (§4).
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff does not edit AGENTS.md. It only appends a dated
+      DECISIONS.md note labeled as an AI record of a founder instruction and
+      advances GATE_EPOCH in scripts/arbiter.mjs from 2026-08-25T16:22Z to
+      2026-08-27T10:00Z, continuing the existing pattern that supervised
+      construction landings do not spend the autonomous weekly throttle. That
+      throttle is not one of the §3.15 checks (fail-closed CI, multi-model
+      ratification, no fabrication, no unratified-as-ratified, no confidential
+      publication); those checks are untouched. No citations, locators,
+      assessments, or featured content are added or altered, and the
+      omitted-files list is empty. Ordinary imperfection in comments is not a
+      constitutional violation.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+    reasoning: The change moves GATE_EPOCH in scripts/arbiter.mjs so that a
+      founder-supervised sprint's ~30 landings stop counting against the 10/week
+      autonomous-merge budget, and adds a DECISIONS.md entry recording this. The
+      rule under stress is §3.15's bar on weakening checks or reclassifying
+      changes to dodge them, but the diff shows the limit itself untouched, the
+      window logic untouched, and the pre-existing code comment already scoped
+      the throttle to the AUTONOMOUS era — epoch 1 set the same precedent for
+      bootstrap week, so this is an application of the documented design, not a
+      new loophole. The ratification gates (fail-closed CI, multi-model
+      concurrence for featured content) are not modified. The DECISIONS.md entry
+      is explicitly labeled 'AI record of a founder instruction,' which is
+      exactly the honest labeling §3.15 requires rather than presenting an AI
+      record as a human one. AGENTS.md is not edited, no citations are added (so
+      no fabrication surface), and the change arrives as the prescribed one-way
+      downstream engine sync with rationale and both epochs documented in
+      comments. I cannot verify from the diff that the founder in fact
+      supervised those landings, but temporal humility and the constitution's
+      own mechanism (founder instructions recorded in DECISIONS.md, accountable
+      via git) make that a matter for the human's inspectability powers, not
+      positive evidence of a dodge. Ordinary, transparent throttle bookkeeping —
+      complies.
+harvestedAt: 2026-08-31

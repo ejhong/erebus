@@ -1,0 +1,132 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 86
+title: "Engine sync: claim genealogy, derivative sources, honest states
+  (upstream #112) + Fable-first LLM fallback (upstream #111)"
+url: https://github.com/ejhong/erebus/pull/86
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-08-28
+judgedAgainst: 33ab1157db
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The diff touches only engine paths (app/, src/, scripts/) with no
+      changes under content/, no citations added (verification section confirms
+      none), and no edit to AGENTS.md, so §3.15's reservation is untouched. The
+      substantive additions strengthen rather than weaken checks: load.ts adds
+      fail-closed integrity checks for genealogy.originSourceId and for
+      derivedFrom (unknown target and self-reference both throw), and schema.ts
+      adds a derivedFrom field that makes §3.10 structural at the source grain,
+      with the source page rendering an explicit 'no independent weight' note.
+      The two new assessment states (misframed, provenance_failure) are placed
+      in the 'open' family with in-place reader captions, which serves
+      §3.2/§3.8/§3.13 rather than laundering a judgment as settled. The LLM
+      change is provenance-honest in the direction the constitution demands: a
+      refusal throws a typed RefusalError instead of a silent model swap, the
+      fallback runs exactly once, and propose-agenda.mjs now stamps modelUsed
+      (the model that actually produced the text) instead of provider.model —
+      directly serving §3.15's reconstructability requirement, with tests
+      pinning all three behaviors. The only mild loosening is that a claim's
+      genealogy.originSourceId now counts as a citing use in
+      sourceAdmissionErrors, but that is a genuine documented use of a source,
+      not ledger padding. The code comments' claims of founder preference
+      (2026-08-27) and upstream panel ratification are untrusted assertions I
+      cannot verify, but nothing in the diff itself publishes an unratified
+      draft as ratified or alters featured content."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.2
+      - §3.5
+      - §3.8
+      - §3.10
+      - §3.13
+      - §3.14
+      - §3.15
+    reasoning: The diff touches only engine/schema/UI files, not content, so there
+      are no new citations or provenance records that could be fabricated. The
+      new `ClaimGenealogy` schema and its rendering on claim pages explicitly
+      separate genealogy from record provenance and are wired into integrity
+      checks and the source admission rule, reinforcing §3.2, §3.8, §3.10, and
+      §3.14 rather than weakening them. `derivedFrom` on sources is
+      loader-checked and rendered with an explicit "no independent weight" note,
+      which structurally encodes independence handling in line with §3.10. New
+      assessment states `misframed` and `provenance_failure` plus UI captions
+      improve honest epistemic labeling and explanation for readers, consistent
+      with §3.2, §3.5, §3.13, and interface rules. The LLM changes introduce a
+      typed `RefusalError` and `callWithRefusalFallback` that (a) forbid silent
+      model substitution, (b) record the actual model used in outputs, and (c)
+      are covered by tests asserting provenance truthfulness — this directly
+      upholds §3.15’s requirement that readers can reconstruct which model did
+      what. Agenda proposal changes (tracking prior titles, preventing
+      re-proposals, logging fallback use) and the proposals-page fix for
+      unpublished cases strengthen process integrity and transparency rather
+      than bypassing checks. No changes touch AGENTS.md or relax validation/CI
+      behavior, so the overall effect complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.2
+      - §3.8
+      - §3.10
+      - §3.15
+      - §4
+    reasoning: The PR represents a permitted one-way engine sync from upstream (§4),
+      introducing schema and engine updates without touching content. The new
+      `derivedFrom` property on sources directly implements §3.10 by explicitly
+      modeling non-independent derivative sources, enforced with fail-closed
+      loader checks. The addition of `misframed` and `provenance_failure` to the
+      assessment vocabulary bolsters §3.2 and §3.8 by providing honest grading
+      categories for non-atomic claims and unauthenticated support. Furthermore,
+      the LLM fallback logic in `scripts/lib/llm.mjs` specifically preserves the
+      exact model name (`claude-opus-5`) when a fallback occurs, ensuring the
+      provenance stamps on generated proposals remain completely truthful as
+      mandated by §3.15.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The complete diff is an engine-path sync (app/, src/, scripts/) with
+      no content/, AGENTS.md, or allowlist edits, so it does not amend the
+      constitution or silently rewrite published judgments. Schema additions are
+      additive and fail-closed: optional claim genealogy kept separate from
+      record origin, loader-checked originSourceId, derivedFrom with no
+      self-reference and unknown-ID checks, and two new open-family assessment
+      states with in-place captions—implementing §3.2, §3.8, and §3.10 rather
+      than weakening them. LLM changes throw a typed RefusalError instead of
+      substituting models, retry Opus at most once, and stamp the model that
+      actually answered, which is the §3.15 provenance requirement; tests pin
+      that behavior. No citations were added, omitted files are none, and UI
+      copy labels genealogy as first-known appearance and derivative sources as
+      carrying no independent weight."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.10
+      - §3.15
+      - §3.8
+      - §3.2
+    reasoning: "The diff touches only engine paths (src/, app/, scripts/) — exactly
+      the one-way upstream sync route the constitution mandates — with no
+      content/, docs/, or AGENTS.md changes, and the citation verifier found
+      nothing to check since no content was added. The `derivedFrom` source
+      field directly implements §3.10 at the source grain, with loader checks
+      (targets exist, no self-reference) and a UI note that derivative sources
+      carry no independent weight. The LLM fallback strengthens §3.15
+      accountability rather than weakening it: refusals throw a typed error
+      instead of silently swapping models, and callers stamp the model that
+      actually produced the text (propose-agenda.mjs now stamps `modelUsed`,
+      pinned by tests), with a refusing fallback failing closed. The new
+      `misframed`/`provenance_failure` assessment states extend the enum without
+      altering any existing published judgment, sit in the open family with
+      in-place reader captions, and encode §3.2/§3.8 distinctions honestly.
+      Claim genealogy is optional, loader-validated against dangling IDs, hedged
+      ('first known', never absolute priority), and counted as a citing use in
+      the source-admission rule, preserving §3.8 provenance discipline. PR-body
+      claims of upstream panel passage and founder preference are untrusted but
+      unnecessary to the verdict — the change complies on its face and this
+      concurrence is the gate."
+harvestedAt: 2026-08-31
