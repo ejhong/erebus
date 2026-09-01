@@ -410,3 +410,19 @@ by this PR's merge). No pins: banked corrections live in the records
 they corrected and in the append-only changelog — the living-persons
 framing binds through the constitution and the panel that enforces it,
 not through a parallel registry.
+
+## 2026-09-01 — Engine-sync hold: the metabolism trials upstream first (founder direction)
+
+The upstream engine grew its full metabolism today (promotion pipe,
+Bench v2 panel scoring and freeze drafting, the generalized
+refusal-fallback — its PRs #138/#141/#145 and the design in its
+docs/AUTOMATION.md). The founder's direction: this deployment does NOT
+receive those organs until he judges them working upstream. Concretely:
+no engine sync that carries the promote or bench workflow jobs, the
+scoring/drafting scripts, or their maintain.yml changes may land here
+until this entry is superseded by a founder-ratified sync PR. The
+existing loops this repo already runs (watch, triage, agenda generation,
+inbox, reassessment with editorial audit, yield measurement from the
+2026-09-01 sync) continue unchanged. Rationale: one site is the trial,
+the other is the control — and the deployment carrying live cases about
+real, living people is the wrong place to debut machinery.
