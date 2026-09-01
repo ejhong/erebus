@@ -250,6 +250,16 @@ The public interface should:
 - explain unfamiliar epistemic terms in place;
 - show the last content-update date, linking to the case changelog;
 - make “what would change our mind” prominent;
+- let revisions of a case's narrative consider its committed founding
+  inputs for voice and aesthetic register — following them where they
+  serve the reader, free to expand beyond them — with judgment calls
+  settled by the competition of candidate drafts, not by binding rules.
+  Banked corrections live in the records they corrected and in the
+  append-only changelog, not in a separate registry. On this site the
+  living-persons framing needs no separate mechanism either: it binds
+  through the constitution itself and the panel that enforces it.
+  (Founder amendment, 2026-09-01 — mirrors the upstream engine's
+  amendment of the same date; see docs/DECISIONS.md.);
 - reveal AI involvement and human review;
 - display the living-persons and corrections notice on every case page;
 - work well on mobile;

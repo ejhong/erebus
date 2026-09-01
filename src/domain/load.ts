@@ -17,6 +17,7 @@ import {
   ResearchOpportunitySchema,
   SourceSchema,
   StudySchema,
+  NarrativeInputSchema,
   WatchConfigSchema,
   type AssessmentRun,
   type AssessmentState,
@@ -31,6 +32,7 @@ import {
   type LoadedCase,
   type Source,
   type Study,
+  type NarrativeInput,
   type WatchConfig,
 } from "./schema";
 import { studyIntegrityErrors } from "./studies";
@@ -465,6 +467,33 @@ export function loadCase(caseDir: string): LoadedCase {
     throw new ContentError(caseDir, studyErrors.join("; "));
   }
 
+
+  // Founding texts (inputs/manifest.yaml, optional): the anti-drift
+  // anchor for narrative revision. Validated fail-closed — a manifest
+  // entry whose file is missing fails the build, so inputs cannot rot
+  // into dangling references.
+  const inputsManifestPath = path.join(CONTENT_DIR, caseDir, "inputs", "manifest.yaml");
+  const narrativeInputs: NarrativeInput[] = fs.existsSync(inputsManifestPath)
+    ? parseList(
+        caseDir,
+        "inputs/manifest.yaml",
+        parseYaml(fs.readFileSync(inputsManifestPath, "utf8")),
+        NarrativeInputSchema,
+      )
+    : [];
+  assertUnique(caseDir, "narrative input", narrativeInputs.map((n) => n.id));
+  for (const input of narrativeInputs) {
+    const resolved = input.file.startsWith("inputs/")
+      ? path.join(CONTENT_DIR, caseDir, input.file)
+      : path.join(process.cwd(), input.file);
+    if (!fs.existsSync(resolved)) {
+      throw new ContentError(
+        caseDir,
+        `narrative input ${input.id} points at a missing file: ${input.file}`,
+      );
+    }
+  }
+
   const loaded: LoadedCase = {
     record,
     overviewMarkdown,
@@ -479,6 +508,7 @@ export function loadCase(caseDir: string): LoadedCase {
     curatedResources,
     conjectures,
     studies,
+    narrativeInputs,
   };
   checkIntegrity(caseDir, loaded);
   return loaded;
