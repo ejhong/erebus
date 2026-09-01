@@ -389,3 +389,24 @@ the pictures carry the humanity. (The entry above records the reverted
 experiment; the git revert of its code also removed that entry from this
 log, which was wrong under this file's append-only rule — it is restored
 above, and this entry is the correction.)
+
+## 2026-09-01 — The metabolism arrives, in its simplified form (engine sync + this repo's seeds)
+
+Synced from upstream after a same-day design cycle recorded fully in its
+decision log (design ratified; pins landed; pins removed hours later on
+the founder's simplification): yield-measured attention (the Maintain
+digest carries the bands; the agenda generator visits only due cases;
+cadence is stateless) and narrative inputs (per-case founding texts,
+loader-validated, presentation references never evidence). This repo's
+seeds: every case's current overview frozen as its founding narrative
+(inputs/founding-narrative-2026-09-01.md) — on this deployment the
+research briefs live privately outside the repository and can never be
+inputs, so the frozen founder-approved telling is the well future
+revisions draw from for voice and aesthetic register, following it where
+it serves the reader and free to expand beyond it, with judgment calls
+settled by candidate competition and the panel. A §7 amendment records
+the same narrative-guidance rule here (founder's reserved act, ratified
+by this PR's merge). No pins: banked corrections live in the records
+they corrected and in the append-only changelog — the living-persons
+framing binds through the constitution and the panel that enforces it,
+not through a parallel registry.
