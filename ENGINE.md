@@ -127,7 +127,12 @@ Current queue (2026-08-25):
    output (prompt v3) — RESOLVES means judge honest use, FAILS is
    positive evidence, UNCHECKED never gates. Quotations and page-level
    locators remain seat judgment.
-7. **Citation checker truncates DOIs containing parentheses (bug — fix
+7. ~~Citation checker truncates DOIs containing parentheses.~~ **Fixed
+   upstream and present here** (`trimTrailing` in
+   `scripts/lib/citation-check.mjs` now strips only unbalanced trailing
+   parens). Original report kept below for the record.
+
+   **Citation checker truncates DOIs containing parentheses (bug — fix
    upstream).** In `scripts/lib/citation-check.mjs`, both the URL pattern
    and the bare-DOI pattern exclude `)` from the identifier character
    class, so any DOI with embedded parentheses is cut at the first one:
@@ -150,7 +155,14 @@ Current queue (2026-08-25):
    `verificationNote` where a parenthetical DOI is unavoidable, and prefer
    a paren-free open-repository locator (e.g. a PMC deposit) as the
    primary `url` where one exists.
-8. **Unclassified directories are tier 0, so a large working-paper drop
+8. ~~Unclassified directories are tier 0, so a large working-paper drop
+   starves the content tier.~~ **Addressed upstream and present here**
+   (`TIER_RESERVED_SHARE` in `scripts/lib/arbiter-core.mjs` reserves a
+   slice of the packet budget per tier so no tier can starve the ones
+   below it); moot in any case now that `casework/` is no longer
+   committed. Original report kept below for the record.
+
+   **Unclassified directories are tier 0, so a large working-paper drop
    starves the content tier (design gap — decide upstream).**
    `diffTier` in `scripts/lib/arbiter-core.mjs` returns tier 0 — filled
    first, before `content/` — for any path it does not recognize, which is

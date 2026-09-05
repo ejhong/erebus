@@ -426,3 +426,28 @@ inbox, reassessment with editorial audit, yield measurement from the
 2026-09-01 sync) continue unchanged. Rationale: one site is the trial,
 the other is the control — and the deployment carrying live cases about
 real, living people is the wrong place to debut machinery.
+
+## 2026-09-05 — The digest permission, hand-ported ahead of the sync; README brought current
+
+Upstream found that its weekly digest issue — the founder's one observer
+artifact — had never been posted: the Maintain workflow's `permissions:`
+block lacked `issues: write`, and `gh issue create` failed on every
+scheduled run since 2026-08-25, swallowed by the step's warning fallback.
+This deployment has the identical defect (its 2026-08-31 run logged
+`could not open the digest issue`) and has never posted a digest either.
+
+The one-line fix is hand-ported here now rather than waiting for the
+engine sync, because the sync is on hold for the metabolism jobs
+(2026-09-01 entry) and a founder who receives no digest has no way to
+judge whether those jobs are working upstream. `maintain.yml` is an engine
+path, so this is a temporary divergence: it is not allowlisted, the
+divergence check will warn until the next sync carries the same line, and
+the warning is the correct signal that a sync is owed.
+
+Also brought current in the same change: `README.md` (still described
+Cloudflare Pages hosting, the repo-wide name rule, and an empty
+`content/cases/`), and `ENGINE.md`'s upstreaming queue, where items 7
+(parenthetical DOIs) and 8 (tier starvation) are marked resolved — both
+fixes are already present in this repo's engine copy.
+
+(AI record of a founder instruction, 2026-09-05 session.)
