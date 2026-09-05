@@ -29,9 +29,9 @@ npm test           # vitest (schema/loader/parser tests)
 npm run build      # static export to out/ (fails loudly on invalid content)
 ```
 
-Deploy: Cloudflare Pages builds with `npm ci && npm run build`, output
-directory `out/`, no base path. Pushing to `main` deploys automatically
-once the Pages project is connected (`docs/HOSTING.md`).
+Deploy: pushing to `main` runs CI and deploys the static export to GitHub
+Pages (`.github/workflows/deploy-pages.yml`); the base path is injected by
+the workflow. See `docs/HOSTING.md`.
 
 ## Architecture
 
@@ -53,20 +53,23 @@ TypeScript strict + Tailwind + Zod + yaml; vitest dev-only; all visuals
 hand-built.
 
 **The engine is not developed here.** `src/`, `app/`, `scripts/`, and the
-workflows are synced one-way from an upstream engine repository —
-referenced only via the `ENGINE_UPSTREAM` secret, never by name. See
-`ENGINE.md`. CI includes a fail-closed guard that rejects any committed
-occurrence of the upstream project's name, and a warning-only engine
-divergence check.
+workflows are synced one-way from the upstream engine repository (see
+`ENGINE.md`). CI includes a fail-closed guard that keeps the upstream
+project's name out of the rendered site's inputs (`content/`, `src/`,
+`app/`, `public/`), and a warning-only engine divergence check. Since
+2026-09-01 the sync is on hold for the upstream's metabolism jobs
+(promotion, Bench scoring, adoption) until the founder judges them working
+there; see the DECISIONS entry of that date.
 
 ## Operation
 
 The site maintains itself: the **Maintain** workflow runs weekly (and on
-demand), processing `inbox/` drops, refreshing assessments, watching the
-literature, and opening one digest PR — auto-merged when the diff is
-mechanically low-risk, founder-approved otherwise, with a five-vendor
-constitutional arbiter on everything needing approval. Full loop:
-`docs/MAINTENANCE.md`.
+inbox drops), processing `inbox/` drops, refreshing assessments, watching
+the literature, triaging, proposing agenda items, and opening one PR plus
+the weekly digest issue; **Content response** re-assesses and re-panels
+cases whose canon changed; the **Operator** tends parked PRs and issues.
+Low-risk diffs auto-merge; everything else is judged by the five-vendor
+constitutional arbiter. Runbook: `docs/MAINTENANCE.md`.
 
 ## Layout
 
@@ -74,8 +77,8 @@ constitutional arbiter on everything needing approval. Full loop:
 |---|---|
 | `AGENTS.md` | The constitution: epistemic rules, living-persons rules, code rules |
 | `docs/DECISIONS.md` | Append-only decisions log — read first for current direction |
-| `docs/` | Hosting, maintenance, content policy, image style |
+| `docs/` | Hosting, maintenance, content policy, image style, the studies design, the public-migration record |
 | `ENGINE.md` | Engine sync: one-way flow from the upstream engine repo |
-| `content/cases/` | Published cases (empty at bootstrap) |
+| `content/cases/` | Published cases: COVID origins, the Kirk assassination, Pizzagate, September 11 |
 | `inbox/` | Drop zone for the maintenance pipeline |
 | `proposals/` | Machine-generated proposals awaiting review (never published) |
