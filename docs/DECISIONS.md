@@ -451,3 +451,57 @@ Cloudflare Pages hosting, the repo-wide name rule, and an empty
 fixes are already present in this repo's engine copy.
 
 (AI record of a founder instruction, 2026-09-05 session.)
+
+## 2026-09-05 — The budget panel, hand-ported: five seats re-picked for judgment per dollar, with effort pinned
+
+**Decision (founder instruction, applied to both sites).** The five panel
+seats become: Opus 5 at `medium` effort (Anthropic), GPT-5.6 Sol at `high`
+(OpenAI), Gemini 3.8 Flash at `medium` thinking (Google), Grok 4.5 at
+`high` (xAI), and GLM 5.3 Flash at `high` (Z.ai open weights, MIT, hosted
+by Venice on the existing key). The seat table is `scripts/lib/vendors.mjs`
+and now feeds the arbiter and the cross-model check alike; the check
+script's private copy is gone. No new secrets.
+
+**Why.** Upstream's audit against the Artificial Analysis Intelligence
+Index (v4.2, 2026-09-04) found two seats far weaker than the other three:
+`gpt-5.1` was two generations old and, because no effort was ever sent
+and that model's API default is *no reasoning*, the OpenAI seat had been
+judging without thinking (index ≈21); `gemini-3.1-pro-preview` scored 48
+against 59 for the current Flash. The fifth seat, Kimi K3 via Venice,
+was the second most expensive per output token ($3.75/$18.75 per 1M). The
+new set scores 56–59 on every seat for about $2.08 per index task summed,
+against ~$3.64 for a panel averaging ~47. The frontier option (~60 on
+every seat at ~$4.06) was presented and declined in favor of cost. The
+full reasoning — including why the seats are *not* consolidated under
+Venice (13–150% markup on closed models, one balance stopping the whole
+quorum, rotating reseller model ids) — is in the upstream DECISIONS entry
+of this date.
+
+**Effort is now part of a seat's identity.** Every seat pins its depth in
+its vendor's own dialect, so a changing vendor default can never silently
+change which judge is running; `buildRequest()` is pure and tested per seat.
+
+**Seats are keyed by API vendor, not model name.** The concurrence
+panel, the /panel derivations, and the reconciliation loop deduplicated a
+seat's check runs by the first token of the model label, so the first
+re-panel after this change would have counted OpenAI twice ("GPT-5.1" ≠
+"GPT-5.6") and kept a Kimi judgment of superseded content alive beside the
+GLM one. `scripts/lib/seat-key.mjs` keys runs by the vendor in the label's
+parenthetical ("via X" names the seat for reseller-hosted models). This
+site's eight existing check panels keep their labels and their standing;
+the /panel seat-record table starts new rows for the new models.
+
+**Living-persons note.** The cases here concern real, named people, and
+the panel is the gate on every statement about them. The new seats are
+not weaker judges than the old ones on any seat — the two replaced seats
+were the weak ones — and each still comes from a different lab. Nothing
+in the gate's rule (≥4 complies, zero substantiated violates) changes.
+
+**Why hand-ported.** These are engine paths and the sync is on hold for
+the metabolism jobs (2026-09-01 entry). As with the digest permission
+(entry above), the seat change is carried here by hand because it governs
+what every merge on this site is judged by; the touched files match the
+upstream branch exactly, so the next sync carries nothing new for them.
+The rest of the hold stands.
+
+(AI record of a founder instruction, 2026-09-05 session.)
