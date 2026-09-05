@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { seatKey } from "../../scripts/lib/seat-key.mjs";
 import {
   extractClaimRefs,
   extractPlateRefs,
@@ -420,7 +421,9 @@ describe("ratification governance (stage 3)", () => {
     claimVerdicts: Record<string, string> = {},
   ) => ({
     ...mkDraft(`${date}-check-${model}`, date, verdict, [], claimVerdicts),
-    model: `${model} (Vendor) — independent check`,
+    // Seats are keyed by the vendor in the parenthetical (seatKey), so each
+    // synthetic model gets its own vendor.
+    model: `${model} (Vendor-${model}) — independent check`,
     role: "check" as const,
   });
   const caseWith = (
@@ -650,8 +653,8 @@ describe("cross-model checks", () => {
   it("check runs never narrate; the draft still displays", () => {
     const loaded = caseWith([
       run("d1", "house/test", "2026-01-01", "draft"),
-      run("2026-02-01-check-alpha", "Alpha (Vendor) — check", "2026-02-01", "check"),
-      run("2026-02-01-check-beta", "Beta (Vendor) — check", "2026-02-01", "check"),
+      run("2026-02-01-check-alpha", "Alpha (Vendor-A) — check", "2026-02-01", "check"),
+      run("2026-02-01-check-beta", "Beta (Vendor-B) — check", "2026-02-01", "check"),
     ]);
     const shown = displayAssessment(loaded);
     // The newest draft-role run displays; checks never do, however new.
@@ -692,24 +695,24 @@ describe("cross-model checks", () => {
     // vendors was the original double-counting bug (upstream).
     const loaded = caseWith([
       run("d1", "house/test", "2026-01-01", "draft"),
-      run("2026-02-01-check-alpha", "Alpha (Vendor) — check", "2026-02-01", "check", "mixed"),
-      run("2026-02-01-check-alpha-r2", "Alpha (Vendor) — re-check", "2026-02-01", "check", "unresolved"),
-      run("2026-01-15-check-beta", "Beta (Vendor) — check", "2026-01-15", "check"),
+      run("2026-02-01-check-alpha", "Alpha (Vendor-A) — check", "2026-02-01", "check", "mixed"),
+      run("2026-02-01-check-alpha-r2", "Alpha (Vendor-A) — re-check", "2026-02-01", "check", "unresolved"),
+      run("2026-01-15-check-beta", "Beta (Vendor-B) — check", "2026-01-15", "check"),
     ]);
     const perModel = latestCheckPerModel(loaded);
     // One entry per vendor, and Alpha's -r2 re-run wins the same-date tie.
     expect(perModel).toHaveLength(2);
     const alpha = perModel.find((r) => r.model.startsWith("Alpha"));
     expect(alpha?.runId).toBe("2026-02-01-check-alpha-r2");
-    const keys = perModel.map((r) => r.model.trim().split(/[\s,(]/)[0].toLowerCase());
+    const keys = perModel.map((r) => seatKey(r.model));
     expect(new Set(keys).size).toBe(keys.length);
   });
 
   it("a later date beats any runId suffix in the per-model tie", () => {
     const loaded = caseWith([
       run("d1", "house/test", "2026-01-01", "draft"),
-      run("2026-02-01-check-alpha-r2", "Alpha (Vendor)", "2026-02-01", "check"),
-      run("2026-03-01-check-alpha", "Alpha (Vendor)", "2026-03-01", "check"),
+      run("2026-02-01-check-alpha-r2", "Alpha (Vendor-A)", "2026-02-01", "check"),
+      run("2026-03-01-check-alpha", "Alpha (Vendor-A)", "2026-03-01", "check"),
     ]);
     const perModel = latestCheckPerModel(loaded);
     expect(perModel).toHaveLength(1);
