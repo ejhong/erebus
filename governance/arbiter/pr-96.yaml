@@ -1,0 +1,101 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 96
+title: "Engine-sync hold: the metabolism trials upstream first (founder direction)"
+url: https://github.com/ejhong/erebus/pull/96
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-09-01
+judgedAgainst: 4b76de24b5
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The entire diff is a 16-line append to docs/DECISIONS.md; AGENTS.md
+      is untouched, no content/ records are added or altered, and the citation
+      tooling found no identifiers to check. The new entry records a hold on
+      engine syncs carrying upstream promotion/Bench v2/maintain.yml machinery
+      until the founder judges the upstream trial working — this tightens the
+      gate on what can land here rather than weakening any check under §3.15,
+      and it explicitly requires a founder-ratified sync PR to supersede it. It
+      is append-only (added at the end of the log, existing entries unmodified),
+      consistent with §3.14, and touches no featured content, no assessments,
+      and no statements about named living persons. The references to upstream
+      PRs #138/#141/#145 and the upstream docs/AUTOMATION.md are unverifiable
+      from what I was shown but postdate my knowledge and carry no internal
+      inconsistency, so per temporal humility they are not evidence of
+      fabrication. The one residual risk is the attribution of the direction to
+      the founder (§3.15's bar on presenting an AI record as a human one), but
+      the log is the constitution's own designated vehicle for recording founder
+      direction, the PR title and body assert it consistently, and the practical
+      effect is a conservative, reversible restraint rather than an unratified
+      publication."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The change only appends a dated founder direction to
+      docs/DECISIONS.md, describing a temporary hold on syncing certain new
+      automation features from the upstream engine. It does not alter AGENTS.md
+      or the constitution itself, so §3.15’s human-only amendment rule is
+      respected. No citations, sources, or provenance details are added, so
+      there is no risk of fabricated or misused references under §3.7–§3.8. The
+      decision constrains engine sync behavior and deployment policy but does
+      not weaken any of the epistemic or publication checks in §3.15; if
+      anything, it is a cautionary safeguard for a deployment with live cases
+      about living persons. All changes are additive to a decision log and
+      preserve versioned history, aligning with the append-only, inspectable
+      change pattern envisioned by the constitution. Accordingly, the diff
+      complies with the project’s constitutional rules.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+    reasoning: The change modifies `docs/DECISIONS.md` rather than the constitution
+      itself (`AGENTS.md`), thus respecting the human-only editing rule for the
+      constitution (§3.15). It explicitly adds a safeguard by holding the sync
+      of new upstream automation until ratified, which strengthens rather than
+      weakens checks (§3.15). Furthermore, the update is in the `docs/`
+      directory, which is exempt from the upstream naming restriction that
+      applies only to rendered site inputs (§4). No citations are added or
+      fabricated.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The diff only appends a dated entry to docs/DECISIONS.md; AGENTS.md
+      is untouched, so the founder-reserved amendment bar in §3.15 is not
+      implicated. No content/ records, citations, locators, assessments, or
+      featured claims are added or rewritten, and citation tooling found nothing
+      to resolve. The entry is an operational hold on syncing specific upstream
+      metabolism jobs (promotion, Bench v2, related maintain.yml) until a later
+      founder-ratified sync; that delays new machinery rather than weakening
+      §3.15 checks or reclassifying a change to dodge them. Attribution as
+      founder direction is not contradicted by anything in the packet, and the
+      substance matches this repo’s allowed surface (docs/configuration, not
+      engine code). Omitted-files is empty, so the whole change is in view.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules: []
+    reasoning: "The diff is a single 16-line append to docs/DECISIONS.md recording
+      an operational hold: no engine sync carrying the upstream
+      promotion/bench/freeze machinery lands here until a founder-ratified sync
+      PR supersedes the entry. It does not touch AGENTS.md, so §3.15's
+      reservation of constitution amendments to the founder is not triggered,
+      and the entry does not conflict with the constitution — it adds a gate on
+      top of the existing checks rather than weakening or reclassifying any of
+      them; existing loops (watch, triage, reassessment with editorial audit,
+      fail-closed CI) explicitly continue unchanged, which is the opposite of
+      check-weakening and aligns with the living-persons caution the entry
+      cites. The PR body's claim of 'founder direction' is untrusted data and I
+      do not rely on it, but there is no positive evidence of fabrication: the
+      entry is internally consistent, dated today, and the base AGENTS.md
+      already carries a founder amendment dated 2026-09-01 (§7), so same-date
+      founder activity is corroborated rather than anomalous. No citations were
+      added (verification section is empty); the upstream PR references are
+      operational pointers in docs/, not content citations under content/. No
+      featured content, named persons, or engine code is touched, and a docs
+      edit respects the §4 one-way engine flow. Ordinary, conservative,
+      reversible documentation work."
+harvestedAt: 2026-09-07
