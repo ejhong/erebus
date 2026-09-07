@@ -1,0 +1,111 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 97
+title: Grant the digest step issues:write (hand-ported ahead of the sync);
+  README and ENGINE queue brought current
+url: https://github.com/ejhong/erebus/pull/97
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-09-05
+judgedAgainst: dafb1622c9
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "No content/ records, claims, evidence, sources, or assessments are
+      touched, and the citation tooling found no identifiers in the added lines,
+      so the §3 epistemic rules are not directly implicated. The workflow change
+      adds only `issues: write` to a permissions block — it grants the digest
+      step the scope to open a public GitHub issue (a public record, consistent
+      with the contact-record rule) and weakens no check; the arbiter,
+      divergence check, and merge tiers are untouched. The edit does touch an
+      engine path (`.github/workflows/maintain.yml`) against §4's one-way flow,
+      but the fix was made upstream (cited as aletheia #167), is hand-carried
+      only because the sync is on hold, is recorded in the append-only DECISIONS
+      log, and is deliberately NOT added to the sync allowlist so the divergence
+      check keeps warning — that is stricter than allowlisting, not
+      check-dodging. ENGINE.md marks queue items 7 and 8 resolved while
+      preserving the original reports verbatim, which keeps the record rather
+      than rewriting it. README edits correct stale hosting/rule descriptions to
+      match the constitution's 2026-08-25 narrowing and the GitHub Pages
+      arrangement; the case list is an unverifiable-from-diff but ordinary
+      factual update, not a citation. The PR body's claims of founder
+      instruction were treated as evidence, not authorization, and AGENTS.md is
+      not modified."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff only touches workflow configuration, documentation, and the
+      engine sync notes; it does not alter AGENTS.md, any content records under
+      content/, or assessment overlays. Granting issues: write to the Maintain
+      workflow’s GITHUB_TOKEN is a technical adjustment so the existing digest
+      step can actually open an issue, and does not weaken any epistemic or
+      review safeguards in §3 or the CI/arbiter checks described in §3.15 and
+      §4. The ENGINE.md edits simply mark previously logged engine issues as
+      fixed while explicitly retaining the original reports for the record,
+      which is consistent with append-only, inspectable change history. README
+      and docs/DECISIONS.md are updated to accurately reflect the current
+      hosting setup, sync hold, workflows, and populated cases, improving
+      transparency rather than changing any evidentiary claims. No citations,
+      provenance fields, or verification labels are added or altered, so rules
+      about real citations, exact provenance, and fabrication are not engaged.
+      Overall, the change preserves and documents the existing governance and
+      does not introduce any process shortcuts or hidden modifications to
+      published judgments."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: "The PR adds the `issues: write` permission to `maintain.yml` to
+      ensure the weekly digest can be published, updates `README.md` and
+      `ENGINE.md` documentation, and records these updates in
+      `docs/DECISIONS.md`. While editing a workflow file typically conflicts
+      with the one-way engine flow rule (§4), the PR adds a corresponding
+      `DECISIONS.md` entry reflecting a founder instruction that explicitly
+      authorizes this temporary, un-allowlisted divergence. Since `DECISIONS.md`
+      supersedes conflicting rules, the engine modification is valid. No checks
+      are weakened, `AGENTS.md` is unedited, and no citations or provenance are
+      fabricated."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff does not touch AGENTS.md, content/, claims, evidence,
+      sources, or assessments, and adds no citations. The maintain.yml change is
+      a one-line `issues: write` grant so an existing digest step can open a
+      public GitHub issue; that is not fabrication, confidential publication,
+      silent reclassification, or a weakening of §3.15’s ratification/CI checks,
+      and the divergence is recorded rather than allowlisted. README and
+      ENGINE.md updates align documented hosting, the narrowed upstream-name
+      guard, operation, and queue status with §4 and existing engine copy,
+      without presenting drafts as ratified judgments. DECISIONS.md is an
+      append-only dated entry labeled as an AI record. Ordinary docs/ops
+      imperfection is not a constitutional break."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §4
+      - §8
+    reasoning: "The single functional change adds `issues: write` to the Maintain
+      workflow's permissions so the weekly digest issue can be opened; it
+      touches no arbiter gate, no CI guard, no schema validation, and no merge
+      policy, so §3.15's prohibition on weakening the checks is not implicated —
+      opening a notification issue is not publication of featured content. No
+      citations, evidence records, or provenance are added or altered, and the
+      citation-verification section is empty, so the real-citations and
+      exact-provenance rules are not engaged. The README and ENGINE.md edits are
+      documentation brought current with already-decided direction (the
+      2026-08-25 narrowed name rule, the 2026-09-01 sync hold), and the
+      ENGINE.md queue items are struck through with the original reports
+      explicitly retained, preserving the append-only record rather than
+      silently rewriting it. The direct edit to an engine-path workflow ahead of
+      the sync is a deliberate, documented §4 divergence, but the constitution's
+      own header makes docs/DECISIONS.md supreme on conflict, and this PR
+      appends a 2026-09-05 DECISIONS entry recording the hand-port, the
+      rationale, and the intent to leave the divergence check warning as the
+      owed-sync signal. The unverified claim of founder instruction in that
+      entry is untrusted, but the change is minimal, reversible, transparently
+      logged, and does not reclassify anything to dodge ratification, so it
+      falls within ordinary operation rather than violation."
+harvestedAt: 2026-09-07
