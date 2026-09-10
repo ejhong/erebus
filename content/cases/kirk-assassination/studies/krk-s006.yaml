@@ -1,0 +1,136 @@
+# Study freeze — pre-registration only (two-PR discipline, see
+# docs/STUDIES_PROPOSAL.md). Zero rows by design; any later edit to the
+# criteria below fails the build. Collection follows in a second PR.
+#
+# Disclosure: the criteria were frozen in the operator's working session
+# on 2026-09-10 (a plain-text file whose SHA-256 begins 4ca8a9aeace8766d,
+# reproduced verbatim in the freeze PR body) BEFORE any search was run,
+# but the collection was carried out in that same session before this
+# freeze PR was opened. The panel therefore judges these criteria knowing
+# that the author had already seen the data by the time the PR was
+# drafted; the hash guarantees the criteria were not edited after the
+# in-session freeze, not that the author was blind to the results.
+id: KRK-S006
+title: Bullet retention in a rifle-shot neck — scenario-conditional base rates
+  for a .30-06 at 130-200 m
+question: Given a .30-06 Springfield rifle bullet fired from roughly 130-200 m
+  into an adult man's neck, how unusual is it for the bullet NOT to exit (to be
+  retained and recovered as fragments) — answered conditionally on bullet
+  construction, whether bone was struck, path length, and impact velocity,
+  rather than as one number?
+researchIds:
+  - KRK-R002
+  - KRK-R004
+claimIds:
+  - KRK-C006
+  - KRK-C007
+  - KRK-C018
+criteria:
+  frozenOn: 2026-09-10
+  inclusion:
+    - "Primary or peer-reviewed sources: ordnance-gelatin/wound-profile studies,
+      forensic autopsy series reporting perforating vs penetrating outcomes for
+      rifle wounds, wound-ballistics textbooks, hunting-bullet fragmentation
+      studies in real tissue, anthropometric neck measurements, manufacturer
+      external-ballistics tables."
+    - Case-specific facts only from court-reported testimony, official
+      statements, or the case's own verified evidence records (KRK-E009,
+      KRK-E010, KRK-E032, KRK-C006).
+    - Every row carries a verbatim quotation and a locator; a source read only
+      in abstract is labeled so.
+  exclusion:
+    - Social-media assertions, commentary videos, and back-yard 'tests' are
+      recorded (if at all) as the claims under examination, never as evidence
+      rows.
+    - No medical fact about the decedent beyond what the public court record and
+      on-record statements contain (living-persons rules; the autopsy package is
+      not public).
+    - No number is stated without a cited source; where the literature gives no
+      rate, the study says 'no rate found'.
+  searchProtocol: "PubMed/PMC, DTIC, Springer/Elsevier abstracts, manufacturer
+    ballistics tables, textbook excerpts reachable by web fetch; searches logged
+    in the study; stop when each scenario cell has at least one primary row or a
+    recorded 'no rate found'. Conditioning variables fixed at freeze (the
+    scenarios): S1 bullet construction — (a) full-metal-jacket military-type
+    ball; (b) expanding lead-core soft-point/hunting bullet; (c) lightweight
+    varmint/rapid-fragmenting bullet; (d) monolithic copper expanding. S2 what
+    the bullet struck — (i) soft tissue only (no bone); (ii) cervical spine /
+    vertebra or mandible (dense bone) struck. S3 path length through the neck —
+    short (transverse, ~10-14 cm) vs long (oblique, downward from an elevated
+    firing position, up to ~20 cm+ into the chest/shoulder region). S4 impact
+    velocity — from published external-ballistics tables for common loads at
+    130-200 m; treated as a range, not a point. Output: a scenario table with,
+    per cell, the expected outcome, the sourced basis, and a plain-language
+    rarity statement with explicit uncertainty; no single truth score."
+  knownCandidates:
+    - name: Fackler wound profiles (J Trauma 1988; International Defense Review 1989;
+        DTIC ADA233190)
+      disposition: include
+      reason: the standard gelatin wound-profile data for FMJ and soft-point rifle
+        bullets
+    - name: Kneubuehl et al., Wound Ballistics — Basics and Applications
+      disposition: include
+      reason: standard text; used only if a reachable, verifiable excerpt exists
+    - name: Terminal ballistics of 7.62 mm NATO bullets in ordnance gelatin (Int J
+        Legal Med)
+      disposition: include
+      reason: FMJ fragmentation thresholds by impact velocity
+    - name: Hunt et al. 2006 / Grund et al. 2010 / Trinogga et al. 2013 on
+        hunting-bullet fragmentation in deer
+      disposition: include
+      reason: real-tissue fragmentation and exit data for lead-core hunting bullets
+    - name: Spinal gunshot-wound reviews
+      disposition: include
+      reason: what bone strikes do to bullets; retention in spinal wounds
+    - name: ANSUR / CT-based neck anthropometry
+      disposition: include
+      reason: the path-length denominator
+    - name: ATF firearms report as filed by the defense (reported by ABC4, 2026)
+      disposition: include
+      reason: the case's fragment inventory, as reported
+    - name: NBC News 2025 reporting on the rifle
+      disposition: include
+      reason: rifle and distance as reported
+    - name: New York Post 2025 relay of the surgeon (KRK-E032)
+      disposition: include
+      reason: the 'no exit wound' relay, already in the ledger as a second-hand
+        statement
+    - name: Peak Prosperity 'experimental proof' page (Martenson, Nov 2025)
+      disposition: exclude
+      reason: the claim under examination; a back-yard test, recorded as a claim,
+        never a row
+    - name: Fox / East Idaho News / KUTV hearing live blogs already in the case file
+      disposition: include
+      reason: court-reported facts (wound classification, fragments)
+  criteriaHash: ab8dc1418a35
+method: For each scenario cell (S1 x S2, with S3 and S4 as stated ranges), state
+  the expected outcome, the sourced basis, and a plain-language statement of how
+  unusual a retained bullet would be, with explicit uncertainty and no single
+  truth score. Rows are the collected data — one row per source, each cell
+  quoting the source verbatim with its locator and verification label; numbers
+  derived by this study (velocity interpolation, equivalent neck diameter,
+  scale-bar readings from reproduced figures) are marked as derived. Animal
+  hunting series are used as analog base rates only where no human series
+  exists, and are labeled as analogs. The public record of the case is then
+  placed in the table by scenario, with every case fact attributed to its source
+  and prosecution statements labeled as assertions (living-persons rules). The
+  study never grades a claim; its findings enter the ledger only through
+  ordinary evidence records citing the workpaper. Either outcome publishes,
+  including "no rate found".
+columns:
+  - source
+  - material and conditions
+  - bullet
+  - impact velocity
+  - what was measured
+  - result
+  - bears on
+rows: []
+findings: []
+limitations: []
+runId: 2026-09-10-study-krk-s006-freeze
+model: Claude Fable 5.1 (Anthropic), via Claude Code (session
+  session_01AiXD4y5Y91KC7iM3uBhWmu)
+date: 2026-09-10
+promptVersion: erebus-study-freeze-v1
+humanReviewed: false

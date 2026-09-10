@@ -396,3 +396,28 @@
     founder amendment to AGENTS.md §7.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent), directed by the founder"
   aiAssisted: true
+
+- date: "2026-09-10"
+  change: >-
+    Study KRK-S006 pre-registered (freeze only, zero rows): bullet
+    retention in a rifle-shot neck — scenario-conditional base rates for
+    a .30-06 at 130-200 m, criteria hash ab8dc1418a35. The study will
+    table what published wound-ballistics, forensic, hunting and
+    anthropometric sources say a bullet of each construction does over a
+    neck-length path with and without a bone strike, and then place the
+    public record of this case (KRK-C006, KRK-C007, KRK-C018) in that
+    table; collection follows in a separate PR under the frozen criteria.
+    Disclosure recorded in the study header: the criteria were frozen in
+    the operator's session before any search, but the collection was
+    carried out in the same session before the freeze PR was opened.
+  reason: >-
+    Founder direction, 2026-09-10 (in session): a desk study of whether
+    a .30-06 round failing to exit the neck at that distance is unusual,
+    "conditional on the different key scenarios based on the
+    possibilities of what is known", with real statistics instead of
+    the circulating claims in either direction. Freezing the scenarios
+    and inclusion rules first fixes what counts before the answer is
+    looked up.
+  actor: "Erebus editorial AI (Claude Fable 5.1, Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu), directed by the founder"
+  aiAssisted: true
+  kind: content
