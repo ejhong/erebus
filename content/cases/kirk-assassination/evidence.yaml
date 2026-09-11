@@ -1804,3 +1804,106 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-krk-s005-collect"
     date: "2026-08-26"
+
+- id: KRK-E065
+  title: "Base rate: an expanding rifle bullet that strikes the cervical spine is ordinarily retained and fragmented — the record's pattern is the expected one"
+  claimIds: [KRK-C006, KRK-C018]
+  sourceId: SRC-KRK-S006
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Across gelatin and soap wound-profile data, the standard forensic
+    text, a spinal-injury review, three real-tissue hunting series and a
+    clinical review (study rows 4-11, 15), a lead-core soft-point .30-06
+    bullet at 713-762 m/s expands within the first few centimetres, sheds
+    on the order of 150 lead fragments even without bone, releases most
+    of its energy early, breaks up more on dense bone, and when it stops
+    leaves only an entrance wound with the jacket under the skin. The
+    only measured analog rate with bone-bearing chest shots is that 42%
+    of lead-core hunting bullets did not exit 140-220 kg deer; through
+    soft tissue alone the same bullet class exited deer chests in 92% of
+    shots and traverses ~40 cm of gelatin, so over a 10-14 cm neck path
+    exit is expected only if no bone is struck. An intact-jacket
+    full-metal-jacket bullet would exit a bone-free neck path with near
+    certainty.
+  editorInference: >-
+    The public record describes a .30-06 soft-point (reported,
+    unverified) that in the prosecution's words "struck Kirk's spine and
+    shattered", recovered as a jacket fragment plus lead fragments "just
+    beneath the skin" (second-hand). For that scenario the sources make
+    retention the ordinary outcome, so the absence of an exit wound is
+    not evidence against a rifle mechanism and does not by itself favor
+    KRK-C018. The "always goes through" premise is correct only for a
+    full-metal-jacket bullet or a bone-free path — neither of which the
+    record describes. The study grades nothing about who fired the shot.
+  exactLocator: "Study KRK-S006, findings 4 and 7 (full table on the study page)"
+  limitations:
+    - "All rates are animal or simulant analogs; no human series reports retention for expanding rifle bullets in the neck."
+    - "The wound path, fragment mass and ammunition type are known only through summaries, a prosecutor's characterization and secondary exhibit descriptions; the autopsy package would replace all three."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S006 collection"
+    extractedBy: "Claude Fable 5.1 (Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu)"
+    runId: "2026-09-10-study-krk-s006-collect"
+    date: "2026-09-10"
+- id: KRK-E066
+  title: "Prosecution's closing, relaying the ME report: the bullet 'struck Kirk's spine and shattered'"
+  claimIds: [KRK-C006]
+  sourceId: SRC-CNN-PRELIM-WRAP-2026
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    CNN on the prosecutor's closing argument, which "shared details from
+    the report": "the bullet Robinson allegedly fired struck Kirk's spine
+    and shattered."
+  editorInference: >-
+    An assertion by the prosecution characterizing a confidential
+    medical-examiner report — not the report, and not testimony by its
+    author (KRK-C006, KRK-C007). Recorded because it is the only public
+    statement of what the bullet struck, which is the variable that
+    decides whether a retained, fragmented bullet is expected
+    (KRK-E065). Its weight is the weight of a party's summary until the
+    report is released.
+  exactLocator: "CNN, Sept. 1, 2026, section on the prosecution's closing argument"
+  limitations:
+    - "Second-hand and adversarial: a prosecutor's characterization, admitted through an investigator, of a report the defense objected to as an expert report without the expert."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S006 collection (promoted case-record row)"
+    extractedBy: "Claude Fable 5.1 (Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu)"
+    runId: "2026-09-10-study-krk-s006-collect"
+    date: "2026-09-10"
+- id: KRK-E067
+  title: "The ATF report as filed: one deformed jacket fragment and four lead fragments examined; the cartridge case identified to the rifle"
+  claimIds: [KRK-C004, KRK-C005]
+  sourceId: SRC-KUTV-ATF-REPORT-2026
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The ATF analyzed "a deformed/damaged bullet jacket fragment, as well
+    as four lead fragments." The lead fragments "were not suitable for a
+    microscopic comparison"; the jacket fragment showed neither
+    "sufficient agreement nor sufficient disagreement of individual
+    characteristics to allow the examiner to identify or exclude the
+    rifle in question." The report also covered "a .30-06 cartridge case
+    that was identified as having been fired from the rifle linked to
+    Robinson."
+  editorInference: >-
+    The first public itemization of what the examiner received: five
+    items — one jacket fragment and four lead fragments — against the
+    seven fragments photographed (KRK-E009); whether "four" in the
+    hearing testimony and "four lead fragments plus a jacket" here are
+    the same count is itself unreconciled (KRK-C005). Jacket-core
+    separation with several lead fragments is the pattern of an expanding
+    lead-core bullet, not of a copper monolithic or intact-jacket round
+    (KRK-E065). The cartridge-case identification ties the casing, not
+    the fatal bullet, to the rifle (KRK-C004).
+  exactLocator: "KUTV, April 16-17, 2026, paragraphs describing the ATF report's contents"
+  limitations:
+    - "A press account of a filed report; the report's own text, fragment weights and photographs were not read."
+  reviewState: ai_extracted
+  origin:
+    ref: "study KRK-S006 collection (promoted case-record row)"
+    extractedBy: "Claude Fable 5.1 (Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu)"
+    runId: "2026-09-10-study-krk-s006-collect"
+    date: "2026-09-10"

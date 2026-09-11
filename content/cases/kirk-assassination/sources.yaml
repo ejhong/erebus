@@ -762,3 +762,49 @@
     study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+
+- id: SRC-CNN-PRELIM-WRAP-2026
+  title: "Here's what unfolded in court before Charlie Kirk's accused killer pleaded not guilty — and what comes next"
+  authors: ["Andi Babineau", "Emma Tucker"]
+  organization: "CNN"
+  year: "2026"
+  sourceType: webpage
+  identifier: "September 1, 2026"
+  url: "https://keyt.com/news/national-world/cnn-national/2026/09/01/heres-what-unfolded-in-court-before-charlie-kirks-accused-killer-pleaded-not-guilty-and-what-comes-next/"
+  verification: ai_verified
+  verificationNote: >-
+    cnn.com returned HTTP 451 to the operator on 2026-09-10; the article
+    was read in full at its syndicated copy on keyt.com (CNN Newsource),
+    which is the URL recorded here. Quotation verbatim from that copy.
+  reliabilityNotes:
+    - "Courtroom reporting of the prosecution's closing argument; the medical-examiner statement it relays is the prosecutor's characterization of a confidential report, recorded as an assertion by the prosecution (living-persons rules)."
+    - "Independence note (§3.10): reports the same proceeding as the KSL, KUTV, East Idaho News, AP and Fox hearing sources already in this file — one proceeding, not independent confirmation."
+- id: SRC-KUTV-ATF-REPORT-2026
+  title: "Damaged bullet jacket, fragments tested in inconclusive ballistic report in Kirk killing"
+  authors: ["Derick Fox"]
+  organization: "KUTV"
+  year: "2026"
+  sourceType: webpage
+  identifier: "April 16, 2026 (updated April 17)"
+  url: "https://kutv.com/news/local/damaged-bullet-jacket-fragments-tested-in-inconclusive-ballistic-report-in-kirk-killing"
+  verification: ai_verified
+  verificationNote: "Fetched directly 2026-09-10; the report's contents quoted verbatim as the article renders them. The ATF report itself, attached to the defense's January 2026 motion, was not read."
+  reliabilityNotes:
+    - "A press account of a filed forensic report; supersedable by the report itself (KRK-R001, KRK-R004)."
+    - "The rifle's model designation as rendered in some syndicated copies of this story ('Mauser model 90') differs from the 'Mauser model 98' of official statements; only the fragment inventory, the cartridge-case identification and the examiner's conclusion are used here."
+- id: SRC-KRK-S006
+  title: "Study KRK-S006 — Bullet retention in a rifle-shot neck: scenario-conditional base rates for a .30-06 at 130-200 m (AI-authored workpaper)"
+  organization: "Erebus editorial AI"
+  year: "2026"
+  sourceType: workpaper
+  studyId: KRK-S006
+  identifier: "Criteria frozen 2026-09-10 (hash ab8dc1418a35); table collected 2026-09-10"
+  verification: ai_verified
+  verificationNote: >-
+    Every row cell carries its own citation and verification label on the
+    study page; the aggregate findings are the only ledger-bearing grain.
+    Disclosure: criteria frozen in-session before any search, collection
+    performed in the same session before the freeze PR was opened.
+  reliabilityNotes:
+    - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+    - "Every base rate in the table is an animal or simulant analog; no human neck series with a retention rate exists in the sources found."

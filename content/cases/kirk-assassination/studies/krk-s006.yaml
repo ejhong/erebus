@@ -1,23 +1,18 @@
-# Study freeze — pre-registration only (two-PR discipline, see
-# docs/STUDIES_PROPOSAL.md). Zero rows by design; any later edit to the
-# criteria below fails the build. Collection follows in a second PR.
+# Study KRK-S006 — collected 2026-09-10 under the criteria frozen the same
+# day in PR #101 (hash ab8dc1418a35; the loader re-verifies it on every
+# build). Rows are the collected data, one per source, each cell quoting
+# its source with a locator and verification label; findings are the only
+# ledger-bearing grain, entering through KRK-E065 (workpaper SRC-KRK-S006).
 #
-# Disclosure: the criteria were frozen in the operator's working session
-# on 2026-09-10 (a plain-text file whose SHA-256 begins 4ca8a9aeace8766d,
-# reproduced verbatim in the freeze PR body) BEFORE any search was run,
-# but the collection was carried out in that same session before this
-# freeze PR was opened. The panel therefore judges these criteria knowing
-# that the author had already seen the data by the time the PR was
-# drafted; the hash guarantees the criteria were not edited after the
+# Disclosure carried over from the freeze: the criteria were frozen in the
+# operator's working session (plain-text file, SHA-256 4ca8a9aeace8766d…,
+# reproduced in the freeze PR body) BEFORE any search was run, but the
+# collection was carried out in that same session before the freeze PR was
+# opened. The hash guarantees the criteria were not edited after the
 # in-session freeze, not that the author was blind to the results.
 id: KRK-S006
-title: Bullet retention in a rifle-shot neck — scenario-conditional base rates
-  for a .30-06 at 130-200 m
-question: Given a .30-06 Springfield rifle bullet fired from roughly 130-200 m
-  into an adult man's neck, how unusual is it for the bullet NOT to exit (to be
-  retained and recovered as fragments) — answered conditionally on bullet
-  construction, whether bone was struck, path length, and impact velocity,
-  rather than as one number?
+title: Bullet retention in a rifle-shot neck — scenario-conditional base rates for a .30-06 at 130-200 m
+question: Given a .30-06 Springfield rifle bullet fired from roughly 130-200 m into an adult man's neck, how unusual is it for the bullet NOT to exit (to be retained and recovered as fragments) — answered conditionally on bullet construction, whether bone was struck, path length, and impact velocity, rather than as one number?
 researchIds:
   - KRK-R002
   - KRK-R004
@@ -28,55 +23,25 @@ claimIds:
 criteria:
   frozenOn: 2026-09-10
   inclusion:
-    - "Primary or peer-reviewed sources: ordnance-gelatin/wound-profile studies,
-      forensic autopsy series reporting perforating vs penetrating outcomes for
-      rifle wounds, wound-ballistics textbooks, hunting-bullet fragmentation
-      studies in real tissue, anthropometric neck measurements, manufacturer
-      external-ballistics tables."
-    - Case-specific facts only from court-reported testimony, official
-      statements, or the case's own verified evidence records (KRK-E009,
-      KRK-E010, KRK-E032, KRK-C006).
-    - Every row carries a verbatim quotation and a locator; a source read only
-      in abstract is labeled so.
+    - "Primary or peer-reviewed sources: ordnance-gelatin/wound-profile studies, forensic autopsy series reporting perforating vs penetrating outcomes for rifle wounds, wound-ballistics textbooks, hunting-bullet fragmentation studies in real tissue, anthropometric neck measurements, manufacturer external-ballistics tables."
+    - Case-specific facts only from court-reported testimony, official statements, or the case's own verified evidence records (KRK-E009, KRK-E010, KRK-E032, KRK-C006).
+    - Every row carries a verbatim quotation and a locator; a source read only in abstract is labeled so.
   exclusion:
-    - Social-media assertions, commentary videos, and back-yard 'tests' are
-      recorded (if at all) as the claims under examination, never as evidence
-      rows.
-    - No medical fact about the decedent beyond what the public court record and
-      on-record statements contain (living-persons rules; the autopsy package is
-      not public).
-    - No number is stated without a cited source; where the literature gives no
-      rate, the study says 'no rate found'.
-  searchProtocol: "PubMed/PMC, DTIC, Springer/Elsevier abstracts, manufacturer
-    ballistics tables, textbook excerpts reachable by web fetch; searches logged
-    in the study; stop when each scenario cell has at least one primary row or a
-    recorded 'no rate found'. Conditioning variables fixed at freeze (the
-    scenarios): S1 bullet construction — (a) full-metal-jacket military-type
-    ball; (b) expanding lead-core soft-point/hunting bullet; (c) lightweight
-    varmint/rapid-fragmenting bullet; (d) monolithic copper expanding. S2 what
-    the bullet struck — (i) soft tissue only (no bone); (ii) cervical spine /
-    vertebra or mandible (dense bone) struck. S3 path length through the neck —
-    short (transverse, ~10-14 cm) vs long (oblique, downward from an elevated
-    firing position, up to ~20 cm+ into the chest/shoulder region). S4 impact
-    velocity — from published external-ballistics tables for common loads at
-    130-200 m; treated as a range, not a point. Output: a scenario table with,
-    per cell, the expected outcome, the sourced basis, and a plain-language
-    rarity statement with explicit uncertainty; no single truth score."
+    - Social-media assertions, commentary videos, and back-yard 'tests' are recorded (if at all) as the claims under examination, never as evidence rows.
+    - No medical fact about the decedent beyond what the public court record and on-record statements contain (living-persons rules; the autopsy package is not public).
+    - No number is stated without a cited source; where the literature gives no rate, the study says 'no rate found'.
+  searchProtocol: "PubMed/PMC, DTIC, Springer/Elsevier abstracts, manufacturer ballistics tables, textbook excerpts reachable by web fetch; searches logged in the study; stop when each scenario cell has at least one primary row or a recorded 'no rate found'. Conditioning variables fixed at freeze (the scenarios): S1 bullet construction — (a) full-metal-jacket military-type ball; (b) expanding lead-core soft-point/hunting bullet; (c) lightweight varmint/rapid-fragmenting bullet; (d) monolithic copper expanding. S2 what the bullet struck — (i) soft tissue only (no bone); (ii) cervical spine / vertebra or mandible (dense bone) struck. S3 path length through the neck — short (transverse, ~10-14 cm) vs long (oblique, downward from an elevated firing position, up to ~20 cm+ into the chest/shoulder region). S4 impact velocity — from published external-ballistics tables for common loads at 130-200 m; treated as a range, not a point. Output: a scenario table with, per cell, the expected outcome, the sourced basis, and a plain-language rarity statement with explicit uncertainty; no single truth score."
   knownCandidates:
-    - name: Fackler wound profiles (J Trauma 1988; International Defense Review 1989;
-        DTIC ADA233190)
+    - name: Fackler wound profiles (J Trauma 1988; International Defense Review 1989; DTIC ADA233190)
       disposition: include
-      reason: the standard gelatin wound-profile data for FMJ and soft-point rifle
-        bullets
+      reason: the standard gelatin wound-profile data for FMJ and soft-point rifle bullets
     - name: Kneubuehl et al., Wound Ballistics — Basics and Applications
       disposition: include
       reason: standard text; used only if a reachable, verifiable excerpt exists
-    - name: Terminal ballistics of 7.62 mm NATO bullets in ordnance gelatin (Int J
-        Legal Med)
+    - name: Terminal ballistics of 7.62 mm NATO bullets in ordnance gelatin (Int J Legal Med)
       disposition: include
       reason: FMJ fragmentation thresholds by impact velocity
-    - name: Hunt et al. 2006 / Grund et al. 2010 / Trinogga et al. 2013 on
-        hunting-bullet fragmentation in deer
+    - name: Hunt et al. 2006 / Grund et al. 2010 / Trinogga et al. 2013 on hunting-bullet fragmentation in deer
       disposition: include
       reason: real-tissue fragmentation and exit data for lead-core hunting bullets
     - name: Spinal gunshot-wound reviews
@@ -93,30 +58,15 @@ criteria:
       reason: rifle and distance as reported
     - name: New York Post 2025 relay of the surgeon (KRK-E032)
       disposition: include
-      reason: the 'no exit wound' relay, already in the ledger as a second-hand
-        statement
+      reason: the 'no exit wound' relay, already in the ledger as a second-hand statement
     - name: Peak Prosperity 'experimental proof' page (Martenson, Nov 2025)
       disposition: exclude
-      reason: the claim under examination; a back-yard test, recorded as a claim,
-        never a row
+      reason: the claim under examination; a back-yard test, recorded as a claim, never a row
     - name: Fox / East Idaho News / KUTV hearing live blogs already in the case file
       disposition: include
       reason: court-reported facts (wound classification, fragments)
   criteriaHash: ab8dc1418a35
-method: For each scenario cell (S1 x S2, with S3 and S4 as stated ranges), state
-  the expected outcome, the sourced basis, and a plain-language statement of how
-  unusual a retained bullet would be, with explicit uncertainty and no single
-  truth score. Rows are the collected data — one row per source, each cell
-  quoting the source verbatim with its locator and verification label; numbers
-  derived by this study (velocity interpolation, equivalent neck diameter,
-  scale-bar readings from reproduced figures) are marked as derived. Animal
-  hunting series are used as analog base rates only where no human series
-  exists, and are labeled as analogs. The public record of the case is then
-  placed in the table by scenario, with every case fact attributed to its source
-  and prosecution statements labeled as assertions (living-persons rules). The
-  study never grades a claim; its findings enter the ledger only through
-  ordinary evidence records citing the workpaper. Either outcome publishes,
-  including "no rate found".
+method: For each scenario cell (S1 x S2, with S3 and S4 as stated ranges), state the expected outcome, the sourced basis, and a plain-language statement of how unusual a retained bullet would be, with explicit uncertainty and no single truth score. Rows are the collected data — one row per source, each cell quoting the source verbatim with its locator and verification label; numbers derived by this study (velocity interpolation, equivalent neck diameter, scale-bar readings from reproduced figures) are marked as derived. Animal hunting series are used as analog base rates only where no human series exists, and are labeled as analogs. The public record of the case is then placed in the table by scenario, with every case fact attributed to its source and prosecution statements labeled as assertions (living-persons rules). The study never grades a claim; its findings enter the ledger only through ordinary evidence records citing the workpaper. Either outcome publishes, including "no rate found".
 columns:
   - source
   - material and conditions
@@ -125,12 +75,400 @@ columns:
   - what was measured
   - result
   - bears on
-rows: []
-findings: []
-limitations: []
-runId: 2026-09-10-study-krk-s006-freeze
-model: Claude Fable 5.1 (Anthropic), via Claude Code (session
-  session_01AiXD4y5Y91KC7iM3uBhWmu)
+rows:
+  - cells:
+      source: "Fackler, Bellamy & Malinowski, 'The wound profile: illustration of the missile-tissue interaction', J Trauma 1988;28(1 Suppl):S21-9"
+      material and conditions: 10% ordnance gelatin at 4 °C in 25 × 25 × 50 cm blocks; the method behind rows 2-4
+      bullet: method row (all calibers)
+      impact velocity: as fired; recorded per profile
+      what was measured: penetration depth, deformation and fragmentation pattern, yaw, temporary cavity
+      result: '"The penetration depth, projectile deformation and fragmentation pattern, yaw, and temporary cavity of the missile in living anesthetized swine muscle are reproduced by this gelatin."'
+      bears on: validity of the gelatin rows for tissue
+    citation:
+      text: J Trauma 1988;28(1 Suppl):S21-9 (abstract read via the Europe PMC record MED:3339689)
+      url: https://europepmc.org/article/MED/3339689
+      locator: abstract
+      verification: ai_verified
+  - cells:
+      source: Fackler, 'Wounding patterns of military rifle bullets', International Defense Review 1989;(1):59-64
+      material and conditions: gelatin wound profiles; uncomplicated thigh and abdominal wounds discussed
+      bullet: 7.62 × 51 mm NATO full-metal-jacket, US version (9.7 g)
+      impact velocity: 862 m/s as printed on the Fig. 9 profile
+      what was measured: point-forward distance before yaw; deformation; total penetration
+      result: "The bullet \"tends to travel point-forward during the first 16cm of the tissue path\"; Fig. 9 caption: \"This bullet does not ordinarily deform on striking soft tissue at any range.\"; on variation: \"Seven out of ten shots can be expected to begin yaw within 25 per cent of this distance\"; \"Bullet mass and bullet striking velocity establish a bullet's potential; they set the limit on the tissue disruption it can produce.\""
+      bears on: "(a)(i): an FMJ over a 10-14 cm path has not yet begun to yaw"
+    citation:
+      text: International Defense Review 1989, no. 1, pp. 59-64; read from the archive.org scan 'wounding_patterns_military_rifles' (pp. 62-63)
+      url: https://ia903201.us.archive.org/7/items/wounding_patterns_military_rifles/wounding_patterns_military_rifles_text.pdf
+      locator: pp. 62-63 and Fig. 9
+      verification: ai_verified
+  - cells:
+      source: Fackler 1989 (as row 2)
+      material and conditions: gelatin wound profiles
+      bullet: 7.62 × 51 mm NATO, West German version (thinner jacket); US M193 5.56 mm
+      impact velocity: as printed on the profiles; M193 fragmentation shown falling off with range
+      what was measured: jacket failure, fragmentation and mass retention of nominally non-expanding bullets
+      result: "The German bullet, \"after travelling point-forward for only about 8cm, yaws and breaks at the cannelure. The flattened point section retains about 55 per cent of the bullet's weight; the remaining 45 per cent becomes fragments\"; M193 profile label \"36% fragmentation\"; caption: \"The M193 is unlikely to break up on striking soft tissue at ranges over 200m.\""
+      bears on: "(a)(ii) and (c): a jacket that fails turns a ball round into a fragmenting one; fragmentation falls with impact velocity"
+    citation:
+      text: International Defense Review 1989, no. 1, p. 62 and Figs. 6-7, 11 (archive.org scan)
+      url: https://ia903201.us.archive.org/7/items/wounding_patterns_military_rifles/wounding_patterns_military_rifles_text.pdf
+      locator: p. 62; Fig. 6, Fig. 7, Fig. 11
+      verification: ai_verified
+  - cells:
+      source: Fackler wound profiles as reproduced on Fr. Frog's 'Terminal Ballistics' page (credited 'courtesy Dr. Martin Fackler and IWBA files')
+      material and conditions: 10% ordnance gelatin per row 1; profiles at muzzle velocity
+      bullet: .30-06 Winchester 150 gr soft point; M80 7.62 NATO 149 gr FMJ; .30-30 Winchester 170 gr Silvertip
+      impact velocity: 2923 ft/s (.30-06 SP); 2730 ft/s (M80); 2020 ft/s (.30-30)
+      what was measured: penetration depth and where fragmentation or yaw begins (this study's reading of the scale bars, ± about 1 cm)
+      result: 'Caption: "Winchester .30-06 150gr Softpoint at 2923 f/s. Note the larger permanent cavity than the .30-30 but almost identical penetration." Read from the image: fragments shed from within the first ~5 cm; the residual expanded bullet (labelled 1.15 cm) stops at the end of a 42 cm scale. M80 caption: "a 149gr FMJ boat tailed bullet at 2730 f/s"; image: point-forward to ~15 cm, bullet at the end of a 65 cm scale. .30-30 image: expanded bullet at ~45 cm.'
+      bears on: "(b)(i): a soft-point's ~40 cm of gelatin penetration is three times a neck's width; (a)(i): FMJ ~65 cm"
+    citation:
+      text: frfrogspad.com/terminal2.htm, images 308sp.jpg, m80.jpg, 3030.jpg — a secondary reproduction of Letterman Army Institute of Research profiles; numbers are scale-bar readings by this study
+      url: https://www.frfrogspad.com/terminal2.htm
+      locator: captions and the three profile images
+      verification: ai_verified
+  - cells:
+      source: Gremse et al., 'Performance of lead-free versus lead-based hunting ammunition in ballistic soap', PLoS ONE 2014;9(7):e102015
+      material and conditions: glycerin ballistic soap blocks 25 × 25 × 40 cm (soap is stiffer than gelatin and under-states tissue penetration); four impact speeds per bullet
+      bullet: Norma Vulkan (NVU) semi-jacketed lead-core deforming, 11.68 g / 180.25 gr; compared with brass, copper-fragmenting and copper-deforming bullets
+      impact velocity: NVU at 500, 600, 700 and 800 m/s
+      what was measured: energy deposited in the block; mass of fragments exiting the block; fragment count; depth of maximum damage
+      result: "\"In our experiments, the bullets released most of their energy in the block (97.5% ± 2.6%).\" \"The relative weight of the exiting fragments at the highest speeds was 99.4% for ILS, 64.9% for TAG, 73.6% for TSX, and 54.7% for NVU\" — at 800 m/s more than half the lead bullet's mass still left a 40 cm soap block. \"The lead-containing bullet creates hundreds of small lead fragments\"; NVU averaged 562.03 ± 456.06 fragments; depth of maximum damage 8.91 ± 1.14 cm for NVU versus 20.31 ± 2.27 cm for the non-deforming brass bullet."
+      bears on: "(b)(i): exit through 40 cm of soap at hunting velocity; (b)(ii): energy release concentrated in the first ~9 cm; (d): copper bullets retain 65-74% of mass and leave few fragments"
+    citation:
+      text: "PLoS ONE 2014;9(7):e102015, doi 10.1371/journal.pone.0102015 (open-access PDF read, pp. 2-6: Methods 'Ballistic Soap Experiments', Table 1, Results 'Energy to Volume Conversion', 'Metal Fragments', 'Cavity Shape')"
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102015
+      doi: 10.1371/journal.pone.0102015
+      locator: pp. 2-6
+      verification: ai_verified
+  - cells:
+      source: Trinogga, Courtiol & Krone, 'Fragmentation of lead-free and lead-based hunting rifle bullets under real life hunting conditions in Germany', Ambio 2019;48(9):1056-1064
+      material and conditions: 297 wild ungulates (chamois, fallow deer, red deer, roe deer, wild boar) shot in ordinary hunting; carcasses imaged for fragments
+      bullet: lead-core and lead-free hunting bullets in '.30-06 Springfield, 9.3 × 62, 8 × 57 IS and .308 Winchester'
+      impact velocity: "hunting ranges: '102 out of 297 shots were done at a distance of up to 50 m, further 161 shots were done at a distance ranging between 51 and 100 m. In the remaining 34 cases, shooting distances were longer than 100 m'"
+      what was measured: number of metal fragments per carcass and their distance from the wound channel; role of bone hits
+      result: Lead-based bullets left "an average of 153 ± 107 (mean ± SD)" fragments per carcass; lead-free deforming bullets left no fragments in "106 out of 126 cases"; "Bone hits were not required for the production of a large number of fragments."
+      bears on: "(b): a lead-core hunting bullet sheds ~150 fragments even without bone — fragments in the body are the norm, not a sign of an unusual event; (d): copper bullets do not"
+    citation:
+      text: Ambio 2019;48(9):1056-1064, doi 10.1007/s13280-019-01168-z (open access at PMC6675795; Results read)
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6675795/
+      doi: 10.1007/s13280-019-01168-z
+      locator: Results
+      verification: ai_verified
+  - cells:
+      source: "Hunt et al., 'Lead bullet fragments in venison from rifle-killed deer: potential for human dietary exposure', PLoS ONE 2009;4(4):e5330"
+      material and conditions: 30 white-tailed deer shot by hunters under normal conditions; 26 of 30 shot in the thorax; radiographed
+      bullet: 7 mm Remington Magnum, 150 gr (9,720 mg), lead core (68% of mass) with copper jacket
+      impact velocity: "'Reported shot distances averaged 116 m (range = 25-172 m)'"
+      what was measured: whether any part of the projectile exited; fragment counts and spread
+      result: '"some portion of the projectile exited the animal in 92% of shots"; carcasses held "metal fragments (geometric mean = 136 fragments, range = 15-409)"; "maximum single fragment separation was 45 cm".'
+      bears on: "(b)(i) analog base rate: in a deer chest — a far longer path than a neck — the bullet failed to exit in about 1 shot in 12"
+    citation:
+      text: PLoS ONE 2009;4(4):e5330, doi 10.1371/journal.pone.0005330 (open access at PMC2669501; Results read)
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2669501/
+      doi: 10.1371/journal.pone.0005330
+      locator: Results
+      verification: ai_verified
+  - cells:
+      source: Hampton et al., 'A comparison of lead-based and lead-free bullets for shooting sambar deer (Cervus unicolor) in Australia', Wildlife Research 2023;50:632-641
+      material and conditions: sambar deer, 'Australia's largest deer species (140 kg for females, 220 kg for males)'; thoracic shots; 'Most deer (98%) were shot at a range of <300 m'
+      bullet: 124 lead-based and 152 lead-free bullets across 13 cartridge types, calibers .270-.450
+      impact velocity: hunting ranges under 300 m
+      what was measured: proportion of bullet tracts with an exit wound, by bullet type
+      result: "\"the proportion of bullet tracts producing exit wounds was 0.96 for lead-free and 0.58 for lead-based bullets\"; authors' explanation: \"Bullets that deform and/or fragment to a lesser degree or more slowly tend to achieve deeper penetration of animal tissues.\""
+      bears on: "(b)(ii) analog: 42% of lead-core hunting bullets did not exit very large animals even on chest shots; (d): copper bullets exited 96%"
+    citation:
+      text: Wildlife Research 2023;50:632-641, doi 10.1071/WR22099 (Results and Discussion read at connectsci.au)
+      url: https://doi.org/10.1071/WR22099
+      doi: 10.1071/WR22099
+      locator: Results (exit wounds); Discussion
+      verification: ai_verified
+  - cells:
+      source: Hampton et al., 'A comparison of fragmenting lead-based and lead-free bullets for aerial shooting of wild pigs', PLoS ONE 2021;16(3):e0247785
+      material and conditions: wild pigs of mean body mass ~70 kg shot from helicopters; ballistic testing at 50 m
+      bullet: .308 Winchester Speer 130 gr non-bonded hollow-point (lead) versus 115 gr copper Controlled Chaos
+      impact velocity: short aerial ranges (rifles zeroed at 30 m)
+      what was measured: fragment number and size; exit wounds
+      result: 'Lead-based: "median number of fragments = >300", all fragments "small (< 1 mm)"; lead-free: median 54.6, "large (>5 mm)"; "Determining the presence or absence of exit wounds was found to be infeasible for animals that were shot multiple times".'
+      bears on: "(c): a light non-bonded hollow-point disintegrates; no exit rate available"
+    citation:
+      text: PLoS ONE 2021;16(3):e0247785, doi 10.1371/journal.pone.0247785 (Results read)
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247785
+      doi: 10.1371/journal.pone.0247785
+      locator: Results
+      verification: ai_verified
+  - cells:
+      source: "Di Maio, Gunshot Wounds: Practical Aspects of Firearms, Ballistics, and Forensic Techniques, 2nd ed., CRC Press 1999 (ISBN 0849381630)"
+      material and conditions: forensic-pathology textbook, chapter on centerfire rifle wounds
+      bullet: hunting (soft-point / hollow-point) centerfire rifle bullets
+      impact velocity: rifle velocities generally; 'dependent on the velocity of the bullet'
+      what was measured: "described behaviour: expansion, lead shedding ('lead snowstorm'), effect of bone, exit wounds, jacket retention"
+      result: 'p. 77: "Soft-point and hollow-point centerfire rifle bullets not only tend to expand as they go through the body, but also shed lead fragments from the core"; p. 186: "A hunting bullet is designed to deform in its passage through the body, producing an increase in its presenting area"; p. 204: "As the expanding hunting bullet moves through the body, fragments of lead break off the lead core and are hurled out into the surrounding tissues."; p. 205: "The lead snowstorm from hunting ammunition is dependent on the velocity of the bullet."; p. 196: "Anything that tends to produce instability, deformation or breakup of the bullet as it enters the head results in more extensive injuries. Thus, bullets entering through the thick occipital bone cause greater injuries than those entering the temporal area."; p. 212: "Exit wounds are variable in size, sometimes indistinguishable from those from handgun bullets, though at other times too large."; p. 397: "The jacket may be retained beneath the skin adjacent to the exit site."'
+      bears on: "(b)(i)-(ii): expansion and lead shedding are the design behaviour; dense bone increases breakup; jackets lodge under the skin"
+    citation:
+      text: Di Maio VJM, Gunshot Wounds, 2nd ed. (CRC Press, 1999); sentences located through the archive.org full-text index of a scanned copy (item Gunshot_Wounds_Practical_Aspects_Of_Firearms_Ballistics_Forensic_Techniques); page numbers are the index's, not checked against a physical copy
+      url: https://archive.org/details/Gunshot_Wounds_Practical_Aspects_Of_Firearms_Ballistics_Forensic_Techniques
+      locator: pp. 77, 186, 196, 204, 205, 212, 397 (as indexed)
+      verification: ai_verified
+  - cells:
+      source: Bono & Heary, 'Gunshot wounds to the spine', The Spine Journal 2004;4(2):230-240
+      material and conditions: clinical review of spinal gunshot wounds
+      bullet: fully jacketed versus partially/non-jacketed and hollow-point bullets
+      impact velocity: low- and high-velocity weapons discussed
+      what was measured: "described behaviour: deformation, fragmentation, retained bullets, cervical outcomes"
+      result: 'p. 231: "Fully jacketed bullets exhibit little deformation with firing and are designed for accuracy to hit long-range targets. They are highly precise and incur clean exit and entrance wounds. Partially or nonjacketed missiles expand on tissue impact and, like hollow-point bullets, exponentially extend the circumference of tissue damage."; "Fragmentation of the missile can increase the zone of tissue destruction."; p. 232: "Often, only an entrance hole can be found if the bullet is lodged in tissue."; p. 235: "Approximately 59% of penetrating cervical spine injuries result in complete spinal cord injury, compared with 49% for blunt trauma".'
+      bears on: "(a) versus (b): construction decides deformation; (b)(ii): a lodged bullet leaves only an entrance wound"
+    citation:
+      text: The Spine Journal 2004;4(2):230-240, doi 10.1016/S1529-9430(03)00178-5 (full PDF read, pp. 231-235)
+      url: https://neurosurgery.med.wayne.edu/pdf/nm_-_gsw_spine_spine_j_2004.pdf
+      doi: 10.1016/S1529-9430(03)00178-5
+      locator: pp. 231, 232, 235
+      verification: ai_verified
+  - cells:
+      source: Knudsen & Theilade, 'Terminal ballistics of the 7.62 mm NATO bullet. Autopsy findings', Int J Legal Med 1993;106(2):61-67
+      material and conditions: all autopsied deaths from the Danish 7.62 × 51 mm bullet in Denmark since 1975; autopsy reports and police-retrieved bullets
+      bullet: 7.62 × 51 mm NATO FMJ, Danish manufacture (weak jacket)
+      impact velocity: "'ranges encountered in forensic practice'"
+      what was measured: whether retrieved or through-passing bullets had fragmented
+      result: '"With one exception, all bullets that were found in, or known to have passed through the body, had fragmented." The fragments "may leave the body through several separate exit wounds".'
+      bears on: "(a)(ii): FMJ fragmentation and both retained and exited outcomes occur in a national autopsy series"
+    citation:
+      text: Int J Legal Med 1993;106(2):61-67, doi 10.1007/BF01225042 (abstract read via Europe PMC)
+      url: https://doi.org/10.1007/BF01225042
+      doi: 10.1007/BF01225042
+      locator: abstract
+      verification: ai_verified
+  - cells:
+      source: "Knudsen, Vigsnæs, Rasmussen & Nissen, 'Terminal ballistics of 7.62 mm NATO bullets: experiments in ordnance gelatin', Int J Legal Med 1995;108(2):62-67"
+      material and conditions: ordnance gelatin at various ranges
+      bullet: 7.62 × 51 mm NATO FMJ from the US, Bofors, Raufoss and the Danish AMA
+      impact velocity: approx. 715 m/s at ~100 m; approx. 810 m/s at 2.5 m
+      what was measured: fragmentation threshold by impact velocity
+      result: The Danish M/75 "was found to fragment at ranges up to approx. 100 m, corresponding to impact velocities of approx. 715 m/sec, while all the other 3 types of bullets were intact at ranges down to 2.5 m, corresponding to impact velocities of approx. 810 m/sec."
+      bears on: "(a): at 713-762 m/s a sound FMJ jacket stays intact in soft tissue; a weak one may not"
+    citation:
+      text: Int J Legal Med 1995;108(2):62-67, doi 10.1007/BF01369906 (abstract read via Europe PMC record MED:8547160)
+      url: https://doi.org/10.1007/BF01369906
+      doi: 10.1007/BF01369906
+      locator: abstract
+      verification: ai_verified
+  - cells:
+      source: Mahoney, Carr, Miller & Teagle, 'The effect of helmet materials and simulated bone and tissue layers on bullet behaviour in a gelatine model of overmatch penetrating head injury', Int J Legal Med 2017;131(6):1765-1776
+      material and conditions: 10% gelatine blocks 250 × 250 × 500 mm behind synthetic bone (SYNBONE) or horse scapula layers
+      bullet: 7.62 × 39 mm FMJ
+      impact velocity: standard conditions for the cartridge
+      what was measured: distance to 90° yaw ('neck length'); fragmentation; perforation of the block
+      result: Neck length 96.7 mm (SD 10.3) in plain gelatine versus 149.0 mm (SD 16.7) behind synthetic bone; "The bullets passed through all the intermediate layers and perforated the gelatine blocks… None of the bullets were seen to fragment on the high-speed images."
+      bears on: "(a)(ii): a thin bone layer delays yaw and does not stop an intact-jacket rifle bullet; a vertebral body is a thicker target than the plates tested"
+    citation:
+      text: Int J Legal Med 2017;131(6):1765-1776, doi 10.1007/s00414-017-1665-8 (open access at PMC5635073; Results read)
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5635073/
+      doi: 10.1007/s00414-017-1665-8
+      locator: Results
+      verification: ai_verified
+  - cells:
+      source: "Baum, Baum, Hayward & MacKay, 'Gunshot wounds: ballistics, pathology, and treatment recommendations, with a focus on retained bullets', Orthopedic Research and Reviews 2022;14:293-317"
+      material and conditions: clinical review
+      bullet: "'military grade firearms' and deforming bullets in civilian trauma"
+      impact velocity: high-velocity weapons generally
+      what was measured: qualitative association with retained bullets
+      result: '"these weapons are associated with increased tissue damage and often result in retained bullets".'
+      bears on: "(b)-(c): retained bullets are a recognized clinical pattern for high-velocity deforming ammunition (qualitative; no rate)"
+    citation:
+      text: Orthop Res Rev 2022;14:293-317, doi 10.2147/ORR.S378278 (abstract read via Europe PMC record MED:36090309)
+      url: https://doi.org/10.2147/ORR.S378278
+      doi: 10.2147/ORR.S378278
+      locator: abstract
+      verification: ai_verified
+  - cells:
+      source: Noble et al., 'Anatomical change during radiotherapy for head and neck cancer, and its effect on delivered dose to the spinal cord', Radiotherapy and Oncology 2019;130:32-38
+      material and conditions: 132 head-and-neck cancer patients (112 men); caliper measurements of lateral neck diameter on CT at the C1 vertebra and the superior thyroid notch
+      bullet: not applicable (anthropometry)
+      impact velocity: not applicable
+      what was measured: baseline lateral (side-to-side) neck diameter
+      result: Baseline lateral neck diameter 123.4 mm (95% CI 118.7-128.1) at the superior thyroid notch and 154.3 mm (152.1-156.5) at C1.
+      bears on: "S3: a side-to-side path at the level of the larynx is about 12 cm in this (possibly thinner-than-average) population"
+    citation:
+      text: Radiother Oncol 2019;130:32-38, doi 10.1016/j.radonc.2018.07.009 (open access at PMC6358720; baseline table read)
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6358720/
+      doi: 10.1016/j.radonc.2018.07.009
+      locator: baseline anatomical metrics table
+      verification: ai_verified
+  - cells:
+      source: Ben-Noun, Sohar & Laor, 'Neck circumference as a simple screening measure for identifying overweight and obese patients', Obesity Research 2001;9(8):470-477
+      material and conditions: clinical anthropometry
+      bullet: not applicable
+      impact velocity: not applicable
+      what was measured: neck circumference screening cut-offs in men
+      result: "A neck circumference of 37 cm or more in men identified most subjects with BMI ≥ 25, and 39.5 cm or more most subjects with BMI ≥ 30. Derived by this study (the neck is not a circle): a circumference of 37-39.5 cm corresponds to an equivalent circular diameter of 11.8-12.6 cm."
+      bears on: "S3: an independent check on the ~12 cm path length"
+    citation:
+      text: Obes Res 2001;9(8):470-477, doi 10.1038/oby.2001.61 (abstract read)
+      url: https://doi.org/10.1038/oby.2001.61
+      doi: 10.1038/oby.2001.61
+      locator: abstract
+      verification: ai_verified
+  - cells:
+      source: Remington Core-Lokt .30-06 Springfield 150 gr pointed soft point — manufacturer's ballistics table
+      material and conditions: published external-ballistics table
+      bullet: "150 gr pointed soft point Core-Lokt; design statement: 'tapered copper jacket is locked to a solid lead core delivering massive 2X expansion, weight retention and consistent on-game results'"
+      impact velocity: muzzle 2910 fps / 2820 ft·lb; 100 yd 2617 / 2280; 200 yd 2341 / 1826; 300 yd 2083 / 1446
+      what was measured: velocity and energy by range
+      result: "Linear interpolation by this study: 142 yd ≈ 2,500 fps (≈762 m/s); 175 yd ≈ 2,410 fps (≈735 m/s); 200 yd = 2,341 fps (≈713 m/s); energy ≈ 1,830-2,100 ft·lb."
+      bears on: "S4: the impact-velocity band for every scenario; the bullet named in the secondary reports of the exhibit"
+    citation:
+      text: remington.com product page 29-27826 (fetched 2026-09-10)
+      url: https://www.remington.com/rifle/shop-by-caliber/shop-all-calibers/29-27826.html
+      locator: ballistics table
+      verification: ai_verified
+  - cells:
+      source: Federal Power-Shok .30-06 Springfield 150 gr jacketed soft point (3006A) — manufacturer's ballistics table
+      material and conditions: published external-ballistics table
+      bullet: 150 gr jacketed soft point, ballistic coefficient .313
+      impact velocity: muzzle 2910 fps / 2820 ft·lb; 100 yd 2616 / 2279; 200 yd 2340 / 1823; 300 yd 2081 / 1442
+      what was measured: velocity and energy by range
+      result: Agrees with the Remington table to within 1 fps at every range, so the interpolated band in the previous row does not depend on the brand.
+      bears on: S4
+    citation:
+      text: federalpremium.com product page 11-3006A (fetched 2026-09-10)
+      url: https://www.federalpremium.com/rifle/power-shok/11-3006A.html
+      locator: ballistics table
+      verification: ai_verified
+  - cells:
+      source: "Peonim et al., 'Entrance and exit wounds of high velocity bullet: an autopsy analysis in the event of dispersing the mass rally in Bangkok Thailand, May 2010', Legal Medicine 2016;23:10-16"
+      material and conditions: 27 forensic autopsies, 32 shots
+      bullet: 5.56 × 45 mm FMJ (M16)
+      impact velocity: not stated in the abstract
+      what was measured: entrance and exit wound morphology
+      result: '"twenty-three (71.88%) typical entrance HVB wounds had round sizes less than the bullet diameters"; exit wounds "of various sizes and shapes depending on which section of wound ballistics presented when the bullet exited the body"; no retention rate reported.'
+      bears on: "(a)(i) context: exit wounds are the described norm for intact-jacket FMJ; the series gives no retained-versus-exited count (recorded as a failed search for a rate)"
+    citation:
+      text: Legal Med (Tokyo) 2016;23:10-16, doi 10.1016/j.legalmed.2016.08.010 (abstract read via Europe PMC)
+      url: https://doi.org/10.1016/j.legalmed.2016.08.010
+      doi: 10.1016/j.legalmed.2016.08.010
+      locator: abstract
+      verification: ai_verified
+  - cells:
+      source: CASE RECORD — CNN, Andi Babineau and Emma Tucker, 'Here's what unfolded in court before Charlie Kirk's accused killer pleaded not guilty — and what comes next', Sept. 1, 2026
+      material and conditions: preliminary-hearing closing argument; the prosecutor relaying the medical examiner's report, which is confidential under Utah statute
+      bullet: the fatal bullet
+      impact velocity: not stated
+      what was measured: an assertion by the prosecution about the wound path
+      result: "\"the bullet Robinson allegedly fired struck Kirk's spine and shattered.\""
+      bears on: placement of the record in S2(ii); an assertion by the prosecution, not the report itself
+    citation:
+      text: CNN, Sept. 1, 2026 (Babineau & Tucker), read via the syndicated copy at keyt.com; cnn.com returned HTTP 451 to this operator
+      url: https://keyt.com/news/national-world/cnn-national/2026/09/01/heres-what-unfolded-in-court-before-charlie-kirks-accused-killer-pleaded-not-guilty-and-what-comes-next/
+      locator: section on prosecutor McBride's closing argument
+      verification: ai_verified
+    independenceNote: post-freeze discovery; the same proceeding is reported by every outlet in the case file — one source of fact, not several
+  - cells:
+      source: CASE RECORD — KUTV, Derick Fox, 'Damaged bullet jacket, fragments tested in inconclusive ballistic report in Kirk killing', April 16, 2026 (updated April 17)
+      material and conditions: the ATF firearms report as attached to the defense's January 2026 motion
+      bullet: the fragments recovered at autopsy; the cartridge case from the rifle
+      impact velocity: not stated
+      what was measured: the fragment inventory examined and the examiner's conclusion
+      result: The ATF analyzed "a deformed/damaged bullet jacket fragment, as well as four lead fragments"; the lead fragments "were not suitable for a microscopic comparison"; the jacket fragment showed neither "sufficient agreement nor sufficient disagreement of individual characteristics to allow the examiner to identify or exclude the rifle in question"; the report also covered "a .30-06 cartridge case that was identified as having been fired from the rifle linked to Robinson."
+      bears on: "placement: jacket-core separation with several lead fragments is the (b)(ii) pattern; it argues against (d) (a copper bullet leaves no lead fragments)"
+    citation:
+      text: kutv.com, April 16-17, 2026 (Derick Fox); a press account of a filed report — the report itself was not read
+      url: https://kutv.com/news/local/damaged-bullet-jacket-fragments-tested-in-inconclusive-ballistic-report-in-kirk-killing
+      locator: paragraphs describing the ATF report's contents
+      verification: ai_verified
+    independenceNote: post-freeze discovery replacing the ABC4 report named at freeze (abc4.com returned HTTP 403); same underlying document
+  - cells:
+      source: CASE RECORD — Fox News, Brie Stimson, 'Charlie Kirk ally reveals absolute miracle that may have saved lives during fatal shooting', Sept. 20, 2025; New York Post, Sept. 21, 2025 (quoted in KRK-E032)
+      material and conditions: a spokesman relaying an unnamed surgeon; no medical document
+      bullet: the fatal bullet, described as 'a high powered, high velocity round'
+      impact velocity: not stated
+      what was measured: what was relayed about exit and the bullet's resting place
+      result: "The surgeon, per Kolvet: the bullet \"'absolutely should have gone through, which is very very normal for a high powered, high velocity round'\"; \"'I've seen wounds from this caliber many times and they always just go through everything. This would have taken a moose or two down, an elk, etc.'\"; New York Post (via KRK-E032): \"In the end, the coroner did find the bullet just beneath the skin.\""
+      bears on: placement ('beneath the skin' = the lodged-bullet pattern of rows 10-11); the 'always goes through' assertion is the claim examined in finding 3
+    citation:
+      text: foxnews.com, Sept. 20, 2025 (Brie Stimson); nypost.com, Sept. 21, 2025 as quoted in case record KRK-E032 (nypost.com is unreachable to this operator)
+      url: https://www.foxnews.com/us/charlie-kirk-ally-reveals-absolute-miracle-may-have-saved-lives-during-fatal-shooting
+      locator: Kolvet's quoted posts
+      verification: ai_verified
+  - cells:
+      source: CASE RECORD — NBC News, Rich Schapiro, 'Charlie Kirk's assassin likely not an expert marksman, former ATF agents say', Sept. 11, 2025
+      material and conditions: distance as attributed to authorities on the day after the shooting
+      bullet: "'a high-powered bolt-action rifle'"
+      impact velocity: derived from the distance (row 18)
+      what was measured: shot distance
+      result: '"Authorities said the gunman is believed to have fired the shot from the rooftop of a campus building, a position roughly 175 yards away from Kirk, who was seated under a tent in an outdoor amphitheater."'
+      bears on: "S4: ~175 yd → ≈2,410 fps for a 150 gr load"
+    citation:
+      text: nbcnews.com, Sept. 11, 2025 (Rich Schapiro)
+      url: https://www.nbcnews.com/news/us-news/charlie-kirks-assassin-likely-not-expert-marksman-former-atf-agents-sa-rcna230564
+      locator: paragraph on the shooting position
+      verification: ai_verified
+  - cells:
+      source: CASE RECORD — NBC News, Rebecca Cohen and Phil Helsel, 'What we know after Charlie Kirk shot dead', Sept. 11-12, 2025; Fox News, 'What to know about Utah Valley University's Losee Center', Sept. 2025
+      material and conditions: distance and rifle as attributed to officials
+      bullet: "'a Mauser model 98 bolt-action rifle'"
+      impact velocity: derived from the distance (row 18)
+      what was measured: shot distance; rifle
+      result: 'NBC: "The gunman appeared to have fired the fatal shot from the rooftop of a building about 200 yards from where Kirk was speaking to a crowd of thousands."; "The shooter used a Mauser model 98 bolt-action rifle, Cox said Friday, a high-powered weapon that had a scope mounted onto it." Fox: "Authorities confirmed Wednesday the shot that killed Kirk came from the roof of a campus building about 200 yards away from where Kirk was delivering his remarks."'
+      bears on: "S4: ~200 yd → ≈2,340 fps; K1 (rifle)"
+    citation:
+      text: nbcnews.com (Cohen & Helsel, rcna230552); foxnews.com Losee Center explainer — both fetched 2026-09-10
+      url: https://www.nbcnews.com/news/us-news/know-charlie-kirks-assassination-rcna230552
+      locator: paragraphs on the shooting position and the rifle
+      verification: ai_verified
+    independenceNote: the 175-yard and 200-yard figures come from the same investigative statements on different days; a third figure, 142 yards, circulates via Wikipedia's citation of the Washington Post and could not be verified by this study (washingtonpost.com returned HTTP 403)
+  - cells:
+      source: CASE RECORD — The Western Journal, Randy DeSoto, July 9, 2026; The Daily Wire, Chris Loesch, July 10, 2026; Deseret News, Eva Terry and Emma Pitts, 'What we learned during Tyler Robinson's preliminary hearing', July 10, 2026
+      material and conditions: press descriptions of a cartridge exhibit photographed in court, versus mainstream hearing coverage
+      bullet: reported by the first two as 'Remington Cor-Lokt soft point round' with a 'Remington headstamp on the case' and 'Remington .30-06 150-grain Core-Lokt jacketed soft point'; the Deseret account names only 'one .30-06 cartridge case and several .30-06 cartridges'
+      impact velocity: not applicable
+      what was measured: the bullet construction, if it can be read from the exhibit
+      result: Two secondary accounts identify a Remington Core-Lokt soft point from an exhibit photograph; no transcript, exhibit list, or mainstream report examined by this study names the bullet type.
+      bears on: "S1: scenario (b) is the construction those accounts describe — carried as UNVERIFIED, not as established"
+    citation:
+      text: westernjournal.com (DeSoto, July 9, 2026); dailywire.com (Loesch, July 10, 2026); deseret.com (Terry & Pitts, July 10, 2026) — all fetched 2026-09-10; the first two are partisan outlets used only for their description of the exhibit
+      url: https://www.deseret.com/politics/2026/07/10/tyler-robinson-preliminary-hearing-charlie-kirk-assassination-utah-court/
+      locator: exhibit description paragraphs
+      verification: unverified
+    independenceNote: post-freeze discovery; the two outlets naming the brand may share a single analyst's reading of the same photograph
+  - cells:
+      source: CASE RECORD — Utah DPS / FBI joint press conference, Sept. 11, 2025 (Rev.com transcript, case source SRC-REV-PRESSER-0910-2025)
+      material and conditions: official statement on the firing position
+      bullet: not stated ('What kind of weapon was used?' was not answered)
+      impact velocity: not stated
+      what was measured: elevation of the firing position
+      result: 'Commissioner Mason: "Potentially from a roof, yes. A longer distance shot from a roof." No distance in yards, no building height, no wound description.'
+      bears on: "S3: an elevated shot; the building's height was not found in any source examined, so the downward angle is not computed"
+    citation:
+      text: rev.com transcript 'Press Conference on Charlie Kirk Shooting' (fetched 2026-09-10); already in the case file as SRC-REV-PRESSER-0910-2025
+      url: https://www.rev.com/transcripts/press-conference-on-charlie-kirk-shooting
+      locator: Mason's answer on the firing position
+      verification: ai_verified
+findings:
+  - statement: 'Scenario (a)(i), a full-metal-jacket bullet through soft tissue only: exit is all but certain. A 10-14 cm side-to-side neck path (rows 16-17) is shorter than the ~15-16 cm an intact-jacket 7.62 mm bullet travels before it even begins to yaw, and a fraction of its ~65 cm of gelatin penetration (rows 2, 4); sound jackets stay intact at 810 m/s (row 13). No human series gives a rate, and none is needed: there is no mechanism in the sources for stopping such a bullet within 14 cm of soft tissue. This is the one scenario in which "it should have gone through" is well founded — and a retained, shattered bullet would be genuinely anomalous.'
+  - statement: "Scenario (a)(ii), full-metal-jacket against a cervical vertebra: usually still exits, but not always. A thin bone layer delayed yaw and did not stop a 7.62 × 39 mm bullet in 50 cm of gelatine (row 14); yet jacket failure on high-velocity impact is documented — all but one bullet in a national autopsy series of one 7.62 NATO make had fragmented, with both retained and exited outcomes (rows 3, 12, 13). Retention after a vertebral-body strike is uncommon but documented; no rate was found."
+  - statement: "Scenario (b)(i), an expanding lead-core soft-point through soft tissue only: the main mass exits and a shower of small lead fragments stays behind. The .30-06 150 gr soft point penetrates ~42 cm of gelatin at muzzle velocity (row 4); a 180 gr lead-core deforming bullet passed through 40 cm of ballistic soap at 800 m/s with 55% of its mass still exiting (row 5); in deer chests — a far longer path than a neck — some part of the bullet exited in 92% of shots at an average of 116 m (row 7), and even in 140-220 kg sambar deer lead-core bullets exited 58% of the time (row 8). Retention of the main mass over a neck path would be unusual, plausibly rarer than 1 in 10 given the analogs' thicker targets; ~150 fragments left in the body is the norm (row 6)."
+  - statement: 'Scenario (b)(ii), an expanding lead-core soft-point that strikes the cervical spine: retention with fragmentation and jacket-core separation is the ordinary, textbook outcome, not an anomaly. The bullet is designed to deform and shed lead (row 10), releases most of its energy early (depth of maximum damage ~9 cm in soap, row 5), breaks up more on dense bone (row 10, p. 196), and when it stops "often, only an entrance hole can be found" (row 11), the jacket lodging under the skin (row 10, p. 397). The best available rate is an animal analog: 42% of lead-core hunting bullets did not exit very large deer even on chest shots (row 8); no human series of expanding rifle bullets in the neck with a vertebral strike was found, so no tighter number is claimed. A clinical review describes high-velocity deforming ammunition as one that "often result[s] in retained bullets" (row 15).'
+    evidenceId: KRK-E065
+  - statement: 'Scenarios (c) and (d): a light, non-bonded hollow-point disintegrates (>300 fragments in a 70 kg pig, row 9; 36% fragmentation for M193 at close range, row 3), so retention is expected, with no rate found. A monolithic copper bullet expands without shedding lead and exits even very large deer 96% of the time (row 8) while leaving no fragments in 106 of 126 cases (row 6); retention would be unusual, and the "four lead fragments" the ATF describes (row 22) are not what a copper bullet leaves.'
+  - statement: "Path length and velocity (S3, S4): a lateral neck diameter of about 12 cm at the larynx (row 16; 11.8-12.6 cm from circumference cut-offs, row 17) makes a side-to-side path 10-14 cm. At 142-200 yards a 150 gr load arrives at roughly 2,340-2,500 fps (713-762 m/s) with 1,830-2,100 ft·lb (rows 18-19) — far above the velocities at which soft-point bullets expand and shed lead, and inside the band where FMJ jackets are tested. Heavier loads arrive 100-250 fps slower without changing any cell. A long oblique path (downward into the chest) would move every \"exits\" cell toward \"retained\"; the building's height was not found (row 27), so the angle is not computed, and over 130-183 m a roof a few stories high gives a shallow angle in any case."
+  - statement: "Placing the record: as it stands, the public record describes a .30-06 rifle (row 25 and KRK-C002), a neck gunshot wound with fragments recovered at autopsy (KRK-C006, KRK-E005), a bullet that in the prosecution's words relaying the ME report \"struck Kirk's spine and shattered\" (row 21 — an assertion, the report itself being confidential), one deformed jacket fragment plus four lead fragments examined and seven photographed (row 22, KRK-E009), a bullet relayed second-hand as found \"just beneath the skin\" (row 23, KRK-E032), and — in unverified secondary accounts of an exhibit — a Remington Core-Lokt soft point (row 26). That is cell (b)(ii), where the sources make retention the expected outcome. The intuition that \"a .30-06 always goes through\" is correct for cells (a)(i) and (b)(i) and wrong for the cell the record describes. What would move the case out of (b)(ii): evidence that the bullet was full-metal-jacket; evidence that no bone was struck; or a fragment inventory whose recovered mass is inconsistent with a 150 gr bullet. Nothing here bears on who fired the shot."
+    evidenceId: KRK-E065
+  - statement: The claim under examination (Peak Prosperity, Chris Martenson, "Experimental proof…", Nov. 7, 2025 — excluded from the rows by the frozen criteria as a back-yard test) describes shooting pork "picnic" roasts, some "bone-in", with 150 gr FMJ, 180 gr ballistic-tip and 220 gr soft-point loads from a Remington 700 at about 100 yards, 38 shots, and reports that "no bullets were stopped or even meaningfully deflected", concluding "a human neck could not have stopped a .30-06 round". Read against the table, the test reproduces cells (a)(i) and (b)(i) and a limb-bone strike inside a roast; it does not reproduce a cervical vertebral body in situ, does not report the roasts' thickness or the impact velocities, and its 100-yard range gives roughly 100 fps more velocity than 175 yards. Its result agrees with the sources for the cells it tested and says nothing about cell (b)(ii). The surgeon's relayed statement that this caliber "always just go[es] through everything" (row 23) is contradicted by rows 7, 8 and 10 for expanding bullets; both circulating claims fail for the same reason — neither conditions on bullet construction and bone.
+  - statement: "Failed searches (§3.11 at study grain): no human forensic or trauma series was found reporting retention versus exit for expanding rifle bullets in the neck; neck-wound series are handgun-dominated, military series are FMJ (rows 12, 13, 20), and a Europe PMC query for hunting rifle or hunting ammunition with exit wound or perforating and autopsy returned nothing relevant. The following were blocked or unreadable to this operator and are therefore absent or abstract-only: abc4.com (403), nypost.com, cnn.com (451), washingtonpost.com (403), sciencedirect.com (403), link.springer.com (login redirect), apps.dtic.mil (403), pubmed.ncbi.nlm.nih.gov (cookie wall; Europe PMC used instead). Kneubuehl's Wound Ballistics, named at freeze, was not reachable and is not used."
+limitations:
+  - Every base rate in the table is an animal analog (deer, pigs, wild ungulates) or a simulant (gelatin, soap); no human series gives a retention rate for expanding rifle bullets in the neck. Analogs are labeled and their target sizes stated; the neck is thinner than every analog target, which pushes exit rates up, while a vertebral strike pushes them down.
+  - The Fackler wound profiles are read from a secondary reproduction (row 4) and at muzzle velocity; at 713-762 m/s a soft point fragments somewhat less and penetrates somewhat more, which strengthens the exit expectation in cell (b)(i) and does not change cell (b)(ii).
+  - Di Maio's page numbers come from the archive.org full-text index of a scanned copy of the 1999 edition and were not checked against a physical copy; the sentences themselves are quoted as indexed.
+  - Rows 1, 12, 13, 15, 17 and 20 were read in abstract only; their labels say so.
+  - "Every case fact is second-hand to the primary medical and forensic records: the autopsy report is confidential (KRK-C007), the spine strike is the prosecution's characterization of it (row 21), the ATF report was read through a press account (row 22), the ammunition type rests on secondary accounts of an exhibit photograph and is carried as unverified (row 26), the distance is a 142-200 yard range from official statements on different days (rows 24-25), the building's height was not found, and the left-side entry widely reported from video was not verified against a primary record."
+  - Derived numbers — velocity interpolation, equivalent neck diameter, scale-bar readings — carry ± several percent and are marked as derived in the cells.
+  - "The literal search queries were not pre-registered; the frozen protocol named the sources and the stopping rule. The queries run are listed here verbatim: 'Charlie Kirk shooting distance yards Losee Center roof rifle .30-06 charging document Robinson'; 'Tyler Robinson rifle cartridges ammunition type .30-06 soft point hunting rounds engraved FBI Mauser'; 'forensic study rifle gunshot wounds perforating versus penetrating retained bullet percentage hunting rifle autopsy series'; 'Fackler wound profile .30-06 soft point ballistic gelatin penetration depth fragmentation 7.62 NATO FMJ 20 cm yaw'; 'gunshot wounds cervical spine bullet retained versus exit high velocity rifle series percentage'; 'adult male neck anteroposterior diameter cm measurement study sagittal neck depth'; 'Robinson defense filing ATF firearms report inconclusive fragments described jacket lead grain core'; 'Kolvet surgeon Charlie Kirk bullet man of steel bone should have gone through'; 'Robinson preliminary hearing autopsy testimony bullet entered left side of neck trajectory spine fragments'; 'Fackler wound profile .30-06 soft point 150 gr penetration cm fragmentation gelatin'; 'Hunt 2006 bullet fragments deer carcasses lead fragmentation Grund 2010 Trinogga 2013 retained mass'; 'Federal Power-Shok 30-06 150 grain soft point ballistics table'; 'WDMET Vietnam rifle bullet wounds perforating penetrating percentage'; 'penetrating neck injury gunshot series exit wound through-and-through transcervical percentage rifle'; 'civilian high-velocity rifle gunshot wounds series retained bullet perforating exit trauma center'; 'neck circumference adult men mean cm Ben-Noun 2001'; 'Kirk bullet struck spine shattered hearing testimony'; 'Fackler Wounding patterns of military rifle bullets'; 'Terminal ballistics of 7.62 mm NATO bullets ordnance gelatin'; 'neck separation lateral diameter radiotherapy larynx'; 'Utah DPS Mason FBI yards roof Losee Center shot distance official statement'; 'forensic autopsy series rifle homicides exit wound hunting rifle centerfire rifle retained bullets'; 'gelatin with synthetic bone rifle bullet penetration'; 'hunting study exit wound present percentage of animals rifle bullets deer'; 'Mason 175 yards Kirk shot average shot rifleman'; 'Gremse 2014 ballistic soap'; 'DiMaio Gunshot Wounds centerfire rifle hunting ammunition soft-point exit'; 'Core-Lokt Robinson Kirk hearing court exhibit cartridge'; 'Robinson hearing testimony unfired cartridges description brand'; 'Hornady InterLock Remington Core-Lokt minimum expansion velocity'; 'Losee Center Utah Valley University roof height stories'; plus Europe PMC REST queries by PMID/title for rows 1, 12, 13, 15, 20 and the hunting-ammunition autopsy search."
+  - "Freeze disclosure (also in the file header): the criteria were frozen in the operator's session before any search, but the collection was performed in that same session before the freeze PR was opened; the panel judged the criteria knowing the author had seen the data. Post-freeze candidates carry independenceNote on their rows."
+  - The study never grades a claim and says nothing about who fired the shot; its ledger weight is the single evidence record KRK-E065 citing the workpaper, plus two promoted case-record rows (KRK-E066, KRK-E067) that carry their own primary press sources under the ordinary rules.
+  - "Stage provenance: the freeze stamp (runId 2026-09-10-study-krk-s006-freeze, promptVersion erebus-study-freeze-v1) is preserved in the merged freeze PR and in the header comment; criteria hash ab8dc1418a35 re-verifies unchanged at collection."
+runId: 2026-09-10-study-krk-s006-collect
+model: Claude Fable 5.1 (Anthropic), via Claude Code (session session_01AiXD4y5Y91KC7iM3uBhWmu)
 date: 2026-09-10
-promptVersion: erebus-study-freeze-v1
+promptVersion: erebus-study-collect-v1
 humanReviewed: false
