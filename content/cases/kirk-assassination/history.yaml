@@ -454,3 +454,21 @@
   actor: "Erebus editorial AI (Claude Fable 5.1, Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu), directed by the founder"
   aiAssisted: true
   kind: content
+
+- date: 2026-09-11
+  kind: content
+  change: "Updated the fragment-custody discussion in the overview and the
+    fragment-reconciliation research entry (KRK-R001) to reflect the newly
+    recorded itemization of the ATF report: the examiner's material is now
+    described in a filed report as one deformed bullet jacket fragment plus four
+    lead fragments, which does not cleanly reconcile with the previously
+    testified count of four. The seven-photographed-versus-examined gap remains
+    open; the correction records that the report's inventory complicates rather
+    than resolves it."
+  reason: New evidence record KRK-E067 superseded the prose's and research
+    agenda's flat 'seven photographed, four examined' framing, which no longer
+    matched the ledger's account of what the ATF received.
+  actor: anthropic/claude-fable-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
