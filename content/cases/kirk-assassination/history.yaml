@@ -421,3 +421,36 @@
   actor: "Erebus editorial AI (Claude Fable 5.1, Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu), directed by the founder"
   aiAssisted: true
   kind: content
+
+- date: "2026-09-10"
+  change: >-
+    Study KRK-S006 collection published: 27 rows verified against
+    primary documents, open-access copies or abstracts under the
+    criteria frozen earlier the same day (hash ab8dc1418a35) — gelatin
+    and soap wound profiles, the standard forensic text, a spinal-injury
+    review, three real-tissue hunting series, two military FMJ series,
+    neck anthropometry, manufacturers' ballistics tables, and the
+    case's own public record. One evidence record enters the ledger on
+    KRK-C006 and KRK-C018 (KRK-E065: for an expanding lead-core bullet
+    striking the cervical spine, retention with fragmentation is the
+    ordinary outcome; the "always goes through" premise holds only for
+    full-metal-jacket or bone-free paths). Two case-record rows are
+    promoted with their own sources: KRK-E066 (the prosecution's
+    closing relaying the ME report — "struck Kirk's spine and shattered"
+    — recorded as an assertion) and KRK-E067 (the ATF report as filed:
+    one deformed jacket fragment and four lead fragments examined; the
+    cartridge case identified to the rifle). Workpaper source
+    SRC-KRK-S006 added. Failed searches recorded: no human series gives
+    a retention rate for expanding rifle bullets in the neck.
+  reason: >-
+    Founder direction, 2026-09-10 (in session): real statistics,
+    conditional on the key scenarios, in place of the circulating
+    claims in both directions. The frozen scenarios fixed the cells
+    before any rate was looked up; the answer — exit near-certain for an
+    intact full-metal-jacket through soft tissue, exit expected for a
+    soft-point through soft tissue, retention ordinary for a soft-point
+    that strikes the spine, no human rate found — was set by the
+    literature, not chosen after it.
+  actor: "Erebus editorial AI (Claude Fable 5.1, Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu), directed by the founder"
+  aiAssisted: true
+  kind: content
