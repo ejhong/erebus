@@ -1,0 +1,453 @@
+# Cross-model check run — an independent judge (Kimi K3 (Moonshot, via Venice)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-09-11-check-kimi
+model: Kimi K3 (Moonshot, via Venice) — independent check run via kimi-k3
+date: 2026-09-11
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: mixed
+  loadBearing:
+    - KRK-C001
+    - KRK-C002
+    - KRK-C003
+    - KRK-C004
+    - KRK-C005
+    - KRK-C006
+    - KRK-C018
+    - KRK-C019
+  weakestLinks:
+    - KRK-C011
+    - KRK-C012
+    - KRK-C013
+    - KRK-C026
+  synthesis: "Independent weighing confirms the case file's dual structure: the
+    record separates into a mechanism layer that holds and an audit layer that
+    affirmatively fails, and the mixed verdict is substantive rather than a
+    default. At the mechanism layer, the official account is supported by
+    channels with genuinely different failure modes — independent
+    visual-forensics video, FBI-released escape footage, and sworn scene
+    testimony converge on a rooftop actor (C001); the rifle recovery is
+    undisputed by any litigant (C002); the medical classification is gunshot
+    with recovered fragments (C006); and the association case (DNA statistics
+    C008, attributed statements C009) was presented in substantial form under
+    oath. Critically, no alternative hypothesis has produced a single
+    authenticated artifact the official mechanism cannot absorb. The leading
+    alternative (C018) rests on contested interpretation of compressed consumer
+    video and is affirmatively undercut by the wound-ballistics base rate
+    (KRK-S006): the \"must have exited\" intuition is wrong for an expanding
+    bullet striking bone, and the expected retention-plus-fragmentation pattern
+    matches the itemized jacket-and-lead inventory. At the audit layer, however,
+    the record fails on specifics, not adjectives: the strongest possible
+    ballistic proposition (C003) is contradicted; the inconclusive that replaces
+    it (C004) carries little diagnostic weight on damaged fragments by the
+    method's own black-box literature; the fragment count is unreconciled two
+    different ways (C005); the autopsy entered without its author (C007); the
+    documented media chain stops at copies (C012 — graded contradicted here,
+    diverging from the case file's \"unresolved,\" for consistency with the
+    identically constructed completeness claims C007 and C019, while the
+    empirical question of later transfer stays open); and the completeness claim
+    C019 is contradicted by enumerable gaps. Steelmanning the official account:
+    pre-trial records are always incomplete; inconclusive is the modal non-error
+    outcome on damaged metal; paving speed is unremarkable against the measured
+    eighteen-venue base rate; a contractor pocketing his own card is ordinary
+    behavior; the contempt finding documents misconduct, not fabrication.
+    Steelmanning the challenge: the missing link is precisely the one that would
+    close the case; custody anomalies sit at the most sensitive points (rear
+    camera, fragments, surrender footage); UVU is unique in the venue table on
+    disputed authorization; director-level federal fronting is unmatched in
+    thirteen comparables. The decisive instruments are the cheap, specified
+    tests (R001–R009), not commentary."
+claimAssessments:
+  - claimId: KRK-C001
+    verdict: well_supported
+    confidence: high
+    reasoning: "Three channels with different failure modes converge: the Washington
+      Post's independent visual-forensics analysis (KRK-E001), FBI-released
+      escape footage with rooftop trace evidence (KRK-E002), and Officer
+      Bagley's sworn testimony about the prone-position gravel disturbance and
+      screwdriver (KRK-E003). For the featured hypothesis the claim
+      discriminates weakly — a rooftop actor is expected under the
+      single-shooter account and most assisted variants alike — but its local
+      truth is solid. The strongest opposing consideration is that the public
+      has seen excerpts rather than native files, and the WaPo body itself was
+      verified only at headline level; identity and pre-shot actions remain
+      outside the published record, though neither is asserted by the claim as
+      worded."
+  - claimId: KRK-C002
+    verdict: well_supported
+    confidence: high
+    reasoning: The recovery is stated in FBI public updates and sworn
+      preliminary-hearing testimony (KRK-E002), and no party in the litigation
+      disputes it; caliber consistency between fragments and the spent casing
+      adds class-level corroboration (KRK-E010). As worded the claim covers
+      recovery only, and that proposition is well supported. For the featured
+      hypothesis it discriminates weakly, since planted-or-decoy variants
+      predict recovery too — the discriminating evidence is what the rifle can
+      be tied to, graded under C003/C004. The strongest opposing consideration
+      is that the recovery narrative rests on the investigation's own scene
+      records, with the full recovery-to-lab custody documentation not yet
+      public.
+  - claimId: KRK-C003
+    verdict: contradicted
+    confidence: high
+    reasoning: 'Sworn testimony records that the examiner could not conclusively
+      identify the fragments to the rifle (KRK-E007), the same record shows only
+      non-exclusion (KRK-E008), and the filed report as quoted itemizes "neither
+      sufficient agreement nor sufficient disagreement" (KRK-E067); the
+      cartridge case was identified to the rifle, but the fatal fragments were
+      not. The claim as stated — a public, conclusive identification — is
+      therefore contradicted by the public record. The strongest opposing
+      consideration is that this contradicts only the identification claim, not
+      the mechanism: per the black-box base rates (KRK-E061, KRK-E062) an
+      inconclusive on damaged fragments is a standard non-error outcome, so the
+      absence of a public match is weak evidence against the rifle.'
+  - claimId: KRK-C004
+    verdict: established
+    confidence: high
+    reasoning: The inconclusive outcome rests on sworn testimony contemporaneously
+      reported by multiple outlets (KRK-E007, KRK-E008) and is consistent with
+      the filed report's characterization as quoted in press (KRK-E067); NIST's
+      own description of the method confirms inconclusive as a recognized
+      outcome category (KRK-E012), and the six-study tabulation confirms it is a
+      standard non-error result (KRK-E061). Local truth is established. For the
+      featured hypothesis it discriminates almost nothing, because specimen
+      damage drives inconclusive rates regardless of ground truth (KRK-E062).
+      The strongest opposing consideration is that the full laboratory report
+      remains unreleased and the result is known through courtroom and press
+      renderings — though two independent renderings converge on the same
+      outcome.
+  - claimId: KRK-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: The seven-versus-four discrepancy comes from the examiner's own sworn
+      testimony (KRK-E009), and the filed report's itemization — one deformed
+      jacket fragment plus four lead fragments, five items (KRK-E067) — deepens
+      rather than resolves the accounting question; no public reconciliation
+      exists as of the review date. The claim as stated is a narrow
+      documentation claim and it is supported. For the featured hypothesis the
+      gap itself discriminates weakly, since ordinary multi-custodian handling
+      and manipulation hypotheses both absorb it; its resolution (KRK-R001) is
+      the diagnostic event. The strongest opposing consideration is that partial
+      laboratory submission with fragments retained by the medical examiner is
+      common practice, and pre-trial silence is not proof that records do not
+      exist.
+  - claimId: KRK-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: The report's admission and its summarized classification — homicide
+      by gunshot wound to the neck, fragments recovered — are documented in
+      contemporaneous courtroom reporting (KRK-E005), and the prosecution's
+      closing characterization adds a wound-path detail ("struck Kirk's spine
+      and shattered," KRK-E066) that is internally coherent with the fragment
+      inventory and with wound-ballistics base rates for an expanding bullet
+      striking bone (KRK-E065). The claim grades what the admitted report
+      states, and that is well supported; it is also the single strongest public
+      evidence against device-mechanism alternatives. The strongest opposing
+      consideration is that the finding entered through an investigator over an
+      "expert report without an expert present" objection (KRK-E006), so it
+      cannot yet be independently audited — the caveat carried under C007.
+  - claimId: KRK-C007
+    verdict: contradicted
+    confidence: high
+    reasoning: No scaled photographs, wound-track measurements, fragment map, or
+      radiology have been released, and the preliminary-hearing record itself
+      shows the report entering through an investigator rather than its author
+      (KRK-E006). The claim as stated — public availability of the complete
+      documentation — is contradicted by inspection of the record. For the
+      featured hypothesis the gap caps how far any mechanism claim can be
+      audited, in both directions. The strongest opposing consideration is that
+      withholding during an active capital prosecution is routine, so absence of
+      publication is not evidence about the report's content — but that
+      objection bears on inference from the gap, not on the availability claim
+      itself.
+  - claimId: KRK-C008
+    verdict: well_supported
+    confidence: high
+    reasoning: "Multiple consistent courtroom reports describe \"extremely likely\"
+      and \"highly likely\" DNA associations with the rifle and related items
+      (KRK-E013), and the screwdriver DNA was presented under oath (KRK-E054);
+      the claim grades what was presented, not guilt, and the presentation is
+      thoroughly documented. For the featured hypothesis this is strong
+      source-level association, but its activity-level weight is capped: the
+      state's own forensic biologist conceded the transfer scenario as possible
+      (KRK-E014), and the underlying electropherograms and mixture
+      interpretation have not been independently reviewed (KRK-R005). The
+      strongest opposing consideration is precisely that source-level statistics
+      are routinely mistaken for activity-level proof — the data do not
+      establish who fired the weapon."
+  - claimId: KRK-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: That the roommate interview video, extracted texts, Discord messages,
+      and engraved-ammunition exhibits were presented is documented across
+      hearing reporting and filings (KRK-E015, KRK-E016, KRK-E017); the graded
+      proposition is the presentation, which is well supported. For the featured
+      hypothesis, the attributed statements are among the hardest material for
+      framed-defendant variants to absorb if authenticated — but authentication
+      via native extractions and provider records remains untested by custodian
+      cross-examination. The strongest opposing consideration is that
+      screenshots and second-hand accounts are materially weaker than
+      database-native records, and the roommate's own testimony that Robinson
+      had not previously fixated on Kirk cuts against the simplest motive
+      narrative built from the same materials.
+  - claimId: KRK-C010
+    verdict: contradicted
+    confidence: moderate
+    reasoning: "The claim asserts the anomalies are, on current evidence,
+      inconsistent with the official chronology; they are not — being off campus
+      at 8:07 is logically compatible with a vehicular 8:29 arrival, and no
+      reviewed official source asserts post-shot rifle disassembly, so the
+      flight-timing argument targets a straw man (KRK-E037), while the anomaly
+      case itself rests on an unauthenticated video and its author's own framing
+      of \"confusing\" rather than impossible (KRK-E036). For the featured
+      hypothesis, removing this challenge adds nothing affirmative. The
+      strongest opposing consideration is that the 8:07 footage is
+      unauthenticated in both directions and the route experiment (KRK-R006) has
+      not been run — hence moderate confidence: \"contradicted\" grades the
+      present-tense claim about current evidence, not the underlying feasibility
+      question, which remains open and testable."
+  - claimId: KRK-C011
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: "The removal of the rear camera's card roughly four minutes after the
+      shot is visible in Owens-published footage (KRK-E020), coheres with sworn
+      testimony that the contractor supplied copies the same day (KRK-E018), and
+      the statement ledger grades the removal itself documented (KRK-E063).
+      Support stays provisional because the public artifact is a mediated copy:
+      the native file, camera clock, and full surrounding sequence have not been
+      independently examined. For the featured hypothesis this is a real
+      provenance defect every account must route through — it simultaneously
+      weakens the state's ability to prove footage integrity and supplies a
+      necessary ingredient of manipulation variants — while intent is invisible
+      in the footage. The strongest opposing consideration is that a working
+      videographer securing his own media in a catastrophe would look identical
+      on camera."
+  - claimId: KRK-C012
+    verdict: contradicted
+    confidence: moderate
+    reasoning: "As stated, the claim concerns what the publicly documented chain
+      establishes — and that chain, per sworn testimony, documents copies (a
+      flash drive, then downloadable files) and is silent on original cards
+      (KRK-E018); the only covering statement for originals is a spokesman's
+      assertion uncorroborated by any inventory (KRK-E021), while the defense
+      itself told the court \"someone made clips, and we don't know who\"
+      (KRK-E019), and the statement ledger leaves the originals gap intact
+      (KRK-E063). This check diverges from the case file's \"unresolved\": C012
+      is constructed exactly like the completeness claims C007 and C019, both
+      graded contradicted on verifiable documentary absence, and consistency
+      requires the same here. What remains genuinely unresolved is the
+      different, empirical question of whether all originals later reached
+      custody. The strongest opposing consideration is that pre-trial evidence
+      inventories are rarely published, so the gap is expected under ordinary
+      process — which bears on inference from the absence, not on whether the
+      chain \"establishes\" receipt."
+  - claimId: KRK-C013
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: "Both halves — paving from about September 14 on a September 11
+      emergency order with a $6,090.52 \"clean up for shooting incident\"
+      invoice, and Hull's testimony that he did not authorize the alteration —
+      are documented through GRAMA-obtained records and the hearing record as
+      synthesized in KRK-E033. Support is provisional because the ledger's
+      carriage of both halves traces to a single secondary synthesis whose
+      underlying documents should be fetched directly (KRK-R007), and no second
+      record here independently carries the non-authorization testimony. For the
+      featured hypothesis the significance is mechanism-dependent: trivial
+      ground under a distant rifle shot, critical ground under device variants;
+      the base rate deflates the speed intuition (KRK-E057) while flagging UVU
+      as table-unique on disputed authorization (KRK-E058). The strongest
+      opposing consideration is that biohazard remediation and reopening fully
+      explain rapid alteration if formal release preceded — a records question,
+      not a rhetoric question."
+  - claimId: KRK-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: "The message text is quoted verbatim with on-the-record
+      authentication by TPUSA's own spokesman, participant confirmation by a
+      thread member, and a reported donor attribution (KRK-E023). The claim
+      asserts content plus authentication, and both stand on the record. For the
+      featured hypothesis its diagnosticity is low: it establishes a motive
+      environment, and per C015 no operational bridge exists — treating it as
+      attribution would be the exact error this case exists to prevent. The
+      strongest opposing consideration is that the native export with full
+      thread context has not been published and that associates characterize the
+      messages as venting consistent with public frustrations; that tempers what
+      the messages prove about Kirk's settled intentions, not what they say or
+      that they are authentic."
+  - claimId: KRK-C015
+    verdict: contradicted
+    confidence: high
+    reasoning: Every reviewed affirmative account stops at motive and pressure; the
+      publication that broke the authenticated texts itself states no evidence
+      links the charged suspect to Israel, and records that the texts were
+      handed to the FBI rather than suppressed (KRK-E024), while the coercion
+      chapter rests on anonymous sourcing against categorical on-record denials
+      (KRK-E025, KRK-E026). "Contradicted" grades the claim that operational
+      involvement is established — the record contains no communications,
+      payments, logistics, or forensic link — not the different claim that
+      involvement has been ruled out, which the record equally cannot support.
+      The strongest opposing consideration is that investigative lead files are
+      not public, so absence of public evidence is not proof of absence; that
+      justifies the research agenda, not the attribution.
+  - claimId: KRK-C016
+    verdict: established
+    confidence: high
+    reasoning: "The contempt finding is a formal judicial ruling independently
+      reported by wire services (KRK-E034) and carried as adjudicated in the
+      statement ledger (KRK-E064); the same ruling found the prosecutor's
+      correction of ballistics misreporting legitimate, and both halves belong
+      to the record. For the featured hypothesis its diagnosticity is low: it
+      documents that narrative-management incentives inside the prosecution were
+      real, which justifies withholding deference without licensing any
+      inference of fabrication (the C017 boundary). The strongest opposing
+      consideration is that the prosecutor's stated aim was countering
+      misinformation about the inconclusive result — misconduct in form,
+      arguably not concealment in motive — but that consideration does not touch
+      the finding's occurrence, which is all this claim asserts."
+  - claimId: KRK-C017
+    verdict: contradicted
+    confidence: moderate
+    reasoning: The premise facts are documented (C013, C016, KRK-E045), but no
+      reviewed record contains concealment evidence — destroyed originals,
+      falsified records, coordinated obstruction — and the alteration-speed
+      intuition is affirmatively deflated by the measured base rate, in which
+      every fast alteration paired with an undisputed authorizer (KRK-E057),
+      while the eleven-statement ledger shows no aggregate pattern in either
+      direction (KRK-E064). "Contradicted" grades the claim that concealment is
+      established. Confidence is moderate rather than high because one genuinely
+      unmatched anomaly remains — UVU is the table's only disputed-authorization
+      case (KRK-E058) — and the records that would resolve it (KRK-R007) are
+      unreleased; concealment of negligence versus concealment of a crime is
+      likewise distinguishable only at the records level. The strongest opposing
+      consideration is that institutions sometimes conceal negligence without
+      concealing a killer, and the dispositive records remain withheld.
+  - claimId: KRK-C018
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The affirmative case consists of contested frame-by-frame
+      interpretation of compressed consumer video by unnamed analysts without
+      documented forensic credentials (KRK-E027, KRK-E028) plus one subjective
+      proximity impression of a kind known to be unreliable (KRK-E031). Against
+      it stands the only medical finding in the record — gunshot with recovered
+      fragments (KRK-E005, KRK-E030) — an itemized fragment inventory matching
+      the expected pattern of an expanding rifle bullet striking bone, which
+      also removes the "must have exited" premise (KRK-E067, KRK-E065), the
+      rooftop-and-rifle chain, the absence of any published residue or device
+      fragment, and variant drift by the theory's own originator (KRK-E029).
+      Weakly supported rather than contradicted because the hypothesis is
+      unusually testable and its decisive tests (blind native-file
+      synchronization, hardware and clothing examination, full autopsy release)
+      have genuinely not been run on native materials, and the medical record
+      underwriting the contrary classification is itself not yet auditable
+      (C007). The strongest opposing consideration — the best case for the claim
+      — is that if frame-accurate sequencing ever showed clothing deformation
+      before any plausible bullet arrival, the case would transform; no such
+      result exists.
+  - claimId: KRK-C019
+    verdict: contradicted
+    confidence: high
+    reasoning: 'Specific, enumerable, load-bearing documentation gaps are verifiable
+      in the public record: the fragment reconciliation (C005), the autopsy
+      package (C007), the original-media inventory (C012), the auto-deleted
+      surrender footage (KRK-E045), and the unreconciled drone statement pair
+      (KRK-E049, KRK-E050). The absolute claim that the public record "contains
+      the complete documentation needed to independently audit" is contradicted
+      — which indicts nobody and licenses no alternative theory, since every
+      enumerated gap has a mundane candidate explanation. For the featured
+      hypothesis this is the central finding: it defines the audit ceiling
+      precisely. The strongest opposing consideration is that the fair benchmark
+      is other capital cases at the same pre-trial stage rather than an ideal
+      archive — but the claim as worded is absolute, and against that wording
+      the verified gaps are decisive.'
+  - claimId: KRK-C025
+    verdict: contradicted
+    confidence: high
+    reasoning: "The premises partially verify — the contract exists worded as
+      claimed (KRK-E038), its phrase-level uniqueness replicates with caveats
+      (KRK-E039), the explosion killed sixteen with cause formally open
+      (KRK-E040), and the manufacturer's advertised capabilities are real
+      (KRK-E055) — but the connective tissue fails on the record: the flight is
+      unsourced, the \"theory surfaced days before the blast\" timing is wrong
+      by weeks (KRK-E042), the day's production is attributed to commercial cast
+      boosters, and state inspectors documented a hundred citations and their
+      largest-ever penalty, supplying the mundane-cause record any sabotage
+      reading must beat (KRK-E041). \"Contradicted\" grades the claim that an
+      operational connection is established — not the cluster's individual facts
+      and not the value of checking them (KRK-R012). The strongest opposing
+      consideration is that the narrower point survives verification: no public
+      record shows the flight identified or the contract's end use examined, so
+      \"never investigated as a cluster\" remains true even though \"established
+      connection\" is false."
+  - claimId: KRK-C026
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: Non-retention and non-sharing are documented in the sheriff's
+      office's own written records responses — footage "no longer available
+      after the 30-day retention period" and "never sent out to any agency"
+      (KRK-E045). Support is provisional because the same responses state
+      Robinson never entered the jail area and never explicitly confirm that
+      responsive footage of him existed, so the claim's "relevant to Robinson's
+      surrender" element is asserted by the requester more than confirmed by the
+      custodian. For the featured hypothesis the weight is cumulative — one more
+      entry in the auditability ledger feeding C019 — rather than
+      discriminating, since an auto-purge executing as designed is the null
+      hypothesis. The strongest opposing consideration is that routine retention
+      policies destroy footage constantly and no
+      preservation-request-and-refusal is shown; treating every unpreserved
+      record as suspicious would indict every agency in the country.
+  - claimId: KRK-C027
+    verdict: established
+    confidence: high
+    reasoning: "The claim grades the statements' occurrence, and that is
+      established: the former NCTC director's account is direct, repeated, on
+      the record, quoted verbatim across multiple outlets, with the attribution
+      to the FBI director explicit and the FBI's stated rationale carried
+      alongside (KRK-E046). Accuracy is a separate question this claim does not
+      grade. For the featured hypothesis the statement discriminates little,
+      because an order to stand down is consistent both with ordinary
+      trial-protection hygiene — investigators who keep working a charged case
+      become defense witnesses, the rationale Kent himself relays — and with
+      suppression of a line of inquiry. The strongest opposing consideration is
+      that the source is a departed official with an active grievance and his
+      own reported legal exposure, and no corroborating record of the order or
+      its scope exists publicly."
+  - claimId: KRK-C028
+    verdict: unresolved
+    confidence: moderate
+    reasoning: "The diversion intent is court record in Zinn's own words (KRK-E043),
+      but the pre-arrangement element — the actual claim — rests on nothing
+      sourced: the investigating agency states it has no information of
+      collusion (KRK-E044), the \"promised payment\" detail exists only in
+      commentary, and his subsequent case history fits lone pathological
+      behavior without residue of coordination (KRK-E051). Unresolved is a
+      substantive finding here, not a default: the agency's \"at this time\" is
+      explicitly not closure, no completed investigation has formally closed the
+      question, and the checks that would close it (communications, financial
+      records) are specified and unrun; weakly_supported is declined because
+      nothing in the record affirmatively evidences arrangement. The strongest
+      opposing consideration — the best case for the claim — is that his
+      instant, specific diversion framing is more than noise, and if
+      pre-arrangement were ever established it would be near-proof of
+      coordination beyond a lone actor, which is exactly why the open status
+      must be maintained rather than deflated."
+  - claimId: KRK-C032
+    verdict: contradicted
+    confidence: high
+    reasoning: The premise mismatch is real and verified — the director's televised
+      screwdriver-DNA announcement (KRK-E053) and the charging Information's
+      omission of the item, confirmed by full-text inspection of the primary
+      document (KRK-E056) — but the abandonment proposition is directly refuted
+      by sworn presentation of the screwdriver DNA at the July 2026 preliminary
+      hearing, ten months later (KRK-E054). A charging instrument is not an
+      evidence inventory, so the omission never carried the weight the
+      circulating claim assigned it. For the featured hypothesis the episode's
+      real residue is a statement-ledger entry about announcements outrunning
+      their paper, not a vanished evidence item. The strongest opposing
+      consideration is that the underlying instinct — early official statements
+      and formal filings should reconcile — is sound and worth tracking
+      (KRK-R010); but "the prosecution abandoned the evidence" is factually
+      false on the hearing record.

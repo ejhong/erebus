@@ -1,0 +1,453 @@
+# Cross-model check run — an independent judge (GPT-5.1 (OpenAI)),
+# blind to all prior assessments (scripts/cross-model-check.mjs,
+# promptVersion erebus-check-v1). role: check — never displayed as the case
+# narrative; feeds the concurrence panel. Append-only; NOT human reviewed.
+runId: 2026-09-11-check-gpt
+model: GPT-5.1 (OpenAI) — independent check run via gpt-5.1
+date: 2026-09-11
+promptVersion: erebus-check-v1
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: mixed
+  loadBearing:
+    - KRK-C001
+    - KRK-C002
+    - KRK-C004
+    - KRK-C005
+    - KRK-C006
+    - KRK-C008
+    - KRK-C011
+    - KRK-C012
+    - KRK-C013
+    - KRK-C018
+    - KRK-C019
+  weakestLinks:
+    - KRK-C010
+    - KRK-C015
+    - KRK-C017
+    - KRK-C018
+    - KRK-C025
+    - KRK-C028
+  synthesis: >-
+    The record around the Kirk killing shows an unusual blend of strong primary
+    observations, substantial but not yet fully contextualized forensic support,
+    and specific, nontrivial gaps in documentation and provenance. On the
+    supportive side, there is convergent, multi‑channel evidence for a rooftop
+    actor and a rifle: independent visual-forensics video and FBI footage of a
+    person running on the Losee Center roof and jumping from it, plus sworn
+    testimony about a disturbed “sniper pad” and rooftop trace evidence
+    (KRK-C001). A towel‑wrapped .30‑06 bolt‑action rifle and matching‑caliber
+    cartridge case were recovered along the ostensible escape route and
+    individually linked to the rifle (KRK-C002, KRK-E010, KRK-E067). The medical
+    examiner’s report, as relayed under oath, classifies the death as a homicide
+    from a gunshot wound of the neck with projectile fragments recovered
+    (KRK-C006). Forensic biology strongly associates Robinson’s DNA with the
+    rifle, related tools, and ammunition (KRK-C008), and the state has presented
+    a suite of attributed statements and digital artifacts consistent with
+    planning and political animus (KRK-C009). None of this has yet been
+    impeached in the public record, and together it makes the conventional
+    distant‑rifle mechanism substantially better supported than any alternative.
+
+    At the same time, several specific chains stop short of full audit.
+    Ballistically, the strongest possible claim—conclusive identification of
+    autopsy fragments to the recovered rifle—is explicitly absent: the ATF
+    examiner reported an inconclusive, i.e. neither identification nor exclusion
+    (KRK-C004), and the public ATF report confirms this. A pre‑registered
+    synthesis of firearm/toolmark black‑box studies shows that such
+    inconclusives are common, particularly on damaged bullets, and carry limited
+    diagnostic weight either way (KRK-E061, KRK-E062). So the absence of a match
+    neither exonerates nor firmly inculpates the rifle. More troubling from an
+    auditability perspective is the fragment inventory: seven fragments appear
+    in autopsy photographs, while the ATF examiner received four fragments (or
+    four lead fragments plus a jacket, depending on which description governs),
+    and no public record yet reconciles this discrepancy (KRK-C005, KRK-E009,
+    KRK-E067). Routine explanations exist, but until a fragment‑by‑fragment
+    ledger is published, this remains a real custody gap at a critical juncture.
+
+    The medical evidence is similarly asymmetric. The gunshot‑wound
+    classification is clear and weighs strongly against a pure
+    device‑without‑bullet theory (KRK-C006, KRK-E030). A separate base‑rate
+    study of .30‑06 soft‑point rifle rounds shows that when such a projectile
+    strikes the cervical spine, retention and fragmentation without an exit
+    wound is actually the modal expectation, not an anomaly (KRK-E065). This
+    undercuts popular arguments that “a high‑powered rifle always exits” and
+    therefore that the absence of an exit must point to a device. However, the
+    complete autopsy package—scaled wound photos, detailed track, fragment map,
+    radiology, and clothing exams—is not public, and the report itself was
+    admitted through an investigator over objection rather than by its author
+    (KRK-C007, KRK-E006). That keeps independent reconstruction of trajectory or
+    mechanism from being possible today and is the key reason the alternative
+    device‑at‑mic hypothesis remains weakly supported rather than decisively
+    falsified (KRK-C018).
+
+    Provenance around audiovisual and scene evidence is another genuine
+    weakness. The public record documents same‑day delivery of digital copies of
+    event video to investigators but does not yet establish that every original
+    storage card was promptly, or ever, taken into law‑ enforcement custody
+    (KRK-C012, KRK-E018, KRK-E063). Separate footage, as mediated by Candace
+    Owens, shows the A/V contractor removing the rear camera’s card and
+    pocketing it within minutes of the shooting (KRK-C011, KRK-E020). That
+    behavior is fully compatible with innocent motives (securing gear, fearing
+    tampering) as well as more malign ones; without a complete media
+    ledger—cards, serials, hashes, and transfer records—its interpretive weight
+    is limited. The state has also allowed at least one potentially relevant
+    surveillance video sequence—the sheriff’s office surrender‑area footage—to
+    auto‑purge after 30 days, never shared externally (KRK-C026, KRK-E045).
+    Routine retention policies make this unsurprising, but in aggregate with the
+    fragment gap, incomplete card accounting, and rapid physical alteration of
+    the courtyard (paving within four days, authorized by someone other than the
+    lead investigator, KRK-C013, KRK-E033), it contributes to a pattern of
+    limited post‑hoc auditability.
+
+    Importantly, pre‑registered comparative studies blunt some of the more
+    expansive “cover‑up” readings. A venue‑based table of eighteen comparable
+    scenes shows that rapid scene alteration is not rare and that speed alone
+    does not distinguish mundane cleanup from evidence‑destruction; fast
+    alterations in other cases followed a clear release by a named authorizer
+    (KRK-E057). UVU is anomalous not in speed but in the absence of a public
+    release record and the lead investigator’s disavowed authorization
+    (KRK-E058). That makes the missing release‑authority paperwork a high‑value
+    record, but does not itself establish concealment. A statement‑discrepancy
+    ledger similarly finds a mixed picture: one court‑adjudicated publicity
+    violation (KRK-C016, KRK-E034) and a small number of contradicted or
+    corrected statements, but also several fully or partially corroborated
+    accounts and many routine corrections as facts evolved (KRK-E064). This
+    undercuts any claim that institutional behavior as a whole “establishes”
+    knowing destruction of evidence (KRK-C017), even as it justifies skepticism
+    and closer document demands.
+
+    Against this background, the device‑at‑microphone hypothesis is, on the
+    present record, weakly supported. Its affirmative evidentiary base consists
+    mainly of contested interpretations of compressed video and an anonymous or
+    pseudonymous computational analysis (KRK-E027, KRK-E028), plus a single
+    eyewitness’s subjective impression of shot proximity (KRK-E031). It has not
+    produced any hard forensic artifact—no explosive residues, no mic‑hardware
+    damage signature inconsistent with a projectile, no device fragments. It
+    must also explain away or modify the medical examiner’s gunshot
+    classification and the documented presence of metal fragments in the neck,
+    which gives it a heavier explanatory burden than the rifle account. At the
+    same time, because the complete autopsy is not public and because no blind,
+    native‑file synchronization or acoustic localization study has yet been run
+    (KRK-R002, KRK-R003, KRK-R009), the theory remains testable rather than
+    already disproved. That is why the case grades it “weakly_supported” rather
+    than “contradicted.”
+
+    Some of the more dramatic organized‑operation narratives fare worse. The
+    cluster tying a Navy procurement of “miniaturized‑XS demolition charges,” an
+    October 10 explosion at the vendor’s plant, and unsourced flight claims to
+    the Kirk killing (KRK-C025) loses nearly all of its force under
+    verification: the contract and explosion are real (KRK-E038, KRK-E040,
+    KRK-E055), but safety‑violation findings and the CSB record support mundane
+    industrial disaster; the flight is unsourced; and the timing of the device
+    theory’s publication actually precedes the explosion by nearly three weeks
+    (KRK-E042). No document currently connects those industrial events to this
+    homicide. Likewise, there is zero operational evidence in public that any
+    donor, organization, or foreign state planned, funded, or executed the
+    attack despite a richly documented pressure environment around Israel policy
+    (KRK-C014, KRK-C015, KRK-E024).
+
+    Structurally, then, the case justifies a “mixed” overall verdict.
+    Mechanism‑level claims for a distant rifle shot are substantially and
+    independently supported by medical, ballistic‑class, rooftop, rifle, and DNA
+    evidence. Simultaneously, the public record is incomplete in ways that do
+    matter for independent auditing: fragment reconciliation, full autopsy
+    documentation, a complete original‑media inventory and hash ledger, clear
+    scene‑release authorization, and more rigorous sequence and acoustic
+    analyses. The alternative device hypothesis has not met its evidentiary
+    obligations and presently sits as a fragile, physics‑driven speculation
+    awaiting decisive tests rather than a co‑equal explanation. Claims that leap
+    from real institutional missteps—an over‑talkative prosecutor, sloppy record
+    preservation, poorly documented paving—to established concealment or foreign
+    operation outrun the record and are rightly graded contradicted. The
+    research agenda is therefore well posed: it targets exactly the remaining
+    high‑leverage uncertainties and would, if completed, move the case
+    decisively toward either a fully auditable confirmation of the conventional
+    account or a documented, testable deviation from it.
+claimAssessments:
+  - claimId: KRK-C001
+    verdict: established
+    confidence: high
+    reasoning: Independent Washington Post visual-forensics work, FBI‑released
+      escape footage, and detailed sworn testimony about rooftop impressions and
+      a “sniper pad” all converge on the presence and immediate post‑shot flight
+      of a person on the Losee Center roof. The strongest opposing consideration
+      is that the public has only seen selected video excerpts and not every
+      native recording, so very fine points about timing or exact actions in the
+      moments before the shot cannot yet be independently re‑checked.
+  - claimId: KRK-C002
+    verdict: established
+    confidence: high
+    reasoning: FBI public updates and multiple outlets’ reports of sworn testimony
+      consistently state that a towel‑wrapped .30‑06 bolt‑action rifle and
+      ammunition were recovered in a wooded area along the apparent escape
+      route, and no litigation party disputes the fact of recovery. Opposing
+      considerations center on incomplete public exposure of the detailed
+      recovery‑to‑lab chain, leaving room for questions about exact context or
+      timing but not about the basic fact that the rifle was found there.
+  - claimId: KRK-C003
+    verdict: contradicted
+    confidence: high
+    reasoning: The ATF examiner testified that she could not conclusively identify
+      the fragments to the rifle and the written report, as summarized by KUTV,
+      explicitly describes an inconclusive jacket‑fragment comparison (KRK-E007,
+      KRK-E067), while also saying the rifle could not be excluded (KRK-E008).
+      Thus there is no public, conclusive bullet‑to‑ rifle identification. The
+      main counter‑consideration is that damaged fragments often yield
+      inconclusives even when they do come from the suspect weapon, so the
+      absence of a conclusive identification is only weak evidence about the
+      true mechanism, but that does not salvage the claim as stated.
+  - claimId: KRK-C004
+    verdict: established
+    confidence: high
+    reasoning: Multiple contemporaneous courtroom reports quote the ATF examiner
+      stating she could not conclusively say the fragments came from Robinson’s
+      rifle and that they could not be excluded as having been fired from it,
+      i.e. an explicit inconclusive outcome. The strongest opposing point is
+      that the full ATF lab report is not public, so there remains a small
+      chance that internal wording differs or adds nuance, but every quoted
+      characterization from both sides aligns on “inconclusive.”
+  - claimId: KRK-C005
+    verdict: well_supported
+    confidence: high
+    reasoning: The examiner’s own sworn testimony, as logged by East Idaho News,
+      states that seven fragments appeared in a photo but only four were
+      received for examination, and no public record reconciles this count with
+      the ATF report’s “one jacket plus four lead” description (KRK-E009,
+      KRK-E067). The best opposing consideration is that multi‑custodian
+      homicide cases commonly split or retain fragments for separate purposes,
+      and such explanations may exist in sealed or undisclosed material;
+      however, until a fragment‑by‑fragment ledger is released, the discrepancy
+      in the public record is real.
+  - claimId: KRK-C006
+    verdict: well_supported
+    confidence: high
+    reasoning: Both KUTV and KSL report the lead investigator’s sworn testimony that
+      the medical examiner’s autopsy report classified the death as a homicide
+      caused by a gunshot wound to the neck, with fragments recovered, and no
+      witness has been quoted as contradicting this summary (KRK-E005,
+      KRK-E030). The main limitation is that the report entered through an
+      investigator over defense objection and without the author’s testimony, so
+      the classification has not been subjected to independent pathology review,
+      but that procedural caveat does not undermine what the report actually
+      states.
+  - claimId: KRK-C007
+    verdict: contradicted
+    confidence: high
+    reasoning: There is no public release of the complete autopsy package—scaled
+      wound photographs, full wound track, fragment maps, or radiology—and the
+      hearing record itself notes that only the report, not its underlying
+      materials or author, was introduced (KRK-E006). The strongest opposite
+      point is that non‑release during a pending capital prosecution is standard
+      practice, so this absence is not suspicious by itself, but that only
+      addresses why the package is unavailable, not whether it is publicly
+      available.
+  - claimId: KRK-C008
+    verdict: well_supported
+    confidence: high
+    reasoning: East Idaho News’ live blog and Fox’s dedicated DNA coverage both
+      describe detailed testimony that DNA on multiple parts of the rifle, on a
+      Dremel tool, on a bits container, and on cartridges was “extremely likely”
+      or “highly likely” to be Robinson’s (KRK-E013), and the ATF biologist’s
+      cross‑examination only concedes the theoretical possibility of transfer
+      (KRK-E014). The main counter‑consideration is that the underlying
+      electropherograms and mixture interpretations are not public, and no
+      independent activity‑level evaluation has yet been done, so these
+      associations speak to “whose DNA” rather than “what actions deposited it.”
+  - claimId: KRK-C009
+    verdict: well_supported
+    confidence: high
+    reasoning: Courtroom reporting from East Idaho News and AP shows that a video
+      interview with roommate Lance Twiggs, screenshots or extractions of text
+      messages, Discord posts, and engraved ammunition were actually presented
+      at the preliminary hearing, and the Information itself recites alleged
+      statements (KRK-E015–E017). The main limitation is that this grading
+      concerns what the prosecution presented, not whether every attributed
+      statement has been definitively authenticated or correctly interpreted;
+      device‑native records and provider logs are not yet public.
+  - claimId: KRK-C010
+    verdict: contradicted
+    confidence: moderate
+    reasoning: Owens’ own timeline presentation concedes that the 8:07 TMZ video is
+      only “confusing,” and on its face a person seen off campus at 8:07 could
+      still plausibly arrive at UVU by 8:29; moreover, no reviewed official
+      record asserts that the shooter disassembled the rifle on the roof, so the
+      “no time to disassemble” critique misfires at a straw claim (KRK-E036,
+      KRK-E037). The strongest opposing point is that the 8:07 video’s metadata,
+      geolocation, and subject identity have not been authenticated either way
+      and a route‑feasibility test has not been run, so while inconsistency is
+      not established, it also has not yet been formally ruled out.
+  - claimId: KRK-C011
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: Owens‑published footage, as transcribed, depicts the contractor
+      taking down the rear camera, removing its SD card, pocketing it, and using
+      his phone within minutes of the shot (KRK-E020), which coheres with sworn
+      testimony that he later provided video files to investigators (KRK-E018).
+      The main weakness is that this is a mediated clip rather than the native
+      file, with no independent verification of timestamps or full context, so
+      while the removal act itself is well‑attested, its exact timing and
+      circumstances remain somewhat uncertain.
+  - claimId: KRK-C012
+    verdict: unresolved
+    confidence: moderate
+    reasoning: Hull’s testimony documents same‑day delivery of a flash drive and
+      downloadable copies of event videos, and TPUSA’s spokesman has asserted
+      that the SD cards are in FBI possession (KRK-E018, KRK-E021, KRK-E063),
+      but no public evidence inventory or hash ledger actually lists each
+      original card and its transfer. The strongest opposing consideration is
+      that full evidence inventories are rarely released before trial, so lack
+      of public detail does not imply that originals were never seized, leaving
+      this chain genuinely open in the public record.
+  - claimId: KRK-C013
+    verdict: provisionally_supported
+    confidence: high
+    reasoning: GRAMA‑based reporting documents an emergency cleanup order on
+      September 11, pavers being installed by September 14, and an invoice for
+      “Clean up for shooting incident,” while the lead investigator testified he
+      did not authorize the excavation or paving and learned of it from the news
+      (KRK-E033). The main limitation is that other officials may have properly
+      authorized scene release and alteration, and the full authorization chain
+      is not yet public, so we cannot state more than the documented timing and
+      his lack of personal authorization.
+  - claimId: KRK-C014
+    verdict: well_supported
+    confidence: high
+    reasoning: The JTA article quotes Kirk’s messages about losing a $2 million
+      donor over Tucker Carlson and about being pushed out of the pro‑Israel
+      cause, and explicitly notes that these messages were authenticated by
+      TPUSA spokesman Andrew Kolvet and corroborated in participation by Josh
+      Hammer (KRK-E023). The main residual uncertainty is absence of the full
+      native message export, which might add nuance or context, but that does
+      not undercut the core content and its authentication.
+  - claimId: KRK-C015
+    verdict: contradicted
+    confidence: high
+    reasoning: While donor‑pressure messages and disputed Hamptons meeting accounts
+      establish a tense motive environment, the same JTA reporting that surfaced
+      the texts also states there is no evidence linking the charged suspect to
+      Israel, and no public record shows communications, payments, or logistics
+      connecting any donor or state actor to the killing (KRK-E024–E026). The
+      strongest counter‑argument is that any such bridge evidence, if it
+      existed, would likely be in non‑public investigative files, but that
+      possibility only leaves the question open; it does not transform
+      motive‑side facts into established operational involvement.
+  - claimId: KRK-C016
+    verdict: established
+    confidence: high
+    reasoning: "KSL’s coverage of the June 2026 hearing quotes Judge Graf’s ruling
+      directly: deputy county attorney Chris Ballard was held in civil contempt
+      for violating a pretrial‑publicity order by telling TMZ the state had
+      “ample evidence” of guilt, though his correction of ballistics
+      misreporting was allowed (KRK-E034). The only real opposing consideration
+      is that the sanction was modest and the judge emphasized this did not
+      speak to case merits, but that goes to significance, not to whether the
+      contempt finding occurred."
+  - claimId: KRK-C017
+    verdict: contradicted
+    confidence: moderate
+    reasoning: The record shows rapid paving with a partially opaque authorization
+      trail (KRK-C013), shifted and sometimes inaccurate early communications,
+      and a prosecutor’s publicity violation (KRK-C016, KRK-E064), but no
+      document yet demonstrates that evidence was deliberately destroyed or
+      hidden—no proven destruction order, falsified inventory, or withheld item.
+      A comparative study of scene alteration emphasizes that speed alone is
+      non‑diagnostic and that the UVU anomaly lies in missing release‑authority
+      paperwork, not clear proof of obstruction (KRK-E057, KRK-E058). The
+      strongest contrary point is that the convergence of several transparency
+      failures in one case raises reasonable suspicion and makes concealment a
+      live hypothesis, but suspicion is different from establishing concealment
+      as fact.
+  - claimId: KRK-C018
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: The device‑at‑mic hypothesis is backed mainly by contested
+      frame‑by‑frame video interpretations and a single anonymous computational
+      analysis that, while transparent in code and data, relies on compressed,
+      unsynchronized cellphone footage (KRK-E027, KRK-E028); there is no
+      corroborating forensic residue, device fragment, or autopsy evidence
+      presently in public. Against it stand the medical examiner’s gunshot
+      classification, recovered bullet fragments, rooftop‑and‑rifle evidence,
+      and a base‑rate study showing that the non‑exit, multi‑fragment pattern is
+      ordinary for an expanding .30‑06 striking spine (KRK-E030, KRK-E065). The
+      strongest pro‑theory consideration is that key tests that could directly
+      falsify or support it—full autopsy review, native‑file synchronization,
+      acoustic localization, mic‑hardware forensics—have not yet been run,
+      leaving its current weakness due as much to lack of decisive testing as to
+      any affirmative refutation.
+  - claimId: KRK-C019
+    verdict: contradicted
+    confidence: high
+    reasoning: "Multiple documented gaps prevent a full independent audit: the
+      seven‑versus‑four fragment discrepancy with no public reconciliation
+      (KRK-C005), non‑release of the complete autopsy and radiology package
+      (KRK-C007), an incomplete public chain for original event‑camera media
+      (KRK-C012, KRK-E063), and deletion of potentially relevant surrender‑area
+      footage (KRK-C026). The main opposing consideration is that such
+      incompleteness is typical in active capital cases and may be cured at
+      trial, but that only normalizes the gaps; it does not convert the current
+      public record into a complete basis for independent end‑to‑end audit."
+  - claimId: KRK-C025
+    verdict: contradicted
+    confidence: high
+    reasoning: Verification confirms that the Navy demolition‑charge contract and
+      the AES plant explosion occurred as described, but also shows that
+      regulators found extensive safety violations, CSB records identify
+      commercial cast boosters as the product that day, and the device theory
+      was public weeks before the blast, undermining notions of post‑hoc
+      cover‑up (KRK-E038–E042, KRK-E052). Crucially, no document or manifest in
+      the public record links the contract’s deliverables, the
+      Heber‑to‑Nashville flight allegation, or AES production to the Kirk case
+      or any of its actors. The strongest opposing argument is that key
+      connecting records—flight manifests, program‑office correspondence—have
+      not yet been obtained and could hypothetically reveal a link, but until
+      such bridges materialize, the claim that an operational connection is
+      established is not just unsupported but contradicted by the current
+      absence of any chain.
+  - claimId: KRK-C026
+    verdict: provisionally_supported
+    confidence: high
+    reasoning: The Washington County sheriff’s office, in its own written responses,
+      stated that relevant surveillance footage was “no longer available after
+      the 30‑day retention period” and that it was never sent to any other
+      agency, which plainly means surrendered‑area video was allowed to
+      auto‑purge without external sharing (KRK-E045). The main caveat is that
+      the responses stop short of specifying exactly what the cameras captured
+      or whether they showed Robinson himself, so the evidential importance of
+      what was lost remains uncertain.
+  - claimId: KRK-C027
+    verdict: well_supported
+    confidence: high
+    reasoning: Joe Kent’s statements that his office was told to stop examining a
+      possible foreign nexus and that he attributes the decision to FBI Director
+      Patel are recorded verbatim across multiple outlets and directly quoted in
+      the DCNF piece (KRK-E046); this claim concerns what Kent has said, not
+      whether every detail is accurate. The main opposing consideration is that
+      the FBI has not confirmed this account and Kent was himself under scrutiny
+      for leaks, so his attribution represents one side’s narrative rather than
+      a fully corroborated institutional record.
+  - claimId: KRK-C028
+    verdict: unresolved
+    confidence: moderate
+    reasoning: Zinn’s own statements, as summarized in police and press records,
+      indicate he falsely claimed to be the shooter so “the real suspect could
+      get away,” supporting a diversion intent (KRK-E043), but the sheriff’s
+      office explicitly says it has “no information” of collusion and there is
+      no public evidence of payments, prior communications, or other
+      coordination (KRK-E044). The strongest argument for the claim is that such
+      an immediate and oddly framed outburst seems unlikely to be entirely
+      spontaneous, yet given Zinn’s documented psychological profile and
+      unrelated criminal conduct, that impression alone cannot establish
+      pre‑arrangement without additional evidence.
+  - claimId: KRK-C032
+    verdict: contradicted
+    confidence: high
+    reasoning: While Patel’s September 15 TV appearance did announce screwdriver DNA
+      and the September 16 charging Information omitted that item (KRK-E053,
+      KRK-E056), later preliminary‑hearing testimony squarely presented the
+      screwdriver as evidence bearing Robinson’s DNA (and Twiggs’ as an
+      elimination sample), showing it remained part of the case (KRK-E054). The
+      main opposing consideration is that the early announcement‑versus‑filing
+      mismatch reasonably raised questions about narrative management, but those
+      questions concern timing and messaging, not abandonment of the underlying
+      evidence, which the hearing record directly refutes.
