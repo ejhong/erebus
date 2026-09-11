@@ -472,3 +472,17 @@
     erebus-editorial-audit-v1); publishes only through the constitutional gate's
     multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+
+- date: 2026-09-11
+  kind: content
+  change: Updated the overview's closing inventory of completed pre-registered
+    studies from four to five, adding the wound-ballistics base rate, which
+    finds that a retained, fragmented lead-core rifle bullet striking the spine
+    is the expected forensic pattern rather than an anomaly.
+  reason: New evidence records (KRK-E065, KRK-E066, KRK-E067) entered the ledger
+    from a completed wound-ballistics study, contradicting the article's stated
+    count of studies behind the page.
+  actor: anthropic/claude-fable-5 (scheduled maintenance run,
+    erebus-editorial-audit-v1); publishes only through the constitutional gate's
+    multi-model concurrence, per AGENTS.md §3.15
+  aiAssisted: true
