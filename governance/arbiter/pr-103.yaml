@@ -1,0 +1,124 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 103
+title: "Content response: 2026-09-11"
+url: https://github.com/ejhong/erebus/pull/103
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-09-11
+judgedAgainst: "3468725919"
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The bulk of the diff is six new append-only assessment overlay files
+      under content/cases/kirk-assassination/assessments/, each stamped with
+      runId, model, date, promptVersion and explicitly labeled humanReviewed:
+      false and 'NOT human reviewed' / 'draft' in the header — exactly the form
+      §4 and §3.15 require, with no mutation of canon claim files. The five
+      check-role files are labeled as feeding the concurrence panel rather than
+      being displayed as narrative, and Kimi's file openly flags where it
+      diverges from the case file's grade on KRK-C012 rather than silently
+      overwriting it, which is honest disagreement, not a check-weakening. The
+      two featured-content touches are narrow and conservative: overview.md adds
+      a qualification (the ATF report's five-item inventory does not cleanly
+      reconcile with the testified 'four') and research.yaml's KRK-R001 is
+      reworded to match; both are recorded in an append-only history.yaml entry
+      stating what changed, why (new evidence record KRK-E067), and by which
+      model, satisfying §3.14, and both ride this needs-approval panel rather
+      than auto-merging. The CITATION VERIFICATION section reports no
+      identifiers added, and I found no locator that contradicts its own
+      content; evidence IDs (KRK-E065/E066/E067) are cited consistently across
+      all six independently authored files. Living-persons handling is careful
+      throughout — verdicts grade documentation and evidence disputes,
+      prosecution and official statements are labeled as assertions, and the
+      assessments repeatedly state that findings indict documentation, not
+      persons ('The proceeding is active; nothing here grades guilt'). AGENTS.md
+      is untouched, no provenance is removed, and confidence is expressed in
+      calibrated bands rather than false-precision scores."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: "The change consists of adding new AI assessment overlays and
+      cross-model check files, plus small edits to the Kirk case overview,
+      research agenda, and history. All new assessment/check YAMLs are clearly
+      labeled as AI-generated, unreviewed drafts, tagged with
+      runId/model/date/promptVersion, and marked role: check where appropriate,
+      consistent with append-only assessments and with not misrepresenting AI
+      output as human judgments (§3.14, §4). No existing claim verdicts or
+      source records are silently altered; the assessments interpret
+      already-committed evidence IDs, and the history.yaml entry explicitly logs
+      the content edit and its rationale, preserving version history (§3.14).
+      The overview and research edits only refine the description of an existing
+      evidence discrepancy using already-recorded evidence (KRK-E067) and do not
+      fabricate new sources, locators, or citations (§3.7–§3.8). No citations,
+      URLs, DOIs, or arXiv IDs are added, so there is no risk of fabricated
+      identifiers, and the verification tooling finds none. The diff does not
+      touch AGENTS.md or any constitutional/engine files, does not weaken
+      multi-model ratification or other checks, and introduces no confidential
+      or non-public-source material (§3.15, §4). Overall, the changes respect
+      atomic claims, explicit evidence direction, provenance, and the
+      AI-operation safeguards, so they comply with the constitution."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules: []
+    reasoning: "The proposed changes strictly follow the constitution. The AI
+      assessment drafts and cross-model checks are correctly formatted as
+      append-only overlay files, complete with required metadata (runId, model,
+      date, promptVersion, and humanReviewed: false) and explicit
+      acknowledgments that they are AI-generated (§4, §3.15). The editorial
+      corrections to `overview.md` and `research.yaml` correctly synthesize the
+      evidence record without fabricating citations (§3.8), and the
+      `history.yaml` file is properly updated to document the AI's action as an
+      unratified draft submitted for concurrence (§3.14). Finally, the
+      assessments adhere strictly to the living persons rules, properly grading
+      evidentiary claims without assigning criminal guilt."
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The diff is complete and does not touch AGENTS.md. It appends six
+      stamped assessment overlays (runId, model, date, promptVersion,
+      humanReviewed: false) that are labeled as unreviewed AI drafts/check runs
+      and do not mutate canon claim files, matching §3.14–§3.15 and the Phase-1
+      overlay rule. The only featured-text edits are a narrow overview.md and
+      KRK-R001 update recording that the filed ATF itemization (jacket fragment
+      plus four lead fragments) complicates rather than closes the existing
+      seven-versus-four gap, with an append-only history.yaml row stating what
+      changed, why, and which model proposed it. No new external citations or
+      locators are introduced (verification found none); internal KRK-*
+      references are not contradicted inside the packet. Living-persons
+      constraints are observed: overlays grade documentation and forensic
+      disputes, state the proceeding is active, and do not recast culpability as
+      a verdict."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.15
+      - §3.14
+      - §3.13
+      - §3.8
+    reasoning: "The PR adds six append-only assessment overlays (one scheduled
+      auto-assessment plus five independent cross-model check runs), each
+      stamped with runId/model/date/promptVersion, labeled humanReviewed: false,
+      and carrying headers stating they are unreviewed AI drafts — exactly the
+      honest-labeling regime §3.15 and Phase-1 require, and the check files'
+      presence embodies the multi-model concurrence gate rather than dodging it;
+      the Gemini check's divergent case-level verdict (well_supported vs mixed)
+      is committed openly, so disagreement is not publishing silently. The one
+      featured-content edit (overview.md fragment paragraph, plus the KRK-R001
+      research entry) is grounded in the already-landed record KRK-E067,
+      described identically across all six independently generated overlays, and
+      is matched by a history.yaml entry recording what changed, why, and the AI
+      actor — satisfying §3.14's revision-history rule rather than silently
+      altering a published judgment. No external citations are added (the
+      citation verifier found none), so real-citations rules are not engaged;
+      referenced events postdate my training and are internally consistent
+      across files, so temporal humility bars a fabrication finding. The
+      assessments grade evidence disputes (custody, ballistics, timelines),
+      repeatedly label prosecution assertions as assertions, and expressly
+      disclaim grading guilt, consistent with the living-persons rules. No
+      engine, CI, schema, or AGENTS.md changes are present, so the checks
+      themselves are untouched."
+harvestedAt: 2026-09-14

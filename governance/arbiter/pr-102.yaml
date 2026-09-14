@@ -1,0 +1,152 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 102
+title: "KRK-S006 collection: bullet retention in a rifle-shot neck — 27 sourced
+  rows, scenario findings, one ledger record"
+url: https://github.com/ejhong/erebus/pull/102
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-09-11
+judgedAgainst: 0d2fefa5d8
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "No AGENTS.md edit; the change touches only content/ (study,
+      evidence, sources, history) in the needs-approval lane, as the
+      constitution requires for records naming a living person. The citation
+      tooling resolves every added DOI/URL except the Wayne State PDF mirror of
+      Bono & Heary (HTTP 403), whose DOI 10.1016/S1529-9430(03)00178-5 resolves
+      to exactly the cited title/venue — a blocked mirror is not positive
+      evidence of fabrication (§3.8/real-citations satisfied). Internal
+      consistency checks out: 27 rows exist and the findings' row references
+      (e.g. row 27 = the Rev.com presser on the firing position, row 22 = the
+      KUTV ATF inventory) point at the rows they describe. Verification labels
+      are honest and granular: the Core-Lokt ammunition row is marked
+      `unverified` and the findings explicitly refuse to lean on it; Di Maio
+      page numbers, Fackler scale-bar readings and abstract-only rows (1, 12,
+      13, 15, 17, 20) are each disclosed as such, and blocked domains (cnn.com
+      451, abc4 403, DTIC 403) are listed rather than papered over.
+      Living-persons rules are respected: the prosecution's \"struck Kirk's
+      spine and shattered\" is recorded as an assertion by the prosecution about
+      a confidential report, never restated as fact, and the study grades only
+      the physical-evidence question, not culpability. Evidence direction is
+      explicit (`qualifies` on all three), independence notes flag that the
+      CNN/KUTV/NBC accounts report one proceeding (§3.10), negative results are
+      recorded as \"no rate found\" (§3.11), and uncertainty is plain-language
+      and conditional rather than a single score (§3.13). Records are stamped
+      ai_extracted with runId/model/date/promptVersion and `humanReviewed:
+      false`, so no unratified draft is dressed as a human conclusion (§3.15);
+      the §3.12 freeze irregularity (collection in the same session before the
+      freeze PR opened) is disclosed verbatim in the file header, the workpaper
+      source note and the limitations, which is disclosure rather than
+      concealment."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules:
+      - §3.1
+      - §3.2
+      - §3.5
+      - §3.6
+      - §3.7
+      - §3.8
+      - §3.9
+      - §3.10
+      - §3.11
+      - §3.12
+      - §3.13
+      - §3.14
+      - §3.15
+    reasoning: "The change turns a pre-registered study into a collected workpaper
+      and adds three evidence records and three sources, all within content/ and
+      not touching AGENTS.md. The study file preserves the frozen criteria and
+      hash, explicitly documents the partial pre-registration and search
+      protocol, and logs concrete search queries and failed searches, aligning
+      with §3.1 and §3.12. Claims and evidence are kept distinct: the workpaper
+      is clearly labeled as secondary synthesis, rows carry quotations with
+      locators and verification labels, and only specific findings enter the
+      ledger via KRK-E065, consistent with §3.2, §3.5, §3.6, and §3.9.
+      Provenance is detailed: each row has a citation with URL/DOI, locator, and
+      verification status; derived numbers and abstract-only readings are
+      flagged; unverified ammunition-type reports are explicitly marked
+      unverified, satisfying §3.7 and §3.8. Independence and limitations are
+      handled carefully through independenceNote fields, analog-labeling, and a
+      limitations section covering analog nature, blocked sources, and
+      second-hand case facts, in line with §3.10, §3.11, and §3.13. The new
+      evidence records about living persons are framed as assertions by
+      prosecution/press, avoid guilt judgments, and emphasize that the study
+      says nothing about who fired the shot, fitting the living-persons rules
+      and §3.15. History.yaml records the new study and evidence as an
+      append-only change with actor, date, reason, and founder direction,
+      complying with §3.14 and the multi-model AI-operation framework."
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.8
+      - §3.9
+      - Living persons and active proceedings
+    reasoning: The change strictly complies with the project's epistemic and
+      living-persons rules. Exact provenance is preserved and honestly labeled,
+      including explicit caveats when a book was read via a full-text search
+      index (Row 10) or when an exhibit description remains unverified (Row 26).
+      The mechanical verification confirms the DOIs and URLs exist (the single
+      HTTP 403 is on a PDF link for a DOI that correctly resolved). Most
+      importantly, the change scrupulously obeys the living-persons rules by
+      recording the prosecutor's characterization of the medical-examiner report
+      as an assertion by a party rather than an established medical fact, and
+      explicitly notes that the study's base rates say nothing about who fired
+      the shot.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: The collection PR fills KRK-S006 and appends three ai_extracted
+      evidence rows, three sources, and a changelog entry without editing
+      AGENTS.md or weakening checks. Mechanical resolution confirms the added
+      DOIs/URLs exist; resolved titles match the claimed papers (Gremse,
+      Trinogga, Hampton 2021, Bono & Heary, Knudsen 1993, Mahoney, Baum, Noble,
+      Peonim). The one FAILS (Wayne State PDF, HTTP 403) is a reprint URL whose
+      DOI still resolves to the same 2004 Spine Journal article, so it is not a
+      fabricated identifier. Verification labels,
+      abstract-only/derived/unverified disclosures, sourceStatement vs
+      editorInference, prosecution-as-assertion, analog limitations,
+      failed-search notes, and living-persons framing (no culpability grade;
+      innocence stated) are present. Journalism is labeled as press accounts of
+      unreleased reports, not as those reports.
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.7
+      - §3.8
+      - §3.10
+      - §3.11
+      - §3.12
+      - §3.15
+    reasoning: "Every added DOI resolves via Crossref to exactly the title and year
+      the rows claim (Gremse 2014 soap, Trinogga 2019, Hampton 2021 pigs,
+      Knudsen & Theilade 1993, Mahoney 2017, Bono & Heary 2004, etc.), and the
+      one FAILS item (Wayne State PDF, HTTP 403) is an access refusal, not a
+      non-existent source — its DOI 10.1016/S1529-9430(03)00178-5 resolves to
+      'Gunshot wounds to the spine' (2004), matching the row, and the operator
+      demonstrably discloses eight other blocked domains rather than hiding
+      them. Verification labels are honest throughout: abstract-only rows say
+      so, scale-bar readings are marked derived with ±, Di Maio page numbers are
+      flagged as index-derived, and the Core-Lokt ammunition type is carried as
+      'unverified' with the partisan sourcing disclosed (§3.8). The freeze-order
+      deviation (collection performed in-session before the freeze PR opened) is
+      prominently disclosed in the file header, the source record, and the
+      limitations, and substantively the criteria hash is asserted to predate
+      any search — §3.12's core requirement — with the residual procedural risk
+      handed to the panel rather than concealed. Living-persons rules are
+      observed: the prosecution's spine statement is recorded as an attributed
+      assertion, 'allegedly' is preserved in quotations, no culpability claim is
+      graded, and the study explicitly disclaims bearing on who fired the shot.
+      Independence notes mark wire duplication as one source (§3.10), failed
+      searches are recorded (§3.11), press accounts of the ATF report are
+      labeled supersedable by the primary filing (§3.7), and history.yaml is
+      appended, not rewritten, with model/runId/date stamps and humanReviewed:
+      false. The change touches featured claims and is correctly routed through
+      this ratification rather than auto-merged."
+harvestedAt: 2026-09-14
