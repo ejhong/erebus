@@ -1,0 +1,117 @@
+# Harvested arbiter verdict — verbatim machine record of the public PR
+# comment; append-only. See scripts/harvest-governance.mjs.
+pr: 105
+title: "Content response: 2026-09-11"
+url: https://github.com/ejhong/erebus/pull/105
+verdict: pass
+reason: 5 of 5 seats affirm compliance; no seat finds a violation
+outcome: merged
+outcomeAt: 2026-09-11
+judgedAgainst: 3e8e1cf154
+promptVersion: erebus-arbiter-v3
+seats:
+  - seat: Opus 5 (Anthropic)
+    vote: complies
+    rules: []
+    reasoning: "The new file is an append-only assessment overlay in the case's
+      assessments/ directory, correctly stamped with runId, model, date and
+      promptVersion, explicitly flagged `humanReviewed: false` and headed with a
+      comment saying it is an unreviewed AI draft that never mutates canon claim
+      files — exactly what §4 requires and no violation of §3.15's ban on
+      presenting drafts as ratified. Its reasoning is expressed in plain verdict
+      states with separate confidence labels and repeatedly separates
+      credibility from diagnosticity (e.g. KRK-C004: inconclusive result is a
+      standard outcome 'carrying little diagnostic weight either way'),
+      satisfying §3.4 and §3.13; it grades evidence disputes (ballistics
+      itemization, fragment counts, media chain) and states explicitly 'nothing
+      here grades guilt' and 'This indicts documentation, not persons', so the
+      living-persons rules are respected. The overview edit is a narrow factual
+      correction (four → five pre-registered studies) tied to existing evidence
+      records KRK-E065–E067, and it is paired with a history.yaml entry
+      recording what changed, why, and the acting model with the note that it
+      publishes only through multi-model concurrence (§3.14). No identifiers
+      were added, so the verification tool's 'none found' result is consistent;
+      the internal IDs must resolve or the fail-closed loader would break the
+      build. Two minor blemishes — the synthesis calling the surrender footage
+      'unpreserved' while KRK-C019 calls it 'destroyed', and the retained stale
+      line about a September 1, 2026 hearing 'will hear' — are ordinary
+      imperfections in a labeled draft, not fabrication or check-weakening.
+      AGENTS.md is untouched and the change touches only content/."
+  - seat: GPT-5.1 (OpenAI)
+    vote: complies
+    rules: []
+    reasoning: The new YAML file under assessments is clearly labeled as an
+      AI-generated, unreviewed, append-only overlay, in line with §3.14 and §4
+      (AI assessments as drafts that never mutate canon claim files). It does
+      not alter or delete prior assessments, only adds a new dated runId entry.
+      No citations, locators, or provenance identifiers are fabricated or even
+      introduced here, so §3.7–§3.8 are not implicated by new external
+      references; all IDs referenced (KRK-Cxxx, KRK-Exxx) are internal case
+      records and appear to be used consistently. The overview text edit and
+      corresponding history.yaml entry transparently update a summary count of
+      pre-registered studies to reflect newly added wound-ballistics evidence,
+      preserving version history and giving a clear reason, consistent with
+      §3.14 and §4. The overview description that the wound-ballistics study
+      finds a particular pattern is framed as the study’s result, not as an
+      unqualified fact about guilt, and the closing paragraph continues to avoid
+      grading criminal culpability, in line with the living-persons rules. No
+      constitutional safeguards are weakened, AGENTS.md is untouched, and there
+      is no sign of publishing confidential material or misrepresenting AI work
+      as human-reviewed, so the change complies with the constitution.
+  - seat: Gemini 3.1 Pro (Google)
+    vote: complies
+    rules:
+      - §3.14
+      - §3.15
+      - §4
+    reasoning: The proposed changes strictly follow the constitution. The new AI
+      assessment is correctly implemented as an append-only overlay file in the
+      designated assessments directory, stamped with the required runId, model,
+      date, and promptVersion, and explicitly labeled as an unreviewed AI draft
+      (Phase 1 rules). The update to the overview article text is properly
+      versioned and logged in history.yaml, fulfilling §3.14, and accurately
+      awaits multi-model concurrence for featured content per §3.15. The
+      synthesis explicitly avoids grading guilt for named individuals.
+  - seat: Grok 4.6 (xAI)
+    vote: complies
+    rules: []
+    reasoning: "The PR adds a new append-only assessment overlay stamped with runId,
+      model, date, and promptVersion, explicitly labeled an unreviewed AI draft
+      (humanReviewed: false) that does not mutate canon claim files, matching
+      §3.14–§3.15 and the phase-1 overlay rules. The overlay grades
+      evidence-dispute rungs, states that nothing grades guilt, and keeps
+      official assertions as sourced statements, consistent with the
+      living-persons rules. The overview.md edit is a narrow inventory
+      correction (four studies to five, naming the wound-ballistics base rate)
+      with a matching history.yaml entry that records what changed, why, and
+      which model produced it; AGENTS.md is untouched. No new external
+      identifiers appear, citation verification found none, and nothing in the
+      material is positive evidence of fabricated locators, silent judgment
+      rewrites, confidence-material exposure, or check-weakening."
+  - seat: Kimi K3 (Moonshot, via Venice)
+    vote: complies
+    rules:
+      - §3.14
+      - §3.15
+      - §3.13
+    reasoning: "The diff adds an append-only AI assessment overlay correctly stamped
+      with runId/model/date/promptVersion, labeled humanReviewed: false and
+      explicitly 'NOT been reviewed by a human,' satisfying §3.15's labeling and
+      append-only requirements; it mutates no canon claim files. The overview.md
+      edit touches featured article text, but it is exactly the kind of change
+      this multi-model gate exists to ratify, and its revision is recorded in
+      history.yaml with date, reason, actor, and aiAssisted flag per §3.14 — the
+      change itself is a narrow, internally consistent correction (four studies
+      → five, adding the wound-ballistics base rate that the history entry and
+      the overlay's KRK-E065/E066/E067 references corroborate). Verdicts use
+      plain-language states with confidence levels and an explicit sensitivity
+      analysis, matching §3.13. Living-persons rules are respected: the
+      synthesis states 'nothing here grades guilt,' assessments grade evidence
+      disputes (fragment counts, chain of custody, statement ledgers) and
+      attribute assertions to their sources rather than restating them as fact.
+      No external citations are added (verification confirms none), no AGENTS.md
+      edit, no check-weakening; the stale September 1 hearing date is
+      pre-existing text outside this diff, and reliance on fail-closed CI for
+      the internal KRK-ID referents is legitimate given no positive evidence of
+      fabrication."
+harvestedAt: 2026-09-14
