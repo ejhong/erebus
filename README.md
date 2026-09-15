@@ -59,7 +59,10 @@ project's name out of the rendered site's inputs (`content/`, `src/`,
 `app/`, `public/`), and a warning-only engine divergence check. Since
 2026-09-01 the sync is on hold for the upstream's metabolism jobs
 (promotion, Bench scoring, adoption) until the founder judges them working
-there; see the DECISIONS entry of that date.
+there; see the DECISIONS entry of that date. Two changes were hand-ported
+ahead of the sync (2026-09-05): the digest permission and the panel's
+seat table (`scripts/lib/vendors.mjs` — Opus 5 medium · GPT-5.6 Sol high ·
+Gemini 3.8 Flash medium · Grok 4.5 high · GLM 5.3 Flash high via Venice).
 
 ## Operation
 
