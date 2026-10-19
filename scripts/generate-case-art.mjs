@@ -44,6 +44,11 @@ const CASE_TONES = {
     "warm brick red and cream storefronts under a pale grey-gold winter " +
     "morning, bare street trees, long cool blue-grey sidewalk shadows; " +
     "the ghosted plat in warm sepia ink on cool ivory paper",
+  "january-6-pipe-bombs":
+    "deep indigo winter dusk, sodium-amber streetlamp glow pooling on " +
+    "brick sidewalks, cold slate-grey rowhouse brick, the dome a pale " +
+    "ivory in the distance; the ghosted plat in faded indigo ink on cool " +
+    "grey paper",
 };
 
 /**
@@ -88,6 +93,20 @@ const CASE_SUBJECTS = {
     "and no legible signage — dissolving into a ghosted hand-drawn " +
     "surveyor's plat of the avenue block with numbered storefront " +
     "footprints and lot lines.",
+  // The neighborhood, not the night: a quiet Capitol Hill street of
+  // rowhouses at winter dusk, the dome far off — no people, no vehicles,
+  // no legible signage, nothing of the devices. The plat is the blocks'
+  // geometry only: no routes, no times, nothing that reads as an exhibit,
+  // since the route itself is in dispute.
+  "january-6-pipe-bombs":
+    "a quiet residential street on Capitol Hill in Washington, D.C., at " +
+    "dusk on a still winter evening — a row of brick rowhouses with iron " +
+    "railings and bare street trees, streetlamps pooling amber light on " +
+    "the empty sidewalk, the Capitol dome small and pale in the far " +
+    "distance above the rooftops, no people, no vehicles and no legible " +
+    "signage — dissolving into a ghosted hand-drawn surveyor's plat of " +
+    "the city blocks south-east of the Capitol grounds, with numbered " +
+    "squares and lot lines.",
 };
 
 /** One reversible generation run: a single runId stamped on every record. */
