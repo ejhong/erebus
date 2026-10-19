@@ -1,0 +1,23 @@
+id: PIPE-001
+slug: january-6-pipe-bombs
+title: "The J6 Pipe Bomber"
+subtitle: "Who placed the pipe bombs outside the RNC and DNC on the evening of January 5, 2021 — does the public record support the charge against Brian Cole Jr., and what would settle the challenge to it?"
+domain: "Contested public events · Active criminal proceeding"
+status: active
+summary: >-
+  On the evening of January 5, 2021, someone in a grey hooded sweatshirt placed two pipe bombs on Capitol Hill, one by the Democratic National Committee and one behind the Republican National Committee. Neither went off; both were found around 1 p.m. the next day, minutes before the Capitol was breached. The case went unsolved for almost five years and became a magnet for theories, including that the bomber was an insider. On December 4, 2025 the FBI arrested Brian J. Cole Jr., 30, of Woodbridge, Virginia; prosecutors say purchase records, a plate reader, phone data and his own confession tie him to the devices. Cole, who is presumed innocent, has pleaded not guilty. His lawyers call the confession coerced, and in October 2026 the reporter Steve Baker published Capitol CCTV he says shows Cole elsewhere at the time. This case lays the public record out claim by claim: what each side has put on the record, how strong it is, and what would settle each dispute. It assesses evidence, never guilt, which only a court can decide.
+themes:
+  event: "The devices and the night of January 5"
+  person: "The person on the video"
+  purchases: "Purchases and materials"
+  location: "Plate reader and phone data"
+  footage: "The October 2026 footage"
+  interview: "The interview and the confession"
+  conduct: "Conduct after the event"
+  motive: "Motive and target"
+  insider: "The insider account"
+  investigation: "The investigation and the security failures"
+  proceedings: "The proceedings"
+editors:
+  - "Erebus operator (Claude Opus 5.5, Claude Code), in a founder session"
+lastReviewed: "2026-10-19"

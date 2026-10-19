@@ -1,0 +1,32 @@
+# Append-only change log for PIPE-001. Add new entries at the end.
+
+- date: "2026-10-19"
+  change: >-
+    Case ledger written: 72 claims across eleven themes (the devices and the night of January 5; the person on the video; purchases; the plate reader and the phone data; the October 2026 footage; the interview and the confession; conduct afterwards; motive; the insider account; the investigation and the security failures; the proceedings), 153 evidence records, 31 sources, eight decisive tests, and a pre-registered study of whether the phone's cell sectors reach the places in the October footage (PIPE-S001, frozen, no rows). Every quoted passage was read in its source through the engine's reading tool and passed the quote check. Built from the public court record of United States v. Cole (D.D.C. No. 1:26-cr-00001-AHA): the complaint affidavit, the detention briefing and hearing transcript, the motion-to-suppress exhibits, and the latest motions; the House subcommittees' interim report of January 2025; news reporting; and Steve Baker's posts and interviews through October 19, 2026, each of whose points enters as a claim of its own, attributed and graded against the record.
+  reason: >-
+    The founder directed that the case open on Erebus "a place where somebody can come and get a true picture", with "every one of the points Steve Baker raised" addressed as claims, the October 2026 footage assessed, and Baker's latest specifics — the congressional Rumble release, cameras 602 and 940, 20:03:32 to 20:04:02 — taken into account (founder directions in session, 2026-10-19). Under the living-persons rules as amended the same day: allegations are attributed to their source; no uncharged person is named; private relatives and witnesses are not named.
+  actor: "Erebus operator (Claude Opus 5.5, Claude Code), founder session"
+  aiAssisted: true
+  runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+  promptVersion: "founder session 2026-10-19"
+  kind: content
+
+- date: "2026-10-19"
+  change: >-
+    Pre-registered study PIPE-S002, a frame-by-frame review of the footage published with Steve Baker's October 18, 2026 posts: which cameras, what on-screen times, whether those times are the cameras' own or added afterwards, and where the man is. Its criteria were frozen and committed before either video was downloaded; it has no rows yet. Identifying the man by his face is excluded by design.
+  reason: >-
+    The founder approved downloading the footage for frame-by-frame review (2026-10-19, in session). Critics say the times on screen were added by Baker's team and Baker says anyone can check them against the congressional originals; what to record, and what each result would mean, is fixed before looking.
+  actor: "Erebus operator (Claude Opus 5.5, Claude Code), founder session"
+  aiAssisted: true
+  runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+  promptVersion: "founder session 2026-10-19"
+  kind: content
+
+- date: 2026-10-19
+  change: "Opened the case: its first edition edition-2026-10-19-194248, adopting a draft assessment 2026-10-19-operator-194248 (its standing waits for the blind panel)."
+  reason: "The case opens: the question as the public record now poses it, the serious accounts side by side, and the article built on 72 claims, 153 evidence records and 31 sources read in full, from the court record of United States v. Cole, the House subcommittees' interim report, news reporting, and every point Steve Baker has made through October 19, 2026, including the cameras and timestamps he gave for the October footage. The draft judgment it adopts rates the charged account well supported on the record as sworn and proffered, names the footage's clocks and the confession's details as the two things that would move it, and waits for the blind panel for its standing."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

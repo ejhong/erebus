@@ -1,0 +1,487 @@
+# Draft assessment — the operator's judgment (claude-opus-5-5, session 2026-10-19-session-january-6-pipe-bombs-founder), NOT human reviewed.
+# Its standing comes only from the blind panel (role: check runs written after it). Append-only.
+
+runId: 2026-10-19-operator-194248
+producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
+model: claude-opus-5-5
+date: 2026-10-19
+promptVersion: founder session 2026-10-19
+humanReviewed: false
+role: draft
+basis:
+  ledgerHash: 77996408428f998bcadb95d993eae9e72761968fa30610109f870187fd292047
+caseAssessment:
+  verdict: well_supported
+  whatIsClaimed: Prosecutors say Brian Cole Jr. built two pipe bombs and placed them by the party headquarters on January 5, 2021, and confessed when arrested in 2025; he denies it and is presumed innocent. His lawyers call the confession coerced. The reporter Steve Baker says Capitol CCTV shows Cole on the north side of the Capitol at 8:03 p.m., and that the bomber was an insider.
+  whereDisagreementLives: "Not over what Cole bought, where his car was or what he first told agents, but over whether he was the man on the bomber's route. The affidavit puts his phone on that route minute by minute; Baker's footage puts a man he identifies as Cole a kilometre north at 8:03 p.m., four minutes after the bomber is filmed by the DNC. If the clocks agree, both are true only if he ran most of a kilometre in four minutes. The second dispute is the confession: detailed, but given under pressure by a man later diagnosed with autism."
+  whatWouldSettleIt: Three records that exist would settle it. First, the October footage's native files and the Capitol Police cameras' clock offsets, set against the cameras that filmed the bomber. Second, a map of the five phone sectors against the places in that footage. Third, the recorded interview, played in court, each detail traced to who said it first.
+  bestConventionalExplanation: "The charged account: Cole bought the components over 2019 and 2020, built the devices at home, drove into the city on the evening of January 5, 2021, and placed one by the DNC and one behind the RNC, carrying his phone; the cameras, the plate reader and the phone record the same evening from three sides. He kept buying components afterwards, wiped his phone often from 2022, and when arrested first gave the account that he had gone to a protest, then admitted the placements. On this account the October footage shows someone else, or shows Cole at another time than its clock says."
+  components:
+    - label: "The charged account: Cole placed both devices"
+      state: well_supported
+      note: On the record as sworn and proffered, purchases, a plate reader and phone data converge on him; none of it is public or tested at trial.
+    - label: The October 2026 footage clears Cole
+      state: unresolved
+      note: Specific and checkable (cameras 602 and 940, 20:03:32); the footage's source, its clocks and the man's identity are unverified.
+    - label: The confession is reliable evidence
+      state: mixed
+      note: Detailed and partly matched by records, but obtained under techniques an expert calls coercive; the recording is not public.
+    - label: A law-enforcement insider placed the devices
+      state: contradicted
+      note: No public evidence; its one identification was retracted, and the evidence that exists points elsewhere.
+    - label: The devices could have exploded
+      state: mixed
+      note: The FBI's examiner says viable; one powder sample was not explosive, and neither device went off.
+    - label: The security response and the investigation failed
+      state: well_supported
+      note: A missed sweep, broken perimeters and four years without a suspect are documented by Congress and the FBI's own account.
+  researchPriority:
+    level: high
+    reason: "Two checks would settle the central dispute: the October footage's clocks and identity, and the confession traced detail by detail. Both rest on records the court or the Capitol Police hold, before the February 2027 trial."
+  loadBearing:
+    - PIPE-C027
+    - PIPE-C026
+    - PIPE-C020
+    - PIPE-C021
+    - PIPE-C039
+    - PIPE-C062
+    - PIPE-C063
+  weakestLinks:
+    - PIPE-C035
+    - PIPE-C040
+    - PIPE-C031
+  synthesis: "On the public record as it stands, the charged account is well supported: several independent lines described under oath converge on Cole, though none has yet been tested at trial and the records behind them are not public. The purchase records match six of the devices' kinds of part, including a battery connector fewer than 8,000 people could have bought, though not the alligator clips, which appear only after the placements; a plate reader puts his car at the South Capitol Street exit at 7:10 p.m.; and the phone attributed to him used the cell sectors covering the bomber's route at the minutes the cameras show the bomber there, five times over. The confession adds detail but is the weakest line until the recording is examined: it came after two hours of denial, under techniques the defense's expert calls coercive, from a man diagnosed afterwards with autism, and the record does not yet show which details came first from Cole and proved true. Against all this stands one specific, checkable challenge: Capitol CCTV, said to come from the House's public release, of a man Baker identifies as Cole on Constitution Avenue at 20:03:32, four minutes after the affidavit has the bomber at New Jersey Avenue and E Street SE, about a kilometre away. If both systems' clocks agree and the man is Cole, the charged account survives that point only if he ran most of a kilometre in four minutes; if the clocks differ by several minutes, the conflict dissolves. The identification rests on family recognition of clothing and on gait judged by eye, the method that earlier named a different person in a report later retracted; and the phone would still need explaining, since at 7:59:36 it used a sector facing south from Independence Avenue. Baker's other points — shoe size, a smartwatch, a timer found at twenty minutes, a missing end cap — are unpublished or secondhand; only the negative flame test finds support in the record. The insider account has no public evidence left. The clock comparison and the confession's audit would move this judgment, and the court will see both before trial."
+  steelman: "Every line against Cole is the prosecution's description of records no outsider has examined, and each is weaker than it sounds. A cell sector covers a wedge kilometres long, not a corner; in 2021 five other people's phone data also may have matched the bomber's movements. Hardware bought over two years can be a hobby as easily as a plan; the uncommon connector narrows the field without closing it, and the alligator clips appear in his records only weeks after the placements. The plate reader shows his car arriving, which his first account explains: he came to a protest. That account came before any pressure, and now a Capitol camera shows a man in a homemade mask, a tagged new jacket and heel-crushed shoes, which his family recognised, walking on the north side four minutes after the bomber was filmed by the DNC. The confession followed two hours of denial, a still image, a reminder that lying is a crime and talk of sparing his family, from a man whose autism makes him likelier to say what pressure demands; and devices whose powder failed a flame test never went off. If the October clocks hold, the case rests on a confession of the kind that has convicted innocent people before."
+claimAssessments:
+  - claimId: PIPE-C001
+    verdict: well_supported
+    reasoning: Sworn by the FBI affiant from timestamped video and repeated by the prosecution; no party disputes the times, Baker included. The video itself is not public.
+    confidence: high
+  - claimId: PIPE-C002
+    verdict: well_supported
+    reasoning: The affidavit swears one person placed both; the RNC placement is inferred from that person's movements around the RNC at the time rather than filmed.
+    confidence: moderate
+  - claimId: PIPE-C003
+    verdict: provisionally_supported
+    reasoning: The prosecution's own phrasing — appears to have placed — fits Baker's point, and the affidavit describes movements by the RNC, not the act; the full footage would settle it.
+    confidence: moderate
+  - claimId: PIPE-C004
+    verdict: well_supported
+    reasoning: The FBI's video reconstruction has the placements on the evening of January 5 and the reports of the devices at about 1:00 and 1:15 p.m. the next day; the House report adopts it. No continuous footage of either device is public.
+    confidence: high
+  - claimId: PIPE-C005
+    verdict: contradicted
+    reasoning: "Against it: timestamped video of the placements the evening before, as sworn, and a documented Secret Service sweep that missed the DNC device while it was there. For it: Baker's assertion, an unsourced dog canvass and a timer reading reported secondhand."
+    confidence: moderate
+  - claimId: PIPE-C006
+    verdict: well_supported
+    reasoning: The FBI laboratory's inventory as sworn in the affidavit; no party disputes the components.
+    confidence: high
+  - claimId: PIPE-C007
+    verdict: well_supported
+    reasoning: The examiner's assessment is stated in the prosecution's filings and was public in 2021; the defense disputes the conclusion, not that it was made.
+    confidence: high
+  - claimId: PIPE-C008
+    verdict: mixed
+    reasoning: The examiner calls the devices viable, but by the prosecution's own account one powder sample was not explosive, the defense says it has evidence they could not have detonated, and neither device went off in sixteen hours.
+    confidence: moderate
+  - claimId: PIPE-C009
+    verdict: well_supported
+    reasoning: The FBI's photogrammetry result as sworn, done in January 2021, before anyone was a suspect.
+    confidence: high
+  - claimId: PIPE-C010
+    verdict: well_supported
+    reasoning: Stated in the affidavit and the detention memorandum; not disputed.
+    confidence: high
+  - claimId: PIPE-C011
+    verdict: well_supported
+    reasoning: Both facts are sworn; the shared trait is common and narrows little.
+    confidence: high
+  - claimId: PIPE-C012
+    verdict: well_supported
+    reasoning: Sworn, and in the FBI's published description since 2021.
+    confidence: high
+  - claimId: PIPE-C013
+    verdict: well_supported
+    reasoning: The prosecution's account of what Cole said while still denying; the defense disputes the interview's voluntariness, not this answer. No purchase record of the shoes is public.
+    confidence: moderate
+  - claimId: PIPE-C014
+    verdict: weakly_supported
+    reasoning: An estimate attributed to Baker, with no published measurement, method or error; no official record gives a size.
+    confidence: low
+    treatment:
+      plainLanguage: Baker says measurements show the bomber's shoes were about size 9 to 9.5, against Cole's 12 to 13; no measurement has been published.
+      importance: supporting
+      diagnosticity: indeterminate
+      diagnosticitySummary: A three-size gap would be strong evidence if measured with a stated error; as it stands it cannot be weighed.
+      strongestObjection: Shoe length from low-resolution video at an angle carries large error.
+      whatWouldChangeOurMind:
+        - A published photogrammetric estimate with its error range.
+        - The search inventory of the shoes seized from Cole.
+  - claimId: PIPE-C015
+    verdict: weakly_supported
+    reasoning: Baker's report of inspecting Cole's wardrobe at the family home and of the shoes in the new footage; plausible, unverified, from an interested source.
+    confidence: low
+  - claimId: PIPE-C016
+    verdict: weakly_supported
+    reasoning: Baker's characterization of a report that is not public; a court filing confirms that gait-analysis materials exist and were given to the defense, not what they conclude.
+    confidence: low
+  - claimId: PIPE-C017
+    verdict: weakly_supported
+    reasoning: An assertion about unreleased video, with no frames or source published.
+    confidence: low
+  - claimId: PIPE-C018
+    verdict: weakly_supported
+    reasoning: "Graded on the substance: the family's account through Baker, interested and unverified, and checkable against purchase and search records."
+    confidence: low
+  - claimId: PIPE-C019
+    verdict: provisionally_supported
+    reasoning: CNN describes a medical face mask from the FBI's material and Baker a white N95; the affidavit gives no color or type.
+    confidence: moderate
+  - claimId: PIPE-C020
+    verdict: well_supported
+    reasoning: Sworn from bank and card records for six kinds of part, and not disputed by the defense, which argues instead that consumer purchases prove little. The alligator clips appear only after the placements, so the affidavit's each type is not borne out in what it itemizes.
+    confidence: high
+    treatment:
+      plainLanguage: Bank and card records, as the FBI describes them, show Cole buying six of the kinds of part used in the devices in 2019 and 2020; the alligator clips appear only afterwards.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: Matching every component is unusual; most parts are common, so the match as a whole is what counts.
+      strongestObjection: Ordinary hardware, bought over two years, by a man who also bought tools for other projects.
+      whatWouldChangeOurMind:
+        - Purchase records shown to be another person's or misattributed.
+        - The same set of components found in the purchases of many people in the area.
+  - claimId: PIPE-C021
+    verdict: well_supported
+    reasoning: The distributor's figure as the FBI reports it; the narrowest of the purchase lines.
+    confidence: high
+    treatment:
+      plainLanguage: "One part, a 9-volt battery connector, was uncommon: fewer than 8,000 were distributed nationally, and Cole bought five."
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: The narrowest of the purchase lines; it shrinks the field of possible buyers sharply.
+      strongestObjection: Thousands still had access to it, and the figure is the distributor's as reported by the FBI.
+      whatWouldChangeOurMind:
+        - The distributor's figure shown to be much larger.
+        - The devices' connector shown to be a different product.
+  - claimId: PIPE-C022
+    verdict: well_supported
+    reasoning: The manufacturer's figure as the FBI reports it; it shows the pipes alone narrow little.
+    confidence: high
+  - claimId: PIPE-C023
+    verdict: well_supported
+    reasoning: Sworn in the affidavit with dates, and the last purchase given in the detention memorandum.
+    confidence: high
+  - claimId: PIPE-C024
+    verdict: well_supported
+    reasoning: The prosecution's inventory of the December 2025 searches; not disputed so far.
+    confidence: high
+  - claimId: PIPE-C025
+    verdict: well_supported
+    reasoning: No prosecution filing read for this case claims a fingerprint or DNA match, and the defense says there is no direct forensic tie; the laboratory reports are not public.
+    confidence: moderate
+  - claimId: PIPE-C026
+    verdict: well_supported
+    reasoning: Stated by the prosecution, and Cole's own first account has him driving his Nissan into the city that evening.
+    confidence: high
+    treatment:
+      plainLanguage: A plate reader recorded Cole's car entering the city at 7:10 p.m., 24 minutes before the bomber first appears on camera.
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: It puts his car in the area, which his own first account also does; it does not say what he did there.
+      strongestObjection: Consistent with his account that he came to a protest.
+      whatWouldChangeOurMind:
+        - The plate record shown to be wrong, or the car shown to have been driven by someone else.
+  - claimId: PIPE-C027
+    verdict: well_supported
+    reasoning: Sworn session by session, each paired with the bomber's place on video at the same minute, on five sectors; strong, though a sector match places a phone in a wide wedge, and the raw records are not public.
+    confidence: high
+    treatment:
+      plainLanguage: A phone attributed to Cole used the cell sectors covering the bomber's route, at the same minutes the cameras show the bomber there, five times.
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: Matching a route on five different sectors at the right minutes is hard to explain unless the phone travelled with the bomber.
+      strongestObjection: A sector is a wide wedge, not a point; other phones in 2021 may also have matched, and the raw records and drive tests are not public.
+      whatWouldChangeOurMind:
+        - Sector maps showing the same sectors also cover the places in the October footage at those minutes.
+        - Evidence the phone was not with Cole that evening.
+  - claimId: PIPE-C028
+    verdict: well_supported
+    reasoning: Sworn, with the provider's correction made in April 2021, years before Cole was a suspect, and the FBI's drive tests of early 2021 agreeing with it.
+    confidence: high
+  - claimId: PIPE-C029
+    verdict: contradicted
+    reasoning: One former official's testimony against the carriers' written denials and the FBI's later use of the provider's records; Baker's account of recovered geofence data is secondhand and concerns a different data set.
+    confidence: low
+  - claimId: PIPE-C030
+    verdict: provisionally_supported
+    reasoning: The footage is published and shows a man walking at night; that the cameras are on the north side of the Capitol is Baker's account, specific and checkable.
+    confidence: moderate
+  - claimId: PIPE-C031
+    verdict: weakly_supported
+    reasoning: Recognition by Cole's family of a mask, a jacket and shoes, and gait judged by eye; interested witnesses and a method with a poor record here. Neither the FBI nor the prosecution has addressed it.
+    confidence: low
+    treatment:
+      plainLanguage: Whether the man in the October footage is Cole rests so far on his family's recognition and on gait judged by eye.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: The whole alibi depends on it; the identification as it stands is weak.
+      strongestObjection: Interested witnesses recognising clothing at night, and a method that earlier named the wrong person.
+      whatWouldChangeOurMind:
+        - A retail record dating the jacket together with a clear match of its tag and cut in the footage.
+        - A face, or a continuous track to Cole's car, in the Capitol footage.
+  - claimId: PIPE-C032
+    verdict: misframed
+    reasoning: The footage's 20:03 falls between the two placements, at 7:54 and 8:16, not at either; the real test is against the bomber's filmed positions at 7:59:38 and 8:14:15, which is a separate proposition.
+    confidence: moderate
+  - claimId: PIPE-C033
+    verdict: weakly_supported
+    reasoning: It holds only if the man is Cole and the clocks agree, both unverified; and it must also explain a phone attributed to Cole that followed the bomber's route on five sectors.
+    confidence: moderate
+    treatment:
+      plainLanguage: "The alibi: Cole was on the other side of the Capitol when the bomber was filmed by the DNC. Unproven so far."
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: If the clocks agree and the man is Cole, this alone would defeat the charged account at 7:59.
+      strongestObjection: It needs the man to be Cole, the clocks to agree, and an explanation for a phone that followed the bomber's route.
+      whatWouldChangeOurMind:
+        - Native files with clock offsets showing the 20:03 and 7:59 clocks agree.
+        - An identification of the man that does not rest on family recognition or gait by eye.
+        - Phone records placing Cole's phone north of the Capitol at 8:03.
+  - claimId: PIPE-C034
+    verdict: provisionally_supported
+    reasoning: Baker's description of footage he published, with a screenshot of the tagged jacket reported by a news outlet; what the clothing proves is a separate question.
+    confidence: moderate
+  - claimId: PIPE-C035
+    verdict: unresolved
+    reasoning: Baker names the source, the House subcommittee's public release, and two camera numbers; the files have not been located for this case, and no clock check is published.
+    confidence: moderate
+  - claimId: PIPE-C036
+    verdict: well_supported
+    reasoning: The November 2025 identification by gait was retracted, and a federal court entered a default judgment for defamation against Baker and a colleague; a default is not a finding on the gait evidence.
+    confidence: high
+    treatment:
+      plainLanguage: The gait-by-eye method behind the footage identification earlier named a different person, a report its publisher retracted.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: It lowers the weight of any identification made the same way, including this one.
+      strongestObjection: A method's past error does not make every later use wrong; this identification also rests on clothing.
+      whatWouldChangeOurMind:
+        - An identification of the October man by means other than gait and family recognition.
+  - claimId: PIPE-C037
+    verdict: well_supported
+    reasoning: Both sides describe the same first account; they disagree on whether it was true.
+    confidence: high
+  - claimId: PIPE-C038
+    verdict: well_supported
+    reasoning: The prosecution's account of a recorded exchange; the defense contests its voluntariness, not that it happened.
+    confidence: moderate
+  - claimId: PIPE-C039
+    verdict: well_supported
+    reasoning: The prosecution describes an hour and a half of detail; the defense's motion to suppress contests how it was obtained, not that it was said.
+    confidence: moderate
+    treatment:
+      plainLanguage: After admitting he was the man on the video, Cole described building and placing the devices for about an hour and a half, by the prosecution's account.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: A detailed confession is strong evidence if its details came from him and check out; otherwise it is close to none.
+      strongestObjection: It followed hours of denial and pressure, from a man since diagnosed with autism; the recording is not public.
+      whatWouldChangeOurMind:
+        - The recording showing the agents supplied the details he repeated.
+        - The suppression motion granted on findings that undermine its reliability.
+  - claimId: PIPE-C040
+    verdict: unresolved
+    reasoning: Some details are specific enough to check, such as an ingredient's brand and the store he named; whether records confirm them and whether agents supplied them is not in the public record. Baker's count of 28 new details among 123 is unpublished.
+    confidence: low
+    treatment:
+      plainLanguage: Whether the confession holds anything only the bomber could know, which the agents did not tell him, is still unknown.
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: The standard test of a disputed confession; it decides how much the confession is worth.
+      strongestObjection: Neither side has published a detail-by-detail account; Baker's count says most details were fed or public.
+      whatWouldChangeOurMind:
+        - Records confirming a detail Cole volunteered first, such as the brand and store he named.
+        - The recording showing every specific detail introduced by the agents.
+  - claimId: PIPE-C041
+    verdict: well_supported
+    reasoning: The defense expert quotes the agents' words by transcript page; the prosecution has not disputed the wording. Whether it was coercive in law is for the court.
+    confidence: moderate
+    treatment:
+      plainLanguage: The agents used techniques — minimizing, implied leniency, talk of sparing his family — that researchers link to false confessions.
+      importance: major
+      diagnosticity: low
+      diagnosticitySummary: Common in interrogations of the guilty and the innocent alike; it raises the risk, it does not show the confession false.
+      strongestObjection: These are routine, lawful techniques, and a guilty suspect confesses under them too.
+      whatWouldChangeOurMind:
+        - The full recording showing the quoted lines out of context.
+  - claimId: PIPE-C042
+    verdict: provisionally_supported
+    reasoning: The expert reports hyperventilation from the recording and the prosecution's own account quotes Cole saying everything was blank; the prosecution says the recording shows no appreciable deficit, a different question.
+    confidence: moderate
+  - claimId: PIPE-C043
+    verdict: well_supported
+    reasoning: Both sides describe the December 2025 diagnosis by a defense psychologist; the prosecution disputes its basis and relevance, and the records have not been produced.
+    confidence: high
+  - claimId: PIPE-C044
+    verdict: weakly_supported
+    reasoning: Repeated denials are confirmed by both sides; the count of 95, and their coming before the family remarks, is Baker's reading of a transcript that is not public.
+    confidence: low
+  - claimId: PIPE-C045
+    verdict: well_supported
+    reasoning: The defense's notice says the recording is on a flash drive held by counsel, not filed publicly.
+    confidence: high
+  - claimId: PIPE-C046
+    verdict: well_supported
+    reasoning: The prosecution's forensic finding; the defense disputes its meaning, not the count.
+    confidence: high
+  - claimId: PIPE-C047
+    verdict: well_supported
+    reasoning: "Both sides state it: one wipe in December 2020, then none until July 2022."
+    confidence: high
+  - claimId: PIPE-C048
+    verdict: unresolved
+    reasoning: No clinical basis has been produced; full factory resets, one hours before arrest, fit concealment and compulsion alike.
+    confidence: low
+  - claimId: PIPE-C049
+    verdict: well_supported
+    reasoning: The prosecution quotes Cole's words; they come from the part of the interview the defense calls coerced.
+    confidence: moderate
+  - claimId: PIPE-C050
+    verdict: well_supported
+    reasoning: Stated in the prosecution's own memorandum.
+    confidence: moderate
+  - claimId: PIPE-C051
+    verdict: well_supported
+    reasoning: The prosecutor's email to the defense states the theory in terms.
+    confidence: high
+  - claimId: PIPE-C052
+    verdict: contradicted
+    reasoning: Its one public identification was retracted and the subject of a default judgment for defamation; Baker's certainty rests on unreleased material; and the record's evidence points to Cole, not to an insider.
+    confidence: moderate
+    treatment:
+      plainLanguage: The idea that a police insider, not Cole, placed the devices has no public evidence behind it now.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: Its only named suspect was retracted; it survives only as an assertion.
+      strongestObjection: An insider could have been missed by an investigation that took four years and itself made errors.
+      whatWouldChangeOurMind:
+        - Published evidence tying a specific person with official access to the devices.
+        - The evidence against Cole shown to be unreliable at its core.
+  - claimId: PIPE-C053
+    verdict: well_supported
+    reasoning: Reported by the House subcommittees from FBI material; no one disputes that these persons of interest were pursued.
+    confidence: high
+  - claimId: PIPE-C054
+    verdict: well_supported
+    reasoning: A finding of the House subcommittees from Capitol Police and Secret Service records, and the device was found that afternoon where it had lain.
+    confidence: high
+  - claimId: PIPE-C055
+    verdict: well_supported
+    reasoning: Documented by the House subcommittees from video and radio transcripts.
+    confidence: high
+  - claimId: PIPE-C056
+    verdict: provisionally_supported
+    reasoning: Officials told CNN so, and the Attorney General said there was no new tip or witness; the investigative record is not public.
+    confidence: moderate
+  - claimId: PIPE-C057
+    verdict: well_supported
+    reasoning: Reported by the AP and others; the date was set in July 2026 and stood when last checked on October 19, 2026.
+    confidence: high
+  - claimId: PIPE-C058
+    verdict: established
+    reasoning: The court so ruled in July 2026.
+    confidence: high
+  - claimId: PIPE-C059
+    verdict: well_supported
+    reasoning: Independent lines described under oath converge — purchases including an uncommon component, the plate reader, phone sessions matched to the route minute by minute, items found at home — with a detailed but disputed confession. Untested at trial, and open to one specific challenge, the October footage.
+    confidence: moderate
+    treatment:
+      plainLanguage: On the record as sworn and proffered, the case that Cole placed the devices is strong; it has not yet been tested at trial.
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: If the lines hold, they leave little room for anyone else; if the October footage holds, it breaks them at 7:59.
+      strongestObjection: Every line is the prosecution's description of records no outsider has examined, and the confession was obtained under pressure.
+      whatWouldChangeOurMind:
+        - The October footage authenticated, its clocks shown to agree with the DNC-area cameras, and the man shown to be Cole.
+        - The phone shown not to have been with Cole, or the sector matches shown to be loose.
+        - The confession's specific details shown to have come from the agents or to be false.
+  - claimId: PIPE-C060
+    verdict: well_supported
+    reasoning: The defense's motion describes the indictment's counts; the filed indictment is a scan the reading tool could not read.
+    confidence: high
+  - claimId: PIPE-C061
+    verdict: unresolved
+    reasoning: The House did post Capitol security video online; that these two cameras' January 5 files are in that release is Baker's statement, not yet confirmed here.
+    confidence: low
+    treatment:
+      plainLanguage: Baker says the footage is official Capitol Police CCTV from the House subcommittee's public release on Rumble.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: If true, anyone can verify the cameras and their clocks, which makes the alibi testable.
+      strongestObjection: The specific files have not been located, and the release's videos are not indexed by camera in any public list found.
+      whatWouldChangeOurMind:
+        - The files found in the release under cameras 602 and 940 for January 5.
+        - The committee or the Capitol Police confirming or denying their origin.
+  - claimId: PIPE-C062
+    verdict: unresolved
+    reasoning: Baker's cameras and times; the original files on the subcommittee's channel are to be checked against them (PIPE-R001, PIPE-S002).
+    confidence: low
+    treatment:
+      plainLanguage: Baker says the man appears on Capitol cameras 602 and 940 between 8:03:32 and 8:04:02 p.m.
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: Specific enough to check against the official files; the time is what turns the footage into a test.
+      strongestObjection: A burned-in camera clock can be minutes off, and nothing published shows it was checked.
+      whatWouldChangeOurMind:
+        - The two files located in the House release with the same times on screen.
+        - A Capitol Police statement of those cameras' clock offsets that night.
+  - claimId: PIPE-C063
+    verdict: well_supported
+    reasoning: "About a kilometre in a straight line and more by any route, in under four minutes: a sustained run, while both men are filmed walking. The conflict holds only if the two clocks agree and the man is Cole; an offset of a few minutes dissolves it."
+    confidence: moderate
+    treatment:
+      plainLanguage: If the clocks are right, the man on Constitution Avenue at 8:03:32 cannot be the person filmed by the DNC four minutes earlier.
+      importance: major
+      diagnosticity: high
+      diagnosticitySummary: "A geometric and temporal fact: it decides between the two identifications once the clocks are known."
+      strongestObjection: "It is conditional: a clock difference of a few minutes removes the conflict entirely."
+      whatWouldChangeOurMind:
+        - A measured route showing the distance is much shorter than a kilometre.
+        - The DNC-area sighting's time shown to be wrong.
+  - claimId: PIPE-C064
+    verdict: weakly_supported
+    reasoning: Gait judged by eye from surveillance video, by the team whose earlier gait identification was retracted.
+    confidence: low
+  - claimId: PIPE-C065
+    verdict: provisionally_supported
+    reasoning: Baker cites a laboratory report that is not public, and the prosecution itself told the court one powder sample was not explosive.
+    confidence: moderate
+  - claimId: PIPE-C066
+    verdict: weakly_supported
+    reasoning: Baker's reading of a report that is not public.
+    confidence: low
+  - claimId: PIPE-C067
+    verdict: weakly_supported
+    reasoning: A secondhand account of an unnamed commander; plausible that disruption damages traces, not shown that it destroyed a match.
+    confidence: low
+  - claimId: PIPE-C068
+    verdict: weakly_supported
+    reasoning: From an FBI form that is not public, as Baker's host summarizes it; it would bear on Cole's account of sixty-minute timers.
+    confidence: low
+  - claimId: PIPE-C069
+    verdict: weakly_supported
+    reasoning: Secondhand, with no record of what the FBI told Congress cited.
+    confidence: low
+  - claimId: PIPE-C070
+    verdict: well_supported
+    reasoning: The affidavit itemizes his purchases before January 5, 2021 and lists alligator clips only on January 23, 2021, though the devices used them; an earlier purchase may sit in records it does not itemize.
+    confidence: high
+  - claimId: PIPE-C071
+    verdict: provisionally_supported
+    reasoning: Armitas, who made the video, says so; specific and checkable against the original files, not yet checked.
+    confidence: low
+  - claimId: PIPE-C072
+    verdict: unresolved
+    reasoning: Baker's team says the camera numbers and times are in their video and can be checked on the congressional channel; a critic says Baker earlier described them as to be synced with the originals. The original files settle it either way.
+    confidence: low
+shownChecks: []

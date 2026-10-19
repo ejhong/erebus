@@ -1,0 +1,100 @@
+# Study freeze — pre-registration only (AGENTS.md §3.12). Zero rows by design: the
+# criteria and the method are fixed before anyone measures, and any later edit
+# to the criteria fails the build (criteriaHash). Collection follows in a later
+# change, once the footage's camera positions and times are published.
+id: PIPE-S001
+title: "Cole's phone and the October 2026 footage: do the cell sectors reach where the footage puts him?"
+question: At the minutes the October 2026 footage shows a man on the north side of the Capitol, does
+  the cell sector serving Cole's phone cover that place, as it would if the man and the phone were
+  together, or only the bomber's route on the southeast side?
+researchIds:
+  - PIPE-R002
+claimIds:
+  - PIPE-C027
+  - PIPE-C033
+  - PIPE-C059
+criteria:
+  frozenOn: 2026-10-19
+  inclusion:
+    - "The cell-site records sworn in the complaint affidavit (PDF pages 6-7): every data session of
+      the phone attributed to Cole between 7:39 and 8:24 p.m. on January 5, 2021, with its time,
+      tower, tower address and sector direction as sworn (Sectors A to E), and the April 2021
+      correction of Sector B's direction."
+    - Every location in the footage Steve Baker published on October 18, 2026 that Baker, his
+      collaborators or any later release ties to a camera position and a time, recorded with the
+      source of each.
+    - Every location of the bomber the affidavit and the detention memorandum give with a time, as
+      the reference path the sectors are said to fit.
+  exclusion:
+    - Footage locations with no stated time or no identifiable camera position (listed in the
+      limitations, never silently dropped).
+    - Any location of the man in the October footage whose identification as the same man rests on a
+      different camera's frames without a continuous track (reported separately, not pooled).
+  searchProtocol: "Tower positions: the street addresses sworn in the affidavit (103 G Street SW; 200
+    Independence Avenue SW; 101 Independence Avenue SE; 600 Pennsylvania Avenue SE), geocoded with
+    the District's Master Address Repository, cross-checked against FCC antenna structure
+    registrations and OpenCelliD where they list the same structures. Footage positions and times:
+    Baker's X thread of 2026-10-18 and its two videos, any later release by Baker, @accabbat, the
+    defense or the Capitol Police, and court filings. Method fixed now: a sector's nominal coverage
+    is its sworn azimuth plus or minus 60 degrees (the affidavit's approximately 120 degrees), with
+    a sensitivity band of plus or minus 90 degrees for the affidavit's caveat that coverage can
+    extend beyond 120 degrees; range is bounded at the distance to the nearest other site of the
+    same provider in the sector's direction, or 1.5 km where unknown. For each footage location at
+    minute t, record whether it lies inside the nominal arc and inside the sensitivity band of the
+    sector the phone used nearest in time to t, and the time gap between them. Prediction under the
+    charged account: footage locations of Cole at minutes of phone sessions fall outside the nominal
+    arc of the serving sector, or the footage's times do not overlap the 7:34-8:18 window when the
+    bomber is on camera elsewhere. Disconfirmer of the claim that the phone data exclude the
+    footage: every timed footage location lies inside the nominal arc of the sector serving the
+    phone at that minute. The study reports both, and grades nothing."
+  knownCandidates:
+    - name: Sector A, tower 59323 at 103 G Street SW, facing about 120 degrees, session at 7:39:27 p.m.
+      disposition: include
+      reason: A sworn phone session in the window.
+    - name: Sector B, tower 126187 at 200 Independence Avenue SW, facing about 90 degrees (listed 345
+        degrees in February 2021, corrected April 2021), sessions at 7:39:27 and 7:44:36 p.m.
+      disposition: include
+      reason: Sworn sessions; both the listed and the corrected direction are tested, the corrected one as
+        primary.
+    - name: Sector C, tower 147990 at 200 Independence Avenue SW, facing about 180 degrees, session at
+        7:59:36 p.m.
+      disposition: include
+      reason: A sworn phone session in the window.
+    - name: Sector D, tower 45111 at 101 Independence Avenue SE, facing about 255 degrees, session at
+        8:14:36 p.m.
+      disposition: include
+      reason: A sworn phone session in the window.
+    - name: Sector E, tower 144340 at 600 Pennsylvania Avenue SE, facing about 295 degrees, sessions at
+        8:23:59 and 8:24:06 p.m.
+      disposition: include
+      reason: Sworn sessions just after the window, which bound where the phone went next.
+    - name: The man on the northwest side of the Capitol in Baker's October 18, 2026 footage
+      disposition: include
+      reason: The location the study tests; its times and camera positions are to be taken from the
+        published footage and any later release.
+  criteriaHash: 86934d37add4
+method: A desk study of public records only. Geocode the four tower sites sworn in the affidavit;
+  draw each sector's nominal arc (sworn azimuth plus or minus 60 degrees) and a sensitivity band
+  (plus or minus 90 degrees), bounded in range as the search protocol fixes; place every timed
+  location of the bomber (from the affidavit and the detention memorandum) and every timed location
+  of the man in the October footage (from the published footage and any later release); and for
+  each, report the sector serving the phone nearest in time, the time gap, and whether the location
+  lies inside the arc and the band. Results are a table and a map; the study states what the
+  geometry allows and excludes, and grades no claim.
+columns:
+  - subject
+  - time
+  - location
+  - location source
+  - serving sector at nearest phone session
+  - time gap
+  - inside nominal arc
+  - inside sensitivity band
+rows: []
+findings: []
+limitations: []
+runId: 2026-10-19-session-january-6-pipe-bombs-founder
+model: claude-opus-5-5
+date: 2026-10-19
+promptVersion: founder session 2026-10-19
+humanReviewed: false
