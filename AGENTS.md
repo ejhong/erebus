@@ -141,53 +141,64 @@ A changed assessment should record what changed, why, and who approved it.
 
 ### 3.15 AI operation under this constitution
 
-This site is operated by AI as a declared experiment. AI performs discovery, extraction, verification, drafting, editorial correction, coding, monitoring, and — through the gated process below — publication.
+This site is operated by AI as a declared experiment. An AI agent — the operator — does the day-to-day work: discovery, reading, extraction, drafting, editorial correction, coding, and monitoring. Models from other vendors review that work before it publishes, and judge the questions themselves. The site grows by correction: criticism is kept on the record and becomes the next pass's work, and no change may leave the site worse than it found it. (Founder amendment, 2026-10-19, given in session — see docs/DECISIONS.md.)
 
-No consequential change publishes on one model's unilateral judgment:
+No change publishes on one model's judgment:
 
-- mechanical validity is enforced by fail-closed CI (schemas, dangling IDs, provenance completeness, real citations only);
-- editorial judgment on featured content requires ratification by multi-model concurrence — independent models from different vendors, judging against this constitution — or, for historical records, the human review they already carry;
-- disagreement does not publish silently: contested changes are parked and displayed as contested.
+- mechanical validity is enforced by fail-closed checks: schemas, dangling IDs, provenance completeness, real citations only, and every quoted passage found in the text of its source;
+- every change is reviewed by models from at least three vendors other than the operator's. Each reviewer says whether the change leaves the site better, no better, or worse for a reader seeking the truth; whether publishing it would cause a harm that publication itself causes; and what would improve it. A change publishes when at least three reviewers answer, a majority of them judge it better, at most one judges it worse, and no harm stands against it. A change they judge worse does not publish. A harm flagged by any one reviewer holds the change until it is answered — by a fix, or by a reasoned reply that no reviewer, reading it, flags again. Improvement notes never block: they are kept on the record and are the operator's work for the next pass. The harms are: a fabricated or misattributed source, quotation, locator, or provenance detail; material supplied in confidence; a statement about a living person that the record does not support; a draft presented as ratified; an edit to this constitution; and any weakening of these checks. (Founder amendment, 2026-10-19 — see docs/DECISIONS.md.);
+- the standing of a judgment — a case's verdict and the verdicts on the claims it rests on — comes from multi-model concurrence: independent models from different vendors judging the ledger blind, never from the operator — or, for historical records, the human review they already carry. Concurrence is measured on the graded scale: a seat's case verdict within one step of the draft's concurs and two steps away disputes; "unresolved" and "presently untestable" stand between "weakly supported" and "mixed", one step from either and from each other; a load-bearing claim splits the panel when fewer than a majority of seats are within one step of the draft; and every seat's own word is displayed beside the standing, neighbours included. (Founder amendment, 2026-10-19, adopting the scale the engine's upstream deployment has used since 2026-09-09.);
+- disagreement is never resolved silently: a contested judgment is displayed as contested, and where the seats part is where the next research begins.
 
 AI must never, inside or outside that process:
 
 - fabricate a citation, source, locator, or provenance detail;
 - present an unratified draft as a ratified judgment, or an AI record as a human one;
-- publish material supplied in confidence (unpublished manuscripts, private correspondence beyond recorded provenance);
+- publish material supplied in confidence — where "in confidence" means without the supplier's permission to publish or cite. Permission converts supplied material into citable material only when it is recorded with the same rigor as any provenance: who granted it, on what date, by what channel, and where the correspondence is held. An unpublished manuscript or private correspondence without such a recorded permission may never be quoted, paraphrased, or cited;
 - contact people without leaving a public record;
 - weaken the checks in this section or reclassify a change to dodge them.
 
-A human (the founder) retains exactly two powers: the kill switch, and this constitution — amending this file is the one act reserved to a human. Accountability is inspectability: every change, ratification, and revert is recorded in git, stamped with model, runId, prompt version, and date, so any reader with repository access can reconstruct which model did what, when, and how it was checked.
+The founder's directions to the operator — given in a working session, an issue, or a pull-request review — are the operating record, not correspondence: they may be recorded, paraphrased, and cited in the decisions log, in configuration, and in protocols, each stamped with its date and channel. Material the founder supplies for the ledger (an essay, a document, a dataset) is not a direction and enters only under the permission rule above; a direction to publish such material, so recorded, is that permission. (Founder amendment, 2026-10-19 — see docs/DECISIONS.md.)
+
+A human (the founder) retains exactly two powers: the kill switch, and this constitution — amending this file is the one act reserved to a human. Accountability is inspectability: every change, review, ratification, and revert is recorded in git, stamped with model, runId, prompt version, and date, so any reader with repository access can reconstruct which model did what, when, and how it was checked.
 
 ### Living persons and active proceedings
 
 Cases on this site may concern real, living, named people — accused
-persons, witnesses, investigators, victims' families. These rules are
-absolute and take precedence over completeness:
+persons, witnesses, investigators, victims' families. The site's first
+duty is to the truth of the public record; its second is never to wrong a
+person by publishing what that record does not support. These rules hold
+both (founder amendment, 2026-10-19, given in session, superseding the
+bootstrap rules of 2026-08-25 — see docs/DECISIONS.md):
 
-- Claims about a named individual's criminal culpability are never graded
-  as verdicts. The claim ladder grades evidence disputes — timeline,
-  forensics, authenticity of audiovisual material, chain of custody,
-  documented motive — never guilt. "Who did it" is not a claim; "the
-  ballistics report states X and is disputed on grounds Y" is.
-- Prosecution, defense, and official assertions are always labeled as
-  assertions by their source, never restated as established fact.
-- Every case touching criminal charges displays the presumption of
-  innocence prominently.
-- Allegations about private individuals go no further than what court
-  records or on-the-record official statements state, with locators.
+- The evidence is assessed openly, including how strongly the public
+  record supports or undermines a charged account. Such an assessment is
+  the site's opinion on facts it discloses: every fact it rests on is
+  shown and linked, the assessment is labelled as the site's own, and it
+  is never written as a finding of guilt or innocence. While charges are
+  pending, the page says plainly that no court has decided them, and
+  displays the presumption of innocence prominently.
+- Prosecution, defense, and official assertions are always attributed to
+  their source — the complaint, the indictment, the affidavit, the
+  filing, the statement — and stated as that source's assertion, never as
+  established fact. The defense's filings and positions are shown beside
+  the prosecution's.
+- No accusation is made or repeated against a person who has not been
+  charged. An account that names an uncharged private person is described
+  without the name; a public official's on-the-record statements, and
+  what official proceedings record, may be reported as theirs.
+- Private individuals appear only as court records and on-the-record
+  official statements name them, with locators; nothing about their
+  private lives is published beyond what bears on the evidence.
 - Journalism is discovery, not evidence: it points to primary material
   (filings, exhibits, official records, raw footage with provenance) and
   is superseded by it. Wire-copy duplication is one source, not many.
-- Content rides the same tiered merge policy as the engine's upstream
-  deployment: only reversible-by-runId material that never touches
-  featured content (proposals, inbox moves, new append-only assessment
-  overlays, append-only catalog/source additions) may auto-merge; anything
-  touching featured claims, article text, case records, or any statement
-  about a named person is needs-approval. (Amended at bootstrap by founder
-  instruction, 2026-08-25 — see docs/DECISIONS.md.)
-- A correction/takedown request path is displayed on every case page,
-  and such requests are processed before any other maintenance work.
+- A correction and takedown path is displayed on every case page, and
+  such requests are answered before any other work.
+- Where truth and caution seem to pull apart, the site states what the
+  record shows, attributed and linked, and stops there: it errs toward
+  telling the reader what is documented, never toward asserting what is
+  not.
 
 ## 4. Phase-1 rules (bootstrap, static site)
 
@@ -195,6 +206,7 @@ Until explicitly moved into a later phase:
 
 - content lives in versioned files under `content/` (folder-of-files per case), loaded and Zod-validated at build time — a malformed record or dangling ID fails the build;
 - **real citations only, with honest verification labels** (`verified` / `ai_verified` / `unverified`) — never fabricate a citation, identifier, or locator; see `docs/CONTENT_POLICY.md`;
+- a record whose source is shown to exist but whose text could not yet be read may enter labelled `provisional`, carrying no weight in any assessment, standing or selection, until a later pass reads the text and promotes or refuses it (founder amendment, 2026-10-19, adopting the upstream engine's rule of 2026-09-17);
 - claim provenance is displayed, not hidden: `ai_extracted` claims are labeled as such; AI assessments are append-only overlay files stamped with runId/model/date/promptVersion and labeled as AI-generated drafts;
 - do not imply that AI-generated assessments are reviewed human conclusions;
 - do not build authentication, databases, or servers into the site itself — it is a Next.js static export served from git via GitHub Pages, with no access control in front of it (see `docs/HOSTING.md`). The site being public is a deliberate consequence of the method rather than a change to it: a page that grades evidence disputes without accusing anyone should be able to survive being read by both sides;
