@@ -1,0 +1,213 @@
+May | 2017 | TwitterTrails
+
+Log In
+Search
+
+Skip to content
+
+TwitterTrails
+
+A Research Project at Wellesley College
+
+Menu
+
+Search for:
+
+Monthly Archives: May 2017
+
+Evidence of pizzagate conspiracy theory on TwitterTrails
+
+May 9, 2017 "fake news" , Case Studies , conspiracy theory , Elections , Spammers P. Takis Metaxas
+
+Many things have been written about the infamous #pizzagate conspiracy theory (“scandal” for those who believed in it) and, we are sure, much more will be written in the future. The fact that the outrageous and sick imagination of a few online trolls was able to persuade thousands of people that it was real, and motivate one of them to walk into the Comet Pizza with a loaded gun will be a matter of study of many Psychologists, Sociologists, and Political Scientists.  Given that in a few days a workshop will be held in Montreal on Digital Misinformation, we thought that this would be a good time to share some notes of a TwitterTrails story we did.
+
+On December 2, 2016, we did a TwitterTrails investigation collecting Twitter data that contained the hashtag #pizzagate and we present here a few interesting observations about how it spread, who used it first and what were the shape of the community that engaged in the spreading until that time. Below are some of our findings. You can always explore the TwitterTrails story on your own.
+
+Who used the hashtag #pizzagate first?
+
+According to our data, the first mention of #pizzagate was at 8:34 AM GMT on Nov. 6, 2016, two days before the US elections. While the vast majority of people in the US were sleeping, the tweet was sent by a troll that has promoted tens of thousands of provocative lies to its 2 thousand followers. Most of the followers are certainly bots designed to infiltrate online groups willing to believe them — in this case Trump supporters.
+
+If you want to know more about how trolls and spammers are successful in promoting lies, take a look at The Real “Fake News” post by Prof. Eni Mustafaraj.
+
+Who made #pizzagate widely known?
+
+The propagation graph below shows who were the main propagators of a rumor when its activity showed its first “burst”.
+
+Clicking on the (partially covered) purple data point in the upper right corner we find that, surprisingly, the first tweet that had over 3000 retweets belongs to a pro-Erdogan Turkish journalist! According to The Daily Dot columnist Efe Sozeri, at that time, Turkey was outraged by a child abuse scandal and from controversial pending legislation on child marriage and governmental sources were trying to show that their scandal was minor compared to the US scandal.
+
+But who informed the Turkish journalist about pizzagate? The propagation graph has some evidence that he was informed by a barrage of tweets that occur a few hours before his posting. The colorful column of data points just before his tweets are by a troll that sending dozens of tweets in Turkish. Here are a few of them as recorded in TwitterTrails:
+
+A deafening echo chamber
+
+The twitter exchange related to the pizzagate co-retweeted graph shows a dense echo chamber that is just verifying to its participants the validity of the conspiracy and allows no doubt to emerge:
+
+This is the densest echo chamber we have observed on TwitterTrails. Among the 22,000 accounts posting about pizzagate, 4528 of them have risen to prominence being retweeted by at least two other accounts over a million times! Looking at the word cloud that characterizes the cyan group of 4474 participants, we see that the most common words in their profile are #maga, trump, truth [sic], love, god conservative.
+
+How different is this graph from other graphs of political discourse? For comparison, we show what a typical co-retweeted network looks like when discussing political issues. Below is the graph related to the 2016 vice-presidential debate:
+
+In this graph, you can see the two communities, their polarization, and the partial overlap as people read both sides but prefer one of them.
+
+What else can we find?
+
+These are just some of the insights that TwitterTrails can offer to a journalist or anyone who might want to study the propagation of a rumor. If you want to study it further, use  TwitterTrails story of the hashtag #pizzagate and send us a comment!
+
+The Real “Fake News”
+
+May 1, 2017 "fake news" , False Claims , Spammers P. Takis Metaxas
+
+The following is a blog post that Eni Mustafaraj has recently published in The Spoke . We reproduce it here with permission.
+
+Fake news has always been with us, starting with The Great Moon Hoax in 1835. What is different now is the existence of a mass medium, the Web, that allows anyone to financially benefit from it.
+
+Etymologists typically track the change of a word’s meaning over decades, sometimes even over centuries. Currently, however, they find themselves observing a new president and his administration redefine words and phrases on a daily basis. Case in point: “fake news.” One would have to look hard to find an American who hasn’t heard this phrase in recent months. The president loves to apply it as a label to news organizations that he doesn’t agree with.
+
+But right before its most recent incarnation, the phrase “fake news” had a different meaning. It referred to factually incorrect stories appearing on websites with names such as  DenverGuardian.com or  TrumpVision365.com that mushroomed in the weeks leading up to the 2016 U.S. Presidential Election. One such story—”FBI agent suspected in Hillary email leaks found dead in apparent murder-suicide”—was shared more than a half million times on Facebook, despite being entirely false. The website that published it,  DenverGuardian.com , was operated by a man named Jestin Coler, who, when tracked down by persistent NPR reporters after the election, admitted to being a liberal who “enjoyed making a mess of the people that share the content”. He didn’t have any regrets.
+
+Why did fake news flourish before the election? There are too many hypotheses to settle on a single explanation. Economists would explain it in terms of supply and demand. Initially, there were only a few such websites, but their creators noticed that sharing fake news stories on Facebook generated considerable pageviews (the number of visits on the page) for them. Their obvious conclusion: there was a demand for sensational political news from a sizeable portion of the web-browsing public. Because pageviews can be monetized by running Google ads alongside the fake stories, the response was swift: an industry of fake news websites grew quickly to supply fake content and feed the public’s demand. The creators of this content were scattered all over the world . As BuzzFeed reported , a cluster of more than 100 fake news websites was run by individuals in the remote town of Ceres, in the Former Yugoslav Republic of Macedonia.
+
+How did the people in Macedonia manage to spread their fake stories on Facebook and earn thousands of dollars in the process? In addition to creating a cluster of fake news websites, they also created fake Facebook accounts that looked like real people and then had these accounts subscribe to real Facebook groups, such as “Hispanics for Trump” or “San Diego Berniecrats”, where conversations about the election were taking place. Every time the fake news websites published a new story, the fictitious accounts would share them in the Facebook groups they had joined. The real people in the groups would then start spreading the fake news article among their Facebook followers, successfully completing the misinformation cycle. These misinformation-spreading techniques were already known to researchers, but not to the public at large. My colleague Takis Metaxas and I discovered and documented one such technique used on Twitter all the way back in the 2010 Massachusetts Senate election between Martha Coakley and Scott Brown.
+
+There is an important takeaway here for all of us: fake news doesn’t become dangerous because it’s created or because it is published; it becomes dangerous when members of the public decide that the news is worth spreading. The most ingenious part of spreading fake news is the step of “infiltrating” groups of people who are most susceptible to the story and will fall for it.  As explained in this news article , the Macedonians tried different political Facebook groups, before finally settling on pro-Trump supporters.
+
+Once “fake news” entered Facebook’s ecosystem, it was easy for people who agreed with the story and were compelled by the clickbait nature of the headlines to spread it organically. Often these stories made it to the Facebook’s Trending News list. The top 20 fake news stories about the election received approximately 8.7 million views on Facebook, 1.4 million more views than the top 20 real news stories from 19 of the major news websites (CNN, New York Times, etc.), as an analysis by BuzzFeed News demonstrated. Facebook initially resisted the accusation that its platform had enabled fake news to flourish. However, after weeks of intense pressure from media and its user base, it introduced a series of changes to its interface to mitigate the impact of fake news. These include involving third-party fact-checkers to assign a “Disputed” label to posts with untrue claims, suppressing posts with such a label (making them less visible and less spreadable) and allowing users to flag stories as fake news.
+
+It’s too early to assess the effect these changes will have on the sharing behavior of Facebook users. In the meantime, the fake news industry is targeting a new audience: the liberal voters. In March, the fake quote “It’s better for our budget if a cancer patient dies more quickly,” attributed to Tom Price, the Secretary of Health and Human Services, appeared on a website titled US Political News, operated by an individual in Kosovo. The story was shared over 80,000 times on Facebook.
+
+Fake news has always been with us, starting with The Great Moon Hoax in 1835. What is different now is the existence of a mass medium, the Web, that allows anyone to monetize content through advertising. Since the cost of producing fake news is negligible, and the monetary rewards substantial, fake news is likely to persist. The journey that fake news takes only begins with its publication. We, the reading public who share these stories, triggered by headlines engineered to make us feel outraged or elated, are the ones who take the news on its journey. Let us all learn to resist such sharing impulses.
+
+TwitterTrails is a tool to observe human reactions to information on Twitter
+This blog is written by the TRAILS research team at Wellesley College. Its main purpose is to demonstrate the use of the TwitterTrails system, which is tracking the ways that stories spread on Twitter, focusing on how Twitter users communicate and react to true and false claims.
+
+Go to the TwitterTrails Website
+
+Subscribe by Email
+
+Subscribe to get email updates about blog posts from TwitterTrails.
+
+Please, insert a valid email.
+
+Thank you, your email will be added to the mailing list once you click on the link in the confirmation email.
+
+Your Email
+
+Leave this field blank
+
+Spam protection has stopped this request. Please contact site owner for help.
+
+This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+
+Want to investigate a story with TwitterTrails?
+We've created a form where you can request a story for us to investigate, by telling us what story, claim, event or trending meme we should observe, and giving us the search terms to collect from Twitter. Read more about it here:
+
+Request a story with TwitterTrails
+
+Recent Blog Posts
+
+Critical Analysis of News Propagation Online: TwitterTrails Classroom Activity
+October 10, 2017
+
+Evidence of pizzagate conspiracy theory on TwitterTrails
+May 9, 2017
+
+The Real “Fake News”
+May 1, 2017
+
+False and True rumors look very differently on TwitterTrails
+November 26, 2015
+
+Twitter’s increasing polarization about the refugee crisis via #RefugeesWelcome
+November 19, 2015
+
+Categories
+
+"fake news" (2)
+
+#GRexit (1)
+
+About TwitterTrails (7)
+
+Case Studies (9)
+
+conspiracy theory (1)
+
+Elections (1)
+
+Events and Memes (2)
+
+False Claims (5)
+
+Introduction (1)
+
+Spammers (2)
+
+True Claims (3)
+
+Uncategorized (5)
+
+Categories
+
+"fake news"
+
+#GRexit
+
+About TwitterTrails
+
+Case Studies
+
+conspiracy theory
+
+Elections
+
+Events and Memes
+
+False Claims
+
+Introduction
+
+Spammers
+
+True Claims
+
+Uncategorized
+
+Meta
+
+Log in
+
+Entries RSS
+
+Comments RSS
+
+Wellesley College Blog Sites
+
+May 2017
+
+S
+M
+T
+W
+T
+F
+S
+
+1 2 3 4 5 6
+
+7 8 9 10 11 12 13
+
+14 15 16 17 18 19 20
+
+21 22 23 24 25 26 27
+
+28 29 30 31
+
+&laquo; Nov
+
+Oct &raquo;
+
+Search TwitterTrails
+
+Search for:
+
+test
+
+Proudly powered by WordPress

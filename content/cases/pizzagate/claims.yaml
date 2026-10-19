@@ -672,9 +672,12 @@
   rung: observation
   reviewState: ai_extracted
   sourceAnchor:
-    locator: "WikiLeaks Podesta emailid/13265 (thread; reply at 52778)"
+    locator: "WikiLeaks Podesta emailid/52778 (John Podesta's reply of January 8, 2014)"
     quote: "3:00 at our house work?"
-    sourceId: SRC-WL-PODESTA-13265
+    sourceId: SRC-WL-PODESTA-52778
+    also:
+      - locator: "WikiLeaks Podesta emailid/52778 (Tony Podesta's message of January 6, 2014, quoted below the reply)"
+        quote: "Would love to get a pizza for an hour?"
   origin:
     ref: "verification ledger V37"
     extractedBy: "claude-fable-5 (cursor session)"

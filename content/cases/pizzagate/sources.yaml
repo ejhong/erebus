@@ -493,7 +493,16 @@
   sourceType: archive
   url: https://wikileaks.org/podesta-emails/emailid/13265
   verification: ai_verified
-  verificationNote: "Fetched 2026-08-28: sibling scheduling ending '3:00 at our house work?' / 'Sure' (52778)."
+  verificationNote: "Fetched 2026-08-28: sibling scheduling ending '3:00 at our house work?' / 'Sure' (52778). On 2026-10-19 the quote check found that line is not in this email but in its reply, 52778, which PZG-C037 now cites; this email, the thread's opening, is kept as background."
+  background: true
+
+- id: SRC-WL-PODESTA-52778
+  title: "Podesta emails 52778 — 'Re: You two free for dinner on 12 or 13 January?' (John Podesta's reply: '3:00 at our house work?')"
+  organization: "WikiLeaks (Podesta emails)"
+  sourceType: archive
+  url: https://wikileaks.org/podesta-emails/emailid/52778
+  verification: ai_verified
+  verificationNote: "Read 2026-10-19 by the operator through the engine's reading tool: John Podesta's reply of January 8, 2014 reads '3:00 at our house work?' and quotes, below it, Tony Podesta's message of January 6 ('Would love to get a pizza for an hour? Or come over')."
 
 - id: SRC-WL-PODESTA-44232
   title: "Podesta emails 44232 — 'Always happy to babysit' (the icy-traffic dinner thread)"

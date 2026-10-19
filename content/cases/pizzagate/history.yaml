@@ -30,3 +30,9 @@
   actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
   aiAssisted: true
   kind: housekeeping
+- date: 2026-10-19
+  change: "PZG-C037's anchor corrected: the passage it quotes, '3:00 at our house work?', is in John Podesta's reply of January 8, 2014 (WikiLeaks Podesta emailid 52778), not in the email the anchor cited (13265, the thread's opening, which is kept as background). A source record for 52778 was added, and the anchor now also quotes, from the same email, the message it answers ('Would love to get a pizza for an hour?'). The claim's statement is unchanged."
+  reason: "The engine's quote check, run for the first time on this site, read the cited email and did not find the quoted line in it; the record's own verification note had named the right email."
+  actor: "operator (claude-opus-5-5), Claude Code session of 2026-10-19, founder-directed"
+  aiAssisted: true
+  kind: content
