@@ -12,6 +12,10 @@
   effortTier: desk
   informationGain: >-
     Decisive in both directions. If the clocks agree to within a minute or two, a man on Constitution Avenue at 20:03:32 cannot be the person on New Jersey Avenue SE at 7:59:38, and either the identification of the man as Cole or the charged account fails. If the clocks are several minutes apart, the conflict dissolves, and the footage may instead corroborate Cole's first account of where he went that evening.
+  status: answered
+  statusNote: "PIPE-S002: all eight files found in the subcommittee's release; every clip matches its original at its labelled moment; the times are captions read from the files' own times; and the release's clock agrees with the affidavit's timeline to within a few minutes at camera 794. The man is not the bomber (PIPE-C063); who he is passes to PIPE-R009."
+  statusBy: 2026-10-19-session-january-6-pipe-bombs-founder
+  statusDate: 2026-10-19
 
 - id: PIPE-R002
   title: "Does the phone data reach the places in the October footage?"
@@ -22,6 +26,10 @@
   effortTier: desk
   informationGain: >-
     If the footage's locations fall outside the sectors the phone used at those minutes, the footage and the phone cannot both describe one man carrying that phone; if inside, the phone data cannot by themselves exclude the footage, and the case rests more on the video timeline and the confession.
+  status: answered
+  statusNote: "PIPE-S001: every place the footage puts the man lies behind the sector the phone used at 7:59:36, while the bomber's sworn positions fit the serving sectors, at the edge at 7:59:36. The provider's raw records and the FBI's drive tests pass to PIPE-R011."
+  statusBy: 2026-10-19-session-january-6-pipe-bombs-founder
+  statusDate: 2026-10-19
 
 - id: PIPE-R003
   title: "Which details of the confession came from Cole first, and are they true?"
@@ -82,3 +90,48 @@
   effortTier: desk
   informationGain: >-
     A clearly visible smartwatch on the bomber, set against no record of Cole ever owning one, would be a real discrepancy; an ambiguous glint would be nothing.
+
+- id: PIPE-R009
+  title: Who is the man at Peace Circle?
+  summary: Compare the clearest frames of the man on cameras 3187, 600 and 602, and any other camera that filmed him, with known images of Cole, by an examiner who is not told which is which, and publish the method and its error rate. Set what he wears on screen — a violet-blue hooded jacket, light shoes that flash under the lights — against the items seized in December 2025 and the family's photographs, published with their provenance. And follow him on the cameras around him, before 7:57 and after 8:06 p.m., to where he came from and where he went.
+  claimIds:
+    - PIPE-C031
+    - PIPE-C033
+    - PIPE-C034
+    - PIPE-C059
+  track: either
+  effortTier: desk
+  informationGain: Decisive either way. He is not the bomber, so if he is Cole the charged account fails; if he is someone else, the footage drops out of the case. His track may also show whether he came by car, and when he arrived and left.
+
+- id: PIPE-R010
+  title: Trace the sedan clips
+  summary: "Find the source of the clips in Baker's breakdown captioned 3rd street SW (8:03:35 to 8:03:49 p.m.) and C street (8:04:19 p.m.): which cameras, whose clocks, and what the plate reads. Set them against the plate reader's 7:10 p.m. record of Cole's car and against Sector C, which covers 3rd and C Streets SW."
+  claimIds:
+    - PIPE-C077
+    - PIPE-C026
+    - PIPE-C075
+  track: either
+  effortTier: desk
+  informationGain: If the sedan is Cole's and the clock is right, his car was being driven in Southwest at 8:03, which bears on where his phone was at 7:59:36 and on both accounts; if it is not, the clips drop out.
+
+- id: PIPE-R011
+  title: The phone's raw records, and the corrupted data
+  summary: Obtain the provider's raw records for the phone attributed to Cole on January 5, 2021 — every session, with timing-advance or distance data where kept — and the FBI's drive-test maps for Sectors A to E; and the congressional transcript in which a former senior FBI official described corrupted cell data, to establish which carrier's data, for which hours, how it was recovered, and whether the records in the affidavit are the ones recovered.
+  claimIds:
+    - PIPE-C027
+    - PIPE-C028
+    - PIPE-C029
+    - PIPE-C075
+  track: either
+  effortTier: desk
+  informationGain: Distance data would place the phone within a few hundred metres at each session — on the bomber's route, by the sedan in Southwest, or by the man on the north side. The transcript would show whether the data used against Cole has a gap in its custody.
+
+- id: PIPE-R012
+  title: The January 5 phone media the defense has subpoenaed
+  summary: "Follow the court's ruling on Cole's renewed motion for early return of pretrial subpoenas (ECF 88, 91, 96 and 100): whether the native video file and other media from January 5, 2021, and the communications that day, are produced, and what either side says they show."
+  claimIds:
+    - PIPE-C076
+    - PIPE-C052
+  track: either
+  effortTier: desk
+  informationGain: The government calls the material irrelevant and not exculpatory; the defense says it can be had nowhere else. Production would test both positions; it bears on the insider account only if what it shows does.

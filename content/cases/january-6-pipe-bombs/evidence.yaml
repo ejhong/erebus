@@ -2667,3 +2667,391 @@
     extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
     runId: "2026-10-19-session-january-6-pipe-bombs-founder"
     date: "2026-10-19"
+
+# ── 2026-10-19, later: the congressional originals, studies PIPE-S001 and PIPE-S002, and the record re-read under the site's rule that official accounts are claims too ──
+
+- id: PIPE-E154
+  title: The times given for cameras 602 and 940 are the files' start times
+  claimIds:
+    - PIPE-C062
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 3: \"The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the two files' start times. The man appears 53 seconds into the first (8:04:25) and about 81 to 100 seconds into the second (8:05:23 to 8:05:42), as the video's own captions say.\""
+  editorInference: The cameras and places Baker gave are right and the man is on both; the times given are the files' starts, about a minute before he appears.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: &a1
+    ref: "founder session 2026-10-19: the congressional originals and studies PIPE-S001 and PIPE-S002"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+
+- id: PIPE-E155
+  title: Camera 602's original file, from 20:03:32.640
+  claimIds:
+    - PIPE-C062
+    - PIPE-C073
+  sourceId: SRC-PIPE-CCTV-0602
+  direction: supports
+  strength: strong
+  sourceStatement: The release's file is titled "0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4". At 0:53 into it (20:04:25 by its start), a man in dark clothing walks alone along the fence beside Northwest Drive.
+  editorInference: The scene and moment match the 7-minute video's clip captioned 8:04:25pm [602].
+  exactLocator: 0:53–1:15
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 602 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1
+
+- id: PIPE-E156
+  title: The same release has the bomber at New Jersey Avenue and D Street SE at 7:57
+  claimIds:
+    - PIPE-C063
+    - PIPE-C035
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: 'Finding 4: "Camera 794, in the same release, shows a figure in a light hooded top, whom the breakdown labels the bomber, passing at New Jersey Avenue and D Street SE at 19:57:06 to 19:57:15 — one block north of where the affidavit places the bomber at 7:59:38."'
+  editorInference: The release's clock and the FBI's timeline agree to within a few minutes; on any offset that keeps camera 794 consistent with the affidavit, the man at Peace Circle would have had to cover about a kilometre in four minutes or less, running, to be the bomber.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E157
+  title: The man crosses at Peace Circle at about 8:01:18
+  claimIds:
+    - PIPE-C030
+    - PIPE-C063
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: 'Finding 5: "The man in the violet-blue hooded jacket crosses at Peace Circle at about 20:01:18 to 20:01:28 (camera 3187)."'
+  editorInference: Peace Circle is about 960 metres from New Jersey Avenue and E Street SE, where the affidavit puts the bomber 100 seconds earlier.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E158
+  title: All eight cameras are in the congressional release, and every clip matches its original
+  claimIds:
+    - PIPE-C073
+    - PIPE-C061
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 1: \"All eight cameras the 7-minute video names — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are files in the House Administration Subcommittee on Oversight's release on Rumble\" and \"Each clip matches its original file at the moment the video labels it, the same view, cropped or zoomed.\""
+  editorInference: Baker's statement that the footage is the subcommittee's raw release holds for every camera in the video.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E159
+  title: The times were added in editing, from the files' own times
+  claimIds:
+    - PIPE-C074
+    - PIPE-C035
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 2: \"none of the eight originals shows a time on the image\" and each caption \"equals the original file's start time, which its name records to the millisecond, plus the time elapsed in the file, to within a few seconds.\""
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E160
+  title: What the footage shows of the man's clothes, and what it cannot
+  claimIds:
+    - PIPE-C034
+  sourceId: SRC-PIPE-S002
+  direction: qualifies
+  strength: moderate
+  sourceStatement: 'Finding 6: "At 704 by 528 pixels no mask colour, shoe brand or tag can be made out." On camera 3187 he wears "a violet-blue hooded jacket, dark trousers and light-soled shoes that flash under the lights".'
+  editorInference: The items Baker names — a maroon-and-gold mask, a tagged jacket, New Balance shoes — rest on the family's recognition as he reports it, not on what the frames resolve.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E161
+  title: Sedan clips in the breakdown, captioned but without cameras
+  claimIds:
+    - PIPE-C077
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: weak
+  sourceStatement: 'Finding 7: the breakdown shows "clips of a dark sedan captioned 3rd street SW at 8:03:35 to 8:03:49 p.m. and C street at 8:04:19 p.m., in a different caption style and with no camera numbers".'
+  editorInference: Their source and clock are not shown; until they are, the times and places rest on captions alone.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E162
+  title: At 7:59:36 the phone's sector faced away from every place the man is filmed
+  claimIds:
+    - PIPE-C075
+  sourceId: SRC-PIPE-S001
+  direction: supports
+  strength: strong
+  sourceStatement: 'Finding 1: every place the October footage puts the man "lies behind that sector, 147° to 172° off its direction: outside the nominal arc and outside the ±90° band".'
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E163
+  title: The bomber's sworn positions fit the sectors, weakest at 7:59:36
+  claimIds:
+    - PIPE-C027
+  sourceId: SRC-PIPE-S001
+  direction: supports
+  strength: moderate
+  sourceStatement: "Finding 3: \"The bomber's sworn positions fit the sectors\" — but \"The weakest fit is the one the footage turns on\": at 7:59:38 the bomber is at the arc's edge and beyond the bound set by the next sworn site in that direction."
+  editorInference: The geometry is consistent with the phone keeping pace with the bomber; at 7:59:36 it is consistent only at the margin.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E164
+  title: The fit depends on the provider's correction of Sector B
+  claimIds:
+    - PIPE-C028
+  sourceId: SRC-PIPE-S001
+  direction: qualifies
+  strength: moderate
+  sourceStatement: "Finding 4: under Sector B's first-published direction \"the bomber's positions at 7:39 and 7:44 are 129° and 133° off its direction, outside both arc and band; they fit only with the April 2021 correction to east\"."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E165
+  title: The misidentification account and the phone
+  claimIds:
+    - PIPE-C033
+  sourceId: SRC-PIPE-S001
+  direction: qualifies
+  strength: moderate
+  sourceStatement: 'Finding 6: "if the man in the footage is Cole, the phone attributed to him was not with him at 7:59:36, or the sworn records or directions are wrong; if the phone was with Cole, the man is not Cole."'
+  editorInference: The account survives only with an explanation of where the phone was.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E166
+  title: The times were read from the originals, not invented
+  claimIds:
+    - PIPE-C072
+  sourceId: SRC-PIPE-S002
+  direction: undermines
+  strength: strong
+  sourceStatement: 'Finding 2: "The frozen prediction for added captions holds; and the captions were read from the originals."'
+  editorInference: The critics are right that the times were added in editing, and wrong that they were not taken from the original files.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E167
+  title: The video's first camera captions read 7:57:04pm
+  claimIds:
+    - PIPE-C071
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: 'Finding 2: "the first two, on cameras 3192 and 794, read 7:57:04pm"'
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E168
+  title: Camera 794's original file, from 19:55:35.083
+  claimIds:
+    - PIPE-C063
+    - PIPE-C035
+  sourceId: SRC-PIPE-CCTV-0794
+  direction: supports
+  strength: strong
+  sourceStatement: The release's file is titled "0794KIO00K9NJ-DSE_2021-01-05_19h55min35s083ms.mp4". At 1:31 to 1:40 into it (19:57:06 to 19:57:15 by its start), a figure in a light hooded top passes the sign posts at New Jersey Avenue and D Street SE.
+  editorInference: "One block north of the affidavit's position for the bomber at 7:59:38, two and a half minutes earlier: the release's clock and the FBI's timeline agree here to within a few minutes."
+  exactLocator: 1:31–1:40
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 794 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1
+
+- id: PIPE-E169
+  title: "Camera 3187's original file: the man crossing at Peace Circle"
+  claimIds:
+    - PIPE-C030
+  sourceId: SRC-PIPE-CCTV-3187
+  direction: supports
+  strength: strong
+  sourceStatement: The release's file is titled "3187QNW00PeaceCircleNW_2021-01-05_20h00min02s280ms.mp4". The crosswalk at Peace Circle is empty at 1:14 (20:01:16); at about 1:16 to 1:26 (20:01:18 to 20:01:28) a man in a violet-blue hooded jacket crosses it alone.
+  exactLocator: 1:14–1:26
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 3187 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1
+
+- id: PIPE-E170
+  title: Camera 940's original file, from 20:04:02.170
+  claimIds:
+    - PIPE-C062
+  sourceId: SRC-PIPE-CCTV-0940
+  direction: supports
+  strength: strong
+  sourceStatement: The release's file is titled "0940QNW00NJ-ConNW_2021-01-05_20h04min02s170ms.mp4". Looking west along Constitution Avenue from New Jersey Avenue NW, a figure stands by the far curb at 1:21 (20:05:23) and crosses at about 1:40 (20:05:42).
+  exactLocator: 1:21–1:40
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 940 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1
+
+- id: PIPE-E171
+  title: Cole's lawyers seek January 5 phone media and communications the government has not produced in full
+  claimIds:
+    - PIPE-C076
+  sourceId: SRC-PIPE-ECF100-JOINT-STATUS
+  direction: supports
+  strength: strong
+  sourceStatement: "The joint status report lists, among the requests still outstanding, \"Native video file and same-device media (Jan. 5, 2021)\" — \"Outstanding; no responsive production\". Two further requests \"seek the communications between\" two people \"from 12:00 a.m. through 4:39 p.m. on January 5, 2021\"; the government produced \"223 text messages\" from one person's phone as, in the defense's words, \"a PDF extraction report, not native files\", and says: \"The information sought is not discoverable under applicable law or rule.\""
+  editorInference: The filing names both people; this site does not, under its rules for people who have not been charged.
+  exactLocator: pp. 3–5
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E172
+  title: Baker's own October account has the bomber distributing devices that evening
+  claimIds:
+    - PIPE-C005
+  sourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+  direction: undermines
+  strength: moderate
+  sourceStatement: Baker writes that Cole "is seen walking on the northwest side of the Capitol at EXACTLY THE SAME TIME as the real suspect was distributing devices on the southeast side of the Capitol."
+  editorInference: His October 2026 account places the devices' distribution on the evening of January 5, against his earlier claim that they were placed shortly before they were found.
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E173
+  title: "Armitas, from the transcript: Cole said he threw the shoes away"
+  claimIds:
+    - PIPE-C013
+  sourceId: SRC-PIPE-ARMITAS-X
+  direction: supports
+  strength: moderate
+  sourceStatement: 'Armitas writes: "Cole was shown a picture of the Nike Air Max shoes and said he threw them away because he outgrew them."'
+  editorInference: The challenging side's account of the interview agrees with the prosecution's on what Cole said here.
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E174
+  title: Armitas concedes the plate-reader record
+  claimIds:
+    - PIPE-C026
+  sourceId: SRC-PIPE-ARMITAS-X
+  direction: supports
+  strength: moderate
+  sourceStatement: 'Armitas writes: "Cole passed an LPR at 7:10pm, the video begins at 7:57pm."'
+  editorInference: Both sides now state the 7:10 p.m. plate-reader record.
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E175
+  title: Armitas concedes the phone's sessions, not their meaning
+  claimIds:
+    - PIPE-C027
+  sourceId: SRC-PIPE-ARMITAS-X
+  direction: supports
+  strength: weak
+  sourceStatement: "Armitas writes: \"No one refutes that Cole's phone had data transactions\" — adding that it is for the prosecution \"to show that his phone could not possibly be on the NW side of the capitol.\""
+  editorInference: The sessions themselves are not disputed by the challenging side; where they put the phone is.
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-E176
+  title: Camera 3192’s original file, from 19:40:02.063
+  claimIds:
+    - PIPE-C073
+  sourceId: SRC-PIPE-CCTV-3192
+  direction: supports
+  strength: strong
+  sourceStatement: The release’s file is titled "3192QNW003rd-PennNW_2021-01-05_19h40min02s063ms.mp4". At 17:02 into it (19:57:04 by its start) it shows the trailer with a Trump–Pence 2020 banner, the SUV and the truck of the clip the 7-minute video captions 7:57:04pm [3192].
+  exactLocator: 17:02–17:06
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 3192 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: &a1
+    ref: "founder session 2026-10-19: the congressional originals and studies PIPE-S001 and PIPE-S002"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+
+- id: PIPE-E177
+  title: Camera 3188’s original file, from 19:40:01.663
+  claimIds:
+    - PIPE-C073
+  sourceId: SRC-PIPE-CCTV-3188
+  direction: supports
+  strength: strong
+  sourceStatement: The release’s file is titled "3188QNW00PeaceCircleNW_2021-01-05_19h40min01s663ms.mp4". At 19:31 to 19:58 into it (19:59:33 to 19:59:59 by its start) it shows the walkway and parking lot of the clip captioned 7:59:33pm [3188], with a small dark figure walking toward the camera along the walkway.
+  exactLocator: 19:31–19:58
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 3188 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1
+
+- id: PIPE-E178
+  title: Camera 600’s original file, from 19:52:45.993
+  claimIds:
+    - PIPE-C073
+  sourceId: SRC-PIPE-CCTV-0600
+  direction: supports
+  strength: strong
+  sourceStatement: The release’s file is titled "0600USCG00NWDriveExitTIMP_2021-01-05_19h52min45s993ms.mp4". At 8:47 into it (20:01:33 by its start) it shows the Northwest Drive exit barrier, the Peace Monument beyond and a group of four walking, as in the clip captioned 8:01:33pm [600].
+  exactLocator: 8:47–9:20
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 600 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1
+
+- id: PIPE-E179
+  title: Camera 601’s original file, from 20:00:01.653
+  claimIds:
+    - PIPE-C073
+  sourceId: SRC-PIPE-CCTV-0601
+  direction: supports
+  strength: strong
+  sourceStatement: The release’s file is titled "0601USCG00NWDrivenearExit_2021-01-05_20h00min01s653ms.mp4". At 3:16 into it (20:03:18 by its start) it shows the lawn with AREA CLOSED signs of the clip captioned 8:03:18pm [601].
+  exactLocator: 3:16
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 601 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
+  origin: *a1

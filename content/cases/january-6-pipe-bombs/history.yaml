@@ -30,3 +30,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-19
+  change: "New: the October footage checked against the congressional originals, and both studies collected. PIPE-S002 found all eight Capitol cameras in Baker's video in the House subcommittee's release, each clip matching its original at the moment the video labels it; the times on screen were added in editing, as critics said, but each equals the file's own recorded time; the 20:03:32 to 20:04:02 given for cameras 602 and 940 are the files' start times, the man appearing about a minute later; and the same release has the bomber at New Jersey Avenue and D Street SE at 7:57, so the man crossing at Peace Circle at 8:01:18 is not the bomber. PIPE-S001 found that at 7:59:36 the phone attributed to Cole used a sector facing away from every place the man is filmed. Five claims added (PIPE-C073 to C077), including the defense's subpoenas for January 5 phone media and a breakdown's sedan clips; three restated (C030 drops an age the footage cannot show; C062, correcting this site's reading: the host's summary says the two cameras verify the times 20:03:32 to 20:04:02, which are the files' start times, not that the man appears between them; C063 now compares the man's time and place on the originals with the affidavit's). Research items R001 and R002 answered; R009 to R012 added. Every claim re-graded under the site's rules as amended the same day."
+  reason: "The founder's direction of 2026-10-19 that Erebus probe whether conspiracies in government are real, assume the shadiness of official statements and narratives, and hear the main voices on the conspiratorial side, written into config/site-rules.md as Official accounts are claims too: no deference; a judgment resting on one party's description of records no independent party has examined is at most provisionally supported, for officials and critics alike; and one standard both ways. The founder also asked that anything novel be highlighted."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-19
+  change: New edition edition-2026-10-19-210255, adopting a new draft assessment 2026-10-19-operator-210255 (its standing waits for the blind panel).
+  reason: "New edition, highlighting what is new: the October footage checked against the House subcommittee's original files, and both pre-registered studies collected. Every clip is a congressional file and its added times are the files' own; the man it follows is not the bomber; and the phone attributed to Cole was on a sector facing away from him at 7:59:36. The judgment is re-graded under the site's rule that official accounts are claims too: the charged account, resting on the prosecution's description of records not public or tested, moves from well supported to provisionally supported, and the decisive question becomes who the man at Peace Circle is."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

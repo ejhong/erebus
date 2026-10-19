@@ -429,7 +429,7 @@
 
 - id: PIPE-C030
   statement: >-
-    Capitol CCTV from the evening of January 5, 2021 shows a young man walking alone on the northwest side of the Capitol.
+    Capitol CCTV from the evening of January 5, 2021 shows a man walking alone on the northwest side of the Capitol.
   theme: footage
   rung: observation
   claimType: observation
@@ -902,7 +902,7 @@
 
 - id: PIPE-C062
   statement: >-
-    Baker reports that the man in the October 2026 footage appears on Capitol cameras 602 and 940 between 20:03:32 and 20:04:02 on January 5, 2021, near Peace Circle and crossing Constitution Avenue toward New Jersey Avenue NW.
+    Baker reports that the man in the October 2026 footage is filmed near Peace Circle, crossing Constitution Avenue and heading down New Jersey Avenue between 8:00 and 8:05 p.m. on January 5, 2021, and that the files of Capitol cameras 602 and 940 verify the times — 20:03:32 to 20:04:02 — to the millisecond.
   theme: footage
   rung: observation
   claimType: observation
@@ -919,12 +919,12 @@
 
 - id: PIPE-C063
   statement: >-
-    If both camera systems' clocks are right, the man filmed on the north side of the Capitol at 20:03:32 could be the person the affidavit places at New Jersey Avenue and E Street SE at 7:59:38 p.m. only by running about a kilometre or more in under four minutes, though both are filmed walking.
+    The man filmed crossing at Peace Circle at 8:01:18 p.m. could not have been at New Jersey Avenue and E Street SE, where the affidavit places the bomber, at 7:59:38 p.m.
   theme: footage
   rung: mechanism
   claimType: mechanistic
   reviewState: ai_extracted
-  dependsOnClaimIds: [PIPE-C062]
+  dependsOnClaimIds: [PIPE-C035]
   origin:
     ref: "founder session 2026-10-19: the court record of United States v. Cole"
     extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
@@ -1085,3 +1085,56 @@
     firstKnown: "2026-10-19"
     originDescription: "Critics on X, as a critic (@DefiyantlyFree) summarized them and as Baker himself listed them the same day (\"changing timestamps, altering the videos, using AI\")."
     originSourceId: SRC-PIPE-CRITIC-X
+
+# ── 2026-10-19, later: what the congressional originals and the two studies add ─────
+
+- id: PIPE-C073
+  statement: All eight Capitol cameras in the October 2026 video — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are files in the House Administration Subcommittee on Oversight's release on Rumble, and each clip matches its original at the moment the video labels it.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: &a1
+    ref: "founder session 2026-10-19: the congressional originals and studies PIPE-S001 and PIPE-S002"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+
+- id: PIPE-C074
+  statement: The times shown in the October 2026 video were added in editing, and each equals the original file's start time, which the file's name records, plus the time elapsed in the file.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-C075
+  statement: At 7:59:36 p.m., when the affidavit says the phone attributed to Cole used a sector facing south from 200 Independence Avenue SW, every place the October footage puts the man lay behind that sector, outside even 90 degrees either side of its direction.
+  theme: location
+  rung: observation
+  claimType: measurement
+  reviewState: ai_extracted
+  dependsOnClaimIds:
+    - PIPE-C027
+    - PIPE-C073
+  origin: *a1
+
+- id: PIPE-C076
+  statement: Cole's lawyers are seeking by subpoena a native video file and other media from one person's phone on January 5, 2021, and that person's communications that day with a second person; the government has produced a PDF extraction of text messages and declined a full extraction as irrelevant.
+  theme: proceedings
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *a1
+
+- id: PIPE-C077
+  statement: A dark sedan was filmed on 3rd Street SW between 8:03:35 and 8:03:49 p.m. and on C Street at 8:04:19 p.m. on January 5, 2021, as clips in Baker's October 18 breakdown are captioned.
+  theme: location
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  genealogy:
+    firstKnown: 2026-10-18
+    originDescription: The 63-minute breakdown by Steve Baker and Kyle Seraphin attached to Baker's reply of October 18, 2026; earliest appearance found.
+    originSourceId: SRC-PIPE-BAKER-X-LONGER-VIDEO
+  origin: *a1
