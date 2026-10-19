@@ -1,0 +1,2516 @@
+# PIPE-001 evidence. sourceStatement = what the source states, with every
+# quoted passage verbatim from the text the engine's reading tool returns;
+# editorInference = what this case file infers, kept separate. The
+# prosecution's filings describe evidence the public cannot yet examine (the
+# video, the phone records, the recorded interview): they are recorded as the
+# prosecution's account, and the defense's and Steve Baker's as theirs.
+
+# ── the devices and the night of January 5 ─────────────────────────────
+
+- id: PIPE-E001
+  title: "Sworn affidavit: the person on the video placed the DNC device at about 7:54 p.m."
+  claimIds: [PIPE-C001]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The FBI affiant swears: "The individual placed the pipe bomb at the DNC at approximately 7:54 p.m. and at the RNC at approximately 8:16 p.m. on January 5." And: "Through video surveillance, the FBI recreated the individual’s path of travel, including timestamps associated with the individual’s location along the route."
+  editorInference: >-
+    A sworn statement about video the public cannot see; the times are the FBI's reading of the cameras' clocks.
+  exactLocator: "p. 3 (the affidavit's page 2), 'Pipe Bomber Identified on Surveillance Footage'"
+  limitations:
+    - "The video is not public, and the record does not say how the cameras' clocks were checked."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E002
+  title: "Prosecution: the first device was placed by the DNC at about 7:54 p.m."
+  claimIds: [PIPE-C001]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The defendant planted the first bomb at approximately 7:54 p.m. in the immediate vicinity of the DNC headquarters located at 430 South Capitol Street, Southeast."
+  editorInference: >-
+    Restates the affidavit's timeline; the attribution to the defendant is the prosecution's.
+  exactLocator: "p. 2, 'January 5, 2021'"
+  limitations:
+    - "Not independent of the affidavit: the same investigation's account."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E003
+  title: "Sworn affidavit: one person placed both devices"
+  claimIds: [PIPE-C002]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Review of video surveillance footage from the evening of January 5, 2021, shows that the pipe bombs at the RNC and DNC were placed by the same individual."
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  limitations:
+    - "The video is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E004
+  title: "Prosecution: the defendant 'appears to have placed' the second device"
+  claimIds: [PIPE-C003]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Based on the video, the defendant appears to have placed the second bomb, shown below, in the vicinity of the RNC at approximately 8:16 p.m."
+  editorInference: >-
+    The prosecution's own hedge — appears to have placed — fits Baker's point that no camera shows the device behind the RNC being set down, only the person's movements around it.
+  exactLocator: "p. 5"
+  limitations:
+    - "A hedge in a brief is not a statement about what the cameras missed; the full video would settle it."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E005
+  title: "The RNC placement is inferred from the video, not shown in it"
+  claimIds: [PIPE-C002]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "Based on the video, the defendant appears to have placed the second bomb, shown below, in the vicinity of the RNC at approximately 8:16 p.m."
+  editorInference: >-
+    That the same person placed the RNC device rests on movements around the RNC at the right time rather than on footage of the act.
+  exactLocator: "p. 5"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E006
+  title: "Baker: no footage shows anyone placing the RNC device"
+  claimIds: [PIPE-C003]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "There is no footage of any suspect placing the device at the RNC location."
+  limitations:
+    - "The host's summary of Baker's claim, not a document; Baker has not published the footage review behind it."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E007
+  title: "Sworn affidavit: the person on the video walked through the alley beside the RNC at 8:14"
+  claimIds: [PIPE-C003]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "Video surveillance footage shows that at approximately 8:14:15 p.m., the individual who placed the pipe bombs exited Rumsey Court and walked westbound through an alley between the Capitol Hill Club and the RNC then walked northbound onto First Street, Southeast."
+  editorInference: >-
+    The cameras put the person in the alley by the RNC two minutes before the stated placement time, which is what the placement is inferred from.
+  exactLocator: "p. 7 (the affidavit's page 6), item d"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E008
+  title: "House report: the devices lay outside for more than 16 hours"
+  claimIds: [PIPE-C004]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The discovery of both pipe bombs, which had been laying outside for more than 16 hours, occurred within minutes of Congress’s vote to certify the 2020 presidential election"
+  limitations:
+    - "The sixteen hours is the FBI's timeline as the report takes it, not an independent finding."
+  exactLocator: "p. 2 (the report's page 1, Executive Summary)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E009
+  title: "Sworn affidavit: the devices were reported at about 1:00 and 1:15 p.m. on January 6"
+  claimIds: [PIPE-C004]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "At approximately 1:00 p.m. on January 6, 2021, multiple law enforcement agencies received reports of a suspected improvised explosive device (IED) in the vicinity of the headquarters of the Republican National Committee (RNC) in Washington, D.C." And: "At approximately 1:15 p.m. on the same day, a second suspected IED was reported just a few blocks away"
+  exactLocator: "p. 2 (the affidavit's page 1), 'Discovery of Pipe Bombs on January 6, 2021'"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E010
+  title: "Baker: the devices were never there overnight"
+  claimIds: [PIPE-C005]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary quotes Baker: "The pipe bombs placed at the RNC and DNC were never there overnight; they were placed moments before discovery as part of an intelligence exercise gone live."
+  limitations:
+    - "An assertion, with no source given for it in the summary."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E011
+  title: "Baker: a bomb-dog canvass hours before the discovery raised no alert"
+  claimIds: [PIPE-C005]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Secret Service canvassed the exterior of the building with bomb dogs hours before discovery without any alert."
+  editorInference: >-
+    If a sweep found nothing, either the device was not there or the sweep missed it; the House report documents that the Secret Service's sweep at the DNC missed it.
+  limitations:
+    - "No record of the canvass is cited."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E012
+  title: "House report: the security sweep at the DNC failed to find the device"
+  claimIds: [PIPE-C005]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    Among the subcommittees' findings: "Failed to identify one of the devices during security sweeps at the DNC"
+  editorInference: >-
+    A sweep that missed a device which was there explains why a sweep found nothing, without the device having been absent.
+  exactLocator: "p. 4 (the report's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E013
+  title: "Sworn affidavit: the person was filmed in the neighborhood from 7:34 to 8:18 p.m. on January 5"
+  claimIds: [PIPE-C005]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    "The individual was observed on video surveillance footage at various locations in the surrounding neighborhood between approximately 7:34 p.m. and 8:18 p.m."
+  editorInference: >-
+    A placement on the evening of January 5 is what the timestamped video, as the FBI describes it, shows.
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  limitations:
+    - "The video is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E014
+  title: "Sworn affidavit: the components of the devices"
+  claimIds: [PIPE-C006]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The component parts included a 1-inch by 8-inch pipe, end caps affixed to the pipe, 14-gauge electrical wire in red and black, alligator clips to connect the wires, a nine-volt (9v) battery, a nine-volt (9v) battery connector, a white kitchen timer, paper clips, steel wool, and homemade black powder."
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E015
+  title: "Prosecution: the FBI's explosives examiner assessed the devices as viable"
+  claimIds: [PIPE-C007]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The FBI explosives examiner assessed that the pipe bombs were constructed using all the components necessary to explode and that they were viable explosive devices."
+  exactLocator: "p. 8"
+  limitations:
+    - "The examiner's report itself is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E016
+  title: "House report, quoting the FBI in 2021: the devices could have detonated"
+  claimIds: [PIPE-C007]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Both pipe bombs, according to the FBI, were viable explosive devices that" "could have detonated, causing innocent bystanders to be seriously injured or killed"
+  editorInference: >-
+    The FBI's assessment was public in 2021, years before anyone was charged.
+  exactLocator: "p. 2 (the report's page 1)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E017
+  title: "Prosecution: built with every component necessary to explode"
+  claimIds: [PIPE-C008]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The FBI explosives examiner assessed that the pipe bombs were constructed using all the components necessary to explode and that they were viable explosive devices."
+  editorInference: >-
+    Having every component is not the same as being able to fire as assembled; the examiner's word is viable, and the defense disputes it.
+  exactLocator: "p. 8"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E018
+  title: "In court, the defense says it has evidence the devices could not have detonated"
+  claimIds: [PIPE-C008]
+  sourceId: SRC-PIPE-ECF53-HEARING-TRANSCRIPT
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The court to defense counsel: "I understand that you have evidence, and some of this I think wasn't before Judge Sharbaugh" — "that the device couldn't have detonated." Counsel: "That's right."
+  editorInference: >-
+    The defense's evidence on this point is referred to in court but is not in the public record.
+  exactLocator: "p. 25"
+  limitations:
+    - "What the defense's evidence is, and who produced it, is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E019
+  title: "In court, the prosecution says the dispute is over the powder samples"
+  claimIds: [PIPE-C008]
+  sourceId: SRC-PIPE-ECF53-HEARING-TRANSCRIPT
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The prosecutor: "The dispute, I think, is about the probability that they would have exploded based on those powder samples with respect to black powder, whether it was explosive in one sample versus not explosive in another sample."
+  editorInference: >-
+    By the prosecution's own account, one powder sample tested explosive and another did not; whether the devices as built would have fired is the open question.
+  exactLocator: "p. 43"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E020
+  title: "Prosecution: the devices did not detonate as intended"
+  claimIds: [PIPE-C008]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "The pipe bombs that the defendant planted near the RNC and DNC did not detonate as intended and were not discovered until approximately 1:00 p.m. on January 6, 2021."
+  editorInference: >-
+    On the prosecution's account the timers were set for sixty minutes; neither device fired in the sixteen hours it lay out, which is either a fault in the devices or in their firing circuits.
+  exactLocator: "p. 7"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the person on the video ────────────────────────────────────────────
+
+- id: PIPE-E021
+  title: "Sworn affidavit: the FBI's height analysis, 5 ft 7 in ± 1.1 in with headwear"
+  claimIds: [PIPE-C009]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The height analysis showed that the approximate distance from the ground to the top of the individual’s head, including headwear, was 5 feet 7 inches with an error rate of +/- 1.1 inches."
+  editorInference: >-
+    A range of about 5 ft 5.9 in to 5 ft 8.1 in, hood and shoes included; it was done in January 2021, before Cole was a suspect.
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E022
+  title: "Sworn affidavit: Cole is 5 feet 6 inches and wears corrective eyeglasses"
+  claimIds: [PIPE-C010]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "COLE is 5 feet 6 inches tall, and COLE wears corrective eyeglasses."
+  editorInference: >-
+    Within the photogrammetry's range once a hood and shoe soles are allowed for; a height range this wide fits a large share of adult men, so it narrows little.
+  exactLocator: "p. 4 (the affidavit's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E023
+  title: "Sworn affidavit: the person on the video adjusted eyeglasses"
+  claimIds: [PIPE-C011]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The video surveillance footage shows the individual adjusting eyeglasses at times."
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E024
+  title: "Sworn affidavit: Cole wears corrective eyeglasses"
+  claimIds: [PIPE-C011]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "COLE is 5 feet 6 inches tall, and COLE wears corrective eyeglasses."
+  editorInference: >-
+    A shared trait of low diagnosticity: many people wear glasses.
+  exactLocator: "p. 4 (the affidavit's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E025
+  title: "Sworn affidavit: the clothing and the Nike Air Max Speed Turf shoes"
+  claimIds: [PIPE-C012]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "In video surveillance, the individual was wearing dark pants, a grey hooded sweatshirt, dark gloves, Nike Air Max Speed Turf shoes, and a facemask that obscured the person’s face."
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E026
+  title: "Prosecution: shown the shoe, Cole said he used to have a pair"
+  claimIds: [PIPE-C013]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "when the defendant was shown a picture of a Nike Air Max Speed Turf shoe, he admitted that he" "used to have a pair" and threw them away because "they were old and they were coming apart"
+  editorInference: >-
+    Said during his denials, before the admission the defense calls coerced; no purchase record of the shoes is public.
+  exactLocator: "p. 14"
+  limitations:
+    - "The prosecution's account of an interview whose recording is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E027
+  title: "Baker: measurements put the bomber's shoes at size 9 to 9.5"
+  claimIds: [PIPE-C014]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Surveillance footage and physical brick measurements confirm the bomber wore a size 9 to 9.5 Nike Air Max Speed Turf sneaker."
+  editorInference: >-
+    Estimating shoe size from the length of a shoe against paving bricks in surveillance video is possible in principle, but the error of such an estimate depends on camera angle and resolution, which are not published.
+  limitations:
+    - "No measurement, method or error range has been published; no official record gives a shoe size."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E028
+  title: "Baker: every pair of shoes in Cole's wardrobe is a size 12 or 13"
+  claimIds: [PIPE-C015]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Steve Baker personally inspected Cole’s wardrobe, finding every pair of shoes to be a size 12 or 13."
+  limitations:
+    - "Baker's own report of his inspection, at the family's home; the search inventory, which would record the sizes of shoes seized, is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E029
+  title: "Baker: the New Balance shoes in the new footage are a size 12-D"
+  claimIds: [PIPE-C015]
+  sourceId: SRC-PIPE-BAKER-X-SHOES
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "These are the exact New Balance shoes Brian Cole Jr. is wearing in the new video above. (Size 12-D)"
+  limitations:
+    - "A size cannot be read off a video; this is Baker's identification of the shoes, sized from the pair the family showed him."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E030
+  title: "Baker: the FBI's podiatrist found the gait comparison inconclusive"
+  claimIds: [PIPE-C016]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "FBI’s own expert podiatrist returned an" "inconclusive" "gait result when comparing footage."
+  limitations:
+    - "The podiatrist's report is not public, and the summary does not say whose gait was compared with whose."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E031
+  title: "Court filing: a podiatrist's gait-analysis materials were obtained by the FBI and given to the defense"
+  claimIds: [PIPE-C016]
+  sourceId: SRC-PIPE-ECF100-JOINT-STATUS
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Among the subpoena requests the defense withdrew as moot: "Gait-analysis documents and communications"
+  editorInference: >-
+    A forensic podiatrist's gait-analysis papers exist and are in the defense's hands; what they conclude is not public. Gait comparison from surveillance video is a contested forensic method.
+  exactLocator: "p. 6 (the status table)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E032
+  title: "Baker: unreleased video shows the bomber using a smartwatch"
+  claimIds: [PIPE-C017]
+  sourceId: SRC-PIPE-BAKER-X-SMARTWATCH
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "Never before released video shows the J6 pipe bomber was wearing and using a smart watch."
+  limitations:
+    - "The video is described, not identified by source or camera; the article linked from the post refused the reading tool."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E033
+  title: "Baker: Cole's family says he has never owned or worn a watch"
+  claimIds: [PIPE-C018]
+  sourceId: SRC-PIPE-BAKER-X-SMARTWATCH
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "My personal interviews with family members, including all available photography reveals that Brian Cole Jr. has never owned or worn a watch, or jewelry of any kind."
+  limitations:
+    - "The family's account through Baker; interested parties, not independently checked. Purchase and search records would show it either way."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E034
+  title: "CNN: the person in the FBI's video wore a medical face mask"
+  claimIds: [PIPE-C019]
+  sourceId: SRC-PIPE-CNN-HOW-ARREST
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The person was "wearing dark pants, a gray hooded sweatshirt, dark gloves, and a medical face mask that obscured their face."
+  editorInference: >-
+    CNN's description, from the affidavit and the FBI's published stills; the affidavit itself says only facemask.
+  limitations:
+    - "A reporter's description, not the FBI's wording."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E035
+  title: "Baker: the bomber wore a white N95-type mask"
+  claimIds: [PIPE-C019]
+  sourceId: SRC-PIPE-BAKER-X-MASK
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "I asked her if Brian typically wore a white N95 mask during the COVID era. (Like the actual J6 b*omber was wearing.)"
+  exactLocator: "the post's text, as X's embed returns it"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E036
+  title: "Sworn affidavit: a facemask, color and type unstated"
+  claimIds: [PIPE-C019]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    The affidavit describes "a facemask that obscured the person’s face" and gives no color or type.
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── purchases and materials ────────────────────────────────────────────
+
+- id: PIPE-E037
+  title: "Sworn affidavit: Cole bought six pipes of the devices' size and make in 2020"
+  claimIds: [PIPE-C020]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "COLE purchased a total of six galvanized pipes of this size and shape on or about June 1, June 8, and November 16, 2020."
+  exactLocator: "p. 4 (the affidavit's page 3)"
+  limitations:
+    - "From bank and card records the FBI describes; the records are not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E038
+  title: "Sworn affidavit: Cole bought 9-volt connectors of the devices' make at Micro Center"
+  claimIds: [PIPE-C020]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "COLE purchased five of the Nine Volt Distributor’s nine-volt battery connectors from Micro Center in northern Virginia" (in November and December 2019, the affidavit continues).
+  exactLocator: "p. 4 (the affidavit's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E039
+  title: "Sworn affidavit: Cole bought each type of component, and tools for building"
+  claimIds: [PIPE-C020]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "COLE purchased two white kitchen timers from a Walmart in northern Virginia on or about June 3, 2020." "COLE purchased steel wool from a Home Depot in northern Virginia on or about December 4, 2020." "In addition to purchasing each type of component used to make the pipe bombs, COLE purchased equipment that would facilitate the manufacturing of a pipe bomb."
+  exactLocator: "p. 5 (the affidavit's page 4)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E040
+  title: "Defense: consumer purchases tied to a route, retrospectively and circumstantially"
+  claimIds: [PIPE-C020]
+  sourceId: SRC-PIPE-ECF23-DEFENSE-OPPOSITION
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "The government’s proffer, taken at face value, is retrospective and circumstantial; it ties consumer purchases and historical cellular records to a past route on a single evening."
+  editorInference: >-
+    The defense does not dispute the purchases here; it disputes what they prove.
+  exactLocator: "p. 8"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E041
+  title: "Sworn affidavit: fewer than 8,000 of the connectors were distributed in the U.S."
+  claimIds: [PIPE-C021]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Fewer than 8,000 of Nine Volt Distributor’s nine-volt battery connectors were distributed in the United States between December 2017 and January 5, 2021."
+  editorInference: >-
+    The uncommon component is the purchase that narrows most: fewer than 8,000 buyers in three years, set against tens of thousands for the pipes.
+  exactLocator: "p. 5 (the affidavit's page 4)"
+  limitations:
+    - "The distributor's figure as the FBI reports it."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E042
+  title: "Sworn affidavit: about 26,000 of the pipes were sold in 2020"
+  claimIds: [PIPE-C022]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "According to the Pipe Manufacturer, approximately 26,000 of these items from Pipe Manufacturer were sold in 2020, and over 22,000 of these items were sold to Home Depot."
+  exactLocator: "p. 4 (the affidavit's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E043
+  title: "Sworn affidavit: Cole kept buying components after January 5, 2021"
+  claimIds: [PIPE-C023]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Following the placement of the pipe bombs on January 5, 2021, COLE continued to make purchases of components used in bomb making." For example, "on January 21, 2021, COLE purchased one white kitchen timer and two nine-volt batteries from Walmart"
+  exactLocator: "p. 5 (the affidavit's page 4)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E044
+  title: "Prosecution: the last identified purchase was on August 13, 2022"
+  claimIds: [PIPE-C023]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "After planting the pipe bombs on January 5, 2021, the defendant continued to purchase bombmaking components, as illustrated below. The last identified purchase occurred on August 13, 2022."
+  exactLocator: "p. 11"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E045
+  title: "Prosecution: what the search of Cole's home found"
+  claimIds: [PIPE-C024]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Inside the defendant’s home, law enforcement recovered, among other evidence, (1) a Home Depot shopping bag containing three black iron end caps, one galvanized end cap, two 1-inch by 8-inch pipe nipples, and a Home Depot receipt dated November 16, 2020, for two 1-inch by 8-inch pipe nipples, three black iron end caps, and gloves located inside a closet accessible only through the defendant’s bathroom" and "(3) 14-gauge red wire and wire strippers located inside the garage"
+  exactLocator: "p. 12"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E046
+  title: "Prosecution: what the search of Cole's car found"
+  claimIds: [PIPE-C024]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Inside the defendant’s vehicle, law enforcement recovered, among other evidence, (1) a Home Depot receipt dated August 10, 2022, for hand sanitizer, two 1-inch by 8-inch pipe nipples, and work gloves"
+  exactLocator: "p. 12"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E047
+  title: "Defense: no direct forensic tie"
+  claimIds: [PIPE-C025]
+  sourceId: SRC-PIPE-ECF23-DEFENSE-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The government’s showing is entirely retrospective and circumstantial." The defense calls it proof "absent a direct forensic tie or evidence of ongoing threats"
+  editorInference: >-
+    No prosecution filing read for this case claims a fingerprint, DNA or other trace from the devices; the absence is of public claims, and the full laboratory reports are not public.
+  exactLocator: "p. 10"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E048
+  title: "Prosecution: Cole said he wore gloves and wiped the devices"
+  claimIds: [PIPE-C025]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "He wore a mask and hood that evening to avoid identification, and he wore gloves to avoid leaving fingerprints." Earlier: "he cleaned the devices with disinfectant wipes"
+  editorInference: >-
+    On the prosecution's account of the confession, the absence of traces is what the bomber intended; on the defense's, it is the absence of proof.
+  exactLocator: "p. 15"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── plate reader and phone data ────────────────────────────────────────
+
+- id: PIPE-E049
+  title: "Prosecution: a plate reader recorded Cole's car entering the city at 7:10 p.m."
+  claimIds: [PIPE-C026]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Earlier that evening, at approximately 7:10 p.m., the defendant, driving his 2017 Nissan Sentra, took the South Capitol Street exit from Interstate 395 South, passing a license plate reader that recorded his vehicle and tag information."
+  editorInference: >-
+    A plate reader records a car and its plate, not its driver; that Cole was driving is the prosecution's inference, which he confirmed in the interview.
+  exactLocator: "p. 2"
+  limitations:
+    - "The plate-reader record itself is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E050
+  title: "Sworn affidavit: seven data sessions between 7:39 and 8:24 p.m."
+  claimIds: [PIPE-C027]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The COLE CELLPHONE engaged in approximately seven data session transactions with Provider towers between 7:39 p.m. and 8:24 p.m."
+  exactLocator: "p. 6 (the affidavit's page 5)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E051
+  title: "Sworn affidavit: at 7:59:36 the phone, at 7:59:38 the person on the video"
+  claimIds: [PIPE-C027]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "At approximately 7:59:36 p.m., the COLE CELLPHONE interacted with a particular sector of Provider tower 147990 which faces south" and "Video surveillance footage shows that at approximately 7:59:38 p.m., the individual who placed the pipe bombs walked southbound on New Jersey Avenue, Southeast then turned eastbound on E Street, Southeast. These locations are consistent with the coverage area of Sector C."
+  editorInference: >-
+    The affidavit pairs each of the phone's sessions with the person's position on video at the same minute, five times over and on five different sectors.
+  exactLocator: "p. 7 (the affidavit's page 6), item c"
+  limitations:
+    - "Consistent with a sector's coverage means inside an area tens of degrees wide, not a point; the raw records and the drive-test maps are not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E052
+  title: "Sworn affidavit: a sector covers about 120 degrees, more or less on any day"
+  claimIds: [PIPE-C027]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "Each sector of a cell phone tower provides approximately 120 degrees of coverage." And: "the actual coverage on any particular day for a particular sector can extend beyond 120 degrees of coverage or be limited to less than 120 degrees of coverage"
+  editorInference: >-
+    A sector match places a phone in a wide wedge, not at a corner: the data are consistent with the route but cannot by themselves exclude other places the same sectors reach — which is exactly what the October footage puts in question.
+  exactLocator: "p. 6 (the affidavit's page 5)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E053
+  title: "Prosecution: the phone 'consistent with' the bomber's corner at 7:59"
+  claimIds: [PIPE-C027]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "About fifteen minutes later, at approximately 7:59:36 p.m., the defendant’s cellphone interacted with a cell tower consistent with him being in the area of the intersection of New Jersey Avenue, Southeast and E Street, Southeast."
+  exactLocator: "p. 4"
+  limitations:
+    - "Restates the affidavit."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E054
+  title: "Sworn affidavit: the sector's listed direction was corrected, and drive tests agreed"
+  claimIds: [PIPE-C028]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "In April 2021, the Provider updated the direction of this particular sector of Provider tower 126187 as facing east" and "The drive test results were inconsistent with the sector facing north."
+  editorInference: >-
+    The correction came from the provider in April 2021, years before Cole was a suspect, and the FBI's own drive tests of January and February 2021 agree with it.
+  exactLocator: "p. 7 (the affidavit's page 6), footnote 1"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E055
+  title: "Sworn affidavit: the first published listing had the sector facing north"
+  claimIds: [PIPE-C028]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "In the Provider’s published tower list in February 2021, which is the first published listing of this tower, the Provider listed this particular sector of Provider tower 126187 as facing north"
+  exactLocator: "p. 6 (the affidavit's page 5), footnote 1"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E056
+  title: "House report: a former senior FBI official testified the carriers' data were corrupted"
+  claimIds: [PIPE-C029]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "A former senior FBI official testified that the major cell carrier companies provided" corrupted "cell data to the FBI and suggested that that" the data "may have contained the identity of the pipe bomber"
+  exactLocator: "p. 4 (the report's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E057
+  title: "House report: the carriers said they provided no corrupted data"
+  claimIds: [PIPE-C029]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "There is conflicting information as to whether the FBI received" corrupted data; "the major cell carriers confirmed that they did not provide corrupted data to the FBI and that the FBI never notified them of any issues with accessing the cellular data"
+  editorInference: >-
+    The FBI's analysts went on to use the provider's records for the phone that led to the arrest.
+  exactLocator: "p. 4 (the report's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the October 2026 footage ───────────────────────────────────────────
+
+- id: PIPE-E058
+  title: "Baker: Capitol CCTV shows Cole on the northwest side of the Capitol"
+  claimIds: [PIPE-C030]
+  sourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Never-before-seen Capitol CCTV video reveals that Brian Cole Jr. could not have been the J6 pipe b*mber." "He is seen walking on the northwest side of the Capitol at EXACTLY THE SAME TIME as the real suspect was distributing devices on the southeast side of" the Capitol.
+  editorInference: >-
+    That the video exists and shows a man walking at night is plain from the post; where the cameras were and when they recorded is Baker's account.
+  exactLocator: "the post's text, as X's embed returns it; video credited to @accabbat"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E059
+  title: "Baker: the man in the footage was doing what Cole told the FBI"
+  claimIds: [PIPE-C030]
+  sourceId: SRC-PIPE-BAKER-X-LONGER-VIDEO
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "@KyleSeraphin and I break down @accabbat's shorter video presentation (above), showing that Brian Cole Jr. was doing exactly what he told @FBI"
+  editorInference: >-
+    The post continues (read in full through a public mirror of X) that the search turned to the northeast side of the Capitol campus, where a permitted rally had been held — so the thread names both the northwest and the northeast side, which the video's camera locations would resolve.
+  exactLocator: "the post's text, as X's embed returns it"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E060
+  title: "News report: Baker released footage he says puts Cole elsewhere"
+  claimIds: [PIPE-C030]
+  sourceId: SRC-PIPE-TNND-NEW-VIDEO
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    "Over the weekend, independent reporter Steve Baker released video footage that shows that the alleged Jan. 6 pipe bomb planter Brian Cole Jr. could not have committed the crime because he was in another location when the pipe bombs were being planted."
+  editorInference: >-
+    The report states Baker's conclusion as what the footage shows; the same report says the footage's source is unclear and the identification unconfirmed.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E061
+  title: "Baker: the mask told him the man was Cole"
+  claimIds: [PIPE-C031]
+  sourceId: SRC-PIPE-BAKER-X-MASK
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "When I saw the 'maroon and gold' face mask, I knew we had found Brian Cole Jr."
+  editorInference: >-
+    The post continues that Cole's mother made the family's cloth masks, some in the colors of the Washington football team, and recognized her son when shown a screenshot.
+  limitations:
+    - "Recognition by a parent of a masked figure at night is evidence of belief, not identity; she is an interested party."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E062
+  title: "Baker: a relative recognized the jacket as a Christmas gift"
+  claimIds: [PIPE-C031]
+  sourceId: SRC-PIPE-BAKER-X-JACKET
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    A relative of Cole's told Baker that "the jacket her grandson was wearing in this video is the exact jacket she'd given him for Christmas, only two weeks prior"
+  editorInference: >-
+    A checkable claim: the post says the purchase record exists at the retailer, which would date the jacket but not place it in the video.
+  limitations:
+    - "Recognition of a jacket in night video by an interested relative."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E063
+  title: "News report: neither the footage's source nor the identification is confirmed"
+  claimIds: [PIPE-C031]
+  sourceId: SRC-PIPE-TNND-NEW-VIDEO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "It isn’t clear how Baker got the footage and it has not been confirmed by the FBI or DOJ that the man in the video is Cole." And: "Neither the FBI nor the Department of Justice immediately responded to The National News Desk's requests for comment."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E064
+  title: "Baker: the footage was recorded at the same time as the placements"
+  claimIds: [PIPE-C032]
+  sourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "He is seen walking on the northwest side of the Capitol at EXACTLY THE SAME TIME as the real suspect was distributing devices on the southeast side of" the Capitol.
+  limitations:
+    - "The post gives no timestamps, camera identifiers or clock checks; Capitol camera clocks are not shown to agree with the cameras that recorded the bomber."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E065
+  title: "Sworn affidavit: the window the footage would have to fall in, 7:34 to 8:18 p.m."
+  claimIds: [PIPE-C032]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "The individual was observed on video surveillance footage at various locations in the surrounding neighborhood between approximately 7:34 p.m. and 8:18 p.m."
+  editorInference: >-
+    The northwest side of the Capitol is roughly a kilometer from the DNC; a man filmed there would have to be filmed inside this window, at a minute when the bomber was on camera on the southeast side, for the footage to exclude him.
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E066
+  title: "Baker: the footage shows Cole could not have been the bomber"
+  claimIds: [PIPE-C033]
+  sourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "Never-before-seen Capitol CCTV video reveals that Brian Cole Jr. could not have been the J6 pipe b*mber."
+  editorInference: >-
+    The conclusion holds only if the man is Cole and the footage's clock is right; both are unverified.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E067
+  title: "Prosecution: at 7:59 the phone and the person on the video were at the same corner"
+  claimIds: [PIPE-C033]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    "Surveillance video showed that at approximately 7:59:38 p.m., the defendant walked southbound on New Jersey Avenue, Southeast then turned eastbound on E Street, Southeast. This intersection is approximately 0.1 miles from the immediate vicinity of the DNC headquarters"
+  editorInference: >-
+    If the phone was Cole's and in his pocket, its sessions follow the bomber's route minute by minute; the October footage would have to be reconciled with that, by showing either that the sectors also reach the northwest side or that the phone was not with him.
+  exactLocator: "p. 4"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E068
+  title: "Rep. Thomas Massie endorses Baker's report"
+  claimIds: [PIPE-C033]
+  sourceId: SRC-PIPE-TNND-NEW-VIDEO
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    Massie on X, as reported: "Trump’s @FBIDirectorKash locked up an innocent man and @SpeakerJohnson congratulated him"
+  editorInference: >-
+    An endorsement by a member of Congress who co-chaired the 2025 inquiry; it adds no evidence of its own.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E069
+  title: "Baker: a maroon-and-gold mask"
+  claimIds: [PIPE-C034]
+  sourceId: SRC-PIPE-BAKER-X-MASK
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "When I saw the 'maroon and gold' face mask, I knew we had found Brian Cole Jr."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E070
+  title: "Baker: a tag hanging from the jacket"
+  claimIds: [PIPE-C034]
+  sourceId: SRC-PIPE-BAKER-X-JACKET
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "That explains the tag still hanging from the jacket."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E071
+  title: "Baker: New Balance shoes, worn with the heels folded down"
+  claimIds: [PIPE-C034]
+  sourceId: SRC-PIPE-BAKER-X-SHOES
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "These are the exact New Balance shoes Brian Cole Jr. is wearing in the new video above." And: "Brian's mother explained long ago that he notoriously destroys his regular shoes because he" walks on the heels.
+  editorInference: >-
+    The post continues that in the footage the man walks with his heels on the outside of the shoes.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E072
+  title: "News report: a screenshot shows a man with a white tag on his jacket"
+  claimIds: [PIPE-C034]
+  sourceId: SRC-PIPE-TNND-NEW-VIDEO
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "In another post on X, he posted a screenshot of what appears to be a man with a white tag on his jacket."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E073
+  title: "Baker: the footage is Capitol CCTV"
+  claimIds: [PIPE-C035]
+  sourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "Never-before-seen Capitol CCTV video reveals that Brian Cole Jr. could not have been the J6 pipe b*mber."
+  limitations:
+    - "No camera identifiers, source or chain of custody are given."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E074
+  title: "News report: how Baker got the footage is unclear"
+  claimIds: [PIPE-C035]
+  sourceId: SRC-PIPE-TNND-NEW-VIDEO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "It isn’t clear how Baker got the footage and it has not been confirmed by the FBI or DOJ that the man in the video is Cole."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E075
+  title: "A federal court entered a default judgment against Baker over the earlier gait identification"
+  claimIds: [PIPE-C036]
+  sourceId: SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The earlier reports suggested "forensic gait analysis" "that matched the suspect seen in surveillance footage planting pipe bombs". "U.S. District Judge Rossie Alston Jr. entered the default judgment against Baker after Baker failed to respond to the claim." Correction: "The default judgment was entered only against Baker, Blaze Media reporter Joseph Hanneman and Veritas Regnant LLC, a media entity formed by Baker and Hanneman."
+  editorInference: >-
+    A default judgment means Baker did not answer the suit; it is not a court's finding on the gait evidence. The earlier identification named a former Capitol Police officer, a private person this site does not name.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E076
+  title: "The earlier identification was retracted"
+  claimIds: [PIPE-C036]
+  sourceId: SRC-PIPE-WEX-LAWSUIT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The story, now retracted, led to an FBI investigation of the former officer"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the interview and the confession ───────────────────────────────────
+
+- id: PIPE-E077
+  title: "Prosecution: Cole first said he went to a protest, alone"
+  claimIds: [PIPE-C037]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "When asked about his whereabouts on January 5, 2021, the defendant stated that he drove his Nissan Sentra to Washington, D.C. by himself that evening to attend a protest concerning the outcome of the 2020 election."
+  exactLocator: "p. 13"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E078
+  title: "Baker publishes transcript pages of Cole's first account"
+  claimIds: [PIPE-C037]
+  sourceId: SRC-PIPE-BAKER-X-INTERVIEW-CLUES
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "These next two comment posts show the clues Brian Cole Jr. gave us early in his @FBI interrogation." And: "We'd spent almost a full year looking for him on the south side of the Capitol, near where the devices were placed at the DNC and RNC."
+  editorInference: >-
+    The images attached to this post and the next show transcript lines, with the agents' names blacked out, in which Cole says he came alone in his Nissan, at night; that he went to the protest to show support; that for about an hour he would walk around, sit around and look around, wishing he had his headphones; that he talked to no one; and that he wore a jacket because it was cold. The images are not machine-read; this is the drafter's reading of them.
+  limitations:
+    - "The transcript is not in the public court record; the post does not say where the pages came from."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E079
+  title: "Prosecution: the first account was a false cover story"
+  claimIds: [PIPE-C037]
+  sourceId: SRC-PIPE-ECF111-GOVERNMENT-MOTION
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "During a custodial interview the same morning, the defendant initially denied planting the bombs and offered a false cover story before eventually confessing and explaining in detail how and why he committed the charged offenses."
+  editorInference: >-
+    The two sides agree on what Cole first said; they disagree on whether it was true. The October footage, if it shows him, would bear on exactly that.
+  exactLocator: "p. 2"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E080
+  title: "Prosecution: the still image, the reminder, the pause, the answer"
+  claimIds: [PIPE-C038]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "After approximately two hours, during which the defendant maintained that he had not placed the bombs, one of the interviewing agents asked the defendant if he wanted to end the interview." "The interviewing agents reminded the defendant that lying to them was an additional criminal offense and asked the defendant again whether he was the individual on the surveillance video. This time, the defendant paused for approximately fifteen seconds, placed his head face down on the table, and answered" yes.
+  exactLocator: "p. 14"
+  limitations:
+    - "The prosecution's account of a recording that is not public; the defense's expert reads the same exchange as the moment a coerced suspect gave way."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E081
+  title: "Prosecution: an hour and a half of detail on building and placing the devices"
+  claimIds: [PIPE-C039]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Over the next approximately one and one-half hours, the defendant walked the interviewing agents in detail through his construction, transportation, and planting of the pipe bombs." "Eventually, the defendant admitted that he did not go to Washington, D.C. to attend a protest but in fact traveled there to plant the devices."
+  exactLocator: "p. 15"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E082
+  title: "Prosecution: sixty-minute timers, and Google Maps beforehand"
+  claimIds: [PIPE-C039]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "He set the timer on the first device to the maximum duration (60 minutes) and planted the device near the DNC." "The defendant explained that he had used Google Maps to look up these locations in advance."
+  exactLocator: "p. 16"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E083
+  title: "Prosecution: the black-powder recipe, by brand and store"
+  claimIds: [PIPE-C040]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The defendant explained that he made the black powder in the devices using charcoal, Lilly Miller sulfur dust, and potassium nitrate that he purchased from Lowes."
+  editorInference: >-
+    A brand and a store are the kind of detail that can be checked against purchase records and against what the agents had already said; the public record does not show either check.
+  exactLocator: "p. 15"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E084
+  title: "Baker: of 123 admissions, 95 repeated what was supplied or public"
+  claimIds: [PIPE-C040]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Analysis shows 123 total admissions, with 95 being seeded or publicly available info and only 28 containing new details."
+  editorInference: >-
+    The right test, done by an interested party: which details came first from Cole, and are they true? The 28 new details are not listed.
+  limitations:
+    - "An unpublished count by an advocate for Cole, from a transcript that is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E085
+  title: "The defense's expert lists contamination among his topics but cites no instance"
+  claimIds: [PIPE-C040]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    Among the subjects he expects to testify on: "the problem of police interrogation contamination and how it relates to police elicitation of false confessions"
+  editorInference: >-
+    The report argues the techniques raised the risk of a false confession; it does not identify a detail the agents fed Cole or one he got wrong.
+  exactLocator: "p. 22"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E086
+  title: "Defense expert: minimization in the agents' words"
+  claimIds: [PIPE-C041]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The report quotes the transcript: "Everyone makes mistakes" (page 63); "If you don’t tell us the reason, other people are going to create the reason for you" (page 71).
+  exactLocator: "p. 17, examples 2 and 4"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E087
+  title: "Defense expert: implied promises and threats, including about Cole's family"
+  claimIds: [PIPE-C041]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The report quotes the transcript: "The only way it can go away is by you owning what you did and dealing with it" (page 85) and "we might not have to bring them all down into DC" (page 94).
+  exactLocator: "p. 19, examples 6 and 9"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E088
+  title: "Defense expert: the interrogation was psychologically coercive"
+  claimIds: [PIPE-C041]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "In my professional opinion, the interrogation was psychologically coercive."
+  editorInference: >-
+    An opinion, by a leading researcher of false confessions retained by the defense; whether the confession is voluntary in law is for the court on the motion to suppress.
+  exactLocator: "p. 20"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E089
+  title: "Defense expert: Cole was hyperventilating at times"
+  claimIds: [PIPE-C042]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Cole "told the Agents that he was scared (P. 4), out of his depth (P. 19), freaking out (P. 60)" and "It is also clear from the recording that Mr. Cole was hyperventilating at times during the interrogation because he was in such distress."
+  exactLocator: "p. 21"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E090
+  title: "Prosecution: 'everything is just blank'"
+  claimIds: [PIPE-C042]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Asked if he wanted to end the interview, Cole said "everything is just blank" and "a little too much to process"
+  exactLocator: "p. 14"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E091
+  title: "Prosecution: the recording shows no appreciable deficit"
+  claimIds: [PIPE-C042]
+  sourceId: SRC-PIPE-ECF111-GOVERNMENT-MOTION
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The government told the court the interview showed the defendant "does not have any appreciable deficit"
+  editorInference: >-
+    The two sides read the same recording oppositely; distress and deficit are different questions, and the recording would show the first.
+  exactLocator: "p. 4"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E092
+  title: "Defense: Cole has been diagnosed with autism and OCD"
+  claimIds: [PIPE-C043]
+  sourceId: SRC-PIPE-ECF23-DEFENSE-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Mr. Cole is an African American adult who has been diagnosed with Autism Spectrum Disorder, Level 1 and with obsessive compulsive disorder"
+  exactLocator: "p. 3"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E093
+  title: "Prosecution: the diagnosis was made in December 2025, after the arrest"
+  claimIds: [PIPE-C043]
+  sourceId: SRC-PIPE-ECF111-GOVERNMENT-MOTION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The defense psychologist's letter states that "he had evaluated the defendant over two days, on December 16 and 19, 2025" and "diagnosed [the defendant] with Autism Spectrum Disorder, Level 1 (Requiring Support) and Obsessive Compulsive Disorder"
+  exactLocator: "p. 3"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E094
+  title: "Prosecution: Cole's school records show no diagnosis"
+  claimIds: [PIPE-C043]
+  sourceId: SRC-PIPE-ECF111-GOVERNMENT-MOTION
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "The defendant’s school records reflect no medical diagnoses, no cognitive or other disabilities, no developmental deficits, and no specialized or individualized programming."
+  editorInference: >-
+    Level 1 autism in adults is often first diagnosed late; the absence of a school diagnosis does not by itself refute it, and the records behind the diagnosis have not been produced.
+  exactLocator: "p. 2"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E095
+  title: "Baker: 95 denials before the agents threatened his family"
+  claimIds: [PIPE-C044]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Cole denied all involvement 95 times before breaking under mental duress when agents threatened to target his family" and "Cole denied involvement repeatedly until page 106, where agents threatened to drag his family into the interrogation."
+  limitations:
+    - "Baker's count from a transcript that is not public."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E096
+  title: "Defense expert: Cole repeatedly denied the accusations"
+  claimIds: [PIPE-C044]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The report says Cole felt he could not end the interrogation without some admission "even as he repeatedly denied the Agents’ accusations and insisted that he was innocent"
+  exactLocator: "p. 21"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E097
+  title: "Defense expert: the family remark came late in the interview"
+  claimIds: [PIPE-C044]
+  sourceId: SRC-PIPE-ECF102-2-LEO-REPORT
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The report quotes, at transcript page 94: "we might not have to bring them all down into DC"
+  editorInference: >-
+    The expert's citation puts the remark about Cole's family late in the questioning; the transcript's pagination in the report and in Baker's account may differ, so the exact order is for the recording to show.
+  exactLocator: "p. 19, example 9"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E098
+  title: "Defense notice: the recording is on a flash drive held by counsel"
+  claimIds: [PIPE-C045]
+  sourceId: SRC-PIPE-ECF103-EXHIBIT-NOTICE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Exhibit B consists of one (1) USB flash drive containing a number of video files of Mr. Cole’s December 4, 2025, custodial interrogation at the FBI’s Washington Field Office." It "is being maintained by undersigned counsel"
+  exactLocator: "p. 1"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── conduct after the event ────────────────────────────────────────────
+
+- id: PIPE-E099
+  title: "Prosecution: 943 wipes, one three hours before the arrest"
+  claimIds: [PIPE-C046]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "A forensic review of the device’s contents showed that between December 2020 and December 2025, the device recorded 943 events identified as a" factory reset or wipe, including one "event approximately three hours before the defendant’s arrest on December 4, 2025"
+  exactLocator: "p. 12"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E100
+  title: "Prosecution: one wipe in December 2020, then none until July 2022"
+  claimIds: [PIPE-C047]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The first wipe "event took place on December 15, 2020. The next such event did not occur until July 15, 2022." From then they "events occurred at least once a week"
+  editorInference: >-
+    The July 2022 start falls weeks before the last identified component purchase, in August 2022; neither date matches a publicized step in the investigation.
+  exactLocator: "p. 12, footnote 2"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E101
+  title: "Defense in court: no wiping in 2021"
+  claimIds: [PIPE-C047]
+  sourceId: SRC-PIPE-ECF53-HEARING-TRANSCRIPT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The phone wipes they are talking about happened two years after the alleged offense." "There wasn't any phone wiping done in 2021."
+  exactLocator: "p. 20"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E102
+  title: "Defense in court: the wipes are compulsive, not concealment"
+  claimIds: [PIPE-C048]
+  sourceId: SRC-PIPE-ECF53-HEARING-TRANSCRIPT
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "The idea that the cell phones wiped are at all tied to this is completely fictional." It is "entirely consistent, as the doctor says, to do things like that in a compulsive way."
+  exactLocator: "p. 20"
+  limitations:
+    - "Counsel's argument; the clinical basis has not been produced."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E103
+  title: "Prosecution: the doctor's letter understated the wiping"
+  claimIds: [PIPE-C048]
+  sourceId: SRC-PIPE-ECF111-GOVERNMENT-MOTION
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The letter suggested "that the Court not draw an incriminating inference from the defendant’s repetitive wiping of his cellphone" — "which Dr. Black incorrectly indicated was limited to" junk files. "In fact, a forensic review of the cellphone’s contents showed that between December 2020 and December 2025, the device recorded 943 events identified as a" factory reset or wipe.
+  editorInference: >-
+    Full factory resets, not the clearing of junk files, and one hours before the arrest: compulsion and concealment are not exclusive, and the pattern alone does not decide between them.
+  exactLocator: "p. 3"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── motive and target ──────────────────────────────────────────────────
+
+- id: PIPE-E104
+  title: "Prosecution: 'something just snapped'"
+  claimIds: [PIPE-C049]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Asked about his motive, Cole said "something just snapped" after "watching everything, just everything getting worse"
+  exactLocator: "p. 16"
+  limitations:
+    - "From the part of the interview the defense calls coerced."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E105
+  title: "Prosecution: he did not like either party"
+  claimIds: [PIPE-C049]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "In his own words, the defendant did so because he did not" "like either party" but they "were in charge"
+  exactLocator: "p. 19"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E106
+  title: "Prosecution: Cole denied aiming at Congress or January 6"
+  claimIds: [PIPE-C050]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The defendant denied that his actions were directed toward Congress or related to the proceedings scheduled to take place on January 6."
+  exactLocator: "p. 17"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E107
+  title: "Prosecutor's email: the intent extended to coercing Congress"
+  claimIds: [PIPE-C051]
+  sourceId: SRC-PIPE-ECF93-1-AUSA-EMAIL
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The government’s evidence of the defendant’s intent in targeting the national headquarters of the RNC and DNC encompasses the intent to use intimidation and coercion to influence the policy and conduct of the U.S. Congress."
+  editorInference: >-
+    The theory behind the D.C. terrorism count added in 2026; it sits uneasily with the account the prosecution itself gives of Cole's denial.
+  exactLocator: "the email of May 3, 2026"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the insider account ────────────────────────────────────────────────
+
+- id: PIPE-E108
+  title: "Baker: certain the bomber was a police officer"
+  claimIds: [PIPE-C052]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary quotes Baker: "I know 100% with absolute certainty that the hooded pipe bomber was an active Capitol Police officer."
+  editorInference: >-
+    Certainty without published evidence; the identification Baker made in November 2025 on this theory was retracted.
+  limitations:
+    - "An assertion; the evidence Baker says he has is unreleased."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E109
+  title: "The insider identification was a false accusation, the defamation suit says"
+  claimIds: [PIPE-C052]
+  sourceId: SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The officer sued "after he falsely accused her of planting pipe bombs on the eve of the Capitol attack"
+  editorInference: >-
+    The insider account's one public identification collapsed; that does not exclude every insider, but nothing in the public record now points to one.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E110
+  title: "CNN: the FBI's deputy director once called the bombs an inside job"
+  claimIds: [PIPE-C052]
+  sourceId: SRC-PIPE-CNN-HOW-ARREST
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    "Current FBI Deputy Director Dan Bongino, in his prior role as a podcaster, had even said he believed the pipe bombs were an" inside job. "But at Thursday’s news conference, Bongino praised the FBI’s work"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E111
+  title: "Sworn affidavit: the phone's sessions followed the bomber's route"
+  claimIds: [PIPE-C052]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: undermines
+  strength: strong
+  sourceStatement: >-
+    "The COLE CELLPHONE engaged in approximately seven data session transactions with Provider towers between 7:39 p.m. and 8:24 p.m."
+  editorInference: >-
+    Any account in which someone other than Cole placed the devices has to explain why Cole's phone moved with the bomber, minute by minute, across five sectors.
+  exactLocator: "p. 6 (the affidavit's page 5)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E112
+  title: "House report: early persons of interest"
+  claimIds: [PIPE-C053]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "A person of interest who on the morning of January 5, 2021, took photographs of the area behind the RNC where one of the pipe bombs would later be planted." "A vehicle of interest carrying a passenger matching the description of the suspect that drove past the RNC minutes after the suspect planted the pipe bombs."
+  exactLocator: "p. 4 (the report's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E113
+  title: "House report: five people whose phone data may have matched"
+  claimIds: [PIPE-C053]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Five persons of interest "whose cellular data indicated their movements on the evening of January 5, 2021, may have matched the movements of the suspect."
+  editorInference: >-
+    Phone data alone did not single anyone out in 2021; what set Cole apart, on the prosecution's account, was the combination with purchases, the plate reader and his own account.
+  exactLocator: "p. 5 (the report's page 4)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the investigation and the security failures ───────────────────────
+
+- id: PIPE-E114
+  title: "House report: the sweep at the DNC before Harris's arrival"
+  claimIds: [PIPE-C054]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The USSS failed to conduct a thorough sweep of the DNC prior to protectee Vice President-Elect Kamala Harris’s arrival"
+  exactLocator: "p. 6 (table of contents, section I.A)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E115
+  title: "CNN: Harris came within 20 feet of the DNC device"
+  claimIds: [PIPE-C054]
+  sourceId: SRC-PIPE-CNN-HOW-ARREST
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Kamala Harris, then the Vice President-elect, came within 20 feet of the bomb placed at the DNC."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E116
+  title: "House report: perimeters not held, a motorcade through the scene"
+  claimIds: [PIPE-C055]
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Failed to properly secure and maintain a perimeter around the pipe bombs despite multiple orders to do so, allowing pedestrians and vehicular traffic to cross within feet of the explosive devices" and "Allowed the motorcade of the Speaker of the House of Representatives to drive through an active bomb scene"
+  exactLocator: "p. 4 (the report's page 3)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E117
+  title: "CNN: Cole became the focus only in recent weeks, with no new tip"
+  claimIds: [PIPE-C056]
+  sourceId: SRC-PIPE-CNN-HOW-ARREST
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Cole didn’t become the focus of investigators’ interest until recent weeks, current and former US officials briefed on the matter told CNN." Attorney General Bondi: "Let me be clear, there was no new tip, there was no new witness, just good, diligent police work and prosecutorial work"
+  editorInference: >-
+    On the officials' account the evidence against Cole was in the files for years; that it was not put together sooner is itself a question the record does not answer.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E118
+  title: "CNN: the scale of the investigation"
+  claimIds: [PIPE-C056]
+  sourceId: SRC-PIPE-CNN-HOW-ARREST
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    "Over nearly five years, the investigators reviewed roughly 39,000 video files, conducted more than a thousand interviews and received over 600 tips, the FBI said"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the proceedings ────────────────────────────────────────────────────
+
+- id: PIPE-E119
+  title: "AP: trial set for February 16"
+  claimIds: [PIPE-C057]
+  sourceId: SRC-PIPE-AP-TRIAL-DATE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The trial for Brian J. Cole Jr. is set to begin Feb. 16 and last about two weeks."
+  editorInference: >-
+    Reported on July 8, 2026, so February 16, 2027.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E120
+  title: "News report: he has pleaded not guilty"
+  claimIds: [PIPE-C057]
+  sourceId: SRC-PIPE-TNND-NEW-VIDEO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "In January, Cole was charged with interstate transportation of explosives and with malicious attempt to use explosives. He has pleaded not guilty."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E121
+  title: "AP: the pardons do not apply to Cole"
+  claimIds: [PIPE-C058]
+  sourceId: SRC-PIPE-AP-TRIAL-DATE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "On Monday, the judge ruled that Trump's mass pardons for Capitol rioters did not apply to Cole." Judge Ali "concluded that Trump’s blanket pardons for Jan. 6 rioters explicitly applied only to people who were convicted of crimes related to the attack."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the charged account ────────────────────────────────────────────────
+
+- id: PIPE-E122
+  title: "Prosecution: the phone and the bomber at the same corner, two seconds apart"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "About fifteen minutes later, at approximately 7:59:36 p.m., the defendant’s cellphone interacted with a cell tower consistent with him being in the area of the intersection of New Jersey Avenue, Southeast and E Street, Southeast. Surveillance video showed that at approximately 7:59:38 p.m., the defendant walked southbound on New Jersey Avenue, Southeast then turned eastbound on E Street, Southeast."
+  editorInference: >-
+    The strongest single line in the public record: a phone tied to Cole and the bomber's route matched five times on five sectors, independent of the confession.
+  exactLocator: "p. 4"
+  limitations:
+    - "The records and the video are described, not public; consistent with a sector is a wedge, not a point."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E123
+  title: "Prosecution: Cole's car entering the city 24 minutes before the bomber appears"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Earlier that evening, at approximately 7:10 p.m., the defendant, driving his 2017 Nissan Sentra, took the South Capitol Street exit from Interstate 395 South, passing a license plate reader that recorded his vehicle and tag information."
+  exactLocator: "p. 2"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E124
+  title: "Sworn affidavit: an uncommon component, bought by Cole"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Fewer than 8,000 of Nine Volt Distributor’s nine-volt battery connectors were distributed in the United States between December 2017 and January 5, 2021."
+  editorInference: >-
+    Cole bought five of them in 2019 (the affidavit's previous page); with the pipes, timers, wire and steel wool, the purchases match every component, which a person picked at random almost never would.
+  exactLocator: "p. 5 (the affidavit's page 4)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E125
+  title: "Prosecution: the admission"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "This time, the defendant paused for approximately fifteen seconds, placed his head face down on the table, and answered" yes, to whether he was the individual on the surveillance video.
+  editorInference: >-
+    Weighted as moderate, not strong, while the motion to suppress and the coercion dispute are open.
+  exactLocator: "p. 14"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E126
+  title: "Baker: the footage shows Cole could not have been the bomber"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    "Never-before-seen Capitol CCTV video reveals that Brian Cole Jr. could not have been the J6 pipe b*mber."
+  editorInference: >-
+    Weak until the footage's provenance, clock and subject are established; decisive if they are and the phone data can be reconciled with it.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E127
+  title: "Baker: the bomber's shoes were three sizes smaller than Cole's"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    "Forensic measurements show the hooded bomber wore a size 9–9.5 Nike Air Max Speed Turf, while Brian Cole Jr. wears a size 12–13 shoe."
+  editorInference: >-
+    A real test if the measurement were published with its method and error; as it stands, an unpublished estimate.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E128
+  title: "Defense: the proffer is retrospective and circumstantial"
+  claimIds: [PIPE-C059]
+  sourceId: SRC-PIPE-ECF23-DEFENSE-OPPOSITION
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "The government’s proffer, taken at face value, is retrospective and circumstantial; it ties consumer purchases and historical cellular records to a past route on a single evening."
+  editorInference: >-
+    Circumstantial evidence can be strong when independent lines converge; whether these lines are independent of one another is what a trial would test.
+  exactLocator: "p. 8"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E129
+  title: "Defense motion: eight counts, two under the transportation statute"
+  claimIds: [PIPE-C060]
+  sourceId: SRC-PIPE-ECF108-MOTION-UNTIMELY
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The Third Superseding Indictment charges Mr. Cole with eight Counts." Counts One and Two "accuse him of violating 18 U.S.C. § 844(d) by knowingly transporting an explosive device in interstate commerce with the intent to intimidate an individual or destroy a building in Washington, D.C."
+  editorInference: >-
+    The defense argues those two counts came a day too late: the first federal indictment was returned on January 6, 2026, one day past the five-year limit.
+  exactLocator: "p. 2"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E130
+  title: "Defense motion: Counts Three and Four are under section 844(i)"
+  claimIds: [PIPE-C060]
+  sourceId: SRC-PIPE-ECF108-MOTION-UNTIMELY
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Counts Three and Four, which charge a violation of section 844(i), are therefore subject to a ten- year statute of limitations."
+  exactLocator: "p. 3, footnote 1"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── Baker's points of October 19, 2026 ─────────────────────────────────
+
+- id: PIPE-E131
+  title: "Baker: the footage is raw CCTV from the House subcommittee's Rumble channel"
+  claimIds: [PIPE-C061]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Journalist Steve Baker and independent researcher Armitas spent weeks scouring thousands of pages of raw CCTV footage released via the House Administration Subcommittee on Oversight Rumble Channel"
+  editorInference: >-
+    If so, the footage is official Capitol Police CCTV in a public congressional release, and anyone can check its cameras and clocks; the specific videos have not yet been located for this case.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E132
+  title: "NBC: the House began posting Capitol security video online in 2023"
+  claimIds: [PIPE-C061]
+  sourceId: SRC-PIPE-NBC-FOOTAGE-ONLINE
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "The GOP-led House Administration Committee on Friday began by posting 90 hours of security video that had already been released to media outlets."
+  editorInference: >-
+    Shows that a congressional release of Capitol CCTV exists; whether it includes these cameras on January 5, 2021 is the open question.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E133
+  title: "Baker: cameras 602 and 940, 20:03:32 to 20:04:02"
+  claimIds: [PIPE-C062]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states that Baker located "footage showing Brian Cole Jr. walking near Peace Circle, crossing Constitution Avenue, and heading down New Jersey Avenue between 8:00 PM and 8:05 PM" and that "Camera 602 and Camera 940" "verify the exact timestamps (20:03:32 to 20:04:02) down to the millisecond."
+  editorInference: >-
+    Specific enough to check: two camera numbers and a 30-second span. The clocks are the Capitol Police system's; whether they agree with the clocks of the cameras that recorded the bomber is not shown.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E134
+  title: "Sworn affidavit: the bomber at New Jersey Avenue and E Street SE at 7:59:38"
+  claimIds: [PIPE-C063]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Video surveillance footage shows that at approximately 7:59:38 p.m., the individual who placed the pipe bombs walked southbound on New Jersey Avenue, Southeast then turned eastbound on E Street, Southeast."
+  editorInference: >-
+    From that corner to Constitution Avenue NW is about a kilometre in a straight line on a map, and farther by any walking route around the Capitol grounds; covering it in the 3 minutes 54 seconds before 20:03:32 would take a sustained sprint, and both men are filmed walking. So the two sightings cannot be one person unless a clock is off by several minutes. (The drafter's own reading of a map, not a sourced measurement.)
+  exactLocator: "p. 7 (the affidavit's page 6), item c"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E135
+  title: "Baker: over 20 minutes on foot between the two sides"
+  claimIds: [PIPE-C063]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states that "walking from the DNC/RNC site to the northwest Constitution Avenue location takes at least 20 to 21 minutes at a fast pace"
+  editorInference: >-
+    Baker's estimate from Google Maps; it argues against the man being the bomber at both placements, while the sharper conflict is with the bomber's documented position four minutes before 20:03:32.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E136
+  title: "Baker: Cole's walk against the bomber's"
+  claimIds: [PIPE-C064]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary describes the man in the footage with "minimal arm swing" and contrasts it "with the hooded bomber’s exaggerated arm-swinging, right-leg crossover gait"
+  editorInference: >-
+    Gait judged by eye from surveillance video; the same kind of judgment earlier named a different person, an identification its publisher retracted.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E137
+  title: "Baker: the DNC device's powder failed a flame test"
+  claimIds: [PIPE-C065]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "FBI Lab Reports reveal the DNC bomb yielded a negative flame test and had an end cap missing after" the render-safe procedure.
+  editorInference: >-
+    Baker cites an FBI laboratory report that is not public.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E138
+  title: "In court, the prosecution acknowledges a powder sample that was not explosive"
+  claimIds: [PIPE-C065]
+  sourceId: SRC-PIPE-ECF53-HEARING-TRANSCRIPT
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The prosecutor described the dispute as "whether it was explosive in one sample versus not explosive in another sample."
+  editorInference: >-
+    Consistent with Baker's report of a negative test on one device's powder; the prosecution does not say which sample came from which device.
+  exactLocator: "p. 43"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E139
+  title: "Baker: an end cap went missing after the render-safe"
+  claimIds: [PIPE-C066]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states that "the DNC pipe bomb had two galvanized steel end caps in on-scene photos, but only one was submitted to the lab"
+  editorInference: >-
+    From an FBI laboratory report Baker cites, which is not public; a disruption shot can throw parts some distance.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E140
+  title: "Baker: a second disruption destroyed fingerprint and DNA evidence"
+  claimIds: [PIPE-C067]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "A Capitol Police bomb squad commander revealed that an FBI bomb tech went behind her back on scene and ordered a second disruption hit on the devices, destroying critical fingerprint and DNA evidence."
+  editorInference: >-
+    A secondhand account of an unnamed commander; that a disruption damages trace evidence is plausible, that it destroyed what would otherwise have been found is not shown.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E141
+  title: "Baker: the RNC device's timer was set to 20 minutes when found"
+  claimIds: [PIPE-C068]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary cites a witness intake form describing "the discovery of the RNC device on January 6 at 12:40 PM with a mechanical kitchen timer set to 20 minutes"
+  editorInference: >-
+    From an FBI form that is not public, as the summary describes it.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E142
+  title: "Prosecution: Cole said he set each timer to its maximum, 60 minutes"
+  claimIds: [PIPE-C068]
+  sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "He set the timer on the first device to the maximum duration (60 minutes) and planted the device near the DNC."
+  editorInference: >-
+    A kitchen timer wound to 60 minutes runs down to zero; one found reading 20 minutes either stopped partway or was set otherwise. Either reading needs the device's examination, which is not public.
+  exactLocator: "p. 16"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E143
+  title: "Baker: the January 6 DNC footage was unavailable"
+  claimIds: [PIPE-C069]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "The FBI claimed to Congress that while they retrieved CCTV footage from the DNC for January 5th, the footage for January 6th was" deleted or unavailable.
+  editorInference: >-
+    The record of what the FBI told Congress is not cited; the House interim report is the place it would appear.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E144
+  title: "Baker: the corrupted geofence data was later recovered"
+  claimIds: [PIPE-C029]
+  sourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The episode summary states: "Former FBI Assistant Director Steven D’Antuono’s Congressional Transcript revealed that geofence data was initially deemed" corrupted "by a telecom provider before being unexpectedly recovered years later to charge Cole."
+  editorInference: >-
+    The affidavit's cell analysis uses the provider's records, not a geofence; the House report records that the carriers denied providing corrupted data.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"

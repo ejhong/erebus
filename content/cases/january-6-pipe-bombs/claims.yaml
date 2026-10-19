@@ -1,0 +1,1034 @@
+# PIPE-001 claims. Living-persons rule (AGENTS.md; config/site-rules.md):
+# every claim is a proposition about the evidence, graded as such — never a
+# finding of anyone's guilt, which only a court can make. Brian J. Cole Jr. is
+# presumed innocent; what prosecutors say is recorded as theirs, what the
+# defense says as the defense's, and what Steve Baker says as his. No
+# uncharged person is named. Every one of Baker's points is a claim of its own,
+# with its first public appearance under `genealogy`.
+
+# ── the devices and the night of January 5 ─────────────────────────────
+
+- id: PIPE-C001
+  statement: >-
+    The person seen on surveillance video placed a device near the Democratic National Committee headquarters at about 7:54 p.m. on January 5, 2021.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C002
+  statement: >-
+    The same person placed the device behind the Republican National Committee headquarters at about 8:16 p.m. that evening.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C003
+  statement: >-
+    No surveillance video shows the device at the RNC being set down.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-02"
+    originDescription: "Steve Baker, interviewed on Robert Gouveia's show Watching the Watchers, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C004
+  statement: >-
+    The devices lay where they were placed from the evening of January 5 until they were found around 1 p.m. on January 6.
+  theme: event
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C005
+  statement: >-
+    The devices were placed shortly before they were discovered on January 6, not on the evening of January 5.
+  theme: event
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  alternativeToClaimIds: [PIPE-C004]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-02"
+    originDescription: "Steve Baker on Watching the Watchers, as the episode summary quotes him: the bombs \"were never there overnight\", placed as part of \"an intelligence exercise gone live\"; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C006
+  statement: >-
+    Each device was a 1-by-8-inch metal pipe closed with end caps, holding homemade black powder, with a white kitchen timer, a 9-volt battery and connector, red and black wire and steel wool.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C007
+  statement: >-
+    An FBI explosives examiner assessed both devices as viable explosive devices.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C008
+  statement: >-
+    The devices could have exploded as they were built.
+  theme: event
+  rung: mechanism
+  claimType: mechanistic
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C007]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the person on the video ────────────────────────────────────────────
+
+- id: PIPE-C009
+  statement: >-
+    The FBI's height analysis put the person on the surveillance video at 5 feet 7 inches, plus or minus 1.1 inches, including headwear.
+  theme: person
+  rung: observation
+  claimType: measurement
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C010
+  statement: >-
+    Cole is about 5 feet 6 inches tall, the affidavit states.
+  theme: person
+  rung: observation
+  claimType: measurement
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C011
+  statement: >-
+    Like the person on the video, who put on and adjusted eyeglasses, Cole wears corrective eyeglasses, the affidavit states.
+  theme: person
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C012
+  statement: >-
+    The person on the video wore Nike Air Max Speed Turf shoes.
+  theme: person
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C013
+  statement: >-
+    By the prosecution's account, Cole told agents he used to own a pair of Nike Air Max Speed Turf shoes and had thrown them away.
+  theme: person
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C014
+  statement: >-
+    The shoes worn by the person on the video were about size 9 to 9.5.
+  theme: person
+  rung: observation
+  claimType: measurement
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-02"
+    originDescription: "Steve Baker on Watching the Watchers, as the host's summary states it (\"forensic measurements\", \"physical brick measurements\"); the measurement itself is not published; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C015
+  statement: >-
+    Cole wears shoes of size 12 to 13.
+  theme: person
+  rung: observation
+  claimType: measurement
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-02"
+    originDescription: "Steve Baker on Watching the Watchers, saying he inspected Cole's wardrobe; repeated on X on 2026-10-18 for the New Balance shoes in the new footage (size 12-D)."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C016
+  statement: >-
+    The FBI's own podiatrist found a gait comparison between the person on the video and Cole inconclusive.
+  theme: person
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-02"
+    originDescription: "Steve Baker on Watching the Watchers, as the host's summary states it; no podiatrist's report is public; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C017
+  statement: >-
+    The person on the video wore and used a smartwatch.
+  theme: person
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-06-30"
+    originDescription: "An article on Veritas Regnat, the outlet Baker formed with a former Blaze colleague, posted by Baker on X the next day; earliest appearance found."
+    originSourceId: SRC-PIPE-BAKER-X-SMARTWATCH
+
+- id: PIPE-C018
+  statement: >-
+    Cole has never owned or worn a watch.
+  theme: person
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-07-01"
+    originDescription: "Steve Baker on X, citing his interviews with Cole's family and their photographs."
+    originSourceId: SRC-PIPE-BAKER-X-SMARTWATCH
+
+- id: PIPE-C019
+  statement: >-
+    The person on the video wore a white medical-style face mask.
+  theme: person
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── purchases and materials ────────────────────────────────────────────
+
+- id: PIPE-C020
+  statement: >-
+    Bank and card records, as the FBI's affidavit describes them, show Cole buying every type of component used in the devices in 2019 and 2020 — the pipes, end caps, 9-volt battery connectors, white kitchen timers, red and black 14-gauge wire and steel wool.
+  theme: purchases
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C021
+  statement: >-
+    The 9-volt battery connector in the devices was an uncommon product: fewer than 8,000 of its distributor's connectors were distributed in the United States between December 2017 and January 5, 2021.
+  theme: purchases
+  rung: observation
+  claimType: statistical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C022
+  statement: >-
+    The pipe in the devices was a common product: about 26,000 of its manufacturer's 1-by-8-inch pipes were sold in 2020, more than 22,000 of them to Home Depot.
+  theme: purchases
+  rung: observation
+  claimType: statistical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C023
+  statement: >-
+    Purchase records, as the prosecution describes them, show Cole buying components of the kind used in the devices after January 5, 2021, the last on August 13, 2022.
+  theme: purchases
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C024
+  statement: >-
+    The prosecution says searches of Cole's home and car on December 4, 2025 found pipes, end caps, red wire, a 9-volt battery and Home Depot receipts for pipes.
+  theme: purchases
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C025
+  statement: >-
+    The public record shows no fingerprint, DNA or other forensic trace linking Cole to the devices.
+  theme: purchases
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── plate reader and phone data ────────────────────────────────────────
+
+- id: PIPE-C026
+  statement: >-
+    The prosecution says a license plate reader recorded Cole's 2017 Nissan Sentra taking the South Capitol Street exit from Interstate 395 at about 7:10 p.m. on January 5, 2021.
+  theme: location
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C027
+  statement: >-
+    The affidavit states that between 7:39 and 8:24 p.m. the phone attributed to Cole exchanged data with cell sectors covering the places the video shows the bomber at the same minutes.
+  theme: location
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C028
+  statement: >-
+    The provider's first published listing gave one of those sectors as facing north; the provider corrected it to east in April 2021, and FBI drive tests were consistent with east.
+  theme: location
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C029
+  statement: >-
+    The cell carriers gave the FBI corrupted data for the evening of January 5, 2021.
+  theme: location
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2025-01"
+    originDescription: "Testimony of a former senior FBI official to House subcommittees, reported in their interim staff report of January 2, 2025."
+    originSourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+
+# ── the October 2026 footage ───────────────────────────────────────────
+
+- id: PIPE-C030
+  statement: >-
+    Capitol CCTV from the evening of January 5, 2021 shows a young man walking alone on the northwest side of the Capitol.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-18"
+    originDescription: "Steve Baker on X, with a video credited to @accabbat (Armitas) and a longer breakdown with Kyle Seraphin."
+    originSourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+
+- id: PIPE-C031
+  statement: >-
+    The man in the October 2026 footage is Brian Cole Jr.
+  theme: footage
+  rung: attribution
+  claimType: interpretive
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C030]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-18"
+    originDescription: "Steve Baker on X, by gait and behavior, a cloth mask, shoes and a jacket that members of Cole's family recognized."
+    originSourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+
+- id: PIPE-C032
+  statement: >-
+    The footage of that man was recorded at the same minutes the devices were being placed on the southeast side of the Capitol.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C030]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-18"
+    originDescription: "Steve Baker on X: \"at EXACTLY THE SAME TIME as the real suspect was distributing devices\"."
+    originSourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+
+- id: PIPE-C033
+  statement: >-
+    The misidentification account: Cole was elsewhere on Capitol Hill while the devices were being placed, so he was not the person who placed them.
+  theme: footage
+  rung: attribution
+  claimType: interpretive
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C031, PIPE-C032]
+  alternativeToClaimIds: [PIPE-C059]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-18"
+    originDescription: "Steve Baker on X; endorsed the next day by Rep. Thomas Massie and others, as The National News Desk reported."
+    originSourceId: SRC-PIPE-BAKER-X-NEW-VIDEO
+
+- id: PIPE-C034
+  statement: >-
+    The man in the October 2026 footage wore a maroon-and-gold cloth mask, a jacket with a tag hanging from it, and New Balance shoes.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C030]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-18"
+    originDescription: "Steve Baker on X, in three posts of the same thread."
+    originSourceId: SRC-PIPE-BAKER-X-MASK
+
+- id: PIPE-C035
+  statement: >-
+    The October 2026 footage is authentic Capitol Police CCTV whose timestamps are accurate.
+  theme: footage
+  rung: observation
+  claimType: existence
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C036
+  statement: >-
+    The identification method behind the October footage — matching gait and behavior by eye — had earlier named a different person as the bomber, an identification its publisher retracted.
+  theme: footage
+  rung: observation
+  claimType: methodological
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the interview and the confession ───────────────────────────────────
+
+- id: PIPE-C037
+  statement: >-
+    In his interview, as both sides describe it, Cole first said he had driven to Washington alone that evening to attend a protest about the outcome of the 2020 election.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C038
+  statement: >-
+    By the prosecution's account, after about two hours of denials, shown a still from the video and reminded that lying to agents is a crime, Cole paused about fifteen seconds and answered yes when asked whether he was the person on it.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C039
+  statement: >-
+    By the prosecution's account, Cole then described to the agents how he built, carried and placed the devices.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C040
+  statement: >-
+    Cole's account of building and placing the devices contains details that only the person who placed them could have known and that the agents did not supply.
+  theme: interview
+  rung: mechanism
+  claimType: interpretive
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C039]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C041
+  statement: >-
+    The agents used minimization, implied promises of leniency and implied threats while questioning Cole.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C042
+  statement: >-
+    Cole was in acute distress during much of the interview.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C043
+  statement: >-
+    Cole was diagnosed with autism spectrum disorder (Level 1) and obsessive-compulsive disorder after his arrest.
+  theme: interview
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C044
+  statement: >-
+    Cole denied involvement about 95 times before the agents raised bringing his family into the investigation.
+  theme: interview
+  rung: observation
+  claimType: measurement
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-02"
+    originDescription: "Steve Baker on Watching the Watchers, from his reading of the interview transcript, as the host's summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C045
+  statement: >-
+    The recording of Cole's interview has not been made public.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── conduct after the event ────────────────────────────────────────────
+
+- id: PIPE-C046
+  statement: >-
+    A forensic review the prosecution describes found that Cole's phone recorded 943 factory-reset or wipe events between December 2020 and December 2025, one of them about three hours before his arrest.
+  theme: conduct
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C047
+  statement: >-
+    Apart from one wipe in December 2020, the phone wiping began in July 2022, eighteen months after the devices were placed.
+  theme: conduct
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C048
+  statement: >-
+    Cole's repeated wiping of his phone reflects obsessive-compulsive disorder rather than an effort to hide evidence.
+  theme: conduct
+  rung: mechanism
+  claimType: interpretive
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── motive and target ──────────────────────────────────────────────────
+
+- id: PIPE-C049
+  statement: >-
+    By the prosecution's account, Cole told agents he acted out of frustration with both parties over the disputed 2020 election.
+  theme: motive
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C050
+  statement: >-
+    By the prosecution's account, Cole denied that the devices were aimed at Congress or at the January 6 proceedings.
+  theme: motive
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C051
+  statement: >-
+    Prosecutors allege that in targeting the party headquarters the bomber intended to intimidate or coerce Congress.
+  theme: motive
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the insider account ────────────────────────────────────────────────
+
+- id: PIPE-C052
+  statement: >-
+    The insider account: a law-enforcement insider, not Cole, placed the devices.
+  theme: insider
+  rung: attribution
+  claimType: interpretive
+  reviewState: ai_extracted
+  alternativeToClaimIds: [PIPE-C059]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2025-11"
+    originDescription: "A November 2025 Blaze Media report naming a former Capitol Police officer, retracted; after the arrest, Steve Baker on Watching the Watchers (2026-10-02) said he was certain the bomber was a police officer. The suspicion of an inside job is older, voiced among others by Dan Bongino before he joined the FBI."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT2
+
+- id: PIPE-C053
+  statement: >-
+    In its first months the FBI pursued several persons of interest, among them one who photographed the area behind the RNC that morning and five whose phone data may have matched the bomber's movements.
+  theme: insider
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the investigation and the security failures ───────────────────────
+
+- id: PIPE-C054
+  statement: >-
+    A Secret Service sweep of the DNC before Vice President-elect Harris arrived on January 6 failed to find the device there.
+  theme: investigation
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C055
+  statement: >-
+    After the devices were found, law enforcement failed to keep people and vehicles out of the danger zone around them.
+  theme: investigation
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C056
+  statement: >-
+    Cole became the focus of investigators only weeks before his arrest, without any new tip or witness.
+  theme: investigation
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the proceedings ────────────────────────────────────────────────────
+
+- id: PIPE-C057
+  statement: >-
+    Cole has pleaded not guilty, and his trial is set to begin on February 16, 2027.
+  theme: proceedings
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C058
+  statement: >-
+    The January 2025 pardons for people charged over January 6 do not cover Cole.
+  theme: proceedings
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── the charged account ────────────────────────────────────────────────
+
+- id: PIPE-C059
+  statement: >-
+    The charged account: Brian Cole Jr. is the person the surveillance video shows placing the devices, as prosecutors allege and he denies.
+  theme: person
+  rung: attribution
+  claimType: interpretive
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C001, PIPE-C002]
+  alternativeToClaimIds: [PIPE-C033, PIPE-C052]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C060
+  statement: >-
+    The third superseding indictment charges Cole with eight counts, among them two of transporting explosives in interstate commerce, one for each device, and two under the statute against damaging property by explosive.
+  theme: proceedings
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── Baker's points of October 19, 2026 ─────────────────────────────────
+
+- id: PIPE-C061
+  statement: >-
+    The October 2026 footage is raw Capitol CCTV that the House Administration Subcommittee on Oversight published on its Rumble channel.
+  theme: footage
+  rung: observation
+  claimType: existence
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C062
+  statement: >-
+    The man in the October 2026 footage appears on Capitol cameras 602 and 940 between 20:03:32 and 20:04:02 on January 5, 2021, near Peace Circle and crossing Constitution Avenue toward New Jersey Avenue NW.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C063
+  statement: >-
+    If both systems' clocks are right, the man filmed on the north side of the Capitol at 20:03:32 cannot be the person the affidavit places at New Jersey Avenue and E Street SE at 7:59:38 p.m.
+  theme: footage
+  rung: mechanism
+  claimType: mechanistic
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C062]
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-C064
+  statement: >-
+    The man in the October 2026 footage walks stiffly with little arm swing, unlike the bomber, who swings his arms and crosses his right leg over as he walks.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C065
+  statement: >-
+    A laboratory flame test on powder from the DNC device was negative.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C066
+  statement: >-
+    One of the DNC device's end caps went missing after the render-safe procedure.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C067
+  statement: >-
+    A second disruption shot ordered by an FBI technician at the scene destroyed fingerprint and DNA evidence on the devices.
+  theme: event
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C068
+  statement: >-
+    When the RNC device was found on January 6, its kitchen timer was set to 20 minutes.
+  theme: event
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+- id: PIPE-C069
+  statement: >-
+    The FBI told Congress it obtained DNC camera footage for January 5 but that the footage for January 6 had been deleted or was unavailable.
+  theme: investigation
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
+    originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19

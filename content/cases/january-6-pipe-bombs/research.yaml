@@ -1,0 +1,84 @@
+# PIPE-001 decisive tests. Each is specified so that either outcome is
+# informative, and none asks a reader to trust any party's characterization:
+# most turn on records that exist and are held by the court, the parties or the
+# Capitol Police.
+
+- id: PIPE-R001
+  title: "Authenticate the October 2026 footage and its clock"
+  summary: >-
+    Baker says the footage is raw Capitol Police CCTV from the House Administration Subcommittee on Oversight's public release on Rumble, cameras 602 and 940, 20:03:32 to 20:04:02 on January 5, 2021. Find those two files in the committee's release (or obtain them from the Capitol Police with their metadata); confirm the camera positions and that the man's track is continuous between them; establish each camera's clock offset that night; and check those clocks against the clocks of the cameras that recorded the bomber at 7:59:38 p.m. on New Jersey Avenue SE, using anything both systems saw (a vehicle, a patrol, a train). Then publish the man's path and times minute by minute.
+  claimIds: [PIPE-C030, PIPE-C032, PIPE-C033, PIPE-C035, PIPE-C061, PIPE-C062, PIPE-C063]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Decisive in both directions. If the clocks agree to within a minute or two, a man on Constitution Avenue at 20:03:32 cannot be the person on New Jersey Avenue SE at 7:59:38, and either the identification of the man as Cole or the charged account fails. If the clocks are several minutes apart, the conflict dissolves, and the footage may instead corroborate Cole's first account of where he went that evening.
+
+- id: PIPE-R002
+  title: "Does the phone data reach the places in the October footage?"
+  summary: >-
+    Using the towers and sector directions sworn in the complaint affidavit, map the nominal coverage of the five sectors that served Cole's phone between 7:39 and 8:24 p.m., and test whether the Capitol locations in the October footage fall inside the sector the phone used at the same minute. Then seek the FBI's drive-test maps for those sectors (named in the affidavit) and the raw call-detail records. Pre-registered as study PIPE-S001.
+  claimIds: [PIPE-C027, PIPE-C028, PIPE-C033, PIPE-C059]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    If the footage's locations fall outside the sectors the phone used at those minutes, the footage and the phone cannot both describe one man carrying that phone; if inside, the phone data cannot by themselves exclude the footage, and the case rests more on the video timeline and the confession.
+
+- id: PIPE-R003
+  title: "Which details of the confession came from Cole first, and are they true?"
+  summary: >-
+    When the recorded interview is played (at the suppression hearing or at trial), list every detail of Cole's account; mark those the agents introduced or that were public before the interview; and check the rest against independent records — purchases of sulfur dust and potassium nitrate, the parking place on D Street SE against cameras there, the restaurant stop in Virginia, the disposal of materials at a dump.
+  claimIds: [PIPE-C039, PIPE-C040, PIPE-C041, PIPE-C044]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The standard test of a disputed confession: details first supplied by the suspect and then confirmed are strong evidence he was there; a confession made only of what he was told or could have read is close to no evidence at all.
+
+- id: PIPE-R004
+  title: "Measure the bomber's shoes, and record Cole's"
+  summary: >-
+    Publish a shoe-length estimate from the surveillance frames with its method and error (camera calibration against known objects such as paving bricks), and compare it with the sizes of the shoes seized in the December 2025 searches, which the inventory records.
+  claimIds: [PIPE-C014, PIPE-C015, PIPE-C059]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    A three-size gap, if it survives a published error analysis, is hard to reconcile with Cole; if the error spans the gap, the point is moot.
+
+- id: PIPE-R005
+  title: "Release the laboratory findings on the devices"
+  summary: >-
+    Obtain the FBI Laboratory's report on the two devices and the defense's evidence that they could not have detonated, including the powder samples' test results and the state of the timers and circuits when the devices were rendered safe.
+  claimIds: [PIPE-C007, PIPE-C008]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Settles whether the devices were capable of exploding, which bears on the charges and on the seriousness of the security failures, though not on who placed them.
+
+- id: PIPE-R006
+  title: "Show the RNC alley footage from 8:14 to 8:18 p.m."
+  summary: >-
+    Release, or describe in a sworn filing, what the cameras near the RNC recorded between 8:14 and 8:18 p.m. on January 5, 2021: whether any camera shows the device being set down, and if not, which views cover the spot.
+  claimIds: [PIPE-C002, PIPE-C003]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Confirms or removes one of Baker's points; on its own it would not move who placed the devices, since the same person is filmed around the RNC at the time.
+
+- id: PIPE-R007
+  title: "Date the phone wipes against the investigation"
+  summary: >-
+    Set the 943 wipe events against the investigation's public milestones (reward increases, published videos, the 2025 House report, press about suspects) and against the clinical evidence for obsessive-compulsive wiping, which the defense has not produced.
+  claimIds: [PIPE-C046, PIPE-C047, PIPE-C048]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Wipes clustered after investigative news would read as concealment; a steady pattern with clinical support would read as compulsion; either way the wipes are weak evidence on who placed the devices.
+
+- id: PIPE-R008
+  title: "The wrist in the January 5 footage"
+  summary: >-
+    Identify the frames in which the bomber's wrist is visible, publish them with their source, and compare them with Cole's purchase records for watches or wearables.
+  claimIds: [PIPE-C017, PIPE-C018]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    A clearly visible smartwatch on the bomber, set against no record of Cole ever owning one, would be a real discrepancy; an ambiguous glint would be nothing.

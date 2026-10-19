@@ -1,0 +1,302 @@
+# PIPE-001 sources. Court filings are read from the public RECAP archive of
+# United States v. Cole, No. 1:26-cr-00001-AHA (D.D.C.); page locators are the
+# PDF's own pages as the reading tool numbers them, which for these filings
+# match the court's "Page N of M" stamps except where a record says otherwise.
+# Living-persons rule (AGENTS.md; config/site-rules.md): sources that name
+# private individuals are cited only for passages that do not; no uncharged
+# person is named on this site.
+
+# ── the court record ───────────────────────────────────────────────────
+
+- id: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  title: "Affidavit in support of a criminal complaint, United States v. Brian J. Cole, Jr."
+  organization: "Federal Bureau of Investigation (affiant); U.S. Attorney's Office for the District of Columbia"
+  year: "2025"
+  sourceType: report
+  url: "https://www.justice.gov/usao-dc/media/1420196/dl?inline="
+  verification: ai_verified
+  verificationNote: "Read in full through the engine's reading tool on 2026-10-19 (8 pages). The affiant's name is redacted in the published copy. The PDF's first page is the complaint form; the affidavit's own page 1 is the PDF's page 2, so the affidavit's page N is the PDF's page N+1 — locators here name the PDF's page."
+  reliabilityNotes:
+    - "A sworn statement by an FBI agent establishing probable cause: what the government says its evidence shows, not evidence tested at trial."
+
+- id: SRC-PIPE-ECF17-DETENTION-MEMO
+  title: "United States' memorandum in support of pretrial detention (ECF No. 17, filed 12/28/25)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2025"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.17.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-10-19 (23 pages)."
+  reliabilityNotes:
+    - "The prosecution's proffer, written to win detention: it describes evidence the public cannot yet examine (the video, the phone records, the recorded interview)."
+
+- id: SRC-PIPE-ECF23-DEFENSE-OPPOSITION
+  title: "Defendant's opposition to pretrial detention (ECF No. 23, filed 12/30/25)"
+  organization: "Counsel for Brian Cole, Jr. (Litson PLLC)"
+  year: "2025"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.23.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-10-19 (18 pages)."
+  reliabilityNotes:
+    - "Advocacy for release: its characterizations of the evidence are the defense's."
+
+- id: SRC-PIPE-ECF53-HEARING-TRANSCRIPT
+  title: "Transcript of the detention hearing before Judge Amir H. Ali, January 28, 2026 (ECF No. 53, filed 02/02/26)"
+  organization: "U.S. District Court for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.53.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-19 (70 pages). The reading tool's text carries each page's line numbers 1–25 before the page's own number; quotations here are the spoken words only."
+  reliabilityNotes:
+    - "An official transcript: what counsel and the court said, verbatim. Counsel's statements are argument, not evidence."
+
+- id: SRC-PIPE-ECF93-1-AUSA-EMAIL
+  title: "Email from the prosecution to defense counsel on the D.C. Code terrorism count, May 3, 2026 (ECF No. 93-1)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.93.1.pdf"
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-19: an exhibit to a defense motion, reproducing the correspondence."
+
+- id: SRC-PIPE-ECF100-JOINT-STATUS
+  title: "Joint status report on the defense's renewed motion for early return of pretrial subpoenas (ECF No. 100, filed 09/24/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia; counsel for Brian Cole, Jr."
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.100.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-10-19 (7 pages). The filing names the subpoena recipients, who are private individuals and are not charged; this site cites only passages that do not name them."
+
+- id: SRC-PIPE-ECF102-2-LEO-REPORT
+  title: "Expert report of Richard A. Leo, Ph.D., J.D., on the interrogation of Brian Cole, Jr. (ECF No. 102-2, filed 09/29/26)"
+  authors: ["Richard A. Leo"]
+  organization: "Justice Research & Consulting, Inc. (retained by the defense)"
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.102.2.pdf"
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-10-19 (22 pages): an exhibit to the defense's motion to suppress statements (ECF No. 102, whose main document is not in the archive). The report quotes the interview transcript by page and line."
+  reliabilityNotes:
+    - "A retained expert's opinion for the defense. It addresses the risk that techniques produce false confessions; it does not claim to establish whether this confession is true."
+
+- id: SRC-PIPE-ECF103-EXHIBIT-NOTICE
+  title: "Notice of filing of non-electronic exhibit: Exhibit B to the motion to suppress statements (ECF No. 103, filed 09/30/26)"
+  organization: "Counsel for Brian Cole, Jr."
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.103.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-19 (3 pages)."
+
+- id: SRC-PIPE-ECF111-GOVERNMENT-MOTION
+  title: "United States' motion to compel production of post-arrest diagnosis information or to exclude evidence at suppression stage (ECF No. 111, filed 10/16/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.111.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-19 (14 pages)."
+  reliabilityNotes:
+    - "The prosecution's argument; its account of the interview is its own reading of a recording that is not public."
+
+- id: SRC-PIPE-ECF108-MOTION-UNTIMELY
+  title: "Defendant's motion to dismiss Counts One and Two as untimely (ECF No. 108, filed 10/05/26)"
+  organization: "Counsel for Brian Cole, Jr."
+  year: "2026"
+  sourceType: report
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.108.0.pdf"
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-19 (12 pages). Cited for its description of the third superseding indictment (ECF No. 106), whose filed copy is a scan the reading tool cannot read."
+
+# ── Congress ───────────────────────────────────────────────────────────
+
+- id: SRC-PIPE-HOUSE-INTERIM-REPORT
+  title: "Four Years Later: Examining the State of the Investigation into the RNC and DNC Pipe Bombs (interim staff report)"
+  organization: "U.S. House of Representatives, Committee on House Administration Subcommittee on Oversight (Rep. Barry Loudermilk, chairman) and Committee on the Judiciary Subcommittee on the Administrative State, Regulatory Reform, and Antitrust (Rep. Thomas Massie, chairman)"
+  year: "2025"
+  sourceType: report
+  url: "https://cha.house.gov/_cache/files/f/e/fe4f4a06-d98a-4437-8891-792c5d406213/F503CD6C839F28CEB7D4216055E45035.joint-pipe-bomb-report-cn-bd-cn-mj-db-bd-db-bd-ch-bd-db-db-bd-db-bdfinal-version-redacted2.pdf"
+  archivedUrl: "https://web.archive.org/web/2025id_/https://cha.house.gov/_cache/files/f/e/fe4f4a06-d98a-4437-8891-792c5d406213/F503CD6C839F28CEB7D4216055E45035.joint-pipe-bomb-report-cn-bd-cn-mj-db-bd-db-bd-ch-bd-db-db-bd-db-bdfinal-version-redacted2.pdf"
+  verification: ai_verified
+  verificationNote: "Dated January 2, 2025 (80 pages). The committee's link no longer answers; read in full from the Internet Archive's copy on 2026-10-19."
+  reliabilityNotes:
+    - "A majority staff report by two Republican-led subcommittees, written before any arrest; its findings on the security response rest on Capitol Police video, radio transcripts and documents it describes."
+
+# ── reporting ──────────────────────────────────────────────────────────
+
+- id: SRC-PIPE-CNN-HOW-ARREST
+  title: "Hardware purchases and location data: How the FBI says it made an arrest in the DC pipe bomb case, nearly five years later"
+  authors: ["Eric Levenson", "Hannah Rabinowitz", "Evan Perez", "Holmes Lybrand", "Brian Todd"]
+  organization: "CNN"
+  year: "2025"
+  sourceType: webpage
+  url: "https://www.cnn.com/2025/12/05/us/brian-cole-jr-fbi-investigation"
+  verification: ai_verified
+  verificationNote: "Published December 5, 2025; read on 2026-10-19."
+
+- id: SRC-PIPE-AP-TRIAL-DATE
+  title: "Judge sets trial date for man charged with planting pipe bombs on eve of Capitol riot"
+  authors: ["Michael Kunzelman"]
+  organization: "The Associated Press (as published by NBC4 Washington)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://www.nbcwashington.com/news/local/judge-sets-trial-date-for-man-charged-with-planting-pipe-bombs-on-eve-of-capitol-riot/4127744/"
+  verification: ai_verified
+  verificationNote: "Published July 8, 2026; read on 2026-10-19."
+
+- id: SRC-PIPE-TNND-NEW-VIDEO
+  title: "Massie, MTG support report of alleged Jan. 6 pipe bomber's innocence amid new video"
+  authors: ["Charlotte Hazard"]
+  organization: "The National News Desk (Sinclair), as published by WCHS"
+  year: "2026"
+  sourceType: webpage
+  url: "https://wchstv.com/news/nation-world/massie-mtg-support-report-of-alleged-jan-6-pipe-bombers-innocence-amid-new-video-mike-flynn-whistleblowers"
+  verification: ai_verified
+  verificationNote: "Published October 19, 2026; read the same day."
+
+- id: SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT
+  title: "Former Jan. 6 Cop Falsely Accused Of Being Pipe Bomber Wins Defamation Case"
+  authors: ["Brandi Buchman"]
+  organization: "HuffPost (as republished by Yahoo News)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://www.yahoo.com/news/articles/former-jan-6-cop-falsely-163006517.html"
+  verification: ai_verified
+  verificationNote: "Updated May 21, 2026, with a correction on whom the default judgment binds; read on 2026-10-19. The article names the plaintiff, a private individual; this site does not."
+
+- id: SRC-PIPE-WEX-LAWSUIT
+  title: "Ex-Capitol Police officer sues Blaze over suggestion she planted Jan. 6 pipe bomb"
+  authors: ["Molly Parks"]
+  organization: "Washington Examiner"
+  year: "2026"
+  sourceType: webpage
+  url: "https://www.washingtonexaminer.com/news/justice/4538022/capitol-police-officer-blaze-jan-6-pipe-bomb/"
+  verification: ai_verified
+  verificationNote: "Published April 21, 2026; read on 2026-10-19. Names the plaintiff; this site does not."
+
+- id: SRC-PIPE-GOUVEIA-BAKER-OCT2
+  title: "Brian Cole Jr. NEW Indictment & Details REVEALED! - with Steve Baker (episode page and summary)"
+  authors: ["Robert Gouveia"]
+  organization: "Watching the Watchers (Substack)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://robertgouveia.substack.com/p/brian-cole-jr-new-indictment-and"
+  verification: ai_verified
+  verificationNote: "Episode of October 2, 2026; read on 2026-10-19. The page is the host's written summary of an interview with Steve Baker, not a transcript."
+  reliabilityNotes:
+    - "A partisan show's summary of Baker's claims, in the host's words; it states as fact what Baker asserts. Cited here only for what Baker claims, never for the claims' truth."
+
+- id: SRC-PIPE-GOUVEIA-BAKER-OCT19
+  title: "Brian Cole Jr. Alibi Footage RELEASED! - with Journalist Steve Baker (episode page and summary)"
+  authors: ["Robert Gouveia"]
+  organization: "Watching the Watchers (Substack)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://robertgouveia.substack.com/p/brian-cole-jr-alibi-footage-released"
+  verification: ai_verified
+  verificationNote: "Episode of October 19, 2026; read the same day. The host's written summary of an interview with Steve Baker, not a transcript. It names private individuals (a witness, the officer Baker earlier accused); this site quotes only passages that do not."
+  reliabilityNotes:
+    - "A partisan show's summary, stating Baker's claims as fact; cited here only for what Baker claims. The documents it cites (an FBI laboratory report, a witness intake form, a congressional interview) are not public."
+
+- id: SRC-PIPE-NBC-FOOTAGE-ONLINE
+  title: "House speaker says Jan. 6 security footage is being posted online for public access"
+  authors: ["Kyle Stewart", "Zoë Richards"]
+  organization: "NBC News"
+  year: "2023"
+  sourceType: webpage
+  url: "https://www.nbcnews.com/politics/congress/house-speaker-says-jan-6-security-footage-posted-online-public-access-rcna125778"
+  verification: ai_verified
+  verificationNote: "Published November 17, 2023; read on 2026-10-19."
+
+# ── Steve Baker's posts on X ───────────────────────────────────────────
+# Read through X's embed service, which returns the first part of a long
+# post; quotations are from that text. Where a post continues, the record
+# says so and describes the rest without quoting it.
+
+- id: SRC-PIPE-BAKER-X-NEW-VIDEO
+  title: "Steve Baker on X: new Capitol CCTV video (October 18, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2111794954187985102"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19. The post carries a 7-minute video credited to @accabbat (Armitas)."
+
+- id: SRC-PIPE-BAKER-X-LONGER-VIDEO
+  title: "Steve Baker on X: the longer video breakdown (October 18, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2111794960018071939"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19; the post continues past the embed's text. It carries a 63-minute video of Baker and Kyle Seraphin explaining the footage."
+
+- id: SRC-PIPE-BAKER-X-INTERVIEW-CLUES
+  title: "Steve Baker on X: interview transcript excerpts (October 18, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2111794964032016867"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19. The post attaches four images of transcript pages from Cole's FBI interview, with the agents' names blacked out; the images are not machine-read, so the record describes them without quoting."
+  reliabilityNotes:
+    - "The transcript pages are not in the public court record; their provenance is not stated in the post."
+
+- id: SRC-PIPE-BAKER-X-SHOES
+  title: "Steve Baker on X: the New Balance shoes (October 18, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2111794973334990965"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19; the post continues past the embed's text."
+
+- id: SRC-PIPE-BAKER-X-MASK
+  title: "Steve Baker on X: the maroon-and-gold mask (October 18, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2111794978934370669"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19; the post continues past the embed's text."
+
+- id: SRC-PIPE-BAKER-X-JACKET
+  title: "Steve Baker on X: the jacket (October 18, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2111820832892649740"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19. The post names a relative of Cole's, a private individual; this site quotes only the words that do not."
+
+- id: SRC-PIPE-BAKER-X-SMARTWATCH
+  title: "Steve Baker on X: the smartwatch (July 1, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2072370850498564552"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19. The post links an article on Veritas Regnat (veritasregnat.com, June 30, 2026), which refused the reading tool (HTTP 403) and is not cited."
+
+- id: SRC-PIPE-BAKER-X-PAUSE
+  title: "Steve Baker on X: update on the J6 pipe bomber report (November 6, 2025)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2025"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/1986553903555748088"
+  verification: ai_verified
+  verificationNote: "Read through X's embed service on 2026-10-19; the post continues past the embed's text."
+  background: true
+  reliabilityNotes:
+    - "Kept for the reading guide: Baker's announcement, two days before the November 8, 2025 report that was later retracted, that its release was paused."
