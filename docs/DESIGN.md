@@ -8,7 +8,11 @@ reviewers from four other companies read every change before it publishes and
 say whether it leaves the site better or worse and whether it does a harm; five
 models judge each case blind, and their agreement is the standing a judgment
 carries; the founder holds the kill switch (`governance/operation.yaml`) and
-the constitution (`AGENTS.md`). What follows is what is this site's own.
+the constitution (`AGENTS.md`). A change is data to everything that judges
+it: the review and the quote check run main's code and read the change
+through git, and an operator session's work is checked by main's code on a
+fresh machine before any of it is published (the upstream's "The trust
+boundary"). What follows is what is this site's own.
 
 ## What this site is for
 

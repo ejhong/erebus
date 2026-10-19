@@ -498,3 +498,16 @@ proceedings.
    Operator (September) and Extract claims workflows, the arbiter and the risk
    check (→ the operator's sessions and the review); the panel and proposals
    pages (→ /operations, the record pages).
+
+## 2026-10-19 — The engine's trust boundary, pulled
+
+The upstream's review held its rebuild because the gate ran the code of the
+change it judged, with the keys present (ejhong/aletheia#463; its decisions
+log, 2026-10-19, "The trust boundary"). The engine pulled here carries the
+fix: the review and the quote check run from main's code and read a change
+through git only; the operator's session holds only its own key, and main's
+code checks its work on a fresh machine, records its cost, convenes the
+panel and opens the pull request; a change to the founder's files is held
+for his hand. An engine pull touches those files by its nature, so each one
+merges by the founder's hand.
+
