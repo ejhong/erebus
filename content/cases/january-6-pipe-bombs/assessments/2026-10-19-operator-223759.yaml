@@ -1,7 +1,7 @@
 # Draft assessment — the operator's judgment (claude-opus-5-5, session 2026-10-19-session-january-6-pipe-bombs-founder), NOT human reviewed.
 # Its standing comes only from the blind panel (role: check runs written after it). Append-only.
 
-runId: 2026-10-19-operator-221738
+runId: 2026-10-19-operator-223759
 producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
 model: claude-opus-5-5
 date: 2026-10-19
@@ -9,23 +9,23 @@ promptVersion: founder session 2026-10-19
 humanReviewed: false
 role: draft
 basis:
-  ledgerHash: 2db58983bb79bac57cb9e944795a86b187d917a38330b146cb3c4fee5228fb6e
+  ledgerHash: 94f8f7adf82f19615693e290e04a284495519e3b373ea6c76260841608450d89
 caseAssessment:
   verdict: provisionally_supported
   whatIsClaimed: Prosecutors say Brian Cole Jr. built two pipe bombs and placed them by the party headquarters on January 5, 2021, and confessed in 2025; he denies it and is presumed innocent. Steve Baker says congressional CCTV shows Cole on the north side of the Capitol while the bomber was on the southeast side, and that the bomber was an insider.
-  whereDisagreementLives: "Over who the man on the north side of the Capitol is. On the congressional files' clock he is very unlikely to be the bomber: he crosses at Peace Circle at 8:01:18, about a kilometre and 100 seconds from where the affidavit puts the bomber. If he is Cole and the clocks hold, the charged account fails. But the phone attributed to Cole used, at 7:59:36, a sector facing away from every place he is filmed. The second dispute is the confession."
+  whereDisagreementLives: "Over who the man on the north side of the Capitol is. On the clocks as recorded he cannot be the bomber: he crosses at Peace Circle at 8:01:18, at least 960 metres and 100 seconds from where the affidavit puts the bomber. If he is Cole, the charged account needs the cameras' clocks to be minutes apart. But the phone attributed to Cole used, at 7:59:36, a sector facing away from every place he is filmed. The second dispute is the confession."
   whatWouldSettleIt: Four records would. A comparison of the man's clearest frames with known images of Cole by an examiner not told which is which, with his track on the cameras around him. The cameras' clock offsets, measured through something two cameras saw. The phone's raw records with distance data, and the FBI's drive tests. And the recorded interview, each detail traced to whoever said it first.
-  bestConventionalExplanation: "The charged account: Cole bought the components over 2019 and 2020, built the devices at home, drove into the city on the evening of January 5, 2021, and placed one by the DNC and one behind the RNC, carrying his phone, which kept pace with him on the sectors along his route. When arrested he first said he had gone to a protest, then admitted the placements. On this account the man in the October footage is someone else, as the congressional files' clock and the phone's sector both suggest: at 7:59:36 the phone was on a sector that reaches the bomber's route, at its edge, and faces away from every place the man is filmed."
+  bestConventionalExplanation: "The charged account: Cole bought the components over 2019 and 2020, built the devices at home, drove into the city on the evening of January 5, 2021, and placed one by the DNC and one behind the RNC, carrying his phone, which kept pace with him on the sectors along his route. When arrested he first said he had gone to a protest, then admitted the placements. On this account the man in the October footage is someone else, as the recorded clocks and the phone's sector both suggest: at 7:59:36 the phone was on a sector that reaches the bomber's route, at its edge, and faces away from every place the man is filmed."
   components:
     - label: "The charged account: Cole placed both devices"
       state: provisionally_supported
       note: Purchases, a plate reader, phone sessions and searches converge on him, as the prosecution describes records neither public nor tested; the confession is disputed.
-    - label: The man in the October footage is not the bomber
+    - label: On the recorded clocks, the man in the October footage cannot be the bomber
       state: provisionally_supported
-      note: "New: on the files' clock he could be the bomber only by running a kilometre in four minutes or less; each camera's clock is checked against one shared moment only."
+      note: "New: he would have had to cover at least 960 metres in 100 seconds; at a walk the clocks would have to be about nine minutes apart. Only camera 794's clock is checked, at one moment."
     - label: The man in the October footage is Cole
       state: weakly_supported
-      note: His family's recognition, through Baker, and a face judged by eye; the frames cannot resolve the clothing, and the phone was elsewhere at 7:59:36.
+      note: His family's recognition, through Baker, and a face judged by eye; the frames cannot resolve the clothing, and at 7:59:36 the phone used a sector facing away from him.
     - label: The phone's 7:59:36 sector faced where the man is filmed
       state: contradicted
       note: "New: every place he is filmed lies 147 to 172 degrees behind its sworn direction; service from behind at short range is possible and untested (PIPE-S001)."
@@ -37,7 +37,7 @@ caseAssessment:
       note: No public evidence names one, and its one named suspect was retracted; but what points elsewhere is not yet public or tested, and the defense is pursuing January 5 records the government resists producing.
   researchPriority:
     level: high
-    reason: "Who the man at Peace Circle is now decides the footage: a blind comparison of his frames with known images of Cole, and the phone's raw distance data, would settle it before the February 2027 trial."
+    reason: "Who the man at Peace Circle is, and the cameras' clocks, now decide the footage: a blind comparison of his frames with known images of Cole, and the phone's raw distance data, would settle it before the February 2027 trial."
   loadBearing:
     - PIPE-C027
     - PIPE-C075
@@ -50,8 +50,8 @@ caseAssessment:
     - PIPE-C031
     - PIPE-C040
     - PIPE-C027
-  synthesis: "Provisionally supported: the lines against Cole converge, but each is the prosecution's description of records not yet public or tested, and the one public challenge turns on a question no one has settled — who the man at Peace Circle is. Purchases including an uncommon battery connector, though not the alligator clips; a plate reader at 7:10 p.m., which both sides now state; phone sessions on five sectors that fit the bomber's route; parts and receipts at his home; and a confession the defense calls coerced. Under this site's rules none of it rises above provisional while the records stay unexamined. What is new is the footage. Checked against the files the House subcommittee posted, Baker's video is genuine: every clip is a congressional file, and its added times are the files' own. The same release films the bomber on the sworn route at 7:57, so its clock agrees with the FBI's to within a few minutes, and the man who crosses at Peace Circle at 8:01:18 could be the person the affidavit puts at New Jersey Avenue and E Street SE 100 seconds earlier only by running about a kilometre in four minutes or less, while he is filmed walking. If he is Cole, the charged account is very hard to sustain. Two things weigh against that. His identification rests on his family's recognition, relayed by Baker, of clothes the frames cannot resolve, and on his face judged by eye. And at 7:59:36 the phone the affidavit attributes to Cole used a sector facing away from every place he is filmed: either the man is not Cole, or Cole's phone was not with him, or the sector served it from behind, or the sworn records are wrong. A blind identification and the phone's raw distance data would settle it."
-  steelman: "Every line against Cole is the prosecution's description of records no outsider has examined, and the one record the public can check cuts the other way. The congressional originals show a man crossing at Peace Circle at 8:01:18, a kilometre from where the affidavit puts the bomber 100 seconds earlier, on a clock that agrees with the FBI's to within minutes; his family recognises his mask, jacket and shoes, and Cole's first account, before any pressure, was that he came to a protest. The phone does not rescue the charge: a sector is a wedge, not a pin; at 7:59:36 the bomber's corner sits at the very edge of its sector and beyond the next site, and if the breakdown's captions are right a dark sedan was in Southwest, inside that sector, four minutes later — the phone may have been in a car. Purchases over two years can be a hobby, and the alligator clips came after. A former senior FBI official told Congress the cell data was corrupted. The confession followed two hours of denial and talk of his family, from a man later diagnosed with autism; and the devices never went off."
+  synthesis: "Provisionally supported: the lines against Cole converge, but each is the prosecution's description of records not yet public or tested, and the one public challenge turns on a question no one has settled — who the man at Peace Circle is. Purchases including an uncommon battery connector, though not the alligator clips; a plate reader at 7:10 p.m., which both sides now state; phone sessions on five sectors that fit the bomber's route; parts and receipts at his home; and a confession the defense calls coerced. Under this site's rules none of it rises above provisional while the records stay unexamined. What is new is the footage. Checked against the files the House subcommittee posted, every clip in Baker's video matches a posted file, and its added times are the files' own. On those clocks the man who crosses at Peace Circle at 8:01:18 could have been where the affidavit puts the bomber 100 seconds earlier, at least 960 metres away, only by moving faster than any runner has over a kilometre; at a walk, the clocks would have to be about nine minutes apart. Only camera 794's clock has been checked, at one moment: it films a figure the breakdown labels the bomber 212 metres up New Jersey Avenue at 7:57:10, an ordinary walk from the sworn position at 7:59:38. If he is Cole, the charged account needs the clocks to be minutes apart. Two things weigh against that. His identification rests on his family's recognition, relayed by Baker, of clothes the frames cannot resolve, and on his face judged by eye. And at 7:59:36 the phone the affidavit attributes to Cole used a sector facing away from every place he is filmed: either the man is not Cole, or Cole's phone was not with him, or the sector served it from behind, or the sworn records are wrong. A blind identification and the phone's raw distance data would settle it."
+  steelman: "Every line against Cole is the prosecution's description of records no outsider has examined, and the one record the public can check cuts the other way. The subcommittee's posted files show a man crossing at Peace Circle at 8:01:18, at least 960 metres from where the affidavit puts the bomber 100 seconds earlier, in a release whose camera 794 matches the FBI's timeline; his family recognises his mask, jacket and shoes, and Cole's first account, before any pressure, was that he came to a protest. The phone does not rescue the charge: a sector is a wedge, not a pin; at 7:59:36 the bomber's corner sits at the very edge of its sector and beyond the next site, and if the breakdown's captions are right a dark sedan was in Southwest, inside that sector, four minutes later — the phone may have been in a car. Purchases over two years can be a hobby, and the alligator clips came after. A former senior FBI official told Congress the cell data was corrupted. The confession followed two hours of denial and talk of his family, from a man later diagnosed with autism; and the devices never went off."
 claimAssessments:
   - claimId: PIPE-C001
     verdict: well_supported
@@ -226,8 +226,8 @@ claimAssessments:
       plainLanguage: Whether the man in the October footage is Cole rests on his family's recognition, through Baker, and on his face judged by eye.
       importance: headline
       diagnosticity: high
-      diagnosticitySummary: "Now the decisive question: the man is not the bomber, so if he is Cole the charge fails."
-      strongestObjection: Interested witnesses recognising clothes the frames cannot resolve, a method that earlier named the wrong person, and a phone that was not with him.
+      diagnosticitySummary: "Now the decisive question: on the recorded clocks the man cannot be the bomber, so if he is Cole the charge needs those clocks to be minutes off."
+      strongestObjection: Interested witnesses recognising clothes the frames cannot resolve, a method that earlier named the wrong person, and a phone whose sector faced away from him.
       whatWouldChangeOurMind:
         - A comparison of his frames with known images of Cole by an examiner not told which is which, with its error rate.
         - His track on the cameras around him, to Cole's car or to someone else's.
@@ -238,13 +238,13 @@ claimAssessments:
     confidence: moderate
   - claimId: PIPE-C033
     verdict: weakly_supported
-    reasoning: On the congressional files' clock the man is very unlikely to be the bomber, so the account holds if he is Cole and the clocks hold. That rests on interested parties' recognition; and the account must also explain the phone, which at 7:59:36 used a sector facing away from every place he is filmed, after keeping to the bomber's route on the sessions before.
+    reasoning: On the clocks as recorded the man cannot be the bomber, so the account holds if he is Cole and the clocks are not minutes apart. That rests on interested parties' recognition; and the account must also explain the phone, which at 7:59:36 used a sector facing away from every place he is filmed, after keeping to the bomber's route on the sessions before.
     confidence: low
     treatment:
-      plainLanguage: "The alibi: Cole was the man on the north side of the Capitol, who is not the bomber. It holds if he is Cole."
+      plainLanguage: "The alibi: Cole was the man on the north side of the Capitol, who on the recorded clocks cannot be the bomber. It holds if he is Cole and the clocks are right."
       importance: headline
       diagnosticity: high
-      diagnosticitySummary: The originals settle the clocks and the places; if the man is Cole, the charged account fails.
+      diagnosticitySummary: The posted files fix the places and the recorded times; if the man is Cole and those clocks are right, the charged account fails.
       strongestObjection: The identification rests on interested witnesses, and the phone attributed to Cole was on a sector facing away from the man at 7:59:36.
       whatWouldChangeOurMind:
         - An identification of the man that does not rest on family recognition or a face judged by eye.
@@ -254,9 +254,9 @@ claimAssessments:
     reasoning: At 704 by 528 pixels the frames show a violet-blue hooded jacket and light shoes that flash under the lights; the mask's colours, the shoe brand and the tag cannot be made out (PIPE-S002). The items rest on the family's recognition as Baker reports it.
     confidence: moderate
   - claimId: PIPE-C035
-    verdict: well_supported
-    reasoning: All eight cameras' files are among those the subcommittee posted, and every clip matches its posted file; the times equal the files' recorded times; and camera 794 shows the bomber on the sworn route at 7:57, so the files' clock agrees with the FBI's timeline to within a few minutes (PIPE-S002). The files were viewed, not downloaded or hashed, and each camera's own offset was not measured.
-    confidence: high
+    verdict: provisionally_supported
+    reasoning: "Every clip matches a file the subcommittee posted, and the times equal the files' recorded times (PIPE-S002); so the footage is the release's, and its times are not invented. Whether the recorded times are true is checked at one moment on one camera: camera 794 films a figure the breakdown labels the bomber 212 metres up New Jersey Avenue at 7:57:10, an ordinary walk from the affidavit's position at 7:59:38. The other cameras' offsets were not measured, and the files were viewed, not downloaded or hashed."
+    confidence: moderate
   - claimId: PIPE-C036
     verdict: well_supported
     reasoning: The November 2025 identification by gait was retracted, and a federal court entered a default judgment for defamation against Baker and a colleague; a default is not a finding on the gait evidence.
@@ -395,14 +395,14 @@ claimAssessments:
     confidence: high
   - claimId: PIPE-C059
     verdict: provisionally_supported
-    reasoning: Purchases including an uncommon part, a plate reader both sides now state, phone sessions that fit the bomber's route, items at his home and a disputed confession converge on Cole; but each line is the prosecution's description of records neither public nor tested. The October footage is genuine, and on its own clock its man is very unlikely to be the bomber; if he is Cole and the clocks hold, the account is very hard to sustain. If he is Cole, the sworn phone data put Cole's phone elsewhere at 7:59:36 unless its sector served it from behind; and his identification rests on interested witnesses.
+    reasoning: Purchases including an uncommon part, a plate reader both sides now state, phone sessions that fit the bomber's route, items at his home and a disputed confession converge on Cole; but each line is the prosecution's description of records neither public nor tested. The October footage matches the subcommittee's posted files, and on their recorded clocks its man cannot be the bomber; if he is Cole, the account needs those clocks to be minutes apart. Against that, the phone attributed to Cole used a sector facing away from him at 7:59:36, unless it served the phone from behind; and his identification rests on interested witnesses.
     confidence: moderate
     treatment:
       plainLanguage: Several lines of evidence point to Cole, as the prosecution describes records no one outside has examined; none has been tested at trial.
       importance: headline
       diagnosticity: high
-      diagnosticitySummary: If the lines hold, they leave little room for anyone else; if the man at Peace Circle is Cole and the clocks hold, they break.
-      strongestObjection: Every line is the prosecution's description of records not public, the confession was obtained under pressure, and the public footage shows a man who is not the bomber.
+      diagnosticitySummary: If the lines hold, they leave little room for anyone else; if the man at Peace Circle is Cole and the clocks are right, they break.
+      strongestObjection: Every line is the prosecution's description of records not public, the confession was obtained under pressure, and on its recorded clocks the public footage shows a man who cannot be the bomber.
       whatWouldChangeOurMind:
         - The man at Peace Circle shown to be Cole.
         - The phone's raw records showing it was not with the bomber.
@@ -426,26 +426,26 @@ claimAssessments:
         - The committee or the Capitol Police confirming or denying their origin.
   - claimId: PIPE-C062
     verdict: misframed
-    reasoning: The cameras and places are right — the man is at Peace Circle at 8:01:18, on camera 602 at 8:04:25 and on 940 at about 8:05:23 — but the times given, 20:03:32 to 20:04:02, are the two files' start times to the millisecond, which read as when he appears. The corrected finding is PIPE-C073 and PIPE-C074 (PIPE-S002).
+    reasoning: The cameras and places are right — the man is at Peace Circle at 8:01:18, on camera 602 at 8:04:25 and on 940 at about 8:05:23 — but the times given, 20:03:32 to 20:04:02, are the two files' start times to the millisecond, which read as when he appears. The corrected finding is PIPE-C078 (PIPE-S002).
     confidence: high
     treatment:
       plainLanguage: Baker says the man is filmed by Peace Circle and on cameras 602 and 940 between 8:00 and 8:05 p.m.; the times he gave are the files' start times.
       importance: major
       diagnosticity: high
-      diagnosticitySummary: "Checked against the originals: the cameras and places are right, and the man appears about a minute after each file's start."
+      diagnosticitySummary: "Checked against the posted files: the cameras and places are right, and the man appears 53 and 81 seconds after the files begin."
       strongestObjection: Nothing now on the cameras or the places; the stated times mislead if read as when the man appears.
       whatWouldChangeOurMind:
-        - Other original files, or another release, showing different times for the same moments.
+        - The Capitol Police's own files, or another release, showing different times for the same moments.
   - claimId: PIPE-C063
     verdict: well_supported
-    reasoning: On the congressional files' clock, Peace Circle is about 960 metres and 100 seconds from the bomber's sworn position. Camera 794 bounds the files' offset against the FBI's timeline to within a few minutes; on any such offset the man would have had to run about a kilometre in four minutes or less. Camera 3187's own offset against 794 is not measured, which is why the claim is conditional.
-    confidence: moderate
+    reasoning: The posted files' recorded times put the man at the Peace Circle crosswalk at 8:01:18, 100 seconds after the affidavit puts the bomber at New Jersey Avenue and E Street SE, a position both sides accept; the two places are 962 metres apart in a straight line between the District's address points (PIPE-S001). Covering that in 100 seconds is 9.6 metres a second, against 7.6 for the 1,000-metre world record; at 1.5 metres a second it takes about eleven minutes, so the clocks would have to differ by nine. The claim is conditional on the clocks, which is why it says so.
+    confidence: high
     treatment:
-      plainLanguage: On the congressional files' clock, the man filmed at Peace Circle at 8:01:18 could have been where the affidavit puts the bomber 100 seconds earlier only by running about a kilometre.
+      plainLanguage: On the clocks as recorded, the man filmed at Peace Circle at 8:01:18 would have had to cover at least 960 metres in 100 seconds to be the bomber; at a walk, the clocks would have to be about nine minutes apart.
       importance: headline
       diagnosticity: high
-      diagnosticitySummary: It makes the man very unlikely to be the bomber; it leaves open whether he is Cole.
-      strongestObjection: Each camera's clock is checked only against one shared moment; a several-minute offset between cameras 3187 and 794 would weaken it.
+      diagnosticitySummary: If the clocks are close, the man is not the bomber; it leaves open whether he is Cole.
+      strongestObjection: Only camera 794's clock is checked, at one moment; camera 3187's is unmeasured, and an offset of several minutes would remove the conflict.
       whatWouldChangeOurMind:
         - Clock offsets measured through something two cameras saw.
         - The FBI's video showing the bomber's 7:59:38 time or place wrong by several minutes.
@@ -483,7 +483,7 @@ claimAssessments:
     confidence: high
   - claimId: PIPE-C072
     verdict: contradicted
-    reasoning: "The times were added in editing, as critics said, but each equals the original file's recorded start plus the time elapsed in it (PIPE-S002): they were taken from the originals, not invented."
+    reasoning: "The times were added in editing, as critics said, but each equals the posted file's recorded start plus the time elapsed in it (PIPE-S002): they were taken from the files, not invented."
     confidence: high
   - claimId: PIPE-C073
     verdict: well_supported
@@ -493,20 +493,20 @@ claimAssessments:
       plainLanguage: Every camera in Baker's video is among the files the subcommittee posted, and every clip matches its posted file.
       importance: major
       diagnosticity: moderate
-      diagnosticitySummary: It authenticates the footage; it says nothing about who the man is.
-      strongestObjection: The originals were viewed at the labelled moments, not end to end.
+      diagnosticitySummary: It ties every clip to a posted file; it says nothing about who the man is.
+      strongestObjection: The posted files were viewed at the labelled moments, not end to end, and were not hashed.
       whatWouldChangeOurMind:
-        - A clip shown to differ from its original, or to come from another file.
+        - A clip shown to differ from its posted file, or the posted files from the Capitol Police's own.
   - claimId: PIPE-C074
     verdict: well_supported
-    reasoning: No original draws a time on the image. The captions are fixed text in one font, and each equals the file's start, from its name, plus the elapsed time, to within a few seconds (PIPE-S002).
+    reasoning: No posted file draws a time on the image. The captions are fixed text in one font, and each equals the file's start, from its name, plus the elapsed time, to within a few seconds (PIPE-S002).
     confidence: high
     treatment:
-      plainLanguage: The times on Baker's video were added in editing, but each is the original file's own time.
+      plainLanguage: The times on Baker's video were added in editing, but each is the posted file's own recorded time.
       importance: major
       diagnosticity: moderate
       diagnosticitySummary: It answers the critics' charge that the times were made up.
-      strongestObjection: A file name records when the recording system started the file, and a system clock can itself be off; camera 794 bounds that only to within minutes.
+      strongestObjection: A file name records when the recording system started the file, and a system clock can itself be off; it is checked at one moment, on camera 794.
       whatWouldChangeOurMind:
         - A Capitol Police record of those cameras' clock offsets that night showing a large error.
   - claimId: PIPE-C075
@@ -546,4 +546,8 @@ claimAssessments:
       strongestObjection: No camera number, no stated source, and captions in a different style from the rest of the video.
       whatWouldChangeOurMind:
         - The clips' cameras and clocks identified, and the plate read.
+  - claimId: PIPE-C078
+    verdict: well_supported
+    reasoning: "Camera 602's posted file begins at 20:03:32.640 and shows the man at 0:53, 8:04:25; camera 940's begins at 20:04:02.170 and shows a figure, the man by the video's sequence, from 1:21 to 1:40, 8:05:23 to 8:05:42: the moments Baker's captions give (PIPE-S002). The files were viewed at those moments, not end to end."
+    confidence: high
 shownChecks: []

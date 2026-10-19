@@ -1,22 +1,22 @@
 # Edition written by the operator (claude-opus-5-5) in session 2026-10-19-session-january-6-pipe-bombs-founder, stamped by the engine (src/engine/stamp.ts).
 # Append-only: a later edition replaces it; this file is never edited.
 
-runId: edition-2026-10-19-221738
+runId: edition-2026-10-19-223759
 producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
 date: 2026-10-19
 model: claude-opus-5-5
 promptVersion: founder session 2026-10-19
 rationale: |-
-  Calibrated on the review's notes: the new findings now say what was measured. On the congressional files' clock the man at Peace Circle is very unlikely to be the bomber, rather than shown not to be, since each camera's clock is checked against one shared moment only; and the phone's sector faced away from him, rather than the phone not being with him, since a sector can serve a phone close behind it. The Rumble files are the subcommittee's posted copies, viewed not downloaded; research item PIPE-R001 is reopened for the clocks.
+  Answers the review of #123, held for one harm: the corrected times for cameras 602 and 940 now cite their own record, PIPE-C078, not PIPE-C062, which records the misframed times. The footage finding states its arithmetic instead of a likelihood: on the clocks as recorded, the man at Peace Circle would have had to cover at least 960 metres in 100 seconds to be the bomber, and at a walk the clocks would have to be about nine minutes apart. The one moment the clocks were checked at, on camera 794 alone, is named; 'authentic', 'genuine' and 'originals' give way to what was shown, that the clips match the subcommittee's posted files.
 
-  Measured by the engine: article 2683 → 2848 words, without markup.
+  Measured by the engine: article 2683 → 2912 words, without markup.
 basis:
-  ledgerHash: 2db58983bb79bac57cb9e944795a86b187d917a38330b146cb3c4fee5228fb6e
+  ledgerHash: 94f8f7adf82f19615693e290e04a284495519e3b373ea6c76260841608450d89
   inputsHash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 previous: edition-2026-10-19-210255
 assessment:
-  runId: 2026-10-19-operator-221738
-  hash: e0a9e63119ebe01f6ceaa7bd2aa7a58c1a3b3b1d01ba2d669ea586c0832684a0
+  runId: 2026-10-19-operator-223759
+  hash: 01318e4107e6acd997c5b6eecbb1426207121daf5f316ede0d02fa86cbfc15d7
 featuredClaimIds:
   - PIPE-C059
   - PIPE-C063
@@ -52,7 +52,7 @@ cruxOrder:
 question: Does the public record support the charge that Brian Cole Jr. placed the pipe bombs outside the RNC and DNC on January 5, 2021 — and is the man the October 2026 footage shows on the other side of the Capitol him?
 accounts:
   - "The charged account: Brian Cole Jr., alone, built both devices and placed them on the evening of January 5, 2021, as prosecutors allege; he denies it and is presumed innocent."
-  - "Misidentification: the man the congressional footage shows on the north side of the Capitol, who on its clock is very unlikely to be the bomber, is Cole, as his family and Steve Baker say, and his confession was coerced."
+  - "Misidentification: the man the congressional footage shows on the north side of the Capitol, who on its recorded clocks cannot be the bomber, is Cole, as his family and Steve Baker say, and his confession was coerced."
   - "An insider: a law-enforcement insider placed the devices and the investigation protected them (Baker and others); its one named suspect was retracted."
   - "Not overnight: the devices were set down shortly before they were found on January 6, not the evening before (Baker, before his October 2026 account)."
 article: |
@@ -60,16 +60,16 @@ article: |
 
   On December 4, 2025, the FBI arrested Brian J. Cole Jr., a 30-year-old from Woodbridge, Virginia, who worked in a bail bondsman's office and lived with his family. Prosecutors say the records of what he bought, where his car went and where his phone was all lead to him, and that he confessed the same day. He has pleaded not guilty. **No court has decided the charges, and he is presumed innocent.** In October 2026 the reporter Steve Baker published Capitol security video that he says shows Cole on the far side of the Capitol while the bomber was at work. This page sets out what the public record shows, each side's case in its own words, and what would settle it. It takes official accounts as claims to be tested, like anyone else's.
 
-  ## New: the footage, checked against the congressional originals
+  ## New: the footage, checked against the subcommittee's files
 
-  > **New on October 19, 2026.** This site found the files the House subcommittee posted, from which Baker's October video was cut, and ran the two studies it had registered in advance. Four findings are new: no published account had established them. The files were viewed in a browser, not downloaded, and each camera's clock was checked against one shared moment only.
+  > **New on October 19, 2026.** This site found the files the House subcommittee posted, from which Baker's October video was cut, and ran the two studies it had registered in advance. Four findings are new: no published account had established them. The files were viewed in a browser, not downloaded or hashed, and only one camera's clock, camera 794's, could be checked against the FBI's timeline, at one moment.
 
-  - **The footage is authentic, and so are its times.** [All eight cameras in the video are among the files the House subcommittee posted, and every clip matches its posted file]{claim=PIPE-C073}. [The times on screen were added in editing, as critics said, but each is the file's own recorded time]{claim=PIPE-C074}.
-  - **The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the files' start times.** [The man appears about a minute later, at 8:04:25 and 8:05:23]{claim=PIPE-C062}.
-  - **On the files' clock, the man is very unlikely to be the bomber.** The same release has the bomber, in a light hooded top, on the sworn route at 7:57, so its clock agrees with the FBI's to within a few minutes; and [unless camera 3187's clock is minutes off camera 794's, the man who crosses at Peace Circle at 8:01:18 could have been where the affidavit puts the bomber 100 seconds earlier only by running about a kilometre in four minutes or less]{claim=PIPE-C063}, and he is filmed walking.
+  - **The clips are the subcommittee's files, and the times are the files' own.** [All eight cameras in the video are among the files the House subcommittee posted, and every clip matches its posted file]{claim=PIPE-C073}. [The times on screen were added in editing, as critics said, but each is the file's own recorded time]{claim=PIPE-C074}.
+  - **The times given for cameras 602 and 940 are when the files begin.** [Baker's side gave them as 20:03:32 to 20:04:02]{claim=PIPE-C062}, the two files' start times; [the man is on them at 8:04:25 and 8:05:23, 53 and 81 seconds in]{claim=PIPE-C078}.
+  - **On the clocks as recorded, the man cannot be the bomber.** [To have been where the affidavit puts the bomber at 7:59:38, the man who crosses Peace Circle at 8:01:18 would have had to cover at least 960 metres in 100 seconds, faster than any runner has covered a kilometre; at a brisk walk, camera 3187's clock and the FBI's would have to be about nine minutes apart]{claim=PIPE-C063}. The clocks are checked at one moment only: camera 794 films a figure in a light hooded top, whom Baker's breakdown labels the bomber, at New Jersey Avenue and D Street SE at 7:57:10, an ordinary walk from the bomber's sworn position. Camera 3187's clock has not been measured against it.
   - **The phone's sector faced away from him.** [At 7:59:36 the phone the affidavit attributes to Cole used a cell sector facing away from every place the man is filmed]{claim=PIPE-C075}; a sector can serve a phone close behind it, which only the provider's records could show.
 
-  Everything now turns on who the man is, and on the cameras' clocks. If he is Cole and the clocks hold, the charged account fails; if the phone records are right and the phone was with Cole, the man is someone else.
+  Everything now turns on who the man is, and on the cameras' clocks. If he is Cole, the charged account needs the cameras' clocks to be minutes apart; if the phone records are right and the phone was with Cole, the man is someone else.
 
   ## Where the case stands
 
@@ -101,9 +101,9 @@ article: |
 
   ## The October footage
 
-  On October 18, 2026, Baker published [Capitol CCTV of a man walking alone on the northwest side of the Capitol that evening]{claim=PIPE-C030}, found with a researcher who goes by Armitas by following clues in Cole's first account. It is, as he says, [raw Capitol Police video from the House Administration Subcommittee on Oversight's public release on Rumble]{claim=PIPE-C061}, and [the video begins, as Armitas says, at 7:57 p.m.]{claim=PIPE-C071} Critics answered that [the times shown were added by his team rather than read from the originals]{claim=PIPE-C072}: they were added, but they are the posted files' own. Baker's conclusion is that [Cole was elsewhere while the devices were being placed, and so was not the bomber]{claim=PIPE-C033}. Rep. Thomas Massie and others have endorsed it; the FBI and the Justice Department have not responded publicly.
+  On October 18, 2026, Baker published [Capitol CCTV of a man walking alone on the northwest side of the Capitol that evening]{claim=PIPE-C030}, found with a researcher who goes by Armitas by following clues in Cole's first account. It comes, as he says, [from the Capitol Police video the House Administration Subcommittee on Oversight posted on Rumble]{claim=PIPE-C061}, and [the video begins, as Armitas says, at 7:57 p.m.]{claim=PIPE-C071} Critics answered that [the times shown were added by his team rather than read from the camera files]{claim=PIPE-C072}: they were added, but they are the posted files' own. Baker's conclusion is that [Cole was elsewhere while the devices were being placed, and so was not the bomber]{claim=PIPE-C033}. Rep. Thomas Massie and others have endorsed it; the FBI and the Justice Department have not responded publicly.
 
-  Baker's headline says the man was filmed [at the same time the devices were being placed]{claim=PIPE-C032}, which is not quite the point: he is filmed between 7:57 and 8:06, between the two placements. The sharp conflict is with the bomber's walk between them: on the files' clock the man would have had to run about a kilometre in four minutes or less to be the bomber, and he is filmed walking.
+  Baker's headline says the man was filmed [at the same time the devices were being placed]{claim=PIPE-C032}, which is not quite the point: he is filmed between 7:57 and 8:06, between the two placements. The sharp conflict is with the bomber's walk between them: on the clocks as recorded, the man at Peace Circle at 8:01:18 is at least 960 metres from where the bomber was 100 seconds before.
 
   So the question is whether he is Cole. [He wears, Baker says, a maroon-and-gold cloth mask, a jacket with a tag hanging from it, and New Balance shoes]{claim=PIPE-C034}; Cole's family, Baker reports, recognised the mask, which his mother says she sewed, and the jacket. The frames, at 704 by 528 pixels, show a violet-blue hooded jacket and light shoes that flash under the lights, and cannot resolve a mask's colours, a brand or a tag. [Whether the man is Cole rests on that recognition and on his face judged by eye]{claim=PIPE-C031}, and [the same way of identifying people named a different person, a former Capitol Police officer, in November 2025 — a report its publisher retracted, and over which a federal court has entered a default judgment for defamation against Baker]{claim=PIPE-C036}. Then there is the phone, which at 7:59:36 was on a sector facing away from him: if he is Cole, either it was not in his pocket or the sector served it from behind, which only the provider's records could show. The longer breakdown adds [clips captioned as a dark sedan on 3rd Street SW at 8:03 and on C Street at 8:04]{claim=PIPE-C077}, beside a photograph of a 2017 Nissan Sentra, inside that sector; their source is not stated, so their times and places cannot yet be checked.
 
@@ -115,4 +115,4 @@ article: |
 
   ## What the record shows, and what would settle it
 
-  On the public record as it stands, [the charged account — that Cole is the person on the video]{claim=PIPE-C059} — is provisionally supported. Purchases including an uncommon part, a car arriving at the right time, a phone keeping pace with the bomber, parts at his home and a confession all point to him; but all of it is the prosecution's description of records the public has not seen and no court has tested, and this site takes no official account on trust. That is this site's own assessment of the evidence, not a finding of guilt, which only a jury can make. The one record the public can check, the congressional footage, is genuine and, on its own clock, shows a man who is very unlikely to be the bomber. Whether he is Cole is now the decisive question; the phone data, as sworn, put Cole's phone on a sector facing away from him. Four things would settle it: a comparison of the man's frames with known images of Cole by an examiner who is not told which is which, with his track on the cameras around him; the cameras' clock offsets, measured through something two cameras saw; the phone's raw records, with distance data; and the recorded interview, each detail traced to whoever said it first.
+  On the public record as it stands, [the charged account — that Cole is the person on the video]{claim=PIPE-C059} — is provisionally supported. Purchases including an uncommon part, a car arriving at the right time, a phone keeping pace with the bomber, parts at his home and a confession all point to him; but all of it is the prosecution's description of records the public has not seen and no court has tested, and this site takes no official account on trust. That is this site's own assessment of the evidence, not a finding of guilt, which only a jury can make. The one record the public can check, the footage the House subcommittee posted, matches Baker's clips, and on its recorded clocks shows a man who could be the bomber only if those clocks are minutes off the FBI's. Whether he is Cole is now the decisive question; the phone data, as sworn, put Cole's phone on a sector facing away from him. Four things would settle it: a comparison of the man's frames with known images of Cole by an examiner who is not told which is which, with his track on the cameras around him; the cameras' clock offsets, measured through something two cameras saw; the phone's raw records, with distance data; and the recorded interview, each detail traced to whoever said it first.

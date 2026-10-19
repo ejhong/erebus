@@ -6,12 +6,12 @@
 - id: PIPE-R001
   title: "Authenticate the October 2026 footage and its clock"
   summary: >-
-    The files are found: all eight cameras in Baker's video are among those the House Administration Subcommittee on Oversight posted on Rumble, each clip matches its posted file, and the times on screen are the files' own (PIPE-S002). What remains is the clocks. Measure the offsets of cameras 3188, 3187, 602 and 940 against camera 794, and against the cameras that recorded the bomber at 7:59:38, through anything two cameras saw (a vehicle, a patrol, a change of lights); and obtain the native files with their metadata, or the Capitol Police's own copies, and preserve their hashes.
+    The files are found: all eight cameras in Baker's video are among those the House Administration Subcommittee on Oversight posted on Rumble, each clip matches its posted file, and the times on screen are the files' own (PIPE-S002). What remains is the clocks. Measure the offsets of cameras 3188, 3187, 602 and 940 against camera 794, and against the cameras that recorded the bomber at 7:59:38, through anything two cameras saw (a vehicle, a patrol, a change of lights); find an absolute anchor for camera 794 itself, an event with an independent timestamp that it also recorded or a second moment it shares with the FBI's timeline; and obtain the native files with their metadata, or the Capitol Police's own copies, and preserve their hashes.
   claimIds: [PIPE-C030, PIPE-C032, PIPE-C033, PIPE-C035, PIPE-C061, PIPE-C062, PIPE-C063, PIPE-C071, PIPE-C072]
   track: either
   effortTier: desk
   informationGain: >-
-    Decisive in both directions. If the clocks agree to within a minute or two, a man on Constitution Avenue at 20:03:32 cannot be the person on New Jersey Avenue SE at 7:59:38, and either the identification of the man as Cole or the charged account fails. If the clocks are several minutes apart, the conflict dissolves, and the footage may instead corroborate Cole's first account of where he went that evening.
+    Decisive in both directions. On the clocks as recorded, the man crossing at Peace Circle at 8:01:18 cannot be the person the affidavit puts at New Jersey Avenue and E Street SE at 7:59:38, at least 960 metres away; at a walk the clocks would have to differ by about nine minutes. If they agree to within a minute, either the identification of the man as Cole or the charged account fails. If they are several minutes apart, the conflict weakens or dissolves, and the footage may instead corroborate Cole's first account of where he went that evening.
 
 - id: PIPE-R002
   title: "Does the phone data reach the places in the October footage?"

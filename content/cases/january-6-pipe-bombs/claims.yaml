@@ -919,7 +919,7 @@
 
 - id: PIPE-C063
   statement: >-
-    Unless camera 3187's clock is minutes off camera 794's, the man filmed crossing at Peace Circle at 8:01:18 p.m. could have been where the affidavit places the bomber at 7:59:38 p.m. — New Jersey Avenue and E Street SE — only by running about a kilometre in four minutes or less, though he is filmed walking.
+    On the clocks as recorded, the man camera 3187 films crossing at Peace Circle at 8:01:18 p.m. could have been where the affidavit places the bomber at 7:59:38 p.m., New Jersey Avenue and E Street SE, only by covering at least 960 metres in 100 seconds, faster than any runner has covered a kilometre; at a brisk walk, camera 3187's clock and the FBI's would have to differ by about nine minutes or more.
   theme: footage
   rung: mechanism
   claimType: mechanistic
@@ -1101,7 +1101,7 @@
     date: 2026-10-19
 
 - id: PIPE-C074
-  statement: The times shown in the October 2026 video were added in editing, and each equals the original file's start time, which the file's name records, plus the time elapsed in the file.
+  statement: The times shown in the October 2026 video were added in editing, and each equals the posted file's start time, which the file's name records, plus the time elapsed in the file.
   theme: footage
   rung: observation
   claimType: observation
@@ -1138,3 +1138,16 @@
     originDescription: The 63-minute breakdown by Steve Baker and Kyle Seraphin attached to Baker's reply of October 18, 2026; earliest appearance found.
     originSourceId: SRC-PIPE-BAKER-X-LONGER-VIDEO
   origin: *a1
+
+- id: PIPE-C078
+  statement: >-
+    The man the October 2026 video follows is on camera 602's posted file at 8:04:25 p.m. and on camera 940's from about 8:05:23 to 8:05:42 p.m., by the files' recorded times: 53 and 81 seconds after the files begin, at 20:03:32 and 20:04:02.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: answering the review of ejhong/erebus#123"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
