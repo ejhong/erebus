@@ -511,3 +511,25 @@ panel and opens the pull request; a change to the founder's files is held
 for his hand. An engine pull touches those files by its nature, so each one
 merges by the founder's hand.
 
+
+## 2026-10-19 — Official accounts are claims too
+
+**Decided by:** founder (direction in session: "most of erebus is about
+probing the idea conspiracies in govt are real and therefore assume the
+shadiness of public statements, media narratives, lying officials, tampered
+evidence … That's why we have to consider the main voices from the
+conspiratorial side"); drafted by AI (Claude Opus 5.5, Claude Code) into
+`config/site-rules.md`, which the founder commits.
+
+What Erebus is for, stated as rules every model works from: no deference to
+an official account or a media narrative, which weighs what its records
+weigh; a judgment that rests on one party's description of records no
+independent party has examined is at most provisionally supported, however
+many lines it has, and that binds critics too; every case looks for what the
+institutions held and did not release, and records what it finds and what it
+looked for and did not find; every case makes each point of the main
+dissenting voices a claim of its own and states their strongest account as a
+hypothesis; labels such as "debunked" are not evidence; and one standard both
+ways, so a conspiracy account the record supports is said to be supported.
+The cases are re-graded under it as the operator next works on each; the
+J6 pipe-bomb case first.
