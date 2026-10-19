@@ -48,3 +48,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-19
+  change: "Calibrated the footage findings to what was measured, on the review's notes for #121. PIPE-C063 restated as a conditional: unless camera 3187's clock is minutes off camera 794's, the man at Peace Circle could be the bomber only by running about a kilometre in four minutes or less; the article's 'the man is not the bomber' becomes 'on the archive's clock, very unlikely to be the bomber'. 'The phone was not with him' becomes 'the phone's sector faced away from him', since a sector can serve a phone close behind it. PIPE-C062 graded misframed (its times are the files' start times, which read as when the man appears). The Rumble files are named the subcommittee's posted copies, their native metadata unexamined (PIPE-C073 and the eight sources). Research item PIPE-R001 reopened: the cameras' clock offsets remain to be measured."
+  reason: "All four reviewers of ejhong/erebus#121 (GPT-5.6, Gemini 3.8 Flash, Grok 4.5, GLM 5.3 Flash) noted that the headline findings outran the evidence: clock agreement rests on one shared moment, and a sector's direction does not exclude service from behind. The change published by majority; this corrects it at once, so the case is not left saying more than it shows."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-19
+  change: New edition edition-2026-10-19-221738, adopting a new draft assessment 2026-10-19-operator-221738 (its standing waits for the blind panel).
+  reason: "Calibrated on the review's notes: the new findings now say what was measured. On the congressional files' clock the man at Peace Circle is very unlikely to be the bomber, rather than shown not to be, since each camera's clock is checked against one shared moment only; and the phone's sector faced away from him, rather than the phone not being with him, since a sector can serve a phone close behind it. The Rumble files are the subcommittee's posted copies, viewed not downloaded; research item PIPE-R001 is reopened for the clocks."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

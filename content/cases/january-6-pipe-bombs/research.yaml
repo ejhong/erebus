@@ -6,16 +6,12 @@
 - id: PIPE-R001
   title: "Authenticate the October 2026 footage and its clock"
   summary: >-
-    Baker says the footage is raw Capitol Police CCTV, uncut and unaltered, from the House Administration Subcommittee on Oversight's public release on Rumble (rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority): cameras 602 and 940, 20:03:32 to 20:04:02 on January 5, 2021, the video beginning, Armitas says, at 7:57 p.m. Critics say the times shown were added by Baker's team. Find those two files in the committee's release (or obtain them from the Capitol Police with their metadata); confirm the camera positions and that the man's track is continuous between them; establish each camera's clock offset that night; and check those clocks against the clocks of the cameras that recorded the bomber at 7:59:38 p.m. on New Jersey Avenue SE, using anything both systems saw (a vehicle, a patrol, a train). Then publish the man's path and times minute by minute.
+    The files are found: all eight cameras in Baker's video are among those the House Administration Subcommittee on Oversight posted on Rumble, each clip matches its posted file, and the times on screen are the files' own (PIPE-S002). What remains is the clocks. Measure the offsets of cameras 3188, 3187, 602 and 940 against camera 794, and against the cameras that recorded the bomber at 7:59:38, through anything two cameras saw (a vehicle, a patrol, a change of lights); and obtain the native files with their metadata, or the Capitol Police's own copies, and preserve their hashes.
   claimIds: [PIPE-C030, PIPE-C032, PIPE-C033, PIPE-C035, PIPE-C061, PIPE-C062, PIPE-C063, PIPE-C071, PIPE-C072]
   track: either
   effortTier: desk
   informationGain: >-
     Decisive in both directions. If the clocks agree to within a minute or two, a man on Constitution Avenue at 20:03:32 cannot be the person on New Jersey Avenue SE at 7:59:38, and either the identification of the man as Cole or the charged account fails. If the clocks are several minutes apart, the conflict dissolves, and the footage may instead corroborate Cole's first account of where he went that evening.
-  status: answered
-  statusNote: "PIPE-S002: all eight files found in the subcommittee's release; every clip matches its original at its labelled moment; the times are captions read from the files' own times; and the release's clock agrees with the affidavit's timeline to within a few minutes at camera 794. The man is not the bomber (PIPE-C063); who he is passes to PIPE-R009."
-  statusBy: 2026-10-19-session-january-6-pipe-bombs-founder
-  statusDate: 2026-10-19
 
 - id: PIPE-R002
   title: "Does the phone data reach the places in the October footage?"
