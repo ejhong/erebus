@@ -19,3 +19,14 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: "2026-10-19"
+  change: >-
+    Pre-registered study PIPE-S002, a frame-by-frame review of the footage published with Steve Baker's October 18, 2026 posts: which cameras, what on-screen times, whether those times are the cameras' own or added afterwards, and where the man is. Its criteria were frozen and committed before either video was downloaded; it has no rows yet. Identifying the man by his face is excluded by design.
+  reason: >-
+    The founder approved downloading the footage for frame-by-frame review (2026-10-19, in session). Critics say the times on screen were added by Baker's team and Baker says anyone can check them against the congressional originals; what to record, and what each result would mean, is fixed before looking.
+  actor: "Erebus operator (Claude Opus 5.5, Claude Code), founder session"
+  aiAssisted: true
+  runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+  promptVersion: "founder session 2026-10-19"
+  kind: content

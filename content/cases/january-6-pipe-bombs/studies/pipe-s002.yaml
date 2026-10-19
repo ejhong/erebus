@@ -1,0 +1,80 @@
+# Study freeze — pre-registration only (AGENTS.md §3.12), written and committed before
+# the videos were downloaded. Zero rows by design; any later edit to the
+# criteria fails the build (criteriaHash). Collection follows in a later change.
+id: PIPE-S002
+title: "What the October 2026 footage shows, frame by frame: cameras, clocks and places"
+question: Which cameras does the footage published with Baker's October 18, 2026 posts come from,
+  what times does it show and are they the cameras' own, and where is the man it follows?
+researchIds:
+  - PIPE-R001
+claimIds:
+  - PIPE-C030
+  - PIPE-C034
+  - PIPE-C035
+  - PIPE-C061
+  - PIPE-C062
+  - PIPE-C071
+  - PIPE-C072
+criteria:
+  frozenOn: 2026-10-19
+  inclusion:
+    - Every segment showing Capitol CCTV in the 7-minute video credited to @accabbat (Armitas) and
+      attached to Steve Baker's post of October 18, 2026
+      (x.com/SteveBakerUSA/status/2111794954187985102).
+    - Every segment showing Capitol CCTV in the 63-minute breakdown by Baker and Kyle Seraphin
+      attached to his reply of the same day (x.com/SteveBakerUSA/status/2111794960018071939), where
+      it shows footage not already in the 7-minute video.
+    - The original files on the House Administration Subcommittee on Oversight's Rumble channel for
+      the cameras the videos name, if they can be located; their own on-screen data are recorded
+      beside the edited videos'.
+  exclusion:
+    - Segments of commentary, maps, still graphics or other material that is not camera footage
+      (counted in the limitations, not recorded as rows).
+    - "Any attempt to identify the man by his face: the review records what is on screen — cameras,
+      times, places, clothing — not who he is."
+  searchProtocol: "Download the two videos from X's video service at their posted resolution (the
+    7-minute video at 1920x1080, the 63-minute breakdown at 640x360). Extract one frame every two
+    seconds with ffmpeg, and every frame across any change of camera. For each CCTV segment record:
+    the video's own time offset where it starts and ends; the camera label shown, if any; the
+    earliest and latest legible on-screen date and time; whether the time is drawn as part of the
+    camera's own image (a burned-in stamp that keeps its position, font and running clock across the
+    segment) or as a caption the editor added (a different font, a fixed text, a position that
+    changes between segments); any jump or gap in the on-screen clock; the landmarks that place the
+    camera (buildings, Peace Circle, Constitution Avenue, New Jersey Avenue, lamp standards); and
+    the man's visible clothing, mask, shoes and anything carried. For the originals, search the
+    subcommittee's Rumble channel for the camera numbers and the date, and record each file's title,
+    length and on-screen times. Predictions fixed now: if the videos' times are the cameras' own
+    burned-in stamps, they will run continuously within a segment and match the originals; if they
+    are added captions, they will appear as fixed text in the editor's style. Either result is
+    reported."
+  knownCandidates:
+    - name: Camera 602, which Baker says shows the man at 20:03:32 to 20:04:02 on January 5, 2021
+      disposition: include
+      reason: Named by Baker as one of the two cameras.
+    - name: Camera 940, which Baker says shows the same span
+      disposition: include
+      reason: Named by Baker as the other camera.
+    - name: The footage Armitas says begins at 7:57 p.m.
+      disposition: include
+      reason: The start time Armitas gives for the video.
+  criteriaHash: accd77dea5c7
+method: "A review of the published videos and, where they can be found, the original files, frame by
+  frame, recording what is on screen and nothing inferred from who the man may be. Rows: one per
+  camera segment. Findings state what the videos show about the cameras, the clocks and the places,
+  and what they cannot show; they grade no claim, and the man's identity is outside the study."
+columns:
+  - video
+  - offset in video
+  - camera label
+  - on-screen date and time
+  - time drawn by the camera or added
+  - place shown
+  - clothing and items
+rows: []
+findings: []
+limitations: []
+runId: 2026-10-19-session-january-6-pipe-bombs-founder
+model: claude-opus-5-5
+date: 2026-10-19
+promptVersion: founder session 2026-10-19
+humanReviewed: false
