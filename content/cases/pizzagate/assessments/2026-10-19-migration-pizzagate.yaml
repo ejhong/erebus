@@ -1,0 +1,425 @@
+# Migration assessment (2026-10-19) — a mechanical transfer, not a judgment.
+# Case-level fields come from draft 2026-08-29-auto-hudv and from the dossier
+# header formerly on case.yaml; claim-level fields come from the featured
+# claim records as they stood (the displayed credibility and editorial
+# workup). The draft's own per-claim reasoning remains in its overlay.
+# migratedFrom names the source draft; no model wrote this file.
+
+runId: 2026-10-19-migration-pizzagate
+model: none — mechanical migration (scripts/migrations/2026-09-08-editions.ts)
+date: 2026-10-19
+promptVersion: migration-editions-v1
+humanReviewed: false
+role: draft
+migratedFrom: 2026-08-29-auto-hudv
+caseAssessment:
+  verdict: well_supported
+  whatIsClaimed: "In ascending order of strength: that the Podesta emails contain coded language for child abuse; that the restaurant's owner, his social circle, and associated political figures signaled that activity in imagery, art, performances, and business symbols; that the venue physically hosted abuse; and that a networked trafficking operation connected these people and was subsequently protected from investigation. The featured question is not anyone's guilt — no court has ever charged any of it, and this site never grades culpability. It is which links in the evidentiary chain survive contact with the primary record, and how the chain was assembled from links that do not."
+  whereDisagreementLives: 'Not over the artifacts: the emails are authentic, the Instagram posts were real, the logos existed and were changed, the payments are in FEC filings, the bulletin is genuine. The dispute lives entirely in the interpretive layer — whether ordinary-looking language was code (the claimed dictionary has no law-enforcement provenance; the bulletin contains no food words), whether documented associations imply concealed conduct (the associations were in society-page print before the controversy), and whether the residue that resists mundane explanation — a handkerchief "map," a terse "torture chamber" line — is signal or the ordinary strangeness any large email corpus yields.'
+  whatWouldSettleIt: "For the central allegation: any independent evidentiary bridge — an identified victim or firsthand witness, forensic or property evidence, a criminal financial trail, or a law-enforcement record substantiating it. None has been located; its continued absence under targeted search is itself evidence. For the residue: recovery of the actual handkerchief context, Tony Podesta's January 31, 2014 calendar, the original camera-operator records, and the still-unverified 2002/ 2003 press bodies. For the genealogy: a frozen-criteria study tracing each major claim to its earliest appearance and classifying the assembly mechanisms — source fusion, identity conflation, paraphrase inflation — against the recovered record."
+  bestConventionalExplanation: "A political document dump landed weeks before an election; thousands of readers searched it for the worst thing they could imagine and found ordinary catering, scheduling, and banter that pattern-matched to it. A restaurant embedded in Democratic social and fundraising circles — documented in society pages years earlier — supplied faces, a venue, and imagery. Interpretations hardened into a dictionary nobody could source; different people with the same name were merged; hedged speculation lost its hedges in retelling. The result needed no fabricated inputs: authentic material, plus motivated inference, plus transmission error, manufactured the appearance of corroboration. On this account the residue is residue — what any deeply searched life would leave unexplained — and the absence of any victim, witness, or forensic record after nine years of scrutiny is the record speaking."
+  components:
+    - label: Authenticity of the underlying artifacts (emails, posts, logos, payments, bulletin)
+      state: well_supported
+      note: The raw material was real; this case verified the load-bearing artifacts natively.
+    - label: The food-word codebook as documented law-enforcement code
+      state: contradicted
+      note: The genuine 2007 FBI bulletin contains graphical symbols only — zero food terms; no law-enforcement provenance for the dictionary has ever surfaced.
+    - label: Marquee 'coded email' readings (hotdog stand, tortillas, $65,000, ice cream)
+      state: contradicted
+      note: Primary-source context — including a 2000 profile documenting the hotdog joke 15 years earlier — supplies the mundane referents the readings denied existed.
+    - label: Unexplained residue (handkerchief 'map', 'torture chamber')
+      state: unresolved
+      note: Authentic, terse, and still without recovered referents; preserved as anomalies, not evidence.
+    - label: The central trafficking allegation
+      state: weakly_supported
+      note: No victim, witness, forensic, financial, or law-enforcement record substantiating it has been located; allegations about identifiable people are never graded as verdicts here, and every person named is presumed innocent.
+  researchPriority:
+    level: medium
+    reason: The genealogy and residue items are desk-scale and well-specified, and the case is a strong testbed for allegation-anatomy methods; but no live proceeding or new primary evidence stream is expected to move the central question, which nine years of scrutiny have left where it stands.
+  loadBearing:
+    - PZG-C010
+    - PZG-C002
+    - PZG-C025
+    - PZG-C012
+    - PZG-C020
+  weakestLinks:
+    - PZG-C003
+    - PZG-C005
+    - PZG-C024
+    - PZG-C028
+    - PZG-C031
+  synthesis: "The case thesis (PZG-C001) is that recovering primary sources repeatedly made the artifacts more certain and the incriminating readings less certain. The new material extends that pattern rather than altering it: the Kline conflation resolves cleanly on two verified identities (PZG-E013, PZG-E014); the Silsby episode narrows to documented court outcomes plus AP parent-tracing (PZG-E018) against an uncorroborated spokesman assertion (PZG-E017); the Spirit Cooking email pairs authenticity with the only direct attendance account on record (PZG-E015); and the signage claims (PZG-C022, PZG-C023) get contemporaneous reporting that itself corrects an inflation the case's own draft carried (PZG-E011). Note that repetition across these exhibits is one mechanism demonstrated many times, not many independent proofs of a grand claim — but the mechanism is demonstrated independently in each family. The residue (PZG-C003, PZG-C005, PZG-C006, PZG-C024) stays honestly unresolved and weightless. Sensitivity: the single most load-bearing record is PZG-E008, the checksummed mechanical search showing the genuine FBI bulletin contains no food terms — it is the case's only decisive-strength negative over a claimed source. The verdict survives its removal: the pattern would still stand on PZG-E001, PZG-E009, PZG-E006, and PZG-E013/PZG-E014, though the food-code refutation would drop to well-sourced absence rather than demonstrated absence. Nothing here grades any person's conduct; the verdict concerns the documentary anatomy of the allegation."
+claimAssessments:
+  - claimId: PZG-C001
+    verdict: well_supported
+    reasoning: "Demonstrated case-by-case in this ledger: the hotdog email and its 15-years-earlier documented joke (PZG-C002), the \"$65,000\" hedge (PZG-C008), the cookout invitation (PZG-C007), the basement fork (PZG-C014), the masked-performer identification (PZG-C016), the codebook's missing provenance (PZG-C010), and the \"donations\" that were disclosed vendor payments (PZG-C012)."
+    confidence: high
+    treatment:
+      plainLanguage: The raw material was usually real — real emails, real posts, real payments. And checking the original, again and again, supplied the ordinary context the accusation said didn't exist. Both halves of that sentence matter.
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: "This is the case's central analytical finding, and it cuts both ways: it forbids \"it was all fabricated\" as firmly as it forbids treating artifact authenticity as interpretation accuracy."
+      strongestObjection: A pattern assembled from the claims that were checkable may not extend to those that were not; the residue (PZG-C005, PZG-C006's handkerchief design) resists mundane recovery precisely because the context is missing.
+      whatWouldChangeOurMind:
+        - A checked marquee claim where primary-source recovery STRENGTHENED the incriminating reading would break the pattern and be recorded as prominently as the corrections.
+  - claimId: PZG-C002
+    verdict: established
+    reasoning: "Both documents fetched and checked verbatim: the email with full State Department headers (\"I'm dreaming about your hotdog stand in Hawaii…\", in work banter about a rough season before Paris), and the 2000 profile (\"his biggest goal after the White House is to run a hot-dog stand in Hawaii\")."
+    confidence: high
+    treatment:
+      plainLanguage: The famous "coded" hotdog email is real. So is a newspaper profile from 2000 showing the phrase was a long-running family joke about retirement. A code reading requires the mundane referent not to exist; here it was in print fifteen years early.
+      importance: major
+      diagnosticity: high
+      diagnosticitySummary: "The cleanest single refutation of a marquee code reading in the corpus — and the template for testing the others: does the mundane referent predate the alleged code?"
+      strongestObjection: A longstanding private joke could in principle coexist with a coded usage; but that reading now requires positive evidence it never had, against a documented innocent referent it said didn't exist.
+      whatWouldChangeOurMind:
+        - Any pre-2016 law-enforcement or documentary attestation of the phrase as code.
+  - claimId: PZG-C003
+    verdict: established
+    reasoning: All three layers fetched and checked verbatim (emailids 32795 and 23561), including the realtor's original quoted inside Sandler's message. The commonly repeated version that collapses Sandler's parenthetical into the realtor's report misattributes it.
+    confidence: high
+    treatment:
+      plainLanguage: Who said what matters. The person who found the object described a cloth. The "pizza-related map" wording was the forwarder's guess. The owner shrugged. The object itself has never surfaced — so the design stays genuinely unexplained, at exactly that size.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: "The corpus's most durable small anomaly: authentic, odd, and unresolved — but its evidentiary ceiling is set by an unrecovered object and a forwarder's tentative description of it."
+      strongestObjection: '"Unexplained" is not "incriminating": a lost novelty handkerchief described secondhand cannot carry weight in any direction without the object or its product line being recovered.'
+      whatWouldChangeOurMind:
+        - Recovery of the object, its photograph, or its product provenance.
+  - claimId: PZG-C004
+    verdict: established
+    reasoning: Fetched and checked verbatim (emailid/46736), including the sender (the children's grandmother, by name and signature) and the full domestic-logistics context. Common retellings that put John Podesta at the event contradict the email's own text.
+    confidence: high
+    treatment:
+      plainLanguage: The unsettling-sounding sentence is real — written by the kids' grandmother, in a note about a farm weekend with transport, weather, and a heated pool. And the man the story was told about is in the "wish you could come" line, not the guest list.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: "Illustrates paraphrase inflation precisely: the authentic wording is awkward in isolation; the incriminating version required changing who was invited — a checkable, and checked, alteration."
+      strongestObjection: Contextual normalcy in the thread cannot logically exclude a hidden meaning — but it removes every positive reason the reading had, and the burden does not invert.
+      whatWouldChangeOurMind:
+        - Independent evidence assigning the phrase a non-domestic referent.
+  - claimId: PZG-C005
+    verdict: established
+    reasoning: Fetched with raw headers and checked verbatim (emailid/56492); date, recipients, subject, and terseness all confirmed.
+    confidence: high
+    treatment:
+      plainLanguage: "Three lines: a strange phrase, a Valentine's dinner question, a signature. Nothing in the email says what \"torture chamber\" meant. This case preserves it as exactly that — unexplained — rather than explaining it away or building on it."
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: "A referent-free phrase supports any theory equally, which is to say none: its evidentiary value is zero in every direction until the referent is recovered (the sender's calendar for 2014-01-30/31 is the live research route)."
+      strongestObjection: Treating unexplained fragments as significant is the exact mechanism this case documents; the honest state is unresolved-and-weightless, not unresolved-and-suggestive.
+      whatWouldChangeOurMind:
+        - Calendar or correspondence recovering the referent — in either direction.
+  - claimId: PZG-C006
+    verdict: established
+    reasoning: Fetched with raw headers and checked verbatim (emailid/56753; reply 6008). The absence of in-thread context is itself the verified fact.
+    confidence: high
+    treatment:
+      plainLanguage: The famous "wet works" line has no thread behind it — it IS the whole email. Sent on a night his candidate was losing a primary badly. Every claim about what it referred to is interpretation, because the source contains none.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "Bounds every reading equally: the assassination interpretation and the campaign-gallows-humor interpretation are both unsupported by the source's own text — a claim about the email can honestly go no further than that."
+      strongestObjection: '"No referent in-thread" does not mean "no referent": the correspondents knew what they meant; the record just does not say.'
+      whatWouldChangeOurMind:
+        - Recovery of the referenced prior conversation.
+  - claimId: PZG-C007
+    verdict: established
+    reasoning: Fetched and checked verbatim (emailid/26903), sender, venue, full text, and the decline.
+    confidence: high
+    treatment:
+      plainLanguage: Read the whole invitation and it's someone's annual office-friends cookout, kids welcome. The scary phrases were cropped out of a party email — from an event the supposed principal didn't even attend.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "A textbook case of context stripping: the isolated phrases versus the complete document, in one email."
+      strongestObjection: None of evidentiary substance; the objection to featuring it is editorial (piling on), answered by its role as the clearest context-stripping exhibit.
+      whatWouldChangeOurMind:
+        - Nothing plausible; the document is complete and self-explaining.
+  - claimId: PZG-C008
+    verdict: established
+    reasoning: The email fetched and checked verbatim in thread context; the sender, the hedge, and the joking thread all confirmed.
+    confidence: high
+    treatment:
+      plainLanguage: The viral version presents a dollar figure as a documented purchase. The source is one company employee guessing — "I think" — in an office-party email chain. The hedge didn't survive the retelling; the number did.
+      importance: major
+      diagnosticity: high
+      diagnosticitySummary: Paraphrase inflation in its purest form, with the full transmission chain recoverable — the model organism for the mechanism claims in this case.
+      strongestObjection: Burton was a former security professional whose guesses might track something real — but a hedged guess about an unnamed event remains a guess, and no expense record has ever surfaced.
+      whatWouldChangeOurMind:
+        - An actual procurement or expense record matching the claim.
+  - claimId: PZG-C009
+    verdict: established
+    reasoning: Email and attachment fetched natively (emailid/10037); the homecoming context and the hedge on the identification are the verified state of the record — an earlier version of this case's own brief overstated the ID and was corrected.
+    confidence: high
+    treatment:
+      plainLanguage: Real email, real photo, taken in the week two American journalists came home from imprisonment in North Korea. The identification of the child is a "possibly" — and this case keeps it at exactly that strength, because that is what the record supports.
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: With the hedged identification and the homecoming context, the artifact carries no weight for any Pizzagate proposition; it earns its place as a documented correction — including of our own draft.
+      strongestObjection: "An unidentified child in a circulated photo is precisely the kind of material this site handles minimally: the claim exists to pin the record's limits, not to extend them."
+      whatWouldChangeOurMind:
+        - On-the-record identification by the family or original photographer — which would still change nothing evidentially.
+  - claimId: PZG-C010
+    verdict: established
+    reasoning: 'The bulletin PDF was fetched, checksummed, text-extracted, and mechanically searched: zero occurrences of pizza, pasta, hotdog, or cheese. Its genuine contents (title, date, issuing unit, symbol descriptions) were verified verbatim. The narrow real fact that "cheese pizza" appears as CSAM slang in some offender contexts is a separate, later-documented proposition that does not source the dictionary.'
+    confidence: high
+    treatment:
+      plainLanguage: The real FBI document Pizzagate cited is about logos — triangles, hearts, a butterfly. Not one food word appears in it. The famous food dictionary was never in it, and nobody has ever produced an official source for it.
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: "The dictionary was the allegation's interpretive engine: every email reading depended on it. Its provenance failure is therefore load-bearing for the whole structure above it."
+      strongestObjection: Code systems need not appear in official documents to exist; but a claimed law-enforcement dictionary that law enforcement never documented, first attested in anonymous 2016 forums, carries the burden it has never met.
+      whatWouldChangeOurMind:
+        - Any pre-2016 official or documentary attestation of the food-word dictionary.
+  - claimId: PZG-C011
+    verdict: established
+    reasoning: Fetched and checked verbatim (live and Wayback); date and passages confirmed.
+    confidence: high
+    treatment:
+      plainLanguage: The friendship, the pizza parties, even the artist's name — all in a glossy magazine's home tour, seventeen months before anyone made them sinister. Openly published sociability is weak evidence of concealment.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: Real network density is what the record shows — and its pre-publicity openness is itself evidence about the concealment hypothesis, in the direction the allegation didn't want.
+      strongestObjection: Public sociability and concealed conduct are not mutually exclusive — but the inference from documented friendship to concealed crime is the association fallacy this case's mechanism claims document.
+      whatWouldChangeOurMind:
+        - Nothing about the profile itself; it is a fixed pre-controversy document.
+  - claimId: PZG-C012
+    verdict: established
+    reasoning: All three legacy filing images recovered (Wayback viewer + live docquery PDFs) and the modern records confirmed via the official FEC API, 2026-08-28. The $11,600/D468951 line is visible on the filing page reproduced as this case's Plate 2.
+    confidence: high
+    treatment:
+      plainLanguage: "Political groups really did pay the restaurant — it's in public election filings, labeled catering and room rental. Calling disclosed event invoices \"donations\" changed what they were. Also: the famous \"$11,500\" figure everyone copied was wrong; the filing says $11,600."
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: Confirms a real financial relationship — the early researchers were right that the payments existed — while the records themselves read as ordinary disclosed event spending, with no anomaly (false invoice, concealed recipient, routing) ever surfaced.
+      strongestObjection: Disclosed vendor payments cannot exclude undisclosed flows — but the allegation was about these payments, and these payments are what the filings say they are.
+      whatWouldChangeOurMind:
+        - "Any documented payment anomaly: services not rendered, concealed beneficiaries, structured amounts."
+  - claimId: PZG-C013
+    verdict: established
+    reasoning: Verified verbatim via Wayback capture of the 2004 piece; the Grannan passage and the precise Soliloquy VII description both checked.
+    confidence: high
+    treatment:
+      plainLanguage: The provocative art collection is real and was described in a major newspaper in 2004. Owning provocative art that museums also exhibit is not evidence of anything beyond taste — but pretending the collection was an internet invention is also wrong.
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: "Authentic-and-documented, with near-zero diagnostic value for any conduct claim: the same works carry National Gallery provenance, and aesthetic unease is not evidence. Kept because erasing it would be the debunker's version of context-stripping."
+      strongestObjection: Featuring private art tastes at all risks the aesthetics-as-evidence fallacy; the claim exists to pin what the record documents and to cap what it can imply.
+      whatWouldChangeOurMind:
+        - Nothing about the 2004 document; it is fixed.
+  - claimId: PZG-C014
+    verdict: established
+    reasoning: "Both prongs verified verbatim: the 2015 interview (\"Can them all, store them in the basement…\") and the 2013 article (\"…canned before trucking the jars to the basement at Buck's Fishing & Camping, Alefantis's other restaurant just a few steps down the block on Connecticut Avenue NW\") — the latter published three years before the dispute existed."
+    confidence: high
+    treatment:
+      plainLanguage: '"He said basement; then he said no basement" looked like a lie until the 2013 food story surfaced: the tomatoes were in the basement of his other restaurant down the street. Ambiguous wording, yes. Contradiction, no.'
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: One of the allegation's flagship "contradictions," resolved by a document that predates the motive to fabricate it — the chronology is what gives the resolution its force.
+      strongestObjection: The 2015 wording really was ambiguous — an honest account keeps the ambiguity that generated the dispute while recording its resolution.
+      whatWouldChangeOurMind:
+        - Documentation of storage practice contradicting the 2013 account.
+  - claimId: PZG-C015
+    verdict: well_supported
+    reasoning: 'Three captures verified via Wayback mirrors of the contemporaneous November 2016 archive.is snapshots (vipXE with the Centrolina comment; TS5mj "holiday joy."; aSoBL "Ok I love you. #michelleobama #pingpong"). One widely circulated capture code (BRC09) proved to be a Pastebin snapshot, not an Instagram post — recorded as such.'
+    confidence: moderate
+    treatment:
+      plainLanguage: The Instagram posts were real — the archives prove it. And in the most famous "tunnel" image, the caption thread itself says what it actually was. The primary artifact debunks its own myth.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "Establishes both the authenticity of the corpus and the misdescription mechanism: real images, wrong captions, and — in the original 2016 community itself — people correcting them in real time."
+      strongestObjection: Text-mode fetches cannot describe the photographs themselves; the captures establish existence, captions, and comments, not full visual content.
+      whatWouldChangeOurMind:
+        - Native-resolution recovery of the archived images for visual audit.
+  - claimId: PZG-C016
+    verdict: established
+    reasoning: DCist 2012 verified verbatim (lineup, that night's Comet booking, the comedy character); Harbert's Music and Politics article (2019) verified verbatim (roast "given by Kleinman to Sasha Lord"; masked act "part of Heavy Breathing's regular act"); Lord's production roster verified live.
+    confidence: high
+    treatment:
+      plainLanguage: The "sinister masked figure" was the band's keyboardist doing her usual bit — reviewed in the local press in 2012, when nobody had anything to insinuate. The identity swap at the heart of that story fails on pre-controversy print.
+      importance: major
+      diagnosticity: high
+      diagnosticitySummary: Identity conflation was one of the allegation's core assembly mechanisms; this is its cleanest documented instance, resolved by sources that predate any motive to construct a defense.
+      strongestObjection: The band's deliberately transgressive performance material is real and was contemporaneously disturbing to some viewers; correcting the identity claim neither sanitizes the aesthetic nor needs to.
+      whatWouldChangeOurMind:
+        - Native recovery of the original performance videos, which would settle the remaining content questions in either direction.
+  - claimId: PZG-C017
+    verdict: established
+    reasoning: The 39-page Form 990 was fetched and text-extracted; the officer table row reads verbatim "(7) MAX MACCOBY — 2.00 — DIRECTOR", and the filer is the U.S. nonprofit (EIN 65-1229309).
+    confidence: high
+    treatment:
+      plainLanguage: The "ran the orphanage" connection is, in the actual IRS filing, a volunteer board seat measured at two hours a week of the American fundraising charity. A real link — at a fraction of the circulated size.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "Documents the magnification mechanism on the network side: the link is real, the circulated size was not — and any chain built on it must carry the filing's version."
+      strongestObjection: Board service is a real association; the correction is of magnitude and role, not existence — both halves belong in the record.
+      whatWouldChangeOurMind:
+        - Primary documents showing operational (not board) involvement, which none of the recovered filings indicate.
+  - claimId: PZG-C021
+    verdict: established
+    reasoning: "The 1998 profile verified verbatim via Wayback (\"an old college pal of Podesta's brother Tony\"); the Miller Center oral history verified verbatim (\"his brother, Tony [Podesta], and I went to Japan together in the 1960s\"; of John: \"We got along\"). This case's own draft brief initially overstated the 1998 wording and was corrected — the correction is part of the record."
+    confidence: high
+    treatment:
+      plainLanguage: The friendship the theory needed — between Hastert and John Podesta — is, in the primary record, a college friendship with the other brother plus cordial professional relations. The retelling moved it one brother over.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: A second clean instance of magnification-in-retelling, resolved entirely by pre-controversy documents.
+      strongestObjection: Cordial relations with John are documented in the same sources; the correction concerns degree and which brother, not the existence of acquaintance.
+      whatWouldChangeOurMind:
+        - Primary documentation of a close John Podesta–Hastert friendship, which none of the recovered records show.
+  - claimId: PZG-C019
+    verdict: established
+    reasoning: Both USAO-DC press releases fetched live and checked verbatim; the attribution split (DOJ record vs. press characterization) is itself a verified finding of this case.
+    confidence: high
+    treatment:
+      plainLanguage: A believer went to check with a rifle. The government's own record covers what he did and what it cost him; the "he found nothing" summary comes from newspapers. Both are part of the record — from different sources, kept distinct here.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: "Narrow negative evidence: against an obvious, discoverable operation on-site that day — not a forensic clearance of anything broader, and this case grades it at exactly that width."
+      strongestObjection: An armed amateur's twenty minutes settle very little in either direction; the incident's chief evidentiary product is the danger the allegation created.
+      whatWouldChangeOurMind:
+        - Nothing about the DOJ record; it is fixed.
+  - claimId: PZG-C020
+    verdict: well_supported
+    reasoning: "A negative existence claim over a bounded search: the verified record assembled here (32-item ledger), the saturation-level discovery work that preceded it, and nine years of adversarial public scrutiny have produced none of the five evidence classes named. Bounded honestly: absence in the examined public record, not a proof of universal absence."
+    confidence: moderate
+    treatment:
+      plainLanguage: "After all the artifacts are authenticated and all the corrections are made, the thing the theory is about has never produced the kind of evidence that establishes crimes: no victim, no witness, no forensic finding, no money trail, no case file. Its absence, under this much scrutiny, is evidence."
+      importance: headline
+      diagnosticity: high
+      diagnosticitySummary: For an allegation of an operating network, the sustained absence of every conventional evidence class under maximal scrutiny is the single most probative fact in the case file — while remaining, per this site's rules, a statement about the record and never a verdict about persons.
+      strongestObjection: "Absence of evidence is bounded by where one could look: private records, sealed files, and unindexed archives are outside the searched space — which is why this claim names its bounds instead of overclaiming."
+      whatWouldChangeOurMind:
+        - Any authenticated instance of the five named evidence classes; this claim is constructed to fall immediately if one surfaces.
+  - claimId: PZG-C022
+    verdict: established
+    reasoning: "Both Wayback captures fetched and diffed (every logo filename replaced between the dates; both archived PNGs rendered and described); the owner's explanation and the removal verified in contemporaneous WaPo reporting. Precision note: the WaPo articles never mention an FBI symbol — the comparison came from an online reviewer alleging \"a symbol of child pornography\"; the FBI framing was added in circulation."
+    confidence: moderate
+    treatment:
+      plainLanguage: "The logo was real, it did look like nested triangles, and it really was changed within days of the accusations — all confirmed from the archived website itself. What that proves is a separate question: a small business scrubbing a suddenly notorious graphic is exactly what innocence would also do."
+      importance: major
+      diagnosticity: low
+      diagnosticitySummary: Visual resemblance between a pizza-slice logo and a bulletin symbol is abundant by chance in commercial graphics, and removal under harassment is evidence of harassment. The artifact is preserved because erasing it would be the debunker's version of context-stripping.
+      strongestObjection: None to the facts; the objection is to inference in either direction — the change proves neither signaling nor its absence.
+      whatWouldChangeOurMind:
+        - Pre-2016 design records showing the logo's commissioned origin would close even the residual question.
+  - claimId: PZG-C023
+    verdict: established
+    reasoning: Wayback CDX diff shows exactly one image disappearing between captures either side of November 2016; the archived PNG was rendered and described. The St. Jude connection rests on WaPo's reporting of the owners' account — attributed as such, since the page itself carries no caption.
+    confidence: moderate
+    treatment:
+      plainLanguage: "The hearts graphic was real (a children's-charity image, per the contemporaneous reporting), and it was taken down during the harassment wave. Same shape as the Besta story: authentic artifact, frightened removal, no evidentiary bridge to anything."
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: Nested hearts are among the most common motifs in commercial art; a family café's charity graphic resembling a bulletin symbol carries essentially no discriminating power.
+      strongestObjection: As with PZG-C022 — the facts are settled; only over-inference in either direction is contestable.
+      whatWouldChangeOurMind:
+        - Recovery of the graphic's design provenance (the fundraiser materials).
+  - claimId: PZG-C024
+    verdict: established
+    reasoning: The camera's existence (official DDOT list, "As of 01/31/2014") and TrafficLand's operational statements verified from the documents; the contemporaneous claim's existence is preserved via a December 2016 forum quotation carrying the original Voat thread identifier (v/pizzagate/1459306). The 2003 report on the system's pan-tilt-zoom details remains paywalled and is excluded until read.
+    confidence: moderate
+    treatment:
+      plainLanguage: The camera was real. The claim that it turned away is genuinely from the time, not a later invention. And it has never been either proven or disproven — while the system's cameras were routinely movable and nothing was recorded, so even a confirmed turn would prove little. That triple state — real, contemporaneous, unresolved-and-weak — is the honest entry.
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: "A movable camera may have moved: with routine operator repositioning and no recording, a confirmed view change would be weak evidence of anything, and its absence proves nothing either."
+      strongestObjection: Treating an unresolvable claim as forever-pending grants it unearned life; but closing it without the primary artifact would be the opposite error. It stays exactly this size.
+      whatWouldChangeOurMind:
+        - The original Voat post, camera frames, or a DDOT operator log for 2016-12-04.
+  - claimId: PZG-C025
+    verdict: established
+    reasoning: "Both Klines verified independently (2007 justice.gov release naming \"Special Litigation Counsels Hilary Axam and Andrew Kline\"; Veritas Law's live team page (theveritaslawfirm.com/our-team/) at the matching address), and the mirrored thread 5e3scw (2016-11-21) contains the correction verbatim: \"That Andrew Kline is not the one that worked for the Department of Justice.\""
+    confidence: high
+    treatment:
+      plainLanguage: Two lawyers, same name. The one on the pizza paperwork practices restaurant law; the one at DOJ prosecuted traffickers. The original investigators' own thread contains the correction — and also shows it being refused. Both facts are part of how this allegation survived its own debunking.
+      importance: major
+      diagnosticity: high
+      diagnosticitySummary: The cleanest documented instance of identity conflation — one of the three assembly mechanisms this case names — including the community catching it in real time and the correction failing to propagate.
+      strongestObjection: A same-name coincidence on trafficking-adjacent paperwork was worth checking — the failure was not the question but the refusal of the answer.
+      whatWouldChangeOurMind:
+        - Corporate records tying the DOJ attorney (rather than the Veritas attorney) to the LLC, which nothing recovered indicates.
+  - claimId: PZG-C026
+    verdict: established
+    reasoning: Email fetched live (emailid 15893, 2015-06-28); the attendance/never-met detail verified in the ARTnews interview (Russeth, 2016-11-04) — attributed to ARTnews, not the Guardian piece that merely links it.
+    confidence: moderate
+    treatment:
+      plainLanguage: The invitation was real; the artist is famous for macabre-titled performance work; and by her own contemporaneous account the man the story was told about never came and she'd never met him. The artifact survives; the version with John Podesta at the table does not.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: "Another instance of the person-swap mechanism: the authentic artifact concerns one brother; the circulated story required the other. Art-world provocation as evidence of crime is the aesthetics fallacy this case caps throughout."
+      strongestObjection: An artist's own account of who attended is testimony, not a guest log; it is also the only direct account on record, and nothing contradicts it.
+      whatWouldChangeOurMind:
+        - A contemporaneous attendee record contradicting the ARTnews account.
+  - claimId: PZG-C027
+    verdict: established
+    reasoning: Both emails fetched and quoted (emailid 19742, 2008-09-27; emailid 48531, 2008-10-04).
+    confidence: high
+    treatment:
+      plainLanguage: The restaurant really was a political venue — a documented fundraiser with a named speaker and a dollar figure. That's a real network fact, openly recorded at the time. The "nice pizza" line the internet found sinister is the host of a pizza restaurant apologizing for not feeding his speaker.
+      importance: major
+      diagnosticity: moderate
+      diagnosticitySummary: "Confirms genuine political embedding — the allegation's network map was often right — while the documents themselves read as ordinary campaign activity: invitations, a speech, a total, an apology about catering."
+      strongestObjection: None of substance; the record is complete and self-describing.
+      whatWouldChangeOurMind:
+        - Nothing plausible; fixed documents.
+  - claimId: PZG-C028
+    verdict: established
+    reasoning: 'The 2015 briefing verified verbatim (emailid 21136: "The Home of Tony Podesta / 2438 Belmont Rd., NW"); the 2016 event verified as at Belmont with Alefantis involvement via emailids 27029/53745/37543. Precision cap: the label "Pizza for Hillary" and the phrase "special guest chef" do not appear in the archive (which ends mid-March 2016) and are not used here.'
+    confidence: moderate
+    treatment:
+      plainLanguage: Two famous "fundraisers at the pizza place" were actually at a private home across town, with the restaurateur as a guest chef. The relationships are real; the venue in the retelling moved.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "A documented venue transposition — the magnification mechanism working on geography: each retelling moved the event to the more incriminating address."
+      strongestObjection: A WaPo line reporting a Clinton fundraiser physically at Comet exists in contemporaneous coverage; no primary event record matching it has been recovered, so that possibility stays open as exactly that.
+      whatWouldChangeOurMind:
+        - A primary invitation or FEC event record for a Clinton fundraiser physically at the restaurant.
+  - claimId: PZG-C029
+    verdict: established
+    reasoning: TIME (2016-04-28) verified verbatim including the fork quip and a second instance ("I don't want to be the meal"); the Politico office photo gallery and the 2009 Donner quote verified live. All pre-controversy.
+    confidence: moderate
+    treatment:
+      plainLanguage: Yes, the weird painting existed, in a national magazine, with the owner joking about it on the record — months before anyone was looking. Documented macabre humor in plain sight is the opposite of a hidden confession, and taste in dark art is evidence of taste.
+      importance: supporting
+      diagnosticity: low
+      diagnosticitySummary: "Zero discriminating power by design: openly published dark humor is equally expected under every hypothesis. Included because readers keep encountering the artifact and deserve its documentation — and its date."
+      strongestObjection: Featuring private aesthetics at all risks the taste-as-evidence fallacy; the claim exists to pin the artifact's reality and its pre-controversy publication, and to cap what it can imply.
+      whatWouldChangeOurMind:
+        - Nothing plausible; fixed publications.
+  - claimId: PZG-C030
+    verdict: well_supported
+    reasoning: "Court outcomes verified via CBS (charges dropped; illegal-travel conviction; time served — page carries no visible dateline, noted); the parent-tracing verified via the AP story (Vindicator archive, 2010-02-21: \"Callabas\" and the Citron slum); Puello's \"friends of the orphans of Haiti\" line verified in the Fox transcript and attributed to him as the group's then-spokesman."
+    confidence: moderate
+    treatment:
+      plainLanguage: "A serious episode with a much smaller legal ending than the story that circulated: charges dropped except arranging illegal travel, time served, and children who — per the AP — had living parents. The orphanage link that connected it to this case's network was one man's claim, not a record."
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "The source-fusion exhibit: real episode + real NPH board fact (PZG-C017) + a spokesman's unsupported orphanage claim were welded into a chain none of the parts supports. Under the living-persons rules this claim states court outcomes and attributions only."
+      strongestObjection: Reduced charges are a legal outcome, not a factual exoneration of worse intent — and the claim asserts neither; it pins what the record states.
+      whatWouldChangeOurMind:
+        - Haitian or U.S. court records beyond the reported outcomes.
+  - claimId: PZG-C031
+    verdict: established
+    reasoning: "The affidavit PDF itself was fetched (p. 7 quoted verbatim) via the reporting outlet's exposed file endpoint, corroborated by KBTX's reporting; a court/PACER copy remains the recovery target for the stronger label. Living-persons note: cited only for the FBI's slang statement; the defendant in that case is presumed innocent and this case asserts nothing about him."
+    confidence: moderate
+    treatment:
+      plainLanguage: 'One piece of the code story is real: "cheese pizza" genuinely appears as criminal slang in an FBI affidavit — from 2023, in an unrelated case. That makes the narrow fact true and the leap (therefore the 2016 dictionary was real, therefore the emails were code) exactly as unsupported as before.'
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "Sharpens the codebook analysis (PZG-C010) in both directions: the slang's reality shows the dictionary wasn't built from nothing; its 2023 unrelated-case provenance shows it never sourced the 2016 claims. The evidentiary test for any alleged code remains contextual, not lexical."
+      strongestObjection: A 2023 affidavit cannot speak to 2016 usage either way; the claim is scoped to exactly what the document states.
+      whatWouldChangeOurMind:
+        - Pre-2016 law-enforcement documentation of the broader dictionary (none has surfaced in nine years).
+  - claimId: PZG-C032
+    verdict: well_supported
+    reasoning: "The credit verified via Vimeo's own metadata and the filmmaker's portfolio; the show verified from Comet's archived newsletter (2016-09-15, $12, doors 9, all ages, with Coup Sauvage & The Snips and Governess). Bounded honestly: one documented appearance — a universal \"only ever\" is not provable from one page."
+    confidence: moderate
+    treatment:
+      plainLanguage: The video with the triangle was an L.A. filmmaker's work for a touring band that played the restaurant once, for twelve dollars at the door. "Frequent Comet band" was another magnification.
+      importance: supporting
+      diagnosticity: moderate
+      diagnosticitySummary: "Caps the venue-association chain: the visual-resemblance claim about the video (real motif, denied intent, design records unrecovered) hangs from a one-show booking, not a relationship."
+      strongestObjection: The motif's design intent remains genuinely unresolved (the decisive records would be the production files) — this claim scopes the venue link, not the symbol question.
+      whatWouldChangeOurMind:
+        - Production/design records for the video; documentation of additional Comet appearances.

@@ -1,0 +1,84 @@
+# Reviewed model tariffs, USD per million tokens. The spend ledger
+# (governance/spend.yaml) records the vendor's token counts for every call
+# regardless; it prices a call ONLY from a row here, and records usd: null
+# otherwise. Each row names where and when the price was read — a tariff is
+# provenance too. Never estimate; a null row is honest.
+#
+# Keys are the exact model ids the transport sends. Tool-call fees (web
+# search) are recorded as their own rows under `tools`, per call. Cache
+# rates matter: a research turn re-reads its whole context after every
+# tool result, and the ledger prices reads and writes at their own rates —
+# a model without them is priced at the base rate throughout.
+models:
+  # --- the house model (Fable 5.1, with a server-side fallback to Opus 5) ---
+  claude-fable-5-1:
+    inputPerMTok: 10
+    outputPerMTok: 50
+    cachedInputPerMTok: 0.25      # cache hits: 0.025× base on this model
+    cacheWritePerMTok: 12.5       # 5-minute cache write: 1.25× base
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+    checked: "2026-09-08"
+  # --- the fallback, the drafter's second option, and the panel's house seat --
+  claude-opus-5-5:
+    inputPerMTok: 4
+    outputPerMTok: 20
+    cachedInputPerMTok: 0.2       # cache hits: 0.05× base on this model
+    cacheWritePerMTok: 5          # 5-minute cache write: 1.25× base
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+    checked: "2026-09-22"
+  claude-opus-5:
+    inputPerMTok: 5
+    outputPerMTok: 25
+    cachedInputPerMTok: 0.5
+    cacheWritePerMTok: 6.25
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+    checked: "2026-09-08"
+  claude-sonnet-5:
+    inputPerMTok: 2
+    outputPerMTok: 10
+    cachedInputPerMTok: 0.2
+    cacheWritePerMTok: 2.5
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+    checked: "2026-09-08"
+  # --- the comparison research seat and the panel's OpenAI seat -------------
+  gpt-5.6-sol:
+    inputPerMTok: 4
+    outputPerMTok: 20
+    cachedInputPerMTok: 0.4
+    source: https://developers.openai.com/api/docs/pricing
+    checked: "2026-09-08"
+  # --- the other panel seats, read from their price pages on 2026-09-09 ------
+  gemini-3.8-flash:
+    inputPerMTok: 0.75            # paid tier through 2026-12-31; the page lists 1.50 from 2027-01-01 — re-read then
+    outputPerMTok: 3.75           # 7.50 from 2027-01-01
+    cachedInputPerMTok: 0.075     # 0.15 from 2027-01-01
+    source: https://ai.google.dev/gemini-api/docs/pricing
+    checked: "2026-09-09"
+  grok-4.5:
+    inputPerMTok: 2               # the under-200k-token context rate; a panel packet is ~60k tokens (the ≥200k rate is 4/12/0.60)
+    outputPerMTok: 6
+    cachedInputPerMTok: 0.3
+    source: https://docs.x.ai/docs/models
+    checked: "2026-09-09"
+  z-ai-glm-5-3-flash:
+    inputPerMTok: 0.15
+    outputPerMTok: 0.5
+    source: https://docs.venice.ai/overview/pricing
+    checked: "2026-09-09"
+  # --- the legacy OpenAI chat model (scripts/lib/llm.mjs, only when no Anthropic key) --
+  gpt-4o:
+    inputPerMTok: null
+    outputPerMTok: null
+    source: null
+    checked: null
+tools:
+  anthropic:web_search:
+    perCallUsd: 0.01
+    note: "$10 per 1,000 searches; results are billed as input tokens at the model rate; failed searches are not billed; web fetch has no per-call fee"
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+    checked: "2026-09-08"
+  openai:web_search:
+    perCallUsd: 0.01
+    note: "$10 per 1,000 calls, plus search content tokens at the model rate"
+    source: https://developers.openai.com/api/docs/pricing
+    checked: "2026-09-08"

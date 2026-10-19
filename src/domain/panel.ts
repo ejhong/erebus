@@ -1,18 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
-import {
-  crossModelSummary,
-  displayAssessment,
-  latestCheckPerModel,
-  loadAllCases,
-  type Ratification,
-} from "./load";
-import { loadArbiterRecords } from "./governance";
+import { crossModelSummary, displayAssessment, latestCheckPerModel, type Ratification } from "./standing.ts";
+import { loadAllCases } from "./load.ts";
+import { loadArbiterRecords } from "./governance.ts";
+import { seatKey } from "../lib/seat-key.mjs";
 import { site } from "../config/site";
-import type { AssessmentRun, AssessmentState } from "./schema";
+import type { AssessmentRun, AssessmentState } from "./schema.ts";
 
 /**
- * Derivations for the /panel page — the site's governance made visible.
+ * Derivations for the /operations page — the site's governance made visible.
  * Everything here is computed at build time from records that already
  * exist (assessment runs, ratification standings, harvested arbiter
  * verdicts, history); nothing is authored, so the page cannot drift from
@@ -24,10 +20,8 @@ export function seatName(model: string): string {
   return model.split("—")[0].split(", independent")[0].trim();
 }
 
-/** Stable key for a seat across label wordings (mirrors latestCheckPerModel). */
-export function seatKey(model: string): string {
-  return model.trim().split(/[\s,(]/)[0].toLowerCase();
-}
+/** Stable key for a seat across label wordings and model upgrades (shared with latestCheckPerModel). */
+export { seatKey };
 
 export interface CaseStanding {
   slug: string;
@@ -195,9 +189,9 @@ export function opsFeed(limit = 40): OpsEvent[] {
       kind: "arbiter",
       title: `Arbiter ${r.verdict === "pass" ? "passed" : "parked"} PR #${r.pr}${r.verdict === "park" && r.outcome === "merged" ? " — founder merged anyway (dry period)" : ""}`,
       detail: r.reason,
-      // Full seat-by-seat reasoning renders on this page (The gate);
-      // the PR itself stays one hop away as the source record.
-      href: `/panel/#arbiter-pr-${r.pr}`,
+      // Full seat-by-seat reasoning is on the verdict's own page; the PR
+      // itself stays one hop away as the source record.
+      href: `/operations/gate/${r.pr}/`,
       sourceHref: r.url,
       sourceLabel: `PR #${r.pr}`,
     });

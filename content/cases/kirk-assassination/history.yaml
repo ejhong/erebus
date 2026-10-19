@@ -2,487 +2,201 @@
 
 - date: "2026-08-25"
   change: >-
-    Case launched: 19 featured claims, evidence ledger and source registry
-    built from independently verified citations, research agenda of eleven
-    decisive tests, and overview article. Constructed from the founder's
-    research brief (casework/kirk/) with every citation re-verified against
-    the live primary source before entry; the brief itself is not cited
-    anywhere, per casework policy. All records carry ai_extracted
-    provenance; nothing has been human-reviewed yet, and no assessment has
-    been ratified.
+    Case launched: 19 featured claims, evidence ledger and source registry built from independently verified citations, research agenda of eleven decisive tests, and overview article. Constructed from the founder's research brief (casework/kirk/) with every citation re-verified against the live primary source before entry; the brief itself is not cited anywhere, per casework policy. All records carry ai_extracted provenance; nothing has been human-reviewed yet, and no assessment has been ratified.
   reason: >-
-    First case on the site; chosen by the founder as the pilot for handling
-    unofficial and contested sources under the living-persons rules.
+    First case on the site; chosen by the founder as the pilot for handling unofficial and contested sources under the living-persons rules.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-25"
   change: >-
-    Wave-2 intake from the founder-supplied whokilledck.com compilation:
-    all ~45 items triaged (ledger in casework/kirk/); four new featured
-    claims (the AES procurement/explosion connection KRK-C025, the
-    unpreserved surrender video KRK-C026, the Kent halt statement
-    KRK-C027, the Zinn pre-arrangement question KRK-C028), three new
-    catalog leads (KRK-C029–C031), thirteen evidence records
-    (KRK-E038–E050), sixteen sources, and research entry KRK-R012. Key
-    verification outcomes recorded in both directions: the federal
-    procurement record and facility explosion verified against primary
-    records; the theory-origin timeline corrected by archive forensics
-    (public September 20, not October 3–8); the camera-ban and
-    video-only-appearance assertions contradicted by the court record;
-    the aircraft-passenger and Israeli-devices assertions found to be
-    sourceless or pseudonymous-only. One compilation cluster excluded
-    under the living-persons rules (photo-interpretation insinuations
-    about a named private individual).
+    Wave-2 intake from the founder-supplied whokilledck.com compilation: all ~45 items triaged (ledger in casework/kirk/); four new featured claims (the AES procurement/explosion connection KRK-C025, the unpreserved surrender video KRK-C026, the Kent halt statement KRK-C027, the Zinn pre-arrangement question KRK-C028), three new catalog leads (KRK-C029–C031), thirteen evidence records (KRK-E038–E050), sixteen sources, and research entry KRK-R012. Key verification outcomes recorded in both directions: the federal procurement record and facility explosion verified against primary records; the theory-origin timeline corrected by archive forensics (public September 20, not October 3–8); the camera-ban and video-only-appearance assertions contradicted by the court record; the aircraft-passenger and Israeli-devices assertions found to be sourceless or pseudonymous-only. One compilation cluster excluded under the living-persons rules (photo-interpretation insinuations about a named private individual).
   reason: >-
-    Founder directed that everything raised in the compilation be
-    addressed; each item was verified at primary sources before entry, or
-    recorded as an honestly-labeled lead where no primary source exists.
+    Founder directed that everything raised in the compilation be addressed; each item was verified at primary sources before entry, or recorded as an honestly-labeled lead where no primary source exists.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-25"
   change: >-
-    Wave-3 intake completing the compilation triage: featured claim
-    KRK-C032 (the screwdriver "abandonment" claim — premise verified,
-    abandonment contradicted by hearing testimony), catalog leads
-    KRK-C033–C036 (Google Trends searches; the "they're going to kill me"
-    messages; the rejected-invitation and funding-call allegations — each
-    anchored with its on-record counter-assertions stated), evidence
-    records KRK-E053–E056 (the Patel announcement; the hearing
-    presentation of the screwdriver DNA; AES's archived capability pages;
-    the Information's zero screwdriver mentions, verified against the
-    primary filing), and seven sources. Independence groups mark the
-    Grayzone anonymous-friend accounts and Owens final-days accounts as
-    non-independent clusters. Amended same day: KRK-C032 reworded to a
-    single proposition and the dual-document evidence record split so the
-    primary filing carries its own observation — construction defects
-    raised in pre-merge code review of this change's pull request. (This
-    describes review of the change itself; the case's ASSESSMENT remains
-    an unratified AI draft — no cross-model check runs exist yet.)
+    Wave-3 intake completing the compilation triage: featured claim KRK-C032 (the screwdriver "abandonment" claim — premise verified, abandonment contradicted by hearing testimony), catalog leads KRK-C033–C036 (Google Trends searches; the "they're going to kill me" messages; the rejected-invitation and funding-call allegations — each anchored with its on-record counter-assertions stated), evidence records KRK-E053–E056 (the Patel announcement; the hearing presentation of the screwdriver DNA; AES's archived capability pages; the Information's zero screwdriver mentions, verified against the primary filing), and seven sources. Independence groups mark the Grayzone anonymous-friend accounts and Owens final-days accounts as non-independent clusters. Amended same day: KRK-C032 reworded to a single proposition and the dual-document evidence record split so the primary filing carries its own observation — construction defects raised in pre-merge code review of this change's pull request. (This describes review of the change itself; the case's ASSESSMENT remains an unratified AI draft — no cross-model check runs exist yet.)
   reason: >-
-    Remaining 'verify' items from the whokilledck triage ledger, each
-    checked at primary or archived sources; assertion-versus-denial pairs
-    recorded symmetrically per §3.11.
+    Remaining 'verify' items from the whokilledck triage ledger, each checked at primary or archived sources; assertion-versus-denial pairs recorded symmetrically per §3.11.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-26"
   change: >-
-    Case retitled to name its subject directly rather than its conclusion.
-    The previous titles were evocative but each asserted the case's own
-    finding in the most prominent position on the page, before a reader
-    reached any graded claim or source — a conclusion presented without the
-    evidence, label, or uncertainty that every other assertion on the site
-    has to carry. The clearest instance was this site's first case, whose
-    title asserted the single-shot mechanism that the case exists to grade
-    and does not grade as established.
+    Case retitled to name its subject directly rather than its conclusion. The previous titles were evocative but each asserted the case's own finding in the most prominent position on the page, before a reader reached any graded claim or source — a conclusion presented without the evidence, label, or uncertainty that every other assertion on the site has to carry. The clearest instance was this site's first case, whose title asserted the single-shot mechanism that the case exists to grade and does not grade as established.
 
-    Titles now name the event; subtitles continue to carry the specific
-    question, and findings stay where they belong — in claims that are
-    graded, sourced, and revisable.
+    Titles now name the event; subtitles continue to carry the specific question, and findings stay where they belong — in claims that are graded, sourced, and revisable.
   reason: >-
-    Founder direction, 2026-08-26. Applied to all three cases together
-    rather than only the new ones, since leaving one conclusion-asserting
-    title would be incoherent.
-  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
-  aiAssisted: true
-  kind: content
-
-
-- date: "2026-08-26"
-  change: >-
-    Added catalog claim KRK-C037 (whether the FBI's director-level public
-    role in a state-jurisdiction homicide exceeded its typical role in
-    comparable cases), its source record (the FBI director's September
-    12, 2025 remarks, archive-verified), and research item KRK-R013
-    naming the pre-registered base-rate study that can grade it.
-  reason: >-
-    Founder-raised circulating claim, 2026-08-26. Decomposed per the
-    method: the observable half is anchored to the director's own words;
-    the comparative half enters ungraded with its truth condition tied to
-    the KRK-R013 study, alongside the on-record deflationary reading.
+    Founder direction, 2026-08-26. Applied to all three cases together rather than only the new ones, since leaving one conclusion-asserting title would be incoherent.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-26"
   change: >-
-    Study KRK-S001 collected: fifteen comparable venues tabulated under
-    the criteria frozen this morning (hash-verified unchanged), with two
-    aggregate findings entering the ledger (KRK-E057, KRK-E058) via the
-    study's workpaper source. On speed alone the UVU alteration is not an
-    outlier; on sequence and authority it is unmatched in the table.
+    Added catalog claim KRK-C037 (whether the FBI's director-level public role in a state-jurisdiction homicide exceeded its typical role in comparable cases), its source record (the FBI director's September 12, 2025 remarks, archive-verified), and research item KRK-R013 naming the pre-registered base-rate study that can grade it.
   reason: >-
-    Collection phase of the site's first pre-registered study, per the
-    two-PR discipline; executes KRK-R011.
+    Founder-raised circulating claim, 2026-08-26. Decomposed per the method: the observable half is anchored to the director's own words; the comparative half enters ungraded with its truth condition tied to the KRK-R013 study, alongside the on-record deflationary reading.
+  actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
+  aiAssisted: true
+  kind: content
+
+- date: "2026-08-26"
+  change: >-
+    Study KRK-S001 collected: fifteen comparable venues tabulated under the criteria frozen this morning (hash-verified unchanged), with two aggregate findings entering the ledger (KRK-E057, KRK-E058) via the study's workpaper source. On speed alone the UVU alteration is not an outlier; on sequence and authority it is unmatched in the table.
+  reason: >-
+    Collection phase of the site's first pre-registered study, per the two-PR discipline; executes KRK-R011.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   kind: content
-  change: Updated the research agenda item proposing a base-rate study of
-    scene-release-to-alteration intervals (KRK-R011) to record that the study
-    has since been carried out across fifteen comparable venues, with the UVU
-    courtyard found unremarkable on speed but unmatched on authorization
-    sequence. The item now describes the remaining work — extending the
-    population and sourcing the rows whose formal scene-release dates public
-    reporting does not record. No changes were needed to the overview article.
-  reason: The agenda proposed as future work a study the evidence records now
-    report as completed, which would have misled readers about what this case
-    still needs.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: Updated the research agenda item proposing a base-rate study of scene-release-to-alteration intervals (KRK-R011) to record that the study has since been carried out across fifteen comparable venues, with the UVU courtyard found unremarkable on speed but unmatched on authorization sequence. The item now describes the remaining work — extending the population and sourcing the rows whose formal scene-release dates public reporting does not record. No changes were needed to the overview article.
+  reason: The agenda proposed as future work a study the evidence records now report as completed, which would have misled readers about what this case still needs.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: "2026-08-26"
   change: >-
-    Study KRK-S003 supersedes KRK-S001: the frozen protocol's third
-    searcher completed after publication and surfaced one candidate the
-    published table had missed — Emanuel AME Church (bullet-scarred wall
-    panels cut out by day three, services on day four,
-    church-authorized). Per the append-only rule the published rows were
-    never edited; the successor carries the full table plus the new row,
-    the findings are refined accordingly, and the ledger's two evidence
-    records re-point to the superseding workpaper.
+    Study KRK-S003 supersedes KRK-S001: the frozen protocol's third searcher completed after publication and surfaced one candidate the published table had missed — Emanuel AME Church (bullet-scarred wall panels cut out by day three, services on day four, church-authorized). Per the append-only rule the published rows were never edited; the successor carries the full table plus the new row, the findings are refined accordingly, and the ledger's two evidence records re-point to the superseding workpaper.
   reason: >-
-    Coverage correction under the supersession mechanism; the discovery
-    and its native verification are recorded on the KRK-S001 collection
-    PR.
+    Coverage correction under the supersession mechanism; the discovery and its native verification are recorded on the KRK-S001 collection PR.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   change: >-
-    Study KRK-S002 collection published: thirteen comparable
-    state-jurisdiction cases verified natively under the criteria frozen
-    earlier the same day (hash 85af367d00c3). Two evidence records enter
-    the ledger on KRK-C037 — KRK-E059 (supports: no comparable case has
-    federal public fronting above special-agent-in-charge rank; the
-    director-level on-scene role is unmatched) and KRK-E060 (qualifies:
-    FBI participation itself is universal and carries no information).
-    One candidate surfaced post-freeze by the third searcher (Highland
-    Park 2022) was natively verified and included, with the discovery
-    path recorded on the row. Workpaper source SRC-KRK-S002 added.
+    Study KRK-S002 collection published: thirteen comparable state-jurisdiction cases verified natively under the criteria frozen earlier the same day (hash 85af367d00c3). Two evidence records enter the ledger on KRK-C037 — KRK-E059 (supports: no comparable case has federal public fronting above special-agent-in-charge rank; the director-level on-scene role is unmatched) and KRK-E060 (qualifies: FBI participation itself is universal and carries no information). One candidate surfaced post-freeze by the third searcher (Highland Park 2022) was natively verified and included, with the discovery path recorded on the row. Workpaper source SRC-KRK-S002 added.
   reason: >-
-    KRK-C037 makes a comparative claim ("exceeded typical") that only a
-    base rate can ground; the frozen protocol committed the comparison
-    set and variables before any table row existed, so the answer —
-    participation is universal and uninformative, but the rank and
-    function of the public fronting is unmatched — was fixed by the
-    evidence, not chosen after it.
+    KRK-C037 makes a comparative claim ("exceeded typical") that only a base rate can ground; the frozen protocol committed the comparison set and variables before any table row existed, so the answer — participation is universal and uninformative, but the rank and function of the public fronting is unmatched — was fixed by the evidence, not chosen after it.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   kind: content
-  change: "Research item KRK-R013 was rewritten to record that its base-rate
-    tabulation of federal public-facing roles has now been carried out across
-    thirteen comparable state-jurisdiction cases, with FBI participation
-    universal, day-one briefings fronted by local or state officials in every
-    case, and federal podium appearances peaking at special-agent-in-charge rank
-    — leaving this case's director-level fronting unmatched in the table. The
-    item now proposes only the remaining work: extending the population and
-    sourcing the stated legal nexus and role depth for each case. No changes
-    were required to the overview article."
-  reason: The item proposed as future work a study the evidence records now report
-    as completed, which would mislead readers about what the case still lacks.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: "Research item KRK-R013 was rewritten to record that its base-rate tabulation of federal public-facing roles has now been carried out across thirteen comparable state-jurisdiction cases, with FBI participation universal, day-one briefings fronted by local or state officials in every case, and federal podium appearances peaking at special-agent-in-charge rank — leaving this case's director-level fronting unmatched in the table. The item now proposes only the remaining work: extending the population and sourcing the stated legal nexus and role depth for each case. No changes were required to the overview article."
+  reason: The item proposed as future work a study the evidence records now report as completed, which would mislead readers about what the case still lacks.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: 2026-08-26
   change: >-
-    Study KRK-S004 pre-registered (freeze only, zero rows): inconclusive
-    outcomes in firearm-toolmark black-box studies, criteria hash
-    3fa1c832219a. New research item KRK-R014 added. The study reads the
-    ATF examiner's inconclusive comparison (KRK-C004) against the
-    published ground-truth performance of the method itself; collection
-    follows in a separate PR under the frozen criteria.
+    Study KRK-S004 pre-registered (freeze only, zero rows): inconclusive outcomes in firearm-toolmark black-box studies, criteria hash 3fa1c832219a. New research item KRK-R014 added. The study reads the ATF examiner's inconclusive comparison (KRK-C004) against the published ground-truth performance of the method itself; collection follows in a separate PR under the frozen criteria.
   reason: >-
-    The case's central forensic dispute rests on one word —
-    "inconclusive" — that both public misreadings inflate in opposite
-    directions. The method's own black-box literature measures how often
-    that word appears when the truth is known; freezing the study
-    criteria before collection fixes what counts as evidence before
-    anyone sees which way it cuts.
+    The case's central forensic dispute rests on one word — "inconclusive" — that both public misreadings inflate in opposite directions. The method's own black-box literature measures how often that word appears when the truth is known; freezing the study criteria before collection fixes what counts as evidence before anyone sees which way it cuts.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   change: >-
-    Study KRK-S005 pre-registered (freeze only, zero rows): the
-    statement-discrepancy ledger of KRK-R010 brought under the two-PR
-    freeze discipline. The frozen criteria fix which statements enter
-    (attributable, checkable, factual, public) and a pure
-    record-comparison outcome scale with no intent grades of any kind —
-    the panel's review of the first draft flagged that an intent grade
-    on sworn testimony would be a perjury verdict on a named living
-    person, and the scale was corrected before the freeze merged.
-    KRK-R010's rubric was aligned in the same change. Collection
-    follows in a separate PR.
+    Study KRK-S005 pre-registered (freeze only, zero rows): the statement-discrepancy ledger of KRK-R010 brought under the two-PR freeze discipline. The frozen criteria fix which statements enter (attributable, checkable, factual, public) and a pure record-comparison outcome scale with no intent grades of any kind — the panel's review of the first draft flagged that an intent grade on sworn testimony would be a perjury verdict on a named living person, and the scale was corrected before the freeze merged. KRK-R010's rubric was aligned in the same change. Collection follows in a separate PR.
   reason: >-
-    Statement selection is where a discrepancy ledger goes wrong —
-    curated pickings can manufacture either a coordinated-lies narrative
-    or an everything-is-fine one. Freezing the population and the
-    grading scale before collection, with the panel judging the criteria
-    blind to the outcomes, is the same protection the base-rate studies
-    already carry, applied to the most sensitive record this case keeps
-    about named living people.
+    Statement selection is where a discrepancy ledger goes wrong — curated pickings can manufacture either a coordinated-lies narrative or an everything-is-fine one. Freezing the population and the grading scale before collection, with the panel judging the criteria blind to the outcomes, is the same protection the base-rate studies already carry, applied to the most sensitive record this case keeps about named living people.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   change: >-
-    Study KRK-S004 collection published: seven ground-truth studies of
-    firearm-toolmark examination verified natively against primary
-    documents under the criteria frozen earlier the same day (hash
-    3fa1c832219a). Two evidence records enter the ledger on the
-    ballistics claims — KRK-E061 (qualifies KRK-C003/C004: inconclusive
-    is a standard non-error outcome; neither public misreading
-    survives) and KRK-E062 (qualifies KRK-C004: the measured asymmetry
-    toward different-source does not transfer to fragments, bounding
-    the ATF result to little diagnostic weight in either direction).
-    Three post-freeze candidates surfaced by searchers (Guyll 2023
-    PNAS and Hicklin 2024, the only damaged-bullet study, by the
-    OpenAI run; Fadul 2011, the closed-set exemplar, by the Gemini
-    run) were natively verified and included with discovery paths on
-    the rows. Workpaper source SRC-KRK-S004 added.
+    Study KRK-S004 collection published: seven ground-truth studies of firearm-toolmark examination verified natively against primary documents under the criteria frozen earlier the same day (hash 3fa1c832219a). Two evidence records enter the ledger on the ballistics claims — KRK-E061 (qualifies KRK-C003/C004: inconclusive is a standard non-error outcome; neither public misreading survives) and KRK-E062 (qualifies KRK-C004: the measured asymmetry toward different-source does not transfer to fragments, bounding the ATF result to little diagnostic weight in either direction). Three post-freeze candidates surfaced by searchers (Guyll 2023 PNAS and Hicklin 2024, the only damaged-bullet study, by the OpenAI run; Fadul 2011, the closed-set exemplar, by the Gemini run) were natively verified and included with discovery paths on the rows. Workpaper source SRC-KRK-S004 added.
   reason: >-
-    The case's central forensic dispute turns on what "inconclusive"
-    means; the method's own black-box literature measures that when
-    ground truth is known. The frozen criteria fixed the population
-    before any rate was looked up, so the answer — common, non-error,
-    asymmetric on intact specimens, quality-dominated on damaged ones —
-    was set by the literature, not chosen after it.
+    The case's central forensic dispute turns on what "inconclusive" means; the method's own black-box literature measures that when ground truth is known. The frozen criteria fixed the population before any rate was looked up, so the answer — common, non-error, asymmetric on intact specimens, quality-dominated on damaged ones — was set by the literature, not chosen after it.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   kind: content
-  change: "Updated the ballistics base-rate research item (KRK-R014) from a
-    proposal to a report of completed work: the tabulation of ground-truth
-    firearm-toolmark studies has been carried out across six studies, finding
-    inconclusive to be a standard non-error response category and finding that
-    the different-source asymmetry does not transfer to damaged fragments. The
-    remaining work is now stated as extending the tabulation and sourcing
-    additional damaged-specimen designs. The overview article required no
-    changes."
-  reason: The item proposed a study that the newly entered evidence records report
-    as already executed, which would have misled readers about what this case
-    still lacks.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: "Updated the ballistics base-rate research item (KRK-R014) from a proposal to a report of completed work: the tabulation of ground-truth firearm-toolmark studies has been carried out across six studies, finding inconclusive to be a standard non-error response category and finding that the different-source asymmetry does not transfer to damaged fragments. The remaining work is now stated as extending the tabulation and sourcing additional damaged-specimen designs. The overview article required no changes."
+  reason: The item proposed a study that the newly entered evidence records report as already executed, which would have misled readers about what this case still lacks.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: 2026-08-26
   change: >-
-    Study KRK-S005 collection published: eleven checkable public
-    statements by event personnel and officials, graded as document
-    comparisons under the criteria frozen earlier the same day (hash
-    85874a57b2bf), each row anchored to a primary or previously verified
-    ledger source. Two evidence records enter the ledger — KRK-E063
-    (qualifies KRK-C011/C012: the media-custody account partially
-    corroborated, the original-cards gap intact) and KRK-E064 (qualifies
-    KRK-C016/C017: no aggregate pattern in either direction; one
-    court-adjudicated violation, one contradicted custody announcement,
-    most first-day factual accounts corroborated). One new primary
-    source added (the day-of joint-briefing transcript,
-    SRC-REV-PRESSER-0910-2025) and the workpaper source SRC-KRK-S005.
-    The OpenAI searcher's brief was discarded in full as fabricated —
-    invented speakers, invented exhibits, one row inverting the verified
-    inconclusive ballistics result — and is documented in the study's
-    limitations; native verification against primary documents is why it
-    reached the limitations section instead of the site.
+    Study KRK-S005 collection published: eleven checkable public statements by event personnel and officials, graded as document comparisons under the criteria frozen earlier the same day (hash 85874a57b2bf), each row anchored to a primary or previously verified ledger source. Two evidence records enter the ledger — KRK-E063 (qualifies KRK-C011/C012: the media-custody account partially corroborated, the original-cards gap intact) and KRK-E064 (qualifies KRK-C016/C017: no aggregate pattern in either direction; one court-adjudicated violation, one contradicted custody announcement, most first-day factual accounts corroborated). One new primary source added (the day-of joint-briefing transcript, SRC-REV-PRESSER-0910-2025) and the workpaper source SRC-KRK-S005. The OpenAI searcher's brief was discarded in full as fabricated — invented speakers, invented exhibits, one row inverting the verified inconclusive ballistics result — and is documented in the study's limitations; native verification against primary documents is why it reached the limitations section instead of the site.
   reason: >-
-    The pre-registered discipline did its job twice in one study: the
-    frozen population stopped statement cherry-picking, and the
-    never-cite-briefs rule stopped a fabricated searcher table at the
-    door. What publishes is the boring, load-bearing truth the case
-    needed on the record: graded statement by statement, officials'
-    accounts mostly held, the exceptions are exactly documented, and no
-    pile-up narrative survives in either direction.
+    The pre-registered discipline did its job twice in one study: the frozen population stopped statement cherry-picking, and the never-cite-briefs rule stopped a fabricated searcher table at the door. What publishes is the boring, load-bearing truth the case needed on the record: graded statement by statement, officials' accounts mostly held, the exceptions are exactly documented, and no pile-up narrative survives in either direction.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   change: >-
-    The case article now carries the four pre-registered studies in the
-    featured layer: the scene-release fork (KRK-S001/S003) enters the
-    custody file, stating both branches and the mundane explanation the
-    table cannot exclude, and elevating the formal release date as the
-    record that selects between pre-fixed meanings; the inconclusive
-    base rate (KRK-S004) enters the ballistics section, bounding the
-    ATF result against the method's own published performance; the
-    federal-role table (KRK-S002, via KRK-C037) and the statement
-    ledger (KRK-S005) enter the institutions section, with the
-    deflationary halves stated as prominently as the anomalies. The
-    what-would-settle-it list gains the scene-release record, and the
-    article now points to the studies shelf.
+    The case article now carries the four pre-registered studies in the featured layer: the scene-release fork (KRK-S001/S003) enters the custody file, stating both branches and the mundane explanation the table cannot exclude, and elevating the formal release date as the record that selects between pre-fixed meanings; the inconclusive base rate (KRK-S004) enters the ballistics section, bounding the ATF result against the method's own published performance; the federal-role table (KRK-S002, via KRK-C037) and the statement ledger (KRK-S005) enter the institutions section, with the deflationary halves stated as prominently as the anomalies. The what-would-settle-it list gains the scene-release record, and the article now points to the studies shelf.
   reason: >-
-    The studies were collected, panel-reviewed, and ledger-bearing, but
-    the featured article still argued from adjectives where tables now
-    exist. The interface rules require the accessible layer to carry
-    what would change our mind prominently; the release-date fork and
-    the inconclusive bound are precisely that, and withholding them
-    from the article while publishing them in the ledger would have
-    made the summary lag the record.
+    The studies were collected, panel-reviewed, and ledger-bearing, but the featured article still argued from adjectives where tables now exist. The interface rules require the accessible layer to carry what would change our mind prominently; the release-date fork and the inconclusive bound are precisely that, and withholding them from the article while publishing them in the ledger would have made the summary lag the record.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   kind: content
-  change: Corrected the count of ground-truth firearm-toolmark studies behind the
-    inconclusive base rate from seven to six, matching the evidence record,
-    which tabulates six such studies from 2014-2024. No other editorial changes
-    were required.
-  reason: The article stated a study count the evidence record contradicts, and a
-    reader checking the base-rate figure against the ledger would have found a
-    discrepancy.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: Corrected the count of ground-truth firearm-toolmark studies behind the inconclusive base rate from seven to six, matching the evidence record, which tabulates six such studies from 2014-2024. No other editorial changes were required.
+  reason: The article stated a study count the evidence record contradicts, and a reader checking the base-rate figure against the ledger would have found a discrepancy.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: 2026-08-26
   kind: content
-  change: Corrected the venue-count in the scene-alteration base-rate research
-    item (KRK-R011), which still described the study as carried out at fifteen
-    venues and proposed extending it beyond that. The current evidence records
-    for the study report an eighteen-venue table, so both mentions now read
-    eighteen; the outstanding work — sourcing the rows whose formal release
-    dates public reporting does not record — is unchanged. No changes were
-    required to the overview article, which already reflects the eighteen-venue
-    figure.
-  reason: The research agenda proposed as future work an extension of the venue
-    table that the evidence records show has already been completed, which would
-    have misdirected a reader about what remains to be done.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: Corrected the venue-count in the scene-alteration base-rate research item (KRK-R011), which still described the study as carried out at fifteen venues and proposed extending it beyond that. The current evidence records for the study report an eighteen-venue table, so both mentions now read eighteen; the outstanding work — sourcing the rows whose formal release dates public reporting does not record — is unchanged. No changes were required to the overview article, which already reflects the eighteen-venue figure.
+  reason: The research agenda proposed as future work an extension of the venue table that the evidence records show has already been completed, which would have misdirected a reader about what remains to be done.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: "2026-08-27"
   kind: housekeeping
   change: >-
-    Cover art replaced under style-e2, "the place and its record": the
-    case's place painted at a quiet hour, dissolving into a ghosted
-    hand-drawn survey plat of itself, in a palette drawn from the place
-    and hour rather than a shared house wash. The image depicts the place
-    only — never the event, never a person — is unmistakably a painting,
-    and is credited as AI-generated editorial artwork with its full
-    generation prompt recorded in images.yaml. The superseded style-e1
-    cover (abstract instrument-chart diagram) and its provenance remain in
-    this repository's history.
+    Cover art replaced under style-e2, "the place and its record": the case's place painted at a quiet hour, dissolving into a ghosted hand-drawn survey plat of itself, in a palette drawn from the place and hour rather than a shared house wash. The image depicts the place only — never the event, never a person — is unmistakably a painting, and is credited as AI-generated editorial artwork with its full generation prompt recorded in images.yaml. The superseded style-e1 cover (abstract instrument-chart diagram) and its provenance remain in this repository's history.
   reason: >-
-    Founder direction, 2026-08-27: the style-e1 covers were beautiful but
-    anonymous — the same cold abstraction on every case, illustrating the
-    site's method rather than any case. See docs/DECISIONS.md and
-    docs/IMAGES.md (style-e2) for the register change, which ships with a
-    founder amendment to AGENTS.md §7.
+    Founder direction, 2026-08-27: the style-e1 covers were beautiful but anonymous — the same cold abstraction on every case, illustrating the site's method rather than any case. See docs/DECISIONS.md and docs/IMAGES.md (style-e2) for the register change, which ships with a founder amendment to AGENTS.md §7.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent), directed by the founder"
   aiAssisted: true
 
 - date: "2026-09-10"
   change: >-
-    Study KRK-S006 pre-registered (freeze only, zero rows): bullet
-    retention in a rifle-shot neck — scenario-conditional base rates for
-    a .30-06 at 130-200 m, criteria hash ab8dc1418a35. The study will
-    table what published wound-ballistics, forensic, hunting and
-    anthropometric sources say a bullet of each construction does over a
-    neck-length path with and without a bone strike, and then place the
-    public record of this case (KRK-C006, KRK-C007, KRK-C018) in that
-    table; collection follows in a separate PR under the frozen criteria.
-    Disclosure recorded in the study header: the criteria were frozen in
-    the operator's session before any search, but the collection was
-    carried out in the same session before the freeze PR was opened.
+    Study KRK-S006 pre-registered (freeze only, zero rows): bullet retention in a rifle-shot neck — scenario-conditional base rates for a .30-06 at 130-200 m, criteria hash ab8dc1418a35. The study will table what published wound-ballistics, forensic, hunting and anthropometric sources say a bullet of each construction does over a neck-length path with and without a bone strike, and then place the public record of this case (KRK-C006, KRK-C007, KRK-C018) in that table; collection follows in a separate PR under the frozen criteria. Disclosure recorded in the study header: the criteria were frozen in the operator's session before any search, but the collection was carried out in the same session before the freeze PR was opened.
   reason: >-
-    Founder direction, 2026-09-10 (in session): a desk study of whether
-    a .30-06 round failing to exit the neck at that distance is unusual,
-    "conditional on the different key scenarios based on the
-    possibilities of what is known", with real statistics instead of
-    the circulating claims in either direction. Freezing the scenarios
-    and inclusion rules first fixes what counts before the answer is
-    looked up.
+    Founder direction, 2026-09-10 (in session): a desk study of whether a .30-06 round failing to exit the neck at that distance is unusual, "conditional on the different key scenarios based on the possibilities of what is known", with real statistics instead of the circulating claims in either direction. Freezing the scenarios and inclusion rules first fixes what counts before the answer is looked up.
   actor: "Erebus editorial AI (Claude Fable 5.1, Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu), directed by the founder"
   aiAssisted: true
   kind: content
 
 - date: "2026-09-10"
   change: >-
-    Study KRK-S006 collection published: 27 rows verified against
-    primary documents, open-access copies or abstracts under the
-    criteria frozen earlier the same day (hash ab8dc1418a35) — gelatin
-    and soap wound profiles, the standard forensic text, a spinal-injury
-    review, three real-tissue hunting series, two military FMJ series,
-    neck anthropometry, manufacturers' ballistics tables, and the
-    case's own public record. One evidence record enters the ledger on
-    KRK-C006 and KRK-C018 (KRK-E065: for an expanding lead-core bullet
-    striking the cervical spine, retention with fragmentation is the
-    ordinary outcome; the "always goes through" premise holds only for
-    full-metal-jacket or bone-free paths). Two case-record rows are
-    promoted with their own sources: KRK-E066 (the prosecution's
-    closing relaying the ME report — "struck Kirk's spine and shattered"
-    — recorded as an assertion) and KRK-E067 (the ATF report as filed:
-    one deformed jacket fragment and four lead fragments examined; the
-    cartridge case identified to the rifle). Workpaper source
-    SRC-KRK-S006 added. Failed searches recorded: no human series gives
-    a retention rate for expanding rifle bullets in the neck.
+    Study KRK-S006 collection published: 27 rows verified against primary documents, open-access copies or abstracts under the criteria frozen earlier the same day (hash ab8dc1418a35) — gelatin and soap wound profiles, the standard forensic text, a spinal-injury review, three real-tissue hunting series, two military FMJ series, neck anthropometry, manufacturers' ballistics tables, and the case's own public record. One evidence record enters the ledger on KRK-C006 and KRK-C018 (KRK-E065: for an expanding lead-core bullet striking the cervical spine, retention with fragmentation is the ordinary outcome; the "always goes through" premise holds only for full-metal-jacket or bone-free paths). Two case-record rows are promoted with their own sources: KRK-E066 (the prosecution's closing relaying the ME report — "struck Kirk's spine and shattered" — recorded as an assertion) and KRK-E067 (the ATF report as filed: one deformed jacket fragment and four lead fragments examined; the cartridge case identified to the rifle). Workpaper source SRC-KRK-S006 added. Failed searches recorded: no human series gives a retention rate for expanding rifle bullets in the neck.
   reason: >-
-    Founder direction, 2026-09-10 (in session): real statistics,
-    conditional on the key scenarios, in place of the circulating
-    claims in both directions. The frozen scenarios fixed the cells
-    before any rate was looked up; the answer — exit near-certain for an
-    intact full-metal-jacket through soft tissue, exit expected for a
-    soft-point through soft tissue, retention ordinary for a soft-point
-    that strikes the spine, no human rate found — was set by the
-    literature, not chosen after it.
+    Founder direction, 2026-09-10 (in session): real statistics, conditional on the key scenarios, in place of the circulating claims in both directions. The frozen scenarios fixed the cells before any rate was looked up; the answer — exit near-certain for an intact full-metal-jacket through soft tissue, exit expected for a soft-point through soft tissue, retention ordinary for a soft-point that strikes the spine, no human rate found — was set by the literature, not chosen after it.
   actor: "Erebus editorial AI (Claude Fable 5.1, Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu), directed by the founder"
   aiAssisted: true
   kind: content
 
 - date: 2026-09-11
   kind: content
-  change: "Updated the fragment-custody discussion in the overview and the
-    fragment-reconciliation research entry (KRK-R001) to reflect the newly
-    recorded itemization of the ATF report: the examiner's material is now
-    described in a filed report as one deformed bullet jacket fragment plus four
-    lead fragments, which does not cleanly reconcile with the previously
-    testified count of four. The seven-photographed-versus-examined gap remains
-    open; the correction records that the report's inventory complicates rather
-    than resolves it."
-  reason: New evidence record KRK-E067 superseded the prose's and research
-    agenda's flat 'seven photographed, four examined' framing, which no longer
-    matched the ledger's account of what the ATF received.
-  actor: anthropic/claude-fable-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: "Updated the fragment-custody discussion in the overview and the fragment-reconciliation research entry (KRK-R001) to reflect the newly recorded itemization of the ATF report: the examiner's material is now described in a filed report as one deformed bullet jacket fragment plus four lead fragments, which does not cleanly reconcile with the previously testified count of four. The seven-photographed-versus-examined gap remains open; the correction records that the report's inventory complicates rather than resolves it."
+  reason: New evidence record KRK-E067 superseded the prose's and research agenda's flat 'seven photographed, four examined' framing, which no longer matched the ledger's account of what the ATF received.
+  actor: anthropic/claude-fable-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: 2026-09-11
   kind: content
-  change: Updated the overview's closing inventory of completed pre-registered
-    studies from four to five, adding the wound-ballistics base rate, which
-    finds that a retained, fragmented lead-core rifle bullet striking the spine
-    is the expected forensic pattern rather than an anomaly.
-  reason: New evidence records (KRK-E065, KRK-E066, KRK-E067) entered the ledger
-    from a completed wound-ballistics study, contradicting the article's stated
-    count of studies behind the page.
-  actor: anthropic/claude-fable-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: Updated the overview's closing inventory of completed pre-registered studies from four to five, adding the wound-ballistics base rate, which finds that a retained, fragmented lead-core rifle bullet striking the spine is the expected forensic pattern rather than an anomaly.
+  reason: New evidence records (KRK-E065, KRK-E066, KRK-E067) entered the ledger from a completed wound-ballistics study, contradicting the article's stated count of studies behind the page.
+  actor: anthropic/claude-fable-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
+- date: 2026-10-19
+  change: "Migrated to editions (docs/archive/AUTOMATION.md, build step 2). The article, the 24-claim featured set, and the displayed judgment now live in edition edition-2026-10-19-migration, which adopts the migration assessment 2026-10-19-migration-kirk-assassination. Claim records carry propositions and anchors only; evaluative fields moved into the adopted assessment's per-claim treatment; the dossier header, research priority, and component verdicts moved from case.yaml into the assessment; claims-catalog.yaml merged into claims.yaml (tiers ended). No judgment changed. Where a claim record's hand-written credibility differed from the draft overlay's verdict, the record's value (what claim pages displayed) was carried: KRK-C011: record provisionally_supported, draft well_supported; KRK-C026: record provisionally_supported, draft well_supported; KRK-C027: record established, draft well_supported; KRK-C028: record unresolved, draft contradicted."
+  reason: One reader-facing unit that binds verdict, selection, and article, so they cannot drift apart; one home for judgment; featuring becomes a recorded decision.
+  actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
+  aiAssisted: true
+  kind: housekeeping

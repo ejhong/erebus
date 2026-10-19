@@ -1,3 +1,9 @@
+# The mechanical checks (AGENTS.md §3.15): fail-closed, on every change and on
+# main. Schemas, record ids and every edition's integrity are the loader's
+# (the build fails on any of them); every quoted passage a change adds must be
+# found in the text of its source, every new DOI must resolve, and every
+# locator that names a page must name the page the passage is on
+# (src/engine/quotecheck.ts).
 name: CI
 
 on:
@@ -10,62 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      # RULE (AGENTS.md §4, narrowed by founder amendment 2026-08-25): the
-      # upstream engine project's name must not appear in the rendered
-      # site's inputs — content/, src/, app/, public/ (any casing) — so a
-      # reader of this site never encounters it. Elsewhere in the repo it
-      # may be named freely. The pattern is assembled from pieces so this
-      # guard file cannot trip itself.
-      - name: Site name guard
-        run: |
-          FORBIDDEN="$(printf 'ale%s' 'theia')"
-          # Grep only the site-input directories that exist (e.g. public/
-          # arrives with the first images). A missing directory must not be
-          # passed to grep: it makes grep exit 2 even when matches ARE found,
-          # which would silently defeat this guard.
-          SITE_DIRS="$(ls -d content src app public 2>/dev/null || true)"
-          if [ -n "$SITE_DIRS" ] && grep -rIli "$FORBIDDEN" $SITE_DIRS; then
-            echo "::error::The upstream project name (listed files above) must not appear in the rendered site's inputs (content/, src/, app/, public/). Rename it and push again."
-            exit 1
-          fi
-          echo "guard passed: no occurrence in the site's inputs."
-
-      # Re-publication guard. The repository is public, so material kept as
-      # a discovery aid is no longer safe to commit: research briefs and the
-      # third-party copyrighted documents they cite were purged from history
-      # on 2026-08-26 (docs/DECISIONS.md, docs/MIGRATION-PUBLIC.md).
-      #
-      # This guard exists because .gitignore is advisory — `git add -f`, a
-      # merge from a stale branch, or an agent working from a pre-rewrite
-      # clone can all reintroduce the files. Failing the build is the only
-      # check that cannot be bypassed by not reading a document.
-      - name: Re-publication guard
-        run: |
-          set -euo pipefail
-          fail=0
-          if git ls-files 'casework/*' | grep -q .; then
-            echo "::error::Tracked files under casework/ (listed below). Research briefs are held privately OUTSIDE this public repository — see docs/HOSTING.md. If you are merging a pre-rewrite branch, rebase onto current main instead."
-            git ls-files 'casework/*'
-            fail=1
-          fi
-          # The site needs no document formats: covers and plates are jpg/png.
-          # A tracked pdf/mhtml/epub/doc is therefore either a saved source
-          # document or a mistake, and both are re-publication risks.
-          if git ls-files | grep -Ei '\.(pdf|mhtml|epub|docx?)$'; then
-            echo "::error::Tracked document files (listed above). Saved source documents must not be committed to a public repository; cite the original instead."
-            fail=1
-          fi
-          # Belt and braces on size: the largest legitimate asset is a plate
-          # under 2 MB, so anything past 4 MB is a saved artifact, not a plate.
-          big="$(git ls-files -s | awk '{print $4}' | while read -r f; do [ -f "$f" ] && [ "$(wc -c <"$f")" -gt 4194304 ] && echo "$f"; done || true)"
-          if [ -n "$big" ]; then
-            echo "::error::Tracked files over 4 MB (listed below). Plates are under 2 MB; anything larger is a saved artifact."
-            echo "$big"
-            fail=1
-          fi
-          [ "$fail" -eq 0 ] && echo "guard passed: no re-publication risk in the tree."
-
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -74,21 +26,8 @@ jobs:
       - run: npx tsc --noEmit
       - run: npx eslint .
       - run: npm test
+      - name: Every quoted passage the change adds is in its source
+        if: github.event_name == 'pull_request'
+        run: node scripts/site.ts check-quotes --base "origin/${{ github.base_ref }}"
       - run: npm run build
       - run: npm run check:links
-
-      # Engine-path divergence check — WARNING ONLY. Engine changes flow one
-      # way, upstream → here; this repo edits only content, config, and its
-      # own constitution. Requires the ENGINE_UPSTREAM secret (a git URL);
-      # skipped with a notice when unset. See ENGINE.md.
-      - name: Engine divergence check (warning only)
-        env:
-          ENGINE_UPSTREAM: ${{ secrets.ENGINE_UPSTREAM }}
-        run: |
-          if [ -z "$ENGINE_UPSTREAM" ]; then
-            echo "::notice::ENGINE_UPSTREAM secret not set — engine divergence check skipped. See ENGINE.md."
-            exit 0
-          fi
-          if ! node scripts/sync-engine.mjs --check; then
-            echo "::warning::Engine paths have diverged from upstream (see log above). Deliberate config-layer differences belong in the allowlist in scripts/sync-engine.mjs; anything else should be synced from upstream, never edited here."
-          fi

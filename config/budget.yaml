@@ -1,0 +1,22 @@
+# The spend ceiling. Every paid call is guarded before it is made — the
+# panel's seats by the transport, the operator's session by the hard cap
+# Claude Code is given — and a call that would carry the run, the session,
+# the day or the month past its cap is refused with the reason, never
+# trimmed. The review is not under the caps (it judges every change put to
+# it) and is on the bill.
+#
+# Standing caps: the founder's direction of 2026-10-19, in session — about
+# $100 a month for both sites; this site's share is $40.
+usd:
+  perRun: 15      # one blind panel on a case: five seats, the Anthropic seat at max effort ($2–3 of it)
+  perSession: 10  # one operator session (Claude Code's --max-budget-usd), when the day and the month leave that much
+  perDay: 15
+  perMonth: 40
+# The start: caps that hold until a date, then fall to the standing caps.
+crunch:
+  until: "2026-10-31"
+  perDay: 60
+  perMonth: 60
+  reason: "Founder direction (2026-10-19, in session): \"yes you may spend on erebus\" — the start on the new engine: the January 6 pipe-bomb case opened, and the four existing cases brought onto the engine and judged again by the blind panel."
+  by: "founder (direction in session, 2026-10-19)"
+exemptions: []

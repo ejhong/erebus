@@ -1,103 +1,54 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { CaseCard } from "@/src/components/CaseCard";
-import { ChangeTimeline } from "@/src/components/ChangeTimeline";
+import { CaseGrid } from "@/src/components/CaseGrid";
+import { VerdictMoves } from "@/src/components/VerdictMoves";
+import { assetPath } from "@/src/config/assets";
 import { site } from "@/src/config/site";
-import {
-  caseCover,
-  crossModelSummary,
-  displayAssessment,
-  isHousekeepingEntry,
-  loadAllCases,
-  recentChanges,
-  reviewCoverage,
-} from "@/src/domain/load";
+import { liveClaims, liveEvidence, loadAllCases, siteImage } from "@/src/domain/load";
+import { recentMoves } from "@/src/domain/moves";
 
-/** Hand-built waveform divider — instrument-chart language, no raster art. */
-function WaveDivider() {
-  return (
-    <div aria-hidden className="mx-auto max-w-3xl px-5 pt-14">
-      <svg
-        viewBox="0 0 640 40"
-        className="block w-full h-10 text-line"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0 20 H240 l6 -12 6 24 6 -30 6 34 6 -24 6 14 6 -6 H400 l6 -8 6 14 6 -10 6 6 H640"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.25"
-        />
-        <circle cx="264" cy="20" r="2.5" className="text-copper" fill="currentColor" />
-      </svg>
-    </div>
-  );
-}
+/** The front page keeps the site's own title and card (app/layout.tsx) and states its address. */
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
-/** Measurement-scale strip under the hero — a quiet instrument ruler. */
-function RulerStrip() {
-  const ticks = Array.from({ length: 61 }, (_, i) => i * 10.65);
-  return (
-    <div aria-hidden className="mt-10 border-b border-faint/50 pb-px">
-      <svg
-        viewBox="0 0 640 14"
-        className="block w-full h-4 text-faint/60"
-        preserveAspectRatio="none"
-      >
-        {ticks.map((x, i) => (
-          <line
-            key={i}
-            x1={x + 0.5}
-            y1={i % 5 === 0 ? 2 : 8}
-            x2={x + 0.5}
-            y2={14}
-            stroke="currentColor"
-            strokeWidth={i % 5 === 0 ? 1.3 : 0.9}
-            className={i === 30 ? "text-copper" : undefined}
-          />
-        ))}
-      </svg>
-    </div>
-  );
-}
+/** Editions shown under "Where the assessments moved"; each case's page has its whole history. */
+const MOVES_SHOWN = 6;
 
 export default function HomePage() {
   const cases = loadAllCases();
-  // Epistemic changes lead the homepage feed; artwork/tooling entries stay
-  // on each case's own history. At least one slot per live case, so a new
-  // case's launch always shows.
-  const contentOnly = cases.map((c) => ({
-    record: c.record,
-    history: c.history.filter((h) => !isHousekeepingEntry(h)),
-  }));
-  const feed = recentChanges(contentOnly, Math.max(4, cases.length));
-  const housekeepingCount = cases.reduce(
-    (n, c) => n + c.history.filter(isHousekeepingEntry).length,
-    0,
-  );
+  const divider = siteImage("IMG-SITE-DIVIDER-STRATA");
+  const tailpiece = siteImage("IMG-SITE-TAILPIECE");
+  const moved = recentMoves(cases, MOVES_SHOWN);
+  const totals = {
+    claims: cases.reduce((n, c) => n + liveClaims(c).length, 0),
+    evidence: cases.reduce((n, c) => n + liveEvidence(c).length, 0),
+    sources: cases.reduce((n, c) => n + c.sources.length, 0),
+  };
 
   return (
     <div>
-      <section className="mx-auto max-w-6xl px-5 pt-12 sm:pt-16 pb-8">
-        <p className="flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.22em] text-copper">
-          <span aria-hidden className="inline-block w-2 h-2 border border-copper" />
+      <section className="mx-auto max-w-6xl px-5 pt-10 sm:pt-14 pb-10">
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
           {site.subtitle}
         </p>
-        <h1 className="font-serif text-3xl sm:text-4xl tracking-tight mt-4 leading-[1.12] max-w-4xl">
-          Contested events are argued at the wrong scale.
-          <br className="hidden sm:block" /> We take them apart.
+        <h1 className="font-serif text-3xl sm:text-[2.6rem] tracking-tight mt-3 leading-[1.12] max-w-3xl">
+          {site.headline}
         </h1>
-        <p className="mt-5 text-[15.5px] leading-relaxed text-ink-soft max-w-2xl">
+        <p className="mt-5 text-[16px] leading-relaxed text-ink-soft max-w-2xl">
           {site.mission}
         </p>
-        <p className="mt-5 flex flex-wrap gap-x-8 gap-y-2">
+        <p className="mt-5 flex flex-wrap items-baseline gap-x-8 gap-y-2">
           <Link
             href="/method/"
             className="font-mono text-[11px] uppercase tracking-[0.14em] text-copper underline underline-offset-4 hover:text-ink"
           >
-            How the map works →
+            How the {site.kind.split(" ").at(-1)} works →
           </Link>
+          {cases.length > 0 ? (
+            <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-faint">
+              {cases.length} cases · {totals.claims} claims · {totals.evidence} evidence records · {totals.sources} sources
+            </span>
+          ) : null}
         </p>
-        <RulerStrip />
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-8">
@@ -105,7 +56,7 @@ export default function HomePage() {
           cases
         </h2>
         {cases.length === 0 ? (
-          <div className="surface border border-line outline outline-1 outline-offset-4 outline-line/60 px-6 py-10 max-w-2xl">
+          <div className="border border-line px-6 py-10 max-w-2xl">
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-copper">
               no cases published yet
             </p>
@@ -122,38 +73,36 @@ export default function HomePage() {
               — nothing ships early to fill this space.
             </p>
           </div>
-        ) : (
-          <div className="grid sm:grid-cols-2 gap-4">
-            {cases.map((c) => {
-              const shown = displayAssessment(c);
-              const sum = crossModelSummary(c);
-              return (
-                <CaseCard
-                  key={c.record.id}
-                  record={c.record}
-                  verdict={shown?.run.caseAssessment.verdict ?? null}
-                  standing={shown?.ratification.status ?? null}
-                  reviewCoverage={reviewCoverage(c)}
-                  check={
-                    sum
-                      ? {
-                          models: sum.models.length,
-                          concur: sum.caseUnanimousWithDisplayed,
-                        }
-                      : null
-                  }
-                  cover={caseCover(c)}
-                />
-              );
-            })}
-          </div>
-        )}
+        ) : null}
+        <CaseGrid cases={cases} />
       </section>
 
-      <section className="bg-dossier text-dossier-text mt-10">
+      <section className="mx-auto max-w-6xl px-5 pt-10 pb-4">
+        <div className="max-w-3xl">
+          <h2 className="font-serif text-3xl tracking-tight">Where the assessments moved</h2>
+          <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
+            A map that never changes its mind is not tracking anything. These
+            are the latest editions that changed a verdict, with the word
+            before and the word after. Each case keeps its whole history.
+          </p>
+          <div className="mt-7">
+            {moved.length === 0 ? (
+              <p className="text-[14px] text-ink-soft">
+                No verdict has moved yet. When an edition changes what a case
+                or a claim is judged to be, the move appears here with the
+                word before and the word after.
+              </p>
+            ) : (
+              <VerdictMoves editions={moved} perEdition={3} />
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-dossier text-dossier-text mt-12">
         <div className="mx-auto max-w-6xl px-5 py-12">
-          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper-bright">
-            how the map works
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-copper">
+            how the {site.kind.split(" ").at(-1)} works
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-dossier-line border border-dossier-line mt-5">
             {[
@@ -166,16 +115,16 @@ export default function HomePage() {
                 "Evidence for and against gets the same structure and the same seriousness. What a source states is kept separate from what we infer. Every record carries its provenance: who extracted it, who checked it, and who hasn't yet.",
               ],
               [
-                "03 · Decisive tests",
-                "A case doesn't end in a verdict; it ends in a research agenda. Each unresolved crux is attached to the record, release, or analysis that would move it — and the assessment says in advance what would change its mind.",
+                "03 · Decisive experiments",
+                "A case doesn't end in a verdict; it ends in a research agenda. Each unresolved crux is attached to the study that would move it — and the assessment says in advance what would change its mind.",
               ],
               [
                 "04 · Honest provenance",
-                "Every case shows two outputs — what the evidence supports today, and how valuable resolving it would be. Assessments are labeled AI draft until a named human endorses them, and independent models from rival vendors re-judge each case blind; where they disagree is published, not smoothed over.",
+                "The site is written and maintained by an AI operator, and says so on every page. Nothing it writes publishes on its word alone: every quotation is checked against its source, models from four other companies review every change, and five judge each case blind — where they disagree is published, not smoothed over. Every session and every review is on the record.",
               ],
             ].map(([title, text]) => (
               <div key={title} className="bg-dossier-soft p-6">
-                <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-copper-bright">
+                <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-copper">
                   {title}
                 </h3>
                 <p className="mt-3 text-[14px] leading-relaxed text-dossier-text/85">
@@ -188,38 +137,47 @@ export default function HomePage() {
             Read the full{" "}
             <Link
               href="/method/"
-              className="underline decoration-copper-bright/60 underline-offset-2 hover:text-dossier-text"
+              className="underline decoration-copper/60 underline-offset-2 hover:text-dossier-text"
             >
               methodology
             </Link>
-            , including exactly how AI is and is not used.
+            , including exactly how AI is and is not used, or watch it work on the{" "}
+            <Link
+              href="/operations/"
+              className="underline decoration-copper/60 underline-offset-2 hover:text-dossier-text"
+            >
+              operations page
+            </Link>
+            .
           </p>
         </div>
       </section>
 
-      <WaveDivider />
+      {/* engraved strata divider, where the site has one */}
+      {divider ? (
+        <div aria-hidden className="mx-auto max-w-3xl px-5 pt-14">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={assetPath(divider.file)}
+            alt=""
+            loading="lazy"
+            className="block w-full h-16 object-cover opacity-80"
+          />
+        </div>
+      ) : null}
 
-      <section className="mx-auto max-w-6xl px-5 py-12">
-        <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-faint mb-6">
-          recent changes · evidence &amp; assessments
-        </h2>
-        {feed.length === 0 ? (
-          <p className="text-[14px] text-ink-soft max-w-2xl">
-            No published changes yet. When cases go live, every change to a
-            claim, evidence record, or assessment appears here with its date,
-            reason, and the AI&apos;s role — the change history is part of the
-            publication.
-          </p>
-        ) : (
-          <ChangeTimeline entries={feed} />
-        )}
-        {housekeepingCount > 0 ? (
-          <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.14em] text-faint">
-            + {housekeepingCount} housekeeping changes (artwork, tooling) —
-            recorded in each case&apos;s full history
-          </p>
-        ) : null}
-      </section>
+      {/* tailpiece ornament, where the site has one */}
+      {tailpiece ? (
+        <div aria-hidden className="mx-auto max-w-xs px-5 pt-10 pb-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={assetPath(tailpiece.file)}
+            alt=""
+            loading="lazy"
+            className="block w-full mix-blend-multiply opacity-90"
+          />
+        </div>
+      ) : null}
     </div>
   );
 }

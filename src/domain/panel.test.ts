@@ -5,14 +5,9 @@ import {
   opsFeed,
   seatName,
   seatRecords,
-} from "./panel";
+} from "./panel.ts";
 
-/**
- * Zero-content-safe versions of the upstream live-data tests: the same
- * invariants, asserted over whatever content exists. All loops are
- * vacuous at zero cases and bite as soon as cases (and check runs) ship.
- */
-describe("panel derivations", () => {
+describe("panel derivations (live data)", () => {
   it("seatName strips run-generation wording", () => {
     expect(
       seatName("Opus 5 (Anthropic) — independent check run via claude-opus-5"),
@@ -22,15 +17,15 @@ describe("panel derivations", () => {
     );
   });
 
-  it("standings are contested-first and each carries a reason", () => {
+  it("standings cover every case, contested-first, each with a reason", () => {
     const rows = caseStandings();
+    expect(rows.length).toBeGreaterThanOrEqual(8);
     const order = rows.map((r) => r.ratification.status);
     const firstRatified = order.indexOf("ratified");
     const lastContested = order.lastIndexOf("contested");
     if (firstRatified !== -1 && lastContested !== -1)
       expect(lastContested).toBeLessThan(firstRatified);
-    for (const r of rows)
-      expect(r.ratification.reason.length).toBeGreaterThan(10);
+    for (const r of rows) expect(r.ratification.reason.length).toBeGreaterThan(10);
   });
 
   it("every dissent row carries the house verdict and at least two seats", () => {
@@ -42,6 +37,7 @@ describe("panel derivations", () => {
 
   it("seat records count each vendor once per case and pairwise totals are symmetric", () => {
     const seats = seatRecords();
+    expect(seats.length).toBeGreaterThanOrEqual(4);
     for (const s of seats) {
       expect(s.agreesWithHouse).toBeLessThanOrEqual(s.casesJudged);
       for (const [other, p] of Object.entries(s.pairwise)) {
@@ -59,12 +55,30 @@ describe("panel derivations", () => {
       expect(events[i - 1].date >= events[i].date).toBe(true);
   });
 
-  it("zero content derives an empty panel, never an error", () => {
-    // Bootstrap state: no cases, no governance records. Every derivation
-    // must return cleanly so the /panel page renders before first content.
-    expect(Array.isArray(caseStandings())).toBe(true);
-    expect(Array.isArray(seatRecords())).toBe(true);
-    expect(Array.isArray(dissentGallery())).toBe(true);
-    expect(Array.isArray(opsFeed())).toBe(true);
+  it("the harvested #55 park-but-merged appears in the feed", () => {
+    const e = opsFeed(10_000).find(
+      (x) => x.kind === "arbiter" && x.title.includes("#55"),
+    );
+    expect(e?.title).toMatch(/parked/);
+    expect(e?.title).toMatch(/founder merged anyway/);
+  });
+
+  it("arbiter events link to their on-page verdict and to the PR as source", () => {
+    for (const e of opsFeed(100).filter((x) => x.kind === "arbiter")) {
+      // Full seat reasoning renders on the verdict's own page
+      // (app/operations/gate/[pr]), one per harvested record.
+      expect(e.href).toMatch(/^\/operations\/gate\/\d+\/$/);
+      expect(e.sourceHref).toMatch(/^https:\/\/github\.com\/.+\/pull\/\d+$/);
+    }
+  });
+
+  it("panel and quarantine events carry a verbatim-record source link", () => {
+    const events = opsFeed(100);
+    for (const e of events.filter((x) => x.kind === "panel")) {
+      expect(e.sourceHref).toMatch(/\/tree\/main\/content\/cases\/.+\/assessments$/);
+    }
+    for (const e of events.filter((x) => x.kind === "quarantine")) {
+      expect(e.sourceHref).toMatch(/\/tree\/main\/proposals\/cross-model-failures\//);
+    }
   });
 });
