@@ -1,7 +1,7 @@
 # Draft assessment — the operator's judgment (claude-opus-5-5, session 2026-10-19-session-january-6-pipe-bombs-founder), NOT human reviewed.
 # Its standing comes only from the blind panel (role: check runs written after it). Append-only.
 
-runId: 2026-10-19-operator-191047
+runId: 2026-10-19-operator-194248
 producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
 model: claude-opus-5-5
 date: 2026-10-19
@@ -9,17 +9,17 @@ promptVersion: founder session 2026-10-19
 humanReviewed: false
 role: draft
 basis:
-  ledgerHash: 8ee36e662c928f98c5ee3f0f941c6c9433fb588e4a30d2aab7213be6f49f1b6d
+  ledgerHash: 77996408428f998bcadb95d993eae9e72761968fa30610109f870187fd292047
 caseAssessment:
   verdict: well_supported
   whatIsClaimed: Prosecutors say Brian Cole Jr. built two pipe bombs and placed them by the party headquarters on January 5, 2021, and confessed when arrested in 2025; he denies it and is presumed innocent. His lawyers call the confession coerced. The reporter Steve Baker says Capitol CCTV shows Cole on the north side of the Capitol at 8:03 p.m., and that the bomber was an insider.
-  whereDisagreementLives: "Not over what Cole bought, where his car was or what he first told agents, but over whether he was the man on the bomber's route. The affidavit puts his phone on that route minute by minute; Baker's footage puts a man he identifies as Cole a kilometre north at 8:03 p.m., four minutes after the bomber is filmed by the DNC. Both cannot be true if the clocks agree. The second dispute is the confession: detailed, but given under pressure by a man later diagnosed with autism."
+  whereDisagreementLives: "Not over what Cole bought, where his car was or what he first told agents, but over whether he was the man on the bomber's route. The affidavit puts his phone on that route minute by minute; Baker's footage puts a man he identifies as Cole a kilometre north at 8:03 p.m., four minutes after the bomber is filmed by the DNC. If the clocks agree, both are true only if he ran most of a kilometre in four minutes. The second dispute is the confession: detailed, but given under pressure by a man later diagnosed with autism."
   whatWouldSettleIt: Three records that exist would settle it. First, the October footage's native files and the Capitol Police cameras' clock offsets, set against the cameras that filmed the bomber. Second, a map of the five phone sectors against the places in that footage. Third, the recorded interview, played in court, each detail traced to who said it first.
   bestConventionalExplanation: "The charged account: Cole bought the components over 2019 and 2020, built the devices at home, drove into the city on the evening of January 5, 2021, and placed one by the DNC and one behind the RNC, carrying his phone; the cameras, the plate reader and the phone record the same evening from three sides. He kept buying components afterwards, wiped his phone often from 2022, and when arrested first gave the account that he had gone to a protest, then admitted the placements. On this account the October footage shows someone else, or shows Cole at another time than its clock says."
   components:
     - label: "The charged account: Cole placed both devices"
       state: well_supported
-      note: On the record as sworn and proffered, purchases, a plate reader and phone data converge on him; none of it has been tested at trial.
+      note: On the record as sworn and proffered, purchases, a plate reader and phone data converge on him; none of it is public or tested at trial.
     - label: The October 2026 footage clears Cole
       state: unresolved
       note: Specific and checkable (cameras 602 and 940, 20:03:32); the footage's source, its clocks and the man's identity are unverified.
@@ -50,7 +50,7 @@ caseAssessment:
     - PIPE-C035
     - PIPE-C040
     - PIPE-C031
-  synthesis: "On the public record as it stands, the charged account is well supported: several independent lines described under oath converge on Cole, though none has yet been tested at trial. The purchase records match six of the devices' kinds of part, including a battery connector fewer than 8,000 people could have bought, though not the alligator clips, which appear only after the placements; a plate reader puts his car at the South Capitol Street exit at 7:10 p.m.; and the phone attributed to him used the cell sectors covering the bomber's route at the minutes the cameras show the bomber there, five times over. The confession adds detail but is the weakest line until the recording is examined: it came after two hours of denial, under techniques the defense's expert calls coercive, from a man diagnosed afterwards with autism, and the record does not yet show which details came first from Cole and proved true. Against all this stands one specific, checkable challenge: Capitol CCTV, said to come from the House's public release, of a man Baker identifies as Cole on Constitution Avenue at 20:03:32, four minutes after the affidavit has the bomber at New Jersey Avenue and E Street SE, about a kilometre away. If both systems' clocks agree and the man is Cole, the charged account fails at that point; if the clocks differ by several minutes, the conflict dissolves. The identification rests on family recognition of clothing and on gait judged by eye, the method that earlier named a different person in a report later retracted; and the phone would still need explaining, since at 7:59:36 it used a sector facing south from Independence Avenue. Baker's other points — shoe size, a smartwatch, a timer found at twenty minutes, a missing end cap — are unpublished or secondhand; only the negative flame test finds support in the record. The insider account has no public evidence left. The clock comparison and the confession's audit would move this judgment, and the court will see both before trial."
+  synthesis: "On the public record as it stands, the charged account is well supported: several independent lines described under oath converge on Cole, though none has yet been tested at trial and the records behind them are not public. The purchase records match six of the devices' kinds of part, including a battery connector fewer than 8,000 people could have bought, though not the alligator clips, which appear only after the placements; a plate reader puts his car at the South Capitol Street exit at 7:10 p.m.; and the phone attributed to him used the cell sectors covering the bomber's route at the minutes the cameras show the bomber there, five times over. The confession adds detail but is the weakest line until the recording is examined: it came after two hours of denial, under techniques the defense's expert calls coercive, from a man diagnosed afterwards with autism, and the record does not yet show which details came first from Cole and proved true. Against all this stands one specific, checkable challenge: Capitol CCTV, said to come from the House's public release, of a man Baker identifies as Cole on Constitution Avenue at 20:03:32, four minutes after the affidavit has the bomber at New Jersey Avenue and E Street SE, about a kilometre away. If both systems' clocks agree and the man is Cole, the charged account survives that point only if he ran most of a kilometre in four minutes; if the clocks differ by several minutes, the conflict dissolves. The identification rests on family recognition of clothing and on gait judged by eye, the method that earlier named a different person in a report later retracted; and the phone would still need explaining, since at 7:59:36 it used a sector facing south from Independence Avenue. Baker's other points — shoe size, a smartwatch, a timer found at twenty minutes, a missing end cap — are unpublished or secondhand; only the negative flame test finds support in the record. The insider account has no public evidence left. The clock comparison and the confession's audit would move this judgment, and the court will see both before trial."
   steelman: "Every line against Cole is the prosecution's description of records no outsider has examined, and each is weaker than it sounds. A cell sector covers a wedge kilometres long, not a corner; in 2021 five other people's phone data also may have matched the bomber's movements. Hardware bought over two years can be a hobby as easily as a plan; the uncommon connector narrows the field without closing it, and the alligator clips appear in his records only weeks after the placements. The plate reader shows his car arriving, which his first account explains: he came to a protest. That account came before any pressure, and now a Capitol camera shows a man in a homemade mask, a tagged new jacket and heel-crushed shoes, which his family recognised, walking on the north side four minutes after the bomber was filmed by the DNC. The confession followed two hours of denial, a still image, a reminder that lying is a crime and talk of sparing his family, from a man whose autism makes him likelier to say what pressure demands; and devices whose powder failed a flame test never went off. If the October clocks hold, the case rests on a confession of the kind that has convicted innocent people before."
 claimAssessments:
   - claimId: PIPE-C001
@@ -67,7 +67,7 @@ claimAssessments:
     confidence: moderate
   - claimId: PIPE-C004
     verdict: well_supported
-    reasoning: The FBI's video timeline has the placements on the evening of January 5 and the reports of the devices at about 1:00 and 1:15 p.m. the next day; the House report adopts the same account.
+    reasoning: The FBI's video reconstruction has the placements on the evening of January 5 and the reports of the devices at about 1:00 and 1:15 p.m. the next day; the House report adopts it. No continuous footage of either device is public.
     confidence: high
   - claimId: PIPE-C005
     verdict: contradicted
@@ -132,7 +132,7 @@ claimAssessments:
     confidence: low
   - claimId: PIPE-C018
     verdict: weakly_supported
-    reasoning: The family's account through Baker; interested, unverified, and checkable against purchase and search records.
+    reasoning: "Graded on the substance: the family's account through Baker, interested and unverified, and checkable against purchase and search records."
     confidence: low
   - claimId: PIPE-C019
     verdict: provisionally_supported
@@ -423,8 +423,8 @@ claimAssessments:
         - The files found in the release under cameras 602 and 940 for January 5.
         - The committee or the Capitol Police confirming or denying their origin.
   - claimId: PIPE-C062
-    verdict: provisionally_supported
-    reasoning: Baker gives two camera numbers and a thirty-second span read from the footage's own clock; specific and checkable, not yet checked.
+    verdict: unresolved
+    reasoning: Baker's cameras and times; the original files on the subcommittee's channel are to be checked against them (PIPE-R001, PIPE-S002).
     confidence: low
     treatment:
       plainLanguage: Baker says the man appears on Capitol cameras 602 and 940 between 8:03:32 and 8:04:02 p.m.
@@ -437,7 +437,7 @@ claimAssessments:
         - A Capitol Police statement of those cameras' clock offsets that night.
   - claimId: PIPE-C063
     verdict: well_supported
-    reasoning: "About a kilometre in a straight line, more by any route, in under four minutes, by men filmed walking: one person cannot be both. The force of it depends wholly on the two clocks agreeing."
+    reasoning: "About a kilometre in a straight line and more by any route, in under four minutes: a sustained run, while both men are filmed walking. The conflict holds only if the two clocks agree and the man is Cole; an offset of a few minutes dissolves it."
     confidence: moderate
     treatment:
       plainLanguage: If the clocks are right, the man on Constitution Avenue at 8:03:32 cannot be the person filmed by the DNC four minutes earlier.

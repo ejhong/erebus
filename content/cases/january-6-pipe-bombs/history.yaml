@@ -11,15 +11,6 @@
   promptVersion: "founder session 2026-10-19"
   kind: content
 
-- date: 2026-10-19
-  change: "Opened the case: its first edition edition-2026-10-19-191047, adopting a draft assessment 2026-10-19-operator-191047 (its standing waits for the blind panel)."
-  reason: "The case opens: the question as the public record now poses it, the serious accounts side by side, and the article built on 72 claims, 153 evidence records and 31 sources read in full, from the court record of United States v. Cole, the House subcommittees' interim report, news reporting, and every point Steve Baker has made through October 19, 2026, including the cameras and timestamps he gave for the October footage. The draft judgment it adopts rates the charged account well supported on the record as sworn and proffered, names the footage's clocks and the confession's details as the two things that would move it, and waits for the blind panel for its standing."
-  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
-  runId: 2026-10-19-session-january-6-pipe-bombs-founder
-  promptVersion: founder session 2026-10-19
-  aiAssisted: true
-  kind: content
-
 - date: "2026-10-19"
   change: >-
     Pre-registered study PIPE-S002, a frame-by-frame review of the footage published with Steve Baker's October 18, 2026 posts: which cameras, what on-screen times, whether those times are the cameras' own or added afterwards, and where the man is. Its criteria were frozen and committed before either video was downloaded; it has no rows yet. Identifying the man by his face is excluded by design.
@@ -29,4 +20,13 @@
   aiAssisted: true
   runId: "2026-10-19-session-january-6-pipe-bombs-founder"
   promptVersion: "founder session 2026-10-19"
+  kind: content
+
+- date: 2026-10-19
+  change: "Opened the case: its first edition edition-2026-10-19-194248, adopting a draft assessment 2026-10-19-operator-194248 (its standing waits for the blind panel)."
+  reason: "The case opens: the question as the public record now poses it, the serious accounts side by side, and the article built on 72 claims, 153 evidence records and 31 sources read in full, from the court record of United States v. Cole, the House subcommittees' interim report, news reporting, and every point Steve Baker has made through October 19, 2026, including the cameras and timestamps he gave for the October footage. The draft judgment it adopts rates the charged account well supported on the record as sworn and proffered, names the footage's clocks and the confession's details as the two things that would move it, and waits for the blind panel for its standing."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
   kind: content

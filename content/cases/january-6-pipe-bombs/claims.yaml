@@ -53,7 +53,7 @@
 
 - id: PIPE-C004
   statement: >-
-    The devices lay where they were placed from the evening of January 5 until they were found around 1 p.m. on January 6.
+    By the FBI's video reconstruction, the devices lay where they were placed from the evening of January 5 until they were found around 1 p.m. on January 6.
   theme: event
   rung: observation
   claimType: historical
@@ -191,7 +191,7 @@
 
 - id: PIPE-C014
   statement: >-
-    The shoes worn by the person on the video were about size 9 to 9.5.
+    Baker reports that measurements put the shoes worn by the person on the video at about size 9 to 9.5.
   theme: person
   rung: observation
   claimType: measurement
@@ -208,7 +208,7 @@
 
 - id: PIPE-C015
   statement: >-
-    Cole wears shoes of size 12 to 13.
+    Baker reports that Cole wears shoes of size 12 to 13.
   theme: person
   rung: observation
   claimType: measurement
@@ -225,7 +225,7 @@
 
 - id: PIPE-C016
   statement: >-
-    The FBI's own podiatrist found a gait comparison between the person on the video and Cole inconclusive.
+    Baker reports that the FBI's own podiatrist found a gait comparison between the person on the video and Cole inconclusive.
   theme: person
   rung: observation
   claimType: observation
@@ -242,7 +242,7 @@
 
 - id: PIPE-C017
   statement: >-
-    The person on the video wore and used a smartwatch.
+    Baker reports that unreleased video shows the person on the video wearing and using a smartwatch.
   theme: person
   rung: observation
   claimType: observation
@@ -259,7 +259,7 @@
 
 - id: PIPE-C018
   statement: >-
-    Cole has never owned or worn a watch.
+    Baker reports, from Cole's family and their photographs, that Cole has never owned or worn a watch.
   theme: person
   rung: observation
   claimType: historical
@@ -639,7 +639,7 @@
 
 - id: PIPE-C044
   statement: >-
-    Cole denied involvement about 95 times before the agents raised bringing his family into the investigation.
+    Baker reports that Cole denied involvement about 95 times before the agents raised bringing his family into the investigation.
   theme: interview
   rung: observation
   claimType: measurement
@@ -885,7 +885,7 @@
 
 - id: PIPE-C061
   statement: >-
-    The October 2026 footage is raw Capitol CCTV that the House Administration Subcommittee on Oversight published on its Rumble channel.
+    Baker reports that the October 2026 footage is raw Capitol CCTV that the House Administration Subcommittee on Oversight published on its Rumble channel.
   theme: footage
   rung: observation
   claimType: existence
@@ -902,7 +902,7 @@
 
 - id: PIPE-C062
   statement: >-
-    The man in the October 2026 footage appears on Capitol cameras 602 and 940 between 20:03:32 and 20:04:02 on January 5, 2021, near Peace Circle and crossing Constitution Avenue toward New Jersey Avenue NW.
+    Baker reports that the man in the October 2026 footage appears on Capitol cameras 602 and 940 between 20:03:32 and 20:04:02 on January 5, 2021, near Peace Circle and crossing Constitution Avenue toward New Jersey Avenue NW.
   theme: footage
   rung: observation
   claimType: observation
@@ -919,7 +919,7 @@
 
 - id: PIPE-C063
   statement: >-
-    If both systems' clocks are right, the man filmed on the north side of the Capitol at 20:03:32 cannot be the person the affidavit places at New Jersey Avenue and E Street SE at 7:59:38 p.m.
+    If both camera systems' clocks are right, the man filmed on the north side of the Capitol at 20:03:32 could be the person the affidavit places at New Jersey Avenue and E Street SE at 7:59:38 p.m. only by running about a kilometre or more in under four minutes, though both are filmed walking.
   theme: footage
   rung: mechanism
   claimType: mechanistic
@@ -933,7 +933,7 @@
 
 - id: PIPE-C064
   statement: >-
-    The man in the October 2026 footage walks stiffly with little arm swing, unlike the bomber, who swings his arms and crosses his right leg over as he walks.
+    Baker reports that the man in the October 2026 footage walks stiffly with little arm swing, unlike the bomber, who swings his arms and crosses his right leg over as he walks.
   theme: footage
   rung: observation
   claimType: observation
@@ -950,7 +950,7 @@
 
 - id: PIPE-C065
   statement: >-
-    A laboratory flame test on powder from the DNC device was negative.
+    Baker reports that a laboratory flame test on powder from the DNC device was negative.
   theme: event
   rung: observation
   claimType: observation
@@ -967,7 +967,7 @@
 
 - id: PIPE-C066
   statement: >-
-    One of the DNC device's end caps went missing after the render-safe procedure.
+    Baker reports that one of the DNC device's end caps went missing after the render-safe procedure.
   theme: event
   rung: observation
   claimType: observation
@@ -984,7 +984,7 @@
 
 - id: PIPE-C067
   statement: >-
-    A second disruption shot ordered by an FBI technician at the scene destroyed fingerprint and DNA evidence on the devices.
+    Baker reports that a second disruption shot ordered by an FBI technician at the scene destroyed fingerprint and DNA evidence on the devices.
   theme: event
   rung: observation
   claimType: historical
@@ -1001,7 +1001,7 @@
 
 - id: PIPE-C068
   statement: >-
-    When the RNC device was found on January 6, its kitchen timer was set to 20 minutes.
+    Baker reports that when the RNC device was found on January 6, its kitchen timer was set to 20 minutes.
   theme: event
   rung: observation
   claimType: observation
@@ -1018,7 +1018,7 @@
 
 - id: PIPE-C069
   statement: >-
-    The FBI told Congress it obtained DNC camera footage for January 5 but that the footage for January 6 had been deleted or was unavailable.
+    Baker reports that the FBI told Congress it obtained DNC camera footage for January 5 but that the footage for January 6 had been deleted or was unavailable.
   theme: investigation
   rung: observation
   claimType: historical
@@ -1054,7 +1054,7 @@
 
 - id: PIPE-C071
   statement: >-
-    The October 2026 footage of the man on the north side of the Capitol begins at 7:57 p.m.
+    Armitas, who made the video, says the October 2026 footage of the man on the north side of the Capitol begins at 7:57 p.m.
   theme: footage
   rung: observation
   claimType: observation
@@ -1071,7 +1071,7 @@
 
 - id: PIPE-C072
   statement: >-
-    The times shown in Baker's October 2026 video were added by his team rather than read from the original camera files.
+    Critics say the times shown in Baker's October 2026 video were added by his team rather than read from the original camera files.
   theme: footage
   rung: observation
   claimType: observation

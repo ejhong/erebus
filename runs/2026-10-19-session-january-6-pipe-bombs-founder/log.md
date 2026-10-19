@@ -89,3 +89,21 @@ named.
 - The video itself was not examined frame by frame: that needs the files
   downloaded, which waits for the founder's go-ahead.
 - The panel should sit on this case: its standing is unratified until it does.
+
+## Answering the review (round of 19:40 UTC)
+
+All four reviewers judged the change better; GPT-5.6 held it for one harm,
+rightly: PIPE-C018 stated as fact that Cole has never owned or worn a watch,
+on the strength of Baker relaying his family. Fixed by attribution, and the
+same audit applied to every claim that rests only on Baker, Armitas or a
+critic (PIPE-C014 to C018, C044, C061, C062, C064 to C069, C071, C072 now say
+"Baker reports", "Armitas says", "Critics say"). Its notes, also taken:
+PIPE-C063 no longer says the conflict is impossible — about a kilometre or
+more in under four minutes is a sustained run, not a walk — and the article
+says so; the overnight chronology is attributed to the FBI's reconstruction,
+with the note that no continuous footage of either device is public. Grok's
+note: the verdict now sits beside the fact that the records behind it are
+not public. Gemini's notes on the raw footage are the next change's work:
+the original camera files are on the subcommittee's Rumble channel, and
+study PIPE-S002 will record them once its freeze is merged.
+
