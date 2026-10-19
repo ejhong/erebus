@@ -48,3 +48,30 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-19
+  change: "Calibrated the footage findings to what was measured, on the review's notes for #121. PIPE-C063 restated as a conditional: unless camera 3187's clock is minutes off camera 794's, the man at Peace Circle could be the bomber only by running about a kilometre in four minutes or less; the article's 'the man is not the bomber' becomes 'on the archive's clock, very unlikely to be the bomber'. 'The phone was not with him' becomes 'the phone's sector faced away from him', since a sector can serve a phone close behind it. PIPE-C062 graded misframed (its times are the files' start times, which read as when the man appears). The Rumble files are named the subcommittee's posted copies, their native metadata unexamined (PIPE-C073 and the eight sources). Research item PIPE-R001 reopened: the cameras' clock offsets remain to be measured."
+  reason: "All four reviewers of ejhong/erebus#121 (GPT-5.6, Gemini 3.8 Flash, Grok 4.5, GLM 5.3 Flash) noted that the headline findings outran the evidence: clock agreement rests on one shared moment, and a sector's direction does not exclude service from behind. The change published by majority; this corrects it at once, so the case is not left saying more than it shows."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-19
+  change: "Answered the review of #123. The article's corrected times for cameras 602 and 940 had been cited to PIPE-C062, which records the misframed times; they now have their own record, PIPE-C078, with the two posted files' records (PIPE-E155, PIPE-E170) and a new record of the study's finding (PIPE-E180) attached to it, and the finding's link to PIPE-C062 (PIPE-E154) marked as qualifying it, not supporting it. PIPE-C063 restated with its arithmetic: on the clocks as recorded the man at Peace Circle could be the bomber only by covering at least 960 metres in 100 seconds, and at a walk camera 3187's clock and the FBI's would have to differ by about nine minutes (PIPE-E134's inference now gives the measured 962 metres). The one moment behind the clock agreement is named: camera 794 at 7:57:10, 212 metres up New Jersey Avenue from the bomber's sworn position. The lede no longer says every camera's clock was checked: only camera 794's was. 'Very unlikely', 'authentic', 'genuine' and 'originals' are retired where the finding is narrower (PIPE-C074 and four evidence titles now say posted file). PIPE-R001's stated conflict used the misframed 20:03:32; it is corrected, and the item now also seeks an absolute anchor for camera 794. The eight CCTV sources' notes now say the pages are unlisted, not restricted. PIPE-C035 graded provisionally supported: the footage matches the posted files, but its clocks are checked at one moment on one camera."
+  reason: "The review of ejhong/erebus#123 judged it better on all four seats but held it for one harm (GLM 5.3 Flash: misattribution, a finding cited to a record whose statement gives the opposite times). The other seats' notes asked for the arithmetic behind 'four minutes or less', for the shared moment behind the clock agreement to be named, and for the remaining provenance overstatements to go; all are taken up here, before the edition publishes."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-19
+  change: New edition edition-2026-10-19-223759, adopting a new draft assessment 2026-10-19-operator-223759 (its standing waits for the blind panel).
+  reason: "Answers the review of #123, held for one harm: the corrected times for cameras 602 and 940 now cite their own record, PIPE-C078, not PIPE-C062, which records the misframed times. The footage finding states its arithmetic instead of a likelihood: on the clocks as recorded, the man at Peace Circle would have had to cover at least 960 metres in 100 seconds to be the bomber, and at a walk the clocks would have to be about nine minutes apart. The one moment the clocks were checked at, on camera 794 alone, is named; 'authentic', 'genuine' and 'originals' give way to what was shown, that the clips match the subcommittee's posted files."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

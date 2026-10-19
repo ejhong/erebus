@@ -2334,7 +2334,7 @@
   sourceStatement: >-
     "Video surveillance footage shows that at approximately 7:59:38 p.m., the individual who placed the pipe bombs walked southbound on New Jersey Avenue, Southeast then turned eastbound on E Street, Southeast."
   editorInference: >-
-    From that corner to Constitution Avenue NW is about a kilometre in a straight line on a map, and farther by any walking route around the Capitol grounds; covering it in the 3 minutes 54 seconds before 20:03:32 would take a sustained sprint, and both men are filmed walking. So the two sightings cannot be one person unless a clock is off by several minutes. (The drafter's own reading of a map, not a sourced measurement.)
+    From that corner to the Peace Circle crosswalk, where camera 3187 films the man at 8:01:18, is 962 metres in a straight line between the District's address points for the two places (PIPE-S001), and farther by any walking route around the Capitol grounds. Covering it in the 100 seconds the recorded clocks allow would be faster than any runner has covered a kilometre; at a brisk walk it takes about eleven minutes, so the two sightings can be one person only if camera 3187's clock and the FBI's differ by about nine minutes or more.
   exactLocator: "p. 7 (the affidavit's page 6), item c"
   reviewState: ai_extracted
   origin:
@@ -2675,7 +2675,7 @@
   claimIds:
     - PIPE-C062
   sourceId: SRC-PIPE-S002
-  direction: supports
+  direction: qualifies
   strength: strong
   sourceStatement: "Finding 3: \"The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the two files' start times. The man appears 53 seconds into the first (8:04:25) and about 81 to 100 seconds into the second (8:05:23 to 8:05:42), as the video's own captions say.\""
   editorInference: The cameras and places Baker gave are right and the man is on both; the times given are the files' starts, about a minute before he appears.
@@ -2688,10 +2688,10 @@
     date: 2026-10-19
 
 - id: PIPE-E155
-  title: Camera 602's original file, from 20:03:32.640
+  title: Camera 602's posted file, from 20:03:32.640
   claimIds:
-    - PIPE-C062
     - PIPE-C073
+    - PIPE-C078
   sourceId: SRC-PIPE-CCTV-0602
   direction: supports
   strength: strong
@@ -2864,7 +2864,7 @@
   origin: *a1
 
 - id: PIPE-E168
-  title: Camera 794's original file, from 19:55:35.083
+  title: Camera 794's posted file, from 19:55:35.083
   claimIds:
     - PIPE-C063
     - PIPE-C035
@@ -2884,7 +2884,7 @@
   origin: *a1
 
 - id: PIPE-E169
-  title: "Camera 3187's original file: the man crossing at Peace Circle"
+  title: "Camera 3187's posted file: the man crossing at Peace Circle"
   claimIds:
     - PIPE-C030
   sourceId: SRC-PIPE-CCTV-3187
@@ -2902,9 +2902,9 @@
   origin: *a1
 
 - id: PIPE-E170
-  title: Camera 940's original file, from 20:04:02.170
+  title: Camera 940's posted file, from 20:04:02.170
   claimIds:
-    - PIPE-C062
+    - PIPE-C078
   sourceId: SRC-PIPE-CCTV-0940
   direction: supports
   strength: strong
@@ -3055,3 +3055,20 @@
     route: "Open the page in a browser, or find it in the subcommittee playlist Camera 601 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
     by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
+
+- id: PIPE-E180
+  title: The man is on cameras 602 and 940 about a minute after their files begin
+  claimIds:
+    - PIPE-C078
+  sourceId: SRC-PIPE-S002
+  direction: supports
+  strength: strong
+  sourceStatement: 'Finding 3: "The man appears 53 seconds into the first (8:04:25) and about 81 to 100 seconds into the second (8:05:23 to 8:05:42), as the video''s own captions say."'
+  editorInference: The moments the video labels are the files' start times plus the time elapsed in them; the files were viewed at those moments, not end to end.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: answering the review of ejhong/erebus#123"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
