@@ -41,7 +41,7 @@
   kind: content
 
 - date: 2026-10-19
-  change: New edition edition-2026-10-19-205729, adopting a new draft assessment 2026-10-19-operator-205729 (its standing waits for the blind panel).
+  change: New edition edition-2026-10-19-210255, adopting a new draft assessment 2026-10-19-operator-210255 (its standing waits for the blind panel).
   reason: "New edition, highlighting what is new: the October footage checked against the House subcommittee's original files, and both pre-registered studies collected. Every clip is a congressional file and its added times are the files' own; the man it follows is not the bomber; and the phone attributed to Cole was on a sector facing away from him at 7:59:36. The judgment is re-graded under the site's rule that official accounts are claims too: the charged account, resting on the prosecution's description of records not public or tested, moves from well supported to provisionally supported, and the decisive question becomes who the man at Peace Circle is."
   actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
   runId: 2026-10-19-session-january-6-pipe-bombs-founder

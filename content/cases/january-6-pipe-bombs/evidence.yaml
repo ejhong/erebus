@@ -2698,7 +2698,13 @@
   sourceStatement: The release's file is titled "0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4". At 0:53 into it (20:04:25 by its start), a man in dark clothing walks alone along the fence beside Northwest Drive.
   editorInference: The scene and moment match the 7-minute video's clip captioned 8:04:25pm [602].
   exactLocator: 0:53–1:15
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 602 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
 
 - id: PIPE-E156
@@ -2868,7 +2874,13 @@
   sourceStatement: The release's file is titled "0794KIO00K9NJ-DSE_2021-01-05_19h55min35s083ms.mp4". At 1:31 to 1:40 into it (19:57:06 to 19:57:15 by its start), a figure in a light hooded top passes the sign posts at New Jersey Avenue and D Street SE.
   editorInference: "One block north of the affidavit's position for the bomber at 7:59:38, two and a half minutes earlier: the release's clock and the FBI's timeline agree here to within a few minutes."
   exactLocator: 1:31–1:40
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 794 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
 
 - id: PIPE-E169
@@ -2880,7 +2892,13 @@
   strength: strong
   sourceStatement: The release's file is titled "3187QNW00PeaceCircleNW_2021-01-05_20h00min02s280ms.mp4". The crosswalk at Peace Circle is empty at 1:14 (20:01:16); at about 1:16 to 1:26 (20:01:18 to 20:01:28) a man in a violet-blue hooded jacket crosses it alone.
   exactLocator: 1:14–1:26
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 3187 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
 
 - id: PIPE-E170
@@ -2892,7 +2910,13 @@
   strength: strong
   sourceStatement: The release's file is titled "0940QNW00NJ-ConNW_2021-01-05_20h04min02s170ms.mp4". Looking west along Constitution Avenue from New Jersey Avenue NW, a figure stands by the far curb at 1:21 (20:05:23) and crosses at about 1:40 (20:05:42).
   exactLocator: 1:21–1:40
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 940 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
 
 - id: PIPE-E171
@@ -2965,7 +2989,13 @@
   strength: strong
   sourceStatement: The release’s file is titled "3192QNW003rd-PennNW_2021-01-05_19h40min02s063ms.mp4". At 17:02 into it (19:57:04 by its start) it shows the trailer with a Trump–Pence 2020 banner, the SUV and the truck of the clip the 7-minute video captions 7:57:04pm [3192].
   exactLocator: 17:02–17:06
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 3192 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: &a1
     ref: "founder session 2026-10-19: the congressional originals and studies PIPE-S001 and PIPE-S002"
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
@@ -2981,7 +3011,13 @@
   strength: strong
   sourceStatement: The release’s file is titled "3188QNW00PeaceCircleNW_2021-01-05_19h40min01s663ms.mp4". At 19:31 to 19:58 into it (19:59:33 to 19:59:59 by its start) it shows the walkway and parking lot of the clip captioned 7:59:33pm [3188], with a small dark figure walking toward the camera along the walkway.
   exactLocator: 19:31–19:58
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 3188 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
 
 - id: PIPE-E178
@@ -2993,7 +3029,13 @@
   strength: strong
   sourceStatement: The release’s file is titled "0600USCG00NWDriveExitTIMP_2021-01-05_19h52min45s993ms.mp4". At 8:47 into it (20:01:33 by its start) it shows the Northwest Drive exit barrier, the Peace Monument beyond and a group of four walking, as in the clip captioned 8:01:33pm [600].
   exactLocator: 8:47–9:20
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 600 - January 5th on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1
 
 - id: PIPE-E179
@@ -3005,5 +3047,11 @@
   strength: strong
   sourceStatement: The release’s file is titled "0601USCG00NWDrivenearExit_2021-01-05_20h00min01s653ms.mp4". At 3:16 into it (20:03:18 by its start) it shows the lawn with AREA CLOSED signs of the clip captioned 8:03:18pm [601].
   exactLocator: 3:16
-  reviewState: ai_extracted
+  reviewState: provisional
+  provisional:
+    since: "2026-10-19"
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
+    route: "Open the page in a browser, or find it in the subcommittee playlist Camera 601 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
+    by: "2026-10-19-session-january-6-pipe-bombs-founder"
   origin: *a1

@@ -1,7 +1,7 @@
 # Edition written by the operator (claude-opus-5-5) in session 2026-10-19-session-january-6-pipe-bombs-founder, stamped by the engine (src/engine/stamp.ts).
 # Append-only: a later edition replaces it; this file is never edited.
 
-runId: edition-2026-10-19-205729
+runId: edition-2026-10-19-210255
 producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
 date: 2026-10-19
 model: claude-opus-5-5
@@ -11,12 +11,12 @@ rationale: |-
 
   Measured by the engine: article 2421 → 2683 words, without markup.
 basis:
-  ledgerHash: 5542914a47726661ec5e70c4749180733101c87f6554addd197886c51a4294a7
+  ledgerHash: 42718f43b5fab6ac933c39c48c7a43b3cc802485648171b97e23e5e22c998854
   inputsHash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 previous: edition-2026-10-19-194248
 assessment:
-  runId: 2026-10-19-operator-205729
-  hash: 9b652c497649d7383d51aa1e7b94b63d632e603db5ee78ef66b49705c2a585f9
+  runId: 2026-10-19-operator-210255
+  hash: 2c54dbb13f2ffa424699142ec7e4e63580c78cf459583452f69c0b59b40d9826
 featuredClaimIds:
   - PIPE-C059
   - PIPE-C063
