@@ -1,0 +1,42 @@
+# Case imagery. Two kinds, never confused:
+#   cover — AI-generated editorial artwork (style-e2: the place, painted,
+#           dissolving into its ghosted survey record), honestly credited;
+#           may never depict evidence or the event.
+#   plate — real imagery with provenance and license, presented as
+#           numbered record plates.
+
+- id: IMG-J6PB-COVER
+  role: cover
+  file: /images/cases/january-6-pipe-bombs/cover.jpg
+  alt: Gouache painting of a Capitol Hill street of brick rowhouses at winter
+    dusk, amber streetlamps lighting an empty sidewalk and the Capitol dome
+    pale in the distance, the scene dissolving downward into a ghosted,
+    stylized plat of city blocks and lot lines.
+  source: generated
+  license: Project artwork (AI-generated)
+  credit: AI-generated editorial artwork, Erebus house style (style-e2)
+  styleVersion: style-e2
+  model: gpt-image-1
+  runId: generate-case-art run 39315176717 (2026-10-19), candidate 3 of 3,
+    cropped to 16:9
+  prompt: "Editorial cover artwork, unmistakably a gouache painting — visible
+    brushstrokes, matte pigment, soft paper-textured edges, nothing
+    photographic. Upper two-thirds: a quiet residential street on Capitol
+    Hill in Washington, D.C., at dusk on a still winter evening — a row of
+    brick rowhouses with iron railings and bare street trees, streetlamps
+    pooling amber light on the empty sidewalk, the Capitol dome small and
+    pale in the far distance above the rooftops, no people, no vehicles and
+    no legible signage, rendered in loose confident brushwork with buildings
+    and land as simplified planes of pigment. Lower third: the painting
+    dissolves downward into a ghosted hand-drawn surveyor's plat of the city
+    blocks south-east of the Capitol grounds, with numbered squares and lot
+    lines. — thin ink linework, faint as a watermark, as if the painted
+    scene rests on an archival record of itself. The transition is gradual
+    and atmospheric, paint strokes breaking apart into ink lines. Palette:
+    deep indigo winter dusk, sodium-amber streetlamp glow pooling on brick
+    sidewalks, cold slate-grey rowhouse brick, the dome a pale ivory in the
+    distance; the ghosted plat in faded indigo ink on cool grey paper.
+    Quiet, elegiac, dignified; completely empty of people; no violence, no
+    memorials, no flags. Absolutely no text, no numbers, no labels, no
+    logos, no border frame lines. Painterly throughout — obviously a
+    painting, never photorealistic, never mistakable for a photograph."

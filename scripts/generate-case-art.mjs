@@ -105,8 +105,8 @@ const CASE_SUBJECTS = {
     "the empty sidewalk, the Capitol dome small and pale in the far " +
     "distance above the rooftops, no people, no vehicles and no legible " +
     "signage — dissolving into a ghosted hand-drawn surveyor's plat of " +
-    "the city blocks south-east of the Capitol grounds, with numbered " +
-    "squares and lot lines.",
+    "the city blocks south-east of the Capitol grounds: block outlines " +
+    "and lot lines only, unnumbered and unlabelled.",
 };
 
 /** One reversible generation run: a single runId stamped on every record. */
