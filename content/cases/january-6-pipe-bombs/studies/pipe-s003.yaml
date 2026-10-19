@@ -1,14 +1,15 @@
 # Study freeze — pre-registration only (AGENTS.md §3.12), written and committed before
 # the transcript's pages were read (its text layer holds only the court's page headers).
 # Zero rows by design; any later edit to the criteria fails the build (criteriaHash).
-# Collection follows in a later change.
+# Collection follows in a later change. The first freeze (hash cbcf47bf88ab) was revised the
+# same day, still before any page was read, after the review of #125 held it.
 id: PIPE-S003
-title: "Cole's first account against the footage: what he told the FBI before he confessed, beside
-  the man on the north-west side and the bomber on the south-east"
-question: Does the account Brian Cole Jr. gave the FBI before he confessed (where he went on the
-  evening of January 5, 2021, when, and in what clothes) describe the man the October 2026 footage
-  follows on the north-west side of the Capitol, the bomber's sworn movements on the south-east
-  side, or neither?
+title: "Cole's first account against the footage: what he told the FBI while denying the charge,
+  beside the man on the north-west side and the bomber on the south-east"
+question: Does the account Brian Cole Jr. gave the FBI while denying the charge, before the point
+  both sides describe as his admission (where he went on the evening of January 5, 2021, when, and
+  in what clothes), describe the man the October 2026 footage follows on the north-west side of the
+  Capitol, the bomber's sworn movements on the south-east side, both, or neither?
 researchIds:
   - PIPE-R009
 claimIds:
@@ -27,23 +28,26 @@ criteria:
       cited as Tr.) about the evening of January 5, 2021: when he arrived and left, how he travelled
       and where he parked, the places he went and in what order, how long he stayed, what he did and
       saw, what he wore and carried, whom he met or spoke to, and his phone. The reading runs from
-      the transcript's first page to the moment he first says he is the person in the surveillance
-      video, the admission both sides describe, which the motion to suppress places at Tr. 93."
-    - Each question or assertion by an agent that first names a detail Cole then affirms, recorded
-      beside his answer, so that a detail he volunteered can be told apart from one put to him.
-    - "Two standards of comparison, fixed now. The man the October 2026 video follows, as PIPE-S002
-      recorded him: on cameras 3188, 3187, 600, 601, 602 and 940 from 7:59:49 to 8:05:42 p.m. by the
-      posted files' recorded times, on the north-west side of the Capitol, from the walkway by
-      Pennsylvania Avenue NW across Peace Circle and along Northwest Drive to Constitution and New
-      Jersey Avenues NW, alone, in a violet-blue hooded jacket, dark trousers and light-soled shoes.
-      And the bomber as the sworn affidavit and the prosecution's filings describe him: filmed in
-      the neighbourhood south-east of the Capitol from about 7:34 to 8:18 p.m.; at the DNC at about
+      the transcript's first page to the first place he answers yes to being the person in the
+      surveillance video, the point both sides describe as his admission. The motion to suppress
+      cites it at Tr. 93; the scan, not the citation, sets the bound."
+    - Each question or assertion by an agent that names a detail before Cole states it, recorded
+      beside his answer. A detail is first named by an agent when an agent's words anywhere earlier
+      in the transcript name the same place, time, garment, item or act; otherwise it is Cole's.
+    - "Two standards of comparison, both records already in the case and fixed before this freeze.
+      The man the October 2026 video follows, as the rows of PIPE-S002 record him: on cameras 3188,
+      3187, 600, 601, 602 and 940 from 7:59:49 to 8:05:42 p.m. by the posted files' recorded times,
+      on the north-west side of the Capitol, from the walkway by Pennsylvania Avenue NW across Peace
+      Circle and along Northwest Drive to Constitution and New Jersey Avenues NW, alone, in a
+      violet-blue hooded jacket, dark trousers and light-soled shoes. And the bomber as the sworn
+      affidavit and the prosecution's filings in the case's ledger describe him: filmed in the
+      neighbourhood south-east of the Capitol from about 7:34 to 8:18 p.m.; at the DNC at about
       7:54; walking south on New Jersey Avenue SE and turning east on E Street SE at 7:59:38; in the
       alley beside the RNC at 8:14:15 and at the RNC at about 8:16; in dark pants, a grey hooded
       sweatshirt, dark gloves, Nike Air Max Speed Turf shoes and a face mask."
   exclusion:
-    - "Everything after the admission: what he said once he had said he was the person in the video
-      is outside the study, which concerns only the account he gave while denying it."
+    - "Everything after that point: what he said once he had answered yes is outside the study,
+      which concerns only the account he gave while denying the charge."
     - Anything about making, carrying or placing the devices, wherever it appears; the study records
       none of it.
     - The names of agents, relatives and other private people in the transcript; rows describe them
@@ -53,76 +57,93 @@ criteria:
     - "Any judgment of whether Cole is the man in the October footage or the bomber: the study
       compares one description of an evening with two records of it, identifies no one and grades no
       claim."
-  searchProtocol: "Read ECF No. 102-1 as the RECAP archive serves it
+  searchProtocol: >-
+    Reading. Read ECF No. 102-1 as the RECAP archive serves it
     (storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf; 161
     pages, a scan whose only text layer is the court's page headers), page by page from the first
-    page to the admission, by eye from the page images. Any machine reading is checked against the
-    page image before a row is written; a passage that cannot be read is recorded as unread. Cite
-    each statement by the transcript's own page and line (Tr.), as the motion to suppress cites it,
-    with the PDF page beside it. For each statement record: its topic (arrival, travel and parking,
-    places and route, time, activity, what he saw, clothing and items, contact, phone, departure,
-    purpose); what he says, in a close paraphrase with short quotations where the scan is legible;
-    whether he volunteered the detail or an agent first named it; whether it is specific (a named or
-    unmistakable street, building, monument, park or protest; a clock time, or an interval under
-    half an hour; a colour or kind of garment) or generic ('walked around', 'the Capitol', 'a
-    jacket'); and how it compares with each standard: fits, conflicts, or not covered, naming the
-    camera and time or the sworn passage it is set against. Predictions fixed now. The October
-    footage was found, its maker says, by searching where Cole's account pointed, so a fit of place
-    is partly built into the search; the telling details are those a search by place would not
-    supply: the colour and kind of his clothes, what he says he saw, the order and direction of his
-    walk, where he left the car and when he left. If the first account describes the man the October
-    footage follows, those details, where specific, will fit him and none will conflict with him,
-    and no specific detail will put Cole on the bomber's side of the Capitol (the DNC, the RNC,
-    Folger or Providence Park, D Street SE, New Jersey Avenue SE, Ivy Street) between 7:34 and 8:18
-    p.m. If it was a cover story told by the bomber, as the prosecution says, those details will be
-    generic, will conflict with the man in the footage, or will fit the bomber's movements; a run of
-    specific fits with the man that the agents did not supply would be unexpected. A generic account
-    fits both and is reported as fitting both. Each result is reported, whichever reading it
-    favours."
+    page to the bound, by eye from the page images. Any machine reading is checked against the page
+    image before a row is written; a passage that cannot be read is recorded as unread. Page and
+    line numbers are the scan's own printed transcript numbers (Tr.), with the PDF page beside them.
+
+
+    Rows. A statement with several details is split into one row per detail (a place, a time or
+    interval, a direction, a garment, an item, an act, a sighting, a contact, the car, the
+    departure), and each detail is graded on its own. Each row records the topic; what Cole says, in
+    a close paraphrase with short quotations where the scan is legible; whether the detail is Cole's
+    or first named by an agent; and whether it is specific (a named or unmistakable street,
+    intersection, building, monument, park or protest; a clock time, or an interval stated to under
+    half an hour; a colour, fabric or style of garment; a named item) or generic ('walked around',
+    'the Capitol', 'at night', 'an hour', 'a jacket'). The operator grades every row in the
+    collection change and shows each grade beside the passage it rests on, so any reader can
+    regrade.
+
+
+    Comparison. Each row is set against each standard. Against the man: fits (the footage shows it),
+    conflicts (the footage shows otherwise: another colour or kind of garment, a companion, or a
+    place or time that puts the speaker away from where and when the man is filmed), or not
+    observable (six minutes on six cameras cannot show it: where he parked, what he did before 7:59
+    or after 8:06, his phone). Against the bomber: fits, conflicts, or not described by the sworn
+    account. A detail the standard cannot show is never a fit.
+
+
+    Decision rule, fixed now. Only Cole's own specific details count; details an agent named first
+    are recorded and reported but count for neither standard. The footage was found, its maker says,
+    by searching where Cole's account pointed, so for the man a fit of place or time is recorded but
+    given no weight; only fits of other kinds count (the colour and kind of his clothes and shoes,
+    what he says he saw, the order and direction of his walk, companions). For the bomber, fits of
+    every kind count. For each standard the account is in one of three states: it conflicts with the
+    standard when any of Cole's own specific details conflicts with it, a conflict of place or time
+    included, whatever else fits; it describes the standard when at least two counted details fit
+    and none conflicts; otherwise it is undecided. The result is the pair of states, reported as it
+    falls. The telling pairs are an account that describes the man and conflicts with the bomber's
+    movements, and the reverse. An account that describes both, or is undecided on both, does not
+    tell them apart and is reported as fitting both; one that conflicts with both fits neither. Each
+    result is reported, whichever reading it favours.
   knownCandidates:
-    - name: "The prosecution's summary of the first account (ECF No. 17, p. 13): he drove his Nissan
-        Sentra to Washington by himself that evening to attend a protest concerning the outcome of
-        the 2020 election, one 'in support of [then President] Trump'"
+    - name: "The prosecution's summary of the first account (SRC-PIPE-ECF17-DETENTION-MEMO, p. 13): he
+        drove his Nissan Sentra to Washington by himself that evening to attend a protest concerning
+        the outcome of the 2020 election, one 'in support of [then President] Trump'"
       disposition: include
       reason: Known before the freeze. The rows record the transcript's own words where they are found,
         not the summary.
-    - name: "The prosecution's summary of the shoe exchange (ECF No. 17, p. 14): shown a picture of a Nike
-        Air Max Speed Turf shoe, he said he 'used to have a pair' and 'threw them away'; Armitas
-        gives his reason as having outgrown them"
+    - name: "The prosecution's summary of the shoe exchange (SRC-PIPE-ECF17-DETENTION-MEMO, p. 14): shown
+        a picture of a Nike Air Max Speed Turf shoe, he said he 'used to have a pair' and 'threw
+        them away'; Armitas (SRC-PIPE-ARMITAS-X, point 5) gives his reason as having outgrown them"
       disposition: include
-      reason: A statement before the admission about a kind of shoe the bomber wore; known before the
-        freeze.
-    - name: "Baker's posted images of transcript pages (X, October 18, 2026): he came alone in his Nissan,
-        at night; went to the protest to show support; for about an hour walked around, sat around
-        and looked around, wishing he had his headphones; talked to no one; wore a jacket because it
-        was cold"
+      reason: A statement before the bound about a kind of shoe the bomber wore; known before the freeze.
+    - name: "Baker's posted images of transcript pages (SRC-PIPE-BAKER-X-INTERVIEW-CLUES: the four images
+        attached to x.com/SteveBakerUSA/status/2111794964032016867 and the post after it, October
+        18, 2026): he came alone in his Nissan, at night; went to the protest to show support; for
+        about an hour walked around, sat around and looked around, wishing he had his headphones;
+        talked to no one; wore a jacket because it was cold"
       disposition: include
       reason: Seen before the freeze. The rows cite the transcript pages the images reproduce.
-    - name: "Armitas (X, October 19, 2026): the transcript says the protest was 'in front of' something;
-        he searched the north-east side first, by the Supreme Court, mentions a 'Jesus Lives' rally,
-        and says he looked for Cole based on what Cole told the agents"
+    - name: "Armitas (SRC-PIPE-ARMITAS-X, point 2, October 19, 2026): the transcript says the protest was
+        'in front of' something; he searched the north-east side first, by the Supreme Court,
+        mentions a 'Jesus Lives' rally, and says he looked for Cole based on what Cole told the
+        agents"
       disposition: include
       reason: Known before the freeze. The passage it describes is a row when found; the search it
-        describes means the footage was chosen by place, which the predictions take into account.
-    - name: "The prosecutor at the detention hearing (ECF No. 53, p. 53): the cover story was that he was
-        going to DC 'to attend a protest at the Capitol', and he 'stuck to that story for two
-        hours'"
+        describes is why the decision rule gives a fit of place or time with the man no weight.
+    - name: "The prosecutor at the detention hearing (SRC-PIPE-ECF53-HEARING-TRANSCRIPT, p. 53): the cover
+        story was that he was going to DC 'to attend a protest at the Capitol', and he 'stuck to
+        that story for two hours'"
       disposition: exclude
       reason: An advocate's description of the interview, not a statement in the transcript; known before
         the freeze.
-    - name: "The account after the admission (ECF No. 17, pp. 15–16; ECF No. 102 at 11, citing Tr.
-        103–117): parking on D Street SE and walking to the DNC and the RNC, with details the
-        defense says the agents supplied"
+    - name: "The account after the bound (SRC-PIPE-ECF17-DETENTION-MEMO, pp. 15–16; the motion to
+        suppress, ECF No. 102 at 11, citing Tr. 103–117): parking on D Street SE and walking to the
+        DNC and the RNC, with details the defense says the agents supplied"
       disposition: exclude
-      reason: After the admission and outside the study; known before the freeze.
-  criteriaHash: cbcf47bf88ab
-method: "A reading of the interview transcript up to the admission, recording each statement Cole
-  makes about the evening of January 5, 2021, who first named each detail and whether it is
-  specific, and setting each against two fixed standards: the man the October 2026 footage follows
-  (PIPE-S002) and the bomber's movements as the affidavit swears them. Rows: one per statement.
-  Findings count what fits, what conflicts and what is generic on each side, and say what the
-  comparison cannot show: it does not identify the man, and a fit of place was partly built into how
-  the footage was found."
+      reason: After the bound and outside the study; known before the freeze.
+  criteriaHash: 70df427de1c3
+method: "A reading of the interview transcript up to the point both sides describe as Cole's
+  admission, recording each detail he gives of the evening of January 5, 2021, who first named it
+  and whether it is specific, and setting each against two fixed standards: the man the October 2026
+  footage follows (PIPE-S002) and the bomber's movements as the affidavit swears them. Rows: one per
+  detail. Findings apply the frozen decision rule, count what fits, what conflicts and what is
+  generic on each side, and say what the comparison cannot show: it does not identify the man, and a
+  fit of place was partly built into how the footage was found."
 columns:
   - transcript page
   - topic
