@@ -6,8 +6,8 @@
 - id: PIPE-R001
   title: "Authenticate the October 2026 footage and its clock"
   summary: >-
-    Baker says the footage is raw Capitol Police CCTV from the House Administration Subcommittee on Oversight's public release on Rumble, cameras 602 and 940, 20:03:32 to 20:04:02 on January 5, 2021. Find those two files in the committee's release (or obtain them from the Capitol Police with their metadata); confirm the camera positions and that the man's track is continuous between them; establish each camera's clock offset that night; and check those clocks against the clocks of the cameras that recorded the bomber at 7:59:38 p.m. on New Jersey Avenue SE, using anything both systems saw (a vehicle, a patrol, a train). Then publish the man's path and times minute by minute.
-  claimIds: [PIPE-C030, PIPE-C032, PIPE-C033, PIPE-C035, PIPE-C061, PIPE-C062, PIPE-C063]
+    Baker says the footage is raw Capitol Police CCTV, uncut and unaltered, from the House Administration Subcommittee on Oversight's public release on Rumble (rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority): cameras 602 and 940, 20:03:32 to 20:04:02 on January 5, 2021, the video beginning, Armitas says, at 7:57 p.m. Critics say the times shown were added by Baker's team. Find those two files in the committee's release (or obtain them from the Capitol Police with their metadata); confirm the camera positions and that the man's track is continuous between them; establish each camera's clock offset that night; and check those clocks against the clocks of the cameras that recorded the bomber at 7:59:38 p.m. on New Jersey Avenue SE, using anything both systems saw (a vehicle, a patrol, a train). Then publish the man's path and times minute by minute.
+  claimIds: [PIPE-C030, PIPE-C032, PIPE-C033, PIPE-C035, PIPE-C061, PIPE-C062, PIPE-C063, PIPE-C071, PIPE-C072]
   track: either
   effortTier: desk
   informationGain: >-
@@ -26,7 +26,7 @@
 - id: PIPE-R003
   title: "Which details of the confession came from Cole first, and are they true?"
   summary: >-
-    When the recorded interview is played (at the suppression hearing or at trial), list every detail of Cole's account; mark those the agents introduced or that were public before the interview; and check the rest against independent records — purchases of sulfur dust and potassium nitrate, the parking place on D Street SE against cameras there, the restaurant stop in Virginia, the disposal of materials at a dump.
+    When the recorded interview is played (at the suppression hearing or at trial), list every detail of Cole's account; mark those the agents introduced or that were public before the interview; and check the rest against independent records — the purchases he described, the parking place on D Street SE against cameras there, the restaurant stop in Virginia, the disposal of materials at a dump.
   claimIds: [PIPE-C039, PIPE-C040, PIPE-C041, PIPE-C044]
   track: either
   effortTier: desk

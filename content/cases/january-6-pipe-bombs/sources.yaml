@@ -211,10 +211,10 @@
   verification: ai_verified
   verificationNote: "Published November 17, 2023; read on 2026-10-19."
 
-# ── Steve Baker's posts on X ───────────────────────────────────────────
-# Read through X's embed service, which returns the first part of a long
-# post; quotations are from that text. Where a post continues, the record
-# says so and describes the rest without quoting it.
+# ── Posts on X ─────────────────────────────────────────────────────────
+# Read through X's embed service; for a long post, which the embed cuts
+# short, the whole text comes from the FxTwitter mirror of X's data for the
+# same post (src/engine/fetch.ts). Images attached to a post are not read.
 
 - id: SRC-PIPE-BAKER-X-NEW-VIDEO
   title: "Steve Baker on X: new Capitol CCTV video (October 18, 2026)"
@@ -300,3 +300,45 @@
   background: true
   reliabilityNotes:
     - "Kept for the reading guide: Baker's announcement, two days before the November 8, 2025 report that was later retracted, that its release was paused."
+
+- id: SRC-PIPE-BAKER-X-CONGRESSIONAL-CHANNEL
+  title: "Steve Baker on X: the footage is on the congressional Rumble channel (October 19, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2112173868471214411"
+  verification: ai_verified
+  verificationNote: "Read in full on 2026-10-19 (embed service and mirror). The post links the channel rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority."
+
+- id: SRC-PIPE-BAKER-X-VERIFY-TIMESTAMPS
+  title: "Steve Baker on X: anyone can verify the timestamps (October 19, 2026)"
+  authors: ["Steve Baker"]
+  organization: "X (@SteveBakerUSA)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/SteveBakerUSA/status/2112247597532365235"
+  verification: ai_verified
+  verificationNote: "Read in full on 2026-10-19. The post quotes Armitas's reply to a critic and says the Rumble link is in its first reply, which was not read."
+
+- id: SRC-PIPE-ARMITAS-X
+  title: "Armitas (@accabbat) on X: reply to a critic of the October 2026 video (October 19, 2026)"
+  authors: ["Armitas (@accabbat)"]
+  organization: "X (@accabbat)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/accabbat/status/2112131745726259218"
+  verification: ai_verified
+  verificationNote: "Read in full on 2026-10-19. Armitas is the pseudonymous researcher credited with the video; cited only for what the post says."
+
+- id: SRC-PIPE-CRITIC-X
+  title: "@DefiyantlyFree on X: questions about Baker's video (October 19, 2026)"
+  authors: ["@DefiyantlyFree"]
+  organization: "X (@DefiyantlyFree)"
+  year: "2026"
+  sourceType: webpage
+  url: "https://x.com/DefiyantlyFree/status/2112025049087582320"
+  verification: ai_verified
+  verificationNote: "Read in full on 2026-10-19. A pseudonymous commentator's critique, which says it was drafted with an AI's help and checked against the court record; cited only for what it says, and for what it quotes Baker as having said."
+  reliabilityNotes:
+    - "A commentator's argument, not evidence; its own reading of the court record is checked here against the record itself."

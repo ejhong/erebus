@@ -30,8 +30,8 @@ timestamps "are key".
   NBC, The National News Desk, HuffPost and the Washington Examiner, and
   Steve Baker's posts on X and his two October 2026 interviews on Watching the
   Watchers.
-- **Wrote** the ledger: 69 claims, 144 evidence records (every quoted passage
-  found in its source by the quote check), 27 sources, eight decisive tests,
+- **Wrote** the ledger: 72 claims, 153 evidence records (every quoted passage
+  found in its source by the quote check), 31 sources, eight decisive tests,
   and a pre-registered study (PIPE-S001) of whether the phone's cell sectors
   reach the places in the October footage, frozen with no rows.
 - **Baker's points**, each a claim of its own, attributed and graded: the
@@ -50,6 +50,27 @@ timestamps "are key".
   wrong; so the clocks and the man's identity decide it.
 - **Stamped** the case's first edition with the engine's new opening path.
 
+## Later the same day: Baker's latest posts, and a correction
+
+At the founder's direction ("look at bakers latest posts"), the newest posts
+were read in full: Baker says the footage is "uncut and unaltered" on the
+House Administration Subcommittee on Oversight's Rumble channel, with the
+camera numbers in the video for anyone to check; Armitas, who made the video,
+says it begins at 7:57 p.m. and that the phone data stand but do not exclude
+the north side; a critic says the times on screen were added by Baker's team.
+Each is now a claim of its own. The engine's reader now takes a long X post's
+whole text from a mirror of X's data when X's embed cuts it short (upstream
+1c4100c), so these could be quoted.
+
+Correction before publication: the first stamp said Cole's records showed
+every kind of part in the devices. The affidavit itemizes six, and the only
+alligator clips it lists were bought on January 23, 2021, after the
+placements, as Baker had pointed out. The purchase claim, the article and the
+judgment now say so, and the point is a claim of its own. The case was
+re-stamped (the earlier stamp was never published). The article and records
+also no longer list the powder's ingredients: what the case needs is that the
+confession names a brand and a store, which can be checked.
+
 ## The living-persons rules, as applied
 
 Allegations are attributed (the affidavit, the prosecution, the defense,
@@ -67,7 +88,4 @@ named.
   research item.
 - The video itself was not examined frame by frame: that needs the files
   downloaded, which waits for the founder's go-ahead.
-- Long X posts are read only as far as X's embed service returns them; the
-  rest is described, not quoted. A full-text route for long posts would help
-  this site.
 - The panel should sit on this case: its standing is unratified until it does.

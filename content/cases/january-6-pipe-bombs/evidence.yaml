@@ -1448,13 +1448,13 @@
     date: "2026-10-19"
 
 - id: PIPE-E083
-  title: "Prosecution: the black-powder recipe, by brand and store"
+  title: "Prosecution: an ingredient named by brand, and the store"
   claimIds: [PIPE-C040]
   sourceId: SRC-PIPE-ECF17-DETENTION-MEMO
   direction: supports
   strength: moderate
   sourceStatement: >-
-    "The defendant explained that he made the black powder in the devices using charcoal, Lilly Miller sulfur dust, and potassium nitrate that he purchased from Lowes."
+    By the prosecution's account, Cole named the brand of one of the ingredients and the store where he bought them: "that he purchased from Lowes"
   editorInference: >-
     A brand and a store are the kind of detail that can be checked against purchase records and against what the agents had already said; the public record does not show either check.
   exactLocator: "p. 15"
@@ -2508,6 +2508,159 @@
     The episode summary states: "Former FBI Assistant Director Steven D’Antuono’s Congressional Transcript revealed that geofence data was initially deemed" corrupted "by a telecom provider before being unexpectedly recovered years later to charge Cole."
   editorInference: >-
     The affidavit's cell analysis uses the provider's records, not a geofence; the House report records that the carriers denied providing corrupted data.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+# ── Baker's and his critics' points of October 19, 2026, continued ──────
+
+- id: PIPE-E145
+  title: "Sworn affidavit: the alligator clips it lists were bought on January 23, 2021"
+  claimIds: [PIPE-C070]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "on January 23, 2021, COLE purchased various alligator clips from Home Depot."
+  editorInference: >-
+    The purchases the affidavit itemizes before January 5, 2021 (pipes, end caps, connectors, timers, wire, steel wool and tools) include no alligator clips, though its list of the devices' parts does. Its statement that he bought each type of component is not borne out, in what it itemizes, for this one; the records may hold an earlier purchase the affidavit does not list.
+  exactLocator: "p. 5 (the affidavit's page 4)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E146
+  title: "Sworn affidavit: the devices used alligator clips"
+  claimIds: [PIPE-C070]
+  sourceId: SRC-PIPE-COMPLAINT-AFFIDAVIT
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The parts of both devices included "alligator clips to connect the wires"
+  exactLocator: "p. 3 (the affidavit's page 2)"
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E147
+  title: "A critic quotes Baker's question about the clips"
+  claimIds: [PIPE-C070]
+  sourceId: SRC-PIPE-CRITIC-X
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The critic quotes Baker on October 15: "What if a certain someone didn't purchase the alligator clips and a drill bit until AFTER January 6, 2021?" and answers that the government had disclosed purchases after January 6.
+  editorInference: >-
+    The answer misses the point: Baker's is about the absence of a purchase before the placements, not the presence of purchases after.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E148
+  title: "Armitas: the video begins at 7:57 p.m."
+  claimIds: [PIPE-C071]
+  sourceId: SRC-PIPE-ARMITAS-X
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "Cole passed an LPR at 7:10pm, the video begins at 7:57pm."
+  editorInference: >-
+    If so, the footage starts three minutes after the DNC placement and before the bomber is filmed by the DNC at 7:59:38, about a kilometre away: a sharper form of the same conflict, decided by the same clocks.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E149
+  title: "Armitas: the phone data stand; the burden is on the prosecution"
+  claimIds: [PIPE-C033]
+  sourceId: SRC-PIPE-ARMITAS-X
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "No one refutes that Cole's phone had data transactions, it's up to the prosecution to show that his phone could not possibly be on the NW side of the capitol."
+  editorInference: >-
+    The alibi's authors accept the phone sessions and rest on how far the sectors reach — the question study PIPE-S001 is set up to answer.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E150
+  title: "Baker: uncut and unaltered, on the congressional Rumble channel"
+  claimIds: [PIPE-C061]
+  sourceId: SRC-PIPE-BAKER-X-CONGRESSIONAL-CHANNEL
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Uncut and unaltered at the Congressional website on Rumble, straight from the @CapitolPolice and Congress’s crappy CCTV cameras." The post links "https://rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority"
+  editorInference: >-
+    A named, public channel; the files for cameras 602 and 940 on January 5 have not yet been found on it for this page.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E151
+  title: "A critic: the times on screen were added"
+  claimIds: [PIPE-C072]
+  sourceId: SRC-PIPE-CRITIC-X
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The critic writes: "When critics said the timestamps were added to the video, he answered" — quoting Baker — "We have them, and they will sync with the original CCTV videos"
+  editorInference: >-
+    If Baker's team overlaid the times, they are a claim about the original files rather than a reading of them; the original files would show their own times.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E152
+  title: "Armitas: the camera numbers and times are in the video to check"
+  claimIds: [PIPE-C072]
+  sourceId: SRC-PIPE-ARMITAS-X
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    "The camera numbers and times were provided in the video for anyone to go check."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+
+- id: PIPE-E153
+  title: "Baker: anyone can verify the timestamps on the congressional channel"
+  claimIds: [PIPE-C072]
+  sourceId: SRC-PIPE-BAKER-X-VERIFY-TIMESTAMPS
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    "Anyone can verify the accurate timestamps from the congressional Rumble channel."
+  editorInference: >-
+    Either way, the check is the same: open the two original files and read their times.
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"

@@ -291,7 +291,7 @@
 
 - id: PIPE-C020
   statement: >-
-    Bank and card records, as the FBI's affidavit describes them, show Cole buying every type of component used in the devices in 2019 and 2020 — the pipes, end caps, 9-volt battery connectors, white kitchen timers, red and black 14-gauge wire and steel wool.
+    Bank and card records, as the FBI's affidavit describes them, show Cole buying six of the kinds of part used in the devices in 2019 and 2020: the pipes, end caps, 9-volt battery connectors, white kitchen timers, red and black 14-gauge wire and steel wool.
   theme: purchases
   rung: observation
   claimType: observation
@@ -1032,3 +1032,56 @@
     firstKnown: "2026-10-19"
     originDescription: "Steve Baker on Robert Gouveia's show Watching the Watchers, October 19, 2026, as the host's episode summary states it; earliest appearance found."
     originSourceId: SRC-PIPE-GOUVEIA-BAKER-OCT19
+
+# ── Baker's and his critics' points of October 19, 2026, continued ──────
+
+- id: PIPE-C070
+  statement: >-
+    The affidavit lists no purchase of alligator clips by Cole before January 5, 2021, though the devices used them; the clips it lists were bought on January 23, 2021.
+  theme: purchases
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-15"
+    originDescription: "Steve Baker on X, October 15, 2026, as a critic quoted him on October 19: whether \"a certain someone\" bought the alligator clips only after January 6, 2021."
+    originSourceId: SRC-PIPE-CRITIC-X
+
+- id: PIPE-C071
+  statement: >-
+    The October 2026 footage of the man on the north side of the Capitol begins at 7:57 p.m.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Armitas (@accabbat), who made the video, replying on X to a critic."
+    originSourceId: SRC-PIPE-ARMITAS-X
+
+- id: PIPE-C072
+  statement: >-
+    The times shown in Baker's October 2026 video were added by his team rather than read from the original camera files.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the court record of United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (Claude Code), founder session"
+    runId: "2026-10-19-session-january-6-pipe-bombs-founder"
+    date: "2026-10-19"
+  genealogy:
+    firstKnown: "2026-10-19"
+    originDescription: "Critics on X, as a critic (@DefiyantlyFree) summarized them and as Baker himself listed them the same day (\"changing timestamps, altering the videos, using AI\")."
+    originSourceId: SRC-PIPE-CRITIC-X
