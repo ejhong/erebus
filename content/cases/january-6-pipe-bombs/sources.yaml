@@ -184,8 +184,9 @@
   year: "2026"
   sourceType: webpage
   url: "https://robertgouveia.substack.com/p/brian-cole-jr-new-indictment-and"
+  archivedUrl: "https://web.archive.org/web/20261019193534/https://robertgouveia.substack.com/p/brian-cole-jr-new-indictment-and"
   verification: ai_verified
-  verificationNote: "Episode of October 2, 2026; read on 2026-10-19. The page is the host's written summary of an interview with Steve Baker, not a transcript."
+  verificationNote: "Episode of October 2, 2026; read on 2026-10-19. Substack refuses GitHub's servers, so the quote check reads the Internet Archive's copy, saved the same day. The page is the host's written summary of an interview with Steve Baker, not a transcript."
   reliabilityNotes:
     - "A partisan show's summary of Baker's claims, in the host's words; it states as fact what Baker asserts. Cited here only for what Baker claims, never for the claims' truth."
 
@@ -196,8 +197,9 @@
   year: "2026"
   sourceType: webpage
   url: "https://robertgouveia.substack.com/p/brian-cole-jr-alibi-footage-released"
+  archivedUrl: "https://web.archive.org/web/20261019193659/https://robertgouveia.substack.com/p/brian-cole-jr-alibi-footage-released"
   verification: ai_verified
-  verificationNote: "Episode of October 19, 2026; read the same day. The host's written summary of an interview with Steve Baker, not a transcript. It names private individuals (a witness, the officer Baker earlier accused); this site quotes only passages that do not."
+  verificationNote: "Episode of October 19, 2026; read the same day. Substack refuses GitHub's servers, so the quote check reads the Internet Archive's copy, saved the same day. The host's written summary of an interview with Steve Baker, not a transcript. It names private individuals (a witness, the officer Baker earlier accused); this site quotes only passages that do not."
   reliabilityNotes:
     - "A partisan show's summary, stating Baker's claims as fact; cited here only for what Baker claims. The documents it cites (an FBI laboratory report, a witness intake form, a congressional interview) are not public."
 
