@@ -1,189 +1,39 @@
 # ENGINE.md — where the code comes from
 
-This site runs on an engine developed in a separate upstream repository.
-**Engine changes flow one way: upstream → here.** This repo edits only
+This site runs an engine developed in a separate upstream repository, the
+public `https://github.com/ejhong/aletheia.git`. **Engine changes flow one way:
+upstream → here.** The engine is pulled unchanged except for the upstream's
+name, which is rewritten to this site's, so that nothing a reader sees names
+it (AGENTS.md §4; CI's `node scripts/site.ts check-names` keeps the name out of
+`content/`, `src/`, `app/` and `public/`, from `config/site.yaml`).
 
-- content (`content/`, `casework/`, `inbox/`, `proposals/`),
-- configuration (`src/config/site.ts`, hosting, design tokens),
-- its own constitution and docs (`AGENTS.md`, `docs/`).
+## What is the engine's, and what is this site's
 
-Do not implement engine features or fixes here — make them upstream and
-sync them in. Deliberate config-layer divergences are the narrow
-exception, and each one is listed in the allowlist in
-`scripts/sync-engine.mjs` with a reason.
+| The engine's (pulled, never edited here) | This site's own |
+| --- | --- |
+| `src/`, `app/`, `scripts/`, `.github/workflows/`, `protocols/` (not its `archive/`), `operator/`, and the build configs (`package.json`, `package-lock.json`, `tsconfig.json`, `eslint.config.mjs`, `postcss.config.mjs`, `vitest.config.ts`, `next.config.ts`) | `AGENTS.md` (the constitution, the founder's), `config/` (identity and notice, theme, the rules every model this site calls must follow, models, budget, tariffs), `content/`, `inbox/`, `runs/`, `proposals/`, `governance/`, `docs/`, `public/` |
 
-## The upstream reference
+Three engine files are kept this site's own (the allowlist in
+`scripts/sync-engine.mjs`): the sync itself, and the cover-art generator and
+its workflow, which paint in this site's house style (`docs/IMAGES.md`).
 
-The upstream is `https://github.com/ejhong/aletheia.git`, and the sync
-tooling reads it from the `ENGINE_UPSTREAM` environment variable / GitHub
-Actions secret.
+`ENGINE_VERSION` records the upstream commit the engine was last pulled from.
 
-**The name rule** (AGENTS.md §4, narrowed by founder amendment
-2026-08-25): the upstream project's name must not appear in the rendered
-site's inputs — `content/`, `src/`, `app/`, `public/` — so a reader of
-this site never encounters it. CI enforces that with a fail-closed,
-case-insensitive guard scoped to those directories. Elsewhere in the
-repository (this file, docs, casework, tooling, commit history) the
-upstream may be named freely. The original repo-wide rule was dropped
-because it exceeded its purpose and was unachievable anyway: this repo's
-git history predates the split and contains the name throughout.
-
-The sync tooling still renames every pulled text file to this project's
-name (case-preserving) and compares local files against the *renamed*
-upstream — not for secrecy, but because upstream code carries its own
-project name in UI strings, prompt versions, and comments, and this site
-needs its own identity. The rename also keeps `src/` and `app/` clean for
-the scoped guard.
-
-## Engine paths
-
-`src/`, `app/`, `scripts/`, `.github/workflows/`, `package.json`,
-`package-lock.json`, `tsconfig.json`, `eslint.config.mjs`,
-`postcss.config.mjs`, `vitest.config.ts`, `next.config.ts`.
-
-Everything else (content, casework, docs, AGENTS.md, README) is this
-repo's own and is never touched by the sync.
-
-## Commands
+## Pulling
 
 ```bash
-# Report divergence (exit 1 if any non-allowlisted engine file differs):
-ENGINE_UPSTREAM=<git-url> node scripts/sync-engine.mjs --check
-
-# Pull: overwrite non-allowlisted engine files with the scrubbed upstream
-# state (also removes local engine files the upstream no longer has):
-ENGINE_UPSTREAM=<git-url> node scripts/sync-engine.mjs --pull
+node scripts/sync-engine.mjs --check   # does any engine file differ from the renamed upstream?
+node scripts/sync-engine.mjs --pull    # bring every engine file to it
+npm install && npm test && npm run build
 ```
 
-After a pull: review the diff, run `npm run typecheck && npm run lint &&
-npm test && npm run build`, and commit. If upstream renamed or added
-config-layer files that this site must keep different, update the
-allowlist in the same commit and record the reason in
-`docs/DECISIONS.md`.
+`ENGINE_UPSTREAM` (a git URL or path) and `ENGINE_REF` (a branch) point the
+sync at an engine change before it merges upstream.
 
-## CI integration
+## When this site needs something the engine lacks
 
-The CI workflow runs `--check` as a **warning, not a hard fail** (so
-deliberate divergences under review don't block content work), and skips
-it with a notice when the `ENGINE_UPSTREAM` secret is unset. The
-forbidden-string guard, by contrast, is always a hard fail.
-
-## Upstreaming queue
-
-Code flows one way (upstream → here), but *proposals* flow back: when
-work in this repo produces something the engine should own, it is
-recorded here as a description — never pushed upstream from this repo
-directly. To flush the queue, run an agent session on the upstream
-repository and hand it the relevant entries. After an item merges
-upstream, pull it back with `sync-engine.mjs --pull` and delete the
-corresponding allowlist entries in `scripts/sync-engine.mjs` — allowlist
-entries are loans, not property. Queue descriptions must carry engine
-mechanics only: no case content, no material from this private repo's
-casework.
-
-**Multi-repo session rule.** When an agent session has both this repo and
-the upstream checked out (a multi-repo Cloud Agent environment), nothing
-from this repository may be committed to the upstream: no casework, no
-content, no docs text, no quotes — engine code and queue-entry mechanics
-only. The upstream is public; this repository is not. Treat every
-cross-repo copy as a publication decision.
-
-Current queue (2026-08-25):
-
-1. ~~Zero-content static export.~~ **Merged upstream 2026-08-26**
-   (aletheia PR #81) and pulled back the same day; the six allowlist
-   entries under "zero-content static-export support" are retired with it
-   (the upstream port left only import-order differences here).
-2. ~~Inbox-response workflow token bug.~~ **Merged upstream 2026-08-26**
-   (aletheia PR #77) and pulled back the same day; the allowlist entry for
-   `inbox-response.yml` is retired with it.
-3. ~~Study/workpaper domain object.~~ **Merged upstream 2026-08-26**
-   (aletheia PR #85, arbiter 5/5; design ratified here as
-   `docs/STUDIES_PROPOSAL.md`, PRs #32/#33) and pulled back the same
-   day: per-case `studies/` with tamper-evident frozen criteria
-   (criteriaHash + knownCandidates), sourced rows in the source-anchor
-   citation shape, aggregate-grain ledger entry via `workpaper` sources,
-   render-from-freeze, supersession wired to CI. The interim convention
-   in `docs/CONTENT_POLICY.md` now points at the real feature.
-4. ~~Empty-state rendering for the homepage and case index.~~ **Merged
-   upstream 2026-08-26** (aletheia PR #81, in the upstream's own design
-   idiom). This repo's page files stay allowlisted — they diverge for
-   design register and the living-persons notice, not for the empty
-   states — and the upstream research page no longer exists, so its empty
-   state is moot.
-5. ~~Design objection to the contested-reconciliation mechanism.~~
-   **Merged upstream 2026-08-26** (aletheia PR #75, arbiter 5/5) and
-   pulled back the same day: reconsideration overlays now stamp
-   `reconciles` with the engaged check runIds, ratification refuses to
-   ratify a reconciled draft until a blind check outside that list judges
-   it, and stale-checks re-panels such cases automatically. The original
-   dissent and the four complies readings remain preserved verbatim in
-   this repo's PR #8 arbiter comment.
-6. ~~Arbiter seats cannot verify citations.~~ **Merged upstream 2026-08-26**
-   (aletheia PR #80, arbiter 5/5 — judged by the very mechanism it ships)
-   and pulled back the same day: the arbiter now resolves every DOI,
-   arXiv id, and URL a diff adds under `content/` (Crossref + doi.org
-   fallback, arXiv API, HTTP) and feeds the results to the seats as tool
-   output (prompt v3) — RESOLVES means judge honest use, FAILS is
-   positive evidence, UNCHECKED never gates. Quotations and page-level
-   locators remain seat judgment.
-7. ~~Citation checker truncates DOIs containing parentheses.~~ **Fixed
-   upstream and present here** (`trimTrailing` in
-   `scripts/lib/citation-check.mjs` now strips only unbalanced trailing
-   parens). Original report kept below for the record.
-
-   **Citation checker truncates DOIs containing parentheses (bug — fix
-   upstream).** In `scripts/lib/citation-check.mjs`, both the URL pattern
-   and the bare-DOI pattern exclude `)` from the identifier character
-   class, so any DOI with embedded parentheses is cut at the first one:
-   `10.1016/S0140-6736(20)30183-5` is extracted as
-   `10.1016/S0140-6736(20`, and `10.1061/(ASCE)0733-9399(2002)128:1(2)`
-   as `10.1061/(ASCE`. The truncated string then fails to resolve, and
-   because prompt v3 tells seats that FAILS is "positive evidence for
-   violates," a correct citation is reported to the panel as a malformed
-   identifier. This is not hypothetical: it produced a `violates` vote and
-   a park on this repo's PR #27, where the seat's stated ground was a
-   "malformed, truncated DOI" that the diff never contained. The affected
-   families are large — every Elsevier `S`-prefix DOI (Lancet, Cell,
-   ScienceDirect) and every ASCE DOI. All four DOIs involved resolve
-   correctly at Crossref when passed whole, so the registry side is fine.
-   Suggested fix: stop treating `)` as a terminator and instead balance
-   parentheses when trimming, or strip only unmatched trailing delimiters
-   — `trimTrailing` already exists for sentence punctuation and could
-   take a paren-aware form. A regression test with those two real DOIs
-   would pin it. Until it lands, content records here note the artifact in
-   `verificationNote` where a parenthetical DOI is unavoidable, and prefer
-   a paren-free open-repository locator (e.g. a PMC deposit) as the
-   primary `url` where one exists.
-8. ~~Unclassified directories are tier 0, so a large working-paper drop
-   starves the content tier.~~ **Addressed upstream and present here**
-   (`TIER_RESERVED_SHARE` in `scripts/lib/arbiter-core.mjs` reserves a
-   slice of the packet budget per tier so no tier can starve the ones
-   below it); moot in any case now that `casework/` is no longer
-   committed. Original report kept below for the record.
-
-   **Unclassified directories are tier 0, so a large working-paper drop
-   starves the content tier (design gap — decide upstream).**
-   `diffTier` in `scripts/lib/arbiter-core.mjs` returns tier 0 — filled
-   first, before `content/` — for any path it does not recognize, which is
-   correct for `AGENTS.md`, `scripts/`, and workflows, where the strongest
-   scrutiny belongs. But it means an unrecognized directory can crowd the
-   payload out of the 400,000-character budget entirely. On this repo's
-   PR #27 the private `casework/` tree (digests plus six verification
-   reports, ~620 KB) filled the budget on its own, and all sixteen
-   substantive files — both cases' `claims.yaml`, `evidence.yaml`,
-   `sources.yaml`, `overview.md`, and the assessment overlays — landed in
-   the OMITTED list. Every seat then correctly voted "unsure" on the
-   omitted-files rule, so the panel returned "we could not see it" rather
-   than an editorial judgment, twice. The irony is exact: the material
-   that starved the panel was the verification work done to satisfy it.
-   Note this is a *this-repo* shape — `casework/` is committed here
-   because the repository is private, and the upstream gitignores its
-   equivalent — so the fix may be a config-layer classifier rather than a
-   hardcoded path. Options worth weighing upstream: let the tier function
-   consult a repo-level config listing low-priority paths; or tier
-   explicitly non-citable working material below `content/`; or budget per
-   tier so the payload always gets a reserved share. Interim practice
-   here: keep large casework drops in their own pull request, separate
-   from the content they support, so the panel sees the records that
-   actually publish.
+Make it upstream, in the engine, so both sites have it — never here. If it is
+truly this site's own, it belongs in `config/` and the engine reads it there
+(that is how this site's name, its notice, its theme, its rules for models and
+the date it took up the engine's rules work). The history of the September
+sync, its hand-ports and its queue, is in git.

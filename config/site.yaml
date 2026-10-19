@@ -47,3 +47,6 @@ caseNotice:
 # an anchor on every claim): records written before it, under the September
 # engine, are judged by the rules they were written under.
 engineSince: "2026-10-19"
+# The upstream engine's name, which must never appear on the rendered site (AGENTS.md §4):
+# checked over content/, src/, app/ and public/ by CI (node scripts/site.ts check-names).
+forbiddenNames: ["aletheia"]

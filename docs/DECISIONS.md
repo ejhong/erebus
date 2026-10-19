@@ -451,3 +451,50 @@ Cloudflare Pages hosting, the repo-wide name rule, and an empty
 fixes are already present in this repo's engine copy.
 
 (AI record of a founder instruction, 2026-09-05 session.)
+
+---
+
+## 2026-10-19 — The current engine, the operator, the review, and truth within the law
+
+**Decided by:** the founder, in session (directions quoted below); carried out
+by the operator (Claude Opus 5.5, Claude Code session of 2026-10-19).
+
+**The directions.** "Take a step back and use your best overall judgment about
+this repo and erebus … to make a beautiful self updating truth exposing
+machine"; "Complete revamp please"; "I'd like to err on the side of truth vs.
+living persons rule — but not raise any legal issues"; "yes you may spend on
+erebus"; and, for the case to open next, the January 6 pipe bombs, with "every
+one of the points Steve Baker raised" addressed as claims.
+
+**Where the site stood.** It ran the September engine, which its upstream had
+retired on 2026-09-09; the sync had been on hold since 2026-09-01. Its weekly
+maintenance wrote agenda proposals that nothing adopted, and no case had moved
+since 2026-09-11 — the Kirk case not since before the accused's preliminary
+proceedings.
+
+**What was done.**
+1. *The constitution* (the founder's own commit, 170992c): §3.15 as the
+   upstream's — the operator, and the review by better or worse with a short
+   list of harms that hold a change; the September amendments it lacked (the
+   graded concurrence scale, the founder's directions as the operating record,
+   the provisional tier); and the living-persons section rewritten to the
+   founder's direction: the evidence assessed openly, including how strongly
+   it supports a charged account, as the site's opinion on facts it shows and
+   links, never a finding of guilt; every allegation attributed; the defense
+   beside the prosecution; no accusation repeated against anyone uncharged.
+2. *The engine* pulled from the upstream's rebuild (ENGINE_VERSION), by a
+   rewritten sync whose engine paths include the prompts and the operator's
+   charter and whose allowlist is down to three files (ENGINE.md).
+3. *The cases* moved to editions by the upstream's migration of 2026-09-08,
+   run here on 2026-10-19: each case's first edition carries its article byte
+   for byte and a migration assessment snapshotting what readers saw (where a
+   claim's hand-set verdict differed from the last draft's, the claim's won —
+   13 claims across three cases). Records from before today are judged by the
+   rules they were written under (`engineSince` in config/site.yaml).
+4. *This site's own* moved to `config/`: its identity and the living-persons
+   notice, its theme, its rules for models, its models, its money ($40 a
+   month; $60 through 2026-10-31 for the start).
+5. *Retired*, each replaced: the Maintain, Content response, Inbox response,
+   Operator (September) and Extract claims workflows, the arbiter and the risk
+   check (→ the operator's sessions and the review); the panel and proposals
+   pages (→ /operations, the record pages).
