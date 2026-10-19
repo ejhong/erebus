@@ -81,6 +81,8 @@ per case. Keep this document and that script in sync.
 | `kirk-assassination` | the campus valley under the Wasatch wall, dusk alpenglow | violet and rose alpenglow, russet and burnt-orange aspens, twilight blue; plat in deep umber on grey-violet paper |
 | `september-11` | Lower Manhattan from the harbor, the clear September morning, towers intact | cerulean and cobalt sky, silver-blue water, pale steel planes; plat in slate-blue on cool white paper |
 | `covid-origins` | the market street empty in morning rain | jade, celadon, porcelain white, cool grey; plat in green-grey on cool pale paper |
+| `pizzagate` | a neighborhood commercial block on an early winter morning | warm brick red and cream, grey-gold winter light, blue-grey shadows; plat in warm sepia on cool ivory paper |
+| `january-6-pipe-bombs` | a Capitol Hill rowhouse street at winter dusk, the dome far off | deep indigo dusk, sodium-amber streetlamps, slate-grey brick, pale ivory dome; plat in faded indigo on cool grey paper (blocks only: no routes, no times) |
 
 Each subject is the place at a chosen hour, never the event: the towers
 stand intact on a clear morning with nothing of the day in frame; the
