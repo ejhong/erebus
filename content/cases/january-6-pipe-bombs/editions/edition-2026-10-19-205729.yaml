@@ -1,0 +1,118 @@
+# Edition written by the operator (claude-opus-5-5) in session 2026-10-19-session-january-6-pipe-bombs-founder, stamped by the engine (src/engine/stamp.ts).
+# Append-only: a later edition replaces it; this file is never edited.
+
+runId: edition-2026-10-19-205729
+producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
+date: 2026-10-19
+model: claude-opus-5-5
+promptVersion: founder session 2026-10-19
+rationale: |-
+  New edition, highlighting what is new: the October footage checked against the House subcommittee's original files, and both pre-registered studies collected. Every clip is a congressional file and its added times are the files' own; the man it follows is not the bomber; and the phone attributed to Cole was on a sector facing away from him at 7:59:36. The judgment is re-graded under the site's rule that official accounts are claims too: the charged account, resting on the prosecution's description of records not public or tested, moves from well supported to provisionally supported, and the decisive question becomes who the man at Peace Circle is.
+
+  Measured by the engine: article 2421 → 2683 words, without markup.
+basis:
+  ledgerHash: 5542914a47726661ec5e70c4749180733101c87f6554addd197886c51a4294a7
+  inputsHash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+previous: edition-2026-10-19-194248
+assessment:
+  runId: 2026-10-19-operator-205729
+  hash: 9b652c497649d7383d51aa1e7b94b63d632e603db5ee78ef66b49705c2a585f9
+featuredClaimIds:
+  - PIPE-C059
+  - PIPE-C063
+  - PIPE-C075
+  - PIPE-C031
+  - PIPE-C073
+  - PIPE-C074
+  - PIPE-C062
+  - PIPE-C033
+  - PIPE-C027
+  - PIPE-C026
+  - PIPE-C040
+  - PIPE-C039
+  - PIPE-C041
+  - PIPE-C020
+  - PIPE-C036
+  - PIPE-C052
+  - PIPE-C076
+  - PIPE-C077
+cruxOrder:
+  - PIPE-R009
+  - PIPE-R011
+  - PIPE-R003
+  - PIPE-R010
+  - PIPE-R012
+  - PIPE-R004
+  - PIPE-R005
+  - PIPE-R006
+  - PIPE-R007
+  - PIPE-R008
+  - PIPE-R001
+  - PIPE-R002
+question: Does the public record support the charge that Brian Cole Jr. placed the pipe bombs outside the RNC and DNC on January 5, 2021 — and is the man the October 2026 footage shows on the other side of the Capitol him?
+accounts:
+  - "The charged account: Brian Cole Jr., alone, built both devices and placed them on the evening of January 5, 2021, as prosecutors allege; he denies it and is presumed innocent."
+  - "Misidentification: the man the congressional footage shows on the north side of the Capitol, who is not the bomber, is Cole, as his family and Steve Baker say, and his confession was coerced."
+  - "An insider: a law-enforcement insider placed the devices and the investigation protected them (Baker and others); its one named suspect was retracted."
+  - "Not overnight: the devices were set down shortly before they were found on January 6, not the evening before (Baker, before his October 2026 account)."
+article: |
+  On the evening of January 5, 2021, someone in a grey hooded sweatshirt, a face mask, gloves and Nike running shoes walked the streets south of the Capitol for about three-quarters of an hour and left two pipe bombs: one by the Democratic National Committee, one behind the Republican National Committee. Neither went off. They were found around one o'clock the next afternoon, as the crowd at the Capitol was breaking through the police lines, and for almost five years no one was charged.
+
+  On December 4, 2025, the FBI arrested Brian J. Cole Jr., a 30-year-old from Woodbridge, Virginia, who worked in a bail bondsman's office and lived with his family. Prosecutors say the records of what he bought, where his car went and where his phone was all lead to him, and that he confessed the same day. He has pleaded not guilty. **No court has decided the charges, and he is presumed innocent.** In October 2026 the reporter Steve Baker published Capitol security video that he says shows Cole on the far side of the Capitol while the bomber was at work. This page sets out what the public record shows, each side's case in its own words, and what would settle it. It takes official accounts as claims to be tested, like anyone else's.
+
+  ## New: the footage, checked against the congressional originals
+
+  > **New on October 19, 2026.** This site found the original Capitol Police files behind Baker's October video and ran the two studies it had registered in advance. Four findings are new: no published account had established them.
+
+  - **The footage is authentic, and so are its times.** [All eight cameras in the video are files in the House subcommittee's public release, and every clip matches its original]{claim=PIPE-C073}. [The times on screen were added in editing, as critics said, but each is the original file's own recorded time]{claim=PIPE-C074}.
+  - **The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the files' start times.** [The man appears about a minute later, at 8:04:25 and 8:05:23]{claim=PIPE-C062}.
+  - **The man is not the bomber.** The same release has the bomber, in a light hooded top, on the sworn route at 7:57, so its clock agrees with the FBI's, and [the man who crosses at Peace Circle at 8:01:18 could not have been where the affidavit puts the bomber 100 seconds earlier]{claim=PIPE-C063}, about a kilometre away.
+  - **The phone was not with him.** [At 7:59:36 the phone the affidavit attributes to Cole used a cell sector facing away from every place the man is filmed]{claim=PIPE-C075}.
+
+  Everything now turns on who the man is. If he is Cole, the charged account fails. If the phone records are right and the phone was with Cole, the man is someone else.
+
+  ## Where the case stands
+
+  United States v. Cole, No. 1:26-cr-00001-AHA, is before Judge Amir H. Ali of the U.S. District Court for the District of Columbia. [The current indictment, the third superseding one, has eight counts]{claim=PIPE-C060}, among them two of transporting explosives across state lines, one for each device, and two of trying to damage the party headquarters by explosive. [Cole has pleaded not guilty, and his trial is set for February 16, 2027]{claim=PIPE-C057}. The judge has kept him in custody, and [ruled that the January 2025 pardons for the Capitol riot do not reach him]{claim=PIPE-C058}. Pending motions include the defense's bid to suppress his confession, to dismiss the transportation counts as brought a day too late, and [to subpoena a native video file and other media from one person's phone on January 5, 2021, with that day's communications with a second person, which the government has declined to produce in full]{claim=PIPE-C076}. Last checked October 19, 2026.
+
+  ## The night of January 5
+
+  The FBI's reconstruction of that evening, from surveillance video that has not been made public, is not contested by the defense, though Baker disputes parts of it. [The FBI's video timeline has the person placing the first device by the DNC at about 7:54 p.m.]{claim=PIPE-C001} and [the second, behind the RNC, at about 8:16]{claim=PIPE-C002}, after being caught on camera in the neighborhood from 7:34 onward. [Each device was a short metal pipe capped at both ends, filled with homemade black powder and wired to a kitchen timer and a 9-volt battery]{claim=PIPE-C006}. [An FBI explosives examiner assessed both as viable]{claim=PIPE-C007}, though [whether they could actually have gone off is disputed]{claim=PIPE-C008}: by the prosecution's own account one powder sample was not explosive, and neither device fired in the sixteen hours it lay out. [By that reconstruction they lay where they were left until they were found]{claim=PIPE-C004}, though no continuous footage of either device is public — [a Secret Service sweep at the DNC missed its device that morning, before Vice President-elect Kamala Harris arrived]{claim=PIPE-C054}, and [after the discovery the police failed to keep people and cars away from them]{claim=PIPE-C055}.
+
+  The person on the video was [put by the FBI's 2021 height analysis at 5 feet 7 inches, give or take an inch, hood included]{claim=PIPE-C009}, [wore eyeglasses]{claim=PIPE-C011} and [wore Nike Air Max Speed Turf shoes]{claim=PIPE-C012}. Cole, the affidavit says, [is about 5 feet 6]{claim=PIPE-C010} and wears glasses: a fit, but one that would fit a great many men.
+
+  ## The case as the prosecution states it
+
+  Four lines of evidence, all described in sworn statements or court filings and none yet tested at trial, make up the charge. Under this site's rules each stays provisional while it rests on one side's description of records no one else has examined.
+
+  **Purchases.** [Bank and card records, as the FBI describes them, show Cole buying six of the kinds of part in the devices across 2019 and 2020]{claim=PIPE-C020}: the pipes, end caps, timers, wire, steel wool and battery connectors. [The alligator clips are the exception: the only clips the affidavit lists were bought on January 23, 2021]{claim=PIPE-C070}, weeks after the placements, a gap Baker has pointed to. Most of it is ordinary hardware — [some 26,000 pipes of that make were sold in 2020]{claim=PIPE-C022} — but [the battery connector was not: fewer than 8,000 were distributed in the whole country over three years]{claim=PIPE-C021}, and he bought five. [He went on buying the same kinds of parts after January 2021, the last in August 2022]{claim=PIPE-C023}, and [the searches of his home and car turned up pipes, end caps, wire and receipts]{claim=PIPE-C024}. [No fingerprint or DNA link to the devices appears in the public record]{claim=PIPE-C025}; the prosecution says he wore gloves and wiped the devices down.
+
+  **His car.** [A license plate reader recorded his Nissan coming off Interstate 395 at the South Capitol Street exit at 7:10 p.m.]{claim=PIPE-C026}, twenty-four minutes before the bomber first appears on camera half a mile away; Baker's collaborator Armitas accepts that reading.
+
+  **His phone.** This is the strongest line. [Between 7:39 and 8:24 p.m., the affidavit states, the phone attributed to Cole connected seven times to the cell sectors covering the places the cameras show the bomber at the same minutes]{claim=PIPE-C027}. Mapped by this site with the sworn directions, each of the bomber's positions does lie in the serving sector's arc; the weakest fit is at 7:59:36, when the bomber's corner, New Jersey Avenue and E Street SE, sits at the very edge of a sector facing south from Independence Avenue SW. A sector is a wide wedge, not a pin; but five wedges in the order the bomber walked them are hard to come by unless the phone went with the bomber. [One sector's direction was published wrongly at first and corrected by the provider in April 2021]{claim=PIPE-C028}, years before Cole was a suspect, and the fit depends on the correction. A former senior FBI official told Congress that [the carriers had handed the FBI corrupted data]{claim=PIPE-C029}; the carriers deny it, and how the data used against Cole was kept and recovered is not public.
+
+  **His own account.** [When questioned, Cole first said he had driven to Washington alone that evening to attend a protest about the 2020 election]{claim=PIPE-C037}. [After about two hours of denials, shown a still from the video and reminded that lying to agents is a crime, he paused for about fifteen seconds and said yes, it was him]{claim=PIPE-C038}, the prosecution says, and [then spent an hour and a half describing how he built, carried and placed the devices]{claim=PIPE-C039}: the powder he said he made himself, timers set to their sixty-minute maximum, his car parked on D Street SE near Folger Park. [He said he acted out of frustration with both parties]{claim=PIPE-C049} and [denied that he was aiming at Congress or the next day's vote]{claim=PIPE-C050}, though [prosecutors now allege an intent to coerce Congress]{claim=PIPE-C051}. Over the following years [his phone recorded 943 factory resets or wipes]{claim=PIPE-C046} — [one in December 2020, then none until July 2022]{claim=PIPE-C047}, and one about three hours before his arrest; [the defense puts the wiping down to obsessive-compulsive disorder]{claim=PIPE-C048}.
+
+  ## The challenge to the confession
+
+  The defense has moved to suppress the confession. [Its expert, a leading researcher of false confessions, quotes the agents minimizing the act, implying leniency and suggesting his family might be spared a trip to Washington]{claim=PIPE-C041}, and reports that [Cole was in acute distress, at times hyperventilating]{claim=PIPE-C042}. [Cole was diagnosed with autism and obsessive-compulsive disorder two weeks after his arrest]{claim=PIPE-C043}; the prosecution notes that his school records show no diagnosis and that the defense has not produced the basis for it. Baker says [Cole denied involvement some 95 times before the agents raised his family]{claim=PIPE-C044}.
+
+  These are real risk factors, and they are also common in interrogations of people who did what they confess to. What decides the confession's worth is a different question: [does it contain details only the bomber could have known, which the agents had not supplied, and which check out?]{claim=PIPE-C040} Some are checkable — a brand and a store he named — but neither side has published that comparison, and [the recording itself is not public]{claim=PIPE-C045}. Baker's count, from the transcript, is that 95 of 123 admissions repeated what was supplied or already public and 28 were new; which 28, and whether they are true, is the open question.
+
+  ## The October footage
+
+  On October 18, 2026, Baker published [Capitol CCTV of a man walking alone on the northwest side of the Capitol that evening]{claim=PIPE-C030}, found with a researcher who goes by Armitas by following clues in Cole's first account. It is, as he says, [raw Capitol Police video from the House Administration Subcommittee on Oversight's public release on Rumble]{claim=PIPE-C061}, and [the video begins, as Armitas says, at 7:57 p.m.]{claim=PIPE-C071} Critics answered that [the times shown were added by his team rather than read from the originals]{claim=PIPE-C072}: they were added, but they are the originals' own. Baker's conclusion is that [Cole was elsewhere while the devices were being placed, and so was not the bomber]{claim=PIPE-C033}. Rep. Thomas Massie and others have endorsed it; the FBI and the Justice Department have not responded publicly.
+
+  Baker's headline says the man was filmed [at the same time the devices were being placed]{claim=PIPE-C032}, which is not quite the point: he is filmed between 7:57 and 8:06, between the two placements. The sharp conflict is with the bomber's walk between them, and on the originals it is decisive: the man is not the bomber.
+
+  So the question is whether he is Cole. [He wears, Baker says, a maroon-and-gold cloth mask, a jacket with a tag hanging from it, and New Balance shoes]{claim=PIPE-C034}; Cole's family, Baker reports, recognised the mask, which his mother says she sewed, and the jacket. The frames, at 704 by 528 pixels, show a violet-blue hooded jacket and light shoes that flash under the lights, and cannot resolve a mask's colours, a brand or a tag. [Whether the man is Cole rests on that recognition and on his face judged by eye]{claim=PIPE-C031}, and [the same way of identifying people named a different person, a former Capitol Police officer, in November 2025 — a report its publisher retracted, and over which a federal court has entered a default judgment for defamation against Baker]{claim=PIPE-C036}. Then there is the phone, which at 7:59:36 was on a sector facing away from him: if he is Cole, it was not in his pocket. The longer breakdown adds [clips captioned as a dark sedan on 3rd Street SW at 8:03 and on C Street at 8:04]{claim=PIPE-C077}, beside a photograph of a 2017 Nissan Sentra, inside that sector; their source is not stated, so their times and places cannot yet be checked.
+
+  ## Baker's other points
+
+  [The bomber's shoes, Baker says, measured about size 9 to 9.5]{claim=PIPE-C014}, while [Cole wears 12 to 13]{claim=PIPE-C015}; no measurement or method has been published, and the sizes of the shoes seized from Cole would settle it. [He says the FBI's own podiatrist found a gait comparison inconclusive]{claim=PIPE-C016}; a court filing confirms such materials exist and went to the defense, not what they conclude. [He says unreleased video shows the bomber wearing a smartwatch]{claim=PIPE-C017}, and [that Cole never owned a watch]{claim=PIPE-C018}. [He says no camera shows the RNC device being set down]{claim=PIPE-C003}, and the prosecution's own memorandum says only that the bomber appears to have placed it there. [He reports that a laboratory flame test on the DNC device's powder was negative]{claim=PIPE-C065}, which fits the prosecution's admission that one sample was not explosive; that [an end cap went missing after the device was disrupted]{claim=PIPE-C066}; that [a second disruption shot destroyed fingerprint and DNA evidence]{claim=PIPE-C067}; that [the RNC device's timer read twenty minutes when it was found]{claim=PIPE-C068}, against the sixty Cole reportedly described; and that [the FBI told Congress the DNC's January 6 footage was lost]{claim=PIPE-C069}. He argued that [the devices were set down shortly before they were found, not the night before]{claim=PIPE-C005}; the FBI's sworn timeline says otherwise, and so does his own October account, which has the bomber distributing devices that evening. And he says he is certain [the bomber was a police insider]{claim=PIPE-C052}; no evidence for that has been published, and its one named suspect is the one his outlet retracted. What points to Cole instead is not yet public or tested either, and Cole's own lawyers are pursuing January 5 records the government resists producing in full.
+
+  Questions about the investigation itself are fair. [The FBI chased many leads in 2021]{claim=PIPE-C053}, among them five people whose phone data may have matched the bomber's movements; and [Cole became the focus only weeks before his arrest, without any new tip or witness]{claim=PIPE-C056}, by officials' account — which means the evidence against him sat in the files for years.
+
+  ## What the record shows, and what would settle it
+
+  On the public record as it stands, [the charged account — that Cole is the person on the video]{claim=PIPE-C059} — is provisionally supported. Purchases including an uncommon part, a car arriving at the right time, a phone keeping pace with the bomber, parts at his home and a confession all point to him; but all of it is the prosecution's description of records the public has not seen and no court has tested, and this site takes no official account on trust. That is this site's own assessment of the evidence, not a finding of guilt, which only a jury can make. The one record the public can check, the congressional footage, is authentic and shows a man who is not the bomber. Whether he is Cole is now the decisive question, and the phone data, as sworn, say he is not. Three things would settle it: a comparison of the man's frames with known images of Cole by an examiner who is not told which is which, with his track on the cameras around him; the phone's raw records, with distance data; and the recorded interview, each detail traced to whoever said it first.

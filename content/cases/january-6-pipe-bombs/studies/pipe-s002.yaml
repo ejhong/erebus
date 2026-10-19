@@ -1,6 +1,7 @@
 # Study freeze — pre-registration only (AGENTS.md §3.12), written and committed before
 # the videos were downloaded. Zero rows by design; any later edit to the
 # criteria fails the build (criteriaHash). Collection follows in a later change.
+# Collected 2026-10-19 in a later change than the freeze; the criteria above the rows are untouched.
 id: PIPE-S002
 title: "What the October 2026 footage shows, frame by frame: cameras, clocks and places"
 question: Which cameras does the footage published with Baker's October 18, 2026 posts come from,
@@ -15,6 +16,10 @@ claimIds:
   - PIPE-C062
   - PIPE-C071
   - PIPE-C072
+  - PIPE-C063
+  - PIPE-C073
+  - PIPE-C074
+  - PIPE-C077
 criteria:
   frozenOn: 2026-10-19
   inclusion:
@@ -70,9 +75,342 @@ columns:
   - time drawn by the camera or added
   - place shown
   - clothing and items
-rows: []
-findings: []
-limitations: []
+rows:
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 0:07–0:15
+      camera label: "[3192]"
+      on-screen date and time: 7:57:04pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: A street with a trailer bearing a Trump–Pence 2020 banner, an SUV and a truck
+      clothing and items: No person can be made out
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 0:07–0:15
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 0:15–0:25
+      camera label: "[794]"
+      on-screen date and time: 7:57:04pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: A fenced lot by a sidewalk, with sign posts and orange-and-white barrels
+      clothing and items: A figure in a light hooded top walking along the fence; the breakdown labels this person the bomber
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 0:15–0:25
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 0:33–1:11
+      camera label: "[3188]"
+      on-screen date and time: 7:59:33pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: A walkway beside a low wall and a parking lot under bright lamps (a crop of the camera's view)
+      clothing and items: A small dark figure walking toward the camera along the walkway; no clothing detail can be made out
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 0:33–1:11
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 1:11–1:59
+      camera label: "[3187]"
+      on-screen date and time: 8:01:16pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: A zebra crosswalk with a sign on a stand (a crop of the camera's view of Peace Circle)
+      clothing and items: "A man walking alone in a violet-blue hooded jacket and dark trousers; light-soled shoes that flash under the lights; the face is dark. Inserted beside him: a photograph of a pair of New Balance shoes marked ML574, and product photographs headed Demonstration of reflection"
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 1:11–1:59
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 2:07–3:50
+      camera label: "[600]"
+      on-screen date and time: 8:01:33pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: "From the Northwest Drive exit: a barrier, a sentry box and the street toward the Peace Monument; from about 3:10, zoomed views of a lawn with a sentry box and a lamp on a stone pier, with no new label"
+      clothing and items: A group of four walking; a man crossing toward the monument, annotated Brian was known to leave tags on, beside an inserted photograph of a grey jacket with its tag circled; later a figure on the lawn annotated Phone reflects off face
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 2:07–3:50
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 3:51–3:58
+      camera label: None
+      on-screen date and time: None
+      time drawn by the camera or added: No time shown
+      place shown: A dark zoomed view of plants and signs on a fence; the camera is not named
+      clothing and items: A barely visible figure annotated Holds phone to face, beside an inserted daytime photograph of a man holding a phone to his face
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 3:51–3:58
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 4:05–5:21
+      camera label: "[601]"
+      on-screen date and time: 8:03:18pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: A lawn on the Capitol grounds with AREA CLOSED signs
+      clothing and items: Two dark figures at the bottom of the frame
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 4:05–5:21
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 5:31–6:19
+      camera label: "[602]"
+      on-screen date and time: 8:04:25pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: A fenced walkway beside Northwest Drive, with scaffolding (zoomed)
+      clothing and items: A man in dark clothing walking along the fence
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 5:31–6:19
+      verification: ai_verified
+  - cells:
+      video: 7-minute video (Armitas, posted by Baker)
+      offset in video: 6:29–7:10
+      camera label: "[940]"
+      on-screen date and time: 8:05:23pm (no date)
+      time drawn by the camera or added: "Added: a fixed caption in one editor's font at top right, shown at the start of the clip; it does not run"
+      place shown: "Constitution Avenue at New Jersey Avenue NW, looking west: lamps, a fence line and a crosswalk"
+      clothing and items: A figure crossing toward the far side
+    citation:
+      text: Video attached to Steve Baker's post of October 18, 2026, credited to @accabbat (Armitas)
+      url: https://x.com/SteveBakerUSA/status/2111794954187985102
+      locator: 6:29–7:10
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 31:04–31:08
+      camera label: None
+      on-screen date and time: None
+      time drawn by the camera or added: No time shown
+      place shown: At night, a person behind bicycle-rack barricades; shown between frames of a map marking a point near Folger Park SE, which the 7-minute video's version of the map labels J6 Pipe Bomber
+      clothing and items: A dark jacket; nothing else can be made out
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 31:04–31:08
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 39:44–40:28
+      camera label: None
+      on-screen date and time: None
+      time drawn by the camera or added: No time shown
+      place shown: A road at night beside a low white fence, under a streetlamp; also shown as zoomed stills
+      clothing and items: A dark sedan driving past
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 39:44–40:28
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 41:26–41:42
+      camera label: "Caption: 3rd street SW"
+      on-screen date and time: 8:03:35pm, then 8:03:36pm (no date)
+      time drawn by the camera or added: "Added: yellow captions at top left in a different style from the 7-minute video's, naming a street, not a camera"
+      place shown: A street with a striped barrier, then a street with parked cars
+      clothing and items: Vehicles; no person can be made out
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 41:26–41:42
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 41:54
+      camera label: "Caption: 3r… (cut off)"
+      on-screen date and time: 8:03:44pm
+      time drawn by the camera or added: Added, in the same yellow style
+      place shown: A building entrance at night
+      clothing and items: The headlights of a passing vehicle
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 41:54
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 41:56–42:18
+      camera label: None
+      on-screen date and time: None
+      time drawn by the camera or added: No time shown
+      place shown: A blurred, zoomed dark sedan beside an inserted photograph of a blue sedan with features circled in red (a photograph captioned 2017 Nissan Sentra is shown at 40:36–41:08)
+      clothing and items: A dark sedan
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 41:56–42:18
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 42:20–43:26
+      camera label: "Caption: 3rd street SW"
+      on-screen date and time: 8:03:49pm (no date)
+      time drawn by the camera or added: Added, in the same yellow style
+      place shown: "A street seen from above: lamps, trees and parked cars"
+      clothing and items: Vehicles; no person can be made out
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 42:20–43:26
+      verification: ai_verified
+  - cells:
+      video: 63-minute breakdown (Baker and Kyle Seraphin)
+      offset in video: 43:28–43:30
+      camera label: "Caption: C street"
+      on-screen date and time: 8:04:19pm (no date)
+      time drawn by the camera or added: Added, in the same yellow style
+      place shown: A gate arm across a driveway and red-painted pavement
+      clothing and items: Nothing can be made out
+    citation:
+      text: Video attached to Steve Baker's reply of October 18, 2026 (Baker and Kyle Seraphin's breakdown)
+      url: https://x.com/SteveBakerUSA/status/2111794960018071939
+      locator: 43:28–43:30
+      verification: ai_verified
+  - cells:
+      video: Original file 3192QNW003rd-PennNW_2021-01-05_19h40min02s063ms.mp4 (subcommittee release on Rumble)
+      offset in video: 17:02
+      camera label: None on the image; the file name gives camera 3192
+      on-screen date and time: None on the image; the file name gives the start, 19:40:02.063, so 17:02 is 19:57:04
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: "3rd Street and Pennsylvania Avenue NW: the same trailer, SUV and truck as the edited clip"
+      clothing and items: No person can be made out in the stills checked (17:02–17:06)
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 3192QNW003rd-PennNW_2021-01-05_19h40min02s063ms.mp4"
+      url: https://rumble.com/v57x1q2-3192qnw003rd-pennnw-2021-01-05-19h40min02s063ms.mp4.html
+      locator: 17:02
+      verification: ai_verified
+  - cells:
+      video: Original file 0794KIO00K9NJ-DSE_2021-01-05_19h55min35s083ms.mp4 (subcommittee release on Rumble)
+      offset in video: 1:31–1:40
+      camera label: None on the image; the file name gives camera 794
+      on-screen date and time: None on the image; the file name gives the start, 19:55:35.083, so 1:31–1:40 is 19:57:06–19:57:15
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: "New Jersey Avenue and D Street SE: the same fenced lot, sign posts and barrels; a checkpoint view with no clock"
+      clothing and items: A figure in a light hooded top passes the sign posts
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 0794KIO00K9NJ-DSE_2021-01-05_19h55min35s083ms.mp4"
+      url: https://rumble.com/v50471k-0794kio00k9nj-dse-2021-01-05-19h55min35s083ms.mp4.html
+      locator: 1:31–1:40
+      verification: ai_verified
+  - cells:
+      video: Original file 3188QNW00PeaceCircleNW_2021-01-05_19h40min01s663ms.mp4 (subcommittee release on Rumble)
+      offset in video: 19:31–19:58
+      camera label: None on the image; the file name gives camera 3188
+      on-screen date and time: None on the image; the file name gives the start, 19:40:01.663, so 19:31–19:58 is 19:59:33–19:59:59
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: A wide view of a parking lot west of Peace Circle, Pennsylvania Avenue NW, with the walkway at left; the edited clip is a crop of the walkway
+      clothing and items: A small dark figure walks along the walkway toward the camera, visible at 19:59:49–19:59:59
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 3188QNW00PeaceCircleNW_2021-01-05_19h40min01s663ms.mp4"
+      url: https://rumble.com/v57x61u-3188qnw00peacecirclenw-2021-01-05-19h40min01s663ms.mp4.html
+      locator: 19:31–19:58
+      verification: ai_verified
+    independenceNote: "Linked to the man at Peace Circle at 20:01:18 only by the edit's sequence: no continuous track between the two cameras was reviewed."
+  - cells:
+      video: Original file 3187QNW00PeaceCircleNW_2021-01-05_20h00min02s280ms.mp4 (subcommittee release on Rumble)
+      offset in video: 1:14–1:26
+      camera label: None on the image; the file name gives camera 3187
+      on-screen date and time: None on the image; the file name gives the start, 20:00:02.280, so 1:14–1:26 is 20:01:16–20:01:28
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: "Peace Circle: the Peace Monument and its fence, with a crosswalk in front; the edited clip is a crop of the crosswalk"
+      clothing and items: Empty at 20:01:16; a man in a violet-blue hooded jacket crosses the crosswalk alone at about 20:01:18–20:01:28
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 3187QNW00PeaceCircleNW_2021-01-05_20h00min02s280ms.mp4"
+      url: https://rumble.com/v57x6iq-3187qnw00peacecirclenw-2021-01-05-20h00min02s280ms.mp4.html
+      locator: 1:14–1:26
+      verification: ai_verified
+  - cells:
+      video: Original file 0600USCG00NWDriveExitTIMP_2021-01-05_19h52min45s993ms.mp4 (subcommittee release on Rumble)
+      offset in video: 8:47–9:20
+      camera label: None on the image; the file name gives camera 600
+      on-screen date and time: None on the image; the file name gives the start, 19:52:45.993, so 8:47–9:20 is 20:01:33–20:02:06
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: The Northwest Drive exit barrier, with the Peace Monument beyond and a lawn with a lamp on a stone pier at right
+      clothing and items: A group of four walking at 20:01:33; figures by the far road at 20:02:06
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 0600USCG00NWDriveExitTIMP_2021-01-05_19h52min45s993ms.mp4"
+      url: https://rumble.com/v4z2gf5-0600uscg00nwdriveexittimp-2021-01-05-19h52min45s993ms.mp4.html
+      locator: 8:47–9:20
+      verification: ai_verified
+  - cells:
+      video: Original file 0601USCG00NWDrivenearExit_2021-01-05_20h00min01s653ms.mp4 (subcommittee release on Rumble)
+      offset in video: 3:16
+      camera label: None on the image; the file name gives camera 601
+      on-screen date and time: None on the image; the file name gives the start, 20:00:01.653, so 3:16 is 20:03:18
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: "Northwest Drive near its exit: a parked SUV, the lawn with AREA CLOSED signs, the Capitol at right"
+      clothing and items: A figure on the lawn at right
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 0601USCG00NWDrivenearExit_2021-01-05_20h00min01s653ms.mp4"
+      url: https://rumble.com/v4z2ez2-0601uscg00nwdrivenearexit-2021-01-05-20h00min01s653ms.mp4.html
+      locator: 3:16
+      verification: ai_verified
+  - cells:
+      video: Original file 0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4 (subcommittee release on Rumble)
+      offset in video: 0:53–1:15
+      camera label: None on the image; the file name gives camera 602
+      on-screen date and time: None on the image; the file name gives the start, 20:03:32.640, so 0:53–1:15 is 20:04:25–20:04:47
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: A fenced walkway beside Northwest Drive near New Jersey and Constitution Avenues NW
+      clothing and items: A man in dark clothing walks along the fence at 20:04:25 and has passed out of the frame's centre by 20:04:47
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4"
+      url: https://rumble.com/v4z2dje-0602uscg00nwdrivenearnj-connw-2021-01-05-20h03min32s640ms.mp4.html
+      locator: 0:53–1:15
+      verification: ai_verified
+  - cells:
+      video: Original file 0940QNW00NJ-ConNW_2021-01-05_20h04min02s170ms.mp4 (subcommittee release on Rumble)
+      offset in video: 1:21–1:40
+      camera label: None on the image; the file name gives camera 940
+      on-screen date and time: None on the image; the file name gives the start, 20:04:02.170, so 1:21–1:40 is 20:05:23–20:05:42
+      time drawn by the camera or added: No time drawn; the file name carries the recording system's time to the millisecond
+      place shown: Constitution Avenue looking west from New Jersey Avenue NW, the Washington Monument in the distance
+      clothing and items: A figure near the far curb at 20:05:23, crossing at 20:05:42
+    citation:
+      text: "Committee on House Administration, Subcommittee on Oversight, on Rumble: 0940QNW00NJ-ConNW_2021-01-05_20h04min02s170ms.mp4"
+      url: https://rumble.com/v5061sh-0940qnw00nj-connw-2021-01-05-20h04min02s170ms.mp4.html
+      locator: 1:21–1:40
+      verification: ai_verified
+findings:
+  - statement: All eight cameras the 7-minute video names — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are files in the House Administration Subcommittee on Oversight's release on Rumble, reached through its per-camera playlists; the pages are unlisted and play without signing in. Each clip matches its original file at the moment the video labels it, the same view, cropped or zoomed.
+    evidenceId: PIPE-E158
+  - statement: "The times are not drawn by the cameras: none of the eight originals shows a time on the image. The video's times are fixed captions in one editor's font, shown at the start of each clip — the first two, on cameras 3192 and 794, read 7:57:04pm — and each equals the original file's start time, which its name records to the millisecond, plus the time elapsed in the file, to within a few seconds. The frozen prediction for added captions holds; and the captions were read from the originals."
+    evidenceId: PIPE-E159
+  - statement: The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the two files' start times. The man appears 53 seconds into the first (8:04:25) and about 81 to 100 seconds into the second (8:05:23 to 8:05:42), as the video's own captions say.
+    evidenceId: PIPE-E154
+  - statement: Camera 794, in the same release, shows a figure in a light hooded top, whom the breakdown labels the bomber, passing at New Jersey Avenue and D Street SE at 19:57:06 to 19:57:15 — one block north of where the affidavit places the bomber at 7:59:38. The release's clock and the affidavit's timeline agree there to within a few minutes. Peace Circle, where the man crosses at about 8:01:18, is about 960 metres from New Jersey Avenue and E Street SE in a straight line.
+    evidenceId: PIPE-E156
+  - statement: The man in the violet-blue hooded jacket crosses at Peace Circle at about 20:01:18 to 20:01:28 (camera 3187). The walker on camera 3188 at 19:59:33 to 19:59:59 is too small to identify; only the edit's sequence links him to the man at Peace Circle.
+    evidenceId: PIPE-E157
+  - statement: "Clothing: on camera 3187, a violet-blue hooded jacket, dark trousers and light-soled shoes that flash under the lights; the face is dark. At 704 by 528 pixels no mask colour, shoe brand or tag can be made out. The jacket photograph the video inserts beside the camera-600 clip shows a grey jacket; night CCTV colour is unreliable, so the difference is recorded, not weighed."
+    evidenceId: PIPE-E160
+  - statement: "The 63-minute breakdown adds footage the 7-minute video lacks: a person behind bicycle-rack barricades, with no label or time, and clips of a dark sedan captioned 3rd street SW at 8:03:35 to 8:03:49 p.m. and C street at 8:04:19 p.m., in a different caption style and with no camera numbers, beside a photograph captioned 2017 Nissan Sentra. Without camera numbers they could not be checked against originals."
+    evidenceId: PIPE-E161
+limitations:
+  - The 7-minute video was reviewed at one frame every two seconds and at each change of camera; the originals were viewed in a browser at the labelled moments and some seconds either side, not end to end, and were not downloaded.
+  - "The breakdown was reviewed at its posted 640 by 360 pixels: its camera segments were found by scene-change detection and by matching every two-second frame against the 7-minute video, so a new segment shorter than two seconds could be missed."
+  - "Material that is not camera footage was excluded, as frozen: maps with pins, interview-transcript pages, a court-filing page, photographs of shoes, a jacket, a car and a house, a television broadcast and the title card."
+  - "The audio was not reviewed: what the hosts argue from the sedan clips, or from any other segment, is not recorded here."
+  - The agreement between the release's clock and the FBI's timeline rests on one shared moment (camera 794 against the affidavit's 7:59:38), not on an object both systems recorded.
+  - The study records what is on screen and identifies no one; whether the man is Cole is outside it, as frozen.
 runId: 2026-10-19-session-january-6-pipe-bombs-founder
 model: claude-opus-5-5
 date: 2026-10-19

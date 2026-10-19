@@ -107,3 +107,66 @@ not public. Gemini's notes on the raw footage are the next change's work:
 the original camera files are on the subcommittee's Rumble channel, and
 study PIPE-S002 will record them once its freeze is merged.
 
+
+## Later: the congressional originals, both studies, and the re-grade
+
+After the case opened, the founder set out what Erebus is for — "assume the
+shadiness of public statements, media narratives, lying officials, tampered
+evidence" and "consider the main voices from the conspiratorial side" — and
+merged it into the site's rules as "Official accounts are claims too" (#120).
+He asked that anything novel be highlighted. This change does both.
+
+**New findings** (the article opens with them, marked as new):
+
+1. All eight Capitol cameras in Baker's 7-minute video are files in the House
+   Administration Subcommittee on Oversight's release on Rumble, reached
+   through its per-camera playlists (unlisted pages that play without
+   signing in). Each clip matches its original at the labelled moment.
+2. The times on screen were added in editing, as critics said; but each is
+   the original file's own time: the start its name records, to the
+   millisecond, plus the time elapsed.
+3. The "20:03:32 to 20:04:02" given for cameras 602 and 940 are those
+   files' start times; the man appears about a minute later (8:04:25,
+   8:05:23). This site's own claim PIPE-C062 had misread the host's summary
+   and is corrected.
+4. The same release films the bomber on the sworn route at 7:57 (camera 794),
+   so its clock agrees with the FBI's; the man crossing at Peace Circle at
+   8:01:18 could not have been where the affidavit puts the bomber 100
+   seconds earlier, about a kilometre away. He is not the bomber.
+5. Study PIPE-S001: at 7:59:36 the phone attributed to Cole used a sector
+   facing south from 200 Independence Avenue SW; every place the man is
+   filmed lies behind it, 147° to 172° off its direction. If the man is Cole,
+   the phone was not with him.
+6. The 63-minute breakdown adds clips of a dark sedan captioned 3rd Street
+   SW (8:03:35–8:03:49) and C Street (8:04:19), beside a photograph of a 2017
+   Nissan Sentra, with no camera numbers or stated source; and a map marking
+   8:04:19, which is not a phone session in the affidavit.
+7. Cole's lawyers are seeking by subpoena a native video file and other
+   media from one person's phone on January 5, 2021, and that day's
+   communications with a second person; the government produced a PDF
+   extraction and declined the rest (ECF 100). Neither person is named here.
+
+**Re-grade.** Every claim was re-graded under the new rules: attributed claims
+are graded on their substance whoever is attributed; one party's description
+of records no independent party has examined caps a claim at provisionally
+supported, for the prosecution and Baker alike; the cap lifts where adverse
+sides both affirm a fact (the plate reader, which Armitas concedes), an
+independent body examined the records (the House subcommittees), or the
+record is public. The charged account moves from well supported to
+provisionally supported; the insider account from contradicted to
+unresolved; the corrupted-data claim from contradicted to mixed; the
+prosecution's purchase, search and phone descriptions to provisionally
+supported, and so does the defense expert's reading of the unreleased
+transcript.
+
+**Method.** The two X videos were downloaded with the founder's approval and
+reviewed at two-second steps and at every cut; the breakdown's new footage was
+found by matching every two-second frame against the short video. The
+originals were viewed in a browser, not downloaded, at each labelled moment.
+Sector geometry used the District's Master Address Repository (public map
+service); the protocol's FCC and OpenCelliD cross-check was not done. The
+Internet Archive could not save the Rumble pages (error 520).
+
+**Not done.** The audio of the breakdown was not reviewed; the man's track
+between cameras was not followed; the sedan clips' source is unknown
+(PIPE-R010). The panel has not yet sat on the case.
