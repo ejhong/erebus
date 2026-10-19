@@ -69,7 +69,7 @@ the weekly workflow.
   **never** directly in published content.
 - Processed items move to `inbox/processed/<runId>/`, so this folder stays
   clean and every run is traceable (and revertable) by its runId.
-- You get a PR with a plain-language digest. See `docs/MAINTENANCE.md`.
+- You get a PR with a plain-language digest. See `docs/RUNBOOK.md`.
 
 ## What does NOT belong here
 

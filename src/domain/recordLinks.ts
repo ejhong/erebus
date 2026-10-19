@@ -1,4 +1,4 @@
-import type { LoadedCase } from "./schema";
+import type { LoadedCase } from "./schema.ts";
 
 export type RecordLinkTarget = {
   kind: "case" | "claim" | "source" | "evidence" | "research";
@@ -9,7 +9,7 @@ export type RecordRefSegment =
   | { kind: "text"; value: string }
   | { kind: "record"; id: string };
 
-/** Matches site record ids cited in prose (order: longest prefixes first). */
+/** Matches Erebus record ids cited in prose (order: longest prefixes first). */
 const RECORD_REF =
   /\b(SRC-[A-Z0-9-]+|[A-Z]+-C\d{3}|[A-Z]+-E\d{3}|[A-Z]+-R\d{3}|[A-Z]+-\d{3})\b/g;
 
@@ -55,8 +55,8 @@ export function buildRecordLinkRegistry(
       });
     }
     // The case page renders only a handful of evidence highlights; the full
-    // ledger page renders every record, so it is the only route where an
-    // #evidence-{id} anchor is guaranteed to exist.
+    // ledger page renders every record — refused ones as tombstones — so it
+    // is the only route where an #evidence-{id} anchor is guaranteed to exist.
     for (const evidence of loaded.evidence) {
       registry.set(evidence.id, {
         kind: "evidence",

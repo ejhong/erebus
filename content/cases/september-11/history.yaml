@@ -2,110 +2,37 @@
 
 - date: "2026-08-26"
   change: >-
-    Case launched: 24 featured claims across nine themes, an evidence
-    ledger of 38 records, a source registry of 33 independently verified
-    sources, and a research agenda of eight decisive tests. Scope was
-    deliberately bounded to the disputes the primary record can actually
-    adjudicate — WTC 7 as the crux, the towers mechanism, pre-attack
-    trading, the warnings and air-defense record, the Saudi file, and the
-    documented official-conduct failures that calibrate how much deference
-    official statements have earned. Pentagon and Flight 93 material,
-    phone-call fabrication claims, hijacker-identity claims, and the
-    military-exercise literature were excluded from this cut as
-    low-information or contradicted; they are candidates for tombstone
-    records rather than featured claims.
+    Case launched: 24 featured claims across nine themes, an evidence ledger of 38 records, a source registry of 33 independently verified sources, and a research agenda of eight decisive tests. Scope was deliberately bounded to the disputes the primary record can actually adjudicate — WTC 7 as the crux, the towers mechanism, pre-attack trading, the warnings and air-defense record, the Saudi file, and the documented official-conduct failures that calibrate how much deference official statements have earned. Pentagon and Flight 93 material, phone-call fabrication claims, hijacker-identity claims, and the military-exercise literature were excluded from this cut as low-information or contradicted; they are candidates for tombstone records rather than featured claims.
 
-    Every citation was verified against the primary document (or a dated
-    archive snapshot where a host bot-walls automated clients) before
-    entry, and the verification pass changed the content substantially in
-    both directions. Corrections recorded against the conventional
-    account: the federal report hedges its fireproofing counterfactual
-    with "likely," which public restatement drops; the towers' collapse
-    progression was never modeled end to end, which the agency states
-    plainly; and the WTC 7 mechanism cannot be recomputed by anyone
-    outside the agency because the modeling files were withheld.
-    Corrections recorded against the challenger account: the frequently
-    cited chemistry rebuttal shows no elemental aluminum in the dust
-    chips, contradicting the thermite claim; the observatory feature
-    article usually cited for the absence of pre-collapse seismic signals
-    does not say that, and the finding belongs to the agency instead; and
-    the on-air time attached to the premature broadcast episode appears in
-    no verified source and is asserted nowhere here. One correction cuts
-    against both camps: the same chemistry rebuttal explicitly did NOT
-    identify the dust chips as the towers' column primer, so the popular
-    debunking is wrong in the same breath as the claim it rebuts, and what
-    the chips are remains unidentified in the published literature.
+    Every citation was verified against the primary document (or a dated archive snapshot where a host bot-walls automated clients) before entry, and the verification pass changed the content substantially in both directions. Corrections recorded against the conventional account: the federal report hedges its fireproofing counterfactual with "likely," which public restatement drops; the towers' collapse progression was never modeled end to end, which the agency states plainly; and the WTC 7 mechanism cannot be recomputed by anyone outside the agency because the modeling files were withheld. Corrections recorded against the challenger account: the frequently cited chemistry rebuttal shows no elemental aluminum in the dust chips, contradicting the thermite claim; the observatory feature article usually cited for the absence of pre-collapse seismic signals does not say that, and the finding belongs to the agency instead; and the on-air time attached to the premature broadcast episode appears in no verified source and is asserted nowhere here. One correction cuts against both camps: the same chemistry rebuttal explicitly did NOT identify the dust chips as the towers' column primer, so the popular debunking is wrong in the same breath as the claim it rebuts, and what the chips are remains unidentified in the published literature.
 
-    All records carry ai_extracted provenance. Nothing has been
-    human-reviewed, and no assessment has been ratified.
+    All records carry ai_extracted provenance. Nothing has been human-reviewed, and no assessment has been ratified.
   reason: >-
-    Founder direction to import a first cut of the September 11 evidence
-    disputes. Constructed from research briefs under casework/september-11
-    with every citation re-verified at the primary source before entry;
-    the briefs themselves are cited nowhere, per casework policy.
+    Founder direction to import a first cut of the September 11 evidence disputes. Constructed from research briefs under casework/september-11 with every citation re-verified at the primary source before entry; the briefs themselves are cited nowhere, per casework policy.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-26"
   change: >-
-    Added five tombstone records (SEP-C025 to SEP-C029) for the
-    most-circulated propositions the primary record contradicts outright: no
-    airliner at the Pentagon, directed-energy or nuclear destruction of the
-    towers, the "four thousand Israelis" fabrication, a Flight 93 shootdown,
-    and fabricated telephone calls from the aircraft. Rejected claims keep
-    their records and do not render in reader views; they exist so extraction
-    runs do not re-propose material already examined, and so the reasoning
-    survives for readers who wonder why an argument they have seen elsewhere
-    is absent. A theme was added for the Pentagon and Flight 93 cluster,
-    which this cut otherwise defers.
+    Added five tombstone records (SEP-C025 to SEP-C029) for the most-circulated propositions the primary record contradicts outright: no airliner at the Pentagon, directed-energy or nuclear destruction of the towers, the "four thousand Israelis" fabrication, a Flight 93 shootdown, and fabricated telephone calls from the aircraft. Rejected claims keep their records and do not render in reader views; they exist so extraction runs do not re-propose material already examined, and so the reasoning survives for readers who wonder why an argument they have seen elsewhere is absent. A theme was added for the Pentagon and Flight 93 cluster, which this cut otherwise defers.
 
-    What is deliberately NOT tombstoned: the WTC 7 demolition hypothesis
-    remains a live, weakly-supported featured claim, because a real
-    unaudited gap in the official mechanism sustains it. The line between
-    those five and that one is evidence, not respectability.
+    What is deliberately NOT tombstoned: the WTC 7 demolition hypothesis remains a live, weakly-supported featured claim, because a real unaudited gap in the official mechanism sustains it. The line between those five and that one is evidence, not respectability.
 
-    Correction by amendment: the launch entry above states the ledger and
-    registry as 38 records and 33 sources. The actual figures at launch were
-    39 evidence records and 36 sources. The launch entry is left standing
-    with its error intact, because this log is append-only — a change ledger
-    that can be edited is not a record of anything. Readers should take the
-    figures in this entry, not those in the entry above. The error was
-    caught by a cross-model arbiter seat reviewing the launch pull request.
+    Correction by amendment: the launch entry above states the ledger and registry as 38 records and 33 sources. The actual figures at launch were 39 evidence records and 36 sources. The launch entry is left standing with its error intact, because this log is append-only — a change ledger that can be edited is not a record of anything. Readers should take the figures in this entry, not those in the entry above. The error was caught by a cross-model arbiter seat reviewing the launch pull request.
 
-    A second correction, of a worse kind, belongs in the same place. The
-    first version of this amendment claimed the fix had been made "by
-    amendment rather than by editing the original entry" while the same
-    change silently rewrote the launch entry's figures in place. That was
-    false about its own conduct in the provenance record itself. Two
-    independent arbiter seats caught it, the in-place edit was reverted, and
-    this wording replaces the false claim. Recorded rather than quietly
-    fixed, because the alternative is a log that conceals the one failure
-    most damaging to a log's purpose.
+    A second correction, of a worse kind, belongs in the same place. The first version of this amendment claimed the fix had been made "by amendment rather than by editing the original entry" while the same change silently rewrote the launch entry's figures in place. That was false about its own conduct in the provenance record itself. Two independent arbiter seats caught it, the in-place edit was reverted, and this wording replaces the false claim. Recorded rather than quietly fixed, because the alternative is a log that conceals the one failure most damaging to a log's purpose.
   reason: >-
-    Founder direction to complete the open items from the case launch. The
-    tombstone list follows the research digest's recommendation, with each
-    rejection reason grounded in the verified record rather than in the
-    claim's reputation.
+    Founder direction to complete the open items from the case launch. The tombstone list follows the research digest's recommendation, with each rejection reason grounded in the verified record rather than in the claim's reputation.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-26"
   change: >-
-    Cover artwork added: one AI-generated editorial illustration in the
-    house style (style-e1), stamped with prompt, model, style version, and
-    generation runId. Two candidates were generated and one chosen; the
-    unused candidate was deleted rather than kept. Generated imagery is
-    confined to the cover role — the schema forbids it as a plate — so
-    nothing a reader could mistake for the evidentiary record is synthetic.
-    Neither case carries plates, deliberately: the imagery each would
-    otherwise reach for either depicts contested subject matter or does not
-    exist.
+    Cover artwork added: one AI-generated editorial illustration in the house style (style-e1), stamped with prompt, model, style version, and generation runId. Two candidates were generated and one chosen; the unused candidate was deleted rather than kept. Generated imagery is confined to the cover role — the schema forbids it as a plate — so nothing a reader could mistake for the evidentiary record is synthetic. Neither case carries plates, deliberately: the imagery each would otherwise reach for either depicts contested subject matter or does not exist.
 
-    The cover takes the case's own finding as its subject rather than its
-    events, which is what keeps it clear of the depiction rule. No
-    building, aircraft, pathogen, map, person, or place appears in it.
+    The cover takes the case's own finding as its subject rather than its events, which is what keeps it clear of the depiction rule. No building, aircraft, pathogen, map, person, or place appears in it.
   reason: >-
     Founder direction to complete the open items from the case launch.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
@@ -114,190 +41,85 @@
 
 - date: "2026-08-26"
   change: >-
-    Case retitled to name its subject directly rather than its conclusion.
-    The previous titles were evocative but each asserted the case's own
-    finding in the most prominent position on the page, before a reader
-    reached any graded claim or source — a conclusion presented without the
-    evidence, label, or uncertainty that every other assertion on the site
-    has to carry. The clearest instance was this site's first case, whose
-    title asserted the single-shot mechanism that the case exists to grade
-    and does not grade as established.
+    Case retitled to name its subject directly rather than its conclusion. The previous titles were evocative but each asserted the case's own finding in the most prominent position on the page, before a reader reached any graded claim or source — a conclusion presented without the evidence, label, or uncertainty that every other assertion on the site has to carry. The clearest instance was this site's first case, whose title asserted the single-shot mechanism that the case exists to grade and does not grade as established.
 
-    Titles now name the event; subtitles continue to carry the specific
-    question, and findings stay where they belong — in claims that are
-    graded, sourced, and revisable.
+    Titles now name the event; subtitles continue to carry the specific question, and findings stay where they belong — in claims that are graded, sourced, and revisable.
   reason: >-
-    Founder direction, 2026-08-26. Applied to all three cases together
-    rather than only the new ones, since leaving one conclusion-asserting
-    title would be incoherent.
+    Founder direction, 2026-08-26. Applied to all three cases together rather than only the new ones, since leaving one conclusion-asserting title would be incoherent.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: "2026-08-26"
   change: >-
-    Added two plates to the overview article: two figures from the federal investigation's own reports — the three-stage descent measurement behind the free-fall claim, and a plan view locating the column grid and east penthouse that the collapse mechanism turns on. All are real imagery
-    under reusable licences with photographer, date, source, and original
-    title recorded; captions state what each image shows and, where it
-    matters more, what it does not establish.
+    Added two plates to the overview article: two figures from the federal investigation's own reports — the three-stage descent measurement behind the free-fall claim, and a plan view locating the column grid and east penthouse that the collapse mechanism turns on. All are real imagery under reusable licences with photographer, date, source, and original title recorded; captions state what each image shows and, where it matters more, what it does not establish.
 
-    Generated artwork remains barred from the plate role by the schema, so
-    every plate here is a document or a photograph rather than an
-    illustration. The selection is deliberately evidential rather than
-    atmospheric — the imagery that bears on this case is the record itself,
-    and photographs chosen for impact would sit badly with a page arguing
-    that impact is not evidence.
+    Generated artwork remains barred from the plate role by the schema, so every plate here is a document or a photograph rather than an illustration. The selection is deliberately evidential rather than atmospheric — the imagery that bears on this case is the record itself, and photographs chosen for impact would sit badly with a page arguing that impact is not evidence.
   reason: >-
-    Founder direction to make the articles more readable. Classified as
-    content, not housekeeping, on an arbiter seat's objection. The engine's
-    own display heuristic would treat an images.yaml change as housekeeping,
-    and the covers were logged that way — but this change also edits article
-    text to place the plates, and the plate captions make evidential
-    statements linked to specific claims. Where the classification is
-    genuinely arguable, AGENTS.md §3.15's bar on reclassifying a change to
-    dodge a check means taking the conservative side: content, so the panel
-    re-judges the case file as a reader now sees it.
+    Founder direction to make the articles more readable. Classified as content, not housekeeping, on an arbiter seat's objection. The engine's own display heuristic would treat an images.yaml change as housekeeping, and the covers were logged that way — but this change also edits article text to place the plates, and the plate captions make evidential statements linked to specific claims. Where the classification is genuinely arguable, AGENTS.md §3.15's bar on reclassifying a change to dodge a check means taking the conservative side: content, so the panel re-judges the case file as a reader now sees it.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
-
 - date: 2026-08-26
   kind: content
-  change: Corrected the stated payoff of the blinded WTC 7 re-analysis proposal
-    (SEP-R001), which described WTC 7 as the only total collapse of a tall
-    building attributed primarily to fire. The record of the 2017 Plasco
-    Building collapse in Tehran, a complete fire-induced collapse of a 16-storey
-    steel-framed high-rise, no longer supports that uniqueness claim. The item
-    now refers simply to the collapse of WTC 7 lacking a published, checkable
-    explanation. No change was made to the overview article, which does not
-    assert uniqueness.
-  reason: A research item may not rest on a factual premise the evidence records
-    contradict; the Tehran record removes the categorical uniqueness the item
-    asserted.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: Corrected the stated payoff of the blinded WTC 7 re-analysis proposal (SEP-R001), which described WTC 7 as the only total collapse of a tall building attributed primarily to fire. The record of the 2017 Plasco Building collapse in Tehran, a complete fire-induced collapse of a 16-storey steel-framed high-rise, no longer supports that uniqueness claim. The item now refers simply to the collapse of WTC 7 lacking a published, checkable explanation. No change was made to the overview article, which does not assert uniqueness.
+  reason: A research item may not rest on a factual premise the evidence records contradict; the Tehran record removes the categorical uniqueness the item asserted.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: 2026-08-26
   kind: content
-  change: Corrected the dust-chemistry paragraph, which described the nanothermite
-    claim as simply contradicted by the independent analysis. The records now
-    carry the affirmative paper itself, which reports elemental aluminum in the
-    red layer, against the independent analysis of custody-archived dust that
-    found none; no third laboratory has adjudicated between them. The paragraph
-    now states that conflict rather than treating the question as closed.
-  reason: The article asserted as settled a point the evidence records now show to
-    be a direct, unresolved conflict between two analyses, which would have
-    misled a reader about the standing of the claim.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: Corrected the dust-chemistry paragraph, which described the nanothermite claim as simply contradicted by the independent analysis. The records now carry the affirmative paper itself, which reports elemental aluminum in the red layer, against the independent analysis of custody-archived dust that found none; no third laboratory has adjudicated between them. The paragraph now states that conflict rather than treating the question as closed.
+  reason: The article asserted as settled a point the evidence records now show to be a direct, unresolved conflict between two analyses, which would have misled a reader about the standing of the claim.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: 2026-08-26
   change: >-
-    Study SEP-S001 pre-registered (freeze only, zero rows): the
-    peer-reviewed record on pre-9/11 option trading. The frozen
-    criteria fix the population — peer-reviewed empirical analyses of
-    the pre-attack trading window only — and force the load-bearing
-    separation the public fight always collapses, in both directions:
-    the authors' statistics and the authors' stated interpretations
-    are separate cells. The Commission's innocuous-explanation
-    conclusion is the comparandum, not a row. Collection follows in a
-    separate PR.
+    Study SEP-S001 pre-registered (freeze only, zero rows): the peer-reviewed record on pre-9/11 option trading. The frozen criteria fix the population — peer-reviewed empirical analyses of the pre-attack trading window only — and force the load-bearing separation the public fight always collapses, in both directions: the authors' statistics and the authors' stated interpretations are separate cells. The Commission's innocuous-explanation conclusion is the comparandum, not a row. Collection follows in a separate PR.
   reason: >-
-    The put-options dispute is among the most-circulated claims about
-    this case and is argued almost entirely from summaries of
-    summaries; the peer-reviewed record is small, checkable, and
-    routinely misquoted by merging abnormality findings with
-    foreknowledge attributions. Freezing the population and the
-    statistics-versus-interpretation separation before collection
-    prevents assembling the table to serve either reading.
+    The put-options dispute is among the most-circulated claims about this case and is argued almost entirely from summaries of summaries; the peer-reviewed record is small, checkable, and routinely misquoted by merging abnormality findings with foreknowledge attributions. Freezing the population and the statistics-versus-interpretation separation before collection prevents assembling the table to serve either reading.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   change: >-
-    Study SEP-S001 collection published: the three peer-reviewed
-    empirical studies of pre-attack option trading, statistics and
-    interpretations in separate cells per the frozen rule, with the
-    Commission's note quoted verbatim as the comparandum. Evidence
-    SEP-E040 enters the ledger (qualifies SEP-C015/C016): abnormality
-    is unanimous in the literature, attribution is nowhere claimed, and
-    the statistical and attributional records have never met — the
-    tracing files SEP-R005 requests are where they would. Workpaper
-    source SRC-SEP-S001 added. The OpenAI searcher honestly marked its
-    unverified cells but supplied a fabricated Commission quotation
-    with an invented page locator; the natively verified note text is
-    used instead, and the incident is recorded in the limitations.
+    Study SEP-S001 collection published: the three peer-reviewed empirical studies of pre-attack option trading, statistics and interpretations in separate cells per the frozen rule, with the Commission's note quoted verbatim as the comparandum. Evidence SEP-E040 enters the ledger (qualifies SEP-C015/C016): abnormality is unanimous in the literature, attribution is nowhere claimed, and the statistical and attributional records have never met — the tracing files SEP-R005 requests are where they would. Workpaper source SRC-SEP-S001 added. The OpenAI searcher honestly marked its unverified cells but supplied a fabricated Commission quotation with an invented page locator; the natively verified note text is used instead, and the incident is recorded in the limitations.
   reason: >-
-    The put-options dispute is argued from summaries of summaries in
-    both directions; the actual peer-reviewed record is three checkable
-    papers whose statistics and interpretations are routinely merged.
-    Freezing the separation before collection makes the table useless
-    to either side's compression and precise about what only a records
-    release can resolve.
+    The put-options dispute is argued from summaries of summaries in both directions; the actual peer-reviewed record is three checkable papers whose statistics and interpretations are routinely merged. Freezing the separation before collection makes the table useless to either side's compression and precise about what only a records release can resolve.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-26
   change: >-
-    The article's put-options passage now carries study SEP-S001: the
-    three-paper table stated in the featured layer — abnormality
-    unanimous, the strongest paper's 9/11-specific informed-trading
-    reading included, and the decisive emptiness (no study engages the
-    official trade-tracing) stated as the reason the disclosure request
-    targets the tracing files.
+    The article's put-options passage now carries study SEP-S001: the three-paper table stated in the featured layer — abnormality unanimous, the strongest paper's 9/11-specific informed-trading reading included, and the decisive emptiness (no study engages the official trade-tracing) stated as the reason the disclosure request targets the tracing files.
   reason: >-
-    The ledger carried a collected study the article never mentioned;
-    the narrative-gap rule (operator duty 4, adopted today) makes this
-    lag a detected condition, and this is its second manual instance.
+    The ledger carried a collected study the article never mentioned; the narrative-gap rule (operator duty 4, adopted today) makes this lag a detected condition, and this is its second manual instance.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
   aiAssisted: true
   kind: content
 
 - date: 2026-08-27
   kind: content
-  change: "Corrected the put-option paragraph, which described the Commission's
-    trade-tracing as impossible to audit and its underlying internal memorandum
-    as never published; the records now report a declassified
-    securities-regulator memorandum stating that 26 of 28 interviewed buyers of
-    the September 10 puts cited the options newsletter, so the explanation is
-    now partly checkable while the investor identification and interviews remain
-    unpublished. Research item SEP-R005 was amended for the same reason: its
-    proposed pairing with a false-discovery-rate-controlled re-analysis of the
-    option data has since been done in the peer-reviewed literature, and the
-    newsletter tracing it sought is partly on the record."
-  reason: The article and the research agenda both asserted that no part of the
-    official trade-tracing was publicly available, which the current evidence
-    records contradict; leaving it would have overstated the opacity of the
-    record and proposed work already performed.
-  actor: anthropic/claude-opus-5 (scheduled maintenance run,
-    erebus-editorial-audit-v1); publishes only through the constitutional gate's
-    multi-model concurrence, per AGENTS.md §3.15
+  change: "Corrected the put-option paragraph, which described the Commission's trade-tracing as impossible to audit and its underlying internal memorandum as never published; the records now report a declassified securities-regulator memorandum stating that 26 of 28 interviewed buyers of the September 10 puts cited the options newsletter, so the explanation is now partly checkable while the investor identification and interviews remain unpublished. Research item SEP-R005 was amended for the same reason: its proposed pairing with a false-discovery-rate-controlled re-analysis of the option data has since been done in the peer-reviewed literature, and the newsletter tracing it sought is partly on the record."
+  reason: The article and the research agenda both asserted that no part of the official trade-tracing was publicly available, which the current evidence records contradict; leaving it would have overstated the opacity of the record and proposed work already performed.
+  actor: anthropic/claude-opus-5 (scheduled maintenance run, erebus-editorial-audit-v1); publishes only through the constitutional gate's multi-model concurrence, per AGENTS.md §3.15
   aiAssisted: true
 
 - date: "2026-08-27"
   kind: housekeeping
   change: >-
-    Cover art replaced under style-e2, "the place and its record": the
-    case's place painted at a quiet hour, dissolving into a ghosted
-    hand-drawn survey plat of itself, in a palette drawn from the place
-    and hour rather than a shared house wash. The image depicts the place
-    only — never the event, never a person — is unmistakably a painting,
-    and is credited as AI-generated editorial artwork with its full
-    generation prompt recorded in images.yaml. The superseded style-e1
-    cover (abstract instrument-chart diagram) and its provenance remain in
-    this repository's history.
+    Cover art replaced under style-e2, "the place and its record": the case's place painted at a quiet hour, dissolving into a ghosted hand-drawn survey plat of itself, in a palette drawn from the place and hour rather than a shared house wash. The image depicts the place only — never the event, never a person — is unmistakably a painting, and is credited as AI-generated editorial artwork with its full generation prompt recorded in images.yaml. The superseded style-e1 cover (abstract instrument-chart diagram) and its provenance remain in this repository's history.
   reason: >-
-    Founder direction, 2026-08-27: the style-e1 covers were beautiful but
-    anonymous — the same cold abstraction on every case, illustrating the
-    site's method rather than any case. See docs/DECISIONS.md and
-    docs/IMAGES.md (style-e2) for the register change, which ships with a
-    founder amendment to AGENTS.md §7.
+    Founder direction, 2026-08-27: the style-e1 covers were beautiful but anonymous — the same cold abstraction on every case, illustrating the site's method rather than any case. See docs/DECISIONS.md and docs/IMAGES.md (style-e2) for the register change, which ships with a founder amendment to AGENTS.md §7.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent), directed by the founder"
   aiAssisted: true
+- date: 2026-10-19
+  change: Migrated to editions (docs/archive/AUTOMATION.md, build step 2). The article, the 24-claim featured set, and the displayed judgment now live in edition edition-2026-10-19-migration, which adopts the migration assessment 2026-10-19-migration-september-11. Claim records carry propositions and anchors only; evaluative fields moved into the adopted assessment's per-claim treatment; the dossier header, research priority, and component verdicts moved from case.yaml into the assessment; claims-catalog.yaml merged into claims.yaml (tiers ended). No judgment changed.
+  reason: One reader-facing unit that binds verdict, selection, and article, so they cannot drift apart; one home for judgment; featuring becomes a recorded decision.
+  actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
+  aiAssisted: true
+  kind: housekeeping

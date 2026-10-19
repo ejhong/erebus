@@ -1,66 +1,170 @@
 import { describe, expect, it } from "vitest";
+import { seatKey } from "../lib/seat-key.mjs";
 import {
   extractClaimRefs,
   extractPlateRefs,
   parseArticle,
   parseInlines,
-} from "./article";
+} from "./article.ts";
+import { adoptedAssessment, caseQuestion, currentEdition, latestAssessment } from "./editions.ts";
+import { checksStale, crossModelSummary, standingInWords, RATIFICATION_MIN_PANEL, ratification, runStaleness, seatsOwed, survivingObjections, latestCheckPerModel, displayAssessment, withinOneStep } from "./standing.ts";
+import { claimAnchorErrors, editionErrors, getCaseBySlug, liveClaims, loadAllCases, loadSiteImages, sourceAdmissionErrors, checkIntegrity, stampErrors } from "./load.ts";
+import { historyNewestFirst, lastContentUpdate, recentChanges } from "./history.ts";
+import { assessmentHash, canonicalJson, ledgerHash, sha256Hex } from "./hash.ts";
+import { caseView, findClaimView, reviewCoverage } from "./view.ts";
 import {
-  historyNewestFirst,
-  lastContentUpdate,
-  crossModelSummary,
-  RATIFICATION_MIN_PANEL,
-  ratification,
-  latestCheckPerModel,
-  displayAssessment,
-  liveClaims,
-  loadAllCases,
-  loadSiteImages,
-  recentChanges,
-  sourceAdmissionErrors,
-} from "./load";
-import {
+  assessmentFamily,
+  assessmentLabels,
+  assessmentStateCaptions,
+  AssessmentRunSchema,
+  CLAIM_ANCHOR_REQUIRED_FROM,
   ClaimSchema,
-  ConjectureSchema,
+  EditionSchema,
   EvidenceSchema,
   ImageSchema,
-} from "./schema";
+  SourceSchema,
+  STEELMAN_REQUIRED_FROM,
+  steelmanRequirementError,
+  type AssessmentRun,
+  type LoadedCase,
+} from "./schema.ts";
 
-describe("content loading", () => {
-  it("zero cases is a valid state — the loader returns an empty atlas, never throws", () => {
-    // The site bootstraps with no published cases; the UI renders a
-    // deliberate empty state. This must never be an error condition.
+describe("real content", () => {
+  it("loads and passes all integrity checks", () => {
     const cases = loadAllCases();
-    expect(Array.isArray(cases)).toBe(true);
+    expect(cases.length).toBeGreaterThan(0);
+    const geo = getCaseBySlug("megalithic-casting");
+    expect(geo.record.id).toBe("GEO-001");
+    expect(geo.dir).toBe("geopolymer");
+    expect(liveClaims(geo).length).toBeGreaterThanOrEqual(10);
+    // Tombstones are kept but excluded from live views.
+    expect(geo.claims.length).toBeGreaterThan(liveClaims(geo).length);
+    expect(latestAssessment(geo)).not.toBeNull();
+    // Every claim referenced by the current edition's article resolves.
+    for (const id of extractClaimRefs(currentEdition(geo).article)) {
+      expect(liveClaims(geo).some((c) => c.id === id)).toBe(true);
+    }
   });
 
-  it("a site with no image manifest has no site images", () => {
-    expect(loadSiteImages()).toEqual([]);
+  it("the migrated geo catalog rides the ledger backlog with honest provenance", () => {
+    const geo = getCaseBySlug("megalithic-casting");
+    const view = caseView(geo);
+    // The migration's eighty are all still here; an edition may since have
+    // featured some of them, and later intake adds behind them with its own run ids.
+    expect(geo.claims.filter((c) => c.origin.runId === "geo-catalog-import-2026-08-22")).toHaveLength(80);
+    const migrated = view.catalog.filter(({ claim }) => claim.origin.runId === "geo-catalog-import-2026-08-22");
+    expect(view.featured.length).toBe(currentEdition(geo).featuredClaimIds.length);
+    for (const { claim: c, treatment, verdict } of migrated) {
+      // One reversible run: a single runId stamped on every record.
+      expect(c.origin.runId).toBe("geo-catalog-import-2026-08-22");
+      expect(c.reviewState).toBe("ai_extracted");
+      expect(c.sourceAnchor?.locator.length).toBeGreaterThan(3);
+      // T-number origin, always; and no judgment until an edition features it.
+      expect(c.origin.ref).toMatch(/T-\d{3}/);
+      expect(treatment).toBeNull();
+      expect(verdict).toBeNull();
+    }
+    // Dedupe held: no catalog claim re-imports a T-number already carried
+    // by a featured claim, the killed topic, or the tombstoned cluster.
+    const excluded = [
+      "T-001", "T-003", "T-004", "T-005", "T-012", "T-013", "T-014",
+      "T-021", "T-034", "T-060", "T-072", "T-073", "T-077", "T-078",
+      "T-087",
+    ];
+    for (const { claim: c } of view.catalog) {
+      const t = c.origin.ref.match(/T-\d{3}/)?.[0];
+      expect(excluded).not.toContain(t);
+    }
+    // Confidentiality: neutrally-framed method topics never cite the
+    // confidential source.
+    const text = JSON.stringify(view.catalog.map((c) => c.claim));
+    expect(text).not.toMatch(/hawke/i);
+    expect(text).not.toMatch(/harmonic research/i);
   });
 
-  it("every published case passes full integrity checks", () => {
-    // Vacuous at zero cases; bites the moment the first case ships.
-    for (const c of loadAllCases()) {
-      // Every claim referenced by the article resolves to a live claim.
-      for (const id of extractClaimRefs(c.overviewMarkdown)) {
-        expect(liveClaims(c).some((cl) => cl.id === id)).toBe(true);
+  /** A question-only opening (Deep Memory, 2026-09-09): the current edition adopts no assessment. */
+  const isOpening = (loaded: LoadedCase) => currentEdition(loaded).assessment === null;
+
+  it("a question-only opening features nothing, adopts nothing, derives no standing, and is its case's own first edition", () => {
+    // Deep Memory opened this way on 2026-09-09; a case grows out of its opening when the loop's first assessing edition lands, so the set may be empty.
+    const openings = loadAllCases().filter(isOpening);
+    for (const loaded of openings) {
+      const ed = currentEdition(loaded);
+      // Every edition so far is question-only (a correction is a new edition, editions being append-only), chained from a first with no predecessor.
+      expect(loaded.editions[0].previous).toBeNull();
+      for (const e of loaded.editions) expect(e.assessment).toBeNull();
+      expect(ed.featuredClaimIds).toEqual([]);
+      expect(ed.article.length).toBeGreaterThan(40);
+      expect(loaded.claims).toEqual([]);
+      expect(loaded.assessmentRuns).toEqual([]);
+      const view = caseView(loaded);
+      expect(view.featured).toEqual([]);
+      expect(view.assessment).toBeNull();
+      expect(view.standing).toBeNull();
+      expect(displayAssessment(loaded)).toBeNull();
+      expect(adoptedAssessment(loaded)).toBeNull();
+      // The founding question stands until an edition restates it.
+      expect(caseQuestion(loaded)).toBe(loaded.record.subtitle);
+    }
+  });
+
+  it("every featured claim carries a full treatment and a verdict from the adopted assessment", () => {
+    for (const loaded of loadAllCases().filter((c) => !isOpening(c))) {
+      const view = caseView(loaded);
+      expect(view.featured.length).toBeGreaterThan(0);
+      expect(view.featured.map((c) => c.claim.id)).toEqual(
+        view.edition.featuredClaimIds,
+      );
+      for (const c of view.featured) {
+        expect(c.verdict).not.toBeNull();
+        expect(c.treatment?.plainLanguage.length).toBeGreaterThan(10);
+        expect(["headline", "major", "supporting"]).toContain(c.treatment?.importance);
       }
-      // Every plate embedded by the article is a real, non-generated image.
-      const plates = c.images.filter((i) => i.role === "plate");
-      for (const p of plates) {
-        expect(p.source).not.toBe("generated");
-      }
-      const plateIds = new Set(plates.map((p) => p.id));
-      for (const ref of extractPlateRefs(c.overviewMarkdown)) {
-        expect(plateIds.has(ref)).toBe(true);
+      // The dossier header came across from case.yaml into the assessment.
+      expect(view.header.whatIsClaimed?.length).toBeGreaterThan(20);
+      expect(view.header.whereDisagreementLives?.length).toBeGreaterThan(20);
+      expect(view.header.whatWouldSettleIt?.length).toBeGreaterThan(20);
+      expect(["high", "medium", "low"]).toContain(view.header.researchPriority?.level);
+      // Claim records carry nothing evaluative.
+      for (const c of loaded.claims) {
+        expect(c).not.toHaveProperty("credibility");
+        expect(c).not.toHaveProperty("tier");
+        expect(c).not.toHaveProperty("importance");
       }
     }
   });
 
+  it("every case's first edition is the migration, adopting a transfer that asserts nothing new — or a question-only opening", () => {
+    for (const loaded of loadAllCases()) {
+      const ed = loaded.editions[0];
+      expect(ed.previous).toBeNull();
+      if (ed.assessment === null) {
+        // A case that opened question-only (Deep Memory, 2026-09-09): its first edition features nothing and adopts nothing.
+        expect(ed.featuredClaimIds).toEqual([]);
+        continue;
+      }
+      const run = loaded.assessmentRuns.find((r) => r.runId === ed.assessment?.runId)!;
+      expect(run.migratedFrom).toBeTruthy();
+      expect(run.role).toBe("draft");
+      // The transferred draft exists and shares the case verdict.
+      const source = loaded.assessmentRuns.find((r) => r.runId === run.migratedFrom)!;
+      expect(source).toBeDefined();
+      expect(source.caseAssessment.verdict).toBe(run.caseAssessment.verdict);
+      expect(source.caseAssessment.loadBearing).toEqual(run.caseAssessment.loadBearing);
+      // The edition records the ledger it was written against; where the
+      // ledger has since moved, the case's changelog says so and a new
+      // edition is due (runEdition compares these two hashes).
+      expect(ed.basis.ledgerHash).toMatch(/^[a-f0-9]{64}$/);
+      if (ed.basis.ledgerHash !== loaded.ledgerHash) {
+        expect(loaded.history.some((h) => h.date >= ed.date && h.kind === "content")).toBe(true);
+      }
+      expect(ed.assessment?.hash).toBe(assessmentHash(run));
+    }
+  });
+
   it("every live case surfaces its latest change in the homepage feed", () => {
-    // Regression guard (upstream): with a date-only sort and a hard cap, a
-    // burst of same-day entries on one case could evict another case's
-    // launch entry. Vacuous at zero cases.
+    // Regression: with a date-only sort and a hard cap, a burst of same-day
+    // entries on one case evicted the vasocomputation launch entirely.
     const cases = loadAllCases();
     // Same sizing rule as the homepage: at least one slot per live case.
     const feed = recentChanges(cases, Math.max(4, cases.length));
@@ -77,6 +181,47 @@ describe("content loading", () => {
     for (let i = 1; i < feed.length; i++) {
       expect(feed[i - 1]!.date >= feed[i]!.date).toBe(true);
     }
+  });
+
+  it("article parses into blocks with claim refs", () => {
+    const geo = getCaseBySlug("megalithic-casting");
+    const article = currentEdition(geo).article;
+    const blocks = parseArticle(article);
+    expect(blocks.some((b) => b.kind === "heading")).toBe(true);
+    const refs = extractClaimRefs(article);
+    expect(refs.length).toBeGreaterThanOrEqual(8);
+  });
+
+  it("loads case and site images with valid licenses and files", () => {
+    const geo = getCaseBySlug("megalithic-casting");
+    const plates = geo.images.filter((i) => i.role === "plate");
+    expect(plates.length).toBeGreaterThanOrEqual(3);
+    // Every plate is real imagery with provenance — never generated.
+    for (const p of plates) {
+      expect(p.source).not.toBe("generated");
+      expect(p.provenance?.sourceUrl).toMatch(/^https:/);
+    }
+    expect(loadSiteImages().length).toBeGreaterThanOrEqual(2);
+    // Plate refs in the article resolve to actual plates.
+    const plateIds = new Set(plates.map((p) => p.id));
+    for (const ref of extractPlateRefs(currentEdition(geo).article)) {
+      expect(plateIds.has(ref)).toBe(true);
+    }
+  });
+
+  it("findClaimView locates a claim in its case, featured or not", () => {
+    const cases = loadAllCases();
+    const featured = findClaimView(cases, "GEO-C001");
+    expect(featured?.view.featured).toBe(true);
+    expect(featured?.view.treatment).not.toBeNull();
+    expect(featured?.caseView.loaded.record.slug).toBe("megalithic-casting");
+    const geoCase = cases.find((c) => c.record.slug === "megalithic-casting")!;
+    const unfeatured = geoCase.claims.find((c) => c.reviewState !== "rejected" && !currentEdition(geoCase).featuredClaimIds.includes(c.id))!;
+    const backlog = findClaimView(cases, unfeatured.id);
+    expect(backlog?.view.featured).toBe(false);
+    expect(backlog?.view.treatment).toBeNull();
+    expect(findClaimView(cases, "NOPE-C000")).toBeNull();
+    expect(reviewCoverage(featured!.caseView).total).toBe(currentEdition(featured!.caseView.loaded).featuredClaimIds.length);
   });
 });
 
@@ -181,6 +326,25 @@ describe("source admission rule", () => {
     ).toEqual([]);
   });
 
+  it("accepts a source documenting a claim's genealogy", () => {
+    const genealogyClaim = {
+      genealogy: {
+        firstKnown: "2016-11-03",
+        originDescription: "anonymous forum post, later amplified",
+        originSourceId: "SRC-A",
+      },
+    };
+    expect(
+      sourceAdmissionErrors([src("SRC-A")], [], [genealogyClaim]),
+    ).toEqual([]);
+    // And the honesty rule still cuts both ways.
+    const errors = sourceAdmissionErrors([src("SRC-A", true)], [], [
+      genealogyClaim,
+    ]);
+    expect(errors).toHaveLength(1);
+    expect(errors[0]).toContain("remove background: true");
+  });
+
   it("rejects a cited source still mislabeled background", () => {
     const errors = sourceAdmissionErrors(
       [src("SRC-A", true)],
@@ -203,13 +367,10 @@ describe("source admission rule", () => {
 describe("schema rules", () => {
   const baseClaim = {
     id: "GEO-C999",
-    tier: "featured",
     statement: "A test statement long enough to pass.",
-    plainLanguage: "A plain language gloss long enough.",
     theme: "tool-marks",
     rung: "observation",
     claimType: "observation",
-    importance: "supporting",
     reviewState: "ai_extracted",
     origin: {
       ref: "test",
@@ -217,17 +378,11 @@ describe("schema rules", () => {
       runId: "test-run",
       date: "2026-01-01",
     },
-    credibility: "unresolved",
-    credibilitySummary: "none",
-    diagnosticity: "low",
-    diagnosticitySummary: "none",
-    strongestObjection: "none",
   };
 
-  const baseCatalogClaim = {
+  const anchoredClaim = {
     id: "GEO-C998",
-    tier: "catalog",
-    statement: "A lightweight catalog statement long enough to pass.",
+    statement: "A lightweight anchored statement long enough to pass.",
     theme: "tool-marks",
     rung: "observation",
     reviewState: "ai_extracted",
@@ -251,54 +406,168 @@ describe("schema rules", () => {
         rejectionReason: "because",
       }),
     ).not.toThrow();
-    // The tombstone rule applies to catalog-tier claims too.
+  });
+
+  it("a claim is a proposition with anchors — nothing evaluative validates on it", () => {
+    const parsed = ClaimSchema.parse(anchoredClaim);
+    expect(parsed.parentClaimIds).toEqual([]);
+    expect(parsed.claimType).toBeUndefined();
+    // Evaluative fields are not part of the record (Zod strips unknown
+    // keys, so the schema is the guard that they never round-trip).
+    const stripped = ClaimSchema.parse({ ...baseClaim, credibility: "unresolved", tier: "featured" });
+    expect(stripped).not.toHaveProperty("credibility");
+    expect(stripped).not.toHaveProperty("tier");
+  });
+
+  it("a malformed source anchor fails", () => {
     expect(() =>
-      ClaimSchema.parse({ ...baseCatalogClaim, reviewState: "rejected" }),
+      ClaimSchema.parse({ ...anchoredClaim, sourceAnchor: { locator: "" } }),
     ).toThrow();
   });
 
-  it("catalog claims validate without featured-level richness", () => {
-    expect(() => ClaimSchema.parse(baseCatalogClaim)).not.toThrow();
-    const parsed = ClaimSchema.parse(baseCatalogClaim);
-    expect(parsed.tier).toBe("catalog");
+  it("the anchoring rule binds claims from the cutoff, not history", () => {
+    const old = { ...baseClaim, origin: { ...baseClaim.origin, date: "2026-09-07" } };
+    const fresh = { ...baseClaim, id: "GEO-C997", origin: { ...baseClaim.origin, date: CLAIM_ANCHOR_REQUIRED_FROM } };
+    const parsed = [old, fresh].map((c) => ClaimSchema.parse(c));
+    const errors = claimAnchorErrors(parsed, []);
+    expect(errors).toHaveLength(1);
+    expect(errors[0]).toContain("GEO-C997");
+    // An evidence record citing it satisfies the rule; so does a source anchor.
+    expect(claimAnchorErrors(parsed, [{ claimIds: ["GEO-C997"] }])).toEqual([]);
+    expect(
+      claimAnchorErrors([ClaimSchema.parse({ ...fresh, sourceAnchor: { locator: "p. 3" } })], []),
+    ).toEqual([]);
+    // Tombstones are exempt.
+    expect(
+      claimAnchorErrors(
+        [ClaimSchema.parse({ ...fresh, reviewState: "rejected", rejectionReason: "x" })],
+        [],
+      ),
+    ).toEqual([]);
   });
 
-  it("catalog claims require a source anchor", () => {
-    const { sourceAnchor: _drop, ...unanchored } = baseCatalogClaim;
-    void _drop;
-    expect(() => ClaimSchema.parse(unanchored)).toThrow();
+  it("claims may carry genealogy; malformed genealogy fails", () => {
+    const genealogy = {
+      firstKnown: "2016-11-03",
+      originDescription: "anonymous forum post, later amplified by aggregators",
+      originSourceId: "SRC-TEST",
+    };
     expect(() =>
-      ClaimSchema.parse({ ...baseCatalogClaim, sourceAnchor: { locator: "" } }),
-    ).toThrow();
-  });
-
-  it("promotion is a one-field edit that then demands the full workup", () => {
-    // Flipping tier alone fails loudly: the validator lists the editorial
-    // fields still missing. That failure is the promotion checklist.
-    expect(() =>
-      ClaimSchema.parse({ ...baseCatalogClaim, tier: "featured" }),
-    ).toThrow();
-    // Supplying the featured fields completes the promotion.
+      ClaimSchema.parse({ ...anchoredClaim, genealogy }),
+    ).not.toThrow();
+    // Partial dates are honest when only the year or month is known.
+    for (const firstKnown of ["2016", "2016-11"]) {
+      expect(() =>
+        ClaimSchema.parse({
+          ...anchoredClaim,
+          genealogy: { ...genealogy, firstKnown },
+        }),
+      ).not.toThrow();
+    }
+    // A vibe is not a date; a fragment is not an origin account.
     expect(() =>
       ClaimSchema.parse({
-        ...baseCatalogClaim,
-        tier: "featured",
-        plainLanguage: "A plain language gloss long enough.",
-        claimType: "observation",
-        importance: "supporting",
-        credibility: "unresolved",
-        credibilitySummary: "none yet",
-        diagnosticity: "low",
-        diagnosticitySummary: "none yet",
-        strongestObjection: "none recorded yet",
+        ...anchoredClaim,
+        genealogy: { ...genealogy, firstKnown: "Nov 2016" },
       }),
-    ).not.toThrow();
+    ).toThrow();
+    expect(() =>
+      ClaimSchema.parse({
+        ...anchoredClaim,
+        genealogy: { ...genealogy, originDescription: "4chan" },
+      }),
+    ).toThrow();
   });
 
-  it("featured claims still require the full editorial fields", () => {
-    const { plainLanguage: _pl, ...missingGloss } = baseClaim;
-    void _pl;
-    expect(() => ClaimSchema.parse(missingGloss)).toThrow();
+  it("misframed and provenance_failure are open-family credibility states", () => {
+    for (const credibility of ["misframed", "provenance_failure"] as const) {
+      expect(assessmentFamily(credibility)).toBe("open");
+      expect(assessmentLabels[credibility]).toBeTruthy();
+      // Unfamiliar epistemic terms are explained in place.
+      expect(assessmentStateCaptions[credibility]).toBeTruthy();
+    }
+  });
+
+  it("sources default to an empty derivedFrom list", () => {
+    const parsed = SourceSchema.parse({
+      id: "SRC-TEST",
+      title: "A test source",
+      sourceType: "webpage",
+      verification: "unverified",
+    });
+    expect(parsed.derivedFrom).toEqual([]);
+    expect(
+      SourceSchema.parse({
+        id: "SRC-TEST",
+        title: "A test source",
+        sourceType: "webpage",
+        verification: "unverified",
+        derivedFrom: ["SRC-PARENT"],
+      }).derivedFrom,
+    ).toEqual(["SRC-PARENT"]);
+  });
+
+  it("a treatment is complete or absent — the featured checklist lives on the assessment", () => {
+    const run = {
+      runId: "2026-09-08-auto-test",
+      model: "test",
+      date: "2026-09-08",
+      promptVersion: "test",
+      humanReviewed: false,
+      caseAssessment: {
+        verdict: "unresolved",
+        loadBearing: [],
+        weakestLinks: [],
+        synthesis: "s".repeat(120),
+        steelman: "A specific unanswered proponent argument, stated at honest length.",
+      },
+      claimAssessments: [
+        { claimId: "GEO-C001", verdict: "unresolved", reasoning: "r", confidence: "low" },
+      ],
+    };
+    expect(() => AssessmentRunSchema.parse(run)).not.toThrow();
+    const partial = {
+      ...run,
+      claimAssessments: [{ ...run.claimAssessments[0], treatment: { plainLanguage: "A gloss long enough." } }],
+    };
+    expect(() => AssessmentRunSchema.parse(partial)).toThrow();
+    const full = {
+      ...run,
+      claimAssessments: [
+        {
+          ...run.claimAssessments[0],
+          treatment: {
+            plainLanguage: "A gloss long enough.",
+            importance: "supporting",
+            diagnosticity: "low",
+            diagnosticitySummary: "none yet",
+            strongestObjection: "none recorded yet",
+          },
+        },
+      ],
+    };
+    expect(AssessmentRunSchema.parse(full).claimAssessments[0].treatment?.whatWouldChangeOurMind).toEqual([]);
+  });
+
+  it("an edition is strict: hashes are digests, featured ids are unique, the article is real", () => {
+    const hex = "a".repeat(64);
+    const edition = {
+      runId: "edition-2026-09-08-test",
+      date: "2026-09-08",
+      model: "test",
+      promptVersion: "test",
+      rationale: "a test edition, long enough",
+      basis: { ledgerHash: hex, inputsHash: hex },
+      previous: null,
+      assessment: { runId: "r", hash: hex },
+      featuredClaimIds: ["GEO-C001"],
+      article: "x".repeat(50),
+    };
+    expect(EditionSchema.parse(edition).cruxOrder).toEqual([]);
+    expect(() => EditionSchema.parse({ ...edition, featuredClaimIds: ["GEO-C001", "GEO-C001"] })).toThrow();
+    expect(() => EditionSchema.parse({ ...edition, basis: { ledgerHash: "nope", inputsHash: hex } })).toThrow();
+    expect(() => EditionSchema.parse({ ...edition, extra: true })).toThrow();
+    expect(() => EditionSchema.parse({ ...edition, assessment: null })).not.toThrow();
   });
 
   it("HARD RULE: AI-generated images can never be plates", () => {
@@ -357,6 +626,151 @@ describe("schema rules", () => {
         origin: baseClaim.origin,
       }),
     ).toThrow();
+  });
+});
+
+describe("hashes", () => {
+  it("canonical JSON is key-order independent and drops undefined", () => {
+    expect(canonicalJson({ b: 1, a: [{ d: 2, c: undefined }] })).toBe(
+      canonicalJson({ a: [{ d: 2 }], b: 1 }),
+    );
+    expect(sha256Hex("x")).toMatch(/^[a-f0-9]{64}$/);
+  });
+
+  it("the ledger hash changes when a record changes and not when key order does", () => {
+    const geo = getCaseBySlug("megalithic-casting");
+    const slice = {
+      claims: geo.claims,
+      evidence: geo.evidence,
+      sources: geo.sources,
+      research: geo.research,
+      studies: geo.studies,
+      images: geo.images,
+    };
+    expect(ledgerHash(slice)).toBe(geo.ledgerHash);
+    const moved = { ...slice, claims: [...slice.claims].reverse() };
+    expect(ledgerHash(moved)).not.toBe(geo.ledgerHash); // order of records is content
+    const edited = {
+      ...slice,
+      claims: slice.claims.map((c, i) => (i === 0 ? { ...c, statement: c.statement + "!" } : c)),
+    };
+    expect(ledgerHash(edited)).not.toBe(geo.ledgerHash);
+    // The agenda's lifecycle fields are the edition verb's own bookkeeping, not ledger movement (2026-09-19: an
+    // edition that answered a research item owed the case another edition at once).
+    const settled = { ...slice, research: slice.research.map((r, i) => (i === 0 ? { ...r, status: "answered", statusNote: "settled by a later record", statusBy: "2099-01-01-edition-x", statusDate: "2099-01-01" } : r)) };
+    expect(ledgerHash(settled as typeof slice)).toBe(geo.ledgerHash);
+  });
+});
+
+describe("edition integrity", () => {
+  const geo = () => getCaseBySlug("megalithic-casting");
+
+  it("live content passes", () => {
+    for (const c of loadAllCases()) expect(editionErrors(c)).toEqual([]);
+  });
+
+  it("an edited adopted assessment breaks the edition's hash", () => {
+    const c = geo();
+    const run = adoptedAssessment(c)!;
+    const tampered = {
+      ...c,
+      assessmentRuns: c.assessmentRuns.map((r) =>
+        r.runId === run.runId
+          ? { ...r, caseAssessment: { ...r.caseAssessment, verdict: "established" as const } }
+          : r,
+      ),
+    };
+    const errors = editionErrors(tampered);
+    expect(errors.some((e) => /no longer matches the recorded hash/.test(e))).toBe(true);
+  });
+
+  it("a frozen edition may feature or mark a claim rejected since; the current edition on the current ledger may not", () => {
+    const c = geo();
+    const ed = currentEdition(c);
+    const id = ed.featuredClaimIds[0];
+    const claims = c.claims.map((k) => (k.id === id ? { ...k, reviewState: "rejected" as const, rejectionReason: "split into parts since" } : k));
+    // The current edition on the current ledger: strict.
+    const current = { ...c, claims, ledgerHash: ed.basis.ledgerHash };
+    expect(editionErrors(current).some((e) => new RegExp(`edition ${ed.runId} features unknown or rejected claim ${id}`).test(e))).toBe(true);
+    // The same edition once the ledger has moved — a re-telling is owed — is a frozen record: no error for the rejected claim.
+    const stale = { ...c, claims, ledgerHash: "0".repeat(64) };
+    expect(editionErrors(stale).some((e) => new RegExp(`features unknown or rejected claim ${id}`).test(e))).toBe(false);
+    // A predecessor featuring it: no error, whatever the ledger.
+    const prevIdx = c.editions.length - 2;
+    if (prevIdx >= 0) {
+      const prev = c.editions[prevIdx];
+      const withPrev = { ...c, claims, ledgerHash: ed.basis.ledgerHash, editions: c.editions.map((e, i) => (i === prevIdx ? { ...e, featuredClaimIds: [...new Set([...e.featuredClaimIds, id])] } : i === c.editions.length - 1 ? { ...e, featuredClaimIds: e.featuredClaimIds.filter((x) => x !== id), article: e.article.split(id).join("") } : e)) };
+      expect(editionErrors(withPrev).some((e) => new RegExp(`edition ${prev.runId} features unknown or rejected claim ${id}`).test(e))).toBe(false);
+    }
+    // An id no claim carries at all is an error for every edition.
+    expect(editionErrors({ ...c, editions: c.editions.map((e, i) => (i === 0 ? { ...e, featuredClaimIds: [...e.featuredClaimIds, "GEO-C000"] } : e)) }).some((e) => /features unknown or rejected claim GEO-C000/.test(e))).toBe(true);
+  });
+  it("a retired agenda item may reference a claim rejected since; an open one may not", () => {
+    const c = geo();
+    const ro = c.research.find((r) => r.claimIds.length === 1)!;
+    const id = ro.claimIds[0];
+    const claims = c.claims.map((k) => (k.id === id ? { ...k, reviewState: "rejected" as const, rejectionReason: "refused since" } : k));
+    const stale = "0".repeat(64);
+    const others = {
+      evidence: c.evidence.map((e) => (e.claimIds.includes(id) ? { ...e, claimIds: e.claimIds.filter((x) => x !== id).length ? e.claimIds.filter((x) => x !== id) : e.claimIds, reviewState: e.claimIds.filter((x) => x !== id).length ? e.reviewState : ("rejected" as const), limitations: e.claimIds.filter((x) => x !== id).length ? e.limitations : [...e.limitations, "refused since"] } : e)),
+      images: c.images.map((i) => ({ ...i, claimIds: i.claimIds.filter((x) => x !== id) })),
+    };
+    const retired = { ...c, claims, ledgerHash: stale, ...others, research: c.research.map((r) => (r.id === ro.id ? { ...r, status: "retired" as const, statusNote: "its claim was refused", statusBy: "test-run", statusDate: "2026-09-20" } : r.claimIds.includes(id) ? { ...r, claimIds: r.claimIds.filter((x) => x !== id) } : r)) };
+    expect(() => checkIntegrity(c.dir, retired)).not.toThrow();
+    const open = { ...retired, research: retired.research.map((r) => (r.id === ro.id ? { ...r, status: "open" as const } : r)) };
+    expect(() => checkIntegrity(c.dir, open)).toThrow(new RegExp(`research ${ro.id} references rejected claim ${id}`));
+  });
+  it("a tombstone and an assessment run may reference a claim rejected since; a live record may not", () => {
+    const c = geo();
+    const ev = c.evidence.find((e) => e.reviewState !== "rejected" && e.claimIds.length === 1)!;
+    const id = ev.claimIds[0];
+    const claims = c.claims.map((k) => (k.id === id ? { ...k, reviewState: "rejected" as const, rejectionReason: "split into parts since" } : k));
+    const stale = "0".repeat(64);
+    const frozen = { ...c, claims, ledgerHash: stale, evidence: c.evidence.map((e) => (e.id === ev.id ? { ...e, reviewState: "rejected" as const, limitations: [...e.limitations, "refused since"] } : e.claimIds.includes(id) ? { ...e, claimIds: e.claimIds.filter((x) => x !== id).length ? e.claimIds.filter((x) => x !== id) : e.claimIds, reviewState: e.claimIds.filter((x) => x !== id).length ? e.reviewState : ("rejected" as const), limitations: e.claimIds.filter((x) => x !== id).length ? e.limitations : [...e.limitations, "refused since"] } : e)), research: c.research.map((r) => ({ ...r, claimIds: r.claimIds.filter((x) => x !== id) })), images: c.images.map((i) => ({ ...i, claimIds: i.claimIds.filter((x) => x !== id) })) };
+    expect(() => checkIntegrity(c.dir, frozen)).not.toThrow();
+    const live = { ...frozen, evidence: frozen.evidence.map((e) => (e.id === ev.id ? { ...e, reviewState: ev.reviewState } : e)) };
+    expect(() => checkIntegrity(c.dir, live)).toThrow(new RegExp(`evidence ${ev.id} references rejected claim ${id}`));
+  });
+  it("a featured claim without a treatment, an unknown featured id, and a check run adopted all fail", () => {
+    const c = geo();
+    const ed = currentEdition(c);
+    const run = adoptedAssessment(c)!;
+    const noTreatment = {
+      ...c,
+      assessmentRuns: c.assessmentRuns.map((r) =>
+        r.runId === run.runId
+          ? { ...r, claimAssessments: r.claimAssessments.map(({ treatment: _t, ...rest }) => { void _t; return rest; }) }
+          : r,
+      ),
+    };
+    // Hash changes too, so filter to the treatment complaint.
+    expect(editionErrors(noTreatment).some((e) => /carries no treatment/.test(e))).toBe(true);
+    const unknown = { ...c, editions: [{ ...ed, featuredClaimIds: [...ed.featuredClaimIds, "GEO-C000"] }] };
+    expect(editionErrors(unknown).some((e) => /unknown or rejected claim GEO-C000/.test(e))).toBe(true);
+    const check = c.assessmentRuns.find((r) => r.role === "check")!;
+    const adoptsCheck = {
+      ...c,
+      editions: [{ ...ed, assessment: { runId: check.runId, hash: assessmentHash(check) } }],
+    };
+    expect(editionErrors(adoptsCheck).some((e) => /adopts a check run/.test(e))).toBe(true);
+  });
+
+  it("plates survive: a successor that drops a predecessor's plate fails; a broken chain fails", () => {
+    const c = geo();
+    const ed = currentEdition(c);
+    const plateless = ed.article.replace(/^\{plate:[^}]+\}$/gm, "");
+    const successor = {
+      ...ed,
+      runId: "edition-2026-09-09-test",
+      date: "2026-09-09",
+      previous: ed.runId,
+      article: plateless,
+    };
+    const errors = editionErrors({ ...c, editions: [ed, successor] });
+    expect(errors.some((e) => /drops plate/.test(e))).toBe(true);
+    const orphan = editionErrors({ ...c, editions: [ed, { ...successor, article: ed.article, previous: "edition-nope" }] });
+    expect(orphan.some((e) => /unknown predecessor/.test(e))).toBe(true);
+    expect(editionErrors({ ...c, editions: [] })[0]).toMatch(/missing editions/);
   });
 });
 
@@ -420,15 +834,43 @@ describe("ratification governance (stage 3)", () => {
     claimVerdicts: Record<string, string> = {},
   ) => ({
     ...mkDraft(`${date}-check-${model}`, date, verdict, [], claimVerdicts),
-    model: `${model} (Vendor) — independent check`,
+    // Seats are keyed by the vendor in the parenthetical (seatKey), so each
+    // synthetic model gets its own vendor.
+    model: `${model} (Vendor-${model}) — independent check`,
     role: "check" as const,
   });
+  const HEX = "0".repeat(64);
+  /**
+   * A case fixture whose current edition adopts `adopt` (default: the first
+   * draft-role run) — the edition is what makes a draft the displayed one.
+   */
   const caseWith = (
     runs: unknown[],
     history: { date: string; kind?: string }[] = [],
-  ) =>
-    ({
+    adopt?: string,
+    ledger = "ledger-a",
+  ) => {
+    const drafts = (runs as { runId: string; role?: string }[]).filter((r) => r.role !== "check");
+    const adopted = adopt ?? drafts[0]?.runId;
+    return {
+      record: { slug: "fixture" },
+      ledgerHash: sha256Hex(ledger),
       assessmentRuns: runs,
+      editions: [
+        {
+          runId: "edition-fixture",
+          date: "2026-01-01",
+          model: "t",
+          promptVersion: "t",
+          rationale: "fixture edition",
+          basis: { ledgerHash: HEX, inputsHash: HEX },
+          previous: null,
+          assessment: adopted ? { runId: adopted, hash: HEX } : null,
+          featuredClaimIds: [],
+          cruxOrder: [],
+          article: "x".repeat(40),
+        },
+      ],
       history: history.map((h) => ({
         date: h.date,
         kind: h.kind,
@@ -437,10 +879,11 @@ describe("ratification governance (stage 3)", () => {
         actor: "a",
         aiAssisted: true,
       })),
-    }) as unknown as Parameters<typeof ratification>[0];
+    } as unknown as LoadedCase;
+  };
   const fiveChecks = (verdict: string, dissenters = 0, date = "2026-02-01") =>
     ["alpha", "beta", "gamma", "delta", "epsilon"].map((m, i) =>
-      mkCheck(m, date, i < dissenters ? "mixed" : verdict),
+      mkCheck(m, date, i < dissenters ? "contradicted" : verdict), // two steps from "unresolved": a dispute, not a neighbour
     );
 
   it("no checks → unratified, and the reason says so", () => {
@@ -469,7 +912,26 @@ describe("ratification governance (stage 3)", () => {
     ).toBe("ratified");
     const two = ratification(caseWith([draft, ...fiveChecks("unresolved", 2)]));
     expect(two?.status).toBe("contested");
-    expect(two?.reason).toMatch(/2 of 5 models dispute/);
+    expect(two?.reason).toMatch(/2 of 5 models place the case verdict more than one step away/);
+  });
+
+  it("a verdict one step away concurs; two steps away disputes (§3.15, amendment of 2026-09-09)", () => {
+    const draft = mkDraft("d", "2026-01-01");
+    // unresolved between weakly supported and mixed: five different words, one judgment
+    const near = ["unresolved", "mixed", "mixed", "weakly_supported", "presently_untestable"].map((v, i) => mkCheck(["a", "b", "c", "d", "e"][i], "2026-02-01", v));
+    const r = ratification(caseWith([draft, ...near]));
+    expect(r?.status).toBe("ratified");
+    expect(r?.agreeing).toBe(5);
+    expect(r?.reason).toMatch(/within one step/);
+    // contradicted and provisionally supported are two steps from unresolved
+    const far = ["contradicted", "provisionally_supported", "unresolved", "unresolved", "unresolved"].map((v, i) => mkCheck(["a", "b", "c", "d", "e"][i], "2026-02-01", v));
+    expect(ratification(caseWith([draft, ...far]))?.status).toBe("contested");
+    expect(withinOneStep("presently_untestable", "unresolved")).toBe(true);
+    expect(withinOneStep("weakly_supported", "unresolved")).toBe(true);
+    expect(withinOneStep("mixed", "unresolved")).toBe(true);
+    expect(withinOneStep("provisionally_supported", "unresolved")).toBe(false);
+    expect(withinOneStep("contradicted", "unresolved")).toBe(false);
+    expect(withinOneStep("well_supported", "established")).toBe(true);
   });
 
   it("content newer than the panel resets standing to unratified — never to ratified", () => {
@@ -534,6 +996,68 @@ describe("ratification governance (stage 3)", () => {
     const draft = mkDraft("d", "2026-02-02"); // newer than the checks
     const r = ratification(caseWith([draft, ...fiveChecks("unresolved")]));
     expect(r?.status).toBe("ratified");
+    expect(r?.engaged).toEqual([]);
+  });
+
+  it("a draft the edition verb wrote cannot be ratified by checks it was shown, contested or not", () => {
+    // 2026-09-30: a ratified case was re-told; its drafter was shown the panel's five checks, re-graded nine claims
+    // toward them, said so, and the new assessment stayed "ratified" on those same checks. Nothing marked it.
+    const roster = ["alpha", "beta", "gamma", "delta", "epsilon"].map((m) => `vendor-${m}`);
+    const earlier = fiveChecks("unresolved", 0, "2026-02-01"); // agree with the draft: the case is not contested
+    const byVerb = (over: Record<string, unknown> = {}) => ({ ...mkDraft("2026-02-02-edition-094541", "2026-02-02"), promptVersion: "edition-v14", ...over });
+    // Unstamped: every check then current was in the packet, so none made before the draft can vouch for it.
+    const unstamped = caseWith([byVerb(), ...earlier]);
+    const r = ratification(unstamped);
+    expect(r?.status).toBe("unratified");
+    expect(r?.reason).toMatch(/written with the panel's verdicts in hand.*fresh blind check/);
+    expect(r?.engaged).toEqual(earlier.map((c) => c.runId));
+    expect(standingInWords(r!)).toBe("not yet ratified: written with the panel's verdicts in hand, awaiting a fresh blind check");
+    expect(checksStale(unstamped)).toBe(true);
+    expect(seatsOwed(unstamped, roster)).toEqual(roster);
+    // A check is provably later on a later day, or on the same day with a later clock on both ids. Anything else fails down.
+    const stamped = (clock: string | null, date = "2026-02-02") => fiveChecks("unresolved", 0, date).map((c) => ({ ...c, runId: clock ? `${c.runId}-${clock}` : c.runId }));
+    expect(ratification(caseWith([byVerb(), ...fiveChecks("unresolved", 0, "2026-02-03")]))?.status).toBe("ratified");
+    expect(ratification(caseWith([byVerb(), ...stamped("101500")]))?.status).toBe("ratified");
+    expect(ratification(caseWith([byVerb(), ...stamped("101500-r2")]))?.status).toBe("ratified");
+    expect(ratification(caseWith([byVerb(), ...stamped("090000")]))?.status).toBe("unratified");
+    expect(ratification(caseWith([byVerb(), ...stamped(null)]))?.status).toBe("unratified"); // same day, no clock on the check's id
+    // The verb's stamp names what the packet carried, and the standing is the same with it as without.
+    const named = byVerb({ shownChecks: earlier.map((c) => c.runId) });
+    expect(ratification(caseWith([named, ...earlier]))?.status).toBe("unratified");
+    // A stamp adds to what the clock shows and never takes from it (review note #434): an empty or a short list clears
+    // nothing, because a check made before the draft was in its packet whatever the list says.
+    for (const stamp of [[], earlier.slice(0, 2).map((c) => c.runId)]) {
+      const short = ratification(caseWith([byVerb({ shownChecks: stamp }), ...earlier]));
+      expect(short).toMatchObject({ status: "unratified", engaged: earlier.map((c) => c.runId) });
+    }
+    // …and a check the stamp names is in hand even when its date says it came later.
+    const later = fiveChecks("unresolved", 0, "2026-02-03");
+    expect(ratification(caseWith([byVerb({ shownChecks: later.map((c) => c.runId) }), ...later]))).toMatchObject({ status: "unratified", engaged: later.map((c) => c.runId) });
+    // One fresh check beside four that were shown restores the derivation, as for a reconsideration; the four are still named.
+    const fresh = { ...earlier[4], runId: "2026-02-03-check-epsilon", date: "2026-02-03" };
+    const four = byVerb({ shownChecks: earlier.slice(0, 4).map((c) => c.runId) });
+    const mixed = caseWith([four, ...earlier.slice(0, 4), fresh]);
+    expect(ratification(mixed)).toMatchObject({ status: "ratified", engaged: earlier.slice(0, 4).map((c) => c.runId) });
+    expect(seatsOwed(mixed, roster)).toEqual(roster.slice(0, 4));
+    // The reconsideration's stamp and the verb's are read together.
+    const both = byVerb({ reconciles: earlier.slice(0, 2).map((c) => c.runId), shownChecks: earlier.slice(2).map((c) => c.runId) });
+    expect(ratification(caseWith([both, ...earlier]))?.engaged).toEqual(earlier.map((c) => c.runId));
+    // A draft that is not the edition verb's is held to its stamps alone: what they name, and nothing by the clock.
+    const hand = { ...mkDraft("2026-02-02-by-hand", "2026-02-02"), shownChecks: earlier.slice(0, 1).map((c) => c.runId) };
+    expect(ratification(caseWith([hand, ...earlier]))).toMatchObject({ status: "ratified", engaged: [earlier[0].runId] });
+  });
+
+  it("a draft's stamps must name checks of the case: a dangling id, or a draft named as a check, is refused", () => {
+    const checks = fiveChecks("unresolved");
+    const draft = { ...mkDraft("2026-02-02-edition-094541", "2026-02-02"), promptVersion: "edition-v14" };
+    const runs = [draft, ...checks] as unknown as AssessmentRun[];
+    const stamped = (over: Record<string, unknown>) => ({ ...draft, ...over }) as unknown as AssessmentRun;
+    expect(stampErrors(stamped({ shownChecks: checks.map((c) => c.runId), reconciles: [checks[0].runId] }), runs)).toEqual([]);
+    expect(stampErrors(stamped({ shownChecks: [] }), runs)).toEqual([]);
+    expect(stampErrors(stamped({ shownChecks: ["2026-02-01-check-nobody"] }), runs)).toEqual(["assessment run 2026-02-02-edition-094541 names 2026-02-01-check-nobody in shownChecks, and the case has no such run"]);
+    expect(stampErrors(stamped({ reconciles: [draft.runId] }), runs)).toEqual(["assessment run 2026-02-02-edition-094541 names 2026-02-02-edition-094541 in reconciles, and that run is not a check"]);
+    // The real ledger holds: every stamp on every case names a check that is there.
+    for (const c of loadAllCases()) for (const run of c.assessmentRuns) expect(stampErrors(run, c.assessmentRuns), `${c.record.slug} ${run.runId}`).toEqual([]);
   });
 
   it("a load-bearing claim the panel rejects blocks ratification even with case-verdict agreement", () => {
@@ -550,16 +1074,75 @@ describe("ratification governance (stage 3)", () => {
     expect(r?.contestedLoadBearing).toEqual(["C1"]);
   });
 
-  it("displayAssessment always shows the latest draft, stamped with its standing", () => {
-    const shown = displayAssessment(
-      caseWith([
-        mkDraft("old", "2026-01-01", "mixed"),
-        mkDraft("new", "2026-02-01"),
-        ...fiveChecks("unresolved", 0, "2026-02-02"),
-      ]) as unknown as Parameters<typeof displayAssessment>[0],
-    );
-    expect(shown?.run.runId).toBe("new");
+  it("displayAssessment shows the ADOPTED draft — a newer unadopted draft cannot change the verdict beneath the essay", () => {
+    const runs = [
+      mkDraft("old", "2026-01-01", "mixed"),
+      mkDraft("new", "2026-02-01", "contradicted"), // two steps from the panel's "mixed": a dispute under the one-step rule
+      ...fiveChecks("mixed", 0, "2026-02-02"),
+    ];
+    const shown = displayAssessment(caseWith(runs, [], "old"));
+    expect(shown?.run.runId).toBe("old");
     expect(shown?.ratification.status).toBe("ratified");
+    // Adopting the newer draft is an edition change; the panel then judges that.
+    const adoptedNew = displayAssessment(caseWith(runs, [], "new"));
+    expect(adoptedNew?.run.runId).toBe("new");
+    expect(adoptedNew?.ratification.status).toBe("contested");
+  });
+
+  it("staleness is a hash when the run recorded one, a date otherwise", () => {
+    const withHash = (m: string) => ({
+      ...mkCheck(m, "2026-02-01"),
+      basis: { ledgerHash: sha256Hex("ledger-a") },
+    });
+    const current = caseWith(
+      [mkDraft("d", "2026-01-01"), ...["a", "b", "c", "d", "e"].map(withHash)],
+      [{ date: "2026-03-01" }], // history newer than the checks — ignored when hashes exist
+    );
+    expect(ratification(current)?.status).toBe("ratified");
+    expect(checksStale(current)).toBe(false);
+    const moved = caseWith(
+      [mkDraft("d", "2026-01-01"), ...["a", "b", "c", "d", "e"].map(withHash)],
+      [],
+      undefined,
+      "ledger-b",
+    );
+    const r = ratification(moved);
+    expect(r?.status).toBe("unratified");
+    expect(r?.reason).toMatch(/ledger changed/);
+    expect(checksStale(moved)).toBe(true);
+    // Legacy runs without a hash: content-bearing history newer than the run is stale.
+    const legacy = caseWith([mkDraft("d", "2026-01-01"), ...fiveChecks("unresolved")], [{ date: "2026-03-01" }]);
+    expect(runStaleness(legacy, legacy.assessmentRuns[1])).toBe("2026-03-01");
+    expect(checksStale(legacy)).toBe(true);
+  });
+
+  it("a panel that can speak is not stale for want of one seat, and the seats owed are the ones that have not judged this ledger", () => {
+    const withHash = (m: string, ledger = "ledger-a") => ({ ...mkCheck(m, "2026-02-01"), basis: { ledgerHash: sha256Hex(ledger) } });
+    const roster = ["a", "b", "c", "d", "e"].map((m) => `vendor-${m}`);
+    // Four seats judged the ledger as it stands; the fifth holds only a check of an older one (2026-09-28: it failed).
+    const four = caseWith([mkDraft("d", "2026-01-01"), ...["a", "b", "c", "d"].map((m) => withHash(m)), withHash("e", "ledger-old")]);
+    expect(ratification(four)).toMatchObject({ status: "ratified", panel: 4 });
+    expect(checksStale(four)).toBe(false);
+    expect(seatsOwed(four, roster)).toEqual(["vendor-e"]);
+    // Three are too few to speak: the panel is stale, and the two that have not judged are owed.
+    const three = caseWith([mkDraft("d", "2026-01-01"), ...["a", "b", "c"].map((m) => withHash(m)), withHash("d", "ledger-old"), withHash("e", "ledger-old")]);
+    expect(ratification(three)?.status).toBe("unratified");
+    expect(checksStale(three)).toBe(true);
+    expect(seatsOwed(three, roster)).toEqual(["vendor-d", "vendor-e"]);
+    // Every seat current: nothing owed, so a second check of the same ledger asks no one.
+    const five = caseWith([mkDraft("d", "2026-01-01"), ...roster.map((_, i) => withHash("abcde"[i]))]);
+    expect(checksStale(five)).toBe(false);
+    expect(seatsOwed(five, roster)).toEqual([]);
+    // A reconsideration is owed a fresh check from every seat whose current check it answered.
+    const checks = ["a", "b", "c", "d", "e"].map((m) => withHash(m));
+    const recon = { ...mkDraft("r", "2026-02-02"), reconciles: checks.slice(0, 4).map((c) => c.runId) };
+    const answered = caseWith([recon, ...checks], [], "r");
+    expect(checksStale(answered)).toBe(false); // one check it never saw has judged the case
+    expect(seatsOwed(answered, roster)).toEqual(["vendor-a", "vendor-b", "vendor-c", "vendor-d"]);
+    const unvouched = caseWith([{ ...recon, reconciles: checks.map((c) => c.runId) }, ...checks], [], "r");
+    expect(ratification(unvouched)?.status).toBe("unratified");
+    expect(checksStale(unvouched)).toBe(true);
+    expect(seatsOwed(unvouched, roster)).toEqual(roster);
   });
 
   it("every live case derives a valid standing; checked cases have a full panel", () => {
@@ -570,13 +1153,19 @@ describe("ratification governance (stage 3)", () => {
     // panel is a pipeline defect: checks are produced as a full sweep.
     for (const c of loadAllCases()) {
       const shown = displayAssessment(c);
+      if (currentEdition(c).assessment === null) {
+        expect(shown).toBeNull(); // a question-only opening has no standing to derive
+        continue;
+      }
       expect(shown).not.toBeNull();
       expect(["ratified", "contested", "unratified"]).toContain(
         shown!.ratification.status,
       );
       const hasChecks = c.assessmentRuns.some((a) => a.role === "check");
       if (hasChecks) {
-        expect(shown!.ratification.panel).toBeGreaterThanOrEqual(
+        // The sweep produced a full panel; how many of those seats still stand
+        // (ratification.panel) depends on whether the ledger moved since.
+        expect(latestCheckPerModel(c).length).toBeGreaterThanOrEqual(
           RATIFICATION_MIN_PANEL,
         );
       } else {
@@ -586,138 +1175,222 @@ describe("ratification governance (stage 3)", () => {
     }
   });
 
-  it("every case carries a research priority", () => {
-    for (const c of loadAllCases()) {
-      expect(["high", "medium", "low"]).toContain(
-        c.record.researchPriority.level,
-      );
+  it("every case's adopted assessment carries a research priority and the dossier header", () => {
+    for (const c of loadAllCases().filter((c) => currentEdition(c).assessment !== null)) {
+      const ca = adoptedAssessment(c)!.caseAssessment;
+      expect(["high", "medium", "low"]).toContain(ca.researchPriority?.level);
+      expect(ca.whatIsClaimed).toBeTruthy();
+      expect(ca.bestConventionalExplanation).toBeTruthy();
     }
   });
 
-  it("conjectures require disconfirmers", () => {
-    expect(() =>
-      ConjectureSchema.parse({
-        id: "GEO-J099",
-        by: "x",
-        date: "2026-08-23",
-        statement: "something bold and specific",
-        confidence: "high",
-        rationale: "intuition, stated as such",
-        predictedFindings: ["a finding"],
-        disconfirmers: [],
-      }),
-    ).toThrow();
-  });
 });
 
 describe("cross-model checks", () => {
-  // Synthetic case slices — the functions under test only read
-  // assessmentRuns and history.
-  const run = (
-    runId: string,
-    model: string,
-    date: string,
-    role: "draft" | "check",
-    verdict = "unresolved",
-    claimVerdicts: Record<string, string> = {},
-  ) => ({
-    runId,
-    model,
-    date,
-    promptVersion: "t",
-    humanReviewed: false,
-    role,
-    caseAssessment: {
-      verdict,
-      loadBearing: [],
-      weakestLinks: [],
-      synthesis: "x".repeat(120),
-    },
-    claimAssessments: Object.entries(claimVerdicts).map(
-      ([claimId, v]) => ({
-        claimId,
-        verdict: v,
-        reasoning: "test reasoning",
-        confidence: "moderate",
-      }),
-    ),
-  });
-  const caseWith = (runs: unknown[]) =>
-    ({ assessmentRuns: runs, history: [] }) as unknown as Parameters<
-      typeof crossModelSummary
-    >[0];
-
-  it("check runs never narrate; the draft still displays", () => {
-    const loaded = caseWith([
-      run("d1", "house/test", "2026-01-01", "draft"),
-      run("2026-02-01-check-alpha", "Alpha (Vendor) — check", "2026-02-01", "check"),
-      run("2026-02-01-check-beta", "Beta (Vendor) — check", "2026-02-01", "check"),
-    ]);
-    const shown = displayAssessment(loaded);
-    // The newest draft-role run displays; checks never do, however new.
+  it("check runs never narrate; the adopted draft displays", () => {
+    const orch = getCaseBySlug("orch-or");
+    const checks = orch.assessmentRuns.filter((r) => r.role === "check");
+    expect(checks.length).toBeGreaterThanOrEqual(4);
+    const shown = displayAssessment(orch);
     expect(shown?.run.role).toBe("draft");
-    expect(shown?.run.runId).toBe("d1");
+    expect(shown?.run.runId).toBe(currentEdition(orch).assessment?.runId);
   });
 
   it("concurrence summary reports agreement against the displayed run", () => {
-    const loaded = caseWith([
-      run("d1", "house/test", "2026-01-01", "draft", "unresolved", {
-        C1: "well_supported",
-        C2: "mixed",
-        C3: "contradicted",
-      }),
-      run("c-a", "Alpha (V)", "2026-02-01", "check", "unresolved", {
-        C1: "well_supported", // exact
-        C2: "weakly_supported", // adjacent (one step)
-        C3: "well_supported", // split (far apart)
-      }),
-    ]);
-    const s = crossModelSummary(loaded);
+    const orch = getCaseBySlug("orch-or");
+    const s = crossModelSummary(orch);
     expect(s).not.toBeNull();
-    expect(s!.models).toEqual(["Alpha (V)"]);
-    expect(s!.claimsCompared).toBe(3);
-    expect(s!.exact).toBe(1);
-    expect(s!.adjacent).toBe(1);
-    expect(s!.split).toBe(1);
-    expect(s!.splitClaimIds).toEqual(["C3"]);
+    expect(s!.models.length).toBeGreaterThanOrEqual(4);
+    expect(s!.claimsCompared).toBeGreaterThanOrEqual(18);
     // Every compared claim lands in exactly one bucket.
     expect(s!.exact + s!.adjacent + s!.split).toBe(s!.claimsCompared);
-    expect(s!.caseUnanimousWithDisplayed).toBe(true);
+    expect(s!.splitClaimIds.length).toBe(s!.split);
   });
 
   it("a same-day re-check wins the per-model tie, and the superseded run is not double-counted", () => {
-    // Append-only means a re-checked case carries two runs per model with
-    // the same date. The -r2 suffix convention must win the tie, and the
-    // panel must count each vendor once — "10 independent models" from 5
-    // vendors was the original double-counting bug (upstream).
-    const loaded = caseWith([
-      run("d1", "house/test", "2026-01-01", "draft"),
-      run("2026-02-01-check-alpha", "Alpha (Vendor) — check", "2026-02-01", "check", "mixed"),
-      run("2026-02-01-check-alpha-r2", "Alpha (Vendor) — re-check", "2026-02-01", "check", "unresolved"),
-      run("2026-01-15-check-beta", "Beta (Vendor) — check", "2026-01-15", "check"),
-    ]);
-    const perModel = latestCheckPerModel(loaded);
-    // One entry per vendor, and Alpha's -r2 re-run wins the same-date tie.
-    expect(perModel).toHaveLength(2);
-    const alpha = perModel.find((r) => r.model.startsWith("Alpha"));
-    expect(alpha?.runId).toBe("2026-02-01-check-alpha-r2");
-    const keys = perModel.map((r) => r.model.trim().split(/[\s,(]/)[0].toLowerCase());
+    // Append-only means a re-checked case carries two runs per model with the
+    // same date. The -r2 suffix convention must win the tie, and the panel
+    // must count each vendor once — "10 independent models" from 5 vendors
+    // was the original double-counting bug.
+    const trn = getCaseBySlug("transients");
+    const perModel = latestCheckPerModel(trn);
+    const opusRuns = trn.assessmentRuns.filter(
+      (r) => r.role === "check" && r.model.startsWith("Opus"),
+    );
+    if (opusRuns.length >= 2) {
+      const shownOpus = perModel.filter((r) => r.model.startsWith("Opus"));
+      expect(shownOpus).toHaveLength(1);
+      // The winner must be the newest by (date, then runId) — the -rN
+      // suffix only decides same-date ties; a later date beats any suffix.
+      const expected = [...opusRuns].sort((a, b) =>
+        a.date === b.date
+          ? a.runId.localeCompare(b.runId)
+          : a.date.localeCompare(b.date),
+      ).at(-1)!;
+      expect(shownOpus[0].runId).toBe(expected.runId);
+    }
+    const keys = perModel.map((r) => seatKey(r.model));
     expect(new Set(keys).size).toBe(keys.length);
   });
 
-  it("a later date beats any runId suffix in the per-model tie", () => {
-    const loaded = caseWith([
-      run("d1", "house/test", "2026-01-01", "draft"),
-      run("2026-02-01-check-alpha-r2", "Alpha (Vendor)", "2026-02-01", "check"),
-      run("2026-03-01-check-alpha", "Alpha (Vendor)", "2026-03-01", "check"),
-    ]);
-    const perModel = latestCheckPerModel(loaded);
-    expect(perModel).toHaveLength(1);
-    expect(perModel[0].runId).toBe("2026-03-01-check-alpha");
+  it("cases without check runs have no summary", () => {
+    // All live cases now carry checks, so synthesize a checkless case.
+    const orch = getCaseBySlug("orch-or");
+    const checkless = {
+      ...orch,
+      assessmentRuns: orch.assessmentRuns.filter((r) => r.role !== "check"),
+    };
+    expect(crossModelSummary(checkless)).toBeNull();
+  });
+});
+
+describe("the steelman counterweight", () => {
+  const run = (over: {
+    date: string;
+    steelman?: string;
+  }) => ({
+    runId: `${over.date}-auto-test`,
+    date: over.date,
+    caseAssessment: {
+      verdict: "unresolved" as const,
+      loadBearing: [],
+      weakestLinks: [],
+      synthesis: "s".repeat(120),
+      ...(over.steelman !== undefined ? { steelman: over.steelman } : {}),
+    },
   });
 
-  it("cases without check runs have no summary", () => {
-    const checkless = caseWith([run("d1", "house/test", "2026-01-01", "draft")]);
-    expect(crossModelSummary(checkless)).toBeNull();
+  it("runs dated on or after the cutoff must carry a steelman", () => {
+    const err = steelmanRequirementError(run({ date: STEELMAN_REQUIRED_FROM }));
+    expect(err).toContain("missing caseAssessment.steelman");
+    expect(
+      steelmanRequirementError(
+        run({
+          date: STEELMAN_REQUIRED_FROM,
+          steelman:
+            "The xenon isotope potency split remains unexplained by any classical account in the ledger.",
+        }),
+      ),
+    ).toBeNull();
+  });
+
+  it("append-only history is exempt, never rewritten", () => {
+    expect(steelmanRequirementError(run({ date: "2026-09-03" }))).toBeNull();
+  });
+
+  it("a migration run — a transfer, not a judgment — is exempt", () => {
+    expect(
+      steelmanRequirementError({ ...run({ date: "2026-09-08" }), migratedFrom: "2026-08-26-auto-x" }),
+    ).toBeNull();
+    expect(steelmanRequirementError({ ...run({ date: "2026-09-08" }), migratedFrom: undefined })).not.toBeNull();
+  });
+
+  it("a whitespace steelman is a missing steelman", () => {
+    expect(
+      steelmanRequirementError(
+        run({
+          date: "2027-01-01",
+          steelman: "                                             ",
+        }),
+      ),
+    ).not.toBeNull();
+  });
+
+  it("the schema floors a present steelman at 40 characters", () => {
+    const overlay = {
+      runId: "2026-09-04-auto-test",
+      model: "test",
+      date: "2026-09-04",
+      promptVersion: "test",
+      humanReviewed: false,
+      caseAssessment: {
+        verdict: "unresolved",
+        loadBearing: [],
+        weakestLinks: [],
+        synthesis: "s".repeat(120),
+        steelman: "too thin",
+      },
+      claimAssessments: [],
+    };
+    expect(() => AssessmentRunSchema.parse(overlay)).toThrow();
+    expect(() =>
+      AssessmentRunSchema.parse({
+        ...overlay,
+        caseAssessment: {
+          ...overlay.caseAssessment,
+          steelman:
+            "A specific unanswered proponent argument, stated at honest length.",
+        },
+      }),
+    ).not.toThrow();
+  });
+
+  it("live content passes the requirement (nothing post-cutoff is missing one)", () => {
+    for (const c of loadAllCases()) {
+      for (const r of c.assessmentRuns) {
+        expect(steelmanRequirementError(r)).toBeNull();
+      }
+    }
+  });
+});
+
+describe("surviving objections", () => {
+  it("a ratified case's tolerated dissent is surfaced, not sanitized", () => {
+    for (const c of loadAllCases()) {
+      const shown = displayAssessment(c);
+      if (!shown || shown.ratification.status !== "ratified") continue;
+      const objections = survivingObjections(c, shown.run);
+      // every seat whose word differs — the neighbours the standing tolerates included, so nothing is sanitized
+      expect(objections.length).toBeGreaterThanOrEqual(
+        shown.ratification.panel - shown.ratification.agreeing,
+      );
+      for (const o of objections) {
+        expect(o.verdict).not.toBe(shown.run.caseAssessment.verdict);
+        expect(o.firstSentence.length).toBeGreaterThan(20);
+        expect(o.firstSentence.length).toBeLessThanOrEqual(260);
+        expect(o.seat).not.toMatch(/independent/);
+      }
+    }
+  });
+});
+
+describe("edition succession", () => {
+  it("orders editions by the previous chain, not by date or filename", async () => {
+    const { orderEditions } = await import("./editions.ts");
+    const base = { date: "2026-09-08", model: "m", promptVersion: "edition-v2", rationale: "r", basis: { ledgerHash: "a".repeat(64), inputsHash: "b".repeat(64) }, assessment: null, featuredClaimIds: [], cruxOrder: [], article: "" };
+    const migration = { ...base, runId: "edition-2026-09-08-migration", previous: null };
+    const successor = { ...base, runId: "edition-2026-09-08-142638", previous: "edition-2026-09-08-migration" };
+    const third = { ...base, date: "2026-09-09", runId: "edition-2026-09-09-090000", previous: "edition-2026-09-08-142638" };
+    // Filename order puts "migration" after "142638"; the chain says otherwise.
+    const ordered = orderEditions([successor, migration, third] as never);
+    expect(ordered.map((e) => e.runId)).toEqual([migration.runId, successor.runId, third.runId]);
+    // A broken chain keeps the given order for editionErrors to report.
+    const orphan = { ...base, runId: "edition-x", previous: "edition-missing" };
+    expect(orderEditions([migration, orphan] as never).map((e) => e.runId)).toEqual([migration.runId, "edition-x"]);
+  });
+
+  it("geopolymer's editions form one chain from the migration to the current edition", () => {
+    const geo = getCaseBySlug("megalithic-casting");
+    expect(geo.editions[0].runId).toBe("edition-2026-09-08-migration");
+    expect(geo.editions.length).toBeGreaterThanOrEqual(2);
+    for (let i = 1; i < geo.editions.length; i++) expect(geo.editions[i].previous).toBe(geo.editions[i - 1].runId);
+    expect(currentEdition(geo).featuredClaimIds).toContain("GEO-C506");
+  });
+});
+
+describe("stale checks are set aside, not counted", () => {
+  it("a hashed check for another ledger and a legacy check older than content drop out; the rest stand", async () => {
+    const { currentChecks } = await import("./standing.ts");
+    const hash = "a".repeat(64);
+    const loaded = { ledgerHash: hash, history: [{ date: "2026-09-01", kind: "content" }, { date: "2026-09-02", kind: "housekeeping" }] } as never;
+    const mk = (runId: string, date: string, basis?: string) => ({ runId, date, role: "check", ...(basis ? { basis: { ledgerHash: basis } } : {}) }) as never;
+    const fresh1 = mk("2026-09-08-check-a", "2026-09-08", hash);
+    const fresh2 = mk("2026-09-08-check-b", "2026-09-08", hash);
+    const stale = mk("2026-09-07-check-c", "2026-09-07", "b".repeat(64));
+    const legacyOld = mk("2026-08-25-check-d", "2026-08-25"); // content moved on 2026-09-01
+    expect(currentChecks(loaded, [fresh1, stale, legacyOld, fresh2]).map((r: { runId: string }) => r.runId)).toEqual(["2026-09-08-check-a", "2026-09-08-check-b"]);
+    // A legacy check newer than the last content change still stands (the panel-by-date rule).
+    const legacyNew = mk("2026-09-03-check-e", "2026-09-03");
+    expect(currentChecks(loaded, [legacyNew, stale]).map((r: { runId: string }) => r.runId)).toEqual(["2026-09-03-check-e"]);
   });
 });

@@ -1,0 +1,511 @@
+WikiLeaks - The Podesta Emails
+
+How to contact WikiLeaks?
+What is Tor?
+Tips for Sources
+After Submitting
+
+Key fingerprint 9EF0 C41A FBA5 64AA 650A 0259 9C6D CD17 283E 454C
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQQBBGBjDtIBH6DJa80zDBgR+VqlYGaXu5bEJg9HEgAtJeCLuThdhXfl5Zs32RyB
+I1QjIlttvngepHQozmglBDmi2FZ4S+wWhZv10bZCoyXPIPwwq6TylwPv8+buxuff
+B6tYil3VAB9XKGPyPjKrlXn1fz76VMpuTOs7OGYR8xDidw9EHfBvmb+sQyrU1FOW
+aPHxba5lK6hAo/KYFpTnimsmsz0Cvo1sZAV/EFIkfagiGTL2J/NhINfGPScpj8LB
+bYelVN/NU4c6Ws1ivWbfcGvqU4lymoJgJo/l9HiV6X2bdVyuB24O3xeyhTnD7laf
+epykwxODVfAt4qLC3J478MSSmTXS8zMumaQMNR1tUUYtHCJC0xAKbsFukzbfoRDv
+m2zFCCVxeYHvByxstuzg0SurlPyuiFiy2cENek5+W8Sjt95nEiQ4suBldswpz1Kv
+n71t7vd7zst49xxExB+tD+vmY7GXIds43Rb05dqksQuo2yCeuCbY5RBiMHX3d4nU
+041jHBsv5wY24j0N6bpAsm/s0T0Mt7IO6UaN33I712oPlclTweYTAesW3jDpeQ7A
+ioi0CMjWZnRpUxorcFmzL/Cc/fPqgAtnAL5GIUuEOqUf8AlKmzsKcnKZ7L2d8mxG
+QqN16nlAiUuUpchQNMr+tAa1L5S1uK/fu6thVlSSk7KMQyJfVpwLy6068a1WmNj4
+yxo9HaSeQNXh3cui+61qb9wlrkwlaiouw9+bpCmR0V8+XpWma/D/TEz9tg5vkfNo
+eG4t+FUQ7QgrrvIkDNFcRyTUO9cJHB+kcp2NgCcpCwan3wnuzKka9AWFAitpoAwx
+L6BX0L8kg/LzRPhkQnMOrj/tuu9hZrui4woqURhWLiYi2aZe7WCkuoqR/qMGP6qP
+EQRcvndTWkQo6K9BdCH4ZjRqcGbY1wFt/qgAxhi+uSo2IWiM1fRI4eRCGifpBtYK
+Dw44W9uPAu4cgVnAUzESEeW0bft5XXxAqpvyMBIdv3YqfVfOElZdKbteEu4YuOao
+FLpbk4ajCxO4Fzc9AugJ8iQOAoaekJWA7TjWJ6CbJe8w3thpznP0w6jNG8ZleZ6a
+jHckyGlx5wzQTRLVT5+wK6edFlxKmSd93jkLWWCbrc0Dsa39OkSTDmZPoZgKGRhp
+Yc0C4jePYreTGI6p7/H3AFv84o0fjHt5fn4GpT1Xgfg+1X/wmIv7iNQtljCjAqhD
+6XN+QiOAYAloAym8lOm9zOoCDv1TSDpmeyeP0rNV95OozsmFAUaKSUcUFBUfq9FL
+uyr+rJZQw2DPfq2wE75PtOyJiZH7zljCh12fp5yrNx6L7HSqwwuG7vGO4f0ltYOZ
+dPKzaEhCOO7o108RexdNABEBAAG0Rldpa2lMZWFrcyBFZGl0b3JpYWwgT2ZmaWNl
+IEhpZ2ggU2VjdXJpdHkgQ29tbXVuaWNhdGlvbiBLZXkgKDIwMjEtMjAyNCmJBDEE
+EwEKACcFAmBjDtICGwMFCQWjmoAFCwkIBwMFFQoJCAsFFgIDAQACHgECF4AACgkQ
+nG3NFyg+RUzRbh+eMSKgMYOdoz70u4RKTvev4KyqCAlwji+1RomnW7qsAK+l1s6b
+ugOhOs8zYv2ZSy6lv5JgWITRZogvB69JP94+Juphol6LIImC9X3P/bcBLw7VCdNA
+mP0XQ4OlleLZWXUEW9EqR4QyM0RkPMoxXObfRgtGHKIkjZYXyGhUOd7MxRM8DBzN
+yieFf3CjZNADQnNBk/ZWRdJrpq8J1W0dNKI7IUW2yCyfdgnPAkX/lyIqw4ht5UxF
+VGrva3PoepPir0TeKP3M0BMxpsxYSVOdwcsnkMzMlQ7TOJlsEdtKQwxjV6a1vH+t
+k4TpR4aG8fS7ZtGzxcxPylhndiiRVwdYitr5nKeBP69aWH9uLcpIzplXm4DcusUc
+Bo8KHz+qlIjs03k8hRfqYhUGB96nK6TJ0xS7tN83WUFQXk29fWkXjQSp1Z5dNCcT
+sWQBTxWxwYyEI8iGErH2xnok3HTyMItdCGEVBBhGOs1uCHX3W3yW2CooWLC/8Pia
+qgss3V7m4SHSfl4pDeZJcAPiH3Fm00wlGUslVSziatXW3499f2QdSyNDw6Qc+chK
+hUFflmAaavtpTqXPk+Lzvtw5SSW+iRGmEQICKzD2chpy05mW5v6QUy+G29nchGDD
+rrfpId2Gy1VoyBx8FAto4+6BOWVijrOj9Boz7098huotDQgNoEnidvVdsqP+P1RR
+QJekr97idAV28i7iEOLd99d6qI5xRqc3/QsV+y2ZnnyKB10uQNVPLgUkQljqN0wP
+XmdVer+0X+aeTHUd1d64fcc6M0cpYefNNRCsTsgbnWD+x0rjS9RMo+Uosy41+IxJ
+6qIBhNrMK6fEmQoZG3qTRPYYrDoaJdDJERN2E5yLxP2SPI0rWNjMSoPEA/gk5L91
+m6bToM/0VkEJNJkpxU5fq5834s3PleW39ZdpI0HpBDGeEypo/t9oGDY3Pd7JrMOF
+zOTohxTyu4w2Ql7jgs+7KbO9PH0Fx5dTDmDq66jKIkkC7DI0QtMQclnmWWtn14BS
+KTSZoZekWESVYhORwmPEf32EPiC9t8zDRglXzPGmJAPISSQz+Cc9o1ipoSIkoCCh
+2MWoSbn3KFA53vgsYd0vS/+Nw5aUksSleorFns2yFgp/w5Ygv0D007k6u3DqyRLB
+W5y6tJLvbC1ME7jCBoLW6nFEVxgDo727pqOpMVjGGx5zcEokPIRDMkW/lXjw+fTy
+c6misESDCAWbgzniG/iyt77Kz711unpOhw5aemI9LpOq17AiIbjzSZYt6b1Aq7Wr
+aB+C1yws2ivIl9ZYK911A1m69yuUg0DPK+uyL7Z86XC7hI8B0IY1MM/MbmFiDo6H
+dkfwUckE74sxxeJrFZKkBbkEAQRgYw7SAR+gvktRnaUrj/84Pu0oYVe49nPEcy/7
+5Fs6LvAwAj+JcAQPW3uy7D7fuGFEQguasfRrhWY5R87+g5ria6qQT2/Sf19Tpngs
+d0Dd9DJ1MMTaA1pc5F7PQgoOVKo68fDXfjr76n1NchfCzQbozS1HoM8ys3WnKAw+
+Neae9oymp2t9FB3B+To4nsvsOM9KM06ZfBILO9NtzbWhzaAyWwSrMOFFJfpyxZAQ
+8VbucNDHkPJjhxuafreC9q2f316RlwdS+XjDggRY6xD77fHtzYea04UWuZidc5zL
+VpsuZR1nObXOgE+4s8LU5p6fo7jL0CRxvfFnDhSQg2Z617flsdjYAJ2JR4apg3Es
+G46xWl8xf7t227/0nXaCIMJI7g09FeOOsfCmBaf/ebfiXXnQbK2zCbbDYXbrYgw6
+ESkSTt940lHtynnVmQBvZqSXY93MeKjSaQk1VKyobngqaDAIIzHxNCR941McGD7F
+qHHM2YMTgi6XXaDThNC6u5msI1l/24PPvrxkJxjPSGsNlCbXL2wqaDgrP6LvCP9O
+uooR9dVRxaZXcKQjeVGxrcRtoTSSyZimfjEercwi9RKHt42O5akPsXaOzeVjmvD9
+EB5jrKBe/aAOHgHJEIgJhUNARJ9+dXm7GofpvtN/5RE6qlx11QGvoENHIgawGjGX
+Jy5oyRBS+e+KHcgVqbmV9bvIXdwiC4BDGxkXtjc75hTaGhnDpu69+Cq016cfsh+0
+XaRnHRdh0SZfcYdEqqjn9CTILfNuiEpZm6hYOlrfgYQe1I13rgrnSV+EfVCOLF4L
+P9ejcf3eCvNhIhEjsBNEUDOFAA6J5+YqZvFYtjk3efpM2jCg6XTLZWaI8kCuADMu
+yrQxGrM8yIGvBndrlmmljUqlc8/Nq9rcLVFDsVqb9wOZjrCIJ7GEUD6bRuolmRPE
+SLrpP5mDS+wetdhLn5ME1e9JeVkiSVSFIGsumZTNUaT0a90L4yNj5gBE40dvFplW
+7TLeNE/ewDQk5LiIrfWuTUn3CqpjIOXxsZFLjieNgofX1nSeLjy3tnJwuTYQlVJO
+3CbqH1k6cOIvE9XShnnuxmiSoav4uZIXnLZFQRT9v8UPIuedp7TO8Vjl0xRTajCL
+PdTk21e7fYriax62IssYcsbbo5G5auEdPO04H/+v/hxmRsGIr3XYvSi4ZWXKASxy
+a/jHFu9zEqmy0EBzFzpmSx+FrzpMKPkoU7RbxzMgZwIYEBk66Hh6gxllL0JmWjV0
+iqmJMtOERE4NgYgumQT3dTxKuFtywmFxBTe80BhGlfUbjBtiSrULq59np4ztwlRT
+wDEAVDoZbN57aEXhQ8jjF2RlHtqGXhFMrg9fALHaRQARAQABiQQZBBgBCgAPBQJg
+Yw7SAhsMBQkFo5qAAAoJEJxtzRcoPkVMdigfoK4oBYoxVoWUBCUekCg/alVGyEHa
+ekvFmd3LYSKX/WklAY7cAgL/1UlLIFXbq9jpGXJUmLZBkzXkOylF9FIXNNTFAmBM
+3TRjfPv91D8EhrHJW0SlECN+riBLtfIQV9Y1BUlQthxFPtB1G1fGrv4XR9Y4TsRj
+VSo78cNMQY6/89Kc00ip7tdLeFUHtKcJs+5EfDQgagf8pSfF/TWnYZOMN2mAPRRf
+fh3SkFXeuM7PU/X0B6FJNXefGJbmfJBOXFbaSRnkacTOE9caftRKN1LHBAr8/RPk
+pc9p6y9RBc/+6rLuLRZpn2W3m3kwzb4scDtHHFXXQBNC1ytrqdwxU7kcaJEPOFfC
+XIdKfXw9AQll620qPFmVIPH5qfoZzjk4iTH06Yiq7PI4OgDis6bZKHKyyzFisOkh
+DXiTuuDnzgcu0U4gzL+bkxJ2QRdiyZdKJJMswbm5JDpX6PLsrzPmN314lKIHQx3t
+NNXkbfHL/PxuoUtWLKg7/I3PNnOgNnDqCgqpHJuhU1AZeIkvewHsYu+urT67tnpJ
+AK1Z4CgRxpgbYA4YEV1rWVAPHX1u1okcg85rc5FHK8zh46zQY1wzUTWubAcxqp9K
+1IqjXDDkMgIX2Z2fOA1plJSwugUCbFjn4sbT0t0YuiEFMPMB42ZCjcCyA1yysfAd
+DYAmSer1bq47tyTFQwP+2ZnvW/9p3yJ4oYWzwMzadR3T0K4sgXRC2Us9nPL9k2K5
+TRwZ07wE2CyMpUv+hZ4ja13A/1ynJZDZGKys+pmBNrO6abxTGohM8LIWjS+YBPIq
+trxh8jxzgLazKvMGmaA6KaOGwS8vhfPfxZsu2TJaRPrZMa/HpZ2aEHwxXRy4nm9G
+Kx1eFNJO6Ues5T7KlRtl8gflI5wZCCD/4T5rto3SfG0s0jr3iAVb3NCn9Q73kiph
+PSwHuRxcm+hWNszjJg3/W+Fr8fdXAh5i0JzMNscuFAQNHgfhLigenq+BpCnZzXya
+01kqX24AdoSIbH++vvgE0Bjj6mzuRrH5VJ1Qg9nQ+yMjBWZADljtp3CARUbNkiIg
+tUJ8IJHCGVwXZBqY4qeJc3h/RiwWM2UIFfBZ+E06QPznmVLSkwvvop3zkr4eYNez
+cIKUju8vRdW6sxaaxC/GECDlP0Wo6lH0uChpE3NJ1daoXIeymajmYxNt+drz7+pd
+jMqjDtNA2rgUrjptUgJK8ZLdOQ4WCrPY5pP9ZXAO7+mK7S3u9CTywSJmQpypd8hv
+8Bu8jKZdoxOJXxj8CphK951eNOLYxTOxBUNB8J2lgKbmLIyPvBvbS1l1lCM5oHlw
+WXGlp70pspj3kaX4mOiFaWMKHhOLb+er8yh8jspM184=
+=5a6T
+-----END PGP PUBLIC KEY BLOCK-----
+
+How to contact WikiLeaks?
+What is Tor?
+Tips for Sources
+After Submitting
+
+Contact
+
+If you need help using Tor you can contact WikiLeaks for assistance in setting it up using our simple webchat available at: https://wikileaks.org/talk
+
+If you can use Tor, but need to contact WikiLeaks for other reasons use our secured webchat available at http://wlchatc3pjwpli5r.onion
+
+We recommend contacting us over Tor if you can.
+
+How to contact WikiLeaks?
+What is Tor?
+Tips for Sources
+After Submitting
+
+Tor
+
+Tor is an encrypted anonymising network that makes it harder to intercept internet communications, or see where communications are coming from or going to.
+
+In order to use the WikiLeaks public submission system as detailed above you can download the Tor Browser Bundle, which is a Firefox-like browser available for Windows, Mac OS X and GNU/Linux and pre-configured to connect using the anonymising system Tor.
+
+Tails
+
+If you are at high risk and you have the capacity to do so, you can also access the submission system through a secure operating system called Tails . Tails is an operating system launched from a USB stick or a DVD that aim to leaves no traces when the computer is shut down after use and automatically routes your internet traffic through Tor. Tails will require you to have either a USB stick or a DVD at least 4GB big and a laptop or desktop computer.
+
+How to contact WikiLeaks?
+What is Tor?
+Tips for Sources
+After Submitting
+
+Tips
+
+Our submission system works hard to preserve your anonymity, but we recommend you also take some of your own precautions. Please review these basic guidelines.
+
+1. Contact us if you have specific problems
+
+If you have a very large submission, or a submission with a complex format, or are a high-risk source, please contact us . In our experience it is always possible to find a custom solution for even the most seemingly difficult situations.
+
+2. What computer to use
+
+If the computer you are uploading from could subsequently be audited in an investigation, consider using a computer that is not easily tied to you. Technical users can also use Tails to help ensure you do not leave any records of your submission on the computer.
+
+3. Do not talk about your submission to others
+
+If you have any issues talk to WikiLeaks. We are the global experts in source protection – it is a complex field. Even those who mean well often do not have the experience or expertise to advise properly. This includes other media organisations.
+
+How to contact WikiLeaks?
+What is Tor?
+Tips for Sources
+After Submitting
+
+After
+
+1. Do not talk about your submission to others
+
+If you have any issues talk to WikiLeaks. We are the global experts in source protection – it is a complex field. Even those who mean well often do not have the experience or expertise to advise properly. This includes other media organisations.
+
+2. Act normal
+
+If you are a high-risk source, avoid saying anything or doing anything after submitting which might promote suspicion. In particular, you should try to stick to your normal routine and behaviour.
+
+3. Remove traces of your submission
+
+If you are a high-risk source and the computer you prepared your submission on, or uploaded it from, could subsequently be audited in an investigation, we recommend that you format and dispose of the computer hard drive and any other storage media you used.
+
+In particular, hard drives retain data after formatting which may be visible to a digital forensics team and flash media (USB sticks, memory cards and SSD drives) retain data even after a secure erasure. If you used flash media to store sensitive data, it is important to destroy the media.
+
+If you do this and are a high-risk source you should make sure there are no traces of the clean-up, since such traces themselves may draw suspicion.
+
+4. If you face legal action
+
+If a legal action is brought against you as a result of your submission, there are organisations that may help you. The Courage Foundation is an international organisation dedicated to the protection of journalistic sources. You can find more details at https://www.couragefound.org .
+
+Submit documents to WikiLeaks
+
+WikiLeaks publishes documents of political or historical importance that are censored or otherwise suppressed. We specialise in strategic global publishing and large archives.
+
+The following is the address of our secure site where you can anonymously upload your documents to WikiLeaks editors. You can only access this submissions system through Tor. (See our Tor tab for more information.) We also advise you to read our tips for sources before submitting.
+
+http://ibfckmpsmylhbfovflajicjgldsqpc75k5w454irzwlh7qifgglncbad.onion
+
+Copy this address into your Tor browser. Advanced users, if they wish, can also add a further layer of encryption to their submission using our public PGP key .
+
+-->
+
+If you cannot use Tor, or your submission is very large, or you have specific requirements, WikiLeaks provides several alternative methods. Contact us to discuss how to proceed.
+
+How to contact WikiLeaks?
+What is Tor?
+Tips for Sources
+After Submitting
+
+WikiLeaks
+
+Donate
+Submit
+
+Leaks
+
+News
+
+About
+
+Partners
+
+Leaks
+
+News
+
+About
+
+Partners
+
+our.wikileaks.org
+
+Tor Project
+
+Tails
+
+Courage
+
+Bitcoin
+
+Return to search
+
+View email
+
+View source
+
+Re: You two free for dinner on 12 or 13 January?
+
+From:podesta@podesta.com
+To:
+
+john.podesta@gmail.com
+
+Date: 2014-01-08 06:46
+Subject: Re: You two free for dinner on 12 or 13 January?
+
+Really interesting
+Very happy I came
+Brian and rudy have been very inclusive
+Loved hanging out with carol and jim mattis and caroline
+Never been to UAE before
+Very smart very sophisticated people
+Met vert senior people
+Just arrived Jordan
+Much lower level
+Tho general nera and rudy only seeing king
+Dining with ambassador then on to Israel
+
+What's sunday plan if any
+
+Tony Podesta
+Office: 202-879-9300
+Cell: 202-352-4645
+Podesta@podesta.com
+1001 G St. NW, Suite 1000 West
+Washington, DC 20001
+
+----- Original Message -----
+From: John Podesta [mailto:john.podesta@gmail.com]
+Sent: Tuesday, January 07, 2014 09:23 PM
+To: Tony Podesta
+Subject: Re: You two free for dinner on 12 or 13 January?
+
+How is the trip?
+
+JP
+--Sent from my iPad--
+john.podesta@gmail.com
+For scheduling: eryn.sepp@gmail.com
+
+> On Jan 7, 2014, at 8:37 AM, Tony Podesta <podesta@podesta.com> wrote:
+>
+> Yes
+> Only wanna see you and mike Berman
+>
+> Sent from my iPad
+>
+> On Jan 7, 2014, at 3:16 PM, "John Podesta" <john.podesta@gmail.com<mailto:john.podesta@gmail.com>> wrote:
+>
+> Are you free sunday mid-afternoon?
+>
+> JP
+> --Sent from my iPad--
+> john.podesta@gmail.com<mailto:john.podesta@gmail.com>
+> For scheduling: eryn.sepp@gmail.com<mailto:eryn.sepp@gmail.com>
+>
+> On Jan 6, 2014, at 10:12 PM, Tony Podesta <podesta@podesta.com<mailto:podesta@podesta.com>> wrote:
+>
+> Mary not free
+> Would love to get a pizza for an hour? Or come over
+>
+> Tony Podesta
+> Office: 202-879-9300
+> Cell: 202-352-4645
+> Podesta@podesta.com<mailto:Podesta@podesta.com>
+> 1001 G St. NW, Suite 1000 West
+> Washington, DC 20001
+>
+> From: John Podesta [mailto:john.podesta@gmail.com]
+> Sent: Monday, January 06, 2014 09:36 PM
+> To: Tony Podesta
+> Cc: podesta.mary@gmail.com<mailto:podesta.mary@gmail.com> <podesta.mary@gmail.com<mailto:podesta.mary@gmail.com>>
+> Subject: Re: You two free for dinner on 12 or 13 January?
+>
+> That might work. Somalia? Geez.
+>
+> JP
+> --Sent from my iPad--
+> john.podesta@gmail.com<mailto:john.podesta@gmail.com>
+> For scheduling: eryn.sepp@gmail.com<mailto:eryn.sepp@gmail.com>
+>
+> On Jan 6, 2014, at 12:04 PM, Tony Podesta <podesta@podesta.com<mailto:podesta@podesta.com>> wrote:
+>
+> Back on 12th
+> But may have to go to somalia give me some dates
+> Mlk day?
+>
+> Tony Podesta
+> Office: 202-879-9300
+> Cell: 202-352-4645
+> Podesta@podesta.com<mailto:Podesta@podesta.com>
+> 1001 G St. NW, Suite 1000 West
+> Washington, DC 20001
+>
+> From: Mary Podesta [mailto:podesta.mary@gmail.com]
+> Sent: Monday, January 06, 2014 11:12 AM
+> To: Tony Podesta
+> Cc: John Podesta <john.podesta@gmail.com<mailto:john.podesta@gmail.com>>
+> Subject: Re: You two free for dinner on 12 or 13 January?
+>
+>
+> Not 12th for me and 13th is John' s hand surgery. When are you back and for how long?
+>
+> On Jan 6, 2014 8:18 AM, "Tony Podesta" <podesta@podesta.com<mailto:podesta@podesta.com>> wrote:
+>
+>
+> Sent from my iPad
+
+Download raw source
+
+Delivered-To: john.podesta@gmail.com
+Received: by 10.204.162.79 with SMTP id u15csp244450bkx;
+Wed, 8 Jan 2014 00:46:12 -0800 (PST)
+X-Received: by 10.67.5.131 with SMTP id cm3mr11101399pad.92.1389170771300;
+Wed, 08 Jan 2014 00:46:11 -0800 (PST)
+Return-Path: <podesta@podesta.com>
+Received: from exprod5og110.obsmtp.com (exprod5og110.obsmtp.com [64.18.0.20])
+by mx.google.com with SMTP id l8si127029pao.326.2014.01.08.00.46.10
+for <john.podesta@gmail.com>;
+Wed, 08 Jan 2014 00:46:11 -0800 (PST)
+Received-SPF: neutral (google.com: 64.18.0.20 is neither permitted nor denied by best guess record for domain of podesta@podesta.com) client-ip=64.18.0.20;
+Authentication-Results: mx.google.com;
+spf=neutral (google.com: 64.18.0.20 is neither permitted nor denied by best guess record for domain of podesta@podesta.com) smtp.mail=podesta@podesta.com
+Received: from XMAIL.podesta.com ([70.33.176.69]) by exprod5ob110.postini.com ([64.18.4.12]) with SMTP
+ID DSNKUs0QUb0hqt1h1An7pKjrzf+9qtRdCTlt@postini.com; Wed, 08 Jan 2014 00:46:10 PST
+Received: from XMAIL.podesta.com ([::1]) by XMAIL.podesta.com ([::1]) with
+mapi; Wed, 8 Jan 2014 03:46:08 -0500
+From: Tony Podesta <podesta@podesta.com>
+To: "'john.podesta@gmail.com'" <john.podesta@gmail.com>
+Date: Wed, 8 Jan 2014 03:46:07 -0500
+Subject: Re: You two free for dinner on 12 or 13 January?
+Thread-Topic: You two free for dinner on 12 or 13 January?
+Thread-Index: Ac8MGLEEm7PK3KXfSAWzM8dlQj11+gANWGHS
+Message-ID: <C6C90688A6F02D4D96CBB9A668FBF01659EF7C139D@XMAIL.podesta.com>
+In-Reply-To: <2E0BEB00-8BFF-48C6-91B7-44F18C49D105@gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+acceptlanguage: en-US
+x-exclaimer-md-config: 9c610875-e9a2-45a5-984c-dc54cb4a7b2d
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Really interesting
+Very happy I came
+Brian and rudy have been very inclusive
+Loved hanging out with carol and jim mattis and caroline
+Never been to UAE before
+Very smart very sophisticated people
+Met vert senior people
+Just arrived Jordan
+Much lower level
+Tho general nera and rudy only seeing king
+Dining with ambassador then on to Israel
+
+What's sunday plan if any
+
+Tony Podesta
+Office: 202-879-9300
+Cell: 202-352-4645
+Podesta@podesta.com
+1001 G St. NW, Suite 1000 West
+Washington, DC 20001
+
+----- Original Message -----
+From: John Podesta [mailto:john.podesta@gmail.com]
+Sent: Tuesday, January 07, 2014 09:23 PM=0A=
+To: Tony Podesta
+Subject: Re: You two free for dinner on 12 or 13 January?
+
+How is the trip?
+
+JP
+--Sent from my iPad--
+john.podesta@gmail.com
+For scheduling: eryn.sepp@gmail.com
+
+> On Jan 7, 2014, at 8:37 AM, Tony Podesta <podesta@podesta.com> wrote:
+>=20
+> Yes
+> Only wanna see you and mike Berman
+>=20
+> Sent from my iPad
+>=20
+> On Jan 7, 2014, at 3:16 PM, "John Podesta" <john.podesta@gmail.com<mailto=
+:john.podesta@gmail.com>> wrote:
+>=20
+> Are you free sunday mid-afternoon?
+>=20
+> JP
+> --Sent from my iPad--
+> john.podesta@gmail.com<mailto:john.podesta@gmail.com>
+> For scheduling: eryn.sepp@gmail.com<mailto:eryn.sepp@gmail.com>
+>=20
+> On Jan 6, 2014, at 10:12 PM, Tony Podesta <podesta@podesta.com<mailto:pod=
+esta@podesta.com>> wrote:
+>=20
+> Mary not free
+> Would love to get a pizza for an hour? Or come over
+>=20
+> Tony Podesta
+> Office: 202-879-9300
+> Cell: 202-352-4645
+> Podesta@podesta.com<mailto:Podesta@podesta.com>
+> 1001 G St. NW, Suite 1000 West
+> Washington, DC 20001
+>=20
+> From: John Podesta [mailto:john.podesta@gmail.com]
+> Sent: Monday, January 06, 2014 09:36 PM
+> To: Tony Podesta
+> Cc: podesta.mary@gmail.com<mailto:podesta.mary@gmail.com> <podesta.mary@g=
+mail.com<mailto:podesta.mary@gmail.com>>
+> Subject: Re: You two free for dinner on 12 or 13 January?
+>=20
+> That might work. Somalia? Geez.
+>=20
+> JP
+> --Sent from my iPad--
+> john.podesta@gmail.com<mailto:john.podesta@gmail.com>
+> For scheduling: eryn.sepp@gmail.com<mailto:eryn.sepp@gmail.com>
+>=20
+> On Jan 6, 2014, at 12:04 PM, Tony Podesta <podesta@podesta.com<mailto:pod=
+esta@podesta.com>> wrote:
+>=20
+> Back on 12th
+> But may have to go to somalia give me some dates
+> Mlk day?
+>=20
+> Tony Podesta
+> Office: 202-879-9300
+> Cell: 202-352-4645
+> Podesta@podesta.com<mailto:Podesta@podesta.com>
+> 1001 G St. NW, Suite 1000 West
+> Washington, DC 20001
+>=20
+> From: Mary Podesta [mailto:podesta.mary@gmail.com]
+> Sent: Monday, January 06, 2014 11:12 AM
+> To: Tony Podesta
+> Cc: John Podesta <john.podesta@gmail.com<mailto:john.podesta@gmail.com>>
+> Subject: Re: You two free for dinner on 12 or 13 January?
+>=20
+>=20
+> Not 12th for me and 13th is John' s hand surgery. When are you back and =
+for how long?
+>=20
+> On Jan 6, 2014 8:18 AM, "Tony Podesta" <podesta@podesta.com<mailto:podest=
+a@podesta.com>> wrote:
+>=20
+>=20
+> Sent from my iPad
+
+e-Highlighter
+
+Click to send permalink to address bar, or right-click to copy permalink.
+
+Un-highlight all
+Un-highlight selection u
+Highlight selection h
+
+Top
+
+WL Research Community - user contributed research based on documents published by WikiLeaks.
+
+Tor is an encrypted anonymising network that makes it harder to intercept internet communications, or see where communications are coming from or going to.
+
+Tails is a live operating system, that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity.
+
+The Courage Foundation is an international organisation that supports those who risk life or liberty to make significant contributions to the historical record.
+
+Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network.

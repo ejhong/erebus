@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/src/config/meta";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EvidenceCard } from "@/src/components/EvidenceCard";
 import { LinkedRecordText } from "@/src/components/LinkedRecordText";
 import { VerificationBadge } from "@/src/components/VerificationBadge";
-import { loadAllCases } from "@/src/domain/load";
+import { liveEvidence, loadAllCases } from "@/src/domain/load";
 import { paramsOrPlaceholder } from "@/src/domain/staticExport";
 import type { LoadedCase, Source } from "@/src/domain/schema";
+import { clip } from "@/src/domain/text";
 
 function allSources(): { source: Source; loaded: LoadedCase }[] {
   return loadAllCases().flatMap((loaded) =>
@@ -26,7 +28,17 @@ export function generateMetadata({
 }: {
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-  return params.then(({ id }) => ({ title: `Source ${id}` }));
+  return params.then(({ id }) => {
+    const entry = allSources().find(({ source }) => source.id === id);
+    if (!entry) return { title: `Source ${id}` };
+    const { source, loaded } = entry;
+    const by = [source.authors[0] ?? source.organization, source.year].filter(Boolean).join(", ");
+    return pageMeta({
+      title: `${clip(source.title, 90)} (${id})`,
+      description: `${by ? `${by}. ` : ""}A source in the case “${loaded.record.title}”, with the evidence drawn from it.`,
+      path: `/sources/${id}/`,
+    });
+  });
 }
 
 export default async function SourcePage({
@@ -38,7 +50,7 @@ export default async function SourcePage({
   const entry = allSources().find(({ source }) => source.id === id);
   if (!entry) notFound();
   const { source, loaded } = entry;
-  const connected = loaded.evidence.filter((e) => e.sourceId === id);
+  const connected = liveEvidence(loaded).filter((e) => e.sourceId === id);
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-12">
@@ -61,6 +73,11 @@ export default async function SourcePage({
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <VerificationBadge state={source.verification} />
+        {source.provisional ? (
+          <p className="mt-2 text-[13px] leading-relaxed text-ink-soft max-w-3xl">
+            Admitted provisionally on {source.provisional.since}: the source exists ({source.provisional.exists}) but its text could not be read ({source.provisional.reason}). Nothing that cites it carries weight until a verify pass reads it. Route: {source.provisional.route}
+          </p>
+        ) : null}
         <span className="font-mono text-[10px] tracking-[0.14em] text-faint">
           {source.id}
         </span>

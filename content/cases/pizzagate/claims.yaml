@@ -6,42 +6,13 @@
 # charged the conduct the allegation asserted.
 
 - id: PZG-C001
-  tier: featured
   statement: >-
-    Across the most-circulated Pizzagate claims, recovering the primary
-    source repeatedly made the underlying artifact more certain while
-    making the incriminating interpretation less certain.
-  plainLanguage: >-
-    The raw material was usually real — real emails, real posts, real
-    payments. And checking the original, again and again, supplied the
-    ordinary context the accusation said didn't exist. Both halves of
-    that sentence matter.
+    Across the most-circulated Pizzagate claims, recovering the primary source repeatedly made the underlying artifact more certain while making the incriminating interpretation less certain.
   theme: mechanisms
   rung: attribution
   claimType: interpretive
-  importance: headline
-  credibility: well_supported
-  credibilitySummary: >-
-    Demonstrated case-by-case in this ledger: the hotdog email and its
-    15-years-earlier documented joke (PZG-C002), the "$65,000" hedge
-    (PZG-C008), the cookout invitation (PZG-C007), the basement fork
-    (PZG-C014), the masked-performer identification (PZG-C016), the
-    codebook's missing provenance (PZG-C010), and the "donations" that
-    were disclosed vendor payments (PZG-C012).
-  diagnosticity: high
-  diagnosticitySummary: >-
-    This is the case's central analytical finding, and it cuts both ways:
-    it forbids "it was all fabricated" as firmly as it forbids treating
-    artifact authenticity as interpretation accuracy.
   parentClaimIds: []
-  dependsOnClaimIds: [PZG-C002, PZG-C007, PZG-C008, PZG-C010, PZG-C012, PZG-C014, PZG-C016]
-  strongestObjection: >-
-    A pattern assembled from the claims that were checkable may not
-    extend to those that were not; the residue (PZG-C005, PZG-C006's
-    handkerchief design) resists mundane recovery precisely because the
-    context is missing.
-  whatWouldChangeOurMind:
-    - "A checked marquee claim where primary-source recovery STRENGTHENED the incriminating reading would break the pattern and be recorded as prominently as the corrections."
+  dependsOnClaimIds: [ PZG-C002, PZG-C007, PZG-C008, PZG-C010, PZG-C012, PZG-C014, PZG-C016 ]
   reviewState: ai_extracted
   origin:
     ref: "pizzagate brief §1 — pattern over verification ledger V01–V32"
@@ -50,54 +21,22 @@
     date: "2026-08-28"
 
 - id: PZG-C002
-  tier: featured
   statement: >-
-    The "hotdog stand in Hawaii" email (Todd Stern to John Podesta,
-    2015-09-03) is authentic — and a July 2000 Washington Post profile
-    already quoted Tony Podesta saying John half-jokingly wanted to run
-    "a hot-dog stand in Hawaii" after the White House, fifteen years
-    before the email existed to be decoded.
-  plainLanguage: >-
-    The famous "coded" hotdog email is real. So is a newspaper profile
-    from 2000 showing the phrase was a long-running family joke about
-    retirement. A code reading requires the mundane referent not to
-    exist; here it was in print fifteen years early.
+    The "hotdog stand in Hawaii" email (Todd Stern to John Podesta, 2015-09-03) is authentic — and a July 2000 Washington Post profile already quoted Tony Podesta saying John half-jokingly wanted to run "a hot-dog stand in Hawaii" after the White House, fifteen years before the email existed to be decoded.
   theme: emails
   rung: observation
   claimType: historical
-  importance: major
   genealogy:
     firstKnown: "2000-07"
     originDescription: >-
-      The phrase itself: documented as John Podesta's standing
-      half-joking ambition in Charles Babington's Washington Post profile
-      of 2000-07-03, quoting Tony Podesta. The code reading of the 2015
-      email dates from November 2016.
+      The phrase itself: documented as John Podesta's standing half-joking ambition in Charles Babington's Washington Post profile of 2000-07-03, quoting Tony Podesta. The code reading of the 2015 email dates from November 2016.
     originSourceId: SRC-WAPO-2000-PODESTA
-  credibility: established
-  credibilitySummary: >-
-    Both documents fetched and checked verbatim: the email with full
-    State Department headers ("I'm dreaming about your hotdog stand in
-    Hawaii…", in work banter about a rough season before Paris), and the
-    2000 profile ("his biggest goal after the White House is to run a
-    hot-dog stand in Hawaii").
-  diagnosticity: high
-  diagnosticitySummary: >-
-    The cleanest single refutation of a marquee code reading in the
-    corpus — and the template for testing the others: does the mundane
-    referent predate the alleged code?
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/30231; WaPo 2000-07-03 (Babington)"
     quote: "he conceded that his brother often says--in a voice that seems only half-joking--his biggest goal after the White House is to run a hot-dog stand in Hawaii"
     sourceId: SRC-WAPO-2000-PODESTA
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    A longstanding private joke could in principle coexist with a coded
-    usage; but that reading now requires positive evidence it never had,
-    against a documented innocent referent it said didn't exist.
-  whatWouldChangeOurMind:
-    - "Any pre-2016 law-enforcement or documentary attestation of the phrase as code."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V10, V13"
@@ -106,45 +45,17 @@
     date: "2026-08-28"
 
 - id: PZG-C003
-  tier: featured
   statement: >-
-    In the handkerchief thread (September 2014), the realtor reported
-    only "a square cloth handkerchief (white w/ black)" left on a kitchen
-    island; the phrase "I think it has a map that seems pizza-related" is
-    Susan Sandler's own parenthetical; and John Podesta replied "It's
-    mine, but not worth worrying about."
-  plainLanguage: >-
-    Who said what matters. The person who found the object described a
-    cloth. The "pizza-related map" wording was the forwarder's guess. The
-    owner shrugged. The object itself has never surfaced — so the design
-    stays genuinely unexplained, at exactly that size.
+    In the handkerchief thread (September 2014), the realtor reported only "a square cloth handkerchief (white w/ black)" left on a kitchen island; the phrase "I think it has a map that seems pizza-related" is Susan Sandler's own parenthetical; and John Podesta replied "It's mine, but not worth worrying about."
   theme: residue
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    All three layers fetched and checked verbatim (emailids 32795 and
-    23561), including the realtor's original quoted inside Sandler's
-    message. The commonly repeated version that collapses Sandler's
-    parenthetical into the realtor's report misattributes it.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    The corpus's most durable small anomaly: authentic, odd, and
-    unresolved — but its evidentiary ceiling is set by an unrecovered
-    object and a forwarder's tentative description of it.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/32795 (2014-09-02) and emailid/23561 (2014-09-04)"
     quote: "The realtor found a handkerchief (I think it has a map that seems pizza-related.  Is it yorus?"
     sourceId: SRC-WL-PODESTA-32795
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    "Unexplained" is not "incriminating": a lost novelty handkerchief
-    described secondhand cannot carry weight in any direction without the
-    object or its product line being recovered.
-  whatWouldChangeOurMind:
-    - "Recovery of the object, its photograph, or its product provenance."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V19"
@@ -153,46 +64,17 @@
     date: "2026-08-28"
 
 - id: PZG-C004
-  tier: featured
   statement: >-
-    The Luzzatto email (2015-10-08) authentically contains "Ruby, Emerson,
-    and Maeve Luzzatto (11, 9, and almost 7) so you'll have some further
-    entertainment, and they will be in that pool for sure" — written by
-    the children's grandmother about a farm visit — and John Podesta
-    appears only in its "sending pining wishes-you-could-come" list, not
-    as an expected attendee.
-  plainLanguage: >-
-    The unsettling-sounding sentence is real — written by the kids'
-    grandmother, in a note about a farm weekend with transport, weather,
-    and a heated pool. And the man the story was told about is in the
-    "wish you could come" line, not the guest list.
+    The Luzzatto email (2015-10-08) authentically contains "Ruby, Emerson, and Maeve Luzzatto (11, 9, and almost 7) so you'll have some further entertainment, and they will be in that pool for sure" — written by the children's grandmother about a farm visit — and John Podesta appears only in its "sending pining wishes-you-could-come" list, not as an expected attendee.
   theme: emails
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Fetched and checked verbatim (emailid/46736), including the sender
-    (the children's grandmother, by name and signature) and the full
-    domestic-logistics context. Common retellings that put John Podesta
-    at the event contradict the email's own text.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Illustrates paraphrase inflation precisely: the authentic wording is
-    awkward in isolation; the incriminating version required changing who
-    was invited — a checkable, and checked, alteration.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/46736 (2015-10-08)"
     quote: "Bonnie will be Uber Service to transport Ruby, Emerson, and Maeve Luzzatto (11, 9, and almost 7) so you'll have some further entertainment, and they will be in that pool for sure."
     sourceId: SRC-WL-PODESTA-46736
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Contextual normalcy in the thread cannot logically exclude a hidden
-    meaning — but it removes every positive reason the reading had, and
-    the burden does not invert.
-  whatWouldChangeOurMind:
-    - "Independent evidence assigning the phrase a non-domestic referent."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V20"
@@ -201,42 +83,17 @@
     date: "2026-08-28"
 
 - id: PZG-C005
-  tier: featured
   statement: >-
-    Tony Podesta's 2014-01-31 email to John and Mary Podesta — subject
-    "Last night was fun" — reads, in its entirety: "Still in torture
-    chamber / Another question. Do you two wanna have feb 14 valentines
-    day dinner / Sent from my iPad", with no referent for the first line
-    anywhere in the message.
-  plainLanguage: >-
-    Three lines: a strange phrase, a Valentine's dinner question, a
-    signature. Nothing in the email says what "torture chamber" meant.
-    This case preserves it as exactly that — unexplained — rather than
-    explaining it away or building on it.
+    Tony Podesta's 2014-01-31 email to John and Mary Podesta — subject "Last night was fun" — reads, in its entirety: "Still in torture chamber / Another question. Do you two wanna have feb 14 valentines day dinner / Sent from my iPad", with no referent for the first line anywhere in the message.
   theme: residue
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: "Fetched with raw headers and checked verbatim (emailid/56492); date, recipients, subject, and terseness all confirmed."
-  diagnosticity: low
-  diagnosticitySummary: >-
-    A referent-free phrase supports any theory equally, which is to say
-    none: its evidentiary value is zero in every direction until the
-    referent is recovered (the sender's calendar for 2014-01-30/31 is the
-    live research route).
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/56492 (2014-01-31, subject 'Last night was fun')"
     quote: "Still in torture chamber"
     sourceId: SRC-WL-PODESTA-56492
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Treating unexplained fragments as significant is the exact mechanism
-    this case documents; the honest state is unresolved-and-weightless,
-    not unresolved-and-suggestive.
-  whatWouldChangeOurMind:
-    - "Calendar or correspondence recovering the referent — in either direction."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V21"
@@ -245,41 +102,17 @@
     date: "2026-08-28"
 
 - id: PZG-C006
-  tier: featured
   statement: >-
-    John Podesta's "Didn't think wet works meant pool parties at the
-    Vineyard" (2016-02-09, to Steve Elmendorf, subject "Thanks") is the
-    entire body of a fresh email with no quoted prior message; it was
-    sent the evening of the New Hampshire primary, and the only reply is
-    Elmendorf's "I am all in Sounds like it will be a bad nite".
-  plainLanguage: >-
-    The famous "wet works" line has no thread behind it — it IS the whole
-    email. Sent on a night his candidate was losing a primary badly.
-    Every claim about what it referred to is interpretation, because the
-    source contains none.
+    John Podesta's "Didn't think wet works meant pool parties at the Vineyard" (2016-02-09, to Steve Elmendorf, subject "Thanks") is the entire body of a fresh email with no quoted prior message; it was sent the evening of the New Hampshire primary, and the only reply is Elmendorf's "I am all in Sounds like it will be a bad nite".
   theme: emails
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: "Fetched with raw headers and checked verbatim (emailid/56753; reply 6008). The absence of in-thread context is itself the verified fact."
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Bounds every reading equally: the assassination interpretation and
-    the campaign-gallows-humor interpretation are both unsupported by the
-    source's own text — a claim about the email can honestly go no
-    further than that.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/56753 (2016-02-09); reply emailid/6008"
     quote: "Didn't think wet works meant pool parties at the Vineyard."
     sourceId: SRC-WL-PODESTA-56753
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    "No referent in-thread" does not mean "no referent": the
-    correspondents knew what they meant; the record just does not say.
-  whatWouldChangeOurMind:
-    - "Recovery of the referenced prior conversation."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V22"
@@ -288,39 +121,17 @@
     date: "2026-08-28"
 
 - id: PZG-C007
-  tier: featured
   statement: >-
-    The "bring all children that are available" email is an authentic
-    2014 invitation, from a Center for American Progress colleague, to a
-    third-annual taco-themed family cookout at a residential address —
-    suckling pig, salsas, parking directions and all — with "fresh,
-    handmade tortillas flown in from Mexico" and an explicit
-    "family friendly event" framing; John Podesta declined ("We'll be in
-    California").
-  plainLanguage: >-
-    Read the whole invitation and it's someone's annual office-friends
-    cookout, kids welcome. The scary phrases were cropped out of a party
-    email — from an event the supposed principal didn't even attend.
+    The "bring all children that are available" email is an authentic 2014 invitation, from a Center for American Progress colleague, to a third-annual taco-themed family cookout at a residential address — suckling pig, salsas, parking directions and all — with "fresh, handmade tortillas flown in from Mexico" and an explicit "family friendly event" framing; John Podesta declined ("We'll be in California").
   theme: emails
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: "Fetched and checked verbatim (emailid/26903), sender, venue, full text, and the decline."
-  diagnosticity: moderate
-  diagnosticitySummary: "A textbook case of context stripping: the isolated phrases versus the complete document, in one email."
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/26903 (2014-12-05)"
     quote: "This is a family friendly event, so you should bring all children that are available."
     sourceId: SRC-WL-PODESTA-26903
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    None of evidentiary substance; the objection to featuring it is
-    editorial (piling on), answered by its role as the clearest
-    context-stripping exhibit.
-  whatWouldChangeOurMind:
-    - "Nothing plausible; the document is complete and self-explaining."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V08"
@@ -329,48 +140,22 @@
     date: "2026-08-28"
 
 - id: PZG-C008
-  tier: featured
   statement: >-
-    The "$65,000 of taxpayer money flying in pizza/dogs" claim traces to
-    an internal Stratfor email (2009-05-14) in which employee Fred Burton
-    wrote "I think Obama spent about $65,000…" inside a joking "Chicago
-    Hot Dog Friday" office thread — a hedged speculation by a private
-    analyst, not a White House expense record.
-  plainLanguage: >-
-    The viral version presents a dollar figure as a documented purchase.
-    The source is one company employee guessing — "I think" — in an
-    office-party email chain. The hedge didn't survive the retelling; the
-    number did.
+    The "$65,000 of taxpayer money flying in pizza/dogs" claim traces to an internal Stratfor email (2009-05-14) in which employee Fred Burton wrote "I think Obama spent about $65,000…" inside a joking "Chicago Hot Dog Friday" office thread — a hedged speculation by a private analyst, not a White House expense record.
   theme: emails
   rung: observation
   claimType: historical
-  importance: major
   genealogy:
     firstKnown: "2009-05-14"
     originDescription: >-
-      Fred Burton's internal Stratfor email; published in WikiLeaks'
-      Global Intelligence Files (2012); stripped of its "I think" and
-      recirculated as a documented transaction during November 2016.
+      Fred Burton's internal Stratfor email; published in WikiLeaks' Global Intelligence Files (2012); stripped of its "I think" and recirculated as a documented transaction during November 2016.
     originSourceId: SRC-WL-GIFILES-1223066
-  credibility: established
-  credibilitySummary: "The email fetched and checked verbatim in thread context; the sender, the hedge, and the joking thread all confirmed."
-  diagnosticity: high
-  diagnosticitySummary: >-
-    Paraphrase inflation in its purest form, with the full transmission
-    chain recoverable — the model organism for the mechanism claims in
-    this case.
   sourceAnchor:
     locator: "WikiLeaks GiFiles doc 1223066 (2009-05-14)"
     quote: "I think Obama spent about $65,000 of the tax-payers money flying in pizza/dogs from Chicago for a private party at the White House not long ago, assume we are using the same channels?"
     sourceId: SRC-WL-GIFILES-1223066
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Burton was a former security professional whose guesses might track
-    something real — but a hedged guess about an unnamed event remains a
-    guess, and no expense record has ever surfaced.
-  whatWouldChangeOurMind:
-    - "An actual procurement or expense record matching the claim."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V04"
@@ -379,46 +164,17 @@
     date: "2026-08-28"
 
 - id: PZG-C009
-  tier: featured
   statement: >-
-    The "pizza.jpg" email (Doug Band, August 2009, "As John said, it
-    doesn't get any better than this") and its attachment — two women
-    eating pizza with a young girl between them — are authentic; the
-    child has been identified in circulation only as "possibly" the
-    daughter of journalist Euna Lee, then newly freed from North Korea,
-    and no reliable source identifies her flatly.
-  plainLanguage: >-
-    Real email, real photo, taken in the week two American journalists
-    came home from imprisonment in North Korea. The identification of the
-    child is a "possibly" — and this case keeps it at exactly that
-    strength, because that is what the record supports.
+    The "pizza.jpg" email (Doug Band, August 2009, "As John said, it doesn't get any better than this") and its attachment — two women eating pizza with a young girl between them — are authentic; the child has been identified in circulation only as "possibly" the daughter of journalist Euna Lee, then newly freed from North Korea, and no reliable source identifies her flatly.
   theme: emails
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    Email and attachment fetched natively (emailid/10037); the homecoming
-    context and the hedge on the identification are the verified state of
-    the record — an earlier version of this case's own brief overstated
-    the ID and was corrected.
-  diagnosticity: low
-  diagnosticitySummary: >-
-    With the hedged identification and the homecoming context, the
-    artifact carries no weight for any Pizzagate proposition; it earns
-    its place as a documented correction — including of our own draft.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/10037 (August 2009)"
     quote: "As John said, it doesn't get any better than this"
     sourceId: SRC-WL-PODESTA-10037
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    An unidentified child in a circulated photo is precisely the kind of
-    material this site handles minimally: the claim exists to pin the
-    record's limits, not to extend them.
-  whatWouldChangeOurMind:
-    - "On-the-record identification by the family or original photographer — which would still change nothing evidentially."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V07, V30"
@@ -427,57 +183,20 @@
     date: "2026-08-28"
 
 - id: PZG-C010
-  tier: featured
   statement: >-
-    The genuine FBI intelligence bulletin of 2007-01-31 ("Symbols and
-    Logos Used by Pedophiles to Identify Sexual Preferences", Cyber
-    Division, Innocent Images National Initiative) describes graphical
-    symbols — BLogo, LBLogo, GLogo, CLogo, a butterfly — and contains no
-    food terminology whatsoever; the claimed pizza/pasta/cheese "code
-    dictionary" has no law-enforcement provenance.
-  plainLanguage: >-
-    The real FBI document Pizzagate cited is about logos — triangles,
-    hearts, a butterfly. Not one food word appears in it. The famous food
-    dictionary was never in it, and nobody has ever produced an official
-    source for it.
+    The genuine FBI intelligence bulletin of 2007-01-31 ("Symbols and Logos Used by Pedophiles to Identify Sexual Preferences", Cyber Division, Innocent Images National Initiative) describes graphical symbols — BLogo, LBLogo, GLogo, CLogo, a butterfly — and contains no food terminology whatsoever; the claimed pizza/pasta/cheese "code dictionary" has no law-enforcement provenance.
   theme: symbols
   rung: observation
   claimType: observation
-  importance: headline
   genealogy:
     firstKnown: "2016-11"
     originDescription: >-
-      The food-word dictionary's earliest known appearances are anonymous
-      forum material from early November 2016; no earlier law-enforcement,
-      scholarly, or documentary attestation has been located. (The
-      bulletin itself is genuine and predates it by nine years — which is
-      exactly the distinction the dictionary's circulation erased.)
-  credibility: established
-  credibilitySummary: >-
-    The bulletin PDF was fetched, checksummed, text-extracted, and
-    mechanically searched: zero occurrences of pizza, pasta, hotdog, or
-    cheese. Its genuine contents (title, date, issuing unit, symbol
-    descriptions) were verified verbatim. The narrow real fact that
-    "cheese pizza" appears as CSAM slang in some offender contexts is a
-    separate, later-documented proposition that does not source the
-    dictionary.
-  diagnosticity: high
-  diagnosticitySummary: >-
-    The dictionary was the allegation's interpretive engine: every email
-    reading depended on it. Its provenance failure is therefore
-    load-bearing for the whole structure above it.
+      The food-word dictionary's earliest known appearances are anonymous forum material from early November 2016; no earlier law-enforcement, scholarly, or documentary attestation has been located. (The bulletin itself is genuine and predates it by nine years — which is exactly the distinction the dictionary's circulation erased.)
   sourceAnchor:
     locator: "FBI Intelligence Bulletin, 2007-01-31 (mirror PDF, md5 2e8148e084930b96a459e3aa42a96df5), pp. 1–2"
     sourceId: SRC-FBI-2007-BULLETIN
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Code systems need not appear in official documents to exist; but a
-    claimed law-enforcement dictionary that law enforcement never
-    documented, first attested in anonymous 2016 forums, carries the
-    burden it has never met.
-  whatWouldChangeOurMind:
-    - "Any pre-2016 official or documentary attestation of the food-word dictionary."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V05"
@@ -486,42 +205,17 @@
     date: "2026-08-28"
 
 - id: PZG-C011
-  tier: featured
   statement: >-
-    The social ties the allegation treated as discoveries were documented
-    in society pages before the controversy: a June 2015 Washington Life
-    profile describes Tony Podesta's Kalorama home hosting "casual pizza
-    parties co-hosted by his friend James Alefantis" with over 200 pies
-    from the outdoor oven, and names Serbian painter Biljana Djurdjevic
-    among the artists in his collection.
-  plainLanguage: >-
-    The friendship, the pizza parties, even the artist's name — all in a
-    glossy magazine's home tour, seventeen months before anyone made
-    them sinister. Openly published sociability is weak evidence of
-    concealment.
+    The social ties the allegation treated as discoveries were documented in society pages before the controversy: a June 2015 Washington Life profile describes Tony Podesta's Kalorama home hosting "casual pizza parties co-hosted by his friend James Alefantis" with over 200 pies from the outdoor oven, and names Serbian painter Biljana Djurdjevic among the artists in his collection.
   theme: network
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: "Fetched and checked verbatim (live and Wayback); date and passages confirmed."
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Real network density is what the record shows — and its pre-publicity
-    openness is itself evidence about the concealment hypothesis, in the
-    direction the allegation didn't want.
   sourceAnchor:
     locator: "Washington Life, 'Inside Homes: Private Viewing', 2015-06-05"
     quote: "He regularly opens his house to casual pizza parties co-hosted by his friend James Alefantis, the owner of Comet Ping Pong. Over 200 pies emerge from the outdoor pizza oven as guests wander through the house and garden while studying his art collection."
     sourceId: SRC-WASHLIFE-2015
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Public sociability and concealed conduct are not mutually exclusive —
-    but the inference from documented friendship to concealed crime is
-    the association fallacy this case's mechanism claims document.
-  whatWouldChangeOurMind:
-    - "Nothing about the profile itself; it is a fixed pre-controversy document."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V12"
@@ -530,47 +224,16 @@
     date: "2026-08-28"
 
 - id: PZG-C012
-  tier: featured
   statement: >-
-    Federal filings document disclosed vendor payments to Comet Ping Pong
-    from Brock-founded political committees — American Bridge 21st
-    Century: $5,500.00 (2012), $4,764.25 (2013), $11,600.00 (2014),
-    $6,960.00 (2015), $6,422.48 (2016), and a $14,129.46 memo item
-    (2017), for "Catering & Facility Rental"/"Staff Functions"; Correct
-    the Record: $3,584.64 (2016) — routinely mischaracterized in
-    Pizzagate material as "donations."
-  plainLanguage: >-
-    Political groups really did pay the restaurant — it's in public
-    election filings, labeled catering and room rental. Calling disclosed
-    event invoices "donations" changed what they were. Also: the famous
-    "$11,500" figure everyone copied was wrong; the filing says $11,600.
+    Federal filings document disclosed vendor payments to Comet Ping Pong from Brock-founded political committees — American Bridge 21st Century: $5,500.00 (2012), $4,764.25 (2013), $11,600.00 (2014), $6,960.00 (2015), $6,422.48 (2016), and a $14,129.46 memo item (2017), for "Catering & Facility Rental"/"Staff Functions"; Correct the Record: $3,584.64 (2016) — routinely mischaracterized in Pizzagate material as "donations."
   theme: network
   rung: observation
   claimType: measurement
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    All three legacy filing images recovered (Wayback viewer + live
-    docquery PDFs) and the modern records confirmed via the official FEC
-    API, 2026-08-28. The $11,600/D468951 line is visible on the filing
-    page reproduced as this case's Plate 2.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Confirms a real financial relationship — the early researchers were
-    right that the payments existed — while the records themselves read
-    as ordinary disclosed event spending, with no anomaly (false invoice,
-    concealed recipient, routing) ever surfaced.
   sourceAnchor:
     locator: "FEC Schedule B, American Bridge 21st Century: image 14960793887 p.57 (D468951, $11,600.00, 2014-03-21); images 13940775420, 13941306270; api.open.fec.gov schedule_b"
     sourceId: SRC-FEC-SCHEDULE-B
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Disclosed vendor payments cannot exclude undisclosed flows — but the
-    allegation was about these payments, and these payments are what the
-    filings say they are.
-  whatWouldChangeOurMind:
-    - "Any documented payment anomaly: services not rendered, concealed beneficiaries, structured amounts."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V23, V24 (incl. the $11,600 correction)"
@@ -579,43 +242,17 @@
     date: "2026-08-28"
 
 - id: PZG-C013
-  tier: featured
   statement: >-
-    The 2004 Washington Post profile "Married, With Art" documented, a
-    dozen years before the controversy, that a bedroom in the Podesta
-    residence displayed multiple Katy Grannan photographs — "a
-    photographer known for documentary-style pictures of naked teenagers
-    in their parents' suburban homes" — and described Sam Taylor-Wood's
-    "Soliloquy VII" in the living room.
-  plainLanguage: >-
-    The provocative art collection is real and was described in a major
-    newspaper in 2004. Owning provocative art that museums also exhibit
-    is not evidence of anything beyond taste — but pretending the
-    collection was an internet invention is also wrong.
+    The 2004 Washington Post profile "Married, With Art" documented, a dozen years before the controversy, that a bedroom in the Podesta residence displayed multiple Katy Grannan photographs — "a photographer known for documentary-style pictures of naked teenagers in their parents' suburban homes" — and described Sam Taylor-Wood's "Soliloquy VII" in the living room.
   theme: network
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: "Verified verbatim via Wayback capture of the 2004 piece; the Grannan passage and the precise Soliloquy VII description both checked."
-  diagnosticity: low
-  diagnosticitySummary: >-
-    Authentic-and-documented, with near-zero diagnostic value for any
-    conduct claim: the same works carry National Gallery provenance, and
-    aesthetic unease is not evidence. Kept because erasing it would be
-    the debunker's version of context-stripping.
   sourceAnchor:
     locator: "The Washington Post, 'Married, With Art', 2004-09-23"
     quote: "a bedroom at the Podesta residence hung with multiple color pictures by Katy Grannan, a photographer known for documentary-style pictures of naked teenagers in their parents' suburban homes"
     sourceId: SRC-WAPO-2004-ART
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Featuring private art tastes at all risks the aesthetics-as-evidence
-    fallacy; the claim exists to pin what the record documents and to cap
-    what it can imply.
-  whatWouldChangeOurMind:
-    - "Nothing about the 2004 document; it is fixed."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V14"
@@ -624,47 +261,17 @@
     date: "2026-08-28"
 
 - id: PZG-C014
-  tier: featured
   statement: >-
-    The "basement lie" resolves on pre-controversy print: Alefantis told
-    Metro Weekly in April 2015 that the restaurant's canned tomato crop
-    was stored "in the basement," a 2013 Washington Post food article
-    had already located that storage in the basement of Buck's Fishing &
-    Camping — his other restaurant a few steps down the block — and
-    Comet's own later statement was that Comet has no basement.
-  plainLanguage: >-
-    "He said basement; then he said no basement" looked like a lie until
-    the 2013 food story surfaced: the tomatoes were in the basement of
-    his other restaurant down the street. Ambiguous wording, yes.
-    Contradiction, no.
+    The "basement lie" resolves on pre-controversy print: Alefantis told Metro Weekly in April 2015 that the restaurant's canned tomato crop was stored "in the basement," a 2013 Washington Post food article had already located that storage in the basement of Buck's Fishing & Camping — his other restaurant a few steps down the block — and Comet's own later statement was that Comet has no basement.
   theme: venue
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Both prongs verified verbatim: the 2015 interview ("Can them all,
-    store them in the basement…") and the 2013 article ("…canned before
-    trucking the jars to the basement at Buck's Fishing & Camping,
-    Alefantis's other restaurant just a few steps down the block on
-    Connecticut Avenue NW") — the latter published three years before
-    the dispute existed.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    One of the allegation's flagship "contradictions," resolved by a
-    document that predates the motive to fabricate it — the chronology is
-    what gives the resolution its force.
   sourceAnchor:
     locator: "Metro Weekly, April 2015; WaPo 2013-08-12 (via 2014 Wayback capture)"
     quote: "he bought 12 tons of Toigo tomatoes, which Stello turned into sauce and canned before trucking the jars to the basement at Buck's Fishing & Camping, Alefantis's other restaurant just a few steps down the block on Connecticut Avenue NW."
     sourceId: SRC-WAPO-2013-TOMATOES
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    The 2015 wording really was ambiguous — an honest account keeps the
-    ambiguity that generated the dispute while recording its resolution.
-  whatWouldChangeOurMind:
-    - "Documentation of storage practice contradicting the 2013 account."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V15, V16"
@@ -673,45 +280,17 @@
     date: "2026-08-28"
 
 - id: PZG-C015
-  tier: featured
   statement: >-
-    Contemporaneously archived jimmycomet Instagram posts are authentic
-    primary artifacts — and at least one famous "underground facility"
-    image carries its own correction: the account's comment on the
-    archived post reads "we meeting at core offices not #centrolina",
-    tying the image to a different restaurant's build-out.
-  plainLanguage: >-
-    The Instagram posts were real — the archives prove it. And in the
-    most famous "tunnel" image, the caption thread itself says what it
-    actually was. The primary artifact debunks its own myth.
+    Contemporaneously archived jimmycomet Instagram posts are authentic primary artifacts — and at least one famous "underground facility" image carries its own correction: the account's comment on the archived post reads "we meeting at core offices not #centrolina", tying the image to a different restaurant's build-out.
   theme: venue
   rung: observation
   claimType: observation
-  importance: supporting
-  credibility: well_supported
-  credibilitySummary: >-
-    Three captures verified via Wayback mirrors of the contemporaneous
-    November 2016 archive.is snapshots (vipXE with the Centrolina
-    comment; TS5mj "holiday joy."; aSoBL "Ok I love you. #michelleobama
-    #pingpong"). One widely circulated capture code (BRC09) proved to be
-    a Pastebin snapshot, not an Instagram post — recorded as such.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Establishes both the authenticity of the corpus and the
-    misdescription mechanism: real images, wrong captions, and — in the
-    original 2016 community itself — people correcting them in real time.
   sourceAnchor:
     locator: "Wayback mirror of archive.is/vipXE (captured 2016-11-10)"
     quote: "we meeting at core offices not #centrolina"
     sourceId: SRC-ARCHIVE-JIMMYCOMET
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Text-mode fetches cannot describe the photographs themselves; the
-    captures establish existence, captions, and comments, not full visual
-    content.
-  whatWouldChangeOurMind:
-    - "Native-resolution recovery of the archived images for visual audit."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V11, V32"
@@ -720,48 +299,17 @@
     date: "2026-08-28"
 
 - id: PZG-C016
-  tier: featured
   statement: >-
-    The masked Comet performer circulated as secretly being the
-    restaurant's owner was Amanda Kleinman of Heavy Breathing: her
-    identity, the "character and banter" act, and the band's Comet
-    bookings were documented in 2012 — four years before the allegation
-    — and a 2019 scholarly article from interviews with Kleinman and
-    booker Sasha Lord identifies the notorious performance as a birthday
-    roast for Lord within the band's regular act.
-  plainLanguage: >-
-    The "sinister masked figure" was the band's keyboardist doing her
-    usual bit — reviewed in the local press in 2012, when nobody had
-    anything to insinuate. The identity swap at the heart of that story
-    fails on pre-controversy print.
+    The masked Comet performer circulated as secretly being the restaurant's owner was Amanda Kleinman of Heavy Breathing: her identity, the "character and banter" act, and the band's Comet bookings were documented in 2012 — four years before the allegation — and a 2019 scholarly article from interviews with Kleinman and booker Sasha Lord identifies the notorious performance as a birthday roast for Lord within the band's regular act.
   theme: venue
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    DCist 2012 verified verbatim (lineup, that night's Comet booking, the
-    comedy character); Harbert's Music and Politics article (2019)
-    verified verbatim (roast "given by Kleinman to Sasha Lord"; masked
-    act "part of Heavy Breathing's regular act"); Lord's production
-    roster verified live.
-  diagnosticity: high
-  diagnosticitySummary: >-
-    Identity conflation was one of the allegation's core assembly
-    mechanisms; this is its cleanest documented instance, resolved by
-    sources that predate any motive to construct a defense.
   sourceAnchor:
     locator: "DCist, 2012-12-20; Music and Politics 13.1 (2019)"
     quote: "keyboardist Amanda Kleinman, drummer Jeff Schmid and guitarist Erick Jackson, all formerly of The Apes"
     sourceId: SRC-DCIST-2012-HB
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    The band's deliberately transgressive performance material is real
-    and was contemporaneously disturbing to some viewers; correcting the
-    identity claim neither sanitizes the aesthetic nor needs to.
-  whatWouldChangeOurMind:
-    - "Native recovery of the original performance videos, which would settle the remaining content questions in either direction."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V17, V28, V29"
@@ -770,42 +318,17 @@
     date: "2026-08-28"
 
 - id: PZG-C017
-  tier: featured
   statement: >-
-    Friends of the Orphans' 2012 IRS Form 990 lists Max Maccoby as a
-    DIRECTOR at 2.00 average hours per week of the U.S. fundraising
-    nonprofit — a volunteer board seat, not operation of any orphanage,
-    which is how circulated versions enlarged it.
-  plainLanguage: >-
-    The "ran the orphanage" connection is, in the actual IRS filing, a
-    volunteer board seat measured at two hours a week of the American
-    fundraising charity. A real link — at a fraction of the circulated
-    size.
+    Friends of the Orphans' 2012 IRS Form 990 lists Max Maccoby as a DIRECTOR at 2.00 average hours per week of the U.S. fundraising nonprofit — a volunteer board seat, not operation of any orphanage, which is how circulated versions enlarged it.
   theme: network
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    The 39-page Form 990 was fetched and text-extracted; the officer
-    table row reads verbatim "(7) MAX MACCOBY — 2.00 — DIRECTOR", and
-    the filer is the U.S. nonprofit (EIN 65-1229309).
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Documents the magnification mechanism on the network side: the link
-    is real, the circulated size was not — and any chain built on it
-    must carry the filing's version.
   sourceAnchor:
     locator: "Friends of the Orphans Form 990 (2012), officer/director table"
     quote: "(7) MAX MACCOBY — 2.00 — DIRECTOR"
     sourceId: SRC-PROPUBLICA-990-2012
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Board service is a real association; the correction is of magnitude
-    and role, not existence — both halves belong in the record.
-  whatWouldChangeOurMind:
-    - "Primary documents showing operational (not board) involvement, which none of the recovered filings indicate."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V18"
@@ -814,47 +337,17 @@
     date: "2026-08-28"
 
 - id: PZG-C021
-  tier: featured
   statement: >-
-    The 1998 Washington Post profile describes Dennis Hastert as "an old
-    college pal of Podesta's brother Tony" and quotes him praising John
-    Podesta — it does not describe a friendship with both brothers, as
-    later retellings had it; Hastert's own oral history likewise places
-    the 1960s Japan trip with Tony, and says of John only that they "got
-    along."
-  plainLanguage: >-
-    The friendship the theory needed — between Hastert and John Podesta —
-    is, in the primary record, a college friendship with the other
-    brother plus cordial professional relations. The retelling moved it
-    one brother over.
+    The 1998 Washington Post profile describes Dennis Hastert as "an old college pal of Podesta's brother Tony" and quotes him praising John Podesta — it does not describe a friendship with both brothers, as later retellings had it; Hastert's own oral history likewise places the 1960s Japan trip with Tony, and says of John only that they "got along."
   theme: network
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    The 1998 profile verified verbatim via Wayback ("an old college pal
-    of Podesta's brother Tony"); the Miller Center oral history verified
-    verbatim ("his brother, Tony [Podesta], and I went to Japan together
-    in the 1960s"; of John: "We got along"). This case's own draft brief
-    initially overstated the 1998 wording and was corrected — the
-    correction is part of the record.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    A second clean instance of magnification-in-retelling, resolved
-    entirely by pre-controversy documents.
   sourceAnchor:
     locator: "WaPo 1998-09-30 D01 (Lloyd Grove); Miller Center, J. Dennis Hastert Oral History"
     quote: "an old college pal of Podesta's brother Tony"
     sourceId: SRC-WAPO-1998-PODESTA
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Cordial relations with John are documented in the same sources; the
-    correction concerns degree and which brother, not the existence of
-    acquaintance.
-  whatWouldChangeOurMind:
-    - "Primary documentation of a close John Podesta–Hastert friendship, which none of the recovered records show."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V03, V25 (split from PZG-C017 at panel review, §3.2)"
@@ -863,45 +356,16 @@
     date: "2026-08-28"
 
 - id: PZG-C019
-  tier: featured
   statement: >-
-    Department of Justice records establish that Edgar Welch entered
-    Comet Ping Pong armed on 2016-12-04, spent over twenty minutes
-    inside, fired multiple rounds into a locked door, surrendered, and
-    was sentenced to four years (plea 2017-03-24; sentenced 2017-06-22 by
-    Judge Ketanji Brown Jackson); the statement that he "searched and
-    found no evidence" is contemporaneous press reporting, not DOJ
-    language.
-  plainLanguage: >-
-    A believer went to check with a rifle. The government's own record
-    covers what he did and what it cost him; the "he found nothing"
-    summary comes from newspapers. Both are part of the record — from
-    different sources, kept distinct here.
+    Department of Justice records establish that Edgar Welch entered Comet Ping Pong armed on 2016-12-04, spent over twenty minutes inside, fired multiple rounds into a locked door, surrendered, and was sentenced to four years (plea 2017-03-24; sentenced 2017-06-22 by Judge Ketanji Brown Jackson); the statement that he "searched and found no evidence" is contemporaneous press reporting, not DOJ language.
   theme: aftermath
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Both USAO-DC press releases fetched live and checked verbatim; the
-    attribution split (DOJ record vs. press characterization) is itself a
-    verified finding of this case.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Narrow negative evidence: against an obvious, discoverable operation
-    on-site that day — not a forensic clearance of anything broader, and
-    this case grades it at exactly that width.
   sourceAnchor:
     locator: "USAO-DC press releases: plea (2017-03-24) and sentencing (2017-06-22)"
     sourceId: SRC-DOJ-WELCH
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    An armed amateur's twenty minutes settle very little in either
-    direction; the incident's chief evidentiary product is the danger the
-    allegation created.
-  whatWouldChangeOurMind:
-    - "Nothing about the DOJ record; it is fixed."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V26"
@@ -910,47 +374,13 @@
     date: "2026-08-28"
 
 - id: PZG-C020
-  tier: featured
   statement: >-
-    No independent evidentiary bridge substantiating the central
-    trafficking allegation — an identified victim, a firsthand witness,
-    forensic or property evidence, a criminal financial trail, or a
-    law-enforcement record — has been located in the public record
-    examined for this case, nine years after the allegation formed.
-  plainLanguage: >-
-    After all the artifacts are authenticated and all the corrections are
-    made, the thing the theory is about has never produced the kind of
-    evidence that establishes crimes: no victim, no witness, no forensic
-    finding, no money trail, no case file. Its absence, under this much
-    scrutiny, is evidence.
+    No independent evidentiary bridge substantiating the central trafficking allegation — an identified victim, a firsthand witness, forensic or property evidence, a criminal financial trail, or a law-enforcement record — has been located in the public record examined for this case, nine years after the allegation formed.
   theme: aftermath
   rung: attribution
   claimType: existence
-  importance: headline
-  credibility: well_supported
-  credibilitySummary: >-
-    A negative existence claim over a bounded search: the verified record
-    assembled here (32-item ledger), the saturation-level discovery work
-    that preceded it, and nine years of adversarial public scrutiny have
-    produced none of the five evidence classes named. Bounded honestly:
-    absence in the examined public record, not a proof of universal
-    absence.
-  diagnosticity: high
-  diagnosticitySummary: >-
-    For an allegation of an operating network, the sustained absence of
-    every conventional evidence class under maximal scrutiny is the
-    single most probative fact in the case file — while remaining, per
-    this site's rules, a statement about the record and never a verdict
-    about persons.
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Absence of evidence is bounded by where one could look: private
-    records, sealed files, and unindexed archives are outside the
-    searched space — which is why this claim names its bounds instead of
-    overclaiming.
-  whatWouldChangeOurMind:
-    - "Any authenticated instance of the five named evidence classes; this claim is constructed to fall immediately if one surfaces."
   reviewState: ai_extracted
   origin:
     ref: "pizzagate brief §3 — verified ledger V01–V32"
@@ -962,49 +392,16 @@
 # ---- disposition policy. Ledger entries V33–V55.
 
 - id: PZG-C022
-  tier: featured
   statement: >-
-    The Besta Pizza website logo changed between November 9 and 11, 2016:
-    archived captures show the earlier logo as a slice drawn in nested
-    concentric triangular lines, replaced within two days of the
-    accusations by a plain slice; the owner told the Washington Post
-    "It's a slice of pizza" and removed the image.
-  plainLanguage: >-
-    The logo was real, it did look like nested triangles, and it really
-    was changed within days of the accusations — all confirmed from the
-    archived website itself. What that proves is a separate question: a
-    small business scrubbing a suddenly notorious graphic is exactly what
-    innocence would also do.
+    The Besta Pizza website logo changed between November 9 and 11, 2016: archived captures show the earlier logo as a slice drawn in nested concentric triangular lines, replaced within two days of the accusations by a plain slice; the owner told the Washington Post "It's a slice of pizza" and removed the image.
   theme: symbols
   rung: observation
   claimType: observation
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Both Wayback captures fetched and diffed (every logo filename
-    replaced between the dates; both archived PNGs rendered and
-    described); the owner's explanation and the removal verified in
-    contemporaneous WaPo reporting. Precision note: the WaPo articles
-    never mention an FBI symbol — the comparison came from an online
-    reviewer alleging "a symbol of child pornography"; the FBI framing
-    was added in circulation.
-  diagnosticity: low
-  diagnosticitySummary: >-
-    Visual resemblance between a pizza-slice logo and a bulletin symbol
-    is abundant by chance in commercial graphics, and removal under
-    harassment is evidence of harassment. The artifact is preserved
-    because erasing it would be the debunker's version of
-    context-stripping.
   sourceAnchor:
     locator: "Wayback captures 20161109221742 and 20161111004014 of mybestapizza.com; WaPo 2016-12-05"
     sourceId: SRC-WAYBACK-BESTA
-  parentClaimIds: [PZG-C010]
+  parentClaimIds: [ PZG-C010 ]
   dependsOnClaimIds: []
-  strongestObjection: >-
-    None to the facts; the objection is to inference in either direction
-    — the change proves neither signaling nor its absence.
-  whatWouldChangeOurMind:
-    - "Pre-2016 design records showing the logo's commissioned origin would close even the residual question."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V41, V42"
@@ -1013,42 +410,16 @@
     date: "2026-08-28"
 
 - id: PZG-C023
-  tier: featured
   statement: >-
-    The Terasol café website carried a heart-within-heart graphic — the
-    archived image shows an adult hand and a child's hand — which
-    disappeared from the site in November 2016; contemporaneous reporting
-    tied the graphic to a St. Jude Children's Research Hospital
-    fundraiser and said the family removed it.
-  plainLanguage: >-
-    The hearts graphic was real (a children's-charity image, per the
-    contemporaneous reporting), and it was taken down during the
-    harassment wave. Same shape as the Besta story: authentic artifact,
-    frightened removal, no evidentiary bridge to anything.
+    The Terasol café website carried a heart-within-heart graphic — the archived image shows an adult hand and a child's hand — which disappeared from the site in November 2016; contemporaneous reporting tied the graphic to a St. Jude Children's Research Hospital fundraiser and said the family removed it.
   theme: symbols
   rung: observation
   claimType: observation
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    Wayback CDX diff shows exactly one image disappearing between
-    captures either side of November 2016; the archived PNG was rendered
-    and described. The St. Jude connection rests on WaPo's reporting of
-    the owners' account — attributed as such, since the page itself
-    carries no caption.
-  diagnosticity: low
-  diagnosticitySummary: >-
-    Nested hearts are among the most common motifs in commercial art; a
-    family café's charity graphic resembling a bulletin symbol carries
-    essentially no discriminating power.
   sourceAnchor:
     locator: "terasolartisans.com Wayback captures either side of Nov 2016; WaPo 2016-12-05"
     sourceId: SRC-WAYBACK-TERASOL
-  parentClaimIds: [PZG-C010]
+  parentClaimIds: [ PZG-C010 ]
   dependsOnClaimIds: []
-  strongestObjection: "As with PZG-C022 — the facts are settled; only over-inference in either direction is contestable."
-  whatWouldChangeOurMind:
-    - "Recovery of the graphic's design provenance (the fundraiser materials)."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V42, V43"
@@ -1057,50 +428,16 @@
     date: "2026-08-28"
 
 - id: PZG-C024
-  tier: featured
   statement: >-
-    A DDOT traffic camera stood at Connecticut and Nebraska Avenues NW
-    (on the official list by January 2014); a contemporaneous December
-    2016 claim that its view turned away from the restaurant survives
-    with its original forum identifier; and TrafficLand states cameras
-    are agency-operated, may be actively moved, and that it records no
-    video. Whether the view changed remains unresolved — no frames,
-    operator log, or original post has been recovered.
-  plainLanguage: >-
-    The camera was real. The claim that it turned away is genuinely from
-    the time, not a later invention. And it has never been either proven
-    or disproven — while the system's cameras were routinely movable and
-    nothing was recorded, so even a confirmed turn would prove little.
-    That triple state — real, contemporaneous, unresolved-and-weak — is
-    the honest entry.
+    A DDOT traffic camera stood at Connecticut and Nebraska Avenues NW (on the official list by January 2014); a contemporaneous December 2016 claim that its view turned away from the restaurant survives with its original forum identifier; and TrafficLand states cameras are agency-operated, may be actively moved, and that it records no video. Whether the view changed remains unresolved — no frames, operator log, or original post has been recovered.
   theme: residue
   rung: observation
   claimType: observation
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    The camera's existence (official DDOT list, "As of 01/31/2014") and
-    TrafficLand's operational statements verified from the documents;
-    the contemporaneous claim's existence is preserved via a December
-    2016 forum quotation carrying the original Voat thread identifier
-    (v/pizzagate/1459306). The 2003 report on the system's pan-tilt-zoom
-    details remains paywalled and is excluded until read.
-  diagnosticity: low
-  diagnosticitySummary: >-
-    A movable camera may have moved: with routine operator repositioning
-    and no recording, a confirmed view change would be weak evidence of
-    anything, and its absence proves nothing either.
   sourceAnchor:
     locator: "DDOT camera list PDF (goc.dc.gov, as of 2014-01-31); TrafficLand help page (Wayback)"
     sourceId: SRC-DDOT-CAMERA-LIST
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Treating an unresolvable claim as forever-pending grants it unearned
-    life; but closing it without the primary artifact would be the
-    opposite error. It stays exactly this size.
-  whatWouldChangeOurMind:
-    - "The original Voat post, camera frames, or a DDOT operator log for 2016-12-04."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V44; brief §2.3"
@@ -1109,50 +446,16 @@
     date: "2026-08-28"
 
 - id: PZG-C025
-  tier: featured
   statement: >-
-    The "DOJ trafficking prosecutor connected to Besta Pizza" claim
-    rests on an identity conflation between two men named Andrew Kline:
-    the restaurant's LLC paperwork matches the Veritas Law Firm
-    restaurant-industry attorney (1225 19th St NW), while a different
-    Andrew Kline served in DOJ's Human Trafficking Prosecution Unit —
-    and participants in the original November 2016 forum thread posted
-    this correction themselves, though the thread records the original
-    poster rejecting it.
-  plainLanguage: >-
-    Two lawyers, same name. The one on the pizza paperwork practices
-    restaurant law; the one at DOJ prosecuted traffickers. The original
-    investigators' own thread contains the correction — and also shows
-    it being refused. Both facts are part of how this allegation
-    survived its own debunking.
+    The "DOJ trafficking prosecutor connected to Besta Pizza" claim rests on an identity conflation between two men named Andrew Kline: the restaurant's LLC paperwork matches the Veritas Law Firm restaurant-industry attorney (1225 19th St NW), while a different Andrew Kline served in DOJ's Human Trafficking Prosecution Unit — and participants in the original November 2016 forum thread posted this correction themselves, though the thread records the original poster rejecting it.
   theme: mechanisms
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Both Klines verified independently (2007 justice.gov release naming
-    "Special Litigation Counsels Hilary Axam and Andrew Kline"; Veritas
-    Law's live team page (theveritaslawfirm.com/our-team/) at the matching address), and the mirrored
-    thread 5e3scw (2016-11-21) contains the correction verbatim: "That
-    Andrew Kline is not the one that worked for the Department of
-    Justice."
-  diagnosticity: high
-  diagnosticitySummary: >-
-    The cleanest documented instance of identity conflation — one of the
-    three assembly mechanisms this case names — including the community
-    catching it in real time and the correction failing to propagate.
   sourceAnchor:
     locator: "r/pizzagate mirror (hackliberty.org), thread 5e3scw (2016-11-21); justice.gov 2007 release 07_crt_060; theveritaslawfirm.com/our-team/"
     sourceId: SRC-RPIZZAGATE-KLINE
-  parentClaimIds: [PZG-C001]
+  parentClaimIds: [ PZG-C001 ]
   dependsOnClaimIds: []
-  strongestObjection: >-
-    A same-name coincidence on trafficking-adjacent paperwork was worth
-    checking — the failure was not the question but the refusal of the
-    answer.
-  whatWouldChangeOurMind:
-    - "Corporate records tying the DOJ attorney (rather than the Veritas attorney) to the LLC, which nothing recovered indicates."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V45"
@@ -1161,46 +464,16 @@
     date: "2026-08-28"
 
 - id: PZG-C026
-  tier: featured
   statement: >-
-    The "Spirit Cooking" email is authentic — a 2015 forward of Marina
-    Abramović's dinner invitation from Tony to John Podesta — and
-    Abramović stated in a contemporaneous ARTnews interview that Tony
-    Podesta attended such dinners, John Podesta did not attend, and she
-    had never met John.
-  plainLanguage: >-
-    The invitation was real; the artist is famous for macabre-titled
-    performance work; and by her own contemporaneous account the man the
-    story was told about never came and she'd never met him. The
-    artifact survives; the version with John Podesta at the table does
-    not.
+    The "Spirit Cooking" email is authentic — a 2015 forward of Marina Abramović's dinner invitation from Tony to John Podesta — and Abramović stated in a contemporaneous ARTnews interview that Tony Podesta attended such dinners, John Podesta did not attend, and she had never met John.
   theme: network
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Email fetched live (emailid 15893, 2015-06-28); the
-    attendance/never-met detail verified in the ARTnews interview
-    (Russeth, 2016-11-04) — attributed to ARTnews, not the Guardian
-    piece that merely links it.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Another instance of the person-swap mechanism: the authentic
-    artifact concerns one brother; the circulated story required the
-    other. Art-world provocation as evidence of crime is the aesthetics
-    fallacy this case caps throughout.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/15893; ARTnews 2016-11-04 (Russeth)"
     sourceId: SRC-WL-PODESTA-15893
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    An artist's own account of who attended is testimony, not a guest
-    log; it is also the only direct account on record, and nothing
-    contradicts it.
-  whatWouldChangeOurMind:
-    - "A contemporaneous attendee record contradicting the ARTnews account."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V46"
@@ -1209,42 +482,17 @@
     date: "2026-08-28"
 
 - id: PZG-C027
-  tier: featured
   statement: >-
-    A 2008 Obama fundraiser was genuinely held at Comet Ping Pong:
-    Alefantis invited Podesta to speak (expecting ~150 people and
-    "between 25 and 35 thousand dollars"), Podesta spoke, and the
-    follow-up reports "Raised over 40 grand" — with the much-circulated
-    "regret is I did not make you a nice pizza" line closing the thread.
-  plainLanguage: >-
-    The restaurant really was a political venue — a documented fundraiser
-    with a named speaker and a dollar figure. That's a real network fact,
-    openly recorded at the time. The "nice pizza" line the internet found
-    sinister is the host of a pizza restaurant apologizing for not
-    feeding his speaker.
+    A 2008 Obama fundraiser was genuinely held at Comet Ping Pong: Alefantis invited Podesta to speak (expecting ~150 people and "between 25 and 35 thousand dollars"), Podesta spoke, and the follow-up reports "Raised over 40 grand" — with the much-circulated "regret is I did not make you a nice pizza" line closing the thread.
   theme: network
   rung: observation
   claimType: historical
-  importance: major
-  credibility: established
-  credibilitySummary: >-
-    Both emails fetched and quoted (emailid 19742, 2008-09-27; emailid
-    48531, 2008-10-04).
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Confirms genuine political embedding — the allegation's network map
-    was often right — while the documents themselves read as ordinary
-    campaign activity: invitations, a speech, a total, an apology about
-    catering.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/19742 and emailid/48531"
     quote: "Raised over 40 grand"
     sourceId: SRC-WL-PODESTA-19742
-  parentClaimIds: [PZG-C011]
+  parentClaimIds: [ PZG-C011 ]
   dependsOnClaimIds: []
-  strongestObjection: "None of substance; the record is complete and self-describing."
-  whatWouldChangeOurMind:
-    - "Nothing plausible; fixed documents."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V38"
@@ -1253,49 +501,17 @@
     date: "2026-08-28"
 
 - id: PZG-C028
-  tier: featured
   statement: >-
-    The Clinton-campaign pizza fundraisers that later retellings placed
-    at Comet were, per the campaign's own briefing emails, at Tony
-    Podesta's home at 2438 Belmont Rd. NW — the October 2015 "Cooking
-    with Fratelli Podesta" event names Alefantis as a participating chef
-    and "personal friend" — and the April 2016 pizza party emails
-    likewise place it at Belmont, with Alefantis supplying "Our pizza
-    logo."
-  plainLanguage: >-
-    Two famous "fundraisers at the pizza place" were actually at a
-    private home across town, with the restaurateur as a guest chef.
-    The relationships are real; the venue in the retelling moved.
+    The Clinton-campaign pizza fundraisers that later retellings placed at Comet were, per the campaign's own briefing emails, at Tony Podesta's home at 2438 Belmont Rd. NW — the October 2015 "Cooking with Fratelli Podesta" event names Alefantis as a participating chef and "personal friend" — and the April 2016 pizza party emails likewise place it at Belmont, with Alefantis supplying "Our pizza logo."
   theme: network
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    The 2015 briefing verified verbatim (emailid 21136: "The Home of
-    Tony Podesta / 2438 Belmont Rd., NW"); the 2016 event verified as at
-    Belmont with Alefantis involvement via emailids 27029/53745/37543.
-    Precision cap: the label "Pizza for Hillary" and the phrase "special
-    guest chef" do not appear in the archive (which ends mid-March
-    2016) and are not used here.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    A documented venue transposition — the magnification mechanism
-    working on geography: each retelling moved the event to the more
-    incriminating address.
   sourceAnchor:
     locator: "WikiLeaks Podesta emailid/21136 (2015-10-06); 27029/53745/37543 (2016)"
     quote: "The Home of Tony Podesta / 2438 Belmont Rd., NW"
     sourceId: SRC-WL-PODESTA-21136
-  parentClaimIds: [PZG-C011]
+  parentClaimIds: [ PZG-C011 ]
   dependsOnClaimIds: []
-  strongestObjection: >-
-    A WaPo line reporting a Clinton fundraiser physically at Comet
-    exists in contemporaneous coverage; no primary event record matching
-    it has been recovered, so that possibility stays open as exactly
-    that.
-  whatWouldChangeOurMind:
-    - "A primary invitation or FEC event record for a Clinton fundraiser physically at the restaurant."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V39"
@@ -1304,48 +520,17 @@
     date: "2026-08-28"
 
 - id: PZG-C029
-  tier: featured
   statement: >-
-    The "cannibalism painting" in John Podesta's campaign office was
-    real, on loan from his brother, and profiled in TIME in April 2016 —
-    six months before Pizzagate — complete with his standing joke,
-    "It's better to be the guy with the fork than the guy on the table";
-    the same documented humor register includes his 2009 Politico quip
-    about vacationing "50 feet from where the Donner Party ate each
-    other."
-  plainLanguage: >-
-    Yes, the weird painting existed, in a national magazine, with the
-    owner joking about it on the record — months before anyone was
-    looking. Documented macabre humor in plain sight is the opposite of
-    a hidden confession, and taste in dark art is evidence of taste.
+    The "cannibalism painting" in John Podesta's campaign office was real, on loan from his brother, and profiled in TIME in April 2016 — six months before Pizzagate — complete with his standing joke, "It's better to be the guy with the fork than the guy on the table"; the same documented humor register includes his 2009 Politico quip about vacationing "50 feet from where the Donner Party ate each other."
   theme: network
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    TIME (2016-04-28) verified verbatim including the fork quip and a
-    second instance ("I don't want to be the meal"); the Politico office
-    photo gallery and the 2009 Donner quote verified live. All
-    pre-controversy.
-  diagnosticity: low
-  diagnosticitySummary: >-
-    Zero discriminating power by design: openly published dark humor is
-    equally expected under every hypothesis. Included because readers
-    keep encountering the artifact and deserve its documentation — and
-    its date.
   sourceAnchor:
     locator: "TIME, 2016-04-28 (Newton-Small); Politico gallery 2015; Politico 2009-06-01"
     quote: "It's better to be the guy with the fork… than the guy on the table"
     sourceId: SRC-TIME-2016-PODESTA
   parentClaimIds: []
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Featuring private aesthetics at all risks the taste-as-evidence
-    fallacy; the claim exists to pin the artifact's reality and its
-    pre-controversy publication, and to cap what it can imply.
-  whatWouldChangeOurMind:
-    - "Nothing plausible; fixed publications."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V01, V02"
@@ -1354,50 +539,16 @@
     date: "2026-08-28"
 
 - id: PZG-C030
-  tier: featured
   statement: >-
-    The court outcomes in the 2010 Silsby episode are narrower than
-    circulated versions: the kidnapping and criminal-association charges
-    were dropped; the conviction was for arranging illegal travel, with
-    a time-served sentence; AP traced all 33 children to living parents;
-    and the "taken from the Maccoby-connected orphanage" framing rests
-    on a spokesman's assertion that the recovered record does not
-    corroborate.
-  plainLanguage: >-
-    A serious episode with a much smaller legal ending than the story
-    that circulated: charges dropped except arranging illegal travel,
-    time served, and children who — per the AP — had living parents. The
-    orphanage link that connected it to this case's network was one
-    man's claim, not a record.
+    The court outcomes in the 2010 Silsby episode are narrower than circulated versions: the kidnapping and criminal-association charges were dropped; the conviction was for arranging illegal travel, with a time-served sentence; AP traced all 33 children to living parents; and the "taken from the Maccoby-connected orphanage" framing rests on a spokesman's assertion that the recovered record does not corroborate.
   theme: mechanisms
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: well_supported
-  credibilitySummary: >-
-    Court outcomes verified via CBS (charges dropped; illegal-travel
-    conviction; time served — page carries no visible dateline, noted);
-    the parent-tracing verified via the AP story (Vindicator archive,
-    2010-02-21: "Callabas" and the Citron slum); Puello's
-    "friends of the orphans of Haiti" line verified in the Fox
-    transcript and attributed to him as the group's then-spokesman.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    The source-fusion exhibit: real episode + real NPH board fact
-    (PZG-C017) + a spokesman's unsupported orphanage claim were welded
-    into a chain none of the parts supports. Under the living-persons
-    rules this claim states court outcomes and attributions only.
   sourceAnchor:
     locator: "CBS News (Silsby outcomes); AP via vindyarchives.com 2010-02-21; Fox transcript 2010-02-01"
     sourceId: SRC-CBS-SILSBY
-  parentClaimIds: [PZG-C001, PZG-C017]
+  parentClaimIds: [ PZG-C001, PZG-C017 ]
   dependsOnClaimIds: []
-  strongestObjection: >-
-    Reduced charges are a legal outcome, not a factual exoneration of
-    worse intent — and the claim asserts neither; it pins what the
-    record states.
-  whatWouldChangeOurMind:
-    - "Haitian or U.S. court records beyond the reported outcomes."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V51"
@@ -1406,52 +557,17 @@
     date: "2026-08-28"
 
 - id: PZG-C031
-  tier: featured
   statement: >-
-    The narrow real fact behind the food-code claims: a 2023 FBI
-    affidavit (Case 4:23-mj-02048, S.D. Tex.) states that "'pizza'
-    and/or 'cheese pizza' is a known slang/code-word used by individuals
-    to discuss CSAM in public forums without detection" — which
-    documents that specific slang in offender contexts, and neither
-    sources the expansive 2016 dictionary nor connects to any email or
-    person in this case.
-  plainLanguage: >-
-    One piece of the code story is real: "cheese pizza" genuinely
-    appears as criminal slang in an FBI affidavit — from 2023, in an
-    unrelated case. That makes the narrow fact true and the leap
-    (therefore the 2016 dictionary was real, therefore the emails were
-    code) exactly as unsupported as before.
+    The narrow real fact behind the food-code claims: a 2023 FBI affidavit (Case 4:23-mj-02048, S.D. Tex.) states that "'pizza' and/or 'cheese pizza' is a known slang/code-word used by individuals to discuss CSAM in public forums without detection" — which documents that specific slang in offender contexts, and neither sources the expansive 2016 dictionary nor connects to any email or person in this case.
   theme: symbols
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: established
-  credibilitySummary: >-
-    The affidavit PDF itself was fetched (p. 7 quoted verbatim) via the
-    reporting outlet's exposed file endpoint, corroborated by KBTX's
-    reporting; a court/PACER copy remains the recovery target for the
-    stronger label.
-    Living-persons note: cited only for the FBI's slang statement; the
-    defendant in that case is presumed innocent and this case asserts
-    nothing about him.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Sharpens the codebook analysis (PZG-C010) in both directions: the
-    slang's reality shows the dictionary wasn't built from nothing; its
-    2023 unrelated-case provenance shows it never sourced the 2016
-    claims. The evidentiary test for any alleged code remains
-    contextual, not lexical.
   sourceAnchor:
     locator: "FBI affidavit, Case 4:23-mj-02048 (S.D. Tex., filed 2023-11-13), p. 7"
     quote: "'pizza' and/or 'cheese pizza' is a known slang/code-word used by individuals to discuss CSAM in public forums without detection"
     sourceId: SRC-HARNDEN-AFFIDAVIT
-  parentClaimIds: [PZG-C010]
+  parentClaimIds: [ PZG-C010 ]
   dependsOnClaimIds: []
-  strongestObjection: >-
-    A 2023 affidavit cannot speak to 2016 usage either way; the claim
-    is scoped to exactly what the document states.
-  whatWouldChangeOurMind:
-    - "Pre-2016 law-enforcement documentation of the broader dictionary (none has surfaced in nine years)."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V48"
@@ -1460,47 +576,234 @@
     date: "2026-08-28"
 
 - id: PZG-C032
-  tier: featured
   statement: >-
-    The Sex Stains music video containing the triangle motif is credited
-    to filmmaker Cassandra Lee Hamilton, and the band's documented Comet
-    Ping Pong appearance is a single all-ages show on September 15, 2016
-    — not a residency or house-band relationship as later tellings
-    implied.
-  plainLanguage: >-
-    The video with the triangle was an L.A. filmmaker's work for a
-    touring band that played the restaurant once, for twelve dollars at
-    the door. "Frequent Comet band" was another magnification.
+    The Sex Stains music video containing the triangle motif is credited to filmmaker Cassandra Lee Hamilton, and the band's documented Comet Ping Pong appearance is a single all-ages show on September 15, 2016 — not a residency or house-band relationship as later tellings implied.
   theme: venue
   rung: observation
   claimType: historical
-  importance: supporting
-  credibility: well_supported
-  credibilitySummary: >-
-    The credit verified via Vimeo's own metadata and the filmmaker's
-    portfolio; the show verified from Comet's archived newsletter
-    (2016-09-15, $12, doors 9, all ages, with Coup Sauvage & The Snips
-    and Governess). Bounded honestly: one documented appearance — a
-    universal "only ever" is not provable from one page.
-  diagnosticity: moderate
-  diagnosticitySummary: >-
-    Caps the venue-association chain: the visual-resemblance claim about
-    the video (real motif, denied intent, design records unrecovered)
-    hangs from a one-show booking, not a relationship.
   sourceAnchor:
     locator: "Vimeo 188241841 oEmbed metadata; Comet newsletter capture, 2016-09-15"
     sourceId: SRC-COMET-NEWSLETTER-2016
-  parentClaimIds: [PZG-C016]
+  parentClaimIds: [ PZG-C016 ]
   dependsOnClaimIds: []
-  strongestObjection: >-
-    The motif's design intent remains genuinely unresolved (the decisive
-    records would be the production files) — this claim scopes the
-    venue link, not the symbol question.
-  whatWouldChangeOurMind:
-    - "Production/design records for the video; documentation of additional Comet appearances."
   reviewState: ai_extracted
   origin:
     ref: "verification ledger V50"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+#Catalog-tier claims for PZG-001 — the expansion wave (2026-08-28).
+# Every record verified before entry (ledger V33–V55); catalog tier means
+# no editorial workup yet, NOT unverified sourcing. Living-persons tier
+# rule: no catalog statement names a living person — claims that must
+# name people are featured (claims.yaml) so they carry the protective
+# framing fields.
+
+#(merged from claims-catalog.yaml on 2026-10-19: tiers ended with the editions migration; featuring is now an edition decision)
+
+- id: PZG-C033
+  statement: >-
+    The "walnut sauce" emails carry explicit culinary context: a dinner-guest inquiry about whether the pasta sauce "was actually very tasty" and a separate thank-you praising "that pasta and walnut sauce dish!!" from a dinner at the recipient's home.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/30145 (2015-04-11) and emailid/53381 (2015-04-10)"
+    quote: "was the sauce actually very tasty?"
+    sourceId: SRC-WL-PODESTA-30145
+  origin:
+    ref: "verification ledger V33"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C034
+  statement: >-
+    The "ice cream" email was a reply to a Georgetown Law frozen-dessert survey (Cold Stone among the options), was not written by the account's owner, and its actual wording is "a rather serious business" — the circulated "very serious business" is itself a misquote.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/19018 (from kac316@law.georgetown.edu)"
+    quote: "a rather serious business"
+    sourceId: SRC-WL-PODESTA-19018
+  origin:
+    ref: "verification ledger V34"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C035
+  statement: >-
+    The "cheese/pasta/dominoes" email sits in a documented gift tradition: the sender describes a long-standing Christmas pattern of pasta-and-sauce boxes, notes cheeses arrived instead that year, and jokes "playing dominos on cheese than on pasta?" — while a separate email that July records the same circle literally playing Dominos ("Using the Podesta method, she made up the rules as we played").
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/50332 (2015-12-24) and emailid/37971 (2015-07-11)"
+    quote: "playing dominos on cheese than on pasta?"
+    sourceId: SRC-WL-PODESTA-50332
+  origin:
+    ref: "verification ledger V35"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C036
+  statement: >-
+    The "Moloch" line lives in the Clinton archive, not the Podesta emails: written by a State Department representative to the OAS as the joking close of a Honduras diplomacy readout ("I will be sacrificing a chicken in the backyard to Moloch . . ."), and forwarded twice before reaching the famous inbox.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Clinton emailid/14333 ('Attached is from Lew Amselem, our rep to OAS')"
+    quote: "I will be sacrificing a chicken in the backyard to Moloch . . ."
+    sourceId: SRC-WL-CLINTON-14333
+  origin:
+    ref: "verification ledger V36"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C037
+  statement: >-
+    "Would love to get a pizza for an hour?" occurs inside a thread titled "You two free for dinner on 12 or 13 January?" — ordinary scheduling between siblings that ends "3:00 at our house work?" / "Sure."
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/52778 (John Podesta's reply of January 8, 2014)"
+    quote: "3:00 at our house work?"
+    sourceId: SRC-WL-PODESTA-52778
+    also:
+      - locator: "WikiLeaks Podesta emailid/52778 (Tony Podesta's message of January 6, 2014, quoted below the reply)"
+        quote: "Would love to get a pizza for an hour?"
+  origin:
+    ref: "verification ledger V37"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C038
+  statement: >-
+    "Always happy to babysit" appears in a dinner-cancellation thread ("Re: Our drive" — a guest stuck in icy traffic), with no other referent in the exchange.
+  theme: emails
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/44232"
+    sourceId: SRC-WL-PODESTA-44232
+  origin:
+    ref: "verification ledger V47"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C039
+  statement: >-
+    "I'm seated with the kids so little wired" is an authentic reply to "How is the trip?" whose referent the exchange never states — it remains unresolved and carries no weight in any direction.
+  theme: residue
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WikiLeaks Podesta emailid/49348"
+    sourceId: SRC-WL-PODESTA-49348
+  independenceGroup: "podesta-small-emails"
+  origin:
+    ref: "verification ledger V47"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C040
+  statement: >-
+    The scholarly origin reconstruction traces the food-code branch to a November 3, 2016 Reddit post ("Someone tell me I'm wrong!"), with the restaurant-specific component layered in around November 7 — the theory assembled over days from separable strands rather than arriving whole.
+  theme: mechanisms
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "Benkler, Faris & Roberts, Network Propaganda (OUP 2018), Pizzagate case study chapter"
+    sourceId: SRC-BENKLER-2018
+  origin:
+    ref: "verification ledger V55"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C041
+  statement: >-
+    The earliest-hashtag sources disagree by a day and both scopes are preserved: Wellesley's TwitterTrails dataset records the first #pizzagate at 8:34 AM GMT on November 6, 2016, while the Washington Post's reconstruction says the hashtag first appeared November 7.
+  theme: mechanisms
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "TwitterTrails blog (Wellesley); WaPo 2016-12-06"
+    quote: "the first mention of #pizzagate was at 8:34 AM GMT on Nov. 6, 2016"
+    sourceId: SRC-TWITTERTRAILS
+  origin:
+    ref: "verification ledger V40"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C042
+  statement: >-
+    Reddit's November 2016 ban of the r/pizzagate community was publicly attributed to its personal-information (doxxing) policy — a conduct enforcement, not an evidentiary adjudication of the theory in either direction.
+  theme: aftermath
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "WaPo 2016-12-06 reconstruction (lede attribution)"
+    sourceId: SRC-WAPO-2016-HASHTAG
+  origin:
+    ref: "verification ledger V53"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C043
+  statement: >-
+    D.C. police stated on November 23, 2016 that they were not investigating the restaurant and were monitoring threats against it and its employees — the contemporaneous official posture, two weeks before the armed incident.
+  theme: aftermath
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "FOX 5 DC, 2016-11-23 (MPD statement quoted)"
+    sourceId: SRC-FOX5-2016-MPD
+  origin:
+    ref: "verification ledger V54"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C044
+  statement: >-
+    Three further contemporaneously archived posts from the restaurant owner's Instagram resolve with verbatim captions ("Marina and Faggot", "Pizza is life.", "Nothing spruces up a rustic old restaurant…") — the corpus is authentic and post-by-post recoverable, whatever any caption is later claimed to mean.
+  theme: venue
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "Wayback mirrors of archive.is captures C2Vgn, Ru2gz, tW1SB"
+    sourceId: SRC-ARCHIVE-JIMMYCOMET
+  independenceGroup: "jimmycomet-captures"
+  origin:
+    ref: "verification ledger V52"
+    extractedBy: "claude-fable-5 (cursor session)"
+    runId: "pzg-expansion-2026-08-28"
+    date: "2026-08-28"
+
+- id: PZG-C045
+  statement: >-
+    The widely circulated sli.mg "Instagram album" is not a primary archive: the recovered archived image from it is a derivative conspiracy collage, so the album must never be cited as raw capture material — individual posts must be authenticated against their own archive records instead.
+  theme: mechanisms
+  rung: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    locator: "Archived sli.mg album image (batch 5 report); contrast the per-post captures in SRC-ARCHIVE-JIMMYCOMET"
+    sourceId: SRC-ARCHIVE-JIMMYCOMET
+  independenceGroup: "jimmycomet-captures"
+  origin:
+    ref: "verification ledger V52"
     extractedBy: "claude-fable-5 (cursor session)"
     runId: "pzg-expansion-2026-08-28"
     date: "2026-08-28"

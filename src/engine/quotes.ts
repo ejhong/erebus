@@ -1,0 +1,52 @@
+/**
+ * The mechanical quote match (AGENTS.md §3.8): a quoted span in an evidence
+ * record or claim anchor must occur verbatim in the retrieved source text.
+ * Whitespace, line-break hyphenation, typographic quotes, and case are
+ * normalized on both sides; the words must be exact. A quote the source
+ * never said is rejected, never repaired.
+ */
+
+export function normalizeForMatch(s: string): string {
+  return s
+    .replace(/[‘’‚‛]/g, "'")
+    .replace(/[“”„‟]/g, '"')
+    .replace(/[-‐-―]\s*/g, "")
+    // Spacing beside punctuation never decides a match — the same article reads "p= 0.006" in its XML and "p = 0.006"
+    // in its HTML (2026-09-20, #372) — but the boundary between words does: "now here" is not "nowhere" (review
+    // note #384).
+    .replace(/\s+/g, " ")
+    .replace(/ ?([^\p{L}\p{N}\s]) ?/gu, "$1")
+    .trim()
+    .toLowerCase();
+}
+
+/** Every double-quoted span of 12+ characters in `text`. */
+export function quotedSpans(text: string): string[] {
+  return [...String(text).matchAll(/[“"]([^“”"]{12,})[”"]/g)].map((m) => m[1]);
+}
+
+/**
+ * Surrounding quotation marks, and the punctuation at a span's edges, are not
+ * part of the span: a drafter who closes a quote with the sentence's period
+ * has quoted the sentence, and a source that follows it with a citation
+ * bracket or a comma has still said it. (2026-09-10: three records were
+ * refused for ". " against "( 6 , 15 )" and a seat read a contradiction
+ * between the refused span and the same words, admitted, without the stop.)
+ * Inside the span, every word stays exact.
+ */
+function bareQuote(quote: string): string {
+  // Only the neutral stops — period, comma, semicolon, colon — are dropped at the edges: a source that
+  // follows a sentence with a citation bracket has still said it. A question mark or an exclamation
+  // mark carries meaning and stays part of the span (review note #277).
+  return quote.trim().replace(/^[“"‘'\s.,;:]+|[”"’'\s.,;:]+$/g, "");
+}
+
+export function quoteOccurs(quote: string, sourceText: string): boolean {
+  return normalizeForMatch(sourceText).includes(normalizeForMatch(bareQuote(quote)));
+}
+
+/** The quoted spans in `statement` that do NOT occur in the source. Empty means verified. */
+export function unverifiedQuotes(statement: string, sourceText: string): string[] {
+  const text = normalizeForMatch(sourceText);
+  return quotedSpans(statement).filter((q) => !text.includes(normalizeForMatch(bareQuote(q))));
+}

@@ -1,33 +1,20 @@
 #!/usr/bin/env node
 /**
- * One-way engine sync: upstream engine repository → this repo.
+ * The engine sync: this site runs the engine developed in its upstream
+ * repository, pulled here unchanged except for the upstream's name, which is
+ * rewritten to this site's (case-preserving) so that nothing a reader sees
+ * names it (AGENTS.md §4). A site is its own in its constitution (AGENTS.md),
+ * its config (`config/`: identity, theme, rules for models, models, budget),
+ * its content, and its docs — never in the engine's code (ENGINE.md).
  *
- * The engine (src/, app/, scripts/, workflows, build configs) is owned by
- * the upstream project; this repo edits only content, configuration, and
- * its own constitution (see ENGINE.md). This script:
+ *   node scripts/sync-engine.mjs --check   # exit 1 if an engine file differs from the renamed upstream
+ *   node scripts/sync-engine.mjs --pull    # bring every engine file to the renamed upstream
  *
- *   node scripts/sync-engine.mjs --check   # report divergence, exit 1 if any
- *   node scripts/sync-engine.mjs --pull    # overwrite local engine files
- *                                          # with (scrubbed) upstream ones
+ * The upstream is public: https://github.com/ejhong/<upstream>.git, its `main`,
+ * unless ENGINE_UPSTREAM (a git URL or path) and ENGINE_REF (a branch) say
+ * otherwise — to try an engine change before it merges upstream.
  *
- * The upstream location comes from the ENGINE_UPSTREAM environment
- * variable / Actions secret (a git URL). Since the founder's 2026-08-25
- * amendment narrowed the name rule to the rendered site's inputs, the
- * URL may also be written openly in docs (see ENGINE.md).
- *
- * The scrub is an IDENTITY RENAME, not secrecy: upstream files carry the
- * upstream project's own name in UI strings, prompt versions, and
- * comments, and this site needs its own. The sync therefore renames
- * (case-preserving) every pulled text file to this project's name and
- * compares local files against the RENAMED upstream, so a rename-only
- * difference never counts as divergence. This also keeps src/ and app/
- * clean for the scoped CI name guard on the site's inputs.
- *
- * ALLOWLIST: paths where this repo deliberately diverges (site identity,
- * design tokens, empty-state pages, hosting). Allowlisted paths are never
- * overwritten by --pull and never reported by --check. Everything else
- * under the engine paths must match the scrubbed upstream — engine
- * changes are made upstream and pulled, not edited here.
+ * ALLOWLIST: engine paths this site keeps its own, each with its reason.
  */
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
@@ -43,6 +30,8 @@ const ENGINE_PATHS = [
   "app",
   "scripts",
   ".github/workflows",
+  "protocols",
+  "operator",
   "package.json",
   "package-lock.json",
   "tsconfig.json",
@@ -52,84 +41,26 @@ const ENGINE_PATHS = [
   "next.config.ts",
 ];
 
-/**
- * Intentionally divergent paths (kept deliberately different from the
- * upstream engine). Add a path here ONLY with a reason, and record
- * material divergences in docs/DECISIONS.md.
- */
+/** Within the engine paths, what is never the engine's: the upstream's own history. */
+const NOT_ENGINE = [/^protocols\/archive\//, /^scripts\/migrations\//];
+
 const ALLOWLIST = new Set([
-  // Site identity and hosting (this site: private, Cloudflare, no basePath)
-  "package.json",
-  "package-lock.json",
-  "next.config.ts",
-  "src/config/site.ts",
-  "src/config/assets.ts",
-  ".github/workflows/deploy.yml", // upstream deploys to GitHub Pages; removed here
-  ".github/workflows/ci.yml", // adds forbidden-string guard + this divergence check
-  // Cold modern-technical design (docs/DECISIONS.md, bootstrap §8)
-  "app/globals.css",
-  "app/layout.tsx",
-  // Zero-case empty states + living-persons notice (bootstrap §3, §4)
-  "app/page.tsx",
-  "app/cases/page.tsx",
-  "app/method/page.tsx",
-  "app/cases/[slug]/page.tsx",
-  // Tests rewritten without upstream content fixtures
-  "src/domain/load.test.ts",
-  "src/domain/resources.test.ts",
-  "src/domain/recordLinks.test.ts",
-  "src/domain/panel.test.ts",
-  // Comment/prose wording adjusted beyond the mechanical scrub
-  "src/domain/recordLinks.ts",
-  "src/components/LinkedRecordText.tsx",
-  "scripts/cross-model-check.mjs",
-  "scripts/triage-watch.mjs",
-  "scripts/watch-literature.mjs",
-  // House art style is this site's own (style-e1, docs/IMAGES.md)
+  // This file: the sync itself, which exists only here.
+  "scripts/sync-engine.mjs",
+  // The house art style is this site's own (style-e1, docs/IMAGES.md): the place, painted, dissolving into its survey.
   "scripts/generate-case-art.mjs",
   ".github/workflows/generate-case-art.yml",
-  ".github/workflows/extract-claims.yml",
-  // Exists only in this repo
-  "scripts/sync-engine.mjs",
-  // Hosting is this deployment's own: GitHub Pages at a repo subpath,
-  // public and unadvertised (docs/HOSTING.md). The upstream engine makes no
-  // assumption about a host, so this workflow has no upstream counterpart.
-  ".github/workflows/deploy-pages.yml",
-  // One-time migration tool for this repo's 2026-08-26 going-public change
-  // (docs/DECISIONS.md). Purges the private research-brief tree from
-  // history before visibility flips; meaningless upstream, which never
-  // committed briefs in the first place.
-  "scripts/purge-casework-history.sh",
 ]);
-
-/**
- * Allowlisted files that never existed upstream (as opposed to deliberate
- * content divergence from an upstream file). Excluded from the
- * deleted-upstream warning below, which would otherwise misread them as
- * upstream deletions.
- */
 const LOCAL_ONLY = new Set(["scripts/sync-engine.mjs"]);
 
-const mode = process.argv.includes("--pull")
-  ? "pull"
-  : process.argv.includes("--check")
-    ? "check"
-    : null;
+const mode = process.argv.includes("--pull") ? "pull" : process.argv.includes("--check") ? "check" : null;
 if (!mode) {
   console.error("usage: node scripts/sync-engine.mjs --check | --pull");
   process.exit(2);
 }
 
-const upstreamUrl = process.env.ENGINE_UPSTREAM;
-if (!upstreamUrl) {
-  console.error(
-    "ENGINE_UPSTREAM is not set. Provide the upstream engine git URL via " +
-      "the ENGINE_UPSTREAM environment variable (locally) or the " +
-      "ENGINE_UPSTREAM Actions secret (CI). It is never committed. See ENGINE.md.",
-  );
-  process.exit(2);
-}
-
+const upstreamUrl = process.env.ENGINE_UPSTREAM || `https://github.com/ejhong/${FORBIDDEN}.git`;
+const ref = process.env.ENGINE_REF || "main";
 const ROOT = process.cwd();
 const SCRATCH = path.join(ROOT, ".engine-sync");
 const CLONE = path.join(SCRATCH, "upstream");
@@ -137,17 +68,14 @@ const CLONE = path.join(SCRATCH, "upstream");
 fs.rmSync(SCRATCH, { recursive: true, force: true });
 fs.mkdirSync(SCRATCH, { recursive: true });
 try {
-  execFileSync(
-    "git",
-    ["clone", "--depth", "1", "--quiet", upstreamUrl, CLONE],
-    { stdio: ["ignore", "inherit", "inherit"] },
-  );
+  execFileSync("git", ["clone", "--depth", "1", "--quiet", "--branch", ref, upstreamUrl, CLONE], { stdio: ["ignore", "inherit", "inherit"] });
 } catch {
-  console.error("Could not clone ENGINE_UPSTREAM (URL not echoed here).");
+  console.error(`Could not clone the engine (${ref}).`);
   process.exit(2);
 }
+const upstreamCommit = execFileSync("git", ["-C", CLONE, "rev-parse", "HEAD"], { encoding: "utf8" }).trim();
 
-/** Case-preserving scrub of the upstream project name. */
+/** Case-preserving rewrite of the upstream project's name to this site's. */
 function scrub(text) {
   const cap = REPLACEMENT[0].toUpperCase() + REPLACEMENT.slice(1);
   return text
@@ -158,43 +86,21 @@ function scrub(text) {
 
 const isBinary = (buf) => buf.includes(0);
 
-/** All files under an engine path, relative to the given root. */
 function listFiles(base, rel) {
   const abs = path.join(base, rel);
   if (!fs.existsSync(abs)) return [];
-  if (fs.statSync(abs).isFile()) return [rel];
-  return fs
-    .readdirSync(abs, { withFileTypes: true })
-    .flatMap((entry) =>
-      listFiles(base, path.posix.join(rel, entry.name)),
-    );
+  if (fs.statSync(abs).isFile()) return NOT_ENGINE.some((re) => re.test(rel)) ? [] : [rel];
+  return fs.readdirSync(abs, { withFileTypes: true }).flatMap((entry) => listFiles(base, path.posix.join(rel, entry.name)));
 }
 
-const upstreamFiles = new Set(
-  ENGINE_PATHS.flatMap((p) => listFiles(CLONE, p)),
-);
+const upstreamFiles = new Set(ENGINE_PATHS.flatMap((p) => listFiles(CLONE, p)));
 const localFiles = new Set(ENGINE_PATHS.flatMap((p) => listFiles(ROOT, p)));
 
-const divergent = []; // { file, kind }
-// Allowlisting covers deliberate CONTENT divergence. When upstream deletes
-// an allowlisted file outright, that reason no longer applies and the
-// deletion would otherwise be silently invisible here forever (this is how
-// upstream's removal of the global research page failed to propagate).
-// Warn — never fail — so a human reviews whether the divergence still holds.
-const allowlistedDeletedUpstream = [];
+const divergent = [];
 for (const file of [...new Set([...upstreamFiles, ...localFiles])].sort()) {
-  if (ALLOWLIST.has(file)) {
-    if (
-      localFiles.has(file) &&
-      !upstreamFiles.has(file) &&
-      !LOCAL_ONLY.has(file)
-    ) {
-      allowlistedDeletedUpstream.push(file);
-    }
-    continue;
-  }
+  if (ALLOWLIST.has(file)) continue;
   if (!upstreamFiles.has(file)) {
-    divergent.push({ file, kind: "local-only (not in upstream engine)" });
+    divergent.push({ file, kind: "local-only" });
     continue;
   }
   if (!localFiles.has(file)) {
@@ -207,60 +113,34 @@ for (const file of [...new Set([...upstreamFiles, ...localFiles])].sort()) {
     if (!up.equals(loc)) divergent.push({ file, kind: "binary differs" });
     continue;
   }
-  if (scrub(up.toString("utf8")) !== loc.toString("utf8")) {
-    divergent.push({ file, kind: "content differs from scrubbed upstream" });
-  }
-}
-
-if (allowlistedDeletedUpstream.length > 0) {
-  console.log(
-    `warning: ${allowlistedDeletedUpstream.length} allowlisted file(s) no ` +
-      "longer exist upstream — review whether the divergence reason still " +
-      "applies (delete the file and its allowlist entry to follow upstream):",
-  );
-  for (const f of allowlistedDeletedUpstream) console.log(`  - ${f}`);
+  if (scrub(up.toString("utf8")) !== loc.toString("utf8")) divergent.push({ file, kind: "differs" });
 }
 
 if (mode === "check") {
+  fs.rmSync(SCRATCH, { recursive: true, force: true });
   if (divergent.length === 0) {
-    console.log(
-      "engine in sync: all engine paths match the scrubbed upstream (allowlisted divergences excluded).",
-    );
-    fs.rmSync(SCRATCH, { recursive: true, force: true });
+    console.log(`engine in sync with ${ref} at ${upstreamCommit.slice(0, 10)}`);
     process.exit(0);
   }
-  console.log(`engine divergence in ${divergent.length} file(s):`);
+  console.log(`engine differs from ${ref} at ${upstreamCommit.slice(0, 10)} in ${divergent.length} file(s):`);
   for (const d of divergent) console.log(`  - ${d.file}: ${d.kind}`);
-  console.log(
-    "\nEngine changes flow one way, upstream → here. Either pull " +
-      "(node scripts/sync-engine.mjs --pull), or — for a deliberate " +
-      "config-layer difference — add the path to the allowlist in " +
-      "scripts/sync-engine.mjs with a reason.",
-  );
-  fs.rmSync(SCRATCH, { recursive: true, force: true });
   process.exit(1);
 }
 
-// --pull: bring non-allowlisted engine files to the scrubbed upstream state.
 let wrote = 0;
 let removed = 0;
 for (const { file, kind } of divergent) {
-  if (kind === "local-only (not in upstream engine)") {
+  if (kind === "local-only") {
+    if (LOCAL_ONLY.has(file)) continue;
     fs.rmSync(path.join(ROOT, file));
-    console.log(`removed ${file}`);
     removed++;
     continue;
   }
   const buf = fs.readFileSync(path.join(CLONE, file));
-  const out = isBinary(buf) ? buf : Buffer.from(scrub(buf.toString("utf8")));
   fs.mkdirSync(path.dirname(path.join(ROOT, file)), { recursive: true });
-  fs.writeFileSync(path.join(ROOT, file), out);
-  console.log(`synced ${file}`);
+  fs.writeFileSync(path.join(ROOT, file), isBinary(buf) ? buf : Buffer.from(scrub(buf.toString("utf8"))));
   wrote++;
 }
+fs.writeFileSync(path.join(ROOT, "ENGINE_VERSION"), `${upstreamCommit}\n`);
 fs.rmSync(SCRATCH, { recursive: true, force: true });
-console.log(
-  `pull complete: ${wrote} file(s) written, ${removed} removed, ` +
-    `${ALLOWLIST.size} allowlisted path(s) untouched. Review the diff, run ` +
-    "the checks, and commit.",
-);
+console.log(`pulled the engine at ${upstreamCommit.slice(0, 10)} (${ref}): ${wrote} file(s) written, ${removed} removed; ENGINE_VERSION records the commit`);

@@ -1,0 +1,83 @@
+/*
+ * Erebus's theme: a cool porcelain-and-steel palette, a modern technical type
+ * system, a barely-there blueprint ground, and a sans-serif article voice. The
+ * engine's components name the tokens (paper, ink, copper, dossier, the serif,
+ * sans and mono faces) and never their values; this file gives this site's.
+ * "Copper" is a steel blue here; "serif" is the display face. The faces on
+ * offer are loaded by app/layout.tsx as variables: --font-newsreader,
+ * --font-display (Space Grotesk), --font-body (Inter), --font-plex-mono.
+ *
+ * The text colours that have to be read are set per register, so that each
+ * meets 4.5:1 on the grounds it is set on (src/domain/reading.test.ts holds
+ * the figures): on porcelain the accents are darkened just enough, on the
+ * blue-black dossier they are the light tints.
+ */
+:root,
+.bg-paper,
+.bg-paper-deep {
+  --ink-faint: #58667a;
+  --accent-copper: #37679e;
+  --accent-ochre: #366d78;
+  --accent-verdigris: #3e6c73;
+  --accent-terracotta: #59619b;
+  --accent-slate: #5d6672;
+}
+
+.bg-dossier,
+.bg-dossier-soft {
+  --ink-faint: #8093ab;
+  --accent-copper: #85acd8;
+  --accent-ochre: #6fb0bd;
+  --accent-verdigris: #74aab1;
+  --accent-terracotta: #9aa1d6;
+  --accent-slate: #9aa5b3;
+}
+
+@theme inline {
+  /* Paper register — cool porcelain with a clear blue cast */
+  --color-paper: #e9eff7;
+  --color-paper-deep: #dde6f1;
+  --color-ink: #121a24;
+  --color-ink-soft: #3b4759;
+  --color-faint: var(--ink-faint);
+  --color-line: #c2cfe0;
+
+  /* Dossier register — deep blue-black, instrument-panel dark */
+  --color-dossier: #0d141d;
+  --color-dossier-soft: #141d2a;
+  --color-dossier-line: #253247;
+  --color-dossier-text: #dbe5f1;
+  --color-dossier-faint: #8093ab;
+
+  /* Accents (muted, non-moralizing) */
+  --color-copper: var(--accent-copper);
+  --color-ochre: var(--accent-ochre);
+  --color-verdigris: var(--accent-verdigris);
+  --color-terracotta: var(--accent-terracotta);
+  --color-slate-mist: var(--accent-slate);
+
+  --font-serif: var(--font-display), "Avenir Next", "Helvetica Neue", sans-serif;
+  --font-sans: var(--font-body), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+}
+
+body {
+  /* Blueprint ground: a barely-there technical grid on blue porcelain —
+     present on a careful look, silent while reading (founder direction,
+     2026-08-27). */
+  background-color: var(--color-paper);
+  background-image:
+    linear-gradient(to right, rgb(194 207 224 / 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(194 207 224 / 0.16) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The article's voice: the body face, a little smaller and more open. */
+:root {
+  --prose-font: var(--font-sans);
+  --prose-size: 1.06rem;
+  --prose-leading: 1.75;
+}

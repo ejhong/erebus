@@ -1,0 +1,156 @@
+/**
+ * Prose references and their discipline — three mechanical rules the first
+ * Orch OR sitting (2026-09-11) showed the pipeline lacked:
+ *
+ *  1. An id written in a record's prose must name a record that exists.
+ *     The drafter had numbered its own proposals ORCH-C101… and cited them
+ *     in research summaries; the draft verb keyed the claims from the next
+ *     free id and verify dropped the rejected ones, so five summaries named
+ *     records that never existed. The loader could not see it: it checks
+ *     structured fields, not prose. Now it does, for records from
+ *     every record: the 29 older references the rule found were re-pointed
+ *     or rewritten the same day (review note #285), so it holds without a
+ *     cutoff a date could dodge.
+ *  2. A claim statement is one proposition; a falsification clause ("; it
+ *     would be false if …") is a second, independently truth-evaluable one
+ *     (§3.2). The verifier rejected some and waved others through; the
+ *     panel parked the rest.
+ *  3. A record split from another keeps the page its own quote is on, not
+ *     the parent's whole locator.
+ */
+
+/** A ledger id with the case's prefix: PREFIX-C001, PREFIX-E012, PREFIX-R003. */
+export const LEDGER_ID = /\b([A-Z]{2,6})-([CER])(\d{3})\b/g;
+/**
+ * The same-case shorthand prose uses — "C515", "E207", "C128–C130" — a
+ * letter and three digits standing alone (not inside a word, a number, or a
+ * prefixed id). Read as the case's own record (review note on #286: the
+ * shorthand escaped the prefixed check and CI passed over dangling prose).
+ */
+export const SHORTHAND_ID = /(?<![A-Za-z0-9-])([CER])(\d{3})(?![A-Za-z0-9])/g;
+
+
+/** The ids written in a text that carry the given case prefix. */
+export function ledgerIdRefs(text: string | undefined | null, prefix: string): string[] {
+  if (!text) return [];
+  const out: string[] = [];
+  for (const m of text.matchAll(LEDGER_ID)) if (m[1] === prefix) out.push(m[0]);
+  for (const m of text.matchAll(SHORTHAND_ID)) out.push(`${prefix}-${m[1]}${m[2]}`);
+  return out;
+}
+
+export interface ProseRef {
+  record: string;
+  field: string;
+  id: string;
+}
+
+type Dated = { id: string; origin?: { date?: string } };
+type ClaimLike = Dated & { statement: string };
+type EvidenceLike = Dated & { title: string; sourceStatement: string; editorInference?: string; limitations?: string[] };
+type ResearchLike = Dated & { title: string; summary: string; informationGain?: string };
+
+/** The prose fields of each record kind, in the order a reader meets them. */
+export function proseFields(kind: "claim", r: ClaimLike): [string, string | undefined][];
+export function proseFields(kind: "evidence", r: EvidenceLike): [string, string | undefined][];
+export function proseFields(kind: "research", r: ResearchLike): [string, string | undefined][];
+export function proseFields(kind: "claim" | "evidence" | "research", r: ClaimLike | EvidenceLike | ResearchLike): [string, string | undefined][] {
+  if (kind === "claim") return [["statement", (r as ClaimLike).statement]];
+  if (kind === "evidence") {
+    const e = r as EvidenceLike;
+    return [["title", e.title], ["sourceStatement", e.sourceStatement], ["editorInference", e.editorInference], ...(e.limitations ?? []).map((l, i): [string, string] => [`limitations[${i}]`, l])];
+  }
+  const x = r as ResearchLike;
+  return [["title", x.title], ["summary", x.summary], ["informationGain", x.informationGain]];
+}
+
+/**
+ * Every id a case's records name in prose that names no record of the case.
+ * `since` limits the check to records whose origin date is on or after it;
+ * absent, every record is checked.
+ */
+export function danglingProseRefs(
+  c: { claims: ClaimLike[]; evidence: EvidenceLike[]; research: ResearchLike[] },
+  since?: string,
+): ProseRef[] {
+  const ids = new Set<string>([...c.claims, ...c.evidence, ...c.research].map((r) => r.id));
+  const prefix = [...ids][0]?.split("-")[0];
+  if (!prefix) return [];
+  const out: ProseRef[] = [];
+  const check = (kind: "claim" | "evidence" | "research", r: ClaimLike | EvidenceLike | ResearchLike) => {
+    if (since && (r.origin?.date ?? "") < since) return;
+    const fields = kind === "claim" ? proseFields(kind, r as ClaimLike) : kind === "evidence" ? proseFields(kind, r as EvidenceLike) : proseFields(kind, r as ResearchLike);
+    for (const [field, text] of fields) {
+      for (const id of new Set(ledgerIdRefs(text, prefix))) if (!ids.has(id)) out.push({ record: r.id, field, id });
+    }
+  };
+  for (const r of c.claims) check("claim", r);
+  for (const r of c.evidence) check("evidence", r);
+  for (const r of c.research) check("research", r);
+  return out;
+}
+
+/**
+ * The falsification clause a statement carries, if any — "; it would be
+ * false if …", "and would be false if …", "falsifiable by …" — the pattern
+ * that bundles a second truth-condition into one claim (§3.2). Null when the
+ * statement is one proposition.
+ */
+export function compoundClause(statement: string): string | null {
+  const m = statement.match(/[;,]?\s*(?:and\s+|it\s+)?(?:would|will)\s+be\s+(?:false|refuted|falsified)\s+if\b[^]*$|[;,]?\s*(?:and\s+)?(?:is\s+)?falsifiable\s+(?:by|if)\b[^]*$/i);
+  return m ? m[0].trim() : null;
+}
+
+/** The page a quote sits on in text paged `[p. N]` (src/engine/fetch.ts), or null when the quote or the markers are absent. */
+export function pageOfQuote(text: string, quote: string | undefined): number | null {
+  if (!quote) return null;
+  const at = text.indexOf(quote);
+  if (at < 0) return null;
+  const before = text.slice(0, at);
+  const m = [...before.matchAll(/\[p\. (\d+)\]/g)].at(-1);
+  return m ? Number(m[1]) : null;
+}
+
+/**
+ * Prose scrubbed of ids that never entered: each id in `unadmitted` becomes
+ * a phrase naming what it was ("a proposed claim not admitted at intake
+ * ('…')"). Verify writes its second reader's notes into a record's
+ * limitations naming the proposal ids the passage bears on; when such a
+ * claim is later rejected, the note would name a record that does not exist.
+ */
+export function scrubUnadmitted(text: string, unadmitted: Map<string, { kind: string; observed: string }>): string {
+  const phrase = (u: { kind: string; observed: string }) => {
+    const what = u.observed.replace(/\s+/g, " ").trim();
+    return `a proposed ${u.kind} not admitted at intake ('${what.length > 70 ? what.slice(0, 67) + "…" : what}')`;
+  };
+  const prefix = [...unadmitted.keys()][0]?.split("-")[0];
+  return text
+    .replace(LEDGER_ID, (id) => (unadmitted.has(id) ? phrase(unadmitted.get(id)!) : id))
+    .replace(SHORTHAND_ID, (m, letter: string, digits: string) => {
+      const id = `${prefix}-${letter}${digits}`;
+      return unadmitted.has(id) ? phrase(unadmitted.get(id)!) : m;
+    });
+}
+
+/**
+ * A parent's locator narrowed to one page: every `[p. N]` group (and a
+ * section label in parentheses after it) is replaced by the one page, and
+ * the rest — the descriptor of the document — is kept. "[p. 1] (Sec. I) and
+ * [p. 4] (Sec. V), arXiv PDF 2111.04604v2" → "[p. 1], arXiv PDF 2111.04604v2".
+ */
+export function narrowLocator(parent: string, page: number): string {
+  // The parent's locator is read as places — a page marker with the words that belong to it ("supplement S2
+  // [p. 24]") — and the rest (the copy read, a table). The part keeps its own place and the rest; every other place
+  // goes whole, words with marker. Before 2026-09-17 only the markers went, and "[p. 4] and supplement S2 [p. 24],
+  // via open-access author manuscript" narrowed to "[p. 4], supplement S2 via …" — a component the part does not
+  // quote (review note #341). A marker's own parenthetical ("(Sec. I)") goes with it, as before.
+  const marker = `[p. ${page}]`;
+  const chunks = parent
+    .replace(/(\[p\. \d+\])\s*\([^)]*\)/g, "$1")
+    .split(/\s*(?:[,;&]|\band\b)\s*/)
+    .map((c) => c.trim())
+    .filter(Boolean);
+  const place = chunks.find((c) => c.includes(marker)) ?? marker;
+  const rest = chunks.filter((c) => !/\[p\. \d+\]/.test(c));
+  return [place, ...rest].join(", ");
+}

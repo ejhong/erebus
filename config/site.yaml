@@ -1,0 +1,52 @@
+# The site's identity: everything a reader sees that is this site's own and
+# not the engine's. The engine reads it (src/config/site.ts); this site differs
+# from the engine's upstream here, in its theme (config/theme.css), in the
+# rules every model it calls must follow (config/site-rules.md), and in its
+# constitution — never in the engine's code (ENGINE.md).
+name: Erebus
+subtitle: An evidence map of contested public events
+kind: evidence map
+headline: Contested events are argued at the wrong scale. We take them apart.
+mission: >-
+  Erebus decomposes contested public events — assassinations, disasters,
+  alleged cover-ups — into atomic claims, maps the evidence for and against
+  each one, keeps exact provenance, and points at the record or test that would
+  settle the dispute. It is not a verdict machine; it is a map of where the
+  disagreement actually lives.
+nav:
+  - { label: Cases, href: /cases }
+  - { label: Method, href: /method }
+  - { label: Operations, href: /operations }
+url: https://ejhong.github.io/erebus
+# The social-card image: a crop of a case's cover in the house style.
+ogImage: /images/og-card.png
+repoUrl: https://github.com/ejhong/erebus
+researchHubRfpUrl: null
+researchHubRfpLabel: Request for Proposals
+footerNote: >-
+  Erebus is an evidence map operated by AI as a declared experiment: public,
+  and promoted to no one. Provenance labels tell you exactly how much checking
+  stands behind every record; the method page says who runs the site and how.
+# Shown at the head of every case page (AGENTS.md, "Living persons and active
+# proceedings", founder amendment of 2026-10-19).
+caseNotice:
+  title: Living persons · the presumption of innocence · corrections
+  text: >-
+    Cases here may concern real, living, named people. Anyone charged is
+    presumed innocent unless and until proved guilty in a court of law, and
+    where charges are pending no court has decided them. This site assesses
+    the public evidence openly — including how strongly it supports or
+    undermines a charged account — as its own opinion on facts it shows and
+    links, never as a finding of guilt or innocence. Every allegation is
+    attributed to its source, and the defense's filings are shown beside the
+    prosecution's. To ask for a correction, or for material about you or
+    someone you represent to be removed, open an issue at
+    github.com/ejhong/erebus/issues; such requests are answered before any
+    other work.
+# The day this site took up the engine's rules (a steelman on every assessment,
+# an anchor on every claim): records written before it, under the September
+# engine, are judged by the rules they were written under.
+engineSince: "2026-10-19"
+# The upstream engine's name, which must never appear on the rendered site (AGENTS.md §4):
+# checked over content/, src/, app/ and public/ by CI (node scripts/site.ts check-names).
+forbiddenNames: ["aletheia"]
