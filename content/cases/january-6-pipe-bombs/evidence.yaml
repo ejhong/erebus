@@ -2674,11 +2674,11 @@
   title: The times given for cameras 602 and 940 are the files' start times
   claimIds:
     - PIPE-C062
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: qualifies
   strength: strong
-  sourceStatement: "Finding 3: \"The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the two files' start times. The man appears 53 seconds into the first (8:04:25) and about 81 to 100 seconds into the second (8:05:23 to 8:05:42), as the video's own captions say.\""
-  editorInference: The cameras and places Baker gave are right and the man is on both; the times given are the files' starts, about a minute before he appears.
+  sourceStatement: "Finding 3: \"The times Baker's side gave for cameras 602 and 940, 20:03:32 to 20:04:02, are the two files' start times. The man appears about 83 seconds into the first, from about 8:04:56, 30 seconds after the video's caption, and about 81 to 100 seconds into the second, 8:05:23 to 8:05:42, as its caption says.\""
+  editorInference: The cameras and places Baker gave are right and the man is on both; the times given are the files' starts, 81 to 83 seconds before he appears.
   exactLocator: findings
   reviewState: ai_extracted
   origin: &a1
@@ -2688,31 +2688,34 @@
     date: 2026-10-19
 
 - id: PIPE-E155
-  title: Camera 602's posted file, from 20:03:32.640
+  title: "Camera 602's posted file at the time the video's caption gives: a different man"
   claimIds:
-    - PIPE-C073
-    - PIPE-C078
+    - PIPE-C083
   sourceId: SRC-PIPE-CCTV-0602
   direction: supports
   strength: strong
-  sourceStatement: The release's file is titled "0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4". At 0:53 into it (20:04:25 by its start), a man in dark clothing walks alone along the fence beside Northwest Drive.
-  editorInference: The scene and moment match the 7-minute video's clip captioned 8:04:25pm [602].
-  exactLocator: 0:53–1:15
+  sourceStatement: The release's file is titled "0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4". From about 0:46 to 1:06 into it (20:04:19 to 20:04:39 by its start), a man carrying a backpack walks right to left along the bicycle-rack barricades.
+  editorInference: At 0:52 to 0:53, the 8:04:25 that the 7-minute video's caption gives for its camera-602 clip, the file shows this man, not the man the clip follows, who enters at about 1:23 (PIPE-E195). This record first matched the clip to the file at the captioned time by the scene.
+  exactLocator: 0:46–1:06
   reviewState: provisional
   provisional:
     since: "2026-10-19"
-    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title; both checked on 2026-10-19."
+    exists: "The page plays in a browser without signing in, and a script outside GitHub reads its title, both checked on 2026-10-19; the file was downloaded through the browser on 2026-10-20, and its SHA-256 is in the source's note."
     reason: "Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page."
     route: "Open the page in a browser, or find it in the subcommittee playlist Camera 602 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moment is at the stated offset."
     by: "2026-10-19-session-january-6-pipe-bombs-founder"
-  origin: *a1
+  origin:
+    ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
 
 - id: PIPE-E156
   title: The same release has the bomber at New Jersey Avenue and D Street SE at 7:57
   claimIds:
     - PIPE-C063
     - PIPE-C035
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: strong
   sourceStatement: 'Finding 4: "Camera 794, in the same release, shows a figure in a light hooded top, whom the breakdown labels the bomber, passing at New Jersey Avenue and D Street SE at 19:57:06 to 19:57:15 — one block north of where the affidavit places the bomber at 7:59:38."'
@@ -2726,7 +2729,7 @@
   claimIds:
     - PIPE-C030
     - PIPE-C063
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: strong
   sourceStatement: 'Finding 5: "The man in the violet-blue hooded jacket crosses at Peace Circle at about 20:01:18 to 20:01:28 (camera 3187)."'
@@ -2740,24 +2743,24 @@
   claimIds:
     - PIPE-C073
     - PIPE-C061
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: strong
-  sourceStatement: "Finding 1: \"All eight cameras the 7-minute video names — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are files in the House Administration Subcommittee on Oversight's release on Rumble\" and \"Each clip matches its original file at the moment the video labels it, the same view, cropped or zoomed.\""
+  sourceStatement: "Finding 1: \"All eight cameras the 7-minute video names — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are files in the House Administration Subcommittee on Oversight's release on Rumble\" and \"Each clip matches its original file, the same view, cropped or zoomed: seven at the moment the video labels it, and camera 602's about 30 seconds after it\"."
   editorInference: Baker's statement that the footage is the subcommittee's raw release holds for every camera in the video.
   exactLocator: findings
   reviewState: ai_extracted
   origin: *a1
 
 - id: PIPE-E159
-  title: The times were added in editing, from the files' own times
+  title: The times were added in editing, from the files' own times, one 30 seconds early
   claimIds:
     - PIPE-C074
     - PIPE-C035
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: strong
-  sourceStatement: "Finding 2: \"none of the eight originals shows a time on the image\" and each caption \"equals the original file's start time, which its name records to the millisecond, plus the time elapsed in the file, to within a few seconds.\""
+  sourceStatement: "Finding 2: \"none of the eight originals shows a time on the image\" and \"seven of the eight equal the original file's start time, which its name records to the millisecond, plus the time elapsed in the file, to within a few seconds; camera 602's is 30 seconds early\"."
   exactLocator: findings
   reviewState: ai_extracted
   origin: *a1
@@ -2766,7 +2769,7 @@
   title: What the footage shows of the man's clothes, and what it cannot
   claimIds:
     - PIPE-C034
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: qualifies
   strength: moderate
   sourceStatement: 'Finding 6: "At 704 by 528 pixels no mask colour, shoe brand or tag can be made out." On camera 3187 he wears "a violet-blue hooded jacket, dark trousers and light-soled shoes that flash under the lights".'
@@ -2779,7 +2782,7 @@
   title: Sedan clips in the breakdown, captioned but without cameras
   claimIds:
     - PIPE-C077
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: weak
   sourceStatement: 'Finding 7: the breakdown shows "clips of a dark sedan captioned 3rd street SW at 8:03:35 to 8:03:49 p.m. and C street at 8:04:19 p.m., in a different caption style and with no camera numbers".'
@@ -2792,7 +2795,7 @@
   title: At 7:59:36 the phone's sector faced away from every place the man is filmed
   claimIds:
     - PIPE-C075
-  sourceId: SRC-PIPE-S001
+  sourceId: SRC-PIPE-S005
   direction: supports
   strength: strong
   sourceStatement: 'Finding 1: every place the October footage puts the man "lies behind that sector, 147° to 172° off its direction: outside the nominal arc and outside the ±90° band".'
@@ -2804,7 +2807,7 @@
   title: The bomber's sworn positions fit the sectors, weakest at 7:59:36
   claimIds:
     - PIPE-C027
-  sourceId: SRC-PIPE-S001
+  sourceId: SRC-PIPE-S005
   direction: supports
   strength: moderate
   sourceStatement: "Finding 3: \"The bomber's sworn positions fit the sectors\" — but \"The weakest fit is the one the footage turns on\": at 7:59:38 the bomber is at the arc's edge and beyond the bound set by the next sworn site in that direction."
@@ -2817,7 +2820,7 @@
   title: The fit depends on the provider's correction of Sector B
   claimIds:
     - PIPE-C028
-  sourceId: SRC-PIPE-S001
+  sourceId: SRC-PIPE-S005
   direction: qualifies
   strength: moderate
   sourceStatement: "Finding 4: under Sector B's first-published direction \"the bomber's positions at 7:39 and 7:44 are 129° and 133° off its direction, outside both arc and band; they fit only with the April 2021 correction to east\"."
@@ -2829,7 +2832,7 @@
   title: The misidentification account and the phone
   claimIds:
     - PIPE-C033
-  sourceId: SRC-PIPE-S001
+  sourceId: SRC-PIPE-S005
   direction: qualifies
   strength: moderate
   sourceStatement: 'Finding 6: "if the man in the footage is Cole, the phone attributed to him was not with him at 7:59:36, or the sworn records or directions are wrong; if the phone was with Cole, the man is not Cole."'
@@ -2842,7 +2845,7 @@
   title: The times were read from the originals, not invented
   claimIds:
     - PIPE-C072
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: undermines
   strength: strong
   sourceStatement: 'Finding 2: "The frozen prediction for added captions holds; and the captions were read from the originals."'
@@ -2855,7 +2858,7 @@
   title: The video's first camera captions read 7:57:04pm
   claimIds:
     - PIPE-C071
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: strong
   sourceStatement: 'Finding 2: "the first two, on cameras 3192 and 794, read 7:57:04pm"'
@@ -3057,14 +3060,14 @@
   origin: *a1
 
 - id: PIPE-E180
-  title: The man is on cameras 602 and 940 about a minute after their files begin
+  title: The man is on cameras 602 and 940 about 80 seconds after their files begin
   claimIds:
     - PIPE-C078
-  sourceId: SRC-PIPE-S002
+  sourceId: SRC-PIPE-S004
   direction: supports
   strength: strong
-  sourceStatement: 'Finding 3: "The man appears 53 seconds into the first (8:04:25) and about 81 to 100 seconds into the second (8:05:23 to 8:05:42), as the video''s own captions say."'
-  editorInference: The moments the video labels are the files' start times plus the time elapsed in them; the files were viewed at those moments, not end to end.
+  sourceStatement: "Finding 3: \"The man appears about 83 seconds into the first, from about 8:04:56, 30 seconds after the video's caption, and about 81 to 100 seconds into the second, 8:05:23 to 8:05:42, as its caption says.\""
+  editorInference: The moments are the files' start times plus the time elapsed in them; camera 602's file was read frame by frame from its start, camera 940's viewed around the labelled moment, not end to end.
   exactLocator: findings
   reviewState: ai_extracted
   origin:
@@ -3304,6 +3307,85 @@
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: answering the review of ejhong/erebus#126"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
+
+- id: PIPE-E195
+  title: "Camera 602's posted file: the man the video follows, from 20:04:56 to 20:05:30"
+  claimIds:
+    - PIPE-C078
+    - PIPE-C083
+    - PIPE-C073
+  sourceId: SRC-PIPE-CCTV-0602
+  direction: supports
+  strength: strong
+  sourceStatement: The release's file is titled "0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4". A man in a dark hooded jacket enters at left at about 1:23 (20:04:56 by its start), stops behind the bicycle-rack barricades with a hand raised to his face from 1:42 to 1:45 (20:05:15 to 20:05:18), stands again from 1:50 to 1:55 and leaves at right at about 1:57 (20:05:30).
+  editorInference: Frame for frame, this is the 7-minute video's clip captioned 8:04:25pm [602], which shows the file from about 1:22, 30 seconds after its caption. At the file's 854 by 480 pixels the man's head is about 10 by 13 pixels.
+  exactLocator: 1:22–1:57
+  reviewState: provisional
+  provisional:
+    since: 2026-10-20
+    exists: The page plays in a browser without signing in, and a script outside GitHub reads its title, both checked on 2026-10-19; the file was downloaded through the browser on 2026-10-20, and its SHA-256 is in the source's note.
+    reason: Rumble answers GitHub runners with HTTP 403, and the Internet Archive save service returned error 520, so the site checks cannot read the page.
+    route: Open the page in a browser, or find it in the subcommittee playlist Camera 602 on rumble.com/c/CHASubcommitteeOnOversightRepublicanMajority; the quoted title is the page heading, and the moments are at the stated offsets.
+    by: 2026-10-19-session-january-6-pipe-bombs-founder
+  origin:
+    ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
+
+- id: PIPE-E196
+  title: The video's camera-602 caption is about 30 seconds early
+  claimIds:
+    - PIPE-C083
+  sourceId: SRC-PIPE-S004
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 8: \"The 7-minute video's camera-602 clip, captioned 8:04:25pm, shows the original file from about 1:22, 8:04:55 by the file's clock, about 30 seconds later, frame for frame\" and \"At 0:52 to 0:53, the captioned time, the file shows a different man, carrying a backpack, walking the other way along the barricades.\""
+  editorInference: "The error is in the edit's caption, not the file's clock: the man is on camera 602 about 30 seconds later than the video says, and no other time or place in the study changes."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
+
+- id: PIPE-E197
+  title: "Kyle Seraphin's side-by-side: the man on camera 602 beside an image presented as Cole"
+  claimIds:
+    - PIPE-C031
+  sourceId: SRC-PIPE-SERAPHIN-X-SIDE-BY-SIDE
+  direction: supports
+  strength: weak
+  sourceStatement: "The post reads \"Free Brian Cole Jr., assholes.\" Its two images: at left, a man in a dark hooded jacket behind bicycle-rack barricades at night, marked with a red dot, beside the logos of Washington's football team; at right, a photograph of a man in glasses and a dark hooded top, seated at a table."
+  editorInference: The post offers the likeness as identification. Its left image is the 7-minute video's zoomed still of camera 602's posted file at about 1:44, 8:05:16 by the file's clock, with the editor's dot and logos (PIPE-E195); in the file the man's head is about 10 by 13 pixels, so the likeness is judged by eye from a few pixels enlarged.
+  exactLocator: the post's two images
+  limitations:
+    - The right image's source is not stated, and this site has not established it.
+    - A likeness judged by eye is the method that named a different person in November 2025 (PIPE-C036).
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
+
+- id: PIPE-E198
+  title: On camera 602 the man's head is about 10 by 13 pixels
+  claimIds:
+    - PIPE-C031
+  sourceId: SRC-PIPE-S004
+  direction: qualifies
+  strength: moderate
+  sourceStatement: "Finding 9: \"At the file's 854 by 480 pixels his head is about 10 pixels wide and 13 high: enough to follow him, too few to compare a face.\""
+  editorInference: Any likeness of the face drawn from these frames rests on a few pixels; only an examiner's blind comparison, with its error rate, could weigh it.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-20

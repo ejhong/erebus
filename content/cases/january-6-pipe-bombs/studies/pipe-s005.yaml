@@ -1,0 +1,313 @@
+# Superseding study — PIPE-S001's table with camera 602's row corrected (PIPE-S004), per the append-only
+# rule: published rows are never edited; a correction is a new study. Criteria inherited unchanged from
+# the PIPE-S001 freeze (same hash); every other row, and every finding, carried over unchanged.
+id: PIPE-S005
+title: "Cole's phone and the October 2026 footage: do the cell sectors reach where the footage puts him? (supersedes PIPE-S001)"
+question: At the minutes the October 2026 footage shows a man on the north side of the Capitol, does the cell sector serving Cole's phone cover that place, as it would if the man and the phone were together, or only the bomber's route on the southeast side?
+researchIds:
+  - PIPE-R002
+claimIds:
+  - PIPE-C027
+  - PIPE-C033
+  - PIPE-C059
+  - PIPE-C075
+criteria:
+  frozenOn: 2026-10-19
+  inclusion:
+    - "The cell-site records sworn in the complaint affidavit (PDF pages 6-7): every data session of the phone attributed to Cole between 7:39 and 8:24 p.m. on January 5, 2021, with its time, tower, tower address and sector direction as sworn (Sectors A to E), and the April 2021 correction of Sector B's direction."
+    - Every location in the footage Steve Baker published on October 18, 2026 that Baker, his collaborators or any later release ties to a camera position and a time, recorded with the source of each.
+    - Every location of the bomber the affidavit and the detention memorandum give with a time, as the reference path the sectors are said to fit.
+  exclusion:
+    - Footage locations with no stated time or no identifiable camera position (listed in the limitations, never silently dropped).
+    - Any location of the man in the October footage whose identification as the same man rests on a different camera's frames without a continuous track (reported separately, not pooled).
+  searchProtocol: "Tower positions: the street addresses sworn in the affidavit (103 G Street SW; 200 Independence Avenue SW; 101 Independence Avenue SE; 600 Pennsylvania Avenue SE), geocoded with the District's Master Address Repository, cross-checked against FCC antenna structure registrations and OpenCelliD where they list the same structures. Footage positions and times: Baker's X thread of 2026-10-18 and its two videos, any later release by Baker, @accabbat, the defense or the Capitol Police, and court filings. Method fixed now: a sector's nominal coverage is its sworn azimuth plus or minus 60 degrees (the affidavit's approximately 120 degrees), with a sensitivity band of plus or minus 90 degrees for the affidavit's caveat that coverage can extend beyond 120 degrees; range is bounded at the distance to the nearest other site of the same provider in the sector's direction, or 1.5 km where unknown. For each footage location at minute t, record whether it lies inside the nominal arc and inside the sensitivity band of the sector the phone used nearest in time to t, and the time gap between them. Prediction under the charged account: footage locations of Cole at minutes of phone sessions fall outside the nominal arc of the serving sector, or the footage's times do not overlap the 7:34-8:18 window when the bomber is on camera elsewhere. Disconfirmer of the claim that the phone data exclude the footage: every timed footage location lies inside the nominal arc of the sector serving the phone at that minute. The study reports both, and grades nothing."
+  knownCandidates:
+    - name: Sector A, tower 59323 at 103 G Street SW, facing about 120 degrees, session at 7:39:27 p.m.
+      disposition: include
+      reason: A sworn phone session in the window.
+    - name: Sector B, tower 126187 at 200 Independence Avenue SW, facing about 90 degrees (listed 345 degrees in February 2021, corrected April 2021), sessions at 7:39:27 and 7:44:36 p.m.
+      disposition: include
+      reason: Sworn sessions; both the listed and the corrected direction are tested, the corrected one as primary.
+    - name: Sector C, tower 147990 at 200 Independence Avenue SW, facing about 180 degrees, session at 7:59:36 p.m.
+      disposition: include
+      reason: A sworn phone session in the window.
+    - name: Sector D, tower 45111 at 101 Independence Avenue SE, facing about 255 degrees, session at 8:14:36 p.m.
+      disposition: include
+      reason: A sworn phone session in the window.
+    - name: Sector E, tower 144340 at 600 Pennsylvania Avenue SE, facing about 295 degrees, sessions at 8:23:59 and 8:24:06 p.m.
+      disposition: include
+      reason: Sworn sessions just after the window, which bound where the phone went next.
+    - name: The man on the northwest side of the Capitol in Baker's October 18, 2026 footage
+      disposition: include
+      reason: The location the study tests; its times and camera positions are to be taken from the published footage and any later release.
+  criteriaHash: 86934d37add4
+method: A desk study of public records only. Geocode the four tower sites sworn in the affidavit; draw each sector's nominal arc (sworn azimuth plus or minus 60 degrees) and a sensitivity band (plus or minus 90 degrees), bounded in range as the search protocol fixes; place every timed location of the bomber (from the affidavit and the detention memorandum) and every timed location of the man in the October footage (from the published footage and any later release); and for each, report the sector serving the phone nearest in time, the time gap, and whether the location lies inside the arc and the band. Results are a table and a map; the study states what the geometry allows and excludes, and grades no claim.
+columns:
+  - subject
+  - time
+  - location
+  - location source
+  - serving sector at nearest phone session
+  - time gap
+  - inside nominal arc
+  - inside sensitivity band
+rows:
+  - cells:
+      subject: The bomber
+      time: 7:34 p.m.
+      location: 1st St and North Carolina Ave SE (MAR 905487)
+      location source: "Detention memorandum, p. 2: first captured on video"
+      serving sector at nearest phone session: Sector A (tower 59323, 103 G St SW, facing 120°) and Sector B (tower 126187, 200 Independence Ave SW, facing 90°), both at 7:39:27 p.m.
+      time gap: 5 min 27 s
+      inside nominal arc: "A: Yes — 47.4° off the sector's direction, 686 m from the site. B: Yes — 27.1° off the sector's direction, 827 m from the site"
+      inside sensitivity band: "A: Yes. B: Yes"
+    citation: &a1
+      text: United States' detention memorandum (ECF No. 17), with places from the District of Columbia Master Address Repository
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.17.0.pdf
+      locator: p. 2
+      verification: ai_verified
+  - cells:
+      subject: The bomber
+      time: 7:39:32 p.m.
+      location: D St and South Capitol St SE (MAR 903565)
+      location source: "Affidavit, PDF p. 7: westbound on D St SE, then south on South Capitol St"
+      serving sector at nearest phone session: Sector A (tower 59323, 103 G St SW, facing 120°) and Sector B (tower 126187, 200 Independence Ave SW, facing 90°), both at 7:39:27 p.m.
+      time gap: 5 s
+      inside nominal arc: "A: No — 75.1° off the sector's direction, 538 m from the site. B: Yes — 23.6° off the sector's direction, 504 m from the site"
+      inside sensitivity band: "A: Yes. B: Yes"
+    citation:
+      text: Complaint affidavit, United States v. Cole (bomber's positions and phone sessions), with sites and places from the District of Columbia Master Address Repository
+      url: https://www.justice.gov/usao-dc/media/1420196/dl?inline=
+      locator: PDF pp. 6–7
+      verification: ai_verified
+  - cells:
+      subject: The bomber
+      time: 7:44:36 p.m.
+      location: Ivy St SE between South Capitol St and New Jersey Ave (between MAR 278491 and 902368)
+      location source: "Affidavit, PDF p. 7: east on Ivy St SE"
+      serving sector at nearest phone session: Sector B (tower 126187, 200 Independence Ave SW, facing 90°), session at 7:39:27 p.m.
+      time gap: 0 s
+      inside nominal arc: Yes — 28° off the sector's direction, 649 m from the site
+      inside sensitivity band: Yes
+    citation:
+      text: Complaint affidavit, United States v. Cole (bomber's positions and phone sessions), with sites and places from the District of Columbia Master Address Repository
+      url: https://www.justice.gov/usao-dc/media/1420196/dl?inline=
+      locator: PDF p. 7
+      verification: ai_verified
+  - cells:
+      subject: The bomber
+      time: 7:54 p.m.
+      location: The DNC, 430 South Capitol St SE (MAR 278491)
+      location source: "Detention memorandum, p. 2: the first device placed"
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 5 min 36 s
+      inside nominal arc: Yes — 58.1° off the sector's direction, 591 m from the site, beyond the range bound
+      inside sensitivity band: Yes
+    citation: *a1
+  - cells:
+      subject: The person the breakdown labels the bomber
+      time: 7:57:06–7:57:15 p.m.
+      location: New Jersey Ave and D St SE (MAR 904319)
+      location source: Camera 794, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 2 min 26 s
+      inside nominal arc: No — 72° off the sector's direction, 650 m from the site, beyond the range bound
+      inside sensitivity band: Yes
+    citation:
+      text: Original file 0794KIO00K9NJ-DSE_2021-01-05_19h55min35s083ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v50471k-0794kio00k9nj-dse-2021-01-05-19h55min35s083ms.mp4.html
+      locator: 1:31–1:40
+      verification: ai_verified
+  - cells:
+      subject: The bomber
+      time: 7:59:38 p.m.
+      location: New Jersey Ave and E St SE (MAR 902846)
+      location source: "Affidavit, PDF p. 7: south on New Jersey Ave SE, then east on E St SE"
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 2 s
+      inside nominal arc: Yes — 59° off the sector's direction, 787 m from the site, beyond the range bound
+      inside sensitivity band: Yes
+    citation:
+      text: Complaint affidavit, United States v. Cole (bomber's positions and phone sessions), with sites and places from the District of Columbia Master Address Repository
+      url: https://www.justice.gov/usao-dc/media/1420196/dl?inline=
+      locator: PDF p. 7
+      verification: ai_verified
+  - cells:
+      subject: The bomber
+      time: 8:14:15 p.m.
+      location: The alley between the Capitol Hill Club and the RNC, at 1st St SE (between MAR 42689 and 40849)
+      location source: "Affidavit, PDF p. 7: out of Rumsey Ct, through the alley, north on 1st St SE"
+      serving sector at nearest phone session: Sector D (tower 45111, 101 Independence Ave SE, facing 255°), session at 8:14:36 p.m.
+      time gap: 21 s
+      inside nominal arc: Yes — 42.7° off the sector's direction, 144 m from the site
+      inside sensitivity band: Yes
+    citation:
+      text: Complaint affidavit, United States v. Cole (bomber's positions and phone sessions), with sites and places from the District of Columbia Master Address Repository
+      url: https://www.justice.gov/usao-dc/media/1420196/dl?inline=
+      locator: PDF p. 7
+      verification: ai_verified
+  - cells:
+      subject: The bomber
+      time: 8:16 p.m.
+      location: The RNC, 310 1st St SE (MAR 40849)
+      location source: "Detention memorandum, p. 2: the second device placed"
+      serving sector at nearest phone session: Sector D (tower 45111, 101 Independence Ave SE, facing 255°), session at 8:14:36 p.m.
+      time gap: 1 min 24 s
+      inside nominal arc: Yes — 45.7° off the sector's direction, 159 m from the site
+      inside sensitivity band: Yes
+    citation: *a1
+  - cells:
+      subject: The bomber
+      time: 8:18 p.m.
+      location: Rumsey Ct SE at the RNC (between MAR 42689 and 40849)
+      location source: "Affidavit, PDF p. 7: last captured, eastbound on Rumsey Ct"
+      serving sector at nearest phone session: Sector D (tower 45111, 101 Independence Ave SE, facing 255°), session at 8:14:36 p.m.
+      time gap: 3 min 24 s
+      inside nominal arc: Yes — 42.7° off the sector's direction, 144 m from the site
+      inside sensitivity band: Yes
+    citation:
+      text: Complaint affidavit, United States v. Cole (bomber's positions and phone sessions), with sites and places from the District of Columbia Master Address Repository
+      url: https://www.justice.gov/usao-dc/media/1420196/dl?inline=
+      locator: PDF p. 7
+      verification: ai_verified
+  - cells:
+      subject: The man in the October footage
+      time: 7:57:04 p.m.
+      location: 3rd St and Pennsylvania Ave NW (MAR 903472)
+      location source: Camera 3192, original file (PIPE-S002); no person could be made out in the stills checked
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 2 min 32 s
+      inside nominal arc: No — 172.4° off the sector's direction, 513 m from the site
+      inside sensitivity band: No
+    citation:
+      text: Original file 3192QNW003rd-PennNW_2021-01-05_19h40min02s063ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v57x1q2-3192qnw003rd-pennnw-2021-01-05-19h40min02s063ms.mp4.html
+      locator: 17:02
+      verification: ai_verified
+  - cells:
+      subject: The walker on camera 3188
+      time: 7:59:33–7:59:59 p.m.
+      location: "The Pennsylvania Ave NW walkway, west end: 3rd St (MAR 903472)"
+      location source: Camera 3188, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 3 s
+      inside nominal arc: No — 172.4° off the sector's direction, 513 m from the site
+      inside sensitivity band: No
+    citation:
+      text: Original file 3188QNW00PeaceCircleNW_2021-01-05_19h40min01s663ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v57x61u-3188qnw00peacecirclenw-2021-01-05-19h40min01s663ms.mp4.html
+      locator: 19:31–19:58
+      verification: ai_verified
+    independenceNote: "Reported separately, as frozen: linked to the man at Peace Circle only by the edit's sequence."
+  - cells:
+      subject: The walker on camera 3188
+      time: 7:59:33–7:59:59 p.m.
+      location: "The Pennsylvania Ave NW walkway, east end: Peace Circle (MAR 308227)"
+      location source: Camera 3188, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 23 s
+      inside nominal arc: No — 156.9° off the sector's direction, 456 m from the site
+      inside sensitivity band: No
+    citation:
+      text: Original file 3188QNW00PeaceCircleNW_2021-01-05_19h40min01s663ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v57x61u-3188qnw00peacecirclenw-2021-01-05-19h40min01s663ms.mp4.html
+      locator: 19:31–19:58
+      verification: ai_verified
+    independenceNote: "Reported separately, as frozen: linked to the man at Peace Circle only by the edit's sequence."
+  - cells:
+      subject: The man in the October footage
+      time: 8:01:18–8:01:28 p.m.
+      location: Peace Circle crosswalk (MAR 308227)
+      location source: Camera 3187, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 1 min 42 s
+      inside nominal arc: No — 156.9° off the sector's direction, 456 m from the site
+      inside sensitivity band: No
+    citation:
+      text: Original file 3187QNW00PeaceCircleNW_2021-01-05_20h00min02s280ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v57x6iq-3187qnw00peacecirclenw-2021-01-05-20h00min02s280ms.mp4.html
+      locator: 1:14–1:26
+      verification: ai_verified
+  - cells:
+      subject: The man in the October footage
+      time: 8:01:33 p.m. onward
+      location: Northwest Drive exit at Peace Circle (MAR 308227)
+      location source: Camera 600, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 1 min 57 s
+      inside nominal arc: No — 156.9° off the sector's direction, 456 m from the site
+      inside sensitivity band: No
+    citation:
+      text: Original file 0600USCG00NWDriveExitTIMP_2021-01-05_19h52min45s993ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v4z2gf5-0600uscg00nwdriveexittimp-2021-01-05-19h52min45s993ms.mp4.html
+      locator: 8:47–9:20
+      verification: ai_verified
+  - cells:
+      subject: The man in the October footage
+      time: 8:03:18 p.m.
+      location: Northwest Drive near its exit, Capitol grounds (Peace Circle, MAR 308227, within about 150 m)
+      location source: Camera 601, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 3 min 42 s
+      inside nominal arc: No — 156.9° off the sector's direction, 456 m from the site
+      inside sensitivity band: No
+    citation:
+      text: Original file 0601USCG00NWDrivenearExit_2021-01-05_20h00min01s653ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v4z2ez2-0601uscg00nwdrivenearexit-2021-01-05-20h00min01s653ms.mp4.html
+      locator: 3:16
+      verification: ai_verified
+  - cells:
+      subject: The man in the October footage
+      time: 8:04:56–8:05:30 p.m.
+      location: Northwest Drive near New Jersey and Constitution Aves NW (MAR 904286, within about 100 m)
+      location source: Camera 602, original file, downloaded (PIPE-S004)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 5 min 20 s
+      inside nominal arc: No — 146.6° off the sector's direction, 693 m from the site, beyond the range bound
+      inside sensitivity band: No
+    citation:
+      text: Original file 0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4 (subcommittee release), checked in PIPE-S004; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v4z2dje-0602uscg00nwdrivenearnj-connw-2021-01-05-20h03min32s640ms.mp4.html
+      locator: 1:22–1:57
+      verification: ai_verified
+  - cells:
+      subject: The man in the October footage
+      time: 8:05:23–8:05:42 p.m.
+      location: New Jersey and Constitution Aves NW (MAR 904286)
+      location source: Camera 940, original file (PIPE-S002)
+      serving sector at nearest phone session: Sector C (tower 147990, 200 Independence Ave SW, facing 180°), session at 7:59:36 p.m.
+      time gap: 5 min 47 s
+      inside nominal arc: No — 146.6° off the sector's direction, 693 m from the site, beyond the range bound
+      inside sensitivity band: No
+    citation:
+      text: Original file 0940QNW00NJ-ConNW_2021-01-05_20h04min02s170ms.mp4 (subcommittee release), checked in PIPE-S002; the place from the camera's view and the District's Master Address Repository
+      url: https://rumble.com/v5061sh-0940qnw00nj-connw-2021-01-05-20h04min02s170ms.mp4.html
+      locator: 1:21–1:40
+      verification: ai_verified
+findings:
+  - statement: "At 7:59:36, the one phone session inside the footage's window, the phone used Sector C, which faces south from 200 Independence Avenue SW. Every place the October footage puts the man — 3rd Street and Pennsylvania Avenue NW, the Pennsylvania Avenue walkway, Peace Circle, Northwest Drive, New Jersey and Constitution Avenues NW — lies behind that sector, 147° to 172° off its direction: outside the nominal arc and outside the ±90° band, from 3 seconds to under 6 minutes from the session. The disconfirmer fixed at the freeze is not met: the sworn phone data do not place the phone where the footage puts the man."
+    evidenceId: PIPE-E162
+  - statement: The man filmed crossing at Peace Circle at 8:01:18 would have had to be at least 419 metres south of where he is filmed, 102 seconds earlier, to be inside even the sensitivity band at 7:59:36 — a sustained 4.1 metres a second.
+  - statement: "The bomber's sworn positions fit the sectors: each lies inside the nominal arc of the sector serving the phone at the nearest session, except at 7:39:27 on Sector A (75° off, inside the band), when Sector B at the same second fits at 24°. The weakest fit is the one the footage turns on: at 7:59:38 the bomber is 59° off Sector C's direction, at the arc's edge, and 787 m from the site, beyond the 588 m bound set by the next sworn site in that direction (103 G Street SW)."
+    evidenceId: PIPE-E163
+  - statement: Under Sector B's first-published direction, 345°, the bomber's positions at 7:39 and 7:44 are 129° and 133° off its direction, outside both arc and band; they fit only with the April 2021 correction to east, which the FBI's drive tests, not public, are said to support.
+    evidenceId: PIPE-E164
+  - statement: "For reference, not a row: 3rd and C Streets SW, where the breakdown's sedan clips are captioned, lie inside Sector C's arc, 116 metres from the site; no phone session falls within four minutes of those clips."
+  - statement: "What the geometry allows and excludes: if the man in the footage is Cole, the phone attributed to him was not with him at 7:59:36, or the sworn records or directions are wrong; if the phone was with Cole, the man is not Cole. The study grades neither."
+    evidenceId: PIPE-E165
+limitations:
+  - "Sites are the District's address points (MAR 297573, 291713, 277868 and 5839), placed at a building's main entrance or centre, not at its antennas. Moving a site 100 metres turns a bearing by 7° to 12° at these distances: enough to move the bomber's 7:59:38 position either side of Sector C's arc edge, not enough to bring any of the man's positions inside the band."
+  - The protocol's cross-check of the sites against FCC registrations and OpenCelliD was not done in this collection.
+  - "A nominal arc is a convention: real coverage depends on beam width, tilt, power and buildings, and a sector can serve a nearby phone from behind. The band allows for the affidavit's caveat that coverage can extend beyond 120°; it does not allow for service from behind, which is possible within a few hundred metres and would need the provider's records to show."
+  - Two tower numbers share 200 Independence Avenue SW (126187, facing east, and 147990, facing south); they may be different frequency layers of one site.
+  - Footage places are the streets and landmarks in each camera's view, to about 100 metres; the walker on camera 3188 is placed at both ends of the Pennsylvania Avenue walkway, and both ends give the same result.
+  - "The bomber's positions are the affidavit's and the detention memorandum's, from video that is not public, except camera 794's. The 7:10 p.m. plate-reader reading is not placed: it is 29 minutes from the nearest session and its expressway ramp has no address point."
+  - "Excluded, as frozen: the breakdown's sedan clips (a vehicle, with no camera position) and the person behind barricades (no time or place)."
+  - "The method's map is not drawn: the site's figures must be real imagery with provenance, so the table gives each bearing and distance instead."
+  - "This study supersedes PIPE-S001, whose camera-602 row gave the man's time as 8:04:25 p.m., the 7-minute video's caption, as PIPE-S002 had checked it; camera 602's original, downloaded on 2026-10-20, shows him from about 8:04:56 to 8:05:30 (PIPE-S004). The row is corrected: 5 min 20 s from the phone session, where it said 4 min 49 s. The place, and the result, outside the arc and the band, are unchanged, as is every finding. Per the append-only rule PIPE-S001's rows were not edited; every other row is carried over unchanged."
+runId: 2026-10-19-session-january-6-pipe-bombs-founder
+model: claude-opus-5-5
+date: 2026-10-20
+promptVersion: founder session 2026-10-19
+humanReviewed: false
+supersedes: PIPE-S001

@@ -427,9 +427,9 @@
   identifier: 0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4
   url: https://rumble.com/v4z2dje-0602uscg00nwdrivenearnj-connw-2021-01-05-20h03min32s640ms.mp4.html
   verification: ai_verified
-  verificationNote: "Viewed in a browser on 2026-10-19 without signing in, through the subcommittee's playlist \"Camera 602\" (the video's page is unlisted on the channel, not restricted: anyone can play it); 9 min 50 s, 854 by 480 pixels. No time is drawn on the image: the file name gives the recording system's start time to the millisecond. Not downloaded. The Internet Archive could not save the page on 2026-10-19 (its save service returned error 520)."
+  verificationNote: "Viewed in a browser on 2026-10-19 without signing in, through the subcommittee's playlist \"Camera 602\" (the video's page is unlisted on the channel, not restricted: anyone can play it); the playlist holds no other file for these minutes. Downloaded through the browser on 2026-10-20 with the founder's permission, and not held in the repository: 64,252,301 bytes, SHA-256 e07d19c4b068adecd8a6ab571e91b6d35c7b6c026dcc469fe5e2c248029657df; H.264, 854 by 480 pixels, 29.97 frames a second, 9 min 49.5 s. No time is drawn on the image: the file name gives the recording system's start time to the millisecond. The Internet Archive could not save the page on 2026-10-19 (its save service returned error 520)."
   reliabilityNotes:
-    - "The subcommittee's posted copy of a Capitol Police recording: its time is the recording system's, as the file name gives it; its native metadata and hash were not examined."
+    - "The subcommittee's posted copy of a Capitol Police recording: its time is the recording system's, as the file name gives it. The copy is hashed; its native metadata, and whether it matches the Capitol Police's own file, were not examined."
 
 - id: SRC-PIPE-CCTV-0940
   title: Capitol Police CCTV, camera 940 (New Jersey and Constitution Avenues NW), January 5, 2021, file from 20:04:02 — the copy the House Administration Subcommittee on Oversight posted
@@ -444,26 +444,52 @@
     - "The subcommittee's posted copy of a Capitol Police recording: its time is the recording system's, as the file name gives it; its native metadata and hash were not examined."
 
 - id: SRC-PIPE-S001
-  title: "Workpaper: the phone's cell sectors and the October 2026 footage (study PIPE-S001)"
+  title: "Workpaper: the phone's cell sectors and the October 2026 footage (study PIPE-S001, superseded)"
   organization: This site (AI-authored project work held in the repository)
   year: "2026"
   sourceType: workpaper
   studyId: PIPE-S001
-  identifier: Criteria frozen 2026-10-19 (hash 86934d37add4); table collected 2026-10-19
+  identifier: Criteria frozen 2026-10-19 (hash 86934d37add4); table collected 2026-10-19; superseded on 2026-10-20 by PIPE-S005, which corrects camera 602's row
+  verification: ai_verified
+  verificationNote: Preserved as the container of the published, superseded workpaper (append-only); it carries no ledger weight — the evidence records cite the successor.
+  reliabilityNotes:
+    - Superseded by SRC-PIPE-S005; retained so the published record keeps its source container.
+  background: true
+
+- id: SRC-PIPE-S005
+  title: "Workpaper: the phone's cell sectors and the October 2026 footage (study PIPE-S005, superseding PIPE-S001)"
+  organization: This site (AI-authored project work held in the repository)
+  year: "2026"
+  sourceType: workpaper
+  studyId: PIPE-S005
+  identifier: Criteria inherited from the PIPE-S001 freeze of 2026-10-19 (hash 86934d37add4); superseding table collected 2026-10-20
   verification: ai_verified
   verificationNote: Every row carries its own citation; sites and places are the District of Columbia Master Address Repository's points, by MAR ID.
   reliabilityNotes:
     - Secondary synthesis under frozen criteria; the study grades no claim.
 
 - id: SRC-PIPE-S002
-  title: "Workpaper: the October 2026 footage frame by frame, against the congressional originals (study PIPE-S002)"
+  title: "Workpaper: the October 2026 footage frame by frame, against the congressional originals (study PIPE-S002, superseded)"
   organization: This site (AI-authored project work held in the repository)
   year: "2026"
   sourceType: workpaper
   studyId: PIPE-S002
-  identifier: Criteria frozen 2026-10-19 before the videos were downloaded (hash accd77dea5c7); table collected 2026-10-19
+  identifier: Criteria frozen 2026-10-19 before the videos were downloaded (hash accd77dea5c7); table collected 2026-10-19; superseded on 2026-10-20 by PIPE-S004, which corrects camera 602
   verification: ai_verified
-  verificationNote: "Every row carries its own citation: the two videos at their offsets, and each original file at its offset."
+  verificationNote: Preserved as the container of the published, superseded workpaper (append-only); it carries no ledger weight — the evidence records cite the successor.
+  reliabilityNotes:
+    - Superseded by SRC-PIPE-S004; retained so the published record keeps its source container.
+  background: true
+
+- id: SRC-PIPE-S004
+  title: "Workpaper: the October 2026 footage frame by frame, against the congressional originals (study PIPE-S004, superseding PIPE-S002)"
+  organization: This site (AI-authored project work held in the repository)
+  year: "2026"
+  sourceType: workpaper
+  studyId: PIPE-S004
+  identifier: Criteria inherited from the PIPE-S002 freeze of 2026-10-19 (hash accd77dea5c7); superseding table collected 2026-10-20
+  verification: ai_verified
+  verificationNote: "Every row carries its own citation: the two videos at their offsets, and each original file at its offset. Camera 602's original was downloaded and hashed; the others were viewed in a browser."
   reliabilityNotes:
     - Secondary synthesis under frozen criteria; it records what is on screen, identifies no one and grades no claim.
 
@@ -504,3 +530,16 @@
   url: https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2015/MapServer/16/query?where=ROADWAYSEGID+IN+(5839,2423,15457)&outFields=OBJECTID,ROADWAYSEGID&returnGeometry=true&outSR=4326&geometryPrecision=6&f=html
   verification: ai_verified
   verificationNote: Read on 2026-10-20 through the layer's public query endpoint, as HTML (the page shows each line's first vertices) and as JSON (the full geometry). The segments were found by a query of the envelope -77.0036,38.8840,-77.0019,38.8853 (WGS 84), which returns fourteen. The layer describes itself as a single line for each street, segmented at all intersections.
+
+- id: SRC-PIPE-SERAPHIN-X-SIDE-BY-SIDE
+  title: "Kyle Seraphin on X: a frame from the October footage beside an image presented as Cole (October 19, 2026)"
+  authors:
+    - Kyle Seraphin
+  organization: X (@KyleSeraphin)
+  year: "2026"
+  sourceType: webpage
+  url: https://x.com/KyleSeraphin/status/2112210163407233227
+  verification: ai_verified
+  verificationNote: Its text read through X's embed service on 2026-10-20; its two images viewed in a browser without signing in on 2026-10-19 and 2026-10-20. The post quotes an unrelated FBI recruiting post.
+  reliabilityNotes:
+    - "An advocate's post: the likeness it shows is judged by eye, and the right image's source is not stated."
