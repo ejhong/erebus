@@ -533,3 +533,21 @@ hypothesis; labels such as "debunked" are not evidence; and one standard both
 ways, so a conspiracy account the record supports is said to be supported.
 The cases are re-graded under it as the operator next works on each; the
 J6 pipe-bomb case first.
+
+## 2026-10-20 — The session's trace, pulled
+
+The upstream now keeps a digest of each operator session's trace (its
+decisions log, 2026-10-20, "The session's trace"; ejhong/aletheia#467), and
+the engine pulled here carries it. The session streams its trace; main's
+script, copied into the plan, digests it on the session's own machine —
+counts, tool names, the leading words of commands, hosts and DOIs, never
+text — and only the digest and the final report leave that machine. Here
+that matters more than upstream: a session on this site reads filings and
+reporting that name people the site does not name, and a run's artifacts on
+a public repository can be downloaded by anyone signed in to GitHub, so the
+trace itself is never uploaded. The digest is kept as
+`runs/<runId>/trace.yaml`, given beneath the session's log in its pull
+request and at the head of the next session's `status`; it is data and
+decides nothing. An engine pull touches the founder's files by its nature,
+so it merges by the founder's hand.
+

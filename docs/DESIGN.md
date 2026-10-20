@@ -33,7 +33,7 @@ founder amendment of 2026-10-19; `config/site-rules.md`).
 | Identity and notice | `config/site.yaml`: the name, the masthead, the living-persons notice on every case page, the names the pages must never contain. |
 | Theme | `config/theme.css`: cool porcelain and steel, Space Grotesk and Inter, the blueprint ground. |
 | Rules for models | `config/site-rules.md`: given to the operator, the reviewers and the panel with the constitution. |
-| Money | `config/budget.yaml`: $40 a month (the founder, 2026-10-19), after a start of $60 through 2026-10-31; spread over the month by its pace, about one session a week. |
+| Money | `config/budget.yaml`: $40 a month (the founder, 2026-10-19); the start of $60 a month, set to run through 2026-10-31, was ended on 2026-10-19 by the founder's direction of 2026-10-20, so the two sites together stay near $100 a month. Spread over the month by its pace. |
 | Live cases | A case about an active proceeding is checked for new filings, rulings and releases each time the operator works on the site; its procedural status carries the date it was last checked. |
 
 ## History
