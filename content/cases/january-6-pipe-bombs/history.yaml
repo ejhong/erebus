@@ -93,3 +93,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-20
+  change: "Answered the review of #126: the parking block checked against official data (PIPE-E193, PIPE-E194); PIPE-C079 marked as the study's interpretive result; PIPE-C080 and PIPE-C081 reworded; one count's description corrected (PIPE-E084)."
+  reason: "Four reviewers judged #126 better and left notes: two asked for the D Street split to be checked against official records rather than OpenStreetMap alone; one, that PIPE-C079 is a judgment under the study's rule rather than an observation, and that PIPE-C080 seemed to contradict PIPE-C081; one, that PIPE-C081 should say what the transcript says. The District's centerlines and the Census Bureau's roads both show the split."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-20
+  change: New edition edition-2026-10-20-002848, adopting a new draft assessment 2026-10-20-operator-002848 (its standing waits for the blind panel).
+  reason: "Answers the four reviewers' notes on #126. The block where Cole described parking is checked against official data: the District's own street centerlines and the Census Bureau's roads both show D Street SE between 2nd and 3rd Streets as two roadways with Folger Park between them (PIPE-E193, PIPE-E194). PIPE-C079 is marked as the study's interpretive result, PIPE-C080 no longer seems to contradict PIPE-C081, and PIPE-C081 gives the transcript's own words. The new section carries the edition's date, and the article says the pages where the prosecution places the confession's details are public and not yet read here."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

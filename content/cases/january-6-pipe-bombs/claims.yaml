@@ -1155,10 +1155,10 @@
 # ── 2026-10-19, later: Cole's first account against the footage (study PIPE-S003) ──
 
 - id: PIPE-C079
-  statement: "The account Cole gave the FBI while denying the charge, up to his admission, fits the man in the October footage no better than the bomber's sworn movements: none of his own specific details is one either record can check, and none conflicts with either."
+  statement: "Under the coding rule frozen before the transcript was read (PIPE-S003), the account Cole gave the FBI while denying the charge, up to his admission, fits the man in the October footage no better than the bomber's sworn movements: none of his own specific details is one either record can check, and none conflicts with either."
   theme: interview
   rung: observation
-  claimType: observation
+  claimType: interpretive
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
@@ -1166,7 +1166,7 @@
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-19
 - id: PIPE-C080
-  statement: Before Cole said yes to being the person in the video, the agents had told him he had been in the area of the RNC and DNC, had parked near Folger Park and was there between 7:34 and 8:18 p.m., and had shown him shoes; he had said none of these himself.
+  statement: "Before Cole said yes to being the person in the video, the agents had told him he had been in the area of the RNC and DNC, had parked near Folger Park and was there between 7:34 and 8:18 p.m., and had shown him shoes. He had named none of these himself, though he had already described, without naming it, the place where he parks."
   theme: interview
   rung: observation
   claimType: observation
@@ -1177,7 +1177,7 @@
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-19
 - id: PIPE-C081
-  statement: Asked where he parked, before any agent had named a park or a street, Cole described a road that splits in the middle with grassy areas on each side, by a park in a neighborhood, as where he always parks.
+  statement: "Asked the general area where he parked, before any agent had named a park or a street, Cole said there was 'a park with a bunch, with a bunch of neighborhoods' and 'a road that splits in the middle and, like, two grass -- like, two grassy areas on each side', adding 'That's where I always go.'"
   theme: interview
   rung: observation
   claimType: observation

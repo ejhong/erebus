@@ -488,3 +488,19 @@
   verificationNote: "Every row cites the interview transcript (ECF No. 102-1) by page and line, read by eye from its page images: the scan has no text layer."
   reliabilityNotes:
     - Secondary synthesis under frozen criteria; it compares one account with two records, identifies no one and grades no claim.
+
+- id: SRC-PIPE-TIGERWEB-ROADS
+  title: "TIGERweb Transportation: Local Roads (layer 8), the two D St SE features by Folger Park"
+  organization: U.S. Census Bureau
+  sourceType: dataset
+  url: https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8/query?where=OID+IN+(%27110431686454%27,%27110431686456%27)&outFields=NAME,MTFCC,OID&returnGeometry=true&outSR=4326&geometryPrecision=6&f=html
+  verification: ai_verified
+  verificationNote: Read on 2026-10-20 through the layer's public query endpoint, as HTML (the page shows each line's first vertices) and as JSON (the full geometry). The features were found by a query of the envelope -77.0040,38.8836,-77.0016,38.8857 (WGS 84), which returns six roads.
+- id: SRC-PIPE-DDOT-CENTERLINES-2015
+  title: Street Centerline - 2015 (DC GIS, Planimetrics 2015, layer 16), the D Street segments by Folger Park
+  organization: District Department of Transportation, served by DC GIS
+  year: "2015"
+  sourceType: dataset
+  url: https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2015/MapServer/16/query?where=ROADWAYSEGID+IN+(5839,2423,15457)&outFields=OBJECTID,ROADWAYSEGID&returnGeometry=true&outSR=4326&geometryPrecision=6&f=html
+  verification: ai_verified
+  verificationNote: Read on 2026-10-20 through the layer's public query endpoint, as HTML (the page shows each line's first vertices) and as JSON (the full geometry). The segments were found by a query of the envelope -77.0036,38.8840,-77.0019,38.8853 (WGS 84), which returns fourteen. The layer describes itself as a single line for each street, segmented at all intersections.
