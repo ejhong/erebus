@@ -1319,7 +1319,7 @@
   sourceStatement: >-
     The earlier reports suggested "forensic gait analysis" "that matched the suspect seen in surveillance footage planting pipe bombs". "U.S. District Judge Rossie Alston Jr. entered the default judgment against Baker after Baker failed to respond to the claim." Correction: "The default judgment was entered only against Baker, Blaze Media reporter Joseph Hanneman and Veritas Regnant LLC, a media entity formed by Baker and Hanneman."
   editorInference: >-
-    A default judgment means Baker did not answer the suit; it is not a court's finding on the gait evidence. The earlier identification named a former Capitol Police officer, a private person this site does not name.
+    A default judgment means Baker did not answer the suit: the complaint's allegations are taken as admitted against those who defaulted, without the court hearing evidence, so it is not a finding on the gait evidence. The earlier identification named a former Capitol Police officer, a private person this site does not name.
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -1899,15 +1899,15 @@
     date: "2026-10-19"
 
 - id: PIPE-E109
-  title: "The insider identification was a false accusation, the defamation suit says"
+  title: "HuffPost calls the accusation false; the judgment against Baker was by default"
   claimIds: [PIPE-C052]
   sourceId: SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT
   direction: undermines
-  strength: moderate
+  strength: weak
   sourceStatement: >-
-    The officer sued "after he falsely accused her of planting pipe bombs on the eve of the Capitol attack"
+    HuffPost writes that the officer sued "after he falsely accused her of planting pipe bombs on the eve of the Capitol attack"
   editorInference: >-
-    The insider account's one public identification collapsed; that does not exclude every insider, but nothing in the public record now points to one.
+    Baker and two co-defendants did not answer the suit, so the court entered judgment against them without weighing the identification's evidence; Blaze Media, which retracted the report, contests the claims against it (PIPE-E199).
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -2369,7 +2369,7 @@
   sourceStatement: >-
     The episode summary describes the man in the footage with "minimal arm swing" and contrasts it "with the hooded bomber’s exaggerated arm-swinging, right-leg crossover gait"
   editorInference: >-
-    Gait judged by eye from surveillance video; the same kind of judgment earlier named a different person, an identification its publisher retracted.
+    Gait judged by eye from surveillance video; the same kind of judgment earlier named another person, an identification its publisher retracted.
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -3365,7 +3365,7 @@
   exactLocator: the post's two images
   limitations:
     - The right image's source is not stated, and this site has not established it.
-    - A likeness judged by eye is the method that named a different person in November 2025 (PIPE-C036).
+    - A likeness judged by eye is the method that named another person in November 2025 (PIPE-C036).
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
@@ -3381,11 +3381,30 @@
   direction: qualifies
   strength: moderate
   sourceStatement: "Finding 9: \"At the file's 854 by 480 pixels his head is about 10 pixels wide and 13 high: enough to follow him, too few to compare a face.\""
-  editorInference: Any likeness of the face drawn from these frames rests on a few pixels; only an examiner's blind comparison, with its error rate, could weigh it.
+  editorInference: "At this size the first question, for an examiner kept blind to which image is which, is whether the frames can support a facial comparison at all; only if they can could a comparison, with its error rate, weigh a likeness drawn from them."
   exactLocator: findings
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
+
+- id: PIPE-E199
+  title: Blaze Media, which retracted the report, says it will defend the claims against it as meritless
+  claimIds:
+    - PIPE-C036
+    - PIPE-C052
+  sourceId: SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT
+  direction: context
+  strength: weak
+  sourceStatement: An attorney for Blaze Media told HuffPost they intend to "vigorously defend the meritless defamation claims asserted against it in this case."
+  editorInference: "The retraction is not a concession in court: the claims against the publisher were contested when the default was entered against the other three defendants. Neither the retraction nor the default tested whether the identification was right."
+  limitations:
+    - As of the article's update of May 21, 2026; the suit's later course was not checked.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: the November 2025 identification, described evenly"
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-20

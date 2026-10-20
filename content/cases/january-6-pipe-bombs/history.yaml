@@ -129,3 +129,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-20
+  change: "The November 2025 identification of a former Capitol Police officer is described as the record shows it: retracted by its publisher, and lost by three defendants by default, in a judgment that did not weigh its evidence. PIPE-E109 is retitled in HuffPost's words and weakened; PIPE-E199 is new (Blaze Media contests the claims against it). PIPE-C036 now says another person, not a different person, and PIPE-E075 gives a default's legal effect. Answers to the review of #128: PIPE-E198, PIPE-R001 and the camera-602 source's note."
+  reason: "The founder asked that the identification not be treated as settled in the government's favour. The site's own words had gone beyond the record: it called the identification collapsed, a past error, and the naming of the wrong person, when the record shows only that its publisher retracted it and that the default judgment did not weigh its evidence; the suit's course after May 2026 was not checked, so nothing is said of it. The insider account stays unresolved, and the site still does not name her. The founder's permission to download camera 602's posted file was given in chat in this session on 2026-10-20 and covered that file only."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-20
+  change: New edition edition-2026-10-20-020015, adopting a new draft assessment 2026-10-20-operator-020015 (its standing waits for the blind panel).
+  reason: "Describes the November 2025 identification of a former Capitol Police officer as the record shows it: retracted by its publisher, and lost by three defendants by default in a judgment that did not weigh its evidence, while Blaze Media contests the claims against it (PIPE-E109, PIPE-E199). The site's own words had gone further, calling it collapsed, a past error and the wrong person; the article, the accounts and the grades of PIPE-C031, PIPE-C036 and PIPE-C052 now say only what is known, and the insider account stays unresolved. The earlier identification named \"another person\", not \"a different person\", and a default's legal effect is stated both ways. Answers the review of #128: the article gives the head's size as the plate does, about 10 by 13 pixels; PIPE-C083's reasoning says its grade rests on the study, not on the provisional records; PIPE-C078's, that camera 940's file was viewed in a browser."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content
