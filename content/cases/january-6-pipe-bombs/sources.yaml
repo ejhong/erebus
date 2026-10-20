@@ -78,7 +78,7 @@
   sourceType: report
   url: "https://storage.courtlistener.com/recap/gov.uscourts.dcd.288124/gov.uscourts.dcd.288124.102.2.pdf"
   verification: ai_verified
-  verificationNote: "Read in full from the RECAP archive on 2026-10-19 (22 pages): an exhibit to the defense's motion to suppress statements (ECF No. 102, whose main document is not in the archive). The report quotes the interview transcript by page and line."
+  verificationNote: "Read in full from the RECAP archive on 2026-10-19 (22 pages): an exhibit to the defense's motion to suppress statements (ECF No. 102; the archive files the motion itself and Exhibit A, the interview transcript, under the case's second docket number, 288125). The report quotes the interview transcript by page and line."
   reliabilityNotes:
     - "A retained expert's opinion for the defense. It addresses the risk that techniques produce false confessions; it does not claim to establish whether this confession is true."
 
@@ -248,7 +248,7 @@
   verification: ai_verified
   verificationNote: "Read through X's embed service on 2026-10-19. The post attaches four images of transcript pages from Cole's FBI interview, with the agents' names blacked out; the images are not machine-read, so the record describes them without quoting."
   reliabilityNotes:
-    - "The transcript pages are not in the public court record; their provenance is not stated in the post."
+    - "The transcript is in the public court record, filed on September 29, 2026 as ECF No. 102-1, before the post; the post does not say where its images came from."
 
 - id: SRC-PIPE-BAKER-X-SHOES
   title: "Steve Baker on X: the New Balance shoes (October 18, 2026)"
@@ -466,3 +466,25 @@
   verificationNote: "Every row carries its own citation: the two videos at their offsets, and each original file at its offset."
   reliabilityNotes:
     - Secondary synthesis under frozen criteria; it records what is on screen, identifies no one and grades no claim.
+
+- id: SRC-PIPE-ECF102-MOTION-SUPPRESS
+  title: Defendant Brian Cole Jr.'s motion to suppress statements and incorporated memorandum of law (ECF No. 102, filed 09/29/26)
+  organization: Counsel for the defendant
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.0.pdf
+  verification: ai_verified
+  verificationNote: Read from the RECAP archive on 2026-10-19 (42 pages), where it is filed under the case's second docket number, 288125, with its Exhibit A, the interview transcript (ECF No. 102-1).
+  reliabilityNotes:
+    - The defense's argument for suppression; its account of the transcript is advocacy, and its page citations can be checked against the transcript.
+- id: SRC-PIPE-S003
+  title: "Workpaper: Cole's first account against the October 2026 footage and the bomber's sworn movements (study PIPE-S003)"
+  organization: This site (AI-authored project work held in the repository)
+  year: "2026"
+  sourceType: workpaper
+  studyId: PIPE-S003
+  identifier: Criteria frozen 2026-10-19 before the transcript's pages were read (hash 70df427de1c3); table collected 2026-10-19
+  verification: ai_verified
+  verificationNote: "Every row cites the interview transcript (ECF No. 102-1) by page and line, read by eye from its page images: the scan has no text layer."
+  reliabilityNotes:
+    - Secondary synthesis under frozen criteria; it compares one account with two records, identifies no one and grades no claim.

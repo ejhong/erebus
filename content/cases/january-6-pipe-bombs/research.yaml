@@ -30,7 +30,7 @@
 - id: PIPE-R003
   title: "Which details of the confession came from Cole first, and are they true?"
   summary: >-
-    When the recorded interview is played (at the suppression hearing or at trial), list every detail of Cole's account; mark those the agents introduced or that were public before the interview; and check the rest against independent records — the purchases he described, the parking place on D Street SE against cameras there, the restaurant stop in Virginia, the disposal of materials at a dump.
+    The transcript is public (ECF No. 102-1, filed September 29, 2026); the recording is not. Read the pages after the waiver (Tr. 103 onward) and list every detail of Cole's account; mark those the agents introduced — PIPE-S003 records what they had named before his admission — or that were public before the interview; and check the rest against independent records — the purchases he described, the parking place on D Street SE against cameras there, the restaurant stop in Virginia, the disposal of materials at a dump.
   claimIds: [PIPE-C039, PIPE-C040, PIPE-C041, PIPE-C044]
   track: either
   effortTier: desk
@@ -97,7 +97,7 @@
     - PIPE-C059
   track: either
   effortTier: desk
-  informationGain: Decisive either way. He is not the bomber, so if he is Cole the charged account fails; if he is someone else, the footage drops out of the case. His track may also show whether he came by car, and when he arrived and left.
+  informationGain: Decisive either way. On the recorded clocks he cannot be the bomber, so if he is Cole the charged account needs those clocks to be minutes apart; if he is someone else, the footage drops out of the case. His track may also show whether he came by car, and when he arrived and left.
 
 - id: PIPE-R010
   title: Trace the sedan clips
