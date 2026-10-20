@@ -1,0 +1,72 @@
+# Review of #121, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 121
+title: "J6: the footage checked against the congressional originals; both studies; re-graded under the new rules"
+url: https://github.com/ejhong/erebus/pull/121
+outcome: merged
+outcomeAt: 2026-10-19T21:06:24Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: e241a3c106d4ef5ef108feb3e58330305ff0103b
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 3 of 4 reviewers judge it better, 1 worse; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: worse
+        harm: null
+        notes:
+          - "PIPE-C063, PIPE-E156–E169, PIPE-R001, and the article’s “New,” “October footage,” and concluding sections: restore the unresolved clock-offset caveat and withdraw “the man is not the bomber.” Camera 794 being broadly consistent with the affidavit does not synchronize cameras 3187/602/940 with the FBI timeline; agreement only “within a few minutes” cannot establish impossibility from a 100-second separation. Measure offsets through a shared event or equivalent clock evidence before marking R001 answered or C063 well supported."
+          - "PIPE-C075/PIPE-E162 and the article’s “The phone was not with him” headline: reduce this to the measured result that the northern locations lie 147°–172° behind the sector’s stated azimuth. Rear-lobe service, propagation, load balancing, and the missing drive tests/raw provider data mean azimuth alone does not establish that the phone could not have been with the man; the record itself concedes that a nearby phone can be served from behind."
+          - "SRC-PIPE-CCTV-* and PIPE-C073/C061: call these the committee-posted copies rather than unqualified “original files,” and download, hash, and preserve their metadata or obtain a stable official copy before making broad authenticity claims. The present browser-only checks support matching the cited scenes and filenames, but not native-file provenance or preservation."
+        summary: The change adds valuable primary-source matching, corrects the 602/940 timestamp interpretation, maps the nominal cell-sector geometry, and presents the prosecution’s unreleased evidence more cautiously. But it replaces the current article’s sound clock-offset caveat with the categorical conclusion that the Peace Circle man is not the bomber, even though no cross-camera synchronization was performed and the claimed agreement is only within minutes. It similarly turns sector azimuth into the stronger claim that the phone was not with the man, so the central conclusions outrun the new evidence.
+        cost:
+          inputTokens: 29252
+          outputTokens: 2997
+          usd: 0.179618
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In study PIPE-S001, complete the planned FCC and OpenCelliD antenna cross-check to verify provider tower coordinates and azimuths beyond DC MAR address geocodes.
+          - Because Rumble links return HTTP 403 to automated runners and 520 on the Internet Archive, preserve local cryptographic hashes (e.g. SHA-256) of the downloaded CCTV video files in the study records to protect against link rot.
+          - Pursue camera identifiers and native timestamps for the dark sedan clips (PIPE-C077, PIPE-R010) to determine whether they originate from Capitol Police CCTV or another municipal feed.
+        summary: This change verifies the October 2026 Capitol footage against primary congressional Rumble uploads, demonstrates that the added on-screen times match native file start timestamps, and executes pre-registered studies PIPE-S001 and PIPE-S002. It also re-grades the case under the principle that unverified official accounts are provisional claims rather than established facts. The additions significantly sharpen the evidentiary ledger without introducing any ungrounded assertions.
+        cost:
+          inputTokens: 41163
+          outputTokens: 1309
+          usd: 0.035781
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - Restate PIPE-C062 so the graded proposition is the corrected finding (602/940 times are file starts; man at 8:04:25 and ~8:05:23), not Baker’s original 20:03:32–20:04:02 appearance claim still sitting in the statement while the claim is judged well supported.
+          - "On PIPE-C035/C063/C073 and the article’s ‘man is not the bomber’ finding: say plainly that originals were viewed not downloaded, each camera’s offset was not separately measured, and the CCTV evidence rows remain provisional (Rumble 403 / IA 520)—clock agreement rests on the camera-794 cross-check alone."
+          - "PIPE-S001 / PIPE-C075: either run the frozen FCC–OpenCelliD cross-check or state in the article phone section that sector bearings use only the sworn directions and MAR points, so rear-lobe or distance exceptions are untested."
+        summary: This change authenticates Baker’s October video against the House subcommittee’s original Capitol Police files, corrects the 602/940 timing misread, finishes both pre-registered studies, and re-grades the case under the new rule that official accounts are claims too. The charged account correctly drops from well supported to provisionally supported while the public footage and phone-sector geometry become load-bearing, with attribution and living-persons limits held. For a reader seeking the truth the ledger is more accurate, better evidenced, and fairer, with no true material dropped.
+        cost:
+          inputTokens: 37272
+          outputTokens: 335
+          usd: 0.076669
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-C075 and the article's highlighted bullet 'The phone was not with him' state the conclusion more strongly than the study's own caveat: PIPE-S001 concedes a sector can serve a phone behind it, and the FCC/OpenCelliD cross-check was skipped. Have the highlighted bullet say what was measured — the sector faced 147–172° away from every filmed location — and keep 'the phone was not with him' as the conditional the body already draws."
+          - The 'the man is not the bomber' finding and PIPE-C063's 'could not have been' rest on a clock agreement established from camera 794 alone, and C035's own verdict note says each camera's offset was not separately measured; the FBI's sworn timeline also derives from this same video system, so the anchor is partly circular. Add one sentence to the New section stating that the agreement is shown at one camera and that per-camera offsets remain unmeasured (PIPE-R001's residual work).
+          - In the claim verdict for PIPE-C059, the sentence 'The sworn phone data say the phone was not with him' drops the conditional that PIPE-C075 and the article maintain; restate it as 'if the man is Cole, the phone was not with him at 7:59:36' so the verdict text cannot be read as the records asserting the man's identity.
+        summary: The change authenticates Baker's October video against the House subcommittee's original files via two pre-registered studies, corrects the site's own misreading of the 602/940 times, adds the defense's subpoena record, and re-grades the whole case under the new official-accounts rule, applied symmetrically to prosecution, defense and Baker alike, with honest provisional labels and declared limits. The core findings are the site's own observations of public records, the judgments carry their caveats, and the grading moves follow the rule the site adopted. It leaves the reader with a sharper, more current and better-evidenced page; the notes flag places where headlines outrun the measured claim slightly.
+        cost:
+          inputTokens: 37601
+          outputTokens: 4342
+          usd: 0.007811
+harvestedAt: 2026-10-20T12:57:59.964Z

@@ -1,0 +1,154 @@
+runId: "2026-10-20-check-gemini"
+model: "Gemini 3.8 Flash (Google), independent check run"
+date: "2026-10-20"
+promptVersion: "check-v2"
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: provisionally_supported
+  loadBearing:
+    - KRK-C001
+    - KRK-C002
+    - KRK-C004
+    - KRK-C006
+    - KRK-C008
+    - KRK-C009
+  weakestLinks:
+    - KRK-C003
+    - KRK-C005
+    - KRK-C012
+    - KRK-C019
+  synthesis: >-
+    The public evidentiary ledger provisionally supports the State of Utah's core hypothesis that Charlie Kirk was killed by a single long-range rifle shot fired from the Losee Center rooftop by the individual linked to the recovered .30-06 rifle, but firmly contradicts the claim that the case is currently auditable on the public record. Under preliminary judicial review, the prosecution established a coherent, multi-channel evidentiary nexus: independent video forensics and sworn police testimony place a prone shooter on the Losee Center roof fleeing immediately after the 12:23 p.m. shot; physical trace evidence including shoe prints and a screwdriver bearing Robinson's DNA were recovered from that perch; a towel-wrapped .30-06 rifle was recovered along the flight path; an expended cartridge casing chambered in that rifle was positively matched to it; and high-probability DNA associations connect Robinson to the weapon, cartridges, and tools. Furthermore, the medical examiner's classification of death caused by a gunshot wound to the neck, traveling downward and front-to-back from an elevated angle (68 feet up at 415 feet distance), precisely matches the trajectory from the roof and aligns with established terminal ballistics for expanding soft-point rifle ammunition shattering upon cervical vertebrae.
+
+
+    Against this case, alternative mechanisms such as the exploding microphone theory fail under physical and medical scrutiny. However, the official narrative stops being independently auditable at several critical junctures. The ATF toolmark examination could not match the fatal bullet fragments to the recovered rifle, leaving toolmark linkage inconclusive. An unresolved chain-of-custody discrepancy exists between seven photographed fragments and the four (or five) delivered for testing. The courtyard was excavated and paved four days post-shooting without the lead investigator's authorization, surrender-area surveillance was allowed to auto-delete, the event camera SD cards lack a documented transfer chain, and over 12 terabytes of digital extractions remain sealed.
+
+
+    Steelman of the official account: The hypothesis rests on the convergence of independent physical and digital vectors that no single anomaly undermines—the shooter seen on the roof, the matched spent casing, the weapon along the flight route, the suspect's DNA on the firearm and rooftop tools, the downward wound trajectory, and extensive direct admissions. Steelman of the critique: Key physical links remain unverified; the fatal fragments were not individualized to the rifle, the primary autopsy data remain secret, three fragments are unaccounted for, and critical physical and digital scenes were altered or purged without independent verification.
+
+
+    Sensitivity analysis: The single evidence record whose removal would most change this case verdict is KRK-E067 (the ATF report establishing that the spent .30-06 casing chambered in the recovered rifle was positively identified as fired from that weapon). Without KRK-E067, the physical bridge connecting the recovered rifle to an actual discharge at the scene would rely solely on class caliber consistency. The verdict of provisionally_supported would survive its removal due to the cumulative weight of the rooftop video, trace DNA on the roof screwdriver, and Robinson's attributed admissions, but the mechanical ballistics link would be substantially degraded.
+  steelman: >-
+    The conclusive forensic identification of the spent .30-06 cartridge casing in the chamber of the recovered rifle to that specific firearm, coupled with Robinson's high-likelihood DNA on the rifle's trigger and the Losee Center rooftop screwdriver.
+claimAssessments:
+  - claimId: KRK-C001
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Visual forensics from The Washington Post, FBI video releases, and sworn testimony from Officer Bagley independently confirm that an individual was present on the Losee Center roof in a prone position and fled immediately after the 12:23 p.m. shot. Physical evidence recovered on the roof, including gravel disturbances and shoe impressions, corroborates this presence. The strongest opposing consideration is that dispatch and officer body-camera footage did not capture facial identification of the rooftop figure, and Officer Bagley's body camera failed during his initial search.
+  - claimId: KRK-C002
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      FBI releases and preliminary hearing testimony establish that a towel-wrapped .30-06 bolt-action rifle containing an expended casing and unfired rounds was recovered in a wooded area along the suspect's flight path. Forensic testimony and charging documents consistently substantiate the recovery location, weapon type, and caliber. The strongest opposing consideration is that preliminary testimony also noted unexplained items near the scene, including an empty pistol holster near the courtyard and an unfired .223 round on an adjacent roof, indicating scene complexity.
+  - claimId: KRK-C003
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      Sworn testimony by ATF firearm examiner Karner and the ATF laboratory report confirm that the bullet fragments recovered at autopsy could neither be identified to nor excluded from the recovered rifle. The lead core fragments were deemed unsuitable for comparison, while the deformed jacket fragment lacked sufficient microscopic agreement. The strongest opposing consideration is that the spent cartridge casing recovered from the rifle's chamber was conclusively identified to that firearm, which is frequently conflated in public reporting with identifying the bullet fragments themselves.
+  - claimId: KRK-C004
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Both the ATF examiner's sworn testimony and the filed written report explicitly document that toolmark comparison on the bullet fragments was inconclusive, neither identifying nor excluding the recovered rifle. Standard forensic literature and black-box studies validate that inconclusive determinations are standard, non-error outcomes when examining severely deformed fragments. The strongest opposing consideration is that early defense motions publicized the failure to identify without highlighting the examiner's equal inability to exclude the rifle.
+  - claimId: KRK-C005
+    verdict: established
+    confidence: high
+    reasoning: >-
+      ATF examiner Karner testified under oath at the preliminary hearing that while seven bullet fragments were documented in autopsy photographs, she received only four fragments for examination. While a subsequent report reference noted one jacket fragment and four lead fragments, no public inventory or chain-of-custody record reconciles this numerical discrepancy. The strongest opposing consideration is that routine forensic explanations, such as biological sample retention by the medical examiner or consumption during metallurgical testing, regularly explain fragment count variations.
+  - claimId: KRK-C006
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Lead investigator David Hull testified at the preliminary hearing that the Utah State Medical Examiner's report classified Kirk's death as a homicide caused by a gunshot wound to the neck, with projectile fragments recovered during autopsy. This medical finding was formally admitted into evidence and forms the factual baseline of the court's bindover order. The strongest opposing consideration is that the report entered the preliminary record through an investigating officer rather than direct testimony from the examining forensic pathologist, over defense hearsay objections.
+  - claimId: KRK-C007
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      The complete autopsy package—including scaled wound photographs, detailed wound-track measurements, radiographic scans, and fragment distribution maps—remains sealed in court discovery and has not been made public. Public access is currently restricted to verbal summaries elicited during witness testimony and judicial orders. The strongest opposing consideration is that specific anatomical findings, including a downward front-to-back trajectory and spinal impact, were quoted in open court and incorporated into the bindover ruling.
+  - claimId: KRK-C008
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Forensic testimony presented at the preliminary hearing demonstrated that Robinson's DNA was identified on the recovered rifle, wrapping towel, unfired cartridges, and a rooftop screwdriver, with likelihood ratios characterized as "extremely likely." This scientific evidence formed a central ground for the court's finding of substantial identity evidence. The strongest opposing consideration is that the defense elicited testimony from an ATF biologist acknowledging that secondary DNA transfer is theoretically possible, and raw electropherograms have not undergone independent review.
+  - claimId: KRK-C009
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Preliminary hearing exhibits and testimony placed multiple incriminating statements into evidence, including a recorded interview with Robinson's roommate regarding a confession note, text messages stating "I had enough of his hatred," Discord activity, and ammunition engraved with "Hey fascist catch." These materials were formally introduced to support the state's victim-targeting enhancement. The strongest opposing consideration is that the defense challenged these statements as unauthenticated hearsay from an interested witness and noted that 12.1 terabytes of underlying digital extractions remain unreviewed.
+  - claimId: KRK-C010
+    verdict: contradicted
+    confidence: moderate
+    reasoning: >-
+      The timeline anomalies highlighted by commentators do not demonstrate a logical contradiction with the official chronology. The reviewed official record contains no claim that the shooter disassembled the rifle on the roof after firing, and a subject walking off-campus at 8:07 a.m. is entirely compatible with arriving on campus via vehicle at 8:29 a.m. The strongest opposing consideration is that the public record lacks an authenticated, frame-by-frame route reconstruction verifying traffic timing and vehicle movements between those specific timestamps.
+  - claimId: KRK-C011
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Contemporaneous footage and witness accounts verify that an event A/V contractor removed the rear stage camera's storage card less than four minutes after the shot, before law-enforcement custody was established. Sworn testimony confirms that investigators initially received only a flash drive and digital downloads later that day, with no documented on-scene seizure of the media. The strongest opposing consideration is that organizational representatives stated the contractor acted defensively to safeguard sensitive footage from potential loss or scene chaos.
+  - claimId: KRK-C012
+    verdict: unresolved
+    confidence: moderate
+    reasoning: >-
+      Sworn testimony from lead investigator David Hull accounts only for the receipt of a flash drive and downloadable digital files on the day of the shooting, leaving the physical custody of the original SD cards unaddressed on the sworn record. While a Turning Point spokesman asserted the cards were given to the FBI, no public inventory or evidence transfer log confirms their delivery. The strongest opposing consideration is that the videographer provided a formal statement to law enforcement and federal agencies routinely secure primary digital media during major homicide investigations.
+  - claimId: KRK-C013
+    verdict: established
+    confidence: high
+    reasoning: >-
+      University records demonstrate that cleanup was ordered on September 11, 2025, and stone pavers were installed over the shooting location by September 14, four days after the killing. Under sworn cross-examination, lead investigator David Hull testified that he did not authorize this excavation or paving and learned of it through news reports. The strongest opposing consideration is that facilities records indicate the work was billed as incident cleanup, which could reflect an uncoordinated release by campus facilities rather than a deliberate investigative breach.
+  - claimId: KRK-C014
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Private messages authenticated on the record by Turning Point USA spokesman Andrew Kolvet show Kirk stating he lost a donor worth approximately $2 million annually over his refusal to cancel Tucker Carlson. In the same exchange, corroborated by participant Josh Hammer, Kirk wrote that donor pressure left him "no choice" regarding his position on Israel. The strongest opposing consideration is that thread participants characterized Kirk's messages as emotional venting in a private setting rather than an actual operational break or security threat.
+  - claimId: KRK-C015
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      Reporting on the donor messages and disputed meetings establishes no operational connection between any donor, foreign government, or political organization and the shooting of Charlie Kirk. Named participants in the Hamptons gathering, including Bill Ackman, issued categorical on-the-record denials of any threats or extortion, and the messages were voluntarily turned over to the FBI. The strongest opposing consideration is that anonymous accounts in The Grayzone alleged intense pressure and former intelligence officials publicly questioned foreign nexus oversight.
+  - claimId: KRK-C016
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Judge Graf formally held deputy prosecutor Chris Ballard in civil contempt in June 2026 for violating pretrial publicity rules by telling TMZ the state possessed "ample evidence" of Robinson's guilt. The court imposed sanctions, expanding jury selection and awarding defense costs for the prejudicial extrajudicial statement. The strongest opposing consideration is that the court simultaneously affirmed the prosecutor's right to correct public misinformation regarding the inconclusive ballistics findings.
+  - claimId: KRK-C017
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      The documented institutional actions—including the fast paving, early official revisions, and the prosecutor's publicity violation—do not establish deliberate evidence spoliation or concealment. A base-rate study of eighteen mass-casualty events demonstrates that rapid scene restoration is common under routine administrative protocols, and the contempt ruling addressed trial prejudice rather than evidence tampering. The strongest opposing consideration is that the lead investigator's sworn lack of authorization for the courtyard paving remains an unexplained procedural anomaly in the physical custody record.
+  - claimId: KRK-C018
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      The medical examiner's finding of a fatal gunshot wound to the neck, the downward front-to-back trajectory from an elevated perch documented in the bindover order, and spinal shattering by an expanding bullet contradict a microphone-based explosive device. Forensic wound ballistics establish that a soft-point .30-06 bullet striking dense bone routinely shatters and is retained beneath the skin, explaining the absence of an exit wound. The strongest opposing consideration is that independent analysts cite optical flow models of consumer video suggesting localized collar disruption and delayed bleeding, though these rely on uncalibrated, compressed media.
+  - claimId: KRK-C019
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      An independent scientific audit of the case cannot be completed because vital evidentiary records remain sealed or unreleased. Key withheld assets include the complete autopsy report and radiology, the reconciled fragment chain of custody, original camera media cards, and over 12 terabytes of digital forensic extractions. The strongest opposing consideration is that the state presented detailed witness testimony, DNA statistical reports, surveillance footage, and ballistics summaries during an open four-day preliminary hearing.
+  - claimId: KRK-C025
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      Procurement records verify a standard Navy contract with Accurate Energetic Systems for demolition charges, but provide no evidence linking those materials, an unverified private flight, or the October 2025 plant explosion to Kirk's death. Independent investigations by the Chemical Safety Board and TOSHA concluded that the industrial disaster resulted from severe safety violations during commercial booster manufacturing. The strongest opposing consideration is that the contractor possessed specialized capabilities in shaped charges and micro-energetics, which alternative theorists link to the exploding microphone narrative.
+  - claimId: KRK-C026
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Official public records responses from the Washington County Sheriff's Office confirm that surveillance video from the area of Robinson's surrender was allowed to auto-delete after a standard 30-day retention window without being preserved or shared. Defense counsel confirmed this failure to preserve potential visual evidence on the record. The strongest opposing consideration is that the sheriff's office stated Robinson surrendered at administrative offices rather than the jail facility, suggesting responsive cameras may not have captured relevant movements.
+  - claimId: KRK-C027
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Former National Counterterrorism Center Director Joe Kent stated on the record in a published March 2026 interview that his office was instructed to halt inquiries into potential foreign connections to Kirk's killing, attributing the decision to FBI Director Patel. Kent explicitly recounted discussions where federal leadership cited concerns about complicating trial proceedings or defense discovery. The strongest opposing consideration is that Kent's account is a single-source interview from an official who was himself under federal investigation regarding leaked materials.
+  - claimId: KRK-C028
+    verdict: contradicted
+    confidence: moderate
+    reasoning: >-
+      An official press release from the Utah County Sheriff's Office stated that investigators uncovered no evidence that George Zinn colluded with or was coordinated by the shooter. While Zinn claimed after his arrest that he yelled to divert attention, his subsequent guilty pleas to obstruction and minor exploitation reflect an opportunistic, erratic disruption rather than an advance conspiracy. The strongest opposing consideration is that Zinn's vocal false confession occurred within seconds of the gunfire, creating a striking temporal coincidence that fueled collusion theories.
+  - claimId: KRK-C032
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      The assertion that prosecutors abandoned the screwdriver DNA evidence is directly contradicted by the preliminary hearing record, where forensic analysts testified in detail regarding Robinson's DNA recovered from the rooftop tool. The screwdriver and towel were formally presented alongside comparative DNA statistics linking them to Robinson and his former roommate. The strongest opposing consideration is that the screwdriver was omitted from the initial charging Information filed on September 16, 2025, reflecting an early discrepancy with televised FBI statements.

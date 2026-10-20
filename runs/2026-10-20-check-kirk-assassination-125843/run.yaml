@@ -1,0 +1,20 @@
+runId: 2026-10-20-check-kirk-assassination-125843
+verb: check
+case: kirk-assassination
+date: 2026-10-20
+model: "panel: anthropic, openai, gemini, xai, venice"
+promptVersion: check-v2
+inputHash: 60222849466a45fb3c86efcfceaa5f6ea572a1bf291de2190f7d182b638d30ff
+outcome: completed
+cost:
+  calls: 5
+  inputTokens: 281469
+  outputTokens: 138320
+  usd: 2.813825
+notes: 5 of 5 seat(s) installed
+wrote:
+  - content/cases/kirk-assassination/assessments/2026-10-20-check-opus-125843.yaml
+  - content/cases/kirk-assassination/assessments/2026-10-20-check-gpt-125843.yaml
+  - content/cases/kirk-assassination/assessments/2026-10-20-check-gemini-125843.yaml
+  - content/cases/kirk-assassination/assessments/2026-10-20-check-grok-125843.yaml
+  - content/cases/kirk-assassination/assessments/2026-10-20-check-glm-125843.yaml

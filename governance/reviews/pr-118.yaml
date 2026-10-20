@@ -1,0 +1,137 @@
+# Review of #118, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 118
+title: Open the J6 pipe-bomb case
+url: https://github.com/ejhong/erebus/pull/118
+outcome: merged
+outcomeAt: 2026-10-19T19:45:20Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 448fd9362f0521878e43eedab95386478bec4b7c
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: living_person (GPT-5.6 Sol (OpenAI))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm:
+          kind: living_person
+          where: content/cases/january-6-pipe-bombs/claims.yaml, PIPE-C018
+          why: The claim states as fact that Cole has never owned or worn a watch, but its only cited support is Baker relaying family interviews and photographs. That record supports an attributed statement that Baker or the family says this, not the universal factual claim as written.
+        notes:
+          - In claims.yaml, attribute commentator-derived propositions in the claim wording rather than presenting them as observations—especially PIPE-C014 through PIPE-C018, PIPE-C044, PIPE-C061, PIPE-C062, and PIPE-C064 through PIPE-C072 (for example, “Baker reports…”). Apply the same audit wherever evidence consists only of Baker, Armitas, a critic, or an interview summary.
+          - "Revise PIPE-C063 and the article’s October-footage analysis: covering roughly a kilometre or more in 3 minutes 54 seconds is difficult but not literally impossible without evidence that the northern footage continuously shows the man during the interval. Quantify the actual route and required speed, and make both accurate clocks, identification as Cole, and incompatible continuous timelines explicit conditions."
+          - In the opening of “The night of January 5” and PIPE-C004, do not call the overnight timeline undisputed or state flatly that the devices remained where placed. Attribute that chronology to the FBI’s video reconstruction and explain that the public record supplied here does not include continuous footage of either device, while the RNC placement itself is inferred rather than directly filmed.
+        summary: This change creates a substantial, unusually transparent case map using court filings, the sworn affidavit, competing defense material, Baker’s claims, and concrete research tests. It is markedly better than having no case and generally distinguishes allegations, limitations, and the unratified site judgment. A consequential attribution defect involving Cole and some overstatement of the footage and overnight-timeline inferences should be corrected.
+        cost:
+          inputTokens: 52040
+          outputTokens: 4322
+          usd: 0.2946
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Locate the raw footage files for Capitol cameras 602 and 940 from the House Subcommittee's public repository or archive to verify the native timestamps, camera clock offsets, and unbroken path directly (PIPE-R001).
+          - Monitor the suppression motion proceedings (ECF No. 102) for any unsealed excerpts of the interrogation transcript or exhibits to substantiate which confession details were volunteered versus prompted (PIPE-R003).
+          - Seek primary documentation, such as the search inventory returns from Cole's residence, to verify seized footwear sizes rather than relying on informal secondary wardrobe inspections (PIPE-C015, PIPE-R004).
+        summary: This change opens 'The J6 Pipe Bomber' case, mapping the charges against Brian Cole Jr. alongside defense motions and Steve Baker's recent claims regarding Capitol surveillance footage. It adheres scrupulously to the constitution's living-person rules by prominently stating the presumption of innocence, attributing all allegations to their respective court or public sources, and withholding names of uncharged individuals and family members. The rigorous claim structure and concrete research agenda significantly enhance the site's evidential mapping of an active, contested proceeding.
+        cost:
+          inputTokens: 60704
+          outputTokens: 1218
+          usd: 0.050096
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "Verify PIPE-C036 and the article line on the default judgment against SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT (including its correction on whom the judgment binds): state the defendant named in the judgment (Baker vs publisher/outlet) exactly, and soften if the record does not bind Baker personally."
+          - "In the assessment and the closing section, tighten the gap between ‘well supported on the sworn/proffered record’ and what a reader can inspect: the load-bearing video timeline, sector maps/drive tests, and interview recording are not public—keep that limit adjacent to the verdict wording so ‘well supported’ is not read as independent confirmation."
+          - "Prioritize PIPE-R001 before any further strengthening of PIPE-C062/C063/C071: the Rumble files for cameras 602 and 940 and clock offsets are still unlocated, so treat Baker/Armitas timestamps as attributed claims until native files are in sources."
+        summary: Opens the J6 pipe-bomb case as a full ledger—competing accounts, 72 claims, court-primary evidence, Baker’s points as graded claims, decisive tests, and a frozen phone-sector study—with presumption of innocence and attribution handled with care. The draft judgment that the charged account is well supported on the proffered record, while flagging the October footage clocks and confession-detail audit as decisive, is evidenced and labeled unratified. That leaves a reader seeking the truth clearly better off than a blank case, provided judgment-party wording and the non-public status of key exhibits stay precise.
+        cost:
+          inputTokens: 54809
+          outputTokens: 346
+          usd: 0.111809
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - In the article's phone paragraph ('to a sector facing south from Independence Avenue'), the location detail 'from Independence Avenue' does not appear in the quoted affidavit passage in PIPE-E051, which says only that the sector 'faces south'. Either anchor the tower's location to a quoted passage with a locator, or cut it from the article and keep it only where the record carries it.
+          - The article's summary line 'a battery connector fewer than 8,000 people could have bought' overstates claim PIPE-C021, which records fewer than 8,000 connectors distributed — units, not buyers. Rephrase the article to 'fewer than 8,000 of the distributor's connectors were distributed', matching the record.
+          - The genealogy of PIPE-C052 attributes the insider suspicion to Dan Bongino 'before he joined the FBI' without a source record carrying that statement; anchor it to a citable source or remove the attribution, since genealogy notes are provenance details and should not exceed what a cited record shows.
+        summary: The change opens a new case on the J6 pipe bombs with 72 claims, 153 evidence records and 31 sources, attributing every prosecution, defense and Baker assertion to its record, naming no uncharged private person, carrying the presumption of innocence prominently, and pre-registering a frozen study on the phone sectors versus the October footage. Baker's points are entered as claims graded against the record, including the alligator-clip gap and the clock-conflict framed honestly as a test rather than an argument, and the judgment is disclosed as unratified pending the blind panel. The mechanical checks passed, the alternatives are presented seriously, and nothing true is dropped; the gains clearly outweigh the small wording imprecisions noted above, so the change is better.
+        cost:
+          inputTokens: 54600
+          outputTokens: 5008
+          usd: 0.010694
+  - commit: f67fb646801b1cf1b3fbadb8a1d15289018e833a
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - In the article’s “Where the case stands” section and PIPE-C060, list all eight counts exactly as the third superseding indictment (ECF No. 106) states them, verified directly from the scanned indictment rather than only through the defense’s description in ECF No. 108. The site rules require the latest indictment’s charges, not merely four examples.
+          - In the October-footage section, verify the sentence saying a default judgment for defamation was entered “against Baker” against the judgment itself. SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT specifically notes a correction concerning whom the judgment binds; name the precise defendant or replace this with a narrower description of the retraction and litigation.
+          - In the phone section and the assessment of PIPE-C027, soften “the strongest line” and “hard to come by unless the phone went with the bomber” until PIPE-S001 maps the sectors. The cited affidavit establishes the government’s asserted consistency, but the raw records, drive-test maps, overlap between sectors, and coverage of the northern locations remain unavailable.
+        summary: The change opens a substantial, unusually well-attributed evidence map for an active prosecution, presenting the government’s account, the defense’s confession challenge, Baker’s objections, and concrete tests that could distinguish them. Its prominent presumption-of-innocence language, attribution of allegations, disclosure that load-bearing records remain unavailable, and explicit unratified status make it materially better than having no case page. Some central inferences and one adverse statement about Baker still need tighter primary-source verification, but they do not outweigh the change’s evidentiary and explanatory gains.
+        cost:
+          inputTokens: 53395
+          outputTokens: 4876
+          usd: 0.3111
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In PIPE-C052 genealogy (originDescription), the reference to Dan Bongino voicing insider suspicion 'before he joined the FBI' is unsourced and historically inaccurate (Bongino served in the Secret Service, not the FBI); anchor this to a citable source or remove the reference.
+          - In the article and PIPE-C036, verify whether the defamation default judgment was entered against Baker personally or against the publisher/outlet, particularly given the note on SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT regarding a correction as to whom the judgment binds.
+          - In the article's discussion of cell sector data, anchor the tower location detail ('facing south from Independence Avenue') directly to a quoted passage with an explicit locator in the evidence ledger.
+        summary: This change successfully opens the J6 pipe-bomb case with 72 atomic claims, 153 evidence records, and 31 sources, systematically mapping both the prosecution's proffer and Steve Baker's counter-arguments regarding the October 2026 footage. The previous review round's harm concerning unattributed claims about living persons was thoroughly addressed across all affected records. The resulting ledger and narrative provide an exceptionally well-calibrated, disciplined, and rigorous evidentiary map that leaves the site substantially better.
+        cost:
+          inputTokens: 62179
+          outputTokens: 2709
+          usd: 0.056793
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - In the article line on PIPE-C036, verify against SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT (and its correction) whom the default judgment actually binds; if it binds the outlet/publisher and not Baker personally, reword so it does not state a judgment 'against Baker' beyond what the cited record supports.
+          - In the article phone paragraph, the phrase 'a sector facing south from Independence Avenue' is not carried by the quoted affidavit text in PIPE-E051 (which says only that the sector 'faces south'). Anchor the tower/location detail to a quoted passage with a locator, or cut it from the article.
+          - In PIPE-C052's genealogy, the attribution of the insider suspicion to Dan Bongino 'before he joined the FBI' has no citable source record in this change; anchor it to a verified source or remove that clause from the provenance note.
+        summary: "This change opens the J6 pipe-bomb case with a full first edition: competing accounts, 72 claims, 153 evidence records, 31 sources, decisive tests, and a pre-registered sector-coverage study, with Baker’s points taken as attributed claims and graded against the court record. The prior living-person hold on PIPE-C018 was answered by systematic attribution of Baker/Armitas/critic material, presumption of innocence is prominent, and the draft judgment is explicitly unratified. For a reader seeking the truth, the site is clearly better than an empty case page; remaining issues are precision and provenance cleanups, not blocks."
+        cost:
+          inputTokens: 56171
+          outputTokens: 339
+          usd: 0.114491
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - The article's phone paragraph still says the 7:59:36 sector 'fac[es] south from Independence Avenue'; the quoted affidavit passage in PIPE-E051 says only that the sector 'faces south', and no quoted record in this change locates the tower on Independence Avenue. Either anchor the location to a quoted passage with a locator or cut the phrase from the article. (Carried over from my round-1 note; it was not addressed in the operator's reply.)
+          - The article says a federal court 'has entered a default judgment for defamation against Baker'. SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT's own verification note records a correction 'on whom the default judgment binds', and Grok's round-1 note to state the defendant exactly was not answered. Check the corrected article and state precisely whom the judgment binds — Baker personally or the outlet — softening the sentence if it binds the outlet only.
+          - PIPE-C052's genealogy still asserts the insider suspicion was 'voiced among others by Dan Bongino before he joined the FBI' with no source record carrying that statement. Since genealogy notes are provenance details, anchor it to a citable source or remove it. (Carried over from my round-1 note; unaddressed.)
+        summary: This change opens a new case on the J6 pipe bombs with 72 attributed claims, 153 evidence records drawn from the court record, the House report, and Baker's own posts, presents the misidentification, insider and not-overnight accounts alongside the charged account, and pre-registers the sector-coverage study that would test the October footage. The round-1 living-person harm on PIPE-C018 is fixed by attribution and the same audit was extended across the commentator-derived claims; the overnight chronology is now attributed to the FBI's reconstruction and the running-claim in PIPE-C063 is softened. My round-1 notes on the Independence Avenue detail and the Bongino genealogy remain unaddressed and are carried forward, but nothing I can point to rises to a harm; the change leaves the site better.
+        cost:
+          inputTokens: 55345
+          outputTokens: 3099
+          usd: 0.009851
+harvestedAt: 2026-10-20T12:57:59.964Z

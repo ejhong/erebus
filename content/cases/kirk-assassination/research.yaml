@@ -296,3 +296,33 @@
     inconclusives, that re-examination gains priority; if not, the
     fragments' condition, not examiner effort, is the binding
     constraint. Either outcome publishes.
+
+- id: KRK-R015
+  title: "Read the court's written bindover order of September 2026"
+  summary: >-
+    Obtain the Fourth District Court's written order binding the case over
+    for trial (State v. Robinson, Case No. 251403576), published the day
+    after the September 1, 2026 ruling, from the court's records or a
+    stable public copy (the link in the press report that quotes it now
+    leads elsewhere). Replace the press renderings in this file (KRK-E068,
+    KRK-E069) with the order's own text, and record exactly what it says
+    about the physical evidence: the shot's distance and height, the wound
+    track, the non-exit of the bullet, and what evidence each finding cites
+    (testimony, the medical examiner's report, scene measurements).
+  claimIds: [KRK-C018, KRK-C006, KRK-C007]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Converts a reporter's transcription into the court's own words and
+    shows what record each of the court's physical findings rests on. If
+    the wound track is cited to the medical examiner's report, it is a
+    court's statement of that report's track and bears directly on
+    the device hypothesis (KRK-C018); if it rests on testimony or scene
+    reconstruction alone, the autopsy package (KRK-R002) remains the only
+    route to it. The height also supplies the elevation study KRK-S006
+    recorded as missing.
+  origin:
+    ref: "operator session: news since the edition"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
+    runId: "2026-10-20-session-site-124306"
+    date: "2026-10-20"

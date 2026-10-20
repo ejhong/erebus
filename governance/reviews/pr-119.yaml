@@ -1,0 +1,65 @@
+# Review of #119, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 119
+title: Stop tracking the engine's read cache
+url: https://github.com/ejhong/erebus/pull/119
+outcome: merged
+outcomeAt: 2026-10-19T19:54:30Z
+cases: []
+rounds:
+  - commit: 8407e56e0cf5da1f60bcaab071cbb79b4c8c5aad
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - Add a lightweight CI guard rejecting tracked files under `.cache/` so a forced add cannot reintroduce page-text caches despite `.gitignore`.
+        summary: The change removes fourteen accidentally tracked cache artifacts containing seven copied page texts and their metadata, without altering content, code, or review checks. This improves repository hygiene and avoids carrying unnecessary third-party material while preserving the underlying source records and engine behavior.
+        cost:
+          inputTokens: 48484
+          outputTokens: 719
+          usd: 0.210688
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes: []
+        summary: This change untracks fourteen inadvertently committed cache files in `.cache/read/` containing scraped third-party page text and metadata. Removing build and runtime cache artifacts aligns the repository with its `.gitignore` configuration and keeps transient cache files out of source control. It leaves the site cleaner with no epistemic or functional regressions.
+        cost:
+          inputTokens: 60058
+          outputTokens: 407
+          usd: 0.04657
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - Git history still holds the seven cache blobs from e0ab5e5; if full removal of the third-party page texts matters, plan a history rewrite (filter-repo/BFG) or record that history retains them.
+          - After merge, confirm no other paths under .cache/ remain tracked (git ls-files .cache).
+        summary: The change untracks seven accidentally committed engine read-cache files (WikiLeaks email pages and one Wellesley blog page) that .gitignore already excludes. That matches the engine’s rule of keeping other people’s page texts out of git and removes third-party material from the working tree with no content, code, or check changes. For a reader of the evidence map the ledger is unchanged; for the public repo’s purpose the tree is cleaner and better aligned with policy, so the change leaves the site better.
+        cost:
+          inputTokens: 55685
+          outputTokens: 195
+          usd: 0.112655
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "The untracked files remain retrievable from the public repository's git history (committed in #117, e0ab5e5); since these are third-party works the constitution deliberately keeps off the site, the operator should plan a history rewrite (e.g., git filter-repo for .cache/) or at least record in docs why the files were committed and what remains retrievable — untracking alone stops future copies, not the existing ones."
+          - Add a config-layer CI guard that fails if any path under .cache/ is staged for commit, so the recurrence this change corrects is mechanically prevented rather than relying on .gitignore alone.
+          - Verify that no content/ record references a .cache/ path as a locator or origin; if any does, repoint it to the live source URL (e.g., the wikileaks.org or blogs.wellesley.edu pages), since the cache is no longer part of the tree.
+        summary: This change untracks seven accidentally committed engine read-cache files (third-party page texts from WikiLeaks and a Wellesley blog), which .gitignore already covers; no content or code changes. It aligns the repository with the constitution's rule that third-party copyrighted material and incidental living-person text stay off the public site, loses nothing cited by the site, and weakens no check — a small but real improvement, with history cleanup still owed.
+        cost:
+          inputTokens: 56711
+          outputTokens: 920
+          usd: 0.008967
+harvestedAt: 2026-10-20T12:57:59.964Z

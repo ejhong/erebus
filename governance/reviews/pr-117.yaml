@@ -1,0 +1,214 @@
+# Review of #117, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 117
+title: "Erebus on the current engine: the operator, the review, and truth within the law"
+url: https://github.com/ejhong/erebus/pull/117
+outcome: merged
+outcomeAt: 2026-10-19T19:24:38Z
+cases:
+  - covid-origins
+  - kirk-assassination
+  - pizzagate
+  - september-11
+rounds:
+  - commit: e0ab5e5aae203da8228a7c5c524106f0ad81f40a
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "Kirk edition, especially “What would settle it” and the opening procedural status: update the article for 2026-10-19. It still says the judge “will hear” arguments on September 1, 2026 and carries other August-dated status claims; verify the hearing outcome, plea status, and current posture from court records."
+          - "September 11 article, opening paragraph: the sentence about 1,202 trial exhibits links to SEP-C019, but SEP-C019 concerns alleged specific advance knowledge. Create or link a claim that actually supports the trial-exhibits proposition."
+          - "Repository `.cache/read/`: avoid committing complete fetched pages where possible, particularly leaked-email pages containing incidental addresses and telephone numbers. Retain the minimum reproducible quote-check artifact—such as sanitized text, relevant excerpts, URL, retrieval date, and hash—rather than unrelated personal details."
+        summary: The change migrates Erebus to the current edition, operator, review, and standing machinery while preserving the existing four case articles and recording migration provenance. It also makes a concrete provenance correction by moving PZG-C037’s quotation to email 52778, where the quoted scheduling exchange is present. These changes improve auditability and citation accuracy without a demonstrated loss, though the active Kirk case needs an immediate currency pass.
+        cost:
+          inputTokens: 99184
+          outputTokens: 3386
+          usd: 0.464456
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - "content/cases/pizzagate: schedule panel re-ratification for Pizzagate now that PZG-C037 and SRC-WL-PODESTA-52778 have updated the claim ledger."
+          - "content/cases/kirk-assassination/history.yaml: prepare an update tracking the scheduled September 1, 2026 preliminary-hearing arguments and any newly unsealed ballistics/custody records."
+          - "governance/operation.yaml: ensure the operator runbook and CI monitor token expenditures against the bootstrap budget cap ($60 through October 2026, $40 thereafter)."
+        summary: This change successfully migrates Erebus onto the current upstream engine architecture, converting all four existing cases to versioned editions while preserving their article texts and claim graphs byte for byte. It establishes automated multi-model review, blind panel ratification workflows, and strict quote-checking, which caught and corrected a misattributed email locator in Pizzagate (PZG-C037). The site configuration, living-persons disclosures, and epistemic guardrails adhere fully to the amended AGENTS.md constitution.
+        cost:
+          inputTokens: 111105
+          outputTokens: 1608
+          usd: 0.089359
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "Fix article↔claim mismatches preserved by the byte-for-byte migration: in covid-origins the lede tags the ‘no laboratory held the virus/progenitor’ sentence as COV-C013, but COV-C013’s statement is about genetic distance of sampled relatives; in september-11 the opening paragraph tags the 1,202-exhibits sentence as SEP-C019, but SEP-C019 is the advance-knowledge/allowed-it claim (later use is correct). Audit every {claim=…} embed against its statement."
+          - After merge, run the blind panel on pizzagate promptly — the PZG-C037 source move correctly voids prior standing; leave the case explicitly unratified until seats return, and do not let the migration assessment read as concurrence.
+          - Confirm migration assessments and any pre-engineSince overlays are labelled as transferred prior display/AI drafts under the old rules, never as multi-model standing under §3.15, and that /operations and record pages make that distinction visible.
+        summary: "This change puts Erebus on the current engine (operator, multi-vendor review, editions, config/governance), migrates the four cases without rewriting their articles, and fixes a real quote misattribution on PZG-C037 (13265 → 52778) that the quote check caught. For a reader seeking the truth it is a net gain: stronger process, an honest correction, preserved ledgers, and living-persons framing aligned with the amended constitution. Residual article/claim-ID mismatches and the need to re-seat pizzagate are next-pass work, not reasons to hold the change."
+        cost:
+          inputTokens: 102850
+          outputTokens: 363
+          usd: 0.207993
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - For the three cases whose case verdicts transfer unchanged (covid-origins, kirk-assassination, september-11), have the rendered case pages visibly label the transferred standing as migrated under the engineSince rule — carried from the pre-amendment displayed judgment, not yet concurred by the §3.15 blind panel — so a reader does not mistake it for multi-model concurrence. The Pizzagate treatment (unratified until re-judged) is the right model; make the other three equally explicit.
+          - PZG-C035 rests half its proposition on WikiLeaks emailid/37971 ("Using the Podesta method, she made up the rules as we played"), but only the 50332 quote is anchored and no read-cache for 37971 appears in this change; have the operator read 37971 through the engine's tool and record its cache/verification before the July-Dominos half carries any weight.
+          - PZG-C037's source record and SRC-WL-PODESTA-52778's title describe 52778 as "John Podesta's reply of January 8, 2014", but the page's own body is Tony Podesta's "Sure"; John's "3:00 at our house work?" line sits in the quoted thread history. Reword the locator (e.g. "thread page containing John's reply of January 8") so the record page reads precisely.
+        summary: This change moves the site onto the amended constitution's operating model (operator charter, four-vendor review, kill-switch config), migrates all four cases to editions carrying their articles byte for byte and transferring the previously displayed judgments, and fixes one real provenance error the new quote check caught (PZG-C037's "3:00 at our house work?" now correctly anchored to emailid/52778, with 13265 kept as background and the reason recorded). It also adds thirteen Pizzagate email-context claims whose quotes I could check against the fetched sources cache — 19018, 30145, 50332, 13265/52778, Clinton 14333, and the TwitterTrails page — and every one appears verbatim in its source, with the misquote and non-author findings matching the fetched text. Nothing true is lost, the checks still hold, and the honest handling of the moved Pizzagate ledger (standing marked unratified) plus the labeled unverified locators on the Kirk lead claims keep the change on the right side of the record.
+        cost:
+          inputTokens: 102088
+          outputTokens: 4194
+          usd: 0.01741
+  - commit: 2a0fc2e1afbacf62920764b35928dc59623a5be1
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: draft_as_ratified (GPT-5.6 Sol (OpenAI))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm:
+          kind: draft_as_ratified
+          where: content/cases/{covid-origins,kirk-assassination,september-11}/assessments/2026-10-19-migration-*.yaml and the corresponding rendered standings
+          why: These migration assessments “re-adopt” current case verdicts explicitly taken from prior AI drafts, although no §3.15 blind case-panel concurrence or historical human review is recorded. Pizzagate is correctly made unratified after its ledger change; the other three drafts likewise cannot be presented as adopted standing merely through engineSince migration.
+        notes:
+          - For the three affected migration assessments, retain the transferred verdicts only as clearly labelled historical AI-draft snapshots, show current standing as unratified, and run the required five-seat blind panel before displaying ratified standing.
+          - Audit article-to-claim links, beginning with the COVID sentence about no laboratory holding a virus/progenitor linked to COV-C013, which instead concerns genetic distance, and the September 11 sentence about 1,202 trial exhibits linked to SEP-C019, which concerns alleged advance knowledge. Create or select claims that actually state those propositions.
+          - "Update the Kirk article’s procedural posture from primary court records as of 2026-10-19: the passage saying probable-cause arguments “will” occur on September 1, 2026 is stale, as may be the plea and hearing status stated near the opening."
+        summary: The change moves Erebus onto a substantially stronger operator-and-review engine, migrates its cases into editions, and corrects the PZG-C037 source locator. Those changes improve provenance, operations, and future reviewability overall. Publication should nevertheless be held because three migrated AI draft verdicts are treated as adopted standings without the case-panel concurrence required by the current constitution.
+        cost:
+          inputTokens: 100064
+          outputTokens: 2609
+          usd: 0.452436
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In content/cases/september-11, the opening paragraph tags the sentence on 1,202 trial exhibits with claim SEP-C019 (which asserts specific advance knowledge), and in content/cases/covid-origins, the text on no laboratory holding a progenitor links to COV-C013 (which asserts genetic distance of sampled relatives); audit and fix these claim anchor mismatches.
+          - In content/cases/kirk-assassination, update time-sensitive procedural text in 'What would settle it' ('will hear probable-cause arguments on September 1, 2026') to reflect the current post-September 2026 procedural posture.
+          - In .cache/read/, minimize raw cached email dumps containing incidental phone numbers, personal email addresses, and full server headers where only targeted text snippets and retrieval hashes are required for quote-check verification.
+        summary: This change successfully upgrades Erebus to the current engine architecture, migrating existing cases cleanly into versioned editions and assessments while establishing the new operator and review pipelines. It corrects a documented quotation discrepancy in PZG-C037 and sets up transparent governance, budget, and quote-checking mechanisms. The change leaves the site significantly better structured, reproducible, and verifiable.
+        cost:
+          inputTokens: 112091
+          outputTokens: 945
+          usd: 0.087612
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "Audit every article {claim=…} embed against the claim statement it points at: covid-origins still tags the ‘no laboratory held the virus/progenitor’ sentence as COV-C013 (that claim is about genetic distance of sampled relatives), and september-11’s opening 1,202-exhibits sentence still tags SEP-C019 (advance-knowledge/allowed-it). Fix the embeds or add matching claims."
+          - On the three cases whose verdicts transfer unchanged (covid-origins, kirk-assassination, september-11), make the rendered standing explicitly read as a migration snapshot of the pre-engineSince displayed judgment—not §3.15 blind-panel concurrence. Keep pizzagate unratified until seats return; do not let the migration assessment read as concurrence.
+          - "Kirk edition status lines are stale for 2026-10-19: ‘What would settle it’ still says the judge ‘will hear’ probable-cause arguments on September 1, 2026. Update plea, hearing outcome, and posture from court records; fold any new ballistics/custody unsealing into history.yaml."
+        summary: This change puts Erebus on the current engine (operator, multi-vendor review, editions, config, kill switch), migrates the four cases byte-for-byte with snapshot assessments under engineSince, and corrects the Pizzagate PZG-C037 quote to the WikiLeaks page that actually contains the line. That is a real accuracy and governance upgrade and does not introduce a listed publication harm. Outstanding work is labeling migrated standing so readers do not mistake it for new-panel concurrence, fixing preserved article↔claim mismatches, and refreshing Kirk’s post-September-2026 procedural status.
+        cost:
+          inputTokens: 103752
+          outputTokens: 378
+          usd: 0.209887
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - PZG-C035's second half rests on WikiLeaks emailid/37971 ("Using the Podesta method, she made up the rules as we played") and PZG-C033's on emailid/53381 ("that pasta and walnut sauce dish!!") — neither has a read cache or verification record in this change, and neither quote is anchored to the quote check. Read both emails through the engine's reading tool, cache them, and record the verification (or split those halves out as provisional) before they carry any weight; also reword PZG-C037/SRC-WL-PODESTA-52778's locator, since the page's own body is Tony Podesta's "Sure" and John's "3:00 at our house work?" sits in the quoted thread history — "John Podesta's reply of January 8" reads as if it were the page's top-level email.
+          - 'Audit every {claim=} embed against the claim it names, fixing the two mismatches the byte-for-byte migration preserved: the covid-origins lede tags the "no laboratory is publicly known to have held the virus or a sufficiently close progenitor" sentence as COV-C013, whose statement is actually about genetic distance of sampled relatives; and the september-11 opening tags the "1,202 exhibits were admitted" sentence as SEP-C019, which is the specific-advance-knowledge claim. A reader following the link lands on a claim that does not support the sentence.'
+          - Reduce .cache/read/ to minimal quote-check artifacts (URL, retrieval date, hash, and the passages the check needs) instead of committing entire fetched WikiLeaks pages, which carry third-party phone numbers, addresses and signatures into the public repository; and while touching the Kirk case next, update its article's stale procedural status — the September 1, 2026 preliminary-hearing date it presents as future is now past.
+        summary: "This change installs the amended §3.15 engine (operator sessions, multi-vendor review, editions and standing machinery), migrates all four cases to editions that preserve their articles and judgment history byte for byte, and makes one genuine correction the quote check caught: PZG-C037's \"3:00 at our house work?\" now correctly cites reply email 52778, with 13265 kept as background and Pizzagate's standing honestly reset to unratified pending the panel. The anchored quotes I could check are all found verbatim in the committed page caches (52778, 50332, 30145, 19018, clinton-14333, TwitterTrails), the checks still run and pass, and nothing true is lost. I judge it better rather than worse because the correction is real and the migration is honest about what is transferred versus re-judged; the residual gaps — two unverified secondary quotes inside claim statements, two wrong article↔claim anchors inherited from the old text, and the cache bloat — are improvement work, not grounds to block, since none involves a source or quotation I can show to be false."
+        cost:
+          inputTokens: 102992
+          outputTokens: 4034
+          usd: 0.017466
+  - commit: 9e624c37da9e7ef88061c0eee721ce2518d4a5f0
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: hold
+    reason: "held for 4 harms until answered: draft_as_ratified (GPT-5.6 Sol (OpenAI)); draft_as_ratified (Gemini 3.8 Flash (Google)); draft_as_ratified (Grok 4.5 (xAI)); draft_as_ratified (GLM 5.3 Flash (Z.ai, via Venice))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm:
+          kind: draft_as_ratified
+          where: content/cases/{covid-origins,kirk-assassination,september-11}/assessments/2026-10-19-migration-*.yaml and their rendered standings
+          why: These assessments re-adopt case verdicts taken from earlier AI drafts without recorded §3.15 blind-panel concurrence or historical human review. The prior review’s harm remains unanswered; engineSince can preserve historical records but cannot convert an AI draft into ratified standing.
+        notes:
+          - Mark the three transferred verdicts as historical AI-draft snapshots, display their current standing as unratified, and run the five-seat blind panel before presenting them as standing.
+          - "Audit article-to-claim links and fix at least the two identified mismatches: the COVID statement that no laboratory held the virus or close progenitor points to COV-C013, which states genetic distance, while the September 11 statement about 1,202 trial exhibits points to SEP-C019, which concerns alleged advance knowledge."
+          - "Update the Kirk edition from primary court records as of 2026-10-19: the September 1, 2026 hearing is still described as future, and the plea, hearing outcome, current posture, and any newly available forensic records should be reflected in the article and history."
+        summary: The change adopts the rebuilt operator/review engine, migrates four cases into editioned records, improves operational transparency, and corrects PZG-C037 to the WikiLeaks page that actually contains the quoted line. Those are substantial improvements overall, but three migrated AI draft verdicts are still presented as adopted standing without the concurrence now required by §3.15, so that harm must be resolved before publication.
+        cost:
+          inputTokens: 101241
+          outputTokens: 878
+          usd: 0.422524
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm:
+          kind: draft_as_ratified
+          where: content/cases/{covid-origins,kirk-assassination,september-11}/assessments/2026-10-19-migration-*.yaml and rendered standings
+          why: These migration assessments carry forward prior AI drafts as adopted case standings without recording multi-model panel concurrence or human review under AGENTS.md §3.15. The harm flagged in Round 2 has not been addressed by a fix or reasoned reply.
+        notes:
+          - "content/cases/{covid-origins,kirk-assassination,september-11}/: Retain transferred verdicts only as explicitly labelled historical AI draft snapshots and mark current standing as unratified until evaluated by the §3.15 blind multi-model panel."
+          - "content/cases/covid-origins and content/cases/september-11 editions: Fix article-to-claim embed mismatches preserved in the migration, where the 'no laboratory held the virus' text links to COV-C013 (genetic distance) and the 1,202 trial exhibits sentence links to SEP-C019 (specific advance knowledge)."
+          - "content/cases/kirk-assassination/editions/: Update stale procedural text in 'What would settle it' and the introductory paragraphs to reflect the post-September 1, 2026 procedural posture."
+        summary: This change upgrades the repository to the current engine, introduces multi-model review workflows and budget tracking, migrates the four existing cases into versioned editions, and fixes a quotation locator in Pizzagate. The architectural upgrade and verification improvements leave the site substantially better. However, the migration assessments for three cases adopt prior AI draft verdicts as active standing without the blind concurrence required by AGENTS.md §3.15, leaving the previously flagged harm unresolved.
+        cost:
+          inputTokens: 113381
+          outputTokens: 2922
+          usd: 0.095993
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm:
+          kind: draft_as_ratified
+          where: content/cases/{covid-origins,kirk-assassination,september-11}/assessments/2026-10-19-migration-*.yaml and rendered case standings
+          why: "Round 2 flagged this and it is unanswered: the three migration assessments still “re-adopt” case verdicts taken from prior AI drafts with no §3.15 blind-panel concurrence or human review on record. engineSince explains the old drafting rules; it does not authorize presenting those drafts as adopted standing. Pizzagate’s unratified treatment is the correct model."
+        notes:
+          - Mark covid-origins, kirk-assassination, and september-11 standing as unratified migration snapshots of pre-amendment AI drafts (not §3.15 concurrence); run the five-seat blind panel before any ratified standing appears—same posture as pizzagate after the ledger edit.
+          - "Fix article↔claim anchors preserved by the byte-for-byte migration: covid-origins tags “no laboratory… held the virus or a sufficiently close progenitor” as COV-C013 (statement is genetic distance of sampled relatives); september-11 opening tags the 1,202-exhibits sentence as SEP-C019 (statement is specific advance knowledge / allowed-it). Point each embed at a claim that actually states the proposition, or add one."
+          - Update kirk-assassination procedural status for 2026-10-19 from primary court records (article still says the judge “will hear” probable-cause arguments on September 1, 2026); read and cache PZG-C033’s emailid/53381 and PZG-C035’s emailid/37971 before those halves carry weight; reword PZG-C037/SRC-WL-PODESTA-52778 so the locator matches the page body (Tony’s “Sure” with John’s “3:00…” in quoted history).
+        summary: This change pulls Erebus onto the current multi-model operator/review engine, migrates the four cases into editions, corrects the PZG-C037 WikiLeaks anchor, and retires the old gate. That is a real upgrade for readers and for the constitution’s §3.15 process. It must not publish until the three non-pizzagate migration assessments stop reading as adopted standing and the known claim-anchor mismatches are fixed.
+        cost:
+          inputTokens: 104953
+          outputTokens: 520
+          usd: 0.213141
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm:
+          kind: draft_as_ratified
+          where: content/cases/{covid-origins,kirk-assassination,september-11}/assessments/2026-10-19-migration-*.yaml and the case standings rendered from them
+          why: These migration assessments re-adopt case and claim verdicts taken from prior AI drafts (e.g. 2026-08-27-auto-8t3d, 2026-09-12-auto-wljj, 2026-08-27-auto-8i11), which carry neither §3.15 blind-panel concurrence nor historical human review, yet the three cases display ratified standing while Pizzagate — whose ledger also merely moved — was correctly made unratified. The asymmetry shows the operator itself does not treat a transferred draft as concurrence; the other three must not display as ratified until the five-seat panel judges them, or at minimum must render as pre-amendment AI-draft snapshots rather than standing.
+        notes:
+          - "Resolve the standing harm above, which was flagged in round 2 and remains unanswered: either render the three migrated case verdicts as unratified (as Pizzagate already is) or visibly label them as migrated pre-amendment AI-draft judgments not yet concurred by the §3.15 panel, and schedule the blind panel as the operator's first work on them."
+          - "Fix the byte-for-byte-preserved anchor mismatches and stale posture: the covid-origins lede tags the 'no laboratory is publicly known to have held the virus' sentence as COV-C013 (whose statement is about genetic distance of sampled relatives), the september-11 opening tags the 1,202-exhibits sentence as SEP-C019 (the specific-advance-knowledge claim), and the Kirk article still presents the September 1, 2026 probable-cause hearing as future although it is past as of 2026-10-19 — update from court records and correct or create matching claims."
+          - "Quote-check hygiene: reduce .cache/read/ to minimal verification artifacts (URL, date, hash, needed excerpts) rather than full fetched WikiLeaks pages carrying third-party phone numbers and headers; and read Podesta emailid/37971 (PZG-C035's Dominos half) and emailid/53381 (PZG-C033's pasta-and-walnut-sauce half) through the engine's reading tool, caching and anchoring them, since neither quote is currently anchored to the check."
+        summary: "The change migrates the site onto the current engine: four cases become editions with byte-for-byte articles and transferred assessment snapshots, config moves to config/, the retired workflows give way to the operator-and-review model, and the engine's quote check caught and fixed a real locator error (PZG-C037 now cites 52778, verified against the fetched page). The migration itself preserves and improves the reader's record, so it is better. But the round-2 draft_as_ratified harm stands unanswered: three cases display ratified standing transferred from unpanelled AI drafts under an engineSince reading the amended §3.15 does not support, and publication should wait until that is fixed or argued and the panel is run."
+        cost:
+          inputTokens: 104187
+          outputTokens: 3872
+          usd: 0.017564
+harvestedAt: 2026-10-20T12:57:59.964Z

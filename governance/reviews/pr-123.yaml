@@ -1,0 +1,135 @@
+# Review of #123, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 123
+title: "J6: calibrate the footage findings to what was measured"
+url: https://github.com/ejhong/erebus/pull/123
+outcome: merged
+outcomeAt: 2026-10-19T22:40:54Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 5a72354311fb73f95c2e4a1c3b3f0adb2cb2af09
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: misattribution (GLM 5.3 Flash (Z.ai, via Venice))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-R001 `informationGain` retains the exact timing error this change corrects: it places the man on Constitution Avenue at 20:03:32, but PIPE-C062 now establishes that this is camera 602's file-start time and that the man appears at about 20:04:25. Replace the time and recalculate the stated conflict."
+          - "In the edition, replace the remaining provenance overstatements—“congressional originals,” “The footage is authentic, and so are its times,” “raw Capitol Police video,” and “genuine”—with the narrower finding actually established: the clips match the subcommittee-posted copies and the displayed times match filename timestamps; native metadata, hashes, and Capitol Police originals were not examined."
+          - For PIPE-C063 and its article passages, state the assumed maximum 3187-versus-794 clock offset that yields “four minutes or less,” document how the approximately one-kilometre route was measured, and distinguish camera 794's rough agreement with the affidavit timeline from camera 3187's unmeasured offset. Until that is done, prefer the explicit conditional over the unquantified likelihood phrase “very unlikely.”
+        summary: The change materially improves the page by retracting two categorical findings that exceeded the measurements, adding the missing camera-clock and cell-sector qualifications, and reopening the decisive clock research. It also accurately identifies the 20:03:32–20:04:02 values as file-start times rather than appearance times. One research-agenda sentence still uses the corrected-away timestamp, and several “original/authentic” formulations remain stronger than the browser-viewed posted-copy provenance supports, but the page is substantially more accurate overall.
+        cost:
+          inputTokens: 20059
+          outputTokens: 2319
+          usd: 0.126616
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In PIPE-R001's summary/informationGain, update the reference to '20:03:32' on Constitution Avenue to reflect the corrected appearance time (~8:04:25–8:05:23), as PIPE-C062 has been reclassified as misframed regarding that start time.
+          - In the new synthesis, ensure the phrase 'four minutes or less' matches the exact time delta discussed (8:01:18 vs 7:59:38 is 100 seconds, not four minutes, though 8:01:18 to 7:57 on cam 794 is about 4 minutes; clarifying the exact baseline interval avoids confusion).
+        summary: This change calibrates the headline findings of the October 2026 Capitol security footage to strictly match what was directly observed and measured. It softens definitive claims about the bomber's identity and phone location into precise, conditional assessments regarding camera clock offsets and RF sector orientations. These adjustments directly resolve reviewer criticisms from the previous round, significantly improving epistemic calibration without sacrificing rigor.
+        cost:
+          inputTokens: 22204
+          outputTokens: 963
+          usd: 0.020264
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-C063 and the matching article bullet: reconcile the ‘100 seconds earlier’ figure with the ‘four minutes or less’ bound so a reader can see exactly how unmeasured clock offset expands the window; state the arithmetic once."
+          - "PIPE-C075 claim record (not only the article gloss): make the statement the measured fact—sector facing away at 7:59:36—and put the behind-sector / raw-records caveat in the claim itself so the component cannot drift back to ‘phone was not with him’."
+          - "Edition/assessment component labels: retire any residual ‘not the bomber’ shorthand in verdict chips or featured-claim summaries; the standing claim is PIPE-C063’s conditional form, graded provisionally supported."
+        summary: "This change answers the prior review’s shared objection by restating two headline findings to what was actually measured: on the congressional files’ clock the Peace Circle man is very unlikely to be the bomber (conditional on unmeasured 3187↔794 offset), and the phone’s sector faced away from him rather than ‘the phone was not with him.’ It also marks PIPE-C062 misframed, labels the Rumble files as subcommittee posted copies viewed not downloaded, and reopens PIPE-R001 for clock offsets. The site is more accurate, better calibrated, and fairer to residual alternatives, with nothing true dropped."
+        cost:
+          inputTokens: 20592
+          outputTokens: 307
+          usd: 0.043141
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm:
+          kind: misattribution
+          where: "Article section 'New: the footage, checked against the congressional originals', bullet citing {claim=PIPE-C062}"
+          why: The article hangs the corrected finding — 'The man appears about a minute later, at 8:04:25 and 8:05:23' — on PIPE-C062, yet this very change grades PIPE-C062 misframed because its (unchanged) statement presents 20:03:32–20:04:02 as the man's appearance times. The corrected reading is a finding the cited record contradicts, not states; it needs its own claim record (or a restated C062) before this bullet publishes against it.
+        notes:
+          - PIPE-R001 measures the subordinate cameras against camera 794, but 794's own offset rests on a single shared moment against the affidavit's timeline, good only to 'a few minutes'. Add to R001 the search for an absolute anchor for 794 itself — a public event with an independent timestamp that 794 also recorded, or a second shared moment — so the chain's weakest link is not left as the tolerance the headline finding now has to carry.
+          - The verification notes on all eight CCTV sources say 'the page itself is unlisted'. If the subcommittee's release is public and this only describes Rumble playlist behaviour, reword it (e.g. 'reached via the subcommittee's playlist'); as written a reader may take it to mean the records are access-restricted, which would overstate the provenance difficulty.
+          - The footage section states the clock agreement ('to within a few minutes') without naming the shared moment it rests on; the synthesis and the bullet on C063 each imply it differently. State once, in the footage section, that the agreement rests on the 7:57 bomber sighting against the affidavit's timeline — the reader can then weigh the tolerance instead of taking the phrase on trust.
+        summary: "This is the correction the last round's reviewers asked for: both headline findings are restated to what was actually measured — the bomber exclusion becomes conditional on camera 3187's unmeasured offset, the phone finding becomes 'sector faced away' with the sector-behind caveat, C062 is graded misframed, the Rumble copies are disclosed as viewed-not-downloaded with metadata unexamined, and the clock question is reopened as R001. That is a genuine gain in calibration and provenance honesty, and the steelman section is strengthened rather than trimmed. One blocking problem: the corrected appearance-time finding is still cited to PIPE-C062, a record this change itself declares misframed and whose statement says the opposite times — the corrected finding needs its own claim record before the citation is honest."
+        cost:
+          inputTokens: 21434
+          outputTokens: 7017
+          usd: 0.006724
+  - commit: 9933e6261dea68e2c6ae23f00c5d3683b0258ca2
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "In PIPE-E168, PIPE-C035, and the article’s footage section, describe camera 794 as conditionally consistent with the affidavit timeline rather than as a clock that was “checked”: the figure’s identity as the bomber is inferred from Baker’s label, and the comparison uses a nearby position roughly two and a half minutes later, not the same event independently timestamped."
+          - For PIPE-C063 and PIPE-E134, document the assumed brisk-walking speed and route used to derive the roughly nine-minute offset; phrase the running comparison as a pace faster than the kilometre world-record pace, which states the arithmetic more exactly.
+          - In the footage-section first bullet, replace “The clips are the subcommittee’s files” with “Each clip matches the corresponding posted copy at the checked moment.” This better reflects the limited comparison and the absence of downloads, hashes, or native metadata.
+        summary: "The change materially corrects the two central overclaims: it makes the footage conflict conditional on unmeasured clock offsets and reduces the phone finding to sector orientation. It also separates the misframed file-start times from the corrected appearance times, narrows the provenance language, and reopens the decisive clock research. Some wording still treats an indirect camera-794 consistency check and sampled visual matches too strongly, but the article is substantially more accurate and transparent than before."
+        cost:
+          inputTokens: 24910
+          outputTokens: 2585
+          usd: 0.15134
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In PIPE-C075, align the claim record's formal statement with the article's calibrated phrasing ('the phone's sector faced away from him') and explicitly incorporate the behind-sector service caveat into the claim text itself.
+          - In the article section 'The October footage', clarify whether the sedan clips captioned inside that sector were also retrieved from the subcommittee's Rumble release or remain unverified third-party cuts.
+        summary: This revision cleanly resolves the misattribution harm flagged in Round 1 by creating PIPE-C078 to properly anchor the corrected appearance times on cameras 602 and 940. It also incorporates reviewer guidance by calibrating headline claims to exact measurements, replacing overstatements of provenance ('originals', 'authentic') with precise descriptions of the subcommittee's posted files, and updating PIPE-R001 to seek absolute anchors for camera 794.
+        cost:
+          inputTokens: 28022
+          outputTokens: 1473
+          usd: 0.02654
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - If PIPE-C075's claim statement still reads as 'the phone was not with him' (it is not among the changed claim records), restate it as the measured fact—sector facing away at 7:59:36—with the behind-sector / non-public raw-records caveat inside the claim so the component cannot drift back.
+          - "Align the distance figure: PIPE-E134's editorInference says 962 m straight-line between District address points; PIPE-C063 and the article say 'at least 960 metres'. Pick one, and state once that it is the straight-line lower bound (any walking route is longer)."
+          - In the footage bullet header, prefer C063's full conditional ('on the clocks as recorded… only by covering… / clocks ~nine minutes apart') over the shorthand 'the man cannot be the bomber', so the headline matches the graded claim and the unmeasured 3187 offset stays visible.
+        summary: "This change calibrates two overclaimed footage findings to what was actually measured: C063 becomes an explicit distance/time conditional with the single checked 794 moment named, the phone line becomes the sector-bearing fact, C062 is correctly marked misframed, and new C078 carries the corrected 602/940 appearance times that the prior round held for misattribution. Provenance language is narrowed to subcommittee-posted copies viewed (not hashed), and R001 is reopened for the remaining clock-offset work. The prior harm is answered; the site is more accurate and fairer for a truth-seeking reader."
+        cost:
+          inputTokens: 25636
+          outputTokens: 340
+          usd: 0.053427
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-C075's claim record was not restated (only the article gloss was): its statement could still be read as 'the phone was not with him' rather than the measured fact. Rewrite the claim statement itself to 'at 7:59:36 the sector the affidavit names faced away from every filmed location, so the phone was either behind the sector or elsewhere', carrying the behind-sector caveat in the claim so the component cannot drift back to the stronger reading (Grok's round-1 note, still open)."
+          - The footage-section bullet header still reads 'On the clocks as recorded, the man cannot be the bomber' while the change's own summary calls the finding 'very unlikely to be the bomber'. Since camera 3187's offset is unmeasured and the header's force rests entirely on the 'on the clocks as recorded' qualifier, aligning the header with the summary's hedged wording would keep the headline from outrunning the single-moment clock check the body then discloses.
+          - The nine-minute figure in PIPE-C063 and PIPE-E134 depends on an unstated walking speed ('at a brisk walk it takes about eleven minutes'). Naming the assumption once in the article (e.g. 'at a brisk walk of about 5–6 km/h') would let a reader redo the arithmetic that connects the 100-second recorded gap to the nine-minute clock offset.
+        summary: "This correction answers the one harm that held it: the corrected appearance times for cameras 602 and 940 now hang on their own new claim, PIPE-C078, evidenced by PIPE-E155, PIPE-E170 and PIPE-E180, while PIPE-C062 is cited only for the times Baker's side gave and is graded misframed. It also carries out the round-1 notes: the timing arithmetic is stated explicitly (960 metres in 100 seconds; about nine minutes of clock difference at a walk), 'authentic/originals' give way to 'the subcommittee's posted copies, viewed and not downloaded', the single 794-vs-affidavit clock check is named where the agreement is claimed, and PIPE-R001 now includes the search for an absolute anchor for camera 794. The headline findings are restated to what was measured, so a reader seeking the truth gets a more accurate and better-caveated page; nothing true is lost."
+        cost:
+          inputTokens: 26421
+          outputTokens: 5744
+          usd: 0.006835
+harvestedAt: 2026-10-20T12:57:59.964Z
