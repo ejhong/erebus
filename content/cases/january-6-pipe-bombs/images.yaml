@@ -40,3 +40,22 @@
     memorials, no flags. Absolutely no text, no numbers, no labels, no
     logos, no border frame lines. Painterly throughout — obviously a
     painting, never photorealistic, never mistakable for a photograph."
+
+- id: IMG-J6PB-P01
+  role: plate
+  file: /images/cases/january-6-pipe-bombs/plates/camera-602-2021-01-05-200516.png
+  plateNumber: 1
+  alt: "A night security-camera view: bicycle-rack barricades and bollards along a road, a man in a dark hooded jacket standing behind them with a hand raised to his face, and across the road a low fence and a lawn."
+  depicts: "Camera 602 at 8:05:16 p.m. on January 5, 2021, by the recording's own clock: the man Baker's October video follows, behind bicycle-rack barricades near New Jersey and Constitution Avenues NW, a hand raised to his face. This is the moment in the left image of Kyle Seraphin's side-by-side of October 19, 2026 (PIPE-E197). In the file his head is about 10 by 13 pixels: enough to place him here at this time, too few to compare a face. Baker identifies him as Cole; that is not established (PIPE-C031)."
+  mediaType: security-camera still, cropped, each pixel enlarged four times
+  source: commons
+  license: Public domain (U.S. federal government work)
+  credit: U.S. Capitol Police camera 602, from the file the House Administration Subcommittee on Oversight posted on Rumble
+  provenance:
+    photographer: U.S. Capitol Police, camera 602
+    date: 2021-01-05, 20:05:16.6 by the recording's clock
+    sourceUrl: https://rumble.com/v4z2dje-0602uscg00nwdrivenearnj-connw-2021-01-05-20h03min32s640ms.mp4.html
+    originalTitle: 0602USCG00NWDrivenearNJ-ConNW_2021-01-05_20h03min32s640ms.mp4, at 1:44.0 (frame 3,118), a crop of 176 by 132 pixels from (448, 174) of the 854 by 480 frame; the file as downloaded on 2026-10-20, SHA-256 e07d19c4b068adecd8a6ab571e91b6d35c7b6c026dcc469fe5e2c248029657df
+  claimIds:
+    - PIPE-C078
+    - PIPE-C031

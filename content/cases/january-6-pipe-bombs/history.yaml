@@ -111,3 +111,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-20
+  change: "Corrected camera 602's time and added the case's first plate. Camera 602's posted file, downloaded with the founder's permission and hashed, shows the man Baker's video follows from about 8:04:56 to 8:05:30 p.m. by its clock: the video's caption, 8:04:25pm, is about 30 seconds early, and at that time the file shows a different man, carrying a backpack, whom study PIPE-S002 had matched to the clip by its scene (PIPE-C083). PIPE-S004 supersedes PIPE-S002 and PIPE-S005 supersedes PIPE-S001, with the same frozen criteria; PIPE-C073, PIPE-C074 and PIPE-C078 are reworded; PIPE-E155 is corrected; PIPE-E195 to PIPE-E198 are new, among them Kyle Seraphin's side-by-side, whose left image is this moment (PIPE-E197); the evidence that cited the two superseded workpapers now cites their successors. Plate I is the file's frame at 8:05:16 p.m., the man behind bicycle-rack barricades with a hand at his face; his head is about 10 by 13 pixels."
+  reason: "The founder asked whether the left image of Seraphin's side-by-side could be traced to an official camera with a known time and place, and if so placed in the main narrative. Tracing it found the caption error, and that this site's own check of camera 602 had repeated it. No other time, place or finding changes: the man at Peace Circle at 8:01:18 and the phone's sector stand as before."
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-20
+  change: New edition edition-2026-10-20-013838, adopting a new draft assessment 2026-10-20-operator-013838 (its standing waits for the blind panel).
+  reason: "Corrects camera 602's time and adds the case's first plate. Downloaded and read frame by frame, the subcommittee's file for camera 602 shows the man Baker's video follows from about 8:04:56 to 8:05:30 p.m. by its clock: the video's caption, 8:04:25pm, is about 30 seconds early, and at that time the file shows a different man, whom this site's earlier check had matched by the scene (PIPE-C083, PIPE-S004). The frame of him at the bicycle racks, the left image of Kyle Seraphin's side-by-side, is now plate I, placed where the article weighs the identification: his head is about 10 by 13 pixels. PIPE-S004 and PIPE-S005 supersede PIPE-S002 and PIPE-S001; no other time, place or finding changes, and the phone's sector still faces away from him."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

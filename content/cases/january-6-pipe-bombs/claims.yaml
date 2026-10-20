@@ -1089,7 +1089,7 @@
 # ── 2026-10-19, later: what the congressional originals and the two studies add ─────
 
 - id: PIPE-C073
-  statement: All eight Capitol cameras in the October 2026 video — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are among the files the House Administration Subcommittee on Oversight posted on Rumble, and each clip matches the posted file at the moment the video labels it.
+  statement: "All eight Capitol cameras in the October 2026 video — 3192, 794, 3188, 3187, 600, 601, 602 and 940 — are among the files the House Administration Subcommittee on Oversight posted on Rumble, and each clip matches the posted file: seven at the moment the video labels it, camera 602's about 30 seconds after it."
   theme: footage
   rung: observation
   claimType: observation
@@ -1101,7 +1101,7 @@
     date: 2026-10-19
 
 - id: PIPE-C074
-  statement: The times shown in the October 2026 video were added in editing, and each equals the posted file's start time, which the file's name records, plus the time elapsed in the file.
+  statement: The times shown in the October 2026 video were added in editing, and all but camera 602's equal the posted file's start time, which the file's name records, plus the time elapsed in the file, to within a few seconds.
   theme: footage
   rung: observation
   claimType: observation
@@ -1141,7 +1141,7 @@
 
 - id: PIPE-C078
   statement: >-
-    The man the October 2026 video follows is on camera 602's posted file at 8:04:25 p.m. and on camera 940's from about 8:05:23 to 8:05:42 p.m., by the files' recorded times: 53 and 81 seconds after the files begin, at 20:03:32 and 20:04:02.
+    The man the October 2026 video follows is on camera 602's posted file from about 8:04:56 to 8:05:30 p.m. and on camera 940's from about 8:05:23 to 8:05:42 p.m., by the files' recorded times: from about 83 and 81 seconds after the files begin, at 20:03:32 and 20:04:02.
   theme: footage
   rung: observation
   claimType: observation
@@ -1200,3 +1200,17 @@
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-19
+
+# ── 2026-10-20: camera 602's posted file, downloaded and read frame by frame ──
+
+- id: PIPE-C083
+  statement: In the October 2026 video, the clip captioned 8:04:25pm [602] begins in camera 602's posted file about 30 seconds after that time, at about 8:04:55 p.m. by the file's clock; at 8:04:25 the file shows a different man, carrying a backpack, walking the other way along the barricades.
+  theme: footage
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
