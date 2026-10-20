@@ -1476,7 +1476,7 @@
   editorInference: >-
     The right test, done by an interested party: which details came first from Cole, and are they true? The 28 new details are not listed.
   limitations:
-    - "An unpublished count by an advocate for Cole, from a transcript public since September 29, 2026 (ECF No. 102-1); the count has not been checked against it."
+    - "A count published only as a summary, without its list or its method, by an advocate for Cole, from a transcript public since September 29, 2026 (ECF No. 102-1); the count has not been checked against it."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -3181,7 +3181,7 @@
   editorInference: "A fit, not an identification: the words name no street, and a road dividing around a park could describe other places."
   exactLocator: findings
   limitations:
-    - OpenStreetMap is volunteer-edited; the block was not checked against the District's own records.
+    - "OpenStreetMap is volunteer-edited; on October 20 the split was checked against the District's own street centerlines and the Census Bureau's roads, which both show it (PIPE-E193, PIPE-E194). The park's outline is OpenStreetMap's."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
@@ -3270,3 +3270,40 @@
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-19
+
+- id: PIPE-E193
+  title: The Census Bureau's road data has two roadways named D St SE between 2nd and 3rd Streets
+  claimIds:
+    - PIPE-C082
+  sourceId: SRC-PIPE-TIGERWEB-ROADS
+  direction: supports
+  strength: moderate
+  sourceStatement: "The query returns two features, each \"NAME: D St SE MTFCC: S1400\". The second, \"OID: 110431686456 Polyline: [-77.003516, 38.884272] , [-77.003413, 38.884273] , [-77.002042, 38.884274]\", runs at 38.88427 N from 2nd Street SE to 3rd Street SE; in the query's full geometry the first, feature 110431686454, crosses the same block at 38.88506 to 38.88507 N."
+  editorInference: "D Street runs as two roadways along this block, about 88 metres apart, and Folger Park's outline on OpenStreetMap (38.88435 to 38.88499 N) lies between them: the split the study found on OpenStreetMap is in the official data."
+  exactLocator: Local Roads (layer 8), features 110431686454 and 110431686456
+  limitations:
+    - The Census Bureau draws its roads for statistical mapping, not engineering; the park's outline is OpenStreetMap's.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: answering the review of ejhong/erebus#126"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
+- id: PIPE-E194
+  title: The District's own street centerlines show the same two roadways
+  claimIds:
+    - PIPE-C082
+  sourceId: SRC-PIPE-DDOT-CENTERLINES-2015
+  direction: supports
+  strength: moderate
+  sourceStatement: 'The query returns three segments. "ROADWAYSEGID: 5839 Polyline: [-77.003518, 38.88428] , [-77.003513, 38.88428] , [-77.003415, 38.88428]" runs at 38.88428 N from 2nd Street SE to 3rd Street SE; "ROADWAYSEGID: 2423 Polyline: [-77.003519, 38.885071]" and "ROADWAYSEGID: 15457 Polyline: [-77.002875, 38.885071]" together cross the same block at 38.88507 to 38.88508 N, meeting at 77.00288 W.'
+  editorInference: The District's own street layer, one line for each street, draws D Street as two separate roadways along the block, matching the Census Bureau's named roads to within about a metre (PIPE-E193).
+  exactLocator: Street Centerline - 2015 (layer 16), ROADWAYSEGID 5839, 2423 and 15457
+  limitations:
+    - "The layer carries no street names: these are D Street's segments by their position, which matches the Census Bureau's named roads. It is the 2015 edition."
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: answering the review of ejhong/erebus#126"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-20
