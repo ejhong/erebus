@@ -1,0 +1,136 @@
+# Review of #129, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 129
+title: "J6: the November 2025 identification described evenly; answers to #128"
+url: https://github.com/ejhong/erebus/pull/129
+outcome: merged
+outcomeAt: 2026-10-20T02:02:44Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 6bea41cd79d54a69f069d9ae3c4d2d702da887e8
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: living_person (GPT-5.6 Sol (OpenAI))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm:
+          kind: living_person
+          where: "content/cases/january-6-pipe-bombs/editions/edition-2026-10-20-015514.yaml, insider account: “the one report that named a suspect was retracted, and no court has weighed it”"
+          why: PIPE-E199 expressly says the lawsuit’s course after May 21, 2026 was not checked, so the record shown does not support this unqualified present-tense statement about litigation involving living people. Narrow it to what is established—that the default judgment did not weigh the identification—or verify the current docket.
+        notes:
+          - In the edition and related assessments, replace every broad “no court has weighed/tested it” formulation with “the default judgment did not weigh the identification’s evidence” unless the lawsuit’s current docket is checked and cited.
+          - "PIPE-C036: split the retraction, default judgment, and claimed similarity of identification methods into atomic claims. Its well_supported grade presently rests on the retraction but should not automatically carry the methodological comparison or procedural fact."
+          - "PIPE-E109: replace “withdrawn and undefended” with wording that distinguishes the defaulting defendants from Blaze Media, which says it is defending the claims—for example, “retracted from publication and not adjudicated on evidentiary merits.”"
+        summary: The change materially improves the page by retracting its unsupported characterization of the earlier identification as disproved and by accurately explaining the limited significance of a default judgment. It also sharpens the image-resolution description and documents remaining footage checks. One new absolute claim about the civil case outruns the admitted May 2026 cutoff, but the revision is still substantially better overall.
+        cost:
+          inputTokens: 19520
+          outputTokens: 3154
+          usd: 0.14116
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Monitor and update the procedural status of the defamation lawsuit against Blaze Media past the May 2026 HuffPost report as docket records become available.
+          - Follow up on PIPE-R001 by obtaining necessary permissions to download, hash, and inspect the remaining seven subcommittee CCTV files to confirm timestamps.
+        summary: "This change accurately refines the description of the November 2025 identification of a Capitol Police officer, replacing unsupported editorial conclusions like 'collapsed' with the documented facts: the report was retracted, the defamation judgment was by default, and Blaze Media is contesting the claims. It also resolves reviewer notes from the previous round regarding frame pixel measurements and camera viewing methodology without weakening evidential rigor or violating living-person rules."
+        cost:
+          inputTokens: 21469
+          outputTokens: 1024
+          usd: 0.019942
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - In the article near PIPE-C036, tighten 'named a different person' to 'named another person' or 'named a former Capitol Police officer' so it cannot be read as asserting the November identification was erroneous rather than merely of someone other than Cole.
+          - "PIPE-E109 now lists only claimIds: [PIPE-C052]; if the default/retraction still bears on PIPE-C036, add that claimId (or confirm E199 alone is meant to carry C036) so the ledger wiring matches the rewritten grades."
+          - PIPE-E199's May 21, 2026 snapshot is honestly limited; on the next pass check whether Blaze Media's contest or the suit's posture has moved since then and update or leave the limitation.
+        summary: "The change pulls the November 2025 identification back to what the public record shows: the report was retracted, three defendants lost by default without any court weighing the gait evidence, and Blaze Media still contests the claims against it. Overclaims that the identification had 'collapsed' or was a proven past error are removed from E109, C031, C036, C052, the insider account line, and the article, while the person remains unnamed. It also answers the open #128 notes (head size, C083/C078 reasoning, E198 blind-examiner framing, camera-602 permission, R001 for the other seven files). That is a clear accuracy and fairness gain with nothing true dropped."
+        cost:
+          inputTokens: 20084
+          outputTokens: 321
+          usd: 0.042209
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "C036/article wording on the default judgment: a clause on the legal effect would help. 'No court has weighed its evidence' is accurate as to evidence, but by defaulting, the defendants admitted the complaint's well-pleaded allegations for purposes of liability — so the judgment is not wholly neutral either, and one clause ('a default admits the complaint's allegations without an evidentiary hearing') would stop a reader from over-reading the correction in either direction."
+          - SRC-PIPE-CCTV-0602's verificationNote asserts the download permission is 'recorded in the case history for that day' — a provenance cross-reference the diff summary does not let me see. Confirm the history.yaml entry actually exists and is findable before merge; if it does not, that note would itself be a fabricated locator.
+          - SRC-PIPE-CCTV-0602 records only that the Internet Archive could not save the page (error 520). Gemini suggested archive.today, a different service; attempting it and recording the outcome (success or failure) would close that review point and give the unlisted Rumble page a second preservation route.
+        summary: "This change corrects the site's own overstatement about the November 2025 gait identification — 'collapsed', 'the wrong person', 'a method's past error' — into what the record shows: a retracted report, a default judgment entered without weighing the identification's evidence, and a publisher contesting the claims, all properly attributed and without naming the officer. It adds the new E199 context, tempers E109 to weak, and answers six review points from #128 (head size, C083's evidentiary basis, C078's viewing method, the download permission, R001's scope). The correction is fairer to the insider hypothesis as a serious alternative while keeping the retraction and default stated, the grades are held where the evidence shown supports them, and the living-persons discipline is maintained. I can point to no harm; the remaining items are improvement notes."
+        cost:
+          inputTokens: 20909
+          outputTokens: 3496
+          usd: 0.004884
+  - commit: 3892ddd90a5012b9ec735feef8154480c297b04c
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-C036 and the linked article passage: split the retraction, default judgment, and alleged similarity of identification methods into separate claims. The record shown establishes the first two, but does not clearly establish that the earlier forensic-gait claim and the current family/clothing/face identification are “the same way” of identifying someone; do not let C036’s well_supported grade cover that comparison without further evidence."
+          - "PIPE-E075, PIPE-E109, and PIPE-E199: check the defamation suit’s current docket and replace the journalistic account of the default with the complaint, default order, and any later Blaze Media filings as primary sources, preserving the distinction between the defaulting defendants and the contesting publisher."
+          - "PIPE-R001: with the required permissions, download, hash, and compare the remaining seven CCTV files frame by frame, then pursue shared events or absolute anchors that can measure the relevant camera-clock offsets."
+        summary: The change removes unsupported implications that the November 2025 identification was proven wrong or had “collapsed,” accurately limits the default judgment to its procedural effect, and records that Blaze Media contested the claims against it. It also improves the frame-size description and clarifies the basis and limits of several footage findings. These revisions make the account more accurate and even-handed without losing established facts, although PIPE-C036 still combines propositions that should be separated.
+        cost:
+          inputTokens: 15143
+          outputTokens: 1843
+          usd: 0.100102
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Check and cite the federal court docket for the defamation lawsuit past May 2026 on a subsequent pass to track Blaze Media's contest and verify whether any evidentiary hearings or merits decisions occurred.
+          - "PIPE-C036: consider separating the factual retraction/default judgment from the methodological critique of eye-matched gait analysis into atomic claims, so evidentiary support for the procedural outcome does not automatically carry the methodological rung."
+          - "PIPE-R001: seek permission to download, hash, and inspect the remaining seven subcommittee CCTV files to confirm timestamps across all cameras rather than relying on browser-based viewing."
+        summary: "This revision satisfactorily resolves the previous living-person hold by narrowing all statements about the November 2025 gait identification to what the cited May 2026 record establishes: that Blaze Media retracted the report, three defendants defaulted without the court weighing evidence, and Blaze Media continues to contest the lawsuit. It also incorporates reviewer notes clarifying head-pixel dimensions, the legal nature of default judgments, and the basis for CCTV analysis. The change leaves the site more precise, balanced, and faithful to its provenance standards."
+        cost:
+          inputTokens: 24093
+          outputTokens: 1395
+          usd: 0.023301
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - Check the defamation suit’s docket after the May 21, 2026 HuffPost snapshot (PIPE-E199’s stated limitation) and update the article, accounts line, and E199 if the posture has moved.
+          - Split PIPE-C036 into atomic claims (retraction; default without evidentiary hearing; claimed likeness of identification method) so the well_supported grade does not silently carry the methodological comparison.
+          - On the next permitted pass, download, hash, and frame-match the other seven subcommittee files under PIPE-R001, each with recorded founder permission.
+        summary: "This change rewrites the November 2025 gait identification, related claims (C031, C036, C052), E075/E109, and the article/accounts so they state only what the record shows: a retracted report and a default judgment that did not weigh the identification, while Blaze Media contests (new E199). It answers the prior living_person hold by dropping unqualified “no court has weighed it” language, softens overclaims (“collapsed,” “wrong person,” “different person”), and folds in the #128 fixes on head size, C083, E198, camera 940, and download provenance. The site is clearer and fairer to the living person and the contested insider hypothesis without losing true material."
+        cost:
+          inputTokens: 22475
+          outputTokens: 290
+          usd: 0.046805
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "Split PIPE-C036 into atomic claims on the next pass (GPT's round-1 note, still open): the retraction by the publisher, the entry of the default judgment, and the claim that the October identification uses the same method are three propositions with different truth conditions, and the article currently renders them as one bracketed claim carrying the default-judgment clause."
+          - The May 21, 2026 snapshot in PIPE-E199 is honestly limited, but the suit's course since then is the one remaining way the site could over- or under-state this again; check the docket (Gemini, Grok) before any future wording that says affirmatively whether any court has since weighed or will weigh the identification's evidence.
+          - In 'Baker's other points', the new sentence 'the evidence he says he has is unreleased' is fair but leaves the reader without what the unreleased evidence is said to be; the record (PIPE-E075) shows the retracted reports claimed a 'forensic gait analysis' match sourced to unnamed sources — one clause attributing that claim to the report would make the basis of Baker's insider assertion concrete.
+        summary: "This change answers the round-1 living_person hold by narrowing every 'no court has weighed/tested it' formulation to what the record shows — that the default judgment did not weigh the identification's evidence — and applies the same narrowing to the accounts line, the insider note, C052's diagnosticity and E109, while E199 adds the record's own statement that Blaze Media contests the claims. It also takes the round's smaller corrections: 'another person' for 'a different person', the head's size as the plate and E198 give it, E109 separating the defaulting defendants from Blaze Media, and a clause on a default's legal effect stated both ways. Nothing true is lost; the site's earlier 'collapsed' and 'wrong person' language, which the record did not carry, is replaced with attributed, checked wording, so the page is more accurate and fairer to the insider account while staying unresolved."
+        cost:
+          inputTokens: 23268
+          outputTokens: 2196
+          usd: 0.004588
+harvestedAt: 2026-10-20T12:57:59.964Z

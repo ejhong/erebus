@@ -1907,3 +1907,174 @@
     extractedBy: "Claude Fable 5.1 (Claude Code session session_01AiXD4y5Y91KC7iM3uBhWmu)"
     runId: "2026-09-10-study-krk-s006-collect"
     date: "2026-09-10"
+
+# ── the bindover and after (session 2026-10-20-session-site-124306) ─────
+
+- id: KRK-E068
+  title: "The bindover order, as quoted: a shot from an elevated position about 415 feet away and 68 feet up, the bullet travelling front to back and downward, no exit"
+  claimIds: [KRK-C018]
+  sourceId: SRC-FOX-BINDOVER-ORDER-2026
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    Fox News quotes the court's written bindover order: "Second, the
+    physical evidence establishes that the shot was fired from an elevated
+    position approximately 415 feet from the canopy and 68 feet above it,
+    and that the bullet traveled anatomically from front to back and
+    downward after striking Mr. Kirk." The article reports, in its own
+    words, that because the bullet did not exit, the judge did not "assign
+    a quantitative probability" of ricochet or over-penetration. The order
+    also says the evidence was weighed "Viewed favorably to the State" and
+    finds a reasonable inference only "at the preliminary-hearing stage".
+  editorInference: >-
+    The court's reading of the preliminary-hearing record states the wound
+    track in a court's own words: front to back and
+    downward, from a position 68 feet above the canopy (a descent of about
+    nine degrees over 415 feet, computed here, not stated by the court).
+    That is the track a shot from the Losee Center roof predicts, and a
+    device at the microphone does not predict it without further steps —
+    so it weighs against KRK-C018. It is weak because it is a judge's
+    summary, at a standard that favors the state, of a medical-examiner
+    report that entered through an investigator and is still not public
+    (KRK-C006, KRK-C007); it is not an independent pathologist's reading.
+    The height also supplies the elevation that study KRK-S006 recorded as
+    not found (its scenario S3), though the study itself is unchanged.
+  exactLocator: "Fox News, September 3, 2026, the paragraphs quoting the order's 'second' ground and its 'viewed favorably to the State' passage"
+  limitations:
+    - "The order's words as a reporter transcribed them; the order itself was not read (KRK-R015)."
+    - "A probable-cause order describes what the evidence permits viewed in the state's favour; it is not a finding at trial, and the defense's position on the trajectory is not reported."
+    - "The underlying wound-track measurements, radiology and photographs remain unreleased; the court's summary does not make them auditable."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (bindover order)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
+    runId: "2026-10-20-session-site-124306"
+    date: "2026-10-20"
+
+- id: KRK-E069
+  title: "Bound over on all seven counts at the probable-cause standard; not-guilty pleas entered the same day"
+  claimIds: [KRK-C008, KRK-C009]
+  sourceId: SRC-CHN-BINDOVER-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    Courthouse News reports that the judge "found enough evidence to bind
+    over all seven charges Robinson faces" and, reading his ruling, said:
+    "The state’s evidence of identity is substantial". It reports that
+    "After hearing the decision, Robinson pleaded not guilty to all his
+    charges."
+  editorInference: >-
+    A court has now found the state's preliminary-hearing evidence —
+    including the DNA association (KRK-C008) and the attributed statements
+    (KRK-C009) — sufficient for trial at the probable-cause standard. That
+    is a low standard, applied with the evidence read in the state's
+    favour (KRK-E070), after cross-examination but before any ruling on
+    admissibility at trial. It changes the procedural posture, not the
+    grade of either claim: neither the DNA data nor the native digital
+    extractions have been independently examined in public. No court has
+    decided the charges, and Robinson is presumed innocent.
+  exactLocator: "Courthouse News, September 1, 2026, opening paragraphs on the ruling and the plea"
+  limitations:
+    - "Courtroom reporting of an oral ruling; the written order was not read (KRK-R015)."
+    - "A bindover decides nothing about guilt; the defense argued that much of the state's evidence is hearsay that will be inadmissible at trial."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (bindover ruling)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
+    runId: "2026-10-20-session-site-124306"
+    date: "2026-10-20"
+
+- id: KRK-E070
+  title: "The court's caveat: the bindover was for the preliminary hearing only, with all evidence viewed in the prosecution's favour"
+  claimIds: [KRK-C008, KRK-C009]
+  sourceId: SRC-KSL-BINDOVER-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    KSL reports: "Graf emphasized that his ruling was for the purpose of
+    the preliminary hearing only, during which all evidence was viewed in
+    a light favoring the prosecution." It also reports that the defense
+    "called three forensic experts from the FBI and ATF to testify in an
+    attempt to cast doubt on the reliability of DNA testing, arguing that
+    test results are subjective" and "argued that much of the evidence the
+    state presented is hearsay and will be inadmissible at trial." The
+    next step "will be a pre-trial conference, which was scheduled for
+    Oct. 23."
+  editorInference: >-
+    The judge's own limit on what the bindover means, and the defense's
+    two lines of attack on the evidence it rested on: the subjectivity of
+    DNA interpretation (KRK-C008) and the admissibility of much of the
+    rest (KRK-C009). Both are open until trial.
+  exactLocator: "KSL.com, September 1, 2026, paragraphs on the ruling's scope and on the July hearing"
+  limitations:
+    - "Reporting, not the order or the transcript; the defense's experts' testimony is summarized, not quoted."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (bindover ruling)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
+    runId: "2026-10-20-session-site-124306"
+    date: "2026-10-20"
+
+- id: KRK-E071
+  title: "Defense status report: 12.1 terabytes of digital forensic data received in March 2026, still requiring forensic processing before review"
+  claimIds: [KRK-C019]
+  sourceId: SRC-KSL-BINDOVER-2026
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    KSL quotes the defense's post-preliminary-hearing status report:
+    "The discovery produced in this matter includes a substantial volume
+    of digital evidence that requires forensic processing before
+    substantive review can be completed. Specifically, on March 13, the
+    defense received a hard drive containing approximately 12.1 terabytes
+    of digital forensic data, with 6,425 folders and 613,023 files. This
+    production includes extractions of six mobile devices, fourteen
+    forensic images of computer hard drives, and seven warrant returns or
+    account records produced by third-party service providers."
+  editorInference: >-
+    The digital record behind the attributed statements and the timeline
+    sits in discovery, not in public, and at the end of August 2026 even
+    the one party outside the prosecution with access to it said its
+    review was not complete. That is one more measure of how far the
+    public record is from what an independent audit would need
+    (KRK-C019). It is also ordinary for a capital case before trial, and
+    it says nothing about what the data show.
+  exactLocator: "KSL.com, September 1, 2026, closing paragraphs on the defense's status report"
+  limitations:
+    - "A party's filing, as quoted by a reporter; the defense has an interest in describing discovery as burdensome when asking for time."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (defense status report)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
+    runId: "2026-10-20-session-site-124306"
+    date: "2026-10-20"
+
+- id: KRK-E072
+  title: "No trial date yet: the court's scheduling order asks for trial-preparation estimates by October 21 for an October 23, 2026 conference"
+  claimIds: [KRK-C019]
+  sourceId: SRC-KSL-SCHEDULING-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    KSL reports that the judge "issued an order late last week for
+    prosecutors and defense attorneys to be prepared during the upcoming
+    Oct. 23 hearing to set up a timeline for Robinson's case", with
+    memorandums due "no later than Oct. 21", and quotes the order: "At the
+    Oct. 23 hearing, the court will consider the proposed trial dates,
+    preparation periods, pretrial deadlines, anticipated trial length, and
+    number of alternate jurors."
+  editorInference: >-
+    As of the edition's date no trial date has been set. The trial is
+    where the withheld packages this case tracks — the autopsy record, the
+    fragment inventory, the original media — would be expected to be
+    tested in public, so their release is not imminent on the court's
+    calendar. Procedural status last checked 2026-10-20.
+  exactLocator: "KSL.com, October 5, 2026, paragraphs describing the scheduling order"
+  limitations:
+    - "Reporting of an order not itself read; the October 23 hearing had not taken place when this record was written."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (scheduling order)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
+    runId: "2026-10-20-session-site-124306"
+    date: "2026-10-20"

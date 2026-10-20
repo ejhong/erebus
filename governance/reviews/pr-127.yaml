@@ -1,0 +1,61 @@
+# Review of #127, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 127
+title: "J6: answer the review of #126; the parking block on official data"
+url: https://github.com/ejhong/erebus/pull/127
+outcome: merged
+outcomeAt: 2026-10-20T00:35:28Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 3cb20891ff4cbc8f91bc61b9ce37793393b92a07
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: publish
+    reason: 3 of 3 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-E187, PIPE-E193, and PIPE-E194: record whether these cartographic sources are independent or place them in one independence group; TIGER and OpenStreetMap may derive road geometry from District data, and all three corroborate the same geographic observation."
+          - "PIPE-C082: split the official-data observation that D Street has two roadways from the interpretive claim that Cole's description fits this location and from the prosecution's account of where he later said he parked. Link E193/E194 to the narrower geographic claim and make C082 depend on it."
+          - "SRC-PIPE-TIGERWEB-ROADS and SRC-PIPE-DDOT-CENTERLINES-2015: preserve or link the exact JSON responses, ideally with hashes or repository snapshots. The recorded HTML exposes only initial vertices, while the findings depend on full geometry from mutable public endpoints."
+        summary: The change strengthens the parking-location comparison with two official geospatial datasets and more clearly distinguishes transcript language, agent-supplied details, and the study's interpretation. It also corrects the edition date and accurately clarifies that the later confession pages are public but not yet read by the site. These are modest but useful evidentiary and wording improvements without changing the overall assessment or losing important qualifications.
+        cost:
+          inputTokens: 20075
+          outputTokens: 3460
+          usd: 0.1495
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In PIPE-E193 and PIPE-E194, Folger Park's geometry is still referenced to OpenStreetMap; checking against the District's official Parks or Property boundaries layer (Open Data DC) would make the verification fully official.
+          - Proceed with the planned pre-registered study (R003) for reading transcript pages 103 onward to resolve the confession details noted in PIPE-C039.
+        summary: "This change directly addresses reviewer feedback from PR #126 by corroborating OpenStreetMap data with Census TIGERweb and DDOT GIS datasets, classifying PIPE-C079 as interpretive, and quoting Cole's interview verbatim in PIPE-C081. It also resolves tension between PIPE-C080 and PIPE-C081 and accurately characterizes the transcript pages yet to be read in the narrative."
+        cost:
+          inputTokens: 22244
+          outputTokens: 1126
+          usd: 0.020906
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - PIPE-C082's claim statement is unchanged while E187/E193/E194 now carry the official-data check; either fold the TIGER/DDOT confirmation into C082's statement or add an explicit depends_on/refines link so the claim surface matches the evidence ledger.
+          - E194's limitation already notes the unnamed 2015 centerlines; add one sentence on whether a current DDOT/centerline layer was queried and found the same split, or state that only the 2015 edition was checked.
+          - Article C039 now correctly flags unread transcript pages; mirror that same standard on any remaining confession-detail claims that still rest on prosecution paraphrase pending the R003 freeze.
+        summary: "The change answers the #126 review by grounding the Folger Park / D Street SE parking split in Census TIGER and DDOT centerline data (E193, E194), tightening C079–C081 and E084 wording, and dating the S003 section and the unread-confession caveat. Those fixes make the parking fit better evidenced, the interview claims fairer and more precise, and the article more consistent with the site's evidence standard, without dropping anything true. No publication harm is present."
+        cost:
+          inputTokens: 20673
+          outputTokens: 267
+          usd: 0.043063
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        failure: "venice: no response within Node's five-minute window (Headers Timeout Error); not retried — the vendor had the request and it was probably billed"
+harvestedAt: 2026-10-20T12:57:59.964Z

@@ -1,0 +1,135 @@
+# Review of #125, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 125
+title: "Pre-register PIPE-S003: Cole's first account against the October footage"
+url: https://github.com/ejhong/erebus/pull/125
+outcome: merged
+outcomeAt: 2026-10-19T23:11:01Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 283be8e6a2b55a59fefb8bef081aa0357382fc3e
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: living_person (GPT-5.6 Sol (OpenAI))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: worse
+        harm:
+          kind: living_person
+          where: content/cases/january-6-pipe-bombs/studies/pipe-s003.yaml — the question’s phrase “before he confessed”
+          why: This states a charged living person’s confession as fact, although the change says the scan has not yet been read and locates an “admission” only through the motion’s description. Attribute it to the filing until the transcript’s exact words have been extracted and assessed.
+        notes:
+          - In `pipe-s003.yaml`, replace “before he confessed” and other unqualified references to “the admission” with wording such as “before the point the motion describes as an admission (Tr. 93),” pending direct transcription.
+          - "Freeze a complete decision rule before collection: define explicit outcomes for man, affidavit-described route, both, and neither; specify aggregation thresholds and conflicts; and treat details not observable in the six-minute footage as unavailable rather than as fits."
+          - For the known-candidate section, provide source-record IDs and exact locators for Baker’s images and Armitas’s remark. Also state that place overlap receives no independent diagnostic weight because PIPE-S002 was reportedly discovered by searching locations suggested by the account.
+        summary: The change usefully attempts to preregister a potentially informative comparison and acknowledges selection effects and agent-supplied details. However, it presents a living person’s alleged confession as fact despite relying at this stage on a filing’s description of an unread transcript, and its outcome rules remain under-specified enough to permit hindsight during collection. In its present form, those defects outweigh the value of the freeze.
+        cost:
+          inputTokens: 7538
+          outputTokens: 2926
+          usd: 0.088672
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In the subsequent collection pass for content/cases/january-6-pipe-bombs/studies/pipe-s003.yaml, ensure page and line numbering strictly reflect the stamped transcript headers in ECF 102-1 to maintain verbatim auditability.
+          - When coding agent prompting versus Cole's unprompted statements, explicitly capture instances where agents name landmarks, times, or routes before Cole responds.
+        summary: This change introduces the pre-registration study file PIPE-S003, freezing the operational definitions, comparison baselines, and predictive criteria for evaluating Brian Cole Jr.'s pre-admission interview transcript against Capitol security footage before data extraction begins. This directly adheres to the epistemic rule requiring audit criteria to be frozen prior to broad collection (AGENTS.md §3.12). It leaves the site better by ensuring a rigorous, unbiased methodology for forthcoming primary-source analysis.
+        cost:
+          inputTokens: 8002
+          outputTokens: 750
+          usd: 0.008814
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - In the study file, state explicitly that Tr. page/line locators and the admission-at-Tr.-93 bound are taken from the motion’s citations until the 161-page scan is re-read as text, so the freeze does not quietly treat secondary locators as primary.
+          - Spell out the operational rule for ‘agent first named it’ (exact prior agent utterance on the transcript) so coding cannot drift when collection starts.
+          - On the study page or in the frozen criteria, one line that PIPE-S002’s camera/time/clothing standard and the affidavit’s SE path are inputs already fixed by prior work would make the two-standards design auditable without opening those files.
+        summary: "The change pre-registers PIPE-S003 only: frozen read scope, two fixed comparison standards, specific/generic coding, predictions, exclusions, and known candidates, with zero evidence rows and collection deferred. That is proper §3.12 hygiene and sharpens a real crux (first account vs NW footage vs sworn SE bomber path) without touching case judgments or living-person claims beyond the public transcript frame. It leaves the site better as a research map; nothing true is lost and publication causes none of the listed harms."
+        cost:
+          inputTokens: 7691
+          outputTokens: 272
+          usd: 0.017129
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "The framing section states 'before he confessed' as fact. Under the living-persons rules even framing text should attribute: rewrite as 'before the admission the motion places at Tr. 93' or 'before, per ECF 17, he admitted…'. The record may well support it, but the pre-registration should model the attribution discipline the collection rows will enforce."
+          - "Pre-register the grading of mixed statements now: a remark like 'walked around the Capitol for about an hour' is both generic and specific. Say whether such a statement is split into rows, or graded by its most specific component, and say who grades (operator draft, panel-blind?). Leaving specific/generic to post-hoc judgment on a scan-only transcript is the largest discretion left open in an otherwise tight freeze."
+          - "The prediction space has an unpreregistered gap: the man in PIPE-S002's rows moves on the north-west side while the affidavit swears the bomber to the south-east, so Cole's account could fit the man while conflicting with the affidavit's bomber timeline (or vice versa). State explicitly how that outcome is reported — it is arguably the most diagnostic result the study can produce and should not be improvised at collection time. Also note that line-level Tr. locators on a 161-page scan with no text layer should carry an unverified label until checked against the scan images."
+        summary: "This change adds only a pre-registration file: frozen inclusion criteria, two fixed comparison standards, a specific/generic grading rule, directional predictions, and exclusions for the future collection on PIPE-S003, with zero rows and no change to case records. It follows §3.12, honestly lists what was known before the freeze, and flags the built-in place-fit bias of the search rather than hiding it. Nothing is asserted that the cited records do not carry, and the study sharpens what would settle the question; it leaves the site better. Remaining work — grading discretion, the fit-man-vs-affidavit outcome, and attributed framing — goes in the notes."
+        cost:
+          inputTokens: 952
+          outputTokens: 2080
+          usd: 0.002335
+  - commit: 1805119634a7f665b211ce67b5ce02f016776254
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - In `content/cases/january-6-pipe-bombs/studies/pipe-s003.yaml`, preserve and report all nine combinations of the two three-state judgments. Do not report `undecided` for both standards as “fitting both”; reserve that conclusion for `describes/describes`, and state mixed outcomes literally.
+          - In the decision rule, freeze how each detail becomes a fit, conflict, or not-observable result, including tolerances for approximate times and places, uncertain wording, partial clothing matches, and internally inconsistent statements. Otherwise the decisive row coding remains open to post-collection discretion.
+          - In the row criteria, include the actual frozen definitions of `specific` and `generic` rather than merely saying they are fixed, and clarify explicitly that place/time can conflict with the PIPE-S002 man even though matching place/time cannot support that comparison. adjoining wording currently makes that asymmetry easy to miss.
+        summary: The change adds a transparent, zero-row pre-registration for comparing Cole’s pre-admission account with two already specified movement standards, while addressing the earlier unsupported confession wording and several methodological gaps. This is a useful guide to research and therefore leaves the site better, but its outcome mapping still conflates absence of a decision with a positive fit and its row-level matching rules need tighter operational definitions.
+        cost:
+          inputTokens: 8676
+          outputTokens: 1675
+          usd: 0.068204
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - During collection, ensure each extracted row explicitly records the verified scan image line/page coordinates from ECF 102-1 rather than relying solely on advocate briefs.
+          - When coding whether an agent first introduced a detail, document the exact prior transcript locator where the agent spoke the term to allow audit of the agent-prompting rule.
+        summary: This change pre-registers PIPE-S003 to compare Brian Cole Jr.'s pre-admission statements from the suppression hearing transcript scan against the footage and the sworn affidavit timeline. It directly resolves the living_person harm flagged in round 1 by removing 'before he confessed' and attributing the admission point to the parties' filings, while completing the decision rules and aggregation criteria per reviewer notes.
+        cost:
+          inputTokens: 9221
+          outputTokens: 641
+          usd: 0.009319
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - In pipe-s003.yaml, state explicitly that Tr. page/line locators remain unverified against the scan images until collection (the freeze may still lean on the motion’s Tr. 93 cite only as a discovery pointer, not as a verified bound).
+          - Add one line that specific/generic grades and agent-first coding are operator drafts shown beside each passage and carry no standing until a later multi-model check, so the freeze does not quietly settle those judgments.
+          - In the known-candidates block, give Baker’s four transcript-image locators at the same granularity already used for ECF17 and Armitas (image/post identifiers), not only the source id.
+        summary: "This change pre-registers PIPE-S003 only: frozen reading bound, row rules, two standards, decision rule, and exclusions, with no collection yet. The prior living_person harm is answered by dropping “before he confessed” and framing the bound as the point both sides describe as an admission, defined by the event rather than as a proven confession. The freeze is tighter and fairer than the prior draft, leaves the site better for a reader, and causes no publication harm."
+        cost:
+          inputTokens: 8853
+          outputTokens: 259
+          usd: 0.019375
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "The outcome space is incomplete: with three states per standard there are nine combinations, but only four are mapped ('describes/conflicts' both directions, 'describes both or undecided both', 'conflicts both'). Combinations like 'conflicts with the man, undecided on the bomber' have no assigned reporting, which is exactly the improvisation a freeze exists to prevent. Also, reporting 'undecided on both' as 'fitting both' reads as a positive result; report it as non-discriminating instead."
+          - "'Graded specific or generic by fixed definitions' asserts fixed definitions but the change does not show them; confirm the actual definitions (what makes a place, time, garment or act 'specific') are written into pipe-s003.yaml and bound by the hash, and consider having the operator's specific/generic and conflict grades checked panel-blind at collection, since the most diagnostic outcome rests entirely on those calls."
+          - The phrase 'while denying the charge' in the question remains the site's own characterization of Cole's interview conduct; the motion-to-suppress posture supports it, but state in the criteria that at collection the pre-bound portion will be confirmed from the scan (or attributed to the motion's description) before any page text repeats it unqualified.
+        summary: "The change pre-registers PIPE-S003 with zero rows: a frozen question, bound, agent-first rule, fixed decision rule, exclusions, and named known candidates, answering the round-1 living_person hold by attributing the admission point to both sides and setting the bound by the scan rather than the motion's citation. The round-1 notes (decision rule completeness, unobservable details, place/time down-weighting, grader identity, locators from the scan) are each addressed. Verdict better: it adds a falsifiable, versioned test with nothing lost; the remaining gaps are in the outcome-pair mapping and the unstated grading definitions, which are next-pass work."
+        cost:
+          inputTokens: 9776
+          outputTokens: 4221
+          usd: 0.003577
+harvestedAt: 2026-10-20T12:57:59.964Z

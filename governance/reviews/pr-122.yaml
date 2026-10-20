@@ -1,0 +1,70 @@
+# Review of #122, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 122
+title: "Cover art candidates: january-6-pipe-bombs"
+url: https://github.com/ejhong/erebus/pull/122
+outcome: merged
+outcomeAt: 2026-10-19T21:03:37Z
+cases: []
+rounds:
+  - commit: 7f8ed5c3ef538a77c8b991b592abfc376e9263e7
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 3 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: no_better
+        harm: null
+        notes:
+          - "Complete the cover workflow before merging: select a candidate, create `public/images/cases/january-6-pipe-bombs/cover.jpg`, remove the candidate PNGs, add the finished `content/cases/january-6-pipe-bombs/images.yaml` record with meaningful alt text and verified generation metadata, and remove `art-notes.txt`."
+          - "Resolve the prompt contradiction in `art-notes.txt` and `scripts/generate-case-art.mjs`: the plat requests “numbered squares” and candidate 1 reportedly contains lot numbers, while the prompt categorically forbids numbers. Specify unlabeled block and lot-line geometry if labels are not intended."
+          - In the final image metadata, describe the lower layer as a stylized or ghosted plat rather than implying that AI-generated geometry reproduces an actual surveyed block layout.
+        summary: The change usefully adds the January 6 case’s art subject and palette to the generator and documentation, while also restoring Pizzagate’s missing documentation row. However, it leaves only orphaned candidate assets and a TODO metadata skeleton rather than a usable, registered cover, so the modest configuration gain does not yet make the published site better overall.
+        cost:
+          inputTokens: 8890
+          outputTokens: 1763
+          usd: 0.07082
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Candidate 3 fulfills the visual register of AGENTS.md §7 especially well with its clear archival plat transition; ensure candidate files and art-notes.txt are cleaned up once the selection is converted to cover.jpg.
+          - Ensure the forthcoming content/cases/january-6-pipe-bombs/images.yaml entry includes precise alt text describing the gouache style and plat motifs per accessibility guidelines.
+        summary: This change introduces three cover art candidates for the January 6 pipe bombs case, generated in adherence to the site's quiet, architectural house style. It also keeps docs/IMAGES.md and scripts/generate-case-art.mjs in sync with case palettes and subjects without violating any epistemic or safety rules.
+        cost:
+          inputTokens: 9509
+          outputTokens: 668
+          usd: 0.009637
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "Pick a winner in-thread (3 matches the house brief best on the operator’s description—clearest dome, archival plat, warm windows; 2 if you want the quieter register) and finish the listed steps: cover.jpg, drop candidates/, images.yaml with real alt text from art-notes.txt."
+          - "Align the no-numbers rule: art-notes.txt prompt forbids numbers/labels, but CASE_SUBJECTS and candidate 1 use numbered lots—either allow plat lot numbers consistently with other cases or regenerate without them."
+          - Do not leave art-notes.txt or public/.../candidates/ on the main branch after merge; they are process scaffolding, not site content.
+        summary: "The change adds house-style cover candidates and the subject/palette commit for january-6-pipe-bombs (place at winter dusk, blocks-only plat with no disputed route), fills the missing pizzagate row in IMAGES.md, and wires CASE_TONES/CASE_SUBJECTS. That matches docs/IMAGES.md and avoids depicting the event or contested paths, so the site is better set up for this case’s cover. No publication harm: no living-person claims, no fabricated records, no check weakening. Finish by choosing one image and removing the temporary candidates and notes."
+        cost:
+          inputTokens: 9138
+          outputTokens: 283
+          usd: 0.020089
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "art-notes.txt: the prompt contradicts itself — the plat is described as having 'numbered squares and lot lines' while the closing line forbids 'Absolutely no text, no numbers'. Candidate 1 reportedly shows lot numbers, so the generator clearly did not honor the ban. Before writing the final images.yaml entry, record the prompt exactly as used for the winning run and reconcile this wording, so the stored provenance matches the artifact."
+          - "art-notes.txt: the alt text is a TODO and the runId ('cover-style-e2-2026-10-19') is a placeholder — both must be filled with the real description and the actual generation run's id before the images.yaml entry merges, not after."
+          - "public/images/cases/january-6-pipe-bombs/candidates/: the three candidate PNGs will ship in the static export (everything under public/ is served) until the finishing pass deletes them; do the winner-selection, conversion and candidate removal in the immediately following commit so the interim bloat and an unreferenced images.yaml state don't linger."
+        summary: "This PR prepares the cover for the january-6-pipe-bombs case: three house-style candidates, the tone/subject added to generate-case-art.mjs, and the style table in docs/IMAGES.md brought in sync (including Pizzagate's missing row). The subject choice is careful — the place at an hour, nothing of the event, and a plat of blocks' geometry only because the route itself is in dispute, which respects the evidential caution the case requires. Nothing publishes to readers yet (no images.yaml entry, so the candidates are unreferenced), the doc and script stay consistent, and no check is weakened; the remaining work is the finishing pass the PR itself schedules. Better, with the provenance-hygiene notes above for that pass."
+        cost:
+          inputTokens: 10000
+          outputTokens: 1127
+          usd: 0.002063
+harvestedAt: 2026-10-20T12:57:59.964Z

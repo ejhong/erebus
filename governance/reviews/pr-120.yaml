@@ -1,0 +1,15 @@
+# Review of #120, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 120
+title: "Site rules: official accounts are claims too"
+url: https://github.com/ejhong/erebus/pull/120
+outcome: merged
+outcomeAt: 2026-10-19T19:56:08Z
+cases: []
+rounds:
+  - commit: 461594b078b9325974e7b1c8d0116e4d4aeb1ee2
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: founder_files (the mechanical check)"
+    seats: []
+harvestedAt: 2026-10-20T12:57:59.964Z

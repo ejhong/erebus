@@ -1,0 +1,15 @@
+# Review of #130, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 130
+title: "Budget: end October's crunch early, by the founder's direction"
+url: https://github.com/ejhong/erebus/pull/130
+outcome: merged
+outcomeAt: 2026-10-20T02:22:33Z
+cases: []
+rounds:
+  - commit: 775656a4bd15520542612ede14cae691b9dad80c
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: founder_files (the mechanical check)"
+    seats: []
+harvestedAt: 2026-10-20T12:57:59.964Z

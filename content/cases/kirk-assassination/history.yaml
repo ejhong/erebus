@@ -200,3 +200,12 @@
   actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
   aiAssisted: true
   kind: housekeeping
+
+- date: 2026-10-20
+  change: New edition edition-2026-10-20-125551, adopting a new draft assessment 2026-10-20-operator-125551 (its standing waits for the blind panel).
+  reason: Brings the case up to date with its proceeding. The article still said that Robinson had not entered a plea and that probable-cause arguments "will" be heard on September 1, 2026; on that day the judge bound the case over on all seven counts and Robinson pleaded not guilty, and an October scheduling order asks both sides for trial-date proposals at an October 23 conference. The article now states the charges, the court, the case number and the status with the date last checked (KRK-E069, KRK-E070, KRK-E072); adds the written bindover order's description, as a press report quotes it, of an elevated shot and a front-to-back, downward wound track (KRK-E068), with its limits; and adds the defense's report that the digital discovery still needed forensic processing (KRK-E071). It states the accounts side by side for the first time. To stay within the reader's budget, the method paragraph, the four base-rate passages, the pressure, custody and organized-operation passages and the closing are shortened without changing what they report, and study and research-item ids are taken out of the prose. The new assessment keeps every verdict and updates the reasoning these records touch.
+  actor: operator (claude-opus-5-5), session 2026-10-20-session-site-124306
+  runId: 2026-10-20-session-site-124306
+  promptVersion: charter@416566b
+  aiAssisted: true
+  kind: content

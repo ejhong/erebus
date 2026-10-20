@@ -1,0 +1,71 @@
+# Review of #126, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 126
+title: "PIPE-S003 collected: Cole's first account against the footage"
+url: https://github.com/ejhong/erebus/pull/126
+outcome: merged
+outcomeAt: 2026-10-20T00:14:52Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: f69fa97aa5af97a6365826a78f48dd97d5bd3fc0
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "In PIPE-C080 and the corresponding article bullet, replace “he had said none of these himself” with narrower wording: he had not named the RNC, DNC, Folger Park, the hours, or the shoes, but had already supplied the generic parking description recorded in PIPE-C081. This avoids seeming to contradict the next bullet."
+          - In PIPE-E084, change “An unpublished count” to “A published summary count whose underlying list and method are unpublished”; the source statement shows that the figure itself was published.
+          - Reclassify PIPE-C079 as interpretive, or state explicitly in the claim that this is the result under PIPE-S003’s frozen coding rule. “Fits … no better” is a comparative study judgment rather than a direct transcript observation.
+        summary: The change adds a preregistered reading of Cole’s now-public interview transcript, corrects prior statements that the transcript was unavailable, and distinguishes details supplied by Cole from those introduced by agents. It materially improves the evidence map while presenting the transcript’s parking detail and its limitations fairly, without changing the provisional case verdict. A few wording and classification issues should be tightened, but they do not outweigh the gain.
+        cost:
+          inputTokens: 25671
+          outputTokens: 2995
+          usd: 0.162584
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In content/cases/january-6-pipe-bombs/research.yaml (PIPE-R003), prioritize reading Tr. 103 onward to systematically test the defense's specific contamination claims against the post-waiver record.
+          - In content/cases/january-6-pipe-bombs/evidence.yaml (PIPE-E187), cross-reference OpenStreetMap's geometry for D St SE around Folger Park against the District of Columbia's official street centerline dataset to eliminate reliance on volunteer-edited map data.
+        summary: This change integrates study PIPE-S003, analyzing the recently unsealed pre-admission FBI interview transcript (ECF No. 102-1) against the October 2026 surveillance footage and sworn timeline. It fairly presents both the detail Cole offered independently (the parking description fitting D Street SE near Folger Park) and the key details introduced by interrogating agents before his admission. It also rectifies previous inaccurate references stating that the interview transcript was unreleased, markedly improving the factual precision of the case.
+        cost:
+          inputTokens: 28659
+          outputTokens: 997
+          usd: 0.025233
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - In C082 and E187, check the D Street SE / Folger Park split against the District's own street or parcel records rather than OpenStreetMap alone, and note the check.
+          - In the New section and C080/C082 wording, keep the distinction sharp that the parking description is generic (fits other places; FBI named the area in 2021) and does not count as bomber-only knowledge.
+          - Advance R003 on the post-waiver pages (Tr. 103+) so the defense's Tr. 108–13 contamination claim and Baker's unchecked 95-denials / page-106 counts are graded against the same transcript.
+        summary: The change adds a pre-registered study of the public FBI interview transcript up to Cole's admission, with four new claims, twelve new evidence rows, source and limitation corrections, and a short article section. His first account does not distinguish the man in the October footage from the bomber's sworn path; agents named the key placing details before the yes; and he described a split-road parking place before they named Folger Park, a fit the change calibrates carefully. That leaves the ledger more accurate, better evidenced, and fairer on the confession without overclaiming, so the site is better for a reader seeking the truth.
+        cost:
+          inputTokens: 26525
+          outputTokens: 285
+          usd: 0.054875
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - PIPE-C081's statement renders the transcript as 'by a park in a neighborhood', but the quoted words in PIPE-E186 are 'there's a park with a bunch, with a bunch of neighborhoods' — he describes a park surrounded by neighborhoods, not his spot being by a park in one. Since the pre-admission parking description is this change's headline finding, restate the claim in the transcript's own words or move the park reference to an explicit inference, so the claim and its quotation say the same thing.
+          - In the article's 'His own account' section, the post-admission details under claim=PIPE-C039 (D Street SE near Folger Park, the sixty-minute timers) still rest on the prosecution's memorandum describing transcript pages the study did not read (Tr. 103+). One clause noting those pages are now public and queued for the same frozen-rule reading (PIPE-R003) would keep the article's evidence standard uniform across the confession paragraph.
+          - The second New blockquote is dated 'New on October 19, 2026' but the edition publishing it is edition-2026-10-20-001144; readers seeing a change dated the day after its stated date may wonder which clock governs. Either date the section October 20 or state that the reading was done October 19 and published October 20.
+        summary: "The change publishes the PIPE-S003 collection — Cole's FBI interview read up to his admission under criteria frozen before any page was read — adds four claims with exact transcript locators, and corrects records that wrongly said the transcript was not public. It cuts both ways honestly: the agents supplied the RNC/DNC, Folger Park, the hours and the shoes before his yes, but Cole described his parking place before they named any park, and the record also notes the FBI had pointed the public to Folger Park in 2021. Limitations are disclosed (single reader by eye, post-waiver pages unread, volunteer-edited map), the case verdict stays provisionally supported, and the word ceiling is met by cutting only duplication. It is better evidenced, more current, and fairer to both the charged account and the misidentification alternative; nothing true is lost that the records do not still carry."
+        cost:
+          inputTokens: 27143
+          outputTokens: 5484
+          usd: 0.006813
+harvestedAt: 2026-10-20T12:57:59.964Z

@@ -1,0 +1,72 @@
+# Review of #128, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 128
+title: "J6: camera 602 read frame by frame; Seraphin's left image is plate I"
+url: https://github.com/ejhong/erebus/pull/128
+outcome: merged
+outcomeAt: 2026-10-20T01:44:24Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 8dbcda24d9a0699ec74fa89a00a3d3c65ee66516
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-E155/PIPE-E195 and the assessment of PIPE-C083: the direct camera-602 evidence is marked provisional even though the operator read and hashed the file, while C083 receives a well-supported/high-confidence grade. Either promote those records under the appropriate reviewed state or explain how the grade avoids assigning weight to provisional evidence; do not let PIPE-S004 serve merely as a nonprovisional wrapper."
+          - "PIPE-E198: replace the categorical inference that “only an examiner's blind comparison, with its error rate, could weigh it.” At roughly 10 by 13 pixels, the first expert question is whether the image is suitable for facial comparison at all; state that a blinded examiner should assess suitability before any comparison."
+          - "PIPE-R001 / PIPE-S004: download and hash the other seven camera files and repeat the local frame-level matching used for camera 602. Until then, keep especially visible that C073 and C074 rely on browser matching for those cameras, not equivalent end-to-end examination of downloaded files."
+        summary: The change materially improves the case by correcting the site's own 30-second camera-602 timing error, documenting the posted file and its hash, and showing that the captioned moment contains a different person. The added plate and pixel-count limitation also help readers judge how little the footage can support facial identification. The remaining concerns are methodological labeling and unfinished verification of the other seven files, not reasons the change fails to improve the page.
+        cost:
+          inputTokens: 27148
+          outputTokens: 2502
+          usd: 0.158632
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In SRC-PIPE-CCTV-0602, consider attempting an archive capture on an alternate service (like archive.today) if Internet Archive and direct crawler access continue to return 520 or 403 errors.
+          - When upstream support allows plates on study pages, ensure Plate I is directly cross-referenced in PIPE-S004 alongside its findings.
+          - On PIPE-C078, clarify in the statement text whether the timing for camera 940 has also been verified frame-by-frame or remains based on browser scrub.
+        summary: This change updates the January 6 pipe bombs case by correcting the timing of camera 602 after a frame-by-frame review of the downloaded subcommittee video, catching a 30-second caption discrepancy and superseding earlier workpapers with PIPE-S004 and PIPE-S005. It also incorporates Plate I from camera 602 to evaluate visual claims made on social media, accurately calibrating the epistemic weight of the low-resolution imagery (10x13 pixel head). The change is scrupulous, corrects the site's own prior work, and leaves the record clearer and more accurate.
+        cost:
+          inputTokens: 30984
+          outputTokens: 875
+          usd: 0.026519
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "In the October footage section of the article, the sentence that puts the man's head at 'about thirteen pixels tall' sits immediately above plate I (camera 602, Finding 9 / E198: ~10×13). Name the camera or use the plate's measured 10×13 so the prose and the plate agree."
+          - "PIPE-R001 already asks for it: download and hash the other seven camera files and frame-match them the way 602 was done, so a caption offset like C083 cannot hide in browser-only checks."
+          - E155 and E195 remain provisional because runners cannot fetch Rumble; once a durable third-party archive or a native Capitol Police copy exists, promote or replace them so the ledger no longer rests on a hashed local copy the CI cannot re-read.
+        summary: "The change corrects this site's own camera-602 match: the 7-minute video's 8:04:25 caption is about 30 seconds early, a different backpack-carrying man is at the captioned instant, and the man Baker follows appears ~8:04:56–8:05:30 by the file clock. PIPE-S004/S005 supersede the flawed workpapers, C083 and E195–E198 record the fix with a hashed download, and plate I (Seraphin's left still) is placed where identification is weighed, with the 10×13-pixel head limit made explicit. That is more accurate, better evidenced, and fairer on the ID claim, with no true material dropped and no publication harm."
+        cost:
+          inputTokens: 28175
+          outputTokens: 342
+          usd: 0.058517
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - PIPE-C083 is graded well_supported, high confidence, but two of the three evidence records behind it (PIPE-E155, PIPE-E195) carry reviewState "provisional" because the site's automated checks cannot reach Rumble. The grade appears to run through PIPE-S004's non-provisional records instead; say so explicitly in the assessment or C083's reasoning, or resolve the provisional labels now that the file is downloaded and hashed, so a reader tracing the grade does not hit a record that by §4 'carries no weight'.
+          - SRC-PIPE-CCTV-0602 says the download happened 'with the founder's permission' but does not say where that permission is recorded. Per §3.15's rigor rule for permissions, point to the entry (docs/DECISIONS.md or history.yaml) that stamps who granted it, when, and by what channel.
+          - "Minor consistency: the article's October-footage section says 'his head is about thirteen pixels tall' while the plate context and E198 say 'about 10 by 13 pixels'; use one form so the two statements read as the same measurement."
+        summary: The change corrects a real error in the site's own published check — camera 602's clip was matched to the posted file by scene rather than by the man, making the caption's time about 30 seconds early — and does so with hashed provenance, superseding studies that preserve the old workpapers, and honest disclosure of the mistake. It adds the first plate with an appropriate limit (10×13 pixels cannot carry a face comparison), records Seraphin's post as weak support with its qualifications, and leaves every other time, place and finding untouched. The arithmetic is internally consistent (frame 3,118 at 29.97 fps from 20:03:32.640 gives 20:05:16.7), the site's rules on attribution and living persons are observed, and the 'not done' list is candid. Nothing true is lost and the reader gets a more accurate, better-evidenced page.
+        cost:
+          inputTokens: 28775
+          outputTokens: 2314
+          usd: 0.005473
+harvestedAt: 2026-10-20T12:57:59.964Z

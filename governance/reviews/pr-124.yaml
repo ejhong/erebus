@@ -1,0 +1,70 @@
+# Review of #124, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 124
+title: "J6 cover: candidate 3, cropped to 16:9; candidates removed"
+url: https://github.com/ejhong/erebus/pull/124
+outcome: merged
+outcomeAt: 2026-10-19T22:53:03Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 4a5c54a2b71c1b77128fd2a8f59e967b2a3ad81c
+    date: 2026-10-19
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - In `content/cases/january-6-pipe-bombs/images.yaml`, record the crop transformation explicitly—source candidate, original dimensions, and the 60 px top/100 px bottom removal—so the published JPEG’s derivation is inspectable without relying on the pull-request description.
+          - Move the `scripts/generate-case-art.mjs` subject correction to the upstream engine or a permitted configuration file; direct downstream edits under `scripts/` conflict with the repository’s one-way engine-sync rule.
+          - Verify that the new `images.yaml` record preserves the contradictory prompt actually used for candidate 3 rather than the corrected future-generation wording; provenance should describe the historical run exactly even though the script has now been fixed.
+        summary: The change turns an unfinished set of candidates into a selected, correctly sized case cover, removes staging artifacts, and resolves the prompt’s conflict between numbered plat squares and the house prohibition on numbers. These are clear presentation and workflow improvements, with no indicated evidentiary or publication harm. The remaining concerns are transformation provenance and keeping generator changes within the upstream-sync rules.
+        cost:
+          inputTokens: 8348
+          outputTokens: 1158
+          usd: 0.056552
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Verify that content/cases/january-6-pipe-bombs/images.yaml is fully committed with the expected metadata (id, prompt, runId, alt text), as its diff hunk was not displayed in the change review payload.
+        summary: "This change finalizes the J6 cover selection by adopting candidate 3 cropped to 16:9, deletes the candidate binaries and temporary art notes, and resolves the prompt contradiction regarding numbered squares in scripts/generate-case-art.mjs. It leaves the site better and completes the work started in #122."
+        cost:
+          inputTokens: 8967
+          outputTokens: 3113
+          usd: 0.018399
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - Confirm content/cases/january-6-pipe-bombs/images.yaml records the prompt actually used for run 39315176717 (including any 'numbered squares' wording if that is what generated candidate 3), not only the post-hoc corrected subject — provenance must match the artifact.
+          - Add or verify a concrete alt text on IMG-JANUARY6-COVER that names the quiet Capitol-Hill dusk street and ghosted plat without event imagery or sensational framing.
+          - "After this merge, a quick visual check that cover.jpg is true 16:9 (1536×864), free of legible numbers/lettering, and not mistakable for a photograph would close the #122 cover thread."
+        summary: "This change finishes the J6 case cover left open by #122: it installs candidate 3 as cover.jpg (cropped to the card’s 16:9), adds images.yaml with run id, credit, and prompt provenance, deletes the candidates/ staging set and art-notes.txt, and corrects the generate-case-art subject so the plat is unnumbered and unlabelled. That matches the house visual register, removes temporary files every prior reviewer asked to drop, and fixes a real prompt contradiction. For a reader it leaves the case page clearer and complete on artwork with no epistemic loss, so the site is better."
+        cost:
+          inputTokens: 8582
+          outputTokens: 294
+          usd: 0.019043
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "The diff for content/cases/january-6-pipe-bombs/images.yaml is listed in the files-changed block but not shown in the review packet, so I cannot confirm the record's contents. In particular, confirm the alt field is a real description of the painting and not the `alt: \"TODO: describe the artwork\"` placeholder carried over from the deleted art-notes.txt template."
+          - Since the three candidate PNGs are now deleted, the comparison that justified choosing candidate 3 exists nowhere in the repository. Record the selection rationale briefly (which candidates were generated, why candidate 3 won — e.g. in the case changelog or a field on the images.yaml entry) so the choice is reconstructable.
+          - The yaml record should also capture that the published cover.jpg is a crop of the generation run (source run, 3:2 to 16:9, ~60 px top / ~100 px bottom removed, JPEG q80), so the provenance covers the published file and not only the generation.
+        summary: "This completes the J6 cover: publishes candidate 3 as the cover at the rendered 16:9 aspect, adds a provenance record for it, removes the candidate artifacts and scratch notes that all four #122 reviewers asked to remove, and fixes the J6 subject in generate-case-art.mjs so it no longer requests numbered squares against the house rule banning numerals. The changes are coherent, the checks reported passing, and nothing true is lost; my only reservations are about details of the yaml record I could not see, which go in the notes rather than the verdict."
+        cost:
+          inputTokens: 9461
+          outputTokens: 1367
+          usd: 0.002103
+harvestedAt: 2026-10-20T12:57:59.964Z
