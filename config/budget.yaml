@@ -17,9 +17,9 @@ usd:
   perMonth: 40
 # The start: caps that hold until a date, then fall to the standing caps.
 crunch:
-  until: "2026-10-31"
+  until: "2026-10-19"
   perDay: 60
   perMonth: 60
-  reason: "Founder direction (2026-10-19, in session): \"yes you may spend on erebus\" — the start on the new engine: the January 6 pipe-bomb case opened, and the four existing cases brought onto the engine and judged again by the blind panel."
-  by: "founder (direction in session, 2026-10-19)"
+  reason: "Founder direction (2026-10-19, in session): \"yes you may spend on erebus\" — the start on the new engine: the January 6 pipe-bomb case opened, and the four existing cases brought onto the engine and judged again by the blind panel. Ended early by the founder's direction of 2026-10-20, in session (\"i'd like to make the total spend for the month about $100 for both sites\"): from 2026-10-20 October falls to the standing caps, so the two sites together stay near $100 this month."
+  by: "founder (direction in session, 2026-10-19; ended early by direction in session, 2026-10-20)"
 exemptions: []
