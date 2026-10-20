@@ -1319,7 +1319,7 @@
   sourceStatement: >-
     The earlier reports suggested "forensic gait analysis" "that matched the suspect seen in surveillance footage planting pipe bombs". "U.S. District Judge Rossie Alston Jr. entered the default judgment against Baker after Baker failed to respond to the claim." Correction: "The default judgment was entered only against Baker, Blaze Media reporter Joseph Hanneman and Veritas Regnant LLC, a media entity formed by Baker and Hanneman."
   editorInference: >-
-    A default judgment means Baker did not answer the suit; it is not a court's finding on the gait evidence. The earlier identification named a former Capitol Police officer, a private person this site does not name.
+    A default judgment means Baker did not answer the suit: the complaint's allegations are taken as admitted against those who defaulted, without the court hearing evidence, so it is not a finding on the gait evidence. The earlier identification named a former Capitol Police officer, a private person this site does not name.
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -1907,7 +1907,7 @@
   sourceStatement: >-
     HuffPost writes that the officer sued "after he falsely accused her of planting pipe bombs on the eve of the Capitol attack"
   editorInference: >-
-    Baker and two co-defendants did not answer the suit, so the court entered judgment without weighing the identification's evidence, and Blaze Media, which retracted the report, contests the claims against it (PIPE-E199). The identification is withdrawn and undefended, not tested.
+    Baker and two co-defendants did not answer the suit, so the court entered judgment against them without weighing the identification's evidence; Blaze Media, which retracted the report, contests the claims against it (PIPE-E199).
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -2369,7 +2369,7 @@
   sourceStatement: >-
     The episode summary describes the man in the footage with "minimal arm swing" and contrasts it "with the hooded bomber’s exaggerated arm-swinging, right-leg crossover gait"
   editorInference: >-
-    Gait judged by eye from surveillance video; the same kind of judgment earlier named a different person, an identification its publisher retracted.
+    Gait judged by eye from surveillance video; the same kind of judgment earlier named another person, an identification its publisher retracted.
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -3365,7 +3365,7 @@
   exactLocator: the post's two images
   limitations:
     - The right image's source is not stated, and this site has not established it.
-    - A likeness judged by eye is the method that named a different person in November 2025 (PIPE-C036).
+    - A likeness judged by eye is the method that named another person in November 2025 (PIPE-C036).
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"

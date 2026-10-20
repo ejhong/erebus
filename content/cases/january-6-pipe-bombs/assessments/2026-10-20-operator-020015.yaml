@@ -1,7 +1,7 @@
 # Draft assessment — the operator's judgment (claude-opus-5-5, session 2026-10-19-session-january-6-pipe-bombs-founder), NOT human reviewed.
 # Its standing comes only from the blind panel (role: check runs written after it). Append-only.
 
-runId: 2026-10-20-operator-015514
+runId: 2026-10-20-operator-020015
 producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
 model: claude-opus-5-5
 date: 2026-10-20
@@ -9,7 +9,7 @@ promptVersion: founder session 2026-10-19
 humanReviewed: false
 role: draft
 basis:
-  ledgerHash: c1267786b4714f15c9ca6fc72920cca3bd31e9b5e9185ec9e173ebc6b51e463d
+  ledgerHash: f7d127629570f862f99a68ff615dde4b0b74ab23d7df4bff42f773512bd35cde
 caseAssessment:
   verdict: provisionally_supported
   whatIsClaimed: Prosecutors say Brian Cole Jr. built two pipe bombs and placed them by the party headquarters on January 5, 2021, and confessed in 2025; he denies it and is presumed innocent. Steve Baker says congressional CCTV shows Cole on the north side of the Capitol while the bomber was on the southeast side, and that the bomber was an insider.
@@ -34,7 +34,7 @@ caseAssessment:
       note: "Detailed and partly matched by records, but obtained under techniques an expert calls coercive; the recording is not public, its transcript is. New: before he said yes, the agents had named the RNC and DNC, Folger Park, the hours and the shoes, though he had described where he parks before they named the park (PIPE-S003)."
     - label: A law-enforcement insider placed the devices
       state: unresolved
-      note: Its one named suspect was in a report its publisher retracted, over which three defendants lost a defamation suit by default; no court has weighed that identification's evidence. What points to Cole instead is not yet public or tested, and the defense is pursuing January 5 records the government resists producing.
+      note: Its one named suspect was in a report its publisher retracted, over which three defendants lost a defamation suit by default; the default did not weigh that identification's evidence. What points to Cole instead is not yet public or tested, and the defense is pursuing January 5 records the government resists producing.
   researchPriority:
     level: high
     reason: "Who the man at Peace Circle is, and the cameras' clocks, now decide the footage: a blind comparison of his frames with known images of Cole, and the phone's raw distance data, would settle it before the February 2027 trial."
@@ -259,10 +259,10 @@ claimAssessments:
     confidence: moderate
   - claimId: PIPE-C036
     verdict: well_supported
-    reasoning: The November 2025 identification by gait was retracted by its publisher, and a federal court entered a default judgment for defamation against Baker, a colleague and their company because they did not answer. A default is not a finding on the gait evidence, and Blaze Media contests the claims against it (PIPE-E199).
+    reasoning: The November 2025 identification by gait was retracted by its publisher, and a federal court entered a default judgment for defamation against Baker, a colleague and their company because they did not answer. A default takes the complaint's allegations as admitted against those who defaulted, without hearing evidence; it is not a finding on the gait evidence, and Blaze Media contests the claims against it (PIPE-E199).
     confidence: high
     treatment:
-      plainLanguage: The gait-by-eye method behind the footage identification earlier named a different person, a report its publisher retracted.
+      plainLanguage: The gait-by-eye method behind the footage identification earlier named another person, a report its publisher retracted.
       importance: supporting
       diagnosticity: moderate
       diagnosticitySummary: Its retraction and the default count against the earlier identification without testing it; to that extent it lowers the weight of identifications by eye, this one included.
@@ -363,7 +363,7 @@ claimAssessments:
       plainLanguage: The idea that a police insider, not Cole, placed the devices rests on a retracted report and on evidence Baker has not released; what points to Cole is not yet public or tested either.
       importance: major
       diagnosticity: moderate
-      diagnosticitySummary: Its one named suspect was in a report retracted but never tested; it gains weight if the case against Cole fails, or if the January 5 records point to someone with official access.
+      diagnosticitySummary: Its one named suspect was in a report its publisher retracted, whose evidence the default judgment did not weigh; it gains weight if the case against Cole fails, or if the January 5 records point to someone with official access.
       strongestObjection: An insider could have been missed by an investigation that took four years and made errors of its own.
       whatWouldChangeOurMind:
         - Published evidence tying a specific person with official access to the devices.

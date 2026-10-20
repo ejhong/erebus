@@ -1,22 +1,22 @@
 # Edition written by the operator (claude-opus-5-5) in session 2026-10-19-session-january-6-pipe-bombs-founder, stamped by the engine (src/engine/stamp.ts).
 # Append-only: a later edition replaces it; this file is never edited.
 
-runId: edition-2026-10-20-015514
+runId: edition-2026-10-20-020015
 producedBy: 2026-10-19-session-january-6-pipe-bombs-founder
 date: 2026-10-20
 model: claude-opus-5-5
 promptVersion: founder session 2026-10-19
 rationale: |-
-  Describes the November 2025 identification of a former Capitol Police officer as the record shows it: retracted by its publisher and lost by three defendants by default, weighed on its evidence by no court, while Blaze Media contests the claims against it (PIPE-E109, PIPE-E199). The site's own words had gone further, calling it collapsed, a past error and the wrong person; the article, the accounts and the grades of PIPE-C031, PIPE-C036 and PIPE-C052 now say only what is known, and the insider account stays unresolved. Answers the review of #128: the article gives the head's size as the plate does, about 10 by 13 pixels; PIPE-C083's reasoning says its grade rests on the study, not on the provisional records; PIPE-C078's, that camera 940's file was viewed in a browser.
+  Describes the November 2025 identification of a former Capitol Police officer as the record shows it: retracted by its publisher, and lost by three defendants by default in a judgment that did not weigh its evidence, while Blaze Media contests the claims against it (PIPE-E109, PIPE-E199). The site's own words had gone further, calling it collapsed, a past error and the wrong person; the article, the accounts and the grades of PIPE-C031, PIPE-C036 and PIPE-C052 now say only what is known, and the insider account stays unresolved. The earlier identification named "another person", not "a different person", and a default's legal effect is stated both ways. Answers the review of #128: the article gives the head's size as the plate does, about 10 by 13 pixels; PIPE-C083's reasoning says its grade rests on the study, not on the provisional records; PIPE-C078's, that camera 940's file was viewed in a browser.
 
-  Measured by the engine: article 2996 → 2999 words, without markup.
+  Measured by the engine: article 2996 → 2998 words, without markup.
 basis:
-  ledgerHash: c1267786b4714f15c9ca6fc72920cca3bd31e9b5e9185ec9e173ebc6b51e463d
+  ledgerHash: f7d127629570f862f99a68ff615dde4b0b74ab23d7df4bff42f773512bd35cde
   inputsHash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 previous: edition-2026-10-20-013838
 assessment:
-  runId: 2026-10-20-operator-015514
-  hash: 3edd08fda69fcbae6fb3777bf0c539d35a5799ef882aabf2147513e515ee14ea
+  runId: 2026-10-20-operator-020015
+  hash: bc43eb154f2de2ddcb4ffcdd3d7b688bf22e869e16f719552a27cc8b7aae6b7b
 featuredClaimIds:
   - PIPE-C059
   - PIPE-C063
@@ -56,7 +56,7 @@ question: Does the public record support the charge that Brian Cole Jr. placed t
 accounts:
   - "The charged account: Brian Cole Jr., alone, built both devices and placed them on the evening of January 5, 2021, as prosecutors allege; he denies it and is presumed innocent."
   - "Misidentification: the man the congressional footage shows on the north side of the Capitol, who on its recorded clocks cannot be the bomber, is Cole, as his family and Steve Baker say, and his confession was coerced."
-  - "An insider: a law-enforcement insider placed the devices and the investigation protected them (Baker and others); the one report that named a suspect was retracted, and no court has weighed it."
+  - "An insider: a law-enforcement insider placed the devices and the investigation protected them (Baker and others); the one report that named a suspect was retracted, and the default judgment that followed did not weigh its evidence."
   - "Not overnight: the devices were set down shortly before they were found on January 6, not the evening before (Baker, before his October 2026 account)."
 article: |
   On the evening of January 5, 2021, someone in a grey hooded sweatshirt, a face mask, gloves and Nike running shoes walked the streets south of the Capitol for about three-quarters of an hour and left two pipe bombs: one by the Democratic National Committee, one behind the Republican National Committee. Neither went off. They were found around one o'clock the next afternoon, as the crowd at the Capitol was breaking through the police lines, and for almost five years no one was charged.
@@ -116,7 +116,7 @@ article: |
 
   Baker's headline has the man filmed [at the same time the devices were being placed]{claim=PIPE-C032}; in fact he is filmed between the two placements, and the conflict is with the bomber's walk between them.
 
-  So the question is whether he is Cole. [He wears, Baker says, a maroon-and-gold cloth mask, a jacket with a tag hanging from it, and New Balance shoes]{claim=PIPE-C034}; Cole's family, Baker reports, recognised the mask, which his mother says she sewed, and the jacket. The frames, at 704 by 528 pixels, show a violet-blue hooded jacket and light shoes that flash under the lights, and cannot resolve a mask's colours, a brand or a tag; below, his head is about 10 by 13 pixels. [Whether the man is Cole rests on that recognition and on his face judged by eye]{claim=PIPE-C031}, and [the same way of identifying people named a different person, a former Capitol Police officer, in November 2025 — a report its publisher retracted, and over which a federal court has entered a default judgment for defamation against Baker]{claim=PIPE-C036}, without weighing its evidence. The longer breakdown adds [clips captioned as a dark sedan on 3rd Street SW at 8:03 and on C Street at 8:04]{claim=PIPE-C077}, beside a photograph of a Nissan Sentra, inside the sector the phone used at 7:59:36; their source is not stated.
+  So the question is whether he is Cole. [He wears, Baker says, a maroon-and-gold cloth mask, a jacket with a tag hanging from it, and New Balance shoes]{claim=PIPE-C034}; Cole's family, Baker reports, recognised the mask, which his mother says she sewed, and the jacket. The frames, at 704 by 528 pixels, show a violet-blue hooded jacket and light shoes that flash under the lights, and cannot resolve a mask's colours, a brand or a tag; below, his head is about 10 by 13 pixels. [Whether the man is Cole rests on that recognition and on his face judged by eye]{claim=PIPE-C031}, and [the same way of identifying people named another person, a former Capitol Police officer, in November 2025 — a report its publisher retracted, and over which a federal court has entered a default judgment for defamation against Baker]{claim=PIPE-C036}, without weighing its evidence. The longer breakdown adds [clips captioned as a dark sedan on 3rd Street SW at 8:03 and on C Street at 8:04]{claim=PIPE-C077}, beside a photograph of a Nissan Sentra, inside the sector the phone used at 7:59:36; their source is not stated.
 
   {plate:IMG-J6PB-P01}
 
