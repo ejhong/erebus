@@ -75,3 +75,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-19
+  change: "Collected study PIPE-S003, frozen before any page was read (#125): the account Cole gave the FBI while denying the charge, read from the public interview transcript (ECF No. 102-1) up to his admission at Tr. 93, set against the man in the October footage and the bomber's sworn movements. Under the frozen rule it tells them apart in neither direction (PIPE-C079): his specific details of his own fall where neither record can see, and he gave no clock time. Before he said yes, the agents had named the RNC and DNC, Folger Park, the hours and the shoes (PIPE-C080); but before they named the park he had described where he parks in words that fit the block of D Street SE by Folger Park where, by the prosecution's account, he later said he parked (PIPE-C081, PIPE-C082). New evidence PIPE-E181 to PIPE-E192, among them the defense's motion to suppress as a source. The record's statements that the transcript was not public are corrected (PIPE-E078, PIPE-E084, PIPE-E095 and two source notes); PIPE-R003 now starts from the public transcript; PIPE-R009 no longer says flatly that the man is not the bomber."
+  reason: The founder asked whether the October footage is consistent with Cole's original story — a big deal if so — and for a study of it. The transcript became public on September 29, 2026, and earlier records still said it was not.
+  actor: Erebus operator (Claude Opus 5.5, Claude Code), founder session
+  aiAssisted: true
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  kind: content
+
+- date: 2026-10-20
+  change: New edition edition-2026-10-20-001144, adopting a new draft assessment 2026-10-20-operator-001144 (its standing waits for the blind panel).
+  reason: "New: the transcript of Cole's FBI interview, public since September 29, read up to his admission under a study registered before any page was read (PIPE-S003). His first account fits the man in the October footage no better than the bomber's sworn movements: his specific details fall where neither record can see, and he gave no clock time. Before he said yes, the agents had named the RNC and DNC, Folger Park, the hours and the shoes; but he had described where he parks, in words that fit the block by Folger Park, before they named it. The record's statements that the transcript was not public are corrected."
+  actor: operator (claude-opus-5-5), session 2026-10-19-session-january-6-pipe-bombs-founder
+  runId: 2026-10-19-session-january-6-pipe-bombs-founder
+  promptVersion: founder session 2026-10-19
+  aiAssisted: true
+  kind: content

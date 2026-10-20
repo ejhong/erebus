@@ -1371,7 +1371,7 @@
   editorInference: >-
     The images attached to this post and the next show transcript lines, with the agents' names blacked out, in which Cole says he came alone in his Nissan, at night; that he went to the protest to show support; that for about an hour he would walk around, sit around and look around, wishing he had his headphones; that he talked to no one; and that he wore a jacket because it was cold. The images are not machine-read; this is the drafter's reading of them.
   limitations:
-    - "The transcript is not in the public court record; the post does not say where the pages came from."
+    - "The transcript has been public since September 29, 2026, as ECF No. 102-1, nineteen days before the post; each detail the drafter read in the images is in it, at Tr. 36–49 (PIPE-S003). The post does not say where its images came from."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -1476,7 +1476,7 @@
   editorInference: >-
     The right test, done by an interested party: which details came first from Cole, and are they true? The 28 new details are not listed.
   limitations:
-    - "An unpublished count by an advocate for Cole, from a transcript that is not public."
+    - "An unpublished count by an advocate for Cole, from a transcript public since September 29, 2026 (ECF No. 102-1); the count has not been checked against it."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -1661,7 +1661,7 @@
   sourceStatement: >-
     The episode summary states: "Cole denied all involvement 95 times before breaking under mental duress when agents threatened to target his family" and "Cole denied involvement repeatedly until page 106, where agents threatened to drag his family into the interrogation."
   limitations:
-    - "Baker's count from a transcript that is not public."
+    - "Baker's count, from a transcript public since September 29, 2026 (ECF No. 102-1); neither the count nor his page reference has been checked against it."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -3069,6 +3069,204 @@
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: answering the review of ejhong/erebus#123"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+
+# ── 2026-10-19, later: Cole's first account against the footage (study PIPE-S003), read from the public transcript ──
+
+- id: PIPE-E181
+  title: Cole's first account does not tell the man in the footage from the bomber
+  claimIds:
+    - PIPE-C079
+  sourceId: SRC-PIPE-S003
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 1: \"The account does not tell the two apart: under the frozen rule it is undecided against the man in the October footage and undecided against the bomber's sworn movements, the pair the rule reports as fitting both.\""
+  editorInference: "The frozen rule, applied to every detail of the evening he gave before his admission: nothing specific of his own can be checked against either record, and nothing conflicts with either."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E182
+  title: The first account adds nothing to the identification or to the alibi
+  claimIds:
+    - PIPE-C031
+    - PIPE-C033
+  sourceId: SRC-PIPE-S003
+  direction: qualifies
+  strength: moderate
+  sourceStatement: "Finding 1: \"Of the 21 details recorded, four are specific and Cole's own — his Nissan, a restaurant he says he drove to afterwards, a man he saw carrying a Confederate flag, and having no headphones with him — and neither record can show any of them, so none counts as a fit or a conflict on either side.\""
+  editorInference: "The footage was found by searching where this account pointed, and the account fits the man no better than the bomber's sworn movements. It neither corroborates that the man is Cole nor gives an alibi of its own for the minutes the devices were placed: both rest on who the man is. It counts against neither account; a vague memory of one evening is what an innocent or a guilty man might give."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E183
+  title: The transcript shows the first account
+  claimIds:
+    - PIPE-C037
+  sourceId: SRC-PIPE-S003
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 2: \"While denying the charge, Cole said he drove his Nissan to Washington alone, at night, to a protest about the election 'in support of Trump'; that he stayed about an hour, walking, sitting and looking around, and talked to no one; that he wore 'a jacket because it was cold outside', its type forgotten; and that he then drove to a restaurant and home (Tr. 13–14, 36–49, 73, 84).\""
+  editorInference: "Read from the public transcript itself: the account both sides describe, in his words."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E184
+  title: Before he said yes, the agents named the RNC, the DNC, Folger Park, the hours and the shoes
+  claimIds:
+    - PIPE-C080
+  sourceId: SRC-PIPE-S003
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 3: \"Before he said yes, they told him he had been 'in the area of the RNC and the DNC' (54:9–11) and had 'parked at -- near Folger Park' (54:19), that his phone was at the RNC and DNC (85:1–2) and that he was there 'between 7:34 and 8:18 p.m.' (88:18–20), and they showed him shoes (77:20). He had said none of these himself.\""
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E185
+  title: The details that place the bomber reached Cole from the agents before his admission
+  claimIds:
+    - PIPE-C040
+  sourceId: SRC-PIPE-S003
+  direction: qualifies
+  strength: moderate
+  sourceStatement: 'Finding 3: "What could have told the two standards apart came from the agents."'
+  editorInference: "Whatever his later account says of the RNC, the DNC, Folger Park, the hours or the shoes cannot count as knowledge only the bomber had: the agents had said it first. Whether other details came first from him needs the pages after the waiver read the same way (PIPE-R003)."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E186
+  title: Asked where he parked, he described the place before any agent named a park
+  claimIds:
+    - PIPE-C081
+  sourceId: SRC-PIPE-S003
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 4: \"Asked the general area where he parked (41:6–8), he said 'there's a park with a bunch, with a bunch of neighborhoods' and 'There's a road that splits in the middle and, like, two grass -- like, two grassy areas on each side. That's where I always go' (41:9–19), and he did not know the park's name. The agents first named Folger Park at 54:19, thirteen pages later; an agent first offered a map at 40:11–14 and pulled one up on a phone at 41:24–42:1, after the description.\""
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E187
+  title: His description fits the block of D Street SE where he later said he parked
+  claimIds:
+    - PIPE-C082
+  sourceId: SRC-PIPE-S003
+  direction: supports
+  strength: moderate
+  sourceStatement: "Finding 4: \"On OpenStreetMap, D Street SE between 2nd and 3rd Streets divides into two roadways around Folger Park, the southern one running between Folger Park and Providence Park: the block where, by the prosecution's account, he said after his admission that he had parked that night (ECF No. 17 at 15–16).\""
+  editorInference: "A fit, not an identification: the words name no street, and a road dividing around a park could describe other places."
+  exactLocator: findings
+  limitations:
+    - OpenStreetMap is volunteer-edited; the block was not checked against the District's own records.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E188
+  title: "Where he parked: described by Cole before the agents named the park"
+  claimIds:
+    - PIPE-C040
+  sourceId: SRC-PIPE-S003
+  direction: qualifies
+  strength: weak
+  sourceStatement: 'Finding 4: "The agents first named Folger Park at 54:19, thirteen pages later; an agent first offered a map at 40:11–14 and pulled one up on a phone at 41:24–42:1, after the description."'
+  editorInference: "The defense says the agents supplied where he parked (PIPE-E191); on this transcript they did name the park first, but he had already described the place in his own words. It is no proof of knowledge only the bomber had either: he called it where he always parks, and the FBI had said in 2021 that the bomber seemed to operate from around Folger Park (PIPE-E192)."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E189
+  title: The transcript shows the shoe exchange
+  claimIds:
+    - PIPE-C013
+  sourceId: SRC-PIPE-S003
+  direction: supports
+  strength: strong
+  sourceStatement: "Finding 5: \"Asked 'Do you recognize these shoes?', he said 'Yeah. I used, I used to have a pair', and that he had thrown them away: 'I grew out of them. I threw them away. I replaced them', as they were old and coming apart (77:20–78:9). The transcript does not name the shoe; the prosecution's memorandum says he was shown a picture of a Nike Air Max Speed Turf (ECF No. 17 at 14).\""
+  editorInference: The exchange as the prosecution describes it, in the transcript's words; the shoe's name rests on the memorandum. He did not say he wore them that evening.
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E190
+  title: Shown the video, he first said he did not recognize the person
+  claimIds:
+    - PIPE-C038
+  sourceId: SRC-PIPE-S003
+  direction: qualifies
+  strength: moderate
+  sourceStatement: "Finding 6: \"Shown a video on a laptop and asked 'Do you recognize that person?', he said 'No', and that he had not watched the video before (92:8–11); told that lying to federal agents is a crime and that the agents knew he had not told the truth so far (92:16–23), he was asked 'So, is this individual you?' and after a pause said 'Yes' (93:3–5).\""
+  editorInference: "The transcript bears out the prosecution's sequence — the video, the warning, the pause, the yes — and shows a step its account leaves out: his first answer was no. The defense's motion makes the same point (ECF No. 102 at 9–10)."
+  exactLocator: findings
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E191
+  title: "The defense: after the waiver, the agents supplied where he parked, what he carried, where he sat and the timer setting"
+  claimIds:
+    - PIPE-C040
+  sourceId: SRC-PIPE-ECF102-MOTION-SUPPRESS
+  direction: undermines
+  strength: weak
+  sourceStatement: The motion states that in the pages after the waiver "the agents themselves supplied both the heart of the narrative and many of its details—where he parked, what he carried, where he sat, what he set the timer to—and Mr. Cole confirmed, adopted, or briefly elaborated" (citing Tr. at 108–13).
+  editorInference: The contamination claim, made with page citations a reader can check against the public transcript; this site has not yet read those pages (PIPE-R003). Before the admission, the agents did name the park first, but he had described the place himself (PIPE-C080, PIPE-C081).
+  exactLocator: PDF p. 12 (the motion's page 11)
+  limitations:
+    - Counsel's argument for suppression, not evidence; the post-waiver pages it cites were not read for this case.
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
+    extractedBy: Claude Opus 5.5 (Claude Code), founder session
+    runId: 2026-10-19-session-january-6-pipe-bombs-founder
+    date: 2026-10-19
+- id: PIPE-E192
+  title: The FBI said in 2021 that the bomber seemed to operate from around Folger Park
+  claimIds:
+    - PIPE-C082
+  sourceId: SRC-PIPE-HOUSE-INTERIM-REPORT
+  direction: context
+  strength: moderate
+  sourceStatement: The report states that the FBI issued a press release on September 8, 2021, "indicating that the FBI believed the suspect operated out of the area around Folger Park—a neighborhood park near the RNC", and that an earlier release suggested the suspect may have "entered a vehicle or taken an item from a vehicle" parked near Folger Park.
+  editorInference: "The block Cole described is where the FBI had told the public to look, four years before his interview: a description of it is not knowledge only the bomber had. It also fits the prosecution's account that the bomber worked from a car there."
+  exactLocator: PDF p. 59
+  reviewState: ai_extracted
+  origin:
+    ref: "founder session 2026-10-19: study PIPE-S003, from the interview transcript (ECF No. 102-1)"
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-19

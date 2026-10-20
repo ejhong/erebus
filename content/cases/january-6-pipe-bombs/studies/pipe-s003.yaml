@@ -3,6 +3,7 @@
 # Zero rows by design; any later edit to the criteria fails the build (criteriaHash).
 # Collection follows in a later change. The first freeze (hash cbcf47bf88ab) was revised the
 # same day, still before any page was read, after the review of #125 held it.
+# Collected 2026-10-19 in a later change than the freeze; the criteria above the rows are untouched.
 id: PIPE-S003
 title: "Cole's first account against the footage: what he told the FBI while denying the charge,
   beside the man on the north-west side and the bomber on the south-east"
@@ -137,13 +138,7 @@ criteria:
       disposition: exclude
       reason: After the bound and outside the study; known before the freeze.
   criteriaHash: 70df427de1c3
-method: "A reading of the interview transcript up to the point both sides describe as Cole's
-  admission, recording each detail he gives of the evening of January 5, 2021, who first named it
-  and whether it is specific, and setting each against two fixed standards: the man the October 2026
-  footage follows (PIPE-S002) and the bomber's movements as the affidavit swears them. Rows: one per
-  detail. Findings apply the frozen decision rule, count what fits, what conflicts and what is
-  generic on each side, and say what the comparison cannot show: it does not identify the man, and a
-  fit of place was partly built into how the footage was found."
+method: "A reading of the interview transcript up to the point both sides describe as Cole's admission, recording each detail he gives of the evening of January 5, 2021, who first named it and whether it is specific, and setting each against two fixed standards: the man the October 2026 footage follows (PIPE-S002) and the bomber's movements as the affidavit swears them. Rows: one per detail. Findings apply the frozen decision rule, count what fits, what conflicts and what is generic on each side, and say what the comparison cannot show: it does not identify the man, and a fit of place was partly built into how the footage was found.\n\nCoding tolerances, set after the freeze merged and before any page of the transcript was read, so that the coding is fixed in advance too (they sit outside the hashed criteria and only narrow them). A clock time fits a standard when the standard puts the person at that place within the time's own precision: within 15 minutes of a round hour or 'around' a time, 7 minutes of a quarter-hour, 3 minutes of a time to the minute, since the cameras' clocks are checked only to within minutes. A place fits when it lies on the standard's route or within 150 metres of it. A place or time conflicts only when the account ties it, by a stated time or by its order from one, to a moment inside the standard's window and puts the speaker more than 500 metres from where the standard puts the person at that moment; a place with no such tie is not observable for the man and not described for the bomber. Each attribute of a garment is its own row: blue, violet or purple fits the man's jacket and grey or gray the bomber's sweatshirt; a hood fits both; gloves, a mask, a bag and a shoe's brand are not observable on the man's six cameras. A hedged detail ('I think', 'maybe') is graded on what it names, with the hedge noted. When he gives two versions of one detail, each is a row and each counts. The column 'first named by' gives the agent's prior words with their Tr. page and line. All nine pairs of states are reported as they fall: where the frozen rule says an account undecided on both is reported as fitting both, the finding says it does not tell them apart and gives the pair. Every grade is the operator's draft, shown beside its passage, and carries weight only through evidence records the review checks."
 columns:
   - transcript page
   - topic
@@ -152,9 +147,402 @@ columns:
   - specific or generic
   - against the man in the October footage
   - against the bomber's sworn movements
-rows: []
-findings: []
-limitations: []
+rows:
+  - cells:
+      transcript page: 13:1–13; 14:11–14
+      topic: The protest
+      what Cole says: "Asked about the night before January 6: 'I was at the protest the night before',
+        'the one that -- when they protested that Donald Trump lost'; a protest 'in support of
+        Trump' (14:11–14)"
+      first named by: Cole; the agent had named only the night ('The night before', 13:2)
+      specific or generic: "Generic: named by its cause, not by a name or a place"
+      against the man in the October footage: "Not observable: six minutes of walking cannot show a protest he attended"
+      against the bomber's sworn movements: "Not described: the sworn account mentions no protest"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 13:1–13, 14:11–14 (PDF pp. 13–14)
+      verification: ai_verified
+  - cells:
+      transcript page: 13:7
+      topic: Where the protest was
+      what Cole says: "'in front of the --', left unfinished"
+      first named by: Cole
+      specific or generic: "Generic: it names nothing"
+      against the man in the October footage: "Not observable: no place is named"
+      against the bomber's sworn movements: "Not described: no place is named"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 13:7 (PDF p. 13)
+      verification: ai_verified
+  - cells:
+      transcript page: 13:3–5; 42:11–18
+      topic: How long he stayed
+      what Cole says: "'I was only there for an hour'; 'I only stayed for like an hour' (42:12–13); again
+        at 73:16 and 84:23"
+      first named by: Cole
+      specific or generic: "Generic: 'an hour', one of the frozen examples"
+      against the man in the October footage: "Not observable: the cameras cover six minutes"
+      against the bomber's sworn movements: "Not described: the sworn account gives no stay"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 13:3–5, 42:11–18, 73:16, 84:23 (PDF pp. 13, 42, 73, 84)
+      verification: ai_verified
+  - cells:
+      transcript page: 13:15–18; 42:14–16, 23–24
+      topic: Talking to anyone
+      what Cole says: "'I didn't really talk to anyone or do anything, just hung around'; asked twice
+        whether he talked to anyone there: 'No'"
+      first named by: Cole
+      specific or generic: "Generic: no person, place or time"
+      against the man in the October footage: "Not observable: the six minutes show him alone, which cannot show the hour"
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 13:15–18, 42:14–16, 42:23–24 (PDF pp. 13, 42)
+      verification: ai_verified
+  - cells:
+      transcript page: 13:19–14:3; 14:16–19
+      topic: Where he went after
+      what Cole says: He had told his mother he was going to a restaurant he names, beside where he works;
+        after the protest 'I got in my car and I left', went to that restaurant 'and then I went
+        back home'
+      first named by: Cole
+      specific or generic: "Specific: a named place (described here, not named)"
+      against the man in the October footage: "Not observable: he gives no time, and the cameras end at 8:05:42"
+      against the bomber's sworn movements: "Not described: the sworn account ends at 8:18"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 13:19–14:3, 14:16–19 (PDF pp. 13–14)
+      verification: ai_verified
+  - cells:
+      transcript page: 36:3–7
+      topic: Who was with him
+      what Cole says: "Asked who he came up to DC with: 'No one. I was alone.'"
+      first named by: Cole
+      specific or generic: "Generic: the frozen list of specific details names nothing of this kind"
+      against the man in the October footage: "Fits: he crosses Peace Circle alone (PIPE-S002)"
+      against the bomber's sworn movements: "Not described: the standard names no companion"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 36:3–7 (PDF p. 36)
+      verification: ai_verified
+  - cells:
+      transcript page: 37:6–11; 38:16–18
+      topic: When he came
+      what Cole says: "'I know it was night. Past that, I don't really know the exact time.' He agreed it
+        was dark; an agent later said 'that afternoon', which he neither took up nor disputed"
+      first named by: Cole ('night'); an agent ('dark outside', 37:10; 'that afternoon', 38:16–18)
+      specific or generic: "Generic: 'at night', one of the frozen examples"
+      against the man in the October footage: "Fits: he is filmed at about 8 p.m., after dark"
+      against the bomber's sworn movements: "Fits: 7:34 to 8:18 p.m., after dark"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 37:6–11, 38:16–18 (PDF pp. 37–38)
+      verification: ai_verified
+  - cells:
+      transcript page: 38:12–15
+      topic: How he came
+      what Cole says: "Asked how he got there, he agreed he drove; asked which car: 'The Nissan, my car.'
+        He had first said he left 'in my car' (14:18)"
+      first named by: Cole
+      specific or generic: "Specific: a named item"
+      against the man in the October footage: "Not observable: he is filmed on foot, and no car of his is on the six cameras"
+      against the bomber's sworn movements: Not described by the standard as frozen; the prosecution's
+        plate-reader record of this car (PIPE-C026) is not part of it
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 38:12–15, 14:16–19 (PDF pp. 38, 14)
+      verification: ai_verified
+  - cells:
+      transcript page: 40:2–9; 41:1–3
+      topic: The way in
+      what Cole says: "'I take my usual route to get into DC ... that avoids all the, all the traffic';
+        'When you're going to the bridge -- I do come in -- I come in from the south'"
+      first named by: Cole
+      specific or generic: "Generic: no road or bridge named"
+      against the man in the October footage: Not observable
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 40:2–9, 41:1–3 (PDF pp. 40–41)
+      verification: ai_verified
+  - cells:
+      transcript page: 41:4–5
+      topic: The road in
+      what Cole says: "Asked 'You take Route 95?': 'Yeah. Yeah.'"
+      first named by: An agent ('You take Route 95?', 41:4)
+      specific or generic: "Specific: a named road"
+      against the man in the October footage: Not observable
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 41:4–5 (PDF p. 41)
+      verification: ai_verified
+  - cells:
+      transcript page: 41:6–23
+      topic: Where he parked
+      what Cole says: "Asked the general area where he parked: 'there's a park with a bunch, with a bunch
+        of neighborhoods'; 'There's a road that splits in the middle and, like, two grass -- like,
+        two grassy areas on each side. That's where I always go.' He did not know the park's name,
+        and parks right next to it, typically"
+      first named by: "Cole: no agent had named a park or a street (the agents first name Folger Park at 54:19)"
+      specific or generic: "Generic: no park or street named (see the findings)"
+      against the man in the October footage: "Not observable: no parking place is on the six cameras"
+      against the bomber's sworn movements: "Not described: the standard gives no parking place"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 41:6–23 (PDF p. 41)
+      verification: ai_verified
+  - cells:
+      transcript page: 42:2–7
+      topic: Where the protest was
+      what Cole says: "Asked where the protest was: 'I think, I think it was -- it was in front of the
+        Capitol, right?'"
+      first named by: Cole
+      specific or generic: "Generic: 'the Capitol', one of the frozen examples; hedged"
+      against the man in the October footage: "Not observable: no time ties it to the six minutes"
+      against the bomber's sworn movements: "Not described: no time ties it to the sworn minutes"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 42:2–7 (PDF p. 42)
+      verification: ai_verified
+  - cells:
+      transcript page: 42:8–10; 43:12–44:5
+      topic: The crowd
+      what Cole says: Agreed when asked whether there were 'a lot of people there'; described 'just a
+        bunch of people walking about' and 'groups of people'
+      first named by: An agent ('were there a lot of people there?', 42:8–9)
+      specific or generic: Generic
+      against the man in the October footage: Not observable
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 42:8–10, 43:12–44:5 (PDF pp. 42–44)
+      verification: ai_verified
+  - cells:
+      transcript page: 42:17–22
+      topic: What he did
+      what Cole says: "'Just walk around, sit around, look around'"
+      first named by: Cole
+      specific or generic: "Generic: 'walked around', one of the frozen examples"
+      against the man in the October footage: "Fits in part: he is filmed walking"
+      against the bomber's sworn movements: "Fits in part: the bomber is filmed walking"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 42:17–22 (PDF p. 42)
+      verification: ai_verified
+  - cells:
+      transcript page: 42:19–22
+      topic: Headphones
+      what Cole says: "'wishing I had my headphones with me because, because I didn't'"
+      first named by: Cole
+      specific or generic: "Specific: a named item, absent"
+      against the man in the October footage: Not observable at the frames' resolution; PIPE-S002 records none
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 42:19–22 (PDF p. 42)
+      verification: ai_verified
+  - cells:
+      transcript page: 43:12–18
+      topic: What he saw
+      what Cole says: "'I know there was a guy carrying a confederate flag'"
+      first named by: Cole
+      specific or generic: "Specific: a named item"
+      against the man in the October footage: "Not observable: no time ties it to the six minutes, and PIPE-S002 records no flag"
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 43:12–18 (PDF p. 43)
+      verification: ai_verified
+  - cells:
+      transcript page: 49:15–23
+      topic: What he wore
+      what Cole says: "'I know I wore a jacket because it was cold outside'; asked what type, he did not
+        remember: 'it happened a long time ago'"
+      first named by: "Cole: the agent asked what he wore, naming no garment"
+      specific or generic: "Generic: 'a jacket', one of the frozen examples, with no colour, fabric or style"
+      against the man in the October footage: "Fits in kind: a hooded jacket (PIPE-S002)"
+      against the bomber's sworn movements: "Fits loosely in kind: the affidavit's grey hooded sweatshirt is also an outer top"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 49:15–23 (PDF p. 49)
+      verification: ai_verified
+  - cells:
+      transcript page: 73:7–12
+      topic: Where he parked
+      what Cole says: "'I drove up to Fuller Square (sic), or however you call it, because the first time
+        I went to DC, there was a lot of traffic'; 'the Capital isn't really far from where I
+        parked. It's not like it's a long walk.'"
+      first named by: "An agent: 'We know you parked at -- near Folger Park' (54:19)"
+      specific or generic: "Specific: a named park, as transcribed"
+      against the man in the October footage: Not observable
+      against the bomber's sworn movements: "Not described: the standard gives no parking place"
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 73:7–12 (PDF p. 73)
+      verification: ai_verified
+  - cells:
+      transcript page: 73:14–18; 84:22–24
+      topic: The order of the evening
+      what Cole says: "'when I parked, I walk -- I just walked over there, went -- became part, became
+        part of the, the protest. Stayed there for an hour'; he left 'through, through the, the
+        street that takes you to --'; later: 'I stayed there for an hour, went to my car, drove
+        away'"
+      first named by: Cole
+      specific or generic: "Generic: no place or time named; the street he left by is cut off"
+      against the man in the October footage: "Not observable: the cameras show one walk of six minutes"
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 73:14–18, 84:22–24 (PDF pp. 73, 84)
+      verification: ai_verified
+  - cells:
+      transcript page: 77:20–78:9
+      topic: The shoes shown
+      what Cole says: "Asked 'Do you recognize these shoes?': 'Yeah. I used, I used to have a pair.' He no
+        longer had them: 'I grew out of them. I threw them away. I replaced them', as they were old
+        and coming apart"
+      first named by: An agent, by showing them (77:20); the transcript does not name the shoe
+      specific or generic: "Specific: an item the agents showed"
+      against the man in the October footage: "Not observable: no shoe brand can be made out (PIPE-S002)"
+      against the bomber's sworn movements: Fits in kind, if the shoe shown was the kind the bomber wore,
+        as the prosecution says; he does not say he wore them that evening
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 77:20–78:9 (PDF pp. 77–78)
+      verification: ai_verified
+  - cells:
+      transcript page: 79:8–13
+      topic: Shoes that evening
+      what Cole says: "Asked whether he wore 'these the night of the 5th': 'I genuinely don't remember';
+        'I just slipped on, I just slipped on the first pair of shoes I could, I could, I could
+        find'"
+      first named by: An agent (the shoes and the night, 79:8–9)
+      specific or generic: Generic
+      against the man in the October footage: Not observable
+      against the bomber's sworn movements: Not described
+    citation:
+      text: Transcript of the recorded FBI interview of Brian Cole Jr., December 4, 2025 (ECF No. 102-1,
+        Exhibit A to the defense's motion to suppress statements, filed 09/29/26)
+      url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.102.1.pdf
+      locator: Tr. 79:8–13 (PDF p. 79)
+      verification: ai_verified
+findings:
+  - statement: "The account does not tell the two apart: under the frozen rule it is undecided against
+      the man in the October footage and undecided against the bomber's sworn movements, the pair
+      the rule reports as fitting both. Of the 21 details recorded, four are specific and Cole's own
+      — his Nissan, a restaurant he says he drove to afterwards, a man he saw carrying a Confederate
+      flag, and having no headphones with him — and neither record can show any of them, so none
+      counts as a fit or a conflict on either side. Nothing he said conflicts with either: he gave
+      no clock time ('I know it was night') and no place more definite than 'in front of the
+      Capitol, right?', which no time ties to the minutes the cameras or the affidavit cover. The
+      result turns on no close grade: graded specific, 'alone' would be one fit with the man, short
+      of the two the rule requires, and 'a jacket' is generic by the frozen examples."
+    evidenceId: PIPE-E181
+  - statement: While denying the charge, Cole said he drove his Nissan to Washington alone, at night, to
+      a protest about the election 'in support of Trump'; that he stayed about an hour, walking,
+      sitting and looking around, and talked to no one; that he wore 'a jacket because it was cold
+      outside', its type forgotten; and that he then drove to a restaurant and home (Tr. 13–14,
+      36–49, 73, 84).
+    evidenceId: PIPE-E183
+  - statement: "What could have told the two standards apart came from the agents. Before he said yes,
+      they told him he had been 'in the area of the RNC and the DNC' (54:9–11) and had 'parked at --
+      near Folger Park' (54:19), that his phone was at the RNC and DNC (85:1–2) and that he was
+      there 'between 7:34 and 8:18 p.m.' (88:18–20), and they showed him shoes (77:20). He had said
+      none of these himself. Before the bound he took up two: he called where he parked 'Fuller
+      Square (sic), or however you call it' (73:8), and he said he used to have a pair of the shoes
+      (77:21)."
+    evidenceId: PIPE-E184
+  - statement: "One description came from Cole before any agent had named a place. Asked the general
+      area where he parked (41:6–8), he said 'there's a park with a bunch, with a bunch of
+      neighborhoods' and 'There's a road that splits in the middle and, like, two grass -- like, two
+      grassy areas on each side. That's where I always go' (41:9–19), and he did not know the park's
+      name. The agents first named Folger Park at 54:19, thirteen pages later; an agent first
+      offered a map at 40:11–14 and pulled one up on a phone at 41:24–42:1, after the description.
+      On OpenStreetMap, D Street SE between 2nd and 3rd Streets divides into two roadways around
+      Folger Park, the southern one running between Folger Park and Providence Park: the block
+      where, by the prosecution's account, he said after his admission that he had parked that night
+      (ECF No. 17 at 15–16). The description names no street and could fit other places; it is
+      graded generic, and neither standard includes a parking place, so it counts for neither."
+    evidenceId: PIPE-E186
+  - statement: "Asked 'Do you recognize these shoes?', he said 'Yeah. I used, I used to have a pair',
+      and that he had thrown them away: 'I grew out of them. I threw them away. I replaced them', as
+      they were old and coming apart (77:20–78:9). The transcript does not name the shoe; the
+      prosecution's memorandum says he was shown a picture of a Nike Air Max Speed Turf (ECF No. 17
+      at 14). Asked whether he wore them the night of the 5th, he said he did not remember
+      (79:8–13). An agent named the shoes first, so these rows are recorded and not counted."
+    evidenceId: PIPE-E189
+  - statement: The bound falls where the motion to suppress cites it. Shown a video on a laptop and
+      asked 'Do you recognize that person?', he said 'No', and that he had not watched the video
+      before (92:8–11); told that lying to federal agents is a crime and that the agents knew he had
+      not told the truth so far (92:16–23), he was asked 'So, is this individual you?' and after a
+      pause said 'Yes' (93:3–5). The transcript does not say what the video showed.
+    evidenceId: PIPE-E190
+limitations:
+  - The transcript is a typed record of a video recording that is not public (ECF No. 103, a manual
+    exhibit not on the public docket). Passages it marks inaudible or indiscernible could not be
+    read (one, at 56:24–25, mentions the protest), and what was shown on screens — the map on an
+    agent's phone (41:24–42:1), the shoes, the video — is not described in it.
+  - Read once, by eye, from the page images in a browser, not downloaded or machine-read. Page and
+    line numbers are the transcript's own; its printed page numbers equal the PDF's throughout the
+    pages read. Quotations keep the transcript's spelling, including 'Capital' for the Capitol and
+    the transcriber's '(sic)'.
+  - "The footage was found by searching where this account pointed, its maker says, so a fit of
+    place or time with the man was given no weight, as frozen: the account cannot confirm the
+    footage, nor the footage the account."
+  - "Both standards are as frozen: six cameras over six minutes for the man (PIPE-S002), and the
+    sworn timeline from 7:34 to 8:18 p.m. for the bomber. Neither includes a car, a parking place,
+    or anything outside those minutes, where most of Cole's specific details fall."
+  - The frozen list of specific details names no kind for companions or for an unnamed place;
+    'alone' and the parking description are graded generic on that ground, and every grade is shown
+    beside its passage for regrading.
+  - The map comparison rests on OpenStreetMap, a volunteer-edited public map viewed on October 19,
+    2026, and on the prosecution's account of where he said he parked; it was not checked against
+    the District's own records or against any camera.
+  - As frozen, nothing about the devices is recorded, and agents, relatives and other private people
+    are described by role. The restaurant he names is described, not named, because it would point
+    to a relative's workplace.
 runId: 2026-10-19-session-january-6-pipe-bombs-founder
 model: claude-opus-5-5
 date: 2026-10-19
