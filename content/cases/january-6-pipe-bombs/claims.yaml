@@ -530,12 +530,15 @@
     runId: "2026-10-19-session-january-6-pipe-bombs-founder"
     date: "2026-10-19"
 
+# Narrowed 2026-10-21 (session 2026-10-21-session-site-125547), at the review
+# of #129: the retraction alone. The lawsuit's course is PIPE-C084; whether the
+# two identifications share a method is PIPE-C085.
 - id: PIPE-C036
   statement: >-
-    The identification method behind the October footage — matching gait and behavior by eye — had earlier named another person as the bomber, an identification its publisher retracted.
+    The November 2025 report in The Blaze that named a former Capitol Police officer as a forensic match for the bomber was retracted by its publisher.
   theme: footage
   rung: observation
-  claimType: methodological
+  claimType: observation
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: the court record of United States v. Cole"
@@ -1214,3 +1217,56 @@
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-20
+
+# ── 2026-10-21: the defamation docket, and the conflict briefs in United States v. Cole ──
+# The former officer is a private person who has not been charged; she is not
+# named in any record here (AGENTS.md, living persons; config/site-rules.md).
+
+- id: PIPE-C084
+  statement: >-
+    No judgment has been entered in the defamation suit over the November 2025 report: the clerk's entries of default against Baker, Hanneman and their company were set aside on July 13, 2026, and the defendants' motions to dismiss were undecided when the docket was last updated, on October 14, 2026.
+  theme: insider
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: &o21
+    ref: "operator session 2026-10-21: the defamation suit's docket (E.D. Va. No. 1:26-cv-01078) and the conflict briefs in United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (claude-opus-5-5), operator session 2026-10-21-session-site-125547"
+    runId: "2026-10-21-session-site-125547"
+    date: "2026-10-21"
+
+- id: PIPE-C085
+  statement: >-
+    The October 2026 identification of the man in the footage as Cole rests on the same method as the November 2025 identification of a former Capitol Police officer: a forensic gait match.
+  theme: footage
+  rung: observation
+  claimType: methodological
+  reviewState: ai_extracted
+  origin: *o21
+
+- id: PIPE-C086
+  statement: >-
+    Cole's lawyers are pursuing a defense that another person placed the devices: the then-serving Capitol Police officer whom the retracted November 2025 report named.
+  theme: proceedings
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o21
+
+- id: PIPE-C087
+  statement: >-
+    Three of the lawyers defending Cole also represent Baker and Hanneman in the defamation suit over the November 2025 report.
+  theme: proceedings
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o21
+
+- id: PIPE-C088
+  statement: >-
+    The FBI's inquiry into the November 2025 identification found no evidence connecting the former officer to the devices.
+  theme: insider
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o21

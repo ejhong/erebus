@@ -1311,15 +1311,17 @@
     date: "2026-10-19"
 
 - id: PIPE-E075
-  title: "A federal court entered a default judgment against Baker over the earlier gait identification"
-  claimIds: [PIPE-C036]
+  title: "HuffPost reported a default judgment against Baker; the court's docket records a clerk's entry of default, since set aside"
+  claimIds: [PIPE-C084]
   sourceId: SRC-PIPE-HUFFPOST-DEFAULT-JUDGMENT
-  direction: supports
-  strength: strong
+  direction: undermines
+  strength: weak
   sourceStatement: >-
     The earlier reports suggested "forensic gait analysis" "that matched the suspect seen in surveillance footage planting pipe bombs". "U.S. District Judge Rossie Alston Jr. entered the default judgment against Baker after Baker failed to respond to the claim." Correction: "The default judgment was entered only against Baker, Blaze Media reporter Joseph Hanneman and Veritas Regnant LLC, a media entity formed by Baker and Hanneman."
   editorInference: >-
-    A default judgment means Baker did not answer the suit: the complaint's allegations are taken as admitted against those who defaulted, without the court hearing evidence, so it is not a finding on the gait evidence. The earlier identification named a former Capitol Police officer, a private person this site does not name.
+    The report is superseded by the court's own record. The docket shows that on May 20, 2026 the judge directed the plaintiff to seek the clerk's entry of default under Rule 55(a), and the clerk entered default against the three on May 21 (PIPE-E201): an entry of default, the step before a judgment, not a default judgment. On July 13, 2026 the court set the entries aside by the parties' stipulation (PIPE-E200). This site's earlier records and article repeated the report's "default judgment" and are corrected. The earlier identification named a former Capitol Police officer, a private person this site does not name.
+  limitations:
+    - "A news report of a court action, written the day the clerk's entries were made; the docket is the primary record."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -1907,7 +1909,7 @@
   sourceStatement: >-
     HuffPost writes that the officer sued "after he falsely accused her of planting pipe bombs on the eve of the Capitol attack"
   editorInference: >-
-    Baker and two co-defendants did not answer the suit, so the court entered judgment against them without weighing the identification's evidence; Blaze Media, which retracted the report, contests the claims against it (PIPE-E199).
+    HuffPost's word "falsely" is its own; no court has decided it. What it reported as a default judgment was the clerk's entry of default against Baker and two co-defendants, which the court set aside on July 13, 2026; all four defendants have since moved to dismiss, and no judgment has been entered (PIPE-C084). Blaze Media, which retracted the report, contests the claims against it (PIPE-E199).
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -2369,7 +2371,7 @@
   sourceStatement: >-
     The episode summary describes the man in the footage with "minimal arm swing" and contrasts it "with the hooded bomber’s exaggerated arm-swinging, right-leg crossover gait"
   editorInference: >-
-    Gait judged by eye from surveillance video; the same kind of judgment earlier named another person, an identification its publisher retracted.
+    Gait judged by eye from surveillance video, offered to tell the man from the bomber, not to identify him; the November 2025 identification instead claimed a quantified software gait match (PIPE-C085), and was retracted by its publisher.
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19"
@@ -3365,7 +3367,7 @@
   exactLocator: the post's two images
   limitations:
     - The right image's source is not stated, and this site has not established it.
-    - A likeness judged by eye is the method that named another person in November 2025 (PIPE-C036).
+    - A likeness judged by eye has no measured error rate; the November 2025 identification, which named another person and was retracted, rested on a different claim, a software gait match (PIPE-C085).
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: camera 602's posted file, downloaded and read frame by frame"
@@ -3399,12 +3401,293 @@
   direction: context
   strength: weak
   sourceStatement: An attorney for Blaze Media told HuffPost they intend to "vigorously defend the meritless defamation claims asserted against it in this case."
-  editorInference: "The retraction is not a concession in court: the claims against the publisher were contested when the default was entered against the other three defendants. Neither the retraction nor the default tested whether the identification was right."
+  editorInference: "The retraction is not a concession in court: the claims against the publisher were contested when the clerk entered default against the other three defendants. Neither the retraction nor the entries of default, since set aside, tested whether the identification was right."
   limitations:
-    - As of the article's update of May 21, 2026; the suit's later course was not checked.
+    - "As of the article's update of May 21, 2026. The docket, read on 2026-10-21, shows Blaze Media's motion to dismiss the amended complaint and its motion for fees, both fully briefed by October 5, 2026 and undecided (PIPE-E202)."
   reviewState: ai_extracted
   origin:
     ref: "founder session 2026-10-19: the November 2025 identification, described evenly"
     extractedBy: Claude Opus 5.5 (Claude Code), founder session
     runId: 2026-10-19-session-january-6-pipe-bombs-founder
     date: 2026-10-20
+
+# ── 2026-10-21: the defamation docket, and the conflict briefs in United States v. Cole ──
+# The former officer is a private person who has not been charged. Filings that
+# name her are quoted around the name, and the personal details of the FBI's
+# inquiry into her that ECF No. 91 sets out are not published here.
+
+- id: PIPE-E200
+  title: The court set aside the clerk's entries of default against Baker, Hanneman and their company
+  claimIds: [PIPE-C084]
+  sourceId: SRC-PIPE-EDVA-DEFAMATION-DOCKET
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Order of July 13, 2026: "it is further ORDERED Defendants' Motion to Set Aside Entry of Default 35 is GRANTED; it is further ORDERED the Clerks entries of default against Defendants Stephen M. Baker, Joseph M. Hanneman, and Veritas Regnat LLC (Dkts. 21, 22, 23) are SET ASIDE"
+  editorInference: >-
+    The order approved a joint stipulation: the plaintiff agreed to the set-aside, and the three were directed to answer within fourteen days. Nothing was ever entered against them beyond the clerk's entries, and those no longer stand.
+  exactLocator: docket entry 67 (July 13, 2026)
+  reviewState: ai_extracted
+  origin: &o21e
+    ref: "operator session 2026-10-21: the defamation suit's docket (E.D. Va. No. 1:26-cv-01078) and the conflict briefs in United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (claude-opus-5-5), operator session 2026-10-21-session-site-125547"
+    runId: "2026-10-21-session-site-125547"
+    date: "2026-10-21"
+
+- id: PIPE-E201
+  title: What was entered in May was the clerk's entry of default, not a judgment
+  claimIds: [PIPE-C084]
+  sourceId: SRC-PIPE-EDVA-DEFAMATION-DOCKET
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Order of May 20, 2026: "It is hereby ORDERED that Plaintiff is DIRECTED to seek Clerk's Entry ofDefault pursuant to Federal Rule of Civil Procedure 55(a) for the remaining defendants". Entry of May 21: "Clerk's ENTRY OF DEFAULT as to Stephen M. Baker"
+  editorInference: >-
+    Rule 55(a) is the clerk's notation that a party has not answered; a default judgment is a separate, later step under Rule 55(b), and none appears on the docket. The news report that a judge "entered the default judgment" (PIPE-E075) described the first step as the second.
+  exactLocator: docket entries 20 and 21 (May 20 and 21, 2026)
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E202
+  title: All four defendants' motions to dismiss were fully briefed by October 5 and undecided
+  claimIds: [PIPE-C084]
+  sourceId: SRC-PIPE-EDVA-DEFAMATION-DOCKET-P2
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    October 5, 2026: "REPLY Memorandum of Law in Support of 86 MOTION to Dismiss, filed by Stephen M. Baker, Joseph M. Hanneman, Veritas Regnat LLC." and "REPLY in Further Support of 81 MOTION to Dismiss Amended Complaint, filed by Blaze Media LLC." The last entry shown is an order of October 14, 2026 admitting counsel.
+  editorInference: >-
+    The plaintiff filed an amended complaint on July 23, 2026, and the first motions to dismiss were denied as moot. Against the amended complaint, Blaze Media moved to dismiss and for fees, and Baker, Hanneman and their company moved to dismiss for failure to state a claim and for lack of personal jurisdiction and for fees; the plaintiff opposed on September 21. No ruling on any of them appears through October 14.
+  exactLocator: docket entries 111 and 113 (October 5, 2026), 115 (October 14, 2026)
+  limitations:
+    - "A mirror of the court's docket, last updated by CourtListener on October 19, 2026: a later ruling, or an entry not yet bought into the archive, would not show."
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E203
+  title: The November 2025 article claimed a software gait match of 94 to 98 per cent, as the government's brief quotes it
+  claimIds: [PIPE-C085]
+  sourceId: SRC-PIPE-ECF99-GOVT-CONFLICT-BRIEF
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The brief says the November 8, 2025 article claimed that "[a] forensic analysis of a female former U.S. Capitol Police officer’s gait is a 94% - 98% match to the unique stride of the long-sought Jan. 6 pipe-bomb suspect." It adds that the claim was "based on an unidentified" "software algorithm" and an anonymous "veteran analyst" who "personally pegged the match at closer to 98%."
+  editorInference: >-
+    The earlier identification claimed a quantified gait comparison by software and an analyst, neither named. The October identification offers no such analysis: it rests on a mask and a jacket the family recognised and a likeness judged by eye (PIPE-E204). The two differ in method; what they share is that neither method has been published or tested by anyone independent.
+  exactLocator: pp. 3–4
+  limitations:
+    - "The article itself could not be opened through the reading tool (the Internet Archive's copy returned an error); the quotation is the government's, in an adversarial brief, though of a published text anyone can check."
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E204
+  title: "The October identification began with the mask, by Baker's own account"
+  claimIds: [PIPE-C085]
+  sourceId: SRC-PIPE-BAKER-X-MASK
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "When I saw the 'maroon and gold' face mask, I knew we had found Brian Cole Jr."
+  editorInference: >-
+    Baker's identification of the man as Cole starts from clothing and the family's recognition, relayed by him (PIPE-E061, PIPE-E062). Where he speaks of gait in October, it is to tell the man's walk from the bomber's (PIPE-E136), not to match the man to Cole; no gait analysis of the man is offered.
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E205
+  title: "The government: The Blaze retracted the article after Cole's arrest"
+  claimIds: [PIPE-C036]
+  sourceId: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "After the defendant’s December 2025 arrest, The Blaze retracted the article accusing" the former officer "of being the pipe bomber."
+  editorInference: >-
+    The brief cites the Washington Post's report of the retraction (December 5, 2025). The retraction is a public act of the publisher, stated alike by the government and by the press (PIPE-E076).
+  exactLocator: p. 6
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E206
+  title: "The defense's own word: an alternative-perpetrator defense"
+  claimIds: [PIPE-C086]
+  sourceId: SRC-PIPE-ECF104-DEFENSE-CONFLICT-RESPONSE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The response refers to "Mr. Cole’s alternative-perpetrator defense" (p. 1) and argues: "If the evidence that Mr. Cole seeks in his Rule 17(c) subpoenas supports that defense, pursuing it is zealous advocacy for Mr. Cole." (p. 4)
+  editorInference: >-
+    The defense names the theory as its own and ties it to the subpoenas it has sought since April 1, 2026, among them those to the former officer. That a defense pursues a theory is not evidence the theory is true; it shows only that the insider account is now argued in court, not only by Baker.
+  exactLocator: pp. 1–4 (the phrase on p. 1, the argument on p. 4)
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E207
+  title: "The government: the defense intends to argue that a then-serving Capitol Police officer was the real perpetrator"
+  claimIds: [PIPE-C086]
+  sourceId: SRC-PIPE-ECF99-GOVT-CONFLICT-BRIEF
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "All indications are that the defendant intends to continue to pursue the claim that" the former officer, "a then-serving U.S. Capitol Police officer, was the real perpetrator of the crimes with which he is charged."
+  editorInference: >-
+    The brief says the defense's discovery requests of July 8, 2026 were expressly premised on paragraphs of the defamation complaint, and that the defense renewed its subpoena motion on August 19. Adverse parties agree on what the defense is pursuing.
+  exactLocator: p. 6
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E208
+  title: "The government: three of Cole's lawyers appeared for Baker and Hanneman in June"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-ECF99-GOVT-CONFLICT-BRIEF
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "On June 15, 2026, three of the defendant’s lawyers in this case (Alex Little, John Glover, and Zachary Lawson, all of the law firm Litson PLLC) filed motions to enter appearances defending Baker and Hanneman"
+  exactLocator: p. 5
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E209
+  title: "The defense agrees: its counsel represent Cole and the Virginia defendants"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-ECF104-DEFENSE-CONFLICT-RESPONSE
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The court's minute order, the response says, used "dual representation" "as shorthand for the simple fact that undersigned counsel represent Mr. Cole here and the Virginia defendants."
+  editorInference: >-
+    The fact is undisputed between the parties; what they dispute is whether it is a conflict. The defense argues that the two representations point the same way and that two of Cole's lawyers, from another firm, have no part in the civil case.
+  exactLocator: p. 7
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E210
+  title: "The Virginia court admitted Cole's lawyers to defend Baker, Hanneman and their company"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-EDVA-DEFAMATION-DOCKET
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    July 3, 2026: "ORDER granting 37 Motion for Pro hac vice. Appointed Joseph Alex Little, IV for Stephen M. Baker, Joseph M. Hanneman, Veritas Regnat LLC." Like orders admit John R. Glover and Zachary C. Lawson for the same three.
+  exactLocator: docket entries 37 to 39 and their orders (July 3, 2026)
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E211
+  title: "The government: Baker says Cole's lawyers approached him"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-ECF99-GOVT-CONFLICT-BRIEF
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The brief quotes Baker, on September 10, 2026: "my attorneys, who are also Brian Cole Jr.’s attorneys, they approached Joe and I and said ‘we want your case.’" It adds that, by Baker's public account, defense counsel told him before April 1 that they would file something "damning" in the criminal case.
+  editorInference: >-
+    The brief draws both statements from Baker's videos online and gives their timestamps; this site has not heard them. They bear on how close the main public voice for Cole's innocence and Cole's defense have been, and since when: the footage account and the defense are not independent lines.
+  exactLocator: pp. 5–6
+  limitations:
+    - "The government's rendering of unsworn remarks, which the defense says establish nothing improper (PIPE-E212)."
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E212
+  title: "The defense: counsel took on Baker's case after he was sued, in a representation aligned with Cole's"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-ECF104-DEFENSE-CONFLICT-RESPONSE
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The response says the defense moved for the subpoenas "on April 1, 2026, three weeks before" the suit was filed, and that its investigation "reached a journalist who had investigated many" questions at the center of the defense; after the suit, "counsel agreed to take on a representation that the government itself concedes is aligned with Mr. Cole’s interests."
+  editorInference: >-
+    By both sides' accounts the defense was in touch with Baker before it filed its first subpoena motion, and represented him from June. The defense says the order of events shows the alternative-perpetrator theory came first; the government, that it complicates that.
+  exactLocator: pp. 6–7
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E213
+  title: The court has ordered conflicts counsel appointed to advise Cole
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-COLE-DOCKET-P3
+  direction: context
+  strength: strong
+  sourceStatement: >-
+    Minute order of September 16, 2026: "the government raised the possibility of an attorney conflict arising from defense counsel's representation of litigants in another case." Order of October 20, 2026: "The Federal Public Defender for the District of Columbia shall promptly appoint conflicts counsel to advise Defendant as to the existence and nature of the possible conflict and the possible adverse consequences of such representation." And: "By October 30, 2026, conflicts counsel shall file a status report"
+  editorInference: >-
+    The court took the government's course, appointing counsel from outside the defense team, over the defense's proposal that two of Cole's own lawyers advise him. It has not found that a conflict exists, and Cole may still waive one.
+  exactLocator: minute order of September 16, 2026; ECF No. 114 (October 20, 2026)
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E214
+  title: "The government: the FBI's inquiry found no evidence connecting the former officer to the devices"
+  claimIds: [PIPE-C088]
+  sourceId: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The FBI investigated this claim, as it did many others, and found it to be baseless." (p. 1) "The FBI’s investigative efforts yielded zero evidence connecting" the former officer "in any way to the construction, transportation, or planting of the pipe bombs." (p. 5)
+  editorInference: >-
+    The brief describes the inquiry's steps in November 2025 and records it says place her away from Capitol Hill that evening; this site does not publish those details, about a private person. The government says it gave the records to the defense in discovery, under a protective order that keeps them off the public docket. The defense holds them and still pursues the theory (PIPE-C086); it has not said, in the filings read, which of them it disputes.
+  exactLocator: pp. 1–5 (the first sentence on p. 1, the second on p. 5)
+  limitations:
+    - "The prosecution's description of its own records, which no independent party has examined and which are not public: under this site's rules it can carry a claim only provisionally."
+    - "The government's interest is plain: the theory it describes is the defense to its charge."
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E215
+  title: "Docket: not-guilty pleas to the third superseding indictment; a scheduling order to come"
+  claimIds: [PIPE-C057]
+  sourceId: SRC-PIPE-COLE-DOCKET-P3
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Minute entry for the arraignment of October 1, 2026: "Plea of NOT GUILTY entered on Counts 1sss-8sss. Pre-trial Scheduling Order forthcoming via Chambers."
+  editorInference: >-
+    The plea is confirmed by the court's record. The February 16, 2027 trial date was reported in July (PIPE-E119); the docket through October 20 shows the scheduling order still to come and no order moving or confirming the date.
+  exactLocator: minute entry of October 5, 2026, for the hearing of October 1
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E216
+  title: "Docket: the briefing schedule on the confession and the October motions"
+  claimIds: [PIPE-C057]
+  sourceId: SRC-PIPE-COLE-DOCKET-P3
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Minute order of October 7, 2026, on the motion to suppress: "the government shall file its opposition by November 13, 2026, and Defendant shall file any reply by December 4, 2026." Minute order of October 19, 2026, on the motions for a bill of particulars and to compel an election between Counts One and Two: "The government shall file its oppositions by October 27, 2026, and Defendant shall file any replies by November 2, 2026."
+  editorInference: >-
+    The government opposed the motion to dismiss Counts One and Two as untimely on October 19 (ECF No. 112). Procedural status last checked October 21, 2026.
+  exactLocator: minute orders of October 7 and October 19, 2026
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E217
+  title: "The government: the one podiatrist's comparison it describes was of the former officer, and reached no conclusion"
+  claimIds: [PIPE-C016]
+  sourceId: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    Among the steps of the FBI's inquiry into the former officer, the brief lists submitting footage of her "to a podiatrist to compare her gait to that of the pipe bomber (the examiner was unable to reach any conclusion)."
+  editorInference: >-
+    The government's conflict brief describes the same podiatrist as one who reviewed footage of the former officer and of others under an existing FBI contract (ECF No. 99, p. 4). So an inconclusive gait comparison by the FBI's podiatrist did happen, but the one the record describes compared another person with the bomber, not Cole. Whether the podiatrist also compared Cole, and what Baker's report refers to, the public record does not say.
+  exactLocator: p. 5
+  limitations:
+    - "The prosecution's description; the podiatrist's materials went to the defense and are not public."
+  reviewState: ai_extracted
+  origin: *o21e
+
+- id: PIPE-E218
+  title: "The government's reply: the defense calls the two cases mutually reinforcing, and the government agrees"
+  claimIds: [PIPE-C086]
+  sourceId: SRC-PIPE-ECF105-GOVT-CONFLICT-REPLY
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "First , the defendant asserts that his claim that then-serving U.S. Capitol Police officer" — the reply names her — "actually committed the charged offenses, and his lawyers’ defense of their defamation clients’ assertion of the same," "are mutually reinforcing." "The government agrees. This is precisely the problem."
+  editorInference: >-
+    Both sides describe the defense's theory the same way and agree that the criminal defense and the civil defense point in one direction; they part on whether that makes a conflict.
+  exactLocator: p. 1
+  reviewState: ai_extracted
+  origin: *o21e

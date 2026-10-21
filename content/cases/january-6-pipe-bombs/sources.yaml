@@ -543,3 +543,82 @@
   verificationNote: Its text read through X's embed service on 2026-10-20; its two images viewed in a browser without signing in on 2026-10-19 and 2026-10-20. The post quotes an unrelated FBI recruiting post.
   reliabilityNotes:
     - "An advocate's post: the likeness it shows is judged by eye, and the right image's source is not stated."
+
+# ── the defamation suit over the November 2025 report, and the conflict question ──
+
+- id: SRC-PIPE-EDVA-DEFAMATION-DOCKET
+  title: "Docket of the defamation suit against Blaze Media LLC, Stephen M. Baker, Joseph M. Hanneman and Veritas Regnat LLC (E.D. Va. No. 1:26-cv-01078), entries 1 to 91"
+  organization: "U.S. District Court for the Eastern District of Virginia, as mirrored by CourtListener's RECAP archive"
+  year: "2026"
+  sourceType: report
+  url: https://www.courtlistener.com/docket/73220023/kerkhoff-v-blaze-media-llc/
+  verification: ai_verified
+  verificationNote: "Read on 2026-10-21 through the engine's reading tool; the page was last updated by CourtListener on October 19, 2026 and gives the date of last known filing as October 14, 2026. Docket text is the clerk's, not a party's. The case name, the page's address and the plaintiff's filings name the plaintiff, a former Capitol Police officer who is a private individual and is not charged; this site cites only entries that do not name her and does not name her."
+  reliabilityNotes:
+    - "The court's own record of what was filed and ordered, and when. It is a mirror: entries not yet bought into the RECAP archive may be missing, but each entry shown is the court's text."
+
+- id: SRC-PIPE-EDVA-DEFAMATION-DOCKET-P2
+  title: "Docket of the defamation suit against Blaze Media LLC and others (E.D. Va. No. 1:26-cv-01078), entries 92 to 115"
+  organization: "U.S. District Court for the Eastern District of Virginia, as mirrored by CourtListener's RECAP archive"
+  year: "2026"
+  sourceType: report
+  url: https://www.courtlistener.com/docket/73220023/kerkhoff-v-blaze-media-llc/?page=2
+  verification: ai_verified
+  verificationNote: "Read on 2026-10-21; the docket's second page, from August 11 to October 14, 2026. Names the plaintiff, whom this site does not name."
+  reliabilityNotes:
+    - "As above: the clerk's record, mirrored."
+
+- id: SRC-PIPE-COLE-DOCKET-P3
+  title: "Docket of United States v. Cole (D.D.C. No. 1:26-cr-00001-AHA), entries from September 10 to October 20, 2026"
+  organization: "U.S. District Court for the District of Columbia, as mirrored by CourtListener's RECAP archive"
+  year: "2026"
+  sourceType: report
+  url: https://www.courtlistener.com/docket/72099992/united-states-v-cole/?page=3
+  verification: ai_verified
+  verificationNote: "Read on 2026-10-21; the page was last updated by CourtListener on October 20, 2026, 8:39 p.m., and gives the date of last known filing as October 20, 2026."
+  reliabilityNotes:
+    - "The court's minute entries and orders, verbatim; the filings they describe are the parties'."
+
+- id: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  title: "Government's opposition to the defendant's renewed motion for early return of pretrial subpoenas, corrected (ECF No. 91, filed 08/31/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.91.0.pdf
+  verification: ai_verified
+  verificationNote: "Pages 1 to 7 read from the RECAP archive on 2026-10-21 (28 pages in all). It names the former officer and her partner and describes the FBI's inquiry into her in personal detail; this site cites only its general conclusions, quoted around the name, and publishes none of those details (AGENTS.md, living persons)."
+  reliabilityNotes:
+    - "The prosecution's description of its own investigation's records, which it has given the defense under a protective order and has not published: one interested party's account of records no independent party has examined."
+
+- id: SRC-PIPE-ECF99-GOVT-CONFLICT-BRIEF
+  title: "Government's brief in response to the court's September 16, 2026 minute order concerning defense counsel's conflict of interest (ECF No. 99, filed 09/23/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.99.0.pdf
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-21 (15 pages). Names the former officer, whom this site does not name, and the subpoena recipients; this site cites only passages that do not name them, or quotes around the name."
+  reliabilityNotes:
+    - "The prosecution's argument that defense counsel are conflicted. Its account of the November 2025 article quotes the article, which this site could not open (the Internet Archive's copy refused the reading tool); its account of the FBI's inquiry into the earlier identification is in a filing (ECF No. 91) this site has not read."
+
+- id: SRC-PIPE-ECF104-DEFENSE-CONFLICT-RESPONSE
+  title: "Defendant Brian Cole, Jr.'s response to the government's conflict brief (ECF No. 104, filed 09/30/26)"
+  organization: "Counsel for Brian Cole, Jr. (Litson PLLC; Humanity Dignity and Rights LLC)"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.104.0.pdf
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-21 (11 pages). Names the former officer, whom this site does not name."
+  reliabilityNotes:
+    - "The defense's argument that no conflict exists; its characterizations of the government's filings can be checked against them."
+
+- id: SRC-PIPE-ECF105-GOVT-CONFLICT-REPLY
+  title: "Government's response to the defendant's brief concerning defense counsel's conflict of interest (ECF No. 105, filed 09/30/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.105.0.pdf
+  verification: ai_verified
+  verificationNote: "Read from the RECAP archive on 2026-10-21 (5 pages). Names the former officer, whom this site does not name."
+  reliabilityNotes:
+    - "The prosecution's reply on the conflict: argument, not a finding."

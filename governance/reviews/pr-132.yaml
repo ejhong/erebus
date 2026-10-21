@@ -1,0 +1,15 @@
+# Review of #132, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 132
+title: "Engine: the session's trace, pulled; the money line brought current"
+url: https://github.com/ejhong/erebus/pull/132
+outcome: merged
+outcomeAt: 2026-10-20T20:02:55Z
+cases: []
+rounds:
+  - commit: 174e61037fbd7dfd6c87a9a2a1d0a5ab2738be44
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: founder_files (the mechanical check)"
+    seats: []
+harvestedAt: 2026-10-21T13:18:21.712Z
