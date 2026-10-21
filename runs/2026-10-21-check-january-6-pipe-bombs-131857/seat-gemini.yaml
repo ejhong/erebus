@@ -1,0 +1,145 @@
+runId: "2026-10-21-check-gemini"
+model: "Gemini 3.8 Flash (Google), independent check run"
+date: "2026-10-21"
+promptVersion: "check-v2"
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: provisionally_supported
+  loadBearing:
+    - PIPE-C020
+    - PIPE-C026
+    - PIPE-C027
+    - PIPE-C039
+    - PIPE-C059
+  weakestLinks:
+    - PIPE-C031
+    - PIPE-C033
+    - PIPE-C040
+    - PIPE-C052
+  synthesis: >-
+    The central question across the ledger is whether the public evidence supports the government's charged account (PIPE-C059) that Brian Cole Jr. placed the pipe bombs outside the RNC and DNC on January 5, 2021, versus alternative theories alleging misidentification (PIPE-C033) or a law enforcement insider (PIPE-C052).
+
+    Evaluating the affirmative case, the prosecution relies on multiple converging lines of physical and digital records: (1) Cole's 2017 Nissan Sentra was identified entering Washington D.C. via a South Capitol Street license plate reader at 7:10 p.m., shortly before the placements (PIPE-C026); (2) purchase records document Cole buying six specific component categories corresponding to the bombs' exact build—most critically, uncommon 9-volt battery connectors with fewer than 8,000 units distributed nationally over three years (PIPE-C020, PIPE-C021); (3) seven cell data transactions from Cole's attributed phone track the bomber's movement chronologically from 7:39 to 8:24 p.m. across matching cell sectors (PIPE-C027); and (4) search warrants executed at his residence and vehicle yielded matching galvanized pipes, end caps, wire, and receipts (PIPE-C024). Furthermore, while the defense forcefully challenges the voluntariness and contamination of Cole's custodial interview (PIPE-C041), Cole did admit to being the person on video and provided extensive details on device construction, following earlier spontaneous statements accurately describing the specific topography of D Street SE by Folger Park where the bomber operated (PIPE-C038, PIPE-C039, PIPE-C081, PIPE-C082).
+
+    Conversely, the misidentification account championed by Steve Baker posits that newly released Capitol CCTV captures Cole walking on the northwest side of the Capitol simultaneously with the bomb placements (PIPE-C031, PIPE-C033). Physical and temporal analysis (PIPE-C063) proves that the man on the northwest footage could not physically be the bomber at New Jersey Ave and E Street SE under recorded camera clocks without covering roughly a kilometer in 100 seconds. However, this alibi collapses as an exculpation of Cole because the claim that the northwest walker is Cole (PIPE-C031) remains completely unestablished: the surveillance video is low resolution (10x13 pixels for the head), the identification rests solely on subjective family recognition of generic clothing, and rigorous comparison demonstrates Cole's initial interview fits the bomber's movements just as well as the northwest footage (PIPE-C079). Crucially, the phone attributed to Cole engaged with cell sector C facing south from 200 Independence Ave at 7:59:36 p.m., placing the phone directly opposite the northwest Capitol locations (PIPE-C075). Proponents must therefore hypothesize that Cole was separated from his phone, which somehow independently traced the exact steps of the real bomber.
+
+    Finally, the insider account (PIPE-C052) lacks substantive evidentiary support, originating from an earlier report identifying a Capitol Police officer that was subsequently retracted by Blaze Media (PIPE-C036), with FBI inquiries clearing the individual (PIPE-C088). Thus, the charged account is provisionally supported based on the unrefuted convergence of hardware purchases, plate reader entries, and cell sector tracking, though a final determination awaits judicial testing of the confession and native cell and video files.
+  steelman: >-
+    The 7:59:36 p.m. cell connection at Tower 147990 Sector C placed the phone at the extreme theoretical edge of the nominal sector, meaning that if camera clocks differ by even several minutes or if Cole's phone was carried by an associate, the high-speed transit conflict between the northwest walker and the bomber could leave Cole with a viable physical alibi.
+claimAssessments:
+  - claimId: PIPE-C059
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: >-
+      The charged account is supported by the mutually corroborating convergence of license plate reader data (PIPE-E049), bank records proving purchases of matching unusual components (PIPE-E037–E041), residential search recoveries (PIPE-E045), and seven cell data sessions tracking the bomber's route (PIPE-E050–E053). While the confession faces suppression challenges (PIPE-E086–E088) and lack of direct DNA/fingerprints is noted (PIPE-E047), the independent physical and electronic trail provides strong provisional backing. The strongest opposing consideration is the unrefuted physical impossibility of one person being at Peace Circle and New Jersey/E Street SE simultaneously under raw CCTV timestamps (PIPE-E134, PIPE-E156), which would create an alibi if the CCTV subject were proven to be Cole.
+  - claimId: PIPE-C063
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      Geographic and temporal calculations in PIPE-S001/PIPE-S004 demonstrate that the distance between the Peace Circle crosswalk (camera 3187, 8:01:18 p.m.) and New Jersey Ave & E St SE (affidavit, 7:59:38 p.m.) is approximately 962 meters straight-line (PIPE-E134, PIPE-E157). Traversing this distance in 100 seconds requires a speed exceeding 34 km/h, well beyond human running speed and necessitating an offset of nine or more minutes between system clocks at a walking pace. The strongest opposing consideration is that the FBI timeline or camera 3187's system clock may suffer from uncalibrated clock drift, as camera clocks across Capitol CCTV frequently have documented offsets.
+  - claimId: PIPE-C075
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      Geographic analysis of Tower 147990 at 200 Independence Avenue SW shows its Sector C faces south (180 degrees), meaning its nominal 120-degree beam spans 120 to 240 degrees (PIPE-E051, PIPE-E162). Every location on the Capitol's northwest grounds where the October footage places the individual lies between 147 and 172 degrees off the boresight to the northwest, placing them entirely behind the sector's main coverage arc and well beyond a standard 90-degree half-power boundary. The strongest opposing consideration is cell tower RF anomalies, such as extreme backlobe propagation or signal reflection off large urban structures, though this is rare at that distance.
+  - claimId: PIPE-C031
+    verdict: weakly_supported
+    confidence: moderate
+    reasoning: >-
+      The claim that the individual shown walking near Peace Circle is Cole rests primarily on family members purporting to recognize generic garments (a cloth mask, jacket, and shoes) and Kyle Seraphin's side-by-side comparison (PIPE-E061, PIPE-E062, PIPE-E197). However, the CCTV footage at 854x480 resolution yields a head size of only 10 by 13 pixels, rendering forensic facial comparison impossible (PIPE-E198), while the DOJ and FBI have explicitly declined to confirm the identity (PIPE-E063). The strongest opposing consideration favoring the identification is that Cole's pre-confession statement described wandering Capitol grounds alone at night in a cold-weather jacket, matching the general activity depicted in the footage (PIPE-E183).
+  - claimId: PIPE-C073
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Technical analysis in study PIPE-S004 verified that all eight cameras featured in the Baker video are present in the House Administration Subcommittee on Oversight's public Rumble release (PIPE-E158). Each video segment matches the underlying congressional source file frame-for-frame, with seven aligned exactly to the captioned file times and camera 602 offset by approximately 30 seconds (PIPE-E158, PIPE-E195). There is no substantive opposing evidence challenging the provenance or presence of these eight camera files in the public archive.
+  - claimId: PIPE-C074
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Frame-by-frame analysis confirms that none of the original Capitol Police CCTV video streams had burned-in on-screen timestamps; timestamps were introduced during video editing (PIPE-E159). Moreover, seven of the eight edited timestamps match the start time recorded in the raw file name plus the elapsed video duration within a few seconds, with camera 602's caption being approximately 30 seconds early (PIPE-E159, PIPE-E196). Opposing critics claimed the times were fabricated without reference to files (PIPE-E151), but direct file inspection disproves that assertion.
+  - claimId: PIPE-C062
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      The original filenames for Capitol cameras 602 and 940 establish recording start times of 20:03:32.640 and 20:04:02.170 respectively, confirming millisecond precision in the recording system metadata (PIPE-E133, PIPE-E154). The subject is captured in camera 602 starting at 8:04:56 and in camera 940 from 8:05:23 to 8:05:42 (PIPE-E154, PIPE-E170, PIPE-E195). The primary qualification is that Baker originally conflated the files' start times (20:03:32 to 20:04:02) with the exact moments the individual appeared on screen, which occurred roughly 80 seconds into each file.
+  - claimId: PIPE-C033
+    verdict: contradicted
+    confidence: moderate
+    reasoning: >-
+      The misidentification account asserts that Cole was on the northwest side of Capitol Hill and therefore could not be the bomber (PIPE-E066). This fails because the foundational premises that the northwest walker is Cole (PIPE-C031) and that Cole was divorced from his mobile phone are unsupported: Cole's attributed phone transacted data on sector C facing south at 7:59:36 p.m., directly behind the northwest location and consistent with the bomber's movements (PIPE-E122, PIPE-E162, PIPE-E165). The strongest opposing consideration is that if camera clocks and carrier tower records contain substantial unrecognized drift or error, a physical impossibility alibi could theoretically be revived.
+  - claimId: PIPE-C079
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      Systematic coding of Cole's initial custodial interview transcript under the frozen protocol of study PIPE-S003 revealed 21 details, of which four were specific and unique to Cole (his car model, visiting a restaurant afterward, spotting a Confederate flag, lacking headphones) (PIPE-E181, PIPE-E182). Neither the northwest CCTV footage nor the FBI's timeline of the bomber can confirm or contradict these four specific details, leaving his initial narrative statistically and factually undecided between the two paths. The strongest opposing consideration is that Cole's mention of being on the Capitol grounds at a protest generally aligns with the geographical area shown in the northwest footage.
+  - claimId: PIPE-C027
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      The FBI affidavit and detention filings detail seven distinct cellular data transactions from Cole's attributed mobile device between 7:39 and 8:24 p.m., each matching the spatial sector of the bomber's surveillance-tracked movements (PIPE-E050, PIPE-E051, PIPE-E122). Even defense and challenging sources concede the occurrence of these cell transactions during this window (PIPE-E175). The strongest qualifying factor is that cellular sectors span approximately 120-degree wedges rather than precise coordinates, and the fit at 7:59:36 p.m. falls at the edge of Sector C's nominal coverage arc (PIPE-E052, PIPE-E163).
+  - claimId: PIPE-C026
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The government's detention memorandum documents that an automated license plate reader logged Cole's 2017 Nissan Sentra taking the South Capitol Street exit from Interstate 395 South at approximately 7:10 p.m. on January 5, 2021 (PIPE-E049). This timing and location are conceded by challenging investigators, including Armitas, and match Cole's own interview statements that he drove into the city alone (PIPE-E077, PIPE-E174). The strongest qualification is that an LPR identifies the vehicle rather than the physical driver, though Cole himself admitted driving.
+  - claimId: PIPE-C040
+    verdict: mixed
+    confidence: moderate
+    reasoning: >-
+      The prosecution asserts that Cole described specific construction details, including component stores and brands, that were non-public and unprompted (PIPE-E083). However, the record demonstrates that before Cole admitted being the person in the video, agents fed him extensive critical details, including his presence near the RNC/DNC, the timeline, shoes, and parking near Folger Park (PIPE-E184, PIPE-E185), while the defense alleges post-waiver details were similarly suggested (PIPE-E191). Nevertheless, Cole did spontaneously describe the unique street-splitting topography around Folger Park before agents named it (PIPE-E186, PIPE-E188).
+  - claimId: PIPE-C080
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Review of the official interview transcript in study PIPE-S003 demonstrates that prior to Cole's acknowledgment of being the suspect on video, agents explicitly stated that he was in the RNC/DNC area, asserted he was there between 7:34 and 8:18 p.m., named Folger Park, and presented images of the shoes (PIPE-E184). Cole had not introduced any of these specific names or timestamps himself prior to the agents raising them, although he had offered an unprompted description of the physical parking environment (PIPE-E186). There is no contradictory evidence in the transcript.
+  - claimId: PIPE-C082
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      Cole described parking near a park where "a road that splits in the middle" with "two grassy areas on each side" (PIPE-E186). Geospatial verification using OpenStreetMap, US Census TIGERweb road layers, and DC Department of Transportation centerline datasets confirms that D Street SE splits into two distinct parallel roadways between 2nd and 3rd Streets SE surrounding Folger Park and Providence Park (PIPE-E187, PIPE-E193, PIPE-E194). The strongest opposing consideration is that the FBI had publicly identified Folger Park as a staging area in 2021 press releases, meaning Cole's familiarity could theoretically stem from public awareness rather than personal guilt (PIPE-E192).
+  - claimId: PIPE-C039
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      Both the government's detention memorandum and the filed interview transcript establish that following his initial denial and waiver, Cole described constructing the devices, driving them to D.C., setting 60-minute timers, and placing them at the DNC and RNC (PIPE-E081, PIPE-E082). While the defense disputes the voluntariness and legal validity of this confession in a pending suppression motion (PIPE-E085, PIPE-E191), the factual claim that he gave this detailed narrative during the interrogation is undisputed. The strongest opposing consideration is the defense contention that the narrative was adopted under coercive contamination rather than independently originated.
+  - claimId: PIPE-C041
+    verdict: well_supported
+    confidence: high
+    reasoning: >-
+      The expert evaluation by Dr. Richard Leo directly quotes the interview transcript showing interviewing agents using classic minimization techniques ("everyone makes mistakes"), implied threats, and statements suggesting that admitting guilt would avoid bringing Cole's family members down to D.C. (PIPE-E086, PIPE-E087). These psychological interrogation practices are documented in the transcript itself and represent standard Reid-technique methods (PIPE-E088). The strongest qualification is the prosecution's position that the questioning remained a lawful, non-coercive inquiry with an adult exhibiting no appreciable intellectual deficit (PIPE-E091).
+  - claimId: PIPE-C020
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The sworn criminal complaint affidavit itemizes historical bank, credit card, and retail records showing Cole purchasing six distinct component categories matching the bombs between 2019 and 2020: galvanized pipes, end caps, Micro Center battery connectors, Walmart kitchen timers, wire, and Home Depot steel wool (PIPE-E037–E039). The defense does not dispute that Cole made these consumer purchases, but rather argues that the connection is retrospective, circumstantial, and innocent (PIPE-E040). There is no evidence contradicting the occurrence of the financial transactions.
+  - claimId: PIPE-C036
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Court filings and news accounts confirm that Blaze Media formally retracted its November 2025 investigative article that had accused a female former Capitol Police officer of being the pipe bomber based on supposed gait matching (PIPE-E076, PIPE-E205). The retraction occurred in December 2025 shortly after Cole was arrested and charged. The opposing consideration that Blaze Media continues to litigate defamation claims in court does not negate the fact of the editorial retraction itself (PIPE-E199).
+  - claimId: PIPE-C085
+    verdict: contradicted
+    confidence: high
+    reasoning: >-
+      The November 2025 Blaze Media article asserted an automated, quantitative forensic gait match (94% to 98%) generated by software algorithms and an analyst (PIPE-E203). In stark contrast, Baker's October 2026 identification of Cole explicitly relies on visual recognition of clothing items (a handmade maroon-and-gold mask and tagged jacket) by family members, supplemented by subjective visual side-by-side comparisons (PIPE-E061, PIPE-E197, PIPE-E204). Where gait was discussed in October 2026, it was used to distinguish the CCTV walker from the bomber, not to match the walker to Cole (PIPE-E136).
+  - claimId: PIPE-C052
+    verdict: contradicted
+    confidence: moderate
+    reasoning: >-
+      The insider account posits that a law enforcement insider planted the devices (PIPE-E108). Its primary instantiation—naming a specific Capitol Police officer—was completely retracted by its publisher (PIPE-E076, PIPE-E205), and an extensive FBI inquiry yielded zero evidence linking her to the devices while confirming an alibi away from Capitol Hill (PIPE-E214). Furthermore, the theory cannot account for why Cole's vehicle and cell phone tracked the exact timing and path of the bomber (PIPE-E111). The strongest opposing consideration is that the defense continues to pursue an alternative-perpetrator defense via Rule 17(c) subpoenas regarding her records (PIPE-E206, PIPE-E207).
+  - claimId: PIPE-C086
+    verdict: established
+    confidence: high
+    reasoning: >-
+      Defense and government court filings mutually confirm that Cole's counsel are actively litigating an alternative-perpetrator defense asserting that the former Capitol Police officer named in the retracted Blaze article was the actual perpetrator (PIPE-E206, PIPE-E207, PIPE-E218). Defense counsel explicitly argued that pursuing evidence to support this defense represents zealous advocacy for Cole in their opposition to government motions (PIPE-E206). There is no factual dispute between the parties that this defense is being actively pursued.
+  - claimId: PIPE-C076
+    verdict: established
+    confidence: high
+    reasoning: >-
+      The joint status report regarding Rule 17(c) subpoenas (ECF No. 100) records that Cole's defense has subpoenaed native video files, media, and January 5, 2021 communications between the former officer and another individual (PIPE-E171). The report explicitly documents that the government produced a 223-message PDF extraction report but declined to provide full native extractions, arguing the additional information sought is irrelevant and non-discoverable under applicable criminal rules (PIPE-E171).
+  - claimId: PIPE-C077
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      Technical review of the 63-minute video breakdown published by Steve Baker and Kyle Seraphin on October 18, 2026 confirms that it contains inserted footage of a dark sedan captioned as driving on 3rd Street SW (8:03:35 to 8:03:49 p.m.) and C Street (8:04:19 p.m.) (PIPE-E161). The claim accurately describes what is depicted and captioned in the published media. The qualification is that the underlying source, camera identifiers, and clock verification for these specific sedan clips have not been independently published or authenticated (PIPE-E161).

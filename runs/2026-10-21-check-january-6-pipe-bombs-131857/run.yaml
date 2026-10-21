@@ -1,0 +1,19 @@
+runId: 2026-10-21-check-january-6-pipe-bombs-131857
+verb: check
+case: january-6-pipe-bombs
+date: 2026-10-21
+model: "panel: anthropic, openai, gemini, xai, venice"
+promptVersion: check-v2
+inputHash: 3550cd4bea34c979d16c8b8c5022609ee2c0ec452f618d1dbe6a045b03ea475d
+outcome: completed
+cost:
+  calls: 5
+  inputTokens: 481884
+  outputTokens: 43505
+  usd: 1.543502
+notes: "4 of 5 seat(s) installed; failed: anthropic: empty reply (stop: refusal)"
+wrote:
+  - content/cases/january-6-pipe-bombs/assessments/2026-10-21-check-gpt-131857.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-10-21-check-gemini-131857.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-10-21-check-grok-131857.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-10-21-check-glm-131857.yaml

@@ -1,0 +1,277 @@
+runId: "2026-10-21-check-glm"
+model: "GLM 5.3 Flash (Z.ai, via Venice), independent check run"
+date: "2026-10-21"
+promptVersion: "check-v2"
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: provisionally_supported
+  loadBearing: [PIPE-C059, PIPE-C027, PIPE-C020, PIPE-C039]
+  weakestLinks: [PIPE-C031, PIPE-C040, PIPE-C077, PIPE-C062]
+  synthesis: >-
+    The featured hypothesis — the charged account, PIPE-C059 — rests on lines that are
+    largely independent of one another: purchases of every component type used in the
+    devices, including an uncommon nine-volt connector (PIPE-C020), the plate-reader record
+    of Cole's car at 7:10 p.m., which even the challenging side concedes (PIPE-C026), five
+    phone sessions tracking the bomber's route across five sectors (PIPE-C027), and a
+    detailed confession (PIPE-C039). The confession's weight is materially reduced, not
+    destroyed: the public transcript shows the agents named the RNC, the DNC, Folger Park,
+    the hours and the shoes before Cole's admission (PIPE-C080), the one detail he supplied
+    first (his parking place) is not bomber-specific knowledge and matches an area the FBI
+    had publicized in 2021 (PIPE-C082, PIPE-E192), and the defense expert documents
+    minimization and implied threats in verbatim quotes (PIPE-C041). Whether the confession
+    adds independent detail turns on post-waiver transcript pages this run did not read.
+    The October 2026 footage is the one live challenge. Its internal authenticity within the
+    congressional release is well established (PIPE-C073, PIPE-C074), and the geometry is
+    real on the recorded clocks: the man at Peace Circle at 8:01:18 cannot on those clocks be
+    the person the affidavit places at New Jersey and E Street SE 100 seconds earlier
+    (PIPE-C063), and every place the footage puts him lies outside even a generous band of
+    the sector his phone used at 7:59:36 (PIPE-C075). But the account that the man was Cole
+    (PIPE-C033) hangs on PIPE-C031, which rests on interested family recognition relayed by
+    an advocate and a likeness judged from roughly 10 by 13 pixels, and on cross-camera clock
+    alignment anchored at camera 794 — where the release's clock fits the affidavit's
+    timeline within minutes — but never measured for camera 3187 (PIPE-R001). The insider
+    account (PIPE-C052) has no affirmative evidence in the record: its one public
+    identification was retracted (PIPE-C036), the two identifications do not share a method
+    (PIPE-C085 contradicted), and the government's account of the inquiry that cleared the
+    former officer is undisputed in the filings read. Sensitivity: remove PIPE-E051, the
+    affidavit's pairing of the phone and the bomber at the same corner two seconds apart,
+    and the case weakens toward weakly_supported but survives, because purchases, the plate
+    reader and the (weakened) confession are independent of it; the verdict does not hang on
+    one thread. The specified tests PIPE-R001 and PIPE-R009 could move the verdict in either
+    direction, and the record as it stands supports the charge provisionally, not finally.
+  steelman: >-
+    The post-waiver transcript (Tr. 103 onward, cited in the defense's own suppression
+    motion) has not been read in this assessment. If it shows Cole volunteering specific,
+    checkable details the agents did not supply — the 60-minute timer settings, the Google
+    Maps lookups, the brand and store of an ingredient, the disposal site — the contamination
+    argument collapses and the confession becomes independent confirmation of the charged
+    account, on top of the purchases, the plate reader and the phone data. A proponent of the
+    charge can rightly say the strongest single test of the confession remains undone, and
+    this assessment cannot rule the outcome either way.
+claimAssessments:
+  - claimId: PIPE-C059
+    verdict: provisionally_supported
+    confidence: moderate
+    reasoning: >-
+      Four lines converge — component purchases including an uncommon connector, the plate
+      reader, five phone sessions matching the bomber's route, and the confession — and none
+      depends on the others. The strongest opposing consideration is the October footage: on
+      the recorded clocks the man at Peace Circle cannot be the bomber, so if he is Cole the
+      charged account fails; but his identification as Cole is weakly supported and the
+      cross-camera clock offset is unmeasured, so the conflict is live, not decided. The
+      confession's independent weight is reduced by the documented agent-supplied details.
+  - claimId: PIPE-C063
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The arithmetic is sound: 960 metres in 100 seconds is about 9.6 m/s, beyond any human
+      has run a kilometre, and the recorded times on both sides are established from the
+      posted files' names and frame counts. The strongest opposing consideration is that the
+      comparison assumes camera 3187's clock shares the FBI's timeline; camera 794's posted
+      file, showing a bomber-like figure at 7:57 one block from the affidavit's 7:59:38
+      position, anchors the release's clock to within minutes, but 3187 itself has not been
+      cross-measured. The claim's conditional structure is honest and the condition is
+      largely, not fully, secured.
+  - claimId: PIPE-C075
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The sector-geometry measurement puts every footage location 147 to 172 degrees off the
+      serving sector's direction, outside even a 90-degree band, under criteria frozen before
+      the computation. The strongest opposing consideration is the affidavit's own caveat that
+      sector coverage can vary beyond 120 degrees day to day; but a 147-degree miss is far
+      outside any plausible variation, and the sector's east-facing direction rests on the
+      provider's correction and the FBI's drive tests. It remains a study by this site's own
+      operator, not an independent replication.
+  - claimId: PIPE-C031
+    verdict: weakly_supported
+    confidence: low
+    reasoning: >-
+      The identification rests on a maroon-and-gold mask and a Christmas-gift jacket
+      recognized by Cole's interested relatives as relayed by an advocate, plus a side-by-side
+      likeness judged by eye from a head about 10 by 13 pixels. The strongest opposing
+      consideration cuts at the method itself: at that resolution no facial comparison is
+      possible, no authority has confirmed the identification, and the mask and jacket items
+      cannot be resolved in the frames at 704 by 528 pixels. The family's recognition is
+      specific and partly checkable, but belief is not measurement.
+  - claimId: PIPE-C073
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The site's frozen-criteria study found all eight cameras among the subcommittee's
+      posted files and every clip matching its original, corroborated frame by frame for
+      camera 602, which was downloaded and hashed. The strongest opposing consideration is
+      that the finding comes from the site's own workpaper and most camera files were viewed
+      in a browser rather than downloaded, so an offset like camera 602's 30-second caption
+      error could in principle exist in an unviewed span of another file.
+  - claimId: PIPE-C074
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The study shows no original draws a time on the image, that seven captions equal the
+      file's named start time plus elapsed time within seconds, and that camera 602's is 30
+      seconds early — so the critics are right that the times were added and wrong that they
+      were invented. The strongest opposing consideration is again the self-authored,
+      partially provisional basis; but the method (file-name start time plus offset) is
+      checkable by anyone with the files.
+  - claimId: PIPE-C062
+    verdict: mixed
+    confidence: low
+    reasoning: >-
+      Baker did make the report, but only via a partisan episode summary, and its substance
+      is qualified: the times he gave, 20:03:32 to 20:04:02, are the two files' start times,
+      with the man appearing 81 to 83 seconds in and camera 602's caption 30 seconds off. The
+      strongest opposing consideration is that the cameras and places he named are correct
+      and the man is on both files, so the report's geography holds even where its
+      millisecond framing overstates.
+  - claimId: PIPE-C033
+    verdict: weakly_supported
+    confidence: low
+    reasoning: >-
+      The account depends on two weakly supported premises: that the man is Cole and that
+      the clocks align across camera systems, the latter only partially anchored. It must
+      also explain why Cole's phone tracked the bomber's route, which its own proponents
+      concede and wave to the burden of proof. The strongest opposing consideration in its
+      favor is that the geometric conflict on the recorded clocks is genuine and would be
+      decisive if the identification were established.
+  - claimId: PIPE-C079
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The frozen-rule study found the account's four specific details checkable against
+      neither record, so it corroborates neither the man's identification nor an alibi — a
+      real negative finding read from the public transcript with page and line citations. The
+      strongest opposing consideration is that the footage was found by searching where this
+      account pointed, which some will read as fit; the study's answer, that a vague memory of
+      one evening fits either man, is fair.
+  - claimId: PIPE-C027
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The affidavit's pairing of sessions with the bomber's video positions across five
+      sectors is sworn and detailed, and the challenging side concedes the sessions
+      themselves. The strongest opposing consideration is that sector matches are wide wedges,
+      the fit is weakest at the pivotal 7:59:36 session, and the corrupted-data dispute over
+      the carriers' records was never resolved on the public record.
+  - claimId: PIPE-C026
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The plate-reader record is the prosecution's account of a non-public record, but the
+      challenging side's own researcher now states it, which removes the main dispute. The
+      strongest opposing consideration is that a plate reader records a vehicle and its tag,
+      not its driver; who drove is inference, though Cole's own first account has him driving
+      to Washington that evening.
+  - claimId: PIPE-C040
+    verdict: mixed
+    confidence: low
+    reasoning: >-
+      The record cuts against the claim where it can be checked: the agents named the RNC,
+      the DNC, Folger Park, the hours and the shoes before the admission, and Folger Park had
+      been publicized since 2021, so the placing-relevant details were supplied, not unique.
+      The strongest opposing consideration is that the post-waiver pages, where the detailed
+      construction narrative sits, have not been read under the same rule, and the
+      prosecution's brand-and-store detail is unchecked; the claim is open, not established.
+  - claimId: PIPE-C080
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The finding is read from the public transcript with page and line citations, and the
+      sequence it reports — agents naming the locations, hours and shoes before the yes — is
+      the kind of thing the defense itself does not dispute. The strongest opposing
+      consideration is that it is the site's own reading of a scan without a text layer, and
+      the agents' naming of these facts does not by itself show the confession was false.
+  - claimId: PIPE-C082
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The fit is corroborated by three independent map sources — OpenStreetMap, the Census
+      Bureau's named roads and the District's own centerlines — all showing D Street SE
+      dividing around Folger Park on the block where Cole later said he parked. The strongest
+      opposing consideration is that a divided road with grassy areas is not unique to that
+      block, and the description is of where he always parks, not of the crime.
+  - claimId: PIPE-C039
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The claim as stated reports the prosecution's account, which is documented in the
+      detention memorandum and partly borne out by the public transcript's admission
+      sequence. The strongest opposing consideration is that the recording is not public and
+      the defense, with page citations, says the post-waiver narrative was agent-supplied;
+      the account's truth is a separate question from the fact that the prosecution makes it.
+  - claimId: PIPE-C041
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The defense expert's report quotes the public transcript verbatim for minimization,
+      an implied promise and an implied threat about Cole's family, so the quoted conduct is
+      not seriously disputable. The strongest opposing consideration is that "implied" and
+      the label "minimization" are the expert's characterization, and whether the techniques
+      made the confession involuntary in law is for the court on the motion to suppress.
+  - claimId: PIPE-C020
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The purchases are sworn in the affidavit across multiple vendors and dates and the
+      defense does not dispute that they occurred, only what they prove. The strongest
+      opposing consideration is that the underlying bank and card records are not public, and
+      consumer purchases are common items bought by many people; the force comes from the
+      combination, especially the uncommon connector.
+  - claimId: PIPE-C036
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The retraction is stated by the press and by the government's own brief citing the
+      Washington Post, so the public act is not in doubt. The strongest opposing
+      consideration is that a retraction is not an adjudication: Blaze Media contests the
+      defamation claims as meritless and the suit continues, so the retraction shows the
+      publisher's judgment, not that the identification was false.
+  - claimId: PIPE-C085
+    verdict: contradicted
+    confidence: moderate
+    reasoning: >-
+      The November 2025 identification claimed a quantified software gait match of 94 to 98
+      percent, while the October identification began with a mask and family recognition and
+      offers no gait analysis matching the man to Cole — Baker's gait remarks distinguish the
+      man from the bomber. The strongest opposing consideration is that both are unpublished
+      identifications by the same reporter from surveillance imagery, so the comparison has
+      force in spirit even though the methods named differ on the record.
+  - claimId: PIPE-C052
+    verdict: weakly_supported
+    confidence: low
+    reasoning: >-
+      The account's support in the record is an advocate's assertion of certainty, a
+      retracted report and the general fact of security failures; the FBI's phone data,
+      which any insider account must explain, cuts against it, and the government's
+      description of an inquiry that found no evidence connecting the named former officer is
+      undisputed in the filings read. The strongest opposing consideration for the account is
+      the four-year failure to identify Cole from data the affidavit says existed, which is
+      genuinely unexplained but does not point to an insider.
+  - claimId: PIPE-C086
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      Both parties state the same fact — the defense is pursuing an alternative-perpetrator
+      theory naming a then-serving officer — and the government's reply expressly agrees the
+      criminal and civil defenses are mutually reinforcing. The strongest opposing
+      consideration is only that a defense pursuing a theory is not evidence the theory is
+      true; the claim as stated is about what the defense is doing, which is not in doubt.
+  - claimId: PIPE-C076
+    verdict: well_supported
+    confidence: moderate
+    reasoning: >-
+      The joint status report, a filing both parties joined, records the outstanding requests
+      and the government's PDF production and relevance objection. The strongest opposing
+      consideration is that the government disputes the material is discoverable at all, so
+      what production would show, and whether it bears on any account of the bombing, is
+      unknown.
+  - claimId: PIPE-C077
+    verdict: weakly_supported
+    confidence: low
+    reasoning: >-
+      The sedan clips exist in the breakdown as captioned, but they carry no camera numbers,
+      their source and clock are not shown, and the study that checked the main footage could
+      not verify them. The strongest opposing consideration in their favor is that if the
+      sedan is Cole's car and the clocks check out, the clips would bear directly on where
+      his phone was at 7:59:36; until then the times rest on captions alone.

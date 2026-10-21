@@ -131,3 +131,14 @@
   track: either
   effortTier: desk
   informationGain: The government calls the material irrelevant and not exculpatory; the defense says it can be had nowhere else. Production would test both positions; it bears on the insider account only if what it shows does.
+
+- id: PIPE-R013
+  title: Does the defense dispute the records the government says clear the former officer?
+  summary: "The government says the FBI's inquiry into the November 2025 identification found no evidence connecting the former officer to the devices, and describes records it says account for her that evening, given to the defense under a protective order (ECF No. 91, pp. 4–6). Read the defense's subpoena filings (ECF Nos. 84, 88 and 96, and the reply of September 4, 2026) for whether it disputes any of those records or only argues they are incomplete; follow the court's ruling on the subpoenas, the conflicts counsel's report due October 30, 2026, and any ruling on the motions to dismiss in the defamation suit (E.D. Va. No. 1:26-cv-01078). Record nothing about her private life beyond what bears on the evidence."
+  claimIds:
+    - PIPE-C088
+    - PIPE-C086
+    - PIPE-C052
+  track: either
+  effortTier: desk
+  informationGain: "A fact the defense leaves undisputed though it holds the records weighs more than the government's word alone; if the defense concedes the records and argues only that the inquiry stopped short, the insider account's one named suspect falls away; if it disputes them with records of its own, the question becomes one a court will test."

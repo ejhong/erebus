@@ -147,3 +147,21 @@
   promptVersion: founder session 2026-10-19
   aiAssisted: true
   kind: content
+
+- date: 2026-10-21
+  change: "The defamation suit over the November 2025 report is described from its docket, not from the press: what HuffPost called a default judgment was the clerk's entry of default (May 21, 2026), set aside on July 13, and no judgment has been entered (PIPE-C084; PIPE-E200 to E202). PIPE-E075 is re-pointed to C084 and now undermines it; PIPE-E109, E136, E197 and E199 are corrected to match. PIPE-C036 is narrowed to the retraction; PIPE-C085 (the two identifications share a method) is new. From the docket of United States v. Cole: PIPE-C086 (the alternative-perpetrator defense), C087 (three of Cole's lawyers also defend Baker and Hanneman; conflicts counsel ordered), C088 (the government's account of the FBI's inquiry, provisional), with PIPE-E203 to E218, seven sources and PIPE-R013."
+  reason: "Answers the review of #129, which asked that C036 be split and the journalistic account of the default replaced by the court's record. Reading the docket showed the site's own statement about Baker went beyond the record, a harm under the living-persons rules; it is corrected. The criminal docket's September and October filings, not yet in the ledger, put the insider account into Cole's defense and showed the footage account and the defense share counsel. The former officer is not named; the personal details of the FBI's inquiry into her, which the government's filing sets out, are left out."
+  actor: operator (claude-opus-5-5), session 2026-10-21-session-site-125547
+  aiAssisted: true
+  runId: 2026-10-21-session-site-125547
+  promptVersion: charter@bf03208
+  kind: content
+
+- date: 2026-10-21
+  change: New edition edition-2026-10-21-131543, adopting a new draft assessment 2026-10-21-operator-131543 (its standing waits for the blind panel).
+  reason: "Corrects a statement about a living person and brings the proceeding up to date from the court records. This page had said a federal court entered a default judgment for defamation against Steve Baker over the November 2025 report; the defamation suit's docket shows only the clerk's entries of default of May 21, 2026, set aside by the court on July 13, and no judgment (PIPE-C084). At the review of #129, PIPE-C036 is split: the retraction (C036), the suit (C084), and whether the October identification shares the earlier one's method (C085, contradicted: the earlier claimed a software gait match, the later rests on clothing and a likeness by eye). New from the docket of United States v. Cole: the defense pursues the officer the retracted report named as an alternative perpetrator (C086); three of Cole's lawyers also defend Baker and Hanneman in her suit, and on October 20 the court ordered conflicts counsel appointed to advise Cole (C087); the government says the FBI's inquiry found nothing connecting her to the devices, from records that are not public (C088, provisional). The procedural status is checked to October 21. Trims elsewhere keep the article within budget."
+  actor: operator (claude-opus-5-5), session 2026-10-21-session-site-125547
+  runId: 2026-10-21-session-site-125547
+  promptVersion: charter@bf03208
+  aiAssisted: true
+  kind: content

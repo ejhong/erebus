@@ -1,0 +1,72 @@
+# Review of #131, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 131
+title: "Kirk: the case brought up to date with its proceeding — bound over, not-guilty pleas, no trial date; the bindover order's wound track"
+url: https://github.com/ejhong/erebus/pull/131
+outcome: merged
+outcomeAt: 2026-10-20T13:15:32Z
+cases:
+  - kirk-assassination
+rounds:
+  - commit: 37e6bc307b8a4ad996aac85c5c207d1c739dc9d0
+    date: 2026-10-20
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-E071: change `direction` from `undermines` to `supports`. Its inference says the unprocessed, nonpublic digital discovery is another reason KRK-C019—the claim that the public record is not independently auditable—is true; the present direction contradicts both the claim and the article."
+          - "Edition status paragraph: verify and list all seven counts exactly from the latest indictment or charging instrument, rather than relying on courtroom reporting, and preserve any statutory count labels and aggravators. Update the paragraph again after the October 23 conference."
+          - "KRK-R015 / KRK-E068–E069: obtain the written bindover order and replace the Fox transcription and courtroom report with the order's exact text and locators, including what evidence supports the distance, elevation, wound track, and non-exit statements. Until then, keep the article explicit that these details are available only through press renderings."
+        summary: The change corrects materially stale procedural statements, records the bindover and not-guilty pleas, adds current scheduling and discovery information, and cautiously incorporates the reported wound track without moving the substantive grades. That makes the active case substantially more current and useful while preserving the presumption of innocence and the defense's objections. The main ledger defect is that KRK-E071 is classified in the opposite direction from its own reasoning, but it does not outweigh the update's gains.
+        cost:
+          inputTokens: 53045
+          outputTokens: 3513
+          usd: 0.28244
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - "In content/cases/kirk-assassination/research.yaml (KRK-R015) and KRK-E068: obtain the written Fourth District Court bindover order directly from court records to replace Fox News's transcription with primary text and identify which specific exhibits the judge cited for the trajectory and elevation findings."
+          - Following the October 23, 2026 pretrial scheduling conference, update the article's procedural status paragraph and KRK-E072 with any scheduled trial dates, filing deadlines, or motions set by Judge Graf.
+          - The article currently stands at 2,953 words, just below the 3,000-word ceiling; trim redundant phrasing in the timeline and organized-operation sections in a future polish pass toward the 2,500-word target.
+        summary: This change brings the Kirk assassination case up to date with the September 1, 2026 bindover ruling, Tyler Robinson's not-guilty pleas, the defense's 12.1 TB discovery backlog, and the October 2026 scheduling order. It also incorporates the bindover order's reported trajectory findings while appropriately hedging them as an unreleased report summarized under a standard favorable to the prosecution. The update resolves previously flagged stale references and adheres strictly to living-persons rules and attribution standards, leaving the site substantially better.
+        cost:
+          inputTokens: 59162
+          outputTokens: 1560
+          usd: 0.050222
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-R015 / KRK-E068–E069: obtain and read the Fourth District written bindover order itself; replace the Fox/Courthouse News press renderings with the order’s own wording and record which underlying exhibit or report each physical finding (distance, elevation, front-to-back downward track, non-exit) cites."
+          - After the October 23, 2026 pretrial conference, update the status paragraph and KRK-E072 with whatever trial date, deadlines, or venue motions the court actually sets (and re-check the October 21 memoranda).
+          - "Edition word count is under the 3,000 ceiling but still above the 2,500 target: a polish pass should cut the organized-operation and timeline sections further without dropping load-bearing caveats."
+        summary: "The change brings an active criminal case up to date: bindover on all counts, not-guilty pleas, no trial date, the scheduling order, the defense’s discovery-volume report, and the bindover order’s wound-track description as press-quoted, all with clear attribution, presumption of innocence, and weak/context grading that does not outrun unreleased primary records. Verdicts are unchanged; the research-priority reason is no longer stale; a first accounts list and a stronger steelman on institutional custody of the mechanism records improve fairness. Nothing true is dropped, living-persons limits are held, and the remaining work is primary-order verification and currency after October 23—so the site is better for a truth-seeking reader."
+        cost:
+          inputTokens: 54075
+          outputTokens: 354
+          usd: 0.110389
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - The article's opening states the bindover followed 'a week-long preliminary hearing', but no evidence record in this change carries that duration — KRK-E069/E070 quote only the ruling, the plea and the caveat. Anchor the detail to a quoted passage in one of the four sources (or drop it), so the article's every factual claim has a ledger backing.
+          - The article says the defense 'told the court at the bindover' about the 12.1 TB discovery, while KRK-E071's source is a post-preliminary-hearing status report quoted by KSL on September 1; align the article's timing wording with the record's (filed 'after the preliminary hearing', reported the same day), so the two cannot be read as different events.
+          - When KRK-R015 lands the written order, also record whether the order cites the medical examiner's report as the source of the wound track — that is the exact question the new steelman turns on, and answering it in the order's own words would either strengthen or retire the 'provisionally supported' cap the assessment now applies.
+        summary: "A currency pass on an active criminal case: the article no longer presents the September 1 hearing as future, states the bindover, the not-guilty pleas and the scheduling posture with a last-checked date, and adds the bindover order's wound-track description as a press transcription, graded weak and with its limits stated beside the defense's positions. Living-persons care is maintained throughout, the four press accounts of one hearing are flagged as non-independent, no verdict moves on the new material, and the article shrinks while losing nothing true. The gains are real and cleanly evidenced; the remaining weaknesses are one unanchored procedural detail and a slight timing gloss, both next-pass work."
+        cost:
+          inputTokens: 55068
+          outputTokens: 2342
+          usd: 0.009431
+harvestedAt: 2026-10-21T13:18:21.712Z
