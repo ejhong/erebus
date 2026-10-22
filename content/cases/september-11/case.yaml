@@ -7,6 +7,7 @@ status: active
 summary: >-
   Nineteen al-Qaeda hijackers crashed four airliners into the World Trade Center, the Pentagon, and a Pennsylvania field on September 11, 2001, killing 2,977 people. That much is established by mutually independent evidence streams. This case does not relitigate it. What it maps is narrower and more specific than "the official story": whether NIST's fire-driven account of World Trade Center Building 7 — a 47-story tower no aircraft struck — is correct and reproducible from the data NIST released; whether the total destruction of the Twin Towers has ever been modeled end to end; what the anomalous pre-attack option trading means; whether a military data-mining program identified the plot's tactical leader a year early; and how far up any Saudi chain the documented assistance to two hijackers went. Around those live disputes sits a separate, established record of official misconduct — edited EPA air-safety statements, inaccurate air-defense testimony, destroyed interrogation tapes — that explains why distrust persists without vindicating what distrust concluded. The case grades evidence disputes, never anyone's guilt.
 themes:
+  baseline: "What is not in dispute"
   wtc7: "World Trade Center 7"
   towers: "The Twin Towers"
   dust: "Steel, dust, and chemistry"

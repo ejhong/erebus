@@ -1,0 +1,39 @@
+# Candidates considered and not admitted, each with its reason, so that no
+# later session re-litigates them without saying what changed.
+
+- key: "url:abcnews.com/US/911-families-seek-release-documents-include-saudi-arabias/story"
+  kind: source
+  disposition: excluded
+  observed: "9/11 families seek release of documents they say include Saudi Arabia's link to attack (ABC News, October 7, 2026)"
+  reason: >-
+    Read 2026-10-22. Reports the same October 7, 2026 argument as the AP
+    record admitted (SRC-AP-2DCIR-ARGUMENT-2026). Its two further points —
+    that the families asked the appeals court to order the government to
+    release documents, and that lawyers expect a ruling in early 2027 — are
+    a party's request and lawyers' forecasts, neither read in a filing.
+  reopenIf: "The families' document-release motion or the court's order on it is read on the Second Circuit docket (SEP-R009)."
+  by: "2026-10-22-session-site-125808"
+  date: "2026-10-22"
+
+- key: "url:tlblog.org/?p=9136"
+  kind: source
+  disposition: excluded
+  observed: "District Court Denies Saudi Arabia's Motion to Dismiss 9/11 Claims (Transnational Litigation Blog)"
+  reason: >-
+    A commentator's summary of the August 28, 2025 opinion, seen in search
+    results only. The opinion itself has been read and admitted
+    (SRC-SDNY-KSA-OPINION-2025), which supersedes any summary of it.
+  by: "2026-10-22-session-site-125808"
+  date: "2026-10-22"
+
+- key: "url:911familiesunited.org/federal-judge-finds-credible-evidence-of-saudi-government-involvement-in-9-11-attacks"
+  kind: source
+  disposition: excluded
+  observed: "Federal Judge Finds Credible Evidence of Saudi Government Involvement in 9/11 Attacks (9/11 Families United)"
+  reason: >-
+    The plaintiffs' advocacy group's account of the August 2025 opinion,
+    seen in search results only. A party's characterization of a ruling in
+    its favour; the ruling itself is in the ledger and is quoted instead.
+  reopenIf: "The group publishes primary material — filed exhibits or documents — not otherwise available."
+  by: "2026-10-22-session-site-125808"
+  date: "2026-10-22"

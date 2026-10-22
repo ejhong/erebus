@@ -1,0 +1,72 @@
+# Review of #133, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 133
+title: "J6 pipe bombs: there was no default judgment against Baker (corrected from the court docket); Cole's defense now argues the insider account, and his lawyers also represent Baker"
+url: https://github.com/ejhong/erebus/pull/133
+outcome: merged
+outcomeAt: 2026-10-21T13:24:00Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: fe178387b798a29d444e393631f3c9adfc5e6e73
+    date: 2026-10-21
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-C088: rewrite the claim itself as “The government states that the FBI’s inquiry found no evidence…” The only supporting record is the prosecution’s description of nonpublic investigative records, so attribution should appear in the atomic claim, not only in its assessment and article context."
+          - "PIPE-C084 and the article’s October-footage section: replace the absolute “no judgment has been entered” with “no judgment appears on the mirrored docket through October 14, 2026.” This preserves the correction while respecting the stated possibility that RECAP lacks a later or unpurchased entry."
+          - "SRC-PIPE-ECF99-GOVT-CONFLICT-BRIEF: correct the stale reliability note saying ECF No. 91 “has not [been] read”; this change adds SRC-PIPE-ECF91 and says pages 1–7 were read."
+        summary: "The change corrects a consequential factual error about a living person: the docket records clerk’s entries of default that were later set aside, not a default judgment. It also properly separates two different identification methods, adds current procedural records, attributes the defense’s alternative-perpetrator theory, and discloses the shared representation and its resulting independence concern. The remaining wording and metadata issues are limited and do not outweigh these substantial accuracy and currency gains."
+        cost:
+          inputTokens: 37160
+          outputTokens: 1799
+          usd: 0.18462
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In PIPE-E203, verify the quote from the November 8, 2025 Blaze article against an original copy or independent archive when accessible, rather than relying on the prosecution's adversarial brief (ECF No. 99).
+          - In 'Where the case stands' and PIPE-C087, update the ledger and article following the October 30, 2026 status report from appointed conflicts counsel regarding Cole's dual-representation waiver or any resulting court order.
+          - Pursue PIPE-R013 by inspecting defense filings ECF Nos. 84, 88, and 96 to determine whether Cole's counsel affirmatively challenges the FBI's inquiry records accounting for the former officer on January 5, 2021.
+        summary: This change corrects an inaccurate statement regarding a living person by replacing a press report of a 'default judgment' against Steve Baker with primary docket records showing only a clerk's entry of default that was subsequently set aside. It splits PIPE-C036 and demonstrates that the October 2026 video identification did not share the November 2025 gait-matching methodology. Furthermore, it brings the criminal docket up to date with Cole's alternative-perpetrator defense and the court's appointment of conflicts counsel over shared representation with Baker, all while scrupulously preserving living-person protections.
+        cost:
+          inputTokens: 42251
+          outputTokens: 1404
+          usd: 0.036953
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - PIPE-E109 title still reads 'the judgment against Baker was by default' even though its body and PIPE-C084 now establish there was never a judgment — rewrite the title so it no longer restates the error the change corrects.
+          - When the archived November 8, 2025 Blaze article is reachable, check PIPE-E203's gait-match quotation against the article text rather than only the government's brief (limitation already flagged in E203/C085).
+          - After the October 30 conflicts-counsel report and any subpoena ruling, update PIPE-C087/C088 and PIPE-R013 from those primary filings (ECF 84/88/96 and the report), still without publishing private-life detail about the uncharged officer.
+        summary: The change corrects a false statement that a federal court entered a default judgment against Baker, replacing it with the docket's clerk entries of default (later set aside) and pending motions; splits the overloaded C036 into retraction, suit posture, and a contradicted same-method claim; and adds current Cole-docket facts — defense pursuit of the insider theory, dual representation and the conflicts order, and the government's provisional clearance claim — with primary quotes, proper attribution, and living-persons limits held. Case verdict stays provisionally supported on a clearer ledger. That leaves the site more accurate, fairer, and more current for a truth-seeking reader, with nothing true of consequence dropped.
+        cost:
+          inputTokens: 38410
+          outputTokens: 318
+          usd: 0.078843
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "The article trims dropped two true, load-bearing details without an offsetting gain: 'one about three hours before his arrest' from the PIPE-C047 rendering in 'His own account' (a wipe hours before arrest is squarely relevant to the confession and phone lines), and the PIPE-C055 point that police failed to keep people and cars away from the devices after discovery. Both claims remain in the ledger, but a reader of the article no longer meets them; restore the reset detail at least, since it bears directly on the 'what would settle it' question about the confession."
+          - The HuffPost source quoted in PIPE-E075 renders the company as 'Veritas Regnant LLC' while the docket records (PIPE-E200, and the source titles) give 'Veritas Regnat LLC'. Add a one-line note in E075 or its editorInference flagging the discrepancy so readers are not left to reconcile two spellings of the same entity on their own.
+          - "On the disclosed URL issue in SRC-PIPE-EDVA-DEFAMATION-DOCKET and -P2: citing the court record that names the plaintiff is within the living-persons rule, and the records disclose what the URLs contain; but confirm the rendered source page actually displays that verificationNote (or a short reader-facing note) so a reader who sees the URL on the site also sees why the site's address carries her name, and why the site itself does not."
+        summary: "The change corrects a false statement about a living person — the site had reported a default judgment against Baker that the docket shows was never entered and has since been set aside — makes that correction from the court's own records with exact locators, and brings the Cole proceeding current: the defense's alternative-perpetrator theory, the shared counsel and conflicts order, and the government's non-public account of the FBI inquiry, graded provisional under the site's rules. It also executes the #129 review notes (splitting C036; grading the 'same method' claim contradicted with the limitation that the November article was read only through the government's quotation). The gains are substantive and honestly evidenced; the trims and small discrepancies above are next-pass work, and nothing here blocks publication."
+        cost:
+          inputTokens: 38875
+          outputTokens: 3175
+          usd: 0.007419
+harvestedAt: 2026-10-22T13:13:13.095Z
