@@ -1253,9 +1253,12 @@
 
 - id: SEP-E038
   title: "Baseline: 1,202 exhibits admitted in an adversarial criminal trial"
-  claimIds: [SEP-C019]
+  # Linked to SEP-C019 until 2026-10-22, when the article's sentence about the
+  # exhibits was found pointing at the foreknowledge claim (review notes on
+  # #117); it now carries the claim it actually supports, SEP-C030.
+  claimIds: [SEP-C030]
   sourceId: SRC-MOUSSAOUI-EXHIBITS
-  direction: context
+  direction: supports
   strength: moderate
   sourceStatement: >-
     "The following web pages link to all 1,202 exhibits admitted into
@@ -1320,3 +1323,218 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-sep-s001-collect"
     date: "2026-08-26"
+
+# ── the Saudi file: the court's own record (added 2026-10-22) ───────────
+#
+# The August 2025 opinion names the two Saudi government employees; neither
+# has been charged with any crime. These records report the court's findings
+# as the court's and describe the two men by role (the court's "an accountant
+# or an imam"), quoting around their names (config/site-rules.md, "Where to
+# stop").
+
+- id: SEP-E041
+  title: "What the Kingdom does not dispute: one employee's help with the hijackers' apartment, and the dates and places of the meetings"
+  claimIds: [SEP-C022]
+  sourceId: SRC-SDNY-KSA-OPINION-2025
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The court states: "while there is no dispute as to the dates and
+    locations of" the first employee's "meeting with the hijackers in Los
+    Angeles and San Diego, the parties quarrel over whether the meetings
+    were pre-planned or by chance." It continues: "It is undisputed that"
+    he "offered various forms of assistance with the hijackers' apartment",
+    including "helping to fill out the application forms for the hijackers,
+    and signing the lease as a guarantor." The court also records (p. 40)
+    that the Kingdom argues the second employee did not assist the
+    hijackers at all.
+  editorInference: >-
+    The practical assistance by one of the two men is not contested by the
+    party that employed him and holds his records, after jurisdictional
+    discovery that included the depositions the court cites. That raises the first man's assistance from a congressional
+    lead the inquiry itself declined to vouch for (SEP-E030) to a fact
+    neither side disputes. It does not cover the second man, whose
+    assistance the Kingdom denies; the court found the evidence on him
+    thinner ("less evidence") but credible.
+  exactLocator: "ECF No. 11182, pp. 44–45 (§ V.E); the Kingdom's position on the second employee at p. 40"
+  limitations:
+    - "What a party leaves undisputed in a jurisdictional motion is a litigation position, not a published record; the deposition and exhibits behind it have not been read for this case."
+    - "Undisputed assistance establishes what was done, not why: the motive is exactly what the parties contest."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the Saudi file brought up to date from the court record"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"
+
+- id: SEP-E042
+  title: "The court's preliminary finding: the help was likely directed, not chance"
+  claimIds: [SEP-C023]
+  sourceId: SRC-SDNY-KSA-OPINION-2025
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    On the apartment help, the court writes: "This creates a reasonable
+    inference that all the apartment-related assistance he provided for the
+    hijackers was not just acts of a good Samaritan, but rather that he was
+    following KSA's instructions when he assisted the hijackers." On the
+    meetings: "the Court, when placing these encounters with the
+    surrounding circumstances, finds it more likely than not that they were
+    not just chance meetings." It cites "the drawing of an airplane with
+    equations related to the height and distance of a plane's flight path,
+    for which he could not come up with any reasonable explanation." It
+    concludes: "Instead, the total evidence creates a high probability as
+    to" the two employees' "roles in the hijackers' plans, and the related
+    role of their employer, KSA", and that "KSA did not proffer sufficient
+    evidence to the contrary."
+  editorInference: >-
+    The first finding by any neutral body, after adversarial discovery, that
+    the California assistance was more likely directed by the Kingdom than
+    coincidental. It is the strongest evidence in the public record for
+    SEP-C023, and it is a judge's weighing of exhibits this case has not
+    read. Note the gap between what the court found and what SEP-C023
+    claims: the court found, for jurisdiction, that two employees acting
+    within the scope of their employment knowingly or with deliberate
+    indifference assisted two hijackers; SEP-C023 claims a state
+    institution knowingly supported the plot. The finding bears on that
+    claim strongly but does not reach it: scope of employment attributes an
+    employee's acts to the employer without establishing who, above the
+    employee, knew what.
+  exactLocator: "ECF No. 11182, pp. 40–44: the apartment help and the meetings at p. 40 (§ V.D.3, tortious act); the drawing and the high-probability sentence at p. 41; the Kingdom's failure to rebut at p. 44"
+  limitations:
+    - "A preliminary finding on jurisdictional facts by a preponderance, with the burden on the Kingdom; the court says it is not a merits decision (SEP-E043)."
+    - "Rests on deposition testimony, phone records and exhibits described in the opinion; this case has not read them, and some may be under a protective order."
+    - "On interlocutory appeal; the Second Circuit may reverse on the law without reaching these findings, or disturb them."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the Saudi file brought up to date from the court record"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"
+
+- id: SEP-E043
+  title: "The same opinion's limits: preliminary, jurisdictional, and the facts left for trial"
+  claimIds: [SEP-C023]
+  sourceId: SRC-SDNY-KSA-OPINION-2025
+  direction: qualifies
+  strength: strong
+  sourceStatement: >-
+    "The Court reiterates that this is a preliminary finding concerning
+    jurisdictional inquiries only, permitting Plaintiffs to pursue their
+    claims." On the notepad found in the first employee's home: "While it
+    is undisputed that a notepad page with an airplane drawing, notes, and
+    numbers was found in" his "home and showed his handwriting, the parties
+    dispute the meaning behind it." And: "Some of the disputed facts cannot
+    be resolved at this stage of the litigation, because weighing the
+    evidence or assessing witnesses' credibility will need to take place at
+    trial."
+  editorInference: >-
+    The opinion's strongest sentences (SEP-E042) and its limits travel
+    together here, as the congressional section's finding and caveat do
+    (SEP-E030). The court weighed the evidence enough to decide where the
+    preponderance lay on jurisdiction, and expressly reserved the weighing
+    that decides liability. The Kingdom's explanations for the drawing —
+    as the court records them, "common high school algebra and geometry
+    texts" or a son's school assignment — are disputed facts of exactly
+    this kind.
+  exactLocator: "ECF No. 11182, pp. 39–45: the preliminary finding at p. 39; the Kingdom's explanations at p. 44; the notepad and the disputed facts at p. 45 (§ V.E)"
+  limitations:
+    - "The court's characterization of its own finding; its reach will be settled by the appeal and, if the case proceeds, by a trial."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the Saudi file brought up to date from the court record"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"
+
+- id: SEP-E044
+  title: "The Kingdom's position: no involvement, and a partner against al-Qaeda"
+  claimIds: [SEP-C023]
+  sourceId: SRC-AP-2DCIR-ARGUMENT-2026
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    "Although 15 of the 19 attackers on 9/11 were Saudis, the Saudi
+    government has long denied any involvement in the attacks." At the
+    appeal argument, "Lawyers for Saudi Arabia say the nation and the U.S.
+    were partners in the 1990s against terrorism, al-Qaida and its founder,
+    Osama bin Laden."
+  editorInference: >-
+    The denial of the party that holds the records, as wire reporting
+    states it. It weighs what an interested party's denial weighs, which
+    is little by itself; it is recorded because the Kingdom's account
+    belongs beside the plaintiffs', and because the district court has
+    found its specific innocent explanations inadequate at the
+    jurisdictional stage (SEP-E042) without trying them.
+  exactLocator: "AP, October 7, 2026, paragraphs on the Saudi government's denial and the Kingdom's argument"
+  limitations:
+    - "A journalist's summary of the Kingdom's position; the Kingdom's appellate briefs, the primary statement of it, were not read (SEP-R009)."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the Saudi file brought up to date from the court record"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"
+
+- id: SEP-E045
+  title: "The stay: proceedings against the Kingdom paused for its appeal"
+  claimIds: [SEP-C023]
+  sourceId: SRC-SDNY-KSA-STAY-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "On September 8, 2025, KSA filed a notice of appeal from this Court's
+    order." "Before this Court is KSA's motion to stay all proceedings
+    involving KSA pending the resolution of the appeal to the Second
+    Circuit." The court writes: "Although this Court's decision does not
+    support a conclusion that KSA will prevail on appeal, this Court's
+    determination was ultimately a limited fact-based conclusion for the
+    purposes of determining jurisdiction." Conclusion: "KSA's motion for a
+    stay is GRANTED pending the Second Circuit's consideration of KSA's
+    interlocutory appeal."
+  editorInference: >-
+    Confirms from the court's own order what the page had said without a
+    record behind it: the case against the Kingdom has been stayed since
+    November 5, 2025. It also corrects the page's earlier sentence that
+    nothing was proceeding anywhere: the appeal itself is proceeding, and
+    was argued on October 7, 2026 (SEP-E046).
+  exactLocator: "ECF No. 11383, pp. 1–6: the motion at p. 1; the notice of appeal at p. 2; the first factor at p. 4; the conclusion at p. 6"
+  limitations:
+    - "A procedural order; it decides nothing about the claims."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the Saudi file brought up to date from the court record"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"
+
+- id: SEP-E046
+  title: "The appeal argued, October 7, 2026: no ruling yet"
+  claimIds: [SEP-C023]
+  sourceId: SRC-AP-2DCIR-ARGUMENT-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    "Family members of victims of the Sept. 11 terrorist attacks packed a
+    federal appeals courtroom in New York City on Wednesday as three judges
+    heard arguments over whether legal claims against Saudi Arabia can
+    proceed." "They didn't say when they might rule on whether claims can
+    proceed to trial". The appeal "stemmed from an August 2025 ruling by
+    U.S. District Judge George B. Daniels, who decided that the case could
+    proceed in federal court, though he did not rule on the merits of the
+    claims."
+  editorInference: >-
+    The posture as of this record: the Second Circuit has heard the
+    Kingdom's appeal and has not ruled. Status last checked 2026-10-22.
+    The next ruling decides whether the claim reaches a trial at which the
+    evidence behind SEP-E042 would be tested and published; it is the
+    forcing mechanism this case has pointed to since it opened.
+  exactLocator: "AP, October 7, 2026, opening paragraphs and closing paragraph"
+  limitations:
+    - "Reporting of an oral argument, not the court's docket; the docket number and the panel's composition are not taken from this record."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the Saudi file brought up to date from the court record"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"

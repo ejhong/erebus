@@ -133,6 +133,29 @@
     public record in the last five years. Partly self-executing as the
     litigation proceeds.
 
+- id: SEP-R009
+  title: "The Saudi appeal: the briefs, the ruling, and the exhibits behind the 2025 finding"
+  summary: >-
+    Obtain from the Second Circuit's docket the Kingdom's opening brief, the
+    plaintiffs' answering brief and the court's ruling when it comes (argued
+    October 7, 2026); and from the district court's docket the publicly
+    filed exhibits the August 2025 opinion relies on — the deposition
+    excerpts, the phone records, the photograph at the mosque and the
+    notepad page with the airplane drawing — noting which remain sealed or
+    under a protective order. Read the Kingdom's own account from its brief
+    rather than from press summaries.
+  claimIds: [SEP-C022, SEP-C023]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Moves the Saudi branch off a judge's description of exhibits and onto
+    the exhibits. An affirmance sends the claim toward a trial at which the
+    evidence is tested and published; a reversal on immunity ends the only
+    forcing mechanism this case has, and would leave SEP-C023 resting on
+    the record as it stands. Exhibits that bear out the court's description
+    would move SEP-C023 toward provisionally supported; exhibits that are
+    thinner than described, or sealed, would hold it at mixed or below.
+
 - id: SEP-R008
   title: "Open high-fidelity progressive-collapse model of a tube-frame tower"
   summary: >-

@@ -196,6 +196,66 @@
   reliabilityNotes:
     - "Journalism is discovery, not evidence: this record points at the court's order, which supersedes it and should be obtained."
     - "Superseded in part by later docket activity — the Kingdom filed a notice of appeal in September 2025 and proceedings were stayed, so this article no longer describes the case's current posture on its own."
+    - "Superseded on the ruling's content by the opinion itself (SRC-SDNY-KSA-OPINION-2025), read 2026-10-22."
+
+- id: SRC-SDNY-KSA-OPINION-2025
+  title: "In re Terrorist Attacks on September 11, 2001 — Memorandum Decision and Order denying the Kingdom of Saudi Arabia's renewed motion to dismiss"
+  authors: ["George B. Daniels, United States District Judge"]
+  organization: "U.S. District Court for the Southern District of New York"
+  year: "2025"
+  sourceType: report
+  identifier: "No. 1:03-md-01570-GBD-SN, ECF No. 11182, filed August 28, 2025; 45 pp."
+  url: "https://assets.alm.com/56/48/0c58055d436488d8aaee80d07ca1/03-md-01570-11182-2.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Read through the site's reading tool on 2026-10-22 from a copy of the
+    filed PDF hosted by a legal publisher (ALM); every page carries the
+    court's ECF header ("Case 1:03-md-01570-GBD-SN Document 11182 Filed
+    08/28/25"), and the court's own November 5, 2025 order
+    (SRC-SDNY-KSA-STAY-2025) quotes its p. 45 conclusion in the same words.
+    The text is optical character recognition of a scan, with OCR errors in
+    places; quotations here are taken only from passages the tool rendered
+    cleanly, and page numbers are the PDF's, which match the court's.
+  reliabilityNotes:
+    - "A court's preliminary finding on jurisdictional facts after adversarial jurisdictional discovery, made by a preponderance of the evidence with the burden on the Kingdom to show the immunity exception does not apply. The court says in terms that it is not a merits decision and that disputed facts and witness credibility are left to trial."
+    - "The opinion describes deposition testimony and exhibits; this case has read the opinion, not the exhibits, so what the exhibits show is known here only through the court's description of them."
+    - "Names two Saudi government employees who have not been charged with any crime. This case does not repeat their names: it reports the court's findings as the court's, and describes them by role."
+    - "On interlocutory appeal to the Second Circuit since September 8, 2025; the district court has stayed proceedings against the Kingdom pending that appeal."
+
+- id: SRC-SDNY-KSA-STAY-2025
+  title: "In re Terrorist Attacks on September 11, 2001 — Memorandum Decision and Order granting the Kingdom of Saudi Arabia's motion for a stay pending appeal"
+  authors: ["George B. Daniels, United States District Judge"]
+  organization: "U.S. District Court for the Southern District of New York"
+  year: "2025"
+  sourceType: report
+  identifier: "No. 03 MDL 1570 (GBD) (SN), ECF No. 11383 (also filed as No. 1:03-cv-09848, Doc. 747), November 5, 2025; 6 pp."
+  url: "https://storage.courtlistener.com/recap/gov.uscourts.nysd.242129/gov.uscourts.nysd.242129.11383.0_1.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Found through the CourtListener (RECAP) index of the MDL docket, whose
+    entry for ECF No. 11383 reads "granting (11226) Motion to Stay";
+    the filed order read in full through the site's reading tool on
+    2026-10-22. The same index lists the Kingdom's Notice of Interlocutory
+    Appeal (ECF No. 11215) and its stay motion (ECF No. 11226).
+  reliabilityNotes:
+    - "A procedural order. Its account of the appeal's prospects applies the stay standard ('serious questions'), and the court says its own August 2025 decision 'does not support a conclusion that KSA will prevail on appeal'."
+
+- id: SRC-AP-2DCIR-ARGUMENT-2026
+  title: "Federal appeals judges don't reveal how they'll rule on Saudi Arabia's effort to end 9/11 litigation"
+  authors: ["Larry Neumeister"]
+  organization: "The Associated Press (as syndicated by WDIV ClickOnDetroit)"
+  year: "2026"
+  sourceType: webpage
+  identifier: "Published October 7, 2026"
+  url: "https://www.clickondetroit.com/news/national/2026/10/07/federal-appeals-judges-dont-reveal-how-theyll-rule-on-saudi-arabias-effort-to-end-911-litigation/"
+  verification: ai_verified
+  verificationNote: >-
+    Read in full through the site's reading tool on 2026-10-22; quotations
+    verbatim from that text. The same wire story ran in many outlets and is
+    one source.
+  reliabilityNotes:
+    - "Journalism reporting an oral argument; the Second Circuit's docket and any audio of the argument are the primary record and were not read. Argument questions predict nothing reliable about a ruling."
+    - "A family member's characterization of the judges' questions is hers and is not used as evidence of how the court will rule."
 
 - id: SRC-BRONNER-VF-2006
   title: "9/11 Live: The NORAD Tapes"

@@ -123,3 +123,12 @@
   actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
   aiAssisted: true
   kind: housekeeping
+
+- date: 2026-10-22
+  change: New edition edition-2026-10-22-131104, adopting a new draft assessment 2026-10-22-operator-131104 (its standing waits for the blind panel).
+  reason: "Brings the Saudi file up to date from the court's own record, and fixes a mislinked claim. The article cited the August 2025 ruling in the families' lawsuit against Saudi Arabia only through a wire report, and said the case was stayed with no record behind that; this edition reads the 45-page opinion itself (SEP-E041 to SEP-E043), the November 5, 2025 order granting the stay (SEP-E045) and the report of the Second Circuit argument of October 7, 2026 (SEP-E044, SEP-E046). The opinion records that the Kingdom does not dispute one employee's help with the hijackers' apartment and lease, and finds — for jurisdiction only, with disputed facts left to trial — that the help was likely directed by the Kingdom. The new assessment moves the claim that a Saudi state institution knowingly supported the plot from unresolved to mixed, and keeps every other verdict. The article's sentence on the 1,202 trial exhibits linked the foreknowledge claim; it now links a claim of its own (SEP-C030), answering the review notes on #117. The page's earlier line that nothing was proceeding anywhere is corrected: the appeal has been argued and is undecided. A study id is taken out of the prose, and the serious"
+  actor: operator (claude-opus-5-5), session 2026-10-22-session-site-125808
+  runId: 2026-10-22-session-site-125808
+  promptVersion: charter@2401c9a
+  aiAssisted: true
+  kind: content

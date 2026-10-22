@@ -341,6 +341,21 @@
     runId: "case-sep11-launch-2026-08-26"
     date: "2026-08-26"
 
+# ── the baseline the case does not relitigate ──────────────────────────
+
+- id: SEP-C030
+  statement: >-
+    The federal court in United States v. Moussaoui admitted 1,202 exhibits into evidence at trial and, on July 31, 2006, published all of them online except seven that are classified or remain under seal.
+  theme: baseline
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the article's trial-exhibits sentence given its own claim (review notes on #117)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
+    runId: "2026-10-22-session-site-125808"
+    date: "2026-10-22"
+
 # ── tombstones ──────────────────────────────────────────────────────────
 #
 # Rejected claims keep their records (docs/CONTENT_POLICY.md, "Rejected
