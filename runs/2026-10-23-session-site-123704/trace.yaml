@@ -1,0 +1,129 @@
+# What operator session 2026-10-23-session-site-123704 did, as its trace recorded it: the digest the workflow made on the session's machine
+# (src/engine/trace.ts), checked here (src/engine/session.ts). The session's own account of its work is its log.
+version: 1
+ended: success
+model: claude-opus-5-5
+permissionMode: dontAsk
+turns: 95
+minutes: 19.2
+usd: 8.9786
+compactions: 0
+unreadableLines: 0
+tools:
+  - tool: Bash
+    calls: 51
+    failed: 1
+    refused: 4
+  - tool: Edit
+    calls: 21
+    failed: 1
+    refused: 0
+  - tool: Grep
+    calls: 7
+    failed: 0
+    refused: 0
+  - tool: WebSearch
+    calls: 6
+    failed: 0
+    refused: 0
+  - tool: Write
+    calls: 4
+    failed: 0
+    refused: 0
+  - tool: Read
+    calls: 3
+    failed: 0
+    refused: 0
+  - tool: ToolSearch
+    calls: 1
+    failed: 0
+    refused: 0
+commands:
+  - command: grep
+    calls: 10
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts read
+    calls: 9
+    failed: 0
+    refused: 0
+  - command: (other)
+    calls: 4
+    failed: 0
+    refused: 1
+  - command: cd
+    calls: 4
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts stamp
+    calls: 4
+    failed: 0
+    refused: 0
+  - command: sed
+    calls: 4
+    failed: 0
+    refused: 1
+  - command: cat
+    calls: 3
+    failed: 0
+    refused: 0
+  - command: head
+    calls: 3
+    failed: 0
+    refused: 0
+  - command: ls
+    calls: 2
+    failed: 1
+    refused: 0
+  - command: node scripts/site.ts check-quotes
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts status
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: cp
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: for
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: node scripts/site.ts log-meta
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: npm run build
+    calls: 1
+    failed: 0
+    refused: 0
+fetched: []
+read:
+  - source: who.int
+    calls: 2
+    failed: 0
+  - source: 10.1093/jrsssa/qnad139
+    calls: 1
+    failed: 0
+  - source: 10.1093/ve/vead050
+    calls: 1
+    failed: 0
+  - source: 10.5281/zenodo.4512259
+    calls: 1
+    failed: 0
+  - source: archive.dni.gov
+    calls: 1
+    failed: 0
+  - source: dni.gov
+    calls: 1
+    failed: 0
+  - source: ncbi.nlm.nih.gov
+    calls: 1
+    failed: 0
+  - source: zenodo.org
+    calls: 1
+    failed: 0
+filesEdited: 9
+repeatedFailures: 0

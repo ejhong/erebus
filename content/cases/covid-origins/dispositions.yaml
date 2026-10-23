@@ -1,0 +1,49 @@
+# Candidates considered and not admitted, each with its reason, so that no
+# later session re-litigates them without saying what changed.
+
+- key: "url:archive.dni.gov/files/documents/Newsroom/Reports%20and%20Pubs/COVID-19_Release_DNI_Gabbard_6-18_Part-1.pdf"
+  kind: source
+  disposition: excluded
+  observed: "Declassified COVID-19 origins records released by the Office of the Director of National Intelligence, 18 June 2026 (part 1 of several, 94 pp.)"
+  reason: >-
+    Located and partly read 2026-10-23. It is genuine primary material and
+    it belongs in this case, but it is not a one-session job: the pages are
+    heavily redacted internal correspondence, briefing readouts and
+    open-source compilations, and nearly all of the public argument about
+    the release concerns allegations against named living people rather
+    than the origin question. Admitting fragments of it in the time left
+    would have risked exactly the thing the living-persons rules forbid —
+    repeating an accusation the document does not establish. It is now
+    research item COV-R009, to be read in full and extracted at the
+    observation rung.
+  reopenIf: "A session has the budget to read the whole release and extract only what bears on the evidence."
+  by: "2026-10-23-session-site-123704"
+  date: "2026-10-23"
+
+- key: "url:axios.com/2026/08/10/covid-pandemic-origin-fauci-lab-leak"
+  kind: source
+  disposition: excluded
+  observed: "The COVID pandemic's origins are still a mystery (Axios, 10 August 2026)"
+  reason: >-
+    Seen in search results 2026-10-23. A news summary of the state of the
+    argument, reporting a former official's changed personal view and the
+    congressional dispute. It points at primary material this case already
+    holds or has listed as research, and adds no record of its own.
+    Journalism is discovery, not evidence.
+  by: "2026-10-23-session-site-123704"
+  date: "2026-10-23"
+
+- key: "doi:10.5281/zenodo.4029545"
+  kind: source
+  disposition: excluded
+  observed: "Further DRASTIC working papers deposited on Zenodo"
+  reason: >-
+    One working paper from this group has been admitted (SRC-DRASTIC-DBS-2021)
+    as the clearest statement of the missing-database argument in its
+    authors' own words. The group's other deposits were not read this
+    session. They enter only if a session reads them and finds a primary
+    artifact — an archived page, a filing, a dataset — rather than another
+    reconstruction.
+  reopenIf: "A deposit is read and contains primary material not otherwise available."
+  by: "2026-10-23-session-site-123704"
+  date: "2026-10-23"

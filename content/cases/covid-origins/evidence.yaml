@@ -806,7 +806,7 @@
 
 - id: COV-E019
   title: "The 2023 assessment: no indication of a progenitor holding, and no engineering"
-  claimIds: [COV-C014, COV-C012]
+  claimIds: [COV-C014, COV-C012, COV-C019]
   sourceId: SRC-ODNI-WIV-2023
   direction: undermines
   strength: strong
@@ -1081,3 +1081,274 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-cov-s001-collect"
     date: "2026-08-26"
+
+# ── the critics, read in their own words (2026-10-23) ──────────────────
+
+- id: COV-E033
+  title: "A statistics journal's critique: the market analysis does not establish the market as the center"
+  claimIds: [COV-C020, COV-C002, COV-C001]
+  sourceId: SRC-STOYAN-CHIU-2024
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The conclusion reads: "The analysis in the paper W does
+    not give an acceptable argument for the centrality of the Market in the
+    155 December cases." The authors state that the Market and other points
+    near it, among them a named shopping plaza, are all possible spatial
+    centres of the case locations, and add: "Neither W's nor our statistical
+    analysis could be used to support or reject the zoonosis hypothesis."
+    Earlier the paper argues that the original study excluded rival
+    landmarks on the ground that no other location was clearly
+    epidemiologically linked to early cases, and that by the same argument
+    any location near the market — a major railway station among them —
+    would be linked too.
+  editorInference: >-
+    This is the strongest published attack on the case's most load-bearing
+    observation, and it is a methodological one: two spatial-statistics
+    specialists, re-analysing the same 155 published case coordinates, say
+    the test used to rule out every alternative center does not do that
+    work. It does not touch the separate finding that cases without a market
+    link lived nearer the market than market workers did — the comparison
+    COV-C002 states — and the authors are explicit that their paper decides
+    nothing about zoonosis either way. Its effect is to move the geography
+    from a proven center to a contested one.
+  exactLocator: "Accepted manuscript (arXiv:2208.10106v2), pp. 14–15 (Discussion and conclusion); the landmarks argument is at p. 5"
+  limitations:
+    - "A critique of a method, not an origin finding: the authors state their analysis cannot support or reject the zoonosis hypothesis, and do not propose an alternative origin."
+    - "It re-analyses the same unaudited case coordinates as the paper it criticizes, so it inherits that dataset's limits."
+    - "The copy read is the authors' accepted manuscript rather than the journal's version of record; page locators are that copy's."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the doubters' best voices, read in their own words"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-E034
+  title: "Early Wuhan sequencing data deleted from the NIH archive, and recovered"
+  claimIds: [COV-C021, COV-C022]
+  sourceId: SRC-BLOOM-2021
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The abstract states: "Here, I identify a data set containing SARS-CoV-2
+    sequences from early in the Wuhan epidemic that has been deleted from
+    the NIH's Sequence Read Archive. I recover the deleted files from the
+    Google Cloud and reconstruct partial sequences of 13 early epidemic
+    viruses." The discussion states: "There is no obvious scientific reason
+    for the deletion: the sequences are concordant with the samples
+    described in Wang et al. (2020 ), there are no corrections to the paper,
+    the paper states human subjects approval was obtained, and the
+    sequencing shows no evidence of plasmid or sample-to-sample
+    contamination." The same section records a later official account: a
+    press conference and blog posts "stated that the sequence data were
+    removed from the SRA because the journal Small had mistakenly deleted
+    the data availability statement", an explanation the author writes "is
+    inconsistent with the reason provided by the authors to the SRA" and
+    which he is "unable to reconcile"; they also stated the samples were
+    collected "on or after January 30, 2020" rather than early in the
+    epidemic, and that on 8 July 2021 the data were posted to a Chinese
+    database. The author states plainly: "SRA deletions do not imply any
+    malfeasance".
+  editorInference: >-
+    A documented instance of the pattern this case is organised around:
+    records bearing on the earliest Wuhan infections leaving public view,
+    with the explanations for their removal in conflict. What it establishes
+    is the deletion and the conflict, not a motive — the author himself
+    declines that step. Its weight on origin is indirect: it shows that the
+    early-sequence record the whole case depends on is not complete, and
+    that completeness is in the custodian's gift.
+  exactLocator: "Mol. Biol. Evol. 38(12):5211–5224, Abstract; Discussion, paragraphs 3–4"
+  limitations:
+    - "The recovered sequences are partial, lack full metadata, and by the author's statement cannot be placed unambiguously on a phylogenetic tree."
+    - "The samples' collection dates are themselves disputed: the submitting side later said on or after 30 January 2020, which if correct would remove the 'early epidemic' characterization."
+    - "The deleted data were subsequently posted to a Chinese database, so the deletion removed the data from one archive rather than from the record permanently."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: look for what is missing"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-E035
+  title: "The market sequences are not representative of early Wuhan, on the recovered data"
+  claimIds: [COV-C022, COV-C010]
+  sourceId: SRC-BLOOM-2021
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The abstract states that phylogenetic analysis of the recovered
+    sequences "further supports the idea that the Huanan Seafood Market
+    sequences are not fully representative of the viruses in Wuhan early in
+    the epidemic. Instead, the progenitor of currently known SARS-CoV-2
+    sequences likely contained three mutations relative to the market
+    viruses that made it more similar to SARS-CoV-2's bat coronavirus
+    relatives." The discussion adds that "both putative progenitors are
+    three mutations closer to SARS-CoV-2's bat coronavirus relatives than
+    sequences from the Huanan Seafood Market", and that "the progenitor of
+    all known SARS-CoV-2 sequences could still be downstream of the sequence
+    that infected patient zero".
+  editorInference: >-
+    The sharpest published argument that the market was an amplifier rather
+    than the origin: if the viruses at the market are already a derived
+    subset, the market cannot be where the lineage entered humans. It is an
+    inference from partial sequences whose placement the author calls
+    ambiguous, and the authors of the market analyses answer it directly —
+    they report lineage A in a market environmental sample, which this
+    argument's earlier form had treated as absent. Both are in the ledger.
+  exactLocator: "Mol. Biol. Evol. 38(12):5211–5224, Abstract; Discussion, paragraph 1"
+  limitations:
+    - "Qualitative phylogenetics without formal statistical testing, by the author's own statement."
+    - "Rests on the same recovered partial sequences as COV-E034, with their metadata and dating disputes."
+    - "The market papers' authors state that lineage A was later identified in a Huanan market environmental sample, which bears directly on this argument."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the doubters' best voices, read in their own words"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-E036
+  title: "Viral reads do not track susceptible-animal reads across the market samples"
+  claimIds: [COV-C023, COV-C008, COV-C006]
+  sourceId: SRC-BLOOM-2023
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    The abstract states: "the number of SARS-CoV-2 reads is not
+    consistently correlated with reads mapping to non-human susceptible
+    species. For instance, 14 samples have > 20% of their chordate
+    mitochondrial material from raccoon dogs, but only one of these samples
+    contains any SARS-CoV-2 reads, and that sample only has 1 of ∼
+    200,000,000 reads mapping to SARS-CoV-2. Instead, SARS-CoV-2 reads are
+    most correlated with reads mapping to various fish, such as catfish and
+    largemouth bass." It concludes: "co-mingling of animal and
+    viral genetic material is unlikely to reliably indicate whether any
+    animals were infected by SARS-CoV-2."
+  editorInference: >-
+    The direct empirical answer to the co-detection argument, run on the
+    custodian's full released dataset rather than the subset the earlier
+    analysis used. If the samples richest in raccoon-dog material are the
+    ones without virus, co-presence at a stall is weak evidence that the
+    animals were infected. This is the record whose removal the assessment's
+    sensitivity analysis says would most change the case verdict, now
+    answered from the other side.
+  exactLocator: "Virus Evolution 9(2):vead050, Abstract (preprint deposit p. 1)"
+  limitations:
+    - "A second analysis of one Chinese CDC dataset, not an independent confirmation; and the samples were collected after the market was cleared and disinfected."
+    - "The authors of the criticized paper answer that animal shedding would have preceded human shedding and that most wildlife stalls were sampled eleven days later, so viral RNA from animals would have had more time to decay (COV-E037)."
+    - "The copy read is the author's preprint deposit rather than the journal's version of record."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the doubters' best voices, read in their own words"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-E037
+  title: "The market authors' stated answer to the correlation analysis"
+  claimIds: [COV-C023, COV-C006]
+  sourceId: SRC-CRITS-CHRISTOPH-2024
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    The paper states that correlation approaches of this kind "are
+    challenged by the consideration that most animal viral shedding would
+    precede human viral
+    shedding in a zoonotic scenario, and that most wildlife stalls were
+    sampled 11 days after stalls with
+    suspected COVID-19 cases", so that "environmental SARS-CoV-2 RNA from
+    non-human hosts would have had more time to decay". Elsewhere the same
+    paper states that only a zoonotic origin directly predicts co-detection
+    of the virus and wildlife genetic material, while acknowledging that
+    human infections most likely preceded the first documented and
+    hospitalized market cases.
+  editorInference: >-
+    The answer is a real one and it is also unfalsifiable on the available
+    data: a sampling-and-decay explanation predicts exactly the absence of
+    correlation that was found, so the observation can no longer
+    discriminate in either direction. That is the honest state of this
+    dispute — not that the co-detection argument survives, and not that it
+    is refuted, but that the dataset cannot settle it, which is what both
+    papers' authors say in their different ways.
+  exactLocator: "Cell 187(19):5468–5482.e11; read in the authors' open-access deposit (bioRxiv 2023.09.13.557637), p. 11; the co-detection and early-human-infection statements are at p. 16"
+  limitations:
+    - "An interested party's answer to a critique of its own paper, and it shares authors and data with the market analyses."
+    - "The copy read is the authors' preprint deposit rather than the journal's version of record; the page locators are that copy's."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: one standard, both ways — the criticized authors' answer read in their own words"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-E038
+  title: "The missing-database argument, as its authors state it"
+  claimIds: [COV-C024]
+  sourceId: SRC-DRASTIC-DBS-2021
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    The access chronology states, against the date 12 September 2019:
+    "database seems to be taken offline (for non-WIV access)", that there is
+    "no access anymore" by either address the paper lists, and that the
+    "Database has not been put back online (for external access) since
+    then." The same page records intermittent access afterwards "presumably
+    without a DNS address and possibly only accessible from the WIV", and
+    that on 30 December 2019 the "database title and description are
+    modified".
+  editorInference: >-
+    Recorded because the site's rules require the missing records to be
+    looked for and the doubters' case to be stated from its own best
+    sources, and because nothing in this ledger covered it. What the
+    document establishes is that the argument exists and what it rests on:
+    archive snapshots and access logs its authors collected, not an audit.
+    The institute's own stated reason is in the record beside it. The gap it
+    identifies is real and consequential either way — an inventory no
+    independent party has examined cannot confirm or exclude anything, which
+    is the same structural problem the animal-sampling side of this case
+    has.
+  exactLocator: "Working paper v1.1 (Zenodo deposit), p. 13 (access chronology)"
+  limitations:
+    - "Self-published and not peer-reviewed, by an interested group in the origins dispute; this case has not independently verified its screenshots or access logs."
+    - "A database being offline is consistent with a security incident, with routine withdrawal, and with concealment; the document establishes none of these."
+    - "Its account stops in February 2021; this case has not established the database's status since."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: look for what is missing; the doubters' best voices"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-E039
+  title: "The institute's stated reason for the database going offline, and the doubters' answer"
+  claimIds: [COV-C024]
+  sourceId: SRC-DRASTIC-DBS-2021
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    The working paper reproduces an explanation the institute's lead
+    coronavirus researcher gave in a BBC interview: "She told the BBC that
+    the WIV's website and the staff's work emails and personal emails had
+    been attacked, and the database taken offline for security reasons."
+    The authors answer: "However it is extremely difficult to imagine why a
+    copy of the database (or at least of the non-password protected" portion
+    could not be put back online, if necessary on a different network.
+  editorInference: >-
+    The institution's own stated reason belongs beside the argument it
+    answers, and it is not nothing: a security incident is an ordinary
+    reason to withdraw a public database. The doubters' answer — that a
+    public copy could have been restored elsewhere — is a reasonable
+    question and not a demonstration. Neither side's position here is
+    testable without an independent look at the inventory itself, which is
+    what the research item asks for.
+  exactLocator: "Working paper v1.1 (Zenodo deposit), p. 9 (findings on the database's unavailability)"
+  limitations:
+    - "The quotation of the interview is the working paper's rendering of a broadcast, not the broadcast itself — a second-hand quotation, recorded as such and not verified against the original."
+    - "The researcher is not named here: she has been accused of nothing in any proceeding, and the record this case holds is one group's rendering of her words."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: one standard, both ways — the institution's stated reason beside the argument"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"

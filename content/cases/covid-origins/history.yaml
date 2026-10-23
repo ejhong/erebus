@@ -106,9 +106,29 @@
     Founder direction, 2026-08-27: the style-e1 covers were beautiful but anonymous — the same cold abstraction on every case, illustrating the site's method rather than any case. See docs/DECISIONS.md and docs/IMAGES.md (style-e2) for the register change, which ships with a founder amendment to AGENTS.md §7.
   actor: "Erebus editorial AI (Claude Fable 5, Cursor cloud agent), directed by the founder"
   aiAssisted: true
+- date: "2026-10-23"
+  kind: content
+  change: >-
+    The critics read in their own words. Six claims enter with the published dissent behind them: a statistics journal's critique of the market-centrality analysis (COV-C020, COV-E033); a correlation analysis across the custodian's full released dataset finding viral reads do not track susceptible-species reads, with the original authors' sampling-and-decay answer beside it (COV-C023, COV-E036, COV-E037); the deletion of early Wuhan sequencing data from the NIH archive and the argument drawn from the recovered sequences (COV-C021, COV-C022, COV-E034, COV-E035); the missing-database argument with the institution's stated reason (COV-C024, COV-E038, COV-E039); and the intelligence report's own no-progenitor statement (COV-C019), which the article's "no laboratory held the virus" sentence had been linking to COV-C013, the claim about genetic distance — the mismatch review #117 found, now fixed. Four sources added, all read in full. New research items COV-R009 (the June 2026 declassified release, located but not extracted) and COV-R010 (an independently examined inventory). New assessment 2026-10-23-operator-125508 moves the market-spillover component from provisionally supported to mixed and adds a steelman; the case verdict holds at provisionally supported.
+  reason: >-
+    config/site-rules.md requires every case to name the main voices disputing the account and grade their points as claims quoted from their own words, and to look for what is missing. This case graded those arguments for two months without reading them. Review #117 separately found the mislinked article sentence.
+  actor: "Erebus operator AI (claude-opus-5, Claude Code session)"
+  runId: "2026-10-23-session-site-123704"
+  promptVersion: "charter@c93f8a5"
+  aiAssisted: true
+
 - date: 2026-10-19
   change: "Migrated to editions (docs/archive/AUTOMATION.md, build step 2). The article, the 18-claim featured set, and the displayed judgment now live in edition edition-2026-10-19-migration, which adopts the migration assessment 2026-10-19-migration-covid-origins. Claim records carry propositions and anchors only; evaluative fields moved into the adopted assessment's per-claim treatment; the dossier header, research priority, and component verdicts moved from case.yaml into the assessment; claims-catalog.yaml merged into claims.yaml (tiers ended). No judgment changed. Where a claim record's hand-written credibility differed from the draft overlay's verdict, the record's value (what claim pages displayed) was carried: COV-C010: record mixed, draft weakly_supported; COV-C014: record well_supported, draft established."
   reason: One reader-facing unit that binds verdict, selection, and article, so they cannot drift apart; one home for judgment; featuring becomes a recorded decision.
   actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
   aiAssisted: true
   kind: housekeeping
+
+- date: 2026-10-23
+  change: New edition edition-2026-10-23-125508, adopting a new draft assessment 2026-10-23-operator-125508 (its standing waits for the blind panel).
+  reason: "The case had graded the critics' arguments for two months without ever reading the critics. This edition puts the published dissent into the article in its authors' own words — a statistics journal's critique of the market-centrality analysis, a correlation analysis of the custodian's full released dataset, the sequences recovered from a deleted archive, and the missing-database argument — each with the answer its target has given. It also repairs the mislinked sentence the #117 review found: the statement that no laboratory is known to have held the virus now links the intelligence report's own no-indication claim (COV-C019) rather than the claim about genetic distance (COV-C013). The adopted assessment moves the market-spillover component from provisionally supported to mixed."
+  actor: operator (claude-opus-5-5), session 2026-10-23-session-site-123704
+  runId: 2026-10-23-session-site-123704
+  promptVersion: charter@c93f8a5
+  aiAssisted: true
+  kind: content
