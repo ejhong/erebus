@@ -143,3 +143,63 @@
     resolution available to that dispute. Continued absence slowly
     strengthens it. Genuinely fundable, and it accrues value regardless of
     the origin question.
+
+- id: COV-R009
+  title: "Read the June 2026 declassified United States intelligence release in full"
+  summary: >-
+    On 18 June 2026 the Office of the Director of National Intelligence
+    published several hundred pages of declassified COVID-origins records
+    under the declassification provision of the fiscal 2026 defense
+    authorization act. The documents are heavily redacted and consist
+    largely of internal correspondence, briefing readouts and open-source
+    compilations. Read every part of the release through the reading tool,
+    extract what bears on the origin question at the observation rung, and
+    grade each extraction against the primary records it describes — not
+    against anyone's characterization of the release.
+  claimIds: [COV-C014, COV-C018, COV-C012]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    The first substantial new official material in this case since 2023,
+    and the first released under a statutory declassification mandate rather
+    than at an agency's discretion. It is also the single most dangerous
+    body of material in the case for this site's rules: it is being read
+    publicly through allegations about named living people, and much of what
+    it contains is correspondence about what officials said to each other
+    rather than evidence about the virus. The yield is in the parts that
+    bear on the evidence — what the agencies held, when, and what they could
+    not resolve — and the discipline required is to leave the rest alone.
+  origin:
+    ref: "operator session 2026-10-23: release located and its first part read; not extracted"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-R010
+  title: "An independent audit of the Wuhan institute's sample-and-sequence inventory"
+  summary: >-
+    The institute's main viral-sample database has been off public access
+    since September 2019 (COV-C024), and the only public accounts of what it
+    held are the institution's own and its critics' reconstructions from
+    archived snapshots. Obtain, through an inspection regime any party would
+    accept, a complete and dated inventory of the pre-pandemic sarbecovirus
+    holdings, with raw sequence files and freezer records, examined by
+    people who do not work for the custodian or for its critics.
+  claimIds: [COV-C024, COV-C019, COV-C013]
+  track: either
+  effortTier: field
+  informationGain: >-
+    This is the laboratory side's exact counterpart to the animal-sampling
+    question, and it is held to the same standard here: a closed inventory
+    can neither confirm nor exclude anything, and both the institution's
+    assurance that it held no progenitor and the doubters' suspicion that it
+    did rest on records no independent party has examined. A verified
+    inventory containing a near-progenitor would transform the case; a
+    verified inventory lacking one would substantially weaken the
+    research-related family for the first time on evidence rather than on
+    assurance.
+  origin:
+    ref: "operator session 2026-10-23: the missing-records pass (config/site-rules.md)"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"

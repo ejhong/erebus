@@ -258,3 +258,102 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-covid-launch-2026-08-26"
     date: "2026-08-26"
+
+# ── what the critics say, in their own words ───────────────────────────
+# Added 2026-10-23. The case graded the doubters' arguments without ever
+# stating them as claims of their own (config/site-rules.md). These five
+# are the published ones: a statistics journal's critique of the market
+# analysis, two re-analyses of the custodian's data, and the
+# missing-records argument. Each is written as what its author asserts or
+# reports, never as a finding of this site.
+
+- id: COV-C019
+  statement: >-
+    The 2023 declassified United States intelligence report states that the intelligence community has no indication that the Wuhan Institute of Virology's pre-pandemic research holdings included SARS-CoV-2 or a close progenitor virus, and no direct evidence of a specific research-related incident that could have caused the pandemic.
+  theme: wiv-program
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  sourceAnchor:
+    sourceId: SRC-ODNI-WIV-2023
+    locator: "Declassified report of 23 June 2023, printed p. 5 ('Coronavirus Research and Related Activities Performed at the WIV')"
+    quote: >-
+      We continue to have no indication that the WIV's pre-pandemic research holdings included SARS-CoV-2 or a close progenitor, nor any direct evidence that a specific research-related incident occurred involving WIV personnel before the pandemic that could have caused the COVID pandemic.
+  origin:
+    ref: "review note #117 (GPT-5.6 Sol, Gemini 3.8 Flash): the edition's 'no laboratory held the virus' sentence linked COV-C013, which states genetic distance; this is the proposition that sentence makes"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-C020
+  statement: >-
+    A peer-reviewed statistical critique concludes that the spatial analysis in Worobey et al. (2022) does not establish that the Huanan market, rather than other nearby landmarks, is the center of the 155 December 2019 case locations.
+  theme: early-geography
+  rung: observation
+  claimType: methodological
+  reviewState: ai_extracted
+  dependsOnClaimIds: [COV-C001]
+  sourceAnchor:
+    sourceId: SRC-STOYAN-CHIU-2024
+    locator: "Accepted manuscript (arXiv:2208.10106v2), p. 1 (Summary)"
+    quote: >-
+      We show that this statistical conclusion is invalid on two grounds: (1) The assumption that a centroid of early case locations or another simply constructed point is the origin of an epidemic is unproved. (2) A Monte Carlo test used to conclude that no other location than the seafood market can be the origin is flawed.
+  origin:
+    ref: "config/site-rules.md — the doubters' best case, from their best voices"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-C021
+  statement: >-
+    Deep sequencing data from Wuhan patient samples (BioProject PRJNA612766) was deleted from the United States National Institutes of Health's Sequence Read Archive at the submitting researchers' request, and the deleted files remained retrievable from Google Cloud storage after deletion.
+  theme: narrative
+  rung: observation
+  claimType: existence
+  reviewState: ai_extracted
+  origin:
+    ref: "config/site-rules.md — look for what is missing"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-C022
+  statement: >-
+    The SARS-CoV-2 sequences recovered from the Huanan market are not fully representative of the viruses circulating in Wuhan early in the epidemic.
+  theme: lineages
+  rung: mechanism
+  claimType: interpretive
+  reviewState: ai_extracted
+  dependsOnClaimIds: [COV-C021]
+  origin:
+    ref: "config/site-rules.md — the doubters' best case, from their best voices"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-C023
+  statement: >-
+    Across the full set of Chinese CDC environmental samples from the Huanan market, the number of SARS-CoV-2 sequencing reads is not consistently correlated with the number of reads from non-human species susceptible to SARS-CoV-2.
+  theme: market-animals
+  rung: observation
+  claimType: statistical
+  reviewState: ai_extracted
+  dependsOnClaimIds: [COV-C006]
+  origin:
+    ref: "config/site-rules.md — the doubters' best case, from their best voices"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"
+
+- id: COV-C024
+  statement: >-
+    An investigative working paper asserts that the Wuhan Institute of Virology's main database of viral samples and sequences went offline on 12 September 2019 and had not been restored to public access as of February 2021.
+  theme: wiv-program
+  rung: observation
+  claimType: existence
+  reviewState: ai_extracted
+  origin:
+    ref: "config/site-rules.md — look for what is missing; the doubters' best case"
+    extractedBy: "Claude Opus 5 (Claude Code, operator session)"
+    runId: "2026-10-23-session-site-123704"
+    date: "2026-10-23"

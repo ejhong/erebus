@@ -467,3 +467,81 @@
     study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+
+# ── the published critics ──────────────────────────────────────────────
+# Added 2026-10-23: the case graded the critics' arguments without ever
+# quoting the critics. These four sources are the main published voices
+# disputing the market account and the custodianship of the early data,
+# read in their own words.
+
+- id: SRC-STOYAN-CHIU-2024
+  title: "Statistics did not prove that the Huanan Seafood Wholesale Market was the early epicenter of the COVID-19 pandemic"
+  authors: ["Dietrich Stoyan", "Sung Nok Chiu"]
+  organization: "Journal of the Royal Statistical Society Series A"
+  year: "2024"
+  sourceType: paper
+  identifier: "J. R. Stat. Soc. Ser. A 187(3):710–719; DOI 10.1093/jrsssa/qnad139"
+  url: "https://doi.org/10.1093/jrsssa/qnad139"
+  verification: ai_verified
+  verificationNote: >-
+    Read in full 2026-10-23 through the reading tool, which served the
+    authors' accepted manuscript (arXiv:2208.10106v2, 22 November 2023, 18
+    pp.) for this DOI. Page locators are that copy's; the journal's
+    pagination differs.
+  reliabilityNotes:
+    - "Peer-reviewed in a statistics journal by two spatial-statistics specialists, and independent of every other source in this case: it re-analyses only the published case coordinates."
+    - "A critique of a method, not an origin finding. The authors state they neither support nor reject the zoonosis hypothesis, and this case must not read them as doing either."
+    - "The copy read is the accepted manuscript rather than the journal's version of record; the summary and conclusion were checked word for word."
+
+- id: SRC-BLOOM-2021
+  title: "Recovery of Deleted Deep Sequencing Data Sheds More Light on the Early Wuhan SARS-CoV-2 Epidemic"
+  authors: ["Jesse D. Bloom"]
+  organization: "Molecular Biology and Evolution"
+  year: "2021"
+  sourceType: paper
+  identifier: "Mol. Biol. Evol. 38(12):5211–5224; DOI 10.1093/molbev/msab246"
+  url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8436388/"
+  verification: ai_verified
+  verificationNote: >-
+    Read in full 2026-10-23 from the PubMed Central copy of the version of
+    record; abstract, results, discussion and methods quoted verbatim with
+    section locators (the PMC copy carries no page numbers).
+  reliabilityNotes:
+    - "Peer-reviewed, and the author states his own caveats at length: the recovered sequences are partial, lack full metadata, cannot be placed unambiguously on a tree, and the analysis is qualitative without formal statistical testing."
+    - "The author explicitly declines the inference the paper is most often cited for: he writes that SRA deletions do not imply any malfeasance."
+    - "The paper records a later official Chinese account of the deletion that contradicts the reason the submitters gave the archive; the author says he cannot reconcile the two. Both are in the record here."
+
+- id: SRC-BLOOM-2023
+  title: "Association between SARS-CoV-2 and metagenomic content of samples from the Huanan Seafood Market"
+  authors: ["Jesse D. Bloom"]
+  organization: "Virus Evolution"
+  year: "2023"
+  sourceType: paper
+  identifier: "Virus Evolution 9(2):vead050; DOI 10.1093/ve/vead050"
+  url: "https://doi.org/10.1093/ve/vead050"
+  verification: ai_verified
+  verificationNote: >-
+    Read 2026-10-23 through the reading tool, which served the author's
+    open-access preprint deposit (bioRxiv 2023.04.25.538336, 15 pp.) for
+    this DOI. The abstract quoted here is that copy's.
+  reliabilityNotes:
+    - "Peer-reviewed, and re-analyses the same Chinese CDC sequencing data as the metagenomic paper it criticizes — so it is a second analysis of one dataset, not an independent confirmation of anything."
+    - "The authors of the criticized paper published a stated answer to this analysis, which is in the ledger beside it."
+    - "The copy read is the author's preprint deposit rather than the journal's version of record."
+
+- id: SRC-DRASTIC-DBS-2021
+  title: "Investigation into Wuhan Institute of Virology Pathogen Databases"
+  authors: ["Charles Small", "B. Bostickson", "G. Demaneuf"]
+  organization: "DRASTIC (Decentralised Radical Autonomous Search Team Investigating Covid-19)"
+  year: "2021"
+  sourceType: report
+  identifier: "Working paper v1.1, 24 pp., deposited 6 February 2021; DOI 10.5281/zenodo.4512259"
+  url: "https://zenodo.org/records/4512260/files/DeletedDBs_v1_1.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    The deposited PDF read 2026-10-23 through the reading tool (24 pp.);
+    quotations taken from its own text with page locators.
+  reliabilityNotes:
+    - "A self-published working paper by an online investigative group, not peer-reviewed, and partly written under names that may be pseudonyms. It is cited here as the clearest statement of a doubters' argument in its authors' own words — the site rules' requirement — and not as an established finding."
+    - "Its central factual assertion rests on web-archive snapshots and access logs the authors reproduce as screenshots. This case has not independently verified those artifacts, which is why the claim it anchors is graded on what the document asserts."
+    - "The group is an interested party in the origins dispute, and the same standard applies to it as to an official body: its description of records no independent party has examined carries the weight of one source."
