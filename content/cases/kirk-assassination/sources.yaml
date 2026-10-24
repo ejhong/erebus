@@ -40,10 +40,13 @@
   sourceType: report
   identifier: "Case No. 251403576; filed September 16, 2025"
   url: "https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf"
+  archivedUrl: "https://web.archive.org/web/2025id_/https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf"
   verification: ai_verified
   verificationNote: >-
     PDF downloaded and text-extracted 2026-08-25 (10 pages; file metadata
-    September 16, 2025).
+    September 16, 2025). On 2026-10-24 the live URL returned HTTP 503; the
+    counts were re-read from the Wayback Machine's raw capture (archivedUrl),
+    pp. 1-3, through the site's reading tool.
   reliabilityNotes:
     - "A charging instrument states allegations, not adjudicated facts. The defendant is presumed innocent."
 
@@ -874,3 +877,32 @@
   verificationNote: "Read in full through the site's reading tool on 2026-10-20; quotations verbatim from that text. The page's machine-written 'key takeaways' box is not used."
   reliabilityNotes:
     - "Reports and quotes a scheduling order of early October 2026; the order itself was not read. A defense lawyer quoted for his forecast of the trial's timing has no role in the case and is not used here."
+
+# ── the trial-scheduling memoranda and conference (session 2026-10-24-session-site-115910) ──
+
+- id: SRC-KSL-TRIAL-MEMOS-2026
+  title: "Tyler Robinson doesn't anticipate trial until 2029"
+  authors: ["Pat Reavy"]
+  organization: "KSL.com"
+  year: "2026"
+  sourceType: webpage
+  identifier: "Posted October 22, 2026"
+  url: "https://www.ksl.com/article/51639654/tyler-robinson-doesnt-anticipate-trial-until-2029"
+  verification: ai_verified
+  verificationNote: "Read in full through the site's reading tool on 2026-10-24; quotations verbatim from that text. The page's machine-written 'key takeaways' box is not used."
+  reliabilityNotes:
+    - "Reports and quotes the state's and the defense's trial-scheduling memoranda, filed October 21, 2026; the memoranda themselves were not read. What each side says about its own readiness and needs is that side's assertion."
+    - "Independence note (§3.10): one proceeding, reported also by the Deseret News in this file."
+
+- id: SRC-DESERET-PRETRIAL-2026
+  title: "No Tyler Robinson trial date set as attorneys clash over timeline"
+  authors: ["Emily Walker"]
+  organization: "Deseret News"
+  year: "2026"
+  sourceType: webpage
+  identifier: "Published October 23, 2026"
+  url: "https://www.deseret.com/utah/2026/10/23/no-date-set-for-tyler-robinson-trial/"
+  verification: ai_verified
+  verificationNote: "Read in full through the site's reading tool on 2026-10-24; quotations verbatim from that text. The page's 'key points' box is not used."
+  reliabilityNotes:
+    - "Courtroom reporting of the October 23, 2026 pretrial conference; no transcript or minute entry was read. The parties' and the victim's representative's statements are their assertions."

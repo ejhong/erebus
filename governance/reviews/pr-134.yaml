@@ -1,0 +1,72 @@
+# Review of #134, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 134
+title: "September 11: the Saudi file brought up to date from the court's own opinion, stay order and appeal; the trial-exhibits sentence given its own claim"
+url: https://github.com/ejhong/erebus/pull/134
+outcome: merged
+outcomeAt: 2026-10-22T13:36:57Z
+cases:
+  - september-11
+rounds:
+  - commit: b69a5854c06b24e874f780d28c209627246c135c
+    date: 2026-10-22
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "SEP-C022 and “The one file still moving”: split the two employees into separate atomic claims or qualify the linked sentence. The Kingdom leaves one man’s apartment assistance undisputed but denies that the second helped at all, so the categorical compound claim obscures materially different evidentiary standings and the preliminary nature of the court’s finding about the second man."
+          - "SEP-E046 and the article’s October 22 procedural status: the October 7 AP report supports that no ruling was announced then, not that no ruling existed fifteen days later. Verify the current status from the Second Circuit docket or say that no later ruling was located; also soften statements that the appeal necessarily decides whether a trial occurs, since affirmance permits but does not guarantee one."
+          - "SEP-C030 and the opening paragraph: the exhibits index directly establishes admission and publication of 1,202 exhibits, but this case has not examined them and the record does not by itself establish the preceding claims about identities, travel, financing, and training. Add records for those propositions or separate them from the narrowly supported exhibits statement."
+        summary: The change substantially improves the case by replacing outdated wire-level treatment of the Saudi litigation with the district court’s opinion and stay order, adding the appeal’s current posture, preserving the opinion’s jurisdictional limits, and correcting the mislinked trial-exhibits sentence. The move of SEP-C023 to mixed is cautiously explained and does not outrun the acknowledged gap between employee assistance and institutional knowledge of the plot. Some claims still need finer atomicity and tighter status sourcing, but the page is materially more accurate, current, and useful overall.
+        cost:
+          inputTokens: 25911
+          outputTokens: 2886
+          usd: 0.161364
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - "Follow through in the next session on the remaining half of review note #117 (the COVID origins link mismatch on COV-C013)."
+          - In SEP-E043's editor inference, clarify explicitly that the notepad page with the flight equations was found in the first employee's residence rather than the second's, maintaining consistency with the distinction drawn in SEP-E041 and SEP-E042.
+          - Pursue SEP-R009 once the Second Circuit issues its mandate or opinion following the October 7, 2026 oral argument, updating SEP-C023 and the stay posture accordingly.
+        summary: "This change updates the September 11 Saudi litigation file using primary court records (the August 2025 jurisdictional decision and November 2025 stay order) alongside the October 2026 appellate argument, correcting the outdated statement that proceedings were entirely dormant. It also resolves review note #117 by separating the Moussaoui trial-exhibits record into its own distinct baseline claim (SEP-C030). The resulting assessment of SEP-C023 is carefully calibrated, and the living-person rules regarding uncharged employees are strictly observed."
+        cost:
+          inputTokens: 28648
+          outputTokens: 1286
+          usd: 0.026308
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "SEP-E044 / SEP-R009: when the Second Circuit briefs are reachable, replace the AP paraphrase of the Kingdom’s position with the Kingdom’s own brief so the denial rests on a primary filing rather than wire copy."
+          - "Article / site rules: still outstanding from the operator’s own next-pass list — add claims that quote the main voices disputing the official account (AE911Truth, Alaska-study authors, dust-paper authors) in their own words and grade those points against the primary record."
+          - "SEP-E041–E043: once any publicly filed deposition excerpts, phone records, mosque photograph or notepad page cited in ECF 11182 are obtainable, attach them (or note sealed status) so the jurisdictional findings are not carried only by the court’s description of unread exhibits."
+        summary: The change replaces an undersourced wire gloss of the Saudi civil case with the district court’s own August 2025 opinion, the November 2025 stay order, and a current report of the Second Circuit argument; fixes the 1,202-exhibits sentence by giving it claim SEP-C030; and moves SEP-C023 from unresolved to mixed with the gap between jurisdictional findings and “knowing support of the plot” stated plainly. Living-person handling is careful (uncharged employees described by role only; no court has decided). For a truth-seeking reader the Saudi file is more accurate, better evidenced, fairer, and more current, with nothing true dropped.
+        cost:
+          inputTokens: 26573
+          outputTokens: 324
+          usd: 0.055205
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - 'SEP-E042 (and echoed in the session account): the second employee is described as one on whom the court found "less evidence" but credible — that quoted phrase sits in the editorInference with no locator and no passage in sourceStatement. Add the sentence and its page to sourceStatement, or remove the quotation marks, so every quotation in the record anchors to shown text.'
+          - "The article's role descriptions of the two uncharged employees — \"an accountant, by his own description\" and \"an imam\" — are said to come from the court, but no record carries them: SEP-E041 quotes neither characterization and gives no locator for it. Add the court's exact words (with page) to SEP-E041 or SRC-SDNY-KSA-OPINION-2025 so the article's living-persons handling is itself evidenced, not just asserted in the log."
+          - SEP-C030 is graded Established on a single record (SEP-E038) whose admission-and-publication facts are quoted but whose "adversarial trial with defence counsel and a judge" characterization — the part the article's opening sentence leans on — lives in the editorInference rather than the claim or a supporting record. Fold that characterization into the claim's support explicitly (or mark it as inference at the claim level) so an Established verdict does not rest partly on an unlabelled inference.
+        summary: "The change brings the September 11 case's Saudi file up to date from primary court records — the 45-page opinion, the stay order, the AP report of the argued appeal — corrects an unsupported sentence about proceedings, fixes the #117 claim-link mismatch with a new atomic claim (SEP-C030), and moves SEP-C023 from unresolved to mixed with the gap between the court's jurisdictional finding and the claim's assertion stated plainly, plus a new steelman. Quotations are cut around uncharged individuals, every allegation is attributed to its source, and the dispositions and unreached records are recorded honestly. The gains in accuracy, currency and fairness are clear; the residual issues are record-hygiene items for the next pass, so no harm stands and the change is better."
+        cost:
+          inputTokens: 27320
+          outputTokens: 5635
+          usd: 0.006915
+harvestedAt: 2026-10-24T12:06:26.072Z
