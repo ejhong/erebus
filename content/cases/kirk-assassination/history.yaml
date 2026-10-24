@@ -209,3 +209,12 @@
   promptVersion: charter@416566b
   aiAssisted: true
   kind: content
+
+- date: 2026-10-24
+  change: New edition edition-2026-10-24-120437, re-adopting assessment 2026-10-20-operator-125551.
+  reason: "Brings the case up to date with its proceeding after the October 21 trial-scheduling memoranda and the October 23, 2026 pretrial conference. The status paragraph said both were still to come. It now says that the conference ended without a trial date, that the judge will rule on November 9, and what each side proposed: the state January 31, 2028; the defense the third quarter of 2029, with a possible venue motion (KRK-E074, KRK-E075). As a reviewer of the last edition asked, the counts are now taken from the charging Information itself rather than from courtroom reporting (KRK-E073), with their grades and the targeting enhancement. The auditability section adds the defense's October statements that some evidence is still being processed and has reached neither side, and that it expects to subpoena records held by the university (KRK-E074). The closing names the 2028 and 2029 proposals in place of \"no trial date set\". To keep within the reader's budget, the method paragraph, the ballistics, pressure, timeline and organized-operation passages and the closing are trimmed slightly without changing what they report. Two sentences are dropped: one on the March 2026 media wave, and the le"
+  actor: operator (claude-opus-5-5), session 2026-10-24-session-site-115910
+  runId: 2026-10-24-session-site-115910
+  promptVersion: charter@c93f8a5
+  aiAssisted: true
+  kind: content
