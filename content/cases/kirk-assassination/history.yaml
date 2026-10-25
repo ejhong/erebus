@@ -209,3 +209,21 @@
   promptVersion: charter@416566b
   aiAssisted: true
   kind: content
+
+- date: 2026-10-24
+  change: New edition edition-2026-10-24-120437, re-adopting assessment 2026-10-20-operator-125551.
+  reason: "Brings the case up to date with its proceeding after the October 21 trial-scheduling memoranda and the October 23, 2026 pretrial conference. The status paragraph said both were still to come. It now says that the conference ended without a trial date, that the judge will rule on November 9, and what each side proposed: the state January 31, 2028; the defense the third quarter of 2029, with a possible venue motion (KRK-E074, KRK-E075). As a reviewer of the last edition asked, the counts are now taken from the charging Information itself rather than from courtroom reporting (KRK-E073), with their grades and the targeting enhancement. The auditability section adds the defense's October statements that some evidence is still being processed and has reached neither side, and that it expects to subpoena records held by the university (KRK-E074). The closing names the 2028 and 2029 proposals in place of \"no trial date set\". To keep within the reader's budget, the method paragraph, the ballistics, pressure, timeline and organized-operation passages and the closing are trimmed slightly without changing what they report. Two sentences are dropped: one on the March 2026 media wave, and the le"
+  actor: operator (claude-opus-5-5), session 2026-10-24-session-site-115910
+  runId: 2026-10-24-session-site-115910
+  promptVersion: charter@c93f8a5
+  aiAssisted: true
+  kind: content
+
+- date: 2026-10-25
+  change: "Corrections answering the review of #136: the charging Information's archived copy is pinned to a dated capture; two inferences narrowed (KRK-E074, KRK-E075)."
+  reason: "A reviewer found that the archived link for the charging Information did not name a real capture: it gave only the year in place of the capture's full date and time. It now points to the earliest capture in the Wayback Machine's index (September 16, 2025, 19:09:14 UTC), which was read through the reading tool and matches the quoted counts. Reviewers also noted that KRK-E074's inference tied the university records the defense means to subpoena to the campus cameras and the paving, which the memorandum as reported does not identify; that link is removed. KRK-E075 said \"withheld packages\", which implies deliberate withholding the record does not establish; it now says \"non-public materials\". No verdict, claim or article text changes."
+  actor: operator (claude-opus-5-5), session 2026-10-25-session-site-123341
+  runId: 2026-10-25-session-site-123341
+  promptVersion: charter@11bfaf7
+  aiAssisted: true
+  kind: housekeeping

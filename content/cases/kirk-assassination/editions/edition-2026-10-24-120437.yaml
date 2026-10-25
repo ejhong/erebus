@@ -1,0 +1,139 @@
+# Edition written by the operator (claude-opus-5-5) in session 2026-10-24-session-site-115910, stamped by the engine (src/engine/stamp.ts).
+# Append-only: a later edition replaces it; this file is never edited.
+
+runId: edition-2026-10-24-120437
+producedBy: 2026-10-24-session-site-115910
+date: 2026-10-24
+model: claude-opus-5-5
+promptVersion: charter@c93f8a5
+rationale: |-
+  Brings the case up to date with its proceeding after the October 21 trial-scheduling memoranda and the October 23, 2026 pretrial conference. The status paragraph said both were still to come. It now says that the conference ended without a trial date, that the judge will rule on November 9, and what each side proposed: the state January 31, 2028; the defense the third quarter of 2029, with a possible venue motion (KRK-E074, KRK-E075). As a reviewer of the last edition asked, the counts are now taken from the charging Information itself rather than from courtroom reporting (KRK-E073), with their grades and the targeting enhancement. The auditability section adds the defense's October statements that some evidence is still being processed and has reached neither side, and that it expects to subpoena records held by the university (KRK-E074). The closing names the 2028 and 2029 proposals in place of "no trial date set". To keep within the reader's budget, the method paragraph, the ballistics, pressure, timeline and organized-operation passages and the closing are trimmed slightly without changing what they report. Two sentences are dropped: one on the March 2026 media wave, and the leads' "awaiting verification" clause. No verdict moves, and the edition re-adopts the current assessment.
+
+  Measured by the engine: article 2953 → 2945 words, without markup.
+basis:
+  ledgerHash: f8d852126ec0c56a74230f47b8f50c91bcc5ebf5a0f8aa295bf299ef202017e4
+  inputsHash: 8f0518ff47b4e0a900b67fb6084bb6248cf7e953398883b77f08f50bff8b3a8c
+previous: edition-2026-10-20-125551
+assessment:
+  runId: 2026-10-20-operator-125551
+  hash: 660fcd988fd483552c467d60b3540a1acf02f9646a8754f9558ecaf6c1428498
+featuredClaimIds:
+  - KRK-C001
+  - KRK-C002
+  - KRK-C003
+  - KRK-C004
+  - KRK-C005
+  - KRK-C006
+  - KRK-C007
+  - KRK-C008
+  - KRK-C009
+  - KRK-C010
+  - KRK-C011
+  - KRK-C012
+  - KRK-C013
+  - KRK-C014
+  - KRK-C015
+  - KRK-C016
+  - KRK-C017
+  - KRK-C018
+  - KRK-C019
+  - KRK-C025
+  - KRK-C026
+  - KRK-C027
+  - KRK-C028
+  - KRK-C032
+cruxOrder:
+  - KRK-R001
+  - KRK-R002
+  - KRK-R003
+  - KRK-R004
+  - KRK-R005
+  - KRK-R006
+  - KRK-R007
+  - KRK-R008
+  - KRK-R009
+  - KRK-R011
+  - KRK-R012
+  - KRK-R015
+  - KRK-R010
+  - KRK-R013
+  - KRK-R014
+accounts:
+  - "The charged account: Tyler Robinson, alone, fired one shot from the Losee Center roof with the rifle later recovered, as the State of Utah alleges; he has pleaded not guilty and is presumed innocent."
+  - "Compromised evidence: whoever fired, key evidence chains — the bullet fragments, the event's camera cards, the scene itself — were mishandled or altered after the shot, as critics argue."
+  - A device at the microphone, not a distant rifle shot, caused the fatal wound, as independent video analysts argue.
+  - "A wider operation: others planned, helped or shielded the killing, as some commentators allege; no public record connects any person, organization or state to it."
+article: |
+  On September 10, 2025, at 12:23 in the afternoon, Charlie Kirk was answering a student's question in a courtyard at Utah Valley University when a single shot killed him in front of roughly three thousand people and a half-dozen cameras. The State of Utah has charged Tyler Robinson, then twenty-two, with aggravated murder and six other counts, and says it will seek the death penalty. On September 1, 2026, after a week-long preliminary hearing, a judge found probable cause on every count and sent the case to trial; Robinson pleaded not guilty the same day. **No court has decided the charges, no jury has heard the evidence, and he is presumed innocent** — a sentence that belongs near the top of this article and not the footnotes, because everything else on this page must be read through it.
+
+  *Where the proceeding stands (last checked October 24, 2026):* State of Utah v. Tyler James Robinson, Case No. 251403576, Fourth District Court, Provo, Judge Tony Graf Jr. The charging Information alleges seven counts: aggravated murder, a capital felony; felony discharge of a firearm causing serious bodily injury; two counts of obstruction of justice (concealing the rifle, and the clothing); two counts of witness tampering (directing his roommate to delete messages, and to stay silent); and a violent offense committed in the presence of a child, a misdemeanor. It adds an enhancement alleging that he chose Kirk because of Kirk's political expression. All seven were bound over. No trial date is set. In October filings the state proposed a trial beginning January 31, 2028; the defense proposed the third quarter of 2029 and said it may seek a change of venue. After a three-hour conference on October 23, the judge said he would rule on the date on November 9.
+
+  {plate:IMG-KRK-P01}
+
+  This case does not ask who killed Charlie Kirk. That is a question for a courtroom, and no claim on this page grades it. What this case maps is the *record*: what the public evidence contains, where it is strong, where it stops, and which of the disputes around it are real, manufactured, or unresolved. Here every consequential sentence is pinned to a claim you can open, and every claim to evidence and its source.
+
+  ## What is actually established
+
+  Begin with what no serious party disputes. [A person was on the Losee Center roof and fled across it within seconds of the shot]{claim=KRK-C001} — captured in social-media video independently analyzed by the Washington Post's visual-forensics team, in footage the FBI released of the figure jumping from the roof, and in the sworn testimony of the first officer up there, who found a red-and-black screwdriver and a disturbance in the gravel "like someone had lain there in the prone position." [A towel-wrapped .30-06 bolt-action rifle was recovered in a wooded area along the apparent escape route]{claim=KRK-C002}, where the FBI says the fleeing figure went.
+
+  {plate:IMG-KRK-P02}
+
+  The medical record, as far as it goes, is equally direct: [the medical examiner's report classifies the death as a homicide caused by a gunshot wound to the neck, with projectile fragments recovered at autopsy]{claim=KRK-C006}. And the prosecution's association case is substantial: [DNA evidence presented at the preliminary hearing links Robinson to the rifle and related items]{claim=KRK-C008}, with statistics the state's witnesses described as "extremely likely," and [testimony and exhibits attribute incriminating statements to him]{claim=KRK-C009} — a roommate's recorded account, extracted texts, a Discord message before surrender. In binding the case over, the judge called the state's evidence of identity substantial — while stressing that at this stage the law required him to read all of it in the prosecution's favour. The defense called forensic experts to argue that DNA interpretation is subjective, and contends that much of the rest is hearsay a trial jury will never hear. Anyone telling you this is a house of cards has not read the record.
+
+  ## Where the record stops
+
+  Anyone telling you the record is closed has not read it either. The strongest possible ballistic proposition — *this fatal projectile came from this rifle* — is precisely the one the public record does not contain. [No public, conclusive identification of the autopsy fragments to the recovered rifle exists]{claim=KRK-C003}: [the ATF examiner's comparison was inconclusive, neither identifying nor excluding the rifle]{claim=KRK-C004}. Both sides of the public argument have distorted that single result — "the bullet matched" is false, and so is "the rifle was cleared."
+
+  Worse, the fragments themselves do not yet reconcile. [Photographs documented seven recovered fragments; the examiner received four; and no public accounting explains the difference]{claim=KRK-C005}. The ATF report as filed adds a wrinkle rather than resolving one: it itemizes a deformed bullet jacket fragment plus four lead fragments, and whether that five-item inventory and the testified four describe the same material is itself unreconciled. There may be an entirely routine explanation — fragments retained by the medical examiner, consumed in testing, separately packaged. None has been published. That is a genuine chain-of-custody question, and this case ranks its resolution as the single highest-value disclosure available.
+
+  What does "inconclusive" actually mean? This case measured it: a pre-registered study tabled six ground-truth studies of the method itself, in which trained examiners judged comparisons whose true answer was known. An inconclusive is the method's standard, non-error output; in the largest modern study it was the *most common* response on bullets that truly came from different guns (65.4%). But the one study that included damaged bullets and fragments found that damage drives the inconclusive rate by itself, whatever the true answer. On the method's own published performance, this inconclusive carries little weight in either direction, and the fragments' condition, not examiner effort, limits what a blind re-examination could resolve. And the sub-1% "error rates" quoted around this case count conclusive answers only; in the study that reports both, counting inconclusives drops the true-negative rate to 63.5%.
+
+  The same pattern holds for the medical evidence: the classification is in the record, but [the complete autopsy documentation that would let independent pathologists test competing mechanism claims is not publicly available]{claim=KRK-C007} — the report entered through an investigator, over a defense objection that it was "an expert report without an expert present." And the DNA, powerful as it is for *whose* biological material, does not by itself answer *when or how it got there*; the state's own forensic biologist acknowledged the transfer scenario as possible under cross-examination. The digital record is further away still: the defense told the court at the bindover that the 12.1 terabytes of phone and computer extractions and account records it received in March still needed forensic processing before it could review them. In October it added, as reported, that some evidence was still being processed and had reached neither side, and that it expects to subpoena records held by the university.
+
+  Add it together and you reach this case's central finding so far: [the public record does not yet contain what an independent auditor would need to verify the official account end to end]{claim=KRK-C019}. That sentence must be handled with precision, because two different audiences want to round it in two different directions. It does not mean the official account is false — every enumerated gap has mundane explanations, and pre-trial records are always incomplete. It means *not fully auditable*, and the honest response to "not fully auditable" is disclosure and testing, not a verdict in either direction.
+
+  ## The custody file
+
+  The event's own cameras are a study in how provenance problems are born. Sworn testimony establishes that the event videographer supplied investigators with video the same day — a flash drive, then downloadable files. But those are copies, and [whether every original storage card reached law-enforcement custody is not publicly established]{claim=KRK-C012}; the defense has already told the court that "someone made clips, and we don't know who." Meanwhile, [footage published by Candace Owens appears to show the contractor removing the rear camera's card within about four minutes of the shot]{claim=KRK-C011} — an act whose occurrence looks documented and whose purpose is not. Grabbing your own equipment in a catastrophe is what a working videographer does; it is also what someone controlling an angle would do. The footage cannot tell you which; a media ledger of serials, hashes and acquisition logs could.
+
+  The physical scene has its own version. [The courtyard was excavated and paved within days, and the lead investigator testified he did not personally authorize it]{claim=KRK-C013} — documented in records obtained under Utah's open-records law, down to a $6,090.52 emergency invoice reading "Clean up for shooting incident." Whether that mattered forensically depends entirely on which mechanism hypothesis you hold, which is why this case records the paving as a real transparency failure while declining the leap to [the claim that documented institutional conduct establishes deliberate evidence concealment]{claim=KRK-C017} — a leap the current record does not license.
+
+  How unusual is that sequence? A pre-registered study, corrected once in public, tabled eighteen comparable American venues. Every venue released within a week had a closed perpetrator question, and no case in the table shows alteration proceeding over a disputed or absent authorization. If the scene was formally released before the September 14 paving, that release was the fastest in the table, made during an active prosecution; if it was not, the alteration preceded release, which the table never shows. The fast branch has a mundane candidate explanation — a suspect in custody, a campus under pressure to reopen. Either way, one undisclosed record, the formal release date, now decides between two branches whose meanings were fixed before the answer existed.
+
+  {plate:IMG-KRK-P03}
+
+  ## The pressure file
+
+  Some of the most consequential material has nothing to do with forensics. [In messages authenticated by TPUSA's own spokesman, Kirk described losing a two-million-dollar-a-year donor over his refusal to cancel Tucker Carlson, and wrote that donor pressure was leaving him "no choice but to leave the pro-Israel cause"]{claim=KRK-C014}. It is real — confirmed on the record, not alleged. Reporting of a contentious Hamptons gathering the month before adds a disputed chapter: anonymous sources describe an "intervention"; the named participants categorically deny coercion.
+
+  But a motive environment is not an attribution. [Nothing in the public record connects any donor, organization, or state to the killing operationally]{claim=KRK-C015} — no communications, no payments, no logistics, no forensic link; even the publication that broke the authenticated texts says so. The pressure was real; the bridge does not exist in public evidence. Both are findings.
+
+  ## The alternative mechanism
+
+  The most technically ambitious challenge to the official account holds that [a device at Kirk's microphone, not a distant rifle shot, caused the fatal injury]{claim=KRK-C018}. Its proponents point to frame-by-frame video interpretation — shirt deformation, a violently displaced necklace, an apparent gas puff before mechanical movement — and one anonymous analyst has published energy estimates, code, and source video inviting anyone to re-run the computation. Against it stands nearly everything else in the record: the gunshot classification, the recovered fragments, the rooftop chain, and the absence of any published residue or device-fragment finding. Even the theory's originator has lately entertained a variant in which a bullet did arrive — at the microphone.
+
+  The judge's written order binding the case over adds one more item, as a press report quotes it: the physical evidence, the order says, shows the shot fired from an elevated position about 415 feet from the canopy and 68 feet above it, and the bullet travelling front to back and downward after it struck. That is the path a rooftop shot predicts. It is also a judge's summary, read in the state's favour, of a medical report the public still has not seen — which is why it counts here as weak evidence, not as the autopsy.
+
+  This site grades the hypothesis weakly supported and does not expect that grade to be the last word, because the theory is unusually *testable*: a blind, native-file synchronization study ordering shot, deformation, and wound frame-accurately; laboratory examination of the microphone hardware and clothing; the full autopsy package. A theory that stakes itself on checkable physics deserves the check.
+
+  ## Institutions, narratives, and the timeline wars
+
+  Officials have not earned unlimited deference here, and that is now a matter of record rather than suspicion: [a judge held a deputy prosecutor in civil contempt in June 2026 for violating pretrial-publicity restrictions]{claim=KRK-C016} after he told a tabloid the state had "ample evidence" of guilt — even as the same ruling found his correction of ballistics misreporting legitimate. Narrative management inside the prosecution was real. So was actual misinformation for it to manage. Both facts are in the file.
+
+  The popular counter-narratives fare no better under inspection. The widely circulated timeline case — an unauthenticated 8:07 a.m. video supposedly at odds with an 8:29 arrival, a rooftop flight supposedly too fast for rifle disassembly — collapses on contact with its own premises: [the anomalies are not, on current evidence, inconsistent with the official chronology]{claim=KRK-C010}, and the disassembly claim appears nowhere in the reviewed official record. The related charge that [the FBI director's announced screwdriver-DNA evidence was quietly abandoned]{claim=KRK-C032} splits cleanly under verification: the announcement-versus-charging-document mismatch is real, and the abandonment is false — the evidence was presented under oath ten months later. Other material of this kind — the venue-selection allegation, the disputed accounts of who ordered cameras removed, an assertion that the FBI holds the original cards — stays in the catalog as leads, none promoted to fact.
+
+  Two further pre-registered studies supply base rates. The first measured the federal posture: against thirteen comparable state-jurisdiction cases, [the FBI's public-facing role in the first week — director-level scene walkthrough and evidence announcements with no federal charge identified — exceeded the bureau's typical public role]{claim=KRK-C037}. FBI *participation* was universal across all thirteen, so involvement itself proves nothing; the anomaly is confined to who fronted the case publicly, at what rank, how fast, and the table does not control for victim prominence. The second graded eleven checkable statements by officials and event personnel against contemporaneous records: four corroborated, three partly corroborated, one adjudicated by the contempt ruling, one self-corrected, one unresolved, and one contradicted — the FBI director's day-one custody post, corrected that afternoon. The repeating shape is announcements that outran their paper and were later partly vindicated under oath; that is not evidence of coordination.
+
+  {plate:IMG-KRK-P04}
+
+  ## The organized-operation file
+
+  The strongest public compilation of the broader-plot case assembles a procurement record, a flight, and a disaster into a single arc, and parts of it are real. [Award N0016425PJ538, "miniaturized-XS demolition charges, anti personnel-XS," $440,494, delivered by August 25, 2025, is verbatim in the federal procurement record]{claim=KRK-C025}, and a live search finds no other award so worded. The manufacturer's Tennessee facility did explode on October 10, 2025, killing sixteen. What verification does not find is the connective tissue: the flight from Heber City has no source beyond assertion; the federal investigation attributes the day's production to commercial cast boosters, with the cause formally open; state inspectors had documented safety failures severe enough for their largest-ever penalty; and archived pages show the device theory was public on September 20, weeks rather than "two days before" the blast. Real record, real catastrophe, no established bridge.
+
+  The same discipline sorts the aftermath allegations into three piles. Documented: [surrender-related surveillance footage was allowed to auto-delete unpreserved after thirty days]{claim=KRK-C026}, in the sheriff's office's own records responses; and [the former counterterrorism-center director states on the record that his foreign-nexus inquiry was halted, attributing the order to the FBI director]{claim=KRK-C027} — an assertion by its source, with the FBI's stated rationale (witness exposure at trial) carried alongside it. Open: [whether a bystander's instant false confession was pre-arranged]{claim=KRK-C028} — his diversion *intent* is court record in his own words; any arrangement behind it is, so far, evidenced by nothing. Corrected: the "sealed black box" framing fails on inspection — cameras have repeatedly been *allowed* over defense objection, in-person appearances have occurred, and much of the sealing is defense-driven; what is real is the publicity order a prosecutor was held in contempt under, already graded above.
+
+  At the bottom sit leads resting on nothing checkable — an unsourced aircraft story, a pseudonymous account's device count from an anonymous tipster, a secondhand report of Kirk's private fear — kept in the catalog with their provenance stated, neither published as fact nor buried.
+
+  ## What would settle it
+
+  The bindover moved the case toward trial without moving the public record, and with the two sides proposing trial dates in 2028 and 2029, the court's calendar promises no early release of what is missing. The disputes this case tracks will be settled by disclosures and tests, not rulings: produce the formal scene-release record; reconcile the seven fragments; release the autopsy package to independent pathologists; publish the media ledger with hashes; run the blind synchronization study; re-examine the ballistics blind with modern metrology; evaluate the DNA at the activity level; drive the 8:07 route with a stopwatch; and read the bindover order itself, not a reporter's rendering of it. Every one is specified in the research agenda with what it would prove and disprove. Five pre-registered studies sit behind this page, open in full on the studies shelf; the fifth finds that a retained, fragmented rifle bullet striking the spine is the expected pattern, not an anomaly. The honest summary of this case today fits in two sentences. The state has assembled a substantial, multi-channel account that no public evidence refutes. The public record is not yet complete enough for anyone — including the state's defenders — to audit that account independently, and until it is, this page will say exactly which pieces are missing.

@@ -1,0 +1,14 @@
+runId: 2026-10-25-session-site-123341
+verb: session
+case: site
+date: 2026-10-25
+model: claude-opus-5-5
+promptVersion: charter@c93f8a5
+inputHash: null
+outcome: completed
+cost:
+  calls: 28
+  inputTokens: 1339765
+  outputTokens: 10318
+  usd: 0.798683
+notes: 28 turns; the log is runs/2026-10-25-session-site-123341/log.md

@@ -2078,3 +2078,113 @@
     extractedBy: "claude-opus-5-5 (operator, session 2026-10-20-session-site-124306)"
     runId: "2026-10-20-session-site-124306"
     date: "2026-10-20"
+
+# ── the trial-scheduling memoranda and conference (session 2026-10-24-session-site-115910) ──
+
+- id: KRK-E073
+  title: "The seven counts as the charging Information states them"
+  claimIds: [KRK-C009]
+  sourceId: SRC-UC-INFORMATION-2025
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The Information lists: "COUNT 1: AGGRAVATED MURDER, a Capital Felony";
+    "COUNT 2: FELONY DISCHARGE OF A FIREARM CAUSING SERIOUS BODILY INJURY,
+    a First Degree Felony"; "COUNT 3: OBSTRUCTION OF JUSTICE, a Second
+    Degree Felony"; "COUNT 4: OBSTRUCTION OF JUSTICE, a Second Degree
+    Felony"; "COUNT 5: TAMPERING WITH A WITNESS, a Third Degree Felony";
+    "COUNT 6: TAMPERING WITH A WITNESS, a Third Degree Felony"; and "COUNT
+    7: VIOLENT OFFENSE COMMITTED IN THE PRESENCE OF A CHILD, a Class A
+    Misdemeanor". Counts 1, 2 and 7 each carry a "VICTIM TARGETING
+    ENHANCEMENT" alleging that the defendant "intentionally selected
+    Charlie Kirk because of Tyler James Robinson's belief or perception
+    regarding Charlie Kirk's political expression".
+  editorInference: >-
+    The counts in the charging document's own words, replacing the
+    courtroom reporting's list the article used before. Counts 3 and 4
+    allege concealing the rifle and the clothing; Counts 5 and 6 allege
+    directing the roommate to delete messages and to stay silent — the
+    witness-tampering counts rest on the same messages the attributed
+    statements (KRK-C009) rest on. Every count is an allegation; Robinson
+    has pleaded not guilty to all of them and is presumed innocent. No
+    amended Information was found; reporting of the September 1, 2026
+    bindover says all seven counts were bound over.
+  exactLocator: "Information, Case No. 251403576, filed 2025-09-16, pp. 1-3 (Counts 1-7 and the enhancements)"
+  limitations:
+    - "A charging document states allegations, not facts found by any court."
+    - "Read from the Wayback Machine's capture of the County Attorney's PDF; whether the state later amended the Information was not checked against the court docket, which is not public online."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: answering review note on #131 (counts from the charging instrument)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-24-session-site-115910)"
+    runId: "2026-10-24-session-site-115910"
+    date: "2026-10-24"
+
+- id: KRK-E074
+  title: "The scheduling memoranda: the state proposes January 31, 2028; the defense says evidence is still being processed and it will subpoena university records"
+  claimIds: [KRK-C019]
+  sourceId: SRC-KSL-TRIAL-MEMOS-2026
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    KSL quotes the state's memorandum: "The state therefore proposes that
+    the court schedule the trial to begin January 31, 2028". It reports
+    that the defense says "there is still evidence being processed that
+    neither side has received yet", and quotes the defense memorandum: "It
+    is also very likely that Mr. Robinson will have to exercise his
+    independent pretrial subpoena power to obtain a wide range of
+    discoverable documents now known to be in the possession of Utah
+    Valley University and its agents". The defense also writes that
+    "Mr. Robinson does intend to undertake a venue study".
+  editorInference: >-
+    Thirteen months after the killing, by the defense's account, some
+    evidence is still being processed and has reached neither party, and
+    records the defense considers discoverable sit with the university.
+    That is one more measure of how far the public record is from what an
+    independent audit would need (KRK-C019). It says nothing about what
+    those records contain or what they concern: the memorandum as reported
+    does not say which records or which evidence, and this record does not
+    connect them to any other claim in the case. A defense
+    asking for time has an interest in describing the work as unfinished.
+  exactLocator: "KSL.com, October 22, 2026, paragraphs on the state's proposal and on the defense memorandum's reasons"
+  limitations:
+    - "A reporter's rendering of two parties' filings; the memoranda were not read. The phrase about evidence still being processed is the reporter's paraphrase, not a quotation of the filing."
+    - "Neither the unprocessed evidence nor the university's records are identified."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (trial-scheduling memoranda)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-24-session-site-115910)"
+    runId: "2026-10-24-session-site-115910"
+    date: "2026-10-24"
+
+- id: KRK-E075
+  title: "The October 23, 2026 conference ends without a trial date; the judge will rule on November 9"
+  claimIds: [KRK-C019]
+  sourceId: SRC-DESERET-PRETRIAL-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The Deseret News reports that the judge "set a date to make his
+    decision and issue a ruling on Nov. 9", saying: "I am not going to run
+    back into my office and type quickly and kick something out." The
+    defense asked for trial "during the third-quarter of 2029"; the
+    prosecution "said it would be ready to go to trial as soon as October
+    2027" but proposed January 2028; and the defense "noted that Robinson
+    is still considering whether to file a motion for a change of venue".
+  editorInference: >-
+    After the conference no trial date is set, and the two sides' dates
+    are about eighteen months apart. Trial is where the non-public
+    materials this case tracks — the autopsy record, the fragment inventory, the
+    original media — would be expected to be tested in public; on either
+    side's proposal that is more than a year away. Procedural status last
+    checked 2026-10-24.
+  exactLocator: "Deseret News, October 23, 2026, opening paragraphs and the section 'Defense and prosecution argue over appropriate timeline for the trial'"
+  limitations:
+    - "Courtroom reporting; no minute entry or transcript was read."
+    - "The ruling due November 9 had not been made when this record was written."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (pretrial conference)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-24-session-site-115910)"
+    runId: "2026-10-24-session-site-115910"
+    date: "2026-10-24"

@@ -1,0 +1,12 @@
+# What operator session 2026-10-25-session-site-123341 cost, as Claude Code reported it (src/engine/session.ts).
+- date: 2026-10-25
+  runId: 2026-10-25-session-site-123341
+  verb: session
+  case: site
+  model: claude-opus-5-5
+  calls: 1
+  inputTokens: 48
+  outputTokens: 10318
+  cacheReadTokens: 1272178
+  cacheWriteTokens: 67539
+  usd: 0.7986825999999999
