@@ -218,3 +218,12 @@
   promptVersion: charter@c93f8a5
   aiAssisted: true
   kind: content
+
+- date: 2026-10-25
+  change: "Corrections answering the review of #136: the charging Information's archived copy is pinned to a dated capture; two inferences narrowed (KRK-E074, KRK-E075)."
+  reason: "A reviewer found that the archived link for the charging Information did not name a real capture: it gave only the year in place of the capture's full date and time. It now points to the earliest capture in the Wayback Machine's index (September 16, 2025, 19:09:14 UTC), which was read through the reading tool and matches the quoted counts. Reviewers also noted that KRK-E074's inference tied the university records the defense means to subpoena to the campus cameras and the paving, which the memorandum as reported does not identify; that link is removed. KRK-E075 said \"withheld packages\", which implies deliberate withholding the record does not establish; it now says \"non-public materials\". No verdict, claim or article text changes."
+  actor: operator (claude-opus-5-5), session 2026-10-25-session-site-123341
+  runId: 2026-10-25-session-site-123341
+  promptVersion: charter@11bfaf7
+  aiAssisted: true
+  kind: housekeeping

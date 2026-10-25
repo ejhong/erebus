@@ -40,13 +40,18 @@
   sourceType: report
   identifier: "Case No. 251403576; filed September 16, 2025"
   url: "https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf"
-  archivedUrl: "https://web.archive.org/web/2025id_/https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf"
+  archivedUrl: "https://web.archive.org/web/20250916190914id_/https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf"
   verification: ai_verified
   verificationNote: >-
     PDF downloaded and text-extracted 2026-08-25 (10 pages; file metadata
     September 16, 2025). On 2026-10-24 the live URL returned HTTP 503; the
-    counts were re-read from the Wayback Machine's raw capture (archivedUrl),
-    pp. 1-3, through the site's reading tool.
+    counts were re-read from the Wayback Machine's raw capture, pp. 1-3,
+    through the site's reading tool. On 2026-10-25 the archivedUrl was
+    pinned to the earliest capture in the Wayback Machine's index
+    (2025-09-16 19:09:14 UTC); that capture was read through the reading
+    tool (10 pages) and its counts and enhancement text match. The index
+    gives every capture of the file through April 2026 the same content
+    digest.
   reliabilityNotes:
     - "A charging instrument states allegations, not adjudicated facts. The defendant is presumed innocent."
 
