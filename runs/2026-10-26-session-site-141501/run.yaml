@@ -1,0 +1,14 @@
+runId: 2026-10-26-session-site-141501
+verb: session
+case: site
+date: 2026-10-26
+model: claude-opus-5-5
+promptVersion: charter@dff56ba
+inputHash: null
+outcome: failed
+cost:
+  calls: 104
+  inputTokens: 11713152
+  outputTokens: 68794
+  usd: 7.642239
+notes: ended error_max_budget_usd; 104 turns; the log is runs/2026-10-26-session-site-141501/log.md

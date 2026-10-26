@@ -1,0 +1,117 @@
+# What operator session 2026-10-26-session-site-141501 did, as its trace recorded it: the digest the workflow made on the session's machine
+# (src/engine/trace.ts), checked here (src/engine/session.ts). The session's own account of its work is its log.
+version: 1
+ended: error_max_budget_usd
+model: claude-opus-5-5
+permissionMode: dontAsk
+turns: 104
+minutes: 16.1
+usd: 7.6422
+compactions: 0
+unreadableLines: 0
+tools:
+  - tool: Bash
+    calls: 52
+    failed: 0
+    refused: 8
+  - tool: Edit
+    calls: 20
+    failed: 2
+    refused: 0
+  - tool: Read
+    calls: 18
+    failed: 0
+    refused: 0
+  - tool: Grep
+    calls: 7
+    failed: 0
+    refused: 0
+  - tool: Write
+    calls: 3
+    failed: 0
+    refused: 0
+  - tool: WebSearch
+    calls: 2
+    failed: 0
+    refused: 0
+  - tool: ToolSearch
+    calls: 1
+    failed: 0
+    refused: 0
+commands:
+  - command: grep
+    calls: 16
+    failed: 0
+    refused: 1
+  - command: node scripts/site.ts read
+    calls: 11
+    failed: 0
+    refused: 0
+  - command: sed
+    calls: 7
+    failed: 0
+    refused: 0
+  - command: cat
+    calls: 4
+    failed: 0
+    refused: 1
+  - command: node scripts/site.ts status
+    calls: 4
+    failed: 0
+    refused: 0
+  - command: node
+    calls: 3
+    failed: 0
+    refused: 3
+  - command: node scripts/site.ts check-quotes
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: for
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: git clean
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: ls
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts stamp
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: rm
+    calls: 1
+    failed: 0
+    refused: 1
+fetched: []
+read:
+  - source: who.int
+    calls: 3
+    failed: 0
+  - source: 2017-2021.state.gov
+    calls: 2
+    failed: 0
+  - source: 10.1093/molbev/msab246
+    calls: 1
+    failed: 0
+  - source: 10.1126/science.abp8337
+    calls: 1
+    failed: 0
+  - source: dni.gov
+    calls: 1
+    failed: 0
+  - source: oversight.house.gov
+    calls: 1
+    failed: 0
+  - source: web.archive.org
+    calls: 1
+    failed: 0
+  - source: whitehouse.gov
+    calls: 1
+    failed: 0
+filesEdited: 8
+repeatedFailures: 0

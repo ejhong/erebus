@@ -467,3 +467,53 @@
     study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+
+# ── added 2026-10-26 (operator session 2026-10-26-session-site-141501) ──
+
+- id: SRC-BLOOM-2021
+  title: "Recovery of Deleted Deep Sequencing Data Sheds More Light on the Early Wuhan SARS-CoV-2 Epidemic"
+  authors: ["Jesse D. Bloom"]
+  organization: "Molecular Biology and Evolution"
+  year: "2021"
+  sourceType: paper
+  identifier: "DOI 10.1093/molbev/msab246; PMC8436388"
+  url: "https://doi.org/10.1093/molbev/msab246"
+  verification: ai_verified
+  verificationNote: >-
+    Full text read 2026-10-26 through the site's reading tool (Europe PMC
+    full text for PMC8436388), including the Results on the removed
+    BioProject, the Discussion and the caveats.
+  reliabilityNotes:
+    - "Peer-reviewed. The author has argued publicly that a laboratory origin deserves investigation; the paper's findings about the deletion rest on archive records and on the NIH's own copy of the deletion request, which the paper reproduces, not on the author's views."
+    - "The paper itself says that deletions from the archive do not imply malfeasance, and it records China's later explanation and the re-release of the data in July 2021."
+
+- id: SRC-STATE-WIV-2021
+  title: "Fact Sheet: Activity at the Wuhan Institute of Virology"
+  organization: "United States Department of State, Office of the Spokesperson"
+  year: "2021"
+  sourceType: report
+  identifier: "Fact sheet, January 15, 2021 (archived State Department site for 2017–2021)"
+  url: "https://2017-2021.state.gov/fact-sheet-activity-at-the-wuhan-institute-of-virology/"
+  verification: ai_verified
+  verificationNote: >-
+    Read 2026-10-26 through the site's reading tool; the date and the
+    passages quoted are in the text served.
+  reliabilityNotes:
+    - "A government's public statement, issued five days before a change of administration, about classified information it does not release. It weighs what the records behind it weigh, and those records are not public."
+    - "The intelligence report of June 2023 (SRC-ODNI-WIV-2023) addresses the same illnesses in more detail and with a different emphasis; the two are statements of one government, not independent confirmations."
+
+- id: SRC-WHITEHOUSE-LABLEAK-2025
+  title: "Lab Leak: The True Origins of Covid-19"
+  organization: "The White House"
+  year: "2025"
+  sourceType: report
+  identifier: "Web page at whitehouse.gov; the page carries no date (it is reported to have been posted in April 2025, which this case has not verified from the page)"
+  url: "https://www.whitehouse.gov/lab-leak-true-origins-of-covid-19/"
+  verification: ai_verified
+  verificationNote: >-
+    Read 2026-10-26 through the site's reading tool; the five numbered
+    points and the attribution line are quoted from the text served that
+    day. A government web page can change.
+  reliabilityNotes:
+    - "The current United States government's stated position and the most prominent public statement of the laboratory account. It is the claim of an interested party and weighs what the records behind it weigh."
+    - "The page says its content is sourced from the House Select Subcommittee's website, and its five points repeat the subcommittee's December 2024 press release. It is the same source as that press release (see SRC-HOUSE-MAJORITY-2024), not an independent one."

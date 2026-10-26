@@ -342,7 +342,7 @@
     respectively)."
   editorInference: >-
     The Bayes factors quoted here are the corrected values. The originally
-    published figures were 61.6 and 4.2 — a distinction that matters
+    published figures were 61.6 and 60.0 — a distinction that matters
     because the pre-correction numbers still circulate widely, including in
     material that cites this paper approvingly.
   exactLocator: "Science 377(6609):960–966, Introduction and Results (corrected version of record)"
@@ -707,7 +707,7 @@
 
 - id: COV-E030
   title: "The 'not found in nature' formulation is a press release's, not the report's"
-  claimIds: [COV-C011, COV-C016]
+  claimIds: [COV-C011, COV-C016, COV-C023]
   sourceId: SRC-HOUSE-MAJORITY-2024
   direction: undermines
   strength: moderate
@@ -1081,3 +1081,258 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-cov-s001-collect"
     date: "2026-08-26"
+
+# ── added 2026-10-26 ───────────────────────────────────────────────────
+# The absence that mirrors the missing animal, given its own record; the
+# laboratory account's own points, from the page that states them, graded
+# against the primary record; and one deleted dataset.
+
+- id: COV-E033
+  title: "The no-indication statements, quoted whole, for the claim that states them"
+  claimIds: [COV-C019]
+  sourceId: SRC-ODNI-WIV-2023
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "We continue to have no indication that the WIV's pre-pandemic research
+    holdings included SARS-CoV-2 or a close progenitor, nor any direct
+    evidence that a specific research-related incident occurred involving
+    WIV personnel before the pandemic that could have caused the COVID
+    pandemic." On engineering specifically: "The IC has no information,
+    however, indicating that any WIV genetic engineering work has involved
+    SARS-CoV-2, a close progenitor, or a backbone virus that is
+    closely-related enough to have been the source of the pandemic."
+  editorInference: >-
+    This case's article has long said that no laboratory is publicly known
+    to have held the virus or a close progenitor. The sentence that carries
+    it is this one, and it now has a claim of its own rather than being
+    linked to the separate claim about genetic distance. Read precisely, it
+    is a statement about what the reporting available to one government's
+    analysts contains. It is not an inventory, not an audit, and not a
+    statement that no such holding existed — the same document says the
+    institute's methods could leave intentional changes hard to detect.
+  exactLocator: "ODNI report of 23 June 2023, PDF p. 5 (printed p. 4), sections 'Coronavirus Research and Related Activities Performed at the WIV' and 'WIV Genetic Engineering Capabilities'"
+  limitations:
+    - "A declassified summary whose underlying reporting no reader can audit; an absence of indication is not evidence of absence."
+    - "Same independence group as COV-E019, COV-E029 and COV-E018 — successive products of one community, never separate confirmations."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: COV-C013 link correction (review of #117)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-E034
+  title: "The laboratory account as the United States government now states it"
+  claimIds: [COV-C020, COV-C021, COV-C023]
+  sourceId: SRC-WHITEHOUSE-LABLEAK-2025
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The page lists five numbered points under "THE ORIGIN". First: "The
+    virus possesses a biological characteristic that is not found in
+    nature." Second: "Data shows that all COVID-19 cases stem from a single
+    introduction into humans . This runs contrary to previous pandemics
+    where there were multiple spillover events." Third: "Wuhan is home to
+    China's foremost SARS research lab , which has a history of conducting
+    gain-of-function research (gene altering and organism supercharging) at
+    inadequate biosafety levels." Fourth: "Wuhan Institute of Virology (WIV)
+    researchers were sick with COVID-like symptoms in the fall of 2019,
+    months before COVID-19 was discovered at the wet market." Fifth: "By
+    nearly all measures of science, if there was evidence of a natural
+    origin it would have already surfaced . But it hasn't ." The page closes:
+    "Content on this page sourced from the House Oversight Committee
+    website".
+  editorInference: >-
+    Recorded so that the laboratory account is graded in the words of the
+    most prominent body now stating it, rather than in a paraphrase. Each
+    point is a claim in this ledger: the first is COV-C023, the second
+    COV-C021, the third is COV-C018 (which this case grades well supported),
+    the fourth COV-C020, and the fifth is an argument from the absence this
+    case records at COV-C007. The page itself is not evidence for any of
+    them: it cites no records, and it says its content comes from one
+    congressional committee's website, so it is that committee's press
+    release restated, not a second source. Note also that the second point
+    contradicts the first: a single introduction is what the laboratory
+    account predicts, and the zoonotic case's own multiple-introduction
+    inference is what the page is denying — but the page offers it as
+    evidence against zoonosis, which it is not. The one thing this record
+    establishes by itself is what the position is.
+  exactLocator: "whitehouse.gov/lab-leak-true-origins-of-covid-19/, section 'THE ORIGIN', points 1-5, and the attribution line at the foot of the page; as served 2026-10-26"
+  limitations:
+    - "An undated web page that can change; this is its text on one day."
+    - "Not independent of SRC-HOUSE-MAJORITY-2024: the page says so itself."
+    - "A statement of position. It cites no records, so it weighs nothing on the origin question."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the doubters' best case (config/site-rules.md)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-E035
+  title: "The autumn 2019 illnesses as first asserted publicly, and what the assertion rests on"
+  claimIds: [COV-C020]
+  sourceId: SRC-STATE-WIV-2021
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    "The U.S. government has reason to believe that several researchers
+    inside the WIV became sick in autumn 2019, before the first identified
+    case of the outbreak, with symptoms consistent with both COVID-19 and
+    common seasonal illnesses." The fact sheet says this raises questions
+    about the credibility of a senior institute researcher's public claim,
+    which it quotes in two words, that there was zero infection among the
+    institute's staff and students with SARS-CoV-2 or SARS-related viruses.
+    The same fact sheet asks that investigators be given "a full accounting
+    of why the WIV altered and then removed online records of its work with
+    RaTG13 and other viruses."
+  editorInference: >-
+    The origin of the illness claim in public argument, and the weakest
+    possible form of the thing it is usually taken for. The document asserts
+    that several researchers were ill with symptoms its own sentence says
+    are equally consistent with seasonal illness. It names no researcher,
+    no date, no diagnosis and no record, and it releases nothing a reader
+    can check. On this site's rule an account resting on one party's
+    description of records no independent party has examined cannot carry
+    more than provisional weight, and this one is thinner than that: it is
+    a description of a conclusion, not of a record.
+  exactLocator: "State Department fact sheet, 15 January 2021, numbered points 1 and 2"
+  limitations:
+    - "Issued five days before a change of administration, by the government whose intelligence it summarises; the underlying reporting is not public."
+    - "Not independent of SRC-ODNI-WIV-2023, which revisits the same illnesses: both are statements of one government."
+    - "The 'zero infection' words are the fact sheet's characterisation of a statement made elsewhere; this case has not read the original statement and does not treat the quotation as verified against it."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the doubters' best case (config/site-rules.md)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-E036
+  title: "The same government, two years later, on the same illnesses"
+  claimIds: [COV-C020]
+  sourceId: SRC-ODNI-WIV-2023
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    "Several WIV researchers were ill in Fall 2019 with symptoms; some of
+    their symptoms were consistent with but not diagnostic of COVID-19. The
+    IC continues to assess that this information neither supports nor
+    refutes either hypothesis of the pandemic's origins because the
+    researchers' symptoms could have been caused by a number of diseases and
+    some of the symptoms were not consistent with COVID-19." The report adds
+    that the researchers "experienced a range of symptoms consistent with
+    colds or allergies with accompanying symptoms typically not associated
+    with COVID-19, and some of them were confirmed to have been sick with
+    other illnesses unrelated to COVID-19", that there are "no indications
+    that any of these researchers were hospitalized because of the symptoms
+    consistent with COVID-19", and that "we are unable to confirm if any of
+    them handled live viruses in the work they performed prior to falling
+    ill."
+  editorInference: >-
+    The fullest public account of the illnesses, from the same government
+    that first raised them, and it is the one point in this ledger where the
+    later official statement is markedly less favourable to the official
+    side's critics than the earlier one. Two years and a declassification
+    review later, the community says the information neither supports nor
+    refutes either hypothesis, and names an innocent explanation for some of
+    the cases. The asymmetry that matters is this: the community also states
+    that the institute holds blood samples and health records for all its
+    laboratory staff. The test that would settle the question exists and
+    has not been run by anyone independent, which is COV-R006.
+  exactLocator: "ODNI report of 23 June 2023, PDF p. 7 (printed p. 6), section 'WIV Researchers Who Fell Ill in Fall 2019'"
+  limitations:
+    - "A declassified summary; the reporting behind both the assertion and the walk-back is unavailable."
+    - "Same independence group as COV-E019, COV-E029, COV-E033 and the 2021 fact sheet COV-E035 — one government, not several."
+    - "The report's statement that institute staff sera all tested negative is attributed by it to the institute's own officials, through a 2021 WHO report: the custodian's account of its own test."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: the doubters' best case (config/site-rules.md)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-E037
+  title: "A dataset of early Wuhan patient sequences, deleted from the archive and recovered from the cloud"
+  claimIds: [COV-C022]
+  sourceId: SRC-BLOOM-2021
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Here, I identify a data set containing SARS-CoV-2 sequences from early
+    in the Wuhan epidemic that has been deleted from the NIH's Sequence Read
+    Archive. I recover the deleted files from the Google Cloud and
+    reconstruct partial sequences of 13 early epidemic viruses." On the
+    reason: "Neither the preprint () nor published manuscript () contains
+    any correction or note that suggests a scientific reason for deleting
+    the study's sequencing data from the SRA." And: "There is no obvious
+    scientific reason for the deletion: the sequences are concordant with
+    the samples described in ), there are no corrections to the paper, the
+    paper states human subjects approval was obtained, and the sequencing
+    shows no evidence of plasmid or sample-to-sample contamination."
+  editorInference: >-
+    A documented instance of the thing this case's research agenda keeps
+    asking for being removed rather than withheld, and the clearest
+    demonstration in the ledger that the early-sequence record is not
+    merely incomplete but was actively reduced. What it shows is narrow and
+    solid: a set of partial sequences from early Wuhan outpatients existed
+    in a public archive, was deleted at the submitters' request, and was
+    recoverable only because cloud copies survived. What it does not show
+    is intent, or that the deleted data favoured either hypothesis — the
+    recovered sequences bear on where the progenitor sits, not on whether
+    the virus came from an animal or a laboratory.
+  exactLocator: "Mol Biol Evol 38(12):5211-5224, Abstract; Results, 'Identification of a SARS-CoV-2 Deep Sequencing Data Set That Has Been Removed from the Sequence Read Archive'; Discussion"
+  limitations:
+    - "The empty parentheses in the quoted sentences are the reference markers of the full-text rendering this case read; they stand where citations appear in the published article."
+    - "The author has publicly argued that a laboratory origin deserves investigation; the deletion findings rest on archive records and the NIH's own copy of the request, which the paper reproduces."
+    - "Partial sequences without full metadata: the paper says they cannot be placed phylogenetically without ambiguity."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: what is missing from the record (config/site-rules.md)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-E038
+  title: "The explanations offered for the deletion, and the re-release"
+  claimIds: [COV-C022]
+  sourceId: SRC-BLOOM-2021
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "The press conference and blog posts stated that the sequence data were
+    removed from the SRA because the journal Small had mistakenly deleted
+    the data availability statement in the paper of ), leading the authors
+    to think that they should also delete the actual data. Confusingly, this
+    explanation is inconsistent with the reason provided by the authors to
+    the SRA (), and I am unable to reconcile the discrepancy." The same
+    paragraph records that the press conference and the blog posts also
+    stated that the sequences were all collected on or after January 30,
+    2020, rather than early in the epidemic as the study had originally
+    described them, and that "on July 8, 2021, the deleted data were made
+    available on the Chinese NGDC database under accession PRJCA005725."
+    The paper also states: "Importantly, SRA deletions do not imply any
+    malfeasance: there are legitimate reasons for removing sequencing runs
+    and the SRA houses >13-million runs making it infeasible for its staff
+    to validate the rationale for all requests."
+  editorInference: >-
+    Recorded with the finding it qualifies, because the deletion is often
+    cited without either half of this. Two things cut against reading it as
+    concealment: the data were restored publicly in July 2021, and the
+    author himself says deletions do not imply wrongdoing. Two things cut
+    the other way: the explanation given publicly does not match the
+    explanation given to the archive, and the collection dates were
+    restated in a way that would make the samples much less interesting.
+    The honest summary is that the record of why this happened is
+    inconsistent, and that the inconsistency is itself the finding.
+  exactLocator: "Mol Biol Evol 38(12):5211-5224, Discussion, paragraphs on the July 2021 press conference and on SRA deletions"
+  limitations:
+    - "The press conference and blog posts are described by this paper, not read by this case; the characterisation is the author's."
+    - "Same source as COV-E037 — one paper, not two confirmations."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: what is missing from the record (config/site-rules.md)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"

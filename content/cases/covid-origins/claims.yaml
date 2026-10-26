@@ -258,3 +258,79 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-covid-launch-2026-08-26"
     date: "2026-08-26"
+
+# ── added 2026-10-26: what is missing, and the laboratory account's own points ──
+# COV-C019 gives the article's "no laboratory is known to have held the virus"
+# sentence a claim of its own (it had been linked to COV-C013, which states
+# genetic distance — review note on #117). COV-C020, COV-C021 and COV-C023 are
+# three of the five numbered points on the White House page of 2025, each
+# graded against the primary record (config/site-rules.md, "The doubters'
+# best case"); its third point is COV-C018 and its fifth is an argument from
+# COV-C007's absence. COV-C022 is a record that was deleted.
+
+- id: COV-C019
+  statement: >-
+    The US intelligence community's declassified report of June 2023 states that it has no indication that the Wuhan Institute of Virology's pre-pandemic research holdings included SARS-CoV-2 or a close progenitor.
+  theme: wiv-program
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: COV-C013 link correction (review of #117)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-C020
+  statement: >-
+    At least one Wuhan Institute of Virology researcher who fell ill in autumn 2019 was infected with SARS-CoV-2.
+  theme: doubters
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "White House page, point 4; State Department fact sheet of January 15, 2021"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-C021
+  statement: >-
+    All known SARS-CoV-2 infections descend from a single introduction of the virus into humans.
+  theme: doubters
+  rung: mechanism
+  claimType: statistical
+  reviewState: ai_extracted
+  origin:
+    ref: "White House page, point 2"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+  dependsOnClaimIds: [ COV-C009 ]
+  contradictsClaimIds: [ COV-C010 ]
+
+- id: COV-C022
+  statement: >-
+    Sequencing data from early Wuhan COVID-19 outpatient samples were deleted from the NIH Sequence Read Archive at the submitters' request in 2020, and were not publicly available again until July 2021, after an outside researcher had recovered them.
+  theme: missing
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: what is missing from the record (config/site-rules.md)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"
+
+- id: COV-C023
+  statement: >-
+    The furin cleavage site of SARS-CoV-2 is a biological characteristic not found in nature.
+  theme: doubters
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "White House page, point 1, repeating the House Select Subcommittee's press release of December 2024; neither names the characteristic, and the report's nearest passage concerns the furin cleavage site, so that is the reading graded here"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-10-26-session-site-141501)"
+    runId: "2026-10-26-session-site-141501"
+    date: "2026-10-26"

@@ -14,6 +14,8 @@ themes:
   wiv-program: "The Wuhan research program"
   assessments: "Official assessments"
   narrative: "The early-consensus record"
+  missing: "What is missing from the record"
+  doubters: "The laboratory account, in its proponents' words"
 editors:
   - "Erebus editorial AI (Claude Fable 5, Cursor cloud agent)"
 lastReviewed: "2026-08-26"

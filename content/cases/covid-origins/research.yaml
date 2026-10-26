@@ -14,7 +14,7 @@
     currently conducted by each side selecting defensible analytic choices
     that favor its conclusion; a preregistered protocol removes that degree
     of freedom.
-  claimIds: [COV-C010, COV-C009]
+  claimIds: [COV-C010, COV-C009, COV-C021]
   track: either
   effortTier: desk
   informationGain: >-
@@ -65,7 +65,7 @@
     Disclosure of the offline sample database with raw sequence files,
     freezer inventories, sample barcodes, and server logs, subject to
     independent audit rather than summary description.
-  claimIds: [COV-C013, COV-C012]
+  claimIds: [COV-C013, COV-C012, COV-C019]
   track: either
   effortTier: desk
   informationGain: >-
@@ -101,7 +101,7 @@
     biosafety and biosecurity protocols, and de-identified 2019 staff health
     records with any stored sera — the three categories WHO requested and
     did not receive.
-  claimIds: [COV-C012, COV-C015]
+  claimIds: [COV-C012, COV-C015, COV-C020]
   track: either
   effortTier: desk
   informationGain: >-
@@ -143,3 +143,25 @@
     resolution available to that dispute. Continued absence slowly
     strengthens it. Genuinely fundable, and it accrues value regardless of
     the origin question.
+
+- id: COV-R009
+  title: "Reconstruct from primary records what became of the institute's online virus databases"
+  summary: >-
+    Establish from primary records — archive crawls of the institute's own
+    web services, the published papers that cite the databases, and any
+    server logs an audit could reach — what the institute's public sample
+    and sequence databases contained, when each stopped being reachable,
+    and what explanation the institute itself has given in its own words
+    rather than through third-party reporting. A January 2021 United
+    States government fact sheet asked for an accounting of removed online
+    records; whether that accounting exists has not been established here.
+  claimIds: [COV-C019, COV-C013]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Moderate, and mostly about the shape of the gap rather than the virus.
+    This case currently has no primary record of what the databases held or
+    when they went offline — only secondhand accounts. Establishing the
+    contents and the dates would show whether the withheld material is the
+    kind that could bear on a progenitor at all, which is the premise the
+    research-related account's strongest disclosure request rests on.
