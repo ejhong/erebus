@@ -467,3 +467,97 @@
     study page; the aggregate findings are the only ledger-bearing grain.
   reliabilityNotes:
     - "Secondary synthesis under frozen criteria; the study never grades a claim — the panel judges what it means."
+
+# ── added 2026-10-27 (session 2026-10-27-session-site-131141) ───────────
+
+- id: SRC-BLOOM-2023
+  title: "Association between SARS-CoV-2 and metagenomic content of samples from the Huanan Seafood Market"
+  authors: ["Jesse D. Bloom"]
+  organization: "Virus Evolution"
+  year: "2023"
+  sourceType: paper
+  identifier: "Virus Evolution 9(2):vead050; DOI 10.1093/ve/vead050; published 24 August 2023; preprint bioRxiv 10.1101/2023.04.25.538336"
+  url: "https://doi.org/10.1093/ve/vead050"
+  verification: ai_verified
+  verificationNote: >-
+    Full text read 2026-10-27 through the site's reading tool from the
+    open-access PubMed Central copy (PMC11314060, CC BY 4.0), which the
+    publisher's DOI resolves to through OpenAlex; the abstract, the Results
+    passage on raccoon-dog samples and the Discussion passage on what the
+    analysis can and cannot show are quoted from it.
+  reliabilityNotes:
+    - "A single-author reanalysis of the same Chinese CDC metagenomic data that the surveillance paper and the wildlife-stall reanalysis use: a different reading of one evidence stream, not new data."
+    - "The author is among the most prominent scientists to have argued publicly that a laboratory origin deserved investigation; the paper is read here for its measurements, which are reproducible from a published pipeline, not for its author's position."
+    - "The author states that the measured composition depends on the method and reference set used, and that his result does not disprove infected animals at the market at an earlier date."
+    - "Answered in the same journal by one of the wildlife-stall paper's authors (SRC-DEBARRE-2023); the exchange is part of the record."
+
+- id: SRC-DEBARRE-2023
+  title: "What we can and cannot learn from SARS-CoV-2 and animals in metagenomic samples from the Huanan market"
+  authors: ["Florence Débarre"]
+  organization: "Virus Evolution"
+  year: "2023"
+  sourceType: paper
+  identifier: "Virus Evolution 10(1):vead077; DOI 10.1093/ve/vead077; published 29 December 2023"
+  url: "https://doi.org/10.1093/ve/vead077"
+  verification: ai_verified
+  verificationNote: >-
+    Full text read 2026-10-27 through the site's reading tool from the
+    open-access PubMed Central copy (PMC10868546); the abstract is quoted
+    from it.
+  reliabilityNotes:
+    - "A response to SRC-BLOOM-2023 by a co-author of the wildlife-stall reanalysis (SRC-CRITS-CHRISTOPH-2024): an interested party to the exchange, as Bloom is."
+    - "Agrees with Bloom that the environmental samples cannot identify an animal host, and disputes what his correlation analysis adds; it does not report new data."
+
+- id: SRC-ODNI-RELEASE-2026-INDEX
+  title: "Document Index: 18 June 2026 Release of COVID-19 Documents"
+  organization: "Office of the Director of National Intelligence"
+  year: "2026"
+  sourceType: report
+  identifier: "Unclassified index of 67 items, released 18 June 2026"
+  url: "https://www.odni.gov/wp-content/uploads/dlm_uploads/COVID-19_Release_DNI_Gabbard_6-18_Index.pdf"
+  verification: ai_verified
+  verificationNote: >-
+    Read in full 2026-10-27 through the site's reading tool (one page, 67
+    numbered items). Two items carry dates after the release date
+    (2026-07-26 and, for an email, 2026-05-03 beside a near-identical item
+    dated 2026-03-05), so the index's dates are not taken as checked.
+  reliabilityNotes:
+    - "The releasing office's own list of what it released; it says what is in the release, not what any document shows."
+    - "Lists no intelligence-community assessment of the origin written after 2023; the newest dated assessments it lists are from 2020 and 2015."
+
+- id: SRC-ODNI-RELEASE-2026-PART1
+  title: "COVID-19 Release, Part 1 (declassified by the Director of National Intelligence, 18 June 2026)"
+  organization: "Office of the Director of National Intelligence"
+  year: "2026"
+  sourceType: report
+  identifier: "94-page PDF, the first of four parts of the 18 June 2026 release"
+  background: true
+  url: "https://www.dni.gov/files/documents/Newsroom/Reports%20and%20Pubs/COVID-19_Release_DNI_Gabbard_6-18_Part-1.pdf"
+  verification: unverified
+  verificationNote: >-
+    Fetched 2026-10-27 through the site's reading tool. Its first page
+    carries the declassification stamp; pages 2 to 5, which by the index's
+    order hold the May 2020 Lawrence Livermore report, are scanned images
+    with no text layer, so the tool returned nothing for them and their
+    contents have not been read. The pages that follow (a February 2020
+    National Academies meeting agenda, a 2016 Wuhan Institute of Virology
+    paper, emails) have text and were sampled, not read in full.
+  reliabilityNotes:
+    - "Released by an office whose announcement of the same release asserts a laboratory origin as fact (SRC-ODNI-RELEASE-2026-STATEMENT); what it chose to declassify, and what stays redacted, is that office's choice."
+    - "Parts 2 to 4 of the release have not been read."
+
+- id: SRC-ODNI-RELEASE-2026-STATEMENT
+  title: "Fauci Funded Wuhan Lab Research That Sparked COVID (release announcement, 18 June 2026)"
+  organization: "Office of the Director of National Intelligence"
+  year: "2026"
+  sourceType: webpage
+  identifier: "Reports & Publications 2026, item 4165; published 18 June 2026"
+  url: "https://archive.dni.gov/index.php/newsroom/reports-publications/reports-publications-2026/4165-fauci-funded-wuhan-lab-research-that-sparked-covid"
+  verification: ai_verified
+  verificationNote: >-
+    Read 2026-10-27 through the site's reading tool from the office's own
+    archive copy; the live dni.gov page renders its text by script and the
+    tool returned only its navigation.
+  reliabilityNotes:
+    - "An announcement by an interested party: it characterises the documents it releases and states conclusions; it is not an intelligence assessment and states no confidence level."
+    - "Most of it concerns the conduct of a named former official, which this case's scope leaves to the institutional layer; only its statement about the origin is used here."

@@ -1,0 +1,135 @@
+# Edition written by the operator (claude-opus-5-5) in session 2026-10-27-session-site-131141, stamped by the engine (src/engine/stamp.ts).
+# Append-only: a later edition replaces it; this file is never edited.
+
+runId: edition-2026-10-27-132640
+producedBy: 2026-10-27-session-site-131141
+date: 2026-10-27
+model: claude-opus-5-5
+promptVersion: charter@dff56ba
+rationale: |-
+  The case had never been worked since its migration, and two things had happened that the article did not know about. A declassification review released some four hundred pages on 18 June 2026 under an announcement that states the laboratory origin as fact; the index of what was released names no origin assessment written after 2023, and its one origin document is a weapons-laboratory report of May 2020 whose pages are unreadable scans. And the market co-detection finding — the single record this case's verdict most depends on — has a published challenge in the same literature that the article never mentioned: a reanalysis counting viral reads against animal reads, and a reply from one of the original authors. Both now sit in the ledger with their limits, and the article carries them. Also fixed: the sentence on laboratory holdings linked to the claim about genetic distance, which two reviewers flagged in #117 and #134; the sentence now states what that claim states. The judgment is re-adopted unchanged — the new records sharpen the strongest objection the adopted assessment already records against COV-C006 rather than overturning it, and the next session should re-grade with them in hand.
+
+  Measured by the engine: article 2197 → 2794 words, without markup.
+basis:
+  ledgerHash: 0eb9be704b0783d882f718be905711a3ef271e8df66a8c03cbf89dfee88451d4
+  inputsHash: 4da135fc2f0be4833f797c76909c29a5c4b316a1401bb4824a605bff4aac0f1d
+previous: edition-2026-10-19-migration
+assessment:
+  runId: 2026-10-27-operator-132640
+  hash: b27dcfe5c958a0eaeeba9a80e3380eeaee2854c0dce277ad363b15f7b4290d59
+featuredClaimIds:
+  - COV-C001
+  - COV-C002
+  - COV-C003
+  - COV-C004
+  - COV-C005
+  - COV-C006
+  - COV-C020
+  - COV-C007
+  - COV-C008
+  - COV-C009
+  - COV-C010
+  - COV-C011
+  - COV-C012
+  - COV-C013
+  - COV-C016
+  - COV-C017
+  - COV-C018
+  - COV-C014
+  - COV-C021
+  - COV-C022
+  - COV-C015
+cruxOrder:
+  - COV-R001
+  - COV-R002
+  - COV-R003
+  - COV-R009
+  - COV-R004
+  - COV-R005
+  - COV-R006
+  - COV-R007
+  - COV-R008
+article: |
+  The question is not "did COVID come from a lab." That framing has consumed six years of argument and cannot be answered, because it bundles together several distinct claims that behave very differently under evidence. The sharper question, and the one this case grades, is narrower: what event initiated sustained human transmission of SARS-CoV-2 in Wuhan in late 2019?
+
+  Asked that way, the dispute organizes itself into three layers that public argument constantly merges. The first is biological: what infected the first humans. The second is capability: what laboratories could do, or planned to do. The third is institutional: how officials and scientists handled records, disclosure, and candor. Misconduct on the third layer licenses re-weighting testimony. It is not origin evidence. This page keeps them apart as visible structure, because collapsing them is how both camps have persuaded themselves they were winning.
+
+  ## What both sides now largely accept
+
+  Start with the sturdiest finding in the case. [The Huanan market was the geographic center of the earliest documented case cluster]{claim=COV-C001}, and inside the market, [the positive environmental samples concentrate in the western section where live mammals were sold]{claim=COV-C005} — a pattern confirmed by the Chinese CDC's own data, which places 87.5 percent of interior positives in the west zone.
+
+  The observation that carries the statistical weight is subtler. [Among the earliest cases, those with no reported market exposure lived closer to the market than the people who worked there]{claim=COV-C002}. That is the finding hardest for ascertainment bias to explain: if early cases were found because investigators looked around the market, the *unlinked* cases should not be the ones living nearest it. It is also a single spatial-statistical result at p = 0.029, on a case set whose completeness is disputed, never independently reproduced, and contested in a published exchange that remains unresolved. Load-bearing and not yet load-tested.
+
+  {plate:IMG-COV-P01}
+
+  Then the finding both sides invoke: [genetic material from susceptible mammals — raccoon dog, hoary bamboo rat, Malayan porcupine, masked palm civet — occurs in the virus-positive samples from a wildlife stall]{claim=COV-C006}. The authors' own framing is the honest one and deserves quoting rather than paraphrasing: only a zoonotic origin *directly predicts* co-detection of the virus and wildlife DNA — and their data "cannot conclude which of these species may have been infected." Co-presence, not infection. An early unreported human case shedding in the same stall would look identical.
+
+  {plate:IMG-COV-P02}
+
+  ## What counting the virus did to the co-detection
+
+  That finding has a published challenge, and this page should have carried it from the start. A 2023 reanalysis in *Virus Evolution* asked a question neither earlier paper had: not which animals left DNA in the positive samples, but how much virus was in the samples where the animals left the most DNA. [The answer runs the wrong way for the inference]{claim=COV-C020}. Of fourteen samples where raccoon-dog material made up at least a fifth of the vertebrate DNA, exactly one contained any viral reads at all — a single read out of roughly two hundred million. Across the dataset the viral abundance correlates not with susceptible mammals but with catfish and largemouth bass.
+
+  The author of that reanalysis is among the most prominent scientists to have argued that a laboratory origin deserved investigation, and this page weighs his measurements rather than his position: they come from a published pipeline anyone can rerun. He states the limit himself — a null association does not disprove infected animals at an earlier date, before the market was emptied.
+
+  One of the original paper's authors replied in the same journal, and her first move is the one that matters here. The swabs were taken *after* abundant human-to-human transmission in the market, which she writes as "precluding any identification of a non-human animal host." Where the two disagree is narrower than the public argument about them: whether a correlation analysis adds anything when the data could not have produced a positive answer either way. Both sides end in the same place on this page's ledger. The co-detection shows animals and virus in one room. It cannot show an infected animal, and no amount of reanalysis of these swabs will.
+
+  ## The two absences
+
+  Here is where this case's shape becomes visible. Two symmetrical holes sit at the center of the record, and each side treats the other's as damning and its own as merely difficult.
+
+  [No animal has ever been shown to carry the virus or a close progenitor]{claim=COV-C007} — not at the market, not in its supply chain, not in China's subsequent testing. That is the zoonotic case's missing keystone, and it is weaker evidence than it appears for a specific reason: the animals that *were* tested were unsold stock, freezer contents, and strays. The reanalysis of that very dataset states that no raccoon dogs or civets on sale at the market were ever sampled or tested, and no serology was taken from animals or handlers. An absence produced by not testing the relevant species tells you little. WHO's own assessment says the limited range of species tested limits any definitive conclusion, and adds a pointed observation: it finds it *unlikely* that there have been no human-to-animal infections anywhere in China since the pandemic began, given how many susceptible species are present — which is scepticism about the completeness of the very negative results the zoonotic case is criticized with.
+
+  Its mirror: [the closest known relatives of this virus are far too distant to be its immediate ancestor]{claim=COV-C013}, and no laboratory anywhere is publicly known to have held anything nearer — the intelligence community reports no indication that the institute's pre-pandemic research involved the virus or a close progenitor. Both absences are hostage to records that have never been produced. "Not found" and "not inspectable" are doing similar work on both sides, and this page treats them alike.
+
+  Which is why [whether any supply-chain animal was infected before human transmission began]{claim=COV-C008} stands as an explicitly unresolved claim rather than being quietly absorbed into the co-location evidence. Naming the gap is the point.
+
+  ## The discriminator, and what a code error did to it
+
+  Most observations in this case fit several hypotheses. Only two or three genuinely discriminate, and the sharpest is this: [the earliest genomic diversity is better explained by at least two separate introductions than by one]{claim=COV-C010}. Two independent jumps are easy under wildlife-trade spillover and awkward under a single infected worker.
+
+  The claim is graded `mixed`, and the reason is a correction that most citation of this literature still ignores. In October 2023 an erratum reported that a code error had overestimated the Bayes factors favoring multiple introductions. They fell from 61.6 and 60.0 to 4.3 and 4.2 — roughly fourteenfold — and the authors' own wording moved from "strong" to "substantial" support. That is a real demotion of the case's most diagnostic quantitative claim, and it belongs in plain view.
+
+  It is also routinely overstated in the other direction. The erratum says the corrected analysis "still favors the multiple introduction scenario," and the remaining value sits in the positive-evidence band. Characterizations that the correction reduced the finding to negligible are not supported by the document. Both numbers appear on this page so readers can judge the size of the change themselves.
+
+  One further correction matters here. This site's own research brief attributed to WHO a sentence contrasting the two-lineage pattern with the single introduction a laboratory leak would produce. No such sentence exists in the report. WHO reports the finding and attributes the judgment to the original authors. The contrast is a reasonable inference — it is simply *our* inference, and it is labeled that way.
+
+  ## The genome, which settles less than either camp wants
+
+  [The furin cleavage site is absent from SARS-CoV-2's closest sampled relatives]{claim=COV-C011}. True, and the best calibration point in the case: a highly credible observation with almost no discriminating power, because both hypothesis families accommodate it. The stronger formulation in circulation — that such a site is "not found in nature" — is contradicted; furin motifs occur across other coronavirus lineages, and WHO notes the feature had been identified in nature before.
+
+  [No feature accepted as diagnostic of engineering has been found]{claim=COV-C012}, and almost all intelligence elements assessed the virus was not engineered, all that it was not a bioweapon. But WHO's sentence on this deserves to be read whole, because its second half is almost always dropped: the genomic features "are readily explained by natural evolution and provide no support to theories of a man-made origin. However, the latter is also not refuted by biological data." No support, and no refutation. Seamless methods leave no required scar, and the intelligence reporting itself notes the institute possessed such methods — so this finding weighs against a *deliberately engineered construct*, and barely at all against a natural virus escaping a laboratory.
+
+  {plate:IMG-COV-P03}
+
+  ## The document, and the deed
+
+  The strongest documentary point on the research-related side is real, and narrower than its usual presentation. [A March 2018 proposal to a US defence research agency, led by EcoHealth Alliance with the Wuhan Institute of Virology among its partners, proposed to analyse coronavirus spikes for furin cleavage sites and, "where clear mismatches occur," to "introduce appropriate human-specific cleavage sites"]{claim=COV-C016}. Twenty months later a virus with exactly that class of feature emerged in the partner city. The passage is verbatim at a confirmed page locator, and the agency did not fund the proposal — confirmed three separate ways, including a negative check of federal award records.
+
+  That is genuinely more than the zoonotic account predicts, and considerably less than a mechanism. So [whether such experiments were actually performed]{claim=COV-C017} is stated as its own claim, unresolved, because this is precisely where the argument gets smuggled from document to deed. No public record shows the work was done; no published precursor sequence connects the contemplated constructs to this virus. Against that, the same intelligence report notes the institute possessed cloning methods that leave no trace, and the records that would settle it — biosafety approvals, project files, synthesis orders, raw reads — have never been produced.
+
+  A detail here illustrates why full quotation matters. A margin comment in the draft records, usually excerpted from "Once we get the funds" onward, reads in full: *"Ralph, Zhengli. If we win this contract, I do not propose that all of this work will necessarily be conducted by Ralph, but I do want to stress the US side of this proposal so that DARPA are comfortable with our team. Once we get the funds, we can then allocate who does what exact work, and I believe that a lot of these assays can be done in Wuhan as well…"* Truncated, it reads as concealment of a settled plan. Whole, it is a presentational judgment about how to pitch a team — with an acknowledged intention to shift assay work to Wuhan afterwards. One sentence separates those readings.
+
+  [Work with SARS-like coronaviruses was being conducted at biosafety level 2]{claim=COV-C018}, and the intelligence community assessed that some researchers probably did not use adequate precautions at least some of the time. That establishes opportunity — which the field, laboratory, and engineered scenarios share equally, and which is also consistent with nothing having happened.
+
+  One correction belongs here, because the claim it concerns is among the most-repeated in the entire debate. The proposition that a congressional report concluded the furin cleavage site is "not found in nature" [does not exist]{claim=COV-C011}. The phrase appears only in a press release, describing an unnamed "biological characteristic"; it is absent from all 520 pages of the report, whose own argument on the point is a quotation of a newspaper columnist rather than a committee finding. And the underlying claim is contradicted regardless of authorship, since furin motifs occur across other coronavirus lineages.
+
+  ## What the official bodies actually said
+
+  [The intelligence community never converged]{claim=COV-C014}: several elements favored natural exposure, two a laboratory-associated incident, others could not decide — every position at low confidence except one at moderate. A later agency shift toward a research-related origin was reported as resting on a review of existing information rather than new intelligence, and its own statement adds that both scenarios remain plausible. The correct reading belongs to neither camp: analysts with privileged access stayed split, which indicates nobody held decisive material.
+
+  That split is now a table rather than a paraphrase. A pre-registered study on this case (COV-S001, on the studies shelf) ledgers every dated, on-record agency position from the official documents themselves, confidence language quoted verbatim — one row per statement, position changes included. Two numbers organize everything: the strongest confidence any United States agency has ever stated on origin is *moderate*, held by exactly one; every other position in the released record — the natural-origin group, the laboratory leans, the 2025 shift — is low confidence or explicit abstention, and the 2025 statement pairs its lean with a same-sentence reaffirmation that both scenarios remain plausible. The table cannot say who weighed the evidence correctly. It does carry ODNI's own stated cause of the divergence — differences in how agencies *weigh* the same reporting, not different evidence pools — which is precisely the proposition the declassification this case's research agenda requests would let the public test.
+
+  Part of that declassification has now happened, and it is instructive. In June 2026, under a statutory review, the Office of the Director of National Intelligence released some four hundred pages of COVID-origins records. [Its announcement of the release treats the laboratory origin as settled fact]{claim=COV-C021} — a sentence about suppressing "the truth about… the virus' lab-leak origins" — which is a position statement, not an assessment: no confidence language, no analytic basis, no dissent, from the office that chose what to release and what to keep redacted. This page files it exactly where it files China's white paper and the 2025 agency statement: a dated position of an interested institution.
+
+  What the release actually contains is the more useful fact. Its index runs to sixty-seven items, overwhelmingly internal emails about how the origin question was *handled* — press inquiries, briefing readouts, a whistleblower complaint. [The one origin document in it is a weapons-laboratory report of May 2020]{claim=COV-C022} whose title states that conditions for laboratory modification were present at the institute. Whether it assessed that such a modification occurred, or only that the conditions for one existed — different propositions — cannot be read here: those pages are scanned images with no text layer, and this page does not grade a document by its title. Obtaining its text is now a research item on this case. What can be said is what the index does not contain: no intelligence assessment of the origin written since 2023, and no document naming a progenitor, an incident, or an infected worker. Six years of pressure, a statutory review, and four hundred pages have not closed that absence.
+
+  And [WHO's 2025 assessment says two things that must be read together]{claim=COV-C015}. The weight of the evidence *reviewed by SAGO* suggests zoonotic spillover — that qualifier is in the original and is usually elided. And it could not assess a laboratory origin at all, because the necessary information was not provided. The report states plainly that it had no access to original raw data from any source. Requested information was withheld by three governments, not one: China, Germany, and the United States. A page treating this report as settling the question would silently inherit its dependence on a partly withheld evidence base.
+
+  ## What would settle it
+
+  The uncomfortable pattern in the research agenda is that the highest-yield tests are acts of political will rather than research programs: the withheld early sequences, the laboratory inventories, the occupational-health records, the supply-chain traceback whose window has largely closed. The custodian of most of that material has declared its origins investigation complete.
+
+  But two decisive tests need nobody's permission and run on data that is already public. A preregistered adversarial reanalysis of the introductions question, with proponents and critics fixing methods before unblinding. And independent reproduction of the geographic signal from released code and raw inputs, under alternative spatial models. If this case has a research agenda worth funding, it starts there — and the fact that neither has been done, six years in, is itself part of the record.
+
+  The honest summary is short. Zoonotic spillover at or near the market is the best-supported hypothesis on the accessible evidence, and its transmission chain is unclosed — now with a published challenge to the strongest thread holding it. A research-related origin is neither established nor excluded, and the records that would decide it have not been produced. Anyone claiming science has proven either answer is describing a record that does not exist.

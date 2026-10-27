@@ -1081,3 +1081,147 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "2026-08-26-study-cov-s001-collect"
     date: "2026-08-26"
+
+# ── added 2026-10-27 (session 2026-10-27-session-site-131141) ───────────
+
+- id: COV-E033
+  title: "The reanalysis that counted the virus reads: where the wildlife material is, the viral material mostly is not"
+  claimIds: [COV-C020, COV-C006]
+  sourceId: SRC-BLOOM-2023
+  direction: undermines
+  strength: moderate
+  sourceStatement: >-
+    From the abstract: "Only one of the fourteen samples with at least a
+    fifth of the chordate mitochondrial material from raccoon dogs contains
+    any SARS-CoV-2 reads, and that sample only has 1 of ~200,000,000 reads
+    mapping to SARS-CoV-2. Instead, SARS-CoV-2 reads are most correlated
+    with reads mapping to various fish, such as catfish and largemouth
+    bass." From the Results: "There is a negative correlation between the
+    abundance of SARS-CoV-2 and mitochondrial material from raccoon dogs and
+    hoary bamboo rats and at most a weak positive correlation for other
+    susceptible species thought to have been sold live at the market."
+  editorInference: >-
+    This counts something the papers it answers did not: how much viral
+    material each sample held, beside how much animal material. The
+    co-detection the market case rests on turns out to sit in samples where
+    the virus is scarce, and the virus is most abundant where the animal
+    material is from species nobody thinks were infected. It does not
+    show the animals were uninfected; it weakens the inference from
+    co-detection to infection, which the co-detection paper's own authors
+    had already declined to draw.
+  exactLocator: "Virus Evolution 9(2):vead050 — Abstract; Results, section on correlations between SARS-CoV-2 and species composition"
+  limitations:
+    - "The same Chinese CDC environmental dataset the surveillance paper and the stall reanalysis use: a third reading of one evidence stream, not independent data."
+    - "The author states the measured composition depends on the reference genomes used, and that the absence of association does not disprove infected animals at an earlier date."
+    - "Disputed in the same journal by a co-author of the paper it answers (COV-E034); neither side has been independently adjudicated."
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: Bloom 2023 (Virus Evolution vead050), read through the site's reading tool"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"
+
+- id: COV-E034
+  title: "The published reply: both sides agree the swabs cannot name an animal host"
+  claimIds: [COV-C020, COV-C008]
+  sourceId: SRC-DEBARRE-2023
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    From the abstract: the environmental samples "were however collected
+    after abundant human-to-human transmission had taken place in the
+    market, precluding any identification of a non-human animal host. Jesse
+    Bloom recently investigated associations between SARS-CoV-2 and
+    non-human animals, concluding that the data failed to indicate whether
+    non-human animals were infected by SARS-CoV-2, despite this being an
+    already acknowledged limitation of the data. Here I explain why a
+    correlation analysis could not confidently conclude which hosts(s) may
+    have shed SARS-CoV-2 in the market."
+  editorInference: >-
+    The reply's first move is a concession, and it is the one that matters
+    for this case: the sampling came too late to identify an animal host at
+    all. Where the two disagree is over what the correlation analysis adds
+    — whether a null result is informative when the data could not have
+    produced a positive one. Both positions converge on the same reading of
+    the ledger: COV-C008 is unresolved, and the environmental swabs cannot
+    resolve it.
+  exactLocator: "Virus Evolution 10(1):vead077 — Abstract"
+  limitations:
+    - "Written by a co-author of the paper under challenge; an interested party, as the paper it answers is."
+    - "Reports no new data; it is an argument about method."
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: Débarre 2023 (Virus Evolution vead077), read through the site's reading tool"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"
+
+- id: COV-E035
+  title: "The releasing office states the origin as settled, in the same breath as its documents"
+  claimIds: [COV-C021, COV-C014]
+  sourceId: SRC-ODNI-RELEASE-2026-STATEMENT
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    The announcement of the June 18, 2026 release states that the Director
+    of National Intelligence "is releasing never-before-seen communications
+    and documents exposing how Fauci worked with politicized career
+    leadership in the Intelligence Community (IC) to suppress the truth
+    about his actions, the virus’ lab-leak origins, and his role in
+    directing U.S. funding for this dangerous research". It adds: "The
+    materials released today are a result of DNI Gabbard’s yearlong
+    declassification review in support of President Trump’s maximum
+    transparency mandate."
+  editorInference: >-
+    An announcement, not an assessment: it carries no confidence language,
+    no analytic line and no dissent, and it asserts as fact the proposition
+    the community's own declassified assessments hold at low confidence and
+    split over. Recorded here as a dated position of the office — the same
+    treatment this case gives the 2025 agency statement and the Chinese
+    white paper — and not as evidence about the origin. The bulk of it
+    concerns a named official's conduct, which this case's third layer
+    holds apart from the origin question.
+  exactLocator: "Reports & Publications 2026, item 4165, published 18 June 2026 (ODNI archive copy)"
+  limitations:
+    - "A press announcement by the office that chose what to declassify and what to keep redacted."
+    - "Its characterisations of the documents it releases are not independently checked here; only the words of the announcement itself are."
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: ODNI release announcement of 18 June 2026, read through the site's reading tool"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"
+
+- id: COV-E036
+  title: "What the release's own index lists — and the one document in it that bears on the laboratory question"
+  claimIds: [COV-C022, COV-C018]
+  sourceId: SRC-ODNI-RELEASE-2026-INDEX
+  direction: qualifies
+  strength: weak
+  sourceStatement: >-
+    The index's first item reads: "2020-05-27 LLNL International Assessments
+    Report: COVID-19 Lab Modification Conditions Present at WIV". The
+    remaining sixty-six items are internal emails (2020-2024), scientific
+    publications including "The proximal origin of SARS-CoV-2", diplomatic
+    cables, congressional correspondence, a 2015 CIA assessment with its
+    title redacted, and meeting agendas.
+  editorInference: >-
+    The newest origin assessment the index names was written in May 2020 by
+    a weapons laboratory, not by an intelligence agency, and the rest of the
+    list is correspondence about how the origin question was handled rather
+    than evidence about the origin. Six years of declassification pressure,
+    a statutory review and a release of some four hundred pages have
+    produced no document naming a progenitor, an incident or an infected
+    worker. That is the absence this case already records on the
+    research-related side, now tested once more and still holding.
+  exactLocator: "Document index, 18 June 2026 release, items 1-67"
+  limitations:
+    - "An index states titles, not contents. The Lawrence Livermore report itself is scanned imagery in Part 1 of the release with no readable text layer, so what it assessed, on what basis and at what confidence has not been read here (COV-R009)."
+    - "Two of the index's dates fall after the release date, so its dating is not taken as checked."
+    - "Parts 2 to 4 of the release have not been read; this record describes the index only."
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: the ODNI release index of 18 June 2026, read in full through the site's reading tool"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"

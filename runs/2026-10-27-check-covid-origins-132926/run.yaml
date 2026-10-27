@@ -1,0 +1,14 @@
+runId: 2026-10-27-check-covid-origins-132926
+verb: check
+case: covid-origins
+date: 2026-10-27
+model: "panel: anthropic, openai, gemini, xai, venice"
+promptVersion: check-v2
+inputHash: d36787f1d7ce4e1f895c91f3e30b01fa0cb7977f1a8dce21ce6f2a7832451a6e
+outcome: failed
+cost:
+  calls: 0
+  inputTokens: 0
+  outputTokens: 0
+  usd: 0
+notes: "per-month cap: $40.15 spent + $4.90 estimated > $40.00 (config/budget.yaml, standing caps); nothing was sent"

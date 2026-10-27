@@ -143,3 +143,25 @@
     resolution available to that dispute. Continued absence slowly
     strengthens it. Genuinely fundable, and it accrues value regardless of
     the origin question.
+
+- id: COV-R009
+  title: "Read the May 2020 weapons-laboratory report released on 18 June 2026"
+  summary: >-
+    Obtain a text-bearing copy of the Lawrence Livermore National Laboratory
+    report of 27 May 2020 listed first in the 18 June 2026 declassification
+    index, and establish what it assessed, on what information, at what
+    stated confidence, and how much of it remains redacted. The released
+    PDF's pages are scanned images with no text layer; an optical-character
+    pass over the release, or a copy obtained through the laboratory or by
+    request, would settle it.
+  claimIds: [COV-C022, COV-C018, COV-C014]
+  track: either
+  effortTier: desk
+  informationGain: >-
+    Moderate, and cheap. Its title is now cited as though it were a finding;
+    what matters is whether the report assessed that a laboratory
+    modification occurred or that the conditions for one existed, which are
+    different propositions, and whether it rested on new information or on
+    the same reporting the later community assessments weighed. Either
+    answer sharpens the research-related side's strongest documentary
+    thread; neither can be graded from a title.

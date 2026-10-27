@@ -1,0 +1,137 @@
+# Review of #136, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 136
+title: "Kirk: the October 23 conference ends without a trial date (ruling due November 9); the counts now from the charging Information itself"
+url: https://github.com/ejhong/erebus/pull/136
+outcome: merged
+outcomeAt: 2026-10-25T12:40:28Z
+cases:
+  - kirk-assassination
+rounds:
+  - commit: 11bfaf78852a686a1a3cd840dd5e72e8f731d1c1
+    date: 2026-10-24
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: fabrication (Grok 4.5 (xAI))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-E074: remove or substantiate the inference that Utah Valley University “held the campus cameras and paved the scene.” The reported memorandum does not identify the discoverable university records, and the record should not imply they concern the camera or paving disputes without evidence."
+          - "KRK-E074 and KRK-E075: obtain the October 21 memoranda and the October 23 minute entry or transcript when available, replacing journalism with the filings and court record; also archive the current KSL and Deseret News pages against link loss."
+          - "KRK-E075: replace “withheld packages” with a neutral description such as “non-public materials.” The record establishes that these materials are not public, not that a person or institution is deliberately withholding them."
+        summary: The change materially improves the active-proceeding page by updating the schedule through the October 23 conference and replacing a reported count list with the charging Information itself. It carefully attributes the parties’ positions, preserves the presumption of innocence, and acknowledges that the scheduling filings and conference record were available only through reporting. The unidentified university records should not be linked inferentially to particular evidence disputes, but that limited issue does not outweigh the gains in currency and primary-source grounding.
+        cost:
+          inputTokens: 23543
+          outputTokens: 1816
+          usd: 0.130492
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - In KRK-E073, the charging Information's counts are linked exclusively to KRK-C009 as 'context' (since counts 5–6 involve witness tampering with the roommate). Consider linking the charging instrument across the broader set of relevant claims or establishing an atomic claim for the formal charging posture so the full charge sheet is not subordinated to an incriminating-statements claim.
+          - When the district court's November 9 scheduling ruling is issued or if the October 21 memoranda become accessible via public filings, replace the KSL and Deseret News press accounts with the direct docket entries and written orders.
+          - Continue the planned trimming of the narrative toward the 2,500-word target in a dedicated polish session, focusing on the background narrative around base rates and organized-operation theories.
+        summary: The change updates the proceeding's status following the October 21 scheduling memoranda and October 23 pretrial conference, and replaces press summaries of the charges with the specific counts and targeting enhancement from the charging Information itself. Living-persons and active-proceeding requirements are strictly adhered to, with the presumption of innocence maintained prominently. It leaves the site more current, precise, and well-evidenced.
+        cost:
+          inputTokens: 25614
+          outputTokens: 1171
+          usd: 0.023602
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm:
+          kind: fabrication
+          where: SRC-UC-INFORMATION-2025 archivedUrl
+          why: The archivedUrl is written as https://web.archive.org/web/2025id_/https://atty.utahcounty.gov/... — that is not a real Wayback capture locator (timestamp must be a full capture date, optionally with id_). Publishing a non-existent provenance URL fabricates a locator.
+        notes:
+          - "SRC-UC-INFORMATION-2025: replace archivedUrl with the exact working Wayback raw-capture URL that was read (full 14-digit timestamp, id_ if used), or drop archivedUrl until one is verified."
+          - "SRC-KSL-TRIAL-MEMOS-2026 and SRC-DESERET-PRETRIAL-2026: add archived copies; both new procedural sources currently have none."
+          - Article still ~445 words over the 2,500 target; next polish should cut organized-operation and base-rate passages further, and after November 9 record the trial-date ruling (and keep KRK-R015 open for the written bindover order).
+        summary: The change brings an active proceeding current after the October 21 scheduling memoranda and the October 23 conference, moves the seven counts to the charging Information itself, and adds attributed defense statements about unprocessed evidence and a university subpoena that modestly reinforce C019—without moving any verdict. Attribution, limitations, and living-persons handling are careful. The page is more accurate and current for a truth-seeking reader, but the malformed Information archivedUrl is a provenance fabrication that must be fixed before publish.
+        cost:
+          inputTokens: 24027
+          outputTokens: 353
+          usd: 0.050287
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-C019's positive wording ('contains the complete documentation...') graded 'contradicted' has now confused reviewers in two consecutive rounds (GPT-5.6 Sol on #131, and the direction fields of KRK-E071/E074 read backwards against it). Schedule the rewording session the operator itself outlines — restate the claim negatively ('the public record does not yet contain...') in a dedicated pass so every evidence direction and panel seat moves together, rather than leaving the inversion to each reader."
+          - SRC-KSL-TRIAL-MEMOS-2026 and SRC-DESERET-PRETRIAL-2026 have no archived copies, and the operator records that no captures were submitted. Submit both URLs to the Wayback Machine (as was done for SRC-UC-INFORMATION-2025) so the quoted passages in KRK-E074 and KRK-E075 remain checkable if the pages change or die — the Fox News short link from the previous session is already dead.
+          - The article remains ~445 words over the 2,500-word target; the operator's own plan (trimming the organized-operation and base-rate passages) is sound — the 'What does inconclusive actually mean?' paragraph and the two base-rate study paragraphs are the other candidates where measurement detail could move to the studies shelf.
+        summary: "This change brings the Kirk case current through the October 21 scheduling memoranda and October 23 conference, replaces courtroom reporting with the charging Information as the source for the counts (with grades and enhancement, quoted and located), and honestly marks what is paraphrase, whose assertion, and what could not be reached. The declined direction-change on KRK-E071 is correctly reasoned: the claim is worded positively and graded contradicted, so unprocessed discovery undermines it. Trims are minor and nothing true and important is lost; living-persons handling is careful, so the site is more accurate and current for a truth-seeking reader."
+        cost:
+          inputTokens: 24889
+          outputTokens: 3248
+          usd: 0.005357
+  - commit: df23f7bb163c0285ab8f13186845d9b6191cec11
+    date: 2026-10-25
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-E074, KRK-E075, and the procedural-status paragraph: after November 9, update the ruling and replace the news reports with the scheduling memoranda, minute entry, transcript, or written order if obtainable; until then, make the article explicitly say the dates and venue position are reported accounts of the filings."
+          - "KRK-C019 and all linked evidence/assessment records: complete the planned dedicated pass that states the claim negatively, aligns its wording with the article’s linked text, reverses the evidence directions as needed, and obtains a new panel judgment. The current positive claim graded “contradicted” remains unnecessarily difficult to interpret."
+          - "KRK-E075 editorInference: qualify or remove the expectation that the autopsy record, fragment inventory, and original media will all be tested publicly at trial. The scheduling report does not establish that those particular materials will be admitted, disclosed publicly, or tested at trial."
+        summary: The change materially improves the live case by updating its procedural posture through October 23 and replacing a press-derived count list with the charging Information’s exact allegations, grades, and enhancement. It carefully attributes the parties’ scheduling positions, preserves the presumption of innocence, and candidly labels the inaccessible filings and court record as limitations. The previously flagged fabricated archive locator has been replaced with a specific verified Wayback capture, so no publication harm remains.
+        cost:
+          inputTokens: 26261
+          outputTokens: 1543
+          usd: 0.135904
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Proceed with the planned dedicated session to reword KRK-C019 in the negative (e.g., 'does not yet contain...') so that evidence directions and panel assessments align intuitively without requiring mental inversion.
+          - Following the court's November 9, 2026 decision, record the trial date or scheduling ruling and motion calendar, seeking primary docket entries or written orders where possible.
+          - Execute the planned narrative trimming toward the 2,500-word target in the upcoming polish pass, focusing on the organized-operation and base-rate sections.
+        summary: This update successfully resolves the harm flagged in Round 1 by pinning SRC-UC-INFORMATION-2025's archivedUrl to an exact, verifiable Wayback capture timestamp. It also tightens the editor inferences in KRK-E074 and KRK-E075, eliminating unsupported connections and loaded terminology. The change leaves the site more accurate, properly sourced, and fully compliant with procedural and living-person standards.
+        cost:
+          inputTokens: 28697
+          outputTokens: 876
+          usd: 0.024808
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - After the November 9 ruling, replace KRK-E074/KRK-E075 press paraphrases with the court’s order (and the October 21 memoranda or minute entry if they become public), and update the status paragraph from those primaries.
+          - Hold the dedicated session already planned to reword KRK-C019 in the negative and re-grade its evidence and panel seats together — the positive wording still makes undermines/supports directions read backwards for reviewers.
+          - SRC-KSL-TRIAL-MEMOS-2026 and SRC-DESERET-PRETRIAL-2026 still lack archivedUrl; add captures when permission or existing archives allow, and polish the article toward ~2,500 words (organized-operation, base-rate, and inconclusive-method passages).
+        summary: The change brings the live Kirk proceeding current through the October 21 scheduling memoranda and the October 23 conference (no date set; ruling due November 9), puts the seven counts and enhancement in the charging Information’s own words, and records the defense’s reported claims of unprocessed evidence and a university subpoena against C019. The prior fabrication harm on SRC-UC-INFORMATION-2025’s archivedUrl is fixed with a real dated capture, and the overreaching E074/E075 inferences are narrowed. For a truth-seeking reader the page is more accurate, better evidenced, and more current, with nothing true dropped and no standing publication harm.
+        cost:
+          inputTokens: 26804
+          outputTokens: 320
+          usd: 0.055643
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-E073: the article's status paragraph attributes specific conduct to specific counts — 'obstruction of justice (concealing the rifle, and the clothing)', 'witness tampering (directing his roommate to delete messages, and to stay silent)' — but the record's sourceStatement quotes only the count headings and grades; the conduct descriptions live only in the editorInference. Add the Information's own sentences describing Counts 3–6 (with their page locators) to sourceStatement so the article's attribution is itself shown in the quoted text."
+          - "On the KSL/Deseret archived copies: the operator's reply is reasoned (an outward save request is an uncovered act), but the risk is real — the Fox News link already died last session and both quoted memoranda exist only in the reading tool's cache. Either ask the founder to record the standing permission, or as a stopgap note in each source's limitations that the quoted text is held only in the session cache so a future reader knows what would need re-verification if a link dies."
+          - The 2,500-word trim and the KRK-C019 rewording session remain open per the operator's own plan; the rewording (restating C019 negatively with all evidence directions and panel seats moving together) should take priority, since the positive-wording/contradicted inversion has now confused reviewers three rounds running.
+        summary: The change brings the Kirk case current through the October 21 memoranda and October 23 conference, moves the counts from courtroom reporting to the charging Information itself (KRK-E073), and pins the Information's archived locator to a real, dated Wayback capture — answering the fabrication harm flagged in round 1 with a concrete fix (full 14-digit timestamp, verified against the CDX index, quote check passing). The round-1 notes on KRK-E074's overreaching inference and KRK-E075's 'withheld' wording are answered with narrowed records, and the unmet notes (archiving, trimming, the bindover order) carry honest reasons or stand as next-pass work. Nothing true is lost — the trims are budget housekeeping — the living-persons handling is careful, and the new records are properly attributed, so the site is more accurate and current for a truth-seeking reader.
+        cost:
+          inputTokens: 27668
+          outputTokens: 1589
+          usd: 0.004945
+harvestedAt: 2026-10-27T13:28:55.789Z

@@ -119,6 +119,19 @@
     date: "2026-08-26"
   dependsOnClaimIds: [ COV-C006, COV-C007 ]
 
+- id: COV-C020
+  statement: >-
+    In the Huanan market's environmental sequencing data, the amount of SARS-CoV-2 genetic material in a sample does not rise with the amount of raccoon-dog or hoary-bamboo-rat genetic material in it.
+  theme: market-animals
+  rung: observation
+  claimType: statistical
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: Bloom 2023 (Virus Evolution vead050), read in full"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"
+
 # ── early lineages ─────────────────────────────────────────────────────
 
 - id: COV-C009
@@ -258,3 +271,29 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-covid-launch-2026-08-26"
     date: "2026-08-26"
+
+- id: COV-C021
+  statement: >-
+    The Office of the Director of National Intelligence's announcement of its June 18, 2026 release of declassified COVID-19 documents refers to a laboratory-leak origin of the virus as established fact.
+  theme: assessments
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: ODNI release announcement and index of 18 June 2026, read in full"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"
+
+- id: COV-C022
+  statement: >-
+    The documents declassified on June 18, 2026 include a May 27, 2020 Lawrence Livermore National Laboratory report whose title states that conditions for laboratory modification of the virus were present at the Wuhan Institute of Virology.
+  theme: wiv-program
+  rung: observation
+  claimType: existence
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-27: ODNI release index of 18 June 2026, item 1; the report's own pages are images not yet read"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-27-session-site-131141"
+    date: "2026-10-27"
