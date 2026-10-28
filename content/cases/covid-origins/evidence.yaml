@@ -1086,9 +1086,9 @@
 
 - id: COV-E033
   title: "The reanalysis that counted the virus reads: where the wildlife material is, the viral material mostly is not"
-  claimIds: [COV-C020, COV-C006]
+  claimIds: [COV-C020]
   sourceId: SRC-BLOOM-2023
-  direction: undermines
+  direction: supports
   strength: moderate
   sourceStatement: >-
     From the abstract: "Only one of the fourteen samples with at least a
@@ -1102,13 +1102,14 @@
     susceptible species thought to have been sold live at the market."
   editorInference: >-
     This counts something the papers it answers did not: how much viral
-    material each sample held, beside how much animal material. The
-    co-detection the market case rests on turns out to sit in samples where
-    the virus is scarce, and the virus is most abundant where the animal
-    material is from species nobody thinks were infected. It does not
-    show the animals were uninfected; it weakens the inference from
-    co-detection to infection, which the co-detection paper's own authors
-    had already declined to draw.
+    material each sample held, beside how much animal material. It is the
+    measurement COV-C020 states: viral abundance does not rise with
+    raccoon-dog or hoary-bamboo-rat material (the correlation is negative),
+    is at most weakly positive for the other susceptible species thought to
+    have been sold live, and is highest alongside fish. It does not show the
+    animals were uninfected, and it does not dispute that animal and viral
+    material occur together in the wildlife-stall samples; what it bears on
+    is the inference from that co-occurrence to infection (COV-E037).
   exactLocator: "Virus Evolution 9(2):vead050 — Abstract; Results, section on correlations between SARS-CoV-2 and species composition"
   limitations:
     - "The same Chinese CDC environmental dataset the surveillance paper and the stall reanalysis use: a third reading of one evidence stream, not independent data."
@@ -1120,6 +1121,36 @@
     extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
     runId: "2026-10-27-session-site-131141"
     date: "2026-10-27"
+
+- id: COV-E037
+  title: "The same reanalysis on what co-detection can show: useful for what was sold, not for what was infected"
+  claimIds: [COV-C006]
+  sourceId: SRC-BLOOM-2023
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    From the abstract: "These results suggest that while metagenomic analysis
+    of the environmental samples is useful for identifying animals or animal
+    products sold at the market, co-mingling of animal and viral genetic
+    material is unlikely to reliably indicate whether any animals were
+    infected by SARS-CoV-2."
+  editorInference: >-
+    The reanalysis does not dispute COV-C006 as stated: that susceptible
+    mammals' DNA occurs in the virus-positive wildlife-stall samples. It
+    disputes what that co-occurrence licenses. That qualifies the claim's
+    weight in the market account rather than undermining the observation;
+    the measurement it rests on is COV-E033.
+  exactLocator: "Virus Evolution 9(2):vead050 — Abstract"
+  limitations:
+    - "The same Chinese CDC environmental dataset as COV-E005 and COV-E033; not independent data."
+    - "The co-detection paper's own authors had already said the data cannot show which species was infected (COV-E005), so this narrows a reading the original authors did not themselves make."
+    - "Disputed in the same journal (COV-E034) on whether a correlation analysis could inform the question at all."
+  reviewState: ai_extracted
+  origin:
+    ref: "session 2026-10-28 (answering the review of #138): Bloom 2023 (Virus Evolution vead050), abstract re-read through the site's reading tool; split from COV-E033 so that each record has one direction"
+    extractedBy: "Claude Opus 5.5 (Claude Code), operator session"
+    runId: "2026-10-28-session-site-140008"
+    date: "2026-10-28"
 
 - id: COV-E034
   title: "The published reply: both sides agree the swabs cannot name an animal host"
@@ -1163,23 +1194,22 @@
   direction: context
   strength: weak
   sourceStatement: >-
-    The announcement of the June 18, 2026 release states that the Director
-    of National Intelligence "is releasing never-before-seen communications
-    and documents exposing how Fauci worked with politicized career
-    leadership in the Intelligence Community (IC) to suppress the truth
-    about his actions, the virus’ lab-leak origins, and his role in
-    directing U.S. funding for this dangerous research". It adds: "The
-    materials released today are a result of DNI Gabbard’s yearlong
-    declassification review in support of President Trump’s maximum
-    transparency mandate."
+    The announcement of the June 18, 2026 release lists, among the subjects
+    of the communications and documents it releases, "the virus’ lab-leak
+    origins". (The rest of that sentence and the next make allegations
+    about a former official's conduct; they are not reproduced here.) It
+    adds: "The materials released today are a result of DNI Gabbard’s
+    yearlong declassification review in support of President Trump’s
+    maximum transparency mandate."
   editorInference: >-
     An announcement, not an assessment: it carries no confidence language,
-    no analytic line and no dissent, and it asserts as fact the proposition
-    the community's own declassified assessments hold at low confidence and
-    split over. Recorded here as a dated position of the office — the same
-    treatment this case gives the 2025 agency statement and the Chinese
-    white paper — and not as evidence about the origin. The bulk of it
-    concerns a named official's conduct, which this case's third layer
+    no analytic line and no dissent, and its phrase treats as fact the
+    proposition the community's own declassified assessments hold at low
+    confidence and split over. Recorded here as a dated position of the
+    office — the same treatment this case gives the 2025 agency statement
+    and the Chinese white paper — and not as evidence about the origin. The
+    rest of the announcement concerns allegations about a former official,
+    which no court or inquiry has decided and which this case's third layer
     holds apart from the origin question.
   exactLocator: "Reports & Publications 2026, item 4165, published 18 June 2026 (ODNI archive copy)"
   limitations:
@@ -1194,7 +1224,7 @@
 
 - id: COV-E036
   title: "What the release's own index lists — and the one document in it that bears on the laboratory question"
-  claimIds: [COV-C022, COV-C018]
+  claimIds: [COV-C022]
   sourceId: SRC-ODNI-RELEASE-2026-INDEX
   direction: qualifies
   strength: weak
@@ -1209,15 +1239,17 @@
     The newest origin assessment the index names was written in May 2020 by
     a weapons laboratory, not by an intelligence agency, and the rest of the
     list is correspondence about how the origin question was handled rather
-    than evidence about the origin. Six years of declassification pressure,
-    a statutory review and a release of some four hundred pages have
-    produced no document naming a progenitor, an incident or an infected
-    worker. That is the absence this case already records on the
-    research-related side, now tested once more and still holding.
+    than evidence about the origin. None of the sixty-seven titles
+    identifies a progenitor, an incident or an infected worker. That is
+    narrower than saying the release contains no such document: an index
+    gives titles, and Parts 2 to 4, which hold most of what the titles
+    describe, have not been read. On the titles, the absence this case
+    already records on the research-related side is not closed by the
+    release.
   exactLocator: "Document index, 18 June 2026 release, items 1-67"
   limitations:
     - "An index states titles, not contents. The Lawrence Livermore report itself is scanned imagery in Part 1 of the release with no readable text layer, so what it assessed, on what basis and at what confidence has not been read here (COV-R009)."
-    - "Two of the index's dates fall after the release date, so its dating is not taken as checked."
+    - "One of the index's dates falls after the release date, and two near-identical items carry transposed dates, so its dating is not taken as checked."
     - "Parts 2 to 4 of the release have not been read; this record describes the index only."
   reviewState: ai_extracted
   origin:

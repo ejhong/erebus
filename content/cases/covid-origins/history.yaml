@@ -121,3 +121,12 @@
   promptVersion: charter@dff56ba
   aiAssisted: true
   kind: content
+
+- date: 2026-10-28
+  change: New edition edition-2026-10-28-141344, adopting a new draft assessment 2026-10-28-operator-141344 (its standing waits for the blind panel).
+  reason: "This edition answers the review of #138. Three of its changes are the reviewers' corrections to what the page claimed. The metagenomic reanalysis is now described in the paper's own terms — chordate mitochondrial material, a negative correlation for raccoon dogs and hoary bamboo rats and at most a weak positive one for the other susceptible species — rather than the looser paraphrase the last edition used. The declassification section no longer says the release contains no document naming a progenitor, an incident or an infected worker: it says no title in the release's index names one, which is what reading the index establishes, and says plainly that three of the four parts have not been read here. And the section on the co-detection now links the challenged claim beside the challenger, so a reader following the graph sees the tension where it lives."
+  actor: operator (claude-opus-5-5), session 2026-10-28-session-site-140008
+  runId: 2026-10-28-session-site-140008
+  promptVersion: charter@dff56ba
+  aiAssisted: true
+  kind: content

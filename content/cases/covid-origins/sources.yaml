@@ -518,9 +518,13 @@
   verification: ai_verified
   verificationNote: >-
     Read in full 2026-10-27 through the site's reading tool (one page, 67
-    numbered items). Two items carry dates after the release date
-    (2026-07-26 and, for an email, 2026-05-03 beside a near-identical item
-    dated 2026-03-05), so the index's dates are not taken as checked.
+    numbered items). One item (no. 8, an email) is dated 2026-07-26, after
+    the release date. Two near-identical email items (nos. 26 and 56) are
+    dated 2026-05-03 and 2026-03-05: both precede the release, but they are
+    the same digits in day-month and month-day order, which suggests a
+    transcription inconsistency. (The 2026-10-27 version of this note wrongly
+    said 2026-05-03 fell after the release; corrected 2026-10-28.) The
+    index's dates are not taken as checked.
   reliabilityNotes:
     - "The releasing office's own list of what it released; it says what is in the release, not what any document shows."
     - "Lists no intelligence-community assessment of the origin written after 2023; the newest dated assessments it lists are from 2020 and 2015."
@@ -547,17 +551,67 @@
     - "Parts 2 to 4 of the release have not been read."
 
 - id: SRC-ODNI-RELEASE-2026-STATEMENT
-  title: "Fauci Funded Wuhan Lab Research That Sparked COVID (release announcement, 18 June 2026)"
+  title: "Announcement of the 18 June 2026 release of COVID-19 documents"
   organization: "Office of the Director of National Intelligence"
   year: "2026"
   sourceType: webpage
   identifier: "Reports & Publications 2026, item 4165; published 18 June 2026"
   url: "https://archive.dni.gov/index.php/newsroom/reports-publications/reports-publications-2026/4165-fauci-funded-wuhan-lab-research-that-sparked-covid"
+  archivedUrl: "https://web.archive.org/web/20260619074304id_/https://www.dni.gov/index.php/newsroom/reports-publications/reports-publications-2026/4165-fauci-funded-wuhan-lab-research-that-sparked-covid"
   verification: ai_verified
   verificationNote: >-
     Read 2026-10-27 through the site's reading tool from the office's own
     archive copy; the live dni.gov page renders its text by script and the
-    tool returned only its navigation.
+    tool returned only its navigation. On 2026-10-28 the Wayback Machine's
+    capture of the live page made 19 June 2026 (20260619074304) was read
+    through the same tool and carries the same announcement text. The
+    title above describes the page; the page's own headline, which makes an
+    allegation against a former official no court or inquiry has decided, is
+    not reproduced. The address is the publisher's own and is kept as the
+    locator: the archive does not serve the page without it.
   reliabilityNotes:
     - "An announcement by an interested party: it characterises the documents it releases and states conclusions; it is not an intelligence assessment and states no confidence level."
-    - "Most of it concerns the conduct of a named former official, which this case's scope leaves to the institutional layer; only its statement about the origin is used here."
+    - "Most of it makes allegations about a former official's conduct, which no court or inquiry has decided and which lie outside this case's origin question; they are not reproduced here, and only its words about the origin are used."
+
+# ── the reference class the steelman invokes ────────────────────────────
+# Admitted 2026-10-28 to ground the assessment's steelman, which a reviewer
+# of #138 found overstated ("every previously identified coronavirus
+# spillover arose through wildlife trade"). They carry no weight on any
+# claim in this ledger; they bound a statement the site makes about the
+# comparison class.
+
+- id: SRC-WHO-MERS-FACTSHEET
+  title: "Middle East respiratory syndrome coronavirus (MERS-CoV) — fact sheet"
+  organization: "World Health Organization"
+  year: "2026"
+  sourceType: webpage
+  identifier: "WHO fact sheet, read 28 October 2026"
+  background: true
+  url: "https://www.who.int/news-room/fact-sheets/detail/middle-east-respiratory-syndrome-coronavirus-(mers-cov)"
+  verification: ai_verified
+  verificationNote: >-
+    Read 2026-10-28 through the site's reading tool. It states that MERS-CoV
+    "can be transmitted between dromedary camels and people" and that
+    "dromedary camels are the primary reservoir" — the point the steelman
+    needs: a coronavirus that reached humans by a route other than a
+    live-wildlife market.
+  reliabilityNotes:
+    - "A standing public-health fact sheet, not a dated finding; it summarises an established consensus and is used here only for that."
+
+- id: SRC-WHO-DON-20040422
+  title: "SARS: one suspected case reported in China (Disease Outbreak News, 22 April 2004)"
+  organization: "World Health Organization"
+  year: "2004"
+  sourceType: report
+  identifier: "WHO Disease Outbreak News, 22 April 2004"
+  background: true
+  url: "https://www.who.int/emergencies/disease-outbreak-news/item/2004_04_22-en"
+  verification: ai_verified
+  verificationNote: >-
+    Read 2026-10-28 through the site's reading tool. It records that after
+    WHO declared the SARS outbreak over on 5 July 2003, five SARS cases were
+    confirmed, of which "Two occurred in laboratory workers, in Singapore and
+    Taiwan, China", and that "None of these five cases resulted in further
+    transmission of the virus."
+  reliabilityNotes:
+    - "A contemporaneous outbreak notice, superseded by later reporting on the April 2004 Beijing cluster, which this case has not read; only what this notice itself states is used."
