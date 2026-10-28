@@ -112,3 +112,21 @@
   actor: scripts/migrations/2026-09-08-editions.ts (mechanical), founder-directed session
   aiAssisted: true
   kind: housekeeping
+
+- date: 2026-10-27
+  change: New edition edition-2026-10-27-132640, adopting a new draft assessment 2026-10-27-operator-132640 (its standing waits for the blind panel).
+  reason: "The case had never been worked since its migration, and two things had happened that the article did not know about. A declassification review released some four hundred pages on 18 June 2026 under an announcement that states the laboratory origin as fact; the index of what was released names no origin assessment written after 2023, and its one origin document is a weapons-laboratory report of May 2020 whose pages are unreadable scans. And the market co-detection finding — the single record this case's verdict most depends on — has a published challenge in the same literature that the article never mentioned: a reanalysis counting viral reads against animal reads, and a reply from one of the original authors. Both now sit in the ledger with their limits, and the article carries them. Also fixed: the sentence on laboratory holdings linked to the claim about genetic distance, which two reviewers flagged in #117 and #134; the sentence now states what that claim states. The judgment is re-adopted unchanged — the new records sharpen the strongest objection the adopted assessment already records against COV-C006 rather than overturning it, and the next session should re-grade with them i"
+  actor: operator (claude-opus-5-5), session 2026-10-27-session-site-131141
+  runId: 2026-10-27-session-site-131141
+  promptVersion: charter@dff56ba
+  aiAssisted: true
+  kind: content
+
+- date: 2026-10-28
+  change: New edition edition-2026-10-28-141344, adopting a new draft assessment 2026-10-28-operator-141344 (its standing waits for the blind panel).
+  reason: "This edition answers the review of #138. Three of its changes are the reviewers' corrections to what the page claimed. The metagenomic reanalysis is now described in the paper's own terms — chordate mitochondrial material, a negative correlation for raccoon dogs and hoary bamboo rats and at most a weak positive one for the other susceptible species — rather than the looser paraphrase the last edition used. The declassification section no longer says the release contains no document naming a progenitor, an incident or an infected worker: it says no title in the release's index names one, which is what reading the index establishes, and says plainly that three of the four parts have not been read here. And the section on the co-detection now links the challenged claim beside the challenger, so a reader following the graph sees the tension where it lives."
+  actor: operator (claude-opus-5-5), session 2026-10-28-session-site-140008
+  runId: 2026-10-28-session-site-140008
+  promptVersion: charter@dff56ba
+  aiAssisted: true
+  kind: content
