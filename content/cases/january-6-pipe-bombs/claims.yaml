@@ -1224,7 +1224,7 @@
 
 - id: PIPE-C084
   statement: >-
-    No judgment has been entered in the defamation suit over the November 2025 report: the clerk's entries of default against Baker, Hanneman and their company were set aside on July 13, 2026, and the defendants' motions to dismiss were undecided when the docket was last updated, on October 14, 2026.
+    No judgment appears on the docket of the defamation suit over the November 2025 report, as mirrored through October 14, 2026: the clerk's entries of default against Baker, Hanneman and their company were set aside on July 13, 2026, and the defendants' motions to dismiss were undecided at that date.
   theme: insider
   rung: observation
   claimType: observation
@@ -1264,9 +1264,37 @@
 
 - id: PIPE-C088
   statement: >-
-    The FBI's inquiry into the November 2025 identification found no evidence connecting the former officer to the devices.
+    The government states that the FBI's inquiry into the November 2025 identification found no evidence connecting the former officer to the devices.
   theme: insider
   rung: observation
   claimType: observation
   reviewState: ai_extracted
   origin: *o21
+
+# 2026-11-01, at the review of #133: PIPE-C088 now carries its attribution in the
+# claim itself ("The government states that…"), since its one support is the
+# prosecution's description of records that are not public; whether a police
+# insider placed the devices is graded at PIPE-C052. PIPE-C084 now says what the
+# mirrored docket shows through October 14, 2026, not that no judgment exists.
+
+- id: PIPE-C089
+  statement: >-
+    By both parties' accounts of the report, the FBI examiner who polygraphed the former officer on November 6, 2025 gave the opinion "Deception Indicated".
+  theme: insider
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: &o01
+    ref: "operator session 2026-11-01: the defense's subpoena filings (ECF Nos. 88 and 96) and the government's opposition (ECF No. 91) in United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (claude-opus-5-5), operator session 2026-11-01-session-site-141624"
+    runId: "2026-11-01-session-site-141624"
+    date: "2026-11-01"
+
+- id: PIPE-C090
+  statement: >-
+    Cole's defense disputes the government's account that the FBI's inquiry cleared the former officer, contesting the home video and work records the government relies on, and seeks the underlying files by subpoena.
+  theme: proceedings
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o01

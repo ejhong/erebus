@@ -1,0 +1,129 @@
+# What operator session 2026-11-01-session-site-141624 did, as its trace recorded it: the digest the workflow made on the session's machine
+# (src/engine/trace.ts), checked here (src/engine/session.ts). The session's own account of its work is its log.
+version: 1
+ended: success
+model: claude-opus-5-5
+permissionMode: dontAsk
+turns: 116
+minutes: 18.4
+usd: 6.1385
+compactions: 0
+unreadableLines: 0
+tools:
+  - tool: Bash
+    calls: 53
+    failed: 0
+    refused: 4
+  - tool: Edit
+    calls: 22
+    failed: 0
+    refused: 0
+  - tool: Read
+    calls: 16
+    failed: 0
+    refused: 0
+  - tool: Grep
+    calls: 12
+    failed: 0
+    refused: 0
+  - tool: Write
+    calls: 6
+    failed: 0
+    refused: 0
+  - tool: Glob
+    calls: 3
+    failed: 0
+    refused: 0
+  - tool: WebSearch
+    calls: 2
+    failed: 0
+    refused: 0
+  - tool: ToolSearch
+    calls: 1
+    failed: 0
+    refused: 0
+commands:
+  - command: node scripts/site.ts read
+    calls: 32
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts stamp
+    calls: 3
+    failed: 0
+    refused: 0
+  - command: git status
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts check-quotes
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: npm test
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: cp
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: for
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: gh
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: git branch
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: git show
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: head
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: ls
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts ids
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts status
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: rm
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: tail
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: wc
+    calls: 1
+    failed: 0
+    refused: 0
+fetched: []
+read:
+  - source: storage.courtlistener.com
+    calls: 26
+    failed: 0
+  - source: courtlistener.com
+    calls: 4
+    failed: 0
+  - source: (other)
+    calls: 1
+    failed: 0
+  - source: web.archive.org
+    calls: 1
+    failed: 0
+filesEdited: 8
+repeatedFailures: 0

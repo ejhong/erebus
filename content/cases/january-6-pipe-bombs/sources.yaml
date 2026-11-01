@@ -586,7 +586,7 @@
   sourceType: report
   url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.91.0.pdf
   verification: ai_verified
-  verificationNote: "Pages 1 to 7 read from the RECAP archive on 2026-10-21 (28 pages in all). It names the former officer and her partner and describes the FBI's inquiry into her in personal detail; this site cites only its general conclusions, quoted around the name, and publishes none of those details (AGENTS.md, living persons)."
+  verificationNote: "Pages 1 to 7 read from the RECAP archive on 2026-10-21 (28 pages in all); pages 8, 21 and 23 to 25 read on 2026-11-01. It names the former officer and her partner and describes the FBI's inquiry into her in personal detail. This site quotes around the name and publishes only what the evidence turns on: the examiner's polygraph opinion and her denial, the government's answer to it, and the time the government gives for the home video it says records her that evening, because the defense disputes those records (AGENTS.md, living persons)."
   reliabilityNotes:
     - "The prosecution's description of its own investigation's records, which it has given the defense under a protective order and has not published: one interested party's account of records no independent party has examined."
 
@@ -599,7 +599,7 @@
   verification: ai_verified
   verificationNote: "Read from the RECAP archive on 2026-10-21 (15 pages). Names the former officer, whom this site does not name, and the subpoena recipients; this site cites only passages that do not name them, or quotes around the name."
   reliabilityNotes:
-    - "The prosecution's argument that defense counsel are conflicted. Its account of the November 2025 article quotes the article, which this site could not open (the Internet Archive's copy refused the reading tool); its account of the FBI's inquiry into the earlier identification is in a filing (ECF No. 91) this site has not read."
+    - "The prosecution's argument that defense counsel are conflicted. Its account of the November 2025 article quotes the article, which this site could not open (the Internet Archive's copy refused the reading tool on 2026-10-21 and again on 2026-11-01); its account of the FBI's inquiry into the earlier identification draws on the government's subpoena opposition (ECF No. 91, SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION), which this site has read in part."
 
 - id: SRC-PIPE-ECF104-DEFENSE-CONFLICT-RESPONSE
   title: "Defendant Brian Cole, Jr.'s response to the government's conflict brief (ECF No. 104, filed 09/30/26)"
@@ -622,3 +622,49 @@
   verificationNote: "Read from the RECAP archive on 2026-10-21 (5 pages). Names the former officer, whom this site does not name."
   reliabilityNotes:
     - "The prosecution's reply on the conflict: argument, not a finding."
+
+# ── 2026-11-01: the defense's subpoena filings, the conflicts order and the pretrial order ──
+
+- id: SRC-PIPE-ECF88-DEFENSE-RENEWED-SUBPOENAS
+  title: "Defendant Brian Cole Jr.'s renewed motion for early return of pretrial subpoenas (ECF No. 88, filed 08/19/26)"
+  organization: "Counsel for Brian Cole, Jr. (Litson PLLC; Humanity Dignity and Rights LLC)"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.88.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-01 (6 pages). Names the former officer and her partner, whom this site does not name, and describes the FBI's inquiry into her; this site quotes around the names and publishes only what bears on the evidence."
+  reliabilityNotes:
+    - "The defense's motion: its account of the FBI's inquiry is drawn from discovery the public has not seen, and is advocacy for its subpoenas."
+
+- id: SRC-PIPE-ECF96-DEFENSE-SUBPOENA-REPLY
+  title: "Defendant Brian Cole Jr.'s reply in support of his renewed motion for early return of pretrial subpoenas (ECF No. 96, filed 09/04/26)"
+  organization: "Counsel for Brian Cole, Jr. (Litson PLLC; Humanity Dignity and Rights LLC)"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.96.0.pdf
+  verification: ai_verified
+  verificationNote: "Pages 1 to 8 read from the RECAP archive on 2026-11-01 (18 pages in all). Names the former officer and her partner, whom this site does not name."
+  reliabilityNotes:
+    - "The defense's reply: it disputes the government's summary of records it holds under a protective order, but offers no records of its own in the public filing."
+
+- id: SRC-PIPE-ECF114-CONFLICT-ORDER
+  title: "Order appointing conflicts counsel to advise the defendant (ECF No. 114, filed 10/20/26)"
+  organization: "U.S. District Court for the District of Columbia (Judge Amir H. Ali)"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.114.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-01 (6 pages). It does not name the former officer in its text; the civil case's caption, which it cites, does."
+  reliabilityNotes:
+    - "The court's own order and reasoning; a finding that a conflict is plausible and waivable, not that one exists."
+
+- id: SRC-PIPE-ECF115-PRETRIAL-ORDER
+  title: "Pretrial order (ECF No. 115, filed 10/22/26)"
+  organization: "U.S. District Court for the District of Columbia (Judge Amir H. Ali)"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.115.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-01 (4 pages)."
+  reliabilityNotes:
+    - "The court's scheduling order: the dates are the court's, and hold unless it modifies them."

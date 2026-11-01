@@ -3626,7 +3626,7 @@
   sourceStatement: >-
     "The FBI investigated this claim, as it did many others, and found it to be baseless." (p. 1) "The FBI’s investigative efforts yielded zero evidence connecting" the former officer "in any way to the construction, transportation, or planting of the pipe bombs." (p. 5)
   editorInference: >-
-    The brief describes the inquiry's steps in November 2025 and records it says place her away from Capitol Hill that evening; this site does not publish those details, about a private person. The government says it gave the records to the defense in discovery, under a protective order that keeps them off the public docket. The defense holds them and still pursues the theory (PIPE-C086); it has not said, in the filings read, which of them it disputes.
+    The brief describes the inquiry's steps in November 2025 and records it says place her away from Capitol Hill that evening; this site publishes only what the dispute over them turns on (PIPE-E221, PIPE-E226). The government says it gave the records to the defense in discovery, under a protective order that keeps them off the public docket. The defense holds them, still pursues the theory (PIPE-C086), and disputes the government's summary of them: the home video's timestamp and the work records (PIPE-C090). The same inquiry's polygraph examiner gave an opinion of deception, which the government says carries no weight (PIPE-C089); "zero evidence" is the government's judgment of what its inquiry found.
   exactLocator: pp. 1–5 (the first sentence on p. 1, the second on p. 5)
   limitations:
     - "The prosecution's description of its own records, which no independent party has examined and which are not public: under this site's rules it can carry a claim only provisionally."
@@ -3691,3 +3691,162 @@
   exactLocator: p. 1
   reviewState: ai_extracted
   origin: *o21e
+
+# ── 2026-11-01: the defense's subpoena filings read for what it disputes (PIPE-R013), and the pretrial order ──
+# The former officer is still unnamed. What is published about the FBI's inquiry
+# into her is what the dispute over it turns on: the examiner's polygraph opinion,
+# with her denial and the government's answer, and the record the government says
+# places her at home that evening, which the defense contests. Nothing else of her
+# private life is carried over from the filings.
+
+- id: PIPE-E219
+  title: "The court's pretrial order sets the trial for February 16, 2027"
+  claimIds: [PIPE-C057]
+  sourceId: SRC-PIPE-ECF115-PRETRIAL-ORDER
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Trial will start on February 16, 2027, at 9:00 a.m. in Courtroom 19. The parties should be prepared for trial to last two weeks and hold until March 5, 2027." "The court will hold a pretrial conference on January 28, 2027, at 10:00 a.m. in Courtroom 19."
+  editorInference: >-
+    The date reported in July (PIPE-E119) is now the court's own order, issued October 22, 2026 after the not-guilty pleas of October 1 (PIPE-E215). The order also excludes the time until then under the Speedy Trial Act, at both parties' proposal.
+  exactLocator: p. 1 (trial and conference); p. 4 (Speedy Trial Act exclusion)
+  reviewState: ai_extracted
+  origin: &o01n
+    ref: "operator session 2026-11-01: the docket of United States v. Cole read from the RECAP archive, ECF Nos. 88, 91, 96, 114, 115 and 119"
+    extractedBy: "Claude Opus 5.5 (claude-opus-5-5), operator session 2026-11-01-session-site-141624"
+    runId: "2026-11-01-session-site-141624"
+    date: "2026-11-01"
+
+- id: PIPE-E220
+  title: "The pretrial order sets a deadline for any government motion to exclude alternative-perpetrator evidence"
+  claimIds: [PIPE-C086]
+  sourceId: SRC-PIPE-ECF115-PRETRIAL-ORDER
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    "The parties shall file all remaining pretrial motions other than motions in limine by November 20, 2026." The deadlines apply to remaining motions "including any motions to suppress evidence or to dismiss as well as to any government motion to exclude the admissibility of alternative-perpetrator evidence."
+  editorInference: >-
+    The court expects that whether the jury may hear the defense's account of another perpetrator may itself be contested before trial. Oppositions are due November 30 and replies December 7, 2026; expert disclosures are due December 4.
+  exactLocator: p. 2, para. 4 and 5
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E221
+  title: "The government: the FBI examiner's written opinion on the former officer's polygraph was Deception Indicated; she denied placing the devices"
+  claimIds: [PIPE-C089]
+  sourceId: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    During the FBI's examination of November 6, 2025, the former officer "was asked twice whether she placed the pipe bombs, and she said she did not." Footnote 3: "The examiner’s actual opinion, as reflected clearly at the top of the report provided to the defendant in discovery, was" "Deception Indicated" "which reflects the view that the polygraph charts showed physiological responses to the relevant questions that were indicative of deception."
+  editorInference: >-
+    The prosecution states the result against its own position, and says the report itself went to the defense; the defense describes it the same way (PIPE-E222). The report is not public. A polygraph examiner's opinion is a reading of physiological responses, not a finding of fact, and is not admissible as evidence at trial (PIPE-E223).
+  exactLocator: p. 4 and n. 3
+  limitations:
+    - "The examination's charts and report are not public, and polygraph opinions have no established accuracy sufficient for courts to admit them."
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E222
+  title: "The defense: the former officer failed the FBI's polygraph"
+  claimIds: [PIPE-C089]
+  sourceId: SRC-PIPE-ECF88-DEFENSE-RENEWED-SUBPOENAS
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    On November 6, 2025, the motion says, the FBI "administered a polygraph examination that asked her, twice and directly, whether she placed the pipe bombs. She failed it."
+  editorInference: >-
+    The defense's word for the same report the government describes (PIPE-E221); not an independent record. When the defense first made it public, in April 2026, the government called the assertion misleading and without context (ECF No. 91, p. 7).
+  exactLocator: p. 2
+  limitations:
+    - "The same report as PIPE-E221, described by the other side: one record, not two."
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E223
+  title: "The government: no weight can be placed on the polygraph opinion, given the day she had had, and it is inadmissible"
+  claimIds: [PIPE-C089]
+  sourceId: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The government says she "voluntarily submitted to a polygraph examination after she was unexpectedly called in by her employer for an FBI interview, sat for hours answering the FBI’s questions, then watched the FBI search her home, car, and cellphone—all in the same day." "Given these circumstances, it would be unreasonable to place weight on the examiner’s opinion that" her "physiological stress responses indicated deception". It adds that "even under ordinary circumstances, a polygraph result is inadmissible as substantive evidence."
+  editorInference: >-
+    The government does not dispute the result; it disputes what it is worth. Its point on admissibility is the settled rule in federal courts, and the conditions it describes are ones in which a polygraph's error rate is a known concern. The result is evidence of how the FBI's own inquiry went, not evidence of who placed the devices.
+  exactLocator: p. 24
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E224
+  title: "The defense: the FBI's exoneration of the former officer is advocacy, not evidence"
+  claimIds: [PIPE-C090]
+  sourceId: SRC-PIPE-ECF96-DEFENSE-SUBPOENA-REPLY
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    Footnote 1: "exoneration is not within the executive’s gift: an investigation ends in a charge or a declination" and the court "should read the government’s" exoneration "refrain as advocacy, not evidence." On p. 4: "Mr. Cole’s subpoenas seek the underlying records, while the government asks the Court to accept its summary of them."
+  editorInference: >-
+    The defense, which holds the discovery the government describes, does not accept the government's conclusion. In the filings read, it argues that the government's summary is untested rather than setting records of its own against it.
+  exactLocator: pp. 1–4 (n. 1, which runs from p. 1 onto p. 2; the last sentence on p. 4)
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E225
+  title: "The defense disputes the timestamp of the home video the government relies on, and the work records"
+  claimIds: [PIPE-C090]
+  sourceId: SRC-PIPE-ECF96-DEFENSE-SUBPOENA-REPLY
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "Whether that video’s timestamp is native, accurate, and unaltered; whether that video is what the government purports it to be" and whether the summary work records square with the raw badge data are, the reply says, "questions crucial to Mr. Cole’s defense". Footnote 3: "The government’s response at page 6 states that the video was timestamped 7:37:48 PM, but later states on page 8 that it was timestamped 7:37:50 PM."
+  editorInference: >-
+    The defense names what it disputes: the home video the government says records the former officer that evening, a restaurant receipt and her work records (ECF No. 91, pp. 5–6). It asks for the native file and its metadata, and cites a gap between her badge data and her scheduled shift that afternoon. It offers no record placing her anywhere else.
+  exactLocator: pp. 3–4 and n. 3
+  limitations:
+    - "Advocacy for a subpoena: a reason to test the records, not evidence that they are wrong."
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E226
+  title: "The government's brief gives the home video's time two ways, two seconds apart"
+  claimIds: [PIPE-C090]
+  sourceId: SRC-PIPE-ECF91-GOVT-SUBPOENA-OPPOSITION
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    On p. 6 a phone video from inside the home was "timestamped 7:37:48 p.m. on January 5"; on p. 8 the same video is described as capturing her voice "at 7:37:50 p.m. on January 5, 2021". On p. 6 the brief adds that "the defendant first appears on video in the area at 7:34 p.m."
+  editorInference: >-
+    The discrepancy the defense cites is in the brief as filed. Two seconds do not bear on the alibi; what the defense's point goes to is whether the time is the file's own. If it is, she was recorded at home in Virginia less than four minutes after the bomber first appears on camera in Washington.
+  exactLocator: pp. 6–8 (the first time and the 7:34 sentence on p. 6, the second time on p. 8)
+  limitations:
+    - "The video and its metadata are not public; the times are the government's description of them."
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E227
+  title: "The defense: the government's discovery supplied only part of what it sought from the former officer"
+  claimIds: [PIPE-C090]
+  sourceId: SRC-PIPE-ECF88-DEFENSE-RENEWED-SUBPOENAS
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "In its production of June 30, 2026, the government supplied part — but only part — of what Mr. Cole had asked one subpoena recipient" to produce. "The government produced what the government collected. Rule 17(c) reaches what these witnesses themselves hold, including the native files, the devices those files sit on, and the materials the government never requested or never received."
+  editorInference: >-
+    The defense argues that the inquiry's record is incomplete rather than that any record in it is false. It has since dropped its subpoena to the FBI's podiatrist as moot, the government having collected and produced his materials (ECF No. 96, p. 7).
+  exactLocator: pp. 3–4
+  reviewState: ai_extracted
+  origin: *o01n
+
+- id: PIPE-E228
+  title: "The court: a plausible conflict, interests aligned for now, and no basis for the charge that the government manufactured it"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-ECF114-CONFLICT-ORDER
+  direction: context
+  strength: strong
+  sourceStatement: >-
+    "the interests of the civil defamation clients and Defendant here are currently, and may well remain, aligned" (p. 4). "The court concludes the prudent and appropriate course is to appoint fully independent counsel to advise Defendant." (p. 4). Footnote 2: "The court finds no basis to support defense counsel’s suggestions that the government has sought to" manufacture a conflict (p. 5).
+  editorInference: >-
+    The court found a conflict plausible and waivable, not proven: defense counsel's interest in defending the November article's accuracy could bear on their advice about the alternative-perpetrator defense. The conflicts counsel's status report was due October 30, 2026; it is not in the public archive as of November 1, and ECF Nos. 116, 117, 121 and 123 to 126 could not be read there.
+  exactLocator: pp. 3–6
+  reviewState: ai_extracted
+  origin: *o01n
