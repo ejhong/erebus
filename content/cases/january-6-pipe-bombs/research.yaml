@@ -124,10 +124,12 @@
 
 - id: PIPE-R012
   title: The January 5 phone media the defense has subpoenaed
-  summary: "Follow the court's ruling on Cole's renewed motion for early return of pretrial subpoenas (ECF 88, 91, 96 and 100): whether the native video file and other media from January 5, 2021, and the communications that day, are produced, and what either side says they show."
+  summary: "Follow the court's ruling on Cole's renewed motion for early return of pretrial subpoenas (ECF 88, 91, 96 and 100): whether the native video file and other media from January 5, 2021, and the communications that day, are produced, and what either side says they show. The video is the one the government says records the former officer at home at 7:37 p.m.; the defense disputes whether its timestamp is the file's own, and whether her work records square with the raw badge data (PIPE-C090). Watch too for any government motion to exclude alternative-perpetrator evidence, due with other pretrial motions by November 20, 2026 (ECF No. 115), and for the conflicts counsel's report, due October 30, 2026 and not in the public archive on November 1."
   claimIds:
     - PIPE-C076
     - PIPE-C052
+    - PIPE-C088
+    - PIPE-C090
   track: either
   effortTier: desk
   informationGain: The government calls the material irrelevant and not exculpatory; the defense says it can be had nowhere else. Production would test both positions; it bears on the insider account only if what it shows does.
@@ -142,3 +144,7 @@
   track: either
   effortTier: desk
   informationGain: "A fact the defense leaves undisputed though it holds the records weighs more than the government's word alone; if the defense concedes the records and argues only that the inquiry stopped short, the insider account's one named suspect falls away; if it disputes them with records of its own, the question becomes one a court will test."
+  status: answered
+  statusNote: "PIPE-E224 to PIPE-E227 (ECF Nos. 88 and 96): the defense disputes the government's summary. It calls the FBI's exoneration advocacy, questions whether the home video's timestamp is native and whether the work records square with the raw badge data, and says the government's production was only part of what it sought. It sets no records of its own against them in the filings read. The test of those records is now PIPE-R012's."
+  statusBy: 2026-11-01-session-site-141624
+  statusDate: "2026-11-01"

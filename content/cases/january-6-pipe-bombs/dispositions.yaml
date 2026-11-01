@@ -1,0 +1,43 @@
+# Candidates considered and not admitted, each with its reason, so that no
+# later session re-litigates them without saying what changed.
+
+- key: "url:storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.119.0.pdf"
+  kind: source
+  disposition: excluded
+  observed: "Unopposed motion for protective order governing polygraph information, with proposed order (United States v. Cole, ECF No. 119, filed 10/26/26)"
+  reason: >-
+    Read 2026-11-01. It governs polygraph examination materials in an FBI
+    case file, made available to the defense for in-person review only and
+    barred from public filings, but it does not say whose examination they
+    are. Tying it to the former officer's polygraph (PIPE-C089) would be this
+    site's inference about a private person; it is set aside until a filing
+    says what it covers.
+  reopenIf: "A filing or order states whose polygraph materials the protective order governs."
+  by: "2026-11-01-session-site-141624"
+  date: "2026-11-01"
+
+- key: "url:storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.118.0.pdf"
+  kind: source
+  disposition: excluded
+  observed: "Defendant's opposition to the government's motion to compel production or to exclude evidence at the suppression stage (United States v. Cole, ECF No. 118, filed 10/23/26)"
+  reason: >-
+    Read 2026-11-01 (first two pages). A procedural dispute over when the
+    defense's psychologist's file goes to the government before the
+    suppression hearing; it adds nothing to the diagnosis already recorded
+    (PIPE-C043) until the court rules or the hearing is held.
+  reopenIf: "The court rules on the government's motion (ECF No. 111), or the suppression hearing is held."
+  by: "2026-11-01-session-site-141624"
+  date: "2026-11-01"
+
+- key: "url:storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.122.0.pdf"
+  kind: source
+  disposition: excluded
+  observed: "Government's opposition to the defendant's motion to compel the government to elect between Counts One and Two (United States v. Cole, ECF No. 122, filed 10/27/26), with the motion (ECF No. 110) and the defense's reply on untimeliness (ECF No. 120)"
+  reason: >-
+    Read 2026-11-01 (first pages). Legal argument over whether the two
+    transportation counts are one crime, and whether they were brought in
+    time; neither bears on who placed the devices. The counts are recorded
+    at PIPE-C060.
+  reopenIf: "The court dismisses or merges a count."
+  by: "2026-11-01-session-site-141624"
+  date: "2026-11-01"

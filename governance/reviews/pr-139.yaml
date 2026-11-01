@@ -1,0 +1,67 @@
+# Review of #139, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 139
+title: "Spend: the four session records of the held changes #135, #137 and #138"
+url: https://github.com/ejhong/erebus/pull/139
+outcome: merged
+outcomeAt: 2026-10-28T17:36:00Z
+cases: []
+rounds:
+  - commit: c4e2ae0205189ab10fa7151260f9a1384386b49c
+    date: 2026-10-28
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - In the pull-request record, retain the shown `site.ts budget --line` reconciliation ($32.47 + $28.66 = $61.13) so the budget-gate effect remains auditable.
+          - "When #138 is rebased or merged, verify that these identical spend files are neither duplicated nor dropped and that `review-pr-136.yaml` enters the ledger exactly once."
+        summary: The change restores four already-incurred session costs to the governance ledger, correcting October's cap calculation from $32.47 to $61.13 and preventing further October sessions. The arithmetic is consistent, no content judgment changes, and carrying the records independently avoids losing real spend when two source changes close, so the repository is better at enforcing its budget.
+        cost:
+          inputTokens: 7287
+          outputTokens: 684
+          usd: 0.042828
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes: []
+        summary: "Adds four session spend records totaling $28.66 from PRs #135, #137, and #138 to main. This accurately reflects October's operational expenditure and enforces the budget cap until November 1."
+        cost:
+          inputTokens: 7839
+          outputTokens: 416
+          usd: 0.007439
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - Confirm the four YAML files are byte-identical to the cited commits (6484186, 7a198fb, f2ae0c1) and that site.ts budget --line totals $61.13 for October after merge.
+          - "In the operator log or DECISIONS, note that #135/#137 case work (COVID origins sources) remains unmerged and must be redone, so a later session does not assume those records landed."
+          - When the Aletheia quote-check-hold fix merges, add a one-line cross-reference so held spend is not orphaned from the answer loop again.
+        summary: "The change adds four unchanged session spend records from held PRs #135, #137, and #138 into governance/spend so October’s ledger matches money actually spent. That raises recorded spend above the $40 cap and correctly stops further October sessions. No case content or checks are altered; operational budget integrity improves and nothing true is lost."
+        cost:
+          inputTokens: 7446
+          outputTokens: 218
+          usd: 0.016315
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - The change asserts the four files are copied unchanged from branch heads 6484186, 7a198fb and f2ae0c1, but nothing shown enforces byte-identity; add a merge check that diffs governance/spend/ additions against the cited commit hashes so copying cannot drift, since the cost figures cannot be independently verified here.
+          - "The root cause deserves a record: a quote-check hold that leaves no review round the operator's planner reads means held changes can never be answered and their spend goes unrecorded until a manual rescue. Until the upstream fix lands, document in docs/DECISIONS.md the policy for closing held changes (as done here for #135/#137 and their abandoned COVID-origins work) so the closure is a recorded decision, not just a PR description."
+          - October's recorded spend ($61.13) exceeds the $40 cap only because the records arrive retroactively; the gate as described prevents future sessions but nothing governs back-entered spend. Consider a rule for how retroactive corrections interact with the cap (e.g., requiring a recorded founder direction, as exists here) so this correction path cannot become a routine way to run past the cap and reconcile later.
+        summary: "Bookkeeping change: it lands four session spend records from held PRs #135, #137 and #138 so the budget gate reads October's true spend ($61.13 against a $40 cap, correctly summed from the listed figures) and the next session starts November 1 per the founder's direction. No content changes, no edits to AGENTS.md, no checks weakened — recording an overage honestly strengthens the cap rather than evading it, and the review-cost record left out of #137 is still carried by #138, so nothing is lost from the eventual ledger. I could not independently verify the dollar figures or the byte-for-byte copying, but the provenance is checkable and the schema checks run separately; I can point to no fabrication. Verdict better: the ledger becomes accurate and the overage is disclosed rather than hidden."
+        cost:
+          inputTokens: 17344
+          outputTokens: 2441
+          usd: 0.003822
+harvestedAt: 2026-11-01T14:37:18.574Z

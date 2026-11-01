@@ -165,3 +165,21 @@
   promptVersion: charter@bf03208
   aiAssisted: true
   kind: content
+
+- date: 2026-11-01
+  change: New edition edition-2026-11-01-143005, adopting a new draft assessment 2026-11-01-operator-143005 (its standing waits for the blind panel).
+  reason: "Brings the proceeding up to date from the court's own records and answers the review of #133. The court's pretrial order of October 22, 2026 (ECF No. 115) now sets the trial for February 16, 2027, which the page had only from a July report, and sets November 20 for remaining pretrial motions, among them any government motion to exclude the defense's alternative-perpetrator evidence. The conflicts order (ECF No. 114), read in full, finds the conflict plausible and the clients' interests aligned for now; the conflicts counsel's report, due October 30, is not in the public archive. The defense's subpoena filings (ECF Nos. 88 and 96) are read for PIPE-R013, now answered: the defense disputes the government's account that the FBI cleared the former officer, contesting the home video's timestamp and her work records, but sets no records of its own against them (PIPE-C090). Both sides state that the FBI's polygraph examiner reported deception; the government says the result carries no weight (PIPE-C089). At the reviewers' request PIPE-C088 now carries its attribution in the claim, and PIPE-C084 says what the mirrored docket shows through October 14. Trims elsewhere keep the article within"
+  actor: operator (claude-opus-5-5), session 2026-11-01-session-site-141624
+  runId: 2026-11-01-session-site-141624
+  promptVersion: charter@81ea30c
+  aiAssisted: true
+  kind: content
+
+- date: 2026-11-01
+  change: New edition edition-2026-11-01-143431, adopting a new draft assessment 2026-11-01-operator-143431 (its standing waits for the blind panel).
+  reason: "Re-binds edition-2026-11-01-143005 and its assessment to the ledger as it now stands. After that stamp, the quote check found that two new evidence records named only the first page of passages that run across pages (PIPE-E224, PIPE-E226); their locators now give the full page ranges. The ledger's hash changed with them, so the edition and assessment stamped minutes earlier would read as judging a superseded ledger. The judgment and the article are unchanged from that edition, whose rationale gives this session's changes: the pretrial order fixing the February 16, 2027 trial, the defense's dispute of the records the government says clear the former officer (PIPE-C090), the polygraph opinion both sides state (PIPE-C089), and PIPE-C088 and PIPE-C084 reworded at the review of #133."
+  actor: operator (claude-opus-5-5), session 2026-11-01-session-site-141624
+  runId: 2026-11-01-session-site-141624
+  promptVersion: charter@81ea30c
+  aiAssisted: true
+  kind: content
