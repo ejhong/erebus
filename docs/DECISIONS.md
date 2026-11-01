@@ -551,3 +551,44 @@ request and at the head of the next session's `status`; it is data and
 decides nothing. An engine pull touches the founder's files by its nature,
 so it merges by the founder's hand.
 
+
+## 2026-10-28 — The quote check's hold is a round, pulled
+
+The upstream now records a quote check's hold as a review round that the
+operator answers (its decisions log, 2026-10-28, "The quote check's hold is
+a round the operator answers"; ejhong/aletheia#474). The engine pulled here
+carries that change. Two of this site's changes were held that way and
+never answered: the planner read each as "not yet reviewed", and the next
+session opened the same case beside it.
+
+- **#135** quoted the Cell article on the market's wildlife by its DOI.
+  Elsevier's hop from that DOI answers HTTP 200 with a page that only
+  redirects, whose whole text is "Redirecting", and the reader took it for
+  the article.
+- **#137** quoted the Molecular Biology and Evolution article on the deleted
+  sequences from Europe PMC's text, carrying "()" where that text dropped
+  two citations. The review's machine reads the DOI through an open copy,
+  and from here the fallback gave the bioRxiv preprint once and the PMC page
+  the next time.
+
+By the founder's direction (2026-10-28, in session), both were closed with
+their branches kept, and the spend of #135, #137 and #138 was carried to
+main (#139). Sessions are paused until 1 November. #138, held by the
+reviewers for a harm, stays open in the answer loop.
+
+The pulled engine changes four things here:
+
+- The hold is answered like a harm, and the operator's last check reads
+  every source fresh.
+- A failure names the text the check read.
+- The reader retries a busy server once, survives a slow download, treats a
+  page that only redirects as a hop, and keeps the words of author-year
+  citations in Europe PMC's text.
+- A Wayback capture of a source's own address, named as its `archivedUrl`,
+  is read for a passage the live page lacks.
+
+The check is no weaker: every passage must still be found word for word in
+a text of the cited document. The fallback can still read a preprint for a
+published article, and the operator answers that by giving the source the
+address of the text it quoted. An engine pull touches the founder's files
+by its nature, so it merges by the founder's hand.
