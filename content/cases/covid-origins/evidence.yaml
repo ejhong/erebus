@@ -1091,14 +1091,14 @@
   direction: supports
   strength: moderate
   sourceStatement: >-
-    From the abstract: "Only one of the fourteen samples with at least a
-    fifth of the chordate mitochondrial material from raccoon dogs contains
-    any SARS-CoV-2 reads, and that sample only has 1 of ~200,000,000 reads
+    From the abstract: "14 samples have > 20% of their chordate mitochondrial
+    material from raccoon dogs, but only one of these samples contains any
+    SARS-CoV-2 reads, and that sample only has 1 of ∼ 200,000,000 reads
     mapping to SARS-CoV-2. Instead, SARS-CoV-2 reads are most correlated
     with reads mapping to various fish, such as catfish and largemouth
     bass." From the Results: "There is a negative correlation between the
     abundance of SARS-CoV-2 and mitochondrial material from raccoon dogs and
-    hoary bamboo rats and at most a weak positive correlation for other
+    hoary bamboo rats, and at most a weak positive correlation for other
     susceptible species thought to have been sold live at the market."
   editorInference: >-
     This counts something the papers it answers did not: how much viral
@@ -1110,7 +1110,7 @@
     animals were uninfected, and it does not dispute that animal and viral
     material occur together in the wildlife-stall samples; what it bears on
     is the inference from that co-occurrence to infection (COV-E037).
-  exactLocator: "Virus Evolution 9(2):vead050 — Abstract; Results, section on correlations between SARS-CoV-2 and species composition"
+  exactLocator: "bioRxiv preprint 10.1101/2023.04.25.538336, version posted 3 May 2023: p. 1 (Abstract); p. 5 (Results, correlations between SARS-CoV-2 and species composition)"
   limitations:
     - "The same Chinese CDC environmental dataset the surveillance paper and the stall reanalysis use: a third reading of one evidence stream, not independent data."
     - "The author states the measured composition depends on the reference genomes used, and that the absence of association does not disprove infected animals at an earlier date."
@@ -1140,7 +1140,7 @@
     disputes what that co-occurrence licenses. That qualifies the claim's
     weight in the market account rather than undermining the observation;
     the measurement it rests on is COV-E033.
-  exactLocator: "Virus Evolution 9(2):vead050 — Abstract"
+  exactLocator: "bioRxiv preprint 10.1101/2023.04.25.538336, version posted 3 May 2023: p. 1 (Abstract)"
   limitations:
     - "The same Chinese CDC environmental dataset as COV-E005 and COV-E033; not independent data."
     - "The co-detection paper's own authors had already said the data cannot show which species was infected (COV-E005), so this narrows a reading the original authors did not themselves make."

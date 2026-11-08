@@ -477,14 +477,22 @@
   year: "2023"
   sourceType: paper
   identifier: "Virus Evolution 9(2):vead050; DOI 10.1093/ve/vead050; published 24 August 2023; preprint bioRxiv 10.1101/2023.04.25.538336"
-  url: "https://doi.org/10.1093/ve/vead050"
+  url: "https://www.biorxiv.org/content/biorxiv/early/2023/05/03/2023.04.25.538336.full.pdf"
   verification: ai_verified
   verificationNote: >-
-    Full text read 2026-10-27 through the site's reading tool from the
-    open-access PubMed Central copy (PMC11314060, CC BY 4.0), which the
-    publisher's DOI resolves to through OpenAlex; the abstract, the Results
-    passage on raccoon-dog samples and the Discussion passage on what the
-    analysis can and cannot show are quoted from it.
+    Full text first read 2026-10-27 through the site's reading tool from the
+    open-access PubMed Central copy of the published article (PMC11314060,
+    CC BY 4.0). By 2026-11-08 PubMed Central served the reading tool only a
+    bot-challenge page, and the publisher's DOI resolved instead to the
+    bioRxiv preprint posted 3 May 2023, whose wording differs in small ways
+    from the passages first quoted from the published copy. The record's
+    address is therefore that preprint, the text every quotation from this
+    source is now taken from, read 2026-11-08 at p. 1 (Abstract) and p. 5
+    (Results). Its figures (14 raccoon-dog-rich samples, one with any viral
+    reads, 1 of about 200,000,000 reads) and its conclusions match those
+    first quoted from the published copy; the published article is not
+    re-read here, and its own wording should be quoted only from a copy of
+    it that the check can read.
   reliabilityNotes:
     - "A single-author reanalysis of the same Chinese CDC metagenomic data that the surveillance paper and the wildlife-stall reanalysis use: a different reading of one evidence stream, not new data."
     - "The author is among the most prominent scientists to have argued publicly that a laboratory origin deserved investigation; the paper is read here for its measurements, which are reproducible from a published pipeline, not for its author's position."
