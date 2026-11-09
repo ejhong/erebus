@@ -1,0 +1,15 @@
+# Review of #140, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 140
+title: "Engine pull: the quote check's hold is a round the operator answers (aletheia#474)"
+url: https://github.com/ejhong/erebus/pull/140
+outcome: merged
+outcomeAt: 2026-11-01T18:40:40Z
+cases: []
+rounds:
+  - commit: 0bff4897f37cbc6e7a21f50bfdfc1845777dab3b
+    date: 2026-10-28
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: founder_files (the mechanical check)"
+    seats: []
+harvestedAt: 2026-11-09T17:40:34.680Z

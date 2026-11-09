@@ -1,0 +1,94 @@
+# Review of #138, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 138
+title: "COVID origins: the published challenge to the market co-detection enters the ledger, and the June 2026 declassification is read for what it does and does not contain"
+url: https://github.com/ejhong/erebus/pull/138
+outcome: closed
+outcomeAt: 2026-11-09T17:27:58Z
+cases:
+  - covid-origins
+rounds:
+  - commit: 6ed6c51711fc0fab4ce32c88c24ac99daea040a1
+    date: 2026-10-27
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: living_person (GPT-5.6 Sol (OpenAI))"
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm:
+          kind: living_person
+          where: SRC-ODNI-RELEASE-2026-STATEMENT title and COV-E035 sourceStatement
+          why: These fields unnecessarily republish ODNI’s unadjudicated accusations against the named, uncharged living former official, even though only the announcement’s institutional claim about origin is relevant. Retitle the source neutrally and quote or paraphrase only the origin language, omitting the person’s name and alleged conduct.
+        notes:
+          - "COV-E036 and the article’s declassification section: replace claims that the release itself contains no document naming a progenitor, incident, or infected worker with the narrower finding that no indexed title identifies one. An index cannot establish the contents of Parts 2–4, which the operator has not read."
+          - "COV-E033/COV-C006 and the section “What counting the virus did”: classify Bloom’s result as qualifying, not undermining, the atomic co-detection claim; it challenges the inference from co-detection to infection, not whether animal and viral material co-occurred. Also narrow “correlates not with susceptible mammals” to the paper’s actual result: negative for raccoon dogs and hoary bamboo rats and at most weakly positive for other susceptible species."
+          - "Assessment steelman: correct and source the statement that every previously identified coronavirus spillover arose through wildlife trade. MERS and documented laboratory-acquired SARS infections make that reference class untenable as written; distinguish the SARS-CoV-1 market precedent, known laboratory outbreaks, and the narrower absence of a confirmed pandemic initiated by research activity."
+        summary: The change materially improves the case by adding a directly relevant published challenge and reply concerning the market metagenomic evidence, updating the June 2026 declassification record, and fixing the earlier mismatched claim link. It presents the central scientific disagreement more candidly and preserves the appropriately provisional overall judgment. Publication should nevertheless wait until the unnecessary repetition of accusations against a named uncharged living person is removed.
+        cost:
+          inputTokens: 26662
+          outputTokens: 3778
+          usd: 0.182208
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - "In SRC-ODNI-RELEASE-2026-INDEX verificationNote and COV-E036 limitations, clarify the note on post-release dates: 2026-07-26 is post-release (June 18, 2026), but 2026-05-03 precedes it; explain if the latter was cited merely as a typo for 2026-03-05 rather than an impossible date."
+          - In the article section 'What counting the virus did to the co-detection', ensure the inline text links or directly references COV-E005 and COV-C006 alongside COV-C020 so readers navigating the claim graph see the direct evidential tension.
+          - Pursue COV-R009 via OCR or an open-records request to verify the text, scope, and evidentiary basis of the May 2020 Lawrence Livermore report rather than relying on its catalog title.
+        summary: This change significantly improves the COVID origins case by incorporating the published 2023 *Virus Evolution* metagenomic exchange (Bloom and Débarre), which directly qualifies the market co-detection evidence. It also analyzes the June 2026 ODNI declassification release with rigorous epistemic discipline, recording what the index does and does not contain without overclaiming, and fixes the mislinked sentence on laboratory holdings identified in earlier review notes.
+        cost:
+          inputTokens: 28902
+          outputTokens: 2834
+          usd: 0.032304
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "COV-R009 / SRC-ODNI-RELEASE-2026-PART1: obtain a text-bearing copy (OCR or other) of the May 2020 LLNL report and promote or rewrite COV-C022 from the title-only provisional reading once the body, confidence language, and redactions are actually read."
+          - "SRC-ODNI-RELEASE-2026-INDEX and Parts 2–4: read the unread parts of the June 2026 release against the index so COV-E036’s ‘no progenitor / incident / infected worker’ finding rests on the full release, not the index plus a partial Part 1 sample."
+          - "Assessment / COV-C006: with COV-E033 and COV-E034 now in the ledger, run a cold re-grade of COV-C006’s diagnosticity (and whether COV-E005 remains the single most load-bearing record) rather than only restating the prior verdict."
+        summary: The change brings in the Bloom–Débarre metagenomic exchange that directly challenges the market co-detection inference, records the June 2026 ODNI release for both its lab-origin announcement and what its index actually lacks, fixes the COV-C013 mislink, and restates the case at provisionally_supported with an explicit steelman. New claims and evidence are narrowly scoped to what was read, with unread scanned pages left provisional and researched. That leaves the page more current, fairer to the strongest objection on its load-bearing thread, and clearer about official position versus evidence, without dropping anything true.
+        cost:
+          inputTokens: 27173
+          outputTokens: 354
+          usd: 0.056585
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - "Terminology drift between the paraphrase and the quotation: the COV-C020 verdict text and the article say 'at least a fifth of the vertebrate (mitochondrial) DNA,' while COV-E033's quoted source text says 'a fifth of the chordate mitochondrial material.' The mechanical quote check will pass because the quotation is verbatim, but the article's paraphrase should use the source's own term (chordate mitochondrial material) so a reader comparing them sees no discrepancy."
+          - COV-E036 links the release index to COV-C018 (BSL-2 work at the institute) alongside COV-C022, but neither the sourceStatement nor the editorInference explains what in the index bears on the biosafety-claim — the LLNL report's title concerns modification conditions, not biosafety practice. Either add a sentence grounding that link or drop COV-C018 from claimIds.
+          - The statement source (SRC-ODNI-RELEASE-2026-STATEMENT) is read from archive.dni.gov because the live page renders by script; since the archive copy is the only readable locator, submit the live URL to the Wayback Machine as well (as was done for the Kirk case's Information source), so a future session can re-verify the quoted announcement text if the archive copy moves.
+        summary: "The change brings the dormant covid-origins case current: it enters the published Bloom/Débarre exchange on the market co-detection as two evidence records and a featured claim, reads the June 2026 declassification for what its index does and does not contain (grading the Livermore report from its title only, and honestly saying so), files the releasing office's announcement as a dated position of an interested institution, fixes the COV-C013 mislink two reviewers flagged, and restates the judgment unchanged with a new steelman. The additions are attributed, their limits stated, and what could not be read is marked rather than graded. Article growth is mostly earned substantive content; the site is more accurate, better evidenced, and more current, with nothing true lost."
+        cost:
+          inputTokens: 28093
+          outputTokens: 2421
+          usd: 0.005424
+  - commit: f2ae0c15a194b812a1ec1c232e148d82c2be4a95
+    date: 2026-11-02
+    protocol: review-v1
+    outcome: hold
+    reason: "held until answered: the quote check failed (2 failures)"
+    seats: []
+    checks:
+      - 'covid-origins COV-E033: quoted passage not found in the text of SRC-BLOOM-2023 (read from https://doi.org/10.1093/ve/vead050 (open-access copy via OpenAlex: https://www.biorxiv.org/content/biorxiv/early/2023/05/03/2023.04.25.538336.full.pdf), 73,513 characters): "Only one of the fourteen samples with at least a fifth of the chordate mitochondrial material from raccoon dogs contains any SARS-CoV-2 reads, and that sample o"'
+      - 'covid-origins COV-E033: quoted passage not found in the text of SRC-BLOOM-2023 (read from https://doi.org/10.1093/ve/vead050 (open-access copy via OpenAlex: https://www.biorxiv.org/content/biorxiv/early/2023/05/03/2023.04.25.538336.full.pdf), 73,513 characters): "There is a negative correlation between the abundance of SARS-CoV-2 and mitochondrial material from raccoon dogs and hoary bamboo rats and at most a weak positi"'
+  - commit: aac7b65765847716f78e01d6e1f00afc9483d760
+    date: 2026-11-08
+    protocol: review-v1
+    outcome: hold
+    reason: "held until answered: the quote check failed (3 failures)"
+    seats: []
+    checks:
+      - "covid-origins COV-E033: the text of SRC-BLOOM-2023 could not be read (HTTP 429); a record whose text cannot be read enters as provisional, with the route to the text"
+      - "covid-origins COV-E037: the text of SRC-BLOOM-2023 could not be read (HTTP 429); a record whose text cannot be read enters as provisional, with the route to the text"
+      - "covid-origins COV-E034: the text of SRC-DEBARRE-2023 could not be read (HTTP 403); a record whose text cannot be read enters as provisional, with the route to the text"
+harvestedAt: 2026-11-09T17:40:34.680Z

@@ -1,0 +1,110 @@
+# What operator session 2026-11-09-session-site-172759 did, as its trace recorded it: the digest the workflow made on the session's machine
+# (src/engine/trace.ts), checked here (src/engine/session.ts). The session's own account of its work is its log.
+version: 1
+ended: success
+model: claude-opus-5-5
+permissionMode: dontAsk
+turns: 82
+minutes: 10.1
+usd: 3.2242
+compactions: 0
+unreadableLines: 0
+tools:
+  - tool: Read
+    calls: 24
+    failed: 0
+    refused: 0
+  - tool: Bash
+    calls: 22
+    failed: 0
+    refused: 4
+  - tool: Grep
+    calls: 12
+    failed: 0
+    refused: 0
+  - tool: Edit
+    calls: 10
+    failed: 1
+    refused: 0
+  - tool: WebSearch
+    calls: 7
+    failed: 0
+    refused: 0
+  - tool: Glob
+    calls: 2
+    failed: 0
+    refused: 0
+  - tool: ToolSearch
+    calls: 1
+    failed: 0
+    refused: 0
+  - tool: WebFetch
+    calls: 1
+    failed: 0
+    refused: 0
+  - tool: Write
+    calls: 1
+    failed: 0
+    refused: 0
+commands:
+  - command: node scripts/site.ts read
+    calls: 8
+    failed: 0
+    refused: 1
+  - command: ls
+    calls: 3
+    failed: 0
+    refused: 1
+  - command: sed
+    calls: 3
+    failed: 0
+    refused: 0
+  - command: grep
+    calls: 2
+    failed: 0
+    refused: 1
+  - command: node scripts/site.ts archive
+    calls: 2
+    failed: 0
+    refused: 0
+  - command: cat
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: git checkout
+    calls: 1
+    failed: 0
+    refused: 1
+  - command: git status
+    calls: 1
+    failed: 0
+    refused: 0
+  - command: node scripts/site.ts status
+    calls: 1
+    failed: 0
+    refused: 0
+fetched:
+  - host: nature.com
+    calls: 1
+    failed: 0
+read:
+  - source: usrtk.org
+    calls: 2
+    failed: 0
+  - source: (other)
+    calls: 1
+    failed: 0
+  - source: archive.dni.gov
+    calls: 1
+    failed: 0
+  - source: dni.gov
+    calls: 1
+    failed: 0
+  - source: globalnews.ca
+    calls: 1
+    failed: 0
+  - source: nature.com
+    calls: 1
+    failed: 0
+filesEdited: 3
+repeatedFailures: 0

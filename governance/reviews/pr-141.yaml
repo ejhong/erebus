@@ -1,0 +1,72 @@
+# Review of #141, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 141
+title: "J6 pipe bombs: the trial date now set by court order; the defense disputes the records the government says clear the former officer, and both sides state her polygraph result"
+url: https://github.com/ejhong/erebus/pull/141
+outcome: merged
+outcomeAt: 2026-11-01T15:00:16Z
+cases:
+  - january-6-pipe-bombs
+rounds:
+  - commit: 3564e448c6fbf632397694f7c429c251f44a9bcb
+    date: 2026-11-01
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "Article insider paragraph, synthesis, and PIPE-E223: avoid the categorical “courts do not admit polygraphs as evidence” and the stronger claim that this result “cuts against the government’s word.” Use the filing’s precise formulation—government says it is inadmissible as substantive evidence—and say the examiner’s opinion complicates the government’s “zero evidence” description without evidencing involvement."
+          - "PIPE-C090 assessment and the insider paragraph: change “sets no record of its own against them” to “does not publish or attach a contrary underlying record.” PIPE-E225 says the defense cites an apparent mismatch between summarized work records and raw badge data, so the current wording understates the record basis it asserts while correctly noting that readers cannot inspect it."
+          - "PIPE-R013 and SRC-PIPE-ECF96-DEFENSE-SUBPOENA-REPLY: read ECF No. 84 and pp. 9–18 of ECF No. 96 before treating the source review as complete, or state explicitly in R013’s status note that the answer rests on ECF No. 88 and only pp. 1–8 of No. 96."
+        summary: The change materially improves the live case by replacing a reported trial date with the court’s order, narrowing an outdated docket claim, and presenting the government’s clearance account alongside the defense’s documented dispute. The new polygraph material is carefully attributed, anonymized, and substantially caveated, though the narrative should be more exact about its legal and evidentiary significance and about what contrary records the defense invokes. Overall the page is more current, balanced, and grounded in primary filings.
+        cost:
+          inputTokens: 40669
+          outputTokens: 2420
+          usd: 0.211076
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Monitor the docket for the unarchived conflicts counsel report (due October 30) and the court's eventual ruling on the Rule 17(c) subpoena motions (PIPE-R012).
+          - "Prepare for the upcoming November motion milestones: the government's opposition to the suppression motion due November 13, and any motion in limine to exclude alternative-perpetrator evidence due November 20."
+          - If CourtListener continues returning HTTP 405 to automated fetchers, consider a documented fallback or API solution so procedural milestones and docket texts in active proceedings remain verifiable.
+        summary: This update incorporates Judge Ali's October 22 pretrial order setting the trial date for February 16, 2027, resolving previous reliance on press reports. It also updates the insider line of inquiry by reviewing the defense's renewed subpoena filings (ECF Nos. 88 and 96), documenting the defense's challenge to the government's video and work records, and noting both parties' statements regarding the November 2025 polygraph examiner's opinion. The former officer remains strictly unnamed in compliance with living-persons rules, reviewer feedback on PIPE-C084 and PIPE-C088 is resolved, and the overall evidentiary assessment remains balanced and provisionally supported.
+        cost:
+          inputTokens: 45900
+          outputTokens: 1467
+          usd: 0.039926
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "PIPE-C090 / PIPE-R012: when the subpoena ruling or native home-video file and badge data become public, replace the defense’s testing-only dispute with what those records actually show (or that production was denied), and close or narrow R012 accordingly."
+          - "PIPE-E224–E227 / research: ECF No. 84 (the April motion that ECF No. 88 incorporates) was not read separately—read it once available in RECAP so any additional dispute of the clearance records is not missed."
+          - "Article ‘Where the case stands’ / PIPE-C087: as soon as the conflicts counsel’s October 30 report or any waiver appears on the docket, replace the ‘not yet in the public archive’ line and drop the HTTP-405/docket-mirror caveat if the docket text can again be read."
+        summary: "The change brings the live Cole proceeding current from primary filings: the October 22 pretrial order fixing trial for February 16, 2027 and the November 20 alternative-perpetrator motions deadline; the conflicts order; and the defense’s dispute of the government’s clearance of the uncharged former officer, including both sides’ account of the polygraph opinion. C088 and C084 are reworded as prior review asked, R013 is answered, living-person handling keeps her unnamed and limits publication to attributed filing facts with low diagnosticity on the polygraph. For a truth-seeking reader the page is more current, better evidenced, and fairer to the insider alternative, with nothing true dropped and no publication harm identified."
+        cost:
+          inputTokens: 41839
+          outputTokens: 347
+          usd: 0.085875
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - C076 was narrowed from 'a native video file and other media from one person's phone on January 5, 2021, with that day's communications with a second person' to 'a native video file and other phone media from January 5, 2021'. If the cut specificity was borne by the mirrored docket, readers lose an accurate detail about what is actually subpoenaed; if it was cut for living-persons reasons (the 'second person' hint), record that reason in the claim's reasoning or a comment in claims.yaml, so the trim reads as a deliberate redaction rather than an accidental loss of accuracy.
+          - The footage bullet on camera 602/940 lost the clause explaining what the one measured clock check consists of ('camera 794... films the figure Baker's breakdown labels the bomber on the sworn route at 7:57:10'). 'Only camera 794's clock is checked, at one moment' tells the reader a check happened but not what it checked; carry that detail in PIPE-C063's reasoning or restore it in a later trim pass.
+          - The stamp ran before check-quotes and produced a superseded edition pair (143005). You flagged the engine fix for the founder; until it lands, make the session ordering self-enforced — run check-quotes on the final ledger before any stamp — and note it in docs/DECISIONS.md so the workaround does not depend on one session's memory.
+        summary: "The change brings the live Cole proceeding current from the court's own filings (pretrial order ECF 115, conflicts order ECF 114), opens the defense's dispute of the government's exoneration account as attributed claims C089/C090 with evidence E219–E228, and answers all four open review notes from #133 with two honestly reasoned rewordings. The polygraph and home-video material is published only as the filings state it, with her denial and the government's no-weight argument displayed beside it, the officer still unnamed, and private particulars withheld. Nothing true of consequence is lost, the superseded first stamp is disclosed rather than hidden, and every quotes, locators and checks are disclosed as run — so the page is more accurate, more current and fairer for a truth-seeking reader."
+        cost:
+          inputTokens: 42522
+          outputTokens: 5386
+          usd: 0.009071
+harvestedAt: 2026-11-09T17:40:34.680Z
