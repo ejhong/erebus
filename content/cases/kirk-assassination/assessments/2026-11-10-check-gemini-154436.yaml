@@ -1,0 +1,328 @@
+# Cross-model check run — an independent judge (Gemini 3.8 Flash (Google)), blind to all
+# prior assessments and to the editions (erebus check, check-v2; run 2026-11-10-check-kirk-assassination-154436).
+# role: check — never displayed as the case narrative; feeds the concurrence panel.
+# basis.ledgerHash is the ledger it judged. Append-only; NOT human reviewed.
+runId: 2026-11-10-check-gemini-154436
+producedBy: 2026-11-10-check-kirk-assassination-154436
+model: Gemini 3.8 Flash (Google) — independent check run via gemini-3.8-flash
+date: 2026-11-10
+promptVersion: check-v2
+humanReviewed: false
+role: check
+basis:
+  ledgerHash: 64811e57f324302450d7615bd35205ce327a0175a34f6f09b21dde110bd4040b
+caseAssessment:
+  verdict: provisionally_supported
+  components: []
+  loadBearing:
+    - KRK-C001
+    - KRK-C002
+    - KRK-C006
+    - KRK-C008
+    - KRK-C009
+  weakestLinks:
+    - KRK-C003
+    - KRK-C005
+    - KRK-C012
+    - KRK-C019
+  synthesis: >-
+    The public evidentiary record provides provisional support for the official
+    single-shooter account while revealing distinct structural boundaries where
+    public auditability ceases. Supporting the official framework is a
+    multi-channel convergence of physical, forensic, and behavioral evidence:
+    independent visual forensics and officer testimony confirm an individual
+    firing from the Losee Center roof and fleeing immediately post-shot
+    (KRK-C001); a .30-06 bolt-action rifle wrapped in a towel was retrieved
+    along the escape route (KRK-C002); the spent cartridge casing recovered in
+    the chamber was conclusively matched to that rifle (KRK-E067);
+    high-statistical DNA matches associate Tyler Robinson with the firearm,
+    ammunition, and rooftop screwdriver (KRK-C008); and sworn testimony
+    introduced extensive self-incriminating digital communications, texts, and
+    roommate disclosures (KRK-C009). Furthermore, the medical examiner's
+    findings and judicial bindover order establish a downward front-to-back
+    wound trajectory from an elevated distance of 415 feet (KRK-C006, KRK-E068),
+    completely undermining alternative mechanical hypotheses such as an
+    exploding microphone (KRK-C018) or pre-arranged diversions (KRK-C028,
+    KRK-C025).
+
+
+    Conversely, the case against full public validation rests on significant,
+    unclosed custody and forensic gaps. The toolmark examination of bullet
+    fragments recovered from the body was inconclusive, neither identifying nor
+    excluding the rifle (KRK-C004). An unresolved accounting discrepancy
+    persists between seven photographed fragments and four to five delivered to
+    the ATF (KRK-C005). The courtyard was excavated and paved four days
+    post-homicide without the lead investigator's authorization (KRK-C013), raw
+    video storage cards lack a documented custody transfer (KRK-C012), surrender
+    surveillance video was unpreserved (KRK-C026), and full autopsy radiology
+    and 12.1 terabytes of digital discovery remain sealed (KRK-C007, KRK-C019).
+    In sensitivity testing, the single evidence record whose removal would most
+    alter this case assessment is KRK-E013 (the DNA association linking Robinson
+    to the rifle and cartridges). If KRK-E013 were excised, the physical link
+    between the accused and the lethal weapon would depend on circumstantial
+    escape geometry and contested digital admissions, though the broader
+    single-shooter rifle verdict would narrowly survive via the cartridge match
+    (KRK-E067), trajectory metrics (KRK-E068), and roommate statements
+    (KRK-E015).
+  steelman: The recovered .30-06 spent cartridge casing was conclusively
+    individualized to the recovered rifle's chamber, directly linking the weapon
+    discarded along the rooftop escape path to the physical discharge on the
+    scene.
+claimAssessments:
+  - claimId: KRK-C001
+    verdict: established
+    reasoning: Enhanced visual forensics from independent media and dispatch camera
+      footage corroborate Officer Bagley's sworn testimony that an individual
+      was positioned on the Losee Center roof in a prone position and fled
+      within seconds of the gunshot. Shoe impressions, a forearm print, and
+      physical roof disturbances corroborate this observation. The strongest
+      opposing consideration is that Officer Bagley conceded on
+      cross-examination that he could not visually identify the rooftop subject
+      or discern what object was being held.
+    confidence: high
+  - claimId: KRK-C002
+    verdict: established
+    reasoning: Official agency releases and sworn preliminary hearing testimony
+      confirm the discovery of a towel-wrapped .30-06 bolt-action rifle in the
+      wooded area adjacent to the Losee Center along the suspect's flight path.
+      The firearm was recovered alongside compatible ammunition. The strongest
+      counter-consideration highlighted by the defense was the presence of
+      unrelated debris, including an empty holster near the courtyard and a .223
+      round on another roof, demonstrating scene complexity.
+    confidence: high
+  - claimId: KRK-C003
+    verdict: contradicted
+    reasoning: ATF toolmark examiner Karner explicitly testified at the preliminary
+      hearing that her analysis of the recovered bullet fragments was
+      inconclusive, meaning she could neither identify nor exclude the rifle.
+      This technical finding is reaffirmed in the filed ATF ballistics report.
+      The strongest opposing consideration is that the spent cartridge casing
+      recovered inside the rifle chamber was positively identified to the
+      weapon, which popular accounts frequently conflate with a bullet match.
+    confidence: high
+  - claimId: KRK-C004
+    verdict: established
+    reasoning: Sworn testimony from examiner Karner and the text of the ATF
+      ballistics report confirm that the toolmarks on the damaged bullet
+      fragments were insufficient for either source identification or source
+      exclusion. Ground-truth studies show that such inconclusive outcomes are
+      standard for severely fragmented projectiles. The strongest
+      counter-consideration is that defense filings initially emphasized the
+      lack of identification while omitting that the firearm was not excluded,
+      prompting judicial clarification.
+    confidence: high
+  - claimId: KRK-C005
+    verdict: established
+    reasoning: Examiner Karner testified under oath that while initial photographs
+      documented seven recovered bullet fragments, she received only four to
+      examine, and the filed report itemized five pieces (one jacket fragment
+      and four lead cores). As of August 2026, no public record reconciles the
+      missing fragments. The strongest opposing consideration is that routine
+      administrative practices—such as retention by the medical examiner,
+      separate biological packaging, or destructive testing—could account for
+      the difference without custody failure.
+    confidence: high
+  - claimId: KRK-C006
+    verdict: established
+    reasoning: The official autopsy findings entered into the preliminary hearing
+      record through Agent Hull's testimony classify Kirk's death as a homicide
+      resulting from a gunshot wound to the neck with retained projectile
+      fragments. This finding was further sustained in the court's bindover
+      order. The strongest counter-consideration is that the report was admitted
+      over defense objections under preliminary hearing rules without the
+      authoring pathologist testifying or being cross-examined.
+    confidence: high
+  - claimId: KRK-C007
+    verdict: contradicted
+    reasoning: The full medical documentation required for independent forensic
+      reconstruction—including scaled wound photography, comprehensive
+      radiology, tissue dissection logs, and fragment distribution maps—remains
+      restricted under court discovery and sealed filings. Only high-level
+      summaries and investigator testimony have entered the public domain. The
+      strongest counter-consideration is that essential descriptive elements,
+      such as the downward front-to-back trajectory and lack of an exit wound,
+      were recited in public proceedings.
+    confidence: high
+  - claimId: KRK-C008
+    verdict: well_supported
+    reasoning: Forensic testimony presented at the hearing established that DNA
+      profiles recovered from the rifle trigger, stock, towel, screwdriver, and
+      bedroom cartridges exhibited extremely high statistical support matching
+      Robinson. The court found this identity evidence substantial at bindover.
+      The strongest counter-consideration is that the ATF forensic biologist
+      conceded on cross-examination that secondary transfer remains
+      theoretically possible, and underlying electropherograms have not
+      undergone independent public review.
+    confidence: high
+  - claimId: KRK-C009
+    verdict: established
+    reasoning: Preliminary hearing exhibits and witness transcripts document
+      extensive incriminating admissions attributed to Robinson, including a
+      video interview of his roommate regarding a note, extracted text messages
+      citing Kirk's perceived hatred, and an engraved cartridge reading 'Hey
+      fascist catch'. These were formally admitted as exhibits. The strongest
+      counter-consideration is that the defense actively disputes the
+      admissibility, contextual meaning, and political attribution of these
+      statements for trial.
+    confidence: high
+  - claimId: KRK-C010
+    verdict: contradicted
+    reasoning: The publicized timeline anomalies do not demonstrate logical or
+      physical incompatibility with the official chronology. An individual
+      filmed off campus at 8:07 a.m. could easily travel to campus by car by
+      8:29 a.m., and the official record never asserted that the shooter
+      disassembled the rifle on the roof prior to flight. The strongest
+      counter-consideration is that law enforcement has not published a
+      continuous minute-by-minute surveillance audit covering Robinson's
+      pre-noon movements.
+    confidence: moderate
+  - claimId: KRK-C011
+    verdict: established
+    reasoning: Video documentation and public acknowledgments confirm that the TPUSA
+      event videographer removed the storage card from the rear camera within
+      four minutes of the shooting, well before law enforcement established
+      formal on-scene physical custody. This timeline is corroborated by both
+      commentator analysis and organization statements. The strongest opposing
+      consideration is that the videographer's stated motivation was protective
+      preservation rather than evidence tampering, providing the footage to
+      investigators that day.
+    confidence: high
+  - claimId: KRK-C012
+    verdict: contradicted
+    reasoning: The public evidentiary record establishes that law enforcement
+      received duplicate video files, downloadable links, and a flash drive, but
+      fails to document chain-of-custody receipts for all original camera SD
+      cards. Lead investigator Hull's testimony documented copies and digital
+      downloads, not original physical media. The strongest
+      counter-consideration is TPUSA spokesman Kolvet's public assertion that
+      the original cards were transferred to the FBI, though this is absent from
+      sworn inventories.
+    confidence: high
+  - claimId: KRK-C013
+    verdict: established
+    reasoning: Obtained facilities invoices and work orders demonstrate that UVU
+      ordered cleanup on September 11 and installed new pavers over the shooting
+      site by September 14, 2025. Lead investigator Hull testified under
+      cross-examination that he did not authorize this alteration and learned of
+      it through news reports. The strongest counter-consideration is that rapid
+      sanitation and remediation of biohazard scenes in heavily trafficked
+      public university areas is common facilities procedure.
+    confidence: high
+  - claimId: KRK-C014
+    verdict: established
+    reasoning: Text messages explicitly describing the loss of a $2 million annual
+      donor over refusing to deplatform Tucker Carlson, and stating donor
+      pressure left 'no choice' but to abandon the pro-Israel cause, were
+      authenticated on the record by TPUSA spokesman Andrew Kolvet. Multiple
+      recipients confirmed participation in the thread. The strongest
+      counter-consideration is that associates contextualized Kirk's remarks as
+      private emotional venting rather than a definitive operational rupture.
+    confidence: high
+  - claimId: KRK-C015
+    verdict: contradicted
+    reasoning: While acute financial and political disagreements existed between
+      Kirk and various donors, the public record contains no operational,
+      physical, or communicative bridge linking any donor, pro-Israel entity, or
+      foreign intelligence agency to the shooting. Denials by named figures like
+      Ackman remain unrebutted by physical evidence. The strongest opposing
+      consideration is that Kirk privately expressed acute anxiety over donor
+      retribution, creating a documented environment of severe hostility.
+    confidence: high
+  - claimId: KRK-C016
+    verdict: established
+    reasoning: In June 2026, Fourth District Judge Graf formally adjudicated Utah
+      County Deputy Attorney Chris Ballard in civil contempt for publicly
+      declaring to TMZ that the state possessed 'ample evidence' to prove guilt
+      beyond a reasonable doubt, violating explicit publicity orders. Sanctions
+      were imposed on the prosecution. The strongest counter-consideration is
+      that the judge simultaneously affirmed that the prosecution had a valid
+      right to publicly correct misleading reporting regarding the ballistics
+      results.
+    confidence: high
+  - claimId: KRK-C017
+    verdict: contradicted
+    reasoning: Documented institutional missteps—including uncoordinated courtyard
+      repaving, evolving initial press releases, and a prosecutor's publicity
+      violation—do not demonstrate intentional spoliation or systemic
+      evidentiary concealment. Empirical base-rate studies establish that rapid
+      site remediation is routine across public venues. The strongest opposing
+      consideration is that the UVU paving remains the sole case among
+      comparable venue analyses where physical alteration occurred absent
+      documented authorization from the lead investigator.
+    confidence: high
+  - claimId: KRK-C018
+    verdict: contradicted
+    reasoning: The hypothesis that an explosive device in Kirk's lapel microphone
+      caused the fatal trauma is contradicted by the medical examiner's report,
+      which documented a downward front-to-back wound track from 415 feet away
+      and 68 feet elevation, with projectile fragmentation against the cervical
+      spine. The alternative relies on unverified optical flow analyses of
+      compressed video. The strongest counter-consideration is the subjective
+      perception of the nearest eyewitness, who believed the shot sounded as
+      though it originated directly beside him.
+    confidence: high
+  - claimId: KRK-C019
+    verdict: contradicted
+    reasoning: "A comprehensive independent audit of the official case cannot be
+      executed on current public records due to multiple critical gaps: sealed
+      autopsy radiology and photographs, an unreconciled fragment count, missing
+      chain-of-custody logs for original event media, unpreserved surrender
+      video, and over 12 terabytes of unreleased digital discovery. The
+      strongest counter-consideration is that substantial sworn testimony,
+      ballistics summaries, trajectory measurements, and DNA statistics were
+      disclosed during the multi-day preliminary hearing."
+    confidence: high
+  - claimId: KRK-C025
+    verdict: contradicted
+    reasoning: Although the federal contract for miniaturized charges
+      (N0016425PJ538) and the fatal explosion at Accurate Energetic Systems are
+      verified historical events, no evidence links either event to Kirk's
+      death, UVU, or Robinson. Regulators identified over 100 severe safety
+      violations at the facility, and the device theory had already been
+      published weeks before the explosion. The strongest counter-consideration
+      is the unusual coincidence of an energetics contractor producing
+      anti-personnel charges suffering an explosion shortly after the killing.
+    confidence: high
+  - claimId: KRK-C026
+    verdict: established
+    reasoning: Official records request responses from the Washington County
+      Sheriff's Office confirm that surveillance footage from the area where
+      Robinson surrendered was allowed to auto-delete after a standard 30-day
+      retention schedule, was never preserved, and was not shared with
+      investigating agencies. The strongest counter-consideration is that the
+      sheriff's office stated Robinson never entered the secured jail intake
+      area where cameras were active, meaning relevant video depicting him may
+      never have existed.
+    confidence: high
+  - claimId: KRK-C027
+    verdict: established
+    reasoning: Former National Counterterrorism Center director Joe Kent stated
+      explicitly on the record during a published interview that his office was
+      instructed to cease evaluating potential foreign connections to Kirk's
+      assassination, attributing the directive directly to FBI Director Patel.
+      The strongest counter-consideration is that the FBI has not corroborated
+      Kent's account, and Kent himself noted that the stated operational
+      rationale was avoiding jurisdictional duplication that could compromise
+      trial proceedings.
+    confidence: high
+  - claimId: KRK-C028
+    verdict: contradicted
+    reasoning: Law enforcement investigations, court records, and Zinn's subsequent
+      guilty plea for obstruction and unrelated offenses reveal no evidence that
+      his spontaneous post-shot confession was coordinated with, funded by, or
+      known to the shooter. The claim of pre-arrangement stems entirely from
+      unsubstantiated media speculation. The strongest opposing consideration is
+      that Zinn explicitly stated to officers at the hospital that he yelled he
+      was the shooter specifically to divert attention and help the perpetrator
+      escape.
+    confidence: high
+  - claimId: KRK-C032
+    verdict: contradicted
+    reasoning: Far from being abandoned, DNA evidence from the rooftop screwdriver
+      was presented in detail during the July 2026 preliminary hearing, with
+      state and FBI forensic witnesses testifying under oath that Robinson's
+      profile was present alongside an elimination sample. The strongest
+      counter-consideration is that the screwdriver was omitted from the initial
+      charging Information on September 16, 2025, following Director Patel's
+      televised announcement, creating an initial appearance of exclusion.
+    confidence: high

@@ -911,3 +911,19 @@
   verificationNote: "Read in full through the site's reading tool on 2026-10-24; quotations verbatim from that text. The page's 'key points' box is not used."
   reliabilityNotes:
     - "Courtroom reporting of the October 23, 2026 pretrial conference; no transcript or minute entry was read. The parties' and the victim's representative's statements are their assertions."
+
+# ── the November 9 trial-scheduling ruling (session 2026-11-10-session-site-153450) ──
+
+- id: SRC-KSL-TRIAL-ORDER-2026
+  title: "Jury trial for Tyler Robinson scheduled to last 105 days in summer 2028"
+  authors: ["Emily Ashcraft"]
+  organization: "KSL.com"
+  year: "2026"
+  sourceType: webpage
+  identifier: "Posted November 9, 2026, 1:02 p.m.; updated 4:13 p.m."
+  url: "https://www.ksl.com/article/51644704/watch-schedule-to-be-set-at-tyler-robinson-hearing-may-include-jury-trial"
+  verification: ai_verified
+  verificationNote: "Read in full through the site's reading tool on 2026-11-10; quotations verbatim from that text. The page's machine-written 'key takeaways' box is not used. A Wayback capture was requested on 2026-11-10 and none was produced."
+  reliabilityNotes:
+    - "Courtroom reporting of a scheduling order the judge read from the bench on November 9, 2026; the written order, minute entry and transcript were not read. What the parties and the victim's representative said is their assertion."
+    - "Independence note (§3.10): a wire report of the same hearing (carried by Fox 13, read 2026-11-10) agrees on the June 21, 2028 start and the 105 days; it is not cited separately."

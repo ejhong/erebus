@@ -227,3 +227,12 @@
   promptVersion: charter@11bfaf7
   aiAssisted: true
   kind: housekeeping
+
+- date: 2026-11-10
+  change: New edition edition-2026-11-10-154133, adopting a new draft assessment 2026-11-10-operator-154133 (its standing waits for the blind panel).
+  reason: "Brings the case up to date with its proceeding after the November 9, 2026 ruling. The status paragraph said the judge would rule on the trial date on November 9. It now says what he ruled, as courtroom reporting describes the order he read from the bench: jury selection on June 21, 2028, 105 days reserved, a readiness hearing on April 11, 2028, the defense's 2029 date declined because no task had been identified that needed it, and the next hearing on January 14, 2027 (KRK-E076). As a reviewer of the last edition asked, the paragraph now says that the parties' proposed dates and the venue position come from reports of their filings, not from the filings themselves. The closing replaces the two proposals with the date set. To stay within the reader's budget, and as reviewers of the last two editions asked, the base-rate and organized-operation passages are shortened without changing what they report. The draft assessment adopted with this edition keeps every verdict; it corrects two passages of reasoning that still said no trial date was set."
+  actor: operator (claude-opus-5-5), session 2026-11-10-session-site-153450
+  runId: 2026-11-10-session-site-153450
+  promptVersion: charter@4c070a5
+  aiAssisted: true
+  kind: content
