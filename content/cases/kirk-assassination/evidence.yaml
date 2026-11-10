@@ -2173,18 +2173,59 @@
     is still considering whether to file a motion for a change of venue".
   editorInference: >-
     After the conference no trial date is set, and the two sides' dates
-    are about eighteen months apart. Trial is where the non-public
-    materials this case tracks — the autopsy record, the fragment inventory, the
-    original media — would be expected to be tested in public; on either
-    side's proposal that is more than a year away. Procedural status last
-    checked 2026-10-24.
+    are about eighteen months apart. Nothing in this record says when, or
+    whether, the non-public materials this case tracks — the autopsy
+    record, the fragment inventory, the original media — will be
+    disclosed or tested in public; what reaches a trial depends on rulings
+    on admissibility and sealing not yet made. Procedural status as of
+    2026-10-24; the November 9 ruling is KRK-E076.
   exactLocator: "Deseret News, October 23, 2026, opening paragraphs and the section 'Defense and prosecution argue over appropriate timeline for the trial'"
   limitations:
     - "Courtroom reporting; no minute entry or transcript was read."
-    - "The ruling due November 9 had not been made when this record was written."
+    - "The ruling due November 9 had not been made when this record was written; it is recorded in KRK-E076."
   reviewState: ai_extracted
   origin:
     ref: "operator session: news since the edition (pretrial conference)"
     extractedBy: "claude-opus-5-5 (operator, session 2026-10-24-session-site-115910)"
     runId: "2026-10-24-session-site-115910"
     date: "2026-10-24"
+
+- id: KRK-E076
+  title: "November 9, 2026: the judge sets jury selection for June 21, 2028, reserves 105 days, and declines the defense's 2029 date"
+  claimIds: [KRK-C019]
+  sourceId: SRC-KSL-TRIAL-ORDER-2026
+  direction: context
+  strength: weak
+  sourceStatement: >-
+    KSL reports that the judge set the trial "in an order he read from the
+    bench on Monday": "He said he has reserved 105 days for the trial, with
+    jury selection starting on June 21, 2028, at 9:30 a.m. in the Provo
+    Fourth District Courthouse." There will be "monthly pretrial
+    conferences, and by a hearing on April 11, 2028, they will determine if
+    attorneys will be able to be ready for the trial". He "did not set the
+    trial in 2029 as Robinson's attorneys suggested, saying there was no
+    task identified that required it to be another year later", and said:
+    "If missing evidence or expert work changes that assessment, counsel
+    can identify the task, its effect on trial, and the time needed." The
+    next hearing is "on Jan. 14, 2027 where attorneys will discuss a motion
+    prosecutors plan to file this week".
+  editorInference: >-
+    The trial now has a date, nineteen months away, with a readiness
+    hearing two months before it, so the date may yet move. The ruling is
+    about scheduling: it releases no record and says nothing about what
+    the evidence shows. The judge's words leave open that evidence is
+    still missing or expert work unfinished, but they are a condition he
+    set, not a finding that anything is missing. Nothing in this record
+    says when, or whether, the autopsy record, the fragment inventory or
+    the original media will be disclosed or tested in public. Procedural
+    status last checked 2026-11-10.
+  exactLocator: "KSL.com, November 9, 2026 (updated 4:13 p.m.), paragraphs on the order read from the bench, the schedule, the judge's reasons, and the next hearing"
+  limitations:
+    - "Courtroom reporting of an order read from the bench; the written order, minute entry and transcript were not read. The court's documents are sold through the Utah courts' Xchange service and were not bought; the County Attorney's case-updates page has posted nothing since August 11, 2026."
+    - "The motion the prosecution said it would file is not identified in the report."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: news since the edition (the November 9 trial-scheduling ruling)"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-11-10-session-site-153450)"
+    runId: "2026-11-10-session-site-153450"
+    date: "2026-11-10"

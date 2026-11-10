@@ -1,0 +1,15 @@
+# Review of #142, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 142
+title: "Engine pull: card dates, the quote check from the fork point, the published article before a preprint"
+url: https://github.com/ejhong/erebus/pull/142
+outcome: merged
+outcomeAt: 2026-11-02T19:31:24Z
+cases: []
+rounds:
+  - commit: cab2c4864b7870065fc7e1e4a8fe677e81e135d7
+    date: 2026-11-02
+    protocol: review-v1
+    outcome: hold
+    reason: "held for a harm until answered: founder_files (the mechanical check)"
+    seats: []
+harvestedAt: 2026-11-10T15:43:52.966Z
