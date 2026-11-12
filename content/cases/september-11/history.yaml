@@ -132,3 +132,12 @@
   promptVersion: charter@2401c9a
   aiAssisted: true
   kind: content
+
+- date: 2026-11-12
+  change: New edition edition-2026-11-12-160736, adopting a new draft assessment 2026-11-12-operator-160736 (its standing waits for the blind panel).
+  reason: "Answers the review of the last edition (#134). The claim that two men connected to Saudi government institutions helped two hijackers is split by man: the Kingdom leaves the first man's help with the hijackers' apartment undisputed, but denies that the second helped at all, and the court found the evidence on the second thinner. The first stays well supported (SEP-C022, narrowed); the second becomes a claim of its own (SEP-C031), graded provisionally supported on the court's description of a meeting, phone calls of unknown content, two witnesses and a photograph (SEP-E047), with the Kingdom's denial beside it (SEP-E048). The appeal's status now says what the record shows: no ruling was announced at the October 7 argument, and searches through November 12 located none; and an affirmance would let the claims go on toward trial without guaranteeing one. The opening no longer states the hijackers' identities, travel, financing and training as established beside the exhibits claim, which supports only that the exhibits were admitted and published; it attributes that account to the Commission and the prosecution and says the page has not examined the exhibits. Every other verdict is unch"
+  actor: operator (claude-opus-5-5), session 2026-11-12-session-site-155811
+  runId: 2026-11-12-session-site-155811
+  promptVersion: charter@a70a1b0
+  aiAssisted: true
+  kind: content

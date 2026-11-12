@@ -1,0 +1,20 @@
+runId: 2026-11-12-check-september-11-161134
+verb: check
+case: september-11
+date: 2026-11-12
+model: "panel: anthropic, openai, gemini, xai, venice"
+promptVersion: check-v2
+inputHash: dea396d5ed9e514e66713e43c0cb6339f9447e0a064730ea6cbc0ff32572bf13
+outcome: completed
+cost:
+  calls: 5
+  inputTokens: 243600
+  outputTokens: 168193
+  usd: 3.27944
+notes: 5 of 5 seat(s) installed
+wrote:
+  - content/cases/september-11/assessments/2026-11-12-check-opus-161134.yaml
+  - content/cases/september-11/assessments/2026-11-12-check-gpt-161134.yaml
+  - content/cases/september-11/assessments/2026-11-12-check-gemini-161134.yaml
+  - content/cases/september-11/assessments/2026-11-12-check-grok-161134.yaml
+  - content/cases/september-11/assessments/2026-11-12-check-glm-161134.yaml

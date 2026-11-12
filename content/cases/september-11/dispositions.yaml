@@ -37,3 +37,18 @@
   reopenIf: "The group publishes primary material — filed exhibits or documents — not otherwise available."
   by: "2026-10-22-session-site-125808"
   date: "2026-10-22"
+
+- key: "url:courtscast.com/second-circuit-hears-saudi-bid-end-911-litigation"
+  kind: source
+  disposition: excluded
+  observed: "Appeals Court Hears Saudi Bid to End 9/11 Litigation (Court Cast, October 8, 2026)"
+  reason: >-
+    Read 2026-11-12 while looking for a ruling on the appeal. A short,
+    unsigned report of the same October 7 argument the AP record already
+    carries (SRC-AP-2DCIR-ARGUMENT-2026); it reports no ruling and names no
+    filing. Its line that proceedings "may continue subject to the
+    appellate court's control" is its own gloss, and the district court's
+    stay order (SRC-SDNY-KSA-STAY-2025) is the record on that.
+  reopenIf: "It reports a ruling, with the opinion or order linked."
+  by: "2026-11-12-session-site-155811"
+  date: "2026-11-12"

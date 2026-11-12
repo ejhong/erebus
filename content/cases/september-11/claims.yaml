@@ -286,18 +286,38 @@
 
 # ── the Saudi file (strict living-persons handling) ─────────────────────
 
+# SEP-C022 read, until 2026-11-12, "Two men connected to Saudi governmental
+# institutions provided practical assistance to hijackers Nawaf al-Hazmi and
+# Khalid al-Mihdhar after their January 2000 arrival in Southern California."
+# The review of #134 (GPT-5.6 Sol) asked that the two men be split: the
+# Kingdom leaves the first man's help undisputed and denies that the second
+# helped at all, so one compound claim hid two different standings. SEP-C022
+# now carries the first man; SEP-C031 carries the second.
 - id: SEP-C022
   statement: >-
-    Two men connected to Saudi governmental institutions provided practical assistance to hijackers Nawaf al-Hazmi and Khalid al-Mihdhar after their January 2000 arrival in Southern California.
+    The first of two men connected to Saudi governmental institutions provided practical assistance to hijackers Nawaf al-Hazmi and Khalid al-Mihdhar after their January 2000 arrival in Southern California, including help with their apartment, its application forms and its lease.
   theme: saudi
   rung: observation
   claimType: historical
   reviewState: ai_extracted
   origin:
-    ref: "casework/september-11 digest — C24"
-    extractedBy: "Claude Fable 5 (Cursor cloud agent)"
+    ref: "casework/september-11 digest — C24; narrowed to the first man 2026-11-12 (review of #134)"
+    extractedBy: "Claude Fable 5 (Cursor cloud agent); narrowed by claude-opus-5-5 (operator, session 2026-11-12-session-site-155811)"
     runId: "case-sep11-launch-2026-08-26"
     date: "2026-08-26"
+
+- id: SEP-C031
+  statement: >-
+    The second of two men connected to Saudi governmental institutions, an imam, assisted hijackers Nawaf al-Hazmi and Khalid al-Mihdhar after their January 2000 arrival in Southern California.
+  theme: saudi
+  rung: observation
+  claimType: historical
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: SEP-C022 split by man, answering the review of #134"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-11-12-session-site-155811)"
+    runId: "2026-11-12-session-site-155811"
+    date: "2026-11-12"
 
 - id: SEP-C023
   statement: >-
@@ -311,7 +331,7 @@
     extractedBy: "Claude Fable 5 (Cursor cloud agent)"
     runId: "case-sep11-launch-2026-08-26"
     date: "2026-08-26"
-  dependsOnClaimIds: [ SEP-C022 ]
+  dependsOnClaimIds: [ SEP-C022, SEP-C031 ]
 
 # ── official conduct: the calibration anchor ───────────────────────────
 

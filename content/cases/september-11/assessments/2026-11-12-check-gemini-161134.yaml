@@ -1,0 +1,422 @@
+# Cross-model check run — an independent judge (Gemini 3.8 Flash (Google)), blind to all
+# prior assessments and to the editions (erebus check, check-v2; run 2026-11-12-check-september-11-161134).
+# role: check — never displayed as the case narrative; feeds the concurrence panel.
+# basis.ledgerHash is the ledger it judged. Append-only; NOT human reviewed.
+runId: 2026-11-12-check-gemini-161134
+producedBy: 2026-11-12-check-september-11-161134
+model: Gemini 3.8 Flash (Google) — independent check run via gemini-3.8-flash
+date: 2026-11-12
+promptVersion: check-v2
+humanReviewed: false
+role: check
+basis:
+  ledgerHash: 46ed6c3c6c724a29d8b116494703943256f257b7856c11ffb57cc3ed23077a46
+caseAssessment:
+  verdict: mixed
+  components: []
+  loadBearing:
+    - SEP-C001
+    - SEP-C002
+    - SEP-C003
+    - SEP-C005
+    - SEP-C011
+    - SEP-C012
+    - SEP-C015
+    - SEP-C018
+    - SEP-C020
+    - SEP-C022
+  weakestLinks:
+    - SEP-C004
+    - SEP-C009
+    - SEP-C010
+    - SEP-C013
+    - SEP-C014
+    - SEP-C016
+    - SEP-C017
+    - SEP-C019
+    - SEP-C021
+    - SEP-C023
+  synthesis: >-
+    Evaluating the September 11 evidentiary ledger reveals a sharp divergence
+    between maximalist alternative theories, which collapse under physical and
+    documentary scrutiny, and the official investigative narrative, which
+    contains acknowledged modeling gaps, statutory secrecy, and documented
+    transparency failures. On the physical and forensic record, hypotheses of
+    pre-planted demolition charges or exotic incendiaries in the Twin Towers and
+    WTC 7 are contradicted. Continuous seismic monitoring recorded no
+    pre-collapse explosive impulses; acoustic thresholds require that explosive
+    column-cutting charges generate 130 to 140 decibels at half a mile, yet no
+    such sounds exist on video recordings; and independent microscopy of
+    archived dust chips found an absence of elemental aluminum, ruling out
+    unreacted nanothermite. Similarly, theories of specific tactical
+    foreknowledge or stand-down orders are contradicted by extensive
+    declassified records and trial exhibits establishing that while systemic
+    analytical negligence and intelligence siloing occurred, actionable tactical
+    parameters were never held. Furthermore, the 2017 collapse of the Plasco
+    Building in Tehran demonstrated the physical reality of fire-induced
+    progressive collapse in a steel-framed high-rise.
+
+
+    Conversely, the conventional account cannot claim definitive closure because
+    critical elements remain unaudited or incomplete. For WTC 7, NIST measured a
+    2.25-second period of absolute free fall across eight stories, but its
+    explanatory sequence—fire-induced thermal expansion causing a girder to walk
+    off Column 79—cannot be independently audited or replicated because NIST
+    formally withheld 68,500 simulation files under a statutory public-safety
+    exemption, while zero physical structural steel from the building was
+    preserved for examination. For the Twin Towers, NIST explicitly conceded
+    that it never simulated progressive collapse propagation to the ground,
+    relying instead on static capacity comparisons. Genuine empirical anomalies
+    also persist: FEMA metallurgists documented severe high-temperature
+    sulfidation with intergranular eutectic melting on recovered steel and
+    requested a follow-up study that was never conducted; peer-reviewed
+    financial literature confirms statistically significant option volume spikes
+    consistent with informed trading, while the government's innocuous
+    trade-tracing remains classified; military officials presented air-defense
+    timelines contradicted by their own operations tapes; and undisputed
+    practical assistance was provided to two hijackers by a Saudi government
+    employee, leaving state institutional support an active subject of federal
+    litigation.
+
+
+    In sensitivity analysis, the single evidence record whose removal would most
+    alter this assessment is SEP-E008 (the Quick v. NIST memorandum opinion
+    upholding the withholding of 68,500 modeling files). If those files were
+    made public and successfully verified by independent structural engineers,
+    the case verdict would shift toward well_supported for the conventional
+    structural narrative. However, because NIST independently concedes the lack
+    of end-to-end progression modeling (SEP-E014), the permanent loss of WTC 7
+    forensic steel (SEP-E009), and unresolved Saudi civil litigation (SEP-E042),
+    the mixed verdict survives even without that single record.
+  steelman: WTC 7's measured 2.25-second free-fall descent across eight stories
+    requires simultaneous zero-resistance failure across all core and exterior
+    columns, a structural state that NIST's thermal-expansion walk-off model
+    cannot be independently audited to produce because NIST withheld its 68,500
+    simulation data files.
+claimAssessments:
+  - claimId: SEP-C030
+    verdict: established
+    reasoning: Official records of the United States District Court for the Eastern
+      District of Virginia establish that 1,202 exhibits were admitted into
+      evidence during the prosecution of Zacarias Moussaoui and subsequently
+      published online on July 31, 2006. The strongest opposing consideration is
+      that seven admitted exhibits remain classified or sealed, meaning public
+      access to the trial record, though extensive, is not complete.
+    confidence: high
+  - claimId: SEP-C001
+    verdict: established
+    reasoning: Both the preliminary FEMA performance study and NIST's final NCSTAR
+      1A investigation establish that WTC 7 caught fire following the collapse
+      of the North Tower, burned unfought for nearly seven hours due to severed
+      water mains, and suffered complete collapse at 5:20 p.m. The strongest
+      opposing consideration is that initial assessments attributed a
+      significant role to diesel fuel tanks, but subsequent detailed modeling
+      demonstrated office furnishings provided the dominant fuel load.
+    confidence: high
+  - claimId: SEP-C002
+    verdict: established
+    reasoning: NIST's final report explicitly incorporates a three-stage descent
+      analysis confirming that WTC 7's north face descended at gravitational
+      acceleration for approximately 2.25 seconds over roughly 32 meters (eight
+      stories), a revision adopted after public comment on the draft report. The
+      strongest opposing consideration is that free-fall acceleration
+      characterized only a discrete vertical segment of one exterior facade
+      rather than the simultaneous collapse of the building's entire internal
+      structural framework.
+    confidence: high
+  - claimId: SEP-C003
+    verdict: mixed
+    reasoning: NIST developed an extensive finite-element framework demonstrating
+      how thermal expansion at temperatures below 400 °C could walk the Floor 13
+      girder off Column 79 and trigger progressive collapse, a mechanism
+      supported generally by the 2017 Plasco Building fire collapse. However,
+      this sequence cannot be independently verified or replicated because NIST
+      withheld 68,500 simulation files under a public safety exemption, while no
+      physical structural steel was preserved to verify connection performance.
+      The strongest opposing consideration is that the thermal-expansion
+      mechanism rests on sound structural engineering principles and has not
+      been conclusively disproved by an auditable alternative model.
+    confidence: moderate
+  - claimId: SEP-C004
+    verdict: weakly_supported
+    reasoning: The University of Alaska Fairbanks study made its finite-element
+      model publicly available and demonstrated that simulated simultaneous
+      column failure can reproduce the observed exterior descent. However,
+      technical critiques established that the authors imposed column failure as
+      an arbitrary input rather than deriving it from fire dynamics, while using
+      a single static temperature field that ignored moving office fires. The
+      strongest opposing consideration is that the UAF report remains the only
+      publicly downloadable computational simulation package directly
+      challenging the federal investigation's mechanism.
+    confidence: moderate
+  - claimId: SEP-C005
+    verdict: established
+    reasoning: The memorandum opinion in Quick v. NIST confirms that the Director of
+      NIST issued a formal finding withholding 68,500 data files under 15 U.S.C.
+      § 7306(d) on the grounds that disclosing detailed collapse models could
+      jeopardize public safety, a determination upheld by a federal court in
+      2011. Because these files contain connection geometries, failure criteria,
+      and finite-element meshes, independent third-party reproduction of the
+      initiating collapse mechanism from published materials is precluded. The
+      strongest opposing consideration is that NIST released over 25,000 files
+      and published detailed qualitative descriptions of its methodology across
+      several technical volumes.
+    confidence: high
+  - claimId: SEP-C006
+    verdict: established
+    reasoning: NIST's official FAQ explicitly confirms that structural steel from
+      WTC 7 was removed from the site during emergency operations before NIST's
+      investigation commenced and could not be distinguished from tower steel
+      because it lacked unique markings. This permanent evidentiary loss
+      permanently foreclosed physical metallurgical examination of key
+      components, such as Column 79 or the Floor 13 seat. The strongest opposing
+      consideration is that rapid debris removal was driven by urgent emergency
+      rescue and clearing operations rather than deliberate spoliation.
+    confidence: high
+  - claimId: SEP-C007
+    verdict: established
+    reasoning: Appendix C of FEMA 403 documents severe high-temperature hot
+      corrosion and intergranular eutectic melting involving sulfur in two
+      recovered steel members from the WTC debris. The authors explicitly stated
+      that no clear source for the sulfur had been identified, noted that the
+      reaction could have occurred either before collapse or during prolonged
+      post-collapse smoldering in the debris pile, and recommended a follow-up
+      study that was never conducted. The strongest opposing consideration is
+      that gypsum wallboard in the debris pile provided an abundant mundane
+      source of sulfur under prolonged anaerobic heating, even though the
+      examining metallurgists did not evaluate that specific hypothesis.
+    confidence: high
+  - claimId: SEP-C008
+    verdict: established
+    reasoning: Contemporary broadcast recordings, interviews, and responder
+      testimonies verify that multiple witnesses near WTC 7 heard loud
+      explosion-like sounds and rhythmic thuds on September 11. Even NIST's
+      official documentation acknowledges that emergency responders reported
+      loud bangs around the building. The strongest opposing consideration is
+      that acoustic lay reports cannot discriminate explosive blasts from the
+      sounds of collapsing structural bays, failing electrical transformers,
+      falling debris, or diesel fuel tank ruptures.
+    confidence: high
+  - claimId: SEP-C009
+    verdict: contradicted
+    reasoning: NIST's acoustic modeling established that any explosive charge
+      capable of failing a critical column such as Column 79 would generate
+      sound levels of 130 to 140 decibels at a distance of half a mile. No such
+      deafening blast noises appear on audio tracks of video recordings of the
+      collapse, nor were blast-level sounds reported by witnesses along
+      unobstructed lines of sight. The strongest opposing consideration is that
+      acoustic propagation in dense urban environments can be muffled by
+      surrounding high-rise structures and high ambient emergency noise.
+    confidence: high
+  - claimId: SEP-C010
+    verdict: weakly_supported
+    reasoning: Proponents of deliberate demolition cite the 2.25-second free-fall
+      descent, the unverified sulfur corrosion anomaly, witness reports of
+      explosive sounds, and NIST's withholding of modeling data as an unresolved
+      evidentiary gap. However, the hypothesis is contradicted by the absence of
+      blast-level acoustics on audio recordings, the lack of pre-collapse
+      seismic spikes, and the insurmountable logistical obstacle of covertly
+      wiring an occupied skyscraper during seven hours of uncontrolled fire. The
+      strongest opposing consideration is that NIST's refusal to release its
+      numerical simulation files leaves the official fire initiation mechanism
+      formally unverified by independent parties.
+    confidence: high
+  - claimId: SEP-C011
+    verdict: established
+    reasoning: NIST NCSTAR 1 explicitly concludes that aircraft impacts, severe
+      multi-floor fires, and the widespread dislodgement of spray-applied
+      fireproofing together initiated the collapses of WTC 1 and WTC 2,
+      specifically noting the towers "likely would not have collapsed" had
+      insulation remained intact. This compound mechanism was derived from
+      physical impact modeling, fire dynamics simulations, and structural
+      analysis. The strongest opposing consideration is that the conclusion
+      relies on calibrated finite-element simulations rather than direct
+      empirical validation of dynamic impact stripping on structural components.
+    confidence: high
+  - claimId: SEP-C012
+    verdict: contradicted
+    reasoning: NIST's official FAQ explicitly confirms that the investigation did
+      not simulate the total top-to-bottom collapse progression of the Twin
+      Towers, asserting that propagation was readily explained by static and
+      dynamic capacity calculations showing the falling upper blocks overwhelmed
+      lower structural floors. While simplified momentum-balance and
+      energy-dissipation formulations exist in the academic literature, no full
+      numerical end-to-end structural simulation has ever been conducted. The
+      strongest opposing consideration is that simplified physical limit
+      analyses demonstrate the downward kinetic energy drastically exceeded the
+      dynamic plastic absorption capacity of the intact columns below.
+    confidence: high
+  - claimId: SEP-C013
+    verdict: contradicted
+    reasoning: Continuous seismic recordings from regional observatories showed no
+      impulsive pre-collapse signals that would indicate explosive detonations
+      prior to the collapse of either tower. Furthermore, the collapse sequences
+      initiated precisely within the aircraft impact and fire floors rather than
+      lower structural foundations, and dust characterization studies found no
+      chemical signatures of high explosives. The strongest opposing
+      consideration is NIST's admission in its FAQ that it never chemically
+      tested structural steel samples for explosive or thermite residues.
+    confidence: high
+  - claimId: SEP-C014
+    verdict: contradicted
+    reasoning: An independent micro-analytical investigation by MVA Scientific
+      Consultants examining archived dust from four New York sites demonstrated
+      that the red/gray chips consist of an epoxy resin containing iron oxide
+      and kaolin clay pigments, with zero elemental aluminum particles present.
+      Because thermitic materials require fine elemental aluminum to undergo an
+      aluminothermic reaction, the absence of elemental aluminum definitively
+      refutes the nanothermite claim. The strongest opposing consideration is
+      the 2009 Harrit et al. paper reporting low-temperature exotherms and
+      elemental aluminum, though that study was published under irregular
+      editorial circumstances using privately gathered samples without an
+      established chain of custody.
+    confidence: high
+  - claimId: SEP-C015
+    verdict: established
+    reasoning: Peer-reviewed econometric studies by Poteshman (2006) and Chesney et
+      al. (2015) independently established that put-option volume on United
+      Airlines and American Airlines immediately prior to September 11 was
+      statistically anomalous relative to historical baselines and consistent
+      with informed trading. Contemporary exchange records corroborate extreme
+      put-to-call volume ratios of 12:1 for United and 6:1 for American on dates
+      with no negative corporate news. The strongest opposing consideration is
+      that statistical volume anomalies measure deviations from market
+      expectations but cannot identify trading counterparties, motive, or
+      whether positions were part of broader hedging strategies.
+    confidence: high
+  - claimId: SEP-C016
+    verdict: weakly_supported
+    reasoning: While peer-reviewed econometrics demonstrates that pre-attack option
+      trading was statistically abnormal and consistent with informed trading,
+      official investigations by the SEC, FBI, and 9/11 Commission traced 95% of
+      the United Airlines puts to an institutional investor executing a paired
+      stock purchase and American Airlines trading to a newsletter fax. However,
+      because the underlying regulatory working files, trade tickets, and
+      investor identities remain classified or confidential, the public cannot
+      audit the government's innocuous explanations. The strongest opposing
+      consideration is that peer-reviewed false-discovery analyses identify
+      clusters of abnormal, unhedged trading across multiple affected airline
+      and banking tickers that the published official narrative never fully
+      addresses.
+    confidence: moderate
+  - claimId: SEP-C018
+    verdict: established
+    reasoning: The 9/11 Commission Report, the Joint Congressional Inquiry, and the
+      DOJ Inspector General's review confirm that US intelligence held
+      substantial threat intelligence—including the August 6 PDB, the Phoenix
+      flight-school memo, Moussaoui's arrest, and surveillance of Hazmi and
+      Mihdhar. These investigations simultaneously verified that none of these
+      disparate threads contained specific, actionable intelligence identifying
+      the time, targets, and operational methodology of the plot. The strongest
+      opposing consideration is that viewed in retrospective combination, the
+      intelligence pointed so heavily toward domestic aviation hijackings that
+      failing to synthesize it constituted an extraordinary systemic breakdown.
+    confidence: high
+  - claimId: SEP-C019
+    verdict: contradicted
+    reasoning: Exhaustive congressional inquiries, inspector-general audits, and the
+      public trial of Zacarias Moussaoui documented that intelligence and
+      military agencies suffered from profound bureaucratic siloing, poor
+      communication, and analytical lethargy, uncovering no evidence of
+      deliberate complicity or stand-down orders. The conspiratorial premise of
+      allowing the attacks requires an undetectable inter-agency conspiracy that
+      is directly contradicted by primary operational records and contemporary
+      intercepts. The strongest opposing consideration is the documented record
+      of official deception regarding air-defense timelines and post-collapse
+      air quality, which fuels persistent public distrust regarding agency
+      integrity.
+    confidence: high
+  - claimId: SEP-C020
+    verdict: established
+    reasoning: 9/11 Commission Staff Statement No. 17 and military audio tapes from
+      the NEADS operations floor confirm that aviation and air-defense officials
+      provided testimony and timelines that conflicted directly with recorded
+      evidence. Specifically, official timelines claimed Langley fighters were
+      scrambled in response to Flight 77 or Flight 93, whereas primary audio
+      logs proved the scramble was launched in pursuit of a phantom report that
+      the already-crashed American 11 was flying south. The strongest opposing
+      consideration is that military commanders maintained the inaccuracies in
+      early timelines stemmed from genuine operational chaos and the fog of war
+      rather than intentional perjury.
+    confidence: high
+  - claimId: SEP-C021
+    verdict: weakly_supported
+    reasoning: Multiple military personnel, including LTC Anthony Shaffer, testified
+      to recalling an Able Danger data-mining chart naming Mohamed Atta in 2000,
+      and a Senate committee chairman objected when the Department of Defense
+      blocked five witnesses from testifying. However, a DOD Inspector General
+      investigation examined the surviving 1999 Orion chart and found it
+      identified 53 terrorists in a Brooklyn cell without mentioning Atta,
+      concluding that witness recollections were inaccurate after primary
+      project data had been destroyed. The strongest opposing consideration is
+      that because the Defense Department destroyed the original project
+      analytical holdings, external investigators cannot definitively verify
+      what the destroyed data contained.
+    confidence: moderate
+  - claimId: SEP-C022
+    verdict: established
+    reasoning: Federal court filings in the consolidated civil litigation In re
+      Terrorist Attacks confirm that the Kingdom of Saudi Arabia did not dispute
+      that an employee connected to Saudi governmental institutions met
+      hijackers Nawaf al-Hazmi and Khalid al-Mihdhar in Southern California and
+      provided concrete assistance, including apartment paperwork and co-signing
+      their lease as guarantor. This assistance transitioned from an unvetted
+      lead in the Joint Inquiry's 28 pages to an undisputed factual finding in
+      federal court. The strongest opposing consideration is the employee's
+      assertion that his assistance was an act of personal Muslim charity rather
+      than an official, state-directed assignment.
+    confidence: high
+  - claimId: SEP-C031
+    verdict: provisionally_supported
+    reasoning: In August 2025, a federal district judge found credible evidence that
+      a second Saudi government employee, an imam assigned by the Ministry of
+      Islamic Affairs to the King Fahad Mosque, assisted the two hijackers,
+      citing an initial meeting, FBI photographs of them together, and frequent
+      phone contacts with the first employee around their arrival. However, the
+      evidence is acknowledged by the court to be thinner than that for the
+      first employee, phone call contents are unknown, the Kingdom flatly denies
+      assistance occurred, and the ruling is stayed pending interlocutory
+      appeal. The strongest opposing consideration is the Kingdom's absolute
+      denial of assistance and the imam's sworn testimony that he had no
+      recollection of meeting the hijackers.
+    confidence: moderate
+  - claimId: SEP-C023
+    verdict: unresolved
+    reasoning: The 9/11 Commission found no evidence that the Saudi government as an
+      institution or senior officials funded al-Qaeda, while expressly
+      acknowledging the likelihood that state-sponsored charities diverted
+      funds. In 2025, a federal judge found allegations that two low-level
+      employees acted within the scope of their employment in assisting future
+      hijackers legally sufficient to deny jurisdictional dismissal, but this
+      constitutes a preliminary threshold finding on legal sufficiency rather
+      than an adjudicated merits finding of state institutional complicity, and
+      proceedings are stayed on appeal. The strongest opposing consideration is
+      the district court's finding of a high probability that two Saudi
+      employees acted within their employment scope assisting future hijackers,
+      which plaintiffs argue reflects institutional policy.
+    confidence: moderate
+  - claimId: SEP-C024
+    verdict: established
+    reasoning: EPA Inspector General Report 2003-P-00012 established that the EPA
+      lacked sufficient empirical air-monitoring data when it issued blanket
+      assurances on September 18, 2001 that the air near Ground Zero was safe to
+      breathe. The report explicitly concluded that the White House Council on
+      Environmental Quality edited EPA press releases by adding reassuring
+      statements and deleting cautionary health warnings. The strongest opposing
+      consideration is that agency leadership argued the edited statements were
+      intended to maintain civil order and prevent mass panic in Lower Manhattan
+      while rescue efforts were ongoing.
+    confidence: high
+  - claimId: SEP-C017
+    verdict: contradicted
+    reasoning: Contemporaneous records and the full documentary context confirm that
+      Larry Silverstein was recounting a phone conversation with the FDNY
+      commander discussing the inability to contain the fire and the decision to
+      evacuate remaining firefighting personnel ("pull them"). Controlled
+      explosive demolition requires weeks of specialized structural cutting and
+      wiring that could not possibly be executed ad-hoc during seven hours of an
+      active emergency without water. The strongest opposing consideration is
+      that within specialized demolition terminology, the term "pull" can
+      colloquially refer to pulling down a weakened structure using heavy
+      machinery or cables.
+    confidence: high
