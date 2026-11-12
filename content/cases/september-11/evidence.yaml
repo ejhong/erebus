@@ -995,7 +995,9 @@
 
 - id: SEP-E030
   title: "Finding 20 of the withheld section, with the inquiry's own caveat"
-  claimIds: [SEP-C022, SEP-C023]
+  # SEP-C031 added 2026-11-12, when SEP-C022 was split by man: the finding
+  # speaks of "individuals" and bears on both.
+  claimIds: [SEP-C022, SEP-C031, SEP-C023]
   sourceId: SRC-28PAGES-2016
   direction: supports
   strength: moderate
@@ -1267,11 +1269,13 @@
     first criminal case for which a federal court has provided access to
     all exhibits online. The exhibits were posted on July 31, 2006."
   editorInference: >-
-    Establishes that a large body of the underlying evidence was tested in
-    adversarial proceedings with defense counsel and a judge, and is
-    publicly inspectable. This is why the authorship of the attacks is not
-    a live dispute on this site, and why the disputes that remain live are
-    the ones where no comparable adversarial test has occurred.
+    Establishes that a large body of the evidence for the prosecution's
+    account was admitted in adversarial proceedings with defense counsel
+    and a judge, and is publicly inspectable. It establishes the existence
+    and scope of that test, not the content of the exhibits: what they
+    show about the hijackers' identities, travel, financing and training
+    is not graded on this page record by record. The disputes this case
+    grades are the ones where no comparable adversarial test has occurred.
   exactLocator: "U.S. District Court, E.D. Va., trial-exhibits index for Criminal No. 01-455-A"
   limitations:
     - "Seven exhibits remain sealed."
@@ -1355,7 +1359,8 @@
     lead the inquiry itself declined to vouch for (SEP-E030) to a fact
     neither side disputes. It does not cover the second man, whose
     assistance the Kingdom denies; the court found the evidence on him
-    thinner ("less evidence") but credible.
+    thinner ("less evidence") but credible. His is a separate claim
+    (SEP-C031), with its own records (SEP-E047, SEP-E048).
   exactLocator: "ECF No. 11182, pp. 44–45 (§ V.E); the Kingdom's position on the second employee at p. 40"
   limitations:
     - "What a party leaves undisputed in a jurisdictional motion is a litigation position, not a published record; the deposition and exhibits behind it have not been read for this case."
@@ -1436,7 +1441,10 @@
     that decides liability. The Kingdom's explanations for the drawing —
     as the court records them, "common high school algebra and geometry
     texts" or a son's school assignment — are disputed facts of exactly
-    this kind.
+    this kind. The notepad was found in the first employee's home, not the
+    second's, and the drawing bears on the first man only: the court's
+    case for the second rests on other evidence (SEP-E047), as SEP-E041
+    and SEP-E042 keep the two men apart.
   exactLocator: "ECF No. 11182, pp. 39–45: the preliminary finding at p. 39; the Kingdom's explanations at p. 44; the notepad and the disputed facts at p. 45 (§ V.E)"
   limitations:
     - "The court's characterization of its own finding; its reach will be settled by the appeal and, if the case proceeds, by a trial."
@@ -1518,23 +1526,117 @@
     "Family members of victims of the Sept. 11 terrorist attacks packed a
     federal appeals courtroom in New York City on Wednesday as three judges
     heard arguments over whether legal claims against Saudi Arabia can
-    proceed." "They didn't say when they might rule on whether claims can
+    proceed." "The judges revealed through their questions that there are
+    still many legal issues to be decided in the lawsuit even though it has
+    dragged on for almost a quarter-century." "They didn't say when they might rule on whether claims can
     proceed to trial". The appeal "stemmed from an August 2025 ruling by
     U.S. District Judge George B. Daniels, who decided that the case could
     proceed in federal court, though he did not rule on the merits of the
     claims."
   editorInference: >-
-    The posture as of this record: the Second Circuit has heard the
-    Kingdom's appeal and has not ruled. Status last checked 2026-10-22.
-    The next ruling decides whether the claim reaches a trial at which the
-    evidence behind SEP-E042 would be tested and published; it is the
-    forcing mechanism this case has pointed to since it opened.
+    What this record shows is the posture on October 7, 2026: the Second
+    Circuit heard the Kingdom's appeal and announced no ruling. It does not
+    show the posture on any later date. Searches on 2026-10-22 and again on
+    2026-11-12 (news reports, the court's published decisions, and the
+    district court's docket mirror, whose pages refused the reading tool)
+    located no later ruling; that is a search that found nothing, not a
+    record that nothing exists. A reversal on immunity would end the claims
+    against the Kingdom. An affirmance would let them go on toward trial
+    without guaranteeing one: the same report says the judges' questions
+    showed "there are still many legal issues to be decided in the
+    lawsuit".
   exactLocator: "AP, October 7, 2026, opening paragraphs and closing paragraph"
   limitations:
     - "Reporting of an oral argument, not the court's docket; the docket number and the panel's composition are not taken from this record."
+    - "Dated October 7, 2026; any later status rests on the searches named in the inference, not on this record (SEP-R009)."
   reviewState: ai_extracted
   origin:
     ref: "operator session: the Saudi file brought up to date from the court record"
     extractedBy: "claude-opus-5-5 (operator, session 2026-10-22-session-site-125808)"
     runId: "2026-10-22-session-site-125808"
     date: "2026-10-22"
+
+# ── the Saudi file: the second man, apart from the first (added 2026-11-12) ──
+#
+# SEP-C022 was split by man on 2026-11-12 (review of #134). The opinion's
+# evidence on the second employee is set out separately from the first's,
+# with the Kingdom's denial beside it. Quotations are cut around his name.
+
+- id: SEP-E047
+  title: "The court's preliminary finding on the second man: less evidence, but credible"
+  claimIds: [SEP-C031]
+  sourceId: SRC-SDNY-KSA-OPINION-2025
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Although there is less evidence concerning" the second employee, "the
+    credible evidence supports the conclusion that" he "was working
+    together with" the first "to assist the hijackers." The court states
+    that "The evidence demonstrates that" he "met with the hijackers at the
+    mosque at least once soon after their arrival in the U.S." and that "he
+    had multiple phone calls with" the first employee "before the
+    hijackers' arrival, and in the month of January, 2000." It continues:
+    "Admittedly, there is no evidence as to the content of these calls.
+    But the timing of the phone calls, immediately prior and after the
+    hijacker's arrival, and their frequency tip the balance in Plaintiffs'
+    favor." And: "two witnesses testified that they saw" him "interact with
+    the hijackers on June 9, 2000 near the King Fahad Mosque", and "the FBI
+    agents possessed a photo of" him "and the hijackers taken in front of
+    the King Fahad Mosque." In its account of the background (p. 11), the
+    court states that he was employed by the "Office of the Ministry of
+    Islamic Affairs", and that the Kingdom and the ministry "assigned him
+    to serve as the imam of the King Fahad Mosque in Los Angeles,
+    California, when the mosque was opened in 1998."
+  editorInference: >-
+    The court's case for the second man is of a different kind from its
+    case for the first. For the first it had help the Kingdom does not
+    dispute (SEP-E041); for the second it had one meeting at the mosque,
+    phone calls whose content no one has, two witnesses to a later
+    encounter, and a photograph in the FBI's possession, and it said
+    itself that the evidence was thinner. It found that this tipped the
+    balance, at a stage where the Kingdom bore the burden. That supports
+    the claim that he assisted the hijackers, but less firmly than the
+    first man's undisputed help supports SEP-C022: the meeting and the
+    photograph place him with them; the inference that he was helping
+    rests on the timing of calls whose content is unknown.
+  exactLocator: "ECF No. 11182, pp. 11–41: his employment and post at p. 11 (background); the finding at p. 41 (§ V.D.3, tortious act)"
+  limitations:
+    - "A preliminary finding on jurisdictional facts by a preponderance; the court says it is not a merits decision (SEP-E043)."
+    - "The depositions, the phone records and the photograph are described in the opinion; this case has not read or seen them, and some may be under a protective order (SEP-R009)."
+    - "On interlocutory appeal; the Second Circuit may reverse on the law without reaching these findings, or disturb them."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: SEP-C022 split by man, answering the review of #134"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-11-12-session-site-155811)"
+    runId: "2026-11-12-session-site-155811"
+    date: "2026-11-12"
+
+- id: SEP-E048
+  title: "The Kingdom's position on the second man: he did not assist them"
+  claimIds: [SEP-C031]
+  sourceId: SRC-SDNY-KSA-OPINION-2025
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    The court records that the Kingdom argues that the second employee "did
+    not assist the hijackers" (p. 40), and that "KSA asserts that" he "did
+    not meet with the hijackers again in June 2000" (p. 41). It also
+    records his "failure to recall meeting the hijackers" (p. 41).
+  editorInference: >-
+    The denial of the party that employed him and holds his records, and
+    his own failure to recall, as the court reports them. They weigh what
+    an interested party's denial weighs, which by itself is little; they
+    are recorded because the Kingdom's account belongs beside the
+    plaintiffs', and because on this man, unlike the first, the Kingdom
+    contests the assistance itself and not only its purpose. The court
+    found the denial outweighed at the jurisdictional stage (SEP-E047)
+    without trying it.
+  exactLocator: "ECF No. 11182, pp. 40–41: the Kingdom's argument at p. 40; the June 2000 meeting and his failure to recall at p. 41"
+  limitations:
+    - "The Kingdom's position as the court summarizes it; the Kingdom's own briefs were not read (SEP-R009)."
+  reviewState: ai_extracted
+  origin:
+    ref: "operator session: SEP-C022 split by man, answering the review of #134"
+    extractedBy: "claude-opus-5-5 (operator, session 2026-11-12-session-site-155811)"
+    runId: "2026-11-12-session-site-155811"
+    date: "2026-11-12"

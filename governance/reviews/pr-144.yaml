@@ -1,0 +1,72 @@
+# Review of #144, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 144
+title: "Kirk: trial set for June 21, 2028 (the November 9 ruling); the assessment's stale \"no trial date\" reasoning corrected"
+url: https://github.com/ejhong/erebus/pull/144
+outcome: merged
+outcomeAt: 2026-11-10T16:05:32Z
+cases:
+  - kirk-assassination
+rounds:
+  - commit: 1ca92fd60e28ba663c6e7b696895fa1528b000d6
+    date: 2026-11-10
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "KRK-C019 and the new assessment synthesis: resolve the polarity mismatch between the article’s negative wording (“does not yet contain what an independent auditor would need”) and the synthesis saying that KRK-C019 is “defeated” by the listed gaps; complete the planned negative rewording and realign evidence directions and verdict language."
+          - "Article, “What would settle it”: replace “the court’s calendar promises no early release of what is missing” with the narrower finding that the scheduling order neither releases the missing records nor establishes when they may be disclosed. A June 2028 trial date does not itself support the prediction of no earlier release."
+          - "SRC-KSL-TRIAL-ORDER-2026 / KRK-E076: if expenditure is authorized, obtain the written scheduling order, minute entry, or transcript through Xchange and replace the secondary courtroom report as the controlling source while retaining the report for provenance."
+        summary: The change brings an active proceeding current with the reported June 21, 2028 jury-selection date, associated scheduling milestones, and corrected assessment reasoning that no longer says no trial date exists. It attributes the update to courtroom reporting, clearly records the absence of the primary order, and improves KRK-E075’s earlier overstatement about what trial would expose. A remaining unsupported prediction about disclosure timing and the pre-existing KRK-C019 polarity problem warrant correction, but the page is materially more accurate and current overall.
+        cost:
+          inputTokens: 27366
+          outputTokens: 2497
+          usd: 0.159404
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - Execute the planned pass rewording KRK-C019 into a clear atomic proposition with negative polarity and adjust the associated evidence direction classifications accordingly.
+          - Trim the overview article closer to the 2,500-word guideline in a dedicated editorial pass, focusing on condensing the ballistics inconclusive base-rate and venue alteration paragraphs.
+          - If primary docket records (the written scheduling order, minute entry, or written bindover order KRK-R015) can be obtained, upgrade KRK-E076 and KRK-R015 from secondary news reporting to the primary court filings.
+        summary: This change updates the Kirk assassination case to record the November 9, 2026 bench ruling setting jury selection for June 21, 2028, fixing stale 'no trial date' assertions across the assessment and overview article. It appropriately qualifies KRK-E075 in response to earlier review feedback and adds KRK-E076 with strict attribution to courtroom reporting. The updates preserve strict living-persons safeguards and leave the proceeding ledger accurate, current, and well-evidenced.
+        cost:
+          inputTokens: 30138
+          outputTokens: 891
+          usd: 0.025945
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "edition-2026-11-10-154133 / article: run the deferred polish pass to cut toward ~2,500 words, starting with the ‘What does inconclusive actually mean?’ paragraph and the custody base-rate paragraph (still ~450 over target after this update)."
+          - "KRK-C019: do the dedicated negative-rewording pass next (directions on the linked evidence, claim verdict text, article link phrasing, and a fresh assessment/panel), as both prior reviewers asked and this session correctly deferred."
+          - "KRK-E076 / SRC-KSL-TRIAL-ORDER-2026 and KRK-R015: if the founder authorizes Xchange purchases, replace the courtroom-report layer with the written scheduling order, minute entry, and unread bindover order; until then keep the current ‘not read / not bought’ limitations visible."
+        summary: The change records the November 9, 2026 bench scheduling order (jury selection June 21, 2028, 105 days, readiness hearing, next hearing) as KRK-E076 from attributed courtroom reporting, corrects the assessment and edition passages that still said no trial date was set, and qualifies KRK-E075’s overstated expectation that trial would publicly test the missing materials. Living-persons handling, attribution of proposals as reported filings, and explicit limits on unread Xchange documents are sound. For a truth-seeking reader the page is more current and accurate, with nothing true dropped; remaining work is polish, the deferred C019 reword, and primary court texts if obtainable.
+        cost:
+          inputTokens: 27850
+          outputTokens: 345
+          usd: 0.057885
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - KRK-E075 was amended in this session, but its origin block still records only the October 24 extraction (extractedBy claude-opus-5-5, runId 2026-10-24-session-site-115910); add a revision note or origin entry recording who changed the editorInference and limitations on 2026-11-10, so the provenance of the corrected inference is traceable like every other versioned record.
+          - SRC-KSL-TRIAL-ORDER-2026 is ai_verified with verbatim quotations but no Wayback capture could be produced; try archive.today or another independent capture (as was done for the Kirk Information source) so the quoted passages remain re-verifiable if the live page changes, and note in the verificationNote which fallback exists.
+          - The KRK-C019 negative rewording pass is correctly deferred, but it now touches a record (KRK-E076) added this session; when it runs, re-check that E076's context direction still fits the reworded claim, and let the planned polish session take the article the rest of the way to ~2,500 words starting with the 'What does inconclusive actually mean?' paragraph.
+        summary: "The change records the November 9 scheduling ruling from courtroom reporting (KRK-E076, with a new source and honest limitations about the paywalled court records), corrects stale 'no trial date' reasoning in KRK-E075 and the assessment that no longer matched the record, and answers the open reviewer notes from #136 — including qualifying E075's trial expectation and marking the parties' proposals as reported. Everything new is attributed, the wire copy is treated as one source, living-persons care is maintained, verdicts and grades are unchanged, and the trims preserve what the shortened passages reported. The site is more current and more accurate with nothing true lost; the residual work (C019 rewording, word-count trim, Xchange purchase policy) is properly queued."
+        cost:
+          inputTokens: 28766
+          outputTokens: 1700
+          usd: 0.005165
+harvestedAt: 2026-11-12T16:10:47.651Z

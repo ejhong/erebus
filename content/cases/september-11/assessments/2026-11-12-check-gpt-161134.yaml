@@ -1,0 +1,348 @@
+# Cross-model check run — an independent judge (GPT-5.6 Sol (OpenAI)), blind to all
+# prior assessments and to the editions (erebus check, check-v2; run 2026-11-12-check-september-11-161134).
+# role: check — never displayed as the case narrative; feeds the concurrence panel.
+# basis.ledgerHash is the ledger it judged. Append-only; NOT human reviewed.
+runId: 2026-11-12-check-gpt-161134
+producedBy: 2026-11-12-check-september-11-161134
+model: GPT-5.6 Sol (OpenAI) — independent check run via gpt-5.6-sol
+date: 2026-11-12
+promptVersion: check-v2
+humanReviewed: false
+role: check
+basis:
+  ledgerHash: 46ed6c3c6c724a29d8b116494703943256f257b7856c11ffb57cc3ed23077a46
+caseAssessment:
+  verdict: weakly_supported
+  components: []
+  loadBearing:
+    - SEP-C002
+    - SEP-C003
+    - SEP-C004
+    - SEP-C005
+    - SEP-C009
+    - SEP-C010
+  weakestLinks:
+    - SEP-C004
+    - SEP-C007
+    - SEP-C009
+  synthesis: >-
+    The case verdict applies to the featured hypothesis that WTC 7 was
+    deliberately demolished, not to every locally true observation in the
+    ledger. The starting observations are secure: WTC 7 burned for hours, was
+    not struck by an aircraft, collapsed completely, and its visible north face
+    underwent approximately 2.25 seconds of gravitational acceleration. Free
+    fall is therefore an established feature requiring explanation, but it is
+    not by itself diagnostic of demolition; the federal account places it after
+    internal failures had already removed support.
+
+    Steelmanning the hypothesis, the federal initiation sequence remains
+    materially unaudited. SEP-E004 supplies a specific thermal-expansion and
+    Column 79 mechanism, but SEP-E008 establishes that 68,500 modeling files
+    were withheld, preventing exact outside recomputation. The UAF study
+    reported that its fire scenarios did not reproduce the collapse and that
+    near-simultaneous column failure did. No identified WTC 7 steel survives for
+    direct examination, witnesses reported explosion-like sounds, and a limited
+    metallurgical study left an unusual sulfur-related corrosion phenomenon
+    unexplained. Together, these matters create a genuine evidentiary foothold
+    rather than a dispute manufactured solely from misunderstanding.
+
+    Steelmanning the opposing case, none of those points identifies a demolition
+    mechanism or demonstrates deliberate action. The UAF result is weakened by
+    its static temperature field, limited connection treatment, and the
+    criticism that simultaneous column removal was imposed as an input rather
+    than derived as a failure process. The sulfur-bearing samples lack secure
+    building provenance and may reflect post-collapse debris-pile heating.
+    Witness descriptions establish booms, not charges, while SEP-E012 predicts
+    that even the smallest charge capable of failing the critical column would
+    have produced blast-level sound absent from witness reports and recordings.
+    A documented fire-induced high-rise collapse elsewhere also defeats the
+    categorical prior that fire cannot produce total collapse, although it does
+    not validate the particular WTC 7 sequence.
+
+    The resulting attribution is weakly supported: the non-reproducible official
+    mechanism and challenger result sustain investigation, but the move from
+    “the published fire account is not independently established” to “deliberate
+    demolition occurred” remains unsupported by direct physical, acoustic, or
+    operational evidence. Other branches must not be pooled indiscriminately
+    into that inference. Tower collapse initiation is well supported even though
+    end-to-end modeling was not performed; anomalous trading is well supported
+    while attack foreknowledge is contradicted by the available trade tracing;
+    specific official foreknowledge is contradicted despite serious intelligence
+    failures; and documented EPA editing and inaccurate air-defense accounts
+    establish misconduct without establishing demolition. The Saudi evidence is
+    separately mixed and does not identify a WTC 7 mechanism.
+
+    Sensitivity is greatest to SEP-E008, the court record establishing the
+    withheld WTC 7 files. Removing it would substantially weaken the main reason
+    not to defer to the federal model, but the weakly_supported verdict would
+    survive because the UAF challenge, absent steel, and remaining mismatch
+    between an asserted sequence and an open reproduction would persist. The
+    verdict therefore does not hang on that record alone, though without it the
+    supporting case would be markedly thinner.
+  steelman: No open model in this ledger uses the original WTC 7 connection
+    details and time-varying fires to reproduce, in one auditable run, the
+    Column 79 initiation, observed exterior motion, and 2.25-second free-fall
+    interval; the federal files needed to check its claimed reproduction remain
+    withheld, while identified WTC 7 steel is unavailable for a physical
+    cross-check.
+claimAssessments:
+  - claimId: SEP-C030
+    verdict: established
+    reasoning: SEP-E038 directly quotes the federal court's exhibit index stating
+      that 1,202 exhibits were admitted and all but seven were posted on July
+      31, 2006. The strongest qualification is that the ledger has not inspected
+      the individual exhibits, but the claim concerns their number and
+      publication rather than their contents.
+    confidence: high
+  - claimId: SEP-C001
+    verdict: well_supported
+    reasoning: SEP-E001 directly records almost seven hours of fires followed by
+      total collapse, while SEP-E002 corroborates the lack of manual
+      firefighting and the impaired water supply. The strongest opposing
+      consideration is that “no water available” is more absolute than FEMA's
+      statement that on-site water appeared limited, but the operational
+      result—no manual firefighting—is supported.
+    confidence: high
+  - claimId: SEP-C002
+    verdict: established
+    reasoning: SEP-E003 states the federal investigation's measured 2.25-second
+      interval of gravitational acceleration over approximately eight stories.
+      Its main limitation is that the measurement tracks one visible face rather
+      than the entire structure, which does not contradict the claim as worded.
+    confidence: high
+  - claimId: SEP-C003
+    verdict: mixed
+    reasoning: SEP-E004 presents a detailed, physically plausible thermal-expansion
+      sequence culminating in Column 79 buckling, and SEP-E018 supports the
+      broader possibility of fire-induced total collapse. Against this, SEP-E005
+      reports a substantial modeling challenge, and SEP-E008 shows that the
+      federal calculation cannot be exactly recomputed from the released files.
+      The challenger's limitations prevent rejection of the federal sequence,
+      but the withheld inputs prevent finding that its exact sequence is
+      established as correct.
+    confidence: moderate
+  - claimId: SEP-C004
+    verdict: weakly_supported
+    reasoning: SEP-E005 records that the UAF team found no fire scenario capable of
+      reproducing the observed behavior and obtained a close result by
+      near-simultaneous column failure. The strongest opposing consideration is
+      SEP-E007's criticism that column removal was an imposed input rather than
+      a derived finding, supplemented by SEP-E006's objections concerning a
+      static temperature field and incomplete fire progression. Because those
+      criticisms come partly from forum material but identify consequential
+      methodological limitations, the study supplies weak rather than decisive
+      support for the claim that its conclusions are correct.
+    confidence: low
+  - claimId: SEP-C005
+    verdict: established
+    reasoning: SEP-E008 directly establishes the July 2009 statutory finding, the
+      withholding of 68,500 files, and the April 2011 judicial decision
+      sustaining that withholding. Exact recomputation of the initiating model
+      is consequently unavailable from the published materials. The strongest
+      qualification is that an independent team might rederive a new model from
+      drawings and published descriptions, but that would not reproduce the
+      withheld federal computation itself.
+    confidence: high
+  - claimId: SEP-C006
+    verdict: established
+    reasoning: SEP-E009 directly states that WTC 7 steel could not be clearly
+      identified after rapid debris removal and thus was not preserved as
+      identified WTC 7 material. The agency is explaining a gap in its own
+      investigation, but that interest does not weaken its admission that the
+      material was unavailable.
+    confidence: high
+  - claimId: SEP-C007
+    verdict: well_supported
+    reasoning: SEP-E010 directly documents oxidation, sulfidation, and intergranular
+      eutectic melting, states that no sulfur source had been identified, and
+      calls for detailed further study. The strongest qualification is the
+      opportunistic recovery and uncertain provenance of only two members,
+      together with the authors' own post-collapse heating hypothesis. Those
+      limits constrain the anomaly's significance but do not negate the claim
+      about what the examination reported.
+    confidence: moderate
+  - claimId: SEP-C008
+    verdict: well_supported
+    reasoning: SEP-E011 preserves multiple accounts expressly describing a loud
+      explosion or repeated explosion-like sounds near WTC 7. The strongest
+      opposing consideration is that these accounts were assembled by an
+      advocacy organization and are not calibrated acoustic measurements. They
+      establish reported perceptions, not their cause.
+    confidence: moderate
+  - claimId: SEP-C009
+    verdict: contradicted
+    reasoning: No evidence record identifies a recorded sound as a demolition
+      charge, while SEP-E012 predicts blast levels of 130–140 dB for the
+      smallest critical-column charge and reports no corresponding witness
+      account or audio signature. The strongest opposing consideration is the
+      existence of genuine explosion-like witness reports and the model's
+      unobstructed-path assumption. Those reports support SEP-C008 but do not
+      overcome the missing predicted blast-level evidence.
+    confidence: moderate
+  - claimId: SEP-C010
+    verdict: weakly_supported
+    reasoning: The claim receives indirect support from the unresolved and
+      non-reproducible aspects of the official mechanism, the UAF challenge,
+      missing identified steel, and reported booms. Its strongest opposing
+      consideration is that SEP-E012 finds no acoustic signature expected from a
+      critical-column charge, while the UAF model does not derive a demolition
+      process or identify deliberate action. The evidence therefore sustains the
+      hypothesis as a weak possibility but does not establish its causal or
+      intentional elements.
+    confidence: low
+  - claimId: SEP-C011
+    verdict: well_supported
+    reasoning: SEP-E013 provides a coherent conjunction of aircraft damage,
+      dislodged insulation, and multi-floor fires, including the expressly
+      hedged counterfactual that the towers likely would not have collapsed
+      without widespread insulation loss. The strongest opposing consideration
+      is that this conclusion derives from tuned impact and fire models rather
+      than direct measurement of the towers' hidden conditions. No evidence
+      record supplies a comparably developed alternative initiation mechanism.
+    confidence: moderate
+  - claimId: SEP-C012
+    verdict: contradicted
+    reasoning: SEP-E014 expressly states that the investigation did not undertake
+      comparable modeling after collapse initiation and instead relied on a
+      capacity argument. That engineering judgment may explain why progression
+      was considered inevitable, but it is not an end-to-end structural
+      simulation. The strongest opposing consideration is that end-to-end
+      modeling may be unnecessary to establish physical plausibility, which does
+      not make the claim as stated true.
+    confidence: high
+  - claimId: SEP-C013
+    verdict: contradicted
+    reasoning: SEP-E015 reports no pre-collapse seismic signal indicative of
+      explosions, and the ledger contains no affirmative physical evidence of
+      pre-planted devices. The strongest opposing consideration is that the
+      steel was not tested for explosive or thermite residues and that full
+      progression was not modeled. Those are investigative gaps, not positive
+      evidence of explosive destruction.
+    confidence: moderate
+  - claimId: SEP-C014
+    verdict: contradicted
+    reasoning: SEP-E039 reports an exotherm and claimed elemental aluminum in
+      privately collected samples, providing the claim's strongest affirmative
+      evidence. SEP-E017 directly failed to find elemental aluminum in
+      independently analyzed red/gray chips and therefore rejected both thermite
+      and nanothermite. Although the studies used different samples and neither
+      evidentiary route is ideal, the independent negative analysis and the
+      affirmative study's custody problems weigh against the identification. The
+      chips' unresolved material identity does not itself support nanothermite.
+    confidence: moderate
+  - claimId: SEP-C015
+    verdict: well_supported
+    reasoning: SEP-E019 records markedly elevated airline put-to-call ratios, while
+      SEP-E020, SEP-E021, and SEP-E040 report multiple statistical analyses
+      finding abnormal activity consistent with informed trading. The strongest
+      qualification is that the primary exchange record and some full
+      methodological appendices were not obtained. The claim carefully states
+      statistical consistency rather than trader identity, matching what the
+      studies support.
+    confidence: high
+  - claimId: SEP-C016
+    verdict: contradicted
+    reasoning: SEP-E022 gives specific innocent trace-outs for the dominant UAL puts
+      and much of the AMR activity, and SEP-E040 explains that market-level
+      abnormality can coexist with innocent trade-level attribution. The
+      strongest opposing consideration is that the peer-reviewed record contains
+      results consistent with informed trading and that the government's
+      underlying investor-identification files remain unauditable. Nevertheless,
+      none of the statistical studies identifies attack foreknowledge, whereas
+      the available attributional record points away from it. The verdict would
+      warrant revision if release of the tracing files failed to substantiate
+      the published account.
+    confidence: moderate
+  - claimId: SEP-C018
+    verdict: established
+    reasoning: SEP-E023 through SEP-E025 document substantial warning fragments,
+      including the presidential brief, flight-training concerns, a detained
+      flight-school student, and repeated failures concerning two future
+      hijackers. The same records expressly state that the intelligence did not
+      identify the attacks' time, place, and specific nature. The strongest
+      qualification is that some underlying material remained classified or
+      redacted, but the two-part claim accurately reflects the available record.
+    confidence: high
+  - claimId: SEP-C019
+    verdict: contradicted
+    reasoning: SEP-E024 expressly finds that accumulated intelligence did not
+      identify the attacks' time, place, and specific nature, while SEP-E025
+      describes analytical and systemic failure rather than intentional
+      sabotage. The strongest opposing consideration is that agencies possessed
+      numerous relevant fragments and repeatedly missed opportunities concerning
+      future hijackers. That establishes grave failure, not the specific
+      knowledge and deliberate allowance asserted here.
+    confidence: high
+  - claimId: SEP-C020
+    verdict: established
+    reasoning: SEP-E026 identifies multiple recorded sources showing that the
+      Langley scramble responded to a phantom American 11, contrary to public
+      FAA and military timelines. SEP-E027 independently reports the same
+      repeated understanding from the operations recordings. The records
+      establish inaccurate accounts, although they do not by themselves
+      establish intentional deception.
+    confidence: high
+  - claimId: SEP-C021
+    verdict: contradicted
+    reasoning: SEP-E028 reports that the inspector general did not substantiate the
+      claimed identification and reconstructed a real 1999 chart that did not
+      name Mohamed Atta. The strongest opposing consideration is that four
+      witnesses recalled such a chart and five prospective witnesses were barred
+      from public testimony, as SEP-E029 records. Because the underlying program
+      data were destroyed, absolute closure is impossible, but contested
+      recollection is outweighed by the available documentary reconstruction.
+    confidence: moderate
+  - claimId: SEP-C022
+    verdict: established
+    reasoning: SEP-E041 reports that the first man's apartment assistance—including
+      application help and signing as guarantor—was undisputed after
+      jurisdictional discovery. His employment connection to the Kingdom is also
+      integral to the court record. The strongest qualification is that
+      undisputed conduct does not establish why he helped or whether he knew of
+      the plot, neither of which this claim asserts.
+    confidence: high
+  - claimId: SEP-C031
+    verdict: provisionally_supported
+    reasoning: SEP-E047 reports a preliminary judicial finding that the second man
+      worked with the first to assist the hijackers, based on meetings, timed
+      telephone contacts, witness testimony, and a photograph. The strongest
+      opposing consideration is SEP-E048's denial, together with the absence of
+      call content and the court's admission that the evidence was thinner than
+      for the first man. Because the underlying exhibits have not been examined
+      and the finding is jurisdictional rather than merits-based, support
+      remains provisional.
+    confidence: moderate
+  - claimId: SEP-C023
+    verdict: mixed
+    reasoning: "SEP-E042 is substantial affirmative evidence: after adversarial
+      discovery, the court found it more likely than not that assistance was
+      directed rather than coincidental and drew an inference involving the
+      employees' state employer. SEP-E043 supplies the central limit: this was a
+      preliminary jurisdictional finding, disputed evidence and credibility
+      remain for trial, and scope of employment does not establish who within a
+      state institution knew the plot. SEP-E031 found no evidence of
+      institutional or senior-official funding while leaving open diversion
+      through sponsored charities. The evidence therefore supports a serious
+      institutional-support allegation but does not yet establish the claim's
+      exact knowledge element."
+    confidence: moderate
+  - claimId: SEP-C024
+    verdict: established
+    reasoning: SEP-E035 directly states that EPA lacked sufficient data for its
+      blanket safety assurance and that the White House Council on Environmental
+      Quality added reassuring language while deleting cautionary material. The
+      strongest qualification is that this is an inspector-general review within
+      government, but its detailed adverse finding directly matches the claim.
+      It establishes official misconduct on air safety, not foreknowledge or
+      responsibility for the attacks.
+    confidence: high
+  - claimId: SEP-C017
+    verdict: contradicted
+    reasoning: SEP-E036 places the phrase in a conversation about containing the
+      fire and records the explanation that “pull it” meant withdrawing
+      personnel. The strongest opposing consideration is the phrase's surface
+      ambiguity, the interested nature of the spokesperson's explanation, and
+      the fact that the documentary itself was not directly reviewed. Those
+      limitations preserve ambiguity but do not make the remark an admission of
+      demolition.
+    confidence: moderate

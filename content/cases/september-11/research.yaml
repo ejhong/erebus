@@ -143,18 +143,24 @@
     excerpts, the phone records, the photograph at the mosque and the
     notepad page with the airplane drawing — noting which remain sealed or
     under a protective order. Read the Kingdom's own account from its brief
-    rather than from press summaries.
-  claimIds: [SEP-C022, SEP-C023]
+    rather than from press summaries. Status, 2026-11-12: no ruling located
+    in news reports or the court's published decisions; the docket number
+    is still not found, and the docket mirror refuses the reading tool.
+  claimIds: [SEP-C022, SEP-C031, SEP-C023]
   track: either
   effortTier: desk
   informationGain: >-
     Moves the Saudi branch off a judge's description of exhibits and onto
-    the exhibits. An affirmance sends the claim toward a trial at which the
-    evidence is tested and published; a reversal on immunity ends the only
-    forcing mechanism this case has, and would leave SEP-C023 resting on
-    the record as it stands. Exhibits that bear out the court's description
-    would move SEP-C023 toward provisionally supported; exhibits that are
-    thinner than described, or sealed, would hold it at mixed or below.
+    the exhibits. An affirmance lets the claims go on toward trial, though
+    legal issues remain and it does not guarantee one; a reversal on
+    immunity ends the only forcing mechanism this case has, and would leave
+    SEP-C023 resting on the record as it stands. Exhibits that bear out the
+    court's description would move SEP-C023 toward provisionally supported;
+    exhibits that are thinner than described, or sealed, would hold it at
+    mixed or below. For the second man (SEP-C031), the witness depositions,
+    the phone records and the mosque photograph are what decide whether his
+    assistance moves from provisionally supported to well supported, or
+    falls back.
 
 - id: SEP-R008
   title: "Open high-fidelity progressive-collapse model of a tube-frame tower"
