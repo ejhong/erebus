@@ -41,3 +41,57 @@
   reopenIf: "The court dismisses or merges a count."
   by: "2026-11-01-session-site-141624"
   date: "2026-11-01"
+
+- key: "url:storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.124.0.pdf"
+  kind: source
+  disposition: excluded
+  observed: "Government's reply in support of its motion to compel production of post-arrest diagnosis information or to exclude evidence at the suppression stage (United States v. Cole, ECF No. 124)"
+  reason: >-
+    Read 2026-11-17 (first page). The same procedural dispute as ECF No. 118
+    over the defense psychologist's file; what it says of the diagnosis's
+    basis is stated in the government's suppression opposition and recorded
+    there (PIPE-E241).
+  reopenIf: "The court rules on the government's motion (ECF No. 111), or the suppression hearing is held."
+  by: "2026-11-17-session-site-165252"
+  date: "2026-11-17"
+
+- key: "url:storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.126.0.pdf"
+  kind: source
+  disposition: excluded
+  observed: "Defendant's reply in support of his motion to compel the government to elect between Counts One and Two (ECF No. 126), and his reply in support of a bill of particulars as to Counts Seven and Eight (ECF No. 127)"
+  reason: >-
+    Read 2026-11-17 (first pages). Legal argument over multiplicity and over
+    which policy of Congress the government says the bomber meant to
+    influence; neither bears on who placed the devices. The intent the
+    government alleges is recorded at PIPE-C051.
+  reopenIf: "The court rules on either motion, or the government names the policy it alleges."
+  by: "2026-11-17-session-site-165252"
+  date: "2026-11-17"
+
+- key: "url:storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.132.0.pdf"
+  kind: source
+  disposition: duplicate
+  as: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  observed: "Government's opposition to the defendant's motion to suppress statements (ECF No. 132, filed 11/16/26)"
+  reason: >-
+    Filed three days after ECF No. 130 under the same title, with the same
+    page count and text length; this site cites No. 130, the first filed.
+    What, if anything, differs between them was not established.
+  reopenIf: "A docket entry or order says what No. 132 corrects or replaces."
+  by: "2026-11-17-session-site-165252"
+  date: "2026-11-17"
+
+- key: "text:what the fbi's image of the former officer's phone shows for january 4 to 6, 2021 and november 2025"
+  kind: claim
+  disposition: excluded
+  observed: "The defense motion of November 2 (ECF No. 128, pp. 4 and 6) describes what the FBI's image of the former officer's phone does and does not contain for January 4 to 6, 2021, and the phone's home-camera application sessions in November 2025, and asks whether either reflects a phone set aside or footage retrieved."
+  reason: >-
+    The defense itself frames these as questions for an examiner, not
+    findings. Published here they would invite inferences about an uncharged
+    private person that no record yet supports (AGENTS.md, living persons;
+    site rules, "Where to stop"). What the motion says of the FBI's inquiry
+    is recorded (PIPE-E242, PIPE-E243); what it says of her phone's contents
+    is left out.
+  reopenIf: "A court ruling, or an examiner's report filed in the case, makes a finding about what the image shows."
+  by: "2026-11-17-session-site-165252"
+  date: "2026-11-17"

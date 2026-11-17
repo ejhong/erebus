@@ -1,0 +1,20 @@
+runId: 2026-11-17-check-january-6-pipe-bombs-171150
+verb: check
+case: january-6-pipe-bombs
+date: 2026-11-17
+model: "panel: anthropic, openai, gemini, xai, venice"
+promptVersion: check-v2
+inputHash: 2a06e65a39938bed7777b6281dd6047914d337153d24ac65d39c59392a3552e7
+outcome: completed
+cost:
+  calls: 6
+  inputTokens: 698743
+  outputTokens: 270074
+  usd: 6.51552
+notes: 5 of 5 seat(s) installed
+wrote:
+  - content/cases/january-6-pipe-bombs/assessments/2026-11-17-check-opus-171150.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-11-17-check-gpt-171150.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-11-17-check-gemini-171150.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-11-17-check-grok-171150.yaml
+  - content/cases/january-6-pipe-bombs/assessments/2026-11-17-check-glm-171150.yaml

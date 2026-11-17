@@ -643,9 +643,9 @@
   sourceType: report
   url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.96.0.pdf
   verification: ai_verified
-  verificationNote: "Pages 1 to 8 read from the RECAP archive on 2026-11-01 (18 pages in all). Names the former officer and her partner, whom this site does not name."
+  verificationNote: "Pages 1 to 8 read from the RECAP archive on 2026-11-01, and pages 9 to 18 on 2026-11-17, so read in full (18 pages). Names the former officer and her partner, whom this site does not name."
   reliabilityNotes:
-    - "The defense's reply: it disputes the government's summary of records it holds under a protective order, but offers no records of its own in the public filing."
+    - "The defense's reply: it disputes the government's summary of records it holds under a protective order, citing an apparent mismatch between her summarized work schedule and the raw badge data, but does not publish or attach a contrary underlying record."
 
 - id: SRC-PIPE-ECF114-CONFLICT-ORDER
   title: "Order appointing conflicts counsel to advise the defendant (ECF No. 114, filed 10/20/26)"
@@ -668,3 +668,50 @@
   verificationNote: "Read in full from the RECAP archive on 2026-11-01 (4 pages)."
   reliabilityNotes:
     - "The court's scheduling order: the dates are the court's, and hold unless it modifies them."
+
+# ── 2026-11-17: the government's answer to the motion to suppress, and the filings since November 1 ──
+
+- id: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  title: "Government's opposition to the defendant's motion to suppress statements (ECF No. 130, filed 11/13/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.130.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-17 (47 pages). The archive also holds ECF No. 132, filed 11/16/26 under the same title and of the same length; this site cites No. 130, the first filed. The brief cites the interview transcript (ECF No. 102-1) by page and line and the recording by file and minute; its exhibits A to C (the two waiver forms and the report of the government's neuropsychologist) are scans without a text layer and were not read. It names private members of Cole's family and describes school and medical matters; this site publishes only what bears on the evidence."
+  reliabilityNotes:
+    - "The prosecution's answer to a motion it must defeat: its account of the interview can be checked against the public transcript, but its statements about card records, forensic reviews and a recorded jail call describe records that are not public."
+    - "The defense's reply was not yet in the public archive on 2026-11-17."
+
+- id: SRC-PIPE-ECF128-DEFENSE-MOTION-COMPEL-PHONE-IMAGE
+  title: "Defendant's motion to compel production of the forensic image of the former officer's iPhone or, in the alternative, of its data for two defined periods (ECF No. 128, filed 11/02/26)"
+  organization: "Counsel for Brian Cole, Jr. (Litson PLLC; Humanity Dignity and Rights LLC)"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.128.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-17 (10 pages). Its caption and text name the former officer, whom this site does not name; quotations are taken around the name. Its exhibits (FBI examination notes and the government's discovery letters) are not in the archive."
+  reliabilityNotes:
+    - "The defense's account of the FBI's own records of the inquiry into the former officer, drawn from discovery the public has not seen; the government's answer was not in the public archive on 2026-11-17."
+
+- id: SRC-PIPE-ECF125-CONFLICTS-COUNSEL-REPORT
+  title: "Initial status report of conflicts counsel (ECF No. 125, filed 10/30/26)"
+  organization: "Federal Public Defender for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.125.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-17 (2 pages)."
+  reliabilityNotes:
+    - "Counsel's own report of their progress; it says nothing of the advice itself."
+
+- id: SRC-PIPE-ECF129-GOVT-MOTION-MODIFY-PRETRIAL-ORDER
+  title: "Government's unopposed motion to modify the pretrial order (ECF No. 129, filed 11/10/26)"
+  organization: "U.S. Attorney's Office for the District of Columbia"
+  year: "2026"
+  sourceType: report
+  url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.288125/gov.uscourts.dcd.288125.129.0.pdf
+  verification: ai_verified
+  verificationNote: "Read in full from the RECAP archive on 2026-11-17 (2 pages). Whether the court granted it could not be read: the docket pages refuse the reading tool, and no order on it is in the archive."
+  reliabilityNotes:
+    - "A motion, not an order: the schedule it proposes holds only if the court adopts it."

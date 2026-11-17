@@ -1298,3 +1298,85 @@
   claimType: observation
   reviewState: ai_extracted
   origin: *o01
+
+# 2026-11-17: from the government's opposition to the motion to suppress (ECF No. 130)
+# and the defense's motion to compel the FBI's image of the former officer's phone
+# (ECF No. 128). Each prosecution statement about records the public has not seen is
+# written as the prosecution's account and graded on its substance.
+
+- id: PIPE-C091
+  statement: >-
+    Cole's card records, as the prosecution describes them, show a purchase on January 14, 2018 of Lilly Miller sulfur dust, the brand he named in his confession as an ingredient of the powder.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  dependsOnClaimIds: [PIPE-C039]
+  origin: &o17
+    ref: "operator session 2026-11-17: the government's opposition to the motion to suppress (ECF No. 130) and the defense's motion to compel (ECF No. 128) in United States v. Cole"
+    extractedBy: "Claude Opus 5.5 (claude-opus-5-5), operator session 2026-11-17-session-site-165252"
+    runId: "2026-11-17-session-site-165252"
+    date: "2026-11-17"
+
+- id: PIPE-C092
+  statement: >-
+    A forensic review the prosecution describes found a deleted copy of the Anarchist Cookbook, dated to 2016, on a thumb drive recovered from the basement of the home where Cole lived.
+  theme: conduct
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
+
+- id: PIPE-C093
+  statement: >-
+    A forensic review the prosecution describes found that in 2012 a user profile named "Brian", on a hard drive recovered from a family member's room in the home, searched for or visited pages including "how to make a pipe bomb".
+  theme: conduct
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
+
+- id: PIPE-C094
+  statement: >-
+    By the prosecution's account, the operating system of Cole's computer was reinstalled hours before his arrest, and no digital content was recovered from it.
+  theme: conduct
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
+
+- id: PIPE-C095
+  statement: >-
+    By the prosecution's account, in a recorded call from detention on December 12, 2025, Cole said "what I did four years ago, that was the dumbest thing I've ever done in my life."
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
+
+- id: PIPE-C096
+  statement: >-
+    As the prosecution's brief quotes her report, a neuropsychologist it retained, having reviewed the interview, found no functional impairment and signs of anxiety that largely disappeared after Cole's admission.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
+
+- id: PIPE-C097
+  statement: >-
+    By the prosecution's account, the family members the agents spoke of sparing a trip to Washington were already under subpoena to appear there the next day, and were released from it after the interview.
+  theme: interview
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
+
+- id: PIPE-C098
+  statement: >-
+    As Cole's defense describes the government's discovery, the FBI's inquiry into the former officer collected no cell-site data for her telephone numbers, no warrant for her Apple account, no footage from her home cameras and no extraction of the phone she carried in January 2021.
+  theme: insider
+  rung: observation
+  claimType: observation
+  reviewState: ai_extracted
+  origin: *o17
