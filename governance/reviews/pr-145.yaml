@@ -1,0 +1,72 @@
+# Review of #145, harvested from its pull request (src/engine/harvest.ts). Append-only.
+pr: 145
+title: "September 11: the Saudi claim split by man (one's help undisputed, the other's denied), the appeal's status said as the record shows it, and the opening's baseline attributed"
+url: https://github.com/ejhong/erebus/pull/145
+outcome: merged
+outcomeAt: 2026-11-12T16:42:00Z
+cases:
+  - september-11
+rounds:
+  - commit: 6d45c6c5f2f022c4d5f03aca6c0c9e10c92beeb1
+    date: 2026-11-12
+    protocol: review-v1
+    outcome: publish
+    reason: 4 of 4 reviewers judge it better; no harm flagged
+    seats:
+      - seat: openai
+        label: GPT-5.6 Sol (OpenAI)
+        model: gpt-5.6-sol
+        verdict: better
+        harm: null
+        notes:
+          - "Assessment 2026-11-12-operator-160736 and the article’s closing: do not call al-Qaeda authorship “settled by positive evidence” on SEP-E038 alone. E038 establishes only that exhibits were admitted and published, not what they prove; either add records grading the relevant exhibits or consistently describe authorship as an attributed, ungraded baseline."
+          - "SEP-E030: its quoted Finding 20 refers generically to unidentified individuals and does not itself establish that either specific employee assisted the named hijackers. Reclassify it as context for SEP-C022/SEP-C031 or add the passages that specifically connect each man to the finding."
+          - "SEP-E046, SEP-R009, and the appeal-status paragraph: qualify “a reversal would end the claims” as a reversal directing dismissal on immunity, since reversal could instead produce a remand or narrower disposition; continue seeking the appellate docket number and primary briefs/order."
+        summary: The change materially improves the case by separating the two Saudi employees’ differently supported claims, presenting the Kingdom’s denial and the court’s limitations, correcting the appeal-status overstatement, and attributing the opening baseline rather than treating an exhibits index as proof of its contents. The added length earns its place by removing a consequential conflation and making the live proceeding more accurately described. Some assessment language still outruns SEP-E038, and two evidentiary/legal formulations should be narrowed.
+        cost:
+          inputTokens: 26759
+          outputTokens: 2715
+          usd: 0.161336
+      - seat: gemini
+        label: Gemini 3.8 Flash (Google)
+        model: gemini-3.8-flash
+        verdict: better
+        harm: null
+        notes:
+          - When the Second Circuit appeal ruling issues or docket access is restored, obtain the primary docket number and written order to replace the secondary AP reporting in SEP-E046 and advance SEP-R009.
+          - Fulfill the site rules' requirement to quote the main critic voices (such as AE911Truth and the authors of the Alaska and dust studies) in their own words as dedicated claims.
+          - Conduct a human verification pass on the optical character recognition text in SEP-E030 against the declassified scan to clear the OCR limitation note.
+        summary: This change cleanly separates the Saudi assistance dispute into two distinct claims, distinguishing the first employee's undisputed apartment assistance from the contested, thinner evidence surrounding the second employee (the imam). It also attributes the baseline hijacker narrative in the opening rather than overextending the trial exhibits claim, and accurately confines the Second Circuit appeal's status to what the record demonstrates through November 12. These refinements improve evidential precision and living-persons safeguards without losing any established facts.
+        cost:
+          inputTokens: 29548
+          outputTokens: 1089
+          usd: 0.026245
+      - seat: xai
+        label: Grok 4.5 (xAI)
+        model: grok-4.5
+        verdict: better
+        harm: null
+        notes:
+          - "SEP-R009 / SEP-E046: when any Second Circuit docket number, order, or party brief becomes readable, replace the news-plus-negative-search posture with the primary filing and date the status from that record."
+          - "SEP-E030: run the already-flagged human re-read of the OCR-derived Finding 20 and caveat quotes before any further weight rests on them."
+          - "Case agenda (still open from 2026-10-22): add claims quoted from the main voices disputing the official account (e.g. AE911Truth, Alaska study, dust-paper authors) so the controlled-demolition and related hypotheses meet the site rule that dissenters’ best points are stated in their own words."
+        summary: This change splits the Saudi-employee assistance claim into two (undisputed apartment help vs. the imam’s disputed assistance), grades the second provisionally on the court’s thinner described record with the Kingdom’s denial beside it, corrects the appeal status to argument-plus-no-ruling-located through 12 Nov, and attributes the hijacker baseline to the Commission and prosecution rather than to the exhibits index alone. Unsourced phrasing and overclaims about trial certainty are removed; living uncharged persons stay unnamed. For a truth-seeking reader the ledger is more accurate, fairer, and better scoped, with nothing material lost.
+        cost:
+          inputTokens: 27425
+          outputTokens: 305
+          usd: 0.056795
+      - seat: venice
+        label: GLM 5.3 Flash (Z.ai, via Venice)
+        model: z-ai-glm-5-3-flash
+        verdict: better
+        harm: null
+        notes:
+          - SEP-E047 bundles a p. 11 background quote (his employment and post) with p. 41 findings under one loose locator (pp. 11–41). Split it into two records, or move the employment material into SEP-E041's source, so each passage carries an exact locator — a content-level fix that does not wait on the upstream engine change the log proposes.
+          - The log's 'Records written' section says 'SEP-E041 now points to the new claim', but SEP-E041's claimIds remain [SEP-C022]; SEP-C031 appears only in its editorInference text. Correct the log line to match the record, so the provenance trail stays reconstructible.
+          - The article now sits at 2,545 words and the 'one file still moving' section carries the additions; when the deferred trim pass runs, tighten the second-man paragraph and the status paragraph (which repeat the meeting/calls/witnesses/photograph list the claim records already carry) toward the 2,500-word guideline.
+        summary: "The change splits the Saudi-employee claim by man, which matches the actual evidential posture: the first man's help is undisputed by the Kingdom, the second's is denied and rests on thinner court-found evidence, and the new SEP-C031 is graded provisionally supported at low confidence with the Kingdom's denial (SEP-E048) shown beside the court's finding (SEP-E047) and the strongest objection stated plainly. The appeal status now says exactly what the record shows — a dated search that found nothing, labelled as such — and the opening correctly attributes the baseline account to the Commission and prosecution instead of asserting it beside an exhibits claim that supports only admission and publication. All six #134 review notes are answered or reasoned; the living-persons care is genuine (no names, court-record locators, denial displayed); all mechanical checks passed; the case is correctly marked unratified awaiting the panel, whose wide spread is displayed rather than resolved. Nothing true is lost, so this is better."
+        cost:
+          inputTokens: 28228
+          outputTokens: 2255
+          usd: 0.005362
+harvestedAt: 2026-11-17T17:11:16.693Z

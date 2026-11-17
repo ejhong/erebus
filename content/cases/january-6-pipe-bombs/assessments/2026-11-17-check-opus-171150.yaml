@@ -1,0 +1,495 @@
+# Cross-model check run — an independent judge (Opus 5.5 (Anthropic)), blind to all
+# prior assessments and to the editions (erebus check, check-v2; run 2026-11-17-check-january-6-pipe-bombs-171150).
+# role: check — never displayed as the case narrative; feeds the concurrence panel.
+# basis.ledgerHash is the ledger it judged. Append-only; NOT human reviewed.
+runId: 2026-11-17-check-opus-171150
+producedBy: 2026-11-17-check-january-6-pipe-bombs-171150
+model: Opus 5.5 (Anthropic) — independent check run via claude-opus-5-5
+date: 2026-11-17
+promptVersion: check-v2
+humanReviewed: false
+role: check
+basis:
+  ledgerHash: 784e335e31da06dce2a106caa901443c228290f71712816bbcd6a7e344c8d983
+caseAssessment:
+  verdict: well_supported
+  components: []
+  loadBearing:
+    - PIPE-C020
+    - PIPE-C026
+    - PIPE-C027
+    - PIPE-C075
+  weakestLinks:
+    - PIPE-C031
+    - PIPE-C027
+    - PIPE-C040
+  synthesis: >-
+    I take the featured hypothesis to be the charged account (PIPE-C059), the
+    proposition the case's subtitle asks about. Its rivals are the
+    misidentification account (PIPE-C033) and the insider account (PIPE-C052).
+    These are grades of evidence, not of guilt: Cole is presumed innocent, and
+    none of this has been tested at trial. Where a claim is worded as a party's
+    account, I grade its substance, as the ledger directs. The direct readings
+    of the congressional CCTV files are provisional, so I set them aside. The
+    site's own studies (PIPE-S003 to PIPE-S005) count as single, unreplicated
+    readings under frozen criteria.
+
+    The charged account rests on three lines of separate origin. First,
+    purchases. Card and bank records, as the affidavit itemizes them, show Cole
+    buying pipes of the devices' size, end caps, timers, steel wool, wire, and
+    five of a 9-volt connector of which fewer than 8,000 were distributed in the
+    United States in three years (PIPE-C020). The defense holds these records
+    and has disputed none of them in any filing read. Second, the plate reader.
+    It recorded his car entering the city at 7:10 p.m. (PIPE-C026). The video's
+    maker concedes this, and it fits Cole's own first account that he drove in
+    alone that evening. Third, the phone. The phone attributed to him had about
+    seven data sessions between 7:39 and 8:24 p.m., which the challengers also
+    concede. The affidavit swears that these fell, at the same minutes, on
+    sectors covering the bomber's filmed positions (PIPE-C027). That an innocent
+    man would match all three lines by chance is very unlikely. That judgment
+    rests on a prior about coincidence, not on any figure in the record beyond
+    the connector count.
+
+    Two other items bear on the charge. While still denying, Cole said he had
+    once owned a pair of the shoes he was shown, which the memorandum names as
+    the bomber's model; the three-size gap Baker sets against this is
+    unpublished. The confession itself adds little until it is tested
+    (PIPE-C040). Before his admission, which he first met with "No", the agents
+    had already named the places, the hours, the shoes and the components
+    (PIPE-C080). The sulfur match and the jail call (PIPE-C091, PIPE-C095) rest
+    on the prosecution's word alone.
+
+    The strongest challenge is the October footage. It is genuine congressional
+    CCTV, and its captions were taken from the files' own clocks, one of them 30
+    seconds early (PIPE-C073, PIPE-C074). On those clocks its man cannot be the
+    bomber (PIPE-C063), so everything turns on who he is (PIPE-C031). The
+    identification rests on interested relatives' recognition of a mask and a
+    jacket whose telling details the frames cannot resolve, and on a likeness
+    judged by eye from a head about ten pixels wide. Against it, at 7:59:36 the
+    phone attributed to Cole used a sector facing away from every place the man
+    is filmed (PIPE-C075). For the man to be Cole, his phone must have been
+    somewhere else, and no one has said where. The phone line has real
+    weaknesses: - the 7:59:36 session fits the bomber's corner only at the
+    sector's edge; - the fits at 7:39 and 7:44 need the provider's April 2021
+    correction, though that correction was made before anyone suspected Cole and
+    matches the FBI's drive tests; - in 2021, five people's data may have
+    matched the route. None of these weaknesses helps the alibi.
+
+    The insider account offers no record placing any insider at the scene. By
+    the defense's unanswered description, the inquiry into the one named person
+    was thin (PIPE-C098). But thinness is an absence of evidence, not evidence,
+    and a polygraph opinion is not evidence of who placed the devices. One
+    question the record leaves open is why files the FBI held for years pointed
+    to Cole only weeks before his arrest. That bears on the investigation, not
+    on what the records say.
+
+    Steelmanning the challenge: the footage is the one exculpatory item checked
+    against originals. The purchase, plate and phone records are described, not
+    produced, by the party that must win. A blind comparison and a clock-offset
+    measurement (PIPE-R009, PIPE-R001) could still show the man to be Cole on
+    aligned clocks, which would defeat the charge outright. Steelmanning the
+    charge: the challengers concede the car and the sessions, no one has offered
+    an innocent account of the purchases, and the alibi requires Cole and his
+    phone to have parted at the decisive minute.
+
+    Sensitivity: the record whose removal would most change the verdict is
+    PIPE-E051, the sworn pairing of the 7:59:36 session on a south-facing sector
+    with the bomber's position at 7:59:38. Without it, the memorandum's
+    restatement of the pairing (PIPE-E122), the other sessions (PIPE-E050), the
+    plate reader and the purchases all remain, so the verdict survives as
+    well_supported. However, the phone's direct conflict with the footage
+    (PIPE-C075) would lose its sworn sector, and the alibi would be harder to
+    exclude. The verdict does not hang on one record. It does rest on one
+    investigation's descriptions of records the public cannot yet see, partly
+    conceded by the challengers.
+  steelman: If the prosecution's description of the recorded call is accurate,
+    Cole told his parents on December 12, 2025 — eight days after the interview,
+    with no agent present — "what I did four years ago, that was the dumbest
+    thing I've ever done in my life", the same language he had used in the
+    interview. By the same brief, the computer he used had its operating system
+    reinstalled within hours of his arrest, alongside the phone's factory reset.
+    The coercion argument explains the yes at Tr. 93, and the compulsive-wiping
+    argument has been offered for the phone. Neither reaches a statement made to
+    his own parents or a second device cleared that day, and the defense has
+    answered neither in any filing read. This assessment sets both aside only
+    because the recording and the forensic reports are not public, not because
+    anything in the record rebuts them. If they hold as described, they are the
+    evidence least touched by every argument the challenge has made.
+claimAssessments:
+  - claimId: PIPE-C059
+    verdict: well_supported
+    reasoning: Three lines of separate origin converge on Cole. The first is
+      itemized purchases of nearly every component type, including five of an
+      uncommon 9-volt connector (PIPE-C020). The second is a plate read of his
+      car entering the city at 7:10 p.m. (PIPE-C026), conceded by the video's
+      maker. The third is phone sessions sworn to fall, minute by minute, on
+      sectors covering the bomber's filmed positions (PIPE-C027), whose
+      existence the challengers also concede. His own first account, given
+      before any admission, puts him in Washington alone that evening, so the
+      live dispute is only which man on Capitol Hill he was. The confession adds
+      little until its details are tested (PIPE-C040), and no forensic trace
+      ties him to the devices. The strongest opposing consideration is that
+      every load-bearing record is described by the prosecution rather than
+      produced, and the genuine October footage would defeat the charge if a
+      blind comparison showed its man to be Cole on aligned clocks.
+    confidence: moderate
+  - claimId: PIPE-C063
+    verdict: well_supported
+    reasoning: "The inputs are two times about 962 metres apart in a straight line:
+      the affidavit's sworn position for the bomber at New Jersey Avenue and E
+      Street SE at 7:59:38 (PIPE-E134), and the site study's reading that the
+      man crosses at Peace Circle at about 8:01:18 by camera 3187's recorded
+      clock (PIPE-E157). Given those inputs, the arithmetic follows. The study's
+      reading of camera 794, which shows a figure the breakdown labels the
+      bomber one block north of that corner at 19:57 (PIPE-E156), suggests the
+      release's clock is not minutes away from the FBI's timeline. That no
+      runner has covered a kilometre in anything like 100 seconds is general
+      athletic background, not a record in the ledger. The strongest opposing
+      consideration is that the 8:01:18 rests on one unreplicated reading of a
+      file whose direct record (PIPE-E169) is provisional and set aside here.
+      The claim is also explicitly conditional on the recorded clocks and says
+      nothing about whether they are right."
+    confidence: moderate
+  - claimId: PIPE-C075
+    verdict: well_supported
+    reasoning: The site's sector study (PIPE-E162) places every location of the man
+      147 to 172 degrees off the sworn direction of the sector the phone used at
+      7:59:36. That is outside the nominal arc and outside a band of 90 degrees
+      either side. Once the sworn direction (PIPE-E051) and the verified camera
+      sites (PIPE-C073) are fixed, this is plain geometry, and the claim is
+      stated in terms of nominal direction, which is what the study measures.
+      The same study finds the bomber at that minute only at the arc's edge
+      (PIPE-E163), so the sector argues more strongly against the Peace Circle
+      man than for the bomber's exact corner. The strongest opposing
+      consideration is that the affidavit itself says actual coverage can extend
+      beyond the nominal 120 degrees (PIPE-E052), and general radio background
+      allows a phone in a dense city occasionally to be served from behind a
+      sector. The drive-test maps that would show the real footprint are not
+      public.
+    confidence: moderate
+  - claimId: PIPE-C031
+    verdict: weakly_supported
+    reasoning: "The identification rests on relatives' recognition of a mask and a
+      jacket, relayed by Baker (PIPE-E061, PIPE-E062), and on a likeness judged
+      by eye (PIPE-E197). But the frames resolve no mask colour, tag or shoe
+      brand (PIPE-E160), and on camera 602 the man's head is about 10 by 13
+      pixels (PIPE-E198). Recognition by interested relatives of a hooded figure
+      at night is evidence of their belief, not of identity, and Cole's first
+      account fits this man no better than the bomber (PIPE-C079). The strongest
+      opposing consideration is the phone: at 7:59:36 the phone attributed to
+      Cole used a sector facing away from every place the man is filmed
+      (PIPE-C075). The man can therefore be Cole only if Cole and his phone had
+      parted, which no one has explained. The question is decidable by a blind
+      comparison and by following the man on the surrounding cameras
+      (PIPE-R009)."
+    confidence: moderate
+  - claimId: PIPE-C073
+    verdict: well_supported
+    reasoning: The site's frame study found all eight cameras in the subcommittee's
+      posted release, each clip matching its file (PIPE-E158). This agrees with
+      Baker's own account of the footage's source (PIPE-E131, PIPE-E150), and no
+      party disputes the source. With the direct file records provisional and
+      set aside, the claim rests on that one study. The strongest opposing
+      consideration is that seven of the files were matched by viewing in a
+      browser rather than frame by frame, and the first study's camera-602 row
+      had to be corrected once that file was downloaded (SRC-PIPE-S002,
+      superseded). The phrase "seven at the moment the video labels it" is
+      therefore the least secure part.
+    confidence: moderate
+  - claimId: PIPE-C074
+    verdict: well_supported
+    reasoning: That the times were added in editing is common ground. The critics
+      say so, Baker's side answers that the times can be checked rather than
+      denying it, and the study found no time drawn on any original (PIPE-E151,
+      PIPE-E153, PIPE-E159). That seven captions equal the file-name start time
+      plus the elapsed time is the study's reading, and it answers the charge
+      that the times were invented (PIPE-E166). The strongest opposing
+      consideration is what this does not show. The file names carry the Capitol
+      Police system's own clock, so the captions are shown to be consistent with
+      the files' metadata, not accurate against an independent clock, and the
+      native files have not been examined.
+    confidence: moderate
+  - claimId: PIPE-C062
+    verdict: mixed
+    reasoning: That Baker reported this rests on the host's written summary of the
+      episode, not on Baker's own words (PIPE-E133). On substance the claim
+      splits. The study confirms the cameras, the places, and that the man is on
+      both files (PIPE-E154). But 20:03:32 and 20:04:02 are the two files' start
+      times; the man appears about 81 to 83 seconds into them, and on camera 940
+      until about 8:05:42, a little past the stated window. "Verify the times to
+      the millisecond" therefore describes the file names, not the man's
+      movements. The strongest consideration against grading it lower is that
+      the error moves the man by little more than a minute and leaves the
+      conflict with the bomber's sworn timeline intact.
+    confidence: moderate
+  - claimId: PIPE-C033
+    verdict: weakly_supported
+    reasoning: The account needs three things. First, that the man in the footage is
+      Cole (PIPE-C031, weakly supported). Second, that the camera clocks agree
+      with the FBI's; the camera-794 reading suggests they are not minutes apart
+      (PIPE-E156). Third, an account of where the phone attributed to Cole was
+      at 7:59:36, when it used a sector facing away from the man (PIPE-C075,
+      PIPE-E165). Its authors concede the phone's sessions and put the burden on
+      the prosecution (PIPE-E149), but offer nothing on the phone, the purchases
+      or the car. By the prosecution's account, Cole later withdrew the protest
+      story on which the account builds (PIPE-E231), though that comes from the
+      contested part of the interview and weighs little. The strongest
+      consideration in its favour is that its footage is genuine and checked
+      against originals, while the records against it are described, not
+      produced; if the man were shown to be Cole on aligned clocks, it would
+      defeat the charged account outright.
+    confidence: moderate
+  - claimId: PIPE-C079
+    verdict: well_supported
+    reasoning: "The claim reports the outcome of the site's study under a coding
+      rule frozen before the transcript was read (PIPE-E181), on a public
+      transcript anyone can re-read. Of 21 details recorded, the four that are
+      specific and Cole's own — his Nissan, a restaurant, a man with a
+      Confederate flag, having no headphones — are ones neither record can check
+      (PIPE-E182). A null result of this kind is well supported by one careful
+      reading, and it cuts both ways: the account neither corroborates the
+      identification nor gives the alibi anything of its own. The strongest
+      opposing consideration is that the result depends on the rule and on one
+      reader working by eye from page images without a text layer. A looser rule
+      might count an hour spent walking and sitting near a protest, or \"a
+      jacket because it was cold\", as fitting one record better."
+    confidence: moderate
+  - claimId: PIPE-C027
+    verdict: well_supported
+    reasoning: "Four things support it: the affidavit states this under oath
+      (PIPE-E050, PIPE-E051), the detention memorandum restates it (PIPE-E053),
+      the challengers concede the sessions themselves (PIPE-E175), and the site
+      study finds the bomber's sworn positions consistent with the serving
+      sectors (PIPE-E163). Two weaknesses are real. At 7:59:36 the fit is only
+      at the arc's edge. The fits at 7:39 and 7:44 depend on the provider's
+      April 2021 correction of a sector's listed direction (PIPE-E164), though
+      that correction predates any suspicion of Cole and agrees with the FBI's
+      drive tests (PIPE-E054). The strongest opposing consideration is that a
+      sector match places a phone in a wide wedge rather than at a corner
+      (PIPE-E052), and the raw records and drive-test maps are not public. In
+      2021, five people's data may have matched the route (PIPE-E113), so the
+      sessions put the phone near the route without by themselves singling
+      anyone out."
+    confidence: moderate
+  - claimId: PIPE-C026
+    verdict: well_supported
+    reasoning: The prosecution's account (PIPE-E049, PIPE-E123) is conceded by the
+      video's maker (PIPE-E174). It also fits Cole's own first account, given
+      while he was denying the charge, that he drove his Nissan into Washington
+      alone that evening (PIPE-E183). The strongest opposing consideration is
+      that the plate-reader record is not public, so the exact time and exit
+      rest on the prosecution's description. A plate read also records a car,
+      not its driver, though here the driver is not in dispute.
+    confidence: high
+  - claimId: PIPE-C040
+    verdict: unresolved
+    reasoning: "No detail meeting this standard has yet been identified on the
+      public record. Before the admission the agents had named the RNC and DNC,
+      Folger Park, the hours, the shoes and the components (PIPE-C080,
+      PIPE-E232), so none of these can count. The parking place he described
+      first (PIPE-C081) is where he says he always parks and where the FBI had
+      publicly placed the bomber in 2021 (PIPE-E192). The one detail the
+      prosecution says records confirm, the sulfur brand (PIPE-C091), is of
+      unstated origin in the interview; even if it was his own, it shows
+      knowledge of his purchases rather than of the devices. The strongest
+      consideration for the claim is the prosecution's page-cited account of an
+      hour and a quarter of narrative (PIPE-E230), set against the defense's
+      page-cited claim that the agents supplied its heart (PIPE-E191). The test
+      is specified and the transcript is public (PIPE-R003): the claim is
+      unresolved because the decisive reading has not been done, not for want of
+      a way to settle it."
+    confidence: moderate
+  - claimId: PIPE-C091
+    verdict: provisionally_supported
+    reasoning: The government states the purchase, its date and the brand in a
+      filing to the court, citing card records and the transcript (PIPE-E229).
+      The transcript is public, so whether the brand appears at Tr. 104–105 is
+      checkable, and nothing in the record contradicts it. It remains one
+      party's description of records the public cannot see, and the defense's
+      reply was not yet public. The strongest opposing consideration is what it
+      would show even if accurate. Sulfur dust is a common garden product,
+      bought here three years before the placements, and the brief does not say
+      whether Cole or an agent first named the brand.
+    confidence: moderate
+  - claimId: PIPE-C080
+    verdict: well_supported
+    reasoning: The site study cites each point to the public transcript by page and
+      line (PIPE-E184). The government's own brief confirms that before the
+      admission the agents confronted Cole with the evidence, listing the
+      components his purchases matched (PIPE-E232). The prosecution's memorandum
+      likewise has him shown a picture of the shoe while he was still denying
+      (PIPE-E026). The strongest opposing consideration is that the negative —
+      that he named none of these himself — rests on one reader's coding of a
+      transcript read by eye from page images, and a single unreplicated reading
+      can miss an exchange.
+    confidence: high
+  - claimId: PIPE-C082
+    verdict: well_supported
+    reasoning: The Census Bureau's roads and the District's own street centerlines
+      both show D Street SE between 2nd and 3rd Streets as two roadways about 88
+      metres apart, with Folger Park between them (PIPE-E193, PIPE-E194). That
+      fits "a road that splits in the middle" with grassy areas on each side.
+      The claim asserts a fit, not an identification, and the fit holds. The
+      strongest opposing consideration is that the description names no street
+      and could fit other divided roads beside parks. It also describes where he
+      "always" parks, and since the FBI had said in 2021 that the bomber
+      operated around Folger Park (PIPE-E192), it shows familiarity with the
+      place, not knowledge only the bomber had.
+    confidence: moderate
+  - claimId: PIPE-C039
+    verdict: well_supported
+    reasoning: Both of the prosecution's filings describe the post-admission account
+      (PIPE-E081, PIPE-E230), the second citing it to the transcript at Tr.
+      103–153. The defense does not deny that the account exists; it says the
+      agents supplied its heart and Cole "confirmed, adopted, or briefly
+      elaborated" (PIPE-E191). The strongest opposing consideration is that
+      "described" may overstate his part if the defense is right about who
+      supplied the narrative, a question for PIPE-C040. The recording is not
+      public, and the filings differ on the account's length, an hour and a half
+      against an hour and a quarter.
+    confidence: high
+  - claimId: PIPE-C041
+    verdict: well_supported
+    reasoning: The defense's expert quotes the agents from the transcript by page
+      (PIPE-E086, PIPE-E087), and the government concedes the substance. It says
+      the agents "downplayed the severity of the crimes" by the Reid approach
+      (PIPE-E248), and that they told Cole that if he told the truth they might
+      not have to bring his family to Washington (PIPE-E240). The parties
+      dispute whether this was lawful or coercive, not whether it happened. The
+      strongest opposing consideration is the label "implied threats". By the
+      government's account the family were already under subpoena (PIPE-E239),
+      so the agents offered to lift an existing legal obligation rather than
+      threatening a new one. That distinction is for the court, and it leaves
+      the minimization and the implied promise undisputed.
+    confidence: high
+  - claimId: PIPE-C095
+    verdict: provisionally_supported
+    reasoning: "The government quotes the call by date in a court filing, together
+      with context that cuts against it: his parents said \"you didn't do
+      nothing\", and he agreed (PIPE-E236). Including that context makes
+      selective quotation less likely, and no record contradicts the quotation.
+      It is still one party's description of a recording the public has not
+      heard, and the defense had not answered it in any filing read. The
+      strongest opposing consideration is its content. The words name no act,
+      and the government itself says he used the same language as in the
+      disputed interview, so the call may repeat that account rather than
+      confirm it independently; he also assented to his parents' denial."
+    confidence: moderate
+  - claimId: PIPE-C020
+    verdict: well_supported
+    reasoning: "The affidavit itemizes the purchases by date and store (PIPE-E037 to
+      PIPE-E039): pipes in June and November 2020, five connectors from Micro
+      Center in late 2019, timers in June 2020, and steel wool in December 2020.
+      The prosecution says the search found a November 2020 Home Depot receipt
+      for pipe nipples and end caps alongside matching parts (PIPE-E045). The
+      defense, which holds the records, has disputed none of this in any filing
+      read and argues only about what it proves (PIPE-E040). The distinctive
+      item is the connector, of which fewer than 8,000 were distributed
+      nationally (PIPE-E041). The strongest opposing consideration is that the
+      records are not public, and the same affidavit's statement that he bought
+      \"each type of component\" is not borne out for the alligator clips, whose
+      only itemized purchase came after the placements (PIPE-E145). That is a
+      reason to read the affidavit's summaries, though not its itemized entries,
+      with care."
+    confidence: high
+  - claimId: PIPE-C036
+    verdict: established
+    reasoning: The retraction is stated by a news report (PIPE-E076) and by the
+      government in a court filing that cites a newspaper's report of it
+      (PIPE-E205), and no party disputes it. Blaze Media's intention to defend
+      the defamation claims (PIPE-E199) concerns liability, not whether it
+      retracted. The strongest opposing consideration is that the retraction
+      notice itself is not among the records, so the claim rests on secondary
+      accounts — consistent and uncontested, but secondary. A retraction also
+      does not by itself test whether the identification was right.
+    confidence: high
+  - claimId: PIPE-C085
+    verdict: contradicted
+    reasoning: As the government's brief quotes it, the November 2025 article
+      claimed a software gait match of 94 to 98 per cent, by an unnamed
+      algorithm and analyst (PIPE-E203). The October identification offers no
+      gait analysis at all. By Baker's own account it began with the mask
+      (PIPE-E204), and it rests on clothing the family recognised and a likeness
+      judged by eye. Where Baker speaks of gait in October, it is to tell the
+      man's walk from the bomber's, not to match the man to Cole (PIPE-E136).
+      The strongest opposing consideration is that Baker's October account does
+      lean on one walking trait judged by eye, the heel-walking Cole's mother
+      described (PIPE-E071), and that the November method is known only through
+      an adverse party's quotation. What the two identifications do share is
+      that neither method has been published or independently tested.
+    confidence: moderate
+  - claimId: PIPE-C052
+    verdict: contradicted
+    reasoning: No record places any law-enforcement insider at the scene, and unlike
+      the misidentification account, this account has no verified observation of
+      its own. Its support is Baker's unevidenced certainty (PIPE-E108), a
+      retracted report whose gait method was never published, and an FBI
+      examiner's "Deception Indicated" opinion on one former officer's polygraph
+      (PIPE-E221). That opinion reads physiological stress on a day of interview
+      and search, and, on general background as well as by the government's own
+      caution (PIPE-E223), it is not evidence of who placed the devices. Against
+      the account stands the convergent case that Cole bought the components,
+      drove in, and carried a phone that kept pace with the bomber (PIPE-E111),
+      which the account would have to explain as coincidence or fabrication. The
+      government also describes a home video placing the one named person at
+      home minutes after the bomber first appears on camera (PIPE-E226). The
+      strongest opposing consideration is that the government's clearance rests
+      on its own undisclosed records, whose timestamp and completeness the
+      defense disputes (PIPE-E225), and that, by the defense's description, the
+      inquiry gathered none of the cell-site data on which the case against Cole
+      rests (PIPE-E242).
+    confidence: moderate
+  - claimId: PIPE-C086
+    verdict: established
+    reasoning: "The defense names its \"alternative-perpetrator defense\" in its own
+      filing (PIPE-E206). The government describes it as the claim that a
+      then-serving Capitol Police officer was the real perpetrator (PIPE-E207),
+      and the government's reply records both sides describing the theory alike
+      (PIPE-E218). The court's pretrial order also anticipates a motion to
+      exclude such evidence (PIPE-E220). The strongest opposing consideration is
+      one of scope: that a defense pursues a theory is a fact about the
+      proceedings, not evidence that the theory is true."
+    confidence: high
+  - claimId: PIPE-C098
+    verdict: provisionally_supported
+    reasoning: "The defense's motion lists each gap and cites the government's own
+      discovery correspondence for it (PIPE-E242), and nothing public
+      contradicts it. The record's other descriptions of the inquiry are
+      consistent with it (PIPE-E226, PIPE-E243): a forensic image of her iPhone
+      that the defense calls the only extraction of her data from those days,
+      and a phone video from inside the home rather than home-camera footage.
+      The strongest opposing consideration is that this is one party's
+      description of the other's records, offered to win a discovery motion,
+      with the exhibit not public and the government's answer not yet filed.
+      Even if accurate, it shows what the inquiry did not collect, not what such
+      records would have shown."
+    confidence: moderate
+  - claimId: PIPE-C076
+    verdict: well_supported
+    reasoning: The joint status report, filed by both parties, does three things
+      (PIPE-E171). It lists the native video file and same-device media from
+      January 5, 2021 as outstanding with no responsive production. It records
+      the government's production of 223 text messages as a PDF extraction
+      report. And it gives the government's position that the information sought
+      is not discoverable. The strongest opposing consideration is wording. The
+      filing's objection is that the material is "not discoverable under
+      applicable law or rule", not that it is irrelevant; the government's word
+      "irrelevant" appears in its refusal of the separate phone image
+      (PIPE-E243). The communications sought also run from midnight to 4:39
+      p.m., not the whole day.
+    confidence: high
+  - claimId: PIPE-C077
+    verdict: weakly_supported
+    reasoning: Read as a report of how the clips are captioned, the claim is well
+      supported. The site study confirms that the breakdown contains clips of a
+      dark sedan captioned with these places and times (PIPE-E161). Read for its
+      substance — that the sedan was filmed at those times and places — it rests
+      on captions in a different style from the CCTV clips, with no camera
+      numbers, whose source and clock are not shown. The same team's CCTV
+      captions were read from the files' own clocks, one of them 30 seconds
+      early (PIPE-E166, PIPE-E196), which lends its captioning modest credit,
+      but that check does not reach these clips. The strongest opposing
+      consideration is that until the cameras are identified (PIPE-R010), the
+      times and places rest on an advocate's captions alone, and the claim,
+      rightly, says nothing about whose car it is.
+    confidence: low

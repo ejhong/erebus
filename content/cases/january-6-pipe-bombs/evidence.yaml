@@ -3740,10 +3740,10 @@
   sourceStatement: >-
     During the FBI's examination of November 6, 2025, the former officer "was asked twice whether she placed the pipe bombs, and she said she did not." Footnote 3: "The examiner’s actual opinion, as reflected clearly at the top of the report provided to the defendant in discovery, was" "Deception Indicated" "which reflects the view that the polygraph charts showed physiological responses to the relevant questions that were indicative of deception."
   editorInference: >-
-    The prosecution states the result against its own position, and says the report itself went to the defense; the defense describes it the same way (PIPE-E222). The report is not public. A polygraph examiner's opinion is a reading of physiological responses, not a finding of fact, and is not admissible as evidence at trial (PIPE-E223).
+    The prosecution states the result against its own position, and says the report itself went to the defense; the defense describes it the same way (PIPE-E222). The report is not public. A polygraph examiner's opinion is a reading of physiological responses, not a finding of fact, and the government says it is inadmissible as substantive evidence (PIPE-E223).
   exactLocator: p. 4 and n. 3
   limitations:
-    - "The examination's charts and report are not public, and polygraph opinions have no established accuracy sufficient for courts to admit them."
+    - "The examination's charts and report are not public, and a polygraph opinion's accuracy is disputed; the government cites federal cases treating results as inadmissible."
   reviewState: ai_extracted
   origin: *o01n
 
@@ -3772,7 +3772,7 @@
   sourceStatement: >-
     The government says she "voluntarily submitted to a polygraph examination after she was unexpectedly called in by her employer for an FBI interview, sat for hours answering the FBI’s questions, then watched the FBI search her home, car, and cellphone—all in the same day." "Given these circumstances, it would be unreasonable to place weight on the examiner’s opinion that" her "physiological stress responses indicated deception". It adds that "even under ordinary circumstances, a polygraph result is inadmissible as substantive evidence."
   editorInference: >-
-    The government does not dispute the result; it disputes what it is worth. Its point on admissibility is the settled rule in federal courts, and the conditions it describes are ones in which a polygraph's error rate is a known concern. The result is evidence of how the FBI's own inquiry went, not evidence of who placed the devices.
+    The government does not dispute the result; it disputes what it is worth. On admissibility it says a result is inadmissible as substantive evidence, citing cases from several circuits; the conditions it describes are ones in which a polygraph's error rate is a known concern. The result complicates the government's description of the inquiry as finding no evidence against her; it is not evidence of who placed the devices. (Reworded 2026-11-17 at the review of #141, which asked that the government's own formulation replace a categorical statement of the rule.)
   exactLocator: p. 24
   reviewState: ai_extracted
   origin: *o01n
@@ -3850,3 +3850,326 @@
   exactLocator: pp. 3–6
   reviewState: ai_extracted
   origin: *o01n
+
+# ── 2026-11-17: the government's opposition to the motion to suppress (ECF No. 130) ──
+# Pages are the PDF's, as the reading tool numbers them; the brief's own page
+# numbers run two lower. The brief names private members of Cole's family and
+# describes school and medical matters; only what bears on the evidence is taken.
+
+- id: PIPE-E229
+  title: "The government: Cole named Lilly Miller sulfur dust as an ingredient, and his card records show he bought it in 2018"
+  claimIds: [PIPE-C091, PIPE-C040]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The defendant made the black powder in the devices using charcoal, Lilly Miller sulfur dust" (citing Tr. 104:24–105:24). Footnote 10: "The defendant’s Capitol One card records show that the defendant purchased Lilly Miller sulfur dust on January 14, 2018."
+  editorInference: >-
+    The first detail of the confession the prosecution has said, in a public filing, that its records confirm. Whether it counts as knowledge the agents did not supply turns on who first named the brand: the brief does not say, and the agents, who held his card records, had listed other components to him before his admission (PIPE-E232) but, in the brief's account of those pages, not sulfur. The transcript at Tr. 104–105 has not yet been read for it (PIPE-R003).
+  exactLocator: p. 15 and n. 10
+  limitations:
+    - "The card records are not public; the purchase is the prosecution's description of them."
+    - "Sulfur dust is a common garden product, and the purchase is three years before the placements; a match of brand shows he bought it, not that it went into the devices."
+    - "The brief does not say whether the brand was first named by Cole or by an agent."
+  reviewState: ai_extracted
+  origin: &o17n
+    ref: "operator session 2026-11-17: the docket of United States v. Cole read from the RECAP archive, ECF Nos. 96 (pp. 9–18), 125, 128, 129 and 130"
+    extractedBy: "Claude Opus 5.5 (claude-opus-5-5), operator session 2026-11-17-session-site-165252"
+    runId: "2026-11-17-session-site-165252"
+    date: "2026-11-17"
+
+- id: PIPE-E230
+  title: "The government's account of what Cole said after his admission: an hour and a quarter of detail, with transcript citations"
+  claimIds: [PIPE-C039]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Over the next approximately 1.25 hours, the defendant walked the agents in detail through his construction, transportation, and planting of the pipe bombs." On p. 17: "The defendant explained that he “turned the kitchen timer” on the first device “right up to the end” (60 minutes) and planted the device near the DNC."
+  editorInference: >-
+    The government now cites each detail to the transcript's page and line (Tr. 103–153): one shoe box on the back seat, the parking place on D Street SE, a bench near the DNC where he says he took out his phone, kitchen timers set to sixty minutes, the route home. That makes the confession's contents checkable against the public transcript; it does not say which details the agents supplied. The earlier filings gave the account as an hour and a half; this brief says about an hour and a quarter.
+  exactLocator: pp. 15–17 (the 1.25 hours on p. 15, the timer on p. 17)
+  limitations:
+    - "The prosecution's summary of its own interview; the recording is not public, and the transcript's later pages have not been read here against what the agents said."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E231
+  title: "The government: later in the interview Cole said he had not known of or attended a protest that night"
+  claimIds: [PIPE-C033]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: undermines
+  strength: weak
+  sourceStatement: >-
+    "The defendant then confirmed that he did not know about or attend a protest on the night of January 5." (citing Tr. 137:10–18)
+  editorInference: >-
+    By the prosecution's account Cole himself withdrew the first account on which the October identification builds. It weighs only as much as the confession does: it comes from the part of the interview the defense says was coerced, and the word "confirmed" is the brief's.
+  exactLocator: p. 18
+  limitations:
+    - "From the disputed confession; if it was coerced, the withdrawal carries its weakness."
+    - "The transcript's page has not been read here; the wording quoted is the brief's."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E232
+  title: "The government's own brief: before his admission the agents listed the components his purchases matched"
+  claimIds: [PIPE-C080]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "When the defendant continued to deny planting the devices, the agents told him that his statements to that point were “not consistent with what we see” in the evidence, including purchases of multiple timers, 9-volt snap battery connectors, 1 by 8-inch galvanized pipe, black iron end caps, galvanized end caps, alligator clips, 14-gauge red wire, and 14-gauge black wire." (citing Tr. 88:2–14)
+  editorInference: >-
+    The adverse party confirms what the transcript shows: before Cole said yes at Tr. 93, the agents had named the devices' components, as well as the RNC and DNC, the park, the hours and the shoes. None of these can count as knowledge only the bomber had. The list does not include sulfur (PIPE-E229).
+  exactLocator: p. 12
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E233
+  title: "The government: a deleted copy of the Anarchist Cookbook on a thumb drive from where Cole lived"
+  claimIds: [PIPE-C092]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Footnote 11: "A forensic review of a thumb drive recovered from the basement area of the defendant’s home, where he lived, showed that the device contained a deleted copy of, among other files, the Anarchist Cookbook dated to 2016."
+  editorInference: >-
+    New in this filing; no earlier filing read for this case mentions it. A widely circulated text, kept and deleted at a date the brief does not give, is evidence of interest, not of building or placing anything.
+  exactLocator: p. 15, n. 11
+  limitations:
+    - "The forensic report is not public, and the brief does not say who saved or deleted the file, or when it was deleted."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E234
+  title: "The government: 2012 searches for how to make a pipe bomb under a user profile named Brian"
+  claimIds: [PIPE-C093]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: weak
+  sourceStatement: >-
+    Footnote 11, of a hard drive recovered from a family member's room in the home: "at various points in 2012, a user profile titled “Brian” conducted internet searches or visited webpages including “how to make a pipe bomb,” “wikihow pipe bomb,” “improvised explosive device,” and “list of political manifestos.”"
+  editorInference: >-
+    Searches made eight to nine years before the placements, on a drive found in another person's room, under a profile name; the brief does not say how the profile is tied to Cole, then about seventeen. It shows an interest the prosecution will say persisted; it cannot show who made the devices.
+  exactLocator: p. 15, n. 11
+  limitations:
+    - "A profile name is not a person; the drive's other users are not stated."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E235
+  title: "The government: Cole's computer's operating system was reinstalled hours before his arrest"
+  claimIds: [PIPE-C094]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Footnote 11: "No digital content was recovered from the defendant’s cellphone or computer; the former had been factory reset several hours before the defendant’s arrest, and the latter had undergone an operating system" reinstallation "hours before the arrest."
+  editorInference: >-
+    The phone's reset that morning was already in the record (PIPE-C046); the computer's reinstallation is new. A second device cleared within hours of the arrest bears on the defense's account of the phone wiping as compulsion (PIPE-C048), which the prosecution's neuropsychologist and its brief do not address for the computer. Neither the timing nor the cause is shown by a public record.
+  exactLocator: p. 15, n. 11
+  limitations:
+    - "The forensic findings are not public; the brief does not say how the time of the reinstallation was established."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E236
+  title: "The government: in a recorded call from detention Cole repeated that what he did was the dumbest thing he had done"
+  claimIds: [PIPE-C095]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Footnote 9: "On December 12, 2025, after he was detained pending trial, the defendant used the same language in a recorded phone call with his parents, stating, “what I did four years ago, that was the dumbest thing I’ve ever done in my life." The brief adds that his parents "immediately directed the defendant not to talk on the phone" about the case because it was recorded "and told the defendant, “you didn’t do nothing.” The defendant agreed."
+  editorInference: >-
+    If accurate, a statement eight days after the interview, outside the interview room, that echoes his words there (Tr. 103) — the first such statement in a public filing. It does not say what he did, and his agreement with his parents' reply points the other way; the recording is not public and the defense has not yet answered it.
+  exactLocator: p. 14, n. 9
+  limitations:
+    - "The recording is not public; the words and their context are the prosecution's description."
+    - "The statement names no act; 'four years ago' from December 2025 is near, not exactly, January 2021."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E237
+  title: "The government's neuropsychologist: no functional impairment, and anxiety that largely disappeared after the admission"
+  claimIds: [PIPE-C096]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Dr. Rachel Orr, "a clinical neuropsychologist who is board certified by the American Board of Professional Psychology, reviewed the defendant’s interview and other records and opined that" there "is no available information to show functional impairment." (p. 24). Quoting her report on p. 26: "research has repeatedly found no difference between autistic individuals and neurotypical individuals in suggestibility, even in children."
+  editorInference: >-
+    The prosecution's expert answers the defense's (PIPE-C041, PIPE-C042) from the same recording. Both are retained by a party; neither has been tested at a hearing. What she says of his anxiety after the admission is PIPE-E247.
+  exactLocator: pp. 24–26
+  limitations:
+    - "Her report is an exhibit (ECF No. 130-3) whose scan has no text layer; it is quoted here as the brief quotes it."
+    - "She reviewed the recording and records; the brief does not say she examined Cole."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E238
+  title: "The government concedes that Cole was distressed while he denied the charge"
+  claimIds: [PIPE-C042]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "While there is no question that the defendant was distressed after his arrest and when confronted with the evidence of his guilt, this does not evince coercion." On p. 43: "the defendant’s apparent “distress” was limited to the period during which he was denying his guilt."
+  editorInference: >-
+    The adverse party concedes the distress and disputes only its meaning and its span. Its own account of the interview records him wrapped in a blanket, complaining of a pain in his stomach and saying everything was blank before his admission (pp. 9–12).
+  exactLocator: pp. 42–43
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E247
+  title: "The government's neuropsychologist: the signs of anxiety largely disappeared once Cole had said yes"
+  claimIds: [PIPE-C096]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    Quoting her report: the "observable signs of anxiety in Mr. Cole largely disappeared following his self-identification, revealing … a more relaxed and calm demeanor for the remainder of the session," during which "his fidgeting, shaking, and repetitive speech were all largely absent."
+  editorInference: >-
+    That his anxiety eased once he had said yes fits a guilty man's relief and an innocent man's escape from pressure alike; it does not tell the two apart. The government uses it to argue the distress came from lying, the defense's expert to argue the pressure ended when he complied.
+  exactLocator: p. 43
+  limitations:
+    - "Her report is a scan without a text layer (ECF No. 130-3); quoted as the brief quotes it."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E248
+  title: "The government: the agents emphasized the evidence and downplayed the crimes, by the Reid approach"
+  claimIds: [PIPE-C041]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    "The agents properly emphasized the strength of the evidence and downplayed the severity of the crimes, both accepted strategies commonly known as the Reid approach."
+  editorInference: >-
+    The adverse party names the minimization the defense's expert describes, and calls it proper. The disagreement is over its lawfulness and effect, not over whether it was used.
+  exactLocator: p. 19
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E239
+  title: "The government: the family members were already under subpoena for the next day, and were released after the interview"
+  claimIds: [PIPE-C097]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "Each of the defendant’s family members was under subpoena and legally required to appear in Washington, D.C. the next day." "After the interview, the government notified the family members that they had been relieved of their obligation to appear in Washington, D.C., and none did."
+  editorInference: >-
+    The government's answer to the defense's charge that the agents used his family as leverage: the trip was real and legally required, and what the agents offered was to lift it. Whether an offer to spare one's family a compelled trip, made to a man in distress, is coercive is for the court; that the offer was made is common ground.
+  exactLocator: p. 41
+  limitations:
+    - "The subpoenas are not public; their service is the prosecution's account, and the brief does not say what the family were to be asked."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E240
+  title: "The government agrees the agents spoke of sparing his family the trip if he told the truth"
+  claimIds: [PIPE-C041]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: supports
+  strength: strong
+  sourceStatement: >-
+    The agents, the brief says, "did tell the defendant that if he told the truth, the agents" might "not have to bring" his family members to Washington. In footnote 26 it says the defense's motion concedes that the "agents never said they would ‘arrest’ his family."
+  editorInference: >-
+    The parties now agree on what the agents did — minimizing (PIPE-E248), saying that confessing would help him, and linking the truth to sparing his family the trip — and disagree on whether it was lawful and whether it was coercive. The claim is the observation; the legal question is the court's, and the risk of a false confession is a question of the details (PIPE-C040).
+  exactLocator: p. 41 and n. 26
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E241
+  title: "The government confirms the diagnosis rests, so far as it has been shown, on a four-sentence letter"
+  claimIds: [PIPE-C043]
+  sourceId: SRC-PIPE-ECF130-GOVT-SUPPRESSION-OPPOSITION
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    Footnote 12: "The government has been provided only a four-sentence letter signed by the doctor stating that he evaluated the defendant over two days in December 2025"
+  editorInference: >-
+    The diagnosis was made, as both sides say; its basis has not been produced to the government or the public, and the brief says the defense has not said whether the diagnosing doctor will testify at the suppression hearing.
+  exactLocator: p. 21, n. 12
+  reviewState: ai_extracted
+  origin: *o17n
+
+# ── 2026-11-17: the defense's motion to compel the FBI's image of the former officer's phone (ECF No. 128) ──
+# The motion names the former officer throughout; this site quotes around the name and
+# leaves out its account of what the image shows about her that evening, which is
+# insinuation about an uncharged person beyond what any record yet establishes.
+
+- id: PIPE-E242
+  title: "The defense: what the FBI's inquiry into the former officer did not collect"
+  claimIds: [PIPE-C098]
+  sourceId: SRC-PIPE-ECF128-DEFENSE-MOTION-COMPEL-PHONE-IMAGE
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    The FBI, the motion says, collected "no cell-site data for her telephone numbers, no warrant for her Apple account, no footage from her home cameras, and no extraction of the phone she carried in January 2021." "This image is the government’s only extraction of her photographs and messages from January 4 through 6, 2021."
+  editorInference: >-
+    The defense cites the government's own discovery correspondence for each gap (its Exhibit E), which is not public. If accurate, the inquiry the government says found no evidence against her did not gather the kinds of record — cell-site data above all — on which the case against Cole chiefly rests; what it did not collect it cannot have found. The government's answer was not in the public archive on November 17.
+  exactLocator: pp. 3–4
+  limitations:
+    - "The defense's description of the government's records, offered to win a discovery motion; the government has not yet answered it in public."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E243
+  title: "The defense: the FBI's first review of the former officer's phone image missed eleven geotagged photographs"
+  claimIds: [PIPE-C088]
+  sourceId: SRC-PIPE-ECF128-DEFENSE-MOTION-COMPEL-PHONE-IMAGE
+  direction: qualifies
+  strength: moderate
+  sourceStatement: >-
+    "After the defense asked for the image, an FBI agent reviewed it a second time and found eleven geotagged photographs the first review had missed." The government then declined to produce the image as "not exculpatory" and "irrelevant to any issue in the case."
+  editorInference: >-
+    The government's statement that the inquiry found nothing rests on reviews the defense says were incomplete once already; the error was caught on a re-review the defense prompted. What the photographs show is not stated in public, and this site draws nothing from them about her.
+  exactLocator: p. 1
+  limitations:
+    - "The FBI's review notes are exhibits not in the public archive; the count is the defense's description of them."
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E244
+  title: "The defense moves to compel the phone image; the government offered two days of it"
+  claimIds: [PIPE-C090]
+  sourceId: SRC-PIPE-ECF128-DEFENSE-MOTION-COMPEL-PHONE-IMAGE
+  direction: supports
+  strength: moderate
+  sourceStatement: >-
+    "The government refused and offered only January 5 and 6, 2021." "Mr. Cole therefore moves to compel production of the image or, at a minimum, of the data for his two periods."
+  editorInference: >-
+    A second front in the same dispute: beside the subpoenas for the home video and work records (PIPE-R012), the defense now seeks the FBI's own copy of her phone, from December 1, 2020 to January 30, 2021 and the first days of November 2025. As before, it disputes the completeness of the government's account rather than setting a contrary record beside it.
+  exactLocator: p. 2
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E245
+  title: "Conflicts counsel expected to finish advising Cole by November 13 and proposed a hearing after November 16"
+  claimIds: [PIPE-C087]
+  sourceId: SRC-PIPE-ECF125-CONFLICTS-COUNSEL-REPORT
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    Counsel "anticipates being able to complete the process of advising the client by November 13, 2026, and suggests a status hearing at which the issues can be addressed anytime after November 16, 2026."
+  editorInference: >-
+    The report filed October 30 is the one the court ordered; it records progress, not advice. Whether Cole has waived the conflict, and whether a hearing has been set, could not be read on November 17: no later order is in the archive and the docket pages refuse the reading tool.
+  exactLocator: p. 1
+  reviewState: ai_extracted
+  origin: *o17n
+
+- id: PIPE-E246
+  title: "The government asks, unopposed, to defer its motion to exclude alternative-perpetrator evidence until the subpoenas are resolved"
+  claimIds: [PIPE-C086]
+  sourceId: SRC-PIPE-ECF129-GOVT-MOTION-MODIFY-PRETRIAL-ORDER
+  direction: context
+  strength: moderate
+  sourceStatement: >-
+    The government "requests that the Court order that the government’s motion be due seven days following the latest of (a) a ruling denying the currently pending defense motion for the Rule 17(c) subpoenas (ECF 88), (b) an order from the Court quashing any such subpoenas, or (c) the parties’ inspection of any production resulting from issued Rule 17(c) subpoenas."
+  editorInference: >-
+    Filed November 10 as unopposed. If granted, whether the jury may hear the alternative-perpetrator defense will not be argued until the records the defense seeks are ruled on or produced, so the November 20 deadline no longer governs it. No order on the motion was readable on November 17.
+  exactLocator: p. 1
+  reviewState: ai_extracted
+  origin: *o17n

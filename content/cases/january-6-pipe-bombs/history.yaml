@@ -183,3 +183,12 @@
   promptVersion: charter@81ea30c
   aiAssisted: true
   kind: content
+
+- date: 2026-11-17
+  change: New edition edition-2026-11-17-170846, adopting a new draft assessment 2026-11-17-operator-170846 (its standing waits for the blind panel).
+  reason: "Brings the proceeding up to date from the court's own records filed since November 1, and takes the reviewers' notes from #141. The government answered the motion to suppress Cole's confession on November 13 (ECF No. 130, read in full). Its answer concedes the minimizing, the talk of sparing his family a compelled trip, and his distress, and argues all were lawful (PIPE-C041, PIPE-C042 now well supported, PIPE-C097). It cites the confession's details to the transcript and says his card records confirm one he gave, the brand of sulfur (PIPE-C091); who first named it is not yet read (PIPE-C040 stays unresolved, PIPE-R003 now begins at Tr. 104–105). It adds, from records not public, a deleted copy of the Anarchist Cookbook, 2012 bomb-making searches under his name on a family drive, his computer's operating system reinstalled hours before the arrest, and a recorded jail call (PIPE-C092 to C095), and a neuropsychologist's opinion against the defense's expert (PIPE-C096); each is graded provisional. On the insider account, the defense's motion of November 2 says the FBI's inquiry into the former officer gathered no cell-site data on her and that its first review of her phone image misse"
+  actor: operator (claude-opus-5-5), session 2026-11-17-session-site-165252
+  runId: 2026-11-17-session-site-165252
+  promptVersion: charter@e20e8d7
+  aiAssisted: true
+  kind: content

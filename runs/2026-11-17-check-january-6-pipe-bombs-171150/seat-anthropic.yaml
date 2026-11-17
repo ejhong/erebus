@@ -1,0 +1,31 @@
+runId: "2026-11-17-check-opus"
+model: "Opus 5.5 (Anthropic), independent check run"
+date: "2026-11-17"
+promptVersion: "check-v2"
+humanReviewed: false
+role: check
+caseAssessment:
+  verdict: well_supported
+  loadBearing: [PIPE-C020, PIPE-C026, PIPE-C027, PIPE-C075]
+  weakestLinks: [PIPE-C031, PIPE-C027, PIPE-C040]
+  synthesis: >-
+    I take the featured hypothesis to be the charged account (PIPE-C059), which is the proposition the case's subtitle asks about. Its rivals are the misidentification account (PIPE-C033) and the insider account (PIPE-C052). These are grades of evidence, not of guilt. Cole is presumed innocent, and the records that matter most have not been tested at trial. Where a claim is worded as a party's account, I grade its substance, as the ledger's own convention directs, and I say when only the attribution is established. The direct readings of the congressional CCTV files are provisional and are set aside. The site's studies PIPE-S003 to S005 count as single, unreplicated readings under frozen criteria.
+
+    The charged account rests on three lines that are independent in origin.
+    (1) Purchases. Itemized bank and card records show Cole buying, by the affidavit's account, nearly every component type of the devices in 2019 and 2020 (C020). These include five of a 9-volt connector of which fewer than 8,000 were distributed nationally.
+    (2) Plate reader. A plate reader recorded his car at the South Capitol Street exit at 7:10 p.m. (C026). The video's maker concedes this, and it matches Cole's own first account of driving in alone.
+    (3) Phone. There were about seven phone sessions between 7:39 and 8:24 p.m. Five are sworn to fall, at the same minutes, on five different sectors covering the bomber's filmed positions (C027). The challengers also concede the sessions.
+
+    It is very unlikely that an innocent man would match all three by chance. That is a base-rate judgment, a prior rather than a figure in the record beyond the connector count, but a strong one.
+
+    The confession adds little until the transcript test is done (C040). Before his admission, which he first met with a 'No', the agents had already named the places, the hours, the shoes and the components (C080). The sulfur match (C091) and the jail call (C095) rest on the prosecution's word alone. The remaining challenges are unpublished assertions: a three-size shoe gap, a smartwatch, and an inconclusive gait comparison. The one podiatrist's comparison the record describes was of another person.
+
+    The strongest challenge is the October footage. It is genuine congressional CCTV, and its captions were read from the files' own clocks, one of them 30 seconds early (C073, C074). On those clocks its man cannot be the bomber (C063), so everything turns on who he is (C031). That identification rests on interested relatives' recognition of features the frames cannot resolve. Against it, at 7:59:36 the phone attributed to Cole used a sworn sector facing away from every place the man is filmed (C075). For him to be Cole, the phone Cole said he brought alone must have been elsewhere, and no one has said where.
+
+    That same session is only a marginal fit for the bomber's corner. So it argues more strongly against the Peace Circle man than for the bomber's exact position. This is a real weakness in the phone line, as is the 2021 finding that five people's data may have matched the route, but neither helps the alibi.
+
+    The insider account offers no record placing any insider at the scene. On the defense's unanswered description, the inquiry into the one named person was thinner than the one that charged Cole (C098), but thinness is not evidence of guilt. One question remains unexplained: why records that sat in the FBI's files for years pointed to Cole only weeks before his arrest. It bears on the investigation, not on what the records say.
+
+    Steelmanning the challenge: the footage is the only exculpatory item that has been checked against originals, and the phone records are described rather than produced. A blind comparison and a clock-offset measurement (R009, R001) could still make the man Cole on aligned clocks, which would defeat the charged account outright. Steelmanning the charge: the challengers concede presence and sessions, and no one has offered an innocent account of the purchases.
+
+    Sensitivity: no single record carries the verdict. The affidavit's core is restated in the detention memorandum and partly conceded by the challengers. The record whose removal would most change the verdict is PIPE-E051, the sworn pairing of the 7:59:

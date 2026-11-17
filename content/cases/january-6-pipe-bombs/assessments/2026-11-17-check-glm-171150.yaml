@@ -1,0 +1,345 @@
+# Cross-model check run — an independent judge (GLM 5.3 Flash (Z.ai, via Venice)), blind to all
+# prior assessments and to the editions (erebus check, check-v2; run 2026-11-17-check-january-6-pipe-bombs-171150).
+# role: check — never displayed as the case narrative; feeds the concurrence panel.
+# basis.ledgerHash is the ledger it judged. Append-only; NOT human reviewed.
+runId: 2026-11-17-check-glm-171150
+producedBy: 2026-11-17-check-january-6-pipe-bombs-171150
+model: GLM 5.3 Flash (Z.ai, via Venice) — independent check run via z-ai-glm-5-3-flash
+date: 2026-11-17
+promptVersion: check-v2
+humanReviewed: false
+role: check
+basis:
+  ledgerHash: 784e335e31da06dce2a106caa901443c228290f71712816bbcd6a7e344c8d983
+caseAssessment:
+  verdict: well_supported
+  components: []
+  loadBearing:
+    - PIPE-C027
+    - PIPE-C020
+    - PIPE-C026
+    - PIPE-C039
+    - PIPE-C041
+  weakestLinks:
+    - PIPE-C031
+    - PIPE-C033
+    - PIPE-C091
+    - PIPE-C095
+    - PIPE-C098
+  synthesis: "The record splits into three layers. The first is settled: the
+    devices and their evening timeline (sworn and uncontradicted), the component
+    purchases, the plate-reader record — which the challenging side's own
+    researcher now concedes — the phone sessions, whose existence the
+    challenging side also concedes, the interrogation techniques, which the
+    government's own brief admits using, the authentication of the October 2026
+    footage against the congressional originals, and the retraction of the
+    November 2025 identification. The second layer is the charged account's
+    convergence: a car recorded entering the city 24 minutes before the bomber
+    appears on camera, a phone whose sessions track the bomber's route across
+    five sectors, purchases matching every device component including a
+    connector of which fewer than 8,000 were distributed nationwide, matching
+    components found at the home and car, a detailed confession cited to the
+    public transcript, one confession detail (the sulfur brand) matched to an
+    independent 2018 card purchase, and a jail call repeating the admission. The
+    third layer is the challenge, and it is real but unestablished at its
+    center: the footage is authentic and its on-screen times are the files' own,
+    and on those clocks the man at Peace Circle at 8:01:18 cannot be the person
+    the affidavit places about a kilometre away 100 seconds earlier — but
+    whether that man is Cole rests on interested-family recognition of a mask,
+    jacket and shoes that the frames, at 704x528 and a roughly 10-by-13-pixel
+    head, cannot confirm; and if he is Cole, the sector the phone used at
+    7:59:36 faces away from every place he is filmed, a conflict the alibi's
+    proponents leave to the prosecution. Steelman for the challenge: the
+    impossibility finding and the sector geometry are exactly the kind of
+    checkable, dispositive anomaly that, if the man were ever identified as Cole
+    by a blind examiner or by the seized clothing, would force the government to
+    choose between its phone evidence and its charge — and no public record
+    currently reconciles them. Steelman for the charge: the convergence was
+    built from records assembled before Cole was a suspect (the 2021 height
+    analysis, the provider's April 2021 sector correction, the drive tests),
+    which is hard to square with framing an innocent man five years later. The
+    verdict is well_supported rather than established because the two most
+    decisive bodies of evidence — the phone's raw records with drive-test maps,
+    and the confession's decisive pages — have not yet been independently read,
+    and the man's identity is the open question PIPE-R009 would settle.
+    Sensitivity: the single record whose removal would most change this verdict
+    is PIPE-E051, the affidavit's pairing of the phone's 7:59:36 session with
+    the bomber's position on video two seconds later; it is also the pivot of
+    the sector-geometry finding (PIPE-C075). Without it the minute-by-minute
+    convergence — the strongest single line — goes, and the verdict downgrades
+    to provisionally_supported; it survives, because the purchases, the conceded
+    plate-reader record, the search finds, the confession and the jail call
+    remain, and the sessions' bare existence also survives through the
+    challenging side's own concession."
+  steelman: The Lilly Miller sulfur dust. Cole named a brand of sulfur as an
+    ingredient in his confession; his card records show a purchase of that exact
+    brand on January 14, 2018 — three years before the placements and years
+    before any investigation of him. The government's own account of the
+    transcript lists the components the agents named before his admission —
+    timers, connectors, pipe, end caps, alligator clips, wire — and sulfur is
+    not among them. If the brand came first from Cole, it is a confession detail
+    that predates the investigation, was not supplied by the agents, and is
+    independently checkable in records the defense can subpoena — precisely the
+    kind of detail a contamination-based false-confession account cannot
+    explain, and the public record does not yet say who spoke the brand first
+    (Tr. 104-105, unread).
+claimAssessments:
+  - claimId: PIPE-C059
+    verdict: well_supported
+    reasoning: "Five lines converge: the conceded plate-reader record, the conceded
+      phone sessions tracking the bomber's route, purchases matching every
+      component including a scarce connector, a detailed confession cited to the
+      public transcript, and a jail call echoing it. The strongest opposing
+      consideration is that the October footage is now authenticated and its
+      clocks anchored to the FBI's timeline, so if its subject were established
+      as Cole the charge fails; that identification is weak, and no public
+      record reconciles the footage with the phone data if it were true."
+    confidence: moderate
+  - claimId: PIPE-C063
+    verdict: well_supported
+    reasoning: "The arithmetic is sound: about 960 metres in the 100 seconds the
+      recorded clocks allow exceeds any runner's kilometre, and a brisk walk
+      takes about eleven minutes, so the two sightings are one person only if
+      camera 3187's clock and the FBI's differ by roughly nine minutes. The
+      strongest opposing consideration is that the anchor tying the release's
+      clocks to the FBI's timeline is a single figure on camera 794, labeled the
+      bomber by Baker's breakdown rather than independently established; it
+      makes a nine-minute offset unlikely but does not exclude one."
+    confidence: moderate
+  - claimId: PIPE-C075
+    verdict: well_supported
+    reasoning: "The finding comes from a study under criteria frozen before the data
+      were read, using the affidavit's own sector direction (south from 200
+      Independence Avenue SW) and the District's address points: every place the
+      footage puts the man lies 147 to 172 degrees off the sector, outside even
+      a 90-degree band. The strongest opposing consideration is that the
+      affidavit itself says actual sector coverage varies day to day, and the
+      FBI's drive-test maps and the provider's raw records are not public, so
+      the geometry is a nominal model, not a measurement."
+    confidence: moderate
+  - claimId: PIPE-C031
+    verdict: weakly_supported
+    reasoning: The identification rests on the family's recognition of a mask,
+      jacket and shoes relayed by an advocate, and on a by-eye likeness from
+      frames in which the head is about 10 by 13 pixels and no mask color, shoe
+      brand or tag can be resolved; a news report records the identification as
+      unconfirmed. The strongest opposing consideration is that the recognition
+      details are specific and checkable — a jacket purchase record is said to
+      exist — but nothing public has checked them, and the retracted November
+      2025 identification shows how this method fails.
+    confidence: low
+  - claimId: PIPE-C073
+    verdict: well_supported
+    reasoning: The study checked all eight cameras against the subcommittee's posted
+      files, downloaded and hashed camera 602's, and found each clip matches its
+      original, seven at the labeled moment and 602's about 30 seconds after it;
+      camera 602's file is corroborated by non-provisional frame-level records.
+      The strongest opposing consideration is that seven files were viewed in a
+      browser rather than hashed, and the check is one study's run — repeatable
+      by anyone, but not yet repeated.
+    confidence: high
+  - claimId: PIPE-C074
+    verdict: well_supported
+    reasoning: The originals carry no on-image time, and seven of the eight
+      on-screen times equal the file's recorded start plus elapsed time to
+      within seconds, with camera 602's caption 30 seconds early — so the
+      critics were right that the times were overlaid and wrong that they were
+      not taken from the files. The strongest opposing consideration is only
+      that this too is a single study's reading, though against files anyone can
+      open.
+    confidence: high
+  - claimId: PIPE-C062
+    verdict: well_supported
+    reasoning: "Baker's report is documented, and the frame-level study confirms the
+      cameras, places and the man's presence on both. The strongest opposing
+      consideration is to the claim's implication rather than its local truth:
+      the times Baker gave, 20:03:32 to 20:04:02, are the files' start times,
+      with the man appearing about 81 to 83 seconds in — so \"verify the
+      timestamps to the millisecond\" overstates what those numbers establish
+      about when he was filmed."
+    confidence: moderate
+  - claimId: PIPE-C033
+    verdict: weakly_supported
+    reasoning: The alibi holds only if the man in the authenticated footage is Cole
+      (PIPE-C031), which is unestablished, and even granting it, the phone's
+      sector at 7:59:36 faces away from every filming location — a conflict the
+      account's own proponents leave to the prosecution. The strongest opposing
+      consideration in the other direction is that the footage's existence,
+      provenance and timing are now verified against public originals, so the
+      account is testable rather than fanciful; it fails for now on identity,
+      not on the video.
+    confidence: low
+  - claimId: PIPE-C079
+    verdict: well_supported
+    reasoning: Under the frozen coding rule, of 21 details in Cole's first account
+      only four are specific and his own, and neither the footage nor the
+      bomber's sworn movements can check any of them, so the account fits each
+      no better than the other. The strongest opposing consideration is that the
+      footage search was guided by this account, which proponents read as
+      corroboration; the study shows a vague one-evening memory cannot
+      discriminate between an innocent and a guilty man.
+    confidence: moderate
+  - claimId: PIPE-C027
+    verdict: well_supported
+    reasoning: The affidavit swears to seven sessions between 7:39 and 8:24 paired
+      with the bomber's filmed positions, the challenging side concedes the
+      sessions occurred, and a frozen-criteria study finds the bomber's sworn
+      positions fit the serving sectors. The strongest opposing considerations
+      are that a sector match is a wide wedge rather than a point, the raw
+      records and drive-test maps are not public, and the fit is weakest at
+      7:59:36, the minute the footage dispute turns on.
+    confidence: moderate
+  - claimId: PIPE-C026
+    verdict: well_supported
+    reasoning: The prosecution's record is now conceded in substance by the
+      challenging side's own researcher, which converts a one-source account
+      into common ground. The strongest opposing consideration is that the
+      record itself is not public and a plate reader captures a car, not a
+      driver — though Cole's own first account has him driving to Washington
+      that evening.
+    confidence: high
+  - claimId: PIPE-C040
+    verdict: mixed
+    reasoning: "Both directions have documented support: the sulfur brand in his
+      account matches an independent 2018 purchase, and he described his parking
+      place before an agent named the park; but the agents had named the RNC,
+      DNC, Folger Park, the hours, the shoes and every device component before
+      his admission, the FBI had publicized the Folger Park area since 2021, and
+      the defense alleges with transcript citations (unread here) that the
+      post-waiver details were supplied. The decisive test — which details came
+      first from Cole and are true — awaits the registered reading of Tr.
+      103-153, so the claim is genuinely two-sided at present."
+    confidence: low
+  - claimId: PIPE-C091
+    verdict: provisionally_supported
+    reasoning: The purchase is specific, dated and checkable, and it is the first
+      confession detail the prosecution says its records confirm. The strongest
+      opposing consideration is that the card records are not public, the brief
+      does not say whether Cole or an agent first named the brand, and sulfur
+      dust is a common garden product bought three years before the placements —
+      a match of brand shows he bought it, not that it went into the devices.
+    confidence: low
+  - claimId: PIPE-C080
+    verdict: well_supported
+    reasoning: "The claim is read directly from the public transcript: the agents
+      named the RNC and DNC area, Folger Park, the 7:34-to-8:18 window and the
+      shoes before Cole said yes, and he had named none of them, though he had
+      already described his parking place in his own words. The strongest
+      opposing consideration is interpretive: supplying facts is what
+      confrontations do, and the claim's significance for the confession's
+      reliability is a separate question (PIPE-C040)."
+    confidence: high
+  - claimId: PIPE-C082
+    verdict: well_supported
+    reasoning: The divided roadway of D Street SE between 2nd and 3rd Streets is
+      confirmed by two independent official datasets, the Census Bureau's roads
+      and the District's own centerlines, matching the OpenStreetMap reading.
+      The strongest opposing consideration is that a fit of an unnamed place
+      description is not an identification, and the FBI had told the public in
+      2021 that the bomber operated from around Folger Park, so describing it
+      was not knowledge only the bomber had.
+    confidence: high
+  - claimId: PIPE-C039
+    verdict: well_supported
+    reasoning: "The claim is properly attributed and documented by both the
+      detention memo and the government's later brief, which now cites each
+      detail to the public transcript's pages and lines. The strongest opposing
+      consideration is that the account's truth and provenance are precisely
+      what the suppression motion contests: the defense alleges, with citations
+      this assessment has not read, that the agents supplied the narrative's
+      heart."
+    confidence: moderate
+  - claimId: PIPE-C041
+    verdict: well_supported
+    reasoning: The defense expert quotes the transcript's minimization and the
+      family-related remark by page, and the government's own brief concedes the
+      agents emphasized the evidence, downplayed the crimes under the Reid
+      approach, and said telling the truth might spare his family the trip. The
+      strongest opposing consideration is that the government characterizes the
+      same techniques as lawful and standard; the claim as stated — that they
+      were used — is common ground between the parties.
+    confidence: high
+  - claimId: PIPE-C095
+    verdict: provisionally_supported
+    reasoning: The quotation is specific and, if accurate, is the first
+      post-interview statement in a public filing echoing the confession's
+      words. The strongest opposing consideration is that the recording is not
+      public, the words and context are the prosecution's description, the
+      parents' "you didn't do nothing" and his agreement point the other way,
+      and the statement names no act.
+    confidence: low
+  - claimId: PIPE-C020
+    verdict: well_supported
+    reasoning: The affidavit's account is sworn, specific to dates and stores, and
+      covers every component type; the defense disputes not the purchases but
+      what they prove. The strongest opposing consideration is that the
+      underlying records are not public and the account comes from a single
+      investigative chain writing to establish probable cause.
+    confidence: moderate
+  - claimId: PIPE-C036
+    verdict: established
+    reasoning: The retraction is a public act of the publisher, recorded
+      independently by a news report and by the government's brief citing the
+      Washington Post. The strongest opposing consideration is that a retraction
+      is not a adjudication of the underlying claim — Blaze Media says it will
+      defend the article's accuracy in court — but the fact of the retraction
+      itself is not in doubt.
+    confidence: high
+  - claimId: PIPE-C085
+    verdict: contradicted
+    reasoning: The November 2025 identification claimed a quantified software gait
+      match of 94 to 98 percent, while the October identification began with the
+      mask and family recognition, and Baker's gait comments distinguish the
+      man's walk from the bomber's rather than match the man to Cole. The
+      strongest opposing consideration is that the two do share a real defect —
+      neither method has been published or independently tested — but the claim
+      as stated, that they rest on the same forensic gait match, is not borne
+      out.
+    confidence: moderate
+  - claimId: PIPE-C052
+    verdict: weakly_supported
+    reasoning: "The affirmative record is thin: Baker's assertion of certainty
+      without published evidence, a polygraph opinion of \"Deception Indicated\"
+      documented by both parties but of disputed weight and inadmissibility, and
+      the defense's documented disputes of the exonerating records — against a
+      retracted identification and the government's zero-evidence statement. The
+      strongest opposing consideration to the account itself is structural: any
+      non-Cole placer must explain why Cole's phone tracked the bomber's route
+      across five sectors, which no version of the insider account does."
+    confidence: low
+  - claimId: PIPE-C086
+    verdict: established
+    reasoning: Both parties state the alternative-perpetrator defense the same way
+      and agree the criminal and civil representations point in one direction;
+      the pretrial order anticipates a government motion to exclude the evidence
+      and the government has moved to defer it. The strongest opposing
+      consideration is that a defense pursuing a theory shows nothing about the
+      theory's truth — but the claim is only about what the defense is doing.
+    confidence: high
+  - claimId: PIPE-C098
+    verdict: provisionally_supported
+    reasoning: The claimed gaps — no cell-site data, no Apple warrant, no home
+      footage, no extraction of the January 2021 phone — are specific and said
+      to come from the government's own discovery correspondence. The strongest
+      opposing consideration is that this is an advocate's account offered to
+      win a discovery motion, the exhibits are not public, and the government's
+      answer was not in the archive when the record was read; if accurate it is
+      significant, but it is presently one side's word.
+    confidence: low
+  - claimId: PIPE-C076
+    verdict: well_supported
+    reasoning: "The joint status report, a court filing joining both parties,
+      records the outstanding requests, the PDF-only production of 223 text
+      messages and the government's relevance objection. The strongest opposing
+      consideration is minor: the filing names private individuals, so the
+      claim's substance is verifiable but its subjects cannot be publicly
+      examined here."
+    confidence: high
+  - claimId: PIPE-C077
+    verdict: weakly_supported
+    reasoning: The claim as stated is about what the breakdown's captions say, and
+      the clips do exist with those captions. The strongest opposing
+      consideration is that the clips carry a different caption style, no camera
+      numbers and no shown source or clock, so the times and places rest on
+      captions alone until the underlying cameras are identified.
+    confidence: low
